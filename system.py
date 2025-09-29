@@ -1,19 +1,19 @@
 # system.py
+import subprocess
 from dataset import recommend
+from config import MODE
 
 class CRSSystem:
-    def __init__(self, model_name="mock-llm"):
+    def __init__(self, model_name="gemma:2b"):
         self.model_name = model_name
         self.constraints = {}
 
     def call_ollama(self, prompt: str) -> str:
         """
-        MOCK FUNCTION for now:
-        Pretend the LLM just returns a genre keyword.
-        Replace this later with a real ollama subprocess call.
+        Calls Ollama if MODE=ollama, else returns mock strings.
         """
-        if "Extract" in prompt:
-            # crude extraction rule
+        if MODE == "mock":
+            # Simple mock for testing
             if "romance" in prompt.lower():
                 return "romance"
             elif "horror" in prompt.lower():
@@ -21,24 +21,37 @@ class CRSSystem:
             elif "sci-fi" in prompt.lower():
                 return "sci-fi"
             else:
-                return "romance"  # default fallback
+                return "Here are some movies you might like!"
         else:
-            return "Here are some movies you might like!"
+            # Real Ollama call
+            process = subprocess.Popen(
+                ["ollama", "run", self.model_name],
+                stdin=subprocess.PIPE,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                text=True
+            )
+            output, error = process.communicate(input=prompt)
+            if error:
+                print("Error:", error)
+            return output.strip()
 
     def respond(self, user_message: str) -> str:
-        # Step 1: Extract genre
-        extraction_prompt = f"User said: '{user_message}'. Extract the genre."
+        """
+        1. Extract constraints with LLM.
+        2. Query recommender.
+        3. Generate reply.
+        """
+        extraction_prompt = f"User said: '{user_message}'. Extract the genre (romance, horror, sci-fi)."
         extracted = self.call_ollama(extraction_prompt)
-        self.constraints["genre"] = extracted
+        self.constraints["genre"] = extracted.lower()
 
-        # Step 2: Get recs
         recs = recommend(self.constraints)
         rec_titles = [m["title"] for m in recs]
 
-        # Step 3: Generate reply
         reply_prompt = (
             f"The user wants {self.constraints['genre']} movies. "
-            f"Recommend from {rec_titles}."
+            f"Recommend politely from these options: {rec_titles}."
         )
         reply = self.call_ollama(reply_prompt)
         return reply

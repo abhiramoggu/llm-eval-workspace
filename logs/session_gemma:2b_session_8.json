@@ -1,0 +1,38 @@
+{
+  "true_genre": "horror",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I want to watch a sci-fi movie."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "* **Blade Runner** (1982)\n* **Dune** (1984)\n* **The Matrix** (1999)\n* **Arrival** (2016)\n* **Interstellar** (2014)",
+      "constraints": {
+        "genre": "the genre is sci-fi. sci-fi is a genre of fiction that deals with imagined future scientific and technological advancements and their consequences."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Oops, I meant horror, not the other genre."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "[horror movies]",
+      "constraints": {
+        "genre": "the genre of the text is horror.\n\nthe context does not specify any other genre, so the genre is extracted as horror."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "No worries! There are plenty of great horror movies out there. Have you considered \"The Conjuring\" or \"Get Out\"? Both are highly recommended and have received great reviews."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "- You could provide a default genre, such as \"All\" or \"Genre Not Provided\".\n- You could ask the user to specify the genre manually.\n- You could offer a selection of popular genres, from which the user can choose.\n- You could use a default genre based on the context of the movie or the application.",
+      "constraints": {
+        "genre": "the genre is not specified in the context, so i cannot extract the requested information from the context."
+      }
+    }
+  ]
+}

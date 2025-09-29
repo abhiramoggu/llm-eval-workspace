@@ -1,13 +1,9 @@
 # evaluate.py
 import subprocess
 import json
+from config import MODE, JUDGE_MODEL
 
 def evaluate(conversation, true_genre):
-    """
-    Rule-based evaluation for error recovery in CRS.
-    - Did the system ever mention the true genre in its response?
-    - How many turns until it recovered?
-    """
     recovery_success = False
     recovery_turns = None
 
@@ -15,7 +11,7 @@ def evaluate(conversation, true_genre):
         if turn["speaker"] == "SYSTEM":
             if true_genre in turn["text"].lower():
                 recovery_success = True
-                recovery_turns = i // 2  # system speaks every 2nd turn
+                recovery_turns = i // 2
                 break
 
     return {
@@ -25,43 +21,38 @@ def evaluate(conversation, true_genre):
     }
 
 
-def llm_judge(conversation, model_name="llama2"):
-    """
-    Ask an Ollama model to judge the conversation quality.
-    Metrics: clarity, politeness, recovery quality.
-    Returns a dictionary of scores (0-5).
-    """
-    # Format conversation into a single text block
+def llm_judge(conversation):
     convo_text = "\n".join([f"{t['speaker']}: {t['text']}" for t in conversation])
 
-    # Build the judging prompt
     prompt = f"""
 You are an evaluator. Here is a dialogue between a USER and a SYSTEM:
 
 {convo_text}
 
 Please rate the SYSTEM on these metrics (0-5 scale, 5 is best):
-- Clarity (was the response understandable?)
-- Politeness (was it respectful and natural?)
-- Recovery (did it handle misunderstandings or corrections well?)
+- Clarity
+- Politeness
+- Recovery ability
 
 Return JSON like this:
 {{"clarity": X, "politeness": Y, "recovery": Z}}
     """
 
-    # Call Ollama model
-    result = subprocess.run(
-        ["ollama", "run", model_name],
-        input=prompt.encode("utf-8"),
-        capture_output=True,
-    )
+    if MODE == "mock":
+        return {"clarity": 4, "politeness": 5, "recovery": 3}
+    else:
+        process = subprocess.Popen(
+            ["ollama", "run", JUDGE_MODEL],
+            stdin=subprocess.PIPE,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True
+        )
+        output, error = process.communicate(input=prompt)
+        if error:
+            print("Error:", error)
 
-    output = result.stdout.decode("utf-8").strip()
-
-    # Try to parse JSON from model output
-    try:
-        scores = json.loads(output)
-    except:
-        scores = {"clarity": None, "politeness": None, "recovery": None}
-
-    return scores
+        try:
+            return json.loads(output.strip())
+        except:
+            return {"clarity": None, "politeness": None, "recovery": None}
