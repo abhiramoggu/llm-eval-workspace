@@ -19,7 +19,12 @@ def run_simulation(session_id="001", model_name="gemma:2b"):
         print("USER:", user_msg)
 
         system_reply = system.respond(user_msg)
-        conversation.append({"speaker": "SYSTEM", "text": system_reply, "constraints": system.constraints.copy()})
+        # capture constraints snapshot for evaluation
+        conversation.append({
+            "speaker": "SYSTEM",
+            "text": system_reply,
+            "constraints": system.constraints.copy()
+        })
         print("SYSTEM:", system_reply)
 
     os.makedirs(LOG_DIR, exist_ok=True)
@@ -33,5 +38,5 @@ def run_simulation(session_id="001", model_name="gemma:2b"):
 if __name__ == "__main__":
     convo, true_genre = run_simulation()
     scores = evaluate(convo, true_genre)
-    print("\nRULE-BASED EVALUATION:", scores)
+    print("\nUPGRADED EVALUATION:", scores)
     print("LLM-JUDGE EVALUATION:", llm_judge(convo))
