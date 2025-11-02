@@ -1,0 +1,38 @@
+{
+  "true_genre": "romance",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I want to watch a sci-fi movie."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "There are no options for the genre genre, so I cannot recommend any.",
+      "constraints": {
+        "genre": "the genre is sci-fi.\n\nthe passage does not specify any genre, so it cannot be extracted."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Oops, I meant romance, not the other genre."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here are some recommendations from the context:\n\n- Love stories\n- Romantic comedies\n- Heartwarming romances\n- Soulful love songs",
+      "constraints": {
+        "genre": "the genre of the context is romance.\n\nthe context does not specify any other genre, so the genre of the given context is romance."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Yeah, I'm just getting into romances again after seeing that new Netflix series. Do you have any good ones from the past few years?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "- Provide a list of genres that are commonly associated with Netflix series.\n- Suggest using contextual clues or asking for the genre in a separate step.\n- Offer a default genre based on the context (e.g., \"Science Fiction\").\n- Give the user the option to choose the genre from a list of suggested genres.",
+      "constraints": {
+        "genre": "the context does not provide any information about the genre of the netflix series, so i cannot extract the requested data from the context."
+      }
+    }
+  ]
+}

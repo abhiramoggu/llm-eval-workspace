@@ -1,0 +1,38 @@
+{
+  "true_genre": "romance",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I want to watch a romance movie."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "- Provide a genre suggestion that is relevant to the movie.\n- Suggest asking the user for the genre.\n- Offer a list of potential genres that might be suitable.",
+      "constraints": {
+        "genre": "the genre is romance.\n\nthe context does not provide any information about the genre of the movie, so i cannot extract the requested data from the context."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "You know, something light-hearted and fun. Maybe one of those old-school rom-coms from the 90s?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "- Contemporary Romance\n- Rom-Com\n- Tearjerker Romance\n- Lighthearted Romance",
+      "constraints": {
+        "genre": "the genre is romance.\n\nthe user is asking for a light-hearted and fun genre, and romance is a genre that is typically considered to be light-hearted and fun."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "You know, I've been listening to some of that 90s pop music lately and it's really bringing back memories of my teenage years... maybe a movie with a soundtrack like \"Can't Hardly Wait\" or something?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "* Recommend adding a default genre to the context.\n* Provide a default genre option that can be chosen by the user.\n* Offer a way for the user to specify the genre manually.\n* Return a list of genres that are relevant to the context.",
+      "constraints": {
+        "genre": "the genre is not specified in the context, so the genre cannot be extracted from the context."
+      }
+    }
+  ]
+}

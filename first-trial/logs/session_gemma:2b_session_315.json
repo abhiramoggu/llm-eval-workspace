@@ -1,0 +1,38 @@
+{
+  "true_genre": "horror",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I want to watch a romance movie."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Here are some recommendations:\n\n1. Ask the user to provide more context about the movie, such as its title, plot summary, or release date.\n2. Suggest some other genres that might be relevant, such as drama or comedy.\n3. If the movie is known for a specific genre, you could mention that in the answer.\n4. If there is no obvious genre, you could simply state that the genre is not specified in the context.",
+      "constraints": {
+        "genre": "the genre is romance.\n\nthe context does not provide any information about the genre of the movie, so the genre is not extracted from the context."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Oops, I meant horror, not the other genre."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "* Horror movies.\n* Supernatural horror.\n* Gothic horror.\n* Psychological horror.\n* Suspenseful horror.",
+      "constraints": {
+        "genre": "the genre is horror.\n\nthe context does not provide any other information about the genre of the user's intended statement."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "USER: Wait, no, scratch that too - I was really craving something light and feel-good. Do you have any recommendations for a funny movie?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here are some recommendations:\n\n1. **Provide a default genre:**  You could specify a genre that you think is most likely or appropriate for the context. \n2. **Offer a few options:** If there are multiple genres that could apply, you could offer a few options for the user to choose from.\n3. **Use a more general term:** You could use a more general term that encompasses the genre you are looking for, such as \"entertainment\" or \"culture\".\n4. **Request a description of the context:**  You could ask the user to provide a description of the context that may indicate the genre they are interested in.",
+      "constraints": {
+        "genre": "the genre is not mentioned in the context, so i cannot extract the requested information from the context."
+      }
+    }
+  ]
+}

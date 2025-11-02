@@ -1,0 +1,38 @@
+{
+  "true_genre": "horror",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I want to watch a horror movie."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "- Horror movie\n- Psychological thriller\n- Supernatural horror\n- Suspenseful horror\n- Gothic horror",
+      "constraints": {
+        "genre": "the genre is horror.\n\nthe context does not provide any information about the genre of the movie."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Cool! I've been meaning to check out some newer ones, but I'm not sure if I should go for something super gory or more suspenseful. Do you have any recommendations that are a bit more... psychological?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "- Offer a default value for the genre, such as \"All\".\n- Indicate that the genre is not applicable and provide alternative search options.\n- Provide a list of genres to choose from.\n- Use a more generic term that may encompass the intended genre (e.g., \"Movies\" instead of \"Action\").",
+      "constraints": {
+        "genre": "the genre is not specified in the context, so i cannot extract the requested information from the context."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "You know, I've heard great things about \"A Quiet Place\" - I loved how it built tension without relying on jump scares. But then again, I'm also curious to try something that's a bit more... atmospheric and slow-burning, like a classic horror movie from the 70s or 80s."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "- Specify the genre explicitly in the context.\n- Provide a list of genres to choose from.\n- Indicate that the genre is not important and can be left unspecified.\n- Provide a default genre value.",
+      "constraints": {
+        "genre": "the genre is not specified in the context, so i cannot extract the requested information from the context."
+      }
+    }
+  ]
+}

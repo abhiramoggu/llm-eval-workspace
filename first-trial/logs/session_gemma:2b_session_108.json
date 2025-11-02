@@ -1,0 +1,38 @@
+{
+  "true_genre": "horror",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I want to watch a sci-fi movie."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "- Sci-Fi movies are typically characterized by futuristic technology, advanced special effects, and themes of human ingenuity, isolation, and the nature of existence.\n- Films in the genre often explore the potential dangers of advanced technology, the search for meaning and purpose in a vast and uncertain universe, and the human condition in the face of technological change.\n- Examples of sci-fi movies include \"Blade Runner,\" \"Star Wars,\" and \"Arrival.\"",
+      "constraints": {
+        "genre": "the genre is sci-fi.\n\nthe context does not provide any information about the genre of the movie."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Oops, I meant horror, not the other genre."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "- Horror movies.\n- Horror films.\n- Horror series.\n- Horror genre.",
+      "constraints": {
+        "genre": "the genre is horror.\n\nthe user intended to say \"horror\", but they said \"the other genre\"."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "USER: Wait, no... I actually meant to say fantasy! Yeah, something with magic and adventure. Do you have any recommendations that fit the bill?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "1. **Suggest a default genre**: Provide a default genre option, such as \"All\" or \"Genre not specified\".\n2. **Use a placeholder**: Use a placeholder like \"[Genre]\" in the context to indicate that the genre is unknown.\n3. **Provide a list of genres**: Offer a list of potential genres for the user to choose from.\n4. **Ask for clarification**: Ask the user to provide more context or specify the genre they are interested in.",
+      "constraints": {
+        "genre": "the genre is not specified in the context, so the genre cannot be extracted from the context."
+      }
+    }
+  ]
+}

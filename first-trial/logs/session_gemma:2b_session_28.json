@@ -1,0 +1,38 @@
+{
+  "true_genre": "romance",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I want to watch a horror movie."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure. Here are some recommendations for horror movies:\n\n- The Conjuring\n- It\n- Get Out\n- Saw\n- The Others\n- The Haunting of Hill House",
+      "constraints": {
+        "genre": "the genre is horror.\n\nthe context does not specify any other genre, so the genre is inferred as horror."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Oops, I meant romance, not the other genre."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here are some recommendations:\n\n- Romantic comedies\n- Heartwarming dramas\n- Sweet and sentimental films\n- Love stories\n- Rom-coms",
+      "constraints": {
+        "genre": "the genre is romance.\n\nthe context does not provide any other information about the genre, so it cannot be determined from the given context."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I was really looking forward to some scary moments! Now that you mention romance, though, I'm thinking maybe something light-hearted and funny?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "* **Provide a default genre.** This is the most straightforward option and ensures that the genre is included in the context, even if it is not specified explicitly.\n* **Use a placeholder value.** This option allows you to specify a specific genre as a placeholder value that will be ignored by the system.\n* **Ignore the genre entirely.** This option removes the genre field from the context entirely, but this may not be suitable for all use cases.\n* **Return a list of possible genres.** This option provides a list of possible genres that the user could choose from. This option can help to provide a more user-friendly experience, especially if there are a wide variety of genres to choose from.",
+      "constraints": {
+        "genre": "the genre is not specified in the context, so i cannot extract the requested information from the context."
+      }
+    }
+  ]
+}

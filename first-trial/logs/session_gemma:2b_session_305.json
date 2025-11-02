@@ -1,0 +1,38 @@
+{
+  "true_genre": "romance",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I want to watch a romance movie."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The genre of the movie is romance.\n\nWould you like to know more about romance movies?",
+      "constraints": {
+        "genre": "the genre of the movie is romance.\n\nthe context does not provide any other information about the genre of the movie."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Cool! I've seen most of the classic ones like When Harry Met Sally and The Notebook, but I'm open to something newer. Do you have any recommendations that are more recent, maybe from the past few years?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "1. **Suggest a default genre.** Offer a few popular genres, like \"Action,\" \"Comedy,\" or \"Drama,\" as a default option. This provides a starting point for users who haven't chosen a genre themselves.\n\n\n2. **Provide a broad genre suggestion.** Suggest a genre like \"Film\" or \"Movie,\" which encompasses a wider range of genres. This gives users more options to explore.\n\n\n3. **Leave the genre field blank.** If users leave the genre field blank, you can assume the context is empty and provide no suggestions.\n\n\n4. **Display a message to encourage users to select a genre.** You can gently remind users that selecting a genre is necessary to filter content, and provide a helpful message to guide them.\n\n\n5. **Use contextually relevant information.** If there is other information in the context, such as the movie title or the search query, you can use this context to infer the genre.",
+      "constraints": {
+        "genre": "the genre is not specified in the context, so i cannot extract the requested information from the context."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Yeah, I've been meaning to catch up on some of the more modern rom-coms too! You know, ones that aren't necessarily just about the romance, but also have a deeper message or theme going on. Do you think that's something you'd be interested in?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here are some options for politely refusing to provide a genre suggestion:\n\n- \"I'm unable to determine the genre of the text without further context.\"\n- \"I'm not able to recommend a genre for this context, as the genre is not explicitly stated.\"\n- \"I'm sorry, but I am unable to offer genre suggestions without more context.\"\n- \"I'm unable to provide a genre recommendation as the context does not provide any indication of the genre.\"\n- \"I am unable to suggest a genre for this context, as the genre is not explicitly mentioned.\"",
+      "constraints": {
+        "genre": "the genre of the text is not specified in the context, so i cannot extract the requested information from the context."
+      }
+    }
+  ]
+}

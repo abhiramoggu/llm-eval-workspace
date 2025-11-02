@@ -1,0 +1,38 @@
+{
+  "true_genre": "romance",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I want to watch a horror movie."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here are some recommendations for the genre of the movie:\n\n- Thriller\n- Mystery\n- Sci-fi horror\n- Psychological horror\n- Gothic horror",
+      "constraints": {
+        "genre": "the genre of the movie is horror.\n\nthe context does not provide any other information about the genre of the movie."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Oops, I meant romance, not the other genre."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "1. Recommend movies with a romantic genre.\n2. Recommend books with a romantic genre.\n3. Recommend TV shows with a romantic genre.",
+      "constraints": {
+        "genre": "the genre is romance.\n\nthe context does not specify the genre of the statement, so the genre is not extracted from the given context."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Hey, no worries! So, for a good romance movie, do you have a favorite actor or actress that you'd like to see starring in it? Like, someone who's done some amazing work in rom-coms before?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "1. **Provide a default genre.** This is the simplest solution, where you specify a genre as the default option. For example, you could say: \"Please choose a genre.\"\n2. **Use a placeholder value.** You can use a value that is not relevant to the genre, but is known to be a common default choice. For example, you could say: \"Please choose a genre (e.g., All, Drama, Comedy).\"\n3. **Offer a limited set of default genres.** This option can be useful if there are a limited number of genres that are most commonly chosen. For example, you could say: \"Please choose a genre (e.g., Drama, Comedy, Action).\"\n4. **Use a dynamic method to determine the genre.** You can use a function or algorithm to determine the genre from other contextual information, such as the movie title or the characters involved.",
+      "constraints": {
+        "genre": "the genre is not specified in the context, so i cannot extract the requested information from the context."
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "true_genre": "horror",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I want to watch a romance movie."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure. From the context, it is inferred that the movie is a romance movie.\n\nHere are some recommendations:\n\n- Falling in Love\n- The Notebook\n- Romeo and Juliet\n- Enchanted\n- Notting Hill",
+      "constraints": {
+        "genre": "the genre is romance.\n\nthe context does not specify any other genre, so it can be inferred that the movie is a romance movie."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Oops, I meant horror, not the other genre."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "From the context, it's not possible to recommend specific genres. The user wants the genre to be horror, but the context doesn't provide any clues about it.",
+      "constraints": {
+        "genre": "the genre is horror.\n\nthe context does not specify the genre of the user's intended utterance."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Oh, okay! So, you're saying there's no romance movie for me? But actually, I kind of love Jennifer Lawrence, and she was really good in that one horror-ish movie... what do you think?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "1. **Provide a default genre.** You can specify a genre that is most likely for the movie, or you can leave it as \"Unknown\".\n2. **Ask the user for the genre.** You can directly ask the user to choose the genre of the movie.\n3. **Use a default genre.** You can use a genre that is commonly associated with movies in your language.\n4. **Provide a list of genres and let the user choose.** You can create a list of genres and let the user choose the genre they prefer.",
+      "constraints": {
+        "genre": "the genre of the movie is not specified in the context, so i cannot extract the requested information from the context."
+      }
+    }
+  ]
+}

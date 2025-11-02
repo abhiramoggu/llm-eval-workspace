@@ -1,0 +1,38 @@
+{
+  "true_genre": "horror",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I want to watch a sci-fi movie."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here are the options to recommend the genre of the movie:\n\n1. Recommend other movies with similar themes and settings.\n2. Suggest related genres that might be of interest.\n3. Provide information about the movie's director, cast, or release date.\n4. Offer a general recommendation based on the movie's title and overall tone.\n5. Suggest that the user do some research on the movie and find out its genre on their own.",
+      "constraints": {
+        "genre": "the genre is sci-fi.\n\nthe context does not provide any information about the genre of the movie, so i cannot extract the genre from the context."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Oops, I meant horror, not the other genre."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You could recommend these options from the context:\n\n- Horror movies\n- Horror books\n- Horror video games",
+      "constraints": {
+        "genre": "the genre of the text is horror.\n\nit is not specified in the context what genre the user intended to say, but it was clearly meant to be horror."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "USER: Ah, yeah, horror's more my thing. But, um, I don't just want anything scary - I've seen a lot of cheap jump-scare movies and I'm looking for something with some substance to it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "- Recommend showing a default genre in the context. \n- Indicate that the genre is not relevant to the content and suggest focusing on other aspects of the context. \n- Offer suggestions for finding the genre, such as asking the user to choose from a list of genres or search for the movie by genre.",
+      "constraints": {
+        "genre": "the genre is not specified in the context, so i cannot extract the requested information from the context."
+      }
+    }
+  ]
+}

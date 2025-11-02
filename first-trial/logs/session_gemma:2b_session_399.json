@@ -1,0 +1,38 @@
+{
+  "true_genre": "horror",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I want to watch a romance movie."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "[Romance] is the genre recommended from the context.",
+      "constraints": {
+        "genre": "the genre is romance.\n\nthe context does not specify any other genre, so the genre of the movie is romance."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Oops, I meant horror, not the other genre."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "[Horror]\n\nHorror is a genre of film, literature, and music that often deals with fear, suspense, and the supernatural.",
+      "constraints": {
+        "genre": "the genre is horror.\n\nthe context does not provide any other information about the genre of the text."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "USER: Wait, never mind about horror... I'm actually having a tough week and could use something light-hearted. Can you recommend a good comedy movie instead?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "1. **Offer a default genre option**: Provide a genre option that is most likely to be applicable in most cases, such as \"All\" or \"Genre Not Specified\".\n2. **Suggest exploring other options**: Encourage the user to explore other genres or to refine their search by providing additional filters.\n3. **Provide context-based recommendations**: If the context contains other relevant information, such as the movie title or director, you could suggest these items as potential genres.\n4. **Offer an alternative search**: Encourage the user to search with a different keyword that specifies the genre they are interested in.\n5. **Provide a message explaining that the genre is not specified**: This can help the user understand that their search is not limited by a specific genre.",
+      "constraints": {
+        "genre": "the genre is not specified in the context, so i cannot extract the requested information from the context."
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "true_genre": "romance",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I want to watch a romance movie."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "1. Recommend asking the context for more information about the movie.\n2. Provide a list of genres of movies, including romance.\n3. Recommend asking the user about the genre of the movie.",
+      "constraints": {
+        "genre": "the genre of the movie is romance.\n\nthe context does not provide any other information about the genre of the movie, so i cannot extract the requested data from the context."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Cool! I've seen some great rom-coms lately, but I'm actually feeling like something a bit more light-hearted and fun. Do you have any recommendations for a classic romantic comedy that's easy to get through?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The genre of the passage is romance. It is a love story about a couple who falls in love.",
+      "constraints": {
+        "genre": "the genre of the passage is romance.\n\nthe passage does not mention any horror, sci-fi, or other genre categories."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Hey, yeah! You know what? I just remembered my friend loves movies from the '80s, so maybe something like \"When Harry Met Sally\" or \"Dirty Dancing\" would be a great fit. Have you seen either of those?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here are the options that you can recommend:\n\n1. **Default to a broad genre:** You can suggest a default genre, such as \"All Genres\" or \"Genre Not Specified.\" This option would be suitable if the context does not provide any information about the genre.\n2. **Provide a list of genres:** You can provide a list of genres that the user can choose from. This option would allow the user to specify their preferred genre(s).\n3. **Use a default value based on the context:** You can use a value from the context itself as the default genre. For example, if the context specifies the movie title \"The Shawshank Redemption,\" you could set the default genre to \"Crime.\"\n4. **Provide a suggestion based on the context:** You can use a value from the context to suggest a genre. For example, if the context specifies that the movie is set in the 1990s, you could suggest the genre \"Action\" as a default.\n\nBy providing these options, you can ensure that the genre is chosen by the user, regardless of whether it is specified in the context.",
+      "constraints": {
+        "genre": "the genre is not specified in the context, so i cannot extract the requested information from the context."
+      }
+    }
+  ]
+}

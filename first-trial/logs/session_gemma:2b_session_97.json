@@ -1,0 +1,38 @@
+{
+  "true_genre": "romance",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I want to watch a romance movie."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here are some recommendations from the context:\n\n- Romance.\n- Romantic comedy.\n- Heartwarming love story.\n- A love story.",
+      "constraints": {
+        "genre": "the genre is romance.\n\nthe context does not provide any other information about the movie's genre."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "That sounds nice! I've been meaning to see that new Emma Stone movie, but I'm not sure if it's a traditional romance or more of a rom-com."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "- Provide a default value for the genre.\n- Indicate that the genre is not relevant to the context.\n- Offer a broader context that may provide more context about the movie.",
+      "constraints": {
+        "genre": "the context does not provide any information about the genre of the movie, so i cannot extract the requested data from the context."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Yeah, I love Emma Stone - she's always so charming on screen! But actually, what really got me in the mood for a romance movie was watching a Hallmark Christmas movie marathon over the holidays..."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "1. **Provide a default genre.** \nSpecify the genre of the movie in the context, for example, \"Science Fiction\". \n\n2. **Offer alternative context elements.** \nProvide additional elements of the movie, such as the year of release, director, or cast, that may provide clues about the genre. \n\n3. **Provide a list of genres.** \nOffer a list of potential genres for the movie, allowing the user to choose the one that best fits the context.\n\n4. **Return no information.** \nIf the context does not provide any clues about the genre, return no data about the genre.",
+      "constraints": {
+        "genre": "the context does not provide any information about the genre of the movie, so i cannot extract the requested data from the context."
+      }
+    }
+  ]
+}

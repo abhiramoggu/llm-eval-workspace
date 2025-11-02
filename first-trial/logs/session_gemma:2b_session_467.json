@@ -1,0 +1,38 @@
+{
+  "true_genre": "romance",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I want to watch a romance movie."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "[Romance]\n\nIs there anything else you would like to know about the movie?",
+      "constraints": {
+        "genre": "the genre of the movie is romance.\n\nthe context does not provide any other information about the genre of the movie, so i cannot extract the genre from the context."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Yeah, I've been feeling really sentimental lately and I'm in the mood for something that'll make me all warm and fuzzy inside. Do you have any recommendations from the last few years that are like a classic romance movie?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "* You could ask the user to provide more context about the movie, for example, the year it was released, the director, or the cast.\n* You could suggest that the user search for reviews or articles about the movie to learn more about its genre.\n* You could offer a few broad genre suggestions, such as \"popular movies\" or \"romantic comedies,\" and let the user choose the one that best fits the movie they're interested in.",
+      "constraints": {
+        "genre": "the genre of the passage is romance.\n\nthe passage does not provide any information about the genre of the movie, so i cannot extract the requested data from the context."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Yeah, I know it's not exactly a new thing, but I've always loved When Harry Met Sally - it's just so witty and charming. But anyway, back to your question... what are some more recent movies that have that same feel-good quality?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "- **Provide a default value for the context.** This could be a set of pre-defined movies, a general category, or a blank string.\n- **Offer an alternative way to retrieve the context.** This could be a separate search function, a prompt for the user to input the movies they are interested in, or a direct link to a movie database.\n- **Suggest that the user check the context for recent movie information.** This could be done by indicating that the context is outdated or by providing a link to a live movie news website.\n- **Provide a message that acknowledges the user's request and explains why the context cannot provide the requested data.** This could be a polite but honest explanation, such as \"The context does not provide any information about recent movies, so I cannot extract the requested data.\"",
+      "constraints": {
+        "genre": "the context does not provide any information about recent movies, so i cannot extract the requested data from the context."
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "true_genre": "romance",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I want to watch a horror movie."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "- Suggesting genre of a movie is not appropriate without additional context. \n- You could suggest other elements of the movie, such as the mood or setting.",
+      "constraints": {
+        "genre": "the genre is horror.\n\nthe context does not provide any information about the genre of the movie, so it cannot be extracted from the given context."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Oops, I meant romance, not the other genre."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation:\n\n[Movies about romance] are a popular genre of film that explores the love and relationship between two people. These movies often feature themes of love, affection, commitment, and sacrifice.",
+      "constraints": {
+        "genre": "the genre is romance.\n\nthe context does not provide any other information about the genre, so it cannot be extracted."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "USER: Ah, that's okay! I think I was still thinking about the latest scary movie I saw. Can you recommend some classic rom-coms?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "1. **Ask the user for the genre of the text.** This is a straightforward and direct approach that explicitly requests the user's input.\n2. **Provide a list of genres for the user to choose from.** This option allows the user to select the genre they prefer without having to provide a specific keyword.\n3. **Use a default genre.** If you have a default genre in mind, you can set it as the default option. This can be helpful if the context does not provide any information about the genre.\n4. **Provide a hint or suggestion about the genre.** This can help the user guess the genre of the text. For example, if the context mentions a particular type of movie, you could suggest that the genre is \"action\" or \"comedy\".\n5. **Use a default value for the genre.** If the genre is not important to the task and can be inferred from the context, you can set a default value for it. This can be helpful if the context is ambiguous or incomplete.",
+      "constraints": {
+        "genre": "the genre of the text is not specified, so i cannot extract the requested information from the context."
+      }
+    }
+  ]
+}

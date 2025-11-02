@@ -1,0 +1,38 @@
+{
+  "true_genre": "horror",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I want to watch a sci-fi movie."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here are some sci-fi movies that you might enjoy:\n\n- Blade Runner (1982)\n- Contact (1986)\n- The Matrix (1999)\n- Interstellar (2014)\n- Stranger Things (1986)\n- Star Trek: The Wrath of Khan (2018)",
+      "constraints": {
+        "genre": "the genre is sci-fi.\n\nthe user expressed a desire to watch a sci-fi movie."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Oops, I meant horror, not the other genre."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "[\n  {\n    \"name\": \"Halloween\",\n    \"genre\": \"Horror\"\n  },\n  {\n    \"name\": \"The Conjuring\",\n    \"genre\": \"Horror\"\n  },\n  {\n    \"name\": \"The Others\",\n    \"genre\": \"Horror\"\n  }\n]",
+      "constraints": {
+        "genre": "the genre is horror.\n\nthe context does not specify any other genre, so the genre specified is horror."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "USER: Wait, wait, never mind... I think I'm actually in the mood for something more light-hearted. Do you have any good rom-coms or comedies that are worth watching?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "1. Recommend a genre that is generally applicable to the context.\n2. Suggest a few different genres that could fit the context.\n3. Provide a list of genres that are relevant to the context.\n4. Offer no recommendations, and let the user figure out the genre on their own.",
+      "constraints": {
+        "genre": "the genre is not specified in the context, so i cannot extract the requested information from the context."
+      }
+    }
+  ]
+}

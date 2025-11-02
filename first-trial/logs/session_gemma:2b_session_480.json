@@ -1,0 +1,38 @@
+{
+  "true_genre": "romance",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I want to watch a horror movie."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "[Horror movies]\n\nFrom the context, we can infer that the genre is horror. The user is looking for recommendations for horror movies, so we recommend a selection of horror films.",
+      "constraints": {
+        "genre": "the genre is horror.\n\nthe context does not specify any other genre, so the genre is inferred as horror."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Oops, I meant romance, not the other genre."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The genre of the text is romance. It is not explicitly stated in the context, but the context implies that it is a romantic story.",
+      "constraints": {
+        "genre": "the genre is romance.\n\nthe context does not provide any other information about the genre of the text."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "You know, I was really in the mood for something spooky, but romance sounds nice too. Can you recommend some good romantic movies that are a bit more light-hearted and funny?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "1. Offer a default genre option, such as \"All\" or \"Unspecified\".\n2. Provide a list of commonly watched genres, from which the user can select.\n3. Let the user choose from a variety of genre categories, based on their preferences.\n4. Use a default genre of \"Unknown\" or \"N/A\".\n5. Skip the genre information altogether and focus on other relevant details in the context.",
+      "constraints": {
+        "genre": "the genre is not specified in the context, so i cannot extract the requested information from the context."
+      }
+    }
+  ]
+}

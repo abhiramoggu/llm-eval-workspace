@@ -1,0 +1,38 @@
+{
+  "true_genre": "horror",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I want to watch a horror movie."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "[horror]\n\nThis is the genre of the movie that is mentioned in the context.",
+      "constraints": {
+        "genre": "the genre is horror.\n\nthe context does not provide any information about the genre of the movie, so the genre is extracted as horror."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Cool! I've been meaning to see something that's not too gory or over-the-top scary, just a good thrill. Do you have any recommendations for a classic horror movie that's still pretty well-known?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "1. **Provide a default genre:** You could suggest a default genre, such as \"Science Fiction\" or \"Comedy,\" if the context doesn't specify any genre. This gives the user an option to choose the genre they prefer.\n2. **Offer suggestions based on other context clues:** If the context provides any other relevant information, such as the year of release, cast members, or plot summary, you could offer suggestions based on those clues.\n3. **Give a disclaimer:** You could acknowledge the lack of genre information and inform the user that the genre is not provided in the context. This allows them to make an informed decision about the movie based on the other available context.\n4. **Use a placeholder:** You could use a placeholder, such as \"Genre not provided,\" or \"Please specify the genre,\" in the context to give the user an indication that the genre is missing.",
+      "constraints": {
+        "genre": "the context does not provide any information about the genre of the movie, so i cannot extract the requested data from the context."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "USER: Actually, I was thinking more along the lines of something from the 80s or 90s. I loved those old-school horror movies as a kid, and I think that era had some great ones."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "- **Creature Feature Films** (1950s-1960s)\n- **The Fog** (1980)\n- **Halloween** (1978)\n- **The Exorcist** (1973)\n- **Psycho** (1960)",
+      "constraints": {
+        "genre": "the genre is horror.\n\nthe user is describing old-school horror movies, which are typically considered to be horror."
+      }
+    }
+  ]
+}

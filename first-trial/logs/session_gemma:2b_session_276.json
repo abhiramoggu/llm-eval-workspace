@@ -1,0 +1,38 @@
+{
+  "true_genre": "horror",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I want to watch a sci-fi movie."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "* Blade Runner (1982)\n* The Matrix (1999)\n* Star Wars: Episode V - The Empire Strikes Back (1980)\n* Contact (1986)\n* Interstellar (2014)",
+      "constraints": {
+        "genre": "the genre is sci-fi.\n\nsci-fi is a genre of fiction that deals with imagined future scientific or technological advances, and their potential consequences."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Oops, I meant horror, not the other genre."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "[Horror movies]\n\nThe genre of the original sentence is horror movies, so that is the recommended option.",
+      "constraints": {
+        "genre": "the genre is horror.\n\nthe context does not specify any other genre, so the genre of the original sentence is horror."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "USER: Yeah, sorry about that! So, are there any really good classic horror movies that I should check out?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "- Offer a suggestion for the user to specify the genre.\n- Provide alternative context that may provide the genre.\n- Provide a default genre that can be used if the genre is not specified.\n- Explain the reason why the genre is not specified and provide suggestions for how to provide it.",
+      "constraints": {
+        "genre": "the genre is not specified in the context, so i cannot extract the requested information from the context."
+      }
+    }
+  ]
+}

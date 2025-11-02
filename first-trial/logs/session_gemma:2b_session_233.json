@@ -1,0 +1,38 @@
+{
+  "true_genre": "horror",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I want to watch a horror movie."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "[Horror]\n\nThe passage does not specify any other genre, so the genre of the movie is horror.",
+      "constraints": {
+        "genre": "the genre is horror.\n\nthe passage does not specify any other genre, so the genre of the movie is horror."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Yeah, I've been feeling really into supernatural stuff lately, so maybe something with ghosts or demons would be cool. Do you have any recommendations for something along those lines?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "1. Recommend a broader genre category that encompasses the genre in question. \n2. Suggest searching for the movie by genre, as that might be more relevant to the user's intent.\n3. Offer alternative search parameters that might include the genre in the context.",
+      "constraints": {
+        "genre": "the genre is not specified in the context, so i cannot extract the requested information from the context."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "You know, I was thinking maybe something a bit more classic and iconic, like The Exorcist or The Shining? But then again, I've heard great things about this newer movie that's gotten a lot of buzz... what do you think about Get Out?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "- Provide a default genre value. For example, you could set the default to \"Unknown\".\n- Offer a set of possible genres for the user to choose from.\n- Leave the genre field blank and let the user select it manually.\n- Use a default value that is relevant to the context. For example, if the movie is set in the medieval era, you could default the genre to \"Medieval\".",
+      "constraints": {
+        "genre": "the genre of the movie is not specified in the context, so i cannot extract the requested information from the context."
+      }
+    }
+  ]
+}

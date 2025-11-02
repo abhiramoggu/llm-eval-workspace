@@ -1,0 +1,38 @@
+{
+  "true_genre": "horror",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I want to watch a horror movie."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here are some options to recommend the genre of the movie based on the context:\n\n* Horror",
+      "constraints": {
+        "genre": "the genre is horror.\n\nthe context does not provide any information about the genre of the movie."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Yeah, I've been meaning to get into some classic horror movies. Do you have any recommendations for something that's more suspenseful and less gory?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here are some polite recommendations that address the user's request:\n\n* **Provide a default genre:** You can offer a default genre option, such as \"All\" or \"Genre Not Specified\". This option will be selected if the genre is not explicitly mentioned in the context.\n\n\n* **Highlight the context's genre:** If the context provides a specific genre, you can highlight it to the user, indicating that the genre is already set. This can help avoid confusion and ensure that the desired genre is selected correctly.\n\n\n* **Offer a list of genres:** If there are multiple genres available, you can provide a list of options, allowing the user to choose the genre they prefer. This approach gives them more control and helps prevent the selection of an invalid genre.\n\n\n* **Use a default value in your search query:** You can modify your search query to use a default value for the genre parameter. This approach allows the search to be performed even if the genre is not specified, while still providing results based on the user's preference.\n\n\n* **Provide a hint or suggestion:** If the context provides a hint or suggestion about the genre, you can offer it to the user to help them choose the desired option. This can be done verbally or through an on-screen message.",
+      "constraints": {
+        "genre": "the genre is not specified in the context, so i cannot extract the requested information from the context."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "You know, I'm really not sure if it's a classic or not, but I've heard great things about \"The Shining\". Have you seen it?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The Shining is a horror film about a group of people who are trapped in a remote hotel during a snowstorm. It is considered one of the greatest horror films of all time, and is a must-see for fans of the genre.",
+      "constraints": {
+        "genre": "the genre of the movie is horror.\n\nthe shining is a horror film about a group of people who are trapped in a remote hotel during a snowstorm."
+      }
+    }
+  ]
+}

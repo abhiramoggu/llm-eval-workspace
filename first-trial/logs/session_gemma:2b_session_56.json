@@ -1,0 +1,38 @@
+{
+  "true_genre": "horror",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I want to watch a horror movie."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "* Consider asking the user about the genre of the movie.\n* Provide a list of genres and ask the user to choose the one that best fits the movie.\n* Suggest that they research the genre and provide their findings.",
+      "constraints": {
+        "genre": "the genre is horror.\n\nthe context does not provide any information about the genre of the movie, so i cannot extract the requested information from the context."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "That sounds like fun! Do you have any specific scary movie tropes that get under my skin, like creepy kids or abandoned asylums?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "1. Provide a default genre value, such as \"All\".\n2. Indicate that the genre is not relevant to the context and should be ignored.\n3. Offer a list of possible genres, from which the user can select.\n4. Explain that the genre is not applicable to the context and provide a rationale for its exclusion.",
+      "constraints": {
+        "genre": "the genre is not specified in the context, so i cannot extract the requested information from the context."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I love those kinds of tropes, but actually I was thinking more along the lines of a good old-fashioned slasher movie. You know, something with a lot of suspense and jump scares!"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "- Horror movies\n- Thrillers\n- Suspenseful thrillers\n- Psychological thrillers\n- Supernatural thrillers",
+      "constraints": {
+        "genre": "the genre is horror.\n\nthe user is describing a genre of movies that focuses on suspense and jump scares."
+      }
+    }
+  ]
+}

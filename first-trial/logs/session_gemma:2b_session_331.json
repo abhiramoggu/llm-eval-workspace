@@ -1,0 +1,38 @@
+{
+  "true_genre": "horror",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I want to watch a romance movie."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "[Romance]\n\nThe context does not provide any other information about the movie's genre, so recommending the genre as romance would be appropriate.",
+      "constraints": {
+        "genre": "the genre is romance.\n\nthe context does not provide any other information about the movie's genre."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Oops, I meant horror, not the other genre."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "[Horror movies]\n\nWe recommend horror movies as the genre that best matches the user's request.",
+      "constraints": {
+        "genre": "the genre is horror.\n\nthe context does not specify any other genre, so we can extract that the genre is horror."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "USER: Wait, hold on... I actually watched a lot of scary movies when I was younger, but my friends and family said they were too intense. Can you recommend something that's more suspenseful than gory?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here are some options to recommend:\n\n- Provide a list of genres to choose from.\n- Specify the genre you are interested in.\n- Indicate that the genre is not specified and leave it to the user to decide.\n- Offer a default genre that is suitable for the context.",
+      "constraints": {
+        "genre": "the genre of the passage is not specified, so i cannot extract the requested information from the context."
+      }
+    }
+  ]
+}

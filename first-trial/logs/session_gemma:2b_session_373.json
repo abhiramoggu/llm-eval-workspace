@@ -1,0 +1,38 @@
+{
+  "true_genre": "horror",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I want to watch a romance movie."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here are the options you can recommend:\n\n- \"Have you seen the movie 'Gone with the Wind'?\"\n- \"What are your favorite romantic movies of all time?\"\n- \"Have you checked out 'The Notebook' on Netflix?\"\n- \"What about 'The Princess Bride'?\"\n- \"I heard you enjoyed 'The Titanic'. Have you seen 'Pride and Prejudice'?\"",
+      "constraints": {
+        "genre": "the genre is romance.\n\nthe phrase \"i want to watch a romance movie\" indicates that the user is interested in watching a movie that focuses on a romantic relationship between two characters."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Oops, I meant horror, not the other genre."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "- Choose option [a] Horror. \n- Choose option [b] Mystery. \n- Choose option [c] Sci-fi.",
+      "constraints": {
+        "genre": "the genre is horror.\n\nthe context does not provide any information about the genre of the movie."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "USER: Wait, no, scratch that! I was actually thinking of something a little more lighthearted. Do you have any good recommendations for a funny comedy movie?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "1. **Provide a default genre** that the user can choose from.\n2. **Offer a selection of genres** from which the user can choose.\n3. **Use a wildcard or placeholder** to represent the unknown genre.\n4. **Provide no genre selection** and let the user choose from all available genres.\n5. **Handle the context as a special case** and provide a specific message or action.",
+      "constraints": {
+        "genre": "the genre is not specified in the context, so i cannot extract the requested information from the context."
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "true_genre": "romance",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I want to watch a romance movie."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "- Recommend a movie genre that is similar to romance.\n- Suggest a different context that provides more information about the genre of the movie.\n- Provide a general recommendation about a movie genre that is popular or widely enjoyed.",
+      "constraints": {
+        "genre": "the genre is romance.\n\nthe context does not provide any information about the genre of the movie, so i cannot extract the genre from the context."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "That's my go-to genre for unwinding after a long day. Do you have any recommendations that are super light-hearted and funny, like \"Crazy Rich Asians\" or something?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here are the options you can recommend:\n\n1. **Provide a default genre**: Specify a genre that is commonly associated with movies, such as \"action,\" \"comedy,\" or \"drama.\" This option provides a reasonable guess for the genre of the movie.\n\n\n2. **Offer a list of genres**: Provide a list of genres that are more specific or relevant to the movie. This option allows the user to choose the genre they prefer.\n\n\n3. **Use natural language processing**: Use a natural language processing (NLP) library or model to analyze the movie's content and determine the genre. This option can be more accurate than simple keyword matching.\n\n\n4. **Ask for the genre in a separate step**: Instead of providing the genre in the context, you can ask the user to select it later. This allows you to ensure that the genre is relevant to the movie they are selecting.\n\n\n5. **Return a neutral response**: If the genre is not specified in the context and cannot be determined from the context, you can provide a neutral response, such as \"Genre not specified\" or \"Genre not relevant to the context.\"",
+      "constraints": {
+        "genre": "the genre is not specified in the context, so i cannot extract the requested information from the context."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Yeah, I loved \"Crazy Rich Asians\", it was such a breath of fresh air! But, actually, I've been feeling kind of nostalgic lately and I'm really craving something that's more classic, you know?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "1. Provide a default genre parameter in the context.\n2. Specify a broad genre category, such as \"Action\", \"Comedy\", or \"Sci-Fi\".\n3. Allow the user to select multiple genres from a dropdown or checkbox list.\n4. Use a default genre of \"All\" to indicate that no genre is specified.\n5. Provide a message indicating that the genre is not specified and explain the expected input format.",
+      "constraints": {
+        "genre": "the genre is not specified in the context, so i cannot extract the requested information from the context."
+      }
+    }
+  ]
+}

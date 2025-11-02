@@ -1,0 +1,38 @@
+{
+  "true_genre": "horror",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I want to watch a sci-fi movie."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The passage does not specify any genre, so the genre of the movie cannot be extracted from the context.\n\nHere are some suggestions:\n\n* You could ask the user to specify the genre of the movie.\n* You could ask the user to choose from a list of genres.\n* You could provide a few examples of sci-fi movies and ask the user to guess the genre.",
+      "constraints": {
+        "genre": "the genre is sci-fi.\n\nthe passage does not specify any genre, so the genre of the movie is not extracted from the context."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Oops, I meant horror, not the other genre."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you meant to say \"oops, I meant horror, not the other genre\". Would you like me to recommend movies in the horror genre?",
+      "constraints": {
+        "genre": "the genre is horror.\n\nthe user meant to say \"oops, i meant horror, not the other genre\"."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "USER: Yeah, I'm really in the mood for something spooky and intense. Do you have any good ones that are more psychological thrillers rather than slasher movies?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "1. **Provide a default genre.** You could choose a genre that is most likely relevant to the context, such as \"Sci-Fi\" or \"Comedy\". This would ensure that the genre is included even if it is not explicitly stated.\n\n\n2. **Use a wildcard character to match any genre.** You could use the wildcard character \"*\" to match any genre. This would allow the user to specify a genre that is not explicitly stated, but it would also be more sensitive to misspellings.\n\n\n3. **Let the user choose the genre.** You could provide a dropdown menu or a list of genres for the user to choose from. This would give the user more control over the genre they select and would ensure that it is the genre they intended.",
+      "constraints": {
+        "genre": "the genre is not specified in the context, so i cannot extract the requested information from the context."
+      }
+    }
+  ]
+}

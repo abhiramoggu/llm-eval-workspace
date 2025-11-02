@@ -1,0 +1,38 @@
+{
+  "true_genre": "horror",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I want to watch a romance movie."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "1.  Choose Romance.\n2. Explore the genre of Romance.\n3. Learn about the history of Romance movies.\n4. Discover the best Romance movies of all time.",
+      "constraints": {
+        "genre": "the genre is romance.\n\nthe context does not provide any other information about the genre of the movie."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Oops, I meant horror, not the other genre."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "[Horror movies]\n\nI hope this recommendation is helpful!",
+      "constraints": {
+        "genre": "the genre is horror.\n\nthe context does not specify any other genre, so the genre extracted is horror."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Yeah, horror's not really my go-to choice either. To be honest, I'm really not feeling super into gore or anything overly intense right now - maybe something a bit more suspenseful and atmospheric instead?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "1. **Provide a default genre.** If the genre is not specified in the context, you can provide a default genre, such as \"all\" or \"genre not specified\".\n2. **Use a wildcard character.** You can use a wildcard character, such as \"%genre%\", to capture any unknown genre.\n3. **Offer a limited set of genre options.** Provide a limited set of pre-defined genres that the user can choose from.\n4. **Allow the user to select a genre from a dropdown or list.** This option gives the user more control over the genre selection.\n5. **Use a natural language processing (NLP) model to analyze the context.** An NLP model can be used to analyze the context and determine the genre based on its meaning.",
+      "constraints": {
+        "genre": "the genre is not specified in the context, so i cannot extract the requested information from the context."
+      }
+    }
+  ]
+}
