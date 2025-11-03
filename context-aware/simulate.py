@@ -17,7 +17,7 @@ def run_simulation(session_id="001", model_name="gemma:2b"):
     for turn in range(20):
         user_msg = user.get_message()
         conversation.append({"speaker": "USER", "text": user_msg})
-        print("USER:", user_msg)
+        # print("USER:", user_msg) # Commented out to keep live panel clean
 
         system_reply = system.respond(user_msg)
         conversation.append({
@@ -25,17 +25,16 @@ def run_simulation(session_id="001", model_name="gemma:2b"):
             "text": system_reply,
             "constraints": system.constraints.copy()
         })
-        print("SYSTEM:", system_reply)
+        # print("SYSTEM:", system_reply) # Commented out to keep live panel clean
 
         user.record_system_message(system_reply)
 
     os.makedirs(LOG_DIR, exist_ok=True)
     path = os.path.join(LOG_DIR, f"{model_name}_session_{session_id}.json")
     with open(path, "w") as f:
-        json.dump({"true_genre": user.true_genre, "conversation": conversation}, f, indent=2)
-    print(f"\nSaved: {path}")
+        json.dump({"model_name": model_name, "true_genre": user.true_genre, "conversation": conversation}, f, indent=2)
 
-    return conversation, user.true_genre
+    return path
 
 if __name__ == "__main__":
     convo, genre = run_simulation()

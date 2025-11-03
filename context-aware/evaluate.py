@@ -1,4 +1,3 @@
-# evaluate.py
 """
 Hybrid evaluation for CRS:
 - Topic extraction (LLM or heuristic)
@@ -14,51 +13,56 @@ Hybrid evaluation for CRS:
 import json
 import re
 import subprocess
+from difflib import SequenceMatcher
 from typing import List, Dict, Any, Tuple, Optional
 
 from config import (
-    MODE, JUDGE_MODEL, TOPIC_EXTRACTOR_MODE, TOPIC_EXTRACTOR_MODEL,
-    SIM_TOPIC_SHIFT, ALIGNMENT_THRESHOLD, CAS_WEIGHTS, EMBEDDING_MODEL_NAME
+    MODE,
+    JUDGE_MODEL,
+    TOPIC_EXTRACTOR_MODE,
+    TOPIC_EXTRACTOR_MODEL,
+    SIM_TOPIC_SHIFT,
+    ALIGNMENT_THRESHOLD,
+    TOPIC_JACCARD_SHIFT,
+    CAS_WEIGHTS,
+    EMBEDDING_MODEL_NAME,
+    VERBOSE_EVAL,
 )
 
-# -------- Optional embeddings (lazy-load) --------
-try:
-    from sentence_transformers import SentenceTransformer, util
-except ImportError:
-    SentenceTransformer = None
-    util = None
-
-_embedding_model = None
-_embedding_load_failed = False
+TOPIC_CACHE: Dict[str, List[str]] = {}
+SIM_CACHE: Dict[Tuple[str, str], float] = {}
+_EMBEDDING_MODEL: Optional[Any] = None
 
 
 def ensure_embedding_model():
-    """Lazily load the embedding model; returns None if unavailable."""
-    global _embedding_model, _embedding_load_failed
-    if _embedding_model is not None:
-        return _embedding_model
-    if SentenceTransformer is None or _embedding_load_failed:
+    """Lazy-loads the sentence-transformer model to avoid loading it on every import."""
+    global _EMBEDDING_MODEL
+    if _EMBEDDING_MODEL is None:
+        try:
+            from sentence_transformers import SentenceTransformer
+            _EMBEDDING_MODEL = SentenceTransformer(EMBEDDING_MODEL_NAME)
+        except ImportError:
+            print("Warning: sentence-transformers is not installed. Similarity metrics will be degraded.")
+            _EMBEDDING_MODEL = "unavailable"
+
+
+def call_ollama_json(prompt: str, model_name: str) -> Optional[dict]:
+    process = subprocess.Popen(
+        ["ollama", "run", model_name],
+        stdin=subprocess.PIPE,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+    )
+    output, error = process.communicate(input=prompt)
+    if error:
+        print("Error:", error)
+    if not output:
         return None
     try:
-        _embedding_model = SentenceTransformer(EMBEDDING_MODEL_NAME)
-    except Exception as exc:
-        print(f"Warning: embedding model unavailable ({exc}). Skipping semantic metrics.")
-        _embedding_load_failed = True
+        return json.loads(output.strip())
+    except Exception:
         return None
-    return _embedding_model
-
-
-def embed(text: str):
-    model = ensure_embedding_model()
-    if model is None:
-        return None
-    return model.encode(text, convert_to_tensor=True, normalize_embeddings=True)
-
-
-def cos_sim(a, b) -> Optional[float]:
-    if a is None or b is None or util is None:
-        return None
-    return float(util.cos_sim(a, b))
 
 
 # ---------------- Topic extraction ----------------
@@ -75,55 +79,80 @@ DOMAIN_HINTS = {
 }
 
 
+def _filter_topics(topics: List[str]) -> List[str]:
+    """Filter out irrelevant, generic, or duplicate topics."""
+    if not topics:
+        return []
+    irrelevant = {
+        "recommendation", "conversation", "system", "response", "chat", "user", "talk",
+        "suggestion", "question", "answer", "film", "movie", "thing", "stuff"
+    }
+    filtered = []
+    for t in topics:
+        t = t.strip().lower()
+        if not t or len(t) < 2:
+            continue
+        if t in irrelevant:
+            continue
+        if any(k in t for k in DOMAIN_HINTS) or re.search(
+            r"(love|fear|sad|happy|romantic|tense|dark|futur|drama|emot|space|ghost|sci)", t
+        ):
+            filtered.append(t)
+    return list(dict.fromkeys(filtered))[:5]
+
+
 def extract_topics_heuristic(text: str, top_k: int = 5) -> List[str]:
-    """Very light, dependency-free keyword heuristic."""
-    # Lowercase, keep words and phrases
+    """Enhanced keyword-based heuristic with filtering."""
     text_l = re.sub(r"[^a-z0-9\s\-]", " ", text.lower())
     tokens = [t for t in text_l.split() if t and t not in _STOPWORDS]
-    # Keep domain hints and frequent tokens
     scored = {}
     for t in tokens:
         score = 1
         if t in DOMAIN_HINTS:
             score += 2
+        if re.search(r"(love|fear|sad|happy|romantic|tense|dark|space|sci|ghost|drama|emot)", t):
+            score += 2
         scored[t] = scored.get(t, 0) + score
-    # Sort & slice
     topics = [w for w, _ in sorted(scored.items(), key=lambda x: x[1], reverse=True)]
-    return topics[:top_k]
+    return _filter_topics(topics[:top_k])
 
 
 def call_ollama(model_name: str, prompt: str) -> str:
-    proc = subprocess.Popen(
-        ["ollama", "run", model_name],
-        stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
-    )
-    out, err = proc.communicate(input=prompt)
+    try:
+        proc = subprocess.Popen(
+            ["ollama", "run", model_name],
+            stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
+        )
+        out, err = proc.communicate(input=prompt)
+    except FileNotFoundError:
+        return ""
     if err:
-        # Ollama often writes model load info to stderr; ignore non-fatal
         pass
     return (out or "").strip()
 
 
 def extract_topics_llm(text: str, model: str = TOPIC_EXTRACTOR_MODEL, top_k: int = 5) -> List[str]:
-    """LLM-based topic extractor; expects JSON list output. Falls back to heuristic."""
+    """LLM-based extractor with topic filtering."""
+    if text in TOPIC_CACHE:
+        return TOPIC_CACHE[text][:top_k]
+
     prompt = f"""
-Extract the 3-5 most important topics/entities from the following user utterance for a movie recommendation context.
-Return a JSON array of short strings, no commentary.
+Extract the 3–5 most meaningful *thematic* topics from this message in the context of movie or content recommendations.
+Focus on genres, emotions, tones, or concepts (e.g., 'romantic', 'space', 'fear', 'nostalgia').
+Return a JSON array only, no commentary.
 
 Text: {text}
 """
+    topics = []
     if MODE == "ollama":
-        raw = call_ollama(model, prompt)
-        # Try parse JSON list
-        try:
-            parsed = json.loads(raw)
-            if isinstance(parsed, list):
-                topics = [str(x).lower() for x in parsed][:top_k]
-                return topics
-        except Exception:
-            pass
-    # Fallback
-    return extract_topics_heuristic(text, top_k)
+        payload = call_ollama_json(prompt, model)
+        if isinstance(payload, list):
+            topics = [str(x).lower() for x in payload]
+    if not topics:
+        topics = extract_topics_heuristic(text, top_k)
+    filtered = _filter_topics(topics)
+    TOPIC_CACHE[text] = filtered
+    return filtered[:top_k]
 
 
 def extract_topics(text: str) -> List[str]:
@@ -136,10 +165,28 @@ def topics_to_text(topics: List[str]) -> str:
     return ", ".join(topics) if topics else ""
 
 
+def embedding_similarity(text_a: str, text_b: str) -> float:
+    """Calculate semantic similarity using a sentence-transformer model."""
+    ensure_embedding_model()
+    key = tuple(sorted((text_a, text_b)))
+    if key in SIM_CACHE:
+        return SIM_CACHE[key]
+
+    if _EMBEDDING_MODEL == "unavailable" or not hasattr(_EMBEDDING_MODEL, 'encode'):
+        sim = SequenceMatcher(None, text_a.lower(), text_b.lower()).ratio()
+        SIM_CACHE[key] = sim
+        return sim
+
+    from sentence_transformers import util
+    embeddings = _EMBEDDING_MODEL.encode([text_a, text_b], convert_to_tensor=True)
+    sim = util.pytorch_cos_sim(embeddings[0], embeddings[1]).item()
+    SIM_CACHE[key] = sim
+    return sim
+
+
 # ---------------- Conversation utilities ----------------
 
 def conversation_pairs(conversation: List[Dict[str, Any]]) -> List[Tuple[str, str]]:
-    """Return [(user_text, system_text), ...] aligned by adjacency; skips if missing."""
     pairs = []
     for i in range(0, len(conversation) - 1, 2):
         if conversation[i]["speaker"] == "USER" and conversation[i + 1]["speaker"] == "SYSTEM":
@@ -154,57 +201,61 @@ def avg(lst: List[float]) -> Optional[float]:
     return sum(lst) / len(lst)
 
 
-# ---------------- Segmentation & tracking ----------------
+def jaccard_overlap(a: List[str], b: List[str]) -> float:
+    sa, sb = set(a), set(b)
+    if not sa and not sb:
+        return 0.0
+    return len(sa & sb) / len(sa | sb)
+
+
+# ---------------- Segmentation ----------------
 
 def detect_user_segments(conversation: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    """
-    Segment USER utterances into contiguous topic segments using embedding similarity.
-    Returns a list of segments: [{start_idx, end_idx, topics, repr_text}, ...]
-    """
-    # If embeddings absent, single segment
-    if embed("x") is None or util is None:
-        user_idxs = [i for i, t in enumerate(conversation) if t["speaker"] == "USER"]
-        if not user_idxs:
-            return []
-        texts = [conversation[i]["text"] for i in user_idxs]
-        return [{"start_idx": user_idxs[0], "end_idx": user_idxs[-1], "topics": extract_topics(" ".join(texts)), "repr_text": " ".join(texts)}]
+    """Segment USER utterances into contiguous topic segments using embedding similarity."""
+    user_idxs = [i for i, t in enumerate(conversation) if t["speaker"] == "USER"]
+    if not user_idxs:
+        return []
 
     segments = []
     current = {"start_idx": None, "end_idx": None, "texts": []}
-    prev_emb = None
+    prev_text = ""
+    prev_topics: List[str] = []
 
     for i, t in enumerate(conversation):
         if t["speaker"] != "USER":
             continue
         txt = t["text"]
-        emb = embed(txt)
         if current["start_idx"] is None:
             current = {"start_idx": i, "end_idx": i, "texts": [txt]}
-            prev_emb = emb
+            prev_topics = extract_topics(txt)
+            prev_text = txt
         else:
-            sim = cos_sim(prev_emb, emb)
-            if sim is not None and sim < SIM_TOPIC_SHIFT:
-                # close previous segment
+            base = prev_text if prev_text else " ".join(prev_topics)
+            sim = embedding_similarity(base, txt)
+            curr_topics = extract_topics(txt)
+            topic_jaccard = jaccard_overlap(prev_topics, curr_topics)
+            shift_detected = (sim < SIM_TOPIC_SHIFT) or (topic_jaccard < TOPIC_JACCARD_SHIFT)
+            if shift_detected:
                 seg_txt = " ".join(current["texts"])
                 segments.append({
                     "start_idx": current["start_idx"],
                     "end_idx": current["end_idx"],
-                    "topics": extract_topics(seg_txt),
+                    "topics": _filter_topics(extract_topics(seg_txt)),
                     "repr_text": seg_txt
                 })
-                # start new
                 current = {"start_idx": i, "end_idx": i, "texts": [txt]}
             else:
                 current["end_idx"] = i
                 current["texts"].append(txt)
-            prev_emb = emb
+            prev_topics = curr_topics
+            prev_text = txt
 
     if current["start_idx"] is not None:
         seg_txt = " ".join(current["texts"])
         segments.append({
             "start_idx": current["start_idx"],
             "end_idx": current["end_idx"],
-            "topics": extract_topics(seg_txt),
+            "topics": _filter_topics(extract_topics(seg_txt)),
             "repr_text": seg_txt
         })
 
@@ -213,84 +264,62 @@ def detect_user_segments(conversation: List[Dict[str, Any]]) -> List[Dict[str, A
 
 # ---------------- Metrics ----------------
 
-def cross_coherence(conversation: List[Dict[str, Any]]) -> Optional[float]:
-    """Average similarity between USER turn and immediately following SYSTEM turn."""
-    if embed("x") is None or util is None:
-        return None
-    sims = []
-    for i in range(0, len(conversation) - 1, 2):
-        a, b = conversation[i], conversation[i + 1]
-        if a["speaker"] == "USER" and b["speaker"] == "SYSTEM":
-            sims.append(cos_sim(embed(a["text"]), embed(b["text"])))
-    return avg(sims)
-
-
-def context_retention(conversation: List[Dict[str, Any]]) -> Optional[float]:
-    """Average similarity between consecutive SYSTEM turns."""
-    if embed("x") is None or util is None:
-        return None
-    sims = []
-    prev_sys = None
-    for t in conversation:
-        if t["speaker"] != "SYSTEM":
-            continue
-        if prev_sys is not None:
-            sims.append(cos_sim(embed(prev_sys["text"]), embed(t["text"])))
-        prev_sys = t
-    return avg(sims)
-
-
-def jaccard_overlap(a: List[str], b: List[str]) -> float:
-    sa, sb = set(a), set(b)
-    if not sa and not sb:
-        return 0.0
-    return len(sa & sb) / len(sa | sb)
-
-
 def find_first_system_after(conversation, idx_user_end) -> Optional[int]:
-    """Find index of the next SYSTEM message after a given user index."""
     for j in range(idx_user_end + 1, len(conversation)):
         if conversation[j]["speaker"] == "SYSTEM":
             return j
     return None
 
 
-def topics_of_turn(text: str) -> List[str]:
-    return extract_topics(text)
-
-
 def system_alignment_with_topics(system_text: str, user_topics: List[str]) -> Optional[float]:
-    """Similarity between system text and user topic bag."""
-    if embed("x") is None or util is None:
-        # fallback: Jaccard on token overlap of topics and system text tokens
-        sys_topics = extract_topics(system_text)
-        return jaccard_overlap(sys_topics, user_topics)
-    return cos_sim(embed(system_text), embed(" ".join(user_topics)))
+    if not system_text.strip() or not user_topics:
+        return 0.0
+    topics_text = " ".join(user_topics)
+    return embedding_similarity(system_text, topics_text)
+
+
+def cross_coherence(conversation: List[Dict[str, Any]]) -> Optional[float]:
+    sims = []
+    for i in range(0, len(conversation) - 1, 2):
+        a, b = conversation[i], conversation[i + 1]
+        if a["speaker"] == "USER" and b["speaker"] == "SYSTEM":
+            sims.append(embedding_similarity(a["text"], b["text"]))
+    return sum(sims) / len(sims) if sims else 0.0
+
+
+def context_retention(conversation: List[Dict[str, Any]]) -> Optional[float]:
+    sims = []
+    prev_sys = None
+    for t in conversation:
+        if t["speaker"] != "SYSTEM":
+            continue
+        if prev_sys is not None:
+            sims.append(embedding_similarity(prev_sys["text"], t["text"]))
+        prev_sys = t
+    return sum(sims) / len(sims) if sims else 0.0
 
 
 def compute_recovery_and_interference(conversation: List[Dict[str, Any]], user_segments: List[Dict[str, Any]]):
-    """
-    For each topic shift, compute:
-    - recovered (bool)
-    - recovery_delay (in system turns)
-    - interference (old topic leakage before recovery)
-    Returns summary + per-shift details.
-    """
     details = []
     total_shifts = max(0, len(user_segments) - 1)
     recovered_count = 0
     delays = []
     interferences = []
 
+    if total_shifts == 0:
+        return {
+            "topic_recovery_rate": 0.0,
+            "avg_recovery_delay": 0.0,
+            "topic_interference": 0.0,
+            "per_shift": []
+        }
+
     for k in range(total_shifts):
         prev_seg = user_segments[k]
         new_seg = user_segments[k + 1]
 
-        # Determine reference user topics for new segment
         new_topics = new_seg["topics"]
         old_topics = prev_seg["topics"]
-
-        # Find first system turn after the *last* USER of prev segment
         start_check_idx = find_first_system_after(conversation, new_seg["start_idx"])
 
         recovered = False
@@ -299,24 +328,38 @@ def compute_recovery_and_interference(conversation: List[Dict[str, Any]], user_s
         sys_seen = 0
 
         if start_check_idx is not None:
-            # Walk SYSTEM turns until clear recovery or end
             for j in range(start_check_idx, len(conversation)):
                 t = conversation[j]
                 if t["speaker"] != "SYSTEM":
                     continue
                 sys_seen += 1
 
-                # Alignment with new topics?
-                align = system_alignment_with_topics(t["text"], new_topics) or 0.0
-                # Interference with old topics?
-                leak = system_alignment_with_topics(t["text"], old_topics) or 0.0
+                sys_topics = _filter_topics(extract_topics(t["text"]))
+                important_new = _filter_topics(new_topics)
+                important_old = _filter_topics(old_topics)
+
+                if not sys_topics:
+                    continue
+
+                if important_new:
+                    align = jaccard_overlap(sys_topics, important_new)
+                    if align < 0.3:
+                        align = embedding_similarity(" ".join(sys_topics), " ".join(important_new))
+                else:
+                    align = 0.0
+
+                leak = 0.0
+                if important_old:
+                    leak = jaccard_overlap(sys_topics, important_old)
+                    if leak < 0.3:
+                        leak = embedding_similarity(" ".join(sys_topics), " ".join(important_old))
 
                 if leak >= ALIGNMENT_THRESHOLD:
                     leakage_hits += 1
 
                 if align >= ALIGNMENT_THRESHOLD:
                     recovered = True
-                    delay_sys_turns = sys_seen  # number of SYSTEM turns till recovery
+                    delay_sys_turns = sys_seen
                     break
 
         if recovered:
@@ -325,7 +368,6 @@ def compute_recovery_and_interference(conversation: List[Dict[str, Any]], user_s
         else:
             delays.append(None)
 
-        # Interference as proportion of SYSTEM turns processed before recovery (or in window of 4)
         denom = max(1, (delay_sys_turns if recovered else min(sys_seen, 4)))
         interference = leakage_hits / denom if denom else 0.0
         interferences.append(interference)
@@ -339,10 +381,10 @@ def compute_recovery_and_interference(conversation: List[Dict[str, Any]], user_s
             "interference": interference
         })
 
-    # Aggregates
-    trr = recovered_count / total_shifts if total_shifts > 0 else None
-    avg_delay = avg([d for d in delays if d is not None])
-    avg_interference = avg(interferences) if interferences else None
+    trr = recovered_count / total_shifts if total_shifts > 0 else 0.0
+    valid_delays = [d for d in delays if d is not None]
+    avg_delay = sum(valid_delays) / len(valid_delays) if valid_delays else 0.0
+    avg_interference = sum(interferences) / len(interferences) if interferences else 0.0
 
     return {
         "topic_recovery_rate": trr,
@@ -363,20 +405,11 @@ def normalize(value: Optional[float], lo: float, hi: float, invert: bool = False
 
 
 def compute_cas(metrics: Dict[str, Optional[float]]) -> Optional[float]:
-    """
-    CAS = weighted sum of normalized metrics:
-      + topic_recovery_rate (higher better)
-      + (1 - normalized avg_recovery_delay) (lower better)
-      + (1 - normalized topic_interference) (lower better)
-      + cross_coherence (higher better)
-      + context_retention (higher better)
-    """
-    # Choose sane normalization ranges
-    trr = metrics.get("topic_recovery_rate")              # already 0..1
-    rd = normalize(metrics.get("avg_recovery_delay"), 1, 6, invert=True)  # 1..6 sys turns → shorter is better
-    ti = normalize(metrics.get("topic_interference"), 0, 1, invert=True)  # 0..1 → lower is better
-    cc = metrics.get("cross_coherence")                   # 0..1
-    cr = metrics.get("context_retention")                 # 0..1
+    trr = metrics.get("topic_recovery_rate")
+    rd = normalize(metrics.get("avg_recovery_delay"), 1, 6, invert=True)
+    ti = normalize(metrics.get("topic_interference"), 0, 1, invert=True)
+    cc = metrics.get("cross_coherence")
+    cr = metrics.get("context_retention")
 
     parts = {
         "topic_recovery_rate": trr,
@@ -386,7 +419,6 @@ def compute_cas(metrics: Dict[str, Optional[float]]) -> Optional[float]:
         "context_retention": cr
     }
 
-    # Normalize weights
     wsum = sum(CAS_WEIGHTS.values())
     weights = {k: v / wsum for k, v in CAS_WEIGHTS.items()}
 
@@ -401,29 +433,83 @@ def compute_cas(metrics: Dict[str, Optional[float]]) -> Optional[float]:
     return score / denom
 
 
+def compute_turn_alignments(conversation: List[Dict[str, Any]], user_segments: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """For each system turn, compute its alignment with the current user topic segment."""
+    if not user_segments:
+        return []
+
+    alignments = []
+    current_segment_idx = 0
+    for turn_idx, turn in enumerate(conversation):
+        if turn["speaker"] != "SYSTEM":
+            continue
+
+        # Find which user segment this system turn belongs to
+        while (current_segment_idx + 1 < len(user_segments) and
+               turn_idx > user_segments[current_segment_idx]["end_idx"]):
+            current_segment_idx += 1
+
+        user_segment_text = user_segments[current_segment_idx]["repr_text"]
+        alignment_score = embedding_similarity(turn["text"], user_segment_text)
+        alignments.append({"turn_idx": turn_idx, "alignment": alignment_score})
+
+    return alignments
+
+
+def llm_judge(conversation: List[Dict[str, Any]]) -> Dict[str, Optional[float]]:
+    """LLM-as-judge for qualitative metrics."""
+    convo_text = "\n".join([f"{t['speaker']}: {t['text']}" for t in conversation])
+    prompt = f"""
+You are a fair and impartial evaluator for conversational AI.
+Below is a conversation between a USER and a SYSTEM. The user's goal is to get movie recommendations.
+The user may change their mind or correct themselves. Your task is to evaluate how well the SYSTEM handled the conversation.
+
+Conversation:
+{convo_text}
+
+Please rate the SYSTEM's performance on the following metrics on a scale from 0 (very poor) to 5 (excellent).
+Provide your response as a JSON object only, with no other text.
+
+- clarity: Was the system's language clear and easy to understand?
+- politeness: Was the system polite and respectful?
+- recovery: When the user changed topics or corrected a mistake, how well did the system adapt?
+- context_memory: How well did the system remember earlier parts of the conversation?
+- engagement: Was the system engaging and conversational, or just robotic?
+
+JSON response format:
+{{"clarity": <0-5>, "politeness": <0-5>, "recovery": <0-5>, "context_memory": <0-5>, "engagement": <0-5>}}
+"""
+
+    if MODE == "mock":
+        return {"clarity": 4, "politeness": 5, "recovery": 3, "context_memory": 4, "engagement": 4}
+
+    payload = call_ollama_json(prompt, JUDGE_MODEL)
+
+    if payload and isinstance(payload, dict):
+        # Ensure all expected keys are present, defaulting to None
+        expected_keys = ["clarity", "politeness", "recovery", "context_memory", "engagement"]
+        return {key: payload.get(key) for key in expected_keys}
+
+    return {
+        "clarity": None,
+        "politeness": None,
+        "recovery": None,
+        "context_memory": None,
+        "engagement": None,
+    }
+
+
 # ---------------- Public API ----------------
 
 def evaluate(conversation: List[Dict[str, Any]], true_genre: Optional[str] = None) -> Dict[str, Any]:
-    """
-    Main entrypoint: compute all quantitative metrics + CAS.
-    Returns:
-      {
-        ... metrics ...,
-        "detail": {
-            "user_segments": [...],
-            "per_shift": [...]
-        }
-      }
-    """
-    # 1) Segment USER into topic segments
-    user_segments = detect_user_segments(conversation)
+    if VERBOSE_EVAL:
+        print(f"\n[EVAL] Starting evaluation: {len(conversation)} turns, true_genre={true_genre}")
 
-    # 2) Cross-coherence and context retention
+    user_segments = detect_user_segments(conversation)
     cc = cross_coherence(conversation)
     cr = context_retention(conversation)
-
-    # 3) Recovery & Interference over shifts
     ri = compute_recovery_and_interference(conversation, user_segments)
+    turn_alignments = compute_turn_alignments(conversation, user_segments)
 
     metrics = {
         "topic_recovery_rate": ri["topic_recovery_rate"],
@@ -433,48 +519,19 @@ def evaluate(conversation: List[Dict[str, Any]], true_genre: Optional[str] = Non
         "context_retention": cr,
     }
 
-    # 4) CAS
     cas = compute_cas(metrics)
     metrics["context_adaptation_score"] = cas
-
-    # Legacy fields (kept for compatibility with your earlier scripts)
     metrics.update({
         "true_genre": true_genre,
         "num_topic_shifts": max(0, len(user_segments) - 1),
     })
 
-    return {
+    result = {
         **metrics,
         "detail": {
             "user_segments": user_segments,
-            "per_shift": ri["per_shift"]
+            "per_shift": ri["per_shift"],
+            "turn_alignments": turn_alignments
         }
     }
-
-
-def llm_judge(conversation: List[Dict[str, Any]]) -> Dict[str, Any]:
-    """LLM-as-judge for subjective evaluation."""
-    convo_text = "\n".join([f"{t['speaker']}: {t['text']}" for t in conversation])
-    prompt = f"""
-You are a dialogue evaluator. Here is a conversation between a USER and a SYSTEM:
-
-{convo_text}
-
-Evaluate the SYSTEM on a scale of 0–5 for:
-1. Clarity (how clear and natural are the responses)
-2. Politeness (tone, empathy)
-3. Recovery ability (adapts to topic changes or corrections)
-4. Context memory (retains user preferences)
-5. Engagement (interactive and interesting)
-
-Return strict JSON:
-{{"clarity": X, "politeness": Y, "recovery": Z, "context_memory": W, "engagement": V}}
-"""
-    if MODE == "mock":
-        return {"clarity": 4, "politeness": 5, "recovery": 3, "context_memory": 4, "engagement": 4}
-
-    out = call_ollama(JUDGE_MODEL, prompt)
-    try:
-        return json.loads(out.strip())
-    except Exception:
-        return {"clarity": None, "politeness": None, "recovery": None, "context_memory": None, "engagement": None}
+    return result
