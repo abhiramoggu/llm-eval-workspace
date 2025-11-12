@@ -1,206 +1,245 @@
 # dataset.py
-# Tiny genre→movie mapping to simulate recommendations
+# Movie metadata utilities for the simulator / CRS
+import json
+import os
+import random
+import re
+from collections import defaultdict
+from typing import Dict, List, Iterable, Set
 
-def recommend(constraints):
-    genre = constraints.get("genre", "")
-    database = {
-    "romance": [
-        {"title": "The Notebook"}, {"title": "Pride & Prejudice"}, {"title": "Titanic"},
-        {"title": "La La Land"}, {"title": "The Fault in Our Stars"}, {"title": "A Walk to Remember"},
-        {"title": "Crazy Rich Asians"}, {"title": "The Vow"}, {"title": "About Time"},
-        {"title": "The Holiday"}, {"title": "500 Days of Summer"}, {"title": "To All the Boys I've Loved Before"},
-        {"title": "Love, Rosie"}, {"title": "Me Before You"}, {"title": "Dear John"},
-        {"title": "Notting Hill"}, {"title": "The Proposal"}, {"title": "Runaway Bride"},
-        {"title": "The Longest Ride"}, {"title": "Sleepless in Seattle"}, {"title": "When Harry Met Sally"},
-        {"title": "Pretty Woman"}, {"title": "The Time Traveler’s Wife"}, {"title": "Letters to Juliet"},
-        {"title": "The Age of Adaline"}, {"title": "Before Sunrise"}, {"title": "Before Sunset"},
-        {"title": "Before Midnight"}, {"title": "The Last Song"}, {"title": "Safe Haven"}
-    ],
+MOVIE_DB: Dict[str, dict] = {}
+GENRE_MAP: Dict[str, List[str]] = defaultdict(list)
 
-    "horror": [
-        {"title": "The Conjuring"}, {"title": "Get Out"}, {"title": "Hereditary"},
-        {"title": "It"}, {"title": "The Exorcist"}, {"title": "A Quiet Place"},
-        {"title": "Insidious"}, {"title": "Sinister"}, {"title": "The Babadook"},
-        {"title": "Midsommar"}, {"title": "The Ring"}, {"title": "The Grudge"},
-        {"title": "Annabelle"}, {"title": "Us"}, {"title": "The Nun"},
-        {"title": "Poltergeist"}, {"title": "The Blair Witch Project"}, {"title": "Paranormal Activity"},
-        {"title": "Smile"}, {"title": "The Others"}, {"title": "Talk to Me"},
-        {"title": "Saw"}, {"title": "The Cabin in the Woods"}, {"title": "Barbarian"},
-        {"title": "The Boogeyman"}, {"title": "The Witch"}, {"title": "Evil Dead Rise"},
-        {"title": "X"}, {"title": "It Follows"}, {"title": "Nope"}
-    ],
+# Attribute indexes -> movie title lists
+ATTRIBUTE_FIELDS = ("name", "genre", "actor", "director", "language", "writer", "year")
+ATTRIBUTE_INDEX: Dict[str, Dict[str, List[str]]] = {field: defaultdict(list) for field in ATTRIBUTE_FIELDS}
+ATTRIBUTE_VALUES: Dict[str, Set[str]] = {field: set() for field in ATTRIBUTE_FIELDS}
+ATTRIBUTE_CANONICAL: Dict[str, Dict[str, str]] = {field: {} for field in ATTRIBUTE_FIELDS}
 
-    "sci-fi": [
-        {"title": "Interstellar"}, {"title": "The Matrix"}, {"title": "Inception"},
-        {"title": "Blade Runner 2049"}, {"title": "Arrival"}, {"title": "Dune"},
-        {"title": "Tenet"}, {"title": "Ex Machina"}, {"title": "Gravity"},
-        {"title": "Edge of Tomorrow"}, {"title": "The Martian"}, {"title": "Avatar"},
-        {"title": "Guardians of the Galaxy"}, {"title": "Star Wars: A New Hope"}, {"title": "Star Wars: The Empire Strikes Back"},
-        {"title": "Star Wars: The Force Awakens"}, {"title": "Rogue One"}, {"title": "The Fifth Element"},
-        {"title": "District 9"}, {"title": "Elysium"}, {"title": "Oblivion"},
-        {"title": "I, Robot"}, {"title": "Minority Report"}, {"title": "Looper"},
-        {"title": "Her"}, {"title": "Moon"}, {"title": "2001: A Space Odyssey"},
-        {"title": "Jurassic Park"}, {"title": "War for the Planet of the Apes"}, {"title": "Ready Player One"}
-    ],
+PLOT_KEYWORD_INDEX: Dict[str, List[str]] = defaultdict(list)
+PLOT_KEYWORDS: Set[str] = set()
+PLOT_STOPWORDS = {
+    "the", "and", "with", "that", "this", "from", "into", "about", "their", "they",
+    "them", "have", "when", "where", "after", "before", "toward", "towards", "against",
+    "while", "over", "under", "through", "also", "film", "movie", "story", "stories",
+    "life", "lives", "takes", "place", "city", "town", "family", "people"
+}
 
-    "action": [
-        {"title": "John Wick"}, {"title": "Die Hard"}, {"title": "Mad Max: Fury Road"},
-        {"title": "Gladiator"}, {"title": "The Dark Knight"}, {"title": "Inception"},
-        {"title": "The Avengers"}, {"title": "Avengers: Endgame"}, {"title": "Iron Man"},
-        {"title": "Black Panther"}, {"title": "The Batman"}, {"title": "Mission Impossible: Fallout"},
-        {"title": "Top Gun: Maverick"}, {"title": "The Bourne Identity"}, {"title": "Skyfall"},
-        {"title": "Casino Royale"}, {"title": "Taken"}, {"title": "Atomic Blonde"},
-        {"title": "Extraction"}, {"title": "The Equalizer"}, {"title": "Man on Fire"},
-        {"title": "The Raid"}, {"title": "Kill Bill: Vol. 1"}, {"title": "300"},
-        {"title": "Deadpool"}, {"title": "Logan"}, {"title": "The Wolverine"},
-        {"title": "Spider-Man: No Way Home"}, {"title": "Doctor Strange"}, {"title": "Shang-Chi"}
-    ],
+CONSTRAINT_ALIASES = {
+    "title": "name",
+    "plot_keywords": "plot",
+}
+SUPPORTED_CONSTRAINTS = set(ATTRIBUTE_FIELDS) | {"plot"}
 
-    "comedy": [
-        {"title": "Superbad"}, {"title": "The Hangover"}, {"title": "Step Brothers"},
-        {"title": "Bridesmaids"}, {"title": "Mean Girls"}, {"title": "Crazy, Stupid, Love"},
-        {"title": "Tropic Thunder"}, {"title": "The 40-Year-Old Virgin"}, {"title": "Anchorman"},
-        {"title": "Dumb and Dumber"}, {"title": "School of Rock"}, {"title": "Pitch Perfect"},
-        {"title": "Zombieland"}, {"title": "Ted"}, {"title": "Knocked Up"},
-        {"title": "The Other Guys"}, {"title": "21 Jump Street"}, {"title": "22 Jump Street"},
-        {"title": "The Nice Guys"}, {"title": "Game Night"}, {"title": "Horrible Bosses"},
-        {"title": "Rush Hour"}, {"title": "Hot Fuzz"}, {"title": "Shaun of the Dead"},
-        {"title": "Juno"}, {"title": "The Intern"}, {"title": "Yes Man"},
-        {"title": "Liar Liar"}, {"title": "The Mask"}, {"title": "Barb and Star Go to Vista Del Mar"}
-    ],
 
-    "drama": [
-        {"title": "The Shawshank Redemption"}, {"title": "Forrest Gump"}, {"title": "Fight Club"},
-        {"title": "The Godfather"}, {"title": "The Green Mile"}, {"title": "The Pursuit of Happyness"},
-        {"title": "A Beautiful Mind"}, {"title": "The Social Network"}, {"title": "Good Will Hunting"},
-        {"title": "Whiplash"}, {"title": "Requiem for a Dream"}, {"title": "The Pianist"},
-        {"title": "The Imitation Game"}, {"title": "Parasite"}, {"title": "Everything Everywhere All at Once"},
-        {"title": "12 Years a Slave"}, {"title": "The Revenant"}, {"title": "Joker"},
-        {"title": "Black Swan"}, {"title": "Birdman"}, {"title": "Oppenheimer"},
-        {"title": "The Whale"}, {"title": "The Father"}, {"title": "Moonlight"},
-        {"title": "Manchester by the Sea"}, {"title": "Revolutionary Road"}, {"title": "The Great Gatsby"},
-        {"title": "American Beauty"}, {"title": "Marriage Story"}, {"title": "Bohemian Rhapsody"}
-    ],
+def _normalize_genre_name(name: str) -> str:
+    """Simplifies genre names, e.g., 'Romance Film' -> 'romance'."""
+    if not name:
+        return ""
+    return (
+        name.lower()
+        .replace(" film", "")
+        .replace(" movie", "")
+        .replace(" fiction", "")
+        .strip()
+    )
 
-    "thriller": [
-        {"title": "Se7en"}, {"title": "Gone Girl"}, {"title": "Shutter Island"},
-        {"title": "Prisoners"}, {"title": "The Girl with the Dragon Tattoo"}, {"title": "Fight Club"},
-        {"title": "Nightcrawler"}, {"title": "The Prestige"}, {"title": "Memento"},
-        {"title": "Zodiac"}, {"title": "The Sixth Sense"}, {"title": "Split"},
-        {"title": "Don’t Breathe"}, {"title": "Phone Booth"}, {"title": "Enemy"},
-        {"title": "No Country for Old Men"}, {"title": "Wind River"}, {"title": "Sicario"},
-        {"title": "Collateral"}, {"title": "Training Day"}, {"title": "Run Lola Run"},
-        {"title": "Oldboy"}, {"title": "Gone Baby Gone"}, {"title": "The Invisible Man"},
-        {"title": "The Game"}, {"title": "Tenet"}, {"title": "Heat"},
-        {"title": "The Fugitive"}, {"title": "Panic Room"}, {"title": "The Machinist"}
-    ],
 
-    "fantasy": [
-        {"title": "Harry Potter and the Sorcerer’s Stone"}, {"title": "The Lord of the Rings: The Fellowship of the Ring"},
-        {"title": "The Lord of the Rings: The Two Towers"}, {"title": "The Lord of the Rings: The Return of the King"},
-        {"title": "The Hobbit: An Unexpected Journey"}, {"title": "Fantastic Beasts and Where to Find Them"},
-        {"title": "Pan’s Labyrinth"}, {"title": "The Chronicles of Narnia"}, {"title": "Percy Jackson & the Olympians"},
-        {"title": "Stardust"}, {"title": "Alice in Wonderland"}, {"title": "Maleficent"},
-        {"title": "Snow White and the Huntsman"}, {"title": "The Golden Compass"}, {"title": "Eragon"},
-        {"title": "Doctor Strange"}, {"title": "Thor: Ragnarok"}, {"title": "Wonder Woman"},
-        {"title": "Aquaman"}, {"title": "The Shape of Water"}, {"title": "Big Fish"},
-        {"title": "Bridge to Terabithia"}, {"title": "Enchanted"}, {"title": "Mirror Mirror"},
-        {"title": "The Spiderwick Chronicles"}, {"title": "Miss Peregrine’s Home for Peculiar Children"},
-        {"title": "The Princess Bride"}, {"title": "Peter Pan"}, {"title": "Hook"}, {"title": "The NeverEnding Story"}
-    ],
+def _normalize_value(field: str, value: str) -> str:
+    if value is None:
+        return ""
+    text = str(value).strip()
+    if not text:
+        return ""
+    if field == "genre":
+        return _normalize_genre_name(text)
+    if field == "year":
+        return re.sub(r"[^0-9]", "", text)
+    return text.lower()
 
-    "animation": [
-        {"title": "Toy Story"}, {"title": "Toy Story 3"}, {"title": "Finding Nemo"},
-        {"title": "The Incredibles"}, {"title": "Up"}, {"title": "Inside Out"},
-        {"title": "Coco"}, {"title": "Soul"}, {"title": "Monsters, Inc."},
-        {"title": "Ratatouille"}, {"title": "WALL·E"}, {"title": "Frozen"},
-        {"title": "Moana"}, {"title": "Zootopia"}, {"title": "Encanto"},
-        {"title": "Turning Red"}, {"title": "Shrek"}, {"title": "Shrek 2"},
-        {"title": "Kung Fu Panda"}, {"title": "How to Train Your Dragon"},
-        {"title": "The Lion King"}, {"title": "Beauty and the Beast"}, {"title": "Aladdin"},
-        {"title": "Spirited Away"}, {"title": "My Neighbor Totoro"}, {"title": "Kiki’s Delivery Service"},
-        {"title": "Your Name"}, {"title": "Weathering With You"}, {"title": "The Mitchells vs. The Machines"}, {"title": "Big Hero 6"}
-    ],
 
-    "crime": [
-        {"title": "The Godfather"}, {"title": "The Godfather Part II"}, {"title": "Goodfellas"},
-        {"title": "The Irishman"}, {"title": "Casino"}, {"title": "The Departed"},
-        {"title": "Scarface"}, {"title": "Heat"}, {"title": "American Gangster"},
-        {"title": "City of God"}, {"title": "The Untouchables"}, {"title": "Training Day"},
-        {"title": "Pulp Fiction"}, {"title": "Reservoir Dogs"}, {"title": "Snatch"},
-        {"title": "Lock, Stock and Two Smoking Barrels"}, {"title": "The Town"}, {"title": "The Usual Suspects"},
-        {"title": "The Wolf of Wall Street"}, {"title": "Catch Me If You Can"}, {"title": "Blow"},
-        {"title": "Donnie Brasco"}, {"title": "Sicario"}, {"title": "Public Enemies"},
-        {"title": "The French Connection"}, {"title": "Gangs of New York"}, {"title": "Zodiac"},
-        {"title": "Mystic River"}, {"title": "Eastern Promises"}, {"title": "Black Mass"}
-    ],
+def _extract_plot_keywords(plot: str) -> List[str]:
+    if not plot:
+        return []
+    tokens = re.findall(r"[a-zA-Z]{4,}", plot.lower())
+    keywords = [tok for tok in tokens if tok not in PLOT_STOPWORDS]
+    return list(dict.fromkeys(keywords))
 
-    "mystery": [
-        {"title": "Knives Out"}, {"title": "Glass Onion"}, {"title": "Gone Girl"},
-        {"title": "Shutter Island"}, {"title": "The Sixth Sense"}, {"title": "Prisoners"},
-        {"title": "The Girl on the Train"}, {"title": "Murder on the Orient Express"},
-        {"title": "Death on the Nile"}, {"title": "The Others"}, {"title": "Seven"},
-        {"title": "Zodiac"}, {"title": "The Prestige"}, {"title": "The Illusionist"},
-        {"title": "Mulholland Drive"}, {"title": "Mystic River"}, {"title": "Secret Window"},
-        {"title": "Oldboy"}, {"title": "The Number 23"}, {"title": "Identity"},
-        {"title": "Now You See Me"}, {"title": "The Da Vinci Code"}, {"title": "Angels & Demons"},
-        {"title": "Sherlock Holmes"}, {"title": "Sherlock Holmes: A Game of Shadows"},
-        {"title": "Enola Holmes"}, {"title": "The Invisible Guest"}, {"title": "Fracture"},
-        {"title": "Enemy"}, {"title": "The Machinist"}
-    ],
 
-    "adventure": [
-        {"title": "Indiana Jones and the Raiders of the Lost Ark"}, {"title": "Indiana Jones and the Last Crusade"},
-        {"title": "Pirates of the Caribbean: The Curse of the Black Pearl"}, {"title": "Pirates of the Caribbean: Dead Man’s Chest"},
-        {"title": "Jurassic Park"}, {"title": "The Lost World: Jurassic Park"}, {"title": "The Mummy"},
-        {"title": "The Mummy Returns"}, {"title": "National Treasure"}, {"title": "National Treasure: Book of Secrets"},
-        {"title": "Jumanji"}, {"title": "Jumanji: Welcome to the Jungle"}, {"title": "King Kong"},
-        {"title": "The Jungle Book"}, {"title": "Life of Pi"}, {"title": "Avatar"},
-        {"title": "The Revenant"}, {"title": "Cast Away"}, {"title": "The Secret Life of Walter Mitty"},
-        {"title": "The Hobbit: The Desolation of Smaug"}, {"title": "The Hobbit: The Battle of the Five Armies"},
-        {"title": "The Lord of the Rings: The Return of the King"}, {"title": "The Lion King"},
-        {"title": "Up"}, {"title": "The Grand Budapest Hotel"}, {"title": "Interstellar"},
-        {"title": "The Martian"}, {"title": "Kingdom of Heaven"}, {"title": "Tomb Raider"}, {"title": "Uncharted"}
-    ],
+def _add_to_index(field: str, value: str, title: str):
+    norm = _normalize_value(field, value)
+    if not norm:
+        return
+    ATTRIBUTE_INDEX[field][norm].append(title)
+    ATTRIBUTE_VALUES[field].add(str(value).strip())
+    ATTRIBUTE_CANONICAL[field].setdefault(norm, str(value).strip())
 
-    "biopic": [
-        {"title": "The Social Network"}, {"title": "Steve Jobs"}, {"title": "The Imitation Game"},
-        {"title": "A Beautiful Mind"}, {"title": "The Theory of Everything"}, {"title": "Bohemian Rhapsody"},
-        {"title": "Rocketman"}, {"title": "Lincoln"}, {"title": "Schindler’s List"},
-        {"title": "Catch Me If You Can"}, {"title": "The Pursuit of Happyness"}, {"title": "Oppenheimer"},
-        {"title": "The Founder"}, {"title": "American Sniper"}, {"title": "The Wolf of Wall Street"},
-        {"title": "Ray"}, {"title": "Walk the Line"}, {"title": "The King’s Speech"},
-        {"title": "12 Years a Slave"}, {"title": "Moneyball"}, {"title": "Hidden Figures"},
-        {"title": "The Blind Side"}, {"title": "Erin Brockovich"}, {"title": "Hacksaw Ridge"},
-        {"title": "Into the Wild"}, {"title": "The Pianist"}, {"title": "The Disaster Artist"},
-        {"title": "Blow"}, {"title": "Goodfellas"}, {"title": "The Irishman"}
-    ],
 
-    "musical": [
-        {"title": "La La Land"}, {"title": "Mamma Mia!"}, {"title": "Mamma Mia! Here We Go Again"},
-        {"title": "The Greatest Showman"}, {"title": "Chicago"}, {"title": "Les Misérables"},
-        {"title": "Grease"}, {"title": "West Side Story"}, {"title": "Moulin Rouge!"},
-        {"title": "Rocketman"}, {"title": "Bohemian Rhapsody"}, {"title": "A Star Is Born"},
-        {"title": "Pitch Perfect"}, {"title": "Pitch Perfect 2"}, {"title": "Pitch Perfect 3"},
-        {"title": "High School Musical"}, {"title": "Encanto"}, {"title": "Frozen"},
-        {"title": "Beauty and the Beast"}, {"title": "The Little Mermaid"}, {"title": "Hairspray"},
-        {"title": "Sing"}, {"title": "Sing 2"}, {"title": "Annie"}, {"title": "The Sound of Music"},
-        {"title": "Dreamgirls"}, {"title": "Cinderella"}, {"title": "Into the Woods"},
-        {"title": "Tick, Tick... Boom!"}, {"title": "Once"}
-    ],
+def _index_movie(title: str, details: dict):
+    safe_details = details or {}
+    safe_details.setdefault("name", title)
+    for field in ATTRIBUTE_FIELDS:
+        values: Iterable[str]
+        if field == "name":
+            values = [safe_details.get("name", title)]
+        elif field == "year":
+            values = [safe_details.get("year")]
+        else:
+            values = safe_details.get(field, [])
+        for value in values or []:
+            _add_to_index(field, value, title)
+            if field == "genre":
+                GENRE_MAP[_normalize_genre_name(value)].append(title)
 
-    "historical": [
-        {"title": "Schindler’s List"}, {"title": "Gladiator"}, {"title": "Braveheart"},
-        {"title": "Saving Private Ryan"}, {"title": "1917"}, {"title": "The Last Samurai"},
-        {"title": "The Patriot"}, {"title": "The King’s Speech"}, {"title": "Dunkirk"},
-        {"title": "The Imitation Game"}, {"title": "Oppenheimer"}, {"title": "Lincoln"},
-        {"title": "12 Years a Slave"}, {"title": "The Pianist"}, {"title": "Hotel Rwanda"},
-        {"title": "Gandhi"}, {"title": "Lawrence of Arabia"}, {"title": "The Bridge on the River Kwai"},
-        {"title": "The Last Emperor"}, {"title": "Troy"}, {"title": "Kingdom of Heaven"},
-        {"title": "Darkest Hour"}, {"title": "The Post"}, {"title": "Defiance"},
-        {"title": "The Thin Red Line"}, {"title": "Apocalypto"}, {"title": "Enemy at the Gates"},
-        {"title": "Pearl Harbor"}, {"title": "Elizabeth"}, {"title": "The Favourite"}
-   
-    ],
-    }
-    return database.get(genre, [{"title": "Inception"}])
+    for keyword in _extract_plot_keywords(safe_details.get("plot", "")):
+        PLOT_KEYWORDS.add(keyword)
+        PLOT_KEYWORD_INDEX[keyword].append(title)
+
+
+def _load_movie_data():
+    """Loads and processes the movie data from the JSON file."""
+    global MOVIE_DB
+    script_dir = os.path.dirname(__file__)
+    json_path = os.path.join(script_dir, "opendialkg_movie_data.json")
+
+    with open(json_path, "r") as f:
+        data = json.load(f)
+
+    MOVIE_DB = data
+
+    for title, details in data.items():
+        _index_movie(title, details)
+
+
+# Load the data when the module is first imported
+_load_movie_data()
+
+
+def get_available_genres(min_size: int = 3) -> List[str]:
+    """Returns normalized genres that have sufficient coverage."""
+    return [
+        genre
+        for genre, titles in GENRE_MAP.items()
+        if len(titles) >= min_size and len(genre) > 2
+    ]
+
+
+def get_attribute_values(attribute: str, min_count: int = 1) -> List[str]:
+    """Expose possible values for user simulation / heuristics."""
+    attr = CONSTRAINT_ALIASES.get(attribute, attribute)
+    if attr not in ATTRIBUTE_INDEX:
+        if attr == "plot":
+            return sorted(list(PLOT_KEYWORDS))
+        return []
+    values = [
+        ATTRIBUTE_CANONICAL[attr][norm]
+        for norm, titles in ATTRIBUTE_INDEX[attr].items()
+        if len(titles) >= min_count
+    ]
+    return sorted(values)
+
+
+def find_attribute_in_text(attribute: str, text: str) -> str | None:
+    """Return the first attribute value that appears in the given text."""
+    attr = CONSTRAINT_ALIASES.get(attribute, attribute)
+    if attr not in ATTRIBUTE_INDEX:
+        return None
+    lowered = text.lower()
+    for norm_value, canonical in ATTRIBUTE_CANONICAL[attr].items():
+        if norm_value and norm_value in lowered:
+            return canonical
+    return None
+
+
+def find_plot_keywords_in_text(text: str, limit: int = 3) -> List[str]:
+    """Extract plot keywords that overlap with indexed plots."""
+    lowered_tokens = _extract_plot_keywords(text)
+    matches = []
+    for token in lowered_tokens:
+        if token in PLOT_KEYWORD_INDEX:
+            matches.append(token)
+        if len(matches) >= limit:
+            break
+    return matches
+
+
+def _normalize_constraints(constraints: Dict[str, object] | None) -> Dict[str, List[str]]:
+    normalized: Dict[str, List[str]] = {}
+    if not constraints:
+        return normalized
+    for raw_key, raw_val in constraints.items():
+        if raw_val in (None, "", []):
+            continue
+        key = CONSTRAINT_ALIASES.get(raw_key, raw_key)
+        if key not in SUPPORTED_CONSTRAINTS:
+            continue
+        values: List[str]
+        if isinstance(raw_val, (list, tuple, set)):
+            values = [str(v).strip() for v in raw_val if v]
+        else:
+            values = [str(raw_val).strip()]
+        values = [v for v in values if v]
+        if not values:
+            continue
+        normalized.setdefault(key, []).extend(values)
+    return normalized
+
+
+def _lookup_titles(field: str, value: str) -> List[str]:
+    if field == "plot":
+        tokens = _extract_plot_keywords(value)
+        titles: List[str] = []
+        for token in tokens:
+            titles.extend(PLOT_KEYWORD_INDEX.get(token, []))
+        return titles
+
+    if field not in ATTRIBUTE_INDEX:
+        return []
+
+    norm = _normalize_value(field, value)
+    direct = ATTRIBUTE_INDEX[field].get(norm, [])
+    if direct:
+        return direct
+
+    # Fallback: substring match for partial mentions
+    matches: List[str] = []
+    for candidate_norm, titles in ATTRIBUTE_INDEX[field].items():
+        if norm and norm in candidate_norm:
+            matches.extend(titles)
+    return matches
+
+
+def recommend(constraints: Dict[str, object] | None = None, limit: int = 30) -> List[dict]:
+    """Recommend movies based on mixed constraints (genre, actor, year, etc.)."""
+    normalized = _normalize_constraints(constraints)
+    candidate_sets: List[Set[str]] = []
+
+    for field, values in normalized.items():
+        matched_titles: Set[str] = set()
+        for value in values:
+            for title in _lookup_titles(field, value):
+                matched_titles.add(title)
+        if matched_titles:
+            candidate_sets.append(matched_titles)
+
+    if candidate_sets:
+        candidates = set.intersection(*candidate_sets) if len(candidate_sets) > 1 else candidate_sets[0]
+        if not candidates:
+            candidates = set.union(*candidate_sets)
+    else:
+        # default to all titles, keeping genre heuristics
+        preferred_genre = normalized.get("genre", [])
+        if preferred_genre:
+            genre = _normalize_genre_name(preferred_genre[0])
+            candidates = set(GENRE_MAP.get(genre, []))
+        else:
+            candidates = set(MOVIE_DB.keys())
+
+    if not candidates:
+        print(f"[Warning] No movies found for constraints: {constraints}")
+        return [{"title": "Inception"}]
+
+    pool = [MOVIE_DB[title] for title in candidates if title in MOVIE_DB]
+    random.shuffle(pool)
+    limit = max(1, min(limit, 50))
+    return pool[: min(len(pool), limit)]

@@ -1,27 +1,53 @@
 {
   "model_name": "gemma:2b",
-  "true_genre": "musical",
+  "true_genre": "history",
   "conversation": [
     {
       "speaker": "USER",
-      "text": "I'm in the mood for a musical movie. Could you recommend a few?"
+      "text": "I'm in the mood for a death movie. Could you recommend a few?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "Sure, here are two musical movie recommendations for you:\n\n* **La La Land** is a romantic musical film about two aspiring artists who fall in love while working in Los Angeles.\n* **Chicago** is a glamorous musical about a group of gangsters in the late 1920s.",
+      "text": "From the list, \"Stranger than Fiction\" and \"The Life of David Gale\" seem like good choices. \n\nIf you're looking for something with a more suspenseful plot and a larger cast, \"Stranger than Fiction\" might be more your style. \n\nIf you prefer a more realistic and character-driven film, \"The Life of David Gale\" might be a better fit.",
       "constraints": {
-        "genre": "musical"
+        "genre": "death",
+        "plot": [
+          "death",
+          "could"
+        ],
+        "name": "You"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Chicago tell? That sounds intriguing."
+      "text": "I like the sound of The Life of David Gale. Who stars in it? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Chicago is a musical masterpiece about the struggles and triumphs of a talented woman who builds a successful career while facing discrimination and prejudice. It's a powerful and inspiring story about overcoming adversity and finding her voice.",
+      "text": "Based on the user's preference for death and sounds, I would recommend \"The Skull\" or \"Jumper\". The Skull offers a dark and enigmatic experience with complex characters and a powerful message about success and the cost of it. Jumper is another thrilling and thought-provoking film about teleportation and the war between humans and aliens.",
       "constraints": {
-        "genre": "musical"
+        "genre": "death",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Life of David Gale"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Jumper tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a movie that explores existential questions and the complexities of relationships, consider \"I Heart Huckabees\". This heartwarming and thought-provoking film features a unique and endearing couple who helps others find meaning in life through detective work.",
+      "constraints": {
+        "genre": "death",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED"
       }
     },
     {
@@ -30,152 +56,126 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "Sure, here are two recommendations:\n\n- **\"The Greatest Showman\" (2017)** is a musical extravaganza about a talented performer chasing his dreams.\n\n- **\"Moulin Rouge!\" (2016)** is a high-energy musical about a woman's journey through the world of show business.",
+      "text": "Based on the user's preference for death, plot keywords, and the genre being death, the movie with the highest potential is **The Book Thief**. The story offers a tragic yet hopeful journey about a young girl's search for solace and connection in a world filled with suffering and loss.",
       "constraints": {
-        "genre": "musical"
+        "genre": "death",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "RED"
       }
     },
     {
       "speaker": "USER",
-      "text": "Actually, now that I think about it, I might want the opposite."
+      "text": "What's the mood of The Book Thief? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Choosing the opposite of what they initially expressed could lead them to discover delightful musical gems like \"Crazy Rich Asians,\" \"The Greatest Showman,\" or \"Moulin Rouge!\"",
+      "text": "I recommend 'I Heart Huckabees' for its heartwarming story about a loving couple exploring the meaning of life and happiness. The movie is relatable and thought-provoking.",
       "constraints": {
-        "genre": "musical"
+        "genre": "death",
+        "plot": [
+          "what",
+          "book"
+        ],
+        "name": "Deep"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Moulin Rouge!. Who stars in it? Hmm, I didn\u2019t expect that vibe."
+      "text": "Thinking about X, could we shift toward stories about communism? Hmm, I didn\u2019t expect that vibe."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Moulin Rouge! is a vibrant and stylish musical film that perfectly captures the spirit of the era. It features talented stars like Ryan Gosling and Nicole Kidman who deliver unforgettable performances. If you're looking for a show with a memorable soundtrack and stunning visuals, Moulin Rouge! is a must-watch.",
+      "text": "If the user is looking for a movie with a historical war theme involving complex characters, 'To Have and Have Not' is a great choice. It's a captivating story about love, loss, and hope against the backdrop of World War II.\n\nIf the user is interested in a modern war film with a focus on political tension and conflict, 'War' is an excellent option. It's a fast-paced and thrilling action film that explores themes of loyalty, betrayal, and redemption.\n\nIf the user is looking for something more light-hearted and whimsical, 'Starship Troopers' is a fun and action-packed space adventure that combines humor with thrilling space battles.",
       "constraints": {
-        "genre": "musical"
+        "genre": "war",
+        "plot": [
+          "thinking",
+          "could"
+        ],
+        "name": "War"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Moulin Rouge!? That sounds intriguing."
+      "text": "What kind of story does To Have and Have Not tell? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Moulin Rouge! is a vibrant and energetic musical about love, ambition, and self-acceptance. Its powerful score and unforgettable performances are sure to leave you feeling uplifted and entertained.",
+      "text": "The intriguing 'Man on Wire' would be perfect for you if you're interested in tightrope walking and a daring hero. Its plot explores the ethics and consequences of a high-wire performance.\n\nIf you're looking for a darkly comedic exploration of a troubled relationship, 'Taxi Driver' might be your cup of tea. The film features a charismatic performance by Joe Spinell and a captivating story about a taxi driver's journey through heartbreak.\n\nFor something with a more historical setting and a legendary cast, 'Braveheart' is a must-watch. The film highlights the conflict between tradition and innovation and showcases the sacrifices made by individuals fighting for their rights.",
       "constraints": {
-        "genre": "musical"
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "To Have and Have Not"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thanks for all the detail on Moulin Rouge!. Could we explore comedy next, something that surprises me emotionally?"
+      "text": "Forget what I said before \u2014 that might\u2019ve been too specific."
     },
     {
       "speaker": "SYSTEM",
-      "text": "While I can offer a plethora of comedic options, I believe that exploring something with deeper emotional impact might be more suitable. How about delving into the world of dark humor and psychological suspense with \"The Silence of the Lambs\" or \"The Departed\"? These movies will leave you with a haunting and thought-provoking experience that might resonate with your interest in the \"surprises\" you mentioned.",
+      "text": "Considering the user's preference for war and the keywords mentioning \"what, said\", I would recommend either \"End of Watch\" or \"Zero Dark Thirty\". \"End of Watch\" showcases the daily life of police officers in a gritty war-torn city, while \"Zero Dark Thirty\" depicts the meticulous and deadly hunt for a terrorist leader.",
       "constraints": {
-        "genre": "comedy"
+        "genre": "war",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "To Have and Have Not"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Ted? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "I like the sound of Zero Dark Thirty. Who stars in it? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "If you're looking for a comedy that's both funny and heartwarming, check out \"Ted\". It's about a guy who's trying to find his place in the world.",
+      "text": "If you're looking for something with intense action and a powerful portrayal of war, then 'District 9' or 'Saving Private Ryan' would be great choices. 'Flyboys' is a more light-hearted and humorous film, while 'Platoon' offers a deeper examination of war and its consequences.",
       "constraints": {
-        "genre": "comedy"
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Zero Dark Thirty"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Ted. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "Maybe I was wrong earlier."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Ted is a hilarious and heartwarming comedy about a goofy and awkward teenager navigating love and friendship. If you're looking for something similar with relatable characters and quotable lines, then Ted is definitely worth checking out.",
+      "text": "Based on the user's preference, I would recommend either **Butch Cassidy and the Sundance Kid** or **The Siege**. Both movies feature historical periods with outlaws, but they have different tones and themes. **Butch Cassidy and the Sundance Kid** is a thrilling western with grit and humor, while **The Siege** is a tense and suspenseful thriller that focuses on the human cost of war.",
       "constraints": {
-        "genre": "comedy"
+        "genre": "war",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "Zero Dark Thirty"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Ted tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "Forget what I said before \u2014 that might\u2019ve been too specific."
     },
     {
       "speaker": "SYSTEM",
-      "text": "If you're looking for a comedy with relatable characters and witty humor, check out \"Ted\" or \"Bridesmaids\". They'll offer plenty of laughter and heartwarming moments.",
+      "text": "Choosing between these options is difficult, but \"Schindler's List\" or \"The Imitation Game\" would be good choices for recommending based on the user's preference. \"Schindler's List\" highlights the horrors of war and the heroism of individuals who fight for survival, while \"The Imitation Game\" presents a fascinating story of a mathematician's struggle with the complexities of war and his personal life.",
       "constraints": {
-        "genre": "comedy"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thanks for all the detail on Ted. Could we explore animation next, but maybe with a softer touch?"
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Wow, a wide range of animation options! If you're interested in a softer touch, I'd recommend either **Spirited Away** or **My Neighbor Totoro**. Both are beautifully animated films with a touch of fantasy and a focus on character over action.",
-      "constraints": {
-        "genre": "animation"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does My Neighbor Totoro tell? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "My Neighbor Totoro is a delightful animation about a young girl's magical adventure in a world of her imagination. It's perfect for fans of animation and those looking for a heartwarming and whimsical film.",
-      "constraints": {
-        "genre": "animation"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of My Neighbor Totoro? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Sure, here are two movie suggestions that might match your interest:\n\n- **Spirited Away** is a Japanese animated film known for its ethereal visuals and heartwarming story.\n\n- **My Neighbor Totoro** is a charming and whimsical animated film about a gentle spirit who moves into a rural town.",
-      "constraints": {
-        "genre": "animation"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of My Neighbor Totoro. Who stars in it? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the user's interest in animation, I recommend exploring the Pixar universe with films like 'Toy Story', 'Finding Nemo', 'Toy Story 3', and 'Coco'. Each movie offers vibrant animation, lovable characters, and thought-provoking themes.",
-      "constraints": {
-        "genre": "animation"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thanks for all the detail on Finding Nemo. Could we explore adventure next, something that surprises me emotionally?"
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Sure, here are two adventure recommendations for you:\n\n* **Jurassic World (2015)**: A thrilling sequel to the original film, where dinosaurs return and the humans must fight for survival.\n\n* **The Jungle Book (2016)**: A live-action adaptation of the classic novel, featuring stunning visuals and an unforgettable adventure.",
-      "constraints": {
-        "genre": "adventure"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of The Jungle Book. Who stars in it? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Sure, here are two movie recommendations that align with the user's interest:\n\n* **The Jungle Book** is a classic adventure film starring Phil Jackson and Freddie Mercury.\n* **Jurassic Park** is a thrilling adventure film about a group of scientists and explorers exploring a theme park filled with dinosaurs.",
-      "constraints": {
-        "genre": "adventure"
+        "genre": "war",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "Zero Dark Thirty"
       }
     },
     {
@@ -184,42 +184,153 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your interest in adventure, I would recommend either \"Jurassic Park\" or \"Indiana Jones and the Last Crusade\". Both films offer thrilling escapades and captivating narratives that will leave you captivated.",
+      "text": "Based on the user's preference for war and the plot keywords, 'The Hunting Party' and 'Valkyrie' seem like strong recommendations. 'The Hunting Party' offers a thrilling and realistic depiction of violence, while 'Valkyrie' showcases a more contemplative and nuanced portrayal of war and its consequences.",
       "constraints": {
-        "genre": "adventure"
+        "genre": "war",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "Zero Dark Thirty"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Indiana Jones and the Last Crusade tell? That sounds intriguing."
+      "text": "What's the mood of Valkyrie? Hmm, I didn\u2019t expect that vibe."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Sure, here are two recommendations based on the user's initial statement:\n\n* **Indiana Jones and the Last Crusade** is a thrilling adventure with a classic protagonist and thrilling action sequences.\n* **Pirates of the Caribbean: Dead Man's Chest** is a visually stunning and action-packed adventure with a diverse cast of characters.",
+      "text": "Given your preference for war-themed movies with a focus on dramatic characters facing life-or-death situations, I would recommend 'Patton' and 'Gladiator'. 'Patton' showcases the heroism and moral complexities of a complex character navigating a dangerous world, while 'Gladiator' offers a thrilling journey into the brutal world of professional boxing.",
       "constraints": {
-        "genre": "adventure"
+        "genre": "war",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "Valkyrie"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Indiana Jones and the Last Crusade? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "How about something primarily in Welsh Language? Maybe I\u2019m overthinking it, but it sounds fascinating. Maybe something like what you shared about Patton."
     },
     {
       "speaker": "SYSTEM",
-      "text": "If the user's interest lies in adventure, then Indiana Jones and the Last Crusade and Pirates of the Caribbean: The Curse of the Black Pearl should be on their watch. These movies boast thrilling action, exotic locations, and captivating narratives that will keep them on the edge of their seats.",
+      "text": "The Goodbye Girl is a compelling and thought-provoking movie about a young girl's ability to predict and prevent deaths. The film raises complex questions about fate, destiny, and the meaning of life. If you're looking for something with a similar atmosphere, \"The Goodbye Girl\" would be a great choice.",
       "constraints": {
-        "genre": "adventure"
+        "genre": "language",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "Patton",
+        "language": "Welsh Language"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thanks for all the detail on Indiana Jones and the Last Crusade. Could we explore action next, but maybe with a softer touch?"
+      "text": "What's the mood of X? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Sure, here are two softer action movie recommendations for you:\n\n* **Die Hard**: A thrilling thrill with exceptional suspense and adrenaline-pumping sequences.\n* **Mission: Impossible: Fallout**: A quieter but no less intense installment in the Mission: Impossible series, featuring a more focused and character-driven plot.",
+      "text": "For a Welsh language user, I would recommend **Why Did I Get Married?** (2007) starring Malik Yoba and Denise Boutte. It tackles the complexities of marriage and the challenges faced by families dealing with temptation and change.",
       "constraints": {
-        "genre": "action"
+        "genre": "language",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "language": "Welsh Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I would recommend \"White Fang\" or \"The Relic\". \n\nBoth movies feature stories about people facing difficult choices between passion and duty, with compelling visuals and memorable performances.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "language": "Welsh Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does White Fang tell? That sounds intriguing."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It's a Wonderful Life is a heartwarming and uplifting story about an angel's journey to help a frustrated businessman rediscover the meaning of life. \n\nThe Violent Kind is a darkly comedic and thrilling film about a gang of young bikers and their girlfriends who find themselves targeted by a dangerous gang.\n\nEve's Bayou is a gothic romance about a woman trapped in a world of secrets and lies, where she finds solace in the power of mystic forces.\n\nThis Is Spinal Tap is a hilarious and nostalgic film about a band caught in a feud that proves to be more dangerous than they ever thought.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "White Fang",
+        "language": "Welsh Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Leslie Dixon? That sounds intriguing. Maybe something like what you shared about It's a Wonderful Life."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a Welsh perspective and a movie with intriguing themes, \"It's a Wonderful Life\" would be a perfect choice. It explores the transformative power of life and the consequences of defying destiny.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "written",
+          "intriguing"
+        ],
+        "name": "It's a Wonderful Life",
+        "language": "Welsh Language",
+        "writer": "Leslie Dixon"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does It's a Wonderful Life tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a Welsh language movie recommendation, 'Little Fockers' (2010) starring Yul Vazquez, Dustin Hoffman, and Olga Fonda would be a fascinating choice. The story explores family dynamics and the challenges faced by a father wanting to choose his successor.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "It's a Wonderful Life",
+        "language": "Welsh Language",
+        "writer": "Leslie Dixon"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of 2010. Who stars in it? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference for music and the 2010 timeframe, I recommend either \"The Darkest Hour\" or \"Predators\". Both films feature thrilling soundtracks and explore themes of hope and resilience against great odds.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "2010",
+        "language": "Welsh Language",
+        "writer": "Leslie Dixon",
+        "year": "2010"
       }
     }
   ]

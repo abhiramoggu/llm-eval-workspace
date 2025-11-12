@@ -1,16 +1,87 @@
 {
   "model_name": "qwen:7b",
-  "true_genre": "thriller",
+  "true_genre": "urban legend",
   "conversation": [
     {
       "speaker": "USER",
-      "text": "I'm in the mood for a thriller movie. Could you recommend a few?"
+      "text": "I'm in the mood for a true crime movie. Could you recommend a few?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your preference for a thriller movie, I recommend 'Se7en' - a classic and intense thriller. Enjoy the ride!",
+      "text": "For a true crime movie recommendation, I suggest checking out 'Shattered'. This thrilling film features detectives navigating an impossible case against a cunning Russian crime boss. It's filled with suspense and strong performances by the cast.",
       "constraints": {
-        "genre": "thriller"
+        "genre": "true crime",
+        "plot": [
+          "true",
+          "crime"
+        ],
+        "name": "True Crime"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Tron. Who stars in it? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a fan of true crime stories, I would recommend 'The Relic' (1997). It combines elements of horror with a police investigation, featuring Clayton Rohner, James Whitmore, and Eddie Jemison among the cast.",
+      "constraints": {
+        "genre": "true crime",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Tron"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Tron? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend \"Man on Fire\" for its intense and emotional story of a father's protective love. Starring Denzel Washington, it showcases his incredible acting range.",
+      "constraints": {
+        "genre": "true crime",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Tron"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does RED tell? That sounds intriguing."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for a story about what happens when someone defies conventions, 'Passion' with its narrative doc and focus on Jack Passion might be of interest. It stars the real-life world beard champion himself.",
+      "constraints": {
+        "genre": "true crime",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Warren Coleman? I can\u2019t decide if I\u2019d enjoy it or be scared by it. Maybe something like what you shared about RED."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend 'A Farewell to Arms' for those interested in a war-themed romance with Christian Berkel and Thomas Kretschmann\u4e3b\u6f14. It offers both historical context and emotional depth.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "written",
+          "warren"
+        ],
+        "name": "War",
+        "director": "Warren Coleman",
+        "writer": "Warren Coleman"
       }
     },
     {
@@ -19,207 +90,273 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on the user's preference for the opposite of what they initially mentioned, I recommend 'Gone Girl' as it offers a twist and reversal in storytelling, which might be the opposite experience the user is looking for.",
+      "text": "For a war-related theme, I recommend ' Apocalypse Now'. This classic movie stars Laurence Fishburne and features a complex exploration of war, power, and identity.",
       "constraints": {
-        "genre": "thriller"
+        "genre": "war",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "War",
+        "director": "Warren Coleman",
+        "writer": "Warren Coleman"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Gone Girl tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "It\u2019s weird \u2014 I thought I liked that, but maybe not."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on their interest in 'Gone Girl' and a thriller genre, I would recommend 'Se7en' as it is often considered one of the best thrillers. Enjoy!",
+      "text": "Based on your preference for a movie with a weird plot and characters who thought they liked it, I recommend watching 'Apocalypse Now'. This film, known for its complex storyline and philosophical themes, fits your criteria perfectly.",
       "constraints": {
-        "genre": "thriller"
+        "genre": "war",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "War",
+        "director": "Warren Coleman",
+        "writer": "Warren Coleman"
       }
     },
     {
       "speaker": "USER",
-      "text": "I\u2019m not sure anymore; perhaps I changed my mind."
+      "text": "What kind of story does They tell? Hmm, I didn\u2019t expect that vibe."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your interest in thrillers, I recommend 'Se7en' and 'Gone Girl'. They are both highly acclaimed and suspenseful thriller movies.",
+      "text": "For a movie with a unique twist on history, I recommend 'Amen.' The plot follows a brave priest trying to inform the Pope about Nazi atrocities, and the starring roles by Ulrich M\u00fche add depth to this thought-provoking story.",
       "constraints": {
-        "genre": "thriller"
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "They",
+        "director": "Warren Coleman",
+        "writer": "Warren Coleman"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Se7en. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "I like the sound of Amen.. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on their interest in \"Se7en\" and the thriller genre, I would recommend 'Gone Girl' and 'Shutter Island'. These films are both highly acclaimed thrillers with strong sound elements like Se7en.",
+      "text": "For fans of intense historical dramas, I would recommend 'Born on the Fourth of July' (1989). This film tells the true story of Vietnam War veteran Ron Kovic, who becomes an anti-war activist after his paralysis experience.\n\nAlternatively, if you're looking for a classic romantic thriller with a touch of Hollywood magic, 'Casablanca' (1942) might be more suitable. This film stars Humphrey Bogart as Rick Blatnik, the owner of the titular Casablanca, alongside Claude Rains as the manipulative Major Strasser.",
       "constraints": {
-        "genre": "thriller"
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Amen.",
+        "director": "Warren Coleman",
+        "writer": "Warren Coleman"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Gone Girl? That feels deeper than I thought."
+      "text": "Maybe I was wrong earlier."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on the user's interest in \"Gone Girl\" as a deeper thriller, I recommend 'Se7en' and 'Shutter Island' for fans of psychological thrillers in this genre.",
+      "text": "I recommend \"Hotel Rwanda\" (2004) for its powerful portrayal of the events during the Rwandan genocide, featuring Cara Seymour and a cast led by Don Cheadle.\n\nAlternatively, you might enjoy \"You\" (2014), a psychological thriller starring Joseph Gordon-Levitt as an online stalker who becomes increasingly obsessed with his victims.",
       "constraints": {
-        "genre": "thriller"
+        "genre": "war",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "Amen.",
+        "director": "Warren Coleman",
+        "writer": "Warren Coleman"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thanks for all the detail on Se7en. Could we explore thriller and mystery next, but maybe with a softer touch?"
+      "text": "What's the mood of Hotel Rwanda? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your interest in thriller and mystery movies with a softer touch, I recommend 'Gone Girl' for its clever plot and psychological depth, followed by 'Shutter Island' for its intense atmosphere and suspenseful storytelling.",
+      "text": "If you're interested in a thriller with supernatural elements, 'The White Countess' (2005) starring Lynn Redridge might be a good choice. It features an intelligent blind American diplomat navigating a relationship while dealing with the haunting presence inside one of the characters.",
       "constraints": {
-        "genre": "thriller"
+        "genre": "war",
+        "plot": [
+          "what",
+          "hotel"
+        ],
+        "name": "Hotel Rwanda",
+        "director": "Warren Coleman",
+        "writer": "Warren Coleman"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does It tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "Do you have recommendations written by J.J. Abrams? That feels deeper than I thought. Maybe something like what you shared about The Haunting."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on their interest in a thriller genre, I recommend 'Se7en' and 'Gone Girl' for an intense and engaging cinematic experience.",
+      "text": "I would recommend 'Gladiator' (2000) featuring Russell Crowe as Maximus, a slave turned gladiator seeking justice and redemption. The movie's epic scale and powerful performances make it an engaging watch.",
       "constraints": {
-        "genre": "thriller"
+        "genre": "war",
+        "plot": [
+          "written",
+          "feels"
+        ],
+        "name": "RED",
+        "director": "J.J. Abrams",
+        "writer": "J.J. Abrams"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Se7en? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "What's the mood of Gladiator? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on the user's interest in the 'Se7en' genre, I recommend 'Gone Girl' as it is another highly acclaimed thriller from that era.",
+      "text": "For a war-themed recommendation, 'The Alamo' (2004) starring Patrick Wayne is a great choice. It tells the story of the 1836 conflict between Texan and Mexican forces at the Alamo in San Antonio Texas.",
       "constraints": {
-        "genre": "thriller"
+        "genre": "war",
+        "plot": [
+          "what"
+        ],
+        "name": "Gladiator",
+        "director": "J.J. Abrams",
+        "writer": "J.J. Abrams"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Her. Who stars in it? That sounds intriguing."
+      "text": "I like the sound of The Alamo. Who stars in it? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your interest in the 'Thriller' genre and the mention of \"Her\", I recommend checking out \"Gone Girl\" starring Rosamund Pike, as it fits your preferences well.",
+      "text": "I recommend \"Annie Hall\" (1977). It's a classic romantic comedy starring Diane Keaton and Woody Allen, known for its clever dialogue and heartwarming moments.",
       "constraints": {
-        "genre": "thriller"
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Alamo",
+        "director": "J.J. Abrams",
+        "writer": "J.J. Abrams"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thanks for all the detail on Gone Girl. Could we explore thriller next, though something emotional wouldn\u2019t hurt?"
+      "text": "What kind of story does The Alamo tell? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your interest in thrillers with emotional depth, I recommend 'Se7en' and 'Gone Girl' for a thrilling experience that also delves into emotion.",
+      "text": "If you're interested in a story involving war, ethical dilemmas, and connections to illegal drugs, 'The Messenger' (2002) starring Brendan Sexton III, Samantha Morton, and Ben Foster could be a great choice.",
       "constraints": {
-        "genre": "thriller"
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The Alamo",
+        "director": "J.J. Abrams",
+        "writer": "J.J. Abrams"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Se7en? That feels deeper than I thought."
+      "text": "How about something primarily in Nadsat? Hmm, I didn\u2019t expect that vibe. Maybe something like what you shared about The Messenger."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on the user's interest in the 'thriller' genre and their inquiry about Se7en's mood, I recommend 'Se7en' as it is a classic thriller from the list provided. Enjoy!",
+      "text": "I would recommend 'The Monuments Men' for its unique World War II platoon story, featuring a talented ensemble cast including George Clooney and Bill Murray.",
       "constraints": {
-        "genre": "thriller"
+        "genre": "war",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "The Messenger",
+        "director": "J.J. Abrams",
+        "writer": "J.J. Abrams",
+        "language": "Nadsat"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Se7en tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "I like the sound of Platoon. Who stars in it? Hmm, I didn\u2019t expect that vibe."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Se7en is a thrilling crime movie that tells the story of a serial killer and the detectives trying to solve the case.",
+      "text": "I recommend \"The Pianist\" (2002) starring Frank Finlay, Emilia Fox, and Ed Stoppard. The film tells the harrowing story of a Polish musician during WWII.",
       "constraints": {
-        "genre": "thriller"
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Platoon",
+        "director": "J.J. Abrams",
+        "writer": "J.J. Abrams",
+        "language": "Nadsat"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Se7en. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "What kind of story does X tell? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on their interest in 'Se7en' and the thriller genre, I recommend 'Gone Girl' as another gripping thriller starring Emily Blunt.",
+      "text": "I recommend 'Princess Mononoke' for its beautiful animation and story of forest gods, a Tatarigami, and the journey of characters finding peace and understanding. Starring Claire Danes, Jada Pinkett Smith, and Gillian Anderson.",
       "constraints": {
-        "genre": "thriller"
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Deep",
+        "director": "J.J. Abrams",
+        "writer": "J.J. Abrams",
+        "language": "Nadsat"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thanks for all the detail on Gone Girl. Could we explore crime next, with a mix of excitement and warmth?"
+      "text": "What's the mood of Princess Mononoke? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on their interest in crime and a mix of excitement and warmth, I would recommend 'The Godfather' as it combines the crime genre with depth and emotional warmth.",
+      "text": "I recommend watching \"War Horse\" for its powerful story about a horse's journey during World War II, featuring standout performances by David Thewlis and Emily Watson.",
       "constraints": {
-        "genre": "crime"
+        "genre": "war",
+        "plot": [
+          "what",
+          "princess"
+        ],
+        "name": "Princess Mononoke",
+        "director": "J.J. Abrams",
+        "writer": "J.J. Abrams",
+        "language": "Nadsat"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of The Godfather? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "Maybe we could find more movies with Wendy Raquel Robinson. That feels deeper than I thought. Maybe something like what you shared about War Horse."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on their interest in crime genre and consideration of The Godfather, I would recommend 'The Godfather Part II' as it continues the story in a captivating manner.",
+      "text": "I recommend \"Patton\" for its iconic World War II story, featuring George C. Scott as the controversial general.",
       "constraints": {
-        "genre": "crime"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does The Godfather Part II tell? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on your interest in crime genre, I would recommend 'The Godfather Part II' and 'Goodfellas'. These films are considered classics within the crime genre.",
-      "constraints": {
-        "genre": "crime"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of The Godfather. Who stars in it? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on your interest in crime genre and mention of The Godfather, I recommend checking out 'The Godfather Part II' and 'Goodfellas'. Both are part of the 'Godfather' trilogy and 'Goodfellas' provides a fascinating insight into gang life.",
-      "constraints": {
-        "genre": "crime"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thanks for all the detail on Goodfellas. Could we explore crime and animation next, but maybe with a softer touch?"
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on their interest in crime and animation with a softer touch, I would recommend 'The Godfather' for its classic crime narrative combined with emotional depth, and 'City of God' for its poignant exploration of life in the streets with a touch of hope.",
-      "constraints": {
-        "genre": "crime"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of It? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the user's interest in crime genre, I recommend 'The Godfather' and 'Goodfellas'. These iconic films delve into the world of organized crime with great storytelling.",
-      "constraints": {
-        "genre": "crime"
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "War",
+        "director": "J.J. Abrams",
+        "writer": "J.J. Abrams",
+        "language": "Nadsat",
+        "actor": "Wendy Raquel Robinson"
       }
     }
   ]

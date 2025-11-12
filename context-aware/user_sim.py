@@ -3,23 +3,15 @@
 
 import random
 import subprocess
-from typing import List
+from typing import Dict, List
 
 from config import MODE, USER_MODEL, ERROR_RATE
-from dataset import recommend
-
-
-def _available_genres() -> List[str]:
-    """Extract the genre tuple embedded in dataset.recommend()."""
-    consts = recommend.__code__.co_consts
-    for const in reversed(consts):
-        if isinstance(const, tuple) and const and all(isinstance(x, str) for x in const):
-            return list(const)
-    return ["romance", "horror", "sci-fi", "action", "comedy", "drama", "thriller", "fantasy", "animation", "crime", "mystery", "adventure"]
+from dataset import recommend, get_available_genres, get_attribute_values
 
 
 class UserSimulator:
     DETAIL_FOCUSES = ["actors", "themes", "mood"]
+    SHIFT_ATTRIBUTES = ["genre", "year", "actor", "director", "language", "writer", "plot"]
     EMOTIONAL_REACTIONS = [
         "That sounds intriguing.",
         "Hmm, I didn’t expect that vibe.",
@@ -34,22 +26,36 @@ class UserSimulator:
         "I’m not sure anymore; perhaps I changed my mind.",
         "It’s weird — I thought I liked that, but maybe not."
     ]
+    ATTRIBUTE_PROMPTS = {
+        "year": "Could we look at films from around {value}? {emotion}",
+        "actor": "Maybe we could find more movies with {value}. {emotion}",
+        "director": "Could we switch to something else by {value}? {emotion}",
+        "language": "How about something primarily in {value}? {emotion}",
+        "writer": "Do you have recommendations written by {value}? {emotion}",
+        "plot": "Maybe explore stories about {value}? {emotion}",
+    }
 
     ACTOR_KEYWORDS = {"actor", "actors", "cast", "starring", "performer", "lead"}
     THEME_KEYWORDS = {"theme", "themes", "story", "plot", "message", "idea", "motif"}
     MOOD_KEYWORDS = {"mood", "tone", "atmosphere", "vibe", "feeling", "emotion"}
 
     def __init__(self, use_llm_drift: bool = False):
-        self.genres = _available_genres()
+        self.genres = get_available_genres()
         self.catalog = {
-            genre: [movie["title"] for movie in recommend({"genre": genre})]
+            genre: [movie for movie in recommend({"genre": genre})]
             for genre in self.genres
         }
-        self.all_titles = [title for titles in self.catalog.values() for title in titles]
+        self.all_titles = [movie.get("name") for movies in self.catalog.values() for movie in movies if movie.get("name")]
+
+        self.attribute_pools: Dict[str, List[str]] = {
+            attr: get_attribute_values(attr)
+            for attr in self.SHIFT_ATTRIBUTES
+        }
 
         self.true_genre = random.choice(self.genres)
         self.current_topic = self.true_genre
         self.visited_genres = {self.current_topic}
+        self.current_constraints = {"genre": self.current_topic}
 
         self.stage = "initial"
         self.remaining_details = self._new_detail_sequence()
@@ -78,8 +84,11 @@ class UserSimulator:
             stderr=subprocess.PIPE,
             text=True,
         )
-        output, _ = process.communicate(input=prompt)
-        return output.strip()
+        output, error = process.communicate(input=prompt)
+        err_text = (error or "").strip()
+        if err_text and any(kw in err_text.lower() for kw in ["error", "failed"]):
+            print(f"Ollama Error ({USER_MODEL}): {err_text}")
+        return (output or "").strip()
 
     # ---------- Message helpers ----------
 
@@ -139,8 +148,42 @@ class UserSimulator:
             f"Could we explore {target} next, {blend_phrase}?"
         )
         self.current_topic = target
+        self.current_constraints["genre"] = target
         self.visited_genres.add(target)
         self.next_genre_candidate = None
+        self.remaining_details = self._new_detail_sequence()
+        return message
+
+    def _compose_attribute_shift_message(self) -> str:
+        """Shift to other metadata such as year, actors, language, writer, or plot."""
+        attribute = random.choice(self.SHIFT_ATTRIBUTES)
+        if attribute == "genre":
+            return self._compose_genre_shift_message()
+
+        pool = self.attribute_pools.get(attribute) or []
+        if not pool:
+            return self._compose_genre_shift_message()
+
+        value = random.choice(pool)
+        reference = self._reference_title()
+        emotion = random.choice(self.EMOTIONAL_REACTIONS)
+
+        if attribute == "plot":
+            message = (
+                f"Thinking about {reference}, could we shift toward stories about {value}? {emotion}"
+            )
+        else:
+            template = self.ATTRIBUTE_PROMPTS.get(attribute, "Could we focus on {value}? {emotion}")
+            message = template.format(value=value, emotion=emotion)
+            message = f"{message} Maybe something like what you shared about {reference}."
+
+        self.current_constraints[attribute] = value
+        # Occasionally drop older non-genre constraints to mimic indecision
+        active_keys = [k for k in self.current_constraints if k != "genre"]
+        if len(active_keys) > 2 and random.random() < 0.4:
+            drop_key = random.choice(active_keys)
+            self.current_constraints.pop(drop_key, None)
+
         self.remaining_details = self._new_detail_sequence()
         return message
 
@@ -179,6 +222,7 @@ Rules:
                 if alternatives:
                     requested_genre = random.choice(alternatives)
                     self.current_topic = requested_genre
+            self.current_constraints["genre"] = requested_genre
             msg = f"I'm in the mood for a {requested_genre} movie. Could you recommend a few?"
             self.stage = "details"
 
@@ -188,7 +232,7 @@ Rules:
                 msg = self._reflect_or_contradict()
             elif not self.remaining_details:
                 self.stage = "awaiting_shift"
-                msg = self._compose_genre_shift_message()
+                msg = self._compose_attribute_shift_message()
                 self.stage = "waiting_system"
             else:
                 focus = self._choose_detail_focus()
@@ -197,7 +241,7 @@ Rules:
                     self.stage = "awaiting_shift"
 
         elif self.stage == "awaiting_shift":
-            msg = self._compose_genre_shift_message()
+            msg = self._compose_attribute_shift_message()
             self.stage = "waiting_system"
 
         else:  # waiting_system
@@ -214,9 +258,10 @@ Rules:
         lower = text.lower()
         found = []
         for genre, titles in self.catalog.items():
-            for title in titles:
-                if title.lower() in lower:
-                    found.append((genre, title))
+            for movie in titles:
+                movie_name = movie.get("name")
+                if movie_name and movie_name.lower() in lower:
+                    found.append((genre, movie_name))
         if found:
             preferred = [title for genre, title in found if genre == self.current_topic]
             if preferred:

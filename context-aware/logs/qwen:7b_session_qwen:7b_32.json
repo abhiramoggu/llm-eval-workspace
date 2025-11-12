@@ -1,192 +1,85 @@
 {
   "model_name": "qwen:7b",
-  "true_genre": "drama",
+  "true_genre": "true crime",
   "conversation": [
     {
       "speaker": "USER",
-      "text": "I'm in the mood for a drama movie. Could you recommend a few?"
+      "text": "I'm in the mood for a true crime movie. Could you recommend a few?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your preference for a drama movie, I recommend 'The Shawshank Redemption'. It's a highly acclaimed drama film that should suit your mood.",
+      "text": "I recommend 'Seabiscuit' (1999). It's a heartwarming true story about an underdog horse during the Depression era, with powerful performances by Robert Redford, Tom Hanks, and Elizabeth Shue.",
       "constraints": {
-        "genre": "drama"
+        "genre": "true crime",
+        "plot": [
+          "true",
+          "crime"
+        ],
+        "name": "True Crime"
       }
     },
     {
       "speaker": "USER",
-      "text": "Maybe I was wrong earlier."
+      "text": "What kind of story does Seabiscuit tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your interest in dramas, I recommend 'The Shawshank Redemption' and 'The Godfather'. Enjoy the cinematic experiences!",
+      "text": "For someone interested in a unique story with intense female friendship, I would recommend \"Heavenly Creatures\" (1994) starring Liz Mullane and Kate Winslet. The film explores their bond and the challenges they face due to societal expectations.",
       "constraints": {
-        "genre": "drama"
+        "genre": "true crime",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Seabiscuit"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of The Shawshank Redemption? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "I like the sound of Heavenly Creatures. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on the mood you described, \"The Shawshank Redemption\" and \"Forrest Gump\" might be good choices as they offer a mix of drama and emotional depth.",
+      "text": "Based on the user's preference for a true crime genre with plot keywords like \"like\" and \"sound,\" I recommend 'The Right Stuff' (1983). This film captures the spirit of early space exploration, which aligns well with the interest in a sound-related experience. Starring Royal Dano, David Gulpilil, and featuring notable actors such as Kathy Baker and Fred Ward, the movie offers an engaging true crime story that combines elements of drama and adventure.",
       "constraints": {
-        "genre": "drama"
+        "genre": "true crime",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Heavenly Creatures"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does The Shawshank Redemption tell? That sounds intriguing."
+      "text": "What's the mood of The Spirit? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your interest in drama, I recommend watching 'The Shawshank Redemption' and 'Forrest Gump'. Both films offer powerful dramatic stories.",
+      "text": "For those interested in a true crime story with high-stakes and a historical twist, I would recommend 'Man on Wire'. It tells the fascinating tale of Philippe Petit's daring tightrope walk between World Trade Center towers in 1974. The film features excellent performances by Jean-Louis Blondeau as Petit and Paul McGill as one of the engineers involved.",
       "constraints": {
-        "genre": "drama"
+        "genre": "true crime",
+        "plot": [
+          "what",
+          "spirit"
+        ],
+        "name": "The Spirit"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Forrest Gump. Who stars in it? That feels deeper than I thought."
+      "text": "Thanks for all the detail on Man on Wire. Could we explore historical next, but maybe with a softer touch?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on their interest in \"Forrest Gump\" and drama genre, I recommend 'The Shawshank Redemption' and 'The Godfather'. These films are both highly acclaimed dramas similar to what they mentioned.",
+      "text": "Based on the user's preference for a historical movie with a softer touch, I would recommend 'The New World' (2005). It tells the story of the English exploration of Virginia, with a focus on relationships and the changing world. Starring Colin Farrell, Yorick van Wageningen, and Q'orianka Kilcher, the film offers a gentle historical drama.",
       "constraints": {
-        "genre": "drama"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thanks for all the detail on Forrest Gump. Could we explore thriller next, something that surprises me emotionally?"
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on your interest in thrillers that emotionally surprise, I recommend 'Gone Girl' and 'Se7en'. Both films offer gripping storylines and emotional depth.",
-      "constraints": {
-        "genre": "thriller"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Se7en tell? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Se7en is a psychological thriller about a serial killer who presents his victims with seven sins. If you're interested in this genre, Se7en would be an intriguing choice.",
-      "constraints": {
-        "genre": "thriller"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Maybe I was wrong earlier."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on your interest in thrillers, I recommend checking out 'Se7en' and 'Gone Girl'. They both offer intense and gripping thriller experiences.",
-      "constraints": {
-        "genre": "thriller"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Gone Girl. Who stars in it? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on your interest in 'Gone Girl' and thriller genre, I recommend you watch 'Se7en' and 'Shutter Island'. Both are thrilling psychological thrillers like 'Gone Girl'. Enjoy!",
-      "constraints": {
-        "genre": "thriller"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Se7en? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the mood you described, 'Se7en' would be a great choice for its intense thriller atmosphere. If you're looking for something similar but more recent, 'Gone Girl' might also pique your interest.",
-      "constraints": {
-        "genre": "thriller"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thanks for all the detail on Gone Girl. Could we explore thriller and romance next, with a mix of excitement and warmth?"
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on their interest in thrillers and romance with a mix of excitement and warmth, I would recommend 'Gone Girl' for its thriller aspects, followed by 'The Girl with the Dragon Tattoo' which combines elements of romance and thrillers.",
-      "constraints": {
-        "genre": "thriller"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does It tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on their interest in a thriller, I would recommend 'Se7en' and 'Gone Girl' from the list. These films offer gripping narratives and intense suspense.",
-      "constraints": {
-        "genre": "thriller"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Se7en. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on their preference for the thriller genre and their interest in \"Se7en,\" I recommend checking out \"Gone Girl\" as it's another thrilling psychological thriller starring Rosamund Pike, similar to the vibes of \"Se7en.\"",
-      "constraints": {
-        "genre": "thriller"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "It\u2019s weird \u2014 I thought I liked that, but maybe not."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on your interest in weird and thriller genres, I recommend 'Gone Girl' for its psychological thriller aspect, or 'Se7en' if you enjoy a dark and intense thriller experience.",
-      "constraints": {
-        "genre": "thriller"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Gone Girl? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on your interest in the thriller genre, I would recommend 'Gone Girl' and 'Se7en'. Both films are highly acclaimed thrillers in the same vein as 'Shutter Island'. Enjoy!",
-      "constraints": {
-        "genre": "thriller"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thanks for all the detail on Gone Girl. Could we explore thriller next, though something emotional wouldn\u2019t hurt?"
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on their preference for thrillers with emotional depth, I would recommend 'Prisoners' and 'The Girl with the Dragon Tattoo'. These films offer thrilling narratives combined with rich emotional experiences.",
-      "constraints": {
-        "genre": "thriller"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of The Girl with the Dragon Tattoo? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the mood of \"The Girl with the Dragon Tattoo,\" I recommend \"Gone Girl\" for its similar thriller suspense.",
-      "constraints": {
-        "genre": "thriller"
+        "genre": "historical",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Man on Wire"
       }
     },
     {
@@ -195,31 +88,263 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your interest in thrillers, I recommend checking out 'Se7en' and 'Gone Girl'. Both films are highly acclaimed within the thriller genre.",
+      "text": "For a historical drama with an emotional twist, I recommend 'Waiting' (1999). The plot follows artist Clare as she navigates bearing a child for others while grappling with her own desires. Starring Claire Danwer and directed by Pat O'Connor, this film offers a thought-provoking exploration of love, loss, and self-discovery.",
       "constraints": {
-        "genre": "thriller"
+        "genre": "historical",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "Man on Wire"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Gone Girl tell? That sounds intriguing."
+      "text": "I like the sound of X. Who stars in it? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your interest in the thriller genre, I recommend 'Gone Girl' and 'Se7en'. These films offer compelling narratives and thrilling suspense. Enjoy!",
+      "text": "Based on your preference for historical themes and liking elements in the story, I recommend watching 'Gone with the Wind'. It's a classic historical romance film with iconic characters like Scarlett O'Hara and Rhett Butler.",
       "constraints": {
-        "genre": "thriller"
+        "genre": "historical",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Gone Girl. Who stars in it? That feels deeper than I thought."
+      "text": "What kind of story does Gone with the Wind tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your interest in \"Gone Girl\" and the thriller genre, I recommend 'Se7en' and 'Prisoners'. Both are highly regarded thrillers with strong performances.",
+      "text": "Based on the user's preference for a historical story with elements of what and kind, I recommend 'Gone with the Wind' (1939). This classic film tells the sweeping story of the American South during the Civil War. If you enjoyed 'Smilla's Sense of Snow' or are intrigued by the mix of historical events and plot keywords, 'Gone with the Wind' would be a fitting recommendation.",
       "constraints": {
-        "genre": "thriller"
+        "genre": "historical",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Gone with the Wind? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a historical mood, I would recommend 'Tora! Tora! Tora!' featuring James Whitmore and Richard Anderson. The story of the Japanese attack on Pearl Harbor provides an intense and historically grounded experience.",
+      "constraints": {
+        "genre": "historical",
+        "plot": [
+          "what",
+          "gone"
+        ],
+        "name": "X"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Jamie Delano? Maybe I\u2019m overthinking it, but it sounds fascinating. Maybe something like what you shared about Tora! Tora! Tora!."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend 'The Book Thief' (2013). The film follows a young girl who discovers solace through stealing books and sharing them with others during World War II Germany. Starring: Emily Watson, Tom Hanks, Sophie Lee, Scott Neighbor, Lea Salonga.",
+      "constraints": {
+        "genre": "historical",
+        "plot": [
+          "written",
+          "jamie"
+        ],
+        "name": "Tora! Tora! Tora!",
+        "writer": "Jamie Delano"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Book Thief. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I would recommend 'The Amazing Spider-Man' (2012). It features a thrilling plot with Peter Parker gaining spider-like powers and saving the city. Starring Andrew Garfield, Emma Stone, and Irrfan Khan, the movie offers both action and memorable characters.",
+      "constraints": {
+        "genre": "historical",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "writer": "Jamie Delano"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Emma tell? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a historical drama vibe, I recommend 'The Trouble with Harry' starring Royal Dano and John Forsythe. This classic film from 1954 has a clever plot that explores themes of justice and identity.",
+      "constraints": {
+        "genre": "historical",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "writer": "Jamie Delano"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I\u2019m not sure anymore; perhaps I changed my mind."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend 'United 93' for its real-time account of the events on United Flight 93, a heroic act against terrorism. Starring Cheyenne Jackson and Peter Hermann, it is a powerful and moving film.",
+      "constraints": {
+        "genre": "historical",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "X",
+        "writer": "Jamie Delano"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of United 93? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For someone interested in historical dramas, I would recommend 'The Book Thief'. With its star-studded cast like Emily Watson and Geoffrey Rush, and based on a heartwarming novel, it combines historical context with emotional depth.",
+      "constraints": {
+        "genre": "historical",
+        "plot": [
+          "what",
+          "united"
+        ],
+        "name": "Ted",
+        "writer": "Jamie Delano"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Emilio Estevez? I can\u2019t decide if I\u2019d enjoy it or be scared by it. Maybe something like what you shared about The Book Thief."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend 'The Weight of Water' (1997) starring Melvyn Douglas. It's a suspenseful drama with a twist, perfect for an intriguing movie night.",
+      "constraints": {
+        "genre": "historical",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "RED",
+        "writer": "Emilio Estevez",
+        "actor": "Emilio Estevez",
+        "director": "Emilio Estevez"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Weight of Water. Who stars in it? That sounds intriguing."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences, I recommend checking out 'Blow Out'. It's a classic thriller featuring John McMartin as the sound recordist caught in a dangerous situation.",
+      "constraints": {
+        "genre": "historical",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Water",
+        "writer": "Emilio Estevez",
+        "actor": "Emilio Estevez",
+        "director": "Emilio Estevez"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Blow Out? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Considering your preference for historical dramas and Emilio Estevez's involvement, I recommend watching 'The Way Back Home'. This heartwarming drama about love and loss in Florida features Danny Nucci and Ruby Dee.",
+      "constraints": {
+        "genre": "historical",
+        "plot": [
+          "what",
+          "blow"
+        ],
+        "name": "Blow Out",
+        "writer": "Emilio Estevez",
+        "actor": "Emilio Estevez",
+        "director": "Emilio Estevez"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Blow Out tell? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences for a historical story with Emilio Estevez involved, I recommend watching 'Blow Out' (1981). It stars John McMartin as the movie sound recordist and features Emilio Estevez in a supporting role. The film's plot revolves around uncovering a murder behind a car accident.",
+      "constraints": {
+        "genre": "historical",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Blow Out",
+        "writer": "Emilio Estevez",
+        "actor": "Emilio Estevez",
+        "director": "Emilio Estevez"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Jeffrey Eugenides? That feels deeper than I thought. Maybe something like what you shared about Blow Out."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I would recommend 'The Breakfast Club' for its timeless exploration of identity among diverse high school students, featuring memorable performances by Paul Gleason, John Kapelos, and others.",
+      "constraints": {
+        "genre": "historical",
+        "plot": [
+          "written",
+          "feels"
+        ],
+        "name": "Blow Out",
+        "writer": "Jeffrey Eugenides",
+        "actor": "Emilio Estevez",
+        "director": "Emilio Estevez",
+        "language": "fre"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? That sounds intriguing."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For someone interested in historical fiction with strong emotional depth, I recommend 'Wide Sargasso Sea' (1966) starring Jane Fonda as the protagonist, exploring themes of identity and resilience amidst societal oppression.",
+      "constraints": {
+        "genre": "historical",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "writer": "Jeffrey Eugenides",
+        "actor": "Emilio Estevez",
+        "director": "Emilio Estevez",
+        "language": "fre"
       }
     }
   ]

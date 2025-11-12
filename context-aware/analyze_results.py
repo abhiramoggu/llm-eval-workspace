@@ -2,15 +2,29 @@
 # Visualizes quantitative & LLM-judge evaluation results across models
 
 import os
+import shutil
 import json
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+from typing import List
 
-from config import RESULTS_FILE, FIG_DIR, LOG_DIR
+from config import RESULTS_FILE, FIG_DIR
+
+# === Directory Setup ===
+SUB_DIRS = ["distributions", "bar_charts", "radars", "correlations", "over_time", "box_plots", "stacked_bars"]
+
+def setup_figure_directories(base_dir: str, sub_dirs: List[str]):
+    """Clears the base figure directory and creates it along with specified subdirectories."""
+    if os.path.exists(base_dir):
+        shutil.rmtree(base_dir)
+    os.makedirs(base_dir)
+    for sub in sub_dirs:
+        os.makedirs(os.path.join(base_dir, sub), exist_ok=True)
+    print(f"--- Cleared and prepared figure directories in '{base_dir}' ---")
 
 # === Load Results ===
-os.makedirs(FIG_DIR, exist_ok=True)
+setup_figure_directories(FIG_DIR, SUB_DIRS)
 
 records = [json.loads(line) for line in open(RESULTS_FILE)]
 df = pd.DataFrame(records)
@@ -19,26 +33,87 @@ df = pd.DataFrame(records)
 judge_df = pd.json_normalize(df["judge"])
 df = pd.concat([df.drop(columns=["judge"]), judge_df], axis=1)
 
-# === 1. Grouped Bar Chart: Recovery & Coherence per Model ===
-# Use the correct metric names from results.jsonl
-metrics = [ # avg_recovery_delay removed as its scale is different (number of turns)
+# Ensure detail column is always a dict for downstream access
+if "detail" in df.columns:
+    df["detail"] = df["detail"].apply(lambda x: x if isinstance(x, dict) else {})
+else:
+    df["detail"] = [{} for _ in range(len(df))]
+
+# === Color Palette for Metrics ===
+metric_colors = {
+    "topic_recovery_rate": "#1f77b4",
+    "topic_interference": "#ff7f0e",
+    "cross_coherence": "#2ca02c",
+    "context_retention": "#d62728",
+    "context_adaptation_score": "#9467bd",
+    "avg_recovery_delay": "#8c564b",
+    "proactiveness": "#e377c2",
+    "coherence": "#7f7f7f",
+    "personalization": "#bcbd22",
+}
+
+
+# === 1. Individual Bar Charts for Each Metric ===
+all_metrics = [
     "topic_recovery_rate", "topic_interference",
-    "cross_coherence", "context_retention", "context_adaptation_score"
+    "cross_coherence", "context_retention", "context_adaptation_score",
+    "avg_recovery_delay", "proactiveness", "coherence",
+    "personalization"
 ]
 # Filter out metrics that might not be in the dataframe to prevent KeyErrors
-metrics = [m for m in metrics if m in df.columns]
+metrics_present = [m for m in all_metrics if m in df.columns]
 
-df_mean = df.groupby("model")[metrics].mean().reset_index()
+df_summary = df.groupby("model")[metrics_present].mean().round(3)
 
-df_mean.plot(x="model", kind="bar", figsize=(10, 6))
-plt.title("Model-wise Average Context Adaptation Metrics")
-plt.ylabel("Score / Probability")
-plt.xticks(rotation=45)
-plt.tight_layout()
-save_path = os.path.join(FIG_DIR, "context_adaptation_metrics_bar.png")
-plt.savefig(save_path)
-plt.close()
-print(f"Saved plot: {save_path}")
+for metric in metrics_present:
+    plt.figure(figsize=(10, 6))
+
+    # Plot a Kernel Density Estimate for each model on the same axes
+    for model_name in df['model'].unique():
+        model_scores = df[df['model'] == model_name][metric].dropna()
+        if model_scores.empty:
+            continue
+        # Check if there is variance in the data
+        if model_scores.nunique() > 1:
+            sns.kdeplot(model_scores, label=model_name, fill=True, alpha=0.2)
+        else:
+            # If no variance, plot a vertical line at the single value
+            plt.axvline(model_scores.iloc[0], linestyle='--', label=f'{model_name} (single value)')
+
+    plt.title(f'Distribution of {metric.replace("_", " ").title()} per Model')
+    plt.xlabel("Score")
+    plt.ylabel("Density")
+    plt.legend(title="Model", bbox_to_anchor=(1.05, 1), loc='upper left')
+    plt.grid(axis='y', linestyle='--', alpha=0.7)
+    plt.tight_layout()
+    save_path = os.path.join(FIG_DIR, "distributions", f"metric_{metric}_distribution.png")
+    print(f"Saved plot: {save_path}")
+    plt.savefig(save_path)
+    plt.close()
+
+# === 1.5 Bar Charts for Average Metrics ===
+for metric in metrics_present:
+    plt.figure(figsize=(8, 5))
+
+    # Use the assigned color for the metric, defaulting to a standard blue
+    color = metric_colors.get(metric, "#1f77b4")
+
+    sns.barplot(x=df_summary.index, y=df_summary[metric], color=color)
+
+    # Add value labels on top of each bar
+    for index, value in enumerate(df_summary[metric]):
+        plt.text(index, value, f'{value:.3f}', ha='center', va='bottom', fontsize=10)
+
+    plt.title(f'Average {metric.replace("_", " ").title()} per Model')
+    plt.ylabel("Score")
+    plt.xlabel("Model")
+    plt.xticks(rotation=30, ha="right")
+    plt.tight_layout()
+    save_path = os.path.join(FIG_DIR, "bar_charts", f"metric_{metric}_bar.png")
+    plt.savefig(save_path)
+    plt.close()
+    print(f"Saved plot: {save_path}")
+
 
 # === 2. Radar Chart (LLM-Judge metrics) ===
 def plot_radar(df_mean, metrics, title, filename):
@@ -63,11 +138,11 @@ def plot_radar(df_mean, metrics, title, filename):
     plt.close()
     print(f"Saved plot: {filename}")
 
-judge_metrics = ["clarity", "politeness", "recovery", "context_memory", "engagement"]
+judge_metrics = ["proactiveness", "coherence", "personalization"]
 judge_metrics = [m for m in judge_metrics if m in df.columns]
 if judge_metrics:
     judge_mean = df.groupby("model")[judge_metrics].mean().reset_index()
-    radar_path = os.path.join(FIG_DIR, "llm_judge_radar.png")
+    radar_path = os.path.join(FIG_DIR, "radars", "llm_judge_radar.png")
     plot_radar(judge_mean, judge_metrics, "LLM-Judge Scores Radar Chart", radar_path)
 
 # === 3. Box Plot: Recovery Turns Distribution ===
@@ -77,34 +152,34 @@ if "avg_recovery_delay" in df.columns:
     plt.title("Distribution of Recovery Delay (Turns) Across Models")
     plt.ylabel("Turns to Recover")
     plt.xticks(rotation=30)
-    plt.tight_layout()
-    save_path = os.path.join(FIG_DIR, "recovery_delay_boxplot.png")
+    plt.tight_layout() 
+    save_path = os.path.join(FIG_DIR, "box_plots", "recovery_delay_boxplot.png")
     plt.savefig(save_path)
     plt.close()
     print(f"Saved plot: {save_path}")
 
 # === 4. Correlation Heatmap ===
-all_metrics = [m for m in (metrics + judge_metrics) if m in df.columns]
+all_metrics = [m for m in (metrics_present + judge_metrics) if m in df.columns]
 if len(all_metrics) > 1:
     corr = df[all_metrics].corr()
     plt.figure(figsize=(10, 8))
     sns.heatmap(corr, annot=True, cmap="coolwarm", fmt=".2f")
     plt.title("Metric Correlation Heatmap")
     plt.tight_layout()
-    save_path = os.path.join(FIG_DIR, "metrics_correlation_heatmap.png")
+    save_path = os.path.join(FIG_DIR, "correlations", "metrics_correlation_heatmap.png")
     plt.savefig(save_path)
     plt.close()
     print(f"Saved plot: {save_path}")
 
 # === 5. Stacked Bar: Combined Recovery Metrics ===
 recovery_metrics = ["topic_recovery_rate", "topic_interference"]
-if all(m in df_mean.columns for m in recovery_metrics):
-    stacked = df_mean.set_index("model")[recovery_metrics]
+if all(m in df_summary.columns for m in recovery_metrics):
+    stacked = df_summary[recovery_metrics]
     stacked.plot(kind="bar", stacked=True, figsize=(10, 6))
     plt.title("Stacked Recovery & Interference per Model")
     plt.ylabel("Score")
-    plt.tight_layout()
-    save_path = os.path.join(FIG_DIR, "stacked_recovery_bar.png")
+    plt.tight_layout() 
+    save_path = os.path.join(FIG_DIR, "stacked_bars", "stacked_recovery_bar.png")
     plt.savefig(save_path)
     plt.close()
     print(f"Saved plot: {save_path}")
@@ -149,7 +224,7 @@ if len(cas_metrics_present) > 2: # A radar chart needs at least 3 axes
     }
     chart_labels = [cas_labels.get(m, m) for m in cas_metrics_present]
 
-    cas_radar_path = os.path.join(FIG_DIR, "cas_components_radar.png")
+    cas_radar_path = os.path.join(FIG_DIR, "radars", "cas_components_radar.png")
     plot_radar(cas_mean, cas_metrics_present, "Context Adaptation Score Components", cas_radar_path)
 
 # === 7. Per-Model Conversation Deviation Step Graph ===
@@ -190,10 +265,43 @@ def plot_combined_deviation_graph(df: pd.DataFrame):
     plt.legend(loc="lower left")
     plt.grid(axis='y', linestyle='--', alpha=0.7)
     plt.tight_layout()
-    save_path = os.path.join(FIG_DIR, "combined_avg_deviation_graph.png")
+    save_path = os.path.join(FIG_DIR, "over_time", "combined_avg_deviation_graph.png")
     plt.savefig(save_path)
     plt.close()
     print(f"Saved plot: {save_path}")
 
 # Generate a single, combined deviation graph for all models
 plot_combined_deviation_graph(df)
+
+# === 8. Distribution of Number of Topics per System Response ===
+all_topic_counts_data = []
+for index, row in df.iterrows():
+    model = row['model']
+    # Ensure 'detail' and 'system_topic_counts' exist
+    counts = row['detail'].get('system_topic_counts', []) if isinstance(row['detail'], dict) else []
+    for count in counts:
+        all_topic_counts_data.append({'model': model, 'topic_count': count})
+
+if all_topic_counts_data:
+    df_topic_counts = pd.DataFrame(all_topic_counts_data)
+    
+    plt.figure(figsize=(10, 6))
+    for model_name in df_topic_counts['model'].unique():
+        model_data = df_topic_counts[df_topic_counts['model'] == model_name]['topic_count']
+        if model_data.nunique() > 1: # Check for variance
+            sns.kdeplot(model_data, label=model_name, fill=True, alpha=0.2)
+        else:
+            plt.axvline(model_data.iloc[0], linestyle='--', label=f'{model_name} (single value)')
+
+    plt.title('Distribution of Number of Topics per System Response')
+    plt.xlabel('Number of Topics')
+    plt.ylabel('Density')
+    plt.legend(title="Model", bbox_to_anchor=(1.05, 1), loc='upper left')
+    plt.grid(axis='y', linestyle='--', alpha=0.7)
+    plt.tight_layout()
+    save_path = os.path.join(FIG_DIR, "distributions", "system_topic_counts_distribution.png")
+    plt.savefig(save_path)
+    plt.close()
+    print(f"Saved plot: {save_path}")
+else:
+    print("No system topic count data available for plotting.")

@@ -1,38 +1,293 @@
 {
   "model_name": "qwen:7b",
-  "true_genre": "animation",
+  "true_genre": "education",
   "conversation": [
     {
       "speaker": "USER",
-      "text": "I'm in the mood for a comedy movie. Could you recommend a few?"
+      "text": "I'm in the mood for a education movie. Could you recommend a few?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your preference for a comedy movie, I recommend 'Superbad' and 'The Hangover'. Both are classics in the comedy genre. Enjoy your movie!",
+      "text": "I recommend \"Elysium\" for its thought-provoking plot about inequality and equality in a future world. The cast, featuring Sharlto Copley, Alice Braga, and Matt Damon, brings the story to life.",
       "constraints": {
-        "genre": "comedy"
+        "genre": "education",
+        "plot": [
+          "education",
+          "could"
+        ],
+        "name": "You"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Superbad. Who stars in it? Hmm, I didn\u2019t expect that vibe."
+      "text": "I like the sound of {'name': 'In Our Time', 'year': '1925', 'genre': ['Philosophy', 'History', 'Education'], 'language': ['English Language'], 'writer': ['Ernest Hemingway'], 'plot': 'A young woman traveling to Poland with her employer meets a count, and they fall in love as World War II begins.', 'original_id': '2413'}. Who stars in it? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on their interest in 'Superbad' and the comedy genre, I would recommend 'The Hangover' and 'Bridesmaids'. Both films are known for their hilarious comedies.",
+      "text": "For a war-themed movie, I recommend 'The Expendables' (2010). The action-packed plot features mercenaries fighting against a Latin dictator and rogue CIA agents. Stars like Dolph Lundren, Schwarzenegger, and Stallone add to the excitement.",
       "constraints": {
-        "genre": "comedy"
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "War",
+        "year": "1925",
+        "language": "English Language",
+        "writer": "Ernest Hemingway"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Superbad tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "Maybe I was wrong earlier."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on their interest in comedy, I would recommend watching 'Superbad' and 'Bridesmaids'. Both films are known for their hilarious comedic elements.",
+      "text": "I recommend watching \"The Last Dragon\" with Keshia Knight Pulliam, as it combines martial arts action and a memorable cast.",
       "constraints": {
-        "genre": "comedy"
+        "genre": "war",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "War",
+        "year": "1925",
+        "language": "English Language",
+        "writer": "Ernest Hemingway"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Last Dragon tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I would recommend 'New York Minute' for those interested in a fun and chaotic adventure. The film stars Andrea Martin and Riley Smith, known for their comedic chemistry, which will certainly bring laughter to the audience.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The Last Dragon",
+        "year": "1925",
+        "language": "English Language",
+        "writer": "Ernest Hemingway"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of New York Minute? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend \"Where the Wild Things Are\" (1963) starring Lauren Ambrose and Forest Whitaker. It's a beloved children's film with imaginative storytelling and memorable characters.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "york"
+        ],
+        "name": "RED",
+        "year": "1925",
+        "language": "English Language",
+        "writer": "Ernest Hemingway"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Bulgarian Language? Hmm, I didn\u2019t expect that vibe. Maybe something like what you shared about Wild Things."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a Bulgarian language fan, I recommend 'Heart of Darkness' (1952). With its dark narrative set in Rio de Janeiro, this film offers an intriguing blend of language and culture.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "Wild",
+        "year": "1925",
+        "language": "Bulgarian Language",
+        "writer": "Ernest Hemingway"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Heart of Darkness? That sounds intriguing."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a light-hearted and musical experience, I would recommend 'Aladdin'. With its enchanting story, colorful characters, and catchy songs like \"A Whole New World\", it's sure to bring joy.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "heart"
+        ],
+        "name": "Heart of Darkness",
+        "year": "1925",
+        "language": "Bulgarian Language",
+        "writer": "Ernest Hemingway"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Aladdin tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend \"Why Did I Get Married?\" for those interested in a romantic comedy with a touch of marriage drama, featuring stars like Lamman Rucker and Tasha Smith.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Aladdin",
+        "year": "1925",
+        "language": "Bulgarian Language",
+        "writer": "Ernest Hemingway"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Why Did I Get Married?. Who stars in it? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for a heartwarming and comical film, 'Annie Hall' with Diane Keaton and Woody Allen would be a great choice. The story explores the complexities of relationships and romantic comedies are known for their light-hearted moments.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Why Did I Get Married?",
+        "year": "1925",
+        "language": "Bulgarian Language",
+        "writer": "Ernest Hemingway"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Drew Barrymore. That sounds intriguing. Maybe something like what you shared about Why Did I Get Married?."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences, I recommend watching 'Source Code' (2011). The movie stars Jeffrey Wright as a soldier who discovers he's part of an experiment to find the bomber within 8 minutes. It combines elements of science fiction and thriller.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Why Did I Get Married?",
+        "year": "1925",
+        "language": "Bulgarian Language",
+        "writer": "Ernest Hemingway",
+        "actor": "Drew Barrymore"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Why Did I Get Married?? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend \"Corpse Bride\" (2005) starring Tracey Ullman, Helena Bonham Carter, and Michael Gough. It's a visually stunning stop-motion animation comedy about love and marriage.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "married"
+        ],
+        "name": "Why Did I Get Married?",
+        "year": "1925",
+        "language": "Bulgarian Language",
+        "writer": "Ernest Hemingway",
+        "actor": "Drew Barrymore"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Corpse Bride. Who stars in it? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a unique movie experience, I recommend 'Castle in the Sky'. This animated film, featuring the talented voice acting of Matthew Broderick and Anna Fumiiri, tells an enchanting adventure with a focus on creativity and imagination.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Corpse Bride",
+        "year": "1925",
+        "language": "Bulgarian Language",
+        "writer": "Ernest Hemingway",
+        "actor": "Drew Barrymore"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Castle in the Sky tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a thrilling tale with possession and supernatural elements, I recommend 'The Violent Kind'. With Taylor Cole starring, this movie offers a gripping narrative.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Castle in the Sky",
+        "year": "1925",
+        "language": "Bulgarian Language",
+        "writer": "Ernest Hemingway",
+        "actor": "Drew Barrymore"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Sheryl Crow. Maybe I\u2019m overthinking it, but it sounds fascinating. Maybe something like what you shared about Posse."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're interested in a romantic comedy with a touch of quirk, I recommend 'The Rosie Project'. It stars Hugh Grant as the professor who creates the questionnaire to find his perfect wife, played by Julia Roberts.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "W.",
+        "year": "1925",
+        "language": "Bulgarian Language",
+        "writer": "Ernest Hemingway",
+        "actor": "Sheryl Crow"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Professor tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for stories set in a specific time period with particular language and cast elements, I recommend 'The Sun Also Rises' (1926). With Ernest Hemingway's writing style, and a star-studded cast featuring Sheryl Crow, the film captures the disillusionment of post-War Europe.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The Professor",
+        "year": "1925",
+        "language": "Bulgarian Language",
+        "writer": "Ernest Hemingway",
+        "actor": "Sheryl Crow"
       }
     },
     {
@@ -41,185 +296,98 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your interest in comedy, I recommend you watch 'Superbad' and 'Bridesmaids'. Both films are highly enjoyable and within the comedy genre.",
+      "text": "If you're looking for a contemporary film with a documentary-style, \"End of Watch\" would be a great choice. It follows two police officers as they navigate their daily duties and encounter criminal forces. Starring David Harbour and Frank Grillo, the film offers an engaging blend of drama and reality.",
       "constraints": {
-        "genre": "comedy"
+        "genre": "language",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "The Professor",
+        "year": "1925",
+        "language": "Bulgarian Language",
+        "writer": "Ernest Hemingway",
+        "actor": "Sheryl Crow"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Superbad? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "I like the sound of Her. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on the user's interest in comedy, I recommend watching 'Superbad' and 'Bridesmaids'. Both films are known for their comedic humor.",
+      "text": "Based on your preferences, I would recommend 'X--Men: First Class' (2011) due to its focus on character development and the iconic cast featuring Michael Fassbender and Jennifer Lawrence.",
       "constraints": {
-        "genre": "comedy"
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Her",
+        "year": "1925",
+        "language": "Bulgarian Language",
+        "writer": "Ernest Hemingway",
+        "actor": "Sheryl Crow"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thanks for all the detail on Superbad. Could we explore comedy and adventure next, something that surprises me emotionally?"
+      "text": "What's the mood of Her? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on their interest in adventure and emotional surprises, I recommend 'Indiana Jones and the Raiders of the Lost Ark'. It's a thrilling adventure film with emotional depth.",
+      "text": "Based on the user's preference for a deeper mood exploration and language interest, I would recommend 'Paradise Lost' by John Milton. The epic poem explores themes of sin, redemption, and the human condition, offering a thought-provoking and emotionally rich experience in English.",
       "constraints": {
-        "genre": "adventure"
+        "genre": "language",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Her",
+        "year": "1925",
+        "language": "Bulgarian Language",
+        "writer": "Ernest Hemingway",
+        "actor": "Sheryl Crow"
       }
     },
     {
       "speaker": "USER",
-      "text": "Forget what I said before \u2014 that might\u2019ve been too specific."
+      "text": "Thanks for all the detail on Paradise Lost. Could we explore epic next, with a mix of excitement and warmth?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on the user's interest in adventure genre, I recommend \"Pirates of the Caribbean: The Curse of the Black Pearl\" and \"Indiana Jones and the Raiders of the Lost Ark\". These films showcase thrilling adventures and exciting action.",
+      "text": "For an epic and action-packed experience, I recommend '300'. This movie, set in ancient Thermopylae, features Gerard Butler as King Leonidas alongside a thrilling battle against Xerxes and his Persian army.",
       "constraints": {
-        "genre": "adventure"
+        "genre": "war",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "War",
+        "year": "1925",
+        "language": "Bulgarian Language",
+        "writer": "Ernest Hemingway",
+        "actor": "Sheryl Crow"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does It tell? Hmm, I didn\u2019t expect that vibe."
+      "text": "What kind of story does Her tell? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on their interest in adventure, I would recommend 'Indiana Jones and the Raiders of the Lost Ark' and 'Pirates of the Caribbean: The Curse of the Black Pearl'. These films are known for their thrilling adventures and captivating storytelling.",
+      "text": "For someone interested in a deeper exploration of war's impact, I would recommend 'The Deer Hunter'. This movie, starring Christopher Walken and Robert De Niro, delves into the psychological effects of war on its characters.",
       "constraints": {
-        "genre": "adventure"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Indiana Jones and the Raiders of the Lost Ark. Who stars in it? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on their interest in Indiana Jones and adventure, I recommend 'Indiana Jones and the Raiders of the Lost Ark' as a great starting point. If they enjoy that style, 'The Mummy Returns' is another thrilling adventure film from the same era.",
-      "constraints": {
-        "genre": "adventure"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of The Raid? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the user's interest in adventure genre, I recommend watching 'Indiana Jones and the Raiders of the Lost Ark'. It's a classic adventure film that fits the mood you described.",
-      "constraints": {
-        "genre": "adventure"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thanks for all the detail on Indiana Jones and the Raiders of the Lost Ark. Could we explore adventure next, with a mix of excitement and warmth?"
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on their interest in adventure with a mix of excitement and warmth, I would recommend \"Pirates of the Caribbean: The Curse of the Black Pearl\" for them. This film combines action, romance, and humor, fitting their desired balance.",
-      "constraints": {
-        "genre": "adventure"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Pirates of the Caribbean: The Curse of the Black Pearl. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on their interest in adventure and the mentioned movie, I recommend 'Indiana Jones and the Raiders of the Lost Ark'. It's a classic adventure film that fits the user's description.",
-      "constraints": {
-        "genre": "adventure"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Indiana Jones and the Raiders of the Lost Ark tell? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the user's interest in adventure stories, I would recommend watching 'Indiana Jones and the Raiders of the Lost Ark'. It's an iconic adventure film in this genre.",
-      "constraints": {
-        "genre": "adventure"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Indiana Jones and the Raiders of the Lost Ark? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the user's interest in Indiana Jones and adventure films, I recommend checking out 'Indiana Jones and the Raiders of the Lost Ark' for a classic adventure experience.",
-      "constraints": {
-        "genre": "adventure"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thanks for all the detail on Indiana Jones and the Raiders of the Lost Ark. Could we explore romance next, with a mix of excitement and warmth?"
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on their interest in romance with a mix of excitement and warmth, I recommend \"Pride & Prejudice\" and \"La La Land\". These films embody the requested romantic genre with added excitement and emotional depth.",
-      "constraints": {
-        "genre": "romance"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Forget what I said before \u2014 that might\u2019ve been too specific."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on your interest in romance, I recommend 'The Notebook' and 'Pride & Prejudice'. Enjoy the classic love stories!",
-      "constraints": {
-        "genre": "romance"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Pride & Prejudice tell? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on your interest in romance and the recommendation you've given, I suggest watching 'Pride & Prejudice' or 'Notting Hill'. Both films are beloved adaptations of romance novels.",
-      "constraints": {
-        "genre": "romance"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Pride & Prejudice? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Considering the interest in romance, I recommend watching 'Pride & Prejudice' and 'The Notebook'. These films are known for their charming love stories.",
-      "constraints": {
-        "genre": "romance"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of The Notebook. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on their interest in romantic films and their positive reaction to 'The Notebook,' I recommend 'Pride & Prejudice' or 'La La Land.' Both are beloved romances with similar themes.",
-      "constraints": {
-        "genre": "romance"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thanks for all the detail on Pride & Prejudice. Could we explore action next, but maybe with a softer touch?"
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on their interest in action with a softer touch, I recommend 'Mad Max: Fury Road' and 'Gladiator'. These films showcase intense action while still maintaining an emotional depth.",
-      "constraints": {
-        "genre": "action"
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her",
+        "year": "1925",
+        "language": "Bulgarian Language",
+        "writer": "Ernest Hemingway",
+        "actor": "Sheryl Crow"
       }
     }
   ]

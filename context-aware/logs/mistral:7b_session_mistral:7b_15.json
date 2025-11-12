@@ -1,225 +1,380 @@
 {
   "model_name": "mistral:7b",
-  "true_genre": "comedy",
+  "true_genre": "horror comedy",
   "conversation": [
     {
       "speaker": "USER",
-      "text": "I'm in the mood for a horror movie. Could you recommend a few?"
+      "text": "I'm in the mood for a horror comedy movie. Could you recommend a few?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "I'd highly recommend giving \"The Conjuring\" and \"Hereditary\" a watch if you haven't already! Both are critically acclaimed horror films that are sure to deliver some chills and thrills. Enjoy the scary ride!",
+      "text": "I'd highly recommend checking out \"Smokin' Aces\" if you're in the mood for a thrilling comedy with an all-star cast, featuring Ray Liotta, Ben Affleck, and Ryan Reynolds among others! Another option is \"500 Days of Summer\", a charming romantic comedy that offers a unique take on love and relationships, starring Joseph Gordon-Levitt and Zooey Deschanel. Enjoy the movies!",
       "constraints": {
-        "genre": "horror"
+        "genre": "comedy",
+        "plot": [
+          "horror",
+          "comedy"
+        ],
+        "name": "You"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of It? That feels deeper than I thought."
+      "text": "I like the sound of Smokin' Aces. Who stars in it? Hmm, I didn\u2019t expect that vibe."
     },
     {
       "speaker": "SYSTEM",
-      "text": "\"Based on your interest in deeper, atmospheric horror films, I'd recommend you give 'Hereditary' and 'Midsommar' a watch. Both films offer chilling narratives that delve into psychological horror and family dynamics.\"",
+      "text": "If you enjoyed \"Smokin' Aces\" with its blend of action, comedy, and a star-studded cast, you might also appreciate \"Ocean's Eleven,\" another film featuring an ensemble cast led by George Clooney, Brad Pitt, and Matt Damon, delivering a mix of humor, heist action, and memorable characters. Another recommendation could be \"Knocked Up\" starring Seth Rogen and Katherine Heigl that combines comedy and romance in a unique way. Both movies are worth checking out if you're looking for something similar to your taste!",
       "constraints": {
-        "genre": "horror"
+        "genre": "comedy",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Smokin' Aces"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Midsommar. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "What's the mood of Ocean's Eleven? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "\"Midsommar and Hereditary are both excellent choices if you're looking for a blend of horror and psychological thriller. Midsommar, with its unsettling folk horror atmosphere, might be particularly intriguing to you.\"",
+      "text": "It seems like you're in the mood for some lighthearted and entertaining films! Given that Ocean's Eleven has a comedic undertone, I'd recommend watching \"Shrek\" (2001). This animated movie is filled with humor and features an ensemble voice cast including Eddie Murphy and Cameron Diaz. Another option could be \"The Tigger Movie\" (2000) which, though not related to the Ocean's franchise, offers a delightful and whimsical comedy experience as well. Enjoy the movies!",
       "constraints": {
-        "genre": "horror"
+        "genre": "comedy",
+        "plot": [
+          "what",
+          "ocean"
+        ],
+        "name": "Ocean's Eleven",
+        "actor": "Eve"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Hereditary tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "What kind of story does The Tigger Movie tell? Hmm, I didn\u2019t expect that vibe."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Hereditary and The Conjuring are both highly acclaimed horror films that deliver a mix of suspense, tension, and scares. If you enjoy these, I'd also recommend giving 'The Exorcist' and 'A Quiet Place' a try. Enjoy your cinematic journey into the unknown!",
+      "text": "Among the movies you mentioned, I'd highly recommend \"Pretty Woman\" if you're into comedies with a touch of romance. Julia Roberts delivers a captivating performance in this film about a nightclub hostess hired to impersonate a murdered office worker by a wealthy businessman played by Richard Gere. Another funny and entertaining option is \"Mallrats\", which follows two friends seeking refuge in a mall after being dumped by their girlfriends. Enjoy the movies!",
       "constraints": {
-        "genre": "horror"
+        "genre": "comedy",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The Tigger Movie",
+        "actor": "Eve",
+        "language": "ger"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thanks for all the detail on The Conjuring. Could we explore thriller next, with a mix of excitement and warmth?"
+      "text": "Thanks for all the detail on Mallrats. Could we explore business next, something that surprises me emotionally?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "I'd highly recommend \"Gone Girl\" and \"Shutter Island\". Both films offer a blend of suspense, excitement, and intrigue that should appeal to you. \"Gone Girl\" is a psychological thriller with a touch of dark humor, while \"Shutter Island\" delves into mystery and paranoia. Enjoy the ride!",
+      "text": "Given your preference for business-related themes and your interest in actress Eve, I'd like to recommend \"xXx\" (2002) which features Eve as a character. In this action-packed film, extreme sports athlete Xander Cage is recruited by the US government to infiltrate a criminal organization threatening global security. Alternatively, you might enjoy \"The Godfather\" (1972), a classic crime drama that tells the story of a mafia family dynasty with an exceptional cast including Marlon Brando and Al Pacino. Both films offer engaging plots and memorable performances. Enjoy your movie time!",
       "constraints": {
-        "genre": "thriller"
+        "genre": "business",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Mallrats",
+        "actor": "Eve",
+        "language": "ger"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Shutter Island tell? That feels deeper than I thought."
+      "text": "I like the sound of The Godfather. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Shutter Island and Gone Girl are excellent thrillers that might intrigue you. Shutter Island offers a complex psychological mystery, while Gone Girl delves into a chilling tale of a woman's disappearance, both sharing depth beyond first impressions. Enjoy the suspense!",
+      "text": "Based on your preference for business genre films and interest in 'The Godfather', I'd recommend watching \"The Other Guys\" (2010). This action-comedy features a cast that includes Will Ferrell, Mark Wahlberg, and Eva Mendes. In the movie, two mismatched New York City detectives seize an opportunity to make their mark in the city's crime scene with unexpected results.\n\nIf you're open to exploring different genres, I'd also like to suggest \"Restless\" (2006), a drama about a young man who forms an unusual bond with a terminally ill girl and her closest friends during their final summer together. Starring Mia Wasikowska, Hayley Atwell, and Rufus Sewell, it's a thought-provoking film that deals with themes of love, loss, and mortality. Enjoy your movie time!",
       "constraints": {
-        "genre": "thriller"
+        "genre": "business",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Her",
+        "actor": "Eve",
+        "language": "ger"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Shutter Island? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "What kind of story does The Godfather tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Shutter Island and Gone Girl both fall into the thriller genre, but if you're looking for something intriguing and suspenseful like Shutter Island, I'd recommend \"Memento\" or \"Gone Baby Gone\". Enjoy your movie time!",
+      "text": "\"Smilla's Sense of Snow\" might be an intriguing choice for you, as it's a captivating mystery thriller about a half Inuit woman investigating the mysterious death of a young boy in Copenhagen. The film stars Julia Ormond and Jim Broadbent. If you're interested in exploring a unique blend of comedy and superhero themes, \"Super\" could also be worth checking out, featuring an ensemble cast that includes Ellen Page, Liv Tyler, and Rainn Wilson.",
       "constraints": {
-        "genre": "thriller"
+        "genre": "business",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her",
+        "actor": "Eve",
+        "language": "ger"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Gone Baby Gone. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "What's the mood of Smilla's Sense of Snow? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your interest in the thriller genre, you might enjoy \"Se7en\" and \"Gone Girl\". Both films have intricate plots that will keep you on the edge of your seat! If you're looking for a mix of mystery and suspense, \"Se7en\" is a classic, while \"Gone Girl\" offers a compelling psychological thriller with unexpected twists. Enjoy your movie time!",
+      "text": "Based on your preference for a business genre and German language films, I'd recommend watching \"Prometheus\". It's a thought-provoking movie that explores humanity's relationship with technology and energy. Additionally, if you're interested in movies about filmmaking and European cinema, you might enjoy \"Alex in Wonderland\". It stars Jeanne Moreau and features a unique narrative structure that blurs the line between reality and fantasy. Enjoy your movie time!",
       "constraints": {
-        "genre": "thriller"
+        "genre": "business",
+        "plot": [
+          "what",
+          "smilla"
+        ],
+        "name": "Smilla's Sense of Snow",
+        "actor": "Eve",
+        "language": "ger"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thanks for all the detail on Gone Girl. Could we explore mystery next, but maybe with a softer touch?"
+      "text": "How about something primarily in Turkish Language? That sounds intriguing. Maybe something like what you shared about X."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your preference for a softer touch within the mystery genre, I'd recommend \"The Others\" or \"Murder on the Orient Express\". Both offer intricate plots with compelling characters, while maintaining a more gentle tone compared to some of the other films in the list. Enjoy the mysteries unravel!",
+      "text": "Given your preference for Turkish language films, I'd recommend \"Date Night\" as it features an engaging plot and a star-studded cast with some familiar faces like Mark Wahlberg and Steve Carell. Another film that might interest you is \"The Goodbye Girl\", although not in Turkish, it's a suspenseful drama with intriguing plot twists featuring renowned actors like Powers Boothe and Nicol Williamson. Enjoy your movie time!",
       "constraints": {
-        "genre": "mystery"
+        "genre": "language",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "RED",
+        "actor": "Eve",
+        "language": "Turkish Language"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Murder on the Orient Express tell? Hmm, I didn\u2019t expect that vibe."
+      "text": "I like the sound of Date Night. Who stars in it? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Given your interest in the mystery genre, I'd highly recommend \"Knives Out\" and \"Sherlock Holmes\". Both films offer intriguing plots and complex characters that will keep you guessing till the end! Enjoy the suspense!",
+      "text": "It sounds like you enjoy a mix of comedy and drama! Based on your preference for romantic comedies, I'd recommend \"Uptown Girls\" starring Marley Shelton and Heather Locklear. If you're open to exploring a unique blend of science fiction and action, then \"District 9\" featuring Sharlto Copley might also be intriguing for its thought-provoking plot. Enjoy your movie time!",
       "constraints": {
-        "genre": "mystery"
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Date Night",
+        "actor": "Eve",
+        "language": "Turkish Language"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Knives Out? That feels deeper than I thought."
+      "text": "What kind of story does District 9 tell? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "\"Knives Out and Murder on the Orient Express both share a similar, engaging mystery atmosphere that might appeal to you. The former has a deeper narrative with intriguing characters, while the latter offers a classic whodunit experience set aboard a luxurious train.\"",
+      "text": "Based on your interest in stories that explore the kind of impact humans have had on their environment and starring Charlize Theron, who also appeared in District 9, I'd recommend watching 'Prometheus'. It delves into questions about humanity's use of technology and its consequences in a unique way.\n\nIf you're looking for something with a different historical setting and featuring strong characters, The Taming of the Shrew could be an engaging choice. This classic play revolves around two headstrong individuals navigating their relationship amidst witty banter and power struggles.",
       "constraints": {
-        "genre": "mystery"
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "District 9",
+        "actor": "Eve",
+        "language": "Turkish Language"
       }
     },
     {
       "speaker": "USER",
-      "text": "Maybe I was wrong earlier."
+      "text": "What's the mood of Tron? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your interest in the mystery genre, I'd highly recommend watching \"Knives Out\" and \"The Sixth Sense\". Both movies offer compelling storylines with unexpected twists that will keep you hooked!",
+      "text": "Based on your preference for language and the actor Eve, I'd recommend \"Training Day\" starring Denzel Washington. It's a gripping drama about a rookie cop navigating the gritty streets of LA with a seasoned but morally ambiguous detective. Another one you might enjoy is \"The Hurt Locker,\" a thrilling war film that follows an army bomb squad in Iraq, featuring Jeremy Renner. Both films offer intriguing plots and strong performances from renowned actors. Enjoy the cinematic journey!",
       "constraints": {
-        "genre": "mystery"
+        "genre": "language",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "Tron",
+        "actor": "Eve",
+        "language": "Turkish Language"
       }
     },
     {
       "speaker": "USER",
-      "text": "Maybe I was wrong earlier."
+      "text": "Do you have recommendations written by Roger Avary? That sounds intriguing. Maybe something like what you shared about The Hurt Locker."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Given your recent interest in the mystery genre, I'd highly recommend you give 'Knives Out' and 'Murder on the Orient Express' a try. Both movies offer captivating plots filled with suspense and intrigue. Enjoy the sleuthing!",
+      "text": "It sounds like you're looking for a captivating movie by Roger Avary! Both \"Reservoir Dogs\" and \"xXx\" are films that he contributed to as a writer. \"Reservoir Dogs,\" directed by Quentin Tarantino, is a crime thriller about a botched jewelry heist where suspicion among the survivors grows. On the other hand, \"xXx\" stars Vin Diesel as an extreme sports enthusiast recruited by the government for a dangerous mission. I think either one would be an exciting watch! Enjoy!",
       "constraints": {
-        "genre": "mystery"
+        "genre": "language",
+        "plot": [
+          "written",
+          "roger"
+        ],
+        "name": "The Hurt Locker",
+        "actor": "Eve",
+        "language": "ger",
+        "director": "Roger Avary",
+        "writer": "Roger Avary"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Knives Out. Who stars in it? That sounds intriguing."
+      "text": "What kind of story does X tell? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "It sounds like you enjoy mystery films! You might also appreciate \"Murder on the Orient Express\" and \"Death on the Nile\", both starring Kenneth Branagh, which share a similar intriguing atmosphere with Knives Out. Enjoy your movie time!",
+      "text": "I'd highly recommend \"Eve's Bayou\" for you. This film, written and directed by Roger Avary, is a gothic drama that centers around family secrets, lies, and mystic forces - all set in the Deep South. The cast includes talented actors like Diahann Carroll and Jurnee Smollett-Bell. It sounds like a captivating story that might align well with your preferences.\n\nAnother movie to consider is \"Lord Jim\" which tells the tale of a 19th-century seaman struggling to redeem himself after being discredited as a coward. The film features timeless storytelling and an intriguing plot that explores themes such as guilt, redemption, and survival.",
       "constraints": {
-        "genre": "mystery"
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "actor": "Eve",
+        "language": "ger",
+        "director": "Roger Avary",
+        "writer": "Roger Avary"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thanks for all the detail on Murder on the Orient Express. Could we explore mystery and biopic next, something that surprises me emotionally?"
+      "text": "I like the sound of Lord Jim. Who stars in it? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your interest in biopics that might surprise you emotionally, I'd recommend \"A Beautiful Mind\" or \"Bohemian Rhapsody\". Both films offer captivating storylines and powerful performances that could leave a lasting impact. Enjoy the journey through these compelling biographies!",
+      "text": "I'm delighted you're interested in exploring deeper films! Given your preference for a story that sounds intriguing, like \"Lord Jim,\" I would recommend \"Heart of Darkness\" and \"Looper.\"\n\n\"Heart of Darkness,\" directed by Francis Ford Coppola, is an adaptation of Joseph Conrad's novel. It follows a policeman on a perilous journey into the heart of darkness, much like your interest in 'Lord Jim.'\n\nAs for \"Looper,\" it's a unique sci-fi thriller with a captivating plot about time travel and assassination. Joseph Gordon-Levitt and Bruce Willis deliver compelling performances that will keep you on the edge of your seat! Both films offer depth and intrigue, ensuring an engaging watch. Enjoy!",
       "constraints": {
-        "genre": "biopic"
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "actor": "Eve",
+        "language": "ger",
+        "director": "Roger Avary",
+        "writer": "Roger Avary"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Bohemian Rhapsody tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "What's the mood of Heart of Darkness? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Bohemian Rhapsody is a biopic about the life of Queen's lead singer Freddie Mercury. If you enjoy that, I'd recommend \"Rocketman\", which tells a similar story but focuses on Elton John's life and career. Both films offer insightful looks into the lives of iconic musicians. Enjoy the journey!",
+      "text": "\"It seems you're in the mood for an intriguing thriller! If you enjoyed the psychological elements in Heart of Darkness, I'd recommend checking out 'The Secret Garden.' This film is a gripping spy story that will keep you on the edge of your seat. Starring AJ Cross as our hero, it's a classic spy movie with all the suspense and intrigue you could ask for!\n\nIf you're looking for something slightly different but equally captivating, 'Man on Wire' is another great choice. This documentary tells the true story of Philippe Petit's daring high-wire walk between the Twin Towers in 1974 \u2013 a testament to human courage and determination.\"",
       "constraints": {
-        "genre": "biopic"
+        "genre": "language",
+        "plot": [
+          "what",
+          "heart"
+        ],
+        "name": "Heart of Darkness",
+        "actor": "Eve",
+        "language": "ger",
+        "director": "Roger Avary",
+        "writer": "Roger Avary"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Bohemian Rhapsody. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "Could we look at films from around 1960? Hmm, I didn\u2019t expect that vibe. Maybe something like what you shared about The Secret Garden."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Given your interest in biopics, you might enjoy \"The Theory of Everything\" and \"Rocketman\". The former tells the love story of Stephen Hawking, while the latter is a musical biography of Sir Elton John. Both offer captivating narratives about remarkable individuals.",
+      "text": "Based on your preference for films from around 1960 and a vibe similar to \"The Secret Garden,\" I'd recommend \"Lord Jim\" from 1960. This movie follows a seaman trying to redeem himself after being discredited as a coward, much like children in \"The Secret Garden\" seek to understand and heal their pasts.\n\nIf you're open to venturing outside the 1960 timeframe, another intriguing option could be \"A Tale of Two Cities,\" an adaptation of Charles Dickens' classic novel about two men living in different eras of France but sharing a love for the same woman. It was released in 1859, though a film version was made in 1935 and another in 1958 if you prefer more recent productions.",
       "constraints": {
-        "genre": "biopic"
+        "genre": "language",
+        "plot": [
+          "could",
+          "look"
+        ],
+        "name": "The Secret",
+        "actor": "Eve",
+        "language": "ger",
+        "director": "Roger Avary",
+        "writer": "Roger Avary",
+        "year": "1960"
       }
     },
     {
       "speaker": "USER",
-      "text": "Forget what I said before \u2014 that might\u2019ve been too specific."
+      "text": "What's the mood of The Secret Garden? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your interest in biopics, I'd highly recommend watching \"The King's Speech\" and \"A Beautiful Mind\". Both films offer captivating stories about real individuals overcoming personal struggles. Enjoy the cinematic journey!",
+      "text": "It seems like you might appreciate \"Elizabeth\" as it delves into the early years of Queen Elizabeth I's reign, offering a historical perspective that might be intriguing. Another movie worth considering is \"The Equalizer,\" starring Denzel Washington, which explores themes of justice in a more contemporary setting. Both films offer compelling narratives with strong acting performances. Enjoy your movie time!",
       "constraints": {
-        "genre": "biopic"
+        "genre": "language",
+        "plot": [
+          "what",
+          "secret"
+        ],
+        "name": "The Secret",
+        "actor": "Eve",
+        "language": "ger",
+        "director": "Roger Avary",
+        "writer": "Roger Avary",
+        "year": "1960"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of A Beautiful Mind? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "I like the sound of Tron. Who stars in it? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "\"A Beautiful Mind and The Imitation Game both offer compelling narratives within the biopic genre, focusing on the lives of brilliant but troubled individuals. If you're up for a more contemporary take, 'The Social Network' delves into the creation of Facebook.\"",
+      "text": "Based on your interest in the sound of Tron and the fact that you didn't specify a particular year, I'd like to recommend two movies that might intrigue you:\n\n1. \"A Tale of Two Cities\" (1859) - This classic novel was adapted into a film and features an intense plot about love, redemption, and the French Revolution.\n2. \"Rockshow\" (1976) - Although it's not a sci-fi movie like Tron, this concert film features Paul McCartney and Wings performing live on their epic world tour. It might appeal to you due to its unique sound and music.",
       "constraints": {
-        "genre": "biopic"
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Tron",
+        "actor": "Eve",
+        "language": "ger",
+        "director": "Roger Avary",
+        "writer": "Roger Avary",
+        "year": "1960"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thanks for all the detail on Up. Could we explore biopic next, though something emotional wouldn\u2019t hurt?"
+      "text": "What kind of story does A Tale of Two Cities tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "For an emotional biopic, I'd highly recommend \"A Beautiful Mind\" or \"Bohemian Rhapsody\". Both films provide a captivating portrayal of real individuals and evoke a wide range of emotions. Enjoy the journey!",
+      "text": "Based on your interest in language, literature, and intriguing plots, I'd recommend \"The Odyssey\". This film adapts Homer's epic poem into a series of 24 short films by different directors, offering a unique exploration of storytelling and the journey home after war. Or, if you're in the mood for a modern detective tale with a twist, \"Zero Effect\" might appeal to you, starring Ben Stiller as the world's greatest detective solving a complex case of blackmail and missing keys. Enjoy the movies!",
       "constraints": {
-        "genre": "biopic"
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "A Tale of Two Cities",
+        "actor": "Eve",
+        "language": "ger",
+        "director": "Roger Avary",
+        "writer": "Roger Avary",
+        "year": "1960"
       }
     }
   ]

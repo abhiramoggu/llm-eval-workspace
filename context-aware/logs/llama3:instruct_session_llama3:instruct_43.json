@@ -1,71 +1,230 @@
 {
   "model_name": "llama3:instruct",
-  "true_genre": "comedy",
+  "true_genre": "california",
   "conversation": [
     {
       "speaker": "USER",
-      "text": "I'm in the mood for a comedy movie. Could you recommend a few?"
+      "text": "I'm in the mood for a piracy movie. Could you recommend a few?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "I'm glad you're in the mood for a comedy! I highly recommend \"Superbad\" - it's a classic coming-of-age comedy that's both relatable and hilarious, with memorable characters and quotes. Alternatively, if you're up for something a bit more recent, \"Game Night\" is a great choice, offering a fun blend of witty humor, clever plot twists, and lovable characters.",
+      "text": "I think I have just the pirate-y movie for you! I'd recommend \"The Seduction of Joe Tynan\" - not exactly a traditional pirate movie, but it's a great exploration of morality and compromise, with some fantastic performances from Melvyn Douglas and Meryl Streep. Plus, who can resist a good old-fashioned political drama?\n\nOr, if you're in the mood for something a bit more... magical, I think \"Maleficent\" could be up your alley! It's a great reimagining of the classic Disney tale, with Angelina Jolie Pitt bringing her A-game as the titular villain.",
       "constraints": {
-        "genre": "comedy"
+        "genre": "piracy",
+        "plot": [
+          "could"
+        ],
+        "name": "You"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Superbad tell? That feels deeper than I thought."
+      "text": "What's the mood of {'name': 'Cutthroat Island', 'year': '1995', 'genre': ['Piracy', 'Action Film', 'Comedy', 'Action', 'Romance Film', 'Family (Film genre) #395', 'Adventure Film', 'Adventure'], 'actor': ['David Bailie', 'Harris Yulin', 'Christopher Masterson', 'Christopher Masterson', 'Rex Linn', 'Matthew Modine', 'Matthew Modine', 'Renny Harlin', 'Maury Chaykin', 'Frank Langella', 'Frank Langella'], 'director': ['Renny Harlin'], 'language': ['English Language', 'English'], 'writer': ['Robert King', 'Marc Norman', 'Michael Frost Beckner', 'Bruce A. Evans', 'Raynold Gideon'], 'plot': 'A female pirate and her companion race against their rivals to find a hidden island that contains a fabulous treasure.', 'original_id': '1261'}? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I'm glad you enjoyed Superbad! If you're looking for more laughs, I'd recommend \"The Hangover\" - it's a wild and hilarious ride about a group of friends trying to piece together the night before after a crazy bachelor party in Vegas. Or, if you're up for something a bit more silly, \"Anchorman: The Legend of Ron Burgundy\" is a classic comedy that's sure to have you giggling with its absurd humor and memorable characters!",
+      "text": "Based on your interest in \"Cutthroat Island\", I think you might enjoy \"Inside Man\"! This movie has a similar blend of action and suspense, with Denzel Washington delivering a strong performance as the bank robber caught up in a high-stakes hostage situation. The clever plot twists will keep you engaged until the very end!",
       "constraints": {
-        "genre": "comedy"
+        "genre": "action",
+        "plot": [
+          "what",
+          "name"
+        ],
+        "name": "Her",
+        "year": "1995",
+        "actor": "David Bailie",
+        "director": "Renny Harlin",
+        "language": "English Language",
+        "writer": "Bruce A. Evans"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Superbad? Hmm, I didn\u2019t expect that vibe."
+      "text": "It\u2019s weird \u2014 I thought I liked that, but maybe not."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I'm glad you enjoyed Superbad! Based on its tone, I think you'd also love \"The Hangover\" - it's another raunchy comedy that follows a group of friends as they try to piece together a wild night in Vegas. If you're looking for something a bit more recent and hilarious, \"Game Night\" is another great choice - it's a clever, laugh-out-loud comedy about a group of friends who get caught up in a series of misadventures during a game night.",
+      "text": "I think I've got just the thing for you! Have you considered \"The Land Before Time\"? It's an oldie but a goodie, and I think its themes of perseverance and family might resonate with you. Plus, who can resist those adorable dinosaur characters?",
       "constraints": {
-        "genre": "comedy"
+        "genre": "action",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "Her",
+        "year": "1995",
+        "actor": "David Bailie",
+        "director": "Renny Harlin",
+        "language": "English Language",
+        "writer": "Bruce A. Evans"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of The Hangover. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "What kind of story does The Land Before Time tell? Hmm, I didn\u2019t expect that vibe."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think you'd really enjoy \"Superbad\"! It's a classic coming-of-age comedy that shares some of the same irreverent humor and memorable characters as \"The Hangover\". Would you like me to recommend another one, or are you ready to give \"Superbad\" a try?",
+      "text": "I see you're looking for a change of pace from The Land Before Time! I think you might enjoy \"MegaMind\" - it's an action-packed animated film with a great cast, including Tom McGrath and David Cross. Or if you're in the mood for something a bit more intense, \"The Bourne Legacy\" is a thrilling spy movie that's sure to keep you on the edge of your seat!",
       "constraints": {
-        "genre": "comedy"
+        "genre": "action",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The Land Before Time",
+        "year": "1995",
+        "actor": "David Bailie",
+        "director": "Renny Harlin",
+        "language": "English Language",
+        "writer": "Bruce A. Evans"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thanks for all the detail on The Hangover. Could we explore adventure next, something that surprises me emotionally?"
+      "text": "I like the sound of MegaMind. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I have just the ticket for you! Have you considered \"Life of Pi\" (2012)? It's a visually stunning adventure film that will surprise and move you emotionally, as it tells the incredible true story of a young boy's journey on a lifeboat with a mysterious Bengal tiger.",
+      "text": "I think I've got just the thing for you! If you're looking for an action-packed film, I'd recommend \"Under Siege 2: Dark Territory\" (1995). It's a thrilling train heist movie starring Steven Seagal as Casey Ryback, and it seems like your taste in movies might align with this one. Would you like to give it a try?",
       "constraints": {
-        "genre": "adventure"
+        "genre": "action",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "MegaMind",
+        "year": "1995",
+        "actor": "David Bailie",
+        "director": "Renny Harlin",
+        "language": "English Language",
+        "writer": "Bruce A. Evans"
       }
     },
     {
       "speaker": "USER",
-      "text": "Maybe I was wrong earlier."
+      "text": "Could we look at films from around 1857? Maybe I\u2019m overthinking it, but it sounds fascinating. Maybe something like what you shared about Heist."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I can help you with that! Maybe you'd enjoy something like \"Indiana Jones and the Raiders of the Lost Ark\" or \"Pirates of the Caribbean: The Curse of the Black Pearl\"? Both are classic adventure films with plenty of action, excitement, and memorable characters to keep you on the edge of your seat.",
+      "text": "I think I've got just the thing for you! Have you considered \"Inside Llewyn Davis\"? It's a fantastic film that explores the Greenwich Village folk scene of the early 1960s, and features a memorable performance from Justin Timberlake. The movie has a unique atmosphere and tone that might remind you of the heist movies you enjoy.\n\nAlternatively, if you're in the mood for something a bit more unconventional, I'd recommend \"Interview with the Assassin\". It's a thought-provoking film that explores conspiracy theories surrounding the JFK assassination, and features a intriguing premise that might pique your interest.",
       "constraints": {
-        "genre": "adventure"
+        "genre": "heist",
+        "plot": [
+          "could",
+          "look"
+        ],
+        "name": "Heist",
+        "year": "1995",
+        "actor": "David Bailie",
+        "director": "Renny Harlin",
+        "language": "English Language",
+        "writer": "Bruce A. Evans"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Heist? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right movie for you! Have you considered \"The Other Guys\"? It's a fun, action-packed comedy with a great cast, including Will Ferrell and Mark Wahlberg. The plot is full of laughs as these two mismatched detectives try to step up their game.",
+      "constraints": {
+        "genre": "heist",
+        "plot": [
+          "what",
+          "heist"
+        ],
+        "name": "Heist",
+        "year": "1995",
+        "actor": "David Bailie",
+        "director": "Renny Harlin",
+        "language": "English Language",
+        "writer": "Bruce A. Evans"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Matched. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've found a great match for you! Based on your interest in \"Matched\", I'd like to recommend \"Saw III\" - it's a thrilling ride with a complex plot and memorable characters, similar to the suspenseful tone of \"Matched\". Plus, the film features some intense moments that might keep you on the edge of your seat. Would you like to give it a try?",
+      "constraints": {
+        "genre": "heist",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "year": "1995",
+        "actor": "David Bailie",
+        "director": "Renny Harlin",
+        "language": "English Language",
+        "writer": "Bruce A. Evans"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Saw III tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might really enjoy \"Clerks\"! It's a hilarious and relatable indie comedy that follows two convenience store clerks as they navigate their mundane day jobs and share their thoughts on life, love, and movies - all while having a blast. With its witty dialogue and memorable characters, it's a true cult classic that has stood the test of time.",
+      "constraints": {
+        "genre": "heist",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Saw III",
+        "year": "1995",
+        "actor": "David Bailie",
+        "director": "Renny Harlin",
+        "language": "English Language",
+        "writer": "Bruce A. Evans"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on They. Could we explore cult next, something that surprises me emotionally?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the movie for you! Have you considered \"You Kill Me\" (2007)? This cult classic stars Ben Kingsley as an hitman trying to dry out in California, and it's a hilarious and heartwarming ride. The chemistry between Ben and his tart-tongued love interest is undeniable, and I think it'll surprise you emotionally in all the right ways!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "They",
+        "year": "1995",
+        "actor": "David Bailie",
+        "director": "Renny Harlin",
+        "language": "English Language",
+        "writer": "Bruce A. Evans"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You Kill Me? That sounds intriguing."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"The Swindle\"! It's a cult classic with a fun, lighthearted tone and some great performances from Richard Basehart and Michel Serrault. The plot is clever and engaging, following two con artists as they try to outwit each other and the women they're scamming.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "kill"
+        ],
+        "name": "You Kill Me",
+        "year": "1995",
+        "actor": "David Bailie",
+        "director": "Renny Harlin",
+        "language": "English Language",
+        "writer": "Bruce A. Evans"
       }
     },
     {
@@ -74,152 +233,187 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I can help you find a great adventure movie! Based on your willingness to be open-minded, I'd recommend either \"Indiana Jones and the Raiders of the Lost Ark\" - an iconic classic with non-stop action and humor - or \"Pirates of the Caribbean: The Curse of the Black Pearl\" - a swashbuckling tale with memorable characters and a dash of fantasy. Which one sparks your interest?",
+      "text": "I think I've got just the thing for you! Based on your interest in cult classics, I'd recommend \"What Planet Are You From?\" (2000) - it's a quirky and charming film with a unique premise that combines sci-fi and romance. The all-star cast, including Linda Fiorentino and Garry Shandling, adds to the movie's charm. Give it a try!",
       "constraints": {
-        "genre": "adventure"
+        "genre": "cult",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "You Kill Me",
+        "year": "1995",
+        "actor": "David Bailie",
+        "director": "Renny Harlin",
+        "language": "English Language",
+        "writer": "Bruce A. Evans"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Pirates of the Caribbean: The Curse of the Black Pearl tell? That sounds intriguing."
+      "text": "Forget what I said before \u2014 that might\u2019ve been too specific."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I'm glad you're intrigued by Pirates of the Caribbean! If you enjoy adventure and swashbuckling, I highly recommend Indiana Jones and the Raiders of the Lost Ark - it's a classic that sets the bar high for action-packed storytelling. Alternatively, if you'd like to stay within the same genre but with a slightly different tone, The Mummy (1999) is another thrilling option that explores ancient civilizations and treasure hunting.",
+      "text": "I think I have just the thing for you! Have you considered checking out \"Ferris Bueller's Day Off\"? It's a classic cult favorite from 1986 (not 1995, but bear with me) that has a similar tone and wit to what you might be looking for. The film follows a charismatic high school student who plays hooky and takes his friends on a wild adventure in Chicago - it's a really fun and lighthearted ride!",
       "constraints": {
-        "genre": "adventure"
+        "genre": "cult",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "You Kill Me",
+        "year": "1995",
+        "actor": "David Bailie",
+        "director": "Renny Harlin",
+        "language": "English Language",
+        "writer": "Bruce A. Evans"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of The Mummy? That feels deeper than I thought."
+      "text": "What kind of story does Chicago tell? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I'm glad you enjoyed The Mummy! Based on your interest in the adventure genre and looking for something similar, I'd highly recommend \"Indiana Jones and the Raiders of the Lost Ark\" - it's a classic adventure film that shares some of the same thrilling elements and humor as The Mummy.",
+      "text": "I think I've got just the ticket for you! If you're looking for a cult classic with a similar tone and style to Chicago, I'd recommend \"The Quick and the Dead\" from 1995. This Western has a great mix of action, drama, and quirky characters, all set against the backdrop of a thrilling dueling tournament.",
       "constraints": {
-        "genre": "adventure"
+        "genre": "cult",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Chicago",
+        "year": "1995",
+        "actor": "David Bailie",
+        "director": "Renny Harlin",
+        "language": "English Language",
+        "writer": "Bruce A. Evans"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of The Mummy. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "Forget what I said before \u2014 that might\u2019ve been too specific."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think you might enjoy \"Indiana Jones and the Raiders of the Lost Ark\" - it's an iconic adventure film with a lot of action, humor, and excitement! If you're not ready for Indy just yet, \"Pirates of the Caribbean: The Curse of the Black Pearl\" is another swashbuckling adventure that's full of fun and adventure.",
+      "text": "I think I've got just the thing for you! Have you considered \"The Bounty\" (1984)? It's a classic adventure film with an all-star cast, including Mel Gibson and Laurence Olivier, that explores the high seas and features stunning cinematography. Would you like to set sail on this iconic voyage?",
       "constraints": {
-        "genre": "adventure"
+        "genre": "cult",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "Chicago",
+        "year": "1995",
+        "actor": "David Bailie",
+        "director": "Renny Harlin",
+        "language": "English Language",
+        "writer": "Bruce A. Evans"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thanks for all the detail on Indiana Jones and the Raiders of the Lost Ark. Could we explore action next, though something emotional wouldn\u2019t hurt?"
+      "text": "I like the sound of The Bounty. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I have just the ticket! You might enjoy \"Mad Max: Fury Road\" which is an adrenaline-fueled action movie with a strong female lead and stunning visuals, or \"John Wick\" if you're looking for a non-stop action ride with a dash of emotional depth as we follow the titular character's quest for revenge.",
+      "text": "I think I have just the thing for you! If you liked the sound of The Bounty, I think you might enjoy The Hunted (2003) - it's a tense thriller with a similar wilderness setting and an eerie atmosphere. The movie features Tommy Lee Jones as a rugged cop who's hiding secrets, which adds to the intrigue.",
       "constraints": {
-        "genre": "action"
+        "genre": "cult",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Bounty",
+        "year": "1995",
+        "actor": "David Bailie",
+        "director": "Renny Harlin",
+        "language": "English Language",
+        "writer": "Bruce A. Evans"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of John Wick. Who stars in it? Hmm, I didn\u2019t expect that vibe."
+      "text": "Thinking about The Hunted, could we shift toward stories about micallef? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your interest in John Wick, I think you might also enjoy the high-octane action of Atomic Blonde or Mission Impossible: Fallout - both feature intense fight choreography and thrilling stunts! Would you like me to recommend more options?",
+      "text": "I think you might enjoy \"Jackie Brown\"! It's a great action-packed movie with strong performances from Pam Grier and Samuel L. Jackson, and it's got a similar gritty tone to \"The Hunted\". Plus, Quentin Tarantino's involvement ensures that the dialogue is sharp and witty.\n\nIf you're not in the mood for an action flick, I think \"Romance & Cigarettes\" could be a great choice instead! It's a quirky musical with a talented cast, including Steve Buscemi and Kate Winslet. The story has some interesting themes about love and redemption, and it might appeal to fans of offbeat indie films.",
       "constraints": {
-        "genre": "action"
+        "genre": "war",
+        "plot": [
+          "thinking",
+          "hunted"
+        ],
+        "name": "War",
+        "year": "1995",
+        "actor": "David Bailie",
+        "director": "Renny Harlin",
+        "language": "English Language",
+        "writer": "Bruce A. Evans"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does John Wick tell? That sounds intriguing."
+      "text": "I like the sound of The Hunted. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I'm glad you're intrigued by John Wick! If you enjoy high-octane action and thrilling sequences, I'd highly recommend checking out Mad Max: Fury Road - it's a non-stop adrenaline rush with stunning stunts and a strong female lead.",
+      "text": "I think I have just the ticket for you! Based on your interest in \"The Hunted\", I recommend checking out \"A Fistful of Dollars\". This classic Western film stars Clint Eastwood, who's known for his tough-guy persona, and has a gritty plot that'll keep you on the edge of your seat.",
       "constraints": {
-        "genre": "action"
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "year": "1995",
+        "actor": "David Bailie",
+        "director": "Renny Harlin",
+        "language": "English Language",
+        "writer": "Bruce A. Evans"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of John Wick? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "What kind of story does The Hunted tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think you'd love the adrenaline rush of \"Mad Max: Fury Road\" - it's an intense action film with heart-pumping stunts and a strong female lead! If you're in the mood for something a bit more grounded, I'd recommend \"Die Hard\", which is a classic action movie that's equal parts explosive and entertaining.",
+      "text": "I think I have just the movie for you! Have you considered \"The Long Kiss Goodnight\"? It's an action-packed thriller from 1996, starring Geena Davis and Samuel L. Jackson, which explores themes of memory and identity - sounds like it might scratch that \"what kind of story\" itch for you!",
       "constraints": {
-        "genre": "action"
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "year": "1995",
+        "actor": "David Bailie",
+        "director": "Renny Harlin",
+        "language": "English Language",
+        "writer": "Bruce A. Evans"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thanks for all the detail on Mad Max: Fury Road. Could we explore action and crime next, though something emotional wouldn\u2019t hurt?"
+      "text": "What's the mood of The Hunted? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I have just the films for you! Considering your interest in action and crime, with a dash of emotional depth, I'd recommend \"Goodfellas\" (1990) - a gritty and intense exploration of mob life, with outstanding performances and direction by Martin Scorsese. Alternatively, \"Training Day\" (2001) is another great choice, featuring Denzel Washington as a rogue cop on a tense, morally complex ride.",
+      "text": "I think you might really enjoy \"Fury\"! The film takes place during a intense and pivotal moment in history, and Brad Pitt's performance as a grizzled tank commander is phenomenal. It's a gripping war drama that explores the psychological toll of combat on its characters.\n\nIf you're looking for something a bit more offbeat, I'd recommend \"Hobo with a Shotgun\"! This cult classic is an over-the-top, pulpy action film that's full of humor and heart. Robb Wells' performance as the titular hobo is fantastic, and the movie has a great sense of style and energy.",
       "constraints": {
-        "genre": "crime"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Maybe I was wrong earlier."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "You're looking for a crime movie, huh? Maybe I was wrong earlier' indeed! I'd highly recommend \"Goodfellas\" - it's a classic crime drama that'll keep you on the edge of your seat with its intense story and memorable characters. If you're in the mood for something more recent, \"Sicario\" is another great choice, exploring the darker side of law enforcement and the moral gray areas they often face.",
-      "constraints": {
-        "genre": "crime"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I\u2019m not sure anymore; perhaps I changed my mind."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I'm glad you're open to exploring the crime genre again! I think two great options would be \"Goodfellas\" and \"The Departed\". Both are critically acclaimed, gripping stories that explore the world of organized crime and law enforcement, with complex characters and intense action. Would you like more information about either of these films?",
-      "constraints": {
-        "genre": "crime"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of It? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "It sounds like you're drawn to the darker, more intense aspects of crime dramas! I think you'd really enjoy \"Goodfellas\" (1990) - Martin Scorsese's gritty and unflinching portrayal of the mob will keep you on the edge of your seat. If you're in the mood for something a bit more recent, \"Sicario\" (2015) is another great choice, with its tense exploration of the war on drugs and corrupt law enforcement.",
-      "constraints": {
-        "genre": "crime"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Up. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Up is a heartwarming film, but if you're looking for something with a darker tone and crime element, I'd recommend \"Goodfellas\" or \"Training Day\". Both are classics in the genre and have complex characters that will keep you engaged!",
-      "constraints": {
-        "genre": "crime"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Up tell? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I'm glad you appreciated the depth of Up! If you're looking for a crime story that's just as thought-provoking, I highly recommend Goodfellas - Martin Scorsese's gritty and intense portrayal of the mob will keep you on the edge of your seat. Alternatively, if you enjoy complex characters and morally ambiguous themes, The Departed is another great choice that explores the dark side of human nature.",
-      "constraints": {
-        "genre": "crime"
+        "genre": "war",
+        "plot": [
+          "what",
+          "hunted"
+        ],
+        "name": "Ted",
+        "year": "1995",
+        "actor": "David Bailie",
+        "director": "Renny Harlin",
+        "language": "English Language",
+        "writer": "Bruce A. Evans"
       }
     }
   ]

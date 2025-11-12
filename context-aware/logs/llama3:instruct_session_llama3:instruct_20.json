@@ -1,16 +1,53 @@
 {
   "model_name": "llama3:instruct",
-  "true_genre": "drama",
+  "true_genre": "american civil war",
   "conversation": [
     {
       "speaker": "USER",
-      "text": "I'm in the mood for a drama movie. Could you recommend a few?"
+      "text": "I'm in the mood for a death movie. Could you recommend a few?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I can help you with that! Two drama movies that are highly acclaimed and might resonate with you are \"A Beautiful Mind\" (2001), a biographical drama about a mathematician struggling with schizophrenia, starring Russell Crowe; or \"The Pursuit of Happyness\" (2006), a biographical drama based on the true story of a single father's journey to build a better life for himself and his son.",
+      "text": "I think I have just the thing for you! If you're in the mood for a death movie, I'd highly recommend \"Constantine\" (2005). It's a supernatural thriller that explores themes of mortality and features an all-star cast, including Keanu Reeves as the titular character. The plot is intriguing, following Constantine as he helps a policewoman unravel the mystery behind her sister's death.\n\nIf you're interested in something a bit more grounded in reality, \"Zero Dark Thirty\" (2012) is a gripping dramatization of the decade-long hunt for Osama bin Laden that culminates in his eventual demise. It's a tense and thought-provoking film with strong performances from its cast.",
       "constraints": {
-        "genre": "drama"
+        "genre": "death",
+        "plot": [
+          "death",
+          "could"
+        ],
+        "name": "You"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Tron. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the movie for you! Have you considered \"Planet Terror\"? It's a thrilling zombie-flick that shares some of the same cyberpunk vibes as Tron. With an all-star cast, including Robert Rodriguez and Rose McGowan, it's sure to keep you on the edge of your seat!",
+      "constraints": {
+        "genre": "death",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Tron"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Planet Terror? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think Planet Terror is a great choice, and if you're looking for something with a similar blend of action and intrigue, I'd recommend Interstellar! This visually stunning sci-fi film takes you on a thrilling journey through wormholes and black holes as a team searches for a new home for humanity. With Matthew McConaughey leading the cast, you're in good hands",
+      "constraints": {
+        "genre": "death",
+        "plot": [
+          "what",
+          "planet"
+        ],
+        "name": "Planet Terror"
       }
     },
     {
@@ -19,9 +56,14 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "It's totally normal to change your mind, and I'm happy to help you find a new movie that suits your mood.\n\nBased on the drama genre, I'd recommend \"The Pursuit of Happyness\" (2009) or \"A Beautiful Mind\" (2001). Both films are powerful stories about perseverance and the human spirit, with outstanding performances from their lead actors.",
+      "text": "I think I have just the thing for you! Considering your interest in death and uncertainty, I'd recommend \"Planet Terror\" - a thrilling zombie film that's sure to keep you on the edge of your seat. With an all-star cast, including Josh Brolin and Rose McGowan, it's a must-see for fans of the genre!",
       "constraints": {
-        "genre": "drama"
+        "genre": "death",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "Planet Terror"
       }
     },
     {
@@ -30,196 +72,281 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "I love a good twist! Based on your change of heart, I think you might enjoy \"A Beautiful Mind\" - it's a powerful and inspiring true story about overcoming adversity, with outstanding performances from Russell Crowe and Jennifer Connelly. Alternatively, if you're in the mood for something a bit more recent and intense, \"Moonlight\" is a beautifully crafted coming-of-age drama that explores themes of identity, community, and the power of human connection.",
+      "text": "I think I have just the thing! How about \"Blow Out\"? It's a classic thriller from the 80s that combines a gripping mystery with some really tense suspenseful moments. With John Travolta and Nancy Allen starring, it's definitely an iconic film worth checking out.",
       "constraints": {
-        "genre": "drama"
+        "genre": "death",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Planet Terror"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does A Beautiful Mind tell? Hmm, I didn\u2019t expect that vibe."
+      "text": "What kind of story does Blow Out tell? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I'm glad you enjoyed A Beautiful Mind! If you're in the mood for a drama that explores the human condition, I highly recommend The Pursuit of Happyness or Good Will Hunting - both films feature inspiring true stories and outstanding performances from their leads.",
+      "text": "I think \"Blow Out\" is going to be a dark and thrilling ride! If you're in the mood for something with a similar tone, I'd recommend \"Taken\". It's an action-packed movie with a gripping plot that'll keep you on the edge of your seat. Liam Neeson does a fantastic job as a father who will stop at nothing to rescue his daughter from human traffickers.",
       "constraints": {
-        "genre": "drama"
+        "genre": "death",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Blow Out"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Good Will Hunting. Who stars in it? That sounds intriguing."
+      "text": "Could we look at films from around 1937? Hmm, I didn\u2019t expect that vibe. Maybe something like what you shared about Taken."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think you might really enjoy \"The Pursuit of Happyness\" and \"Manchester by the Sea\". Both films share a similar tone and depth with Good Will Hunting, exploring themes of struggle, perseverance, and self-discovery in an emotional and thought-provoking way.",
+      "text": "I think I have just the thing for you! Based on your interest in death-themed movies from around 1937, I'd like to recommend \"Whispers\" (1980). This psychological thriller has a gripping plot where a woman is stalked by a psychopathic killer and the police don't believe her. The film stars a talented actress who brings depth to her character as she navigates this terrifying situation.\n\nIf you're not feeling the 80s vibe, I could also suggest \"White Night\" (2007). This crime thriller has a complex plot with a retired inspector re-investigating an old murder case that still haunts him. The film explores themes of guilt, responsibility, and the pursuit of justice.\n\nLet me know if either of these piques your interest!",
       "constraints": {
-        "genre": "drama"
+        "genre": "death",
+        "plot": [
+          "could",
+          "look"
+        ],
+        "name": "Taken",
+        "year": "1937"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Manchester by the Sea? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "What kind of story does White Night tell? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think you'll find that Manchester by the Sea has a very contemplative and introspective mood, which is reminiscent of Good Will Hunting. If you're in the mood for a dramatic exploration of complex characters, I'd highly recommend giving Good Will Hunting a try!",
+      "text": "I think \"To Have and Have Not\" might be up your alley, given its intriguing plot and historical context of World War II. The classic film features Humphrey Bogart in a romantic thriller that's sure to keep you on the edge of your seat! Would you like me to recommend another one as well?",
       "constraints": {
-        "genre": "drama"
+        "genre": "death",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "White Night",
+        "year": "1937"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thanks for all the detail on Manchester by the Sea. Could we explore drama and horror next, with a mix of excitement and warmth?"
+      "text": "What's the mood of Her? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I have just the right mix of excitement and warmth for you in the horror department! How about \"Get Out\" (2017), a critically acclaimed film that blends psychological horror with social commentary, or \"The Babadook\" (2014), a chilling yet emotional exploration of grief and trauma?",
+      "text": "I think you might really enjoy \"The Twilight Saga: New Moon\"! The mysterious and intriguing plot, combined with the star-crossed lovers' tale between Bella and Edward, will surely captivate you. And who knows, you might just find yourself rooting for Jacob's secret as well!\n\nIf that doesn't pique your interest, I'd also recommend \"American Dreamz\". It's a unique blend of humor and drama, with an all-star cast that includes Perrey Reeves, Dennis Quaid, and Willem Dafoe. The film's exploration of what it means to chase one's dreams is both thought-provoking and entertaining!",
       "constraints": {
-        "genre": "horror"
+        "genre": "death",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Her",
+        "year": "1937"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Get Out? That feels deeper than I thought."
+      "text": "I like the sound of X. Who stars in it? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I'm glad you enjoyed Get Out! If you're looking for more thought-provoking horror movies, I'd recommend checking out Hereditary or A Quiet Place. Both films share a similar atmospheric and emotional depth that will keep you on the edge of your seat.",
+      "text": "I think I have just the thing for you! Based on your interest in the sound of something, I'm going to recommend \"Of Mice and Men\" from 1937. This classic film features a powerful story about friendship and the American spirit, with an all-star cast (although it's not specified here).",
       "constraints": {
-        "genre": "horror"
+        "genre": "death",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "year": "1937"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Hereditary. Who stars in it? That sounds intriguing."
+      "text": "Thanks for all the detail on Her. Could we explore friendship next, with a mix of excitement and warmth?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "I'm glad you liked the sound of Hereditary! If you're looking for more unsettling and psychologically-driven horror movies, I'd recommend \"Get Out\" (2017) starring Daniel Kaluuya, which explores themes of identity, trauma, and family secrets in a thought-provoking way. Alternatively, if you prefer a more atmospheric and slow-burning approach, \"A Quiet Place\" (2018) with Emily Blunt might be up your alley, as it crafts tension through its use of sound design and clever direction.",
+      "text": "I think I have just the right films for you! Based on your interest in friendship with a mix of excitement and warmth, I'd recommend \"To Have and Have Not\" (1937) starring Humphrey Bogart and Walter Brennan. This classic film is a great blend of adventure, romance, and camaraderie, set against the backdrop of World War II.",
       "constraints": {
-        "genre": "horror"
+        "genre": "friendship",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "War",
+        "year": "1937"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Her tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "I like the sound of To Have and Have Not. Who stars in it? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think you'll find that \"Get Out\" and \"Hereditary\" both offer unique takes on the horror genre, with a focus on psychological terror and family dynamics. Both films have received critical acclaim for their thought-provoking stories and unsettling atmospheres. Would you like more information about either of these movies?",
+      "text": "I think I have just the thing for you! Based on your interest in \"To Have and Have Not\" (1937), which is a classic film with a strong focus on characters and relationships, I'd recommend checking out \"The Nanny\" (2003). This movie also explores complex themes and features a talented cast.",
       "constraints": {
-        "genre": "horror"
+        "genre": "friendship",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "To Have and Have Not",
+        "year": "1937"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thanks for all the detail on Us. Could we explore horror next, though something emotional wouldn\u2019t hurt?"
+      "text": "What kind of story does Tron tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I'd be happy to help! Since you're looking for something emotional in the horror genre, I think \"Hereditary\" would be a great fit. It's a thought-provoking and unsettling film that explores themes of grief, trauma, and family dynamics, with some truly heart-wrenching moments.",
+      "text": "I think I have just the right fit for you! Based on your interest in stories about what kind of story Tron tells, I'd recommend \"It's a Wonderful Life\" (1946) or \"The Yearling\" (1937). Both films explore themes of friendship and human connection, which seem to align with your preferences. In \"It's a Wonderful Life\", you'll get to see Clarence the angel help George Bailey discover what life would be like without him - it's a heartwarming tale that's sure to leave you feeling uplifted!",
       "constraints": {
-        "genre": "horror"
+        "genre": "friendship",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Tron",
+        "year": "1937"
       }
     },
     {
       "speaker": "USER",
-      "text": "It\u2019s weird \u2014 I thought I liked that, but maybe not."
+      "text": "What's the mood of X? Hmm, I didn\u2019t expect that vibe."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I can help you out! Since you're open to exploring the horror genre, I'd recommend checking out \"Get Out\" or \"Hereditary\". Both films are critically acclaimed and offer a unique blend of psychological thrills and chilling atmosphere that might appeal to your interests.",
+      "text": "I think I have just the right movie for you! Considering your interest in friendship, I'd recommend \"It's a Wonderful Life\" (1946). This classic film tells a heartwarming story of human connection and what could've been, starring James Stewart and Donna Reed. It's a timeless tale that explores the power of relationships and community, which I think would resonate with you.",
       "constraints": {
-        "genre": "horror"
+        "genre": "friendship",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "X",
+        "year": "1937"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Get Out? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "Maybe we could find more movies with Kenneth Branagh. Hmm, I didn\u2019t expect that vibe. Maybe something like what you shared about It's a Wonderful Life."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I love Get Out! If you're looking for a similar blend of psychological horror and social commentary, I'd recommend Hereditary or Us - both films also explore themes of family dynamics and the unknown in a thought-provoking way.",
+      "text": "I think I've got just the right recommendation for you! Considering your love for Kenneth Branagh and the vibe of \"It's a Wonderful Life\", I'd like to suggest \"The Hangover\" (2009). While it may not be a typical drama like \"Wonderful Life\", its lighthearted tone, humor, and themes of friendship and camaraderie might strike a chord with you. Plus, who can resist the hilarious antics of Bradley Cooper's character?",
       "constraints": {
-        "genre": "horror"
+        "genre": "friendship",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "It's a Wonderful Life",
+        "year": "1937",
+        "actor": "Kenneth Branagh",
+        "director": "Kenneth Branagh"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Us tell? That sounds intriguing."
+      "text": "What kind of story does It's a Wonderful Life tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think you might enjoy \"Get Out\" - it's a thought-provoking horror film that combines elements of social commentary with a creepy and unsettling atmosphere. If you're looking for something a bit more traditional, I'd recommend \"The Conjuring\" which is a well-crafted and intense haunted house movie based on real-life events!",
+      "text": "What a fascinating question! Based on your interest in stories about what kind of life, I think you might enjoy \"Waiting\" (1999). This film explores the lives and relationships of a group of friends as they prepare for a new addition to their circle, all while grappling with their own emotions and desires. With its focus on human connections and introspection, it's a great fit for your genre preferences!",
       "constraints": {
-        "genre": "horror"
+        "genre": "friendship",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "It's a Wonderful Life",
+        "year": "1937",
+        "actor": "Kenneth Branagh",
+        "director": "Kenneth Branagh"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of The Conjuring. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "What's the mood of X? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "You're a fan of The Conjuring, which is an excellent choice! If you're looking for more thrill and chill, I highly recommend \"Get Out\" - it's a masterclass in blending genres, with just the right amount of horror and social commentary. If you'd prefer something even scarier, \"Hereditary\" is a family drama turned into a nightmare that will keep you on edge until the very end!",
+      "text": "Based on your interest in a movie about friendship, I think you might enjoy \"Little Fockers\" (2010). It's a hilarious and lighthearted comedy that explores the relationships between family members and friends, with Ben Stiller and Robert De Niro delivering great performances.",
       "constraints": {
-        "genre": "horror"
+        "genre": "friendship",
+        "plot": [
+          "what"
+        ],
+        "name": "X",
+        "year": "1937",
+        "actor": "Kenneth Branagh",
+        "director": "Kenneth Branagh"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thanks for all the detail on The Conjuring. Could we explore drama next, something that surprises me emotionally?"
+      "text": "I like the sound of Little Fockers. Who stars in it? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I can help you with that! Based on your interest in emotional surprise, I'd recommend \"Moonlight\" or \"Manchester by the Sea\". Both films have received critical acclaim for their powerful storytelling and unexpected emotional punches - they'll definitely leave you feeling moved and contemplative!",
+      "text": "I think I've got just the thing for you! Have you considered \"The Right Stuff\" (1983)? It's a classic film that explores the early days of space exploration, and with its all-star cast, including Ed Harris and Dennis Quaid, it's sure to be an exciting ride. Plus, it's a great chance to see how Hollywood brought this fascinating true story to life on screen!",
       "constraints": {
-        "genre": "drama"
+        "genre": "friendship",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Little Fockers",
+        "year": "1937",
+        "actor": "Kenneth Branagh",
+        "director": "Kenneth Branagh"
       }
     },
     {
       "speaker": "USER",
-      "text": "Actually, now that I think about it, I might want the opposite."
+      "text": "Could we switch to something else by Francis Ford Coppola? That sounds intriguing. Maybe something like what you shared about The Right Stuff."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I love a good drama! Based on your interest in the opposite, I'd recommend \"A Beautiful Mind\" or \"The Pursuit of Happyness\". Both are powerful dramas that explore themes of hope and perseverance, with strong performances from Russell Crowe and Will Smith, respectively.",
+      "text": "I think I have just the thing for you! Since you liked The Right Stuff, I'm going to recommend Patton (1970). This film is a classic biographical war drama that showcases George C. Scott's iconic performance as General George S. Patton, and it's an incredible portrayal of military leadership during World War II. Would you like to give it a try?",
       "constraints": {
-        "genre": "drama"
+        "genre": "friendship",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "The Right Stuff",
+        "year": "1937",
+        "actor": "Francis Ford Coppola",
+        "director": "Francis Ford Coppola",
+        "writer": "Francis Ford Coppola"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does A Beautiful Mind tell? That feels deeper than I thought."
+      "text": "I like the sound of Patton. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "You're looking for more drama! I think you might really resonate with \"Good Will Hunting\", a powerful story about self-discovery and the complexities of human relationships, featuring an Oscar-winning performance from Matt Damon. If you enjoy that one, you may also appreciate the emotional depth of \"The Pursuit of Happyness\", a biographical drama about a struggling single father's determination to build a better life for himself and his young son.",
+      "text": "I think you'll really enjoy \"New York Stories\"! It's a fascinating anthology film that explores the complexities of human relationships, just like Patton does with its themes of leadership and power. The film features an incredible ensemble cast, including Woody Allen, Mia Farrow, and Martin Scorsese, each contributing to a unique and thought-provoking story about life in the Big Apple.",
       "constraints": {
-        "genre": "drama"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of The Pursuit of Happyness? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I totally get it! The Pursuit of Happyness is a biographical drama that's more uplifting than scary, if you're looking for something similar, I'd recommend \"Forrest Gump\" - another iconic and heartwarming drama about perseverance and the power of human spirit.",
-      "constraints": {
-        "genre": "drama"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of The Pursuit of Happyness. Who stars in it? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I'm glad you liked The Pursuit of Happyness! If you enjoyed the emotional and uplifting tone of that film, I think you might also appreciate A Beautiful Mind, another inspiring drama starring Russell Crowe as a mathematician struggling with schizophrenia, which explores themes of perseverance and human connection.",
-      "constraints": {
-        "genre": "drama"
+        "genre": "friendship",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Patton",
+        "year": "1937",
+        "actor": "Francis Ford Coppola",
+        "director": "Francis Ford Coppola",
+        "writer": "Francis Ford Coppola"
       }
     }
   ]

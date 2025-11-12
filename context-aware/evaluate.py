@@ -1,6 +1,7 @@
 """
 Hybrid evaluation for CRS:
 - Topic extraction (LLM or heuristic)
+- Topic extraction (LDA)
 - Topic segmentation & dynamic intent tracking
 - Recovery detection (rate, delay)
 - Interference (old topic leakage)
@@ -12,9 +13,12 @@ Hybrid evaluation for CRS:
 
 import json
 import re
+import os
 import subprocess
 from difflib import SequenceMatcher
 from typing import List, Dict, Any, Tuple, Optional
+
+import numpy as np
 
 from config import (
     MODE,
@@ -27,23 +31,120 @@ from config import (
     CAS_WEIGHTS,
     EMBEDDING_MODEL_NAME,
     VERBOSE_EVAL,
+    LDA_MODEL_PATH,
+    LDA_DICT_PATH,
+    LDA_MODEL_DIR,
+    USE_TRANSFORMER_EMBEDDER,
 )
+from dataset import MOVIE_DB # Import movie database for LDA training
 
 TOPIC_CACHE: Dict[str, List[str]] = {}
 SIM_CACHE: Dict[Tuple[str, str], float] = {}
-_EMBEDDING_MODEL: Optional[Any] = None
+_EMBEDDING_MODEL: Any = None
+_EMBEDDING_UNAVAILABLE = object()
+_EMBEDDING_BACKEND = "transformer"
+
+# --- LDA Model Globals ---
+_LDA_MODEL = None
+_LDA_DICTIONARY = None
+_LDA_LEMMATIZER = None
+_STOP_WORDS = None
+_GENSIM_AVAILABLE = False
+
+try:
+    from gensim import corpora
+    from gensim.models import LdaModel
+    from nltk.tokenize import word_tokenize
+    _GENSIM_AVAILABLE = True
+except ImportError:
+    print("Warning: `gensim` or `nltk` not installed. LDA topic extraction will not be available.")
+
+
+class TfidfSentenceEmbedder:
+    """Lightweight fallback embedder using sklearn's TF-IDF vectors."""
+
+    def __init__(self, max_features: int = 4096):
+        from sklearn.feature_extraction.text import TfidfVectorizer
+
+        corpus = []
+        for movie in MOVIE_DB.values():
+            name = movie.get("name")
+            plot = movie.get("plot")
+            if name:
+                corpus.append(name)
+            if plot:
+                corpus.append(plot)
+        if not corpus:
+            corpus = ["movie recommendation system"]
+
+        self.vectorizer = TfidfVectorizer(
+            max_features=max_features,
+            ngram_range=(1, 2),
+            lowercase=True,
+            stop_words="english",
+        )
+        self.vectorizer.fit(corpus)
+
+    def encode(self, texts: List[str], convert_to_tensor: bool = False):
+        matrix = self.vectorizer.transform(texts)
+        return matrix.toarray()
+
+
+def _build_tfidf_embedder() -> Optional[TfidfSentenceEmbedder]:
+    try:
+        embedder = TfidfSentenceEmbedder()
+        print("Info: Using TF-IDF based sentence embedder as a fallback.")
+        return embedder
+    except Exception as exc:
+        print(f"Warning: TF-IDF fallback embedder failed to initialize ({exc}).")
+        return None
 
 
 def ensure_embedding_model():
-    """Lazy-loads the sentence-transformer model to avoid loading it on every import."""
-    global _EMBEDDING_MODEL
-    if _EMBEDDING_MODEL is None:
+    """Lazy-loads the embedding backend, preferring sentence-transformers."""
+    global _EMBEDDING_MODEL, _EMBEDDING_BACKEND
+    if _EMBEDDING_MODEL is not None:
+        return
+
+    if USE_TRANSFORMER_EMBEDDER:
+        torch_available = False
+        torch_error = None
         try:
-            from sentence_transformers import SentenceTransformer
-            _EMBEDDING_MODEL = SentenceTransformer(EMBEDDING_MODEL_NAME)
-        except ImportError:
-            print("Warning: sentence-transformers is not installed. Similarity metrics will be degraded.")
-            _EMBEDDING_MODEL = "unavailable"
+            import torch  # noqa: F401
+            torch_available = True
+        except Exception as exc:  # torch will raise if numpy ABI mismatches
+            torch_error = exc
+
+        if torch_available:
+            try:
+                from sentence_transformers import SentenceTransformer
+
+                _EMBEDDING_MODEL = SentenceTransformer(EMBEDDING_MODEL_NAME)
+                _EMBEDDING_BACKEND = "transformer"
+                return
+            except ImportError:
+                print(
+                    "Warning: sentence-transformers is not installed. "
+                    "Falling back to TF-IDF embeddings."
+                )
+            except Exception as exc:
+                print(
+                    "Warning: sentence-transformers could not be initialized "
+                    f"({exc}). Falling back to TF-IDF embeddings."
+                )
+        else:
+            print(
+                "Info: Torch backend unavailable for transformer embeddings "
+                f"({torch_error}). Falling back to TF-IDF embeddings."
+            )
+
+    fallback = _build_tfidf_embedder()
+    if fallback:
+        _EMBEDDING_MODEL = fallback
+        _EMBEDDING_BACKEND = "tfidf"
+    else:
+        _EMBEDDING_MODEL = _EMBEDDING_UNAVAILABLE
+        _EMBEDDING_BACKEND = "unavailable"
 
 
 def call_ollama_json(prompt: str, model_name: str) -> Optional[dict]:
@@ -55,15 +156,63 @@ def call_ollama_json(prompt: str, model_name: str) -> Optional[dict]:
         text=True,
     )
     output, error = process.communicate(input=prompt)
-    if error:
-        print("Error:", error)
+    err_text = (error or "").strip()
+    if err_text and any(kw in err_text.lower() for kw in ["error", "failed"]):
+        print(f"Ollama Error ({model_name}): {err_text}")
     if not output:
         return None
     try:
         return json.loads(output.strip())
     except Exception:
+        print(f"Error parsing JSON from Ollama: {output}")
+        return None
+    except json.JSONDecodeError as e:
+        print(f"JSONDecodeError: {e}")
         return None
 
+
+def _preprocess_lda_text(text: str) -> List[str]:
+    """Tokenize, lemmatize, and remove stopwords for LDA."""
+    global _LDA_LEMMATIZER, _STOP_WORDS
+    if _LDA_LEMMATIZER is None:
+        from nltk.stem import WordNetLemmatizer
+        from nltk.corpus import stopwords as nltk_stopwords
+        import nltk
+        try:
+            nltk.data.find('tokenizers/punkt')
+            nltk.data.find('corpora/stopwords')
+            nltk.data.find('corpora/wordnet')
+        except LookupError:
+            print("NLTK data not found. Downloading...")
+            nltk.download('punkt', quiet=True)
+            nltk.download('punkt_tab', quiet=True)
+            nltk.download('stopwords', quiet=True)
+            nltk.download('wordnet', quiet=True)
+        _LDA_LEMMATIZER = WordNetLemmatizer()
+        _STOP_WORDS = set(nltk_stopwords.words('english'))
+
+    tokens = word_tokenize(text.lower())
+    lemmatized = [
+        _LDA_LEMMATIZER.lemmatize(t) for t in tokens if t.isalpha() and t not in _STOP_WORDS and len(t) > 2
+    ]
+    return lemmatized
+
+def ensure_lda_model():
+    """Loads the pre-trained LDA model and dictionary from disk."""
+    global _LDA_MODEL, _LDA_DICTIONARY
+    if not _GENSIM_AVAILABLE or _LDA_MODEL is not None:
+        return
+
+    if os.path.exists(LDA_MODEL_PATH) and os.path.exists(LDA_DICT_PATH):
+        if VERBOSE_EVAL:
+            print("--- Loading pre-trained LDA model ---")
+        _LDA_MODEL = LdaModel.load(LDA_MODEL_PATH)
+        _LDA_DICTIONARY = corpora.Dictionary.load(LDA_DICT_PATH)
+    else:
+        print("\n" + "="*60)
+        print("ERROR: Pre-trained LDA model not found.")
+        print(f"Please run `python train_lda.py` once to generate the model files.")
+        print("="*60 + "\n")
 
 # ---------------- Topic extraction ----------------
 
@@ -124,10 +273,12 @@ def call_ollama(model_name: str, prompt: str) -> str:
             stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
         )
         out, err = proc.communicate(input=prompt)
+        err_text = (err or "").strip()
+        if err_text and any(kw in err_text.lower() for kw in ["error", "failed"]):
+            print(f"Ollama Error ({model_name}): {err_text}")
     except FileNotFoundError:
+        print("Error: 'ollama' command not found. Is Ollama installed and in your PATH?")
         return ""
-    if err:
-        pass
     return (out or "").strip()
 
 
@@ -137,10 +288,10 @@ def extract_topics_llm(text: str, model: str = TOPIC_EXTRACTOR_MODEL, top_k: int
         return TOPIC_CACHE[text][:top_k]
 
     prompt = f"""
-Extract the 3–5 most meaningful *thematic* topics from this message in the context of movie or content recommendations.
-Focus on genres, emotions, tones, or concepts (e.g., 'romantic', 'space', 'fear', 'nostalgia').
-Return a JSON array only, no commentary.
-
+From the user's message below, extract up to 5 key thematic topics. These can be genres, emotions, concepts, or tones.
+Your response MUST be a single, valid JSON array of strings, and nothing else. Do not add any commentary.
+For example: ["romance", "space opera", "nostalgia", "fear"]
+---
 Text: {text}
 """
     topics = []
@@ -155,9 +306,36 @@ Text: {text}
     return filtered[:top_k]
 
 
+def extract_topics_lda(text: str, top_k: int = 5) -> List[str]:
+    """Infers topics for a given text using the pre-trained LDA model."""
+    ensure_lda_model()
+    if not _LDA_MODEL or not _LDA_DICTIONARY:
+        if _GENSIM_AVAILABLE:
+            print("Warning: LDA model not available. Falling back to heuristic topic extraction.")
+        return extract_topics_heuristic(text, top_k)
+
+    if text in TOPIC_CACHE:
+        return TOPIC_CACHE[text][:top_k]
+
+    processed_text = _preprocess_lda_text(text)
+    bow = _LDA_DICTIONARY.doc2bow(processed_text)
+    
+    topic_dist = _LDA_MODEL.get_document_topics(bow, minimum_probability=0.1)
+    if not topic_dist:
+        return []
+
+    # Get the most significant topic and its top words
+    best_topic_id = max(topic_dist, key=lambda item: item[1])[0]
+    topics = [word for word, _ in _LDA_MODEL.show_topic(best_topic_id, topn=top_k)]
+    
+    TOPIC_CACHE[text] = topics
+    return topics
+
 def extract_topics(text: str) -> List[str]:
     if TOPIC_EXTRACTOR_MODE == "llm":
         return extract_topics_llm(text)
+    if TOPIC_EXTRACTOR_MODE == "lda":
+        return extract_topics_lda(text)
     return extract_topics_heuristic(text)
 
 
@@ -167,21 +345,50 @@ def topics_to_text(topics: List[str]) -> str:
 
 def embedding_similarity(text_a: str, text_b: str) -> float:
     """Calculate semantic similarity using a sentence-transformer model."""
-    ensure_embedding_model()
+    global _EMBEDDING_MODEL
+    if _EMBEDDING_MODEL is None:
+        try:
+            ensure_embedding_model()
+        except Exception as exc:
+            print(
+                "Warning: embedding backend failed to initialize; "
+                f"falling back to lexical similarity ({exc})."
+            )
+            _EMBEDDING_MODEL = _EMBEDDING_UNAVAILABLE
     key = tuple(sorted((text_a, text_b)))
     if key in SIM_CACHE:
         return SIM_CACHE[key]
 
-    if _EMBEDDING_MODEL == "unavailable" or not hasattr(_EMBEDDING_MODEL, 'encode'):
+    # After attempting to load, check the status of _EMBEDDING_MODEL.
+    # This correctly handles the case where the model was just loaded.
+    if _EMBEDDING_MODEL is _EMBEDDING_UNAVAILABLE or not hasattr(_EMBEDDING_MODEL, "encode"):
+        if _EMBEDDING_MODEL is not _EMBEDDING_UNAVAILABLE:
+            print("Warning: sentence-transformers is not installed or model failed to load. Similarity metrics will be degraded.")
         sim = SequenceMatcher(None, text_a.lower(), text_b.lower()).ratio()
         SIM_CACHE[key] = sim
         return sim
 
-    from sentence_transformers import util
-    embeddings = _EMBEDDING_MODEL.encode([text_a, text_b], convert_to_tensor=True)
-    sim = util.pytorch_cos_sim(embeddings[0], embeddings[1]).item()
+    embeddings = _EMBEDDING_MODEL.encode([text_a, text_b], convert_to_tensor=False)
+    vec_a = _to_numpy_vector(embeddings[0])
+    vec_b = _to_numpy_vector(embeddings[1])
+    denom = (np.linalg.norm(vec_a) * np.linalg.norm(vec_b)) or 1e-8
+    sim = float(np.dot(vec_a, vec_b) / denom)
     SIM_CACHE[key] = sim
     return sim
+
+
+def _to_numpy_vector(vec: Any) -> np.ndarray:
+    if isinstance(vec, np.ndarray):
+        return vec
+    if hasattr(vec, "detach"):
+        return vec.detach().cpu().numpy()
+    if hasattr(vec, "cpu"):
+        return np.asarray(vec.cpu())
+    if hasattr(vec, "numpy"):
+        return np.asarray(vec.numpy())
+    if isinstance(vec, (list, tuple)):
+        return np.asarray(vec, dtype=float)
+    return np.asarray(vec, dtype=float)
 
 
 # ---------------- Conversation utilities ----------------
@@ -231,8 +438,8 @@ def detect_user_segments(conversation: List[Dict[str, Any]]) -> List[Dict[str, A
             prev_text = txt
         else:
             base = prev_text if prev_text else " ".join(prev_topics)
-            sim = embedding_similarity(base, txt)
             curr_topics = extract_topics(txt)
+            sim = embedding_similarity(base, txt)
             topic_jaccard = jaccard_overlap(prev_topics, curr_topics)
             shift_detected = (sim < SIM_TOPIC_SHIFT) or (topic_jaccard < TOPIC_JACCARD_SHIFT)
             if shift_detected:
@@ -404,7 +611,7 @@ def normalize(value: Optional[float], lo: float, hi: float, invert: bool = False
     return 1.0 - x if invert else x
 
 
-def compute_cas(metrics: Dict[str, Optional[float]]) -> Optional[float]:
+def compute_cas(metrics: Dict[str, Optional[float]]) -> Dict[str, Optional[float]]:
     trr = metrics.get("topic_recovery_rate")
     rd = normalize(metrics.get("avg_recovery_delay"), 1, 6, invert=True)
     ti = normalize(metrics.get("topic_interference"), 0, 1, invert=True)
@@ -426,11 +633,15 @@ def compute_cas(metrics: Dict[str, Optional[float]]) -> Optional[float]:
     for k, w in weights.items():
         v = parts.get(k)
         if v is not None:
-            score += w * v
+            weighted_val = w * v
+            score += weighted_val
             denom += w
+            parts[f"cas_{k}_weighted"] = weighted_val # Store the weighted component
+
     if denom == 0:
-        return None
-    return score / denom
+        return {"context_adaptation_score": None, "cas_components": parts}
+
+    return {"context_adaptation_score": score / denom, "cas_components": parts}
 
 
 def compute_turn_alignments(conversation: List[Dict[str, Any]], user_segments: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
@@ -456,47 +667,89 @@ def compute_turn_alignments(conversation: List[Dict[str, Any]], user_segments: L
     return alignments
 
 
+def _get_user_preferences_summary(conversation: List[Dict[str, Any]]) -> str:
+    """Extracts a summary of user preferences from their utterances."""
+    prefs = []
+    for turn in conversation:
+        if turn["speaker"] == "USER":
+            # Simple heuristic: look for phrases that state a preference
+            if re.search(r"i want|i'm in the mood for|how about|looking for", turn["text"], re.IGNORECASE):
+                prefs.append(turn["text"])
+    return "\n".join(prefs) if prefs else "No specific preferences stated."
+
+
 def llm_judge(conversation: List[Dict[str, Any]]) -> Dict[str, Optional[float]]:
     """LLM-as-judge for qualitative metrics."""
     convo_text = "\n".join([f"{t['speaker']}: {t['text']}" for t in conversation])
-    prompt = f"""
-You are a fair and impartial evaluator for conversational AI.
-Below is a conversation between a USER and a SYSTEM. The user's goal is to get movie recommendations.
-The user may change their mind or correct themselves. Your task is to evaluate how well the SYSTEM handled the conversation.
+    user_prefs = _get_user_preferences_summary(conversation)
 
-Conversation:
+    prompt = f"""
+[Task Description]
+You will be provided with a conversation between a User (annotated as "User") and a Conversational Recommender System (annotated as "Recommender") discussing movie recommendations.
+Your task is to evaluate and rate the performance of the Conversational Recommender System based on three specific metrics.
+
+[Evaluation Criteria]
+######
+Metric 1 - Proactiveness (1-5): This refers to the system’s capability to take initiative in guiding the conversation, asking relevant questions, and making suggestions to actively uncover and clarify the user’s preferences
+1: The Recommender is not proactive.
+2: The Recommender is slightly proactive.
+3: The Recommender is moderately proactive.
+4: The Recommender is mostly proactive.
+5: The Recommender is completely proactive.
+
+######
+Metric 2 - Coherence (1-5): This refers to the system's proficiency in maintaining logical consistency throughout the entire conversation, avoiding contradictions with previous statements, building upon earlier discussed preferences without unnecessary repetition, and providing contextually appropriate responses without abrupt transitions or disjointed exchanges.
+1: The Recommender's responses are incoherent.
+2: The Recommender's responses are slightly coherent.
+3: The Recommender's responses are moderately coherent.
+4: The Recommender's responses are mostly coherent.
+5: The Recommender's responses are completely coherent.
+
+######
+Metric 3 - Personalization (1-5): This refers to the system’s capability to engage in fluid interactions with users, providing linguistically natural responses that are contextually related to previous interactions, without abrupt transitions or disjointed exchanges.
+1: The Recommender does not fulfill the user's preferences.
+2: The Recommender slightly fulfills the user's preferences.
+3: The Recommender moderately fulfills the user's preferences.
+4: The Recommender mostly fulfills the user's preferences.
+5: The Recommender consistently fulfills the user's preferences.
+
+[Inputs]:
+User preferences:
+{user_prefs}
+
+Conversation History:
 {convo_text}
 
-Please rate the SYSTEM's performance on the following metrics on a scale from 0 (very poor) to 5 (excellent).
-Provide your response as a JSON object only, with no other text.
+[Output Format]
+You MUST provide your response *only* in the following format. Replace "[Score]" with the appropriate number. Do not include any other text, explanations, introductory phrases, or closing remarks.
 
-- clarity: Was the system's language clear and easy to understand?
-- politeness: Was the system polite and respectful?
-- recovery: When the user changed topics or corrected a mistake, how well did the system adapt?
-- context_memory: How well did the system remember earlier parts of the conversation?
-- engagement: Was the system engaging and conversational, or just robotic?
-
-JSON response format:
-{{"clarity": <0-5>, "politeness": <0-5>, "recovery": <0-5>, "context_memory": <0-5>, "engagement": <0-5>}}
+- Proactiveness: [Score]
+- Coherence: [Score]
+- Personalization: [Score]
 """
 
     if MODE == "mock":
-        return {"clarity": 4, "politeness": 5, "recovery": 3, "context_memory": 4, "engagement": 4}
+        return {"proactiveness": 4, "coherence": 4, "personalization": 3}
 
-    payload = call_ollama_json(prompt, JUDGE_MODEL)
+    # Use the standard call_ollama since the output is not JSON but a simple text format.
+    output = call_ollama(JUDGE_MODEL, prompt)
+    scores = {}
+    if output:
+        try:
+            for line in output.strip().split('\n'):
+                if ':' in line:
+                    key, value = line.split(':', 1)
+                    key = key.strip().lower().replace('-', '').replace(' ', '')
+                    # Extract digits from the value string
+                    score_val = re.search(r'\d+', value)
+                    if score_val:
+                        scores[key] = int(score_val.group())
+        except Exception as e:
+            print(f"LLM Judge Parsing Error: {e}\nRaw Output:\n{output}")
 
-    if payload and isinstance(payload, dict):
-        # Ensure all expected keys are present, defaulting to None
-        expected_keys = ["clarity", "politeness", "recovery", "context_memory", "engagement"]
-        return {key: payload.get(key) for key in expected_keys}
+    expected_keys = ["proactiveness", "coherence", "personalization"]
+    return {key: scores.get(key) for key in expected_keys}
 
-    return {
-        "clarity": None,
-        "politeness": None,
-        "recovery": None,
-        "context_memory": None,
-        "engagement": None,
-    }
 
 
 # ---------------- Public API ----------------
@@ -511,6 +764,13 @@ def evaluate(conversation: List[Dict[str, Any]], true_genre: Optional[str] = Non
     ri = compute_recovery_and_interference(conversation, user_segments)
     turn_alignments = compute_turn_alignments(conversation, user_segments)
 
+    # Count topics per system turn
+    system_topic_counts = []
+    for turn in conversation:
+        if turn["speaker"] == "SYSTEM":
+            topics = extract_topics(turn["text"])
+            system_topic_counts.append(len(topics))
+
     metrics = {
         "topic_recovery_rate": ri["topic_recovery_rate"],
         "avg_recovery_delay": ri["avg_recovery_delay"],
@@ -519,8 +779,9 @@ def evaluate(conversation: List[Dict[str, Any]], true_genre: Optional[str] = Non
         "context_retention": cr,
     }
 
-    cas = compute_cas(metrics)
-    metrics["context_adaptation_score"] = cas
+    cas_results = compute_cas(metrics)
+    metrics["context_adaptation_score"] = cas_results["context_adaptation_score"]
+
     metrics.update({
         "true_genre": true_genre,
         "num_topic_shifts": max(0, len(user_segments) - 1),
@@ -531,7 +792,9 @@ def evaluate(conversation: List[Dict[str, Any]], true_genre: Optional[str] = Non
         "detail": {
             "user_segments": user_segments,
             "per_shift": ri["per_shift"],
-            "turn_alignments": turn_alignments
+            "turn_alignments": turn_alignments, # This is a list of dicts
+            "system_topic_counts": system_topic_counts, # This is a list of ints
+            "cas_components": cas_results["cas_components"]
         }
     }
     return result

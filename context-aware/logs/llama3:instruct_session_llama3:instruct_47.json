@@ -1,159 +1,54 @@
 {
   "model_name": "llama3:instruct",
-  "true_genre": "comedy",
+  "true_genre": "disaster",
   "conversation": [
     {
       "speaker": "USER",
-      "text": "I'm in the mood for a comedy movie. Could you recommend a few?"
+      "text": "I'm in the mood for a disaster movie. Could you recommend a few?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "I've got just the thing for you! Have you seen \"Superbad\" or \"The Hangover\"? Both are hilarious comedies that have become modern classics, with relatable characters and plenty of laugh-out-loud moments.",
+      "text": "I think I have just the right disaster movie for you!\n\nIf you're in the mood for a thrilling and apocalyptic ride, I highly recommend \"2012\" (2009). With a star-studded cast including Ryan McDonald and Oliver Platt, this film takes you on a heart-pumping adventure as a writer struggles to keep his family alive amidst a series of global catastrophes.\n\nIf you're looking for something a bit more intense and psychological, \"The Shadows\" (2015) is another great option. This movie follows a novelist whose dark past collides with his present when he hits a young man on the road, leading to a sinister plot that could be straight out of one of his own novels.\n\nLet me know if you'd like more recommendations or have any questions!",
       "constraints": {
-        "genre": "comedy"
+        "genre": "disaster",
+        "plot": [
+          "disaster",
+          "could"
+        ],
+        "name": "Disaster Movie"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Superbad? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "I like the sound of 2012. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think Superbad is more likely to leave you laughing than scared! If you're in the mood for another hilarious movie, I'd recommend \"The Hangover\" - it's a crazy wild ride that's full of humor and memorable characters.",
+      "text": "I think I've got just the movie for you! Have you considered \"Frankenweenie\"? It's a charming animated film about a boy who brings his beloved dog back to life, and it has a great voice cast, including Catherine O'Hara and Martin Short. Plus, it's not too intense or scary, so it might be a good choice if you're looking for something more light-hearted.\n\nIf you'd rather watch something with a bit more action, \"This Means War\" is an action-packed romantic comedy that features Chris Pine and Tom Hardy as rival spies vying for the affections of Reese Witherspoon. It's got plenty of laughs, excitement, and heart, so it might be up your alley!",
       "constraints": {
-        "genre": "comedy"
+        "genre": "disaster",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "2012",
+        "year": "2012"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of The Hangover. Who stars in it? That sounds intriguing."
+      "text": "What's the mood of Wither? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I'm glad you liked the sound of The Hangover! If you're in the mood for more laughs, I think you'd really enjoy Superbad - it's a hilarious coming-of-age comedy about two high school friends trying to score tickets to a concert and losing their virginity on the way.",
+      "text": "I think you might enjoy \"Seven Psychopaths\"! It's a dark comedy with a unique plot that explores the world of screenwriting and the LA criminal underworld, featuring an all-star cast including Colin Farrell, Abbie Cornish, and Tom Waits. If you're looking for something a bit more action-packed, I'd recommend \"Safe House\", which stars Ryan Reynolds as a young CIA agent on the run with his fugitive charge - it's a thrilling ride!",
       "constraints": {
-        "genre": "comedy"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does The Hangover tell? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I love that you thought The Hangover was deeper than expected! If you're in the mood for more comedy gold, I highly recommend \"Superbad\" - it's a hilarious coming-of-age story about two misfit friends trying to score with girls and navigate high school. Alternatively, if you enjoyed the raunchy humor of The Hangover, you might also enjoy \"Crazy, Stupid, Love\", which is a funny and heartwarming exploration of love, relationships, and self-discovery.",
-      "constraints": {
-        "genre": "comedy"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thanks for all the detail on The Hangover. Could we explore romance next, with a mix of excitement and warmth?"
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I can help you with that! Based on your interest in a mix of excitement and warmth, I'd recommend \"La La Land\" (2016) - it's a modern romance with a thrilling musical element, starring Ryan Gosling and Emma Stone as two passionate souls chasing their dreams. Alternatively, if you're in the mood for something a bit more light-hearted and romantic, \"The Proposal\" (2009) is a fun, witty rom-com starring Sandra Bullock and Ryan Reynolds that's sure to leave you smiling!",
-      "constraints": {
-        "genre": "romance"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of La La Land. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I can suggest a few movies that might strike a chord with you! Since you liked the sound of La La Land, I'd recommend checking out \"500 Days of Summer\" or \"When Harry Met Sally\". Both films have a strong romantic element and explore complex relationships in a unique way.",
-      "constraints": {
-        "genre": "romance"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does La La Land tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "La La Land is a beautiful musical romance that explores the highs and lows of love and relationships! If you're looking for more romantic movies, I highly recommend \"When Harry Met Sally\" - it's a classic rom-com that will make you laugh and cry, with a lovely story about two friends who try to keep their relationship platonic but end up falling in love.",
-      "constraints": {
-        "genre": "romance"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of When Harry Met Sally? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I can help you find a romance movie that suits your taste! Since you didn't expect the vibe of When Harry Met Sally, I'd recommend either The Notebook or Crazy Rich Asians - both are beloved romances with unique stories and memorable characters. Would you like to give one of those a try?",
-      "constraints": {
-        "genre": "romance"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thanks for all the detail on The Notebook. Could we explore musical next, though something emotional wouldn\u2019t hurt?"
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I can help you with that! Based on your interest in emotional movies and musicals, I'd highly recommend \"La La Land\" - it's a beautiful, nostalgic film that will leave you feeling uplifted and maybe even a little tearful. Alternatively, if you're looking for something a bit more classic, \"Moulin Rouge!\" is another fantastic choice that combines stunning visuals with a poignant love story.",
-      "constraints": {
-        "genre": "musical"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does La La Land tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I'm excited to help you out! Based on your interest in \"La La Land\", I think you might really enjoy \"Moulin Rouge!\" - it's a musical romance with a similar blend of music, dance, and drama that explores the highs and lows of creative passion. Alternatively, if you're looking for something a bit more lighthearted, \"Mamma Mia!\" is a fun and upbeat rom-com featuring ABBA hits that's sure to get you singing along!",
-      "constraints": {
-        "genre": "musical"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Mamma Mia!. Who stars in it? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I'm so glad you enjoyed Mamma Mia! If you're looking for more musical goodness, I highly recommend La La Land - its blend of classic and modern music, combined with a beautiful love story, is sure to delight. Or, if you'd like something a bit more recent, Moulin Rouge! is another great choice, with its vibrant energy, memorable songs, and stunning visuals.",
-      "constraints": {
-        "genre": "musical"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Moulin Rouge!? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I'm so glad you loved Moulin Rouge! Based on your interest in musicals with depth and emotion, I think you might also enjoy La La Land - it's a beautiful, nostalgic tale of love and chasing one's dreams, set against the vibrant backdrop of Los Angeles' jazz scene. If you're looking for something else, Tick, Tick... Boom! is another great option, a poignant and energetic musical that explores themes of creativity, identity, and the passage of time.",
-      "constraints": {
-        "genre": "musical"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thanks for all the detail on La La Land. Could we explore drama next, but maybe with a softer touch?"
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think you might enjoy \"A Beautiful Mind\" which is a powerful and moving drama about the life of John Nash, with a softer touch than some of the other options on this list. Alternatively, \"The Pursuit of Happyness\" is another great choice that's both inspiring and emotionally resonant, without being too intense or heavy-handed.",
-      "constraints": {
-        "genre": "drama"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of The Pursuit of Happyness? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think you'll really appreciate the emotional depth and inspiring true story of \"A Beautiful Mind\"! It's a powerful drama about a brilliant mathematician struggling with mental health, featuring outstanding performances and direction. Alternatively, if you're in the mood for something more recent, I'd recommend \"Manchester by the Sea\", a beautifully crafted film about grief, family secrets, and finding redemption.",
-      "constraints": {
-        "genre": "drama"
+        "genre": "disaster",
+        "plot": [
+          "what"
+        ],
+        "name": "Her",
+        "year": "2012"
       }
     },
     {
@@ -162,64 +57,312 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think you might be looking for a movie that really tugs at the heartstrings! Based on your earlier message, I'd recommend \"The Pursuit of Happyness\" or \"Good Will Hunting\". Both films are powerful dramas that explore themes of perseverance and self-discovery, and I think you'll find them really engaging.",
+      "text": "I think I have just the thing for you! Since you're open to a change of pace, may I recommend \"Dance Flick\" (2009)? This hilarious comedy has a great cast, including David Alan Grier and Keenen Ivory Wayans, and is all about finding your rhythm - literally! If that's not quite what you're looking for, \"Battleship\" (2012) might be more up your alley. With its action-packed plot and star-studded cast, including Rihanna and Taylor Kitsch, it's a thrilling ride from start to finish.",
       "constraints": {
-        "genre": "drama"
+        "genre": "disaster",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "Her",
+        "year": "2012"
       }
     },
     {
       "speaker": "USER",
-      "text": "Actually, now that I think about it, I might want the opposite."
+      "text": "What kind of story does 2012 tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "You're looking for something on the opposite end of the spectrum, huh? I'd recommend \"A Beautiful Mind\" or \"Good Will Hunting\" - both are powerful dramas that explore themes of perseverance and self-discovery through incredible storytelling.",
+      "text": "I think you might enjoy \"Zoo\" (2012) - a fun and unique blend of romance and zombie apocalypse! The movie follows a couple trying to save their marriage in the midst of chaos, and I think that kind of story would really appeal to your interest in disaster movies from 2012.",
       "constraints": {
-        "genre": "drama"
+        "genre": "disaster",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "2012",
+        "year": "2012"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Good Will Hunting tell? That sounds intriguing."
+      "text": "Could we look at films from around 1876? Maybe I\u2019m overthinking it, but it sounds fascinating. Maybe something like what you shared about Disaster Movie."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think Good Will Hunting's themes of self-discovery and redemption really resonate with viewers who enjoy dramatic stories. If you're looking for more movies that explore complex characters and emotional journeys, I'd recommend \"A Beautiful Mind\" or \"The Pursuit of Happyness\", both of which feature strong performances and powerful storytelling.",
+      "text": "I think I have just the film for you! Have you considered \"Spring Breakers\"? It's a wild ride with Selena Gomez and James Franco, and it's all about four college girls who get in over their heads during spring break. With its themes of partying and self-discovery, I think you'll really enjoy this one!",
       "constraints": {
-        "genre": "drama"
+        "genre": "disaster",
+        "plot": [
+          "could",
+          "look"
+        ],
+        "name": "Disaster Movie",
+        "year": "2012"
       }
     },
     {
       "speaker": "USER",
-      "text": "Maybe I was wrong earlier."
+      "text": "Forget what I said before \u2014 that might\u2019ve been too specific."
     },
     {
       "speaker": "SYSTEM",
-      "text": "You were wrong earlier? Well, I'm glad you're open to exploring the drama genre now! I think \"The Pursuit of Happyness\" or \"A Beautiful Mind\" would be great choices for you. Both films are powerful dramas that explore themes of perseverance and redemption, with incredible performances from their leads.",
+      "text": "I think I've got just the movie for you! Looper (2012) is a thrilling disaster film that's sure to keep you on the edge of your seat. With a unique time-travel plot and a talented cast, including Joseph Gordon-Levitt and Bruce Willis, this one's definitely worth checking out.",
       "constraints": {
-        "genre": "drama"
+        "genre": "disaster",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "Disaster Movie",
+        "year": "2012"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of The Pursuit of Happyness. Who stars in it? That feels deeper than I thought."
+      "text": "I like the sound of 2012. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I'm glad you liked The Pursuit of Happyness! If you're looking for more emotionally resonant dramas, I highly recommend A Beautiful Mind and Good Will Hunting - both films share a similar depth and nuance in exploring the human condition, with powerful performances by Russell Crowe and Matt Damon respectively.",
+      "text": "I think I have just the ticket for you! If you're looking for a movie that's not too intense but still has some thrilling moments, I'd recommend \"Skyfall\" (2012). It's an action-packed Bond film with great performances from Daniel Craig and Javier Bardem - plus, it's set against the stunning backdrop of Istanbul.",
       "constraints": {
-        "genre": "drama"
+        "genre": "disaster",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "2012",
+        "year": "2012"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thanks for all the detail on Good Will Hunting. Could we explore romance next, with a mix of excitement and warmth?"
+      "text": "What kind of story does 2012 tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I can help you with that! Based on your interest in romance, excitement, and warmth, I'd recommend \"When Harry Met Sally\" or \"La La Land\". Both films have a great mix of humor, heartwarming moments, and excitement, making them perfect for a romantic evening in.",
+      "text": "I think you might enjoy \"Why Did I Get Married?\" (2007). It's a fun and dramatic film that explores the complexities of marriage and relationships, with an all-star cast featuring Tyler Perry, Janet Jackson, and Tasha Smith. If you're looking for something a bit different, you might also enjoy \"It's a Wonderful Life\" (1946), a classic tale of self-discovery and gratitude that's sure to leave you feeling uplifted!",
       "constraints": {
-        "genre": "romance"
+        "genre": "disaster",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "2012",
+        "year": "2012"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of It's a Wonderful Life? That sounds intriguing."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right movie for you! Have you considered \"Won't Back Down\"? It's a heartwarming and inspiring film about two moms who are determined to make a difference in their children's education, facing a tough bureaucracy along the way. With strong performances from Holly Hunter and Viola Davis, this movie is sure to leave you feeling uplifted and motivated!",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "what",
+          "wonderful"
+        ],
+        "name": "It's a Wonderful Life",
+        "year": "2012"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by John Woo? Maybe I\u2019m overthinking it, but it sounds fascinating. Maybe something like what you shared about Tron."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've got just the thing! Have you considered \"Ernest & Celestine\"? It's a charming animated film that tells the heartwarming story of an unlikely friendship between a bear and a mouse, with beautiful animation and lovable characters.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Tron",
+        "year": "2012",
+        "director": "John Woo",
+        "writer": "John Woo"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "It\u2019s weird \u2014 I thought I liked that, but maybe not."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Have you considered \"Trapped\" (2012)? It's a tense, thrilling ride that explores the idea of being trapped in a very literal sense - and the psychological effects that follow. With a great performance from Ingvar Eggert Sigur\u00f0sson at its center, this movie is sure to keep you on the edge of your seat!",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "Tron",
+        "year": "2012",
+        "director": "John Woo",
+        "writer": "John Woo"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does 2012 tell? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right fit for you! Have you considered \"Step Up Revolution\"? It's a high-energy dance movie that explores themes of community, creativity, and standing up against the odds - not too different from the disaster genre, right? With Ryan Guzman and Stephen Boss leading the way, this film is sure to get your heart pumping and leave you feeling inspired!",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "2012",
+        "year": "2012",
+        "director": "John Woo",
+        "writer": "John Woo"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Step Up Revolution. Who stars in it? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I love how you enjoyed Step Up Revolution! Based on your interest in that film, I think you might enjoy another high-energy movie with great music and impressive dance moves - Magic Mike (2012) starring Channing Tatum is a must-watch for anyone who loves dance and music. With its fun and upbeat vibe, it's the perfect movie to get you pumped up and moving!",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Step Up Revolution",
+        "year": "2012",
+        "director": "John Woo",
+        "writer": "John Woo"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of 2012? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've got just the right fit for you! Have you considered \"The Cabin in the Woods\"? It's a thrilling disaster movie from 2012, directed by the talented Joss Whedon (yes, that Joss Whedon!), and it's full of unexpected twists and turns. With an all-star cast, including Fran Kranz and Sigourney Weaver, you're in for a wild ride!",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "2012",
+        "year": "2012",
+        "director": "John Woo",
+        "writer": "John Woo"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Steven Brill? Maybe I\u2019m overthinking it, but it sounds fascinating. Maybe something like what you shared about 2012."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've got just the thing for you! If you're in the mood for something that's a bit offbeat and explores the flip side of life, like \"City of Lost Souls\", I'd recommend checking out \"Restless\". It's a quirky and intimate film that delves into the lives of a group of young adults as they navigate their relationships and desires. Plus, it stars Mia Wasikowska, who's fantastic in it!",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "2012",
+        "year": "2012",
+        "director": "Steven Brill",
+        "writer": "John Woo",
+        "actor": "Steven Brill"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before \u2014 that might\u2019ve been too specific."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've got just the ticket for you! Have you considered \"House at the End of the Street\"? It's a thrilling and suspenseful ride, with Jennifer Lawrence delivering a standout performance as a teenager trying to uncover the truth behind a mysterious accident. With its mix of mystery, romance, and horror elements, it's sure to keep you on the edge of your seat!",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "2012",
+        "year": "2012",
+        "director": "Steven Brill",
+        "writer": "John Woo",
+        "actor": "Steven Brill"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Truth? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've got just the thing for you! Have you considered \"Super\" (2010)? It's a quirky, offbeat comedy that shares some of the same themes of imagination and empowerment as \"The Truth\". Plus, it stars Ellen Page and Kevin Bacon - what more could you ask for?",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "what",
+          "truth"
+        ],
+        "name": "The Truth",
+        "year": "2012",
+        "director": "Steven Brill",
+        "writer": "John Woo",
+        "actor": "Steven Brill"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Truth tell? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"Safety Not Guaranteed\" (2012) - it's a quirky and charming indie film that explores the idea of what if, just like The Truth does! With its unique premise and lovable characters, this movie will have you laughing and pondering the mysteries of life.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Deep",
+        "year": "2012",
+        "director": "Steven Brill",
+        "writer": "John Woo",
+        "actor": "Steven Brill"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of 2012. Who stars in it? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right recommendation for you!\n\nHave you considered \"This Means War\" (2012)? It's an action-packed comedy starring Chris Pine and Tom Hardy as rival spies who fall in love with the same woman, Reese Witherspoon. The movie has a great mix of humor, romance, and adventure that I think you'll enjoy.\n\nIf you're looking for something else, \"Wonder\" (2012) is also a great choice. It's a heartwarming story about acceptance and self-discovery, featuring Jacob Tremblay as August Pullman, a young boy with facial differences who befriends his classmates and shows us all what it means to truly see the world through someone else's eyes.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "2012",
+        "year": "2012",
+        "director": "Steven Brill",
+        "writer": "John Woo",
+        "actor": "Steven Brill"
       }
     }
   ]

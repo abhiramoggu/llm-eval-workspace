@@ -1,16 +1,53 @@
 {
   "model_name": "llama3:instruct",
-  "true_genre": "musical",
+  "true_genre": "blockbuster",
   "conversation": [
     {
       "speaker": "USER",
-      "text": "I'm in the mood for a musical movie. Could you recommend a few?"
+      "text": "I'm in the mood for a blockbuster movie. Could you recommend a few?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "I'd be happy to help you with some musical movie recommendations! Have you seen La La Land? It's a modern classic that combines stunning visuals with catchy original songs and a charming romance story.\n\nIf you're in the mood for something more upbeat and fun, I'd also recommend Mamma Mia! - it's a feel-good, ABBA-filled musical romp on a Greek island that's sure to leave you smiling!",
+      "text": "What a great selection! If you're in the mood for some high-octane action, I'd highly recommend \"Die Hard with a Vengeance\" - John McClane is back and this time he's got a new partner in crime-solving! With Bruce Willis reprising his iconic role, you can expect plenty of explosive stunts and witty one-liners.",
       "constraints": {
-        "genre": "musical"
+        "genre": "blockbuster",
+        "plot": [
+          "blockbuster",
+          "could"
+        ],
+        "name": "You"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Die Hard? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your interest in a blockbuster with a \"what\" and \"hard\" plot, I think you might enjoy \"The Wraith\". This movie has a great mix of action, suspense, and supernatural elements, with Randy Quaid playing the lead role of a mysterious spirit who targets a group of motorheads. Give it a try!",
+      "constraints": {
+        "genre": "blockbuster",
+        "plot": [
+          "what",
+          "hard"
+        ],
+        "name": "Die Hard"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? That sounds intriguing."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"Bad Boys II\"! It's a high-octane action movie with a great cast, including Will Smith and Martin Lawrence, who have fantastic chemistry on screen. The plot is fast-paced and exciting, with plenty of twists and turns to keep you engaged.",
+      "constraints": {
+        "genre": "blockbuster",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X"
       }
     },
     {
@@ -19,141 +56,94 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think you might be ready for a musical romp! I'd recommend \"La La Land\" (2016) - it's a modern classic with stunning dance numbers and a charming love story that will leave you humming the tunes. Or, if you're in the mood for something more lighthearted, \"Mamma Mia!\" (2008) might be just what you need, featuring ABBA hits and a fun-loving cast of characters.",
+      "text": "I think I have just the right fit for you! Have you considered \"Iron Man 2\"? It's an action-packed blockbuster with a thrilling plot that explores Tony Stark's struggles as he tries to balance his superhero life with personal demons. And, of course, Robert Downey Jr.'s iconic performance is not to be missed!",
       "constraints": {
-        "genre": "musical"
+        "genre": "blockbuster",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "X"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of La La Land. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "What kind of story does Iron Man 2 tell? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "La La Land is indeed a fascinating film! If you enjoyed its blend of music and romance, I think you might also love Moulin Rouge!, another visually stunning musical with an all-star cast and catchy songs. Would you like to give it a try?",
+      "text": "I think I have just the right fit for you! Have you considered \"Iron Man\" (2008)? It's a blockbuster that shares some similarities with Iron Man 2, and who can resist Robert Downey Jr.'s charm as Tony Stark? Plus, it's an action-packed ride that sets the tone for the entire Marvel Cinematic Universe.\n\nIf you're in the mood for something a bit different, I'd also recommend \"Smilla's Sense of Snow\" (1997). It's a gripping mystery that explores themes of identity and justice, all set against the stunning backdrop of Copenhagen and Greenland. Julia Ormond shines as the titular character, and the film's unique tone will keep you engaged until the very end.",
       "constraints": {
-        "genre": "musical"
+        "genre": "blockbuster",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Iron Man"
       }
     },
     {
       "speaker": "USER",
-      "text": "I\u2019m not sure anymore; perhaps I changed my mind."
+      "text": "Thinking about Iron Man 2, could we shift toward stories about remembering? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I can help you change your mind for the better! If you're in the mood for a modern musical romance, I'd recommend \"La La Land\" - it's a charming and visually stunning film with catchy songs that will leave you humming. Alternatively, if you'd prefer something more upbeat and fun, \"Mamma Mia!\" is a classic musical rom-com with ABBA hits and a fabulous cast of characters.",
+      "text": "I think I have just the films for you! If you're looking for a thought-provoking and emotionally charged war drama, I highly recommend \"Downfall\" (2004). This powerful film explores the complexities of human nature through the lens of Adolf Hitler's final days in Berlin during World War II. With exceptional performances from Bruno Ganz and Alexandra Maria Lara, this movie is sure to leave you thinking long after the credits roll.",
       "constraints": {
-        "genre": "musical"
+        "genre": "war",
+        "plot": [
+          "thinking",
+          "iron"
+        ],
+        "name": "War"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of La La Land? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "Forget what I said before \u2014 that might\u2019ve been too specific."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think you'll really enjoy the charm and whimsy of \"Moulin Rouge!\" - it's a musical romantic comedy that shares some of the same jazz-age flair as La La Land, but with a more absurdist sense of humor. If you're looking for something a bit more light-hearted, I'd also recommend \"Pitch Perfect\" for its fun, modern take on the traditional musical.",
+      "text": "I think you might enjoy \"Gladiator\" (2000) - an epic war film with a thrilling plot and impressive performances from Russell Crowe and Joaquin Phoenix. The film's historical setting and intense action scenes are sure to captivate! Would you like me to recommend another one?",
       "constraints": {
-        "genre": "musical"
+        "genre": "war",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "War"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Pitch Perfect tell? That sounds intriguing."
+      "text": "What kind of story does Gladiator tell? Hmm, I didn\u2019t expect that vibe."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think you'd love \"La La Land\"! It's a modern take on classic movie musicals, with stunning dance numbers and a romantic story that will leave you humming the tunes. If you're looking for something a bit more recent, \"Pitch Perfect\" is also a great choice - it's a fun, upbeat comedy with amazing vocal performances and a great cast of characters.",
+      "text": "I think you might enjoy \"Platoon\"! It's a classic war movie that explores the gritty realities of conflict, and it's known for its powerful portrayal of the psychological toll of war on soldiers. With Tom Berenger and Johnny Depp in leading roles, it's definitely worth checking out if you're looking for another thought-provoking film like \"Gladiator\".",
       "constraints": {
-        "genre": "musical"
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Gladiator"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thanks for all the detail on Pitch Perfect. Could we explore comedy next, but maybe with a softer touch?"
+      "text": "I like the sound of Psycho. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I can help you with that! Based on your interest in a softer touch, I'd recommend \"Crazy, Stupid, Love\" or \"School of Rock\". Both films have great comedic moments without being too raunchy or over-the-top. Would either of those strike your fancy?",
+      "text": "I think I have just the films for you! If you're drawn to the sound of Psycho, I'd recommend \"The Pianist\" (2002) or \"The Deer Hunter\" (1978). Both are powerful and intense war movies that explore the human cost of conflict, with outstanding performances from their lead actors.",
       "constraints": {
-        "genre": "comedy"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Crazy, Stupid, Love? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on your interest in \"Crazy, Stupid, Love\", I think you'd really enjoy \"Superbad\" - it's a hilarious coming-of-age comedy with plenty of heart and great characters. If you're in the mood for something a bit more absurd and ridiculous, \"Step Brothers\" is also a great choice, with Will Ferrell and John C. Reilly delivering non-stop laughs as two middle-aged men who become stepbrothers.",
-      "constraints": {
-        "genre": "comedy"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Maybe I was wrong earlier."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I can help you with that! Maybe \"Superbad\" or \"The Hangover\" could be a great fit for you? Both are hilarious comedies that have become cult classics, and they're sure to leave you laughing.",
-      "constraints": {
-        "genre": "comedy"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does The Hangover tell? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I'm glad you're intrigued by The Hangover! If you enjoy raunchy humor and outrageous antics, I'd recommend Superbad or Step Brothers - both are hilarious comedies that follow the misadventures of a group of friends as they navigate relationships, growing up, and just having a good time.",
-      "constraints": {
-        "genre": "comedy"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Superbad. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Superbad is a hilarious coming-of-age comedy that's all about teenage awkwardness and misadventures! If you enjoy its brand of humor, I think you'd also love The Hangover - it's another raunchy and entertaining comedy about a group of friends trying to piece together a wild night in Vegas.",
-      "constraints": {
-        "genre": "comedy"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thanks for all the detail on Superbad. Could we explore adventure next, with a mix of excitement and warmth?"
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "What a great request! I think you'd really enjoy \"Pirates of the Caribbean: The Curse of the Black Pearl\" - it's got a perfect blend of adventure, excitement, and warmth, with a dash of humor thrown in. If you're looking for something a bit more recent, \"Jumanji: Welcome to the Jungle\" is another great option that strikes a similar balance!",
-      "constraints": {
-        "genre": "adventure"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Pirates of the Caribbean: The Curse of the Black Pearl? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I'm glad you enjoyed the swashbuckling adventure of Pirates of the Caribbean! If you're looking for more thrilling escapades, I highly recommend Indiana Jones and the Raiders of the Lost Ark - it's a classic adventure film that will have you on the edge of your seat as Indy navigates ancient temples and avoids deadly traps.",
-      "constraints": {
-        "genre": "adventure"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Indiana Jones and the Raiders of the Lost Ark tell? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I'm glad you enjoyed the adventure vibes from Indiana Jones! If you're looking for more thrilling escapades, I'd recommend checking out \"Pirates of the Caribbean: The Curse of the Black Pearl\" - it's a swashbuckling ride full of action, humor, and memorable characters.",
-      "constraints": {
-        "genre": "adventure"
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Psycho"
       }
     },
     {
@@ -162,42 +152,64 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "I love a good adventure! Considering you wanted the opposite, I'd recommend \"Pirates of the Caribbean: The Curse of the Black Pearl\" or \"Indiana Jones and the Raiders of the Lost Ark\". Both are classic adventure films with plenty of action, humor, and swashbuckling fun!",
+      "text": "It looks like you're interested in something on the opposite end of the spectrum, so I think \"The Reflecting Skin\" might be a great choice! This haunting and atmospheric film takes place in rural USA during the 1950s, and it's a beautiful blend of fantasy and drama. With Viggo Mortensen starring alongside Lindsay Duncan, you're in for a unique and captivating cinematic experience.",
       "constraints": {
-        "genre": "adventure"
+        "genre": "war",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Psycho"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Indiana Jones and the Raiders of the Lost Ark. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "What's the mood of X? Hmm, I didn\u2019t expect that vibe."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I can help you decide! Since you liked the sound of Indiana Jones and the Raiders of the Lost Ark, I'd recommend checking out Pirates of the Caribbean: The Curse of the Black Pearl - it's another swashbuckling adventure with a dash of humor and excitement. If that doesn't quite scratch your itch, I'd also suggest considering Jurassic Park, which offers a thrilling blend of action and suspense in an unforgettable setting!",
+      "text": "I think I have just the right movie for you, considering your interest in war movies and a slightly unexpected twist!\n\nHave you considered \"Zulu\" (2013)? It's an intense and action-packed war drama that explores the brutal reality of conflict through the eyes of two policemen investigating a murder. With Orlando Bloom leading the cast, this film promises to keep you on the edge of your seat.\n\nIf you're looking for something a bit more epic in scope, I'd recommend \"The Warlords\" (2007). This Chinese war drama tells the story of three bandit leaders who join forces to take down their enemies, and it features an all-star cast including Jet Li. With stunning action sequences and a gripping plot, this film is sure to leave you breathless.\n\nLet me know if either of these piques your interest!",
       "constraints": {
-        "genre": "adventure"
+        "genre": "war",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "X"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thanks for all the detail on Pirates of the Caribbean: The Curse of the Black Pearl. Could we explore action next, though something emotional wouldn\u2019t hurt?"
+      "text": "Thinking about The Warlords, could we shift toward stories about spanish? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I have just the ticket! Based on your interest in action movies with a touch of emotion, I'd recommend \"John Wick\" and \"Logan\". Both films deliver non-stop action while also exploring deeper themes and featuring complex, emotionally resonant characters.",
+      "text": "I think you might enjoy \"Gladiator\" (2000) - it's an epic historical drama that explores themes of war, honor, and sacrifice, set in ancient Rome. With a star-studded cast including Russell Crowe and Joaquin Phoenix, this film is sure to captivate!",
       "constraints": {
-        "genre": "action"
+        "genre": "war",
+        "plot": [
+          "thinking",
+          "could"
+        ],
+        "name": "War",
+        "language": "spa"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does John Wick tell? Hmm, I didn\u2019t expect that vibe."
+      "text": "I like the sound of X. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think you'd really enjoy \"Die Hard\" - it's a classic action movie that shares some of the same intense, high-stakes energy as John Wick! If you're looking for something more modern and visually stunning, I'd also recommend \"Atomic Blonde\", which has a similar blend of stylish action and gritty intensity.",
+      "text": "I think I have just the thing for you! If you're looking for a classic war film with a romantic twist, I'd highly recommend \"A Farewell to Arms\" (1929). Starring Helen Hayes and Gary Cooper, this timeless tale of love amidst chaos on the Italian front is sure to captivate you.",
       "constraints": {
-        "genre": "action"
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "language": "spa"
       }
     },
     {
@@ -206,20 +218,117 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think you might be looking for some high-octane action, and I'd recommend \"John Wick\" or \"Atomic Blonde\". Both of these movies deliver non-stop action, stunning stunts, and a healthy dose of style!",
+      "text": "I think you might enjoy \"Platoon\"! It's a powerful and thought-provoking film that explores the complexities of war and the duality of human nature, much like your earlier cues suggested. With its gripping storyline and strong performances from Tom Berenger and Johnny Depp, I think it's a great choice for someone looking for a intense and emotional viewing experience.",
       "constraints": {
-        "genre": "action"
+        "genre": "war",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "X",
+        "language": "spa"
       }
     },
     {
       "speaker": "USER",
-      "text": "I\u2019m not sure anymore; perhaps I changed my mind."
+      "text": "What kind of story does Tron tell? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I can help you with that! Considering you've changed your mind, I'd recommend \"John Wick\" or \"Atomic Blonde\" - both are high-octane action movies with non-stop thrills and memorable characters. Which one piques your interest?",
+      "text": "I think you might enjoy \"Cold Mountain\"! It's a powerful war drama that follows a wounded soldier's perilous journey back home, and it features an all-star cast including Ren\u00e9e Zellweger and Jude Law. The story is deeply moving and the cinematography is stunning, making it a great choice for anyone looking for a compelling and emotional film experience.\n\nOr, if you're in the mood for something a bit different, \"Find Me Guilty\" could be just what you're looking for! It's a unique courtroom drama that explores themes of justice, loyalty, and redemption, all set against the backdrop of the American criminal justice system.",
       "constraints": {
-        "genre": "action"
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Tron",
+        "language": "spa"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Find Me Guilty? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right movie for you! Have you considered \"American Dreamz\"? It's a hilarious satire that pokes fun at our reality TV obsession, and with a talented cast including Dennis Quaid and Willem Dafoe, it's sure to keep you laughing. Plus, it doesn't involve any scary or intense moments, so I think you'll find it just what you're looking for!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "find"
+        ],
+        "name": "Find Me Guilty",
+        "language": "spa"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thinking about American Dreamz, could we shift toward stories about arthur? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've got just the ticket for you! Have you considered \"Black Hawk Down\" (2001)? It's a gripping war drama that takes you right into the heart of the action, with an all-star cast including Eric Bana and Ewan McGregor. The true events it's based on will keep you on the edge of your seat!\n\nIf you're looking for something a bit more epic in scope, \"Gladiator\" (2000) is another great choice. With Russell Crowe leading the charge as Maximus, this film will transport you to ancient Rome and keep you enthralled with its stunning visuals and thrilling battle scenes.\n\nLet me know if either of these strike your fancy!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "thinking",
+          "american"
+        ],
+        "name": "War",
+        "language": "spa"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Gladiator. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you'd really enjoy \"The Monuments Men\" - not only does it star an amazing ensemble cast, including George Clooney and Matt Damon, but it's also a fascinating true story about art, culture, and sacrifice during wartime. The plot is engaging and heartwarming, as this unlikely team of museum curators and soldiers work together to rescue priceless masterpieces from the Nazis. Would you like to give it a try?",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Gladiator",
+        "language": "spa"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Monuments Men tell? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "What a great choice in movies! Based on your interest in \"The Monuments Men\", I think you might enjoy \"Proof of Life\" (2000). This film, starring Russell Crowe and Pamela Reed, tells the gripping story of a wife's desperate attempt to rescue her husband from kidnappers. The suspenseful plot and impressive performances will keep you on the edge of your seat!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The Monuments Men",
+        "language": "spa"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Monuments Men? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right fit for you! Based on your interest in \"The Monuments Men\" and its deeper tone, I'd like to recommend \"To Have and Have Not\" (1937). This classic film shares a similar World War II setting and explores themes of human connection and sacrifice. With Humphrey Bogart and Walter Brennan as the leads, you're in for a thrilling ride!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "The Monuments Men",
+        "language": "spa"
       }
     }
   ]

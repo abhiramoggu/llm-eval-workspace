@@ -1,27 +1,86 @@
 {
   "model_name": "llama2:latest",
-  "true_genre": "action",
+  "true_genre": "action game",
   "conversation": [
     {
       "speaker": "USER",
-      "text": "I'm in the mood for a action movie. Could you recommend a few?"
+      "text": "I'm in the mood for a horror movie. Could you recommend a few?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "Of course! I'd be happy to recommend some action movies for you! \ud83c\udfa5 Based on your interest in the genre, I would suggest \"John Wick\" and \"Mad Max: Fury Road\". Both are high-octane thrill rides that are sure to keep you on the edge of your seat. \ud83d\udca5 Enjoy the movies!",
+      "text": "Of course! Based on your preference for horror movies, I would recommend \"Jennifer's Body\" and \"Unnatural\". Both of these movies offer a unique take on the horror genre with intriguing plots and talented actors. In \"Jennifer's Body\", Megan Fox plays a cheerleader who becomes a succubus after a wild night, leading her best friend to try and stop her murderous rampage. Meanwhile, in \"Unnatural\", a group of cabin dwellers are stalked by a genetically modified creature created by a morally ambiguous corporation. I hope you enjoy these recommendations!",
       "constraints": {
-        "genre": "action"
+        "genre": "horror",
+        "plot": [
+          "horror",
+          "could"
+        ],
+        "name": "You"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Mad Max: Fury Road tell? That sounds intriguing."
+      "text": "I like the sound of Jennifer's Body. Who stars in it? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Oh, you're in for a treat! If you enjoyed the action-packed excitement of Mad Max: Fury Road, I think you'll love John Wick and Die Hard as well. Both of these movies offer high-octane action, thrilling stunts, and memorable characters that will keep you on the edge of your seat.",
+      "text": "Of course! Based on your interest in \"Jennifer's Body,\" I recommend checking out \"Anaconda\" and \"eXistenZ.\" Both of these movies offer a mix of horror and suspense, with talented actors like Jennifer Lopez and Sarah Polley leading the way. In \"Anaconda,\" you'll be on the edge of your seat as a group of filmmakers are held hostage by a deranged hunter and his dangerous snake companion. Meanwhile, \"eXistenZ\" is a thrilling sci-fi adventure about a game designer who must play her latest virtual reality creation with a marketing trainee to uncover a sinister plot. I hope you enjoy these recommendations!",
       "constraints": {
-        "genre": "action"
+        "genre": "horror",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Jennifer's Body"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Jennifer's Body tell? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your interest in deeper horror stories, I recommend checking out \"Paradise Lost\" and \"Hannibal Rising.\" Both of these movies delve into themes of revenge, survival, and the darker side of human nature. In \"Paradise Lost,\" a group of reality show contestants are stranded on a deserted island, only to discover one of their own is a killer with a sinister agenda. In \"Hannibal Rising,\" young Hannibal Lecter seeks revenge against the barbarians responsible for his sister's death during World War II. Both movies feature talented actors and explore complex plotlines that are sure to keep you on the edge of your seat!",
+      "constraints": {
+        "genre": "horror",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Jennifer's Body"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Hannibal Rising? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! If you're in the mood for a dark and intense horror movie, I would recommend \"Hannibal Rising.\" The film follows the origin story of one of cinema's most iconic serial killers, Hannibal Lecter, as he seeks revenge against the barbarians who killed his sister during World War II. With a talented cast led by Richard Brake and Stephen Walters, this movie is sure to leave you on the edge of your seat.",
+      "constraints": {
+        "genre": "horror",
+        "plot": [
+          "what",
+          "hannibal"
+        ],
+        "name": "Hannibal Rising"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Jean Reno. That feels deeper than I thought. Maybe something like what you shared about Hannibal Rising."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"The Family Man\" and \"Retribution.\" Both of these movies have a strong focus on plot and actor performances, which align with your interests. \"The Family Man\" is a heartwarming comedy-drama that explores the themes of identity and social status, while \"Retribution\" is a gripping thriller that delves into the consequences of vengeance. Both movies feature talented actors, including Nicolas Cage and Don Cheadle, which I'm sure you'll enjoy!",
+      "constraints": {
+        "genre": "horror",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Hannibal Rising",
+        "actor": "Jean Reno"
       }
     },
     {
@@ -30,20 +89,188 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "Of course! Based on the user's interest in action movies, I would recommend \"John Wick\" and \"Mad Max: Fury Road\". Both are highly acclaimed and thrilling films that deliver on intense action sequences and memorable characters.",
+      "text": "Of course! Based on your preferences, I would recommend \"End of Days\" and \"Zombieland.\" Both movies offer a unique blend of horror and action, with intriguing plots and talented actors. In \"End of Days,\" you'll enjoy the battle between good and evil as Satan searches for a bride in New York City, while \"Zombieland\" is a hilarious and suspenseful ride through a zombie-infested America with a great cast, including Woody Harrelson and Bill Murray.",
       "constraints": {
-        "genre": "action"
+        "genre": "horror",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Hannibal Rising",
+        "actor": "Jean Reno"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of John Wick? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "I like the sound of Zombieland. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Of course, I'd be happy to help! Based on your interest in the action genre and the mood of John Wick, I would recommend Die Hard and Mad Max: Fury Road as great options to check out. Both movies offer high-octane action sequences and intense thrills that are sure to keep you on the edge of your seat!",
+      "text": "Of course! Based on your preferences, I would recommend \"Treasure Planet\" and \"Unleashed.\" Both movies have an exciting plot and great actors that you might enjoy. \"Treasure Planet\" is an animated adventure film set in space with a unique blend of science fiction and classic literature, while \"Unleashed\" features Jet Li as a man who escapes his captors and tries to start a new life. I hope you find these recommendations helpful!",
       "constraints": {
-        "genre": "action"
+        "genre": "zombie",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Zombieland",
+        "actor": "Jean Reno"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Treasure Planet tell? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I think you might enjoy \"Dear John\" and \"Zombieland.\" Both of these movies have a unique blend of humor and suspense that could appeal to your tastes. In \"Dear John,\" you'll find a heartwarming romance with a twist, while \"Zombieland\" offers a fun and action-packed adventure with a great cast.",
+      "constraints": {
+        "genre": "zombie",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Treasure Planet",
+        "actor": "Jean Reno"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Zombieland? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to help! Based on your preferences, I think you might enjoy \"Ted\" and \"Divergent.\" Both of these movies have a unique blend of humor and action that could appeal to your sense of adventure and drama. In \"Ted,\" you get to see Mila Kunis and Seth MacFarlane play opposite each other in a hilarious and heartwarming story about the relationship between a man and his talking teddy bear. In \"Divergent,\" you'll find a thrilling plot filled with action, suspense, and intriguing characters, including the mysterious Four played by Theo James. Let me know if you want to learn more about either of these movies!",
+      "constraints": {
+        "genre": "zombie",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "Zombieland",
+        "actor": "Jean Reno"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thinking about Divergent, could we shift toward stories about hybrids? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to recommend some movies based on your preferences! The plots of \"Redacted\" and \"Catch-22\" both tackle sensitive topics, but they are thought-provoking and well-made. If you're interested in stories about hybrids, \"The Messenger\" features a soldier struggling with an ethical dilemma involving a widow of a fallen officer.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "thinking",
+          "divergent"
+        ],
+        "name": "War",
+        "actor": "Jean Reno"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Emma tell? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"Born on the Fourth of July\" and \"Man on Fire.\" Both movies feature powerful performances from their leads and tackle complex themes such as war, betrayal, and redemption. \"Born on the Fourth of July\" is a thought-provoking biography of Ron Kovic, a paralyzed Vietnam veteran who becomes an anti-war activist, while \"Man on Fire\" is a gripping drama about a former CIA operative who takes on a dangerous mission to protect a young girl from a group of ruthless kidnappers.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Deep",
+        "actor": "Jean Reno"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Born on the Fourth of July. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to recommend some movies based on your interests! \"Born on the Fourth of July\" is a great choice if you enjoy war movies with strong actor performances, and I think you might also enjoy \"Looper.\" It's a thought-provoking film that explores time travel and the consequences of messing with the past, starring Joseph Gordon-Levitt and Bruce Willis. Let me know if you'd like more information or recommendations!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Born on the Fourth of July",
+        "actor": "Jean Reno"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Tron? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I would recommend \"Rain Man\" and \"The Expendables 2.\" Both movies offer a unique blend of action, drama, and memorable performances. In \"Rain Man,\" Dustin Hoffman gives an iconic performance as an autistic savant, while \"The Expendables 2\" features a talented cast, including Sylvester Stallone and Jason Statham, in an adrenaline-fueled adventure.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "Tron",
+        "actor": "Jean Reno"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we look at films from around 1999? Maybe I\u2019m overthinking it, but it sounds fascinating. Maybe something like what you shared about Rain Man."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"The Dirty Dozen\" and \"The End of the Affair.\" Both movies have a strong cast, including Jean Reno, and explore themes of adventure and relationships that may interest you. In \"The Dirty Dozen,\" you'll see a group of off-road motorcycle riders push their limits in extreme conditions, while \"The End of the Affair\" is a poignant drama about a man's quest to understand why his lover left him.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "look"
+        ],
+        "name": "Rain Man",
+        "actor": "Jean Reno",
+        "year": "1999"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The End of the Affair. Who stars in it? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your interest in \"The End of the Affair,\" I recommend checking out \"Mama\" and \"Easy A.\" Both films have a strong focus on character development and emotional depth, which I think you'll find appealing. \"Mama\" is a psychological horror film that explores themes of trauma, abuse, and recovery, while \"Easy A\" is a romantic comedy-drama that delves into issues of identity, reputation, and the complexities of human relationships.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The End of the Affair",
+        "actor": "Jean Reno",
+        "year": "1999"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The End of the Affair tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I recommend \"Kingdom of Heaven\" and \"Eyes Wide Shut\". Both movies are set in different time periods but share similar themes of conflict, drama, and exploration of human emotions. \"Kingdom of Heaven\" is an epic historical drama that follows a knight defending a city during the Crusades, while \"Eyes Wide Shut\" is a psychological thriller that delves into the complexities of marriage and desire. Both films feature strong performances from talented actors and are sure to keep you engaged and thought-provoked.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The End of the Affair",
+        "actor": "Jean Reno",
+        "year": "1999"
       }
     },
     {
@@ -52,174 +279,70 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "No worries, I'm here to help! If you're looking for some action-packed movies, I highly recommend \"John Wick\" and \"Mad Max: Fury Road\". Both are thrilling and visceral, with plenty of adrenaline-fueled sequences that are sure to keep you on the edge of your seat.",
+      "text": "Of course! Based on your preferences, I would recommend \"Dogma\" and \"The Imitation Game\". Both movies are thought-provoking and feature strong performances from their leads. In \"Dogma\", you'll find a unique blend of humor and philosophy as two renegade angels try to exploit a loophole and return to Heaven, while \"The Imitation Game\" is a historical drama that explores the complexities of Alan Turing's private life as he works to crack the German Enigma code during World War II.",
       "constraints": {
-        "genre": "action"
+        "genre": "war",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "The End of the Affair",
+        "actor": "Jean Reno",
+        "year": "1999"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Mad Max: Fury Road. Who stars in it? Hmm, I didn\u2019t expect that vibe."
+      "text": "What's the mood of Dogma? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Ah, I see! If you enjoyed the action-packed vibe of Mad Max: Fury Road, then you might enjoy John Wick and Die Hard as well. Both of these movies offer high-octane action sequences and thrilling plots that are sure to keep you on the edge of your seat!",
+      "text": "Of course! Based on your preferences, I would recommend \"Summer of Sam\" and \"House on Haunted Hill.\" Both movies are dark and suspenseful, with intriguing plots and talented actors. \"Summer of Sam\" is a gripping drama that explores themes of fear, distrust, and the consequences of violence, while \"House on Haunted Hill\" is a spine-tingling thriller that will keep you on the edge of your seat.",
       "constraints": {
-        "genre": "action"
+        "genre": "war",
+        "plot": [
+          "what",
+          "dogma"
+        ],
+        "name": "Dogma",
+        "actor": "Jean Reno",
+        "year": "1999"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thanks for all the detail on Mad Max: Fury Road. Could we explore action and mystery next, something that surprises me emotionally?"
+      "text": "Thanks for all the detail on House on Haunted Hill. Could we explore reference next, with a mix of excitement and warmth?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "Of course! Based on your interest in action and mystery movies, I recommend checking out \"John Wick\" and \"Inception\". Both of these movies are sure to deliver high-octane action and surprising plot twists that will keep you on the edge of your seat.",
+      "text": "Of course! Based on your preferences, I would recommend \"Flyboys\" and \"Patriot Games.\" Both of these movies offer exciting plots and talented actors, including Jean Reno in \"Patriot Games.\" \"Flyboys\" is an adventurous tale of young Americans who volunteered for the French military during World War I, while \"Patriot Games\" is a thrilling action-packed movie that follows Jack Ryan as he's targeted by a renegade faction. I hope you enjoy them!",
       "constraints": {
-        "genre": "action"
+        "genre": "war",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "War",
+        "actor": "Jean Reno",
+        "year": "1999"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Inception tell? Hmm, I didn\u2019t expect that vibe."
+      "text": "I like the sound of Patriot Games. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Of course, I'd be happy to recommend some action movies for you! Based on your interest in Inception, I think you might enjoy John Wick and Mad Max: Fury Road. Both of these films offer high-octane action sequences and a thrilling ride, with plenty of twists and turns to keep you on the edge of your seat. Let me know if you'd like more recommendations!",
+      "text": "Of course! Based on your interest in \"Patriot Games,\" I recommend checking out \"Rob Roy\" and \"Inglourious Basterds.\" Both films feature action-packed plots with strong performances from the leads, similar to what you might find in a war movie. In \"Rob Roy,\" Andrew Keir stars as the titular character on a quest for revenge, while Brad Pitt and Samuel L. Jackson lead the charge in \"Inglourious Basterds\" as a group of Jewish soldiers taking on the Nazi regime.",
       "constraints": {
-        "genre": "action"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Inception? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Oh, great! Based on your interest in the deeper action movies, I'd recommend \"Gladiator\" and \"The Dark Knight\". Both of these films are considered classics in the genre and offer a rich mix of action, drama, and complexity. They're sure to provide an engaging watch!",
-      "constraints": {
-        "genre": "action"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I\u2019m not sure anymore; perhaps I changed my mind."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Of course! I'd be happy to help you find a great action movie. Based on your interest in the genre, I recommend checking out \"John Wick\" and \"Mad Max: Fury Road\". Both of these movies are highly acclaimed and offer exciting, adrenaline-fueled action sequences that are sure to keep you on the edge of your seat!",
-      "constraints": {
-        "genre": "action"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "It\u2019s weird \u2014 I thought I liked that, but maybe not."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Of course, I'd be happy to recommend some action movies based on the user's interest! If they enjoyed \"John Wick,\" they might enjoy the intense and stylish \"Deadpool\" for its witty humor and over-the-top action sequences. Alternatively, if they're looking for something a bit more grounded in reality, \"Mad Max: Fury Road\" is a thrilling and visually stunning film that combines high-octane action with a compelling storyline and memorable characters. Which one sounds intriguing to you?",
-      "constraints": {
-        "genre": "action"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Deadpool. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Of course, I'd be happy to help! Based on your interest in \"Deadpool,\" I think you might enjoy \"John Wick\" and \"Mad Max: Fury Road.\" Both of these movies are action-packed and feature intense fight scenes and stunning visuals. Let me know if you have any other questions or if there's anything else I can help with!",
-      "constraints": {
-        "genre": "action"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thanks for all the detail on Mad Max: Fury Road. Could we explore action next, with a mix of excitement and warmth?"
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Of course! I'd be happy to recommend some action movies for you. Based on your interest in excitement and warmth, I think you might enjoy \"John Wick\" and \"The Avengers.\" Both of these movies have a great mix of action, excitement, and warmth that I think you'll find appealing.",
-      "constraints": {
-        "genre": "action"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of The Avengers. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Of course, I'd be happy to help! Based on your interest in \"The Avengers,\" I recommend checking out \"John Wick\" and \"Mad Max: Fury Road.\" Both of these movies are action-packed and have received great reviews from audiences and critics alike. They offer a similar blend of intense action, compelling characters, and thrilling plots that you might enjoy.",
-      "constraints": {
-        "genre": "action"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does John Wick tell? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Ah, you're interested in the action genre?! In that case, I highly recommend \"Mad Max: Fury Road\" and \"John Wick\"! Both of these movies deliver heart-pumping, adrenaline-fueled action sequences that are sure to leave you on the edge of your seat. \ud83d\udca5\ud83d\udd25",
-      "constraints": {
-        "genre": "action"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of John Wick? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Ah, an intriguing choice! John Wick is definitely an adrenaline-fueled action-packed movie that I'm sure you'll enjoy. If you're looking for something similar but with a bit more of a sci-fi twist, might I recommend \"The Matrix\"? It's a classic in the genre and features some mind-blowing special effects and fight scenes.",
-      "constraints": {
-        "genre": "action"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thanks for all the detail on John Wick. Could we explore sci-fi next, with a mix of excitement and warmth?"
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Of course! I'd be happy to recommend some sci-fi movies for you. Based on your interest in John Wick, I think you might enjoy \"The Matrix\" and \"Inception\". Both of these films are highly acclaimed and blend action, suspense, and intricate plotting with a mix of excitement and warmth. Let me know if you'd like more recommendations!",
-      "constraints": {
-        "genre": "sci-fi"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Inception tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Ah, another fan of thought-provoking sci-fi movies! If you enjoyed the complex and mind-bending storytelling of Inception, you might also enjoy Interstellar. Both movies explore themes of reality, time, and humanity's place in the universe, with a dash of mind-bending action and suspense. Alternatively, if you're looking for something a bit more action-packed, The Matrix is a classic that blends sci-fi and martial arts to create an iconic movie experience.",
-      "constraints": {
-        "genre": "sci-fi"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Inception. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Of course, I'd be happy to help! Based on your interest in \"Inception,\" I think you might enjoy \"The Matrix\" and \"Interstellar.\" Both of these movies are also sci-fi classics that explore complex themes and feature impressive special effects. Let me know if you'd like more recommendations or have any other questions!",
-      "constraints": {
-        "genre": "sci-fi"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Inception? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Ah, I see! Based on your interest in Inception's deeper themes, I recommend checking out Interstellar and The Matrix from the sci-fi genre. Both films delve into complex ideas and explore the limits of human knowledge and potential, much like Inception does.",
-      "constraints": {
-        "genre": "sci-fi"
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Patriot Games",
+        "actor": "Jean Reno",
+        "year": "1999"
       }
     }
   ]

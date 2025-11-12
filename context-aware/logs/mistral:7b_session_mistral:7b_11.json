@@ -1,38 +1,85 @@
 {
   "model_name": "mistral:7b",
-  "true_genre": "biopic",
+  "true_genre": "autobiographical novel",
   "conversation": [
     {
       "speaker": "USER",
-      "text": "I'm in the mood for a biopic movie. Could you recommend a few?"
+      "text": "I'm in the mood for a autobiographical novel movie. Could you recommend a few?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "I'm delighted to help! For a captivating and insightful biopic, you might enjoy \"The Imitation Game\" or \"Bohemian Rhapsody\". Both films offer fascinating glimpses into the lives of historical figures Alan Turing and Freddie Mercury respectively. Enjoy your movie time!",
+      "text": "I'd highly recommend \"Walk the Line\" for you! This captivating biographical movie brings to life the story of country music legend Johnny Cash, brilliantly portrayed by Joaquin Phoenix and Reese Witherspoon. It's a compelling journey from humble beginnings to fame, inspired by real-life events and experiences drawn from Cash's autobiographical novel \"Man in Black.\"\n\nIf you're open to delving into something slightly different, \"Cadillac Records\" is another fantastic choice that chronicles the rise of Chess Records and its artists. You'll get to see talented actors like Beyonc\u00e9 Knowles, Adrien Brody, and Cedric the Entertainer bring their unforgettable performances to life! Enjoy the music-filled journey through the history of rhythm & blues.",
       "constraints": {
-        "genre": "biopic"
+        "genre": "biographical",
+        "plot": [
+          "novel",
+          "could"
+        ],
+        "name": "You"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does The Imitation Game tell? That sounds intriguing."
+      "text": "I like the sound of Cadillac Records. Who stars in it? Hmm, I didn\u2019t expect that vibe."
     },
     {
       "speaker": "SYSTEM",
-      "text": "The Imitation Game and A Beautiful Mind are both captivating biopics that tell compelling stories about influential figures in technology and mathematics, respectively. You might also enjoy \"The Theory of Everything\", which delves into the life of physicist Stephen Hawking. These films offer intriguing insights into extraordinary lives.",
+      "text": "\"You might enjoy 'The Young Victoria' which delves into the early reign of Queen Victoria and her enduring romance with Prince Albert, starring notable actors like Emily Blunt and Paul Bettany.\"\n\n\"If you're interested in a more adventurous biographical tale, '127 Hours' might be for you. It stars James Franco as a mountain climber who becomes trapped and must survive against all odds.\"",
       "constraints": {
-        "genre": "biopic"
+        "genre": "biographical",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Cadillac Records"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of The Theory of Everything. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "What kind of story does 127 Hours tell? Hmm, I didn\u2019t expect that vibe."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Given your interest in biopics, you might enjoy \"The Imitation Game\" starring Benedict Cumberbatch as Alan Turing or \"Bohemian Rhapsody\" about the life of Freddie Mercury from Queen. Both films offer fascinating insights into the lives of remarkable individuals.",
+      "text": "I'd highly recommend \"Man on Wire\" for you. This captivating film tells the true story of Philippe Petit, a tightrope walker who dared to walk between the Twin Towers in New York City, an event some call \"the artistic crime of the century\". Another intriguing option is \"W.\", which delves into the life and presidency of George W. Bush, providing a compelling look at one of America's most controversial figures. Enjoy!",
       "constraints": {
-        "genre": "biopic"
+        "genre": "biographical",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "127 Hours"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of W.? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Both \"Yours, Mine and Ours\" and \"Casablanca\" are excellent choices, but if you're looking for a biographical film that also delves into politics, \"Born on the Fourth of July\" might be an intriguing watch for you. It's based on the true story of Ron Kovic, a veteran who became an anti-war activist after feeling disillusioned by the U.S. following his service in Vietnam. Tom Cruise delivers a compelling performance in this powerful film.",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "W."
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thinking about Born on the Fourth of July, could we shift toward stories about laden? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend \"Fury\" for you. It's a compelling war drama starring Brad Pitt, Logan Lerman, and Jim Parrack, set in April 1945 as they fight their way across Germany. The intense storyline and strong performances make it a captivating watch, especially if you enjoyed 'Born on the Fourth of July'.\n\nIf you're interested in a more historical take on war, \"Amen.\" might be worth checking out. This thought-provoking film follows a SS officer trying to inform Pope Pius XII about Jews being sent to extermination camps during WWII. Mathieu Kassovitz and Ulrich M\u00fche deliver powerful performances in this gripping tale.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "thinking",
+          "born"
+        ],
+        "name": "War"
       }
     },
     {
@@ -41,185 +88,252 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "Given that you seemed to enjoy movies with a biographical twist, I'd recommend watching \"The Imitation Game\" about the life of mathematician Alan Turing, or perhaps \"Bohemian Rhapsody\", a captivating portrayal of Queen frontman Freddie Mercury. Both films offer compelling stories about remarkable individuals who left lasting impacts on their respective fields and beyond.",
+      "text": "It sounds like you might appreciate a film that combines intrigue and war elements, such as \"Proof of Life\" starring Russell Crowe and Michael Caine. Another option could be \"The Deer Hunter,\" a deeply emotional exploration of the Vietnam War, featuring Robert De Niro and Meryl Streep. Both films offer compelling narratives with strong performances from their talented casts.",
       "constraints": {
-        "genre": "biopic"
+        "genre": "war",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "War"
       }
     },
     {
       "speaker": "USER",
-      "text": "It\u2019s weird \u2014 I thought I liked that, but maybe not."
+      "text": "I like the sound of The Deer Hunter. Who stars in it? Hmm, I didn\u2019t expect that vibe."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Given your recent statement, you might find \"A Beautiful Mind\" or \"The Imitation Game\" fascinating as they both delve into the lives of Nobel laureates, providing a unique blend of biographical drama and intellectual intrigue. Enjoy the exploration!",
+      "text": "Given your interest in war-themed movies and the intriguing plots you've enjoyed so far, I'd highly recommend \"Dances with Wolves\". It's a compelling tale about a Civil War officer who finds himself connecting with a Sioux tribe, offering a unique blend of drama and action. If you're interested in a historical drama that also delves into the complexities of faith and family, \"There Be Dragons\" might be another captivating choice for you. Enjoy your movie time!",
       "constraints": {
-        "genre": "biopic"
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Deer Hunter"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of A Beautiful Mind? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "What kind of story does There Be Dragons tell? Hmm, I didn\u2019t expect that vibe."
     },
     {
       "speaker": "SYSTEM",
-      "text": "\"A Beautiful Mind and The Imitation Game are great choices if you're in the mood for compelling biopics that delve into the lives of brilliant, complex individuals. 'A Beautiful Mind' tells the story of mathematician John Nash, while 'The Imitation Game' focuses on computer scientist Alan Turing.\"",
+      "text": "I'd highly recommend \"Patton\" for its gripping portrayal of General George S. Patton during World War II, with George C. Scott delivering a powerful performance that earned him an Oscar. Another film that might interest you is \"Training Day\", starring Denzel Washington and Ethan Hawke, which offers a gritty look into the world of narcotics and morality in the Los Angeles police department. Both movies are engaging war stories but with distinctly different tones. Enjoy the watch!",
       "constraints": {
-        "genre": "biopic"
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thanks for all the detail on The Imitation Game. Could we explore drama next, though something emotional wouldn\u2019t hurt?"
+      "text": "What's the mood of Patton? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Given your interest in emotional dramas, I'd highly recommend \"A Beautiful Mind\" and \"Manchester by the Sea\". Both movies offer deep, moving narratives that will undoubtedly touch your heart. Enjoy the viewing!",
+      "text": "I'd highly recommend \"Patton\" (1970) if you're intrigued. This Oscar-winning film showcases George C. Scott's outstanding portrayal of General George S. Patton, offering a captivating exploration of his career during World War II. While it delves into the complexities of war, it's more about human resilience and leadership than being scary. Enjoy the ride!",
       "constraints": {
-        "genre": "drama"
+        "genre": "war",
+        "plot": [
+          "what",
+          "patton"
+        ],
+        "name": "Patton"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of A Beautiful Mind? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "How about something primarily in Malay Language? I can\u2019t decide if I\u2019d enjoy it or be scared by it. Maybe something like what you shared about Patton."
     },
     {
       "speaker": "SYSTEM",
-      "text": "\"A Beautiful Mind and The Pursuit of Happyness are both powerful dramas that offer emotional depth without overwhelming fear. They explore human resilience in challenging circumstances, making for compelling viewing.\"",
+      "text": "I'd recommend you consider \"The Gazebo\", a comedic mystery film where an anxious writer buries something in his backyard, only to be haunted by it. It stars notable actors like Glenn Ford and Debbie Reynolds, making for an enjoyable watch!\n\nIf you're interested in a classic tale with historical roots, \"The Prince and the Pauper\" is another great choice that tells the story of two boys switching places in medieval England. Enjoy exploring this timeless story!",
       "constraints": {
-        "genre": "drama"
+        "genre": "language",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "Patton",
+        "language": "Malay Language"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of The Pursuit of Happyness. Who stars in it? That sounds intriguing."
+      "text": "I like the sound of The Prince and the Pauper. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Given your interest in dramas, I'd highly recommend \"Forrest Gump\" and \"A Beautiful Mind\". Both films offer compelling narratives that delve into the human spirit amidst challenging circumstances. Enjoy the watch!",
+      "text": "Based on your interest in intriguing plots and films with compelling characters, I would recommend \"Alex in Wonderland\" starring Jeanne Moreau, Paul Mazursky, and Ellen Burstyn. This film explores the life of a bohemian director navigating the Hollywood community and European movie centers, all while wrestling with commercial success and artistic control.\n\nAlternatively, if you're intrigued by mystery and suspense, \"The Skull\" featuring Christopher Lee and Peter Cushing could be another captivating choice. This film delves into the powerful organization known as The Skulls and the high price one must pay for success. Enjoy your movie time!",
       "constraints": {
-        "genre": "drama"
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Prince",
+        "language": "Malay Language"
       }
     },
     {
       "speaker": "USER",
-      "text": "Actually, now that I think about it, I might want the opposite."
+      "text": "What kind of story does The Prince and the Pauper tell? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Given your preference for dramas, I'd highly recommend \"Parasite\" and \"The Revenant\". Both films offer unique storytelling and powerful performances that will surely captivate you. Enjoy the cinematic journey!",
+      "text": "One fascinating movie you might enjoy is \"The Adventures of Tom Sawyer.\" It's a classic tale set in the 1840s, where two boys get entangled in an adventure involving an Indian accused of theft and rescuing a trapped girl.\n\nAnother captivating choice is \"The Great Gatsby\" (2013), a modern retelling of F. Scott Fitzgerald's novel about a Midwesterner who becomes infatuated with his wealthy neighbor, exploring themes of love, dreams, and social status. Both stories might appeal to your taste in language-rich plots.",
       "constraints": {
-        "genre": "drama"
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The Prince",
+        "language": "Malay Language"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Parasite tell? Hmm, I didn\u2019t expect that vibe."
+      "text": "What's the mood of The Great Gatsby? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "\"Parasite showcases a unique blend of drama, suspense, and social commentary. If you enjoyed that vibe, I'd recommend checking out '12 Years a Slave' or 'Moonlight'. Both are powerful dramas with thought-provoking narratives.\"",
+      "text": "\"The Adventures of Tom Sawyer might be a fascinating choice for you, as it's an adventure tale set in the 1840s and offers a captivating story about friendship and courage. Another intriguing option could be 'We the Living', a powerful drama that explores the human struggles behind political revolutions, with a compelling narrative that challenges modern conscience.\"",
       "constraints": {
-        "genre": "drama"
+        "genre": "language",
+        "plot": [
+          "what",
+          "great"
+        ],
+        "name": "The Great Gatsby",
+        "language": "Malay Language"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thanks for all the detail on Parasite. Could we explore horror next, something that surprises me emotionally?"
+      "text": "Thanks for all the detail on We the Living. Could we explore science next, something that surprises me emotionally?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your preference for emotionally impactful horror, I'd recommend you watch \"Hereditary\" and \"Midsommar\". Both films have been praised for their unique storytelling and profound emotional resonance. Enjoy the chills!",
+      "text": "\"Hi there! I'm thrilled to hear that you're interested in science-themed movies, especially those with an emotional impact. One movie that might catch your attention is 'Titan A.E.', a sci-fi adventure featuring an all-star cast including Matt Damon and Drew Barrymore. Another intriguing choice is 'The Thirteenth Floor', which combines elements of noir detective stories with virtual reality, starring Craig Bierko and Gretchen Mol.\"",
       "constraints": {
-        "genre": "horror"
+        "genre": "science",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "X",
+        "language": "Malay Language"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Midsommar tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "I like the sound of Titan A.E.. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Midsommar shares similarities with other horror films like A Quiet Place, The Witch, and Hereditary, all of which delve into the psychological terror inherent in isolated settings and deeply disturbing events. If you're up for a suspenseful journey, I'd highly recommend 'The Witch' or 'Hereditary'. Enjoy your movie time!",
+      "text": "I'd highly recommend \"Superman II\" for you! It's a classic science fiction film where Superman faces off against three Kryptonian criminals threatening Earth. The star-studded cast includes the iconic Christopher Reeve as Superman and Gene Hackman as Lex Luthor.\n\nIf you're looking for something more modern, \"Cloverfield\" might be right up your alley! It's a thrilling movie about a group of friends trying to rescue each other during a monster attack in New York City. Michael Stahl-David delivers an impressive performance as the film's protagonist. Enjoy the suspense and edge-of-your-seat action!",
       "constraints": {
-        "genre": "horror"
+        "genre": "science",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Titan A.E.",
+        "language": "Malay Language"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Midsommar. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "What's the mood of Super? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Given your interest in horror movies, you might enjoy \"Hereditary\" and \"The Conjuring\". Both films are highly acclaimed for their chilling storylines and suspenseful atmospheres. Enjoy the thrill!",
+      "text": "Based on your interest in science fiction films, I'd recommend watching \"Mars Attacks!\" and \"The Matrix Revolutions\". In \"Mars Attacks!\", you'll enjoy a hilarious take on an alien invasion with an all-star cast including Danny DeVito, Martin Short, and Tom Jones. On the other hand, \"The Matrix Revolutions\" offers action-packed sequences as Neo battles both machines and rogue agents in a war for humanity's survival, featuring stars like Keanu Reeves and Laurence Fishburne. Both movies should fit your preferences perfectly!",
       "constraints": {
-        "genre": "horror"
+        "genre": "science",
+        "plot": [
+          "what",
+          "super"
+        ],
+        "name": "Super",
+        "language": "Malay Language"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of It? That feels deeper than I thought."
+      "text": "What kind of story does Mars Attacks! tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "\"Based on your interest in deeper, atmospheric horror films, I'd highly recommend 'Hereditary' and 'Midsommar'. Both are critically acclaimed for their haunting narratives and psychological horror elements.\"",
+      "text": "\"Hello! Among the options, I'd highly recommend 'Silent Running'. It's a thought-provoking science fiction film where an astronaut fights to protect Earth's last botanical specimens from extinction. Another one that might interest you is 'Predators', an action-packed movie featuring top stars like Adrien Brody and Topher Grace, where elite warriors are hunted by extraterrestrial predators.\"",
       "constraints": {
-        "genre": "horror"
+        "genre": "science",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Mars Attacks!",
+        "language": "Malay Language"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thanks for all the detail on Midsommar. Could we explore thriller next, with a mix of excitement and warmth?"
+      "text": "Maybe we could find more movies with Maya Rudolph. I can\u2019t decide if I\u2019d enjoy it or be scared by it. Maybe something like what you shared about Silent Running."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your preference for a thriller with a mix of excitement and warmth, I'd recommend \"Gone Girl\" and \"The Game\". Both films offer suspenseful plots, but also have elements of emotional depth that add warmth to the storylines. Enjoy the thrill!",
+      "text": "\"Based on your interest in Maya Rudolph and science fiction, I'd highly recommend 'The Phantom Tollbooth' - a whimsical adventure that will delight you with its unique storyline and charming cast. If you're up for something a bit more intriguing, 'Blade Runner', starring Harrison Ford, offers an engaging exploration of artificial intelligence set in a dystopian future.\"",
       "constraints": {
-        "genre": "thriller"
+        "genre": "science",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Silent Running",
+        "language": "Maya",
+        "actor": "Maya Rudolph"
       }
     },
     {
       "speaker": "USER",
-      "text": "Actually, now that I think about it, I might want the opposite."
+      "text": "I like the sound of Blade Runner. Who stars in it? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Given your recent preference for thrillers, I'd highly recommend \"Zodiac\" and \"Oldboy\". Both films offer intriguing mysteries and suspense that might appeal to you. Enjoy the gripping storylines!",
+      "text": "It seems you enjoyed the futuristic atmosphere and deep themes of Blade Runner! Given your interest in Maya Rudolph, I'd recommend \"Gattaca\" \u2013 a thought-provoking sci-fi film with Maya Rudolph as part of an all-star cast. If you're looking for something more lighthearted, \"Hot Tub Time Machine\" might be worth checking out; it features a fun storyline with a few cameos you might recognize! Enjoy your movie nights!",
       "constraints": {
-        "genre": "thriller"
+        "genre": "science",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Blade Runner",
+        "language": "Maya",
+        "actor": "Maya Rudolph"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Oldboy tell? That feels deeper than I thought."
+      "text": "What kind of story does Blade Runner tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "\"Based on your interest in deeper, thrilling narratives, I'd highly recommend 'Se7en' and 'Gone Girl'. Both are intriguing psychological thrillers that will keep you engaged.\"",
+      "text": "It seems like you're more into science fiction movies, given your interest in 'Blade Runner'. So I'd recommend 'SpaceCamp' for a family-friendly sci-fi adventure starring Lea Thompson and Tom Skerritt, or if you prefer something darker, 'The Mist' features an ensemble cast led by Andre Braugher and Toby Jones. Both films offer engaging narratives within the science fiction genre. Enjoy!",
       "constraints": {
-        "genre": "thriller"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Se7en? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "\"Se7en and Gone Girl both share a captivating, suspenseful atmosphere that may resonate with you due to their intricate plotlines and thought-provoking narratives within the thriller genre.\"",
-      "constraints": {
-        "genre": "thriller"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Gone Girl. Who stars in it? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Given your interest in thrillers, you might enjoy \"Se7en\" starring Morgan Freeman and Brad Pitt, or \"The Girl with the Dragon Tattoo\" featuring Daniel Craig and Rooney Mara. Both movies offer compelling mysteries that will keep you on the edge of your seat!",
-      "constraints": {
-        "genre": "thriller"
+        "genre": "science",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Blade Runner",
+        "language": "Maya",
+        "actor": "Maya Rudolph"
       }
     }
   ]

@@ -1,38 +1,84 @@
 {
   "model_name": "llama3:instruct",
-  "true_genre": "adventure",
+  "true_genre": "bollywood",
   "conversation": [
     {
       "speaker": "USER",
-      "text": "I'm in the mood for a mystery movie. Could you recommend a few?"
+      "text": "I'm in the mood for a bollywood movie. Could you recommend a few?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "I'd be happy to help you out! If you're in the mood for a classic whodunit, I highly recommend \"Murder on the Orient Express\" (1974) or \"Knives Out\" (2019). Both films are cleverly crafted mysteries with intricate plots and memorable characters that will keep you guessing until the very end.",
+      "text": "I think I have just the Bollywood movie for you! Have you considered \"Sholay\"? It's a classic Indian film that has stood the test of time, with an epic storyline and memorable characters played by Amitabh Bachchan, Jaya Bhaduri Bachchan, and Hema Malini. It's an action-packed adventure that will keep you entertained from start to finish!",
       "constraints": {
-        "genre": "mystery"
+        "genre": "bollywood",
+        "plot": [
+          "could"
+        ],
+        "name": "You"
       }
     },
     {
       "speaker": "USER",
-      "text": "It\u2019s weird \u2014 I thought I liked that, but maybe not."
+      "text": "What kind of story does Sholay tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I know just the thing! Have you seen \"Gone Girl\" or \"Knives Out\"? Both are clever and twisty mysteries that will keep you guessing until the very end.",
+      "text": "I think I have just the right recommendation for you! Have you considered watching \"Don 2\"? It's a high-octane Bollywood action film that follows Don, played by Shah Rukh Khan, as he pulls off an elaborate heist in Berlin. With its pulse-pumping action sequences and thrilling plot twists, I think you'll be fully invested in the story from start to finish!",
       "constraints": {
-        "genre": "mystery"
+        "genre": "bollywood",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Knives Out? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "I like the sound of Don 2. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think you'll really enjoy \"Gone Girl\"! It's a twisty and suspenseful thriller that explores the darker side of human nature, with a complex plot that will keep you guessing until the very end. If you're looking for something a bit more cerebral, I'd also recommend \"Shutter Island\", which is a mind-bending mystery that delves into themes of paranoia and the unreliability of perception.",
+      "text": "I think I can help you find a movie that resonates with you! Since you mentioned Don 2, which is a Bollywood film, I'd recommend Restless (2006) - it's a coming-of-age drama that explores themes of relationships and freedom, all set to an indie-rock soundtrack. The talented cast, including Mia Wasikowska and Hayley Atwell, brings depth to the story of Ari's self-discovery. Would you like to give Restless a try?",
       "constraints": {
-        "genre": "mystery"
+        "genre": "bollywood",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Don 2"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Don 2? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right movie for you! Have you considered \"Taxi Driver\"? It's a classic Bollywood-inspired thriller (yes, you read that right!) with a gripping plot and outstanding performances from Robert De Niro and Jodie Foster. Plus, it explores themes of love, obsession, and redemption - sounds like the perfect blend to me!",
+      "constraints": {
+        "genre": "bollywood",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "Don 2"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thinking about Drive, could we shift toward stories about injecting? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've got just the film for you! Have you considered \"To Have and Have Not\" from 1937? It's a classic war movie with Humphrey Bogart, set during World War II, where he helps transport a French Resistance leader and his wife to Martinique while romancing a lounge singer. The chemistry between Bogart and the actress is electric, and it's a great example of how a film can balance action and romance in a wartime setting.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "thinking",
+          "drive"
+        ],
+        "name": "War"
       }
     },
     {
@@ -41,141 +87,219 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "You're having a change of heart, and mystery is still intriguing you! I think \"Knives Out\" would be an excellent choice - it's a clever, witty whodunit that will keep you guessing until the very end. If you're up for something a bit more complex and atmospheric, \"Shutter Island\" is also a fantastic option, with its haunting visuals and mind-bending twists.",
+      "text": "I think I have just the right film for you! Considering your interest in war movies and the themes of \"sure\" and \"perhaps\", I'd like to recommend \"Tora! Tora! Tora!\" (1970). This historical drama is a gripping portrayal of the events leading up to Pearl Harbor, with impressive reenactments and strong performances from its cast. Would you like to give it a try?",
       "constraints": {
-        "genre": "mystery"
+        "genre": "war",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "War"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Knives Out. Who stars in it? That feels deeper than I thought."
+      "text": "I like the sound of Tora! Tora! Tora!. Who stars in it? Hmm, I didn\u2019t expect that vibe."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think you'd really enjoy \"Gone Girl\" then! It's a twisty, psychological thriller that explores the darker side of relationships and features outstanding performances from Ben Affleck and Rosamund Pike. If you're in the mood for something a bit more atmospheric and suspenseful, I'd also recommend \"Shutter Island\".",
+      "text": "I think you might enjoy \"In the Land of Blood and Honey\"! It's a powerful drama that explores the complexities of war and human connection, with a strong performance from Branko Djuric and Jelena Jovanova. The film's intense and emotional portrayal of the Bosnian War might remind you of the historical drama of \"Tora! Tora! Tora!\".",
       "constraints": {
-        "genre": "mystery"
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Tora! Tora! Tora!"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Gone Girl tell? That feels deeper than I thought."
+      "text": "What's the mood of Tora! Tora! Tora!? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I'm glad you found Gone Girl thought-provoking! If you're looking for another mystery that will keep you on the edge of your seat, I highly recommend \"Knives Out\" - it's a clever, witty, and engaging whodunit with a complex plot and memorable characters.",
+      "text": "I think I have just the right film for you! Have you considered \"Apocalypse Now\"? It's a classic war movie that explores the psychological effects of conflict, with an all-star cast featuring Martin Sheen and Marlon Brando. The plot is engaging and thought-provoking, following a U.S. Army officer on a mission to assassinate a renegade colonel in Vietnam.\n\nIf you're looking for something a bit more historical and epic, \"The Odyssey\" might be up your alley! This unique film tells the complete story of Homer's epic poem in 24 chapters, featuring an impressive cast including Vanessa L. Williams and Christopher Lee. The adventure spans war, love, and even the afterlife - it's quite the journey!",
       "constraints": {
-        "genre": "mystery"
+        "genre": "war",
+        "plot": [
+          "what"
+        ],
+        "name": "Tora! Tora! Tora!"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thanks for all the detail on Gone Girl. Could we explore thriller next, though something emotional wouldn\u2019t hurt?"
+      "text": "What kind of story does Psycho tell? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Thrillers with an emotional punch, eh? I think you'd really enjoy \"Prisoners\" - it's a gripping mystery that explores the dark side of human nature, and the performances by Hugh Jackman and Jake Gyllenhaal are outstanding. Alternatively, if you're in the mood for something a bit more cerebral, \"Shutter Island\" is a thought-provoking thriller that will keep you on the edge of your seat!",
+      "text": "I think you might enjoy \"Training Day\"! It's an intense and gripping war film that explores themes of morality, loyalty, and power struggles. With a star-studded cast including Denzel Washington and Ethan Hawke, this movie is sure to keep you on the edge of your seat.",
       "constraints": {
-        "genre": "thriller"
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Psycho"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Shutter Island? That sounds intriguing."
+      "text": "Do you have recommendations written by Patricia Ingham? I can\u2019t decide if I\u2019d enjoy it or be scared by it. Maybe something like what you shared about Training Day."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I'm glad you're intrigued by Shutter Island! If you enjoy psychological thrillers that keep you on the edge of your seat, I'd highly recommend Se7en or Gone Girl - both are gripping and thought-provoking films that explore the darker side of human nature.",
+      "text": "I think I have just the right fit for you! If you're looking for a gripping war movie with a strong script, I'd highly recommend \"The Good German\" (2006). Directed by Steven Soderbergh and written by George Clooney (yes, that George Clooney!), this film is a thrilling mystery set in post-war Berlin. With its all-star cast, including Clooney, Tobey Maguire, and Robin Weigert, you'll be on the edge of your seat as journalist Tully unfolds a complex web of secrets and lies.",
       "constraints": {
-        "genre": "thriller"
+        "genre": "war",
+        "plot": [
+          "written",
+          "decide"
+        ],
+        "name": "Training Day",
+        "writer": "Patricia Ingham"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Se7en tell? That sounds intriguing."
+      "text": "I like the sound of Yes. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "You're in the mood for a thrilling ride, huh? I'd highly recommend \"Gone Girl\" or \"Prisoners\", both of which are twisty, suspenseful, and expertly crafted thrillers that will keep you on the edge of your seat!",
+      "text": "I think I have just the right movie for you! Have you considered \"Hotel Rwanda\" (2004)? It's a powerful and emotional war drama that tells the true story of Paul Rusesabagina, a hotel manager who saves over a thousand refugees during the Rwandan genocide. The film features an all-star cast, including Nick Nolte, Don Cheadle, and Joaquin Phoenix.\n\nIf you're not in the mood for a historical drama, I'd also recommend \"Lincoln\" (1995), which is another powerful war movie that explores the complex and emotional journey of President Abraham Lincoln as he fights to pass the 13th Amendment and end slavery.",
       "constraints": {
-        "genre": "thriller"
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Yes",
+        "writer": "Patricia Ingham"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Prisoners. Who stars in it? That feels deeper than I thought."
+      "text": "What kind of story does Hotel Rwanda tell? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I can suggest some great thrillers that you might enjoy! Given your interest in \"Prisoners\", I'd recommend checking out \"Gone Girl\" and \"Shutter Island\". Both films have a similar tone of psychological tension and twisty storytelling that really gets under your skin. Would you like to give them a try?",
+      "text": "I think \"Proof of Life\" might be right up your alley! It's a gripping thriller that explores the complex emotions and moral dilemmas that come with negotiating the release of a kidnapped loved one. With Russell Crowe and Michael Kitchen delivering strong performances, you're in for a tense and thought-provoking ride.\n\nIf you're looking for something a bit more somber, \"The Blood of My Brother\" might be worth considering. It's a powerful and poignant exploration of the human cost of war, told through the lens of an Iraqi family's tragedy.",
       "constraints": {
-        "genre": "thriller"
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Hotel Rwanda",
+        "writer": "Patricia Ingham"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thanks for all the detail on Gone Girl. Could we explore mystery next, with a mix of excitement and warmth?"
+      "text": "What's the mood of Proof of Life? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I have just the movies for you! Based on your interest in \"Gone Girl\" and a mix of excitement and warmth, I'd recommend \"Knives Out\" and \"Glass Onion\". Both films are clever, engaging mysteries with great characters, witty dialogue, and plenty of twists and turns to keep you guessing.",
+      "text": "I think you might enjoy \"The Siege\"! It's a gripping war movie that explores themes of proof and what it takes to survive in difficult circumstances, which seems to align with the mood of \"Proof of Life\". Plus, it features an all-star cast including Denzel Washington and Bruce Willis.",
       "constraints": {
-        "genre": "mystery"
+        "genre": "war",
+        "plot": [
+          "what",
+          "proof"
+        ],
+        "name": "Proof of Life",
+        "writer": "Patricia Ingham"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Knives Out. Who stars in it? Hmm, I didn\u2019t expect that vibe."
+      "text": "Could we look at films from around 2004? I can\u2019t decide if I\u2019d enjoy it or be scared by it. Maybe something like what you shared about The Siege."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I'm glad you liked the vibe of Knives Out! If you're looking for more mystery and intrigue, I think you'd really enjoy Gone Girl (2014) - it's a twisty thriller with a complex plot that will keep you guessing until the very end. Alternatively, if you're in the mood for something a bit more cerebral, Shutter Island (2010) might be right up your alley!",
+      "text": "I think I have just the right film for you! Have you considered \"Troy\" (2004)? It's an epic retelling of Homer's classic tale, with a star-studded cast including Orlando Bloom and Brad Pitt. The battle scenes are intense and action-packed, but it also explores the human side of war through the characters' stories.\n\nIf that doesn't quite fit your taste, I'd recommend \"Lord of War\" (2005), which is another gripping film about the consequences of conflict. Nicolas Cage brings his signature intensity to the role of an arms dealer grappling with the morality of his work.",
       "constraints": {
-        "genre": "mystery"
+        "genre": "war",
+        "plot": [
+          "could",
+          "look"
+        ],
+        "name": "The Siege",
+        "writer": "Patricia Ingham",
+        "year": "2004"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Gone Girl tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "I like the sound of Lord of War. Who stars in it? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think you'll love \"Knives Out\"! It's a modern take on the classic whodunit mystery, with a clever plot and witty characters that will keep you guessing until the very end. If you enjoy that one, I'd also recommend \"Shutter Island\", which has a similar atmospheric and suspenseful vibe.",
+      "text": "I think I have just the right recommendation for you! Have you considered \"Hotel Rwanda\"? It's a powerful and emotional film that, like \"Lord of War\", deals with themes of war and human resilience. The true story of Paul Rusesabagina, played by Don Cheadle, is both heartbreaking and inspiring - it's a must-see if you enjoy thought-provoking dramas.",
       "constraints": {
-        "genre": "mystery"
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "War",
+        "writer": "Patricia Ingham",
+        "year": "2004"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Knives Out? Hmm, I didn\u2019t expect that vibe."
+      "text": "What kind of story does Hotel Rwanda tell? Hmm, I didn\u2019t expect that vibe."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I'm glad you enjoyed the wit and charm of Knives Out! If you're in the mood for more clever mysteries, I'd recommend Shutter Island - its complex plot twists and atmospheric setting will likely keep you guessing until the very end. Or, if you prefer a more psychological approach, Gone Girl is another great option that explores themes of relationships and deception.",
+      "text": "I think I see what's going on here! Since you're looking for a war-themed movie, I'd recommend either \"Harry Potter and the Prisoner of Azkaban\" (2004) or \"The Passion of the Christ\" (2004). Both are intense films that explore themes of danger, sacrifice, and perseverance.",
       "constraints": {
-        "genre": "mystery"
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Hotel Rwanda",
+        "writer": "Patricia Ingham",
+        "year": "2004"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thanks for all the detail on Gone Girl. Could we explore thriller next, something that surprises me emotionally?"
+      "text": "What's the mood of The Passion of the Christ? Hmm, I didn\u2019t expect that vibe."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I have just the movies for you! \"Shutter Island\" and \"Prisoners\" are both thrilling emotional rollercoasters that will keep you on the edge of your seat and surprise you with their twists and turns. Would either of those resonate with you?",
+      "text": "I think I have just the right movie for you! Have you considered \"Hotel Rwanda\"? It's a powerful and emotional film based on true events, with an incredible performance by Don Cheadle. The story of Paul Rusesabagina's bravery and compassion is truly inspiring.\n\nIf you're looking for another option, I'd also recommend \"Amen.\" It's a gripping drama that explores the complexities of doing what's right during times of war and oppression. With standout performances from Ulrich M\u00fche and Sebastian Koch, it's a thought-provoking film that will stay with you long after the credits roll.",
       "constraints": {
-        "genre": "thriller"
+        "genre": "war",
+        "plot": [
+          "what",
+          "passion"
+        ],
+        "name": "The Passion of the Christ",
+        "writer": "Patricia Ingham",
+        "year": "2004"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Prisoners? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "Do you have recommendations written by Perry Moore? That feels deeper than I thought. Maybe something like what you shared about Amen.."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think you'd really enjoy \"Se7en\" - it's a classic thriller that explores the darker side of human nature, with a similar tone and atmosphere to \"Prisoners\". If you're looking for something a bit more modern, I'd recommend \"Gone Girl\", which also deals with themes of obsession and deception.",
+      "text": "I think you'll really appreciate \"The Day After Tomorrow\"! With its thrilling action and heart-pumping suspense, it's a great example of Perry Moore's writing skills. And who wouldn't want to see Jake Gyllenhaal and Dennis Quaid in the same movie?",
       "constraints": {
-        "genre": "thriller"
+        "genre": "war",
+        "plot": [
+          "written",
+          "perry"
+        ],
+        "name": "Amen.",
+        "writer": "Perry Moore",
+        "year": "2004"
       }
     },
     {
@@ -184,42 +308,34 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "I love that you're open to a new recommendation! Based on your interest in thrillers, I think you'd really enjoy \"Prisoners\" - it's a gripping and intense movie about two parents' desperate search for their missing daughters, with plenty of twists and turns along the way. If you've already seen that one, another great option might be \"Gone Girl\", which is also a dark and suspenseful mystery that keeps you guessing until the very end!",
+      "text": "I think I can help you with that! Based on your earlier interest in war movies and the theme of \"wrong\" being present, I'd recommend either \"Messenger\" (2004) or \"Kundun\" (1997). Both films deal with themes of conflict, struggle, and perseverance.",
       "constraints": {
-        "genre": "thriller"
+        "genre": "war",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "Amen.",
+        "writer": "Perry Moore",
+        "year": "2004"
       }
     },
     {
       "speaker": "USER",
-      "text": "It\u2019s weird \u2014 I thought I liked that, but maybe not."
+      "text": "What kind of story does Kundun tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I can help you with that! Based on your interest in the thriller genre, I'd recommend \"Gone Girl\" or \"Prisoners\" - both are twisty, suspenseful films that explore themes of missing persons and the darker aspects of human nature.",
+      "text": "I think you might enjoy \"You\" (2014) - it's a thought-provoking film that explores themes of right and wrong in the context of war, which seems like an interesting parallel to the story of Kundun. The movie features a gripping plot with plenty of twists and turns, and it stars Gaspard Ulliel as the protagonist.",
       "constraints": {
-        "genre": "thriller"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Gone Girl tell? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think you might enjoy \"Prisoners\" or \"Nightcrawler\", both of which are intense and thought-provoking thrillers that explore the darker side of human nature, much like Gone Girl. They're great examples of films that will keep you on the edge of your seat until the very end!",
-      "constraints": {
-        "genre": "thriller"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Gone Girl. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think you'd love \"Se7en\" and \"Shutter Island\"! Both are psychological thrillers that explore dark themes and feature complex characters, similar to Gone Girl.",
-      "constraints": {
-        "genre": "thriller"
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Kundun",
+        "writer": "Perry Moore",
+        "year": "2004"
       }
     }
   ]

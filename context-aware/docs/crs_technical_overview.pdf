@@ -1,0 +1,90 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 4 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 7 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 7 0 R >> >> /Contents 6 0 R >>
+endobj
+5 0 obj
+<< /Length 4287 >>
+stream
+BT /F1 11 Tf 50 732.00 Td (CONTEXT-AWARE CRS EVALUATION - TECHNICAL WALKTHROUGH) Tj ET
+BT /F1 11 Tf 50 704.00 Td (1. Repository layout) Tj ET
+BT /F1 11 Tf 50 690.00 Td (- dataset.py loads opendialkg_movie_data.json, normalizes genres, and builds attribute) Tj ET
+BT /F1 11 Tf 50 676.00 Td (indexes \(genre, actor, director, writer, language, year, plot keywords\).) Tj ET
+BT /F1 11 Tf 50 662.00 Td (- user_sim.py synthesizes human-like requests with staged detail probes, constraint shifts) Tj ET
+BT /F1 11 Tf 50 648.00 Td (across all metadata, and optional LLM drift.) Tj ET
+BT /F1 11 Tf 50 634.00 Td (- system.py contains CRSSystem, which extracts constraints, queries dataset.recommend, and) Tj ET
+BT /F1 11 Tf 50 620.00 Td (prompts local Ollama models \(or mock replies\) with contextual payloads.) Tj ET
+BT /F1 11 Tf 50 606.00 Td (- simulate.py orchestrates a 20 turn dialogue between the UserSimulator and CRSSystem,) Tj ET
+BT /F1 11 Tf 50 592.00 Td (persisting each transcript under logs/.) Tj ET
+BT /F1 11 Tf 50 578.00 Td (- evaluate.py computes every metric \(segmentation, recovery, interference, CAS, LLM) Tj ET
+BT /F1 11 Tf 50 564.00 Td (judge\), using LDA topics when gensim models are available and the new TF-IDF embedder) Tj ET
+BT /F1 11 Tf 50 550.00 Td (fallback when transformer weights cannot load.) Tj ET
+BT /F1 11 Tf 50 536.00 Td (- analyze_results.py digests results.jsonl into charts \(bars, radar, deviation steps,) Tj ET
+BT /F1 11 Tf 50 522.00 Td (topic-count density, per-metric distributions\).) Tj ET
+BT /F1 11 Tf 50 494.00 Td (2. Simulation and logging) Tj ET
+BT /F1 11 Tf 50 480.00 Td (- batch_run.py clears prior runs, then loops over each model in config.LLM_SYSTEMS.) Tj ET
+BT /F1 11 Tf 50 466.00 Td (- simulate.run_simulation builds alternating USER/SYSTEM turns, storing the CRS constraint) Tj ET
+BT /F1 11 Tf 50 452.00 Td (state alongside raw text for downstream analysis.) Tj ET
+BT /F1 11 Tf 50 438.00 Td (- Each session is saved as logs/<model>_session_<id>.json with model metadata to keep) Tj ET
+BT /F1 11 Tf 50 424.00 Td (evaluation deterministic.) Tj ET
+BT /F1 11 Tf 50 396.00 Td (3. Constraint-aware CRS) Tj ET
+BT /F1 11 Tf 50 382.00 Td (- CRSSystem._update_constraints inspects every user turn for genre, year, actor, director,) Tj ET
+BT /F1 11 Tf 50 368.00 Td (language, writer, explicit title, and plot cues \(via find_plot_keywords_in_text\).) Tj ET
+BT /F1 11 Tf 50 354.00 Td (- Recommendations are fetched through dataset.recommend, which intersects all active) Tj ET
+BT /F1 11 Tf 50 340.00 Td (constraints against the indexed MOVIE_DB.) Tj ET
+BT /F1 11 Tf 50 326.00 Td (- The reply prompt injects summarized constraints plus top matches so the LLM response) Tj ET
+BT /F1 11 Tf 50 312.00 Td (stays grounded.) Tj ET
+BT /F1 11 Tf 50 284.00 Td (4. Evaluation pipeline) Tj ET
+BT /F1 11 Tf 50 270.00 Td (- detect_user_segments groups USER turns via embedding_similarity and topic heuristics.) Tj ET
+BT /F1 11 Tf 50 256.00 Td (The new embedding backend first tries sentence-transformers \(when) Tj ET
+BT /F1 11 Tf 50 242.00 Td (USE_TRANSFORMER_EMBEDDER=1 and torch works\) and otherwise instantiates a) Tj ET
+BT /F1 11 Tf 50 228.00 Td (TfidfSentenceEmbedder seeded by all movie plots.) Tj ET
+BT /F1 11 Tf 50 214.00 Td (- Per shift we compute recovery delay, interference, and segment topics; cross_coherence) Tj ET
+BT /F1 11 Tf 50 200.00 Td (and context_retention reuse the same similarity primitive.) Tj ET
+BT /F1 11 Tf 50 186.00 Td (- ensure_lda_model loads train_lda.py outputs \(models/lda.model, models/lda.dict\) and) Tj ET
+BT /F1 11 Tf 50 172.00 Td (falls back gracefully if gensim/nltk data are missing.) Tj ET
+BT /F1 11 Tf 50 158.00 Td (- Results per conversation are appended to results.jsonl together with llm_judge scores.) Tj ET
+BT /F1 11 Tf 50 130.00 Td (5. Visualization and summaries) Tj ET
+BT /F1 11 Tf 50 116.00 Td (- analyze_results.py now stabilizes the detail column, draws KDE distributions per metric,) Tj ET
+BT /F1 11 Tf 50 102.00 Td (rebuilds CAS, radar, stacked, and deviation plots, and exports judge CSVs per model.) Tj ET
+BT /F1 11 Tf 50 88.00 Td (- model_metrics.csv captures aggregated numeric means, while model_metrics_show.csv offers) Tj ET
+BT /F1 11 Tf 50 74.00 Td (a rounded snapshot for quick sharing.) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Length 642 >>
+stream
+BT /F1 11 Tf 50 732.00 Td (6. Execution checklist) Tj ET
+BT /F1 11 Tf 50 718.00 Td (- Activate the venv, ensure USE_TRANSFORMER_EMBEDDER is toggled to 0 unless torch+numpy) Tj ET
+BT /F1 11 Tf 50 704.00 Td (are rebuilt, run python batch_run.py to simulate+evaluate, then python analyze_results.py) Tj ET
+BT /F1 11 Tf 50 690.00 Td (to refresh figures.) Tj ET
+BT /F1 11 Tf 50 676.00 Td (- For experimentation, python finetune_embeddings.py can train a TSDAE model once the) Tj ET
+BT /F1 11 Tf 50 662.00 Td (transformer stack is available and config.EMBEDDING_MODEL_NAME points to the finetuned) Tj ET
+BT /F1 11 Tf 50 648.00 Td (directory.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000000373 00000 n 
+0000004712 00000 n 
+0000005405 00000 n 
+trailer << /Size 8 /Root 1 0 R >>
+startxref
+5475
+%%EOF

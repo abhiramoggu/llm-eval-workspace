@@ -1,38 +1,230 @@
 {
   "model_name": "qwen:7b",
-  "true_genre": "crime",
+  "true_genre": "biography",
   "conversation": [
     {
       "speaker": "USER",
-      "text": "I'm in the mood for a crime movie. Could you recommend a few?"
+      "text": "I'm in the mood for a biography movie. Could you recommend a few?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your preference for a crime movie, I recommend watching 'The Godfather'. It's a classic in the crime genre and should satisfy your mood.",
+      "text": "For a biography movie recommendation, I would suggest 'The Imitation Game'. This film tells the story of Alan Turing's contributions to cracking the German Enigma code during World War II. Starring Benedict Cumberbatch in the lead role, it offers a fascinating biographical narrative.",
       "constraints": {
-        "genre": "crime"
+        "genre": "biography",
+        "plot": [
+          "biography",
+          "could"
+        ],
+        "name": "You"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of The Godfather? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "I like the sound of {'name': \"The King's Speech\", 'year': '2010', 'genre': ['George VI', 'World War II', 'Biographical film', 'Historical fiction', 'Historical period drama', 'Biography', 'History', 'Romance', 'United Kingdom', 'Drama'], 'actor': ['Guy Pearce', 'Timothy Spall', 'Michael Gambon', 'Geoffrey Rush', 'Claire Bloom', 'Helena Bonham Carter', 'Derek Jacobi', 'Derek Jacobi', 'Colin Firth', 'Colin Firth', 'Jennifer Ehle', 'Jennifer Ehle'], 'director': ['Tom Hooper'], 'language': ['English Language', 'English'], 'writer': ['David Seidler'], 'plot': 'The story of King George VI, his unexpected ascension to the throne of the British Empire in 1936, and the speech therapist who helped the unsure monarch overcome his stammer.', 'original_id': '371'}. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on their interest in the crime genre and their hesitation with The Godfather, I would recommend 'Goodfellas'. It's a classic crime film within the genre that should provide a good viewing experience for them.",
+      "text": "Based on your preferences for drama, a specific year (2012), and potentially notable cast members (like Johnny Depp in 'Dark Shadows'), I recommend watching 'Dark Shadows'. It features an intriguing storyline with the character of Barnabas Collins played by Johnny Depp himself. Enjoy!",
       "constraints": {
-        "genre": "crime"
+        "genre": "drama",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "War",
+        "year": "2010",
+        "actor": "Derek Jacobi",
+        "director": "Tom Hooper",
+        "language": "English Language",
+        "writer": "David Seidler"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Goodfellas tell? That sounds intriguing."
+      "text": "What kind of story does 2012 tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your interest in the crime genre, I recommend 'Goodfellas' and 'The Godfather'. These classic films offer captivating stories within the criminal underworld.",
+      "text": "I recommend 'The Doors' (1991). The story follows Jim Morrison, the lead singer of The Doors, and his band's rise in popularity during the counterculture era. Starring Steve Reevis, Mimi Rogers, and a talented cast.",
       "constraints": {
-        "genre": "crime"
+        "genre": "drama",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "2012",
+        "year": "2012",
+        "actor": "Derek Jacobi",
+        "director": "Tom Hooper",
+        "language": "English Language",
+        "writer": "David Seidler"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Doors? That sounds intriguing."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend \"The Doors\" (1991) for its captivating storyline and stellar cast featuring Val Kilmer, Mimi Rogers, and a who's who of 60s rock icons.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "what",
+          "doors"
+        ],
+        "name": "The Doors",
+        "year": "2012",
+        "actor": "Derek Jacobi",
+        "director": "Tom Hooper",
+        "language": "English Language",
+        "writer": "David Seidler"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on The Doors. Could we explore cult next, something that surprises me emotionally?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a surprise emotional cult experience, I would recommend 'The Muse'. It stars Mark Feuerstein and Cybill Shepherd, and follows a musician struggling with writer's block until an inspirational force intervenes.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "The Doors",
+        "year": "2012",
+        "actor": "Derek Jacobi",
+        "director": "Tom Hooper",
+        "language": "English Language",
+        "writer": "David Seidler"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "It\u2019s weird \u2014 I thought I liked that, but maybe not."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're in the mood for something a little odd and thought-provoking, \"White House Down\" might be an intriguing choice. With action-packed scenes, starring Peter Jacobson, Garcelle Beauvais, and Kevin Rankin, it offers a different perspective on political intrigue.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "The Doors",
+        "year": "2012",
+        "actor": "Derek Jacobi",
+        "director": "Tom Hooper",
+        "language": "English Language",
+        "writer": "David Seidler"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Muse. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a fan of cult films with strong performances, I recommend 'Winter in Wartime' (2008). With Yorick van Wageningen's lead and a tale set against the backdrop of Nazi occupation, this film offers an immersive experience.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Muse",
+        "year": "2012",
+        "actor": "Derek Jacobi",
+        "director": "Tom Hooper",
+        "language": "English Language",
+        "writer": "David Seidler"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before \u2014 that might\u2019ve been too specific."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend \"The End of the Affair\" for its captivating story of a man trying to understand his former lover's departure. Starring Ralph Fiennes and Sophie Okonedo, the film offers rich character interactions and emotional depth.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "The Muse",
+        "year": "2012",
+        "actor": "Derek Jacobi",
+        "director": "Tom Hooper",
+        "language": "English Language",
+        "writer": "David Seidler"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The End of the Affair tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a fan of intense espionage and action, I would recommend 'Argo' (2012). The film features Kerry Bish\u00e9's portrayal of an actress caught in the mission, and a stellar cast including Matthew Glave and Michael Parks.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The End of the Affair",
+        "year": "2012",
+        "actor": "Derek Jacobi",
+        "director": "Tom Hooper",
+        "language": "English Language",
+        "writer": "David Seidler"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Argo? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend \"Lost in Translation\" for its unique bond between two characters and the charming performances by Catherine Lambert and Giovanni Ribisi.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what"
+        ],
+        "name": "Argo",
+        "year": "2012",
+        "actor": "Derek Jacobi",
+        "director": "Tom Hooper",
+        "language": "English Language",
+        "writer": "David Seidler"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we look at films from around 1987? I can\u2019t decide if I\u2019d enjoy it or be scared by it. Maybe something like what you shared about Lost in Translation."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I would recommend 'In Bruges' for those interested in a dark comedy with excellent performances by Colin Farrell and Elizabeth Berrington. The plot also features elements of crime and redemption.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "could",
+          "look"
+        ],
+        "name": "Lost",
+        "year": "1987",
+        "actor": "Derek Jacobi",
+        "director": "Tom Hooper",
+        "language": "English Language",
+        "writer": "David Seidler"
       }
     },
     {
@@ -41,185 +233,187 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on the user's interest in the crime genre, I would recommend 'The Godfather' and 'Goodfellas'. These classic films offer captivating Crime narratives.",
+      "text": "I recommend 'Spider-Man' (2002) starring Tobey Maguire as Peter Parker, and the classic cast including Cliff Robertson and J.K. Simmons. The movie combines thrilling action with a heartfelt coming-of-age story.",
       "constraints": {
-        "genre": "crime"
+        "genre": "cult",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Lost",
+        "year": "1987",
+        "actor": "Derek Jacobi",
+        "director": "Tom Hooper",
+        "language": "English Language",
+        "writer": "David Seidler"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Goodfellas. Who stars in it? That sounds intriguing."
+      "text": "I like the sound of Spider-Man. Who stars in it? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your interest in crime genre and the mention of Goodfellas, I recommend 'The Godfather' or 'Goodfellas' for a classic crime experience. Enjoy!",
+      "text": "For a movie recommendation that combines intrigue with beloved actors, I suggest 'Remember Me, My Love.' With a cast featuring Laura Morante and Silvio Muccino, this Italian family drama offers a touching tale of love and secret struggles.",
       "constraints": {
-        "genre": "crime"
+        "genre": "cult",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Spider-Man",
+        "year": "1987",
+        "actor": "Derek Jacobi",
+        "director": "Tom Hooper",
+        "language": "English Language",
+        "writer": "David Seidler"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thanks for all the detail on Goodfellas. Could we explore crime and horror next, something that surprises me emotionally?"
+      "text": "What kind of story does Beloved tell? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on their interest in crime and horror, I would recommend 'The Godfather' and 'Goodfellas'. These films not only deliver the suspense and emotion they seek but also serve as excellent introductions to the world of organized crime in cinema.",
+      "text": "For a deeper story with a love theme, I would recommend 'Pocketful of Miracles'. This classic 1961 film stars Ann-Margret and features a heartwarming tale about a girl who uses her charm to bring happiness to those around her, including a street beggar named Apple Annie.",
       "constraints": {
-        "genre": "crime"
+        "genre": "love",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Deep",
+        "year": "1987",
+        "actor": "Derek Jacobi",
+        "director": "Tom Hooper",
+        "language": "English Language",
+        "writer": "David Seidler"
       }
     },
     {
       "speaker": "USER",
-      "text": "Actually, now that I think about it, I might want the opposite."
+      "text": "What's the mood of Pocketful of Miracles? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on the user's interest in the crime genre, I would recommend 'The Godfather' and its sequel, 'The Godfather Part II'. These two films are considered classics within the crime genre.",
+      "text": "Based on your preferences, I recommend 'The Change-Up'. This movie features a star-studded cast including Gregory Itzin and Mircea Monroe. The plot revolves around body switches, adding an intriguing twist to the romantic comedy genre.",
       "constraints": {
-        "genre": "crime"
+        "genre": "love",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Pocketful of Miracles",
+        "year": "1987",
+        "actor": "Derek Jacobi",
+        "director": "Tom Hooper",
+        "language": "English Language",
+        "writer": "David Seidler"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Her tell? That feels deeper than I thought."
+      "text": "Thinking about Pocketful of Miracles, could we shift toward stories about publicity? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on their interest in the deeper story and connection to crime, I would recommend 'The Godfather' and 'Goodfellas' from the list. These films delve into the criminal underworld while offering a compelling narrative.",
+      "text": "For a recommendation about publicity, \"Stand by Me\" could be of interest. The film explores themes of friendship and the impact of public attention on individuals. Starring Casey Siemaszko, the movie offers a nostalgic look at how publicity can touch lives.",
       "constraints": {
-        "genre": "crime"
+        "genre": "war",
+        "plot": [
+          "thinking",
+          "could"
+        ],
+        "name": "War",
+        "year": "1987",
+        "actor": "Derek Jacobi",
+        "director": "Tom Hooper",
+        "language": "English Language",
+        "writer": "David Seidler"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Goodfellas. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "I like the sound of Stand by Me. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on their interest in crime genre and liking the sound of Goodfellas, I would recommend 'Goodfellas' and its sequel, 'The Godfather Part II'. Both offer a captivating crime narrative.",
+      "text": "I recommend 'Alice in Wonderland' (2010) for its unique animated adaptation and humor-filled story featuring Mia Wasikowska as Alice.",
       "constraints": {
-        "genre": "crime"
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Stand by Me",
+        "year": "1987",
+        "actor": "Derek Jacobi",
+        "director": "Tom Hooper",
+        "language": "English Language",
+        "writer": "David Seidler"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Goodfellas? That sounds intriguing."
+      "text": "What kind of story does 2010 tell? Hmm, I didn\u2019t expect that vibe."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on the user's interest in the crime genre, I would recommend 'The Godfather' and 'Goodfellas' for a thrilling experience into the world of organized crime.",
+      "text": "For a war-themed movie with historical elements, I recommend 'Hell''s Angels' (1930), featuring brothers Monte and Ray in their Royal Flying Corps adventures.",
       "constraints": {
-        "genre": "crime"
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "2010",
+        "year": "2010",
+        "actor": "Derek Jacobi",
+        "director": "Tom Hooper",
+        "language": "English Language",
+        "writer": "David Seidler"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thanks for all the detail on Goodfellas. Could we explore crime next, something that surprises me emotionally?"
+      "text": "What's the mood of 2010? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your interest in crime and emotional surprises, I recommend \"The Irishman\" and \"Goodfellas.\" These films delve into the criminal underworld while also evoking strong emotions.",
+      "text": "I recommend 'Man on the Moon' for its captivating portrayal of comedian Andy Kaufman's unique life and career. Starring Tom Dreesen, Tracey Walter, and particularly Michael Kelly, who delivers a memorable performance, this film offers a nostalgic look at comedy and fame.",
       "constraints": {
-        "genre": "crime"
+        "genre": "war",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "2010",
+        "year": "2010",
+        "actor": "Derek Jacobi",
+        "director": "Tom Hooper",
+        "language": "English Language",
+        "writer": "David Seidler"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Goodfellas? That sounds intriguing."
+      "text": "How about something primarily in Lakota Language? I can\u2019t decide if I\u2019d enjoy it or be scared by it. Maybe something like what you shared about 2010."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on the user's interest in crime genre, I would recommend 'Goodfellas' and its companion film 'The Irishman', both of which are highly regarded in the crime genre.",
+      "text": "Based on your preference for a primarily Lakota Language film, I recommend 'How to Train Your Dragon'. This animated movie features an English dialogue with Lakota language songs, and it's known for its engaging story and lively performances.",
       "constraints": {
-        "genre": "crime"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Goodfellas tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Goodfellas, a thrilling crime drama, follows the rise and fall of a mobster in the 70s. If you're interested in this genre, it's definitely worth checking out.",
-      "constraints": {
-        "genre": "crime"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Goodfellas. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on their interest in crime genre and the mention of 'Goodfellas,' I recommend checking out 'The Godfather' and 'The Departed.' Both are classics within the crime genre and feature strong performances.",
-      "constraints": {
-        "genre": "crime"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thanks for all the detail on The Departed. Could we explore drama next, though something emotional wouldn\u2019t hurt?"
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on their interest in drama, I recommend 'The Shawshank Redemption' and 'Forrest Gump'. Both films are emotionally impactful and showcase excellent drama.",
-      "constraints": {
-        "genre": "drama"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of The Shawshank Redemption? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the mood you're describing, \"The Shawshank Redemption\" might be a good choice, as it's known for its powerful drama and emotional resonance.",
-      "constraints": {
-        "genre": "drama"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of The Shawshank Redemption. Who stars in it? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on your interest in \"The Shawshank Redemption\" and your preference for drama, I recommend you watch 'The Godfather' or 'The Green Mile'. Both are classic dramas with similar themes to 'The Shawshank Redemption'.",
-      "constraints": {
-        "genre": "drama"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does The Godfather tell? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on your interest in drama genre, I would recommend watching 'The Godfather' and 'The Shawshank Redemption'. Both films are iconic dramas that capture the essence of their genres.",
-      "constraints": {
-        "genre": "drama"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thanks for all the detail on The Godfather. Could we explore drama and adventure next, with a mix of excitement and warmth?"
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on their interest in adventure and a mix of excitement and warmth, I recommend 'Indiana Jones and the Raiders of the Lost Ark'. It's an adventurous film packed with excitement while maintaining a warm tone.",
-      "constraints": {
-        "genre": "adventure"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of The Raid? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the user's interest in \"adventure\" genre and their uncertainty about The Raid, I would recommend 'Indiana Jones and the Raiders of the Lost Ark'. It's a classic adventure film with thrilling action sequences that might appeal to The Raid's mood.",
-      "constraints": {
-        "genre": "adventure"
+        "genre": "language",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "2010",
+        "year": "2010",
+        "actor": "Derek Jacobi",
+        "director": "Tom Hooper",
+        "language": "Lakota Language",
+        "writer": "David Seidler"
       }
     }
   ]

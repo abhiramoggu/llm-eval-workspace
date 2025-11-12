@@ -22,11 +22,6 @@ def plot_topic_flow(conversation, eval_detail, title="Topic Flow", save_as=None)
     user_segments = eval_detail.get("user_segments", [])
     per_shift = eval_detail.get("per_shift", [])
 
-    # Prepare x-axis turns and labels
-    xs = list(range(len(conversation)))
-    user_texts = [t["text"] if t["speaker"] == "USER" else "" for t in conversation]
-    sys_texts = [t["text"] if t["speaker"] == "SYSTEM" else "" for t in conversation]
-
     plt.figure(figsize=(12, 5))
     # Plot USER turns as top markers
     uy = [1 if t["speaker"] == "USER" else None for t in conversation]
@@ -34,6 +29,13 @@ def plot_topic_flow(conversation, eval_detail, title="Topic Flow", save_as=None)
 
     plt.scatter([i for i, v in enumerate(uy) if v is not None], [1]*sum(v is not None for v in uy), label="USER", s=30)
     plt.scatter([i for i, v in enumerate(sy) if v is not None], [0]*sum(v is not None for v in sy), label="SYSTEM", s=30)
+
+    # Annotate SYSTEM turns with their extracted topics
+    for i, turn in enumerate(conversation):
+        if turn["speaker"] == "SYSTEM":
+            sys_topics = extract_topics(turn["text"])
+            if sys_topics:
+                plt.text(i, -0.08, topics_to_text(sys_topics), ha="center", va="top", fontsize=8, color="darkblue", rotation=0)
 
     # Annotate user segments
     for seg in user_segments:
