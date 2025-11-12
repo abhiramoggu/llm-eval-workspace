@@ -55,6 +55,7 @@ CAS_WEIGHTS = {
 LOG_DIR = "logs"
 RESULTS_FILE = "results.jsonl"
 SUMMARY_CSV = "model_metrics.csv"
+STAT_RESULTS_FILE = "statistical_analysis_results.txt"
 FIG_DIR = "figures"
 LDA_MODEL_DIR = "models"
 LDA_MODEL_PATH = os.path.join(LDA_MODEL_DIR, "lda.model")

@@ -14,7 +14,7 @@ import json
 from scipy import stats
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
 
-from config import RESULTS_FILE
+from config import RESULTS_FILE, STAT_RESULTS_FILE
 
 def perform_statistical_analysis(alpha=0.05):
     """
@@ -23,6 +23,7 @@ def perform_statistical_analysis(alpha=0.05):
     Args:
         alpha (float): The significance level for the tests.
     """
+    output_lines = ["--- Statistical Significance Analysis Results ---"]
     print("--- Starting Statistical Significance Analysis ---")
 
     # Load and prepare data
@@ -44,30 +45,43 @@ def perform_statistical_analysis(alpha=0.05):
     models = df['model'].unique()
 
     if len(models) < 2:
-        print("Cannot perform statistical tests with fewer than two models.")
+        message = "Cannot perform statistical tests with fewer than two models."
+        print(message)
+        output_lines.append(message)
         return
 
     for metric in metrics_present:
-        print(f"\n--- Analyzing Metric: {metric.replace('_', ' ').title()} ---")
+        metric_header = f"\n--- Analyzing Metric: {metric.replace('_', ' ').title()} ---"
+        print(metric_header)
+        output_lines.append(metric_header)
 
         # Prepare data for ANOVA
         grouped_data = [df[metric][df['model'] == model].dropna() for model in models]
 
         # Check if there's enough data to perform the test
         if any(len(data) < 2 for data in grouped_data):
-            print("Skipping test: at least one model has fewer than 2 data points.")
+            message = "Skipping test: at least one model has fewer than 2 data points."
+            print(message)
+            output_lines.append(message)
             continue
 
         # 1. Perform ANOVA test
         f_val, p_val_anova = stats.f_oneway(*grouped_data)
-        print(f"ANOVA Test: F-statistic = {f_val:.4f}, p-value = {p_val_anova:.4f}")
+        anova_result_str = f"ANOVA Test: F-statistic = {f_val:.4f}, p-value = {p_val_anova:.4f}"
+        print(anova_result_str)
+        output_lines.append(anova_result_str)
 
         if p_val_anova < alpha:
-            print(f"Result: A statistically significant difference exists among the models (p < {alpha}).")
+            anova_conclusion = f"Result: A statistically significant difference exists among the models (p < {alpha})."
+            print(anova_conclusion)
+            output_lines.append(anova_conclusion)
             
-            # 2. Perform Tukey's HSD post-hoc test for pairwise comparisons
-            print("\nPairwise Comparisons (Tukey's HSD):")
-            tukey_result = pairwise_tukeyhsd(endog=df[metric].dropna(), groups=df['model'], alpha=alpha)
+            # 2. Perform Tukey's HSD post-hoc test for pairwise comparisons, ensuring matching lengths
+            metric_data_clean = df[metric].dropna()
+            groups_clean = df['model'][metric_data_clean.index]
+            
+            output_lines.append("\nPairwise Comparisons (Tukey's HSD):")
+            tukey_result = pairwise_tukeyhsd(endog=metric_data_clean, groups=groups_clean, alpha=alpha)
             
             results_df = pd.DataFrame(data=tukey_result._results_table.data[1:], columns=tukey_result._results_table.data[0])
             
@@ -75,11 +89,23 @@ def perform_statistical_analysis(alpha=0.05):
             significant_pairs = results_df[results_df['p-adj'] < alpha]
             
             if not significant_pairs.empty:
-                print(significant_pairs.to_string(index=False))
+                tukey_table = significant_pairs.to_string(index=False)
+                print(tukey_table)
+                output_lines.append(tukey_table)
             else:
-                print("No specific model pairs were found to be significantly different after correction.")
+                no_pairs_message = "No specific model pairs were found to be significantly different after correction."
+                print(no_pairs_message)
+                output_lines.append(no_pairs_message)
         else:
-            print(f"Result: No statistically significant difference was found among the models (p >= {alpha}).")
+            no_diff_message = f"Result: No statistically significant difference was found among the models (p >= {alpha})."
+            print(no_diff_message)
+            output_lines.append(no_diff_message)
+
+    # Write all collected output to the results file
+    with open(STAT_RESULTS_FILE, 'w') as f:
+        f.write('\n'.join(output_lines))
+    
+    print(f"\n--- Statistical analysis complete. Results saved to '{STAT_RESULTS_FILE}' ---")
 
 if __name__ == "__main__":
     perform_statistical_analysis()
