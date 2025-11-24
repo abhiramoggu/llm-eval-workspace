@@ -67,7 +67,7 @@ def perform_statistical_analysis(alpha=0.05):
 
         # 1. Perform ANOVA test
         f_val, p_val_anova = stats.f_oneway(*grouped_data)
-        anova_result_str = f"ANOVA Test: F-statistic = {f_val:.4f}, p-value = {p_val_anova:.4f}"
+        anova_result_str = f"ANOVA Test: F-statistic = {f_val:.4f}, p-value = {p_val_anova}"
         print(anova_result_str)
         output_lines.append(anova_result_str)
 
