@@ -798,3 +798,193 @@ def evaluate(conversation: List[Dict[str, Any]], true_genre: Optional[str] = Non
         }
     }
     return result
+
+
+# ---------------------------------------------------------------------------
+# Optional Preference Coverage Evaluation
+# ---------------------------------------------------------------------------
+
+class PreferenceCoverageMetric:
+    """
+    Utility helper to compute preference coverage, recall, precision, and NDCG
+    using recommendation logs stored per conversation turn.
+
+    This adapts a public GitHub snippet to work within this project without
+    touching the primary evaluation pipeline. Usage:
+
+    >>> pcm = PreferenceCoverageMetric(turn_num=20, k_values=[1, 5, 10])
+    >>> pcm.update_dialogue(recommendations_per_turn, ground_truth_titles)
+    >>> summary = pcm.preference_coverage_report()
+    """
+
+    def __init__(self, turn_num: int, k_values: Optional[List[int]] = None):
+        self.turn_num = turn_num
+        self.k_values = k_values or [1, 5, 10, 20, 50]
+        self.reset()
+
+    def reset(self):
+        self.dialogue_count = 0
+        self.dialogue_count_for_rp = 1  # avoid divide-by-zero
+        self.turn_metrics: Dict[int, Dict[str, float]] = {}
+        self.ndcg_all = 0.0
+        for turn in range(1, self.turn_num + 1):
+            self.turn_metrics[turn] = {"preference_coverage": 0.0}
+            for k in self.k_values:
+                self.turn_metrics[turn][f"recall@{k}"] = 0.0
+                self.turn_metrics[turn][f"precision@{k}"] = 0.0
+
+    @staticmethod
+    def _safe_div(numerator: float, denominator: float) -> float:
+        return numerator / denominator if denominator else 0.0
+
+    def compute_recall(self, recommended: List[str], gt_labels: List[str], k: int) -> float:
+        recommended_at_k = recommended[:k]
+        correct = set(recommended_at_k) & set(gt_labels)
+        return self._safe_div(len(correct), len(gt_labels))
+
+    def compute_precision(self, recommended: List[str], gt_labels: List[str], k: int) -> float:
+        recommended_at_k = recommended[:k]
+        relevant = set(recommended_at_k) & set(gt_labels)
+        return self._safe_div(len(relevant), k)
+
+    def compute_best_rank(self, recommended: List[str], gt_labels: List[str], best_ranks: Dict[str, int]) -> Dict[str, int]:
+        for label in gt_labels:
+            if label in recommended:
+                current_rank = recommended.index(label) + 1
+                if best_ranks[label] == -1 or current_rank < best_ranks[label]:
+                    best_ranks[label] = current_rank
+        return best_ranks
+
+    def compute_ndcg(self, best_ranks: Dict[str, int]) -> float:
+        import math
+
+        total_ndcg = 0.0
+        num_labels = len(best_ranks)
+        for rank in best_ranks.values():
+            if rank != -1:
+                dcg = 1 / math.log2(rank + 1)
+            else:
+                dcg = 0.0
+            idcg = 1 / math.log2(1 + 1)
+            total_ndcg += self._safe_div(dcg, idcg)
+        ndcg = self._safe_div(total_ndcg, num_labels)
+        self.ndcg_all += ndcg
+        return ndcg
+
+    def update_dialogue(self, recommendations_per_turn: List[List[str]], gt_labels: List[str]) -> None:
+        """
+        recommendations_per_turn: ordered list of per-turn recommendation lists.
+        gt_labels: list of gold movie IDs/titles.
+        """
+        if not gt_labels:
+            return
+
+        cumulative: List[str] = []
+        best_ranks = {label: -1 for label in gt_labels}
+
+        for idx in range(1, self.turn_num + 1):
+            recommended = recommendations_per_turn[idx - 1] if idx - 1 < len(recommendations_per_turn) else []
+            cumulative.extend(recommended)
+            cumulative = list(dict.fromkeys(cumulative))  # deduplicate while keeping order
+
+            coverage = self._safe_div(len(set(cumulative) & set(gt_labels)), len(gt_labels))
+            self.turn_metrics[idx]["preference_coverage"] += coverage
+
+            for k in self.k_values:
+                recall_k = self.compute_recall(recommended, gt_labels, k)
+                precision_k = self.compute_precision(recommended, gt_labels, k)
+                self.turn_metrics[idx][f"recall@{k}"] += recall_k
+                self.turn_metrics[idx][f"precision@{k}"] += precision_k
+
+            best_ranks = self.compute_best_rank(recommended, gt_labels, best_ranks)
+
+        self.compute_ndcg(best_ranks)
+        self.dialogue_count += 1
+        self.dialogue_count_for_rp += 1
+
+    def preference_coverage_report(self) -> List[Dict[str, float]]:
+        report = [{"total_dialogues": self.dialogue_count, "average_ndcg": self._safe_div(self.ndcg_all, max(1, self.dialogue_count))}]
+        for idx in range(1, self.turn_num + 1):
+            report.append({
+                "turn": idx,
+                "preference_coverage": self._safe_div(self.turn_metrics[idx]["preference_coverage"], max(1, self.dialogue_count)),
+            })
+        return report
+
+    def recall_precision_report(self) -> List[Dict[str, Any]]:
+        report: List[Dict[str, Any]] = [{"total_dialogues": self.dialogue_count_for_rp - 1}]
+        for idx in range(1, self.turn_num + 1):
+            metrics = {}
+            for k in self.k_values:
+                metrics[f"recall@{k}"] = self._safe_div(self.turn_metrics[idx][f"recall@{k}"], self.dialogue_count_for_rp)
+                metrics[f"precision@{k}"] = self._safe_div(self.turn_metrics[idx][f"precision@{k}"], self.dialogue_count_for_rp)
+            report.append({"turn": idx, "metrics": metrics})
+        return report
+
+
+def evaluate_preference_coverage_logs(
+    base_dir: str,
+    datasets: List[str],
+    models: List[str],
+    turn_num: int = 20,
+    k_values: Optional[List[int]] = None,
+    target_key: str = "target",
+) -> Dict[str, Dict[str, List[Dict[str, float]]]]:
+    """
+    Convenience wrapper that scans a directory structure containing saved
+    recommendation logs in the shape:
+
+        <base_dir>/<model>/<dataset>/eval/*.json
+
+    Each eval JSON is expected to follow the schema from the original snippet:
+    the first element is a metadata dict that includes the ground-truth labels
+    (stored under `target_key`, `target_movies_sampled`, or
+    `target_movies_not_sampled`), and subsequent elements contain recommendation
+    lists with keys `recommended` and `turn num`.
+
+    Returns a nested dict: reports[model][dataset] -> preference coverage report.
+    """
+    reports: Dict[str, Dict[str, List[Dict[str, float]]]] = {}
+    for model in models:
+        model_reports: Dict[str, List[Dict[str, float]]] = {}
+        for dataset in datasets:
+            metric = PreferenceCoverageMetric(turn_num, k_values)
+            eval_path = os.path.join(base_dir, model, dataset, "eval")
+            if not os.path.isdir(eval_path):
+                continue
+
+            filenames = sorted(os.listdir(eval_path))
+            iterator = filenames
+            try:
+                from tqdm import tqdm  # type: ignore
+                iterator = tqdm(filenames, desc=f"{model}-{dataset}")
+            except Exception:
+                pass
+
+            for filename in iterator:
+                full_path = os.path.join(eval_path, filename)
+                try:
+                    with open(full_path, "r", encoding="utf-8") as fp:
+                        content = json.load(fp)
+                except Exception:
+                    continue
+
+                if not content:
+                    continue
+
+                header = content[0]
+                gt_labels = header.get(target_key) or header.get("target_movies_sampled") or header.get("target_movies_not_sampled") or header.get("ground_truth") or []
+                if not isinstance(gt_labels, list) or not gt_labels:
+                    continue
+
+                per_turn_recs: List[List[str]] = []
+                for turn_entry in content[1:]:
+                    recommended = turn_entry.get("recommended", [])
+                    if isinstance(recommended, list):
+                        per_turn_recs.append(recommended)
+                metric.update_dialogue(per_turn_recs, gt_labels)
+
+            model_reports[dataset] = metric.preference_coverage_report()
+        if model_reports:
+            reports[model] = model_reports
+    return reports

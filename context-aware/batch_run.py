@@ -28,7 +28,7 @@ def _clear_previous_run_data():
     if os.path.exists(RESULTS_FILE):
         os.remove(RESULTS_FILE)
 
-def run_batch(n_sessions=50):
+def run_batch(n_sessions=1000):
     # Setup a single Rich Progress instance for a multi-line display
     _clear_previous_run_data()
     progress = Progress(
@@ -114,4 +114,4 @@ def run_batch(n_sessions=50):
 
 
 if __name__ == "__main__":
-    run_batch(n_sessions=50) # Reduced for quick testing
+    run_batch(n_sessions=1000) # Reduced for quick testing

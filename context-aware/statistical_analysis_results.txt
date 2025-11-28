@@ -1,113 +1,176 @@
 --- Statistical Significance Analysis Results ---
 
 --- Analyzing Metric: Topic Recovery Rate ---
-ANOVA Test: F-statistic = 3.2301, p-value = 0.00743279906882343
+ANOVA Test: F-statistic = 143.5728, p-value = 2.543482397078199e-144
 Result: A statistically significant difference exists among the models (p < 0.05).
 
 Pairwise Comparisons (Tukey's HSD):
-No specific model pairs were found to be significantly different after correction.
+         group1          group2  meandiff  p-adj   lower   upper  reject
+       gemma:2b   llama2:latest   -0.0332 0.0000 -0.0475 -0.0189    True
+       gemma:2b llama3:instruct    0.0750 0.0000  0.0607  0.0893    True
+       gemma:2b      mistral:7b    0.0524 0.0000  0.0381  0.0667    True
+       gemma:2b         qwen:4b   -0.0201 0.0009 -0.0344 -0.0058    True
+       gemma:2b         qwen:7b    0.0327 0.0000  0.0184  0.0470    True
+  llama2:latest llama3:instruct    0.1082 0.0000  0.0939  0.1225    True
+  llama2:latest      mistral:7b    0.0856 0.0000  0.0713  0.0999    True
+  llama2:latest         qwen:7b    0.0659 0.0000  0.0516  0.0802    True
+llama3:instruct      mistral:7b   -0.0226 0.0001 -0.0369 -0.0083    True
+llama3:instruct         qwen:4b   -0.0951 0.0000 -0.1094 -0.0808    True
+llama3:instruct         qwen:7b   -0.0423 0.0000 -0.0566 -0.0280    True
+     mistral:7b         qwen:4b   -0.0725 0.0000 -0.0868 -0.0582    True
+     mistral:7b         qwen:7b   -0.0197 0.0012 -0.0340 -0.0054    True
+        qwen:4b         qwen:7b    0.0528 0.0000  0.0385  0.0671    True
 
 --- Analyzing Metric: Topic Interference ---
-ANOVA Test: F-statistic = 5.4743, p-value = 7.79177099907929e-05
+ANOVA Test: F-statistic = 220.6329, p-value = 9.905338185593005e-217
 Result: A statistically significant difference exists among the models (p < 0.05).
 
 Pairwise Comparisons (Tukey's HSD):
          group1          group2  meandiff  p-adj   lower   upper  reject
-  llama2:latest llama3:instruct    0.0431 0.0024  0.0105  0.0756    True
-  llama2:latest      mistral:7b    0.0454 0.0011  0.0128  0.0779    True
-llama3:instruct         qwen:4b   -0.0376 0.0131 -0.0701 -0.0051    True
-     mistral:7b         qwen:4b   -0.0399 0.0067 -0.0724 -0.0073    True
+       gemma:2b   llama2:latest   -0.0211    0.0 -0.0287 -0.0136    True
+       gemma:2b llama3:instruct    0.0465    0.0  0.0389  0.0541    True
+       gemma:2b      mistral:7b    0.0391    0.0  0.0315  0.0466    True
+       gemma:2b         qwen:4b   -0.0151    0.0 -0.0226 -0.0075    True
+  llama2:latest llama3:instruct    0.0676    0.0  0.0601  0.0752    True
+  llama2:latest      mistral:7b    0.0602    0.0  0.0526  0.0678    True
+  llama2:latest         qwen:7b    0.0280    0.0  0.0204  0.0356    True
+llama3:instruct         qwen:4b   -0.0616    0.0 -0.0691 -0.0540    True
+llama3:instruct         qwen:7b   -0.0396    0.0 -0.0472 -0.0321    True
+     mistral:7b         qwen:4b   -0.0541    0.0 -0.0617 -0.0466    True
+     mistral:7b         qwen:7b   -0.0322    0.0 -0.0398 -0.0246    True
+        qwen:4b         qwen:7b    0.0220    0.0  0.0144  0.0295    True
 
 --- Analyzing Metric: Cross Coherence ---
-ANOVA Test: F-statistic = 45.4985, p-value = 1.022653789898501e-34
+ANOVA Test: F-statistic = 915.4774, p-value = 0.0
 Result: A statistically significant difference exists among the models (p < 0.05).
 
 Pairwise Comparisons (Tukey's HSD):
          group1          group2  meandiff  p-adj   lower   upper  reject
-       gemma:2b llama3:instruct    0.0352 0.0000  0.0205  0.0499    True
-       gemma:2b         qwen:4b   -0.0386 0.0000 -0.0533 -0.0239    True
-  llama2:latest llama3:instruct    0.0455 0.0000  0.0308  0.0602    True
-  llama2:latest      mistral:7b    0.0200 0.0016  0.0053  0.0347    True
-  llama2:latest         qwen:4b   -0.0283 0.0000 -0.0430 -0.0136    True
-llama3:instruct      mistral:7b   -0.0255 0.0000 -0.0401 -0.0108    True
-llama3:instruct         qwen:4b   -0.0738 0.0000 -0.0885 -0.0591    True
-llama3:instruct         qwen:7b   -0.0444 0.0000 -0.0591 -0.0297    True
-     mistral:7b         qwen:4b   -0.0483 0.0000 -0.0630 -0.0336    True
-     mistral:7b         qwen:7b   -0.0189 0.0035 -0.0336 -0.0042    True
-        qwen:4b         qwen:7b    0.0294 0.0000  0.0147  0.0441    True
+       gemma:2b   llama2:latest   -0.0074    0.0 -0.0108 -0.0041    True
+       gemma:2b llama3:instruct    0.0325    0.0  0.0291  0.0358    True
+       gemma:2b      mistral:7b    0.0163    0.0  0.0130  0.0197    True
+       gemma:2b         qwen:4b   -0.0403    0.0 -0.0436 -0.0369    True
+       gemma:2b         qwen:7b   -0.0139    0.0 -0.0173 -0.0106    True
+  llama2:latest llama3:instruct    0.0399    0.0  0.0366  0.0433    True
+  llama2:latest      mistral:7b    0.0237    0.0  0.0204  0.0271    True
+  llama2:latest         qwen:4b   -0.0328    0.0 -0.0362 -0.0295    True
+  llama2:latest         qwen:7b   -0.0065    0.0 -0.0099 -0.0032    True
+llama3:instruct      mistral:7b   -0.0162    0.0 -0.0195 -0.0128    True
+llama3:instruct         qwen:4b   -0.0727    0.0 -0.0761 -0.0694    True
+llama3:instruct         qwen:7b   -0.0464    0.0 -0.0498 -0.0431    True
+     mistral:7b         qwen:4b   -0.0566    0.0 -0.0599 -0.0532    True
+     mistral:7b         qwen:7b   -0.0302    0.0 -0.0336 -0.0269    True
+        qwen:4b         qwen:7b    0.0263    0.0  0.0230  0.0297    True
 
 --- Analyzing Metric: Context Retention ---
-ANOVA Test: F-statistic = 253.2260, p-value = 2.820219816850421e-104
+ANOVA Test: F-statistic = 4269.9124, p-value = 0.0
 Result: A statistically significant difference exists among the models (p < 0.05).
 
 Pairwise Comparisons (Tukey's HSD):
          group1          group2  meandiff  p-adj   lower   upper  reject
-       gemma:2b   llama2:latest    0.0946 0.0000  0.0798  0.1093    True
-       gemma:2b llama3:instruct    0.1199 0.0000  0.1052  0.1347    True
-       gemma:2b      mistral:7b    0.0371 0.0000  0.0223  0.0519    True
-       gemma:2b         qwen:7b   -0.0187 0.0045 -0.0334 -0.0039    True
-  llama2:latest llama3:instruct    0.0254 0.0000  0.0106  0.0401    True
-  llama2:latest      mistral:7b   -0.0575 0.0000 -0.0722 -0.0427    True
-  llama2:latest         qwen:4b   -0.1032 0.0000 -0.1179 -0.0884    True
-  llama2:latest         qwen:7b   -0.1133 0.0000 -0.1280 -0.0985    True
-llama3:instruct      mistral:7b   -0.0828 0.0000 -0.0976 -0.0681    True
-llama3:instruct         qwen:4b   -0.1285 0.0000 -0.1433 -0.1138    True
-llama3:instruct         qwen:7b   -0.1386 0.0000 -0.1534 -0.1239    True
-     mistral:7b         qwen:4b   -0.0457 0.0000 -0.0605 -0.0309    True
-     mistral:7b         qwen:7b   -0.0558 0.0000 -0.0705 -0.0410    True
+       gemma:2b   llama2:latest    0.0922    0.0  0.0888  0.0956    True
+       gemma:2b llama3:instruct    0.1139    0.0  0.1105  0.1173    True
+       gemma:2b      mistral:7b    0.0409    0.0  0.0375  0.0443    True
+       gemma:2b         qwen:4b   -0.0076    0.0 -0.0110 -0.0042    True
+       gemma:2b         qwen:7b   -0.0139    0.0 -0.0173 -0.0106    True
+  llama2:latest llama3:instruct    0.0217    0.0  0.0183  0.0251    True
+  llama2:latest      mistral:7b   -0.0513    0.0 -0.0547 -0.0479    True
+  llama2:latest         qwen:4b   -0.0998    0.0 -0.1032 -0.0964    True
+  llama2:latest         qwen:7b   -0.1061    0.0 -0.1095 -0.1027    True
+llama3:instruct      mistral:7b   -0.0730    0.0 -0.0764 -0.0696    True
+llama3:instruct         qwen:4b   -0.1215    0.0 -0.1249 -0.1181    True
+llama3:instruct         qwen:7b   -0.1278    0.0 -0.1312 -0.1244    True
+     mistral:7b         qwen:4b   -0.0485    0.0 -0.0519 -0.0451    True
+     mistral:7b         qwen:7b   -0.0548    0.0 -0.0582 -0.0514    True
+        qwen:4b         qwen:7b   -0.0063    0.0 -0.0097 -0.0029    True
 
 --- Analyzing Metric: Context Adaptation Score ---
-ANOVA Test: F-statistic = 89.3227, p-value = 6.657836152145941e-57
+ANOVA Test: F-statistic = 1412.5279, p-value = 0.0
 Result: A statistically significant difference exists among the models (p < 0.05).
 
 Pairwise Comparisons (Tukey's HSD):
          group1          group2  meandiff  p-adj   lower   upper  reject
-       gemma:2b   llama2:latest    0.0266 0.0000  0.0136  0.0397    True
-       gemma:2b llama3:instruct    0.0603 0.0000  0.0472  0.0733    True
-       gemma:2b      mistral:7b    0.0181 0.0012  0.0050  0.0311    True
-       gemma:2b         qwen:4b   -0.0256 0.0000 -0.0386 -0.0125    True
-  llama2:latest llama3:instruct    0.0337 0.0000  0.0206  0.0467    True
-  llama2:latest         qwen:4b   -0.0522 0.0000 -0.0652 -0.0391    True
-  llama2:latest         qwen:7b   -0.0367 0.0000 -0.0497 -0.0236    True
-llama3:instruct      mistral:7b   -0.0422 0.0000 -0.0552 -0.0291    True
-llama3:instruct         qwen:4b   -0.0858 0.0000 -0.0989 -0.0728    True
-llama3:instruct         qwen:7b   -0.0703 0.0000 -0.0834 -0.0573    True
-     mistral:7b         qwen:4b   -0.0436 0.0000 -0.0567 -0.0306    True
-     mistral:7b         qwen:7b   -0.0282 0.0000 -0.0412 -0.0151    True
-        qwen:4b         qwen:7b    0.0155 0.0098  0.0024  0.0285    True
+       gemma:2b   llama2:latest    0.0258 0.0000  0.0227  0.0288    True
+       gemma:2b llama3:instruct    0.0534 0.0000  0.0503  0.0564    True
+       gemma:2b      mistral:7b    0.0216 0.0000  0.0186  0.0247    True
+       gemma:2b         qwen:4b   -0.0252 0.0000 -0.0283 -0.0221    True
+       gemma:2b         qwen:7b   -0.0128 0.0000 -0.0159 -0.0097    True
+  llama2:latest llama3:instruct    0.0276 0.0000  0.0245  0.0307    True
+  llama2:latest      mistral:7b   -0.0041 0.0019 -0.0072 -0.0010    True
+  llama2:latest         qwen:4b   -0.0510 0.0000 -0.0541 -0.0479    True
+  llama2:latest         qwen:7b   -0.0385 0.0000 -0.0416 -0.0354    True
+llama3:instruct      mistral:7b   -0.0317 0.0000 -0.0348 -0.0287    True
+llama3:instruct         qwen:4b   -0.0786 0.0000 -0.0817 -0.0755    True
+llama3:instruct         qwen:7b   -0.0661 0.0000 -0.0692 -0.0631    True
+     mistral:7b         qwen:4b   -0.0469 0.0000 -0.0499 -0.0438    True
+     mistral:7b         qwen:7b   -0.0344 0.0000 -0.0375 -0.0313    True
+        qwen:4b         qwen:7b    0.0124 0.0000  0.0094  0.0155    True
 
 --- Analyzing Metric: Avg Recovery Delay ---
-ANOVA Test: F-statistic = 0.4657, p-value = 0.8016988872471105
-Result: No statistically significant difference was found among the models (p >= 0.05).
+ANOVA Test: F-statistic = 3.1097, p-value = 0.008315159738464785
+Result: A statistically significant difference exists among the models (p < 0.05).
+
+Pairwise Comparisons (Tukey's HSD):
+       group1        group2  meandiff  p-adj   lower   upper  reject
+     gemma:2b llama2:latest   -0.3698 0.0283 -0.7161 -0.0235    True
+llama2:latest       qwen:7b    0.4344 0.0047  0.0882  0.7807    True
 
 --- Analyzing Metric: Proactiveness ---
-ANOVA Test: F-statistic = 2.7943, p-value = 0.017551495389007098
+ANOVA Test: F-statistic = 25.6493, p-value = 1.0992952408314627e-25
 Result: A statistically significant difference exists among the models (p < 0.05).
 
 Pairwise Comparisons (Tukey's HSD):
-No specific model pairs were found to be significantly different after correction.
+         group1          group2  meandiff  p-adj   lower   upper  reject
+       gemma:2b llama3:instruct    0.0662 0.0036  0.0145  0.1179    True
+       gemma:2b      mistral:7b    0.0549 0.0261  0.0039  0.1059    True
+       gemma:2b         qwen:4b   -0.0683 0.0016 -0.1188 -0.0179    True
+       gemma:2b         qwen:7b   -0.0942 0.0000 -0.1444 -0.0441    True
+  llama2:latest llama3:instruct    0.0660 0.0041  0.0140  0.1180    True
+  llama2:latest      mistral:7b    0.0547 0.0288  0.0034  0.1059    True
+  llama2:latest         qwen:4b   -0.0685 0.0017 -0.1193 -0.0178    True
+  llama2:latest         qwen:7b   -0.0945 0.0000 -0.1449 -0.0440    True
+llama3:instruct         qwen:4b   -0.1345 0.0000 -0.1863 -0.0827    True
+llama3:instruct         qwen:7b   -0.1604 0.0000 -0.2120 -0.1089    True
+     mistral:7b         qwen:4b   -0.1232 0.0000 -0.1743 -0.0721    True
+     mistral:7b         qwen:7b   -0.1491 0.0000 -0.1999 -0.0983    True
 
 --- Analyzing Metric: Coherence ---
-ANOVA Test: F-statistic = 7.6989, p-value = 8.28982978213218e-07
+ANOVA Test: F-statistic = 267.0070, p-value = 2.202727731096398e-257
 Result: A statistically significant difference exists among the models (p < 0.05).
 
 Pairwise Comparisons (Tukey's HSD):
          group1          group2  meandiff  p-adj   lower   upper  reject
-       gemma:2b llama3:instruct    0.5614 0.0027  0.1346  0.9883    True
-       gemma:2b      mistral:7b    0.4551 0.0291  0.0282  0.8819    True
-llama3:instruct         qwen:4b   -0.5002 0.0112 -0.9271 -0.0733    True
-llama3:instruct         qwen:7b   -0.7753 0.0000 -1.2001 -0.3505    True
-     mistral:7b         qwen:7b   -0.6689 0.0001 -1.0937 -0.2442    True
+       gemma:2b   llama2:latest    0.2544 0.0000  0.1649  0.3440    True
+       gemma:2b llama3:instruct    0.8503 0.0000  0.7589  0.9417    True
+       gemma:2b      mistral:7b    0.5657 0.0000  0.4756  0.6558    True
+  llama2:latest llama3:instruct    0.5959 0.0000  0.5039  0.6878    True
+  llama2:latest      mistral:7b    0.3112 0.0000  0.2206  0.4019    True
+  llama2:latest         qwen:4b   -0.2421 0.0000 -0.3318 -0.1523    True
+  llama2:latest         qwen:7b   -0.3379 0.0000 -0.4272 -0.2487    True
+llama3:instruct      mistral:7b   -0.2846 0.0000 -0.3771 -0.1921    True
+llama3:instruct         qwen:4b   -0.8379 0.0000 -0.9295 -0.7463    True
+llama3:instruct         qwen:7b   -0.9338 0.0000 -1.0249 -0.8427    True
+     mistral:7b         qwen:4b   -0.5533 0.0000 -0.6436 -0.4630    True
+     mistral:7b         qwen:7b   -0.6492 0.0000 -0.7390 -0.5593    True
+        qwen:4b         qwen:7b   -0.0959 0.0259 -0.1848 -0.0070    True
 
 --- Analyzing Metric: Personalization ---
-ANOVA Test: F-statistic = 12.4441, p-value = 6.20125303707816e-11
+ANOVA Test: F-statistic = 209.0206, p-value = 2.3164990936911044e-205
 Result: A statistically significant difference exists among the models (p < 0.05).
 
 Pairwise Comparisons (Tukey's HSD):
          group1          group2  meandiff  p-adj   lower   upper  reject
-       gemma:2b llama3:instruct    0.6057 0.0123  0.0848  1.1267    True
-  llama2:latest llama3:instruct    0.6261 0.0084  0.1052  1.1471    True
-llama3:instruct         qwen:4b   -1.0751 0.0000 -1.5961 -0.5541    True
-llama3:instruct         qwen:7b   -1.1004 0.0000 -1.6188 -0.5820    True
-     mistral:7b         qwen:4b   -0.9049 0.0000 -1.4259 -0.3839    True
-     mistral:7b         qwen:7b   -0.9302 0.0000 -1.4486 -0.4118    True
+       gemma:2b llama3:instruct    0.4895 0.0000  0.3692  0.6099    True
+       gemma:2b      mistral:7b    0.1930 0.0001  0.0743  0.3116    True
+       gemma:2b         qwen:4b   -0.3517 0.0000 -0.4691 -0.2343    True
+       gemma:2b         qwen:7b   -0.7322 0.0000 -0.8489 -0.6154    True
+  llama2:latest llama3:instruct    0.4750 0.0000  0.3540  0.5961    True
+  llama2:latest      mistral:7b    0.1785 0.0003  0.0591  0.2978    True
+  llama2:latest         qwen:4b   -0.3662 0.0000 -0.4843 -0.2481    True
+  llama2:latest         qwen:7b   -0.7467 0.0000 -0.8641 -0.6292    True
+llama3:instruct      mistral:7b   -0.2966 0.0000 -0.4184 -0.1748    True
+llama3:instruct         qwen:4b   -0.8413 0.0000 -0.9618 -0.7207    True
+llama3:instruct         qwen:7b   -1.2217 0.0000 -1.3417 -1.1018    True
+     mistral:7b         qwen:4b   -0.5447 0.0000 -0.6636 -0.4258    True
+     mistral:7b         qwen:7b   -0.9251 0.0000 -1.0434 -0.8069    True
+        qwen:4b         qwen:7b   -0.3805 0.0000 -0.4975 -0.2635    True

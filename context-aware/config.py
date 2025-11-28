@@ -6,7 +6,6 @@ from dataset import get_available_genres
 # "mock" -> no LLM calls, simple placeholders
 # "ollama" -> uses local Ollama models for USER / CRS / Judge / Topic extraction
 MODE = os.getenv("SIM_MODE", "ollama")
-MODE = os.getenv("SIM_MODE", "mock")
 
 # Fail safe: alert if MODE differs from supported values
 if MODE not in {"ollama", "mock"}:
