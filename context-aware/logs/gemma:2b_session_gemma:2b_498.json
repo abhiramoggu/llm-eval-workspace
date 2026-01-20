@@ -1,18 +1,17 @@
 {
   "model_name": "gemma:2b",
-  "true_genre": "history",
+  "true_genre": "melodrama",
   "conversation": [
     {
       "speaker": "USER",
-      "text": "I'm in the mood for a history movie. Could you recommend a few?"
+      "text": "I'm in the mood for a animation movie. Could you recommend a few?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "I would recommend 'World Without End' or 'The Young Victoria'. 'World Without End' is a visually stunning film about a crew of astronauts trapped in a time warp and forced to deal with a post-apocalyptic world. 'The Young Victoria' is a historical drama about Queen Victoria's early reign, focusing on her personal and political life.",
+      "text": "Based on your preference for animation movies, I would recommend \"Fantastic Mr. Fox\" and \"The SpongeBob SquarePants Movie\". \"Fantastic Mr. Fox\" features a charming story about an unlikely fox helping his community, while \"The SpongeBob SquarePants Movie\" offers a colorful and entertaining adventure about a young boy and his adventures in Bikini Bottom.",
       "constraints": {
-        "genre": "history",
+        "genre": "animation",
         "plot": [
-          "history",
           "could"
         ],
         "name": "You"
@@ -20,13 +19,29 @@
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of World Without End. Who stars in it? Hmm, I didn\u2019t expect that vibe."
+      "text": "What kind of story does X tell? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Given the user's preference for historical movies with a focus on love and loss, \"Annie Hall\" and \"Jumper\" would be strong recommendations. Both films explore complex themes through captivating narratives and stellar performances.",
+      "text": "For a more interesting recommendation, consider 'The Wrestler' starring Ajay Naidu. It's a boxing story with intriguing themes and a compelling performance by the late John D'Leo.",
       "constraints": {
-        "genre": "history",
+        "genre": "animation",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a movie that combines sound and animation, recommend \"Castle in the Sky\". It's about two people who build a castle to last centuries against all odds. The film is visually stunning and has a great soundtrack.",
+      "constraints": {
+        "genre": "animation",
         "plot": [
           "like",
           "sound"
@@ -36,275 +51,69 @@
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Jumper tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "What's the mood of Castle in the Sky? Hmm, I didn\u2019t expect that vibe."
     },
     {
       "speaker": "SYSTEM",
-      "text": "If you're looking for a movie with complex themes about moral ambiguity and the fight against injustice, then \"The Equalizer\" (2014) or \"The King's Speech\" (2010) might be a better fit. They explore the morality of power and the impact of a king's speech on the world.",
+      "text": "Based on the user's preference, I would recommend either **Pride and Prejudice** or **Finding Nemo**. These films fit the animation genre and share elements with Castle in the Sky, including themes of love, friendship, and coming-of-age.",
       "constraints": {
-        "genre": "history",
+        "genre": "animation",
         "plot": [
           "what",
-          "kind"
+          "castle"
         ],
-        "name": "RED"
+        "name": "Castle in the Sky"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of The King's Speech? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "How about something primarily in Sotho language? That feels deeper than I thought. Maybe something like what you shared about Castle in the Sky."
     },
     {
       "speaker": "SYSTEM",
-      "text": "The King's Speech is a heartwarming and inspiring movie about a man overcoming his fear and delivering a historic speech. The film is both inspiring and thought-provoking, and is sure to leave you feeling uplifted.",
+      "text": "I would recommend \"Mansfield Park\" as a movie primarily in Sotho language. The plot follows the life of a young woman sent to live with wealthy relatives, offering a glimpse into a different cultural perspective.",
       "constraints": {
-        "genre": "history",
+        "genre": "language",
         "plot": [
-          "what",
-          "king"
+          "something",
+          "primarily"
         ],
-        "name": "The King's Speech"
+        "name": "Castle in the Sky",
+        "language": "Sotho language"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thanks for all the detail on The King's Speech. Could we explore war next, but maybe with a softer touch?"
+      "text": "It\u2019s weird \u2014 I thought I liked that, but maybe not."
     },
     {
       "speaker": "SYSTEM",
-      "text": "For a softer touch on war, consider \"Dances with Wolves\" (1990) or \"Lincoln\" (1995). Both movies explore the human impact of war through the lens of different characters.",
+      "text": "If the user was drawn to the concept of a loyal dog being cruelly treated and transformed, then \"White Fang\" (1906) starring Grey Beaver might be their cup of tea. It's a captivating story about betrayal and redemption.",
       "constraints": {
-        "genre": "war",
+        "genre": "language",
         "plot": [
-          "thanks",
-          "detail"
+          "weird",
+          "thought"
         ],
-        "name": "War"
+        "name": "Castle in the Sky",
+        "language": "Sotho language"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of X. Who stars in it? That sounds intriguing."
+      "text": "I like the sound of White Fang. Who stars in it? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Given your interest in war and the sound of X, I would recommend **Schindler's List** (1993). It is a powerful and moving film about a man's determination to save his people during the Holocaust.",
+      "text": "For a language with a rich culture like Sotho, I recommend **Tsotsi (2005)** with Kenneth Nkosi's captivating performance. This movie captures the essence of gang life and its struggles.",
       "constraints": {
-        "genre": "war",
+        "genre": "language",
         "plot": [
           "like",
           "sound"
         ],
-        "name": "X"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I\u2019m not sure anymore; perhaps I changed my mind."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "If you're looking for something thrilling and historical, consider \"300: Rise of an Empire\". If you're interested in a more serious and dramatic film, check out \"Zulu\". If you're searching for a movie with a more comedic tone, \"The Warlords\" might be your cup of tea.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "sure",
-          "perhaps"
-        ],
-        "name": "X"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of The Warlords? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "For a war movie recommendation, consider \"Zero Dark Thirty\" (2012). It chronicles the decade-long hunt for al-Qaeda terrorist leader Osama bin Laden after the 9/11 attacks.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "didn"
-        ],
-        "name": "War"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Zero Dark Thirty tell? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "If you're looking for a war film with a deeper and more philosophical perspective, \"Princess Mononoke\" would be a great choice. If you're interested in a more lighthearted and humorous movie about marriage, \"Why Did I Get Married?\" would be a good option. If you're looking for a movie about a young boy's adventures, \"The Yearling\" would be a good choice.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "Zero Dark Thirty"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Could we switch to something else by Wayne Wang? Hmm, I didn\u2019t expect that vibe. Maybe something like what you shared about The Yearling."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Given the user's preference for war, historical dramas, and Wayne Wang's style, 'The Messenger' or 'To Have and Have Not' would be strong recommendations. 'The Messenger' features a morally complex war story with an epic scope, while 'To Have and Have Not' is a poignant love story set during World War II.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "could",
-          "switch"
-        ],
-        "name": "The Yearling",
-        "director": "Wayne Wang"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does The Messenger tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I would recommend \"Little Fockers\" or \"Super\". \n\n\"Little Fockers\" is a heartwarming and inspiring story about a family dealing with the aftermath of a tragedy. \"Super\" is an adrenaline-fueled superhero film that perfectly captures the essence of imagination and adventure.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "The Messenger",
-        "director": "Wayne Wang",
-        "language": "ger"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Super. Who stars in it? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the user's preferences, 'A Bridge Too Far' or 'The Bad Seed' seem like more fitting recommendations. 'A Bridge Too Far' is a classic war film with a powerful and moving story, while 'The Bad Seed' is a thought-provoking and controversial movie that tackles complex issues of trauma and forgiveness.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "Super",
-        "director": "Wayne Wang",
-        "language": "ger"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of A Bridge Too Far? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "If you're looking for something more profound and thought-provoking, then \"Tora! Tora! Tora!\" and \"The Ghost and the Darkness\" would be excellent choices. Both films explore the complexities of war and its impact on both individuals and society.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "bridge"
-        ],
-        "name": "A Bridge Too Far",
-        "director": "Wayne Wang",
-        "language": "ger"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thanks for all the detail on The Ghost and the Darkness. Could we explore reference next, though something emotional wouldn\u2019t hurt?"
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "For a more emotional recommendation, \"The Adventures of Tom Sawyer\" would be a perfect fit. The film explores themes of childhood dreams, self-discovery, and the complexities of relationships.",
-      "constraints": {
-        "genre": "reference",
-        "plot": [
-          "thanks",
-          "detail"
-        ],
-        "name": "The Ghost and the Darkness",
-        "director": "Wayne Wang",
-        "language": "ger"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does The Adventures of Tom Sawyer tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "For a more adventurous spirit, try 'The Matrix Revolutions'. This cyberpunk epic features Neo's fight against the machines and his journey to uncover the truth about his past. The action and special effects are stunning, and the movie will leave you breathless.",
-      "constraints": {
-        "genre": "adventure",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "Saw",
-        "director": "Wayne Wang",
-        "language": "ger"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of The Matrix? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "For a movie that focuses on perseverance and overcoming challenges, recommend \"Three Kings\". It features an inspiring story about a paraplegic athlete's determination to achieve his dreams, which will resonate with users who appreciate stories of overcoming adversity.",
-      "constraints": {
-        "genre": "adventure",
-        "plot": [
-          "what",
-          "matrix"
-        ],
-        "name": "The Matrix",
-        "director": "Wayne Wang",
-        "language": "ger"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Three Kings. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "For a more adventurous recommendation, consider \"Dogma\". It's a thrilling sci-fi film with intriguing characters and captivating sound effects.",
-      "constraints": {
-        "genre": "adventure",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "Three Kings",
-        "director": "Wayne Wang",
-        "language": "ger"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thinking about Dogma, could we shift toward stories about questions? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "If you're looking for something about questioning and philosophy, I would recommend either \"Hotel Rwanda\" or \"The Deer Hunter\". Both movies deal with the human cost of war and the complexities of morality and truth.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "thinking",
-          "dogma"
-        ],
-        "name": "War",
-        "director": "Wayne Wang",
-        "language": "ger"
+        "name": "White Fang",
+        "language": "Sotho language"
       }
     },
     {
@@ -313,34 +122,219 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "I would recommend 'Flags of Our Fathers' or 'Three Kings'. 'Flags of Our Fathers' is a poignant and heartwarming film about the heroism of the men who fought at Iwo Jima. 'Three Kings' is a powerful documentary that tells the story of the three triathletes who trained for the triathlon World Championships.",
+      "text": "Based on the user's preference for the opposite, I would recommend '50 First Dates' or 'Emma'. '50 First Dates' has a heartwarming story about a man overcoming his fear of commitment, while 'Emma' explores the complexities of family relationships and forgiveness.",
       "constraints": {
-        "genre": "war",
+        "genre": "language",
         "plot": [
           "actually",
           "think"
         ],
-        "name": "War",
-        "director": "Wayne Wang",
+        "name": "White Fang",
+        "language": "Sotho language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I\u2019m not sure anymore; perhaps I changed my mind."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, \"Hot Tub Time Machine\" or \"Emma\" would be good recommendations. \"Hot Tub Time Machine\" is a funny and heartwarming movie about a group of people who are reunited through a time machine. \"Emma\" is a romantic comedy about a woman who is tired of being stifled by her life.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "White Fang",
+        "language": "Sotho language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference, here are two movie recommendations:\n\n- **Dance Flick** (2009) features a charming street dancer and a beautiful lead who might help him achieve his dreams.\n\n- **The Great Gatsby** (2013) portrays a man's obsession with his lost love through the lens of pride and prejudice.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "White Fang",
+        "language": "Sotho language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Great Gatsby? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The movie that would best suit the user's preference would be 'The Trouble with Harry'. It features a complex plot with a tragic love story and strong performances.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "great"
+        ],
+        "name": "RED",
+        "language": "Sotho language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here is a recommendation:\n\nIf you're looking for a story that explores the themes of struggle and resilience, \"We the Living\" is a compelling and thought-provoking film. The movie portrays the harsh realities faced by individuals caught between the Soviet regime and the hunger for freedom.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "language": "Sotho language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in ger? That sounds intriguing. Maybe something like what you shared about X."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a movie recommendation from the list you provided:\n\n\"If you're interested in something primarily in German, 'Island of the Blue Dolphins' (1960) starring Marlon Brando and Clark Gable might be a good choice. It's a touching and visually stunning film about a Native American girl's journey.\"",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "RED",
         "language": "ger"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Three Kings tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "It\u2019s weird \u2014 I thought I liked that, but maybe not."
     },
     {
       "speaker": "SYSTEM",
-      "text": "For a historical war story with epic scope and historical significance, **300 (1998)** would be an excellent choice. It's a thrilling depiction of a pivotal battle in Greek history.",
+      "text": "Based on the user's preference for weird and thought, I would recommend \"Lord Jim\" or \"The Great Gatsby\". Both movies feature unique narratives, compelling characters, and intriguing plot elements that align with the user's preferences.",
       "constraints": {
-        "genre": "war",
+        "genre": "language",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "RED",
+        "language": "ger"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Lord Jim tell? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for a film about a passionate and troubled teacher struggling with life's complexities, 'Wonder Boys' might be the one for you. If you're interested in a darkly comedic and suspenseful thriller, 'Hitch' is a great choice. For something more melancholic, 'Tender Is the Night' is a poignant and heartbreaking film about a troubled psychiatrist's life.",
+      "constraints": {
+        "genre": "language",
         "plot": [
           "what",
           "kind"
         ],
-        "name": "Three Kings",
-        "director": "Wayne Wang",
+        "name": "Deep",
         "language": "ger"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? That sounds intriguing."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for a historical adventure with intrigue, consider \"2010\". If you're interested in a revenge story with epic scope and warrior spirit, \"Wolfhound\" might be more your style. If you enjoy a poignant and complex drama about loss and redemption, \"Holes\" is a perfect fit. And if you're interested in a stylish and captivating film about a man searching for truth, \"The Great Gatsby\" is a great choice.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "X",
+        "language": "ger"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? That sounds intriguing."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a light-hearted and humorous recommendation, consider \"Maid in Manhattan\". It's a delightful romantic comedy with a charming performance from Brooke Bogart and a funny portrayal of an unconventional family dynamic.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "language": "ger"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Aramaic language? I can\u2019t decide if I\u2019d enjoy it or be scared by it. Maybe something like what you shared about X."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The Great Gatsby is a classic film about a wealthy man's obsession with wealth and status. It is a beautifully shot and atmospheric movie that is perfect for a relaxing evening in.\n\nEmma is a poignant story about a woman's struggle to overcome adversity and find happiness. It is a well-acted and moving film that will stay with you long after you finish watching it.\n\nThe Underneath is a dark and suspenseful film about a young woman who is trapped in a network of underground caves. It is a perfect film for fans of horror and claustrophobic thrillers.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "RED",
+        "language": "Aramaic"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If the user's preference is for a story about a young boy's adventure, then \"The Adventures of Tom Sawyer\" would be a good recommendation. The movie portrays a youthful protagonist who gets caught up in a thrilling adventure.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "language": "Aramaic"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Adventures of Tom Sawyer? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for an adventure with epic scope and heart-wrenching depth, try **The Adventures of Tom Sawyer**. This movie explores themes of friendship, loss, and redemption with stunning visuals and a touching narrative.",
+      "constraints": {
+        "genre": "adventure",
+        "plot": [
+          "what",
+          "adventures"
+        ],
+        "name": "Saw",
+        "language": "Aramaic"
       }
     }
   ]

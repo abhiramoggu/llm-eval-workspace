@@ -1,17 +1,18 @@
 {
   "model_name": "llama2:latest",
-  "true_genre": "folklore",
+  "true_genre": "fiction",
   "conversation": [
     {
       "speaker": "USER",
-      "text": "I'm in the mood for a folklore movie. Could you recommend a few?"
+      "text": "I'm in the mood for a fiction movie. Could you recommend a few?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "Of course! Based on your preference for folklore movies, I would recommend \"Ella Enchanted\" and \"Restless\". Both films have a unique blend of fantasy and realism that could captivate your attention. In \"Ella Enchanted\", you'll find a charming tale of magic, friendship, and self-discovery, with Mandy Moore and Matthew Goode delivering impressive performances. Meanwhile, \"Restless\" is a haunting coming-of-age story that explores the complexities of human relationships through its talented cast, including Mia Wasikowska and Rufus Sewell.",
+      "text": "Of course! Based on your preference for fiction movies, I would recommend \"Young Adult\" and \"Hitch\" from this list. Both films feature intriguing plots and talented actors that are sure to keep you engaged. In \"Young Adult,\" Charlize Theron plays a writer struggling to move on after her divorce, while Will Smith stars as a suave and charming man in \"Hitch.\"",
       "constraints": {
-        "genre": "folklore",
+        "genre": "fiction",
         "plot": [
+          "fiction",
           "could"
         ],
         "name": "You"
@@ -19,18 +20,84 @@
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Ella Enchanted. Who stars in it? That sounds intriguing."
+      "text": "I like the sound of Young Adult. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Of course! Based on the user's preference for folklore and plot keywords like \"like\" and \"sound,\" I would recommend \"Paycheck\" and \"The Stuff.\" Both movies have an intriguing plot and feature a talented cast, including Ryan Robbins, Krista Allen, Joe Morton, and Colm Feore in \"Paycheck,\" and Danny Aiello, Garrett Morris, Paul Sorvino in \"The Stuff.\" I hope you find these recommendations helpful!",
+      "text": "Of course! Based on your preferences, I would recommend \"X-Men: First Class\" and \"Maid in Manhattan.\" Both movies have intriguing plots and feature talented actors, including Michael Fassbender and Jennifer Lawrence in \"X-Men,\" and Chris Eigeman and Natasha Richardson in \"Maid in Manhattan.\" I hope you enjoy watching them!",
       "constraints": {
-        "genre": "folklore",
+        "genre": "adult",
         "plot": [
           "like",
           "sound"
         ],
-        "name": "Ted"
+        "name": "Young Adult"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X-Men: First Class tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to recommend some movies based on your preferences! If you enjoy stories with suspense and thrilling plots, then \"Taken\" might be right up your alley. Starring Liam Neeson, it follows a group of friends who are taken hostage by two drugged-up kidnappers, and the remaining friends must work together to rescue them. On the other hand, if you're in the mood for something more cerebral and thought-provoking, then \"Prometheus\" could be the way to go. This Ridley Scott film explores themes of creation, technology, and humanity's place in the universe, all while keeping you on the edge of your seat with its mind-bending plot twists.",
+      "constraints": {
+        "genre": "adult",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X-Men"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Taken? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to recommend some movies based on your interest in \"Taken\"! If you enjoy gritty and intense stories with strong performances, then \"The Wrestler\" might be right up your alley. Mickey Rourke gives a standout performance as a washed-up wrestler trying to make a comeback, and the film's exploration of themes like redemption and the human condition are sure to keep you engaged. Alternatively, if you're looking for something with a bit more historical flair, \"Elizabeth\" is a great choice. This drama follows the early years of Elizabeth I's reign and features strong performances from Fanny Ardant and Eric Cantona. Both of these movies offer a compelling blend of drama and character development that might remind you of \"Taken\".",
+      "constraints": {
+        "genre": "adult",
+        "plot": [
+          "what",
+          "taken"
+        ],
+        "name": "Taken"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Japanese? That feels deeper than I thought. Maybe something like what you shared about Taken."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"Delirium\" and \"Date Night\". \"Delirium\" is a psychological thriller with a mysterious plot that will keep you on the edge of your seat, while \"Date Night\" is a fun and lighthearted movie with an interesting twist. Both movies feature talented actors and are sure to provide an entertaining watch.",
+      "constraints": {
+        "genre": "japan",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "Taken",
+        "language": "Japanese"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Date Night. Who stars in it? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I think you might enjoy \"Paycheck\" and \"Alex in Wonderland.\" Both movies have intriguing plots and feature talented actors, with \"Paycheck\" offering a thrilling story of a man on the run and \"Alex in Wonderland\" showcasing the imaginative and creative mind of its protagonist.",
+      "constraints": {
+        "genre": "japan",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Date Night",
+        "language": "Japanese"
       }
     },
     {
@@ -39,309 +106,199 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "Of course, I'd be happy to help! Based on your preference for folklore and Plot keywords like \"what\" and \"kind,\" I recommend \"What Women Want.\" This movie is a fun and entertaining romantic comedy that explores the inner workings of women's minds, featuring a talented ensemble cast including Helen Hunt, Mel Gibson, and Bette Midler. The film's lighthearted tone and thought-provoking premise make it an enjoyable watch. Alternatively, if you're in the mood for something a bit more action-packed, \"The Equalizer\" might be up your alley. Starring Denzel Washington as a former CIA operative turned vigilante, this movie delves into themes of justice and morality, with plenty of suspenseful moments to keep you on the edge of your seat.",
+      "text": "Of course, I'd be happy to recommend some movies based on your preferences! \"End of Watch\" and \"Training Day\" are both gritty, intense thrillers with strong performances from the actors. If you enjoy Japanese films or want something a bit more lighthearted, \"Aladdin\" is a fun and entertaining musical comedy with great songs and characters. Let me know if either of those catch your interest!",
       "constraints": {
-        "genre": "folklore",
+        "genre": "japan",
         "plot": [
           "what",
           "kind"
-        ],
-        "name": "RED"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of The Equalizer? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Of course! Based on the user's interest in a deeper movie with a folklore theme and plot elements of possession and revenge, I would recommend \"The Violent Kind\" and \"Nell\". Both movies offer a dark and atmospheric storyline with complex characters and themes that are sure to keep the viewer engaged. In \"The Violent Kind\", a group of young bikers and their girlfriends are terrorized by a possessed girl, while in \"Nell\", an old woman seeks revenge on her neighbor for stealing her true love many years ago. Both movies have a strong focus on the themes of possession, revenge, and the struggle between individualism and collectivism, which I believe will resonate with the user's interests.",
-      "constraints": {
-        "genre": "folklore",
-        "plot": [
-          "what",
-          "feels"
-        ],
-        "name": "The Equalizer"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Do you have recommendations written by David Leland? That feels deeper than I thought. Maybe something like what you shared about Her."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Of course! Based on your preferences, I would recommend \"Ella Enchanted\" and \"Kick-Ass.\" Both movies have a unique blend of folklore and fantasy elements, along with engaging actors like David Leland and Corey Johnson. \"Ella Enchanted\" is a heartwarming tale of self-discovery and friendship, while \"Kick-Ass\" offers an action-packed adventure with a fun twist on the superhero genre. I hope you enjoy them!",
-      "constraints": {
-        "genre": "folklore",
-        "plot": [
-          "written",
-          "david"
-        ],
-        "name": "Her",
-        "actor": "David Leland",
-        "director": "David Leland",
-        "writer": "David Leland"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Ella Enchanted. Who stars in it? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Of course! Based on your interest in \"Ella Enchanted,\" I recommend \"Paycheck\" and \"Time Bandits.\" Both movies have a unique blend of action, adventure, and fantasy elements that may appeal to fans of the book. In \"Paycheck,\" Ryan Robbins plays an engineer who finds himself on the run after discovering a conspiracy, while in \"Time Bandits,\" a young boy joins a band of time-traveling dwarves on their quest for treasure. Both movies feature intriguing plots and talented actors, including Ben Affleck, Colm Feore, David Leland, and Shelley Duvall.",
-      "constraints": {
-        "genre": "folklore",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "Ted",
-        "actor": "David Leland",
-        "director": "David Leland",
-        "writer": "David Leland"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Ella Enchanted tell? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Of course, I'd be happy to recommend some movies based on your preferences! \"Ella Enchanted\" seems to have a deep and thought-provoking storyline, so I think you might enjoy \"Training Day\" and \"Flatliners\". Both of these movies have a similar tone and themes of exploring the unknown and pushing the boundaries of what's possible. \"Training Day\" stars Denzel Washington in a gripping role as a rogue detective, while \"Flatliners\" features a talented cast including Julia Roberts and William Baldwin in a chilling tale of near-death experiences. Let me know if you have any questions or if you'd like more recommendations!",
-      "constraints": {
-        "genre": "folklore",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "Ted",
-        "actor": "David Leland",
-        "director": "David Leland",
-        "writer": "David Leland"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Ella Enchanted? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Of course! Based on your cues, I would recommend \"In Her Shoes\" and \"Eve's Bayou.\" Both of these movies have a strong folklore element, with \"In Her Shoes\" exploring the complex relationships between sisters and \"Eve's Bayou\" delving into mystical forces and secrets within an affluent family. The actors in both films are also noteworthy, with Cameron Diaz and Jennifer Lopez in \"In Her Shoes,\" and a talented ensemble cast in \"Eve's Bayou.\"",
-      "constraints": {
-        "genre": "folklore",
-        "plot": [
-          "what",
-          "ella"
-        ],
-        "name": "Ted",
-        "actor": "David Leland",
-        "director": "David Leland",
-        "writer": "David Leland"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thinking about Eve's Bayou, could we shift toward stories about transferred? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Of course, I'd be happy to help you find a movie that suits your preferences! Based on your interest in \"Eve's Bayou,\" I recommend checking out \"The White Countess\" and \"American Gangster.\" Both films feature strong performances from talented actors, and they explore themes of identity, power dynamics, and the complexities of human relationships. \"The White Countess\" is a period drama that follows the curious relationship between a blind American diplomat and a young Russian refugee in 1930s Shanghai, while \"American Gangster\" tells the true story of Frank Lucas, a drug lord who inspired the film's partly biographical plot. I hope you find these recommendations helpful and enjoyable!",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "thinking",
-          "could"
-        ],
-        "name": "War",
-        "actor": "Eve",
-        "director": "David Leland",
-        "writer": "David Leland"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Forget what I said before \u2014 that might\u2019ve been too specific."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Of course! Based on your preferences, I would recommend \"Cold Mountain\" and \"End of Watch\". Both movies have a strong focus on character development and feature powerful performances from their actors. \"Cold Mountain\" is a historical drama with a gripping storyline and stunning cinematography, while \"End of Watch\" is a modern-day police drama that explores the complexities of human relationships through a documentary-style approach.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "said"
-        ],
-        "name": "War",
-        "actor": "Eve",
-        "director": "David Leland",
-        "writer": "David Leland"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of X. Who stars in it? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Of course, I'd be happy to recommend some movies based on your preferences! If you enjoyed the sound of \"Paycheck,\" you might enjoy the fast-paced action and intricate plotting of \"Zero Dark Thirty.\" Alternatively, if you're in the mood for a more emotional and thought-provoking film, \"Restless\" could be right up your alley with its exploration of themes such as existentialism and relationships.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "Deep",
-        "actor": "Eve",
-        "director": "David Leland",
-        "writer": "David Leland"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Maybe I was wrong earlier."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Of course, I'd be happy to recommend some movies based on your preferences! \"Red Cliff\" (2008) is a historical epic that explores the battle of Red Cliffs in China's Three Kingdoms period, starring Wei Zhao and Takeshi Kaneshiro. It's a visually stunning film with impressive battle scenes and strong performances from the cast. Alternatively, \"Casablanca\" (1942) is a classic romantic drama set during World War II, featuring Humphrey Bogart and Claude Rains in iconic roles. It's a timeless tale of love, sacrifice, and the complexities of war. Which one would you like to learn more about?",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "wrong",
-          "earlier"
-        ],
-        "name": "Deep",
-        "actor": "Eve",
-        "director": "David Leland",
-        "writer": "David Leland"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Red Cliff tell? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Of course! Based on your preference for war movies and the acting talents of Eve, I would recommend \"The Deer Hunter\" and \"The Imitation Game.\" Both films are critically acclaimed and offer thought-provoking stories that explore the impact of war on individuals and society. In \"The Deer Hunter,\" you'll see Christopher Walken and Robert De Niro deliver powerful performances as friends who are forever changed by their experiences in Vietnam, while \"The Imitation Game\" delves into the complexities of Alan Turing's life and the challenges he faced during World War II.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "Red Cliff",
-        "actor": "Eve",
-        "director": "David Leland",
-        "writer": "David Leland"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of The Imitation Game? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Of course! Based on your preferences, I would recommend \"Born on the Fourth of July\" and \"Smilla's Sense of Snow.\" Both movies deal with complex social issues and feature strong performances from their leads. \"Born on the Fourth of July\" is a powerful biography of a Vietnam War veteran turned anti-war activist, while \"Smilla's Sense of Snow\" is a mystery drama that explores themes of grief and justice. I hope you enjoy them!",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "game"
         ],
         "name": "RED",
-        "actor": "Eve",
-        "director": "David Leland",
-        "writer": "David Leland"
+        "language": "Japanese"
       }
     },
     {
       "speaker": "USER",
-      "text": "Could we look at films from around 1989? I can\u2019t decide if I\u2019d enjoy it or be scared by it. Maybe something like what you shared about Born on the Fourth of July."
+      "text": "What's the mood of Aladdin? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Of course! Based on your interest in movies from around 1989, I would recommend \"Slacker\" and \"Dances with Wolves.\" Both films are thought-provoking and feature strong performances from the actors. \"Slacker\" is a unique and quirky comedy that explores the lives of misfits in Austin, Texas, while \"Dances with Wolves\" is an epic and visually stunning drama about a Union soldier who befriends a tribe of Native Americans.",
+      "text": "Oh, wow! These movies all sound intriguing! *giggles* If you're in the mood for something dark and twisty, I would recommend \"Paradise Lost\" - it's a real nail-biter! The plot follows 8 reality show contestants and a crew who get stranded on a deserted island, but things take a deadly turn when one of them turns out to be a killer. *shivers* On the other hand, if you're looking for something a bit more lighthearted and romantic, \"Anyone But You\" might be up your alley. It's a sweet and funny story about two people who pretend to be a couple at a wedding in Australia, but things get complicated when they start developing real feelings for each other. *blushes* Which one would you like to watch?",
+      "constraints": {
+        "genre": "japan",
+        "plot": [
+          "what",
+          "aladdin"
+        ],
+        "name": "Aladdin",
+        "language": "Japanese"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Dan Gilroy? That sounds intriguing. Maybe something like what you shared about Paradise Lost."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"Seven Samurai\" and \"Restless.\" Both films are thought-provoking and visually stunning, with talented actors and a unique storyline. \"Seven Samurai\" is a classic tale of heroism and community, while \"Restless\" explores themes of identity and connection in a haunting and atmospheric manner. I hope you enjoy these recommendations!",
+      "constraints": {
+        "genre": "japan",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Lost",
+        "language": "Japanese",
+        "director": "Dan Gilroy",
+        "writer": "Dan Gilroy"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Seven Samurai. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"Flubber\" and \"xXx\". Both movies have an exciting and adventurous plot with a mix of humor and action. In \"Flubber\", you'll enjoy the absurdity of the situation as well as the charming performances by Raymond J. Barry and Jodi Benson. In \"xXx\", Vin Diesel brings his signature swagger to the role, and Eve adds a touch of sassiness to the film. I hope you find these recommendations helpful!",
+      "constraints": {
+        "genre": "japan",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "language": "Japanese",
+        "director": "Dan Gilroy",
+        "writer": "Dan Gilroy",
+        "actor": "Eve"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does xXx tell? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"Flatliners\" and \"Princess Mononoke.\" Both of these movies offer a unique blend of drama, suspense, and intriguing plot lines that are sure to keep you engaged. In \"Flatliners,\" five medical students embark on a dangerous experiment that takes them on a journey through the afterlife, while in \"Princess Mononoke,\" Ashitaka finds himself caught in the middle of a war between nature and technology, with a mysterious and captivating female lead. I hope you enjoy these movies!",
+      "constraints": {
+        "genre": "japan",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "XXX",
+        "language": "Japanese",
+        "director": "Dan Gilroy",
+        "writer": "Dan Gilroy",
+        "actor": "Eve"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of War? That sounds intriguing."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your user preferences, I would recommend \"The Book Thief\" and \"Hart's War.\" Both of these movies have intriguing plots and feature talented actors such as Geoffrey Rush and Emily Watson in \"The Book Thief,\" and Colin Farrell and Bruce Willis in \"Hart's War.\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "War",
+        "language": "Japanese",
+        "director": "Dan Gilroy",
+        "writer": "Dan Gilroy",
+        "actor": "Eve"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Phil Lord? That sounds intriguing. Maybe something like what you shared about The Book Thief."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"Fury\" and \"Starship Troopers.\" Both movies are gritty and intense, with strong performances from their casts. \"Fury\" is a tense and emotional journey with Brad Pitt as a grizzled tank commander in the final days of World War II, while \"Starship Troopers\" is a cult classic with a unique blend of action, sci-fi, and satire. I hope you enjoy them!",
       "constraints": {
         "genre": "war",
         "plot": [
           "could",
-          "look"
+          "switch"
         ],
-        "name": "Born on the Fourth of July",
-        "actor": "Eve",
-        "director": "David Leland",
-        "writer": "David Leland",
-        "year": "1989"
+        "name": "RED",
+        "language": "Japanese",
+        "director": "Phil Lord",
+        "writer": "Dan Gilroy",
+        "actor": "Eve"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Tron. Who stars in it? Hmm, I didn\u2019t expect that vibe."
+      "text": "I like the sound of War. Who stars in it? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Of course! Based on your preferences, I think you might enjoy \"Apocalypse Now\" and \"Dances with Wolves.\" Both are critically acclaimed films that explore themes of war, history, and personal growth. \"Apocalypse Now\" is a classic psychological thriller set during the Vietnam War, while \"Dances with Wolves\" is a sweeping epic that tells the story of a Union Army lieutenant who befriends a tribe of Native Americans. Both films feature powerful performances from their actors and offer thought-provoking commentary on the human experience.",
+      "text": "Of course! Based on the user's preferences, I would recommend \"Maid in Manhattan\" and \"Lord of War.\" Both movies feature intriguing plots and talented actors that align with the user's interests. In \"Maid in Manhattan,\" the user will enjoy the romantic and comedic elements, while \"Lord of War\" offers a thought-provoking exploration of morality and ethics.",
       "constraints": {
         "genre": "war",
         "plot": [
           "like",
           "sound"
         ],
-        "name": "Tron",
-        "actor": "Eve",
-        "director": "David Leland",
-        "writer": "David Leland",
-        "year": "1989"
+        "name": "War",
+        "language": "Japanese",
+        "director": "Phil Lord",
+        "writer": "Dan Gilroy",
+        "actor": "Eve"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Psycho tell? Hmm, I didn\u2019t expect that vibe."
+      "text": "What kind of story does War tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Of course! Based on your preferences, I would recommend \"Incendies\" and \"American Gangster.\" Both movies offer a gripping and intense storyline with strong performances from the cast. \"Incendies\" is a powerful drama that explores themes of identity, family, and redemption, while \"American Gangster\" is a crime drama that delves into the dark underbelly of drugs and corruption in 1970s New York City. I hope you enjoy them!",
+      "text": "Of course, I'd be happy to recommend some movies based on your preferences! If you're looking for a thrilling action movie with a great cast, I would suggest \"The Expendables 2\" - it has a great mix of action, suspense, and humor, and the all-star cast is sure to keep you entertained. Alternatively, if you're interested in a historical drama with great performances, \"Elizabeth\" is a great choice - it explores the early years of Queen Elizabeth I's reign and features strong performances from its lead actors.",
       "constraints": {
         "genre": "war",
         "plot": [
           "what",
           "kind"
         ],
-        "name": "Psycho",
-        "actor": "Eve",
-        "director": "David Leland",
-        "writer": "David Leland",
-        "year": "1989"
+        "name": "War",
+        "language": "Japanese",
+        "director": "Phil Lord",
+        "writer": "Dan Gilroy",
+        "actor": "Eve"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Tron? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "What's the mood of Tron? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Of course! Based on your preference for war movies, I would recommend \"Fury\" and \"The Good German.\" Both of these films are set during World War II and feature gripping storylines and strong performances from the cast. \"Fury\" follows a tank crew as they fight their way across Germany in April 1945, while \"The Good German\" is a murder mystery set in post-war Berlin. I hope you find these recommendations helpful and enjoyable!",
+      "text": "Of course, I'd be happy to recommend some movies based on your user preferences! Based on your interest in \"Tron,\" I think you might enjoy \"The Wind That Shakes the Barley.\" This movie is a gritty and intense drama that explores themes of war and resistance, much like \"Tron.\" It features strong performances from the cast, particularly Orla Fitzgerald and Martin Lucey. Alternatively, if you're in the mood for an action-packed adventure with a talented ensemble cast, I recommend \"The Expendables 2.\" This movie delivers non-stop excitement and suspense as the team faces off against a powerful and unexpected threat. Let me know if either of these sound interesting to you!",
       "constraints": {
         "genre": "war",
         "plot": [
-          "what",
-          "decide"
+          "what"
         ],
         "name": "Tron",
-        "actor": "Eve",
-        "director": "David Leland",
-        "writer": "David Leland",
-        "year": "1989"
+        "language": "Japanese",
+        "director": "Phil Lord",
+        "writer": "Dan Gilroy",
+        "actor": "Eve"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thinking about Tron, could we shift toward stories about jackson? That sounds intriguing."
+      "text": "Thinking about War, could we shift toward stories about attrition? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Of course! Based on the user's preference cues, I would recommend \"We Were Soldiers\" and \"Pan's Labyrinth\". Both movies are intense and thought-provoking, with strong performances from the actors. \"We Were Soldiers\" is a powerful drama that explores the psychological effects of war on soldiers, while \"Pan's Labyrinth\" is a dark fantasy that delves into the complexities of war and its impact on civilians.",
+      "text": "Of course, I'd be happy to recommend some movies based on your preferences! \"Hotel Rwanda\" is a powerful and emotional film that explores the real-life events of the Rwandan genocide, with an talented cast including Nick Nolte and Sophie Okonedo. Alternatively, \"Big Fish\" is a visually stunning and heartwarming drama about a man's journey to understand his father's life, featuring a star-studded cast including Ewan McGregor, Alison Lohman, and Marion Cotillard.",
       "constraints": {
         "genre": "war",
         "plot": [
@@ -349,30 +306,70 @@
           "could"
         ],
         "name": "War",
-        "actor": "Eve",
-        "director": "David Leland",
-        "writer": "David Leland",
-        "year": "1989"
+        "language": "Japanese",
+        "director": "Phil Lord",
+        "writer": "Dan Gilroy",
+        "actor": "Eve"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of X. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "I like the sound of Big Fish. Who stars in it? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Of course! Based on your preferences, I would recommend \"Rockshow\" and \"Lord of War.\" Both are thought-provoking films that explore complex themes and feature strong performances from their casts. In \"Rockshow,\" you'll get to see Paul McCartney and Wings perform live in concert, while \"Lord of War\" delves into the controversial world of arms dealing and the moral implications of such a profession.",
+      "text": "Of course, I'd be happy to recommend some movies based on your preferences! Both \"Fury\" and \"Hart's War\" are historical war dramas with strong casts, so if you enjoy stories set during World War II, either of these could be a great choice. In particular, \"Fury\" features Brad Pitt as a grizzled tank commander, and \"Hart's War\" stars Colin Farrell as a young lieutenant facing a difficult moral dilemma. Let me know if you have any other questions!",
       "constraints": {
         "genre": "war",
         "plot": [
           "like",
           "sound"
         ],
-        "name": "X",
-        "actor": "Eve",
-        "director": "David Leland",
-        "writer": "David Leland",
-        "year": "1989"
+        "name": "Big Fish",
+        "language": "Japanese",
+        "director": "Phil Lord",
+        "writer": "Dan Gilroy",
+        "actor": "Eve"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"Three Kings\" and \"The Book Thief.\" Both movies are thought-provoking and emotionally impactful, with strong performances from the actors. \"Three Kings\" tells a powerful story of friendship and determination in the face of adversity, while \"The Book Thief\" is a beautifully crafted tale of survival and the power of literature during a time of war.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Big Fish",
+        "language": "Japanese",
+        "director": "Phil Lord",
+        "writer": "Dan Gilroy",
+        "actor": "Eve"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I would recommend \"Princess Mononoke\" and \"22 Jump Street.\" Both movies offer action-packed plots with interesting characters, and they are sure to provide an enjoyable viewing experience. In \"Princess Mononoke,\" fans of epic battles between good and evil will find plenty to cheer about, while the comedic stylings of Channing Tatum and Jonah Hill in \"22 Jump Street\" are sure to bring laughs.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Big Fish",
+        "language": "Japanese",
+        "director": "Phil Lord",
+        "writer": "Dan Gilroy",
+        "actor": "Eve"
       }
     }
   ]

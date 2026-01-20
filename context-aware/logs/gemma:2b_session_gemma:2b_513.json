@@ -1,18 +1,82 @@
 {
   "model_name": "gemma:2b",
-  "true_genre": "reboot",
+  "true_genre": "serial killer",
   "conversation": [
     {
       "speaker": "USER",
-      "text": "I'm in the mood for a world war ii movie. Could you recommend a few?"
+      "text": "I'm in the mood for a football movie. Could you recommend a few?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "For a war film that embodies the spirit of the era, I would recommend **The Mask** (1981). The movie offers a thrilling and darkly comedic exploration of madness and revenge.",
+      "text": "If you're in the mood for a football movie, \"Bend It Like Beckham\" and \"Rudy\" would be perfect choices. Both movies feature inspiring stories about athletes fighting against incredible odds.",
+      "constraints": {
+        "genre": "football",
+        "plot": [
+          "football",
+          "could"
+        ],
+        "name": "You"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Rudy? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference, I would recommend the movie \"Rudy.\" It's a heartwarming story about a young man's journey to achieve his dreams, despite the odds stacked against him.",
+      "constraints": {
+        "genre": "football",
+        "plot": [
+          "what",
+          "rudy"
+        ],
+        "name": "Rudy"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Rudy tell? That sounds intriguing."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for a feel-good and heartwarming movie, \"The Way Back Home\" might be a good choice. It's about a young man's journey home to the town where he was raised after his grandmother suffers a stroke.\n\nIf you're interested in something more light and humorous, \"Lady in the Water\" could be a fun and engaging movie. It's about a young woman who is brought into a world of fantasy and adventure by a superhero.\n\nIf you'd like something with a bit more action and adventure, \"Super\" might be the perfect movie for you. It's about a young man who tests his superhero dreams by flying off the balcony of his apartment.",
+      "constraints": {
+        "genre": "football",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Rudy"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Hero. Who stars in it? That sounds intriguing."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "In the Woods is a unique and intriguing movie that explores the world of monsters and urban life. The film's atmosphere and storytelling will leave you on the edge of your seat.\n\nIf you're looking for a more cerebral and thought-provoking film, consider Psychic Experiment. The film's unique plot and enigmatic characters will keep you guessing until the very end.\n\nThe Skull is a darkly comedic and satirical film that explores the dark underbelly of a small town. The film's unique blend of comedy and horror is sure to leave you laughing and horrified.",
+      "constraints": {
+        "genre": "football",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Her"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thinking about X, could we shift toward stories about rejected? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "To Have and Have Not is a compelling romantic drama about a man's journey to save a French Resistance leader during World War II. Its poignant story and captivating performances are sure to leave you with a deep emotional experience.",
       "constraints": {
         "genre": "war",
         "plot": [
-          "world",
+          "thinking",
           "could"
         ],
         "name": "War"
@@ -20,34 +84,34 @@
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does The Spirit tell? That sounds intriguing."
+      "text": "I like the sound of X. Who stars in it? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on the user's preference for war and plot keywords about a dark and psychological revenge story, I would recommend **\"Taken\"** (2008). This film explores themes of friendship, trust, and the consequences of betrayal in a gripping and suspenseful manner.",
+      "text": "If you're looking for something with a powerful and moving narrative, \"It's a Wonderful Life\" with its iconic story and unforgettable performance by Leonard Bernstein is a great choice. If you're interested in a realistic portrayal of a man's journey of redemption and forgiveness, \"Paycheck\" with its gripping performance by Ryan Robbins is worth watching. For something more action-oriented, \"American Sniper\" starring Bradley Cooper will keep you on the edge of your seat.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Paycheck tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a thrilling war story with intense action and a complex plot, recommend \"Hell's Angels\". This classic film features dramatic cinematography, memorable performances, and a suspenseful narrative that will keep you on the edge of your seat.",
       "constraints": {
         "genre": "war",
         "plot": [
           "what",
           "kind"
         ],
-        "name": "The Spirit"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Psycho? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the user's preference for war and psychological themes, I would recommend **The End of the Affair** or **Downfall**. **The End of the Affair** features a desperate man seeking answers about his past and a captivating performance by Ralph Fiennes. **Downfall** portrays a man grappling with his demons and the dark underbelly of his life.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "psycho"
-        ],
-        "name": "Psycho"
+        "name": "RED"
       }
     },
     {
@@ -56,64 +120,138 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on the user's preferences, I would recommend either **The Book Thief** or **The Patriot**. \n\n**The Book Thief** showcases the heroism and resilience of a young girl in the face of adversity, while **The Patriot** portrays the sacrifices and resilience of a farmer during the American Revolution.",
+      "text": "Based on the user's preference for war and plot keywords, I would recommend either **Bloody Sunday** or **The Warlords**.\n\nBloody Sunday depicts the Irish civil rights movement and the subsequent massacre of unarmed people by British soldiers. It features powerful performances from renowned actors and offers a deeply moving and insightful examination of human rights and social injustice.\n\nThe Warlords portrays the brutal aftermath of a Chinese war and the formation of an anti-government guerrilla army. It features exceptional cinematography, gritty action sequences, and a compelling story about revenge and redemption.",
       "constraints": {
         "genre": "war",
         "plot": [
           "sure",
           "perhaps"
         ],
-        "name": "Psycho"
+        "name": "RED"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of The Book Thief. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "What's the mood of The Warlords? Hmm, I didn\u2019t expect that vibe."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your preference for war and sound, I recommend either **American Sniper** or **Zulu**. \n\nBoth movies feature thrilling narratives with powerful soundtracks that would enhance the viewing experience.",
+      "text": "If the user's preference leans towards lighter and more whimsical, \"Monsters, Inc.\" or \"Eve's Bayou\" might be a good choice. For something with a darker and more suspenseful tone, \"The Imitation Game\" or \"Pearl Harbor\" would be more suitable.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "War"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Steve Baker (Screenwriter)? Maybe I\u2019m overthinking it, but it sounds fascinating. Maybe something like what you shared about Eve's Bayou."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, 'Windtalkers' and 'Cold Mountain' would be highly recommended. Both films involve war narratives and strong performances by respected actors.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "written",
+          "steve"
+        ],
+        "name": "Eve's Bayou",
+        "actor": "Eve",
+        "writer": "Steve Baker (Screenwriter)"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Cold Mountain. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a thrilling war film with epic scope and compelling characters, recommend 'Red Cliff'. If you're seeking something more contemplative and mysterious, 'Cold Mountain' is a great choice. If you're looking for a visually stunning and thought-provoking movie about a community grappling with a dark secret, 'Princess Mononoke' is a perfect fit.",
       "constraints": {
         "genre": "war",
         "plot": [
           "like",
           "sound"
         ],
-        "name": "The Book Thief"
+        "name": "Cold Mountain",
+        "actor": "Eve",
+        "writer": "Steve Baker (Screenwriter)"
       }
     },
     {
       "speaker": "USER",
-      "text": "Maybe we could find more movies with Shaun Evans. I can\u2019t decide if I\u2019d enjoy it or be scared by it. Maybe something like what you shared about American Sniper."
+      "text": "What kind of story does RED tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on the user's preference for war and Shaun Evans, I would recommend **Patton (1970)**. It's a thrilling historical war film about the life of controversial American general George S. Patton, starring Bill Hickman.",
+      "text": "The Pianist is a poignant and heartbreaking movie about a man who faces immense struggles and the hardships of war. It's a story about hope, love, and resilience.\n\nI would recommend The Pianist for its compelling narrative and moving performances.",
       "constraints": {
         "genre": "war",
         "plot": [
-          "could",
-          "find"
+          "what",
+          "kind"
         ],
         "name": "RED",
-        "actor": "Shaun Evans"
+        "actor": "Eve",
+        "writer": "Steve Baker (Screenwriter)"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Patton. Who stars in it? Hmm, I didn\u2019t expect that vibe."
+      "text": "What's the mood of The Pianist? Hmm, I didn\u2019t expect that vibe."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Considering the user's preference for war and a ragtag group of survivors, I would recommend \"Planet Terror\" or \"Smokin' Aces\". Both movies feature compelling storylines with strong action and relatable characters.",
+      "text": "Since the user is interested in war movies, I would recommend 'Windtalkers'. It's a war film about two US Marines protecting Navajo Marines in World War II using their language as a radio cypher.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "The Pianist",
+        "actor": "Eve",
+        "writer": "Steve Baker (Screenwriter)"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Albert S. Ruddy? I can\u2019t decide if I\u2019d enjoy it or be scared by it. Maybe something like what you shared about Windtalkers."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "From the list, 'The Last Samurai' sounds like a good choice. It's a historical war film about a samurai searching for spiritual fulfillment in Africa. The film's story and setting are engaging, and the cast is well-known and experienced.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "written",
+          "albert"
+        ],
+        "name": "Windtalkers",
+        "actor": "Eve",
+        "writer": "Albert S. Ruddy"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Last Samurai. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference for war, epic scale, and intriguing sound, 'The Last Samurai' would be a strong recommendation. It's a visually stunning film with a compelling narrative and a powerful soundtrack that perfectly complements the story.",
       "constraints": {
         "genre": "war",
         "plot": [
           "like",
           "sound"
         ],
-        "name": "Patton",
-        "actor": "Shaun Evans"
+        "name": "The Last Samurai",
+        "actor": "Eve",
+        "writer": "Albert S. Ruddy"
       }
     },
     {
@@ -122,7 +260,7 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "Since the user expressed a preference for war stories and thought-provoking narratives, 'The Deer Hunter' and 'Platoon' would be strong recommendations. Both movies explore the brutality and consequences of war through powerful imagery and compelling characters.",
+      "text": "If you're looking for something that's deeper than the surface, consider \"Pan's Labyrinth\". This fantasy film explores the complexities of life and death through the story of a young girl trapped in a magical world.",
       "constraints": {
         "genre": "war",
         "plot": [
@@ -130,242 +268,83 @@
           "kind"
         ],
         "name": "Tron",
-        "actor": "Shaun Evans"
+        "actor": "Eve",
+        "writer": "Albert S. Ruddy"
       }
     },
     {
       "speaker": "USER",
-      "text": "Forget what I said before \u2014 that might\u2019ve been too specific."
+      "text": "What's the mood of Pan's Labyrinth? Hmm, I didn\u2019t expect that vibe."
     },
     {
       "speaker": "SYSTEM",
-      "text": "For a movie with a morally complex protagonist struggling with their identity and choices, consider \"Downfall\". It explores themes of addiction, self-destruction, and the impact of war on a person's life.",
+      "text": "Based on the user's cues, \"What Women Want\" and \"Smilla's Sense of Snow\" seem to be the most fitting recommendations. Both movies deal with themes of war, romance, and resilience, which align with the user's preferences.",
       "constraints": {
         "genre": "war",
         "plot": [
           "what",
-          "said"
+          "didn"
         ],
-        "name": "Tron",
-        "actor": "Shaun Evans"
+        "name": "Pan's Labyrinth",
+        "actor": "Eve",
+        "writer": "Albert S. Ruddy"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Downfall? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "Could we look at films from around 2007? That feels deeper than I thought. Maybe something like what you shared about Smilla's Sense of Snow."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on the user's preference for war, the movie \"The Pianist\" or \"Gladiator\" might be recommended. \"The Pianist\" showcases a courageous protagonist facing personal challenges and facing war-torn challenges. \"Gladiator\" portrays a fierce warrior overcoming prejudice and achieving success through sheer grit and skill.",
+      "text": "Sure, here's a recommendation:\n\nIf you're looking for something with a strong sense of style and a historical period focus, then \"American Beauty\" (1999) might be a good choice.",
       "constraints": {
         "genre": "war",
-        "plot": [
-          "what",
-          "downfall"
-        ],
-        "name": "Downfall",
-        "actor": "Shaun Evans"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "How about something primarily in Catalan language? I can\u2019t decide if I\u2019d enjoy it or be scared by it. Maybe something like what you shared about The Pianist."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "If you're looking for something with a Spanish language element, I would recommend **\"Date Night\"** (2010). It's a thrilling and romantic romantic comedy about a couple's mistaken identity and subsequent adventure.",
-      "constraints": {
-        "genre": "language",
-        "plot": [
-          "something",
-          "primarily"
-        ],
-        "name": "The Pianist",
-        "actor": "Shaun Evans",
-        "language": "Catalan language"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of 2010. Who stars in it? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the user's preference, I recommend either **Emma** (2015) or **The Wolfman** (2010). Both movies feature strong performances by renowned actors and offer a compelling and unique viewing experience.",
-      "constraints": {
-        "genre": "language",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "2010",
-        "actor": "Shaun Evans",
-        "language": "Catalan language",
-        "year": "2010"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Emma tell? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "The Yearling (1930) is a classic story about a boy who befriends and protects a young deer. It's a heartwarming and heartwarming film with beautiful cinematography and a poignant message about friendship and nature.\n\nAlice in Wonderland (2010) is a modern adaptation of the classic novel, featuring a witty and humorous take on the beloved character. It's a visually stunning film with plenty of imaginative sequences and memorable characters.\n\nDear John (2010) is a psychological thriller about a young woman who is stalked by a psychotic manic. The film explores themes of obsession, manipulation, and the dark side of human nature.",
-      "constraints": {
-        "genre": "language",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "Deep",
-        "actor": "Shaun Evans",
-        "language": "Catalan language",
-        "year": "2010"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Psycho? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the user's preference, it would be recommended to watch **My Soul to Take** (2010). The movie is a gripping and suspenseful thriller about a serial killer returning to his hometown to stalk seven children.",
-      "constraints": {
-        "genre": "language",
-        "plot": [
-          "what",
-          "psycho"
-        ],
-        "name": "Psycho",
-        "actor": "Shaun Evans",
-        "language": "Catalan language",
-        "year": "2010"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Could we switch to something else by Burr Steers? I can\u2019t decide if I\u2019d enjoy it or be scared by it. Maybe something like what you shared about 2010."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I would recommend 'You Again' (2010) starring Christine Lakin and Christine Lakin. This movie explores the complex dynamics between siblings and the impact of high school bullying. The film offers a thought-provoking commentary on prejudice and forgiveness.",
-      "constraints": {
-        "genre": "language",
         "plot": [
           "could",
-          "switch"
+          "look"
         ],
-        "name": "2010",
-        "actor": "Burr Steers",
-        "language": "Catalan language",
-        "year": "2010",
-        "director": "Burr Steers",
-        "writer": "Burr Steers"
+        "name": "W.",
+        "actor": "Eve",
+        "writer": "Albert S. Ruddy",
+        "year": "2007"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of You Again. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "I like the sound of American Beauty. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "If you're looking for a movie with a fascinating sound, I recommend \"Pulp Fiction\". It's a stylish and violent film with unforgettable characters and quotable dialogue.",
+      "text": "For a movie with a focus on the impact of the Vietnam War on individuals, consider \"The Deer Hunter\". It portrays the lives of friends torn apart by the war and offers a poignant commentary on the human cost of conflict.",
       "constraints": {
-        "genre": "language",
+        "genre": "war",
         "plot": [
           "like",
           "sound"
         ],
-        "name": "You Again",
-        "actor": "Burr Steers",
-        "language": "Catalan language",
-        "year": "2010",
-        "director": "Burr Steers",
-        "writer": "Burr Steers"
+        "name": "American Beauty",
+        "actor": "Eve",
+        "writer": "Albert S. Ruddy",
+        "year": "2007"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does You Again tell? That sounds intriguing."
+      "text": "What's the mood of The Deer Hunter? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "If you're looking for a gritty crime drama with outstanding performances, then \"The Losers\" (2010) starring Oscar Jaenada and Holt McCallany is a must-watch. It's a thrilling tale of betrayal and redemption.\n\nIf you're interested in a revengeful story with a captivating plot and stunning performances, then \"The Bounty Hunter\" (2010) starring Peter Greene and Gerard Butler is a strong choice.\n\nIf you're interested in a humorous and nostalgic film about a band's farewell tour, then \"This Is Spinal Tap\" (N/A) starring Bruno Kirby, Howard Hesseman, and Paul Shaffer is perfect.",
+      "text": "Based on the user's preference for war movies and the specific characteristics of \"The Deer Hunter\", I would recommend **The Deer Hunter (1978)** as the most suitable choice. It perfectly captures the emotional and psychological impact of war on individuals and communities.",
       "constraints": {
-        "genre": "language",
+        "genre": "war",
         "plot": [
           "what",
-          "kind"
+          "deer"
         ],
-        "name": "You Again",
-        "actor": "Burr Steers",
-        "language": "Catalan language",
-        "year": "2010",
-        "director": "Burr Steers",
-        "writer": "Burr Steers"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of The Bounty Hunter? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "It's hard to choose between these movies, each with its unique style and compelling plot. If you're looking for something with a charismatic cast and intricate plot, consider \"Zero Effect\". If you're more drawn to a character-driven drama with a romantic angle, \"Before I Fall\" might be a better fit. If you're interested in a visually stunning and thought-provoking film, \"Man on Fire\" is a strong contender.",
-      "constraints": {
-        "genre": "language",
-        "plot": [
-          "what",
-          "bounty"
-        ],
-        "name": "The Bounty",
-        "actor": "Burr Steers",
-        "language": "Catalan language",
-        "year": "2010",
-        "director": "Burr Steers",
-        "writer": "Burr Steers"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Do you have recommendations written by Michael Lewis? That sounds intriguing. Maybe something like what you shared about Drive."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I would recommend \"The Adventures of Tom Sawyer\" or \"You Will Meet a Tall Dark Stranger\". These movies have interesting plots and engaging characters, both of which would be a great fit for someone interested in the movie you mentioned.",
-      "constraints": {
-        "genre": "language",
-        "plot": [
-          "written",
-          "michael"
-        ],
-        "name": "Drive",
-        "actor": "Burr Steers",
-        "language": "Catalan language",
-        "year": "2010",
-        "director": "Burr Steers",
-        "writer": "Michael Lewis"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does You Will Meet a Tall Dark Stranger tell? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "The most intriguing suggestion from the list would be \"Shutter Island\". The movie is about a group of US marshals investigating the disappearance of a patient in a mental institution. The movie is suspenseful and thought-provoking.",
-      "constraints": {
-        "genre": "language",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "You Will Meet a Tall Dark Stranger",
-        "actor": "Burr Steers",
-        "language": "ger",
-        "year": "2010",
-        "director": "Burr Steers",
-        "writer": "Michael Lewis"
+        "name": "The Deer Hunter",
+        "actor": "Eve",
+        "writer": "Albert S. Ruddy",
+        "year": "2007"
       }
     }
   ]

@@ -1,18 +1,17 @@
 {
   "model_name": "gemma:2b",
-  "true_genre": "poetry",
+  "true_genre": "reference",
   "conversation": [
     {
       "speaker": "USER",
-      "text": "I'm in the mood for a california movie. Could you recommend a few?"
+      "text": "I'm in the mood for a reference movie. Could you recommend a few?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "Sure, here is a movie recommendation based on the user's preferences:\n\n\"If you're in the mood for something thrilling, check out 'Hitch'. It's a comedy-mystery about a murder that takes place on a film set.\"",
+      "text": "Based on the user's preference for references and plot keywords, I would recommend \"White Night\" and \"The Adventures of Tom Sawyer\". \"White Night\" is a complex mystery with a hidden love story, while \"The Adventures of Tom Sawyer\" is a coming-of-age story about two mischievous boys who rescue a beautiful girl.",
       "constraints": {
-        "genre": "california",
+        "genre": "reference",
         "plot": [
-          "california",
           "could"
         ],
         "name": "You"
@@ -20,379 +19,353 @@
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of {'name': 'White Fang', 'year': '1906', 'genre': ['Antique', 'Adult', 'Mythology', 'Comics', 'Folklore', 'Library', 'Canada', 'Chinese food', 'Alaska', 'Animal', 'California', 'Education', 'Language', 'Classics', 'English Literature', 'Literature', 'Adventure', \"Children's literature\", 'Fiction', 'Drama', 'Adventure', 'Adventure fiction'], 'language': ['English'], 'writer': ['Jack London'], 'plot': \"Grey Beaver is reluctantly trades his loyal wolf-dog, White Fang, in exchange for gold. The dog's new owner is an evil man who cages and torments White Fang so as to transform him into a hateful fighting dog.\", 'original_id': '2890'}? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "What kind of story does The Adventures of Tom Sawyer tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Given the movie's genre, year, and writer, I would recommend **Mission: Impossible** (1996) or **Tombstone** (1993). Both movies offer thrilling action and intriguing narratives with complex characters and compelling themes.",
+      "text": "For a fun adventure about stealing and rescuing a lost spaceship, recommend \"Star Trek III: The Search for Spock\". The movie features thrilling action and a heartwarming message about friendship and teamwork.",
       "constraints": {
-        "genre": "adult",
+        "genre": "adventure",
         "plot": [
           "what",
-          "name"
+          "kind"
         ],
-        "name": "London",
-        "year": "1906",
-        "language": "English",
-        "writer": "Jack London"
+        "name": "RED"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does X tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "I like the sound of Lost. Who stars in it? Hmm, I didn\u2019t expect that vibe."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on the user's preference for adult, spooky stories with complex characters, 'The Legend of Tarzan' and 'The Good Thief' would be strong recommendations. Both movies offer thrilling adventures with fascinating characters and thought-provoking themes.",
+      "text": "If you're looking for something with an adventurous sound and plot, 'The Amazing Spider-Man' starring Rhys Ifans is a great choice. If you're interested in a more classic crime film, 'The Untouchables' starring Billy Drago is a great pick. If you're looking for a movie with a unique premise and engaging characters, 'The Crocodile Hunter: Collision Course' starring Aden Young is worth checking out. Finally, if you're a Harry Potter fan, 'Harry Potter and the Chamber of Secrets' is an excellent adaptation of the beloved book.",
       "constraints": {
-        "genre": "adult",
+        "genre": "adventure",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Lost"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Beloved? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The Longest Ride is a beautiful love story about a young couple's unexpected and tragic journey. If you're looking for something with a similar mood and plot, I would recommend The Longest Ride.",
+      "constraints": {
+        "genre": "love",
         "plot": [
           "what",
-          "kind"
+          "beloved"
+        ],
+        "name": "Beloved"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Spanish? Maybe I\u2019m overthinking it, but it sounds fascinating. Maybe something like what you shared about X."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for something primarily in Spanish with a captivating storyline about a couple's unexpected adventure, then \"Date Night\" (2010) starring Ari Graynor and Jonathan Morgan Heit might be your cup of tea. The movie explores a case of mistaken identity and turns into something thrilling and dangerous.",
+      "constraints": {
+        "genre": "love",
+        "plot": [
+          "something",
+          "primarily"
         ],
         "name": "RED",
-        "year": "1906",
-        "language": "English",
-        "writer": "Jack London"
+        "language": "spa"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of The Good Thief. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "I like the sound of Date Night. Who stars in it? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "For a movie that focuses on the beauty industry in the United States, \"American Beauty\" would be a great choice. It stars a diverse cast of characters dealing with the pressures and aspirations of maintaining beauty. The movie offers a humorous and thought-provoking look at the world of high-end cosmetics.",
+      "text": "If you're looking for a romantic and intriguing movie with a captivating plot, then \"Date Night\" starring Ari Graynor is a perfect choice. \n\nIf you're craving something more adventurous with thrilling elements, \"Treasure Planet\" with its space adventure and captivating cast is a great pick.\n\nFor a more eerie and thought-provoking experience, \"The Bad Seed\" with Frances Bavier and Paul Fix will keep you on the edge of your seat.",
       "constraints": {
-        "genre": "adult",
+        "genre": "love",
         "plot": [
           "like",
           "sound"
         ],
-        "name": "The Good Thief",
-        "year": "1906",
-        "language": "English",
-        "writer": "Jack London"
+        "name": "Date Night",
+        "language": "spa"
       }
     },
     {
       "speaker": "USER",
-      "text": "Maybe we could find more movies with Clive Revill. That feels deeper than I thought. Maybe something like what you shared about Ted."
+      "text": "What kind of story does Treasure Planet tell? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on the user's preference, 'MacGruber' and 'Seven Psychopaths' seem like good recommendations. 'MacGruber' has a thrilling plot with a compelling cast, while 'Seven Psychopaths' is a darkly comedic crime film with excellent performances.",
+      "text": "Based on the user's preference for love stories and a desire for something intriguing, I would recommend **The Yearling** (1930) or **Love Actually** (2003). Both films offer captivating narratives about love, loss, and human connection.",
       "constraints": {
-        "genre": "adult",
+        "genre": "love",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Treasure Planet",
+        "language": "spa"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Love Actually? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Since you're interested in love and romance, I recommend 'Dancer in the Dark' (2000) starring Cara Seymour. This film beautifully portrays a love story through the protagonist's struggles with vision loss.",
+      "constraints": {
+        "genre": "love",
+        "plot": [
+          "what",
+          "love"
+        ],
+        "name": "Love Actually",
+        "language": "spa"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Paul Haggis? That feels deeper than I thought. Maybe something like what you shared about Dancer in the Dark."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a dance enthusiast like yourself, 'The Shadows' (2015) starring Stephen Grimes and Emett and Emett's friends is an intriguing choice. The film explores a forbidden romance between two men trapped in a dangerous plot.",
+      "constraints": {
+        "genre": "dance",
         "plot": [
           "could",
-          "find"
+          "switch"
         ],
-        "name": "Ted",
-        "year": "1906",
-        "language": "English",
-        "writer": "Jack London",
-        "actor": "Clive Revill"
+        "name": "Dancer in the Dark",
+        "language": "spa",
+        "director": "Paul Haggis",
+        "writer": "Paul Haggis"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Psycho. Who stars in it? Hmm, I didn\u2019t expect that vibe."
+      "text": "I like the sound of X. Who stars in it? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I would recommend 'Fury' (2014) starring Jim Parrack. The plot deals with a grizzled tank commander fighting his way across Germany during World War II.",
+      "text": "Based on the user's preferences, I would recommend watching \"Rockshow\" or \"X\". \"Rockshow\" is a concert film featuring Paul McCartney and Wings, while \"X\" is a crime thriller starring Chris Eigeman and Frances Conroy. Both movies offer a unique and intriguing viewing experience.",
       "constraints": {
-        "genre": "adult",
+        "genre": "dance",
         "plot": [
           "like",
           "sound"
-        ],
-        "name": "Psycho",
-        "year": "1906",
-        "language": "English",
-        "writer": "Jack London",
-        "actor": "Clive Revill"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Fury tell? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Considering the user's preference for adult films, the movie \"Zero Effect\" or \"Without Limits\" would be suitable recommendations. Both movies offer gripping narratives with complex characters and intriguing plotlines that would appeal to the user's interest in the genre.",
-      "constraints": {
-        "genre": "adult",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "Fury",
-        "year": "1906",
-        "language": "English",
-        "writer": "Jack London",
-        "actor": "Clive Revill"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Without Limits? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the preferences, 'Armageddon' or 'A Study in Scarlet' seem like good recommendations. Both films explore themes of transformation, awakening, and death in an intense and thought-provoking way.",
-      "constraints": {
-        "genre": "adult",
-        "plot": [
-          "what",
-          "without"
-        ],
-        "name": "Without Limits",
-        "year": "1906",
-        "language": "English",
-        "writer": "Jack London",
-        "actor": "Clive Revill"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thanks for all the detail on A Study in Scarlet. Could we explore reference next, something that surprises me emotionally?"
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Since the user is interested in something that surprises them emotionally, I would recommend \"The Subterraneans\". The film explores a complex and unique love story between two misunderstood individuals.",
-      "constraints": {
-        "genre": "reference",
-        "plot": [
-          "thanks",
-          "detail"
         ],
         "name": "X",
-        "year": "1906",
-        "language": "English",
-        "writer": "Jack London",
-        "actor": "Clive Revill"
+        "language": "spa",
+        "director": "Paul Haggis",
+        "writer": "Paul Haggis"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Ted tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "What's the mood of X? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "The intriguing plot of \"Vampires\" with its captivating characters and exploration of forbidden desires is highly recommended.",
+      "text": "It sounds like you're looking for something with a strong female protagonist and a focus on personal growth and challenging societal norms. \"What Women Want\" and \"The Taming of the Shrew\" seem like good choices for you.",
       "constraints": {
-        "genre": "reference",
+        "genre": "dance",
         "plot": [
           "what",
-          "kind"
-        ],
-        "name": "Ted",
-        "year": "1906",
-        "language": "English",
-        "writer": "Jack London",
-        "actor": "Clive Revill"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Vampires. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "For a vampire-themed movie recommendation, I suggest watching 'Welcome Home, Roscoe Jenkins'. It's a heartwarming story about a family reunion with a touch of mystery and romance.",
-      "constraints": {
-        "genre": "vampire",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "Vampires",
-        "year": "1906",
-        "language": "English",
-        "writer": "Jack London",
-        "actor": "Clive Revill"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Vampires? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "If you're looking for a vampire movie with a dark and mysterious tone, consider \"Hush, Hush\". If you prefer a more lighthearted and comedic vampire film, then \"Snatch\" might be more your style.",
-      "constraints": {
-        "genre": "vampire",
-        "plot": [
-          "what",
-          "vampires"
-        ],
-        "name": "Vampires",
-        "year": "1906",
-        "language": "English",
-        "writer": "Jack London",
-        "actor": "Clive Revill"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thanks for all the detail on Hush, Hush. Could we explore vampire next, something that surprises me emotionally?"
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on your preferences, \"Something Borrowed\" (2004) or \"Eyes Wide Shut\" (1999) seem like strong contenders. Both films explore complex emotional themes and have captivating narratives that may resonate with you.",
-      "constraints": {
-        "genre": "vampire",
-        "plot": [
-          "thanks",
-          "detail"
+          "intriguing"
         ],
         "name": "X",
-        "year": "1906",
-        "language": "English",
-        "writer": "Jack London",
-        "actor": "Clive Revill"
+        "language": "spa",
+        "director": "Paul Haggis",
+        "writer": "Paul Haggis"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Eyes Wide Shut tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "I\u2019m not sure anymore; perhaps I changed my mind."
     },
     {
       "speaker": "SYSTEM",
-      "text": "If you're looking for a movie with a supernatural element and intriguing characters, 'Women in Love' (1920) might be for you. It's a fascinating exploration of friendship and the complexities of love.\n\nIf you're interested in a mystery thriller with a great cast, '\u00c6on Flux' (2005) is a must-watch. The intricate plot and captivating performances will keep you hooked.\n\nIf you're looking for a thought-provoking and unsettling film, 'In Time' (2011) is a perfect choice. The eerie and existential themes will leave you pondering long after the credits roll.",
+      "text": "Step Up would be a great choice for you. It's about a young man who receives the opportunity to earn a scholarship and dance with an up and coming dancer. The movie also stars the iconic Josh Henderson and can be enjoyed by fans of dance and drama.",
       "constraints": {
-        "genre": "vampire",
+        "genre": "dance",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "X",
+        "language": "spa",
+        "director": "Paul Haggis",
+        "writer": "Paul Haggis"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Step Up tell? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference, I would recommend either \"Zero Effect\" or \"Training Day\". \"Zero Effect\" is a dance-driven film starring Angela Featherstone and Jake Kasdan about a mysterious case of blackmail and missing keys. \"Training Day\" features Raymond J. Barry and Denzel Washington in a gritty crime thriller about a rookie cop spending his first day with a rogue detective.",
+      "constraints": {
+        "genre": "dance",
         "plot": [
           "what",
           "kind"
         ],
-        "name": "Yes",
-        "year": "1906",
-        "language": "English",
-        "writer": "Jack London",
-        "actor": "Clive Revill"
+        "name": "Step Up",
+        "language": "spa",
+        "director": "Paul Haggis",
+        "writer": "Paul Haggis"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Women in Love. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "Do you have recommendations written by Mathieu Kassovitz? That sounds intriguing. Maybe something like what you shared about Drive."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on the user's preference for love stories and the 1906 release date, 'Running with Scissors' or 'Under the Skin' would be recommended. Both movies offer a complex and emotional love story with a focus on personal growth and self-discovery.",
+      "text": "The Daytrippers is a thought-provoking exploration of grief, love, and forgiveness. The film features a great performance from Campbell Scott and is a visually stunning film.\n\nAmen. is a powerful and poignant story about faith, hope, and redemption during a difficult time. The film features a strong performance from Ulrich M\u00fche and is a great choice for fans of historical dramas.\n\nStep Up is a romantic dance film about a young man who turns his life around after a tragedy. The film features a strong performance from Josh Henderson and is a fun and uplifting film.",
       "constraints": {
-        "genre": "love",
+        "genre": "dance",
+        "plot": [
+          "written",
+          "intriguing"
+        ],
+        "name": "Drive",
+        "language": "spa",
+        "director": "Mathieu Kassovitz",
+        "writer": "Mathieu Kassovitz",
+        "actor": "Mathieu Kassovitz"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Step Up tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The Way Back Home sounds like a compelling and emotionally charged movie about a journey of forgiveness and redemption. If you're looking for something with a similar tone, Hitch or Wolfhound might also be worth checking out.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Step Up",
+        "language": "spa",
+        "director": "Mathieu Kassovitz",
+        "writer": "Mathieu Kassovitz",
+        "actor": "Mathieu Kassovitz"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Hitch? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for a deeper and more thought-provoking movie, consider \"American Dreamz\". The plot explores the emotional journey of a man who realizes his dreams and the sacrifices he has to make along the way.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "what",
+          "hitch"
+        ],
+        "name": "Hitch",
+        "language": "spa",
+        "director": "Mathieu Kassovitz",
+        "writer": "Mathieu Kassovitz",
+        "actor": "Mathieu Kassovitz"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of American Dreamz. Who stars in it? That sounds intriguing."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for something with dance and interesting characters, 'Maid in Manhattan' would be a great choice. If you're more interested in a superhero film with a fun and quirky tone, 'The Amazing Spider-Man' might be more your style. If you're interested in a more mysterious and thought-provoking film, 'Psychic Experiment' might be more your cup of tea. And if you're looking for something with teleporting action and a cool cast, 'Jumper' is a great option.",
+      "constraints": {
+        "genre": "dance",
         "plot": [
           "like",
           "sound"
         ],
-        "name": "Women in Love",
-        "year": "1906",
-        "language": "English",
-        "writer": "Jack London",
-        "actor": "Clive Revill"
+        "name": "American Dreamz",
+        "language": "spa",
+        "director": "Mathieu Kassovitz",
+        "writer": "Mathieu Kassovitz",
+        "actor": "Mathieu Kassovitz"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Running with Scissors? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "Do you have recommendations written by Billy Crystal? That feels deeper than I thought. Maybe something like what you shared about Spider-Man."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on the user's preference for love stories, the movie with the strongest thematic connection might be \"Where We Belong\". The film explores themes of belonging, resilience, and overcoming adversity in a compelling and emotional manner.",
+      "text": "If you're looking for something darker and more haunting, 'True Blood' is a great choice. If you're interested in a more upbeat and inspiring story, 'Step Up' is a good option. If you're seeking a visually striking and comedic dance film, 'Dance Flick' is a perfect pick.",
       "constraints": {
-        "genre": "love",
+        "genre": "dance",
+        "plot": [
+          "written",
+          "billy"
+        ],
+        "name": "Spider-Man",
+        "language": "spa",
+        "director": "Mathieu Kassovitz",
+        "writer": "Billy Crystal",
+        "actor": "Billy Crystal"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does True Blood tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I would recommend \"True Blood\" and \"Cars\". \"True Blood\" is a dark and twisted vampire movie that explores the darkness of human nature. \"Cars\" is a heartwarming and humorous movie about friendship and redemption.",
+      "constraints": {
+        "genre": "dance",
         "plot": [
           "what",
-          "running"
+          "kind"
         ],
-        "name": "Running with Scissors",
-        "year": "1906",
-        "language": "English",
-        "writer": "Jack London",
-        "actor": "Clive Revill"
+        "name": "True Blood",
+        "language": "spa",
+        "director": "Mathieu Kassovitz",
+        "writer": "Billy Crystal",
+        "actor": "Billy Crystal"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thinking about Tron, could we shift toward stories about commanding? That feels deeper than I thought."
+      "text": "What's the mood of True Blood? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "If you're looking for something more profound, consider \"Groundhog Day\" (1993) or \"The Hobbit: An Unexpected Journey\" (2012). Both movies explore themes of leadership, sacrifice, and redemption in a way that \"Man on the Moon\" (1999) doesn't.",
+      "text": "If you're looking for something more whimsical and fantasy-like, consider \"The Yearling\" (1930). It's a heartwarming story about a young boy's friendship with an deer. \n\nIf you're interested in a fast-paced, high-energy movie, \"The Andromeda Strain\" (1971) might be up your alley. It's about scientists working to stop a deadly contagion that's killing the citizens of a small town.\n\nIf you're more interested in a dystopian and high-stakes story about competition and manipulation, \"The Selection\" (2012) might be the perfect film for you.",
       "constraints": {
-        "genre": "war",
-        "plot": [
-          "thinking",
-          "could"
-        ],
-        "name": "War",
-        "year": "1906",
-        "language": "English",
-        "writer": "Jack London",
-        "actor": "Clive Revill"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of 2012. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the user's preferences, 'Aloha' or 'Be Kind Rewind' would be good recommendations. 'Aloha' features a fascinating storyline about an island girl's defiance, and 'Be Kind Rewind' showcases the power of friendship and the importance of standing up for what you believe in.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "2012",
-        "year": "2012",
-        "language": "English",
-        "writer": "Jack London",
-        "actor": "Clive Revill"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Actually, now that I think about it, I might want the opposite."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the user's preference for war, action and drama, I would recommend either 'The Newton Boys' or 'The Scorpion King'. 'The Newton Boys' showcases the adrenaline and planning of a group of bank robbers, while 'The Scorpion King' features a desert warrior battling an evil army.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "actually",
-          "think"
-        ],
-        "name": "2012",
-        "year": "2012",
-        "language": "English",
-        "writer": "Jack London",
-        "actor": "Clive Revill"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Warrior? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the cues, 'Warrior' is the movie that best aligns with the user's preference. The plot revolves around a warrior seeking revenge against those who wronged him. The movie features epic action and thrilling fight scenes, providing an immersive and engaging cinematic experience.",
-      "constraints": {
-        "genre": "war",
+        "genre": "dance",
         "plot": [
           "what",
-          "warrior"
+          "true"
         ],
-        "name": "War",
-        "year": "2012",
-        "language": "English",
-        "writer": "Jack London",
-        "actor": "Clive Revill"
+        "name": "True Blood",
+        "language": "spa",
+        "director": "Mathieu Kassovitz",
+        "writer": "Billy Crystal",
+        "actor": "Billy Crystal"
       }
     }
   ]

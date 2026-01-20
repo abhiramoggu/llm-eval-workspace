@@ -1,21 +1,161 @@
 {
   "model_name": "mistral:7b",
-  "true_genre": "film noir",
+  "true_genre": "comedy",
   "conversation": [
     {
       "speaker": "USER",
-      "text": "I'm in the mood for a film noir movie. Could you recommend a few?"
+      "text": "I'm in the mood for a comedy movie. Could you recommend a few?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "If you're in the mood for a gripping film noir, I'd recommend watching \"Collateral\". It's a thrilling ride about a cab driver who becomes hostage to an engaging contract killer during one night in Los Angeles, featuring stars like Tom Cruise and Jamie Foxx. Another excellent choice is \"The Queen\", which offers a captivating portrayal of Queen Elizabeth II's struggle after the death of Princess Diana, with Helen Mirren delivering an award-winning performance as the monarch. Enjoy your movie time!",
+      "text": "I'd highly recommend \"The Wedding Planner\" for you! It's a delightful comedy starring Matthew McConaughey and Jennifer Lopez, where a successful wedding planner finds herself falling in love with the groom she's organizing a wedding for. Another one that might tickle your funny bone is \"Win a Date with Tad Hamilton!\", a charming romantic comedy featuring Topher Grace and Paris Hilton. Enjoy these entertaining films!",
       "constraints": {
-        "genre": "film noir",
+        "genre": "comedy",
         "plot": [
-          "noir",
+          "comedy",
           "could"
         ],
         "name": "You"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of {'name': 'Man on the Moon', 'year': '1999', 'genre': ['Andy Kaufman', 'Biographical film', 'Comedy', 'Historical period drama', 'Biography', 'Drama'], 'actor': ['Chuck Zito', 'Tracey Walter', 'Tom Dreesen', 'Tom Dreesen', 'Matt Price', 'Gerry Becker', 'Caroline Rhea', 'Michael Kelly', 'Jeff Conaway', 'Mary Lynn Rajskub', 'Patton Oswalt', 'Courtney Love', 'Danny DeVito', 'Vincent Schiavelli', 'Judd Hirsch', 'Carol Kane'], 'director': ['Milos Forman', 'Milo\u0161 Forman'], 'language': ['English Language', 'English'], 'plot': 'The life and career of legendary comedian Andy Kaufman.', 'original_id': '1039'}. Who stars in it? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for biographical films and Andy Kaufman, I'd like to recommend \"Man on the Moon\" again as it perfectly captures his life and career. If you're open to exploring a different genre, you might also enjoy \"Young Adult\". It stars Patton Oswalt and tells the story of a fiction writer returning to her hometown after a divorce, similar to how Andy Kaufman navigated his personal and professional life in \"Man on the Moon\". Enjoy the movies!",
+      "constraints": {
+        "genre": "love",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Patton",
+        "year": "1999",
+        "actor": "Vincent Schiavelli",
+        "director": "Milos Forman",
+        "language": "English Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Young Adult tell? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for adult content, I'd recommend \"Grown Ups\" as it revolves around a reunion of former high school basketball teammates, featuring stars like Adam Sandler, Kevin James, and Chris Rock. If you're interested in something more intriguing, there's also \"American Psycho\", a psychological horror film starring Christian Bale as a wealthy investment banker with a hidden psychopathic alter ego. Enjoy the cinematic journey!",
+      "constraints": {
+        "genre": "adult",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Young Adult",
+        "year": "1999",
+        "actor": "Vincent Schiavelli",
+        "director": "Milos Forman",
+        "language": "English Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Psycho? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you're looking for a movie with an adult theme and you mentioned \"Psycho\", I thought you might appreciate a film that offers both suspense and dark comedy. 'Not Another Teen Movie' (2001) is a satirical take on teen films, featuring Chris Evans in a humorous role. If you prefer a more dramatic and intense experience, 'Red Dawn' (1984) might be right up your alley. It's about a family caught in the midst of an invasion, with Jennifer Grey delivering a powerful performance.",
+      "constraints": {
+        "genre": "adult",
+        "plot": [
+          "what",
+          "psycho"
+        ],
+        "name": "Psycho",
+        "year": "1999",
+        "actor": "Vincent Schiavelli",
+        "director": "Milos Forman",
+        "language": "English Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Red Dawn. Could we explore teen next, though something emotional wouldn\u2019t hurt?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for teen-focused movies with a hint of emotion, I'd highly recommend \"Dazed and Confused\" (1993). It's a coming-of-age story set on the last day of school in 1976, filled with humor and heartfelt moments. Another film that might interest you is \"Edward Scissorhands\" (1990), a unique tale about an artificial man with scissors for hands who experiences life in a suburban community, starring the talented Johnny Depp. Enjoy the movies!",
+      "constraints": {
+        "genre": "teen",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Red Dawn",
+        "year": "1999",
+        "actor": "Vincent Schiavelli",
+        "director": "Milos Forman",
+        "language": "English Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Edward Scissorhands. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "\"If you're looking for a comedic take on fashion, I'd recommend 'Zoolander'. It's filled with hilarious cameos from famous personalities like David Bowie and Justin Theroux. On the other hand, if you prefer a more dramatic and action-packed film, 'Blood Diamond' starring Leonardo DiCaprio might be right up your alley. It delves into the dark world of diamond trading in war-torn Africa.\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "War",
+        "year": "1999",
+        "actor": "Vincent Schiavelli",
+        "director": "Milos Forman",
+        "language": "English Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Zoolander? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you're looking for a movie with a deeper mood, I'd recommend \"Flags of Our Fathers\" (2000). This powerful war drama tells the true story of six men who raised the flag at Iwo Jima during World War II, starring an impressive ensemble cast including Ryan Phillippe and Paul Walker.\n\nAlternatively, if you're interested in a different genre but still want something engaging, \"Pride and Prejudice\" (2005) could be a great choice. This adaptation of the classic novel follows Elizabeth Bennet as she navigates society's expectations, featuring an excellent cast led by Keira Knightley and Matthew Macfadyen.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Zoolander",
+        "year": "1999",
+        "actor": "Vincent Schiavelli",
+        "director": "Milos Forman",
+        "language": "English Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I\u2019m not sure anymore; perhaps I changed my mind."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your interest in war films, I'd suggest you might enjoy \"Fun with Dick and Jane\" more as it's a comedy about a couple turning to crime after losing all their money, rather than a war movie. However, if you're open to exploring a different genre, Milos Forman directed the musical drama \"Dancer in the Dark\" starring Bj\u00f6rk, which is a poignant and visually stunning film. Enjoy your viewing!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "Zoolander",
+        "year": "1999",
+        "actor": "Vincent Schiavelli",
+        "director": "Milos Forman",
+        "language": "English Language"
       }
     },
     {
@@ -24,323 +164,238 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "I'd highly recommend \"Elizabeth\" for its captivating portrayal of the early years of Elizabeth I's reign and the challenges she faced in becoming a monarch, featuring renowned actors like Fanny Ardant, Eric Cantona, and John Gielgud.\n\nIf you're interested in a more light-hearted approach, \"Aladdin\" (1992) is an animated musical with a touching love story and humorously entertaining characters, including Robin Williams as the lovable Genie!",
+      "text": "Given your preference for war genre movies from 1999, I'm afraid none of the suggested films quite fit that criteria. However, if you're open to exploring other thrilling titles, I'd recommend 'Zero Dark Thirty', a gripping tale about the decade-long hunt for Osama bin Laden. If you're in the mood for something different but still engaging, 'Johnny Mnemonic' might be worth checking out. It's a cyberpunk action film starring Keanu Reeves. Enjoy your movie time!",
       "constraints": {
-        "genre": "film noir",
+        "genre": "war",
         "plot": [
           "what",
           "said"
         ],
-        "name": "You"
+        "name": "Zoolander",
+        "year": "1999",
+        "actor": "Vincent Schiavelli",
+        "director": "Milos Forman",
+        "language": "English Language"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Aladdin. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "What kind of story does Zero Dark Thirty tell? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Given that you mentioned enjoying the sound of Aladdin and have a preference for film noir and plots with an intriguing twist, I'd highly recommend \"Kiss Kiss Bang Bang\" (2005). This film combines humor, mystery, and a bit of Hollywood glamour, all while featuring an outstanding ensemble cast led by Robert Downey Jr. Another movie you might enjoy is \"The Right Stuff\" (1983), which delves into the early days of the U.S. space program with a talented cast including Sam Shepard and Dennis Quaid. Both movies offer compelling narratives that could pique your interest!",
+      "text": "I'd recommend \"Proof of Life\" as it might align more closely with the war genre and the narrative you mentioned. In this film, Russell Crowe plays a professional negotiator who helps rescue an engineer kidnapped by anti-government guerrillas in South America. If you're up for something slightly different but still within your preference cues, \"The Hollow\" is also intriguing. This supernatural horror film follows a teenager tormented by an evil spirit living in his house, starring Kevin Zegers and Stacy Keach. Enjoy the watch!",
       "constraints": {
-        "genre": "film noir",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "Aladdin"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Kiss Kiss Bang Bang tell? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I'd highly recommend checking out \"The Dark Knight\". This movie is a gripping crime thriller that offers an intense exploration of good versus evil, featuring a remarkable performance by Heath Ledger as the Joker. If you're looking for something more comedic and offbeat, \"This Is Spinal Tap\" might be right up your alley. It's a mockumentary about a British rock band that is both hilarious and iconic!",
-      "constraints": {
-        "genre": "film noir",
+        "genre": "war",
         "plot": [
           "what",
           "kind"
         ],
-        "name": "Kiss Kiss Bang Bang"
+        "name": "Zero Dark Thirty",
+        "year": "1999",
+        "actor": "Vincent Schiavelli",
+        "director": "Milos Forman",
+        "language": "English Language"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of The Dark Knight? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "Could we look at films from around 1995? Hmm, I didn\u2019t expect that vibe. Maybe something like what you shared about Proof of Life."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your preference for film noir and a dark plot, I'd recommend \"Alex in Wonderland\" for its exploration of the complexities of the movie industry and artistic control. If you're interested in something more suspenseful, \"Paradise Lost\" might appeal to you, featuring a group of reality show contestants stranded on a deserted island with unexpected twists. Enjoy your viewing!",
+      "text": "Given that you mentioned 'Proof of Life' and we're looking for films from 1995, I'd recommend \"Once Upon a Time in the West\". This classic Western, directed by Milos Forman, features a mysterious stranger (Charles Bronson) who teams up with a notorious desperado to protect a beautiful widow. If you're up for a more recent film, 'The Pacifier' starring Vin Diesel might also interest you as it combines action and comedy with a 1995 feel. Enjoy the movies!",
       "constraints": {
-        "genre": "film noir",
-        "plot": [
-          "what",
-          "dark"
-        ],
-        "name": "The Dark Knight"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thanks for all the detail on X. Could we explore suspense next, something that surprises me emotionally?"
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I'm delighted to help! Given your preference for suspenseful movies that could surprise you emotionally, I'd highly recommend \"Conspiracy Theory\" starring Mel Gibson and Julia Roberts. The thrilling plot keeps you on the edge of your seat as a taxi driver uncovers a government conspiracy. Another gripping option is \"Jaws\", a classic about a group of characters battling a monstrous shark, which offers an intense emotional journey. Enjoy the suspense!",
-      "constraints": {
-        "genre": "suspense",
-        "plot": [
-          "thanks",
-          "detail"
-        ],
-        "name": "X"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Conspiracy Theory. Who stars in it? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on your preference for piracy and enjoyable films, I'd highly recommend \"Cutthroat Island\" starring Matthew Modine and Frank Langella. It's an action-packed adventure about a female pirate searching for a hidden treasure island. Alternatively, if you're looking for something lighter and family-friendly, \"The Goonies\" might be right up your alley! This film follows a group of young misfits on a quest to find a legendary pirate's long-lost treasure. Enjoy the ride!",
-      "constraints": {
-        "genre": "piracy",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "Conspiracy Theory"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Cutthroat Island tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "It seems you're interested in tales of adventure and intrigue! If you'd like a mix of piracy, mystery, and personal journey, I'd recommend watching 'Holes'. George Clooney, Jon Voight, and Shia LaBeouf star in this film about a man seeking the truth behind his son's murder.\n\nIf you're open to delving into a suspenseful thriller with a thought-provoking message on gun rights, 'You' might be an engaging choice. The film features Laurence Fishburne and Michael Rappaport in a gripping tale about the consequences of misusing firearms. Enjoy your movie time!",
-      "constraints": {
-        "genre": "piracy",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "Cutthroat Island"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Holes? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Given your preference for piracy and the intrigue of 'what's in holes', I'd recommend 'Man on Wire' as a captivating film that tells the story of Philippe Petit's daring high-wire walk between the Twin Towers, which could be seen as a metaphorical piracy act. Another intriguing choice is 'Hitch' - a film about the meeting between Alfred Hitchcock and Fran\u00e7ois Truffaut, two renowned directors discussing their craft, which might appeal to your interest in the world of cinema. Enjoy!",
-      "constraints": {
-        "genre": "piracy",
-        "plot": [
-          "what",
-          "holes"
-        ],
-        "name": "X"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "How about something primarily in Ukrainian Language? That sounds intriguing. Maybe something like what you shared about Holes."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I'd be delighted to help! If you're looking for a movie primarily in Ukrainian, I'd recommend \"The Gazebo\" (\u041d\u0438\u0432\u043a\u0438). This comedy-thriller involves a writer burying something under a new gazebo and the ensuing chaos. John McGiver, Glenn Ford, Martin Landau, and Debbie Reynolds star in this intriguing film.\n\nAlternatively, you might enjoy \"Lord Jim,\" which is not in Ukrainian but is an engrossing tale of redemption set in the 19th century. The cast includes some notable actors, although their names aren't provided in the data I have. Enjoy your movie night!",
-      "constraints": {
-        "genre": "language",
-        "plot": [
-          "something",
-          "primarily"
-        ],
-        "name": "RED",
-        "language": "Ukrainian Language"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Lord Jim. Who stars in it? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on your preference for Ukrainian language films and a plot that sounds engaging, I'd like to recommend \"Blow Out\" (1981). It's a thriller about a movie sound recordist who stumbles upon evidence of a murder, and it features actors such as John McMartin and Dennis Franz.\n\nAnother interesting film is \"Restless\" (2006), a drama set in the last summer of freedom for a group of young adults, starring Mia Wasikowska, Hayley Atwell, Jane Adams, Rufus Sewell, and Charlotte Rampling. Although it's not in Ukrainian, its compelling storyline might appeal to you. Enjoy!",
-      "constraints": {
-        "genre": "language",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "X",
-        "language": "Ukrainian Language"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Blow Out tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "\"Both 'Prometheus' and 'Taxi Driver' are thought-provoking films that delve into complex themes about humanity. In 'Prometheus', you'll find a contemporary quest story set in end-of-millennium Britain, while 'Taxi Driver' offers a gripping portrait of a troubled taxi driver in New York City, starring the iconic Robert De Niro. Enjoy the journey through these intriguing narratives!\"",
-      "constraints": {
-        "genre": "language",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "Blow Out",
-        "language": "Ukrainian Language"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of X? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "\"Both 'American Dreamz' and 'This Is Spinal Tap' might intrigue you, given your interest in deeper themes. 'American Dreamz' explores the backstage world of a popular reality TV show, while 'This Is Spinal Tap' humorously chronicles the challenges faced by an English rock band. These movies offer unique perspectives on contemporary societal issues.\"",
-      "constraints": {
-        "genre": "language",
-        "plot": [
-          "what",
-          "feels"
-        ],
-        "name": "Deep",
-        "language": "Ukrainian Language"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Do you have recommendations written by Roderick Thorp? Maybe I\u2019m overthinking it, but it sounds fascinating. Maybe something like what you shared about American Dreamz."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I'd be happy to help! If you're interested in movies written by Roderick Thorp, I'd recommend checking out \"Peep World.\" This film follows four siblings who implode after the release of a book written about them. It stars an impressive cast including Rainn Wilson, Judy Greer, and Sarah Silverman. Another intriguing option is \"Fantastic Beasts and Where to Find Them,\" where magizoologist Newt Scamander goes on a worldwide tour to research magical creatures. This film features an incredible ensemble cast led by Eddie Redmayne. Enjoy your movie time!",
-      "constraints": {
-        "genre": "language",
-        "plot": [
-          "written",
-          "something"
-        ],
-        "name": "Thor",
-        "language": "Ukrainian Language",
-        "writer": "Roderick Thorp"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of American Dreamz. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on your preference for films like American Dreamz, I'd recommend both American Dreamz and Easy A. American Dreamz offers a satirical take on reality TV with an all-star cast, while Easy A is a comedic spin on the classic novel The Scarlet Letter, starring Emma Stone in a memorable performance. Enjoy!",
-      "constraints": {
-        "genre": "language",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "American Dreamz",
-        "language": "Ukrainian Language",
-        "writer": "Roderick Thorp"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of The Scarlet Letter? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "\"Based on your interest in intriguing plots and language, I would recommend watching 'Eve's Bayou'. It's a gothic drama with a captivating storyline about secrets, lies, and mystic forces within an affluent family. Or, if you're looking for a comedy with a twist, 'Witless Protection' might be a fun choice. It features Larry the Cable Guy and follows a small-town sheriff through a series of comedic mishaps after witnessing what he believes to be a kidnapping.\"",
-      "constraints": {
-        "genre": "language",
-        "plot": [
-          "what",
-          "scarlet"
-        ],
-        "name": "The Scarlet Letter",
-        "language": "Ukrainian Language",
-        "writer": "Roderick Thorp"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does The Cable Guy tell? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I'd highly recommend watching \"Eve's Bayou.\" This film is a gothic drama that unfolds a captivating story of secrets, lies, and mystical forces within an affluent family. Notable actors like Lynn Whitfield and Jurnee Smollett-Bell bring the characters to life in this intriguing tale.\n\nAlternatively, if you're looking for something comedic with a fun twist, \"Witless Protection\" might be just what you need! This film features Larry the Cable Guy and stars a small-town sheriff on an unexpected adventure full of mishaps. Enjoy the ride!",
-      "constraints": {
-        "genre": "language",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "The Cable Guy",
-        "language": "Ukrainian Language",
-        "writer": "Roderick Thorp"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Could we look at films from around 1903? That sounds intriguing. Maybe something like what you shared about The Cable Guy."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Given that you're interested in films from around 1903, I'm sorry for any confusion as movies from that year don't have the same format and production quality as modern films. However, if we move forward to more contemporary times, I'd highly recommend \"Live Free or Die Hard\" (2007). This action-packed thriller stars Bruce Willis as John McClane and is a great continuation of the iconic Die Hard series. If you're open to something a bit different, \"Psychic Experiment\" might intrigue you with its psychological twists and turns. It's not a typical 1903 film but it certainly offers an unique viewing experience!",
-      "constraints": {
-        "genre": "language",
+        "genre": "war",
         "plot": [
           "could",
           "look"
         ],
-        "name": "The Cable Guy",
-        "language": "Ukrainian Language",
-        "writer": "Roderick Thorp",
-        "year": "1903"
+        "name": "Proof of Life",
+        "year": "1995",
+        "actor": "Vincent Schiavelli",
+        "director": "Milos Forman",
+        "language": "English Language"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Die Hard tell? Hmm, I didn\u2019t expect that vibe."
+      "text": "I like the sound of W.. Who stars in it? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Given your preference for the Ukrainian language and stories set around questions of right and wrong, I'd recommend \"You\" (2014). This thriller explores themes of personal responsibility and the consequences of violence in a thought-provoking manner. If you're interested in a different genre, \"Flatliners\" (1990) is another intriguing option that delves into the mysteries of life after death with an all-star cast. Enjoy your movie time!",
+      "text": "Given that you mentioned a preference for war genre films and a specific actor, Vincent Schiavelli, I'd like to recommend \"Rocky IV\". This film is a classic sports drama where Sylvester Stallone reprises his role as Rocky Balboa against a formidable Soviet opponent. If you're open to exploring a more unconventional war-like scenario, you might also enjoy \"Wag the Dog\", which uses political intrigue and Hollywood magic to create a fictitious war. Both films offer engaging plots with memorable performances by various talented actors, including Vincent Schiavelli. Enjoy the watch!",
       "constraints": {
-        "genre": "language",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "Die Hard",
-        "language": "Ukrainian Language",
-        "writer": "Roderick Thorp",
-        "year": "1903"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Flatliners. Who stars in it? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I'd highly recommend \"Restless\" to you, especially since it seems like you enjoy movies with deeper plots. This film follows Ari, a character who, much like yours in Flatliners, has a complex emotional journey. The star-studded cast featuring Mia Wasikowska, Hayley Atwell, and Rufus Sewell adds to its appeal.\n\nIf you're interested in something more adventure-based, \"To Build a Fire\" might intrigue you as well. It's a classic tale of survival against harsh elements, set in the unforgiving Alaskan wilderness. Enjoy your movie time!",
-      "constraints": {
-        "genre": "language",
+        "genre": "war",
         "plot": [
           "like",
           "sound"
         ],
-        "name": "Flatliners",
-        "language": "Ukrainian Language",
-        "writer": "Roderick Thorp",
-        "year": "1903"
+        "name": "W.",
+        "year": "1995",
+        "actor": "Vincent Schiavelli",
+        "director": "Milos Forman",
+        "language": "English Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I\u2019m not sure anymore; perhaps I changed my mind."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "\"Based on your interest in war films, I'd like to recommend 'American Dreamz' (2006). It's a comedy that explores the world of reality television and politics with an ensemble cast including Dennis Quaid and Willem Dafoe. If you're open to venturing outside of 1995, 'A Farewell to Arms' (1929) is another compelling war movie starring Gary Cooper and Helen Hayes, focusing on a love story amidst the backdrop of World War I.\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "W.",
+        "year": "1995",
+        "actor": "Vincent Schiavelli",
+        "director": "Milos Forman",
+        "language": "English Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does A Farewell to Arms tell? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend \"The Godfather Part II\" for you. This film is a masterpiece that interweaves the early life of Vito Corleone with his son Michael's story, portraying a powerful saga of family and crime in the 1920s and '50s. Another intriguing option is \"The Rite\", which stars Anthony Hopkins as an expert exorcist who takes a seminary student under his wing to perform an exorcism, offering a unique blend of drama and supernatural elements. Both films have strong casts and engaging storylines that I believe you might appreciate.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "year": "1995",
+        "actor": "Vincent Schiavelli",
+        "director": "Milos Forman",
+        "language": "English Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Godfather Part II? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for a movie set in a war genre, directed by Milos Forman and featuring Vincent Schiavelli, you might enjoy \"The Good, the Bad and the Ugly\" (1966). This epic spaghetti western is known for its captivating plot and star-studded cast, including Clint Eastwood and Eli Wallach.\n\nIf you're open to exploring more contemporary films, \"The Imaginarium of Doctor Parnassus\" (2009) could also be a fascinating watch. Directed by Terry Gilliam, it tells the tale of an immortal theater troupe and features performances from actors like Heath Ledger, Johnny Depp, and Jude Law.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "part"
+        ],
+        "name": "Her",
+        "year": "1995",
+        "actor": "Vincent Schiavelli",
+        "director": "Milos Forman",
+        "language": "English Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thinking about W., could we shift toward stories about sith? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you're interested in stories that are deeper and involve a shift towards the sith, I'd highly recommend \"Eternal Sunshine of the Spotless Mind.\" It's a unique tale about a couple erasing each other from their memories after a bitter breakup, starring Jim Carrey and Kate Winslet. Another intriguing option could be \"The Sixth Sense,\" directed by M. Night Shyamalan, where a child psychologist helps a young boy communicate with the dead, leading to an unexpected reconciliation with his estranged wife. Enjoy the cinematic journey!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "thinking",
+          "could"
+        ],
+        "name": "W.",
+        "year": "1995",
+        "actor": "Vincent Schiavelli",
+        "director": "Milos Forman",
+        "language": "English Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for war films and the actor Vincent Schiavelli, I'd like to recommend \"The Big Year\" for its comedic take on a year-long bird-spotting competition featuring actors Corbin Bernsen, Owen Wilson, and Steve Martin. If you're in the mood for something darker, \"Dark City\" might be intriguing with its noir-ish mystery and stars like Jennifer Connelly, Rufus Sewell, and Kiefer Sutherland. Enjoy the movies!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "W.",
+        "year": "1995",
+        "actor": "Vincent Schiavelli",
+        "director": "Milos Forman",
+        "language": "English Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Dark City. Who stars in it? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you enjoyed the vibe of \"Dark City\" and are a fan of Vincent Schiavelli, I'd like to recommend \"The Karate Kid\" (1984). In this film, William Zabka, who also starred in \"Hot Tub Time Machine,\" plays one of the main antagonists. The story revolves around a bullied teenager learning martial arts and finding courage with the help of a kindly mentor, Mr. Miyagi, played by the legendary Pat Morita.\n\nAlternatively, if you're intrigued by unusual and thought-provoking plots, \"The Box\" (2009) might be worth checking out. This film features Frank Langella as a mysterious man who offers a couple a box with the power to grant them a large sum of money in exchange for a life. However, they soon realize that their choice comes at a deadly cost. Enjoy the movies!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Dark City",
+        "year": "1995",
+        "actor": "Vincent Schiavelli",
+        "director": "Milos Forman",
+        "language": "English Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Karate Kid tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems like you might be more interested in a film with a different genre than \"The Karate Kid\". I'd recommend checking out \"What's the Worst That Could Happen?\". This comedy features an intriguing plot about a rich man and a thief, starring Martin Lawrence and Danny DeVito. Or if you're up for something more dramatic, there's \"The Way Back Home\" with Danny Nucci and Ruby Dee, which tells a life-affirming story of love and loss. Enjoy!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The Karate Kid",
+        "year": "1995",
+        "actor": "Vincent Schiavelli",
+        "director": "Milos Forman",
+        "language": "English Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Karate Kid? That sounds intriguing."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "\"Two Can Play That Game might be an intriguing watch for you, as it's a romantic comedy that explores a series of heart games between two people, starring talented actors like Vivica A. Fox and Tamala Jones.\"\n\n\"If you're interested in science fiction, Blade Runner could be a great choice. This classic film features Harrison Ford and an engaging plot about a blade runner pursuing rogue replicants that have returned to Earth. Both films are definitely worth checking out!\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "karate"
+        ],
+        "name": "The Karate Kid",
+        "year": "1995",
+        "actor": "Vincent Schiavelli",
+        "director": "Milos Forman",
+        "language": "English Language"
       }
     }
   ]

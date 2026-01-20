@@ -1,18 +1,17 @@
 {
   "model_name": "gemma:2b",
-  "true_genre": "novella",
+  "true_genre": "non-fiction",
   "conversation": [
     {
       "speaker": "USER",
-      "text": "I'm in the mood for a remake movie. Could you recommend a few?"
+      "text": "I'm in the mood for a parody movie. Could you recommend a few?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "If you're in the mood for a compelling romantic drama with a southern touch, \"The Seduction of Joe Tynan\" starring Melvyn Douglas and Meryl Streep might be your perfect pick. If you're looking for a darkly comedic and heartwarming movie with a quirky protagonist, \"Trees Lounge\" with Mimi Rogers and Daniel Baldwin is an excellent choice. If you're interested in a suspenseful and thrilling film with great performances, \"Shattered\" starring Corbin Bernsen and Tom Berenger is a perfect recommendation.",
+      "text": "For a comedic parody about an unsuspecting group of twenty-somethings facing natural disasters and catastrophic events, \"Disaster Movie\" (2008) might be a great choice. The movie satirizes the absurdity and fate of such situations.",
       "constraints": {
-        "genre": "remake",
+        "genre": "parody",
         "plot": [
-          "remake",
           "could"
         ],
         "name": "You"
@@ -20,324 +19,75 @@
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Her. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "What kind of story does Disaster Movie tell? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "For a more lighthearted and humorous recommendation, consider \"Flubber\". The plot involves an absent-minded professor discovering a super-bouncy substance and the ensuing chaos.",
+      "text": "If you're looking for something with a deeper and more complex plot, \"This Is Spinal Tap\" might be your cup of tea. \"Holes\" offers a thought-provoking journey through a tragic event, while \"Flatliners\" presents a chilling exploration of life and death. \"Paycheck\" provides a thrilling and suspenseful escape with intriguing characters and a captivating mystery.",
       "constraints": {
-        "genre": "remake",
+        "genre": "disaster",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Disaster Movie"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Thematically, \"Butch Cassidy and the Sundance Kid\" and \"You\" seem to be the most fitting recommendations. Both movies deal with morally complex issues and have compelling narratives.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "Disaster Movie"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Butch Cassidy and the Sundance Kid. Who stars in it? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "From the clues, \"The Other Guys\" and \"Uptown Girls\" seem to be the best choices. Both movies are great examples of dance films with a humorous tone. They also feature interesting casts with memorable performances.",
+      "constraints": {
+        "genre": "dance",
         "plot": [
           "like",
           "sound"
+        ],
+        "name": "Butch Cassidy and the Sundance Kid"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Other Guys? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It sounds like you might be interested in movies about resilience and survival. \"This Means War\" and \"Riddick\" seem like good choices. \"Chain Reaction\" might also be interesting if you're looking for something with a focus on business and small businesses.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "what",
+          "other"
         ],
         "name": "Her"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Flubber tell? Hmm, I didn\u2019t expect that vibe."
+      "text": "Could we switch to something else by Marc Lawrence? That sounds intriguing. Maybe something like what you shared about This Means War."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on the user's preference for a remake and the keywords describing a morally complex and humorous story, I would recommend **The Equalizer**. The film features a great cast and tackles the issue of false testimony with wit and intelligence.",
-      "constraints": {
-        "genre": "remake",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "Flubber"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of X? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "If you're looking for something with a similar feel to \"That feels deeper than I thought\", I recommend either \"Witless Protection\" or \"Monsters, Inc.\". Both movies deal with a small-town sheriff caught in a dangerous situation due to a beautiful woman's safety.",
-      "constraints": {
-        "genre": "remake",
-        "plot": [
-          "what",
-          "feels"
-        ],
-        "name": "Deep"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "How about something primarily in Norwegian Language? That feels deeper than I thought. Maybe something like what you shared about Monsters, Inc.."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "For a movie primarily in Norwegian language with the theme you described, I would recommend \"Zookeeper\" (2011). The story follows a group of zoo animals who decide to break their code of silence to help their lovable zookeeper find love.",
-      "constraints": {
-        "genre": "language",
-        "plot": [
-          "something",
-          "primarily"
-        ],
-        "name": "Monsters, Inc.",
-        "language": "Norwegian Language"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Monsters, Inc. tell? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "The recommendation is 'I Heart Huckabees'. It's a heartwarming and thought-provoking movie about a happy couple solving existential issues.",
-      "constraints": {
-        "genre": "language",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "Monsters, Inc.",
-        "language": "Norwegian Language"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I\u2019m not sure anymore; perhaps I changed my mind."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the user's preference for Norwegian language and the keywords describing movies with historical settings, I recommend \"The Great Gatsby\". The movie is set in the Jazz Age and features a captivating story about a wealthy man's obsession with his lost love.",
-      "constraints": {
-        "genre": "language",
-        "plot": [
-          "sure",
-          "perhaps"
-        ],
-        "name": "Monsters, Inc.",
-        "language": "Norwegian Language"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Lost? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the user's preference for a movie with a hopeful and heartwarming tone, 'Lady in the Water' or 'Anyone But You' would be the better recommendations. Both movies deal with complex and emotional themes with positive endings and focus on human connection and resilience.",
-      "constraints": {
-        "genre": "language",
-        "plot": [
-          "what",
-          "lost"
-        ],
-        "name": "Lost",
-        "language": "Norwegian Language"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of X. Who stars in it? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "For a movie with a similar vibe to A Tale of Two Cities, the one that immediately jumps out is 'Rockshow'. It's an epic rock concert film with an intriguing plot and strong performances from Paul McCartney and the Wings.",
-      "constraints": {
-        "genre": "language",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "X",
-        "language": "Norwegian Language"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Could we switch to something else by Sanaa Hamri? That feels deeper than I thought. Maybe something like what you shared about A Tale of Two Cities."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the user's preference for a movie with a deep plot, I recommend \"Lord Jim\" or \"The Seduction of Joe Tynan.\" Both movies explore complex themes and feature memorable characters.",
-      "constraints": {
-        "genre": "language",
-        "plot": [
-          "could",
-          "switch"
-        ],
-        "name": "RED",
-        "language": "Norwegian Language",
-        "director": "Sanaa Hamri"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Lord Jim tell? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "If the user is looking for a story about an affair and murder, 'Utsav' (2022) starring Anupam Kher and Rekha would be a good recommendation. It follows the tragic story of a courtesan hiding from a ruthless brother-in-law.\n\nIf the user prefers a broader epic with multiple storylines, 'The Odyssey' (2009) starring Vanessa L. Williams and Eric Roberts would be a better choice. It's an adaptation of Homer's epic poem and features captivating stories of heroes and monsters.\n\nIf the user enjoys dystopian thrillers with complex characters, 'Divergent' (2011) starring Shailene Woodley would be a perfect fit. It's a thought-provoking story about discrimination and identity exploration.",
-      "constraints": {
-        "genre": "language",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "X",
-        "language": "Norwegian Language",
-        "director": "Sanaa Hamri"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Forget what I said before \u2014 that might\u2019ve been too specific."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Flatliners would be a great choice. The movie explores the haunting and philosophical themes of life and death through a unique and immersive perspective.",
-      "constraints": {
-        "genre": "language",
-        "plot": [
-          "what",
-          "said"
-        ],
-        "name": "X",
-        "language": "Norwegian Language",
-        "director": "Sanaa Hamri"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of X? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the user's preference for action-thrill movies, I would recommend either \"End of Watch\" or \"The Expendables 2\". Both films offer fast-paced action and intense plotlines that will keep the user on the edge of their seat.",
-      "constraints": {
-        "genre": "language",
-        "plot": [
-          "what"
-        ],
-        "name": "X",
-        "language": "Norwegian Language",
-        "director": "Sanaa Hamri"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of End of Watch. Who stars in it? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "If you're looking for a film with a similar sound to \"End of Watch,\" I would recommend \"Madame Bovary.\" It's another documentary-style film about a woman searching for meaning in her life.",
-      "constraints": {
-        "genre": "language",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "End of Watch",
-        "language": "Norwegian Language",
-        "director": "Sanaa Hamri"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thanks for all the detail on Madame Bovary. Could we explore documentary next, though something emotional wouldn\u2019t hurt?"
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the user's preference for documentaries and the genre description, \"X\" or \"Can You Keep a Secret?\" would be good recommendations. Both movies explore complex themes and provide insightful glimpses into human experiences.",
-      "constraints": {
-        "genre": "documentary",
-        "plot": [
-          "thanks",
-          "detail"
-        ],
-        "name": "X",
-        "language": "Norwegian Language",
-        "director": "Sanaa Hamri"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does X tell? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "The first recommendation is perfect for you. It's an exhilarating superhero movie with a strong sense of imagination and humor. It's a great choice for fans of the genre.",
-      "constraints": {
-        "genre": "documentary",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "X",
-        "language": "Norwegian Language",
-        "director": "Sanaa Hamri"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of X? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "\"If you're looking for something more lighthearted, 'Smilla's Sense of Snow' is a great choice. If you're more interested in a historical drama with compelling characters, 'The Taming of the Shrew' is a perfect pick.\"",
-      "constraints": {
-        "genre": "documentary",
-        "plot": [
-          "what",
-          "didn"
-        ],
-        "name": "X",
-        "language": "Norwegian Language",
-        "director": "Sanaa Hamri"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Actually, now that I think about it, I might want the opposite."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "From the keywords, \"actually think\" and \"the opposite,\" I would recommend **\"Cinder\" (2012)**. The movie explores themes of deception, greed, and love in a darkly humorous and thought-provoking way.",
-      "constraints": {
-        "genre": "documentary",
-        "plot": [
-          "actually",
-          "think"
-        ],
-        "name": "X",
-        "language": "Norwegian Language",
-        "director": "Sanaa Hamri"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of 2012. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the user's preference for documentaries and the 2012 release, 'This Means War' and 'Skyfall' would be strong recommendations. 'This Means War' features epic battle sequences and a complex story about loyalty and guilt, while 'Skyfall' showcases the thrill and suspense of a high-octane espionage movie.",
-      "constraints": {
-        "genre": "documentary",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "2012",
-        "language": "Norwegian Language",
-        "director": "Sanaa Hamri",
-        "year": "2012"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Could we switch to something else by John Schultz? Hmm, I didn\u2019t expect that vibe. Maybe something like what you shared about This Means War."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Here are two potential recommendations based on the user's preferences:\n\n- **The Words (2012)**: This biographical war film explores the consequences of stealing another man's work, featuring a compelling performance by Nora Arnezeder.\n\n- **Pearl Harbor (2001)**: This historical war film depicts the horrors of the Japanese invasion of Pearl Harbor and the unwavering courage of those who fought to defend their homeland.",
+      "text": "Based on the user's preference for war films with a focus on relationships and betrayals, I would recommend **The Change-Up** (2011) starring Gregory Itzin and Mircea Monroe. It's a high-octane action comedy that explores themes of love, loyalty, and forgiveness in a thrilling and entertaining way.",
       "constraints": {
         "genre": "war",
         "plot": [
@@ -345,9 +95,274 @@
           "switch"
         ],
         "name": "War",
-        "language": "Norwegian Language",
-        "director": "John Schultz",
-        "year": "2012"
+        "director": "Marc Lawrence",
+        "writer": "Marc Lawrence"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? That sounds intriguing."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a war movie, consider \"The Other Guys\" starring Natalie Zea and Lindsay Sloane. It's about two mismatched detectives who seize an opportunity to step up like the city's top cops.\n\nIf you're looking for something more historical, \"A Bridge Too Far\" starring Hardy Kr\u00fcger and Edward Fox is a great choice. It depicts a daring operation to capture bridges during World War II.\n\nFor a more thought-provoking film, \"Big Fish\" starring Jessica Lange and Matthew McGrory is a must-watch. It's a story about a father's struggle to understand his son's life and the truth about his past.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "director": "Marc Lawrence",
+        "writer": "Marc Lawrence"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Other Guys tell? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for a war movie with a deeper thematic layer, 'The Siege' (1998) starring Mark Valley and Bruce Willis might be the perfect choice. It explores the psychological trauma of war and the moral complexities of combat. \n\nIf you're interested in a more historical perspective, 'Black Hawk Down' (2001) directed by Michael Mann, might be a good fit. The film examines the controversial US intervention in Somalia and the devastating impact it had on both the soldiers and the local population. \n\nIf you're seeking a thought-provoking drama about the abuse of firearms, 'You' (2014) starring Ryan Gosling is an excellent choice. The film tackles the complexities of gun ownership and the ethical implications of wielding a weapon in a society where the right to bear arms is a fundamental right.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her",
+        "director": "Marc Lawrence",
+        "writer": "Marc Lawrence"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Black Hawk Down? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for a thought-provoking and visually stunning war film, \"Platoon\" or \"The Wraith\" would be excellent choices. If you're interested in a more poignant and emotional story about a love lost in war, \"Proof of Life\" is a great option. And if you're interested in a historical action film about a warrior fighting for his life and the freedom of his people, \"Utsav\" is a compelling choice.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "black"
+        ],
+        "name": "Black Hawk Down",
+        "director": "Marc Lawrence",
+        "writer": "Marc Lawrence"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by William Davies? That feels deeper than I thought. Maybe something like what you shared about Utsav."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a war movie recommendation, \"The Patriot\" (2000) starring Kirk Fox and Tom Wilkinson would be a great choice. It is a powerful story about a farmer's journey to lead the Colonial Militia against a tyrannical British officer.\n\nOr, if you're looking for something with a fantastical element, \"Pan's Labyrinth\" (2006) starring \u00c1lex Angulo and Sergi L\u00f3pez would be a unique and immersive experience.\n\nIf you prefer a more historical period piece, \"The White Countess\" (2005) starring Lynn Redgrave and Vanessa Redgrave would be a compelling tale about a blind American diplomat's relationship with a young Russian refugee.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "written",
+          "william"
+        ],
+        "name": "RED",
+        "director": "Marc Lawrence",
+        "writer": "William Davies"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Pan's Labyrinth. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The sound of Pan's Labyrinth would be more appreciated by those who enjoy war films with high-octane action and explosions. Catch-22 is a classic war film with a powerful performance by Marlon Brando and a witty screenplay.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Pan's Labyrinth",
+        "director": "Marc Lawrence",
+        "writer": "William Davies"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Catch-22? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given the user's preference for war, action and intrigue, I would recommend either \"Gladiator\" or \"The Siege\". \"Gladiator\" showcases the brutalness of war and the determination of the soldiers, while \"The Siege\" portrays the psychological and emotional struggles of a soldier facing death.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "catch"
+        ],
+        "name": "X",
+        "director": "Marc Lawrence",
+        "writer": "William Davies"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Gladiator tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference for war stories and historical dramas, I would recommend 'Hotel Rwanda' or 'Utsav'. 'Hotel Rwanda' is a powerful and moving film about a hotel manager who takes in a large group of refugees, while 'Utsav' is a historical drama about a courtesan who falls in love with a powerful king.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Gladiator",
+        "director": "Marc Lawrence",
+        "writer": "William Davies"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Ben Roethlisberger. I can\u2019t decide if I\u2019d enjoy it or be scared by it. Maybe something like what you shared about Hotel Rwanda."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for something intense and thrilling with a compelling plot, \"Incendies\" (2010) starring Ahmad Massad and M\u00e9lissa D\u00e9sormeaux-Poulin might be your cup of tea. Alternatively, \"A Walk Among the Tombstones\" (2014) with Boyd Holbrook and David Harbour might be more your style, with its psychological thriller elements.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Hotel Rwanda",
+        "director": "Marc Lawrence",
+        "writer": "William Davies",
+        "actor": "Ben Roethlisberger",
+        "language": "ger"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Incendies. Who stars in it? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a deeper and more intriguing recommendation, consider \"Castle in the Sky\". It explores the themes of artistic pursuit and the human spirit through a compelling narrative about two people seeking immortality.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Incendies",
+        "director": "Marc Lawrence",
+        "writer": "William Davies",
+        "actor": "Ben Roethlisberger",
+        "language": "ger"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Castle in the Sky tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Considering the user's interest in war and historical themes, I would recommend either **American Sniper** or **A Bridge Too Far**. Both movies offer thrilling narratives set during wartime, with compelling historical figures and stories that resonate with the user's preference for war and historical stories.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Castle in the Sky",
+        "director": "Marc Lawrence",
+        "writer": "William Davies",
+        "actor": "Ben Roethlisberger",
+        "language": "ger"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of American Sniper? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for something with a deeper and more emotional story, then \"Eve's Bayou\" or \"The Only Good Indian\" would be great options. Both movies explore complex themes of family, secrets, and prejudice.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "american"
+        ],
+        "name": "American Sniper",
+        "director": "Marc Lawrence",
+        "writer": "William Davies",
+        "actor": "Ben Roethlisberger",
+        "language": "ger"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Robert Zemeckis? Hmm, I didn\u2019t expect that vibe. Maybe something like what you shared about Eve's Bayou."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference for war films with historical accuracy and compelling characters, I would recommend **Zulu** (2013) or **The Imitation Game** (2014). Both movies offer gripping narratives about historical figures facing immense challenges during World War II.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Eve's Bayou",
+        "director": "Robert Zemeckis",
+        "writer": "Robert Zemeckis",
+        "actor": "Eve",
+        "language": "ger"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Zulu tell? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for a story that explores the complexities of war and its consequences, consider \"Schindler's List\". This poignant film depicts the moral dilemma faced by a powerful industrialist during the Holocaust.\n\nIf you're interested in a heartwarming story about the power of friendship and the importance of human connection, \"Monsters, Inc.\" is a great choice. The film's humor and heartwarming moments will leave you with a smile on your face.\n\nIf you're looking for a thought-provoking and thought-provoking film that raises questions about humanity's impact on the world, \"Prometheus\" is an excellent option.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Zulu",
+        "director": "Robert Zemeckis",
+        "writer": "Robert Zemeckis",
+        "actor": "Eve",
+        "language": "Zulu"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, \"Cast Away\" seems to be the most fitting recommendation. It's a gripping film about a FedEx executive's journey to rebuild his life amidst the harshness of an isolated island.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "Zulu",
+        "director": "Robert Zemeckis",
+        "writer": "Robert Zemeckis",
+        "actor": "Eve",
+        "language": "Zulu"
       }
     }
   ]

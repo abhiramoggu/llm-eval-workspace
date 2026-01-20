@@ -1,20 +1,103 @@
 {
   "model_name": "mistral:7b",
-  "true_genre": "virtual reality",
+  "true_genre": "parody",
   "conversation": [
     {
       "speaker": "USER",
-      "text": "I'm in the mood for a family movie. Could you recommend a few?"
+      "text": "I'm in the mood for a boxing movie. Could you recommend a few?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "I'd highly recommend \"Mr. Bean's Holiday\" for a lighthearted family movie adventure! It's a delightful comedy about an unlikely hero's journey through France, filled with hilarious mishaps and charming characters.\n\nIf you're up for something more action-packed yet still suitable for the whole family, \"The Crocodile Hunter: Collision Course\" is another great option. It features the real-life adventurer Steve Irwin on an exciting mission to save a crocodile! Enjoy the ride!",
+      "text": "It sounds like you're in the mood for a gritty boxing movie! I'd highly recommend \"Where We Belong\" \u2013 a story about a street hustler turned boxer, fighting his way through challenges both inside and outside the ring. The film features a compelling cast, including actors such as Rotimi Paul and Julianne Hough.\n\nIf you fancy something different, \"True Blood\" is another interesting choice. It's a gripping tale about a man returning to his old neighborhood after years apart, seeking redemption amidst gang conflicts and police drama. The movie stars the talented Ice Cube and Chad Coleman. Enjoy the watch!",
       "constraints": {
-        "genre": "family",
+        "genre": "boxing",
         "plot": [
+          "boxing",
           "could"
         ],
-        "name": "You"
+        "name": "X"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of True Blood. Who stars in it? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you found True Blood unexpected but enjoyed its sound, I think you might appreciate Rocky IV. It's a gripping boxing drama starring Sylvester Stallone as the underdog facing a formidable Soviet opponent. Another film worth checking out is The Other Guys, a comedy featuring an ensemble cast including Will Ferrell and Mark Wahlberg that offers a fresh take on the cop genre with plenty of humor. Enjoy exploring these recommendations!",
+      "constraints": {
+        "genre": "boxing",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "True Blood"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Rocky IV tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It sounds like you're a fan of stories with a strong focus on character development, so I'd highly recommend \"Million Dollar Baby.\" This film follows an ill-tempered boxing coach and an aspiring fighter who forms a close bond. The plot is engaging and the performances by Clint Eastwood and Hilary Swank are truly captivating.\n\nIf you're intrigued by a more spiritual, emotional drama, \"The Way Back Home\" might also appeal to you. This film tells a story of love, loss, and self-discovery set in Central Florida, featuring Danny Nucci and Ruby Dee in starring roles. Both movies offer compelling narratives within the boxing genre, but they approach it from slightly different perspectives. Enjoy your movie time!",
+      "constraints": {
+        "genre": "boxing",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Rocky"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Million Dollar Baby? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for a movie that delves deeper into themes similar to 'Million Dollar Baby,' I'd recommend checking out 'Taxi Driver.' Directed by Martin Scorsese, this film explores the complexities of one man's life as he navigates his personal and professional struggles in New York City. Another intriguing choice is 'I Heart Huckabees' where a team of detectives helps others solve existential issues. With a star-studded cast featuring Dustin Hoffman, Lily Tomlin, and Naomi Watts, this film offers a unique blend of comedy and drama that might resonate with you!",
+      "constraints": {
+        "genre": "boxing",
+        "plot": [
+          "what",
+          "million"
+        ],
+        "name": "Million Dollar Baby"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Collin Kahey. That feels deeper than I thought. Maybe something like what you shared about Million Dollar Baby."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend \"Blade Runner\" for you, Collin Kahey isn't in this one but it's a classic sci-fi film noir with a captivating plot about a blade runner pursuing rogue artificial beings who have returned to Earth. Harrison Ford delivers an exceptional performance as the protagonist. Another intriguing choice is \"The Ice Storm\", a drama set in the 1970s suburban America exploring the complexities of relationships and societal norms, starring actors like Kevin Kline and Joan Allen. Enjoy your movie time!",
+      "constraints": {
+        "genre": "boxing",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Million Dollar Baby",
+        "actor": "Collin Kahey"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Blade Runner. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your interest in movies like Blade Runner and your preference for films featuring Collin Kahey, I'd recommend you check out \"Unleashed\" starring Jet Li and Morgan Freeman. It's an action-packed film about a man trying to escape his enslaved past, which seems fitting with the sound you've expressed liking.\n\nAnother movie that might appeal is District 9, featuring Sharlto Copley. This Sci-Fi thriller explores themes of alienation and violence, much like Blade Runner, but in a more unique and modern setting. Enjoy the movies!",
+      "constraints": {
+        "genre": "boxing",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Blade Runner",
+        "actor": "Collin Kahey"
       }
     },
     {
@@ -23,354 +106,258 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your preference for family movies, I would recommend \"Mr. Popper's Penguins\" for its heartwarming story about a businessman who inherits six penguins and experiences a transformative journey both at home and work. Another great choice could be \"The Perfect Game,\" which is an inspiring true story about a group of boys from Mexico who make history by winning the Little League World Series. Both movies offer compelling plots and charming characters that families can enjoy together.",
+      "text": "Given your preference for boxing genre and actor Collin Kahey, I'd highly recommend \"Million Dollar Baby\" starring Clint Eastwood and Morgan Freeman. It's a heartfelt story about an aspiring boxer and her dedicated coach. Alternatively, if you're interested in exploring a different angle within the action genre, \"Better Luck Tomorrow\" is an intriguing indie film featuring Collin Kahey alongside Jason Tobin, where a group of over-achieving high school seniors engage in extracurricular criminal activities. Enjoy your movie time!",
       "constraints": {
-        "genre": "family",
+        "genre": "boxing",
         "plot": [
           "sure",
           "perhaps"
         ],
-        "name": "You"
+        "name": "Blade Runner",
+        "actor": "Collin Kahey"
       }
     },
     {
       "speaker": "USER",
-      "text": "Forget what I said before \u2014 that might\u2019ve been too specific."
+      "text": "What kind of story does Million Dollar Baby tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "\"Scooby-Doo 2: Monsters Unleashed might be a fun choice for you! This family-friendly movie features the Mystery Inc. gang, including stars like Linda Cardellini and Sarah Michelle Gellar, as they unravel mysteries involving their past monsters.\"\n\n\"Alternatively, if you're up for a thrilling plot twist, I recommend 'Paycheck' with Ben Affleck. It's about an engineer who finds himself on the run after a seemingly simple job takes a dangerous turn.\"",
+      "text": "\"Million Dollar Baby is a gripping sports drama, but if you're intrigued by the 'what kind' aspect, I'd highly recommend 'The Equalizer'. Denzel Washington portrays a retired intelligence officer who uses his skills to help those in need, while exploring the moral complexities of vigilantism. Alternatively, 'The Wrestler' is another compelling film about an aging wrestler striving for redemption and fighting against industry corruption \u2013 it might resonate with your interest in boxing.\"",
       "constraints": {
-        "genre": "family",
-        "plot": [
-          "what",
-          "said"
-        ],
-        "name": "You"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Paycheck tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "\"Both 'New York Minute' and 'Turbo' might be enjoyable for you! 'New York Minute' is a family-friendly comedy about two sisters on a series of misadventures in the city, while 'Turbo' is an animated film about a snail who dreams of competing in the Indy 500. Enjoy the fun-filled and engaging journeys these films offer!\"",
-      "constraints": {
-        "genre": "family",
+        "genre": "boxing",
         "plot": [
           "what",
           "kind"
         ],
-        "name": "RED"
+        "name": "Million Dollar Baby",
+        "actor": "Collin Kahey"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of New York Minute? That feels deeper than I thought."
+      "text": "What's the mood of Million Dollar Baby? Hmm, I didn\u2019t expect that vibe."
     },
     {
       "speaker": "SYSTEM",
-      "text": "\"New York Minute (2004) is a fun, family-oriented film that follows the misadventures of two sisters as they navigate New York City together. Starring Mary-Kate Olsen and Ashley Olsen, it's a delightful story filled with humor and heart.\"",
+      "text": "Given that you didn't expect a darker vibe, I'd recommend \"Anyone But You\" starring Rachel Ticotin and Marc Anthony. It's a romantic comedy about two adults pretending to be a couple at a wedding. Or, if you're interested in a more thought-provoking film, there's \"What If...\" which delves into the question of fate and destiny under the Athenian night sky. Enjoy!",
       "constraints": {
-        "genre": "family",
+        "genre": "boxing",
         "plot": [
           "what",
-          "york"
+          "million"
         ],
-        "name": "New York Minute"
+        "name": "Million Dollar Baby",
+        "actor": "Collin Kahey"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of New York Minute. Who stars in it? That sounds intriguing."
+      "text": "Could we switch to something else by John Schlesinger? Maybe I\u2019m overthinking it, but it sounds fascinating. Maybe something like what you shared about X."
     },
     {
       "speaker": "SYSTEM",
-      "text": "\"Hi there! Based on your interest in family-oriented movies that have an intriguing sound, I'd highly recommend checking out 'Despicable Me 2'. This animated film features a cast of lovable characters including Steve Carell and the adorable minions. If you're up for a magical adventure, 'Maleficent' starring Angelina Jolie is another captivating option.\"",
+      "text": "Based on your interest in a film directed by John Schlesinger and set in the genre of politics, I'd highly recommend \"The Seduction of Joe Tynan.\" This movie follows a respected politician who faces a moral dilemma as he navigates a complex case that threatens to compromise his principles and personal life. Starring notable actors such as Alan Alda, Meryl Streep, and Melvyn Douglas, it's an engaging film that I think you might enjoy.\n\nFor another option set in a different genre but featuring a captivating performance by Collin Kahey, consider checking out \"RED.\" This action-packed movie revolves around retired special operatives who find themselves drawn back into the dangerous world they thought they had left behind. Bruce Willis and Morgan Freeman are among the star-studded cast that delivers an exciting ride!",
       "constraints": {
-        "genre": "family",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "New York Minute"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Maybe we could find more movies with Rebecca Romijn. That sounds intriguing. Maybe something like what you shared about Despicable Me 2."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "It sounds like you're interested in movies with a mix of action, comedy, and family-friendly elements! One movie that might intrigue you is \"Star Trek Into Darkness.\" In this film, Rebecca Romijn joins an ensemble cast led by Chris Pine and Zachary Quinto, as they navigate through space on a mission filled with adventure and suspense. Another option could be \"Despicable Me,\" where Rebecca Romijn lends her voice to the character of Margo alongside an all-star voice cast including Steve Carell and Russell Brand. This animated film combines humor, heart, and high-stakes action in a fun family-friendly way! Enjoy the movies!",
-      "constraints": {
-        "genre": "family",
-        "plot": [
-          "could",
-          "find"
-        ],
-        "name": "Despicable Me",
-        "actor": "Rebecca Romijn"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Despicable Me. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Given that you mentioned enjoying family genres and liked the sound of Despicable Me, I'd recommend watching \"Cars 2\" which features an exciting adventure and a star-studded cast including Owen Wilson, Larry the Cable Guy, and Michael Caine, or \"Kung Fu Panda\" with Jackie Chan, Angelina Jolie, and Jack Black that delivers action, humor, and heartwarming moments! Both movies are sure to provide an enjoyable experience for all ages.",
-      "constraints": {
-        "genre": "family",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "Despicable Me",
-        "actor": "Rebecca Romijn"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Despicable Me? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Given your preference for family-oriented movies and the desire to avoid the vibe of 'Despicable Me', I'd recommend \"Cloudy with a Chance of Meatballs 2\". This animated movie is full of humor and features food-animal hybrids, which might be a fun change from what you expected! If you're also interested in live-action, \"Alice in Wonderland\" (2010) could be another great choice. It's a modern take on the classic story with an emphasis on humor and irreverence. Enjoy exploring these new worlds!",
-      "constraints": {
-        "genre": "family",
-        "plot": [
-          "what",
-          "didn"
-        ],
-        "name": "Despicable Me",
-        "actor": "Rebecca Romijn"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does 2010 tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Given your preference for family movies from 2010, I'd recommend \"Ernest & Celestine\". It's an enchanting animated film about an unlikely friendship between a bear and a mouse that will delight both children and adults alike. Another option could be \"Harry Potter and the Chamber of Secrets\", a magical adventure with a captivating plot that has been loved by many fans since its release in 1998. Enjoy!",
-      "constraints": {
-        "genre": "family",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "2010",
-        "actor": "Rebecca Romijn",
-        "year": "2010"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Could we switch to something else by Michel Gondry? I can\u2019t decide if I\u2019d enjoy it or be scared by it. Maybe something like what you shared about Ernest & Celestine."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Given your interest in family-oriented films by Michel Gondry, I'd highly recommend \"Kung Fu Panda\". It's an animated adventure comedy about a panda named Po who fulfills his destiny as the Dragon Warrior, fighting against the valley's arch-enemy. The film features an impressive star cast including Jack Black and Angelina Jolie. Another film you might enjoy is \"Zookeeper\", where animals at a zoo help their zookeeper find love, featuring actors like Leslie Bibb and Rosario Dawson. Hope these recommendations meet your preferences!",
-      "constraints": {
-        "genre": "family",
+        "genre": "boxing",
         "plot": [
           "could",
           "switch"
         ],
         "name": "RED",
-        "actor": "Rebecca Romijn",
-        "year": "2010",
-        "director": "Michel Gondry",
-        "writer": "Michel Gondry"
+        "actor": "Collin Kahey",
+        "director": "John Schlesinger",
+        "language": "ger"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Kung Fu Panda. Who stars in it? That feels deeper than I thought."
+      "text": "I like the sound of Emma. Who stars in it? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I'd highly recommend \"Stuart Little 2\" for you! It's a family-friendly movie that follows the little mouse Stuart and his adventures across town to save a friend. The film stars some talented actors like Hugh Laurie, Michael J. Fox, and Melanie Griffith.\n\nIf you're in the mood for something more unique, \"Spice World\" is another fun option! This movie features the iconic Spice Girls as they navigate London with various adventures while performing for their fans. The cast includes Victoria Beckham and Elton John, along with several other well-known actors and musicians. Enjoy!",
+      "text": "Given that you enjoy movies with a deeper sound, and you mentioned a preference for the boxing genre and German language, I'd highly recommend \"Million Dollar Baby.\" This movie is a powerful drama about an aspiring boxer and her trainer, starring Clint Eastwood and Morgan Freeman. If you're open to venturing outside of your specified preferences, I also think you might find \"It's a Wonderful Life\" intriguing. It's a heartwarming story about redemption and the value of life, with a star-studded cast including James Stewart and Donna Reed. Enjoy your movie time!",
       "constraints": {
-        "genre": "family",
+        "genre": "boxing",
         "plot": [
           "like",
           "sound"
         ],
-        "name": "Kung Fu Panda",
-        "actor": "Rebecca Romijn",
-        "year": "2010",
-        "director": "Michel Gondry",
-        "writer": "Michel Gondry"
+        "name": "Deep",
+        "actor": "Collin Kahey",
+        "director": "John Schlesinger",
+        "language": "ger"
       }
     },
     {
       "speaker": "USER",
-      "text": "I\u2019m not sure anymore; perhaps I changed my mind."
+      "text": "What kind of story does Million Dollar Baby tell? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Given your preference for family films from 2010 onwards, starring Rebecca Romijn, and directed by Michel Gondry, I'd like to recommend \"Happy Feet\" (2006). This animated film features an impressive cast including Robin Williams and Nicole Kidman, and the story revolves around a penguin who can tap dance instead of sing. Another option could be \"Space Jam\" (1996), where Michael Jordan teams up with Looney Tunes characters for an exciting basketball match. It stars Bill Murray and Danny DeVito, among others!",
+      "text": "\"Million Dollar Baby and The Fighter both revolve around the sport of boxing, which might appeal to you since that's a genre you mentioned. In 'The Fighter', Collin Kahey co-stars with Christian Bale in a compelling tale about a boxer trying to escape his troubled brother's shadow. On the other hand, if you fancy a more comedic take on the sport, 'Little Fockers' starring Ben Stiller and Robert De Niro might be worth checking out.\"",
       "constraints": {
-        "genre": "family",
-        "plot": [
-          "sure",
-          "perhaps"
-        ],
-        "name": "Kung Fu Panda",
-        "actor": "Rebecca Romijn",
-        "year": "2010",
-        "director": "Michel Gondry",
-        "writer": "Michel Gondry"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Space Jam tell? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Given your preference for family-oriented films, I'd highly recommend watching \"The Incredibles\". It's an animated superhero movie about a family of undercover superheroes who are forced into action to save the world. Another great option could be \"Cars 2\", a heartwarming adventure film featuring popular voices like Larry the Cable Guy and Owen Wilson, where race cars compete in the World Grand Prix but end up entangled in international espionage. Enjoy your movie time!",
-      "constraints": {
-        "genre": "family",
+        "genre": "boxing",
         "plot": [
           "what",
           "kind"
         ],
-        "name": "Space Jam",
-        "actor": "Rebecca Romijn",
-        "year": "2010",
-        "director": "Michel Gondry",
-        "writer": "Michel Gondry",
-        "language": "spa"
+        "name": "Million Dollar Baby",
+        "actor": "Collin Kahey",
+        "director": "John Schlesinger",
+        "language": "ger"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Tangled? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "Actually, now that I think about it, I might want the opposite."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I'd highly recommend giving \"Hotel for Dogs\" a try! It's a heartwarming family film about two kids who secretly take in stray dogs at an abandoned hotel, featuring actors like Robinne Lee and Kyla Pratt. If you're up for something more mature and thought-provoking, \"Incendies\" is another great choice. This movie follows twins as they journey to the Middle East to discover their family history, starring Lubna Azabal and M\u00e9lissa D\u00e9sormeaux-Poulin. Enjoy your movie time!",
+      "text": "\"If you're looking for a movie that offers a different perspective, I'd recommend 'Haunted' (2003). This thought-provoking film explores the emotional connection people have with their homes and how they can haunt us just as much as we haunt them. Another intriguing option is 'Cinder' (2012), a modern retelling of a classic fairy tale that takes place in a dark, post-modern underworld. I think you might find these movies interesting.\"",
       "constraints": {
-        "genre": "family",
+        "genre": "boxing",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Million Dollar Baby",
+        "actor": "Collin Kahey",
+        "director": "John Schlesinger",
+        "language": "ger"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Haunted? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "\"Both 'The Trouble with Harry' and 'I Heart Huckabees' might be intriguing choices for you. 'The Trouble with Harry' is a quirky comedy about the aftermath of a dead body being found in a small town, while 'I Heart Huckabees' offers an unusual blend of comedy, philosophy, and detective work as it explores existential questions. Enjoy the fascinating plots and engaging performances!\"",
+      "constraints": {
+        "genre": "boxing",
         "plot": [
           "what",
-          "tangled"
+          "haunted"
         ],
-        "name": "Tangled",
-        "actor": "Rebecca Romijn",
-        "year": "2010",
-        "director": "Michel Gondry",
-        "writer": "Michel Gondry",
-        "language": "spa"
+        "name": "Ted",
+        "actor": "Collin Kahey",
+        "director": "John Schlesinger",
+        "language": "ger"
       }
     },
     {
       "speaker": "USER",
-      "text": "Do you have recommendations written by Rick Yancey? I can\u2019t decide if I\u2019d enjoy it or be scared by it. Maybe something like what you shared about Hotel for Dogs."
+      "text": "Maybe we could find more movies with Tamala Jones. That feels deeper than I thought. Maybe something like what you shared about I Heart Huckabees."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your preference for family-friendly films, I'd highly recommend \"Arthur and the Invisibles\"! This animated adventure follows a young boy named Arthur as he discovers a miniature world and embarks on an exciting journey to save his grandfather's home. The film features a star-studded cast including Snoop Dogg, Emilio Estevez, Madonna, and more. Another option could be \"The Cat in the Hat\" - a classic tale of mischief where a talking cat visits two bored children, turning their lives upside down in this fun-filled film adaptation. Enjoy!",
+      "text": "Given your preference for a movie featuring Tamala Jones, I'd highly recommend \"Am\u00e9lie\" (2001). This French film follows Amelie, a young waitress who embarks on a journey to help people find happiness in their lives. The film is visually stunning and has an enchanting soundtrack that adds to the overall charm of the movie. As for another suggestion, \"Anyone But You\" (1996) might also appeal to you. This romantic comedy revolves around two adults who pretend to be a couple at a wedding, leading to unexpected twists and turns in their lives.",
       "constraints": {
-        "genre": "family",
+        "genre": "boxing",
         "plot": [
-          "written",
-          "rick"
+          "could",
+          "find"
         ],
-        "name": "Hotel for Dogs",
-        "actor": "Rebecca Romijn",
-        "year": "2010",
-        "director": "Michel Gondry",
-        "writer": "Rick Yancey",
-        "language": "spa"
+        "name": "I Heart Huckabees",
+        "actor": "Tamala Jones",
+        "director": "John Schlesinger",
+        "language": "ger"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Arthur and the Invisibles. Who stars in it? Hmm, I didn\u2019t expect that vibe."
+      "text": "I like the sound of X. Who stars in it? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your preference for family films, I'd highly recommend \"Alice in Wonderland\" (2010). This visually stunning adaptation features a captivating story and an all-star cast including Johnny Depp, Mia Wasikowska, Helena Bonham Carter, and Anne Hathaway. If you're looking for something lighter with a touch of humor, \"Zookeeper\" (2011) might also appeal to you, starring Kevin James as a lovable zookeeper seeking love while being advised by talking animals like Kevin Hart, Adam Sandler, and Sylvester Stallone. Enjoy your movie time!",
+      "text": "Based on your preference for a boxing genre film, I'd highly recommend \"Rocky\" (1976). It's a classic underdog story about a small-time boxer who gets a once-in-a-lifetime chance to fight the heavyweight champion. The movie stars Sylvester Stallone and Carl Weathers, and it was directed by John G. Avildsen.\n\nAnother film that might appeal to you is \"The Amazing Spider-Man\" (2012), which is an action-packed superhero movie about a young man who gains spider-like powers after being bitten by a genetically modified spider. This film stars Andrew Garfield and Emma Stone in the lead roles.",
       "constraints": {
-        "genre": "family",
+        "genre": "boxing",
         "plot": [
           "like",
           "sound"
         ],
-        "name": "Arthur and the Invisibles",
-        "actor": "Rebecca Romijn",
-        "year": "2010",
-        "director": "Michel Gondry",
-        "writer": "Rick Yancey",
-        "language": "spa"
+        "name": "Deep",
+        "actor": "Tamala Jones",
+        "director": "John Schlesinger",
+        "language": "ger"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Alice in Wonderland tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "What kind of story does Rocky tell? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Given your preference for family films, I'd recommend \"National Treasure\" as it's an exciting adventure story about a historian racing to find a legendary treasure. Also, you might enjoy \"Penguins of Madagascar\", a hilarious animated film featuring talking animals and a mission to save the world! Both movies offer a unique blend of action, comedy, and mystery.",
+      "text": "\"Both 'Lady in the Water' and 'Head of State' are great choices that align with your preferences! In 'Lady in the Water,' you'll find a unique twist on the classic fairy tale genre, while 'Head of State' offers comedy and politics with a standout performance by Tamala Jones. Enjoy exploring these intriguing stories!\"",
       "constraints": {
-        "genre": "family",
+        "genre": "boxing",
         "plot": [
           "what",
           "kind"
         ],
-        "name": "Alice in Wonderland",
-        "actor": "Rebecca Romijn",
-        "year": "2010",
-        "director": "Michel Gondry",
-        "writer": "Rick Yancey",
-        "language": "spa"
+        "name": "Rocky",
+        "actor": "Tamala Jones",
+        "director": "John Schlesinger",
+        "language": "ger"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Penguins of Madagascar? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "What's the mood of Head of State? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your preference for family movies from 2010, I'd recommend \"Kung Fu Panda 2\". It's an action-packed adventure with a great cast, including Jack Black and Angelina Jolie. Another option could be \"Prince of Persia: The Sands of Time\" if you're interested in a fantasy-action film starring Jake Gyllenhaal. Enjoy the movies!",
+      "text": "Based on your interest in a movie with a mood similar to \"Head of State\", I'd recommend \"Man on Wire\" and \"Undisputed\".\n\n\"Man on Wire\" is an inspiring film about Philippe Petit's daring high-wire walk between the Twin Towers, starring Jean-Louis Blondeau and Paul McGill.\n\n\"Undisputed\", on the other hand, features a boxing match in prison between heavyweight champion George \"Iceman\" Chambers and the reigning prison champ, with an impressive cast including Wes Studi and Master P. Both films offer unique perspectives on the world of competition.",
       "constraints": {
-        "genre": "family",
+        "genre": "boxing",
         "plot": [
           "what",
-          "penguins"
+          "head"
         ],
-        "name": "Madagascar",
-        "actor": "Rebecca Romijn",
-        "year": "2010",
-        "director": "Michel Gondry",
-        "writer": "Rick Yancey",
-        "language": "spa"
+        "name": "Head of State",
+        "actor": "Tamala Jones",
+        "director": "John Schlesinger",
+        "language": "ger"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thinking about Kung Fu Panda 2, could we shift toward stories about diametrically? That feels deeper than I thought."
+      "text": "Thinking about Undisputed, could we shift toward stories about closure? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I'd highly recommend \"Iron Man 2\" if you're in the mood for a thrilling action film. The story revolves around Tony Stark, a brilliant inventor who must confront a vengeful adversary with ties to his father's legacy, while also dealing with his own health issues. Another option is \"How to Train Your Dragon\", an animated adventure about a young Viking and a dragon that forms an unlikely friendship, which might resonate with your preference for deeper stories. Enjoy the movies!",
+      "text": "I'd be happy to help! Based on your preferences, I'd highly recommend watching \"The English Patient\". It's a captivating story set in World War II, with intricate flashbacks that reveal a poignant love affair. Another film worth considering is \"Dances with Wolves\", which tells the compelling tale of a Civil War soldier who forms an unlikely bond with a Sioux tribe, questioning his own purpose along the way. Both movies offer a sense of closure in their narratives and feature strong performances. Enjoy your movie time!",
       "constraints": {
         "genre": "war",
         "plot": [
           "thinking",
-          "panda"
+          "could"
         ],
         "name": "War",
-        "actor": "Rebecca Romijn",
-        "year": "2010",
-        "director": "Michel Gondry",
-        "writer": "Rick Yancey",
-        "language": "spa"
+        "actor": "Tamala Jones",
+        "director": "John Schlesinger",
+        "language": "ger"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Dances with Wolves tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Out of the options, I'd highly recommend \"Paycheck\" (2003) for you. This film revolves around an engineer who finds himself on the run after a seemingly straightforward job takes unexpected turns, and it features notable actors like Ben Affleck and Uma Thurman. Alternatively, if you enjoy character-driven stories with witty dialogue, \"Wonder Boys\" (1995) might also appeal to you. It stars Robert Downey Jr., Michael Douglas, and Frances McDormand, and follows the life of an English professor dealing with personal and professional challenges. Both films are quite engaging and offer different yet appealing perspectives!",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Dances with Wolves",
+        "actor": "Tamala Jones",
+        "director": "John Schlesinger",
+        "language": "ger"
       }
     }
   ]

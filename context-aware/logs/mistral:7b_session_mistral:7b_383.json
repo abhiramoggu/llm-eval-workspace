@@ -1,17 +1,18 @@
 {
   "model_name": "mistral:7b",
-  "true_genre": "prison escape",
+  "true_genre": "police",
   "conversation": [
     {
       "speaker": "USER",
-      "text": "I'm in the mood for a spy movie. Could you recommend a few?"
+      "text": "I'm in the mood for a police movie. Could you recommend a few?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "I'd highly recommend \"This Means War\" for you! It's a fun and action-packed spy movie where C.I.A. agents find themselves competing against each other over the same woman, starring Chris Pine and Tom Hardy.\n\nAlternatively, if you fancy a political thriller, \"The Seduction of Joe Tynan\" is a compelling drama about a senator juggling his career, family life, and a developing relationship with Meryl Streep. Enjoy!",
+      "text": "If you're in the mood for a gripping police movie, I'd highly recommend \"In Cold Blood\". It tells the story of two ex-cons on the run from the law after committing a brutal murder, with memorable performances by Robert Blake and John Forsythe. Another intriguing choice is \"Whispers\", where a woman fights to prove she killed her stalker, even when no one believes her. Enjoy the suspense!",
       "constraints": {
-        "genre": "spy",
+        "genre": "police",
         "plot": [
+          "police",
           "could"
         ],
         "name": "You"
@@ -19,326 +20,386 @@
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of This Means War. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "What kind of story does {'name': 'Roses Are Red', 'year': '2000', 'genre': ['Police', 'Police procedural', 'Adventure', 'Crime Fiction', 'Mystery', 'Suspense', 'Fiction', 'Thriller'], 'language': ['English'], 'writer': ['James Patterson'], 'plot': 'A paroled convict who bears a striking resemblance to the local District Attorney is hired by the mob to impersonate him, while the real District Attorney is kidnapped and held captive at a secret location.', 'original_id': '2477'} tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "\"If you enjoyed the sound of a suspenseful, action-packed movie, I'd highly recommend 'Smokin' Aces'. It features an all-star cast including Ray Liotta, Ben Affleck, and Ryan Reynolds, with a plot revolving around a Vegas performer turning state's evidence against the mob.\n\nAnother film that might appeal to you is 'American Sniper', starring Bradley Cooper. Based on a true story, it's about a US Navy SEAL sniper who's hailed as a legend on the battlefield but struggles readjusting back home.\"",
+      "text": "Given that you're leaning towards adventure and the year is 2000, I'd recommend \"Velvet Goldmine\" for its exploration of glam rock in the 70s and stellar performances by Christian Bale and Eddie Izzard. If you're up for a fantasy adventure instead, \"Eragon\" might be a fitting choice with its epic storyline and captivating visuals. Enjoy your movie time!",
       "constraints": {
-        "genre": "war",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "War"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Smokin' Aces tell? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on your interest in war-themed stories and plot keywords like 'what' and 'kind', I'd recommend you watch \"Fury\" starring Brad Pitt. It's a gripping tale set during World War II, revolving around a tank crew fighting their way across Germany in April 1945. If you're looking for something more light-hearted, you might enjoy the animated classic, \"Aladdin\", which tells an entertaining and magical story with a charming cast of characters.",
-      "constraints": {
-        "genre": "war",
+        "genre": "adventure",
         "plot": [
           "what",
           "kind"
-        ],
-        "name": "Smokin' Aces"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Aladdin? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Given that you're looking for a movie but seem to prefer war genres and were intrigued by 'Aladdin', let me suggest two films that might appeal to your taste, yet differ from Aladdin in genre:\n\n1. \"Her\" (2013) - A thought-provoking exploration of modern dating experiences set against a backdrop of artificial intelligence, starring Scarlett Johansson and Matt Letscher.\n\n2. \"The End of the Affair\" (1999) - A gripping mystery about a man's quest to understand why his lover left him years ago, featuring talented actors like Ralph Fiennes and Ian Hart.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "aladdin"
-        ],
-        "name": "Aladdin"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Do you have recommendations written by Ben Ripley? Hmm, I didn\u2019t expect that vibe. Maybe something like what you shared about Aladdin."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Out of the listed films, \"Saving Private Ryan\" and \"Inglourious Basterds\" both share a war genre written by different directors, but they offer compelling narratives set during World War II. In Saving Private Ryan, a group of soldiers goes behind enemy lines to retrieve a paratrooper whose brothers have been killed in action, while Inglourious Basterds features a plan to assassinate Nazi leaders coinciding with a theater owner's vengeful plans for the same. Both movies offer intense war dramas with strong performances and intriguing plots that I think you might enjoy!",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "written",
-          "ripley"
-        ],
-        "name": "Aladdin",
-        "writer": "Ben Ripley"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Saving Private Ryan. Who stars in it? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Given that you enjoyed Saving Private Ryan and it belongs to the war genre, I'd recommend \"Hart's War\" as a fascinating watch. This film stars notable actors like Bruce Willis and Colin Farrell, and is set during World War II where a law student finds himself in a prison of war. Another intriguing movie you might enjoy is \"There Be Dragons,\" featuring Liam Neeson, which delves into the life of a candidate for canonization during the Spanish Civil War.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "Saving Private Ryan",
-        "writer": "Ben Ripley"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Hart's War? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "\"Out of the listed films, 'Hotel Rwanda' and 'To Have and Have Not' might pique your interest. 'Hotel Rwanda' is a powerful drama that tells the true story of a hotel manager who saves over a thousand lives during the Rwandan genocide. It stars Don Cheadle and Sophie Okonedo. On the other hand, 'To Have and Have Not' is a classic war film set during World War II, featuring Humphrey Bogart as an American expatriate helping the French Resistance.\"",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "hart"
-        ],
-        "name": "War",
-        "writer": "Ben Ripley"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Hotel Rwanda tell? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on your interest in war films and stories that delve deep into political and human conflicts, I'd recommend \"Born on the Fourth of July\" for its powerful portrayal of a Vietnam War veteran who becomes an anti-war activist after feeling betrayed by his country. Another film that might appeal to you is \"We the Living\", a story set during the Russian Revolution, which offers a compelling look at the individual struggles amidst collective oppression. Enjoy your movie time!",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "Hotel Rwanda",
-        "writer": "Ben Ripley"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Do you have recommendations written by Sergei Lukyanenko? Hmm, I didn\u2019t expect that vibe. Maybe something like what you shared about We the Living."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I'd highly recommend \"Zero Dark Thirty\" for you. This gripping film chronicles the decade-long hunt for Osama bin Laden, with an outstanding performance by Jessica Chastain. If you're looking for a different genre but still from the same writer, consider \"Hart's War\" which stars Bruce Willis and tells a compelling story about courage and justice during World War II. Enjoy!",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "written",
-          "didn"
         ],
         "name": "RED",
-        "writer": "Sergei Lukyanenko"
+        "year": "2000",
+        "language": "English",
+        "writer": "James Patterson"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Zero Dark Thirty tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "I like the sound of War. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I'd recommend \"The Siege\" for you as it is a war thriller that delves into themes of terrorism and government responses, featuring actors like Bruce Willis and Denzel Washington. If you prefer something with a different tone, \"Aladdin\" is an animated musical that tells a magical tale of love and self-discovery, featuring the voices of Robin Williams and Scott Weinger. Both movies offer compelling narratives and interesting characters, so I hope one of them catches your interest!",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "Zero Dark Thirty",
-        "writer": "Sergei Lukyanenko"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Aladdin. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Given that you enjoy the sound of Aladdin and seem to have a preference for war genre movies, I'd highly recommend \"Valkyrie\" (2008). This film is based on a true story about an assassination plot against Adolf Hitler during World War II, starring Tom Cruise. Another great option would be \"Gladiator\" (2000), an action-packed drama set during the Roman Empire, with Russell Crowe in a leading role. Both films offer captivating plots and impressive performances. Enjoy the watch!",
+      "text": "Given that you mentioned a preference for war movies, I'd like to recommend \"Space Cowboys\" (2000). This film features a team of retired astronauts, played by an impressive cast including Clint Eastwood and Tom Hanks, who are called back into space on a mission to save a failing satellite. The movie combines elements of adventure, action, and camaraderie that might appeal to you.\n\nAlternatively, if you're interested in a crime thriller with a strong lead character, \"A Walk Among the Tombstones\" (2014) might be right up your alley. Liam Neeson plays a private investigator who is hired by a drug kingpin to find out who kidnapped and murdered his wife. The movie offers an intriguing plot with gripping suspense.",
       "constraints": {
         "genre": "war",
         "plot": [
           "like",
           "sound"
-        ],
-        "name": "Aladdin",
-        "writer": "Sergei Lukyanenko"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Aladdin? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "It seems you're looking for something with a bit more action and grit, given your preference for a war genre and dislike of the vibe in Aladdin. I'd recommend checking out \"Saving Private Ryan\" (1998), starring Tom Hanks. This powerful film takes you on an emotional journey through the Normandy Landings during World War II. Or, if you fancy something with a touch of mystery and supernatural elements, there's \"The Wraith\" (1986) featuring Randy Quaid as a mysterious figure who appears to target a violent street racing gang. Both movies offer compelling plots that might cater to your taste!",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "aladdin"
-        ],
-        "name": "Aladdin",
-        "writer": "Sergei Lukyanenko"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thinking about Aladdin, could we shift toward stories about templar? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "\"I'd highly recommend 'The Pianist'. This movie, set during WWII, follows a Polish musician as he navigates intense struggles and hides in the ruins of Warsaw to survive. Starring Frank Finlay, Emilia Fox, and Ed Stoppard, it's a gripping tale that might appeal to your preference for war stories.\"\n\n\"Another one you may find intriguing is 'Downfall'. This film delves into the life of Lance Summer, torn between his past and present, as his choices threaten his future. It features a powerful performance by Bruno Ganz, making it an engaging watch that might resonate with your sensibilities.\"",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "thinking",
-          "aladdin"
         ],
         "name": "War",
-        "writer": "Sergei Lukyanenko"
+        "year": "2000",
+        "language": "English",
+        "writer": "James Patterson"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Downfall. Who stars in it? That feels deeper than I thought."
+      "text": "What's the mood of Tombstone? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "\"You might find 'In the Land of Blood and Honey' intriguing as it's set during a war, much like Downfall, and offers a complex portrayal of relationships amidst conflict. Another recommendation is 'Casablanca', a classic film that explores similar themes of love and politics during wartime, with memorable performances by Humphrey Bogart and Ingrid Bergman.\"",
+      "text": "\"Out of the suggested films, I'd recommend 'Patton' if you're interested in a historical drama that delves deep into the complex character of General George S. Patton, portrayed brilliantly by the iconic George C. Scott.\"\n\n\"Alternatively, 'A Walk to Remember' might resonate with you more, as it's a touching romance between two teenagers from different worlds, starring Mandy Moore and Shane West.\"",
       "constraints": {
         "genre": "war",
         "plot": [
-          "like",
-          "sound"
+          "what",
+          "tombstone"
         ],
-        "name": "Downfall",
-        "writer": "Sergei Lukyanenko"
+        "name": "Tombstone",
+        "year": "2000",
+        "language": "English",
+        "writer": "James Patterson"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Casablanca tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "Do you have recommendations written by Alejandro Amen\u00e1bar? That feels deeper than I thought. Maybe something like what you shared about Patton."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Braveheart, directed by Mel Gibson, is a captivating tale set in Scotland during the 18th century. It tells the story of Chief Standing Rock's son, Braveheart, who studies law to protect his tribe's rights against an aggressive canning corporation. The film features powerful performances by Gerard McSorley and Angus Macfadyen, making it a compelling watch for those who enjoy period dramas with strong narratives.\n\nAlternatively, Rob Roy (1995), starring Liam Neeson, offers an engaging portrayal of a 17th-century Scottish outlaw seeking revenge against a nobleman and his nephew. This film's combination of historical drama and action makes it an excellent choice for fans of the war genre and strong character-driven narratives.",
+      "text": "Given your preference for movies written and directed by Alejandro Amen\u00e1bar, I'd like to recommend two films from your list that might appeal to you.\n\nFirstly, \"2001: A Space Odyssey\" (1968), a science fiction masterpiece directed by Stanley Kubrick, is an intriguing exploration of humanity's evolution and artificial intelligence, featuring iconic performances by Keir Dullea and Gary Lockwood.\n\nSecondly, \"Who Killed the Electric Car?\" (2006) delves into the fascinating history of electric vehicles and renewable energy, making it a compelling documentary for anyone interested in sustainable living. Enjoy your movie time!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "written",
+          "alejandro"
+        ],
+        "name": "Patton",
+        "year": "2000",
+        "language": "English",
+        "writer": "Alejandro Amen\u00e1bar",
+        "director": "Alejandro Amen\u00e1bar"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Who Killed the Electric Car? tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your interest in captivating narratives, I'd highly recommend \"Watership Down\" for you. This animated film tells a riveting tale of a group of rabbits seeking refuge from human developers, led by the resourceful Hazel and his intuitive brother Fiver.\n\nAlternatively, if you're intrigued by a story that blends drama with a touch of whimsy, \"The BFG\" might be right up your alley. In this timeless classic, a young orphan girl named Sophie finds herself in a fantastical world populated by Giants and Dreams, where she encounters the Big Friendly Giant. Both movies offer unique and engaging narratives that align with your preference for story-driven content. Enjoy your movie time!",
       "constraints": {
         "genre": "war",
         "plot": [
           "what",
           "kind"
         ],
-        "name": "Casablanca",
-        "writer": "Sergei Lukyanenko"
+        "name": "Who Killed the Electric Car?",
+        "year": "2000",
+        "language": "English",
+        "writer": "Alejandro Amen\u00e1bar",
+        "director": "Alejandro Amen\u00e1bar"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Drive? That feels deeper than I thought."
+      "text": "I like the sound of Watership Down. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your preference for war films, deeper plots, and the work of Sergei Lukyanenko (even though he is a Russian writer of fantasy novels, not a filmmaker), I'd highly recommend watching \"Born on the Fourth of July.\" It's a powerful biographical drama that delves into the life of Ron Kovic, a Vietnam War veteran who became an anti-war activist after feeling betrayed by his country. The film stars Tom Cruise and is directed by Oliver Stone, both renowned for their compelling storytelling in this genre. Another film that might intrigue you is \"Louie,\" although it's not exactly war-themed, it is a heartfelt drama about an enigmatic tricycle rider navigating life in Boston. It's a unique and thought-provoking story that I believe you would appreciate. Enjoy the films!",
+      "text": "I'd highly recommend \"Pirates of the Caribbean: The Curse of the Black Pearl\". It's an exciting adventure with a captivating storyline and memorable characters, particularly the eccentric pirate Captain Jack Sparrow played by Johnny Depp.\n\nIf you're intrigued by complex narratives, you might also enjoy \"Eyes Wide Shut\", a thought-provoking film that delves into human desire and relationships, starring Tom Cruise and Nicole Kidman.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Water",
+        "year": "2000",
+        "language": "English",
+        "writer": "Alejandro Amen\u00e1bar",
+        "director": "Alejandro Amen\u00e1bar"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I\u2019m not sure anymore; perhaps I changed my mind."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for a war genre film by Alejandro Amen\u00e1bar, I'd recommend \"Black Hawk Down\" (2001). This intense and gritty movie offers an in-depth look at the US intervention in Somalia, with a star-studded cast including Ewan McGregor, Hugh Dancy, and Eric Bana. However, if you're looking for a more lighthearted film, \"Home for the Holidays\" (1995) might be suitable for you as well. This comedy-drama features an impressive ensemble cast led by Anne Bancroft, Holly Hunter, and Robert Downey Jr., focusing on a woman dealing with family dynamics during the holiday season.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "Water",
+        "year": "2000",
+        "language": "English",
+        "writer": "Alejandro Amen\u00e1bar",
+        "director": "Alejandro Amen\u00e1bar"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Home for the Holidays? That sounds intriguing."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for a movie set around home and your interest in films from 2000, I'd recommend you watch \"The Homesman\". This film follows the journey of three women across the Wild West, portrayed by Miranda Otto and Salma Hayek among others. Alternatively, if you're open to venturing outside of the year 2000, there's also \"Lost\" which tells a deeply emotional story about a young man revisiting pivotal moments in his life as he contemplates suicide. Enjoy your movie time!",
       "constraints": {
         "genre": "war",
         "plot": [
           "what",
-          "drive"
+          "home"
         ],
-        "name": "Drive",
-        "writer": "Sergei Lukyanenko"
+        "name": "Home for the Holidays",
+        "year": "2000",
+        "language": "English",
+        "writer": "Alejandro Amen\u00e1bar",
+        "director": "Alejandro Amen\u00e1bar"
       }
     },
     {
       "speaker": "USER",
-      "text": "Could we look at films from around 1983? That sounds intriguing. Maybe something like what you shared about Born on the Fourth of July."
+      "text": "Do you have recommendations written by Jane Goldman? Hmm, I didn\u2019t expect that vibe. Maybe something like what you shared about Wild."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I'd highly recommend watching \"Saving Private Ryan\" if you're interested in a gripping tale from World War II. This film, starring Tom Hanks and Matt Damon, is renowned for its intense portrayal of the Normandy invasion. Alternatively, if you prefer historical dramas with a romantic twist, \"Cold Mountain\" might be a good fit for you. It stars Jude Law and Nicole Kidman and is set against the backdrop of the American Civil War. Enjoy your movie time!",
+      "text": "I'd recommend you check out \"Total Recall\" (1990), a thrilling science fiction film where Arnold Schwarzenegger plays a factory worker who suspects he's a spy after a memory implant goes awry. It's an action-packed movie that should appeal to your taste for war and action genres.\n\nAlternatively, if you're looking for something more lighthearted, \"The Curse of the Jade Scorpion\" (2001) might be up your alley. Woody Allen stars as an insurance investigator who, along with an efficiency expert, gets hypnotized and finds himself stealing jewels in this comedic mystery.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "written",
+          "jane"
+        ],
+        "name": "Wild",
+        "year": "2000",
+        "language": "English",
+        "writer": "Jane Goldman",
+        "director": "Alejandro Amen\u00e1bar"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Total Recall. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you mentioned enjoying the sound of Total Recall and are interested in movies from 2000, I'd recommend watching \"A Few Good Men\" from 1992. This courtroom drama stars Tom Cruise and Jack Nicholson and is known for its gripping performances and tense dialogue. If you're looking for a more recent film, \"You Will Meet a Tall Dark Stranger\" (2010) might also be of interest, as it features an all-star cast including Anthony Hopkins and Naomi Watts in a thought-provoking exploration of love and relationships.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Total Recall",
+        "year": "2000",
+        "language": "English",
+        "writer": "Jane Goldman",
+        "director": "Alejandro Amen\u00e1bar"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Total Recall tell? That sounds intriguing."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend \"The Lost World: Jurassic Park\". This action-packed adventure film takes you back to an island filled with dinosaurs, where a research team uncovers a whole new world of danger and excitement. If you're interested in something a bit more laid-back yet equally engaging, you might enjoy \"Inside Llewyn Davis\", a captivating drama that follows a struggling musician navigating the Greenwich Village folk scene in 1961, starring the talented Justin Timberlake. Enjoy your movie time!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Total Recall",
+        "year": "2000",
+        "language": "English",
+        "writer": "Jane Goldman",
+        "director": "Alejandro Amen\u00e1bar"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Lost? That sounds intriguing."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're intrigued by thought-provoking plots and sophisticated narratives, I'd recommend checking out \"Gattaca\" (1997). This film explores themes of identity and determination in a future society where DNA plays a significant role in social hierarchy. Ethan Hawke delivers an outstanding performance as the protagonist. Alternatively, if you're keen on exploring more complex human relationships, \"In the Company of Men\" (1997) is a gripping psychological drama that examines male dynamics and power struggles. It stars Jason Dixie and Stacy Edwards in a powerful portrayal of manipulation and deceit. Enjoy your movie time!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "lost"
+        ],
+        "name": "Lost",
+        "year": "2000",
+        "language": "English",
+        "writer": "Jane Goldman",
+        "director": "Alejandro Amen\u00e1bar"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Katy Mixon. Hmm, I didn\u2019t expect that vibe. Maybe something like what you shared about The Company."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "\"I'm glad you enjoyed 'The Company,' and I think you might appreciate 'The Infiltrator.' It's a gripping tale about a U.S. Customs official chasing down Pablo Escobar's money laundering scheme, starring Joseph Gilgun alongside Katy Mixon. Another one that could grab your interest is 'Sexy Beast,' a film noir featuring a brilliant performance by Ray Winstone as a retired thief lured back into the game by an old associate.\"",
       "constraints": {
         "genre": "war",
         "plot": [
           "could",
-          "look"
+          "find"
         ],
-        "name": "Born on the Fourth of July",
-        "writer": "Sergei Lukyanenko",
-        "year": "1983"
+        "name": "The Company",
+        "year": "2000",
+        "language": "English",
+        "writer": "Jane Goldman",
+        "director": "Alejandro Amen\u00e1bar",
+        "actor": "Katy Mixon"
       }
     },
     {
       "speaker": "USER",
-      "text": "It\u2019s weird \u2014 I thought I liked that, but maybe not."
+      "text": "I like the sound of The Company. Who stars in it? Hmm, I didn\u2019t expect that vibe."
     },
     {
       "speaker": "SYSTEM",
-      "text": "If you're in the mood for a thought-provoking movie set during war times, I'd recommend \"Apocalypse Now\" (1979). This masterpiece, directed by Francis Ford Coppola and featuring actors like Martin Sheen and Marlon Brando, offers a gripping portrayal of the Vietnam War.\n\nAlternatively, if you enjoy historical drama with exceptional performances, \"The Imitation Game\" (2014) might be right up your alley. Benedict Cumberbatch delivers an outstanding performance as Alan Turing, a brilliant mathematician trying to crack the German Enigma code during World War II.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "weird",
-          "thought"
-        ],
-        "name": "Born on the Fourth of July",
-        "writer": "Sergei Lukyanenko",
-        "year": "1983"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of The Imitation Game. Who stars in it? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on your interest in war films and the unique, unexpected vibe you found in 'The Imitation Game', I'd recommend giving 'Patriot Games' (1987) a try. Starring Harrison Ford, this movie follows CIA analyst Jack Ryan as he interferes with an IRA assassination, leading to a dangerous reprisal against him and his family. Alternatively, if you fancy a more fantastical take on war, 'Big Fish' (2003) is another great choice. With an all-star cast including Ewan McGregor, Albert Finney, and Danny DeVito, this film tells the story of a father's extraordinary life, as his son tries to separate fact from fiction in his final days. Enjoy the movies!",
+      "text": "Given that you mentioned liking a war genre movie from around the year 2000 and didn't expect a certain vibe, I recommend \"White Oleander\" for its captivating story about a teenager navigating foster homes after her mother goes to prison. If you're open to exploring movies outside of the specific year you mentioned, \"Fool's Gold\" (2008) featuring Matthew McConaughey might also interest you with its plot revolving around an adventurous hunt for a lost treasure.",
       "constraints": {
         "genre": "war",
         "plot": [
           "like",
           "sound"
         ],
-        "name": "The Imitation Game",
-        "writer": "Sergei Lukyanenko",
-        "year": "1983"
+        "name": "The Company",
+        "year": "2000",
+        "language": "English",
+        "writer": "Jane Goldman",
+        "director": "Alejandro Amen\u00e1bar",
+        "actor": "Katy Mixon"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Patriot Games tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "What kind of story does White Oleander tell? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "\"If you're interested in a captivating tale of culture clash and personal growth, I'd highly recommend 'Dances with Wolves'. Set during the American Civil War, it tells the story of a soldier who forms an unlikely friendship with a Native American tribe. Another film that might appeal to your preference for war-themed stories is 'Braveheart', a powerful epic about a Scottish warrior fighting for his people's freedom in the Middle Ages.\"",
+      "text": "I'd highly recommend watching \"Shutter Island\". It's a thrilling psychological mystery with an exceptional performance by Leonardo DiCaprio as US marshals investigate a patient's disappearance in an isolated asylum. Another captivating film is \"There Be Dragons,\" which delves into the life of a saint during the Spanish Civil War, featuring Dougray Scott and Lily Cole in lead roles. Enjoy your cinematic journey!",
       "constraints": {
         "genre": "war",
         "plot": [
           "what",
           "kind"
         ],
-        "name": "Patriot Games",
-        "writer": "Sergei Lukyanenko",
-        "year": "1983"
+        "name": "White Oleander",
+        "year": "2000",
+        "language": "English",
+        "writer": "Jane Goldman",
+        "director": "Alejandro Amen\u00e1bar",
+        "actor": "Katy Mixon"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Psycho? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you're interested in a psychological thriller, I'd highly recommend \"Wolf Creek\". This film revolves around three backpackers who encounter a terrifying local on an outback trip and live through a nightmare of unimaginable terror. Although it might not match the Hitchcockian style of \"Psycho\", its suspenseful atmosphere is definitely captivating!\n\nIf you're more into humor with a dark twist, then \"Horrible Bosses\" could be the movie for you. It features three friends conspiring to murder their awful bosses when they realize they are standing in the way of their happiness. It's a hilarious take on workplace drama!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "psycho"
+        ],
+        "name": "Psycho",
+        "year": "2000",
+        "language": "English",
+        "writer": "Jane Goldman",
+        "director": "Alejandro Amen\u00e1bar",
+        "actor": "Katy Mixon"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Irene Papas. That sounds intriguing. Maybe something like what you shared about Wolf Creek."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're interested in exploring more about Irene Papas, I would highly recommend watching \"The Forest of Hands and Teeth\" which is set in a post-apocalyptic world, with her playing a pivotal role. However, if you're up for an action-packed adventure and are intrigued by the likes of Clint Eastwood, then \"The Good, the Bad and the Ugly\" might be a great choice for you! Enjoy your movie time!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Wolf",
+        "year": "2000",
+        "language": "English",
+        "writer": "Jane Goldman",
+        "director": "Alejandro Amen\u00e1bar",
+        "actor": "Irene Papas"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you mentioned wanting the opposite, I'd recommend \"Spice Girls: Spice World\" (1997) for a change of pace. This lighthearted and fun film is quite different from the action-packed and intense movies you previously listed. It's a musical comedy about one of the most iconic girl groups in history, featuring stars like Elton John, Bob Hoskins, and Hugh Laurie. Alternatively, if you're interested in a more suspenseful thriller, \"The Call\" (2013) might be a good choice. This film stars Halle Berry and follows the story of a 911 operator who receives a call from a kidnapped teenager, leading to a high-stakes race against time.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Wolf",
+        "year": "2000",
+        "language": "English",
+        "writer": "Jane Goldman",
+        "director": "Alejandro Amen\u00e1bar",
+        "actor": "Irene Papas"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Call. Who stars in it? That sounds intriguing."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend \"Alfie\" for you! This film is about a womanizing lothario who eventually starts to understand the consequences of his actions, starring Jude Law and Susan Sarandon. Alternatively, if you're interested in time travel romance, \"The Time Traveler's Wife\" might appeal to you, with Eric Bana and Rachel McAdams in the lead roles. Enjoy!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Call",
+        "year": "2000",
+        "language": "English",
+        "writer": "Jane Goldman",
+        "director": "Alejandro Amen\u00e1bar",
+        "actor": "Irene Papas"
       }
     }
   ]

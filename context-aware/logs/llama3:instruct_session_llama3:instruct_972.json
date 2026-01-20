@@ -1,17 +1,18 @@
 {
   "model_name": "llama3:instruct",
-  "true_genre": "musical",
+  "true_genre": "romance",
   "conversation": [
     {
       "speaker": "USER",
-      "text": "I'm in the mood for a sitcom movie. Could you recommend a few?"
+      "text": "I'm in the mood for a romance movie. Could you recommend a few?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I've got just the sitcom movie for you! Have you considered \"The Nanny\" (2003)? It's a hilarious and heartwarming film about a young nanny from Finland who brings joy and chaos into the lives of her wealthy employers. With its lighthearted tone and lovable characters, it's sure to put a smile on your face.\n\nIf that doesn't tickle your funny bone, I'd recommend \"Trees Lounge\" (1996) instead! This quirky comedy follows the misadventures of an unemployed mechanic as he navigates his way through life at his favorite bar. With a talented cast, including Steve Buscemi and Mimi Rogers, you're in for a treat with this offbeat but charming film.",
+      "text": "I think I have just the right romances for you! Have you considered \"Much Ado About Nothing\"? It's a classic tale of love and deception, featuring some delightful performances from its cast, including Kenneth Branagh and Emma Thompson. If that doesn't strike your fancy, \"The Mask of Zorro\" is also a fun choice, with Antonio Banderas bringing his usual charm to the role of the legendary swordsman.",
       "constraints": {
-        "genre": "sitcom",
+        "genre": "romance",
         "plot": [
+          "romance",
           "could"
         ],
         "name": "You"
@@ -19,18 +20,66 @@
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of The Nanny. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "I like the sound of Emma. Who stars in it? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think you're looking for a different kind of \"nanny\" movie! The one I'm thinking of is actually a classic sitcom, not a thriller. It's called The Nanny (1993-1999), starring the lovable Fran Dreschler as a Jewish woman from Queens who becomes the nanny to a wealthy family on the Upper East Side.",
+      "text": "I think you'd really enjoy \"Emma\" - and if you're looking for another romantic classic, I highly recommend \"Doctor Zhivago\". This epic romance stars Julie Christie and Omar Sharif in a sweeping tale of love and war set against the backdrop of revolutionary Russia. With its lush cinematography and memorable performances, it's a timeless classic that will transport you to another era!",
       "constraints": {
-        "genre": "sitcom",
+        "genre": "romance",
         "plot": [
           "like",
           "sound"
         ],
-        "name": "The Nanny"
+        "name": "Deep"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Emma tell? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"Stepmom\"! It's a beautiful romance that explores complex emotions and relationships, with an all-star cast including Julia Roberts and Susan Sarandon. The movie takes a deep dive into the human experience, which aligns with what you said about Emma feeling deeper than expected. Would you like to give it a try?",
+      "constraints": {
+        "genre": "romance",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Deep"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Emma? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"The Young Victoria\"! The film offers a charming and intimate look at Queen Victoria's early years, with beautiful costumes and a strong performance from Emily Blunt as the young monarch. It's a lovely period romance that explores the complexities of royal life and the power of love to bring people together.",
+      "constraints": {
+        "genre": "romance",
+        "plot": [
+          "what",
+          "emma"
+        ],
+        "name": "Deep"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on The Young Victoria. Could we explore monarch next, with a mix of excitement and warmth?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've got just the film for you! Have you considered \"Platoon\"? It's a classic war movie that explores the complexities of human nature in the midst of conflict, with standout performances from Tom Berenger and Johnny Depp. The themes of camaraderie, morality, and the psychological toll of war are all expertly woven together in this powerful film.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "War"
       }
     },
     {
@@ -39,62 +88,30 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I can help you find a new favorite movie!\n\nIf you're looking for something that's a bit quirky and offbeat, I'd recommend \"Louie\". This documentary-style film is all about exploring the life of a unique individual who's made a name for themselves in their community. It's a heartwarming and entertaining ride that might just surprise you with its charm!\n\nAlternatively, if you're in the mood for something more lighthearted and fun, \"Can You Keep a Secret?\" is a great choice. This rom-com stars Jennifer Garner and has a delightful, feel-good vibe to it. It's all about secrets, surprises, and finding love in unexpected places!",
+      "text": "I think I have just the movie for you! Have you considered \"The Deer Hunter\"? It's a classic war drama that explores the human cost of conflict, and features outstanding performances from Christopher Walken and Robert De Niro. The way it delves into the emotional toll of war on its characters is really thought-provoking.",
       "constraints": {
-        "genre": "sitcom",
+        "genre": "war",
         "plot": [
           "weird",
           "thought"
         ],
-        "name": "The Nanny"
+        "name": "War"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Louie? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "What's the mood of The Deer Hunter? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I've got just the thing for you! Since you're looking for a sitcom-like vibe, I highly recommend \"Louie\" (2010) - an FX series created by and starring Louis C.K., who's known for his hilarious stand-up comedy. The show follows Louis as he navigates his daily life as a comedian, father, and husband, often poking fun at himself and the absurdities of everyday situations.",
+      "text": "I think you might really enjoy \"The Warlords\"! It's a gripping war drama that explores the complexities of loyalty and morality in the midst of conflict, with some amazing action sequences and strong performances from Andy Lau and Jet Li. Plus, it's set in China during the 1860s, which adds an extra layer of interest to the story.",
       "constraints": {
-        "genre": "sitcom",
+        "genre": "war",
         "plot": [
           "what",
-          "louie"
+          "deer"
         ],
-        "name": "Louie"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Louie tell? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think you might really enjoy \"Louie\"! It's a unique film that explores the life and mysteries of Louie Evans, a Boston legend known for his tricycle rides and distinctive siren noise. With interviews from various characters, including those who work at Back Bay Bicycles, we get to know Louie as both a dedicated bicyclist and a compassionate person - it's a really interesting and offbeat story that I think you'll find intriguing!",
-      "constraints": {
-        "genre": "sitcom",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "Louie"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thanks for all the detail on Louie. Could we explore comedy next, though something emotional wouldn\u2019t hurt?"
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I have just the thing for you! Have you considered \"Am\u00e9lie\"? It's a quirky and charming comedy that follows the story of Amelie, a young waitress who decides to help others find happiness. With its whimsical plot and lovable characters, it's sure to bring a smile to your face.\n\nIf you're looking for something a bit more recent, I'd also recommend \"Friday After Next\". It's a hilarious holiday comedy that follows two friends as they try to get their Christmas back after it's stolen. With Ice Cube and Mike Epps on board, it's got plenty of laughs and good vibes.",
-      "constraints": {
-        "genre": "comedy",
-        "plot": [
-          "thanks",
-          "detail"
-        ],
-        "name": "Louie"
+        "name": "The Deer Hunter"
       }
     },
     {
@@ -103,229 +120,97 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I've got just the thing for you! If you're looking for a laugh, I'd highly recommend \"50 First Dates\" - it's a hilarious rom-com starring Adam Sandler and Drew Barrymore that explores the ups and downs of relationships in a unique and charming way. Or if you're in the mood for something a bit more light-hearted and action-packed, \"Ride Along\" could be a great choice, featuring a fun buddy-cop dynamic between Kevin Hart and Ice Cube!",
+      "text": "I think I have just the right movie for you! \"Hart's War\" stands out with its gripping storyline and impressive cast, including Colin Farrell and Bruce Willis. As the title suggests, the movie delves into themes of morality and justice, which seem to align with your interest in exploring the concept of being \"wrong earlier\". Would you like to give it a try?",
       "constraints": {
-        "genre": "comedy",
+        "genre": "war",
         "plot": [
           "wrong",
           "earlier"
         ],
-        "name": "Louie"
+        "name": "The Deer Hunter"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Friday After Next. Who stars in it? That feels deeper than I thought."
+      "text": "I like the sound of Hart's War. Who stars in it? Hmm, I didn\u2019t expect that vibe."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think you might enjoy \"Fun with Dick and Jane\" - it's a hilarious comedy about two people who turn to crime after losing their wealth, played by Jim Carrey and T\u00e9a Leoni (but unfortunately no Ice Cube this time!). The cast has some great comedic chemistry and the plot is ridiculous enough to be entertaining.",
+      "text": "I think I have just the recommendations for you! If you enjoyed the gritty, intense vibe of Hart's War, I'd recommend checking out Blow Out (1981). This classic thriller stars John Travolta as a sound recordist who finds himself in danger when he accidentally records evidence of murder. Or, if you're up for something a bit more epic, Doctor Zhivago (1965) might be the way to go - it's a sweeping romance set against the backdrop of World War I and the Russian Revolution, starring Omar Sharif and Julie Christie.",
       "constraints": {
-        "genre": "comedy",
+        "genre": "war",
         "plot": [
           "like",
           "sound"
         ],
-        "name": "Friday After Next"
+        "name": "War"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Fun with Dick and Jane tell? Hmm, I didn\u2019t expect that vibe."
+      "text": "What kind of story does Hart's War tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think you might enjoy \"Dinner for Schmucks\"! The movie has a similar tone and humor to \"Fun with Dick and Jane\", and its quirky characters and absurd situations are sure to bring a smile to your face. With a talented cast like Steve Carell, Paul Rudd, and Zach Galifianakis, it's a hilarious ride from start to finish.",
+      "text": "What a fascinating choice! Based on your interest in war stories, I think you might enjoy \"Cold Mountain\". It's a powerful and emotional journey about a wounded soldier's quest to return home, set against the backdrop of the American Civil War. With an all-star cast, including Ren\u00e9e Zellweger and Jude Law, this film is sure to captivate you.\n\nIf you're in the mood for something a bit different, I'd also recommend \"Taxi Driver\". While it's not strictly a war movie, it does deal with themes of isolation and conflict, set against the gritty backdrop of 1970s New York City. With Robert De Niro delivering a iconic performance as Travis Bickle, this film is a must-see for anyone who loves character-driven drama.",
       "constraints": {
-        "genre": "comedy",
+        "genre": "war",
         "plot": [
           "what",
           "kind"
         ],
-        "name": "Fun with Dick and Jane"
+        "name": "War"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Dinner for Schmucks? Hmm, I didn\u2019t expect that vibe."
+      "text": "Could we switch to something else by Jonathan Liebesman? That sounds intriguing. Maybe something like what you shared about Drive."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I have just the thing! Since you enjoyed the quirky humor in Dinner for Schmucks, I'd recommend checking out The Grand Budapest Hotel (2014). It's another visually stunning and hilarious film with a similar offbeat tone, starring Ralph Fiennes as the charismatic concierge Gustave H.",
-      "constraints": {
-        "genre": "comedy",
-        "plot": [
-          "what",
-          "dinner"
-        ],
-        "name": "Dinner for Schmucks"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Could we switch to something else by Edward Zwick? That sounds intriguing. Maybe something like what you shared about Dinner for Schmucks."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I have just the right recommendation for you! Edward Zwick's \"Amen.\" is a powerful film that explores the moral complexities of war, with a gripping storyline and outstanding performances from Ulrich M\u00fche and Sebastian Koch. It's a thought-provoking drama that will keep you on the edge of your seat. Would you like to give it a try?",
+      "text": "I think I have just the movie for you! Based on your interest in Jonathan Liebesman's work and the war genre, I highly recommend \"Flags of Our Fathers\" (2006). This film is a powerful and emotional portrayal of the six men who raised the flag at the Battle of Iwo Jima during World War II. Directed by Clint Eastwood, it features an all-star cast, including Ryan Phillippe, Adam Garcia, and Jesse Bradford.\n\nIf you're interested in something with a similar historical backdrop but with a more unique story, \"Red Cliff\" (2008) could be the way to go! This epic Chinese film is based on a famous battle from China's Three Kingdoms period and features stunning action sequences and beautiful cinematography.",
       "constraints": {
         "genre": "war",
         "plot": [
           "could",
           "switch"
         ],
+        "name": "Drive",
+        "director": "Jonathan Liebesman"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Flags of Our Fathers. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you'll really appreciate \"The Last Samurai\"! It's a visually stunning film that explores themes of cultural identity and redemption, all set against the backdrop of war. Tom Cruise gives a fantastic performance as a former Civil War soldier who finds himself in Japan, fighting alongside samurai warriors to rescue two Japanese businessmen.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Her",
+        "director": "Jonathan Liebesman"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Warrior tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "What a fascinating movie you're thinking of, Warrior! I think you might enjoy \"Alex in Wonderland\" - it's a unique blend of war and filmmaking, following a director as he navigates the highs and lows of his craft. With cameos from Jeanne Moreau and Federico Fellini, this one's sure to delight.\n\nIf that doesn't tickle your fancy, I think you might also enjoy \"Wrath of the Titans\" - it's an epic battle movie with some great special effects and a star-studded cast, including Sam Worthington and Liam Neeson.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
         "name": "War",
-        "director": "Edward Zwick",
-        "writer": "Edward Zwick"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Amen. tell? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I have just the thing for you! Since you're interested in a war story, I'd recommend \"Proof of Life\" (2000) directed by Edward Zwick, who also did \"Amen\". This movie stars Russell Crowe as a negotiator trying to rescue his engineer husband from guerrillas in South America - it's a thrilling and suspenseful ride! Would you like to give that one a try?",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "Amen.",
-        "director": "Edward Zwick",
-        "writer": "Edward Zwick"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Proof of Life. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think you'd really enjoy \"X-Men: First Class\"! It's a thrilling ride that explores the early days of the X-Men, and Michael Fassbender and James McAvoy deliver standout performances as Charles Xavier and Erik Lensherr. The film's 1960s setting and themes of prejudice and acceptance will likely resonate with you, too.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "Proof of Life",
-        "director": "Edward Zwick",
-        "writer": "Edward Zwick"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Proof of Life? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think you'll really enjoy \"Tears of the Sun\"! It's a gripping war drama directed by Edward Zwick, who also brought us \"Glory\". The film follows Bruce Willis as a Special-Ops commander on a rescue mission in Nigeria, and it's an intense and emotionally charged ride.\n\nIf you're looking for something a bit more fast-paced, I'd recommend \"Taken\"! Liam Neeson stars as a former CIA operative who must use his skills to rescue his daughter from a human trafficking ring. It's a thrilling action movie with plenty of twists and turns to keep you on the edge of your seat.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "proof"
-        ],
-        "name": "Proof of Life",
-        "director": "Edward Zwick",
-        "writer": "Edward Zwick"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "How about something primarily in Mende Language? Hmm, I didn\u2019t expect that vibe. Maybe something like what you shared about Tears of the Sun."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I have just the right recommendation for you! Based on your interest in something primarily in Mende Language, I'd like to suggest \"Alex in Wonderland\". Although it's not primarily in Mende Language, it does have a unique and artistic vibe that might appeal to you, similar to the film \"Tears of the Sun\" which Edward Zwick directed. Give it a try!",
-      "constraints": {
-        "genre": "language",
-        "plot": [
-          "something",
-          "primarily"
-        ],
-        "name": "Tears of the Sun",
-        "director": "Edward Zwick",
-        "writer": "Edward Zwick",
-        "language": "Mende Language"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Tears of the Sun? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I have just the right recommendation for you! Have you considered \"Find Me Guilty\"? It's a courtroom drama that shares some similarities with \"Tears of the Sun\" in terms of its intense and suspenseful plot, and it features a great performance from Vin Diesel.",
-      "constraints": {
-        "genre": "language",
-        "plot": [
-          "what",
-          "tears"
-        ],
-        "name": "Tears of the Sun",
-        "director": "Edward Zwick",
-        "writer": "Edward Zwick",
-        "language": "Mende Language"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Find Me Guilty tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think you might really enjoy \"End of Watch\"! It's a gripping film that explores the daily struggles and risks faced by two police officers as they navigate their jobs and personal relationships. With its documentary-style filmmaking and strong performances from David Harbour and Frank Grillo, it's an intense and thought-provoking watch.",
-      "constraints": {
-        "genre": "language",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "Find Me Guilty",
-        "director": "Edward Zwick",
-        "writer": "Edward Zwick",
-        "language": "Mende Language"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of They. Who stars in it? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think you'd really enjoy \"Blood Diamond\"! The film's themes of determination and creativity are woven into a gripping storyline set against the backdrop of war-torn Sierra Leone. And with an all-star cast including Leonardo DiCaprio, Djimon Hounsou, and Jennifer Connelly, it's definitely worth checking out.",
-      "constraints": {
-        "genre": "language",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "They",
-        "director": "Edward Zwick",
-        "writer": "Edward Zwick",
-        "language": "Mende Language"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "How about something primarily in Turkish Language? Hmm, I didn\u2019t expect that vibe. Maybe something like what you shared about Blood Diamond."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I have just the thing for you! Have you considered \"Unknown\" (2011)? It's a thought-provoking film that explores the concept of reliving a pivotal moment in history, and it stars some amazing actors like Liam Neeson and Frank Langella. The virtual reality aspect adds an interesting layer to the story, and I think you'll find it engaging!",
-      "constraints": {
-        "genre": "language",
-        "plot": [
-          "something",
-          "primarily"
-        ],
-        "name": "Blood Diamond",
-        "director": "Edward Zwick",
-        "writer": "Edward Zwick",
-        "language": "Turkish Language"
+        "director": "Jonathan Liebesman"
       }
     },
     {
@@ -334,17 +219,121 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I've got just the thing for you! Based on your interest in Turkish language and Edward Zwick's direction, I'm going to recommend \"Smokin' Aces\" - it's a wild ride with a star-studded cast, including Ray Liotta, Jeremy Piven, and Chris Pine. The plot is full of twists and turns, just like your uncertainty about which movie to choose!",
+      "text": "I think I have just the right recommendation for you! Based on your interest in war movies and Jonathan Liebesman's direction, I highly recommend \"Tears of the Sun\" (2003). This action-packed film stars Bruce Willis as a Special-Ops commander who must navigate treacherous Nigerian jungle terrain to rescue a doctor and 70 refugees. With its intense battle scenes and emotional character development, I think you'll find it a gripping watch!",
       "constraints": {
-        "genre": "language",
+        "genre": "war",
         "plot": [
           "sure",
           "perhaps"
         ],
-        "name": "Blood Diamond",
-        "director": "Edward Zwick",
-        "writer": "Edward Zwick",
-        "language": "Turkish Language"
+        "name": "War",
+        "director": "Jonathan Liebesman"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Wrath of the Titans? That sounds intriguing."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "What a great taste in movies you have! Based on your interest in \"Wrath of the Titans\" and its epic battle scenes, I think you might really enjoy \"Platoon\". Directed by Oliver Stone, this classic war drama follows Chris Taylor (Charlie Sheen) as he navigates the treacherous world of Vietnam. With its intense action sequences and thought-provoking themes, it's a must-see for any fan of war movies!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "wrath"
+        ],
+        "name": "Wrath of the Titans",
+        "director": "Jonathan Liebesman"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we look at films from around 1667? That sounds intriguing. Maybe something like what you shared about Wrath of the Titans."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Have you considered \"The English Patient\"? It's a sweeping epic that explores the complexities of love and war, with a dash of romance and drama thrown in. With an all-star cast including Ralph Fiennes, Juliette Binoche, and Kristin Scott Thomas, it's a must-see.\n\nIf you're looking for something a bit more intense, I'd recommend \"The Good German\". It's a gripping thriller that takes place in the aftermath of World War II, with George Clooney starring as an American journalist caught up in a murder mystery. The cinematography is stunning, and it's a great example of a well-crafted spy movie.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "look"
+        ],
+        "name": "Wrath of the Titans",
+        "director": "Jonathan Liebesman"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The English Patient. Who stars in it? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Have you considered \"Blow Out\"? It's a classic thriller that explores the intersection of sound and danger, much like The English Patient's themes of depth and complexity. With John Hurt in the lead role, it's a gripping ride that will keep you on the edge of your seat.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The English Patient",
+        "director": "Jonathan Liebesman",
+        "language": "English"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Blow Out tell? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"I Am Legend\"! It's a thrilling post-apocalyptic tale that explores what happens when humanity is on the brink of extinction, and one man must find a way to survive. With Will Smith leading the cast, it's an action-packed ride that'll keep you on the edge of your seat.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Blow Out",
+        "director": "Jonathan Liebesman",
+        "language": "English"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of I Am Legend? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might really enjoy \"Eragon\"! The fantasy adventure is reminiscent of \"I Am Legend\" in its epic scope and coming-of-age themes, with a young hero discovering his destiny amidst mythical creatures and treacherous battles. With its lush visuals and memorable characters, it's an exciting ride that'll transport you to the world of Alaga\u00ebsia.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "legend"
+        ],
+        "name": "I Am Legend",
+        "director": "Jonathan Liebesman",
+        "language": "English"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Latin Language? That sounds intriguing. Maybe something like what you shared about I Am Legend."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think \"The 13th Warrior\" would be an excellent choice for you! It's a historical action-adventure film with a unique setting and an all-star cast, including Antonio Banderas and Vladimir Kulich. Plus, it features stunning battle scenes and a gripping storyline that will keep you on the edge of your seat.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "I Am Legend",
+        "director": "Jonathan Liebesman",
+        "language": "Latin Language"
       }
     }
   ]

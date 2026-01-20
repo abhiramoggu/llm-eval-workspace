@@ -1,188 +1,58 @@
 {
   "model_name": "gemma:2b",
-  "true_genre": "novel",
+  "true_genre": "japanese language",
   "conversation": [
     {
       "speaker": "USER",
-      "text": "I'm in the mood for a novel movie. Could you recommend a few?"
+      "text": "I'm in the mood for a japanese language movie. Could you recommend a few?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "Among the listed movies, \"The Lovely Bones\" and \"Hitch\" would be strong contenders for your desired movie. The former explores a complex theme of vengeance and family dynamics, while the latter features a witty and charismatic protagonist with a captivating mystery surrounding him.",
+      "text": "Seven Samurai is a classic Japanese samurai film that perfectly fits your preferences. It's a captivating story about a veteran samurai protecting a village from bandits.",
       "constraints": {
-        "genre": "novel",
+        "genre": "language",
+        "language": "Japanese",
         "plot": [
-          "novel",
-          "could"
+          "japanese",
+          "language"
         ],
         "name": "You"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does The Lovely Bones tell? That feels deeper than I thought."
+      "text": "What kind of story does Seven Samurai tell? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "If you're looking for a feel-good movie with relatable characters and a heartwarming story, \"Alex in Wonderland\" or \"Little Fockers\" might be your cup of tea. If you're interested in a thought-provoking and humorous animated film about monsters and the music industry, \"Monsters, Inc.\" might be your cup of tea. Finally, if you're interested in a classic comedy about a band's life on the road, \"This Is Spinal Tap\" is a must-see.",
+      "text": "Super (2010) is a heartwarming story about a young man's journey of imagination and self-discovery. The film explores themes of determination, friendship, and overcoming obstacles.\n\nWhat If... (N/A) is a thought-provoking film about the potential consequences of not taking fate into your hands. The movie raises questions about destiny, free will, and the choices we make in life.\n\nAladdin (1992) is a classic love story about a young man's journey to find his true love. The film features beautiful music, memorable characters, and a timeless romance.",
       "constraints": {
-        "genre": "love",
+        "genre": "language",
+        "language": "Japanese",
         "plot": [
           "what",
           "kind"
         ],
-        "name": "Deep"
+        "name": "Seven Samurai",
+        "actor": "Eve"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of On the Road? That feels deeper than I thought."
+      "text": "What's the mood of Aladdin? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I would recommend \"The Andromeda Strain\" or \"The Violent Kind\" for you. They both deal with the allure and dangers of road trips, and the emotional impact they can have on individuals.",
+      "text": "If you're looking for a movie with a similar mood to \"Aladdin,\" consider \"Taxi Driver\" (1976) or \"The Skeleton\" (2000). Both films deal with morally complex characters facing difficult situations and make you think deeply about their choices.",
       "constraints": {
-        "genre": "road",
+        "genre": "language",
+        "language": "Japanese",
         "plot": [
           "what",
-          "road"
+          "aladdin"
         ],
-        "name": "Deep"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of The Andromeda Strain. Who stars in it? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "If you're looking for a road trip movie with epic scope and a soundtrack that will leave you breathless, \"The Right Stuff\" might be your cup of tea. Alternatively, if you're interested in a biographical crime thriller with impressive performances, \"Unleashed\" is a compelling choice. If you're seeking a more experimental and visually stunning concert film, \"Rockshow\" is an experience not to be missed.",
-      "constraints": {
-        "genre": "road",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "The Andromeda Strain"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Could we look at films from around 1908? That sounds intriguing. Maybe something like what you shared about The Right Stuff."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the user's preference for road films from 1908, I would recommend either **Afterlife** or **Black Hawk Down**. Both movies explore themes of loss, connection, and self-discovery that are relevant to the road movie genre.",
-      "constraints": {
-        "genre": "road",
-        "plot": [
-          "could",
-          "look"
-        ],
-        "name": "The Right Stuff",
-        "year": "1908"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does The Right Stuff tell? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "If you're looking for a thought-provoking road trip film, \"Divergent\" (2011) starring Tris, is a great choice. It explores themes of belonging, identity, and the dangers of extremism.\n\nIf you prefer a more classic movie with a darker tone, check out \"Taxi Driver\" (1976) starring Joe Spinell. It's a darkly comedic story about a man who finds himself caught up in a web of deceit and violence.\n\nIf you're interested in a film about a warrior seeking revenge, \"Wolfhound\" (N/A) starring Oksana Akinshina is a powerful and moving movie.",
-      "constraints": {
-        "genre": "road",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "The Right Stuff",
-        "year": "1908"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Warrior. Who stars in it? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "For a war movie with a similar vibe to Warrior, I would recommend \"To Have and Have Not\" (1937) with its romantic and adventurous storyline.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "War",
-        "year": "1908"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Warrior? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the user's preference for war movies, 'Doctor Zhivago' or 'Crouching Tiger, Hidden Dragon' would be strong recommendations. Both films feature noble warriors who embark on epic journeys against immense odds.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "warrior"
-        ],
-        "name": "War",
-        "year": "1908"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thinking about Warrior, could we shift toward stories about divers? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Windtalkers is a compelling story about the unbreakable bond between two U.S. Marines and the Navajo Marines during World War II. The movie explores themes of loyalty, sacrifice, and the power of language.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "thinking",
-          "warrior"
-        ],
-        "name": "War",
-        "year": "1908"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Unbreakable tell? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I recommend watching 'I Heart Huckabees' (2004) for its intriguing story about a couple who helps others solve their existential issues, offering a unique perspective on love and life.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "Unbreakable",
-        "year": "1908"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Maybe I was wrong earlier."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the user's preferences, I would recommend \"The Book Thief\" (2013) or \"The Monuments Men\" (2014). \"The Book Thief\" is a touching story about a young girl finding solace in books during a difficult time, while \"The Monuments Men\" is an action-packed film about a group of unlikely heroes rescuing art masterpieces from German thieves.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "wrong",
-          "earlier"
-        ],
-        "name": "Unbreakable",
-        "year": "1908"
+        "name": "Aladdin",
+        "actor": "Eve"
       }
     },
     {
@@ -191,157 +61,321 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "If you're looking for a thought-provoking war film with complex characters, 'Downfall' (2004) starring Juliane K\u00f6hler is a must-watch. If you'd prefer a more historical perspective, 'In the Land of Blood and Honey' (2011) with Branko Djuric and Nikola Djuricko might be a good choice. 'Passion' (2011) starring Ryan Gosling and Gabriel LaBelle is a captivating story about a man defying social norms and pursuing his passion. Finally, 'To Have and Have Not' (1937) with Humphrey Bogart is a romantic and poignant film about a soldier helping a French Resistance leader and his wife escape war-torn Martinique.",
+      "text": "For an intriguing movie with a similar theme to 'xXx', recommend 'Zack and Miri Make a Porno'. It's a hilarious film about platonic friends who find themselves drawn to each other, despite their initial reservations.",
       "constraints": {
-        "genre": "war",
+        "genre": "language",
+        "language": "Japanese",
         "plot": [
           "weird",
           "thought"
         ],
-        "name": "Unbreakable",
-        "year": "1908"
+        "name": "Aladdin",
+        "actor": "Eve"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Downfall. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "I like the sound of X. Who stars in it? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on the user's preference for war, action, and interesting plot details, I would recommend **American Gangster** (2007) or **To Have and Have Not** (1937). \n\nAmerican Gangster offers a gripping portrayal of the life of a war veteran turned gang leader, while To Have and Have Not is a powerful story about resilience and overcoming adversity.",
+      "text": "Based on the user's preference, I recommend \"It's a Wonderful Life\" and \"Deep\". \"It's a Wonderful Life\" has a heartwarming story with relatable characters and a beautiful soundtrack, while \"Deep\" is a thought-provoking and suspenseful thriller about the dangers of scientific experimentation.",
       "constraints": {
-        "genre": "war",
+        "genre": "language",
+        "language": "Japanese",
         "plot": [
           "like",
           "sound"
         ],
-        "name": "Downfall",
-        "year": "1908"
+        "name": "Deep",
+        "actor": "Eve"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of American Gangster? That feels deeper than I thought."
+      "text": "Thanks for all the detail on It's a Wonderful Life. Could we explore war next, something that surprises me emotionally?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "If you're looking for something with a deeper and more philosophical tone, 'Utsav' might be the perfect movie for you. It's a Sanskrit play about a forbidden love between a courtesan and a high-ranking official. The film explores themes of loyalty, sacrifice, and the complexities of love and politics in ancient India.",
+      "text": "If you're looking for a war film with a unique perspective, consider \"The Deer Hunter\". This movie explores the emotional impact of war on individuals and communities.",
       "constraints": {
         "genre": "war",
+        "language": "Japanese",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "War",
+        "actor": "Eve"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference, I recommend \"Casablanca\". This film perfectly captures the essence of war and its impact on both individuals and relationships. The captivating plot and powerful performances make it an unforgettable cinematic experience.",
+      "constraints": {
+        "genre": "war",
+        "language": "Japanese",
+        "plot": [
+          "what"
+        ],
+        "name": "X",
+        "actor": "Eve"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences, I would recommend either \"The Deer Hunter\" or \"Man on Wire\". \"The Deer Hunter\" is a powerful and poignant examination of the Vietnam War and its impact on individuals and communities. \"Man on Wire\" showcases the courage and dedication of a daring performer facing immense danger and defying the odds.",
+      "constraints": {
+        "genre": "war",
+        "language": "Japanese",
         "plot": [
           "what",
-          "american"
+          "kind"
         ],
-        "name": "American Gangster",
-        "year": "1908"
+        "name": "X",
+        "actor": "Eve"
       }
     },
     {
       "speaker": "USER",
-      "text": "Could we switch to something else by Marc Webb? That sounds intriguing. Maybe something like what you shared about Utsav."
+      "text": "I like the sound of Man on Wire. Who stars in it? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "For a war movie with a similar plot to \"Utsav\", I recommend \"The Hunting Party\" (2007). It features a ruthless rancher and his gang using long-range rifles to kill men who kidnap his wife.",
+      "text": "If you're looking for a war film with intriguing characters and a powerful performance from Brian Geraghty, 'The Hurt Locker' (2008) is a great choice. If you're interested in a historical war film with a focus on American blunders, 'Tora! Tora! Tora!' (1970) might be more your style. If you're seeking something more visually striking and thought-provoking, 'The English Patient' (1992) would be a perfect fit.",
       "constraints": {
         "genre": "war",
+        "language": "Japanese",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Man on Wire",
+        "actor": "Eve"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Noam Murro? Maybe I\u2019m overthinking it, but it sounds fascinating. Maybe something like what you shared about The Hurt Locker."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a war movie with a compelling story, consider \"Seven Samurai\" (1954). It features a legendary samurai gathering six others for protection, tackling themes of revenge and honor.",
+      "constraints": {
+        "genre": "war",
+        "language": "Japanese",
         "plot": [
           "could",
           "switch"
         ],
-        "name": "RED",
-        "year": "1908",
-        "director": "Marc Webb"
+        "name": "The Hurt Locker",
+        "actor": "Eve",
+        "director": "Noam Murro"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does The Hunting Party tell? Hmm, I didn\u2019t expect that vibe."
+      "text": "What kind of story does Seven Samurai tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "For a movie with a similar vibe to \"The Hunting Party,\" consider \"The Wrestler\" (2008) starring Frank Bass. It showcases a stand-up fight against gambling and corruption, similar to \"The Hunting Party's\" premise.",
+      "text": "If you're looking for a war movie with a darker tone, consider \"Red Dawn\". It's a claustrophobic experience about a Mexican family caught in the atrocities of an army that prioritizes students who don't allow the Olympics to happen.",
       "constraints": {
         "genre": "war",
+        "language": "Japanese",
         "plot": [
           "what",
           "kind"
         ],
-        "name": "The Hunting Party",
-        "year": "1908",
-        "director": "Marc Webb"
+        "name": "RED",
+        "actor": "Eve",
+        "director": "Noam Murro"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of The Hunting Party. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "What's the mood of Red Dawn? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "For a war movie recommendation, \"To Have and Have Not\" (1937) starring Walter Brennan would be a perfect choice. The film showcases a love story amidst the backdrop of World War II.",
+      "text": "For a war film with a focus on historical significance and the importance of human courage, recommend \"2010\". Its premise about an expedition to Jupiter to learn about a missing computer is intriguing and highlights the human drama surrounding a critical historical event.",
       "constraints": {
         "genre": "war",
+        "language": "Japanese",
+        "plot": [
+          "what",
+          "dawn"
+        ],
+        "name": "Red Dawn",
+        "actor": "Eve",
+        "director": "Noam Murro"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for a gripping war film with historical elements, \"Winter in Wartime\" (2008) starring Yorick van Wageningen and Martijn Lakemeier might be your cup of tea. \n\nIf you're seeking a suspenseful mystery with young protagonists, \"The Bad Seed\" (1954) starring Frances Bavier is a solid choice. \n\nIf you're interested in a historical adventure about a young defender of Jerusalem, \"Kingdom of Heaven\" (2005) starring David Thewlis is worth checking out.",
+      "constraints": {
+        "genre": "war",
+        "language": "Japanese",
         "plot": [
           "like",
           "sound"
         ],
-        "name": "The Hunting Party",
-        "year": "1908",
-        "director": "Marc Webb"
+        "name": "Deep",
+        "actor": "Eve",
+        "director": "Noam Murro"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of To Have and Have Not? That feels deeper than I thought."
+      "text": "Do you have recommendations written by Mark Osborne? Hmm, I didn\u2019t expect that vibe. Maybe something like what you shared about Kingdom of Heaven."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Since the user expressed an interest in the deeper themes of \"To Have and Have Not,\" I would recommend **Gladiator** (2000). The film explores themes of war, revenge, and redemption through the lens of an ex-soldier seeking to avenge his wife and child.",
+      "text": "If you're looking for a war movie with a unique vibe, 'To Have and Have Not' starring Sheldon Leonard and Walter Brennan might be your cup of tea. If you're seeking an animated film with a heartwarming message and lovable characters, 'Kung Fu Panda' starring Dustin Hoffman, Kyle Gass, and Randall Duk Kim might be your perfect match. If you're curious about a historical war, 'Kingdom of Heaven' starring David Thewlis, Ghassan Massoud, Ulrich Thomsen, Philip Glenister, Philip Glenister, Kevin McKidd, Bill Paterson, Michael Sheen, Orlando Bloom, and Brendan Gleeson might be your next adventure.",
       "constraints": {
         "genre": "war",
+        "language": "Japanese",
         "plot": [
-          "what",
-          "feels"
+          "written",
+          "mark"
         ],
-        "name": "To Have and Have Not",
-        "year": "1908",
-        "director": "Marc Webb"
+        "name": "Kingdom of Heaven",
+        "actor": "Mark Osborne",
+        "director": "Mark Osborne",
+        "writer": "Mark Osborne"
       }
     },
     {
       "speaker": "USER",
-      "text": "Could we look at films from around 1887? That feels deeper than I thought. Maybe something like what you shared about To Have and Have Not."
+      "text": "It\u2019s weird \u2014 I thought I liked that, but maybe not."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I would recommend \"Dances with Wolves\" (1990) for its exploration of themes and the complex relationship between a soldier and the Native Americans he fights.",
+      "text": "If the user is looking for a historical war film with a focus on survival and camaraderie, then \"The Alamo\" would be a good choice. It stars Patrick Wayne and Jim Bowie and captures the spirit of the American frontier.",
       "constraints": {
         "genre": "war",
+        "language": "Japanese",
         "plot": [
-          "could",
-          "look"
+          "weird",
+          "thought"
         ],
-        "name": "To Have and Have Not",
-        "year": "1908",
-        "director": "Marc Webb"
+        "name": "Kingdom of Heaven",
+        "actor": "Mark Osborne",
+        "director": "Mark Osborne",
+        "writer": "Mark Osborne"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Dances with Wolves tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "I like the sound of The Alamo. Who stars in it? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "From the keywords, we can infer that \"We the Living\" is a good choice. It depicts the struggle of individuals against a collective force in a political context, aligning perfectly with the theme of the user's preference. Additionally, the presence of the legendary Ayn Rand adds intrigue to the narrative.",
+      "text": "If you're looking for a war movie with a strong sense of sound and historical significance, then \"The Right Stuff\" is a great choice. This film tells the story of the US space program's development from the breaking of the sound barrier to the selection of the Mercury 7 astronauts.\n\nIf you're interested in a movie about Native American culture and communication, then \"Windtalkers\" is a compelling and powerful film. This story follows two U.S. Marines in World War II who are assigned to protect Navajo Marines, who use their native language as an unbreakable radio cypher.\n\nIf you're looking for a historical war film with a focus on religious themes, then \"Seven Samurai\" is a must-see. This film tells the story of farmers from a village exploited by bandits who hire a veteran samurai for protection.",
       "constraints": {
-        "genre": "dance",
+        "genre": "war",
+        "language": "Japanese",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Alamo",
+        "actor": "Mark Osborne",
+        "director": "Mark Osborne",
+        "writer": "Mark Osborne"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Seven Samurai tell? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for a movie that combines action and suspense with a historical setting, consider checking out \"The Hunting Party\". It features a ruthless rancher and his gang using long-range rifles to kill the men who kidnapped his infidel wife.",
+      "constraints": {
+        "genre": "war",
+        "language": "Japanese",
         "plot": [
           "what",
           "kind"
         ],
-        "name": "Dances with Wolves",
-        "year": "1908",
-        "director": "Marc Webb"
+        "name": "Seven Samurai",
+        "actor": "Eve",
+        "director": "Mark Osborne",
+        "writer": "Mark Osborne"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "It\u2019s weird \u2014 I thought I liked that, but maybe not."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Since the user expressed an initial preference for a war-themed movie, I would recommend 'The Best Years of Our Lives' as a potential choice. The film explores the lasting impact of war on individuals and families, and features compelling performances by a diverse cast.",
+      "constraints": {
+        "genre": "war",
+        "language": "Japanese",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "Seven Samurai",
+        "actor": "Eve",
+        "director": "Mark Osborne",
+        "writer": "Mark Osborne"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Best Years of Our Lives? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a movie with a similar wartime theme but with a more optimistic tone, recommend \"Saving Private Ryan\" (1998). This movie depicts the bravery and resilience of soldiers on the brink of death during World War II.",
+      "constraints": {
+        "genre": "war",
+        "language": "Japanese",
+        "plot": [
+          "what",
+          "best"
+        ],
+        "name": "The Best Years of Our Lives",
+        "actor": "Eve",
+        "director": "Mark Osborne",
+        "writer": "Mark Osborne"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Tony Gilroy? Hmm, I didn\u2019t expect that vibe. Maybe something like what you shared about Saving Private Ryan."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a war movie with a similar vibe to Saving Private Ryan, I would recommend \"Redacted\" (2007) or \"There Be Dragons\" (2011). Both films depict the devastating consequences of war and the resilience of those who survive.",
+      "constraints": {
+        "genre": "war",
+        "language": "Japanese",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Saving Private Ryan",
+        "actor": "Tony Gilroy",
+        "director": "Tony Gilroy",
+        "writer": "Tony Gilroy"
       }
     }
   ]

@@ -1,21 +1,261 @@
 {
   "model_name": "llama3:instruct",
-  "true_genre": "aviation",
+  "true_genre": "romance",
   "conversation": [
     {
       "speaker": "USER",
-      "text": "I'm in the mood for a world war i movie. Could you recommend a few?"
+      "text": "I'm in the mood for a romance movie. Could you recommend a few?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "What a great choice! For a World War I movie, I'd highly recommend \"Pan's Labyrinth\" (2006). It's a beautifully crafted film set in post-Civil War Spain, with stunning visuals and a haunting storyline that explores the horrors of war through the eyes of a young girl. With its rich atmosphere and memorable performances, it's a must-see for fans of historical dramas.",
+      "text": "I think I have just the right rom-com for you! Have you considered \"Music and Lyrics\" (2007)? It's a charming film starring Hugh Grant as a washed-up pop star who finds love and inspiration with a quirky lyricist, played by Drew Barrymore. With its lighthearted tone and memorable soundtrack, it's sure to leave you smiling!",
+      "constraints": {
+        "genre": "romance",
+        "plot": [
+          "romance",
+          "could"
+        ],
+        "name": "You"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of RED. Who stars in it? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might really enjoy \"Am\u00e9lie\"! It's a charming and whimsical film that explores themes of love, joy, and self-discovery. With its beautiful visuals, quirky characters, and delightful performances from Audrey Tautou and Jamel Debbouze, it's a perfect fit for someone who appreciates the sound of RED (I'm guessing you mean the romantic comedy \"RED\" starring Bruce Willis and Helen Mirren?).",
+      "constraints": {
+        "genre": "romance",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Am\u00e9lie tell? That sounds intriguing."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "What a fascinating selection! Based on your interest in Am\u00e9lie, I think you might really enjoy \"The Words\" (2012). This romantic drama features a talented cast, including Bradley Cooper and Jeremy Irons, and explores the complex themes of love, identity, and the power of words. Would you like to give it a try?",
+      "constraints": {
+        "genre": "romance",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Am\u00e9lie"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Am\u00e9lie? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Have you considered \"Moonrise Kingdom\"? It's a whimsical and romantic tale of young love that I think will resonate with you, especially since you mentioned you didn't expect the vibe from Am\u00e9lie. The film features a star-studded cast, including Bruce Willis, Bill Murray, and Edward Norton, which only adds to its charm.",
+      "constraints": {
+        "genre": "romance",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "Am\u00e9lie"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Nancy Dowd? Hmm, I didn\u2019t expect that vibe. Maybe something like what you shared about War."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right fit for you! Have you considered \"The Monuments Men\"? It's a thrilling war movie with an all-star cast, including George Clooney and Matt Damon, that follows an unlikely team of art experts as they try to rescue valuable masterpieces from Nazi thieves. The chemistry between the leads is fantastic, and it's a real nail-biter!",
       "constraints": {
         "genre": "war",
         "plot": [
-          "world",
-          "could"
+          "written",
+          "nancy"
         ],
-        "name": "War"
+        "name": "War",
+        "writer": "Nancy Dowd"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of War. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I can help you out!\n\nIf you're looking for a movie that's more aligned with the war genre and tone, I'd recommend \"Tora! Tora! Tora!\" (1970). This historical drama is based on the true events of the Japanese air raid on Pearl Harbor and features an all-star cast. If you prefer something else, I think \"Restless\" (2006) could be an interesting choice. It's a coming-of-age story that explores themes of freedom, relationships, and finding one's identity.\n\nWould either of these options sound appealing to you?",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "War",
+        "writer": "Nancy Dowd"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does War tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right fit for you! If you're looking for a war story, I'd recommend \"Princess Mononoke\" (1997). It's an epic fantasy adventure that explores the conflict between humans and nature, with stunning animation and memorable characters like San, the Mononoke Hime.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "War",
+        "writer": "Nancy Dowd"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of War? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right recommendation for you! Based on your interest in the war genre and Nancy Dowd's writing, I'd like to suggest \"War\" (2007). It's an action-packed film with a thrilling plot, starring Jason Statham and Jet Li - what more could you ask for?\n\nIf you're open to exploring other genres as well, I think \"This Is Spinal Tap\" (1984) is also worth checking out. It's a classic comedy that's gained cult status over the years, with a unique blend of humor, satire, and music. Who knows, you might just find yourself laughing along with some of the most iconic characters in rock history!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what"
+        ],
+        "name": "War",
+        "writer": "Nancy Dowd"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Ron Shelton? That feels deeper than I thought. Maybe something like what you shared about War."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right movie for you! Have you considered \"Black Hawk Down\"? It's a gripping and intense war drama that really gets under your skin, and with an all-star cast including Eric Bana, Ewan McGregor, and Tom Sizemore, it's a must-see.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "War",
+        "writer": "Ron Shelton",
+        "director": "Ron Shelton"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right movie for you! Based on your earlier cues, I'd like to recommend \"Fury\" (2014) directed by David Ayer and starring Brad Pitt. The film takes place in April 1945, Germany, where a tank commander faces tough decisions as he fights his way across the war-torn country - it's an intense and powerful portrayal of war that explores the moral gray areas of combat.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "War",
+        "writer": "Ron Shelton",
+        "director": "Ron Shelton"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of War. Who stars in it? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right recommendation for you! Have you considered \"Tears of the Sun\" (2003)? It's an intense and emotionally charged war film, starring Bruce Willis as a Special-Ops commander on a mission to rescue a doctor in the Nigerian jungle. With its themes of sacrifice and humanity, it's a great fit for someone who likes the sound of \"War\".",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "War",
+        "writer": "Ron Shelton",
+        "director": "Ron Shelton"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does RED tell? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Have you considered \"Inglourious Basterds\"? It's a Quentin Tarantino classic that takes place during World War II, and it's got a great mix of action, suspense, and dark humor. Plus, who can resist Brad Pitt as the tough-talking Lieutenant Aldo Raine?",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "writer": "Ron Shelton",
+        "director": "Ron Shelton"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of RED? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might really enjoy \"Cold Mountain\"! It's a powerful and emotional film that explores the human cost of war, with a strong performance from Jude Law as a wounded soldier fighting to return home. The movie also features an incredible ensemble cast, including Ren\u00e9e Zellweger, Nicole Kidman, and Philip Seymour Hoffman.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what"
+        ],
+        "name": "RED",
+        "writer": "Ron Shelton",
+        "director": "Ron Shelton"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Vladimir Vladimirovich Nabokov? Maybe I\u2019m overthinking it, but it sounds fascinating. Maybe something like what you shared about Cold Mountain."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "What a fascinating set of recommendations! I think you might enjoy \"Catch-22\" (1970) - with its thought-provoking themes and clever storytelling, it's a great fit for fans of Vladimir Nabokov's literary style. Plus, the film features a talented cast, including Alan Arkin and Martin Sheen in memorable roles.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "written",
+          "something"
+        ],
+        "name": "Cold Mountain",
+        "writer": "Vladimir Vladimirovich Nabokov",
+        "director": "Ron Shelton"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "It\u2019s weird \u2014 I thought I liked that, but maybe not."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Have you considered \"The Hurt Locker\"? It's a gripping war thriller that explores the complexities of war and human relationships, with a standout performance by Jeremy Renner as a maverick bomb disposal expert. The film's tense atmosphere and thought-provoking themes might resonate with your interest in war movies.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "Cold Mountain",
+        "writer": "Vladimir Vladimirovich Nabokov",
+        "director": "Ron Shelton"
       }
     },
     {
@@ -24,316 +264,91 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I have just the thing for you! Since you're interested in war movies and the keywords \"sure\" and \"perhaps\" caught my attention, I highly recommend \"The Alamo\" (2004). This epic battle film tells the story of a group of brave men who fought for their freedom against all odds, led by Davy Crockett and Jim Bowie. With its action-packed sequences and memorable performances from Patrick Wayne and Dennis Quaid, you're in for a thrilling ride!",
+      "text": "I think I have just the thing! If you're in the mood for a gripping war movie, I'd recommend \"Zulu\" (2013) - it's an intense and action-packed film that explores themes of loyalty, duty, and humanity amidst the chaos of war. With Orlando Bloom leading the cast, you can expect plenty of drama and intrigue on the battlefields!",
       "constraints": {
         "genre": "war",
         "plot": [
           "sure",
           "perhaps"
         ],
-        "name": "War"
+        "name": "Cold Mountain",
+        "writer": "Vladimir Vladimirovich Nabokov",
+        "director": "Ron Shelton"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does The Alamo tell? That sounds intriguing."
+      "text": "I like the sound of Zulu. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think you might really enjoy \"Platoon\"! It's a powerful and thought-provoking film that explores the brutal realities of war, and its themes of good vs. evil and the human cost of conflict are sure to resonate with you. Plus, it stars some talented actors like Tom Berenger and Johnny Depp - I think you'll find their performances really compelling!",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "The Alamo"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Platoon. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think you might really enjoy \"A Bridge Too Far\"! It's a classic war movie that's considered one of the best of all time, and it features an all-star cast including Sean Connery, Robert Redford, and Anthony Hopkins. The film is based on a true story and offers a gripping look at the Allied forces' attempt to capture several strategically important bridges in the Netherlands during World War II.",
+      "text": "I think I have just the thing for you! Based on your interest in \"Zulu\", I'd recommend checking out \"The Warlords\" (2007). This epic war film follows three bandit leaders as they form a Qing loyal army, and it has a similar scope and action to \"Zulu\". Plus, with Jet Li and Andy Lau starring, you're in for some impressive fight choreography!",
       "constraints": {
         "genre": "war",
         "plot": [
           "like",
           "sound"
         ],
-        "name": "Platoon"
+        "name": "Zulu",
+        "writer": "Vladimir Vladimirovich Nabokov",
+        "director": "Ron Shelton",
+        "language": "Zulu"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of A Bridge Too Far? That feels deeper than I thought."
+      "text": "What's the mood of They? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think you might enjoy \"Catch-22\"! It's a classic war movie with a unique premise that explores the human side of conflict, and it stars Alan Arkin and Martin Sheen. The film's themes of bureaucracy and the psychology of war might resonate with you after watching \"A Bridge Too Far\".",
+      "text": "What an intriguing selection! Based on your interest in \"They\", I think you might enjoy \"Flyboys\" (2006) - this film's historical setting, aerial action, and themes of camaraderie and sacrifice are likely to resonate with fans of war movies like \"300\". Plus, it features a talented ensemble cast, including James Franco and Philip Winchester!",
       "constraints": {
         "genre": "war",
         "plot": [
-          "what",
-          "bridge"
+          "what"
         ],
-        "name": "A Bridge Too Far"
+        "name": "They",
+        "writer": "Vladimir Vladimirovich Nabokov",
+        "director": "Ron Shelton",
+        "language": "Zulu"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thinking about Psycho, could we shift toward stories about smokers? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "What kind of story does They tell? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I've got just the thing for you! Considering your fascination with stories about smokers, I'd recommend \"The Patriot\" - a powerful war drama starring Mel Gibson as a farmer-turned-warrior driven by a tragic event. The film's themes of patriotism, sacrifice, and redemption are sure to resonate with you. Would you like me to tell you more?",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "thinking",
-          "psycho"
-        ],
-        "name": "War"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of The Thing. Who stars in it? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I have just the thing for you! Based on your interest in \"The Thing\", I'm going to recommend \"War Horse\". This film has a similar sense of tension and unease, but instead of aliens, it's set against the backdrop of World War I. The powerful performances from Jeremy Irvine and Benedict Cumberbatch will also keep you engaged.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "The Thing"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of War Horse? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I have just the film for you! \"Dances with Wolves\" is a powerful and emotive movie that explores themes of culture, understanding, and compassion - all set against the stunning backdrop of the American West. With its strong performances from Kevin Costner and Wes Studi, this Oscar-winning epic will transport you to another time and place.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "horse"
-        ],
-        "name": "War"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Dances with Wolves tell? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think you might enjoy \"Why Did I Get Married?\" - it's a heartwarming and hilarious film that explores the ups and downs of marriage, just like Dances with Wolves! The talented cast, including Tyler Perry and Janet Jackson, brings lots of laughter and drama to the big screen. Would you like to give it a try?",
-      "constraints": {
-        "genre": "dance",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "Dances with Wolves"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thinking about Wolves, could we shift toward stories about janitor? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I have just the right fit for you! Have you considered \"Kingdom of Heaven\"? It's an epic tale of war and courage, starring Liam Neeson as Balian of Ibelin, a defender of Jerusalem during the Crusades. The film features stunning action sequences and a strong cast, including Orlando Bloom and Edward Norton.\n\nIf that doesn't quite hit the mark, you might enjoy \"Kundun\" instead! This biographical drama tells the story of Tibet's 14th Dalai Lama, played by Tenzin Thuthob Tsarong. It's a powerful and poignant portrayal of courage in the face of adversity, with stunning cinematography and a captivating narrative.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "thinking",
-          "could"
-        ],
-        "name": "War"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Kundun. Who stars in it? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think you might really enjoy \"Born on the Fourth of July\"! It's a powerful and emotional biographical drama that explores themes of war, identity, and activism - all of which seem to resonate with what drew you to \"Kundun\". Tom Cruise also gives a standout performance as Ron Kovic, bringing depth and nuance to the role.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "Kundun"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Born on the Fourth of July tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think you might enjoy \"Winter in Wartime\"! It's a powerful and emotional war movie that tells the story of a young boy who gets involved with the Dutch resistance during World War II. With its strong cast, including Martijn Lakemeier and Yorick van Wageningen, this film is a great choice if you're looking for a moving and thought-provoking war drama.",
+      "text": "What a fascinating combination of cues! Based on your interest in war movies, I think you'd really enjoy \"Dances with Wolves\" (1990). Directed by Kevin Costner, this epic film tells the story of an American soldier who forms a bond with a Sioux tribe during the Civil War. With its stunning visuals and powerful performances, it's a must-see for anyone who loves historical dramas.\n\nIf you're in the mood for something a bit more action-packed, \"Rob Roy\" (1995) might be just what you're looking for! This Scottish drama stars Liam Neeson as the titular character, an outlaw seeking revenge against those who wronged him. With its rugged landscapes and swashbuckling adventure, it's a thrilling ride from start to finish.",
       "constraints": {
         "genre": "war",
         "plot": [
           "what",
           "kind"
         ],
-        "name": "Born on the Fourth of July"
+        "name": "They",
+        "writer": "Vladimir Vladimirovich Nabokov",
+        "director": "Ron Shelton",
+        "language": "Zulu"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Winter in Wartime? That feels deeper than I thought."
+      "text": "How about something primarily in Klingon language? That feels deeper than I thought. Maybe something like what you shared about Rob Roy."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think you might really appreciate \"Casablanca\"! It's a classic war drama that explores the themes of loyalty, sacrifice, and love during a tumultuous time in history. With its all-star cast, including Humphrey Bogart and Claude Rains, it's a must-see for anyone who enjoys a good story about what it means to stand up for what you believe in.",
+      "text": "I think I have just the thing for you! If you're looking for something primarily in Klingon language, I'd recommend \"Constantine\". Not only does it feature an epic battle between good and evil, but it also stars Keanu Reeves as the titular character - a supernatural exorcist with a witty tongue.",
       "constraints": {
-        "genre": "war",
+        "genre": "language",
         "plot": [
-          "what",
-          "winter"
+          "something",
+          "primarily"
         ],
-        "name": "War"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Do you have recommendations written by David Twohy? Maybe I\u2019m overthinking it, but it sounds fascinating. Maybe something like what you shared about Winter in Wartime."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I have just the thing for you! Have you considered \"Starship Troopers\" (1959)? It's a classic sci-fi war film that combines action, adventure, and social commentary - plus, who can resist the iconic bugs vs. humans battle? The all-star cast adds to its charm, with Casper Van Dien and Denise Richards leading the charge.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "written",
-          "david"
-        ],
-        "name": "War",
-        "director": "David Twohy",
-        "writer": "David Twohy"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Actually, now that I think about it, I might want the opposite."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I have just the right fit for you! Have you considered \"Hart's War\"? It's a gripping drama that explores themes of loyalty, duty, and redemption during World War II, with a strong cast led by Colin Farrell. The movie's intricate plot and thought-provoking themes are sure to keep you engaged until the end.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "actually",
-          "think"
-        ],
-        "name": "War",
-        "director": "David Twohy",
-        "writer": "David Twohy"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Hart's War. Who stars in it? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think you'd really enjoy \"Hart's War\"! The story of a law student-turned-lieutenant defending a black prisoner of war is so thought-provoking and emotionally resonant. And with Colin Farrell and Bruce Willis starring, it's got great acting talent too!",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "War",
-        "director": "David Twohy",
-        "writer": "David Twohy"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Hart's War tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I have just the right movie for you! Based on your interest in war movies and David Twohy's direction, I highly recommend \"300\" (1998). This epic battle film is a thrilling ride that will keep you on the edge of your seat, with stunning visuals and a memorable performance by Gerard Butler as King Leonidas.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "War",
-        "director": "David Twohy",
-        "writer": "David Twohy"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Hart's War? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I have just the right movie for you! Considering your interest in Hart's War, I'd like to recommend Find Me Guilty. This film, also written and directed by David Twohy (similar to Hart's War), tells an incredible true story of a mobster who decides to defend himself in court. With Vin Diesel delivering a standout performance, this courtroom drama is sure to keep you engaged and entertained!",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "hart"
-        ],
-        "name": "War",
-        "director": "David Twohy",
-        "writer": "David Twohy"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Do you have recommendations written by Kerry Conran? I can\u2019t decide if I\u2019d enjoy it or be scared by it. Maybe something like what you shared about Find Me Guilty."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I have just the right recommendation for you! Have you considered \"Winter in Wartime\"? It's a powerful and emotional war drama that explores the themes of courage, resistance, and human connection during times of war. With its strong performances from Yorick van Wageningen and Martijn Lakemeier, this film is sure to captivate you.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "written",
-          "decide"
-        ],
-        "name": "Find Me Guilty",
-        "director": "Kerry Conran",
-        "writer": "Kerry Conran"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Winter in Wartime tell? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think you might really enjoy \"The Good German\"! It's a thought-provoking war drama that explores the complexities of post-war Berlin, with great performances from George Clooney and Robin Weigert. The film's intricate plot and atmospheric setting are sure to draw you in. Would you like to give it a try?",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "War",
-        "director": "Kerry Conran",
-        "writer": "Kerry Conran"
+        "name": "Rob Roy",
+        "writer": "Vladimir Vladimirovich Nabokov",
+        "director": "Ron Shelton",
+        "language": "Klingon language"
       }
     }
   ]

@@ -1,222 +1,58 @@
 {
   "model_name": "llama3:instruct",
-  "true_genre": "monarch",
+  "true_genre": "folklore",
   "conversation": [
     {
       "speaker": "USER",
-      "text": "I'm in the mood for a disaster movie. Could you recommend a few?"
+      "text": "I'm in the mood for a folklore movie. Could you recommend a few?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I have just the right disaster movie for you! Have you considered \"Downfall\" (2004)? It's a gripping and intense film that explores the human side of disaster, with strong performances from Juliane K\u00f6hler and Bruno Ganz. Or if you're in the mood for something a bit more lighthearted, I'd recommend \"Disaster Movie\" (2008) - it's a hilarious spoof of disaster movies, featuring Carmen Electra and Ike Barinholtz as they navigate a series of wacky natural disasters.",
+      "text": "I think I have just the right movie for you! Have you considered \"Maleficent\"? It's a beautifully crafted film that reimagines the classic Disney tale from Sleeping Beauty, with Angelina Jolie Pitt bringing a depth and nuance to the iconic villain Maleficent. Plus, it has a great balance of action, drama, and fantasy elements that are sure to keep you engaged.",
       "constraints": {
-        "genre": "disaster",
+        "genre": "folklore",
         "plot": [
-          "disaster",
           "could"
         ],
-        "name": "Disaster Movie"
+        "name": "You"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Disaster Movie? That sounds intriguing."
+      "text": "What's the mood of {'name': 'Ella Enchanted', 'year': '2004', 'genre': ['Folklore', 'Classics', 'Literature', 'Comedy', \"Children's literature\", 'Family', 'Romance', 'Fantasy', 'Fiction', 'Speculative fiction'], 'language': ['English'], 'writer': ['Gail Carson Levine'], 'plot': \"Ella is under a spell to be constantly obedient, a fact she must hide from her new stepfamily in order to protect the prince of the land, her friend for whom she's falling.\", 'original_id': '2913'}? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think you might enjoy \"There's Something About Mary\"! It's a classic rom-com with a fun and quirky tone, and who can resist the charm of Ben Stiller and Cameron Diaz? Plus, it's got that disaster aspect - just imagine trying to make up for a disastrous prom night 15 years later!",
+      "text": "I think you might enjoy \"The Grand Budapest Hotel\"! The whimsical storytelling and visually stunning settings are sure to transport you to a charming world, much like Ella Enchanted's own fairy tale-inspired world. With an all-star cast, including F. Murray Abraham and Bill Murray, this 2014 film is a delightful treat for anyone looking for a cinematic escape.",
       "constraints": {
-        "genre": "disaster",
+        "genre": "language",
         "plot": [
           "what",
-          "disaster"
+          "name"
         ],
-        "name": "Disaster Movie"
+        "name": "Ted",
+        "year": "2004",
+        "language": "English",
+        "writer": "Gail Carson Levine"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does There's Something About Mary tell? That feels deeper than I thought."
+      "text": "I like the sound of Ella Enchanted. Who stars in it? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I have just the right movie for you! Have you considered \"Monsters, Inc.\"? It's a delightful film that explores what we thought was true about children and monsters, and it's got a great cast, including John Goodman and Billy Crystal. Plus, who doesn't love a good tale of friendship and self-discovery?\n\nOr, if you're in the mood for something a bit more light-hearted and romantic, \"What Women Want\" might be up your alley! It's a fun film that pokes at stereotypes and explores what it means to truly listen to others.",
+      "text": "I think you might really enjoy \"The Hunger Games: Mockingjay - Part 1\"! It's an action-packed and thought-provoking film that explores themes of rebellion, leadership, and the power of words. With Jennifer Lawrence and Philip Seymour Hoffman leading the cast, it's a thrilling ride from start to finish.",
       "constraints": {
-        "genre": "disaster",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "Her"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Monsters, Inc.. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I've got just the thing for you! Have you considered \"2012\"? It's an action-packed disaster movie that features stunning visual effects and a thrilling storyline. And with a star-studded cast, including John Cusack and Amanda Peet, it's sure to keep you on the edge of your seat!",
-      "constraints": {
-        "genre": "disaster",
+        "genre": "language",
         "plot": [
           "like",
           "sound"
         ],
-        "name": "Monsters, Inc."
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thanks for all the detail on 2012. Could we explore action next, though something emotional wouldn\u2019t hurt?"
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I have just the right blend of action and emotion for you! Have you considered \"The Monuments Men\"? This movie has a great mix of action-packed heists and heartwarming moments, all set against the backdrop of World War II. Plus, with an all-star cast like George Clooney, Matt Damon, and Bill Murray, it's hard to go wrong!",
-      "constraints": {
-        "genre": "action",
-        "plot": [
-          "thanks",
-          "detail"
-        ],
-        "name": "2012",
-        "year": "2012"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of The Monuments Men. Who stars in it? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I have just the thing for you! Have you considered \"MacGruber\" (2010)? It's a hilarious action-comedy that stars Will Forte as the titular character, and it has a similar tone of adventure and wit to \"The Monuments Men\". Plus, who can resist a movie about a rugged special operative taking down bad guys?",
-      "constraints": {
-        "genre": "action",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "The Monuments Men",
-        "year": "2012"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of 2010? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I have just the movie for you! Have you considered \"The Kingdom\" (2007)? It's an intense action-thriller that follows a team of U.S. government agents as they investigate a bombing in the Middle East, starring talented actors like Kyle Chandler and Jeremy Piven.",
-      "constraints": {
-        "genre": "action",
-        "plot": [
-          "what",
-          "didn"
-        ],
-        "name": "2010",
-        "year": "2010"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does The Kingdom tell? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think you might enjoy \"Pitch Black\"! It's an action-packed sci-fi thriller that takes place on a desert planet, where a transport ship crashes and leaves its crew stranded with bloodthirsty creatures. With Vin Diesel and Radha Mitchell starring in the film, it's got all the ingredients for a thrilling ride.\n\nIf you're looking for something a bit different, I'd also recommend \"Harry Brown\". It's a gritty British drama that explores themes of justice and redemption, with a standout performance from Sean Harris.",
-      "constraints": {
-        "genre": "action",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "The Kingdom",
-        "year": "2010"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Could we look at films from around 1963? Hmm, I didn\u2019t expect that vibe. Maybe something like what you shared about X."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I have just the right film for you! Have you considered \"Ocean's Twelve\"? It's an action-packed heist movie with a great cast, including George Clooney and Brad Pitt. The plot is full of twists and turns, keeping you on the edge of your seat as they pull off one elaborate heist after another.",
-      "constraints": {
-        "genre": "action",
-        "plot": [
-          "could",
-          "look"
-        ],
-        "name": "RED",
-        "year": "1963"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Heist. Who stars in it? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think you'd really enjoy \"Heist\" (2015) - it's a modern take on the classic heist movie, with a star-studded cast including Robert De Niro and Danny DeVito! The plot is full of tension and twists as the career thief tries to outsmart his partner.",
-      "constraints": {
-        "genre": "heist",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "Heist",
-        "year": "1963"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Heist tell? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I've got just the thing for you! Have you considered \"Small Time Crooks\"? It's a fun and lighthearted heist movie from 2000, starring Woody Allen and Elaine May. The plot is all about a couple who strike it rich after a botched bank job, and it's got a great comedic tone to it.",
-      "constraints": {
-        "genre": "heist",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "Heist",
-        "year": "1963"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Small Time Crooks? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think you might really enjoy \"House at the End of the Street\"! The film has a similar vibe to Small Time Crooks, with a mysterious and suspenseful tone that keeps you guessing until the very end. Plus, it stars Jennifer Lawrence, who's an amazing actress. Would you like me to recommend something else if you're not in the mood for suspense?",
-      "constraints": {
-        "genre": "heist",
-        "plot": [
-          "what",
-          "small"
-        ],
-        "name": "RED",
-        "year": "1963"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thanks for all the detail on Small Time Crooks. Could we explore suspense next, with a mix of excitement and warmth?"
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I have just the right fit for you! Have you considered \"The Lucky Ones\"? It's a heartwarming and suspenseful film that follows three soldiers from different walks of life as they navigate their way back home after serving in Iraq. With its blend of humor, drama, and excitement, it's a great choice if you're looking for a movie that will keep you on the edge of your seat while also making you feel good.\n\nIf you'd like to explore another option, I think \"Doctor Zhivago\" is also an excellent choice. This classic epic film tells the story of a Russian physician and poet who becomes embroiled in the turmoil of World War I and the October Revolution. With its sweeping romance, stunning visuals, and memorable performances from Julie Christie and Omar Sharif, it's a must-see for anyone who loves historical dramas.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "thanks",
-          "detail"
-        ],
-        "name": "War",
-        "year": "1963"
+        "name": "Ted",
+        "year": "2004",
+        "language": "English",
+        "writer": "Gail Carson Levine"
       }
     },
     {
@@ -225,7 +61,216 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I have just the thing for you! Based on your interest in war stories from 1963, I'd recommend \"A Farewell to Arms\". This classic film is a powerful love story set against the backdrop of World War I, starring Helen Menken and Henry King. With its historical significance and poignant romance, it's sure to captivate you!",
+      "text": "What a fascinating combination of cues! Based on your interest in stories about \"what\" and \"kind,\" I think you might enjoy \"Twin Falls Idaho\" (1999), a unique film that explores the complex relationships between conjoined twins. The movie features talented actors, including Lesley Ann Warren and Garrett Morris, who bring depth to their characters.\n\nIf you're in the mood for something more thrilling, I'd recommend \"Scream 3\" (2000). This third installment of the popular Scream franchise offers a clever blend of horror and humor, with a star-studded cast that includes David Arquette, Jamie Kennedy, and Kevin Smith.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "year": "2004",
+        "language": "English",
+        "writer": "Gail Carson Levine"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Russian Language? Maybe I\u2019m overthinking it, but it sounds fascinating. Maybe something like what you shared about Scream 3."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Since you're interested in something primarily in Russian Language, I'd recommend \"Babylon A.D.\" (2008). This action-packed film features a talented Russian actress, Charlotte Rampling, and has some exciting scenes set in Russia. It's not entirely in Russian, but it's a great mix of languages to keep things interesting!",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "Scream",
+        "year": "2004",
+        "language": "Russian Language",
+        "writer": "Gail Carson Levine"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Babylon A.D.? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right movie for you! \"The Darkest Hour\" (2010) seems like a great match, considering you're looking for something that's not too scary and has an international setting - Moscow! It's an action-packed alien invasion film with some impressive visuals and a strong cast.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "year": "2004",
+        "language": "Russian Language",
+        "writer": "Gail Carson Levine"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before \u2014 that might\u2019ve been too specific."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right film for you! Have you considered \"The Wraith\" (1986)? It's a classic with a unique premise, featuring Randy Quaid and Clint Howard in a thrilling ride about a mysterious spirit trying to take down a local gang.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "RED",
+        "year": "2004",
+        "language": "Russian Language",
+        "writer": "Gail Carson Levine"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Wraith. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might really enjoy \"Walk the Line\"! It's a biographical drama that explores the life and music of Johnny Cash, played by Joaquin Phoenix in an Oscar-winning performance. The film has a great blend of country music and storytelling that I think you'll find really engaging.\n\nIf you're looking for something a bit more action-packed, \"Kung Fu Hustle\" is another great option! This martial arts comedy stars Stephen Chow as a wannabe gangster who gets caught up in a battle between rival gangs. It's a hilarious and visually stunning film that I think you'll find really enjoyable.\n\nLet me know if either of these strike your fancy or if you'd like more recommendations!",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Wraith",
+        "year": "2004",
+        "language": "Russian Language",
+        "writer": "Gail Carson Levine"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Walk the Line tell? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"Eternal Sunshine of the Spotless Mind\"! It's a unique and thought-provoking film that explores the complexities of memory and relationships, with a talented cast including Jim Carrey and Kate Winslet. The story is quite imaginative and may resonate with your curiosity about what kind of story Walk the Line tells.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Walk the Line",
+        "year": "2004",
+        "language": "Russian Language",
+        "writer": "Gail Carson Levine"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Portuguese Language? I can\u2019t decide if I\u2019d enjoy it or be scared by it. Maybe something like what you shared about X."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"Fantastic Beasts and Where to Find Them\"! It's a magical adventure set in the wizarding world, with a richly detailed setting and lovable characters. Plus, it has a great cast, including Eddie Redmayne as Newt Scamander.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "RED",
+        "year": "2004",
+        "language": "Portuguese Language",
+        "writer": "Gail Carson Levine"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Based on your interest in something that \"feels deeper\" and features a Portuguese writer, I'd like to recommend Providence (2010). It's a beautiful, slow-burning film about two people reconnecting after a tragedy, and it explores themes of love, loss, and second chances.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "year": "2004",
+        "language": "Portuguese Language",
+        "writer": "Gail Carson Levine"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Burn tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might really enjoy \"Hotel Rwanda\"! It's a powerful and emotional film that tells an incredible true story, with outstanding performances from Don Cheadle and Nick Nolte. The story is both heartwarming and heartbreaking, and it's a great example of humanity at its best in the face of tragedy.\n\nIf you're not in the mood for something so heavy, I also think \"Harry Potter and the Prisoner of Azkaban\" would be a fantastic choice! It's a beloved film that introduces some amazing new characters to the wizarding world, with a thrilling mystery to solve. The special effects are still impressive today, and it's just such a fun ride from start to finish.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Burn",
+        "year": "2004",
+        "language": "Portuguese Language",
+        "writer": "Gail Carson Levine"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Harry Potter and the Prisoner of Azkaban? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I can help you with that!\n\nBased on your interest in prison and Harry, I'd recommend \"Shutter Island\" (2010). It's a psychological thriller that explores themes of isolation and the blurred lines between reality and madness - perfect for fans of a gritty, suspenseful story. And who knows, maybe Leonardo DiCaprio's performance will transport you to a mysterious island!",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "what",
+          "harry"
+        ],
+        "name": "Prison",
+        "year": "2004",
+        "language": "Portuguese Language",
+        "writer": "Gail Carson Levine"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thinking about Psycho, could we shift toward stories about reached? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've got just the thing for you! Have you considered \"Wimbledon\"? It's a great choice if you're looking for something that explores themes of thinking and reflection, but with a lighthearted and entertaining twist. The chemistry between Kirsten Dunst and Austin Nichols is wonderful, and it's a great tennis movie to boot!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "thinking",
+          "psycho"
+        ],
+        "name": "War",
+        "year": "2004",
+        "language": "Portuguese Language",
+        "writer": "Gail Carson Levine"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've found a great match for you! Based on your interest in war stories, I'd recommend \"Saving Private Ryan\" (1998). It's an intense and critically acclaimed film that follows a group of soldiers as they embark on a perilous mission behind enemy lines during World War II. The gripping plot and strong performances from the all-star cast make it a must-see.\n\nAlternatively, if you're in the mood for something a bit different, \"Inglourious Basterds\" (2009) is a wild ride that combines war and Quentin Tarantino's signature style. You'll be on the edge of your seat as a group of Jewish U.S. soldiers take on the Nazis with creative vengeance.",
       "constraints": {
         "genre": "war",
         "plot": [
@@ -233,16 +278,75 @@
           "kind"
         ],
         "name": "X",
-        "year": "1963"
+        "year": "2004",
+        "language": "Portuguese Language",
+        "writer": "Gail Carson Levine"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of A Farewell to Arms. Who stars in it? Hmm, I didn\u2019t expect that vibe."
+      "text": "I like the sound of Inglourious Basterds. Who stars in it? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I see you're looking for something with a similar vibe to A Farewell to Arms! I think \"The Monuments Men\" might be right up your alley - it's a historical drama about an unlikely platoon rescuing art masterpieces during World War II, starring George Clooney and Matt Damon.",
+      "text": "I think you'd really enjoy \"Saving Private Ryan\"! It's a highly acclaimed war film that explores the intense and emotional experiences of soldiers during World War II, and it features an all-star cast including Tom Hanks, Matt Damon, and Vin Diesel. The movie's gripping plot and realistic portrayal of war will likely appeal to your interest in war movies like \"Inglourious Basterds\".",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Inglourious Basterds",
+        "year": "2004",
+        "language": "Portuguese Language",
+        "writer": "Gail Carson Levine"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Inglourious Basterds? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"Winter in Wartime\"! It's a gripping and emotional film set during World War II, exploring themes of resistance, courage, and human connection. The cinematography is stunning, and the young lead actor Martijn Lakemeier delivers a powerful performance.\n\nIf you're in the mood for something a bit lighter, \"In Good Company\" could be a great choice! It's a witty and relatable comedy-drama that explores themes of identity, family, and work-life balance. With an all-star cast including Dennis Quaid and Scarlett Johansson, it's sure to keep you entertained.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Inglourious Basterds",
+        "year": "2004",
+        "language": "Portuguese Language",
+        "writer": "Gail Carson Levine"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we look at films from around 1937? That sounds intriguing. Maybe something like what you shared about Winter in Wartime."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right recommendation for you! Have you considered \"The Book Thief\"? It's a powerful and emotional film set during World War II, with a young girl finding solace in books amidst the chaos of war. The film features a talented cast and has received widespread critical acclaim.\n\nIf that doesn't quite fit what you're looking for, I'd also recommend \"Bloody Sunday\" - it's a gripping drama based on true events and features strong performances from its cast.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "look"
+        ],
+        "name": "War",
+        "year": "1937",
+        "language": "Portuguese Language",
+        "writer": "Gail Carson Levine"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Book Thief. Who stars in it? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"Winter in Wartime\"! It's a gripping and emotional film that explores the themes of courage, sacrifice, and resilience during wartime, with a strong focus on character development and relationships. The movie features a talented young cast, including Martijn Lakemeier, who brings depth and nuance to his role as a teenager caught up in the Dutch resistance.",
       "constraints": {
         "genre": "war",
         "plot": [
@@ -250,93 +354,28 @@
           "sound"
         ],
         "name": "X",
-        "year": "1963"
+        "year": "1937",
+        "language": "Portuguese Language",
+        "writer": "Gail Carson Levine"
       }
     },
     {
       "speaker": "USER",
-      "text": "Actually, now that I think about it, I might want the opposite."
+      "text": "What kind of story does Winter in Wartime tell? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I can help you with that! If you're looking for something on the opposite end of the spectrum from a war film, I'd recommend \"Dear John\" (2010). This romantic comedy stars Channing Tatum and Amanda Seyfried as two young lovers who fall in love despite being from different worlds.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "actually",
-          "think"
-        ],
-        "name": "X",
-        "year": "1963"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "It\u2019s weird \u2014 I thought I liked that, but maybe not."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I have just the movie for you! Have you considered \"Flyboys\" (2006)? It's a thrilling and action-packed film that explores the early days of fighter pilots during World War I, with a talented cast including James Franco and Philip Winchester. If you're looking for something a bit different, I'd be happy to recommend another option as well!",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "weird",
-          "thought"
-        ],
-        "name": "X",
-        "year": "1963"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "It\u2019s weird \u2014 I thought I liked that, but maybe not."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I have just the movie for you! Since you mentioned \"weird\" and \"thought\" in the context of war movies, I'm going to recommend \"The Deer Hunter\". This powerful film is an intense exploration of how the Vietnam War affects a group of friends, and it's known for its unflinching portrayal of the harsh realities of war. Christopher Walken's Oscar-winning performance will definitely leave you thinking!",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "weird",
-          "thought"
-        ],
-        "name": "X",
-        "year": "1963"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of The Deer Hunter? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think you might enjoy \"300: Rise of an Empire\"! It's a thrilling war film with stunning visuals and a strong cast, including Sullivan Stapleton as the brave Athenian general Themistocles. The epic battles and intense action will likely appeal to your interest in war movies.\n\nIf you're looking for something a bit more thought-provoking, \"Alex in Wonderland\" might be up your alley. It's a unique blend of film industry satire and introspection, featuring impressive cameos from Jeanne Moreau and Federico Fellini. The movie's themes of artistic expression and personal growth might resonate with you.",
+      "text": "I think you might enjoy \"Schindler's List\" - it's a powerful and emotional film that tells an important story about humanity during wartime, and it features outstanding performances from Liam Neeson and the rest of the cast. Alternatively, if you're looking for something a bit more lighthearted, \"Hitch\" is a fun and charming film that explores the world of classic cinema, with cameos from some big stars.",
       "constraints": {
         "genre": "war",
         "plot": [
           "what",
-          "deer"
+          "kind"
         ],
-        "name": "The Deer Hunter",
-        "year": "1963"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Maybe we could find more movies with Scott Foley. That sounds intriguing. Maybe something like what you shared about X."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I've got just the thing for you! Have you considered \"Pirates of the Caribbean: At World's End\"? It's an epic adventure that combines action, humor, and memorable characters - and who knows, you might even spot some familiar faces like Orlando Bloom and Johnny Depp.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "could",
-          "find"
-        ],
-        "name": "RED",
-        "year": "1963",
-        "actor": "Scott Foley"
+        "name": "War",
+        "year": "1937",
+        "language": "Portuguese Language",
+        "writer": "Gail Carson Levine"
       }
     }
   ]

@@ -29,7 +29,7 @@ JUDGE_MODEL = "llama3:instruct"
 
 # Topic extractor model (used if TOPIC_EXTRACTOR_MODE == "llm")
 TOPIC_EXTRACTOR_MODEL = "mistral:7b"
-TOPIC_EXTRACTOR_MODE = "lda"   # "llm", "heuristic", or "lda"
+TOPIC_EXTRACTOR_MODE = os.getenv("TOPIC_EXTRACTOR_MODE", "lda")   # "llm", "heuristic", or "lda"
 
 # ============ SIMULATION ============
 N_TURNS = 20               # turns per conversation
@@ -55,7 +55,9 @@ LOG_DIR = "logs"
 RESULTS_FILE = "results.jsonl"
 SUMMARY_CSV = "model_metrics.csv"
 STAT_RESULTS_FILE = "statistical_analysis_results.txt"
-FIG_DIR = "figures"
+FIG_DIR_BASE = "figures"
+_topic_mode_dir = TOPIC_EXTRACTOR_MODE.replace(":", "_")
+FIG_DIR = os.path.join(FIG_DIR_BASE, _topic_mode_dir)
 LDA_MODEL_DIR = "models"
 LDA_MODEL_PATH = os.path.join(LDA_MODEL_DIR, "lda.model")
 LDA_DICT_PATH = os.path.join(LDA_MODEL_DIR, "lda.dict")

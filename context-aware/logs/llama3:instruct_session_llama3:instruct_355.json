@@ -1,17 +1,18 @@
 {
   "model_name": "llama3:instruct",
-  "true_genre": "black comedy",
+  "true_genre": "detective",
   "conversation": [
     {
       "speaker": "USER",
-      "text": "I'm in the mood for a law movie. Could you recommend a few?"
+      "text": "I'm in the mood for a detective movie. Could you recommend a few?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I have just the right film for you! Have you considered \"Michael Clayton\"? It's a gripping drama starring George Clooney as a fixer who gets entangled in a complex case involving a chemical company and a lawyer's breakdown. The movie expertly weaves together themes of law, morality, and personal crisis, all set against the backdrop of the cutthroat world of big business.",
+      "text": "I think I have just the detective movie for you! \"Lucky Number Slevin\" is a thrilling and clever film that's got a great mix of mystery, action, and wit. With Bruce Willis and Morgan Freeman leading an all-star cast, you're in for a wild ride as Slevin navigates a complex web of crime and deception.",
       "constraints": {
-        "genre": "law",
+        "genre": "detective",
         "plot": [
+          "detective",
           "could"
         ],
         "name": "You"
@@ -19,178 +20,132 @@
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Michael Clayton. Who stars in it? Hmm, I didn\u2019t expect that vibe."
+      "text": "I like the sound of {'name': 'The Adventures of Sherlock Holmes', 'year': '1892', 'genre': ['England', 'Short story', 'Detective fiction'], 'language': ['English'], 'writer': ['Arthur Conan Doyle'], 'plot': 'The master sleuth hunts his archenemy, Professor Moriarty, who is planning the crime of the century.', 'original_id': '2482'}. Who stars in it? Hmm, I didn\u2019t expect that vibe."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think you might enjoy \"Total Recall\"! The blend of action and suspense, along with Arnold Schwarzenegger's iconic performance, makes for a thrilling ride. Plus, who wouldn't want to explore the idea of implanted memories and questioning what's real?",
+      "text": "I think I've got just the thing for you! Have you considered \"Silence\" (2011)? It's a powerful and thought-provoking film that explores themes of communication and human connection, which seem to align with your interest in \"The Adventures of Sherlock Holmes\". Plus, it features a talented cast, including...",
       "constraints": {
-        "genre": "law",
+        "genre": "adventure",
         "plot": [
           "like",
           "sound"
         ],
-        "name": "Michael Clayton"
+        "name": "Sherlock Holmes",
+        "language": "English",
+        "writer": "Arthur Conan Doyle"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Total Recall tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "What kind of story does The Adventures of Sherlock Holmes tell? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think you might really enjoy \"Man on Fire\"! It's a gripping drama that explores themes of family, justice, and what's best for our children - all while featuring Denzel Washington in a powerful performance. Plus, the courtroom scenes are intense and thought-provoking. Would you like to give it a try?",
+      "text": "I think you might really enjoy \"District 9\"! It's a thrilling adventure that combines science fiction with social commentary, and features a unique storyline and impressive performances from its cast. Plus, who wouldn't want to see an alien find a kindred spirit on Earth?",
       "constraints": {
-        "genre": "law",
+        "genre": "adventure",
         "plot": [
           "what",
           "kind"
         ],
-        "name": "Total Recall"
+        "name": "Sherlock Holmes",
+        "language": "English",
+        "writer": "Arthur Conan Doyle"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Total Recall? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "What's the mood of District 9? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think you might really enjoy \"Changing Lanes\"! It's a gripping drama that explores the themes of what and total recall, with two opposing characters finding themselves entangled in a feud after a small accident. With an all-star cast, including Ben Affleck and Samuel L. Jackson, it's a thrilling ride from start to finish.",
+      "text": "I think I've got just the thing for you! Have you considered \"ZMD: Zombies of Mass Destruction\"? It's an adventure film that combines action and horror, with a unique premise about a zombie virus outbreak on an island town. With Russell Hodgkinson and Janette Armand starring in it, I think you'll find it to be a thrilling ride!\n\nIf you're not in the mood for zombies, \"The Bourne Supremacy\" is another great option. It's an action-packed spy thriller that follows Jason Bourne as he tries to clear his name and take down those who framed him. With Matt Damon reprising his role as Bourne, you know you're in for a thrilling ride!",
       "constraints": {
-        "genre": "law",
+        "genre": "adventure",
         "plot": [
           "what",
-          "total"
+          "district"
         ],
-        "name": "Total Recall"
+        "name": "District 9",
+        "language": "English",
+        "writer": "Arthur Conan Doyle"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thinking about Changing Lanes, could we shift toward stories about living? Hmm, I didn\u2019t expect that vibe."
+      "text": "Maybe we could find more movies with Dave Foley. I can\u2019t decide if I\u2019d enjoy it or be scared by it. Maybe something like what you shared about The Bourne Supremacy."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I can help you shift gears towards some powerful stories about living in the face of war and change.\n\nIf you're looking for a classic epic romance that explores the human cost of conflict, I'd recommend \"Gone with the Wind\". This iconic film features stunning performances from Vivien Leigh and Clark Gable as they navigate love and loss amidst the tumultuous backdrop of the American Civil War.",
+      "text": "I think I have just the ticket for you! If you're looking for something with a bit of adventure and suspense, I'd recommend \"Oldboy\" - it's a gripping thriller with a unique premise that'll keep you on the edge of your seat. Plus, it features some great performances from Ji-tae Yu and Min-sik Choi.",
       "constraints": {
-        "genre": "war",
-        "plot": [
-          "thinking",
-          "changing"
-        ],
-        "name": "War"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Gone with the Wind? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I've found a great match for you! Have you considered \"A Bridge Too Far\"? It's an epic war movie that explores the Allied forces' attempt to capture several strategically important bridges in the Netherlands during World War II. With an all-star cast, including Sean Connery and Robert Redford, it's an action-packed film that I think you'll really enjoy!",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "gone"
-        ],
-        "name": "X"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Forget what I said before \u2014 that might\u2019ve been too specific."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I have just the right movie for you! Have you considered \"Valkyrie\"? It's a gripping drama that explores one of the most fascinating and little-known stories of World War II - the attempted assassination of Adolf Hitler by German Army officers. With an all-star cast, including Tom Cruise and Kenneth Branagh, it's a thrilling and thought-provoking watch.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "said"
-        ],
-        "name": "X"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Valkyrie. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think you might enjoy \"Schindler's List\" - it's a powerful and emotional film that explores the themes of war, humanity, and heroism, all set against the backdrop of one of the most tumultuous periods in history. With an incredible performance from Liam Neeson as Oskar Schindler, this movie is sure to leave you moved and inspired.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "Valkyrie"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Schindler's List tell? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I've got just the right recommendation for you! Since you're looking for a war-themed movie, I'd like to suggest \"Kundun\" (1997). This film is a biographical drama that tells the story of Tibet's fourteenth Dalai Lama, exploring his struggles against Chinese oppression. With its powerful true story and stunning visuals, I think you'll find it a compelling watch.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "Schindler's List"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Could we look at films from around 1320? Hmm, I didn\u2019t expect that vibe. Maybe something like what you shared about Kundun."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "What an intriguing request! Given your interest in films from around 1320, I'm going to take a chance and recommend \"Dances with Wolves\" (1990) instead. This epic war film explores the complexities of human connection amidst the backdrop of conflict, much like the historical era you're interested in. With its stunning cinematography, memorable performances by Wes Studi and Kevin Costner, and a powerful story, I think you'll find this one captivating!",
-      "constraints": {
-        "genre": "war",
+        "genre": "adventure",
         "plot": [
           "could",
-          "look"
+          "find"
         ],
-        "name": "Kundun"
+        "name": "The Bourne Supremacy",
+        "language": "English",
+        "writer": "Arthur Conan Doyle",
+        "actor": "Dave Foley"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Dances with Wolves tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "What's the mood of Oldboy? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "What a fascinating choice you have in front of you! If I had to pick one that really resonates with the themes and tone of \"Dances with Wolves\", I'd recommend \"The Last Unicorn\". This beautifully animated film tells the story of a lone unicorn's quest to discover if she's truly the last of her kind, which shares some similarities with the epic journey undertaken by John Dunbar in \"Dances with Wolves\". Plus, who wouldn't be drawn in by the enchanting voice of Angela Lansbury and the whimsical score?",
+      "text": "I think you might enjoy \"Crocodile Dundee\"! It's an adventure film with a lighthearted tone, starring Paul Hogan as the lovable and eccentric Mick \"Crocodile\" Dundee. The movie takes you on a fun journey from the Australian outback to New York City, and it's a great way to spend an evening without getting too scared or intense.",
       "constraints": {
-        "genre": "dance",
+        "genre": "adventure",
         "plot": [
           "what",
-          "kind"
+          "decide"
         ],
-        "name": "Dances with Wolves"
+        "name": "Oldboy",
+        "language": "English",
+        "writer": "Arthur Conan Doyle",
+        "actor": "Dave Foley"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Dances with Wolves? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "I like the sound of Crocodile Dundee. Who stars in it? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I have just the right movie for you! Have you considered \"Waiting\" (1999)? It's a thought-provoking film that explores themes of identity, relationships, and making difficult choices - all while being surrounded by fascinating characters. Plus, with Eva Mendes and Justin Long leading the cast, it's a fun and engaging watch!",
+      "text": "I think I have just the right recommendations for you! Since you liked the adventurous spirit of Crocodile Dundee, I'd like to suggest Creepshow 2 (1987) - it's a horror-adventure anthology film with some great stories and memorable characters. You'll get to enjoy three tales that are sure to keep you on the edge of your seat, featuring actors like Dorothy Lamour and Stephen King himself!",
       "constraints": {
-        "genre": "dance",
+        "genre": "adventure",
         "plot": [
-          "what",
-          "dances"
+          "like",
+          "sound"
         ],
-        "name": "Dances with Wolves"
+        "name": "Crocodile Dundee",
+        "language": "English",
+        "writer": "Arthur Conan Doyle",
+        "actor": "Dave Foley"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've got just the thing for you! Since you're looking for something opposite, I'd recommend \"Running with Scissors\" (2002). It's a heartwarming and quirky film that explores themes of family and identity, starring Dave Foley as one of the main characters.",
+      "constraints": {
+        "genre": "adventure",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Crocodile Dundee",
+        "language": "English",
+        "writer": "Arthur Conan Doyle",
+        "actor": "Dave Foley"
       }
     },
     {
@@ -199,128 +154,226 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I see what's going on here! Based on your interest in dance, I'd recommend either \"Dance Flick\" (2009) or \"Step Up Revolution\" (2012). Both movies showcase some amazing choreography and energy, with \"Dance Flick\" being a fun, lighthearted romp and \"Step Up Revolution\" offering a more dramatic take on the dance world.",
+      "text": "I think I have just the right adventure for you! Considering your interest in Dave Foley and Arthur Conan Doyle, I'd like to recommend \"Stir of Echoes\" (1999). This movie combines elements of mystery and suspense, with a dash of the supernatural, which might appeal to your sense of intrigue. Plus, who can resist a good ghost story?",
       "constraints": {
-        "genre": "dance",
+        "genre": "adventure",
         "plot": [
           "sure",
           "perhaps"
         ],
-        "name": "Dances with Wolves"
+        "name": "Crocodile Dundee",
+        "language": "English",
+        "writer": "Arthur Conan Doyle",
+        "actor": "Dave Foley"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Dance Flick. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "What kind of story does Stir of Echoes tell? Hmm, I didn\u2019t expect that vibe."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I have just the ticket for you! Based on your interest in Dance Flick, I recommend checking out Smokin' Aces (2006). While it's not a dance film per se, it has a similar tone and energy to Dance Flick, with a star-studded cast that includes Ryan Reynolds, Martin Henderson, and Taraji P. Henson. Plus, the plot is full of twists and turns, so you'll be on your toes!",
+      "text": "I think you might enjoy \"Ocean's Twelve\"! It's an action-packed adventure film with a clever plot and a talented ensemble cast, including George Clooney and Brad Pitt. The movie follows Daniel Ocean as he tries to pull off three major heists in Europe, which should scratch that \"adventure\" itch you mentioned earlier.",
       "constraints": {
-        "genre": "dance",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "Dance Flick"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thinking about Dance Flick, could we shift toward stories about interface? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I have just the right fit for you! Based on your interest in Dance Flick and war stories, I highly recommend \"Hart's War\". It's a gripping drama that explores themes of thinking, morality, and duty, set against the backdrop of World War II. Plus, it features an impressive cast, including Colin Farrell and Bruce Willis, which adds to its tension and excitement.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "thinking",
-          "dance"
-        ],
-        "name": "War"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Dance Flick. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think you might enjoy \"Mama\"! It's a great film that combines dance and empowerment, with a strong female lead and an inspiring storyline. Plus, who wouldn't want to root for Kim as she helps others overcome their struggles?\n\nIf you're in the mood for something a bit more classic, I'd recommend \"It's a Wonderful Life\". This timeless tale of self-discovery and redemption is sure to leave you feeling uplifted and grateful for your own life. With its iconic cast, including Donna Reed and James Stewart, it's a must-see!",
-      "constraints": {
-        "genre": "dance",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "Dance Flick"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does It's a Wonderful Life tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I have just the right film for you! Have you considered \"Utsav\"? It's a beautiful dance-infused tale that explores themes of love, duty, and social conventions. With its rich cultural heritage and stunning performances by Anupam Kher and Rekha, it's sure to transport you to another time and place.",
-      "constraints": {
-        "genre": "dance",
+        "genre": "adventure",
         "plot": [
           "what",
           "kind"
         ],
-        "name": "It's a Wonderful Life"
+        "name": "Stir of Echoes",
+        "language": "English",
+        "writer": "Arthur Conan Doyle",
+        "actor": "Dave Foley"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Utsav? Hmm, I didn\u2019t expect that vibe."
+      "text": "Maybe we could find more movies with Monica Calhoun. That sounds intriguing. Maybe something like what you shared about Ocean's Twelve."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think you might enjoy \"Why Did I Get Married?\" - not only is it a great dance-filled movie, but it also explores themes of relationships and identity in a really engaging way. With an all-star cast including Janet Jackson and Tyler Perry, this film is sure to keep you entertained! Would you like me to recommend something else from the list as well?",
+      "text": "I think I've got just the thing for you! Have you considered \"Star Wars: Episode II - Attack of the Clones\"? It's an epic adventure that combines romance and action, with stunning visuals and memorable characters like Hayden Christensen and Natalie Portman. Plus, it's a great way to explore the Star Wars universe beyond the original trilogy.",
       "constraints": {
-        "genre": "dance",
-        "plot": [
-          "what",
-          "utsav"
-        ],
-        "name": "Utsav"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Could we look at films from around 1987? I can\u2019t decide if I\u2019d enjoy it or be scared by it. Maybe something like what you shared about Utsav."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think you might enjoy \"Dance Flick\" (2009) from this list! It's a fun, lighthearted film that celebrates dance and features a talented cast, including David Alan Grier and Essence Atkins. The movie has a great energy and is all about chasing your dreams, which aligns with the themes of exploration and self-discovery in your original request.",
-      "constraints": {
-        "genre": "dance",
+        "genre": "adventure",
         "plot": [
           "could",
-          "look"
+          "find"
         ],
-        "name": "RED",
-        "year": "1987"
+        "name": "Ocean's Twelve",
+        "language": "English",
+        "writer": "Arthur Conan Doyle",
+        "actor": "Monica Calhoun"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Dance Flick. Who stars in it? That feels deeper than I thought."
+      "text": "What's the mood of Star Wars: Episode II - Attack of the Clones? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I have just the thing for you! Have you considered \"Providence\" (2010)? The film's themes of fate and second chances might resonate with you, given that you enjoyed the deeper tone in \"Dance Flick\". Plus, it has a great cast and a poignant love story at its core.",
+      "text": "I think I have just the recommendation for you! Considering your interest in war movies and no connection to Monica Calhoun, Arthur Conan Doyle, or what/Star-related keywords, I'd suggest \"Dazed and Confused\" (1993). This classic coming-of-age film captures the essence of youth on the cusp of adulthood, with a memorable cast, including Matthew McConaughey, Ben Affleck, and Ren\u00e9e Zellweger. While it may not be a traditional war movie, its nostalgic value and relatable characters might just win you over!",
       "constraints": {
-        "genre": "dance",
+        "genre": "war",
+        "plot": [
+          "what",
+          "star"
+        ],
+        "name": "War",
+        "language": "English",
+        "writer": "Arthur Conan Doyle",
+        "actor": "Monica Calhoun"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Dazed and Confused. Who stars in it? That sounds intriguing."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"The Day After Tomorrow\"! It's an exciting disaster movie that explores a global catastrophe, and it stars Dennis Quaid and Jake Gyllenhaal - both talented actors. If you're in the mood for something a bit more light-hearted, \"Music and Lyrics\" is a fun romantic comedy starring Hugh Grant and Drew Barrymore that you might enjoy.",
+      "constraints": {
+        "genre": "war",
         "plot": [
           "like",
           "sound"
         ],
-        "name": "Dance Flick",
-        "year": "1987"
+        "name": "Dazed and Confused",
+        "language": "English",
+        "writer": "Arthur Conan Doyle",
+        "actor": "Monica Calhoun"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Music and Lyrics tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Have you considered \"Music and Lyrics\" is not actually on this list, but I'm guessing that's because you're unsure if you'd like it? Instead, how about \"Mickey Blue Eyes\"? It's a fun romantic comedy starring Hugh Grant and Marisa Tomei, and while it doesn't have much to do with Arthur Conan Doyle or post-apocalyptic settings, it does have a charming music-inspired plot.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "language": "English",
+        "writer": "Arthur Conan Doyle",
+        "actor": "Monica Calhoun"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thinking about Music and Lyrics, could we shift toward stories about dangerous? That sounds intriguing."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Have you considered \"Downfall\"? It's a powerful and intense film that explores the darker side of human nature, with incredible performances from the entire cast. Plus, Monica Calhoun isn't in this one (since she wasn't involved), but if you're looking for a thought-provoking story about thinking, music, and danger, I think you'll find it quite captivating!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "thinking",
+          "music"
+        ],
+        "name": "War",
+        "language": "ger",
+        "writer": "Arthur Conan Doyle",
+        "actor": "Monica Calhoun"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Downfall. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"Lincoln\" (1995) - it's a powerful historical drama that explores the complexities of war and leadership, starring Hal Holbrook as President Lincoln. While it doesn't have Monica Calhoun or any Sherlock Holmes-esque plot twists, I think the themes of sacrifice and perseverance would resonate with you.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Downfall",
+        "language": "ger",
+        "writer": "Arthur Conan Doyle",
+        "actor": "Monica Calhoun"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "It\u2019s weird \u2014 I thought I liked that, but maybe not."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right movie for you! Since you mentioned war and Monica Calhoun, I'd like to recommend \"The Salon\" (2005). It's a great change of pace from war movies, with Monica Calhoun shining as the beauty-shop owner navigating romance and business challenges.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "Downfall",
+        "language": "ger",
+        "writer": "Arthur Conan Doyle",
+        "actor": "Monica Calhoun"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before \u2014 that might\u2019ve been too specific."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Based on your interest in war movies and the involvement of Monica Calhoun, I'm going to recommend \"Wolfhound\" - an epic adventure that follows a great warrior's quest for revenge against those who destroyed his tribe. With its action-packed plot and strong protagonist, I think you'll find it quite engaging!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "Downfall",
+        "language": "ger",
+        "writer": "Arthur Conan Doyle",
+        "actor": "Monica Calhoun"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Tron tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your interest in war-themed stories and Monica Calhoun's presence, I think you might enjoy \"Doctor Zhivago\"! This classic epic film follows a Russian physician and poet as he navigates the tumultuous years of World War I and the October Revolution. With an all-star cast including Klaus Kinski, Julie Christie, and Geraldine Chaplin, it's a powerful and emotional ride.\n\nIf you're in the mood for something more recent, \"300: Rise of an Empire\" could be an exciting choice! This action-packed film is set during the Persian Wars and follows Greek general Themistocles as he leads his naval forces against the invading Persians. With stunning visuals and a thrilling plot, it's sure to keep you on the edge of your seat.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Tron",
+        "language": "ger",
+        "writer": "Arthur Conan Doyle",
+        "actor": "Monica Calhoun"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of 300? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right movie for you! Have you considered \"The Pianist\"? It's a powerful and emotional drama that tells the true story of W\u0142adys\u0142aw Szpilman, a Polish Jewish pianist struggling to survive during WWII. The film stars Frank Finlay, Emilia Fox, and Ed Stoppard, and it's a great choice if you're in the mood for a war movie with a strong historical foundation.\n\nIf \"The Pianist\" isn't quite what you're looking for, I'd also recommend \"Doctor Zhivago\". It's an epic romance set during WWI and the Russian Revolution, starring Julie Christie and Omar Sharif. The film has a sweeping scope and explores themes of love, war, and social change.\n\nNeither of these movies is a good fit? Let me know and I can definitely suggest some other options!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "300",
+        "language": "ger",
+        "writer": "Arthur Conan Doyle",
+        "actor": "Monica Calhoun"
       }
     }
   ]

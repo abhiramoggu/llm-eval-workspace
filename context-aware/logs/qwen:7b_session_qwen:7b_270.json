@@ -1,19 +1,18 @@
 {
   "model_name": "qwen:7b",
-  "true_genre": "germany",
+  "true_genre": "war",
   "conversation": [
     {
       "speaker": "USER",
-      "text": "I'm in the mood for a germany movie. Could you recommend a few?"
+      "text": "I'm in the mood for a robot movie. Could you recommend a few?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "For a Germany movie recommendation, I suggest watching 'Wings of Desire'. This film, starring Bruno Ganz and Peter Falk, explores themes of love, loss, and the human desire for connection.",
+      "text": "I recommend 'Hitch' (2005). It's a romantic comedy starring Vincent De Paul and Robinne Lee, with Matt Malloy in a hilarious role.",
       "constraints": {
-        "genre": "germany",
-        "language": "German",
+        "genre": "robot",
         "plot": [
-          "germany",
+          "robot",
           "could"
         ],
         "name": "You"
@@ -21,70 +20,295 @@
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Wings of Desire. Who stars in it? That sounds intriguing."
+      "text": "I like the sound of {'name': 'I, Robot', 'year': '1950', 'genre': ['Robot', 'Action Film', 'Action', 'Film adaptation', 'Mystery', 'Sci-Fi', 'Thriller', 'Science Fiction'], 'actor': ['Alan Tudyk', 'James Cromwell', 'Bridget Moynahan', 'Shia LaBeouf', 'Bruce Greenwood', 'Bruce Greenwood', 'Chi McBride', 'Chi McBride', 'Will Smith', 'Will Smith'], 'director': ['Alex Proyas'], 'language': ['English Language', 'English'], 'writer': ['Jeff Vintar', 'Isaac Asimov', 'Akiva Goldsman'], 'plot': 'In 2035, a technophobic cop investigates a crime that may have been perpetrated by a robot, which leads to a larger threat to humanity.', 'original_id': '277'}. Who stars in it? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your preference for German language and German-inspired plots, I would recommend 'Run Lola Run'. This thrilling film, starring Ludger Pistor, Moritz Bleibtreu, and Armin Rohde, follows Lola's desperate quest to deliver money in just 20 minutes. It's a high-energy, fast-paced film that perfectly aligns with your preferences.",
+      "text": "If you're interested in a sci-fi thriller with a post-apocalyptic atmosphere, 'The Mist' (1990) starring James Cromwell might be the pick for you. It features mysterious creatures that wreak havoc on a small town during a storm.",
       "constraints": {
-        "genre": "germany",
-        "language": "German",
+        "genre": "sci-fi",
         "plot": [
           "like",
           "sound"
         ],
-        "name": "Wings of Desire"
+        "name": "Ted",
+        "year": "1950",
+        "actor": "James Cromwell",
+        "director": "Alex Proyas",
+        "language": "English Language",
+        "writer": "Jeff Vintar"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Run Lola Run tell? That feels deeper than I thought."
+      "text": "What's the mood of The Mist? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "For a deeper story that feels more substantial, I recommend 'Wings of Desire'. This film explores the philosophical aspects of desire and love through the characters played by Bruno Ganz and Peter Falk.",
+      "text": "Based on the user's preferences, I recommend watching 'Like Mike' (2002). This movie stars Tucker Smallwood as a young orphan who becomes an NBA star due to a pair of sneakers with the initials 'MJ'. It combines comedy and sports elements.",
       "constraints": {
-        "genre": "germany",
-        "language": "German",
+        "genre": "sci-fi",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "The Mist",
+        "year": "1950",
+        "actor": "James Cromwell",
+        "director": "Alex Proyas",
+        "language": "English Language",
+        "writer": "Jeff Vintar"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Like Mike tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend \"Eternal Sunshine of the Spotless Mind\" for its unique and emotional storyline, featuring the talented performances of Mark Ruffalo and Jim Carrey.",
+      "constraints": {
+        "genre": "sci-fi",
         "plot": [
           "what",
           "kind"
         ],
-        "name": "Run Lola Run"
+        "name": "Like Mike",
+        "year": "1950",
+        "actor": "James Cromwell",
+        "director": "Alex Proyas",
+        "language": "English Language",
+        "writer": "Jeff Vintar"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Wings of Desire? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "Do you have recommendations written by Stephen Chbosky? That feels deeper than I thought. Maybe something like what you shared about Like Mike."
     },
     {
       "speaker": "SYSTEM",
-      "text": "For a mood similar to Wings of Desire, I recommend \"Eve''s Bayou\" (1997). The film explores themes of family, secrets, and mysticism through the characterful performances by Roger Guenveur Smith, Tamara Tunie, and others.",
+      "text": "For a recommendation that combines sci-fi and written works, I would suggest \"RoboCop\" (2014). The film follows a cyborg police officer haunted by past memories, while also featuring strong writing from Stephen Chbosky.",
       "constraints": {
-        "genre": "germany",
-        "language": "German",
+        "genre": "sci-fi",
+        "plot": [
+          "written",
+          "stephen"
+        ],
+        "name": "Like Mike",
+        "year": "1950",
+        "actor": "James Cromwell",
+        "director": "Stephen Chbosky",
+        "language": "English Language",
+        "writer": "Stephen Chbosky"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of RoboCop? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend \"Tootsie\" for a fun and unique movie experience. Starring Jessica Lange and featuring the talents of Dustin Hoffman, this comedy about an actor who disguises himself as a woman to get a role is both clever and entertaining.",
+      "constraints": {
+        "genre": "sci-fi",
+        "plot": [
+          "what"
+        ],
+        "name": "RoboCop",
+        "year": "1950",
+        "actor": "James Cromwell",
+        "director": "Stephen Chbosky",
+        "language": "English Language",
+        "writer": "Stephen Chbosky"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Tootsie. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a sci-fi fan like yourself, I recommend 'Amen.' It tells the true story of\u4e8c\u6218 priests trying to inform Pope about Jews. Starring Ulrich M\u00fche and Mathieu Kassovitz, it's a thought-provoking film.",
+      "constraints": {
+        "genre": "sci-fi",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Tootsie",
+        "year": "1950",
+        "actor": "James Cromwell",
+        "director": "Stephen Chbosky",
+        "language": "English Language",
+        "writer": "Stephen Chbosky"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Amen. tell? That sounds intriguing."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend watching 'The Darkest Hour' with Dato Bakhtadze, Veronika Vernadskaya, and Max Minghella. The plot centers around a young woman's bravery during an alien invasion.",
+      "constraints": {
+        "genre": "sci-fi",
         "plot": [
           "what",
-          "wings"
+          "kind"
         ],
-        "name": "Wings of Desire"
+        "name": "Amen.",
+        "year": "1950",
+        "actor": "James Cromwell",
+        "director": "Stephen Chbosky",
+        "language": "English Language",
+        "writer": "Stephen Chbosky"
       }
     },
     {
       "speaker": "USER",
-      "text": "How about something primarily in Norwegian Language? I can\u2019t decide if I\u2019d enjoy it or be scared by it. Maybe something like what you shared about Wings of Desire."
+      "text": "Could we look at films from around 1856? I can\u2019t decide if I\u2019d enjoy it or be scared by it. Maybe something like what you shared about Amen.."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your preference for Norwegian language, I recommend 'Mansfield Park' (1814), which features a Norwegian actress, Liv Ullmann, in the role of Fanny. Enjoy the combination of Norwegian and English in this classic adaptation.",
+      "text": "Based on your preference for a sci-fi film set around 1950 with James Cromwell, I recommend \"Batman Returns\" (1992). It has elements of science fiction in its portrayal of Batman's technology and gadgets. Plus, the cast includes Cromwell along with Sean Whalen, Jan Hooks, and other notable names.",
       "constraints": {
-        "genre": "language",
-        "language": "Norwegian Language",
+        "genre": "sci-fi",
         "plot": [
-          "something",
-          "primarily"
+          "could",
+          "look"
         ],
-        "name": "Wings of Desire"
+        "name": "Amen.",
+        "year": "1950",
+        "actor": "James Cromwell",
+        "director": "Stephen Chbosky",
+        "language": "English Language",
+        "writer": "Stephen Chbosky"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences, I recommend watching 'The Puffy Chair' (2005). This heartwarming comedy film tells the story of Josh Sagers delivering his father's birthday gift, a giant purple LazyBoy chair. The film stars Bari Hyman and has a nostalgic touch with its plot.",
+      "constraints": {
+        "genre": "sci-fi",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Amen.",
+        "year": "1950",
+        "actor": "James Cromwell",
+        "director": "Stephen Chbosky",
+        "language": "English Language",
+        "writer": "Stephen Chbosky"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Puffy Chair tell? That sounds intriguing."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend \"Field of Dreams\" for its heartwarming story and iconic cast, including Amy Madigan and Kevin Costner himself.",
+      "constraints": {
+        "genre": "sci-fi",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The Puffy Chair",
+        "year": "1950",
+        "actor": "James Cromwell",
+        "director": "Stephen Chbosky",
+        "language": "English Language",
+        "writer": "Stephen Chbosky"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Field of Dreams. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your interest in a sci-fi film from the 1950s with James Cromwell, I recommend \"Waking Life\" (2001). Though not exactly from 1950 or starring James Cromwell, it fits the sci-fi and actor criteria. The movie explores philosophy and consciousness through an unconventional animated narrative.",
+      "constraints": {
+        "genre": "sci-fi",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Field of Dreams",
+        "year": "1950",
+        "actor": "James Cromwell",
+        "director": "Stephen Chbosky",
+        "language": "English Language",
+        "writer": "Stephen Chbosky"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Waking Life? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a sci-fi fan, I recommend 'Rango' (2011) which features imaginative animation and an orangutan protagonist who gets caught up in jungle adventures. Starring Lew Temple and Maile Flanagan, this movie combines humor with a touch of adventure.",
+      "constraints": {
+        "genre": "sci-fi",
+        "plot": [
+          "what",
+          "waking"
+        ],
+        "name": "Waking Life",
+        "year": "1950",
+        "actor": "James Cromwell",
+        "director": "Stephen Chbosky",
+        "language": "English Language",
+        "writer": "Stephen Chbosky"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Rango. Could we explore animation next, but maybe with a softer touch?"
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences for an animation movie with a softer touch, I recommend 'The Illusionist'. This film combines elements of fantasy and magic, with a gentle storyline and talented cast including Edward Norton and Ricky Jay.",
+      "constraints": {
+        "genre": "animation",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Rango",
+        "year": "1950",
+        "actor": "James Cromwell",
+        "director": "Stephen Chbosky",
+        "language": "English Language",
+        "writer": "Stephen Chbosky"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Illusionist. Who stars in it? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Considering your interest in animation, a sound-driven movie, and characters like James Cromwell, I recommend 'Escape from New York' (1981). With Kurt Russell's tough character alongside John Diehl's comedic relief, this film combines action, humor, and a strong sound palette.",
+      "constraints": {
+        "genre": "animation",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Illusionist",
+        "year": "1950",
+        "actor": "James Cromwell",
+        "director": "Stephen Chbosky",
+        "language": "English Language",
+        "writer": "Stephen Chbosky"
       }
     },
     {
@@ -93,257 +317,103 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "For a light-hearted and humorous experience, I recommend 'I Heart Huckabees'. This film follows the quirky adventures of a couple who help others solve their existential dilemmas. Starring Dustin Hoffman and an impressive cast, this comedy offers a unique take on relationships and life's little challenges.",
+      "text": "Based on your preferences, I recommend 'ThePerfectGame' (2009). This movie tells the true story of a Mexican team becoming the first non-U.S. team to win the Little League World Series. With actors like Jansen Panettiere and Chris Mulkey, it's an exciting film for fans of baseball and underdog stories.",
       "constraints": {
-        "genre": "language",
-        "language": "Norwegian Language",
+        "genre": "animation",
         "plot": [
           "what",
           "said"
         ],
-        "name": "Wings of Desire"
+        "name": "The Illusionist",
+        "year": "1950",
+        "actor": "James Cromwell",
+        "director": "Stephen Chbosky",
+        "language": "English Language",
+        "writer": "Stephen Chbosky"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Emma. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "What kind of story does Escape from New York tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your preference for the sound and a story like \"Emma,\" I recommend \"Treasure Planet\" (2002). It's an animated adventure featuring Jim Hawkins, like you mentioned, and his quest to find a lost treasure. The movie stars Laurie Metcalf, Mona Marshall, among others.",
+      "text": "For someone who enjoys character-driven stories and poignant relationships, I recommend watching 'Revolutionary Road'. This movie explores the challenges of marriage, personal growth, and societal expectations through the characters of Joanna and Robert. The performances by Kate Winslet and Leonardo DiCaprio are captivating.",
       "constraints": {
-        "genre": "language",
-        "language": "Norwegian Language",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "Emma"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Emma tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "For a recommendation that combines elements of storytelling, humor, and memorable characters, I suggest watching 'This Is Spinal Tap' with Paul Shaffer, Howard Hesseman, and other cast members. The film satirizes the music industry while delivering hilarious insights into rock 'n' roll culture.",
-      "constraints": {
-        "genre": "language",
-        "language": "Norwegian Language",
+        "genre": "animation",
         "plot": [
           "what",
           "kind"
         ],
-        "name": "RED"
+        "name": "Escape from New York",
+        "year": "1950",
+        "actor": "James Cromwell",
+        "director": "Stephen Chbosky",
+        "language": "English Language",
+        "writer": "Stephen Chbosky"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Emma? That feels deeper than I thought."
+      "text": "What's the mood of Drive? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "For a deeper mood exploration, I would recommend 'Elizabeth' (1998). The film delves into the early years of Elizabeth I's reign, offering insights into her personal growth and the challenges she faced as a monarch. Starring Emma Thompson in the lead role, the movie offers a captivating historical drama.",
+      "text": "If you're looking for a movie with an intriguing plot and some familiar faces, I recommend 'The Departed'. It's a crime thriller featuring an undercover cop and a mole in the police trying to outsmart each other. Starring actors like Matt Damon, Leonardo DiCaprio, and Mark Wahlberg make the story all the more captivating.",
       "constraints": {
-        "genre": "language",
-        "language": "Norwegian Language",
+        "genre": "animation",
         "plot": [
           "what",
-          "emma"
+          "drive"
         ],
-        "name": "Deep"
+        "name": "Drive",
+        "year": "1950",
+        "actor": "James Cromwell",
+        "director": "Stephen Chbosky",
+        "language": "English Language",
+        "writer": "Stephen Chbosky"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thinking about Emma, could we shift toward stories about gunn? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "Do you have recommendations written by Paul Greengrass? Maybe I\u2019m overthinking it, but it sounds fascinating. Maybe something like what you shared about The Departed."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your preferences, I would recommend 'Amen.' This movie tells the story of SS officer Kurt Gerstein's attempts to inform Pope Pius XII about the Holocaust. The performance by Ulrich M\u00fche is particularly notable.",
+      "text": "I would recommend 'The Omega Code' (1999) for its unique blend of religious prophecies and a murder mystery. Starring Ayla Kell, George Coe, and William Hootkins, the film offers an intriguing and thought-provoking cinematic experience.",
       "constraints": {
-        "genre": "war",
-        "language": "Norwegian Language",
+        "genre": "animation",
         "plot": [
-          "thinking",
-          "emma"
+          "written",
+          "paul"
         ],
-        "name": "War"
+        "name": "Ted",
+        "year": "1950",
+        "actor": "James Cromwell",
+        "director": "Paul Greengrass",
+        "language": "English Language",
+        "writer": "Paul Greengrass"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Amen. tell? Hmm, I didn\u2019t expect that vibe."
+      "text": "I like the sound of The Omega Code. Who stars in it? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "For a war-themed story, I recommend 'Lincoln'. This historical drama stars Joseph Gordon-Levitt and delves into the President's decision-making during the Civil War. If you're interested in a classic motorcycle gang tale, \"Hell' s Angels\" with Jean Harlow is an option.",
+      "text": "If you're interested in a cross-cultural road race with high-speed action, 'The Fast and the Furious' might be the perfect recommendation, featuring popular actor Vin Diesel and thrilling car stunts.",
       "constraints": {
-        "genre": "war",
-        "language": "Norwegian Language",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "Amen."
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Lincoln. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I recommend 'The Best Years of Our Lives' for its heartwarming story about veterans adjusting to life after war, featuring strong performances by Myrna Loy and Teresa Wright.",
-      "constraints": {
-        "genre": "war",
-        "language": "Norwegian Language",
+        "genre": "animation",
         "plot": [
           "like",
           "sound"
         ],
-        "name": "Lincoln"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of The Best Years of Our Lives? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "For a light-hearted and star-studded experience, I would recommend 'Win a Date with Tad Hamilton!'. This comedy features Paris Hilton and Topher Grace, and follows a small-town girl's adventure winning a date with a male celebrity.",
-      "constraints": {
-        "genre": "war",
-        "language": "Norwegian Language",
-        "plot": [
-          "what",
-          "best"
-        ],
-        "name": "The Best Years of Our Lives"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Thinking about Celebrity, could we shift toward stories about hollywood? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Considering your interest in stories about Hollywood, I would recommend 'Flags of Our Fathers' (2000). It tells the story of six men who raised the flag during the Battle of Iwo Jima, a significant event in World War II. The film features a strong cast, including Barry Pepper and Robert Patrick.",
-      "constraints": {
-        "genre": "war",
-        "language": "Norwegian Language",
-        "plot": [
-          "thinking",
-          "celebrity"
-        ],
-        "name": "War"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Flags of Our Fathers. Who stars in it? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on your preferences, I recommend watching 'Doctor Zhivago' (1965). This epic film tells the story of a Russian physician and poet during World War I and the political upheaval that followed. Starring Klaus Kinski, it offers a rich and emotional experience.",
-      "constraints": {
-        "genre": "war",
-        "language": "Norwegian Language",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "Her"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "It\u2019s weird \u2014 I thought I liked that, but maybe not."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I would recommend \"Hotel Rwanda\" (2004) starring Cara Seymour and Hakeem Kae-Kazim. This movie tells the heart-wrenching story of how a hotel manager saved thousands of Tutsi refugees during the Rwandan genocide.",
-      "constraints": {
-        "genre": "war",
-        "language": "Norwegian Language",
-        "plot": [
-          "weird",
-          "thought"
-        ],
-        "name": "Her"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Hotel Rwanda tell? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on your preference for a war story with Norwegian language elements, I recommend watching \"War Horse\" (1982). Starring David Thewlis, this film follows the journey of a horse named Spirit during World War I.",
-      "constraints": {
-        "genre": "war",
-        "language": "Norwegian Language",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "Hotel Rwanda"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of War Horse? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "For someone who enjoys war-themed movies with a strong language element, I would recommend 'Platoon'. It offers a realistic portrayal of Vietnam War with great performances by Tom Berenger and Kevin Dillon.",
-      "constraints": {
-        "genre": "war",
-        "language": "Norwegian Language",
-        "plot": [
-          "what",
-          "horse"
-        ],
-        "name": "War"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Could we switch to something else by Phillip Noyce? That sounds intriguing. Maybe something like what you shared about Platoon."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I recommend 'The Deer Hunter' (1978) since it offers a deep exploration of the Vietnam War's impact on lives. Starring Christopher Walken, Robert De Niro, and Meryl Streep, the movie is both captivating and thought-provoking.",
-      "constraints": {
-        "genre": "war",
-        "language": "Norwegian Language",
-        "plot": [
-          "could",
-          "switch"
-        ],
-        "name": "Platoon",
-        "actor": "Phillip Noyce",
-        "director": "Phillip Noyce"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of The Deer Hunter. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "For a movie recommendation, I'd suggest 'Big Fish'. This enchanting film, starring Jessica Lange and Ewan McGregor, tells a story about art, truth, and family through fantastical elements.",
-      "constraints": {
-        "genre": "war",
-        "language": "Norwegian Language",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "The Deer Hunter",
-        "actor": "Phillip Noyce",
-        "director": "Phillip Noyce"
+        "name": "The Omega Code",
+        "year": "1950",
+        "actor": "James Cromwell",
+        "director": "Paul Greengrass",
+        "language": "English Language",
+        "writer": "Paul Greengrass"
       }
     }
   ]

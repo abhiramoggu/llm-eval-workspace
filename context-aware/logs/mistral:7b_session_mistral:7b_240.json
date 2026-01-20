@@ -1,20 +1,107 @@
 {
   "model_name": "mistral:7b",
-  "true_genre": "bildungsroman",
+  "true_genre": "mockumentary",
   "conversation": [
     {
       "speaker": "USER",
-      "text": "I'm in the mood for a spy movie. Could you recommend a few?"
+      "text": "I'm in the mood for a horror movie. Could you recommend a few?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "If you're in the mood for a classic spy thriller, I'd highly recommend \"Thunderball\" (1965). This James Bond film features Sean Connery as he battles an international extortion plot involving stolen nuclear warheads. It's a gripping tale that's sure to keep you on the edge of your seat!\n\nAlternatively, if you're looking for something a bit more modern, \"Skyfall\" (2012) is another fantastic choice. Daniel Craig delivers an outstanding performance as James Bond, navigating personal and professional challenges while saving the world once again. It's a must-watch for any spy movie fan!",
+      "text": "For a spine-tingling horror experience, I'd highly recommend \"Bram Stoker's Dracula\" starring the talented Keanu Reeves and Gary Oldman. This period vampire film offers an enthralling tale of seduction and chaos that is sure to keep you on the edge of your seat!\n\nIf you're in the mood for a suspenseful police thriller with unexpected twists, \"Shattered\" featuring Gerard Butler, Bob Hoskins, and Nicholas Lea might be right up your alley. It explores the dangerous underworld of organized crime and the lengths detectives will go to bring down their enemies. Enjoy!",
       "constraints": {
-        "genre": "spy",
+        "genre": "horror",
         "plot": [
+          "horror",
           "could"
         ],
         "name": "You"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Bram Stoker's Dracula. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you enjoyed the sound of Bram Stoker's Dracula and are interested in horror movies, I'd recommend \"The Shallows\" as a thrilling shark survival tale starring Sedona Legge and Brett Cullen. If you prefer something more psychological, \"The Dark Half\" might interest you, with Timothy Hutton playing a writer battling his own dark alter ego. Both movies promise a chilling experience!",
+      "constraints": {
+        "genre": "horror",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Bram Stoker's Dracula",
+        "writer": "Bram Stoker"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Psycho? That sounds intriguing."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're in the mood for a horror flick, I'd highly recommend checking out \"Jurassic Park III\". It's an action-packed thriller with dinosaurs that will surely keep you on the edge of your seat! Another intriguing movie is \"Monsters, Inc.\", though it's more family-friendly and falls under the animation genre. It offers a unique take on monsters and their world, which I think you might find fascinating too.",
+      "constraints": {
+        "genre": "horror",
+        "plot": [
+          "what",
+          "psycho"
+        ],
+        "name": "Psycho",
+        "writer": "Bram Stoker"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you're looking for something different, I'd recommend \"The Haunting\" (1999). This chilling film revolves around a family moving into a house with an ominous past, where they uncover an evil force that shapes their fate. The movie stars Liam Neeson and Virginia Madsen, who deliver captivating performances.\n\nAnother intriguing option is \"The Rite\" (2011), starring Anthony Hopkins, centering around an American seminary student taking an exorcism course in Italy. This psychological horror-thriller offers a unique blend of spiritual terror and suspense. Enjoy!",
+      "constraints": {
+        "genre": "horror",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Psycho",
+        "writer": "Bram Stoker"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Psycho tell? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for horror and the eerie vibe you mentioned, I'd recommend \"The Amityville Horror\" for its chilling story of a family terrorized by supernatural forces in a haunted house. If you're also interested in suspenseful thrillers, \"Taken\" might appeal to you as well, starring the captivating performance of Liam Neeson in a tale of friends on a rescue mission during a city-wide monster attack. Enjoy your movie time!",
+      "constraints": {
+        "genre": "horror",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Psycho",
+        "writer": "Bram Stoker"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Afrikaans Language? That sounds intriguing. Maybe something like what you shared about The Amityville Horror."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for Afrikaans language films and a taste for something thrilling like \"The Amityville Horror\", I'd recommend watching \"Constantine\". This supernatural movie features a captivating performance by Keanu Reeves as John Constantine, an exorcist and demonologist. However, if you're open to exploring different genres, you might also enjoy \"Unbreakable\" directed by M. Night Shyamalan, a suspenseful drama with Samuel L. Jackson and Bruce Willis. Enjoy the movies!",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "The Amityville Horror",
+        "writer": "Bram Stoker",
+        "language": "Afrikaans Language"
       }
     },
     {
@@ -23,358 +110,256 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "It seems like you're in the mood for some spy action with a twist of relationship drama! Two movies that might appeal to you are \"True Lies\" and \"This Means War\". In \"True Lies\", Arnold Schwarzenegger plays a secret agent who discovers his wife might be having an affair, while terrorists smuggle nuclear warheads into the US. On the other hand, \"This Means War\" is a comedic take on espionage where C.I.A. operatives Warren Christie and Chris Pine compete for the affection of the same woman, Reese Witherspoon. Both movies offer thrilling action and a bit of romance. Enjoy!",
+      "text": "I'd highly recommend \"Safe House\" for you. It's a thrilling action movie about a young CIA agent and a fugitive on the run, played by Denzel Washington and Ryan Reynolds respectively. The plot is filled with unexpected twists and high-stakes chases that will keep you on the edge of your seat!\n\nIf you're interested in a classic spy tale, \"The Secret Garden\" might also be worth checking out, featuring AJ Cross as Peter Sebastian, a lone spy who must prevent a nuclear war. It's an intense original movie full of intrigue and contrivance. Enjoy!",
       "constraints": {
-        "genre": "spy",
+        "genre": "language",
         "plot": [
           "wrong",
           "earlier"
         ],
-        "name": "You"
+        "name": "The Amityville Horror",
+        "writer": "Bram Stoker",
+        "language": "Afrikaans Language"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of This Means War? That feels deeper than I thought."
+      "text": "What kind of story does The Secret Garden tell? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "\"Based on your interest in war and intriguing plots, I'd recommend you watch 'The Andromeda Strain' (1971). This film revolves around a team of top scientists racing against time to understand a deadly contagion that has wiped out a small town. Another interesting movie is 'Incendies' (2010), which follows the journey of twins as they unravel their family history in the Middle East.\"",
+      "text": "I'd be happy to help! Given that you mentioned Bram Stoker and a preference for Afrikaans language, I'd recommend \"Hitch\" (2005) as it shares a connection with cinema history like Dracula by Bram Stoker. In this film, Alfred Hitchcock and Fran\u00e7ois Truffaut discuss their shared love of filmmaking. Another movie that might interest you is \"The Secret Garden\" (1911), a classic spy thriller based on the story The Garden of Forking Paths, which features intense action and suspense. Enjoy your movie time!",
       "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "means"
-        ],
-        "name": "War"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does 2010 tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Given that you mentioned a preference for war and were unsure if you'd enjoy a film being scary, I would recommend \"The Messenger\" (2002) which is not a war film per se, but it offers a compelling story about an American soldier dealing with an ethical dilemma.\n\nIf you're open to something more light-hearted, \"Grown Ups\" (2010) could be a fun choice, featuring a star-studded cast reuniting for a Fourth of July holiday weekend. Enjoy the movie!",
-      "constraints": {
-        "genre": "war",
+        "genre": "language",
         "plot": [
           "what",
           "kind"
         ],
-        "name": "2010",
-        "year": "2010"
+        "name": "The Secret",
+        "writer": "Bram Stoker",
+        "language": "Afrikaans Language"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Emma. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "What's the mood of The Secret Garden? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Both \"Platoon\" (1986) and \"Shutter Island\" (2010) are excellent choices!\n\n\"Platoon\" is a powerful war drama that explores the brutality of war and the duality of man, featuring notable performances from actors like Johnny Depp and Tom Berenger.\n\nOn the other hand, \"Shutter Island\" stars Leonardo DiCaprio and offers a thrilling mystery set in an asylum, providing a suspenseful plot that's sure to keep you engaged. Enjoy!",
+      "text": "\"If you're a fan of literary adaptations and complex character dynamics, I'd recommend giving 'The Taming of the Shrew' a try. This classic Shakespearean play features a captivating romance between two fiery characters that will keep you engaged from start to finish.\n\nAlternatively, if historical dramas are more your style, 'A Tale of Two Cities' might be just what you're looking for. Based on Charles Dickens' novel, it's a compelling story set during the French Revolution with captivating performances by its star-studded cast.\"",
       "constraints": {
-        "genre": "war",
+        "genre": "language",
+        "plot": [
+          "what",
+          "secret"
+        ],
+        "name": "The Secret",
+        "writer": "Bram Stoker",
+        "language": "Afrikaans Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of A Tale of Two Cities. Who stars in it? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you enjoyed 'A Tale of Two Cities' and are interested in deeper narratives, I'd recommend \"The Mortal Instruments: City of Bones.\" This film is set in an alternate New York called the Shadow World, where a young woman discovers she descends from a line of warriors protecting our world from demons. Starring Kevin Zegers and Aidan Turner, this movie blends fantasy with action, making it an engaging watch!\n\nIf you're also intrigued by classic horror, \"Dracula\" (1897) might be worth checking out. It's a shortened version of Tod Browning's 1931 classic, featuring some iconic characters from Bram Stoker's original novel.",
+      "constraints": {
+        "genre": "language",
         "plot": [
           "like",
           "sound"
         ],
-        "name": "RED",
-        "year": "2010"
+        "name": "Deep",
+        "writer": "Bram Stoker",
+        "language": "Afrikaans Language"
       }
     },
     {
       "speaker": "USER",
-      "text": "Thinking about 2010, could we shift toward stories about yote? That feels deeper than I thought."
+      "text": "Thinking about A Tale of Two Cities, could we shift toward stories about lifeguards? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Given your interest in war stories and a hint of deeper emotions, I'd recommend \"The Warlords\" (2007) for its intricate portrayal of strategic alliances amidst the chaos of war, starring notable actors Andy Lau and Takeshi Kaneshiro.\n\nIf you're looking for something more modern, \"3\" (2010) could be an engaging choice. It's a suspenseful drama about unraveling a mystery surrounding a tragic suicide, featuring Sebastian Schipper and Devid Striesow in strong performances.",
+      "text": "I'd be happy to help! If you're looking for a story that shifts from historical war narratives, like A Tale of Two Cities, to something more grounded in everyday life with a touch of fantasy, I'd recommend \"Big Fish\". It's a heartwarming tale about a son trying to understand his dying father's extraordinary life. The film stars talented actors such as Ewan McGregor, Albert Finney, and Danny DeVito, among others. On the other hand, if you're still interested in exploring war narratives but want a more intense experience, \"The Deer Hunter\" provides an in-depth examination of the impact of the Vietnam War on several friends from a small town in Pennsylvania. The movie features stellar performances by Robert De Niro and Christopher Walken. Both movies offer compelling stories that I believe you might enjoy!",
       "constraints": {
         "genre": "war",
         "plot": [
           "thinking",
-          "could"
+          "tale"
         ],
         "name": "War",
-        "year": "2010"
+        "writer": "Bram Stoker",
+        "language": "Afrikaans Language"
       }
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of 3. Who stars in it? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "I like the sound of A Tale of Two Cities. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Among the films you've mentioned, I'd highly recommend watching \"Black Swan\" (2010). This psychological thriller starring Natalie Portman and Mila Kunis tells a captivating story of a ballet dancer on the brink of her greatest achievement, but as the pressure mounts, her reality becomes increasingly distorted. It's a masterpiece that delves into themes of ambition, obsession, and identity \u2013 perfect if you enjoyed the sound of a thought-provoking drama!\n\nAnother film worth checking out is \"Hart's War\" (2002), starring Bruce Willis. This war drama follows a law student turned lieutenant during World War II who is captured and must defend a black prisoner of war falsely accused of murder. If you're interested in historical dramas with strong performances, this film might be right up your alley!",
+      "text": "Given that you mentioned liking the sound of \"A Tale of Two Cities\" and your interest in war movies, I'd recommend \"Tora! Tora! Tora!\" for its detailed portrayal of the 1941 Japanese attack on Pearl Harbor. If you're looking for something more recent with a unique twist, \"Jumper\" might be an exciting choice with its blend of action and science fiction. Both movies have captivating plots and talented casts to ensure an engaging watch!",
       "constraints": {
         "genre": "war",
         "plot": [
           "like",
           "sound"
-        ],
-        "name": "3",
-        "year": "2010"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Ted tell? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Given that you mentioned a preference for war genre and were curious about a story, I'd recommend watching \"Elizabeth\" (1998). This historical drama takes us through the early years of Elizabeth I's reign in England, providing an intriguing insight into what it takes to become a monarch.\n\nIf you're interested in something slightly different but still set in 2010, \"The Red Queen\" is a fascinating film about a software engineer's journey to study an advanced A.I. interface. Enjoy the voyage into this unique narrative!",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "Ted",
-        "year": "2010"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of RED? Maybe I\u2019m overthinking it, but it sounds fascinating."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Both \"Valkyrie\" and \"A Bridge Too Far\" are intriguing war movies from different eras, but if you're looking for a film that combines suspense and historical events, I'd highly recommend \"Valkyrie\". It stars Tom Cruise as part of a group of German officers plotting to assassinate Adolf Hitler in 1944. This movie offers a gripping portrayal of resistance during World War II. Enjoy the watch!",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what"
         ],
         "name": "RED",
-        "year": "2010"
+        "writer": "Bram Stoker",
+        "language": "Afrikaans Language"
       }
     },
     {
       "speaker": "USER",
-      "text": "Could we switch to something else by Mark Osborne? That sounds intriguing. Maybe something like what you shared about Valkyrie."
+      "text": "What kind of story does Tora! Tora! Tora! tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your preference for a war movie directed by Mark Osborne, I'd recommend \"The Shadows\" (2015) starring Stephen Grimes and Emett. This film offers a unique blend of suspense, drama, and a hint of the supernatural. Alternatively, if you're interested in a historical war drama, \"300: Rise of an Empire\" (2014) featuring Sullivan Stapleton and Eva Green might also be up your alley, as it follows the naval battles between Greece and Persia. Enjoy the cinematic journey!",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "could",
-          "switch"
-        ],
-        "name": "Valkyrie",
-        "year": "2010",
-        "actor": "Mark Osborne",
-        "director": "Mark Osborne",
-        "writer": "Mark Osborne"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Super. Who stars in it? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think you might really enjoy \"Born on the Fourth of July\" starring Tom Cruise, as it's a powerful biography about a Vietnam War veteran who becomes an anti-war activist after feeling betrayed by his country. Another film that could appeal to your taste is \"Incendies,\" a moving tale about twin siblings uncovering their family's history in the Middle East. Both films offer intriguing plots and strong performances, making them worth checking out!",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "Super",
-        "year": "2010",
-        "actor": "Mark Osborne",
-        "director": "Mark Osborne",
-        "writer": "Mark Osborne"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Tron tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "\"If you're interested in a gripping war drama, both 'Hotel Rwanda' and 'The Passage' are excellent choices. 'Hotel Rwanda' is a powerful tale of courage and resilience during the Rwandan genocide, starring Don Cheadle and Sophie Okonedo. On the other hand, 'The Passage' takes place during World War II in the Pyrenees, with Cara Seymour and Hakeem Kae-Kazim leading the cast.\"",
+      "text": "Both \"Super\" and \"The Monuments Men\" might be suitable for you!\n\n\"Super\" is a unique take on superhero stories, featuring an imaginative protagonist who embarks on his own heroic journey. On the other hand, \"The Monuments Men\" is a historical drama that follows an unlikely team of experts as they race against time to rescue priceless pieces of art from Nazi thieves.\n\nEnjoy the adventures!",
       "constraints": {
         "genre": "war",
         "plot": [
           "what",
           "kind"
         ],
-        "name": "Tron",
-        "year": "2010",
-        "actor": "Mark Osborne",
-        "director": "Mark Osborne",
-        "writer": "Mark Osborne"
+        "name": "Tora! Tora! Tora!",
+        "writer": "Bram Stoker",
+        "language": "Afrikaans Language"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of The Passage? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "What's the mood of Hero? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Given your preference for a war genre film from 2010 and the director, Mark Osborne, being unavailable in the options provided, let's recommend 'Tora! Tora! Tora!' instead. This historical drama recounts the Japanese air raid on Pearl Harbor and offers an intriguing exploration of the events that led up to it.\n\nIf you're looking for something lighter, 'Toy Story 3' might also be a great choice! This animated film features Woody and his toy friends' thrilling adventure in a day-care center before their owner heads off to college.",
+      "text": "Given your interest in war and heroic stories, I'd highly recommend \"Cloud Atlas\" (2004). This film explores how individual actions impact others throughout different time periods and features an ensemble cast including Tom Hanks, Halle Berry, and Hugh Grant. It's a thought-provoking tale of transformation and redemption that might resonate with you.\n\nAnother great pick could be \"Alex in Wonderland\" (N/A), which follows the journey of a filmmaker navigating both his personal and professional life while fantasizing about movie scenarios influenced by his idols. This film features Jeanne Moreau, Paul Mazursky, and Ellen Burstyn. It's a captivating exploration of the intersection between art and reality that I think you might find engaging.",
       "constraints": {
         "genre": "war",
         "plot": [
           "what",
-          "decide"
+          "hero"
         ],
-        "name": "RED",
-        "year": "2010",
-        "actor": "Mark Osborne",
-        "director": "Mark Osborne",
-        "writer": "Mark Osborne"
+        "name": "Her",
+        "writer": "Bram Stoker",
+        "language": "Afrikaans Language"
       }
     },
     {
       "speaker": "USER",
-      "text": "Could we switch to something else by Michael Polish? That feels deeper than I thought. Maybe something like what you shared about Toy Story 3."
+      "text": "Could we look at films from around 1936? Hmm, I didn\u2019t expect that vibe. Maybe something like what you shared about Hero."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your preference for a movie by Michael Polish and a deeper narrative, I'd recommend \"Shutter Island\" starring Leonardo DiCaprio. It's a gripping psychological thriller that delves deep into the mysteries of an isolated asylum during WWII. Alternatively, if you're interested in art and history, \"The Monuments Men\" might be appealing, featuring an ensemble cast led by George Clooney and Matt Damon.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "could",
-          "switch"
-        ],
-        "name": "Toy Story 3",
-        "year": "2010",
-        "actor": "Mark Osborne",
-        "director": "Michael Polish",
-        "writer": "Mark Osborne",
-        "language": "Polish"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of The Monuments Men. Who stars in it? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on your preference for war genre films and considering that 'The Monuments Men' also has a historical setting, I'd recommend you give \"Cold Mountain\" (2003) a try. This movie is set during the American Civil War and features an impressive cast including Jude Law, Ren\u00e9e Zellweger, and Nicole Kidman. Another film that might appeal to you is \"Lincoln\" (1995), which follows Abraham Lincoln's struggle to end the Civil War and emancipate slaves. The movie stars Joseph Gordon-Levitt, Bruce McGill, and Hal Holbrook. Enjoy these historical epics!",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "The Monuments Men",
-        "year": "2010",
-        "actor": "Mark Osborne",
-        "director": "Michael Polish",
-        "writer": "Mark Osborne",
-        "language": "Polish"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of The Monuments Men? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Given that you're looking for something set in the war genre but are unsure if you'd enjoy a serious, historical drama like \"The Monuments Men,\" I'd recommend \"You Will Meet a Tall Dark Stranger\" as an alternative. This film offers a more contemporary and intriguing exploration of personal relationships amidst life's twists and turns, starring notable actors such as Anthony Hopkins and Naomi Watts. If you're open to comedies, \"MacGruber\" might also be worth considering, featuring hilarious action and witty humor with Will Forte in the lead role. Enjoy your movie time!",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "decide"
-        ],
-        "name": "The Monuments Men",
-        "year": "2010",
-        "actor": "Mark Osborne",
-        "director": "Michael Polish",
-        "writer": "Mark Osborne",
-        "language": "Polish"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does The Monuments Men tell? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "The Monuments Men shares a historical theme with films like Before I Fall, which revolves around a character reliving significant events. If you enjoy war-themed stories and are intrigued by time loops, I'd recommend giving Before I Fall a watch.\n\nOn the other hand, if you're interested in epic tales that span multiple filmmakers, The Odyssey might appeal to you with its adaptation of Homer's classic work into 24 continuous shorts. Starring actors such as Vanessa L. Williams and Eric Roberts, this unique project could be an exciting exploration for you.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "The Monuments Men",
-        "year": "2010",
-        "actor": "Mark Osborne",
-        "director": "Michael Polish",
-        "writer": "Mark Osborne",
-        "language": "Polish"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Could we look at films from around 1995? Hmm, I didn\u2019t expect that vibe. Maybe something like what you shared about The Monuments Men."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Given that you mentioned appreciating films like The Monuments Men, I'd highly recommend watching \"Amen.\" It's a powerful and thought-provoking war film that delves into the moral dilemmas faced during World War II, much like The Monuments Men. Another interesting choice is \"The Messenger\" - a poignant drama about an American soldier dealing with ethical issues in post-war Iraq, which might offer a fresh perspective on war themes from a different era. Both are compelling watches!",
+      "text": "Given that you're interested in films from 1936 and war genre, I'd highly recommend watching \"Gone with the Wind\". This classic film is a sweeping romance set against the backdrop of the American Civil War, starring iconic actors like Vivien Leigh and Clark Gable.\n\nIf you're up for a more modern take on war-themed movies, I'd also suggest \"Fury\" (2014), an intense drama about a tank crew in Germany during World War II, featuring Brad Pitt, Logan Lerman, and Shia LaBeouf. Enjoy the watch!",
       "constraints": {
         "genre": "war",
         "plot": [
           "could",
           "look"
         ],
-        "name": "The Monuments Men",
-        "year": "1995",
-        "actor": "Mark Osborne",
-        "director": "Michael Polish",
-        "writer": "Mark Osborne",
-        "language": "Polish"
+        "name": "Her",
+        "writer": "Bram Stoker",
+        "language": "Afrikaans Language",
+        "year": "1936"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Emma tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "I like the sound of Gone with the Wind. Who stars in it? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Given your preference for a war genre film set in 1995 and your interest in Polish language movies, I'd highly recommend \"A Farewell to Arms.\" This classic story is about an English nurse and an American ambulance driver during World War 1, and it was released in 1929 but remade in 1932 with a Polish version available. Another intriguing choice might be \"Pan's Labyrinth\" (released in 2006), a captivating fantasy film set in Spain during the war years. It's visually stunning and has been widely praised for its engaging plot. Enjoy your movie time!",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "RED",
-        "year": "1995",
-        "actor": "Mark Osborne",
-        "director": "Michael Polish",
-        "writer": "Mark Osborne",
-        "language": "Polish"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Pan's Labyrinth. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Given that you enjoyed the sound of Pan's Labyrinth and have a preference for movies set in war times, I would highly recommend \"Patton\" (1970). This film tells the career story of General George S. Patton during World War II, with George C. Scott delivering an outstanding performance as Patton.\n\nIf you're looking for something more fantastical and animated, Princess Mononoke (1997) is another great option from your list. With stunning animation and a captivating plot revolving around the conflict between the forest gods and human forces, it's sure to impress!",
+      "text": "I'd recommend \"A Bridge Too Far\" for you. It's a gripping war film set in World War II, starring notable actors like Sean Connery and Robert Redford. The plot revolves around the Allies' attempt to capture several strategic bridges in the Netherlands, which I think might interest you given your preference for war genre movies.\n\nAnother one that might catch your attention is \"The English Patient\". This film features an intriguing love story set against the backdrop of World War II, with a star-studded cast including Ralph Fiennes and Kristin Scott Thomas. The narrative unfolds through flashbacks from a burned plane crash victim, adding a layer of mystery to the plot.",
       "constraints": {
         "genre": "war",
         "plot": [
           "like",
           "sound"
         ],
-        "name": "Pan's Labyrinth",
-        "year": "1995",
-        "actor": "Mark Osborne",
-        "director": "Michael Polish",
-        "writer": "Mark Osborne",
-        "language": "Polish"
+        "name": "Deep",
+        "writer": "Bram Stoker",
+        "language": "Afrikaans Language",
+        "year": "1936"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Crash tell? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "\"The Wraith and Born on the Fourth of July could be great choices for you! The Wraith, a thrilling 80s movie about a mysterious spirit taking revenge on a violent road racing gang, might appeal to you with its action-packed plot and charismatic cast. On the other hand, Born on the Fourth of July is a powerful biographical drama about a veteran's transformation into an anti-war activist after feeling betrayed by his country. It features strong performances from Tom Cruise and several other notable actors.\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Crash",
+        "writer": "Bram Stoker",
+        "language": "Afrikaans Language",
+        "year": "1936"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Wraith? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Considering your preference for a movie set in the year 1936, written by Bram Stoker, and with a plot related to a 'wraith', I'd recommend \"What Women Want\". It's a comedic film starring Mel Gibson, Helen Hunt, and Bette Midler about an advertising executive who mysteriously gains the ability to hear women's thoughts.\n\nIf you're open to something more serious with strong historical undertones, I'd also suggest \"Redacted\", a powerful drama that reconstructs a tragic event in Iraq involving American soldiers. Starring Ohad Knoller and Kel O'Neill, it provides a thought-provoking exploration of morality and accountability.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "wraith"
+        ],
+        "name": "The Wraith",
+        "writer": "Bram Stoker",
+        "language": "Afrikaans Language",
+        "year": "1936"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Flemish language? Maybe I\u2019m overthinking it, but it sounds fascinating. Maybe something like what you shared about Redacted."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend \"The Goodbye Girl\" for its eerie and intriguing plot about a young girl who seems to predict deaths in her family, causing quite the mystery. Starring notable actors like Raymond J. Barry, Nicol Williamson, and Powers Boothe, it's definitely worth checking out if you're into suspenseful films in the Flemish language!\n\nIf you're interested in exploring a classic horror film, \"Dracula\" from 1897 might be right up your alley. It's an abridged version of Tod Browning's 1931 classic, offering a unique glimpse into the early days of vampire films.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "Ted",
+        "writer": "Bram Stoker",
+        "language": "Flemish language",
+        "year": "1936"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Redacted. Who stars in it? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems you're fond of unique stories! Given your interest in movies from the past and Bram Stoker, I'd recommend watching \"White Fang\" (1906). This film tells a compelling story about a wolf-dog's journey through harsh wilderness and adversity. Another intriguing choice is \"The Monuments Men\" (2014), which follows an eclectic team on a mission to rescue priceless artwork from the clutches of World War II thieves. Both movies offer captivating plots that might appeal to you! Enjoy!",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "writer": "Bram Stoker",
+        "language": "Flemish language",
+        "year": "1936"
       }
     }
   ]

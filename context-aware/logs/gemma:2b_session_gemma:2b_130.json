@@ -1,18 +1,18 @@
 {
   "model_name": "gemma:2b",
-  "true_genre": "california",
+  "true_genre": "film score",
   "conversation": [
     {
       "speaker": "USER",
-      "text": "I'm in the mood for a california movie. Could you recommend a few?"
+      "text": "I'm in the mood for a film score movie. Could you recommend a few?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "For a California movie that perfectly fits the description you provided, I would recommend \"Psycho\". The film is a classic about a woman's journey for survival in a dangerous town.",
+      "text": "Sure, here's a recommendation:\n\nIf you're looking for a film score movie, \"You\" is a thought-provoking and chilling film about gun violence and abuse.",
       "constraints": {
-        "genre": "california",
+        "genre": "film score",
         "plot": [
-          "california",
+          "score",
           "could"
         ],
         "name": "You"
@@ -20,84 +20,254 @@
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Psycho. Who stars in it? Hmm, I didn\u2019t expect that vibe."
+      "text": "What kind of story does {'name': 'Cars 2', 'year': '2011', 'actor': ['Lewis Hamilton', 'Peter Jacobson', 'Larry the Cable Guy', 'Franco Nero', 'Jeff Garlin', 'Jess Harnell', 'Jenifer Lewis', 'Emily Mortimer', 'Jason Isaacs', 'Tony Shalhoub', 'Thomas Kretschmann', 'Thomas Kretschmann', 'Michael Caine', 'Owen Wilson', 'John Ratzenberger', 'John Lasseter', 'Paul Dooley', 'Eddie Izzard', 'Eddie Izzard', 'Katherine Helmond', 'Bruce Campbell', 'Bonnie Hunt', 'Cheech Marin', 'John Turturro', 'Joe Mantegna', 'Joe Mantegna', 'Vanessa Redgrave'], 'director': ['Brad Lewis', 'John Lasseter'], 'genre': ['Film score', 'Sport', 'Spy film', 'Animation', 'Comedy', 'Family', 'Family (Film genre) #395', 'Adventure Film', 'Adventure'], 'language': ['Japanese Language', 'French', 'Italian Language', 'English Language', 'English'], 'writer': ['Ben Queen', 'Brad Lewis', 'John Lasseter', 'Dan Fogelman'], 'plot': 'Star race car Lightning McQueen and his pal Mater head overseas to compete in the World Grand Prix race. But the road to the championship becomes rocky as Mater gets caught up in an intriguing adventure of his own: international espionage.', 'original_id': '257'} tell? That sounds intriguing."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on the user's preference for dark, atmospheric thrillers with eerie elements, I would recommend \"Vampyres\" or \"The Other Guys\". The former's sound design and psychological themes perfectly match the user's description, while the latter's bizarre plot and darkly comedic tone might appeal to the same taste.",
+      "text": "The Exorcist (1971) sounds intriguing! The plot about a young girl possessed by a mysterious entity sounds terrifying but also intriguing.",
       "constraints": {
-        "genre": "california",
+        "genre": "adventure",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her",
+        "year": "2011",
+        "actor": "Jeff Garlin",
+        "director": "Brad Lewis",
+        "language": "French",
+        "writer": "John Lasseter"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Posse. Who stars in it? That sounds intriguing."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The Right Stuff would be a good fit for you. It's a biographical space drama about a group of astronauts who fought to break the sound barrier and choose the Mercury 7 astronauts.",
+      "constraints": {
+        "genre": "adventure",
         "plot": [
           "like",
           "sound"
         ],
-        "name": "Psycho"
+        "name": "Posse",
+        "year": "2011",
+        "actor": "Jeff Garlin",
+        "director": "Brad Lewis",
+        "language": "French",
+        "writer": "John Lasseter"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does The Other Guys tell? That feels deeper than I thought."
+      "text": "What's the mood of The Right Stuff? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "For a more intense and thought-provoking story, consider \"Divergent\". The film explores themes of individuality, destiny, and rebellion against societal norms.",
+      "text": "Based on the cues, \"The Right Stuff\" sounds like a good choice. It's an adventure movie with a heartwarming story about fatherhood and sacrifice.",
       "constraints": {
-        "genre": "california",
+        "genre": "adventure",
+        "plot": [
+          "what",
+          "right"
+        ],
+        "name": "The Right Stuff",
+        "year": "2011",
+        "actor": "Jeff Garlin",
+        "director": "Brad Lewis",
+        "language": "French",
+        "writer": "John Lasseter"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Swiss German Language? Maybe I\u2019m overthinking it, but it sounds fascinating. Maybe something like what you shared about The Right Stuff."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a movie primarily in Swiss German Language with a 2011 release, I would recommend \"Cars 2\". The movie features a humorous and heart-warming story about a star race car and his pal Mater.",
+      "constraints": {
+        "genre": "german language",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "The Right Stuff",
+        "year": "2011",
+        "actor": "Jeff Garlin",
+        "director": "Brad Lewis",
+        "language": "German Language",
+        "writer": "John Lasseter"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Cars 2 tell? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for something more lighthearted and comedic, \"Zookeeper\" might be a good choice. It's a heartwarming movie about animals trying to help their zookeeper find love.\n\nIf you're interested in a more suspenseful story, \"Taken\" or \"Prometheus\" would be better options. They offer thrilling plot twists and unsettling visuals.\n\n\"Redacted\" is a powerful and disturbing film that tackles the topic of war and human rights violations. It's a thought-provoking and unforgettable movie.",
+      "constraints": {
+        "genre": "german language",
         "plot": [
           "what",
           "kind"
         ],
-        "name": "Her"
+        "name": "Cars 2",
+        "year": "2011",
+        "actor": "Jeff Garlin",
+        "director": "Brad Lewis",
+        "language": "German Language",
+        "writer": "John Lasseter"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Divergent? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "I like the sound of Redacted. Who stars in it? Hmm, I didn\u2019t expect that vibe."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on the user's preference for thrillers and the themes of conflict and survival in the chosen movies, I would recommend either \"Paycheck\" or \"You\". \"Paycheck\" showcases a tenacious protagonist navigating a dangerous and unexpected situation, while \"You\" raises thought-provoking questions about the consequences of abusing power and the complexities of morality.",
+      "text": "For a movie with a similar sound to Redacted, I would recommend 'Saving Private Ryan'. It's about a group of U.S. soldiers who go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action.",
       "constraints": {
-        "genre": "california",
+        "genre": "german language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "year": "2011",
+        "actor": "Jeff Garlin",
+        "director": "Brad Lewis",
+        "language": "German Language",
+        "writer": "John Lasseter"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Soldier? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "A Better Life (2011) is a heartwarming story about a gardener who is determined to give his son a better life. The film is about the importance of family and the power of forgiveness.\n\nThe Life Aquatic with Steve Zissou (2004) is a thrilling and suspenseful film about a group of people who are targeted by a legendary shark. The film features a strong performance from Steve Zissou and an unforgettable soundtrack.\n\nScream 4 (2011) is a thrilling and terrifying film about a group of teenagers who are targeted by a serial killer. The film features a strong cast of actors, including Heather Graham and Emma Roberts.",
+      "constraints": {
+        "genre": "german language",
         "plot": [
           "what",
-          "divergent"
+          "soldier"
         ],
-        "name": "RED"
+        "name": "Soldier",
+        "year": "2011",
+        "actor": "Jeff Garlin",
+        "director": "Brad Lewis",
+        "language": "German Language",
+        "writer": "John Lasseter"
       }
     },
     {
       "speaker": "USER",
-      "text": "Maybe we could find more movies with Drew Rosenhaus. That feels deeper than I thought. Maybe something like what you shared about X."
+      "text": "Thanks for all the detail on Scream 4. Could we explore serial killer next, something that surprises me emotionally?"
     },
     {
       "speaker": "SYSTEM",
-      "text": "I recommend \"King Kong\" for its epic scope and thrilling action. The film is visually stunning and features a compelling story about a greedy producer and the dangers of obsession.",
+      "text": "If you're looking for a more emotionally charged and thought-provoking serial killer film, I would recommend either \"Die Another Day\" or \"Hannibal Rising\". Both movies deal with complex themes of revenge, guilt, and the struggle for survival.",
       "constraints": {
-        "genre": "california",
+        "genre": "serial killer",
         "plot": [
-          "could",
-          "find"
+          "thanks",
+          "detail"
         ],
-        "name": "RED",
-        "actor": "Drew Rosenhaus"
+        "name": "Scream 4",
+        "year": "2011",
+        "actor": "Jeff Garlin",
+        "director": "Brad Lewis",
+        "language": "German Language",
+        "writer": "John Lasseter"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does King Kong tell? Hmm, I didn\u2019t expect that vibe."
+      "text": "What kind of story does Hannibal Rising tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "If you're looking for a historical romance about a strong woman overcoming prejudice and finding love, \"The Taming of the Shrew\" would be a great choice. If you're interested in a gothic family drama with a suspenseful plot, \"Eve's Bayou\" would be perfect. If you're looking for a heart-wrenching revenge movie with stellar performances, \"The Expendables 2\" would be a compelling option.",
+      "text": "If you're looking for something with a heartwarming and optimistic tone, 'The Land Before Time' (1988) starring Gabriel Damon is a perfect choice. It's a story about a young dinosaur who forms an unbreakable bond with other dinosaurs in a lush valley.",
       "constraints": {
-        "genre": "california",
+        "genre": "serial killer",
         "plot": [
           "what",
           "kind"
         ],
-        "name": "King Kong",
-        "actor": "Drew Rosenhaus"
+        "name": "Hannibal Rising",
+        "year": "2011",
+        "actor": "Jeff Garlin",
+        "director": "Brad Lewis",
+        "language": "German Language",
+        "writer": "John Lasseter"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Unbreakable. Who stars in it? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, \"The Guard\" or \"Machine Gun Preacher\" would be strong recommendations. \"The Guard\" due to the unique partnership between an unorthodox policeman and an F.B.I. agent; and \"Machine Gun Preacher\" for its compelling story about a biker turned crusader for children.",
+      "constraints": {
+        "genre": "serial killer",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Unbreakable",
+        "year": "2011",
+        "actor": "Jeff Garlin",
+        "director": "Brad Lewis",
+        "language": "German Language",
+        "writer": "John Lasseter"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Tron? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for something with a darker and more unsettling tone, \"Young Frankenstein\" would be a good choice. This movie explores themes of madness and the complexities of human nature through a compelling story about an American grandson seeking the truth about his grandfather's past.",
+      "constraints": {
+        "genre": "serial killer",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Tron",
+        "year": "2011",
+        "actor": "Jeff Garlin",
+        "director": "Brad Lewis",
+        "language": "German Language",
+        "writer": "John Lasseter"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thinking about Young Frankenstein, could we shift toward stories about basil? That feels deeper than I thought."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The Order (2003) starring Benno F\u00fcrmann and Benno F\u00fcrmann is a gripping mystery about a young priest investigating a priest's death. It's a well-crafted film with a strong plot and memorable characters.\n\nThe Patriot (2000) starring Kirk Fox and Skye McCole Bartusiak is a powerful historical drama about a farmer driven to lead the Colonial Militia during the American Revolution.\n\nLady in the Water (2006) starring Jared Harris is a charming and heartwarming story about a young woman trying to make her journey back home.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "thinking",
+          "young"
+        ],
+        "name": "War",
+        "year": "2011",
+        "actor": "Jeff Garlin",
+        "director": "Brad Lewis",
+        "language": "German Language",
+        "writer": "John Lasseter"
       }
     },
     {
@@ -106,244 +276,144 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "If you're looking for something more lighthearted and humorous, consider watching \"Monsters, Inc.\". The movie features lovable monsters and a heartwarming story about friendship and overcoming challenges.\n\nIf you're interested in a more intense and thought-provoking film, check out \"Holes\". The movie explores themes of guilt, forgiveness, and redemption, with a complex and compelling narrative.\n\nIf you're interested in a film about female empowerment, \"Her\" is a great choice. The film explores the complexities of modern dating and the challenges faced by women in a changing world.",
+      "text": "If you're looking for something dark and suspenseful with complex characters, \"The Secret\" (1992) might be your cup of tea. If you're more interested in a darkly comedic revenge story with shocking twists, \"Funny Games\" (2007) is a great choice. If you prefer something more nuanced and thought-provoking, \"Your Sister's Sister\" (2011) is a compelling character study with a shocking ending.",
       "constraints": {
-        "genre": "california",
+        "genre": "war",
         "plot": [
           "what",
           "said"
         ],
-        "name": "King Kong",
-        "actor": "Drew Rosenhaus"
+        "name": "War",
+        "year": "2011",
+        "actor": "Jeff Garlin",
+        "director": "Brad Lewis",
+        "language": "German Language",
+        "writer": "John Lasseter"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Holes? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "What kind of story does The Secret tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "If you're looking for a heart-wrenching story about love and loss, 'The Way Back Home' might be your cup of tea. The movie explores the profound impact of family and the transformative power of forgiveness.\n\nFor something more action-packed, 'Star Trek' might be your pick. The film showcases a brave protagonist on a quest for discovery, offering thrilling escapism while also exploring themes of destiny and humanity.\n\nIf you're intrigued by the philosophical exploration of a gifted protagonist's destructive gift, 'Prometheus' is a thought-provoking and unsettling film that delves into humanity's relationship with technology.",
+      "text": "If you're looking for an epic war film with historical and cultural significance, \"300: Rise of an Empire\" (2014) starring Sullivan Stapleton is a great choice. Alternatively, if you're interested in a more lighthearted and humorous war story, \"Fast Five\" (2011) starring Matt Schulze and Vin Diesel is perfect.",
       "constraints": {
-        "genre": "california",
-        "plot": [
-          "what",
-          "holes"
-        ],
-        "name": "Holes",
-        "actor": "Drew Rosenhaus"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Actually, now that I think about it, I might want the opposite."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Sure, here's a recommendation:\n\nIf you're looking for something thought-provoking and visually stunning, consider \"Alex in Wonderland\". It's a quirky and enigmatic film that explores the complexities of creative ambition and personal growth.",
-      "constraints": {
-        "genre": "california",
-        "plot": [
-          "actually",
-          "think"
-        ],
-        "name": "Holes",
-        "actor": "Drew Rosenhaus"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of X. Who stars in it? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the user's preferences, I would recommend **Unleashed** and **Easy A**. \n\n**Unleashed** showcases a captivating escape story with compelling performances and a thrilling plot that will keep you on the edge of your seat.\n\n**Easy A** presents a hilarious and thought-provoking portrayal of teenage social dynamics and the complexities of lying.",
-      "constraints": {
-        "genre": "california",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "X",
-        "actor": "Drew Rosenhaus"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Maybe we could find more movies with Jason Mewes. That sounds intriguing. Maybe something like what you shared about Easy A."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Since the user's preference is for movies featuring Jason Mewes and focusing on romantic comedies and thrillers, I would recommend \"The Rosie Project\" or \"King Kong\".",
-      "constraints": {
-        "genre": "california",
-        "plot": [
-          "could",
-          "find"
-        ],
-        "name": "Easy A",
-        "actor": "Jason Mewes"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of King Kong. Who stars in it? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "The sound of King Kong's music is certainly intriguing, and the 1976 live concert film \"Rockshow\" would be a perfect way to experience it. The film offers a full and immersive experience of the concert, providing a glimpse into the spectacle and artistry of the event.",
-      "constraints": {
-        "genre": "california",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "King Kong",
-        "actor": "Jason Mewes"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does X tell? That feels deeper than I thought."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "If you're looking for something that is both thought-provoking and humorous, '2010' is a great choice. It's a visually stunning and thought-provoking film about a joint expedition to Jupiter and its computer.\n\nIf you're interested in a story about personal struggles against the backdrop of the Russian Revolution, 'We the Living' is a must-watch. It's a powerful and poignant film about three individuals caught in a dangerous struggle for survival.\n\nIf you're more into something lighthearted but still engaging, 'Pride and Prejudice' is a perfect choice. It's a witty and charming adaptation of the classic novel that explores the complexities of love and relationships.",
-      "constraints": {
-        "genre": "california",
+        "genre": "war",
         "plot": [
           "what",
           "kind"
         ],
-        "name": "Deep",
-        "actor": "Jason Mewes"
+        "name": "The Secret",
+        "year": "2011",
+        "actor": "Jeff Garlin",
+        "director": "Brad Lewis",
+        "language": "German Language",
+        "writer": "John Lasseter"
       }
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Pride and Prejudice? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+      "text": "I like the sound of Fast Five. Who stars in it? Hmm, I didn\u2019t expect that vibe."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Since you're looking for a movie with a romantic and comedic tone, I would recommend 'Pride and Prejudice'. It's a delightful adaptation of the novel that explores themes of love, pride, and prejudice in a lighthearted and entertaining way.",
+      "text": "Considering the user's preference for action and war-themed movies, I would recommend either **Planet Terror** or **Paycheck**. The former showcases thrilling action and high-octane stunts, while the latter presents a gritty and realistic portrayal of revenge and survival.",
       "constraints": {
-        "genre": "california",
-        "plot": [
-          "what",
-          "pride"
-        ],
-        "name": "RED",
-        "actor": "Jason Mewes"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "Could we look at films from around 1903? Maybe I\u2019m overthinking it, but it sounds fascinating. Maybe something like what you shared about X."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the user's preference, I would recommend \"Mallrats\" (1995) or \"Radio Days\" (1987). Both films offer a nostalgic look at a specific era in Hollywood and provide engaging stories and performances.",
-      "constraints": {
-        "genre": "california",
-        "plot": [
-          "could",
-          "look"
-        ],
-        "name": "RED",
-        "actor": "Jason Mewes",
-        "year": "1903"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Mallrats? Hmm, I didn\u2019t expect that vibe."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "If you're looking for something lighter and more humorous, \"Dear John\" or \"Why Did I Get Married?\" would be great choices. Both movies have charming casts and relatable themes that will resonate with movie buffs and casual viewers alike.",
-      "constraints": {
-        "genre": "california",
-        "plot": [
-          "what",
-          "didn"
-        ],
-        "name": "Mallrats",
-        "actor": "Jason Mewes",
-        "year": "1903"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of Dear John. Who stars in it? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the user's preferences, 'Fanboys' or 'The Bad Seed' would be good recommendations. 'Fanboys' is a heartwarming story about a young Star Wars fan who helps a group of rebels steal a movie. 'The Bad Seed' is a suspenseful mystery about a child's disappearance and the search for the truth.",
-      "constraints": {
-        "genre": "california",
+        "genre": "war",
         "plot": [
           "like",
           "sound"
         ],
-        "name": "Dear John",
-        "actor": "Jason Mewes",
-        "year": "1903"
+        "name": "Fast Five",
+        "year": "2011",
+        "actor": "Jeff Garlin",
+        "director": "Brad Lewis",
+        "language": "German Language",
+        "writer": "John Lasseter"
       }
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does The Bad Seed tell? Maybe I\u2019m overthinking it, but it sounds fascinating."
+      "text": "What's the mood of Paycheck? That feels deeper than I thought."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on the user's preference for California stories, films with child protagonists, and themes of trauma and revenge, \"Vulgar\" or \"Zero Effect\" might be a good fit.",
+      "text": "If you're looking for something with a similar mood to Paycheck, I would recommend 'Dances with Wolves' (1990) starring Wes Studi. It's a powerful film about a frontier town grappling with the consequences of a clash with a neighboring Native American tribe.",
       "constraints": {
-        "genre": "california",
+        "genre": "war",
+        "plot": [
+          "what",
+          "paycheck"
+        ],
+        "name": "Paycheck",
+        "year": "2011",
+        "actor": "Jeff Garlin",
+        "director": "Brad Lewis",
+        "language": "German Language",
+        "writer": "John Lasseter"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thinking about Dances with Wolves, could we shift toward stories about picard? I can\u2019t decide if I\u2019d enjoy it or be scared by it."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference for dance and a 2011 release, 'The Night Circus' might be a good fit. The story focuses on magicians vying for supremacy under the watchful eye of their instructors, which could be interesting to someone interested in dance.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "thinking",
+          "dances"
+        ],
+        "name": "War",
+        "year": "2011",
+        "actor": "Jeff Garlin",
+        "director": "Brad Lewis",
+        "language": "German Language",
+        "writer": "John Lasseter"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Dances with Wolves tell? Hmm, I didn\u2019t expect that vibe."
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Since the user expressed an interest in a dance-related story, \"Toy Story 3\" would be a strong recommendation. It features a great soundtrack and memorable characters.",
+      "constraints": {
+        "genre": "dance",
         "plot": [
           "what",
           "kind"
         ],
-        "name": "The Bad Seed",
-        "actor": "Jason Mewes",
-        "year": "1903"
+        "name": "Dances with Wolves",
+        "year": "2011",
+        "actor": "Jeff Garlin",
+        "director": "Brad Lewis",
+        "language": "German Language",
+        "writer": "John Lasseter"
       }
     },
     {
       "speaker": "USER",
-      "text": "Do you have recommendations written by Chris Kattan? I can\u2019t decide if I\u2019d enjoy it or be scared by it. Maybe something like what you shared about Zero Effect."
+      "text": "What's the mood of Tron? Maybe I\u2019m overthinking it, but it sounds fascinating."
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on the user's preference for Chris Kattan and the plot details, \"The Number 23\" and \"Wrong Turn\" seem like better choices. \"The Husband's Secret\" might be a bit too dark and intense for the user.",
+      "text": "If you're looking for something with a futuristic, dance-driven vibe, then \"Blade Runner\" (1982) might be your cup of tea. Or, if you enjoy strong, independent female characters, then \"What Women Want\" (2000) might be the perfect film for you.",
       "constraints": {
-        "genre": "california",
+        "genre": "dance",
         "plot": [
-          "written",
-          "chris"
+          "what"
         ],
-        "name": "Zero Effect",
-        "actor": "Chris Kattan",
-        "year": "1903",
-        "writer": "Chris Kattan"
-      }
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does The Number 23 tell? That sounds intriguing."
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the user's preference for a story about journeys and heroes, I recommend either 'The Odyssey' or 'The Wrestler'. 'The Odyssey' showcases the epic journey of Odysseus, while 'The Wrestler' portrays a man standing up for what he believes in, reminiscent of Homer's narrative.",
-      "constraints": {
-        "genre": "california",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "The Number 23",
-        "actor": "Chris Kattan",
-        "year": "1903",
-        "writer": "Chris Kattan"
+        "name": "Tron",
+        "year": "2011",
+        "actor": "Jeff Garlin",
+        "director": "Brad Lewis",
+        "language": "German Language",
+        "writer": "John Lasseter"
       }
     }
   ]
