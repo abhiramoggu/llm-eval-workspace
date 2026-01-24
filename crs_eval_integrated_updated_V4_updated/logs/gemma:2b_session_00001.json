@@ -11,7 +11,7 @@
         "stage": "details",
         "focus_field": "genre",
         "focus_value": "comedy-drama",
-        "anchor_title": "Attachments",
+        "anchor_title": "The Kid",
         "constraints": {
           "genre": "comedy-drama"
         },
@@ -21,9 +21,9 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "Sure, here are two recommendations:\n\n- \"Real Women Have Curves\" portrays the struggles of a young woman navigating her ambition and family's expectations.\n\n- \"Remember the Titans\" showcases the complex integration of an all-black school and its impact on a community and its football team.\n\n- \"The World According to Garp\" offers a satirical commentary on gender roles and societal pressures.",
+      "text": "Sure, here's the recommended movie:\n\n\"The Perez Family\" offers a heartwarming story about a family struggling to find their place in a new country. The plot involves humor and drama, providing a unique and engaging experience.",
       "constraints": {
-        "genre": "drama",
+        "genre": "comedy-drama",
         "plot": [
           "comedy",
           "drama"
@@ -31,23 +31,70 @@
         "name": "You"
       },
       "rec_titles": [
-        "Real Women Have Curves",
-        "Remember the Titans",
-        "The World According to Garp",
-        "21 Jump Street"
+        "The Perez Family",
+        "The Truman Show",
+        "The Merchant of Venice",
+        "Love Ranch"
       ]
     },
     {
       "speaker": "USER",
-      "text": "Actually, now that I think about it, I might want the opposite.",
+      "text": "Maybe we could find more movies with Andie MacDowell. That sounds intriguing. (I’m thinking of The Perez Family.)",
       "user_meta": {
         "turn": 2,
-        "stage": "details",
-        "focus_field": "genre",
-        "focus_value": "comedy-drama",
-        "anchor_title": "Attachments",
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Andie MacDowell",
+        "anchor_title": "In Her Shoes",
         "constraints": {
-          "genre": "comedy-drama"
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "writer": "Robin Swicord"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "writer",
+          "bridge_value": "Robin Swicord",
+          "from_anchor": "The Kid",
+          "to_anchor": "In Her Shoes"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation based on the user's cues:\n\nBased on your preferences, \"Antz\" and \"Happy Feet\" might be interesting to you. Both movies feature Andie MacDowell in significant roles and provide a unique perspective on family dynamics and heartwarming music.",
+      "constraints": {
+        "genre": "family",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "The Perez Family",
+        "actor": "Andie MacDowell"
+      },
+      "rec_titles": [
+        "Antz",
+        "How to Train Your Dragon",
+        "Takers",
+        "Happy Feet"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Andie MacDowell",
+        "anchor_title": "In Her Shoes",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "writer": "Robin Swicord"
         },
         "shift_event": false,
         "shift_event_obj": null
@@ -55,33 +102,817 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "I would recommend either \"I Am Legend\" or \"Take Shelter\". \n\n\"I Am Legend\" features a compelling storyline about a lone survivor fighting to find a cure for a deadly plague. \n\n\"Take Shelter\" deals with a thought-provoking theme about the decision to shelter loved ones from an impending disaster.",
+      "text": "Sure, here's a recommendation for the user:\n\n\"Looking for something to watch with a similar vibe to 'Despicable Me'? How about 'Lakeview Terrace' with its heartwarming story about an interracial relationship facing prejudice? Or if you're interested in family-friendly adventures, 'Scooby-Doo 2: Monsters Unleashed' might be a fun choice!\"",
       "constraints": {
-        "genre": "drama",
+        "genre": "family",
         "plot": [
-          "actually",
-          "think"
+          "just",
+          "more"
         ],
-        "name": "You"
+        "name": "You",
+        "actor": "Andie MacDowell"
       },
       "rec_titles": [
-        "I Am Legend",
-        "Take Shelter",
-        "The Dead Zone",
-        "The Gunman"
+        "Despicable Me",
+        "Lakeview Terrace",
+        "Eragon",
+        "Scooby-Doo 2: Monsters Unleashed"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Despicable Me. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Andie MacDowell",
+        "anchor_title": "In Her Shoes",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "writer": "Robin Swicord"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommended movie based on the user's preference:\n\n\"Since you're looking for movies with a similar vibe to 'Despicable Me', I would recommend 'Annie Hall' or 'The Book of Life'. Both movies are about individuals dealing with complicated relationships and finding solace in unexpected places.\"",
+      "constraints": {
+        "genre": "family",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Despicable Me",
+        "actor": "Andie MacDowell"
+      },
+      "rec_titles": [
+        "Annie Hall",
+        "The Book of Life",
+        "Pride and Prejudice",
+        "Monsters University"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Despicable Me tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Andie MacDowell",
+        "anchor_title": "In Her Shoes",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "writer": "Robin Swicord"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommended movie:\n\nBased on your preference for family-friendly movies with deeper themes, \"The Polar Express\" (1985) might be the perfect choice. It's a heartwarming story about a young boy's magical journey to the North Pole.",
+      "constraints": {
+        "genre": "family",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Despicable Me",
+        "actor": "Andie MacDowell"
+      },
+      "rec_titles": [
+        "Elizabeth",
+        "The Polar Express",
+        "Flatliners",
+        "Aladdin"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Andie MacDowell",
+        "anchor_title": "In Her Shoes",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "writer": "Robin Swicord"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommended movie:\n\nBased on the user's preference for family-themed movies with a comedic element, **\"Cars\"** (2006) starring Michael Schumacher and Owen Wilson would be a good choice. The movie explores the importance of friendship and perseverance in a heartwarming and humorous way.",
+      "constraints": {
+        "genre": "family",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "Despicable Me",
+        "actor": "Andie MacDowell"
+      },
+      "rec_titles": [
+        "Bleak House",
+        "Over the Hedge",
+        "Cars",
+        "The 13th Warrior"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of War? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Andie MacDowell",
+        "anchor_title": "In Her Shoes",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "writer": "Robin Swicord"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with a dark and gritty tone, perhaps with violence or war as a central theme. Based on the provided clues, movies like \"American Dreamz\", \"The Twilight Saga: New Moon\", and \"Princess Mononoke\" would be suitable recommendations.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "War",
+        "actor": "Andie MacDowell"
+      },
+      "rec_titles": [
+        "American Dreamz",
+        "The Twilight Saga: New Moon",
+        "Princess Mononoke",
+        "Big Fish"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Chan-wook Park? Hmm, I didn’t expect that vibe. (I’m thinking of American Dreamz.)",
+      "user_meta": {
+        "turn": 8,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Chan-wook Park",
+        "anchor_title": "Spun",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Seth Meyers",
+          "director": "Chan-wook Park"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 8,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Seth Meyers",
+          "from_anchor": "In Her Shoes",
+          "to_anchor": "Spun"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommended movie:\n\n\"Dances with Wolves\" (1990) is a compelling war film starring Wes Studi that perfectly aligns with the user's preference for war movies. The plot explores themes of purpose, sacrifice, and the human condition during a difficult time.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "American Dreamz",
+        "actor": "Andie MacDowell",
+        "director": "Chan-wook Park"
+      },
+      "rec_titles": [
+        "Dances with Wolves",
+        "The Siege",
+        "Incendies",
+        "The Book Thief"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Chan-wook Park",
+        "anchor_title": "Spun",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Seth Meyers",
+          "director": "Chan-wook Park"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response based on the user's constraints:\n\nGiven that the user is looking for recommendations for war movies starring Andie MacDowell, try \"Starship Troopers\" (1959) or \"Tears of the Sun\" (2003). Both movies feature war themes and have interesting plots involving epic battles and survival.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Andie MacDowell",
+        "director": "Chan-wook Park"
+      },
+      "rec_titles": [
+        "Starship Troopers",
+        "Tears of the Sun",
+        "Panic Room",
+        "The Breakfast Club"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Zadie Smith? Hmm, I didn’t expect that vibe. (I’m thinking of Tears of the Sun.)",
+      "user_meta": {
+        "turn": 10,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Zadie Smith",
+        "anchor_title": "Soul Men",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Nick Chinlund",
+          "director": "Chan-wook Park",
+          "writer": "Zadie Smith"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 10,
+          "from_focus": "director",
+          "to_focus": "writer",
+          "bridge_field": "actor",
+          "bridge_value": "Nick Chinlund",
+          "from_anchor": "Spun",
+          "to_anchor": "Soul Men"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here is the response you requested:\n\nThe user's preference for a war movie with strong female characters and a focus on complex relationships and morally gray characters makes 'Shattered' or 'The Best Years of Our Lives' the more fitting recommendations.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "written",
+          "smith"
+        ],
+        "name": "Tears of the Sun",
+        "actor": "Andie MacDowell",
+        "director": "Chan-wook Park",
+        "writer": "Zadie Smith"
+      },
+      "rec_titles": [
+        "Shattered",
+        "The Monuments Men",
+        "The Best Years of Our Lives",
+        "Thick as Thieves"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Zadie Smith",
+        "anchor_title": "Soul Men",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Nick Chinlund",
+          "director": "Chan-wook Park",
+          "writer": "Zadie Smith"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation based on the user's preference cues:\n\n\"Based on your interest in war movies starring Andie MacDowell, you might enjoy 'Born on the Fourth of July' or 'The Deep End of the Ocean'. Both films deal with the emotional impact of war on both the soldiers and their families, while featuring captivating performances by Andie MacDowell and other notable actors.\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Andie MacDowell",
+        "director": "Chan-wook Park",
+        "writer": "Zadie Smith"
+      },
+      "rec_titles": [
+        "Velocity",
+        "Born on the Fourth of July",
+        "We Were Soldiers",
+        "The Deep End of the Ocean"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Zadie Smith",
+        "anchor_title": "Soul Men",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Nick Chinlund",
+          "director": "Chan-wook Park",
+          "writer": "Zadie Smith"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response you requested:\n\nThe user's preference for war stories and strong performances is evident in the keywords \"war,\" \"Andie MacDowell,\" and \"Chan-wook Park.\" Based on these elements, \"Tora! Tora! Tora!\" or \"Red Dawn\" would be excellent choices. \"Tora! Tora! Tora!\" captures the essence of the Japanese air raid, while \"Red Dawn\" offers a visceral and harrowing depiction of the 1968 Olympics massacre.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "You",
+        "actor": "Andie MacDowell",
+        "director": "Chan-wook Park",
+        "writer": "Zadie Smith"
+      },
+      "rec_titles": [
+        "Tora! Tora! Tora!",
+        "Winter in Wartime",
+        "The Best Years of Our Lives",
+        "Red Dawn"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Zadie Smith",
+        "anchor_title": "Soul Men",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Nick Chinlund",
+          "director": "Chan-wook Park",
+          "writer": "Zadie Smith"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommended movie based on the user's preferences:\n\n\"If you enjoyed the emotional depth and psychological exploration in 'Us,' then 'Little Fockers' might resonate with you. It's a coming-of-age tale about a family grappling with their identity and the complexities of masculinity.\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Deep",
+        "actor": "Andie MacDowell",
+        "director": "Chan-wook Park",
+        "writer": "Zadie Smith"
+      },
+      "rec_titles": [
+        "Why Did I Get Married?",
+        "Little Fockers",
+        "Flatliners",
+        "Red Dawn"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Zadie Smith",
+        "anchor_title": "Soul Men",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Nick Chinlund",
+          "director": "Chan-wook Park",
+          "writer": "Zadie Smith"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation based on the user's constraints:\n\nBased on the user's preference for war movies with a focus on human resilience and morality, \"The Best Years of Our Lives\" might be a fitting choice. The film showcases the enduring bonds between veterans and their families, even in the face of trauma and adversity.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "Deep",
+        "actor": "Andie MacDowell",
+        "director": "Chan-wook Park",
+        "writer": "Zadie Smith"
+      },
+      "rec_titles": [
+        "The Best Years of Our Lives",
+        "The Alamo",
+        "Red Cliff",
+        "Lord of War"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Best Years of Our Lives. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Zadie Smith",
+        "anchor_title": "Soul Men",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Nick Chinlund",
+          "director": "Chan-wook Park",
+          "writer": "Zadie Smith"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here is the response:\n\nSounds like you're looking for something a little more light and whimsical. While \"The Best Years of Our Lives\" is a fascinating film, it's a bit darker than what you might be interested in. I recommend either \"The Book Thief\" or \"Dear John\" for a more uplifting and intriguing experience.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Best Years of Our Lives",
+        "actor": "Andie MacDowell",
+        "director": "Chan-wook Park",
+        "writer": "Zadie Smith"
+      },
+      "rec_titles": [
+        "The Book Thief",
+        "Dear John",
+        "Groundhog Day",
+        "Schindler's List"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Roger Avary? That feels deeper than I thought. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 16,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Roger Avary",
+        "anchor_title": "I Love You Phillip Morris",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Nick Chinlund",
+          "director": "Roger Avary",
+          "plot": "relationships"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 16,
+          "from_focus": "writer",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "relationships",
+          "from_anchor": "Soul Men",
+          "to_anchor": "I Love You Phillip Morris"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here is the suggested response:\n\n\"Since you're interested in something deeper than the typical Roger Avary fare, consider 'Reservoir Dogs' (1992) starring a diverse cast of criminals grappling with trust and loyalty. It's a gritty and suspenseful crime thriller that goes beyond the typical gangster movie.\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Her",
+        "actor": "Andie MacDowell",
+        "director": "Roger Avary",
+        "writer": "Roger Avary",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Armageddon",
+        "Reservoir Dogs",
+        "Dear John",
+        "Doctor Zhivago"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Roger Avary",
+        "anchor_title": "I Love You Phillip Morris",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Nick Chinlund",
+          "director": "Roger Avary",
+          "plot": "relationships"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here is the response you requested:\n\nJust checking—do you have more recommendations like that? If so, \"The Rules of Attraction\" with its intriguing story about an unusual love triangle between a drug dealer, a virgin, and a bisexual classmate could be a compelling option.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Andie MacDowell",
+        "director": "Roger Avary",
+        "writer": "Roger Avary",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "The Rules of Attraction",
+        "Hesher",
+        "The Way Back Home",
+        "The River"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Her tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Roger Avary",
+        "anchor_title": "I Love You Phillip Morris",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Nick Chinlund",
+          "director": "Roger Avary",
+          "plot": "relationships"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response you requested:\n\nThe user's preference for war stories and the compelling characters in these movies might draw them to 'The Blood of My Brother'. The tragic story of a brother seeking revenge for his murdered sibling is sure to leave a powerful impression.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her",
+        "actor": "Andie MacDowell",
+        "director": "Roger Avary",
+        "writer": "Roger Avary",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Alex in Wonderland",
+        "The Blood of My Brother",
+        "Rob Roy",
+        "The Patriot"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Roger Avary",
+        "anchor_title": "I Love You Phillip Morris",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Nick Chinlund",
+          "director": "Roger Avary",
+          "plot": "relationships"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the suggested reply:\n\nThe user's preference for a war-themed movie with an edgy and complex narrative suggests 'Total Recall' (1990) or 'A Farewell to Arms' (1929). Both films delve into themes of loyalty, betrayal, and the human condition in a tumultuous and impactful manner.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "actor": "Andie MacDowell",
+        "director": "Roger Avary",
+        "writer": "Roger Avary",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Total Recall",
+        "A Farewell to Arms",
+        "Kundun",
+        "Red Dawn"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Total Recall? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Roger Avary",
+        "anchor_title": "I Love You Phillip Morris",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Nick Chinlund",
+          "director": "Roger Avary",
+          "plot": "relationships"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommended movie:\n\n\"I Heart Huckabees\" is a movie that perfectly matches the user's preferences. It's a film about a couple who helps others solve their existential issues, which aligns with the user's interest in exploring the meaning of life. Additionally, the movie stars Dustin Hoffman, an acclaimed actor known for portraying complex characters, which would be a treat to watch.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "total"
+        ],
+        "name": "Total Recall",
+        "actor": "Andie MacDowell",
+        "director": "Roger Avary",
+        "writer": "Roger Avary",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "I Heart Huckabees",
+        "Lord of War",
+        "Downfall",
+        "Alex in Wonderland"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Dana Andrews. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 21,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Dana Andrews",
+        "anchor_title": "As Good as It Gets",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Dana Andrews",
+          "plot": "online"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 21,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "online",
+          "from_anchor": "I Love You Phillip Morris",
+          "to_anchor": "As Good as It Gets"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here is the response you requested:\n\n\"Considering Dana Andrews's talent for war-themed roles, 'Happy Feet' and 'The Siege' might be intriguing. Both movies involve action and suspense with a touch of dark humor.\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Her",
+        "actor": "Dana Andrews",
+        "director": "Roger Avary",
+        "writer": "Roger Avary",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Happy Feet",
+        "True Blood",
+        "The Rum Diary",
+        "The Siege"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Dana Andrews",
+        "anchor_title": "As Good as It Gets",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Dana Andrews",
+          "plot": "online"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommended movie:\n\n\"Since the user is looking for more war-themed movies, I would recommend 'White Night' or 'Hotel Rwanda'. Both movies deal with complex and emotional stories about the human cost of war and the struggles of individuals caught up in its aftermath.\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Dana Andrews",
+        "director": "Roger Avary",
+        "writer": "Roger Avary",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "White Night",
+        "Hotel Rwanda",
+        "Jason Bourne",
+        "We Need to Talk About Kevin"
       ]
     },
     {
       "speaker": "USER",
       "text": "I like the sound of Her. Who stars in it? Hmm, I didn’t expect that vibe.",
       "user_meta": {
-        "turn": 3,
+        "turn": 23,
         "stage": "details",
-        "focus_field": "genre",
-        "focus_value": "comedy-drama",
-        "anchor_title": "Attachments",
+        "focus_field": "actor",
+        "focus_value": "Dana Andrews",
+        "anchor_title": "As Good as It Gets",
         "constraints": {
-          "genre": "comedy-drama"
+          "genre": "comedy-drama",
+          "actor": "Dana Andrews",
+          "plot": "online"
         },
         "shift_event": false,
         "shift_event_obj": null
@@ -89,33 +920,39 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on the user's preference for drama and the mention of \"sound,\" I would recommend **The Baader Meinhof Complex** or **Tombstone**. \n\nThe Baader Meinhof Complex offers a deep and complex exploration of a terrorist group's history, while Tombstone showcases the grit and violence of outlaw life.",
+      "text": "Sure, here is the response you requested:\n\nThe user's preference for a war movie with an anti-war message and strong performances like Dana Andrews is best captured by either \"Born on the Fourth of July\" or \"Black Hawk Down\". Both movies vividly depict the human cost of war and the power of individuals fighting for justice.",
       "constraints": {
-        "genre": "drama",
+        "genre": "war",
         "plot": [
           "like",
           "sound"
         ],
-        "name": "Her"
+        "name": "Her",
+        "actor": "Dana Andrews",
+        "director": "Roger Avary",
+        "writer": "Roger Avary",
+        "language": "ger"
       },
       "rec_titles": [
-        "The Baader Meinhof Complex",
-        "Tombstone",
-        "Captain Phillips",
-        "Original Sin"
+        "Born on the Fourth of July",
+        "Black Hawk Down",
+        "Casablanca",
+        "Treasure Planet"
       ]
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Tombstone tell? That feels deeper than I thought.",
+      "text": "What's the mood of Ted? That feels deeper than I thought.",
       "user_meta": {
-        "turn": 4,
+        "turn": 24,
         "stage": "details",
-        "focus_field": "genre",
-        "focus_value": "comedy-drama",
-        "anchor_title": "Attachments",
+        "focus_field": "actor",
+        "focus_value": "Dana Andrews",
+        "anchor_title": "As Good as It Gets",
         "constraints": {
-          "genre": "comedy-drama"
+          "genre": "comedy-drama",
+          "actor": "Dana Andrews",
+          "plot": "online"
         },
         "shift_event": false,
         "shift_event_obj": null
@@ -123,397 +960,132 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "Tombstone is a drama about a successful lawman's plans to retire anonymously in Tombstone, Arizona, are disrupted by the kind of outlaws he was famous for eliminating. The film stars Dana Delany, Powers Boothe, and Michael Biehn.",
+      "text": "Sure, here's the response:\n\nThe mood of Ted is definitely dark and brooding, with a focus on themes of war, violence, and revenge. If you're looking for something with a similar feel, I would recommend \"Lord of War\", which also deals with the morality of war and the consequences of violence.",
       "constraints": {
-        "genre": "drama",
+        "genre": "war",
         "plot": [
           "what",
-          "kind"
+          "feels"
         ],
-        "name": "Tombstone"
+        "name": "Ted",
+        "actor": "Dana Andrews",
+        "director": "Roger Avary",
+        "writer": "Roger Avary",
+        "language": "ger"
       },
       "rec_titles": [
-        "Tombstone"
+        "Lord of War",
+        "Wolfhound",
+        "Tora! Tora! Tora!",
+        "You"
       ]
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Stone? That feels deeper than I thought.",
+      "text": "Could we switch to something else by Paul Feig? Hmm, I didn’t expect that vibe. (I’m thinking of You.)",
       "user_meta": {
-        "turn": 5,
-        "stage": "details",
-        "focus_field": "genre",
-        "focus_value": "comedy-drama",
-        "anchor_title": "Attachments",
-        "constraints": {
-          "genre": "comedy-drama"
-        },
-        "shift_event": false,
-        "shift_event_obj": null
-      }
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the user's preference for drama and the keywords describing the movie \"Stone,\" I would recommend **Anne of Green Gables** or **Man on the Moon**. Both movies are about love, loss, and redemption in a compelling and emotional way.",
-      "constraints": {
-        "genre": "drama",
-        "plot": [
-          "what",
-          "stone"
-        ],
-        "name": "Stone"
-      },
-      "rec_titles": [
-        "Anne of Green Gables",
-        "Man on the Moon",
-        "Shallow Hal",
-        "Divergent"
-      ]
-    },
-    {
-      "speaker": "USER",
-      "text": "Maybe we could find more movies with Tom McCarthy. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of RED.)",
-      "user_meta": {
-        "turn": 6,
+        "turn": 25,
         "stage": "waiting_system",
-        "focus_field": "actor",
-        "focus_value": "Tom McCarthy",
-        "anchor_title": "Lost in Translation",
+        "focus_field": "director",
+        "focus_value": "Paul Feig",
+        "anchor_title": "Home for the Holidays",
         "constraints": {
           "genre": "comedy-drama",
-          "actor": "Tom McCarthy"
-        },
-        "shift_event": true,
-        "shift_event_obj": {
-          "turn": 6,
-          "from_focus": "genre",
-          "to_focus": "actor",
-          "bridge_field": "genre",
-          "bridge_value": "comedy-drama",
-          "from_anchor": "Attachments",
-          "to_anchor": "Lost in Translation"
-        }
-      }
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "If you're looking for something with a similar tone to RED, consider \"Something Borrowed\" (2004) or \"Shirley\" (1849). Both movies explore the complexities of friendship and the impact of secrets on relationships.",
-      "constraints": {
-        "genre": "drama",
-        "plot": [
-          "could",
-          "find"
-        ],
-        "name": "RED",
-        "actor": "Tom McCarthy",
-        "director": "Tom McCarthy"
-      },
-      "rec_titles": [
-        "Something Borrowed",
-        "Madame Bovary",
-        "Shirley",
-        "Forsaken"
-      ]
-    },
-    {
-      "speaker": "USER",
-      "text": "Just checking—do you have more recommendations like that?",
-      "user_meta": {
-        "turn": 7,
-        "stage": "details",
-        "focus_field": "actor",
-        "focus_value": "Tom McCarthy",
-        "anchor_title": "Lost in Translation",
-        "constraints": {
-          "genre": "comedy-drama",
-          "actor": "Tom McCarthy"
-        },
-        "shift_event": false,
-        "shift_event_obj": null
-      }
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the user's preferences, 'The Life Before Her Eyes' or 'Cloud Atlas' would be strong recommendations. 'The Life Before Her Eyes' explores guilt and its impact on a woman's life, while 'Cloud Atlas' offers a sweeping exploration of human lives interconnected across time.",
-      "constraints": {
-        "genre": "drama",
-        "plot": [
-          "just",
-          "more"
-        ],
-        "name": "You",
-        "actor": "Tom McCarthy",
-        "director": "Tom McCarthy"
-      },
-      "rec_titles": [
-        "The Life Before Her Eyes",
-        "Palo Alto",
-        "The Village",
-        "Cloud Atlas"
-      ]
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Us tell? Hmm, I didn’t expect that vibe.",
-      "user_meta": {
-        "turn": 8,
-        "stage": "details",
-        "focus_field": "actor",
-        "focus_value": "Tom McCarthy",
-        "anchor_title": "Lost in Translation",
-        "constraints": {
-          "genre": "comedy-drama",
-          "actor": "Tom McCarthy"
-        },
-        "shift_event": false,
-        "shift_event_obj": null
-      }
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Based on the user's preference for drama, the movie 'The Other Boleyn Girl' or 'Let Me In' would be excellent recommendations. Both films deal with complex family dynamics and themes of betrayal and forgiveness.",
-      "constraints": {
-        "genre": "drama",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "X",
-        "actor": "Tom McCarthy",
-        "director": "Tom McCarthy"
-      },
-      "rec_titles": [
-        "The Other Boleyn Girl",
-        "Let Me In",
-        "Heavenly Creatures",
-        "Trust"
-      ]
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Us? Hmm, I didn’t expect that vibe.",
-      "user_meta": {
-        "turn": 9,
-        "stage": "details",
-        "focus_field": "actor",
-        "focus_value": "Tom McCarthy",
-        "anchor_title": "Lost in Translation",
-        "constraints": {
-          "genre": "comedy-drama",
-          "actor": "Tom McCarthy"
-        },
-        "shift_event": false,
-        "shift_event_obj": null
-      }
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "If you're looking for something with a similar vibe to Us, I would recommend 'The Dangerous Lives of Altar Boys' or 'Red Dawn'. Both movies deal with complex father-son relationships and depict traumatic and unsettling experiences.",
-      "constraints": {
-        "genre": "drama",
-        "plot": [
-          "what",
-          "didn"
-        ],
-        "name": "X",
-        "actor": "Tom McCarthy",
-        "director": "Tom McCarthy"
-      },
-      "rec_titles": [
-        "Cat on a Hot Tin Roof",
-        "Red Dawn",
-        "The Dangerous Lives of Altar Boys",
-        "Velvet Goldmine"
-      ]
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of RED. Who stars in it? Hmm, I didn’t expect that vibe.",
-      "user_meta": {
-        "turn": 10,
-        "stage": "details",
-        "focus_field": "actor",
-        "focus_value": "Tom McCarthy",
-        "anchor_title": "Lost in Translation",
-        "constraints": {
-          "genre": "comedy-drama",
-          "actor": "Tom McCarthy"
-        },
-        "shift_event": false,
-        "shift_event_obj": null
-      }
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I would recommend \"I Heart Huckabees\" or \"Thank You for Smoking\". \"I Heart Huckabees\" offers a unique perspective on love and existential themes with a stellar cast, while \"Thank You for Smoking\" is a satirical comedy about ambition and family dynamics.",
-      "constraints": {
-        "genre": "drama",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "RED",
-        "actor": "Tom McCarthy",
-        "director": "Tom McCarthy"
-      },
-      "rec_titles": [
-        "I Heart Huckabees",
-        "White Oleander",
-        "Full Frontal",
-        "Thank You for Smoking"
-      ]
-    },
-    {
-      "speaker": "USER",
-      "text": "Do you have recommendations written by Steve Baker (Screenwriter)? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Thank You for Smoking.)",
-      "user_meta": {
-        "turn": 11,
-        "stage": "waiting_system",
-        "focus_field": "writer",
-        "focus_value": "Steve Baker (Screenwriter)",
-        "anchor_title": "Big Fish",
-        "constraints": {
-          "genre": "comedy-drama",
-          "actor": "Tom McCarthy",
-          "writer": "Steve Baker (Screenwriter)",
-          "plot": "satirical"
-        },
-        "shift_event": true,
-        "shift_event_obj": {
-          "turn": 11,
-          "from_focus": "actor",
-          "to_focus": "writer",
-          "bridge_field": "plot",
-          "bridge_value": "satirical",
-          "from_anchor": "Lost in Translation",
-          "to_anchor": "Big Fish"
-        }
-      }
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Heist sounds intriguing! The plot about a career jewel thief facing off against his longtime partner sounds intriguing and captivating.",
-      "constraints": {
-        "genre": "drama",
-        "plot": [
-          "written",
-          "steve"
-        ],
-        "name": "Thank You for Smoking",
-        "actor": "Eve",
-        "director": "Tom McCarthy",
-        "writer": "Steve Baker (Screenwriter)"
-      },
-      "rec_titles": [
-        "Heist",
-        "The Italian Job",
-        "Tsotsi",
-        "Ferris Bueller's Day Off"
-      ]
-    },
-    {
-      "speaker": "USER",
-      "text": "Just checking—do you have more recommendations like that?",
-      "user_meta": {
-        "turn": 12,
-        "stage": "details",
-        "focus_field": "writer",
-        "focus_value": "Steve Baker (Screenwriter)",
-        "anchor_title": "Big Fish",
-        "constraints": {
-          "genre": "comedy-drama",
-          "actor": "Tom McCarthy",
-          "writer": "Steve Baker (Screenwriter)",
-          "plot": "satirical"
-        },
-        "shift_event": false,
-        "shift_event_obj": null
-      }
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Sure, here are two recommendations based on the user's preference:\n\n- \"If you're interested in a drama with a focus on revenge and forgiveness, 'The Tempest' might be a good fit.\"\n\n- \"If you're looking for a story about the complexities of friendship and the longing for connection, '12 Years a Slave' is a compelling choice.\"",
-      "constraints": {
-        "genre": "drama",
-        "plot": [
-          "just",
-          "more"
-        ],
-        "name": "You",
-        "actor": "Eve",
-        "director": "Tom McCarthy",
-        "writer": "Steve Baker (Screenwriter)"
-      },
-      "rec_titles": [
-        "The Tempest",
-        "12 Years a Slave",
-        "Zack and Miri Make a Porno",
-        "Under the Same Moon"
-      ]
-    },
-    {
-      "speaker": "USER",
-      "text": "Maybe we could find more movies with Chloë Grace Moretz. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of You.)",
-      "user_meta": {
-        "turn": 13,
-        "stage": "waiting_system",
-        "focus_field": "actor",
-        "focus_value": "Chloë Grace Moretz",
-        "anchor_title": "The Break-Up",
-        "constraints": {
-          "genre": "comedy-drama",
-          "actor": "Chloë Grace Moretz",
-          "writer": "Steve Baker (Screenwriter)",
-          "plot": "satirical",
+          "actor": "Dana Andrews",
+          "plot": "online",
+          "director": "Paul Feig",
           "language": "Japanese Language"
         },
         "shift_event": true,
         "shift_event_obj": {
-          "turn": 13,
-          "from_focus": "writer",
-          "to_focus": "actor",
+          "turn": 25,
+          "from_focus": "actor",
+          "to_focus": "director",
           "bridge_field": "language",
           "bridge_value": "Japanese Language",
-          "from_anchor": "Big Fish",
-          "to_anchor": "The Break-Up"
+          "from_anchor": "As Good as It Gets",
+          "to_anchor": "Home for the Holidays"
         }
       }
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on the user's preference for drama and the actor, director, and writer you've specified, I would recommend **The Bourne Identity**. It combines thrilling action with a compelling character study, exploring themes of memory, identity, and revenge.",
+      "text": "Sure, here's the response:\n\n\"The Monuments Men might be more your speed. It's a thrilling war film with a strong cast and captivating plot. It's a great choice for fans of Paul Feig's work.\"",
       "constraints": {
-        "genre": "drama",
+        "genre": "war",
         "plot": [
           "could",
-          "find"
+          "switch"
         ],
-        "name": "You",
-        "actor": "Chloë Grace Moretz",
-        "director": "Tom McCarthy",
-        "writer": "Steve Baker (Screenwriter)"
+        "name": "X",
+        "actor": "Paul Feig",
+        "director": "Paul Feig",
+        "writer": "Roger Avary",
+        "language": "ger"
       },
       "rec_titles": [
-        "The Pacifier",
-        "The Bourne Identity",
-        "Masked and Anonymous",
+        "The Monuments Men",
+        "Dances with Wolves",
+        "The Blood of My Brother",
+        "Battleship"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Paul Feig",
+        "anchor_title": "Home for the Holidays",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Dana Andrews",
+          "plot": "online",
+          "director": "Paul Feig",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommendation you requested:\n\n\"Based on the user's preference for war, action, and Paul Feig, 'The Fighter' and 'Zack and Miri Make a Porno' seem like good fits.\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Paul Feig",
+        "director": "Paul Feig",
+        "writer": "Roger Avary",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Zack and Miri Make a Porno",
+        "The Fighter",
+        "Tarnation",
         "Wonder Boys"
       ]
     },
     {
       "speaker": "USER",
-      "text": "Just checking—do you have more recommendations like that?",
+      "text": "What kind of story does War tell? That feels deeper than I thought.",
       "user_meta": {
-        "turn": 14,
+        "turn": 27,
         "stage": "details",
-        "focus_field": "actor",
-        "focus_value": "Chloë Grace Moretz",
-        "anchor_title": "The Break-Up",
+        "focus_field": "director",
+        "focus_value": "Paul Feig",
+        "anchor_title": "Home for the Holidays",
         "constraints": {
           "genre": "comedy-drama",
-          "actor": "Chloë Grace Moretz",
-          "writer": "Steve Baker (Screenwriter)",
-          "plot": "satirical",
+          "actor": "Dana Andrews",
+          "plot": "online",
+          "director": "Paul Feig",
           "language": "Japanese Language"
         },
         "shift_event": false,
@@ -522,80 +1094,40 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on the user's preference, I recommend \"Windtalkers\" and \"The Revenant\". \"Windtalkers\" showcases a unique and powerful portrayal of two US Marines protecting Navajo Marines during World War II, while \"The Revenant\" features an intense and brutal revenge story set against the backdrop of the 1820s frontier.",
+      "text": "Sure, here's a recommendation based on the user's constraints:\n\nBased on the user's preference for war stories and the specific keywords provided, \"Anyone But You\" (1996) starring Ben and Bea should be a compelling choice.",
       "constraints": {
-        "genre": "drama",
-        "plot": [
-          "just",
-          "more"
-        ],
-        "name": "You",
-        "actor": "Chloë Grace Moretz",
-        "director": "Tom McCarthy",
-        "writer": "Steve Baker (Screenwriter)"
-      },
-      "rec_titles": [
-        "Dollhouse",
-        "Windtalkers",
-        "Colombiana",
-        "The Revenant"
-      ]
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does The Revenant tell? Hmm, I didn’t expect that vibe.",
-      "user_meta": {
-        "turn": 15,
-        "stage": "details",
-        "focus_field": "actor",
-        "focus_value": "Chloë Grace Moretz",
-        "anchor_title": "The Break-Up",
-        "constraints": {
-          "genre": "comedy-drama",
-          "actor": "Chloë Grace Moretz",
-          "writer": "Steve Baker (Screenwriter)",
-          "plot": "satirical",
-          "language": "Japanese Language"
-        },
-        "shift_event": false,
-        "shift_event_obj": null
-      }
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "The Long Kiss Goodnight and Hancock would be good recommendations based on the user's preference for drama, actors, and director.",
-      "constraints": {
-        "genre": "drama",
+        "genre": "war",
         "plot": [
           "what",
           "kind"
         ],
-        "name": "The Revenant",
-        "actor": "Eve",
-        "director": "Tom McCarthy",
-        "writer": "Steve Baker (Screenwriter)"
+        "name": "War",
+        "actor": "Paul Feig",
+        "director": "Paul Feig",
+        "writer": "Roger Avary",
+        "language": "ger"
       },
       "rec_titles": [
-        "The Long Kiss Goodnight",
-        "Hancock",
-        "The Tempest",
-        "The Shining"
+        "Anyone But You",
+        "Witless Protection",
+        "Patton",
+        "Utsav"
       ]
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of The Long Kiss Goodnight. Who stars in it? That feels deeper than I thought.",
+      "text": "What's the mood of Us? I can’t decide if I’d enjoy it or be scared by it.",
       "user_meta": {
-        "turn": 16,
+        "turn": 28,
         "stage": "details",
-        "focus_field": "actor",
-        "focus_value": "Chloë Grace Moretz",
-        "anchor_title": "The Break-Up",
+        "focus_field": "director",
+        "focus_value": "Paul Feig",
+        "anchor_title": "Home for the Holidays",
         "constraints": {
           "genre": "comedy-drama",
-          "actor": "Chloë Grace Moretz",
-          "writer": "Steve Baker (Screenwriter)",
-          "plot": "satirical",
+          "actor": "Dana Andrews",
+          "plot": "online",
+          "director": "Paul Feig",
           "language": "Japanese Language"
         },
         "shift_event": false,
@@ -604,89 +1136,91 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "The Next Three Days is a thought-provoking drama about a married couple's life being turned upside down when the wife is accused of a murder. It stars Jason Beghe, Elizabeth Banks, Aisha Hinds, and Daniel Stern. The film explores themes of trust, suspicion, and the power of love.",
+      "text": "Sure, here's the response you requested:\n\nThe user's preferences suggest a film with a dark and intense atmosphere, focusing on themes of war, morality, and human resilience. Among the options provided, \"Lord of War\" and \"Bridesmaids\" seem to fit this description more closely.",
       "constraints": {
-        "genre": "drama",
+        "genre": "war",
         "plot": [
-          "like",
-          "sound"
+          "what",
+          "decide"
         ],
-        "name": "The Long Kiss Goodnight",
-        "actor": "Eve",
-        "director": "Tom McCarthy",
-        "writer": "Steve Baker (Screenwriter)"
+        "name": "RED",
+        "actor": "Paul Feig",
+        "director": "Paul Feig",
+        "writer": "Roger Avary",
+        "language": "ger"
       },
       "rec_titles": [
-        "The Next Three Days",
-        "Hoosiers",
-        "Friday After Next",
-        "The Fugitive"
+        "Lord of War",
+        "A Farewell to Arms",
+        "Bridesmaids",
+        "Lady in the Water"
       ]
     },
     {
       "speaker": "USER",
-      "text": "Could we switch to something else by Tom McGrath? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Trust.)",
+      "text": "Maybe we could find more movies with Tom Atkins. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of War.)",
       "user_meta": {
-        "turn": 17,
+        "turn": 29,
         "stage": "waiting_system",
-        "focus_field": "director",
-        "focus_value": "Tom McGrath",
-        "anchor_title": "Buffy the Vampire Slayer",
+        "focus_field": "actor",
+        "focus_value": "Tom Atkins",
+        "anchor_title": "Purple Violets",
         "constraints": {
           "genre": "comedy-drama",
-          "actor": "Noah Emmerich",
-          "writer": "Steve Baker (Screenwriter)",
-          "plot": "satirical",
-          "director": "Tom McGrath"
+          "actor": "Tom Atkins",
+          "plot": "hunt",
+          "director": "Paul Feig",
+          "language": "Japanese Language"
         },
         "shift_event": true,
         "shift_event_obj": {
-          "turn": 17,
-          "from_focus": "actor",
-          "to_focus": "director",
-          "bridge_field": "actor",
-          "bridge_value": "Noah Emmerich",
-          "from_anchor": "The Break-Up",
-          "to_anchor": "Buffy the Vampire Slayer"
+          "turn": 29,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "hunt",
+          "from_anchor": "Home for the Holidays",
+          "to_anchor": "Purple Violets"
         }
       }
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on the user's preference, I would recommend 'Cadillac Records' or 'Real Steel'. 'Cadillac Records' chronicles the rise of a band of recording artists, while 'Real Steel' features a struggling ex-boxer finding a champion in a robot.",
+      "text": "Sure, here's the reply:\n\nBased on your preferences, \"Trees Lounge\" and \"Braveheart\" seem like the movies you might be interested in. \"Trees Lounge\" offers a melancholic but insightful portrayal of an unemployed mechanic grappling with life's challenges in a small town, while \"Braveheart\" is a powerful and inspiring story about a tribe fighting for their rights and freedom.",
       "constraints": {
-        "genre": "drama",
+        "genre": "war",
         "plot": [
           "could",
-          "switch"
+          "find"
         ],
-        "name": "RED",
-        "actor": "Tom McGrath",
-        "director": "McG",
-        "writer": "Steve Baker (Screenwriter)"
+        "name": "War",
+        "actor": "Tom Atkins",
+        "director": "Paul Feig",
+        "writer": "Roger Avary",
+        "language": "ger"
       },
       "rec_titles": [
-        "Cadillac Records",
-        "Capote",
-        "Babel",
-        "Real Steel"
+        "Trees Lounge",
+        "Braveheart",
+        "The Texas Chainsaw Massacre",
+        "Zoolander 2"
       ]
     },
     {
       "speaker": "USER",
       "text": "Just checking—do you have more recommendations like that?",
       "user_meta": {
-        "turn": 18,
+        "turn": 30,
         "stage": "details",
-        "focus_field": "director",
-        "focus_value": "Tom McGrath",
-        "anchor_title": "Buffy the Vampire Slayer",
+        "focus_field": "actor",
+        "focus_value": "Tom Atkins",
+        "anchor_title": "Purple Violets",
         "constraints": {
           "genre": "comedy-drama",
-          "actor": "Noah Emmerich",
-          "writer": "Steve Baker (Screenwriter)",
-          "plot": "satirical",
-          "director": "Tom McGrath"
+          "actor": "Tom Atkins",
+          "plot": "hunt",
+          "director": "Paul Feig",
+          "language": "Japanese Language"
         },
         "shift_event": false,
         "shift_event_obj": null
@@ -694,40 +1228,41 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "The Warlords would be a good fit for the user's preference. It's a thrilling historical action movie about a legendary bandit leader's rise to power and his fight against a tyrannical regime.",
+      "text": "Sure, here's the response you requested:\n\nJust checking--do you have any other recommendations for war movies starring Tom Atkins, Paul Feig, Roger Avary, and Ger?",
       "constraints": {
-        "genre": "drama",
+        "genre": "war",
         "plot": [
           "just",
           "more"
         ],
         "name": "You",
-        "actor": "Tom McGrath",
-        "director": "McG",
-        "writer": "Steve Baker (Screenwriter)"
+        "actor": "Tom Atkins",
+        "director": "Paul Feig",
+        "writer": "Roger Avary",
+        "language": "ger"
       },
       "rec_titles": [
-        "City of Ghosts",
-        "The Warlords",
-        "Turbo",
-        "Patton"
+        "The Stuff",
+        "The Messenger",
+        "Insidious",
+        "Red Cliff"
       ]
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of War. Who stars in it? That sounds intriguing.",
+      "text": "What's the mood of Her? Maybe I’m overthinking it, but it sounds fascinating.",
       "user_meta": {
-        "turn": 19,
+        "turn": 31,
         "stage": "details",
-        "focus_field": "director",
-        "focus_value": "Tom McGrath",
-        "anchor_title": "Buffy the Vampire Slayer",
+        "focus_field": "actor",
+        "focus_value": "Tom Atkins",
+        "anchor_title": "Purple Violets",
         "constraints": {
           "genre": "comedy-drama",
-          "actor": "Noah Emmerich",
-          "writer": "Steve Baker (Screenwriter)",
-          "plot": "satirical",
-          "director": "Tom McGrath"
+          "actor": "Tom Atkins",
+          "plot": "hunt",
+          "director": "Paul Feig",
+          "language": "Japanese Language"
         },
         "shift_event": false,
         "shift_event_obj": null
@@ -735,7 +1270,826 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "Based on your preferences, \"A Bridge Too Far\" seems to be a good fit. It's a compelling historical war film with a strong cast and a gripping plot.",
+      "text": "Sure, here's my recommendation:\n\nBased on your preferences, \"Eve's Bayou\" and \"Hitch\" seem like perfect matches. Both movies deal with compelling themes of women's power, manipulation, and the complexities of relationships, similar to the war and action genre elements you mentioned.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what"
+        ],
+        "name": "Her",
+        "actor": "Tom Atkins",
+        "director": "Paul Feig",
+        "writer": "Roger Avary",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Eve's Bayou",
+        "Hitch",
+        "Paycheck",
+        "The End of the Affair"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Women tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tom Atkins",
+        "anchor_title": "Purple Violets",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Tom Atkins",
+          "plot": "hunt",
+          "director": "Paul Feig",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation based on the user's preferences:\n\nWomen often explore the complexities of female experiences through stories of survival, resilience, and moral ambiguity. If you're looking for something with a similar thematic depth and engaging characters, consider \"Braveheart\" (1995) or \"True Romance\" (1993).",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "actor": "Tom Atkins",
+        "director": "Paul Feig",
+        "writer": "Roger Avary",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Braveheart",
+        "The Deer Hunter",
+        "Wolfhound",
+        "True Romance"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tom Atkins",
+        "anchor_title": "Purple Violets",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Tom Atkins",
+          "plot": "hunt",
+          "director": "Paul Feig",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation based on the user's cues:\n\n\"Given the war theme and orchestral score, 'The Hurt Locker' might be a good fit. The plot deals with a Sergeant's struggles with his job and a mysterious super soldier, setting a tense and thought-provoking scene.\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us",
+        "actor": "Tom Atkins",
+        "director": "Paul Feig",
+        "writer": "Roger Avary",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Reservoir Dogs",
+        "Flubber",
+        "The Hurt Locker",
+        "The Relic"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Scott Speer? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Super.)",
+      "user_meta": {
+        "turn": 34,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Scott Speer",
+        "anchor_title": "Isn't She Great",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Tom Atkins",
+          "plot": "enthusiasm",
+          "director": "Scott Speer",
+          "language": "Japanese Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 34,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "enthusiasm",
+          "from_anchor": "Purple Violets",
+          "to_anchor": "Isn't She Great"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response you requested:\n\nThe user's preference for war, actors, and Scott Speer's style suggests a movie with a similar tone to \"The Rules of Attraction\". If you're interested in something with a similar plot involving a group of young men facing danger and fate, then \"The Shadows\" or \"Trees Lounge\" could be a good choice.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Super",
+        "actor": "Tom Atkins",
+        "director": "Scott Speer",
+        "writer": "Roger Avary",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "The Rules of Attraction",
+        "The Shadows",
+        "Trees Lounge",
+        "Flyboys"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Scott Speer",
+        "anchor_title": "Isn't She Great",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Tom Atkins",
+          "plot": "enthusiasm",
+          "director": "Scott Speer",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here are the recommendations you requested:\n\n* **Platoon (1986)** - A war film exploring the brutality of conflict through the eyes of a young recruit caught in the middle of a battle.\n* **American Gangster (2007)** - A biographical crime film about the life of a notorious gangster, showcasing the dark underbelly of New York City.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Tom Atkins",
+        "director": "Scott Speer",
+        "writer": "Roger Avary",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Platoon",
+        "Before I Fall",
+        "Rob Roy",
+        "American Gangster"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Scott Speer",
+        "anchor_title": "Isn't She Great",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Tom Atkins",
+          "plot": "enthusiasm",
+          "director": "Scott Speer",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here is the response you requested:\n\n\"Considering the user's preference for war-themed movies with intriguing plots and stellar performances, I recommend 'Providence' or 'American Gangster'. 'Providence' unfolds a captivating story of a relationship tested by war, while 'American Gangster' offers a thrilling depiction of a ruthless criminal's rise to power. Both films will surely fulfill the user's craving for an impactful and thought-provoking cinematic experience.\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "actor": "Tom Atkins",
+        "director": "Scott Speer",
+        "writer": "Roger Avary",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Providence",
+        "Alex in Wonderland",
+        "American Gangster",
+        "Psychic Experiment"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Scott Speer",
+        "anchor_title": "Isn't She Great",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Tom Atkins",
+          "plot": "enthusiasm",
+          "director": "Scott Speer",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommended movie:\n\n\"Since you're looking for something about war, I would suggest 'War Horse'. It's a powerful and moving film about a soldier's journey through the trenches of World War I.\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "X",
+        "actor": "Tom Atkins",
+        "director": "Scott Speer",
+        "writer": "Roger Avary",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "War Horse",
+        "Doctor Zhivago",
+        "Monsters, Inc.",
+        "Chain Reaction"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Scott Speer",
+        "anchor_title": "Isn't She Great",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Tom Atkins",
+          "plot": "enthusiasm",
+          "director": "Scott Speer",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response you requested:\n\nYou're seeking a film with a complex storyline about a man navigating between his personal and professional life. If you're looking for something thought-provoking, then 'Little Fockers' and 'Alex in Wonderland' might be up your alley.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "actor": "Tom Atkins",
+        "director": "Scott Speer",
+        "writer": "Roger Avary",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Little Fockers",
+        "Witless Protection",
+        "Lady in the Water",
+        "Alex in Wonderland"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Scott Speer",
+        "anchor_title": "Isn't She Great",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Tom Atkins",
+          "plot": "enthusiasm",
+          "director": "Scott Speer",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here is the response you requested:\n\nForget about that specific request. While \"The Blood of My Brother\" and \"Black Hawk Down\" both involve war themes and impactful narratives, \"The Patriot\" focuses on a different aspect of American history during the Revolution.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "RED",
+        "actor": "Tom Atkins",
+        "director": "Scott Speer",
+        "writer": "Roger Avary",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "The Blood of My Brother",
+        "The Patriot",
+        "Black Hawk Down",
+        "Hell's Angels"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Blood of My Brother tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Scott Speer",
+        "anchor_title": "Isn't She Great",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Tom Atkins",
+          "plot": "enthusiasm",
+          "director": "Scott Speer",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's my recommendation:\n\nIf you're looking for something that's both thrilling and emotional, then \"Hitch\" or \"Three Kings\" might be up your alley. Both films feature compelling narratives about individuals overcoming significant challenges to achieve their goals.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her",
+        "actor": "Tom Atkins",
+        "director": "Scott Speer",
+        "writer": "Roger Avary",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Hitch",
+        "300: Rise of an Empire",
+        "Step Up Revolution",
+        "Three Kings"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Eva Mendes. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Hitch.)",
+      "user_meta": {
+        "turn": 41,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Eva Mendes",
+        "anchor_title": "Little Miss Sunshine",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Eva Mendes",
+          "plot": "enthusiasm",
+          "director": "Scott Speer"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 41,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Eva Mendes",
+          "from_anchor": "Isn't She Great",
+          "to_anchor": "Little Miss Sunshine"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response:\n\nYou seem to be interested in movies featuring Eva Mendes where she plays a character dealing with a tragic past. \"Artemis Fowl\" and \"Afterlife\" come to mind as potential choices, both offering compelling stories about individuals finding solace and understanding within themselves through confronting their demons.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Hitch",
+        "actor": "Eva Mendes",
+        "director": "Scott Speer",
+        "writer": "Roger Avary",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Artemis Fowl",
+        "Bloody Sunday",
+        "The Family Man",
+        "Afterlife"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Eva Mendes",
+        "anchor_title": "Little Miss Sunshine",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Eva Mendes",
+          "plot": "enthusiasm",
+          "director": "Scott Speer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation:\n\n\"Considering the war theme and the presence of female action heroes, 'The Hurt Locker' might be a great fit. The film explores a complex subject with impactful performances.\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Eva Mendes",
+        "director": "Scott Speer",
+        "writer": "Roger Avary",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Velocity",
+        "Despicable Me 2",
+        "The Other Guys",
+        "The Hurt Locker"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Hurt Locker. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Eva Mendes",
+        "anchor_title": "Little Miss Sunshine",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Eva Mendes",
+          "plot": "enthusiasm",
+          "director": "Scott Speer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation based on the user's preferences:\n\n\"Considering the user's interest in war and its sounds, 'The Siege' and 'Valkyrie' seem like strong contenders. 'The Siege' focuses on a compelling escape narrative with impactful sound design, while 'Valkyrie' offers a more dramatic and historical perspective on the same thematic ground.\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Hurt Locker",
+        "actor": "Eva Mendes",
+        "director": "Scott Speer",
+        "writer": "Roger Avary",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "The Siege",
+        "Valkyrie",
+        "The Pianist",
+        "Rob Roy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Tron tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Eva Mendes",
+        "anchor_title": "Little Miss Sunshine",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Eva Mendes",
+          "plot": "enthusiasm",
+          "director": "Scott Speer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response:\n\nThe user's preference for war, actors like Eva Mendes and Tom Berenger, and the themes of duality and conflict in movies suggest films like \"The Equalizer\", \"Platoon\", and \"Princess Mononoke\". These movies explore the complexities of war, the struggle for justice, and the human cost of conflict.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Tron",
+        "actor": "Eva Mendes",
+        "director": "Scott Speer",
+        "writer": "Roger Avary",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "The Equalizer",
+        "I Heart Huckabees",
+        "Platoon",
+        "Princess Mononoke"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Evan Goldberg? That sounds intriguing. (I’m thinking of Princess Mononoke.)",
+      "user_meta": {
+        "turn": 45,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Evan Goldberg",
+        "anchor_title": "This Christmas",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Eva Mendes",
+          "plot": "tatarigami",
+          "director": "Evan Goldberg"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 45,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "tatarigami",
+          "from_anchor": "Little Miss Sunshine",
+          "to_anchor": "This Christmas"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response you requested:\n\nI would recommend **The English Patient** for you. The movie is a powerful and poignant exploration of love, loss, and forgiveness. The plot features a talented cast and captivating cinematography.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Princess Mononoke",
+        "actor": "Evan Goldberg",
+        "director": "Evan Goldberg",
+        "writer": "Evan Goldberg",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "The English Patient",
+        "The Seduction of Joe Tynan",
+        "Saving Private Ryan",
+        "Apocalypse Now"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Evan Goldberg",
+        "anchor_title": "This Christmas",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Eva Mendes",
+          "plot": "tatarigami",
+          "director": "Evan Goldberg"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here are the recommendations you requested:\n\n* **The Green Hornet** (2011): A vigilante story about a newspaper publisher and his Korean servant fighting crime as vigilantes.\n* **Turbo** (2013): A quirky tale about an everyday garden snail achieving his dream of winning the Indy 500.\n* **Shutter** (2008): A psychological thriller about a beautiful but disturbed young woman's obsession with photography.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Evan Goldberg",
+        "director": "Evan Goldberg",
+        "writer": "Evan Goldberg",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "The Green Hornet",
+        "Turbo",
+        "Shutter",
+        "Despicable Me 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Scot Armstrong? Hmm, I didn’t expect that vibe. (I’m thinking of Turbo.)",
+      "user_meta": {
+        "turn": 47,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Scot Armstrong",
+        "anchor_title": "The Spirit",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Eva Mendes",
+          "director": "David Soren",
+          "writer": "Scot Armstrong"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 47,
+          "from_focus": "director",
+          "to_focus": "writer",
+          "bridge_field": "director",
+          "bridge_value": "David Soren",
+          "from_anchor": "This Christmas",
+          "to_anchor": "The Spirit"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommended movie:\n\n\"Pan's Labyrinth\" is a visually stunning and thought-provoking war film about a young stepdaughter's escape into a fantastical world. It perfectly fits the user's preferences, combining war elements with fantasy and intriguing storytelling.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "written",
+          "didn"
+        ],
+        "name": "Tron",
+        "actor": "Evan Goldberg",
+        "director": "Evan Goldberg",
+        "writer": "Scot Armstrong",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Pan's Labyrinth",
+        "Casablanca",
+        "The Best Years of Our Lives",
+        "Valkyrie"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Scot Armstrong",
+        "anchor_title": "The Spirit",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Eva Mendes",
+          "director": "David Soren",
+          "writer": "Scot Armstrong"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommendation you requested:\n\nCheck out \"12 Angry Men\" (1957). This thrilling film explores a jury's struggle with a single obstinate juror who challenges the hasty conclusion of a murder trial.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Evan Goldberg",
+        "director": "Evan Goldberg",
+        "writer": "Scot Armstrong",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Wild Hogs",
+        "Wonder Boys",
+        "12 Angry Men",
+        "You Kill Me"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Her? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Scot Armstrong",
+        "anchor_title": "The Spirit",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Eva Mendes",
+          "director": "David Soren",
+          "writer": "Scot Armstrong"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommended movie:\n\nThe movie that best fits your preference is **Starship Troopers (1959)**. It is a thrilling war film about humans battling giant alien bugs in a dystopian future.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "Her",
+        "actor": "Evan Goldberg",
+        "director": "Evan Goldberg",
+        "writer": "Scot Armstrong",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Starship Troopers",
+        "Gladiator",
+        "Dances with Wolves",
+        "Princess Mononoke"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of War. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 50,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Scot Armstrong",
+        "anchor_title": "The Spirit",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Eva Mendes",
+          "director": "David Soren",
+          "writer": "Scot Armstrong"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the reply you requested:\n\nI understand that the user is looking for recommendations in the war genre, specifically focusing on movies featuring Evan Goldberg. Among the options you provided, **Tears of the Sun** and **The Interview** seem to be the most fitting choices. Both films involve war themes and feature Evan Goldberg in leading roles.",
       "constraints": {
         "genre": "war",
         "plot": [
@@ -743,95 +2097,118 @@
           "sound"
         ],
         "name": "War",
-        "actor": "Tom McGrath",
-        "director": "McG",
-        "writer": "Steve Baker (Screenwriter)"
+        "actor": "Evan Goldberg",
+        "director": "Evan Goldberg",
+        "writer": "Scot Armstrong",
+        "language": "ger"
       },
       "rec_titles": [
-        "MegaMind",
-        "A Bridge Too Far",
-        "Starship Troopers",
-        "There Be Dragons"
-      ]
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Tron? I can’t decide if I’d enjoy it or be scared by it.",
-      "user_meta": {
-        "turn": 20,
-        "stage": "details",
-        "focus_field": "director",
-        "focus_value": "Tom McGrath",
-        "anchor_title": "Buffy the Vampire Slayer",
-        "constraints": {
-          "genre": "comedy-drama",
-          "actor": "Noah Emmerich",
-          "writer": "Steve Baker (Screenwriter)",
-          "plot": "satirical",
-          "director": "Tom McGrath"
-        },
-        "shift_event": false,
-        "shift_event_obj": null
-      }
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Since you're looking for a movie with a dark and suspenseful tone, I would recommend \"The End of the Affair\". It's a psychological thriller about a man seeking answers about his past.",
-      "constraints": {
-        "genre": "war",
-        "plot": [
-          "what",
-          "decide"
-        ],
-        "name": "Tron",
-        "actor": "Tom McGrath",
-        "director": "McG",
-        "writer": "Steve Baker (Screenwriter)"
-      },
-      "rec_titles": [
-        "The Messenger",
-        "Smilla's Sense of Snow",
-        "Aladdin",
-        "The End of the Affair"
+        "Tears of the Sun",
+        "The Good German",
+        "The Interview",
+        "Rob Roy"
       ]
     }
   ],
   "shift_events": [
     {
-      "turn": 6,
+      "turn": 2,
       "from_focus": "genre",
       "to_focus": "actor",
-      "bridge_field": "genre",
-      "bridge_value": "comedy-drama",
-      "from_anchor": "Attachments",
-      "to_anchor": "Lost in Translation"
+      "bridge_field": "writer",
+      "bridge_value": "Robin Swicord",
+      "from_anchor": "The Kid",
+      "to_anchor": "In Her Shoes"
     },
     {
-      "turn": 11,
-      "from_focus": "actor",
-      "to_focus": "writer",
-      "bridge_field": "plot",
-      "bridge_value": "satirical",
-      "from_anchor": "Lost in Translation",
-      "to_anchor": "Big Fish"
-    },
-    {
-      "turn": 13,
-      "from_focus": "writer",
-      "to_focus": "actor",
-      "bridge_field": "language",
-      "bridge_value": "Japanese Language",
-      "from_anchor": "Big Fish",
-      "to_anchor": "The Break-Up"
-    },
-    {
-      "turn": 17,
+      "turn": 8,
       "from_focus": "actor",
       "to_focus": "director",
       "bridge_field": "actor",
-      "bridge_value": "Noah Emmerich",
-      "from_anchor": "The Break-Up",
-      "to_anchor": "Buffy the Vampire Slayer"
+      "bridge_value": "Seth Meyers",
+      "from_anchor": "In Her Shoes",
+      "to_anchor": "Spun"
+    },
+    {
+      "turn": 10,
+      "from_focus": "director",
+      "to_focus": "writer",
+      "bridge_field": "actor",
+      "bridge_value": "Nick Chinlund",
+      "from_anchor": "Spun",
+      "to_anchor": "Soul Men"
+    },
+    {
+      "turn": 16,
+      "from_focus": "writer",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "relationships",
+      "from_anchor": "Soul Men",
+      "to_anchor": "I Love You Phillip Morris"
+    },
+    {
+      "turn": 21,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "online",
+      "from_anchor": "I Love You Phillip Morris",
+      "to_anchor": "As Good as It Gets"
+    },
+    {
+      "turn": 25,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "language",
+      "bridge_value": "Japanese Language",
+      "from_anchor": "As Good as It Gets",
+      "to_anchor": "Home for the Holidays"
+    },
+    {
+      "turn": 29,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "hunt",
+      "from_anchor": "Home for the Holidays",
+      "to_anchor": "Purple Violets"
+    },
+    {
+      "turn": 34,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "enthusiasm",
+      "from_anchor": "Purple Violets",
+      "to_anchor": "Isn't She Great"
+    },
+    {
+      "turn": 41,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Eva Mendes",
+      "from_anchor": "Isn't She Great",
+      "to_anchor": "Little Miss Sunshine"
+    },
+    {
+      "turn": 45,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "tatarigami",
+      "from_anchor": "Little Miss Sunshine",
+      "to_anchor": "This Christmas"
+    },
+    {
+      "turn": 47,
+      "from_focus": "director",
+      "to_focus": "writer",
+      "bridge_field": "director",
+      "bridge_value": "David Soren",
+      "from_anchor": "This Christmas",
+      "to_anchor": "The Spirit"
     }
   ]
 }

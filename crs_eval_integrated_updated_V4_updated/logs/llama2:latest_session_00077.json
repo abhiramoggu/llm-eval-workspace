@@ -1,0 +1,2204 @@
+{
+  "session_id": "00077",
+  "model_name": "llama2:latest",
+  "true_genre": "utopian and dystopian",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a film noir movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "film noir",
+        "anchor_title": "Memento",
+        "constraints": {
+          "genre": "film noir"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's request for a film noir movie, I recommend \"Collateral\" (2004) and \"Minority Report\" (2002). Both of these movies offer a gripping and suspenseful plot with a mix of action and mystery. In \"Collateral,\" a cab driver finds himself hostage to a contract killer during one night in Los Angeles, while in \"Minority Report,\" John works with the PreCrime police to prevent crimes before they happen, but finds himself framed for a future murder. Both movies feature talented actors and are sure to keep you on the edge of your seat!",
+      "constraints": {
+        "genre": "film noir",
+        "plot": [
+          "noir",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "Collateral",
+        "Psychic Experiment",
+        "Minority Report",
+        "Hitch"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of They. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "film noir",
+        "anchor_title": "Memento",
+        "constraints": {
+          "genre": "film noir"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: film noir; plot keywords: like, sound. Based on these constraints, I recommend \"Flubber\" and \"The Right Stuff.\" Both movies feature a unique plot that centers around the sounds of their respective environments, with \"Flubber\" focusing on the bouncy, rubber-like substance that becomes a central part of the story, and \"The Right Stuff\" exploring the tense atmosphere of the U.S. space program's development through the eyes of its protagonists. Both movies also feature an interesting cast of characters, with \"Flubber\" boasting a talented voice cast and \"The Right Stuff\" assembling a star-studded ensemble.",
+      "constraints": {
+        "genre": "film noir",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED"
+      },
+      "rec_titles": [
+        "Flubber",
+        "District 9",
+        "Blow Out",
+        "The Right Stuff"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "film noir",
+        "anchor_title": "Memento",
+        "constraints": {
+          "genre": "film noir"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user is looking for a movie noir with a similar atmosphere and tone to their original choice, but they are not sure anymore. They are open to different genres and plots, but they want a dark and gritty film.\n\nRecommendation: Based on the user's preferences, I would recommend \"Touch of Evil\" (1958) and \"Bound\" (1996). Both movies have a similar atmospheric tone and explore themes of crime, corruption, and moral ambiguity that are typical of the noir genre. \"Touch of Evil\" is a classic Orson Welles film that explores police corruption and murder in a Mexican border town, while \"Bound\" is a lesbian-themed crime drama that follows two women who concoct a scheme to steal mob money. Both movies are well-regarded in the noir genre and offer a dark and gripping viewing experience.",
+      "constraints": {
+        "genre": "film noir",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "RED"
+      },
+      "rec_titles": [
+        "Touch of Evil",
+        "Dark City",
+        "The Dark Knight",
+        "Bound"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Women? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "film noir",
+        "anchor_title": "Memento",
+        "constraints": {
+          "genre": "film noir"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: The movie should be about women and have a film noir tone.\nRecommendation: \"Holes\" (1998) is a thought-provoking drama that explores the complex identity of a man who seeks justice for his son's murder, uncovering a web of secrets and lies. The movie has a gritty, noir-inspired tone that should resonate with you.\"\n\nAlternatively:\n\"For a film noir take on women, I recommend 'The Andromeda Strain' (1971). This sci-fi thriller follows top scientists working to uncover the source of a deadly contagion that killed an entire town. With a talented cast and a tense, atmospheric plot, this movie should keep you on the edge of your seat.\"",
+      "constraints": {
+        "genre": "film noir",
+        "plot": [
+          "what",
+          "women"
+        ],
+        "name": "Women"
+      },
+      "rec_titles": [
+        "Holes",
+        "Little Fockers",
+        "The Andromeda Strain",
+        "Chain Reaction"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Burl Ives. That sounds intriguing. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 5,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Burl Ives",
+        "anchor_title": "Collateral",
+        "constraints": {
+          "genre": "film noir",
+          "actor": "Burl Ives",
+          "plot": "bringing"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 5,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "bringing",
+          "from_anchor": "Memento",
+          "to_anchor": "Collateral"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - film noir, actor - Burl Ives, plot keywords - could, find.\nBased on these constraints, I recommend \"Happy Feet\" and \"The Hateful Eight\". Both of these movies feature Burl Ives in a significant role, and they both explore themes of finding one's identity or belonging, which aligns with the user's preference for movies with this theme. \"Happy Feet\" is an animated film that tells the story of penguins who find their soul mates through song, while \"The Hateful Eight\" is a Quentin Tarantino-directed western that follows a group of criminals taking refuge in a cabin during a blizzard. Both movies are known for their unique and memorable characters, which I think the user will find interesting.",
+      "constraints": {
+        "genre": "film noir",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Ted",
+        "actor": "Burl Ives"
+      },
+      "rec_titles": [
+        "Happy Feet",
+        "The Family Man",
+        "The Hateful Eight",
+        "Shattered"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Burl Ives",
+        "anchor_title": "Collateral",
+        "constraints": {
+          "genre": "film noir",
+          "actor": "Burl Ives",
+          "plot": "bringing"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure thing! Based on the user's preferences, here are two movie recommendations that fit their criteria:\n\n\"You mentioned film noir, actor Burl Ives, and plot keywords 'just' and 'more'. In that case, I would recommend 'Thick as Thieves' for its gritty, action-packed plot and memorable cast of characters. Alternatively, if you're in the mood for something a bit more lighthearted, 'Date Night' offers a fun and entertaining mix of romance and comedy with a thrilling twist.\"",
+      "constraints": {
+        "genre": "film noir",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Burl Ives"
+      },
+      "rec_titles": [
+        "Thick as Thieves",
+        "Despicable Me 2",
+        "Date Night",
+        "My Girl 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Burl Ives",
+        "anchor_title": "Collateral",
+        "constraints": {
+          "genre": "film noir",
+          "actor": "Burl Ives",
+          "plot": "bringing"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has expressed interest in film noir movies with actor Burl Ives and plots that involve sounds. Based on these constraints, I recommend \"It's a Wonderful Life\" and \"Us\". Both of these movies have a similar tone and atmosphere to \"Us\", with a focus on the sounds and emotions of their characters. \"It's a Wonderful Life\" is a classic film noir with a poignant storyline and memorable performances from its talented cast, including Burl Ives.",
+      "constraints": {
+        "genre": "film noir",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us",
+        "actor": "Burl Ives"
+      },
+      "rec_titles": [
+        "It's a Wonderful Life",
+        "Psychic Experiment",
+        "Us",
+        "Looper"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Tate Taylor? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of It's a Wonderful Life.)",
+      "user_meta": {
+        "turn": 8,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Tate Taylor",
+        "anchor_title": "Ted",
+        "constraints": {
+          "genre": "film noir",
+          "actor": "Donna Reed",
+          "plot": "bringing",
+          "director": "Tate Taylor"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 8,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Donna Reed",
+          "from_anchor": "Collateral",
+          "to_anchor": "Ted"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Here's my recommendation based on the user's preferences:\n\nThe user has expressed interest in watching a movie directed by Tate Taylor, and has specified that they enjoy film noir and are interested in seeing something with a similar tone. Based on these preferences, I recommend \"Batman Begins\" (2005) and \"Dark City\" (1998). Both of these movies offer a gritty, atmospheric take on the superhero genre, with complex plots and engaging performances from their talented casts.",
+      "constraints": {
+        "genre": "film noir",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "It's a Wonderful Life",
+        "actor": "Tate Taylor",
+        "director": "Tate Taylor",
+        "writer": "Tate Taylor"
+      },
+      "rec_titles": [
+        "Batman Begins",
+        "Afterlife",
+        "Kiss Kiss Bang Bang",
+        "Dark City"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Tate Taylor",
+        "anchor_title": "Ted",
+        "constraints": {
+          "genre": "film noir",
+          "actor": "Donna Reed",
+          "plot": "bringing",
+          "director": "Tate Taylor"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your user's preferences, here are two movie recommendations that match their specified genre and actor/director/writer constraints:\n\n* \"If you enjoyed Tate Taylor's directorial work in 'The Help', you might enjoy his other film, 'This Is the End'. This hilarious horror-comedy stars James Franco, Seth Rogen, and a talented ensemble cast as a group of celebrities who must band together to survive a series of apocalyptic events.\n* \"For another great film noir recommendation, consider 'Bound'. Directed by Tate Taylor and starring Jennifer Lopez and Gina Gershon, this crime drama follows two women who concoct a scheme to steal mob money and pin the blame on a crooked boyfriend. With a sharp script and sultry performances, 'Bound' is a gripping thrill ride from start to finish.\"",
+      "constraints": {
+        "genre": "film noir",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Tate Taylor",
+        "director": "Tate Taylor",
+        "writer": "Tate Taylor"
+      },
+      "rec_titles": [
+        "This Is the End",
+        "My Girl 2",
+        "Bound",
+        "Tooth Fairy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Tate Taylor",
+        "anchor_title": "Ted",
+        "constraints": {
+          "genre": "film noir",
+          "actor": "Donna Reed",
+          "plot": "bringing",
+          "director": "Tate Taylor"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User: I'm not sure anymore; perhaps I changed my mind.\n\nBased on the user's constraints, here are two movie recommendations that might interest them:\n\n* 'Touch of Evil' (1958) - This classic film noir stars Charlton Heston and Orson Welles in a gritty and perverse tale of murder, kidnapping, and police corruption in a Mexican border town. With a talented cast and a suspenseful plot, this movie is sure to keep you on the edge of your seat.\n* 'The Dark Knight' (2008) - In this iconic superhero movie, Batman must face his greatest challenge yet when the Joker wreaks havoc on Gotham City. With a talented cast, including Heath Ledger in his Oscar-winning performance as the Joker, this movie is a thrilling and thought-provoking exploration of good vs. evil.",
+      "constraints": {
+        "genre": "film noir",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "You",
+        "actor": "Tate Taylor",
+        "director": "Tate Taylor",
+        "writer": "Tate Taylor"
+      },
+      "rec_titles": [
+        "Touch of Evil",
+        "The Secret of My Success",
+        "You",
+        "The Dark Knight"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Tate Taylor",
+        "anchor_title": "Ted",
+        "constraints": {
+          "genre": "film noir",
+          "actor": "Donna Reed",
+          "plot": "bringing",
+          "director": "Tate Taylor"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - film noir, actor - Tate Taylor, director - Tate Taylor, writer - Tate Taylor.\nRecommendation: Based on the user's preferences, I recommend \"Blade Runner\" and \"Collateral\". Both movies are gripping and thought-provoking with great performances from their actors. \"Blade Runner\" is a classic sci-fi noir that explores themes of identity and humanity, while \"Collateral\" is a tense thriller that keeps you on the edge of your seat.",
+      "constraints": {
+        "genre": "film noir",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "You",
+        "actor": "Tate Taylor",
+        "director": "Tate Taylor",
+        "writer": "Tate Taylor"
+      },
+      "rec_titles": [
+        "The Lego Movie",
+        "Blade Runner",
+        "Collateral",
+        "Journey 2: The Mysterious Island"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Tate Taylor",
+        "anchor_title": "Ted",
+        "constraints": {
+          "genre": "film noir",
+          "actor": "Donna Reed",
+          "plot": "bringing",
+          "director": "Tate Taylor"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has expressed a preference for film noir movies with a focus on actors, directors, and writers. Based on their input, I recommend \"Unleashed\" (2005) starring Jet Li, Morgan Freeman, and Phyllida Law, and \"District 9\" (2009) featuring Sharlto Copley, Jed Brophy, and Kenneth Nkosi. Both movies offer a unique blend of action, suspense, and intriguing plots that are sure to satisfy the user's preferences.",
+      "constraints": {
+        "genre": "film noir",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "actor": "Tate Taylor",
+        "director": "Tate Taylor",
+        "writer": "Tate Taylor"
+      },
+      "rec_titles": [
+        "Unleashed",
+        "The Relic",
+        "Psychic Experiment",
+        "District 9"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does District 9 tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Tate Taylor",
+        "anchor_title": "Ted",
+        "constraints": {
+          "genre": "film noir",
+          "actor": "Donna Reed",
+          "plot": "bringing",
+          "director": "Tate Taylor"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: genre - film noir, actor - Tate Taylor, director - Tate Taylor, writer - Tate Taylor\nRecommendation: Louie (2010) - This Emmy-winning comedy-drama series follows the life of a man who rides around Boston on his tricycle, exploring themes of loneliness and connection. Starring Tate Taylor as the titular character, this show offers a unique and thought-provoking watch.\nAlternatively, I Spy (2002) - This action-comedy film stars Tate Taylor as a professional athlete who teams up with a U.S. government agent to recover a missing jet. With a talented cast and some great action scenes, this movie is sure to keep you entertained.",
+      "constraints": {
+        "genre": "film noir",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "District 9",
+        "actor": "Tate Taylor",
+        "director": "Tate Taylor",
+        "writer": "Tate Taylor"
+      },
+      "rec_titles": [
+        "Louie",
+        "Dear John",
+        "The Last Unicorn",
+        "I Spy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Jodi Lyn O'Keefe. Hmm, I didn’t expect that vibe. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 14,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Jodi Lyn O'Keefe",
+        "anchor_title": "Aladdin",
+        "constraints": {
+          "genre": "film noir",
+          "actor": "Jodi Lyn O'Keefe",
+          "plot": "wish",
+          "director": "Tate Taylor"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 14,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "wish",
+          "from_anchor": "Ted",
+          "to_anchor": "Aladdin"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - film noir, Actor - Jodi Lyn O'Keefe, Director - Tate Taylor, Writer - Tate Taylor, Plot keywords - could, find.\n\nBased on the user's preferences, I recommend \"Cutthroat Island\" and \"This Must Be the Place\". Both movies feature Jodi Lyn O'Keefe in significant roles and have a noir-inspired atmosphere. \"Cutthroat Island\" is an adventure film with a hidden treasure hunt plot, while \"This Must Be the Place\" is a psychological drama that explores themes of identity and obsession. Both movies offer a gripping and atmospheric viewing experience.",
+      "constraints": {
+        "genre": "film noir",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Ted",
+        "actor": "Jodi Lyn O'Keefe",
+        "director": "Tate Taylor",
+        "writer": "Tate Taylor"
+      },
+      "rec_titles": [
+        "Cutthroat Island",
+        "Trees Lounge",
+        "This Must Be the Place",
+        "The Shadows"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jodi Lyn O'Keefe",
+        "anchor_title": "Aladdin",
+        "constraints": {
+          "genre": "film noir",
+          "actor": "Jodi Lyn O'Keefe",
+          "plot": "wish",
+          "director": "Tate Taylor"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre: film noir; actor: Jodi Lyn O'Keefe; director: Tate Taylor; writer: Tate Taylor; plot keywords: just, more.\nBased on the user's preferences, I recommend checking out \"Fight Club\" and \"Mama\". Both movies feature gritty, intense plots that explore themes of rebellion and self-empowerment, which align with the user's preferred genre. In \"Fight Club\", Edward Norton and Brad Pitt deliver standout performances as two men who form an underground fight club as a means of coping with their increasingly mundane lives. In \"Mama\", Megan Charpentier and Isabelle Nélisse shine as two young girls haunted by a malevolent spirit, and Jodi Lyn O'Keefe plays a trainer who helps them defend themselves against this supernatural threat.",
+      "constraints": {
+        "genre": "film noir",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Jodi Lyn O'Keefe",
+        "director": "Tate Taylor",
+        "writer": "Tate Taylor"
+      },
+      "rec_titles": [
+        "Braveheart",
+        "Fight Club",
+        "The Goodbye Girl",
+        "Mama"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Fight Club tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jodi Lyn O'Keefe",
+        "anchor_title": "Aladdin",
+        "constraints": {
+          "genre": "film noir",
+          "actor": "Jodi Lyn O'Keefe",
+          "plot": "wish",
+          "director": "Tate Taylor"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure! Based on the user's preferences, I recommend the movie \"Hitch\" (2005) starring Vincent De Paul and Eva Mendes. The film is a romantic comedy with a mystery plot that follows a matchmaker who falls in love with his client, while also uncovering a murder mystery. Alternatively, I suggest \"Divergent\" (2011) starring Shailene Woodley and Theo James. This movie is set in a dystopian world where people are divided into factions based on their personalities, and the main character must navigate dangerous situations to save her society. Both movies offer an exciting blend of mystery, romance, and action that align with the user's preferences.",
+      "constraints": {
+        "genre": "film noir",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Fight Club",
+        "actor": "Jodi Lyn O'Keefe",
+        "director": "Tate Taylor",
+        "writer": "Tate Taylor"
+      },
+      "rec_titles": [
+        "Hitch",
+        "Divergent",
+        "The Yearling",
+        "The Odyssey"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jodi Lyn O'Keefe",
+        "anchor_title": "Aladdin",
+        "constraints": {
+          "genre": "film noir",
+          "actor": "Jodi Lyn O'Keefe",
+          "plot": "wish",
+          "director": "Tate Taylor"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user is looking for a movie with a noir feel, featuring Jodi Lyn O'Keef, and directed/written by Tate Taylor.\nRecommendation: I would recommend \"Kiss Kiss Bang Bang\" (2005) starring Robert Downey Jr., Val Kilmer, and Corbin Bernsen. This movie has a great noir feel with a fun and quirky twist, while also featuring Jodi Lyn O'Keef in a supporting role. Alternatively, \"Zero Effect\" (1998) starring Ben Stiller and Ryan O'Neal is another great option that fits the user's constraints, with a clever and mysterious plot that will keep you guessing until the end.",
+      "constraints": {
+        "genre": "film noir",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Deep",
+        "actor": "Jodi Lyn O'Keefe",
+        "director": "Tate Taylor",
+        "writer": "Tate Taylor"
+      },
+      "rec_titles": [
+        "Wolfhound",
+        "Kiss Kiss Bang Bang",
+        "Zero Effect",
+        "The Good German"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Zero Effect. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jodi Lyn O'Keefe",
+        "anchor_title": "Aladdin",
+        "constraints": {
+          "genre": "film noir",
+          "actor": "Jodi Lyn O'Keefe",
+          "plot": "wish",
+          "director": "Tate Taylor"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user likes the sound of Zero Effect and is interested in film noir, actor Jodi Lyn O'Keefe, director Tate Taylor, and writer Tate Taylor.\n\nBased on these constraints, I recommend \"The Help\" (2011) and \"Smokin' Aces\" (2006). Both movies have a strong film noir vibe, with gripping plots and talented actors, including Ahna O'Reilly, Leslie Jordan, and Allison Janney in \"The Help,\" and Ben Affleck, Jeremy Piven, and Ryan Reynolds in \"Smokin' Aces.\"",
+      "constraints": {
+        "genre": "film noir",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Zero Effect",
+        "actor": "Jodi Lyn O'Keefe",
+        "director": "Tate Taylor",
+        "writer": "Tate Taylor"
+      },
+      "rec_titles": [
+        "The Help",
+        "It's a Wonderful Life",
+        "Paycheck",
+        "Smokin' Aces"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jodi Lyn O'Keefe",
+        "anchor_title": "Aladdin",
+        "constraints": {
+          "genre": "film noir",
+          "actor": "Jodi Lyn O'Keefe",
+          "plot": "wish",
+          "director": "Tate Taylor"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user wants a movie with a film noir tone, featuring Jodi Lyn O'Keefe, and directed by Tate Taylor or written by Tate Taylor.\n\nRecommendation: Based on the user's preferences, I would recommend \"Batman Begins\" (2005) starring Christian Bale, Liam Neeson, and Katie Holmes. The movie has a dark and gritty tone similar to film noir, and features Jodi Lyn O'Keefe in a supporting role as Rachel Dawes. Another option could be \"Collateral\" (2004) starring Tom Cruise and Jada Pinkett Smith, which also has a noir-inspired tone and features Tate Taylor as a producer.",
+      "constraints": {
+        "genre": "film noir",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "Zero Effect",
+        "actor": "Jodi Lyn O'Keefe",
+        "director": "Tate Taylor",
+        "writer": "Tate Taylor"
+      },
+      "rec_titles": [
+        "Batman Begins",
+        "The Help",
+        "Can You Keep a Secret?",
+        "Collateral"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Batman. I want to try something more steampunk—That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "steampunk",
+        "anchor_title": "The Golden Compass",
+        "constraints": {
+          "genre": "steampunk",
+          "plot": "wish",
+          "director": "Tate Taylor"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 20,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "first",
+          "from_anchor": "Aladdin",
+          "to_anchor": "The Golden Compass"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - batman; actor - Jodi Lyn O'Keefe; director - Tate Taylor; writer - Tate Taylor; plot keywords - thanks, detail.\n\nBased on the user's preferences, I recommend checking out \"The Help\" (2011) and \"Wanderlust\" (2012). Both movies have a strong focus on detail and offer an in-depth exploration of their respective genres. In \"The Help\", the audience is taken on a journey through the African American experience during the civil rights movement, while \"Wanderlust\" follows a man's quest to reconnect with his childhood dreams of becoming an explorer. Both movies feature talented actors and offer a thought-provoking viewing experience.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Batman",
+        "actor": "Jodi Lyn O'Keefe",
+        "director": "Tate Taylor",
+        "writer": "Tate Taylor"
+      },
+      "rec_titles": [
+        "The Help",
+        "The Watcher",
+        "Batman Begins",
+        "Wanderlust"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 21,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "steampunk",
+        "anchor_title": "The Golden Compass",
+        "constraints": {
+          "genre": "steampunk",
+          "plot": "wish",
+          "director": "Tate Taylor"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, here are two movie recommendations that might interest them:\n\nThe Right Stuff (1983) is a historical drama that follows the development of the U.S. space program from the breaking of the sound barrier to the selection of the Mercury 7 astronauts. Starring an ensemble cast including Ed Harris, Barbara Hershey, and Kevin Pollak, this film is a must-see for fans of historical dramas and space exploration.\n\nOn the lighter side, Zack and Miri Make a Porno (2008) is a comedy that follows two lifelong friends who decide to make an adult film together to solve their financial problems. With a talented cast including Jennifer Schwalbach Smith, Jason Mewes, and Elizabeth Banks, this film is sure to provide plenty of laughs.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Jodi Lyn O'Keefe",
+        "director": "Tate Taylor",
+        "writer": "Tate Taylor"
+      },
+      "rec_titles": [
+        "The Right Stuff",
+        "Zack and Miri Make a Porno",
+        "Green Card",
+        "The Way Back Home"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Elizabeth. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "steampunk",
+        "anchor_title": "The Golden Compass",
+        "constraints": {
+          "genre": "steampunk",
+          "plot": "wish",
+          "director": "Tate Taylor"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues:\nGenre: Batman\nActor: Jodi Lyn O'Keefe\nDirector: Tate Taylor\nWriter: Tate Taylor\nPlot keywords: like, sound\n\nBased on these cues, I recommend the movie \"X-Men: First Class\" starring Michael Fassbender and Jennifer Lawrence. The plot follows a group of superpowered humans in the 1960s as they work together to find others like them, but things take a turn when one of them seeks revenge against an adversary. The movie has a similar feel-good vibe as \"Annie Hall,\" with action and adventure elements added in.\n\nAlternatively, you might enjoy \"Uptown Girls\" starring Marley Shelton and Jennifer Love Hewitt. This movie follows a grown-up woman who keeps her childish instincts and behavior as she starts working as a nanny for an 8-year-old girl who actually acts like an adult. The plot is lighthearted and fun, with plenty of comedic moments.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Elizabeth",
+        "actor": "Jodi Lyn O'Keefe",
+        "director": "Tate Taylor",
+        "writer": "Tate Taylor"
+      },
+      "rec_titles": [
+        "X-Men: First Class",
+        "Uptown Girls",
+        "Annie Hall",
+        "The Other Guys"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Batman? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "steampunk",
+        "anchor_title": "The Golden Compass",
+        "constraints": {
+          "genre": "steampunk",
+          "plot": "wish",
+          "director": "Tate Taylor"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user wants a movie with a deeper mood than Batman, and they are interested in movies starring Jodi Lyn O'Keefe, Tate Taylor, or featuring elements of batman.\n\nRecommendation: Based on the user's preferences, I would recommend \"Aladdin\" (1992) starring Scott Weinger and Lea Salonga. The movie features a unique blend of comedy, musical numbers, and a heartwarming love story that explores themes of perseverance and staying true to one's values. Alternatively, \"The Help\" (2011) starring Ahna O'Reilly, Octavia Spencer, and Jessica Chastain is another great option, as it delves into the hardships faced by African American maids during the civil rights movement while also showcasing the power of female friendship and solidarity.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "what",
+          "batman"
+        ],
+        "name": "Batman",
+        "actor": "Jodi Lyn O'Keefe",
+        "director": "Tate Taylor",
+        "writer": "Tate Taylor"
+      },
+      "rec_titles": [
+        "Aladdin",
+        "The Help",
+        "Batman",
+        "Prometheus"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Ornella Muti. That feels deeper than I thought. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 24,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Ornella Muti",
+        "anchor_title": "Van Helsing",
+        "constraints": {
+          "genre": "steampunk",
+          "plot": "wish",
+          "director": "Tate Taylor",
+          "actor": "Ornella Muti"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 24,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "wish",
+          "from_anchor": "The Golden Compass",
+          "to_anchor": "Van Helsing"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: batman; actor: Ornella Muti; director: Tate Taylor; writer: Tate Taylor; plot keywords: could, find. Based on these cues, I recommend the movie \"Zoolander 2\" (2016) starring Christine Taylor, Ben Stiller, Milla Jovovich, Will Ferrell, and Justin Theroux. The film follows Derek and Hansel as they find themselves in a sinister conspiracy in Rome while attempting to revive their careers in modeling. Alternatively, \"Sleepless in Seattle\" (N/A) starring Tom Hanks and Meg Ryan is also a great choice, as it explores the story of a recently widowed man's son trying to find his father a partner through a radio talk-show. Both movies have a light-hearted tone and are sure to provide an entertaining watch.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Ted",
+        "actor": "Ornella Muti",
+        "director": "Tate Taylor",
+        "writer": "Tate Taylor"
+      },
+      "rec_titles": [
+        "Zoolander 2",
+        "The Shadows",
+        "The Recruit",
+        "Sleepless in Seattle"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Ornella Muti",
+        "anchor_title": "Van Helsing",
+        "constraints": {
+          "genre": "steampunk",
+          "plot": "wish",
+          "director": "Tate Taylor",
+          "actor": "Ornella Muti"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - batman; actor - Ornella Muti; director - Tate Taylor; writer - Tate Taylor; plot keywords - just, more.\n\nBased on these cues, I recommend checking out \"New York Minute\" and \"Neighbors 2: Sorority Rising\". Both movies offer a fun and entertaining experience with plenty of action and comedy. In \"New York Minute\", two sisters embark on a series of misadventures in New York City, while in \"Neighbors 2\", a group of moviemakers team up with their former enemy to take down a rowdy sorority. Both movies star talented actors and have an enjoyable plot.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Ornella Muti",
+        "director": "Tate Taylor",
+        "writer": "Tate Taylor"
+      },
+      "rec_titles": [
+        "New York Minute",
+        "Neighbors 2: Sorority Rising",
+        "King Kong",
+        "The Deep End of the Ocean"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Nell tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Ornella Muti",
+        "anchor_title": "Van Helsing",
+        "constraints": {
+          "genre": "steampunk",
+          "plot": "wish",
+          "director": "Tate Taylor",
+          "actor": "Ornella Muti"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - Batman, Actor - Ornella Muti, Director - Tate Taylor, Writer - Tate Taylor\nRecommendation: The Yearling (1930) is a classic tale of a boy and his adopted pet deer, with a unique and touching storyline that may appeal to fans of Batman. Alternatively, Her (2013) is a thought-provoking docu-narrative that explores the changing attitudes towards dating and relationships, featuring Scarlett Johansson in a starring role.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Nell",
+        "actor": "Ornella Muti",
+        "director": "Tate Taylor",
+        "writer": "Tate Taylor"
+      },
+      "rec_titles": [
+        "The Yearling",
+        "Titanic",
+        "Her",
+        "The Andromeda Strain"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Peter Webber? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 27,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Peter Webber",
+        "anchor_title": "Watchers",
+        "constraints": {
+          "genre": "steampunk",
+          "plot": "runaway",
+          "director": "Peter Webber",
+          "actor": "Ornella Muti"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 27,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "runaway",
+          "from_anchor": "Van Helsing",
+          "to_anchor": "Watchers"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - Batman, Actor - Ornella Muti, Director - Peter Webber, Writer - Tate Taylor, Plot keywords - could, switch.\nBased on the provided cues, I recommend checking out 'Shattered' (1973) and 'X' (2015). Both movies feature a unique blend of action, suspense, and intriguing characters that align with the user's preferences.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "X",
+        "actor": "Ornella Muti",
+        "director": "Peter Webber",
+        "writer": "Tate Taylor"
+      },
+      "rec_titles": [
+        "Shattered",
+        "X",
+        "Batman Forever",
+        "Restless"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Peter Webber",
+        "anchor_title": "Watchers",
+        "constraints": {
+          "genre": "steampunk",
+          "plot": "runaway",
+          "director": "Peter Webber",
+          "actor": "Ornella Muti"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I recommend \"12 Angry Men\" and \"Batman & Robin.\" Both of these movies feature a similar tone and style to what the user has mentioned they enjoy, with \"12 Angry Men\" being a thought-provoking drama starring an all-star cast, and \"Batman & Robin\" being a campy superhero adventure featuring George Clooney and Arnold Schwarzenegger.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Ornella Muti",
+        "director": "Peter Webber",
+        "writer": "Tate Taylor"
+      },
+      "rec_titles": [
+        "12 Angry Men",
+        "King Kong",
+        "Veronica Mars",
+        "Batman & Robin"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Peter Webber",
+        "anchor_title": "Watchers",
+        "constraints": {
+          "genre": "steampunk",
+          "plot": "runaway",
+          "director": "Peter Webber",
+          "actor": "Ornella Muti"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has provided some useful cues for their movie preferences, including the genre \"Batman\" and the actors Ornella Muti, Peter Webber, Tate Taylor, and Jon Favreau. Based on these cues, I recommend two movies from the list: \"Batman Forever\" (1995) and \"The Dark Knight\" (2008). Both of these films feature Val Kilmer as Batman and offer exciting plots with memorable villains and action-packed scenes.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "You",
+        "actor": "Ornella Muti",
+        "director": "Peter Webber",
+        "writer": "Tate Taylor"
+      },
+      "rec_titles": [
+        "Batman Forever",
+        "The Dark Knight",
+        "The 13th Warrior",
+        "Thick as Thieves"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Josh Gad. That sounds intriguing. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 30,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Josh Gad",
+        "anchor_title": "A Farewell to Arms",
+        "constraints": {
+          "genre": "steampunk",
+          "plot": "runaway",
+          "director": "Peter Webber",
+          "actor": "Josh Gad",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 30,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Watchers",
+          "to_anchor": "A Farewell to Arms"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, here are two movie recommendations that fit their constraints:\n\n* \"Welcome to Sarajevo\" (2004) is a powerful drama that explores the human side of war through the eyes of journalists and civilians. With an impressive cast including Frank Dillane and James Nesbitt, this movie is sure to captivate viewers with its emotional storytelling and thought-provoking themes.\n* \"The Hateful Eight\" (2015) is a tense and suspenseful western that brings together a talented ensemble cast, including Samuel L. Jackson, Kurt Russell, and Jennifer Jason Leigh. Set in the Wyoming winter, this movie offers a gripping and unpredictable tale of violence and deception that will keep viewers on the edge of their seats.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "X",
+        "actor": "Josh Gad",
+        "director": "Peter Webber",
+        "writer": "Tate Taylor"
+      },
+      "rec_titles": [
+        "Welcome to Sarajevo",
+        "Sin City",
+        "Siddhartha",
+        "The Hateful Eight"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Josh Gad",
+        "anchor_title": "A Farewell to Arms",
+        "constraints": {
+          "genre": "steampunk",
+          "plot": "runaway",
+          "director": "Peter Webber",
+          "actor": "Josh Gad",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre Batman, actor Josh Gad, director Peter Webber, writer Tate Taylor.\n\nBased on these cues, I recommend \"The Rocker\" and \"Before I Fall\". Both movies have a unique plot and features actors who star alongside Josh Gad. In \"The Rocker\", Josh Gad plays the lead role of a drummer who gets a second chance at stardom with his teenage nephew's high school rock band. In \"Before I Fall\", Sam (played by Zoey Deutch) relives her last day over and over, untangling the mystery around her death and discovering everything she's losing.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Josh Gad",
+        "director": "Peter Webber",
+        "writer": "Tate Taylor"
+      },
+      "rec_titles": [
+        "The Rocker",
+        "Tooth Fairy",
+        "Before I Fall",
+        "12 Angry Men"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Before I Fall? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Josh Gad",
+        "anchor_title": "A Farewell to Arms",
+        "constraints": {
+          "genre": "steampunk",
+          "plot": "runaway",
+          "director": "Peter Webber",
+          "actor": "Josh Gad",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThe user is looking for a movie with a similar vibe to \"Before I Fall\". They prefer movies with a darker tone and are interested in themes of identity, time loops, and the supernatural.\n\nRecommendation:\nBased on your preferences, I would recommend \"Chained Reaction\" (1996) or \"Junkhearts\" (N/A). Both movies explore themes of identity, time loops, and the supernatural, while also offering a darker and more intense viewing experience. \"Chain Reaction\" follows the impact of the 2020 COVID-19 pandemic on small businesses, while \"Junkhearts\" delves into the lives of troubled individuals struggling with their past and present.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "what",
+          "fall"
+        ],
+        "name": "X",
+        "actor": "Josh Gad",
+        "director": "Peter Webber",
+        "writer": "Tate Taylor"
+      },
+      "rec_titles": [
+        "Chain Reaction",
+        "The Secret",
+        "Taxi Driver",
+        "Junkhearts"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Chain Reaction tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Josh Gad",
+        "anchor_title": "A Farewell to Arms",
+        "constraints": {
+          "genre": "steampunk",
+          "plot": "runaway",
+          "director": "Peter Webber",
+          "actor": "Josh Gad",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: action, Josh Gad, Peter Webber, Tate Taylor, plot keywords \"what kind\".\nRecommendation: Based on the user's preferences, I would recommend \"National Treasure\" and \"Snow White and the Huntsman\". Both movies offer exciting action sequences and feature Josh Gad in a lead role. \"National Treasure\" follows a historian racing against a team of mercenaries to find a legendary treasure, while \"Snow White and the Huntsman\" tells the story of a huntsman who becomes Snow White's protector and mentor on a quest to defeat the Evil Queen.",
+      "constraints": {
+        "genre": "action",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Chain Reaction",
+        "actor": "Josh Gad",
+        "director": "Peter Webber",
+        "writer": "Tate Taylor"
+      },
+      "rec_titles": [
+        "Never Say Never Again",
+        "Daredevil",
+        "National Treasure",
+        "Snow White and the Huntsman"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 34,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Josh Gad",
+        "anchor_title": "A Farewell to Arms",
+        "constraints": {
+          "genre": "steampunk",
+          "plot": "runaway",
+          "director": "Peter Webber",
+          "actor": "Josh Gad",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure! The user has expressed interest in action movies with a focus on stars Josh Gad and Peter Webber, as well as director Tate Taylor. Based on these preferences, I recommend \"Three Kings\" and \"Green Lantern.\" Both of these movies offer exciting action sequences and talented actors, including Josh Gad in \"Three Kings\" and Ryan Reynolds in \"Green Lantern.\"",
+      "constraints": {
+        "genre": "action",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us",
+        "actor": "Josh Gad",
+        "director": "Peter Webber",
+        "writer": "Tate Taylor"
+      },
+      "rec_titles": [
+        "Annie Hall",
+        "The Hunted",
+        "Three Kings",
+        "Green Lantern"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Joe Wright? That feels deeper than I thought. (I’m thinking of Green Lantern.)",
+      "user_meta": {
+        "turn": 35,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Joe Wright",
+        "anchor_title": "Tarnation",
+        "constraints": {
+          "genre": "steampunk",
+          "plot": "test",
+          "director": "Joe Wright",
+          "actor": "Josh Gad",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 35,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "test",
+          "from_anchor": "A Farewell to Arms",
+          "to_anchor": "Tarnation"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preference cues, they are looking for an action movie directed by Joe Wright and starring Josh Gad. One potential recommendation is \"Battleship\" (2012), which features a fleet of ships battling an unknown enemy in space. The film also stars Rami Malek, Liam Neeson, and Brooklyn Decker. Another option could be \"Inglourious Basterds\" (2009), a Quentin Tarantino movie that follows a group of Jewish U.S. soldiers as they plot to assassinate Nazi leaders during World War II. The film features an all-star cast, including Brad Pitt, Christoph Waltz, and Mélanie Laurent.",
+      "constraints": {
+        "genre": "action",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Green Lantern",
+        "actor": "Josh Gad",
+        "director": "Joe Wright",
+        "writer": "Tate Taylor"
+      },
+      "rec_titles": [
+        "Battleship",
+        "The River",
+        "X-Men Origins: Wolverine",
+        "Inglourious Basterds"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Joe Wright",
+        "anchor_title": "Tarnation",
+        "constraints": {
+          "genre": "steampunk",
+          "plot": "test",
+          "director": "Joe Wright",
+          "actor": "Josh Gad",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - action; actor - Josh Gad; director - Joe Wright; writer - Tate Taylor; plot keywords - just, more. Based on these cues, I recommend the action-packed comedy \"Austin Powers: The Spy Who Shagged Me\" starring Mike Myers and Elizabeth Hurley, or the sci-fi adventure \"Transformers: Age of Extinction\" featuring Mark Wahlberg, Nicola Peltz, and T.J. Miller. Both movies offer exciting plots and engaging performances that are sure to satisfy your desire for more action-packed entertainment.",
+      "constraints": {
+        "genre": "action",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Josh Gad",
+        "director": "Joe Wright",
+        "writer": "Tate Taylor"
+      },
+      "rec_titles": [
+        "Austin Powers: The Spy Who Shagged Me",
+        "Transformers: Age of Extinction",
+        "The Missing",
+        "Top Gun"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Elizabeth. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Joe Wright",
+        "anchor_title": "Tarnation",
+        "constraints": {
+          "genre": "steampunk",
+          "plot": "test",
+          "director": "Joe Wright",
+          "actor": "Josh Gad",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I recommend \"Gunless\" and \"Predator.\" Both movies feature action-packed plots with intriguing characters, and they have received great reviews from audiences and critics alike. In \"Gunless,\" Dustin Milligan plays a gunslinger who finds himself in a humorous and entertaining situation, while \"Predator\" features a team of commandos being hunted by an extraterrestrial warrior in the jungle.",
+      "constraints": {
+        "genre": "action",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Elizabeth",
+        "actor": "Josh Gad",
+        "director": "Joe Wright",
+        "writer": "Tate Taylor"
+      },
+      "rec_titles": [
+        "Gunless",
+        "The Ghost and the Darkness",
+        "The Bounty Hunter",
+        "Predator"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on War. I want to try something more standard chinese—still with Philip G. Atwell if possible. Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "standard chinese",
+        "anchor_title": "The Clan of the Cave Bear",
+        "constraints": {
+          "genre": "standard chinese",
+          "plot": "test",
+          "director": "Philip G. Atwell",
+          "actor": "Josh Gad",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 38,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "director",
+          "bridge_value": "Philip G. Atwell",
+          "from_anchor": "Tarnation",
+          "to_anchor": "The Clan of the Cave Bear"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure! Based on the user's preferences, I would recommend \"The Watcher\" and \"The Dark Knight\". Both of these movies offer a mix of suspense and action that seem to align with the user's interests. In \"The Watcher\", Chris Ellis and Joseph Sikora star in a thriller about a serial killer who sends pictures of his latest victim to the FBI agent who can't catch him, while \"The Dark Knight\" features Heath Ledger's iconic performance as the Joker, causing chaos and destruction in Gotham City.",
+      "constraints": {
+        "genre": "standard chinese",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "War",
+        "actor": "Josh Gad",
+        "director": "Philip G. Atwell",
+        "writer": "Tate Taylor",
+        "language": "Standard Chinese"
+      },
+      "rec_titles": [
+        "The Watcher",
+        "The Dark Knight",
+        "The Green Hornet",
+        "2012"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "standard chinese",
+        "anchor_title": "The Clan of the Cave Bear",
+        "constraints": {
+          "genre": "standard chinese",
+          "plot": "test",
+          "director": "Philip G. Atwell",
+          "actor": "Josh Gad",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, I see that you're looking for more movie recommendations based on your preferences. From the information provided, it seems that you enjoy watching movies with a mix of genres and actors. Here are two movie recommendations that might interest you:\n\n* \"Hopeless\" (2012) - This romantic comedy-drama stars Josh Gad and has a heartwarming plot about friendship and love. It's a great choice if you're looking for a feel-good movie with a relatable storyline.\n* \"Serenity\" (2005) - This sci-fi action movie features an impressive cast, including Jewel Staite and Summer Glau. With its fast-paced action and intriguing plot, it's sure to keep you engaged from start to finish.\n\nBoth of these movies offer something different from your previous recommendations, so I hope you find them enjoyable!",
+      "constraints": {
+        "genre": "standard chinese",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Josh Gad",
+        "director": "Philip G. Atwell",
+        "writer": "Tate Taylor",
+        "language": "Standard Chinese"
+      },
+      "rec_titles": [
+        "Hopeless",
+        "Serenity",
+        "Uncommon Valor",
+        "The Way of the Gun"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "standard chinese",
+        "anchor_title": "The Clan of the Cave Bear",
+        "constraints": {
+          "genre": "standard chinese",
+          "plot": "test",
+          "director": "Philip G. Atwell",
+          "actor": "Josh Gad",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues:\nGenre: Standard Chinese\nActor: Josh Gad\nDirector: Philip G. Atwell\nWriter: Tate Taylor\nPlot keywords: what, said\n\nBased on the user's preferences, I recommend \"Monsters, Inc.\" and \"The Warlords.\" Both movies offer a unique blend of action, drama, and humor that align with the user's interests. In \"Monsters, Inc.,\" the monsters' attempts to scare children lead to unexpected consequences, while in \"The Warlords,\" a Qing loyal army forms to take on rebels in 19th century China. Both movies feature talented actors, including John Goodman and Andy Lau, respectively.",
+      "constraints": {
+        "genre": "standard chinese",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "You",
+        "actor": "Josh Gad",
+        "director": "Philip G. Atwell",
+        "writer": "Tate Taylor",
+        "language": "Standard Chinese"
+      },
+      "rec_titles": [
+        "Monsters, Inc.",
+        "The Way Back Home",
+        "The Warlords",
+        "Tomorrow Never Dies"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of War. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "standard chinese",
+        "anchor_title": "The Clan of the Cave Bear",
+        "constraints": {
+          "genre": "standard chinese",
+          "plot": "test",
+          "director": "Philip G. Atwell",
+          "actor": "Josh Gad",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre: war; actor: Josh Gad; director: Philip G. Atwell; writer: Tate Taylor; language: Standard Chinese; plot keywords: like, sound.\nBased on the user's preferences, I recommend \"Inglourious Basterds\" (2009) and \"Training Day\" (2001). Both films feature a gripping plot and an impressive cast, including Josh Gad in a supporting role. \"Inglourious Basterds\" is a Quentin Tarantino film that combines dark humor with intense action, while \"Training Day\" is a tense thriller that explores the complexities of police work.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "War",
+        "actor": "Josh Gad",
+        "director": "Philip G. Atwell",
+        "writer": "Tate Taylor",
+        "language": "Standard Chinese"
+      },
+      "rec_titles": [
+        "Inglourious Basterds",
+        "Training Day",
+        "The Best Years of Our Lives",
+        "Redacted"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? That sounds intriguing.",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "standard chinese",
+        "anchor_title": "The Clan of the Cave Bear",
+        "constraints": {
+          "genre": "standard chinese",
+          "plot": "test",
+          "director": "Philip G. Atwell",
+          "actor": "Josh Gad",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: \"What's the mood of Us? That sounds intriguing.\" (genre: war, actor: Josh Gad, director: Philip G. Atwell, writer: Tate Taylor, language: Standard Chinese)\n\nBased on your preferences, I recommend \"Ocean's Twelve\" and \"Her\". Both movies offer an intriguing blend of suspense, humor, and thought-provoking themes that match your mood. In \"Ocean's Twelve\", you can enjoy the witty banter and elaborate heists of a talented ensemble cast, led by George Clooney and Brad Pitt. Meanwhile, \"Her\" presents a unique and introspective exploration of modern dating experiences through the lens of a futuristic love story starring Scarlett Johansson.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Us",
+        "actor": "Josh Gad",
+        "director": "Philip G. Atwell",
+        "writer": "Tate Taylor",
+        "language": "Standard Chinese"
+      },
+      "rec_titles": [
+        "Ocean's Twelve",
+        "Lord of War",
+        "I Heart Huckabees",
+        "Her"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Ted Griffin? That feels deeper than I thought. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 43,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Ted Griffin",
+        "anchor_title": "Us",
+        "constraints": {
+          "genre": "standard chinese",
+          "plot": "reunite",
+          "director": "Philip G. Atwell",
+          "actor": "Josh Gad",
+          "writer": "Ted Griffin"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 43,
+          "from_focus": "genre",
+          "to_focus": "writer",
+          "bridge_field": "plot",
+          "bridge_value": "reunite",
+          "from_anchor": "The Clan of the Cave Bear",
+          "to_anchor": "Us"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure! Based on the user's preferences, I would recommend \"Crouching Tiger, Hidden Dragon\" and \"Red Dawn\". Both movies feature heartless army forces causing chaos and destruction, with a focus on action and adventure. In \"Crouching Tiger, Hidden Dragon\", a young Chinese warrior goes on a romantic adventure with a mysterious man in the frontier of the nation, while in \"Red Dawn\", a group of teenagers must fight against a Mexican middle-class family that has been taken over by wild and heartless forces. Both movies have great plotlines and impressive actors, such as Chang Chen and Jennifer Grey in \"Red Dawn\" and Zhang Ziyi and Takeshi Kaneshiro in \"Crouching Tiger, Hidden Dragon\".",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "written",
+          "griffin"
+        ],
+        "name": "Ted",
+        "actor": "Josh Gad",
+        "director": "Philip G. Atwell",
+        "writer": "Ted Griffin",
+        "language": "Standard Chinese"
+      },
+      "rec_titles": [
+        "Red Dawn",
+        "Crouching Tiger, Hidden Dragon",
+        "Kundun",
+        "Flyboys"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Ted Griffin",
+        "anchor_title": "Us",
+        "constraints": {
+          "genre": "standard chinese",
+          "plot": "reunite",
+          "director": "Philip G. Atwell",
+          "actor": "Josh Gad",
+          "writer": "Ted Griffin"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: war; actor: Josh Gad; director: Philip G. Atwell; writer: Ted Griffin; language: Standard Chinese; plot keywords: just, more.\nBased on the user's preferences, I recommend \"We Were Soldiers\" and \"Patriot Games\". Both movies are action-packed and feature actors who have worked with Josh Gad, such as Mel Gibson in \"Patriot Games\" and Anne Archer in \"We Were Soldiers\". The plots of these movies also align with the user's interest in war and intrigue.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Josh Gad",
+        "director": "Philip G. Atwell",
+        "writer": "Ted Griffin",
+        "language": "Standard Chinese"
+      },
+      "rec_titles": [
+        "Amen.",
+        "White Night",
+        "We Were Soldiers",
+        "Patriot Games"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Scarlett Johansson. That sounds intriguing. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 45,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Scarlett Johansson",
+        "anchor_title": "Grown Ups",
+        "constraints": {
+          "genre": "standard chinese",
+          "plot": "reunite",
+          "director": "Philip G. Atwell",
+          "actor": "Scarlett Johansson"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 45,
+          "from_focus": "writer",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Scarlett Johansson",
+          "from_anchor": "Us",
+          "to_anchor": "Grown Ups"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, I understand that you're looking for movies with Scarlett Johansson and a war theme. Based on your previous input, I recommend \"Still Alice\" and \"The Avengers.\" Both of these movies have a strong cast, including Scarlett Johansson, and touch on themes of war and conflict in different ways. In \"Still Alice,\" Johansson plays a linguistics professor struggling with Alzheimer's disease, while in \"The Avengers,\" she joins a team of superheroes to fight against an alien invasion. Both movies are thought-provoking and emotionally charged, and I think you'll find them engaging and satisfying.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Her",
+        "actor": "Scarlett Johansson",
+        "director": "Philip G. Atwell",
+        "writer": "Ted Griffin",
+        "language": "Standard Chinese"
+      },
+      "rec_titles": [
+        "Still Alice",
+        "We Were Soldiers",
+        "The Whistler",
+        "The Avengers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Scarlett Johansson",
+        "anchor_title": "Grown Ups",
+        "constraints": {
+          "genre": "standard chinese",
+          "plot": "reunite",
+          "director": "Philip G. Atwell",
+          "actor": "Scarlett Johansson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're welcome! Based on the user's preferences, I recommend \"The Lucky Ones\" and \"Lost in Translation.\" Both films feature Scarlett Johansson in leading roles, with \"The Lucky Ones\" being a poignant drama about soldiers returning from war and struggling to adjust to civilian life, and \"Lost in Translation\" being a heartwarming comedy-drama about two strangers who form an unlikely bond in Tokyo.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Scarlett Johansson",
+        "director": "Philip G. Atwell",
+        "writer": "Ted Griffin",
+        "language": "Standard Chinese"
+      },
+      "rec_titles": [
+        "The Lucky Ones",
+        "The Wonderful Wizard of Oz",
+        "Lost in Translation",
+        "Rob Roy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Lost in Translation? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Scarlett Johansson",
+        "anchor_title": "Grown Ups",
+        "constraints": {
+          "genre": "standard chinese",
+          "plot": "reunite",
+          "director": "Philip G. Atwell",
+          "actor": "Scarlett Johansson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - war, Actor - Scarlett Johansson, Director - Philip G. Atwell, Writer - Ted Griffin, Language - Standard Chinese, Plot keywords - what, lost.\nBased on these constraints, I recommend watching \"The Prestige\" and \"The Skulls\". Both movies have a mysterious and intriguing plot that explores themes of obsession and sacrifice, which seems to align with the user's preferences. \"The Prestige\" features an all-star cast including Hugh Jackman, Christian Bale, and Michael Caine, while \"The Skulls\" has a unique blend of mystery and suspense with a talented young cast led by Kevin Allen and Rob Cohen.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "lost"
+        ],
+        "name": "Lost",
+        "actor": "Scarlett Johansson",
+        "director": "Philip G. Atwell",
+        "writer": "Ted Griffin",
+        "language": "Standard Chinese"
+      },
+      "rec_titles": [
+        "The Skulls",
+        "The Horse Whisperer",
+        "The White Countess",
+        "The Prestige"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Skulls. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Scarlett Johansson",
+        "anchor_title": "Grown Ups",
+        "constraints": {
+          "genre": "standard chinese",
+          "plot": "reunite",
+          "director": "Philip G. Atwell",
+          "actor": "Scarlett Johansson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User Constraints:\nThe user is looking for a movie that stars Scarlett Johansson and is about war. They are interested in a deeper story than they initially thought, and prefer to watch movies in Standard Chinese with English subtitles.\n\nRecommendation:\nBased on the user's constraints, I would recommend \"The Pianist\" (2002) starring Scarlett Johansson. The movie is a powerful and emotional drama that explores the struggles of a Polish musician during World War II. It is a deeper and more thought-provoking film than the user initially expected, and it features Scarlett Johansson in a leading role.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Skulls",
+        "actor": "Scarlett Johansson",
+        "director": "Philip G. Atwell",
+        "writer": "Ted Griffin",
+        "language": "Standard Chinese"
+      },
+      "rec_titles": [
+        "Tora! Tora! Tora!",
+        "A Bridge Too Far",
+        "The Pianist",
+        "Captain America: Civil War"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Scarlett Johansson",
+        "anchor_title": "Grown Ups",
+        "constraints": {
+          "genre": "standard chinese",
+          "plot": "reunite",
+          "director": "Philip G. Atwell",
+          "actor": "Scarlett Johansson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: War, actor Scarlett Johansson, director Philip G. Atwell, language Standard Chinese.\nRecommendation: Based on the user's preferences, I would recommend \"The Skulls\" (2000) starring Kevin Allen and Rob Cohen. The movie follows a college student who joins a secret society at his elite university, but the price he pays is higher than he ever imagined. Alternatively, \"Hollywood Ending\" (2002) directed by Mark Rydell and starring Woody Allen and Debra Messing could also be of interest to the user. The film is about a director who suffers from psychosomatic blindness just before shooting his new movie, leading to an unexpected turn of events.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "actor": "Scarlett Johansson",
+        "director": "Philip G. Atwell",
+        "writer": "Ted Griffin",
+        "language": "Standard Chinese"
+      },
+      "rec_titles": [
+        "The Skulls",
+        "War",
+        "The Horse Whisperer",
+        "Hollywood Ending"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on War. I want to try something more screwball comedy—Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 50,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "screwball comedy",
+        "anchor_title": "What Dreams May Come",
+        "constraints": {
+          "genre": "screwball comedy",
+          "plot": "reunite",
+          "director": "Philip G. Atwell",
+          "actor": "Scarlett Johansson"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 50,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "indian",
+          "from_anchor": "Grown Ups",
+          "to_anchor": "What Dreams May Come"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, they seem to enjoy lighthearted comedies with a mix of humor and absurdity. Of the movies listed, I would recommend \"Step Brothers\" and \"Waking Ned Devine.\" Both of these films have a great balance of humor and quirkiness that I think the user will enjoy.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "War",
+        "actor": "Scarlett Johansson",
+        "director": "Philip G. Atwell",
+        "writer": "Ted Griffin",
+        "language": "Standard Chinese"
+      },
+      "rec_titles": [
+        "The Tempest",
+        "Waking Ned Devine",
+        "The Good Dinosaur",
+        "Step Brothers"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 5,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "bringing",
+      "from_anchor": "Memento",
+      "to_anchor": "Collateral"
+    },
+    {
+      "turn": 8,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Donna Reed",
+      "from_anchor": "Collateral",
+      "to_anchor": "Ted"
+    },
+    {
+      "turn": 14,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "wish",
+      "from_anchor": "Ted",
+      "to_anchor": "Aladdin"
+    },
+    {
+      "turn": 20,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "first",
+      "from_anchor": "Aladdin",
+      "to_anchor": "The Golden Compass"
+    },
+    {
+      "turn": 24,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "wish",
+      "from_anchor": "The Golden Compass",
+      "to_anchor": "Van Helsing"
+    },
+    {
+      "turn": 27,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "runaway",
+      "from_anchor": "Van Helsing",
+      "to_anchor": "Watchers"
+    },
+    {
+      "turn": 30,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Watchers",
+      "to_anchor": "A Farewell to Arms"
+    },
+    {
+      "turn": 35,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "test",
+      "from_anchor": "A Farewell to Arms",
+      "to_anchor": "Tarnation"
+    },
+    {
+      "turn": 38,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "director",
+      "bridge_value": "Philip G. Atwell",
+      "from_anchor": "Tarnation",
+      "to_anchor": "The Clan of the Cave Bear"
+    },
+    {
+      "turn": 43,
+      "from_focus": "genre",
+      "to_focus": "writer",
+      "bridge_field": "plot",
+      "bridge_value": "reunite",
+      "from_anchor": "The Clan of the Cave Bear",
+      "to_anchor": "Us"
+    },
+    {
+      "turn": 45,
+      "from_focus": "writer",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Scarlett Johansson",
+      "from_anchor": "Us",
+      "to_anchor": "Grown Ups"
+    },
+    {
+      "turn": 50,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "indian",
+      "from_anchor": "Grown Ups",
+      "to_anchor": "What Dreams May Come"
+    }
+  ]
+}

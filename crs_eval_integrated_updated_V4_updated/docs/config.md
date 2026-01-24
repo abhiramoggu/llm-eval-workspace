@@ -9,8 +9,12 @@ This file defines **global configuration** for simulation, evaluation, logging, 
 - `USER_MODEL`, `JUDGE_MODEL`: Ollama model names for the simulator and judge.
 - `TOPIC_EXTRACTOR_MODE`: `"llm"`, `"lda"`, or `"heuristic"` for legacy topic extraction.
 - `CONCEPT_EXTRACTOR_MODEL`: model used when `CONCEPT_EXTRACTOR_MODE="llm"`.
-- `CONCEPT_EXTRACTOR_MODE`: `"catalog"` (default) or `"llm"` for grounded concept extraction.
+- `CONCEPT_EXTRACTOR_MODE`: `"catalog"` (default), `"embed"`, or `"llm"` for grounded concept extraction.
+- `CONCEPT_EMBED_THRESHOLD`: minimum similarity for `"embed"` mode (char n-gram TF-IDF).
+- `CONCEPT_EMBED_TOP_K`: top-K candidates per field for `"embed"` mode.
 - `N_TURNS`: number of USER turns (conversation will have `2*N_TURNS` messages).
+- `N_SESSIONS`: number of conversations per model in batch runs.
+- `SHIFT_AFTER_TURNS`: force the first simulator shift after this USER turn.
 - `LOG_DIR`: directory for saved conversation logs.
 - `TAS_WEIGHTS`: `{alpha, beta, gamma}` in `TAS(t) = alpha*CC + beta*CR - gamma*I`.
 - `ALIGNMENT_THRESHOLD`: CC threshold used for recovery.
@@ -18,6 +22,7 @@ This file defines **global configuration** for simulation, evaluation, logging, 
 - `EVAL_MODE`: `"grounded"` (preferred) or `"legacy"` (older experimental methods).
 - `RESULTS_FILE`, `SUMMARY_CSV`, `FIG_DIR`: output paths for results and figures.
 - `USE_TRANSFORMER_EMBEDDER`: toggles sentence-transformer embeddings in legacy mode.
+- `ENABLE_REC_SAT`: enables recommendation satisfaction proxy (disabled by default).
 - `STRUCTURED_CONCEPT_FIELDS`: canonical grounded fields for TAS/diagnostics.
 - `CONCEPT_FIELDS`: alias for `STRUCTURED_CONCEPT_FIELDS`.
 - `TOPIC_FIELDS`: legacy alias for `CONCEPT_FIELDS` (do not remove yet).

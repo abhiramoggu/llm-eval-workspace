@@ -38,11 +38,22 @@ import dataset
 from config import (
     CONCEPT_EXTRACTOR_MODE,
     CONCEPT_EXTRACTOR_MODEL,
+    CONCEPT_EMBED_THRESHOLD,
+    CONCEPT_EMBED_TOP_K,
     CONCEPT_FIELDS,
     PLOT_FIELD,
     TITLE_FIELD,
     USE_PLOT_KW_FOR_TAS,
 )
+
+try:
+    from sklearn.feature_extraction.text import TfidfVectorizer
+    from sklearn.metrics.pairwise import cosine_similarity as _sk_cosine_similarity
+    _SKLEARN_AVAILABLE = True
+except Exception:
+    _SKLEARN_AVAILABLE = False
+
+_EMBED_WARNED = False
 
 
 _WORD_RE = re.compile(r"[A-Za-z0-9]+(?:'[A-Za-z0-9]+)?")
@@ -174,6 +185,8 @@ class FeaturizerConfig:
     plot_field: str = PLOT_FIELD
     concept_extractor_mode: str = CONCEPT_EXTRACTOR_MODE
     concept_extractor_model: str = CONCEPT_EXTRACTOR_MODEL
+    embed_threshold: float = CONCEPT_EMBED_THRESHOLD
+    embed_top_k: int = CONCEPT_EMBED_TOP_K
 
 
 class CatalogFeaturizer:
@@ -181,6 +194,16 @@ class CatalogFeaturizer:
 
     def __init__(self, cfg: Optional[FeaturizerConfig] = None):
         self.cfg = cfg or FeaturizerConfig()
+        self._embed_index = None
+        self._embed_threshold = float(self.cfg.embed_threshold)
+        self._embed_top_k = max(1, int(self.cfg.embed_top_k))
+        if self.cfg.concept_extractor_mode == "embed":
+            self._embed_index = self._build_embed_index()
+            if self._embed_index is None:
+                global _EMBED_WARNED
+                if not _EMBED_WARNED:
+                    print("Warning: sklearn not available; falling back to heuristic extractor.")
+                    _EMBED_WARNED = True
 
         # Vocabulary = fielded terms for structured fields + plot keywords
         self.term2idx: Dict[str, int] = {}
@@ -221,6 +244,29 @@ class CatalogFeaturizer:
             dfi = df.get(term, 0)
             idf_arr[i] = math.log((1.0 + N) / (1.0 + dfi)) + 1.0
         self.idf = idf_arr
+
+    def _build_embed_index(self):
+        if not _SKLEARN_AVAILABLE:
+            return None
+        index = {}
+        for field in self.cfg.topic_fields:
+            if field not in dataset.ATTRIBUTE_CANONICAL:
+                continue
+            values = [v for v in dataset.ATTRIBUTE_CANONICAL[field].keys() if v]
+            if not values:
+                continue
+            vectorizer = TfidfVectorizer(
+                analyzer="char_wb",
+                ngram_range=(3, 5),
+                lowercase=True,
+            )
+            matrix = vectorizer.fit_transform(values)
+            index[field] = {
+                "vectorizer": vectorizer,
+                "matrix": matrix,
+                "candidates": values,
+            }
+        return index
 
     @property
     def vocab_size(self) -> int:
@@ -289,12 +335,39 @@ class CatalogFeaturizer:
                 grouped.setdefault(self.cfg.plot_field, set()).add(f"{self.cfg.plot_field}={kw}")
         return grouped
 
+    def _extract_fielded_terms_embed(self, text: str) -> Dict[str, Set[str]]:
+        """Return terms grouped by field using grounded char-ngram similarity."""
+        grouped: Dict[str, Set[str]] = {f: set() for f in self.cfg.topic_fields}
+        if not text or not text.strip() or not self._embed_index:
+            return grouped
+        for field in self.cfg.topic_fields:
+            info = self._embed_index.get(field)
+            if not info:
+                continue
+            vec = info["vectorizer"].transform([text])
+            sims = _sk_cosine_similarity(vec, info["matrix"]).ravel()
+            if sims.size == 0:
+                continue
+            idxs = np.argsort(-sims)[: self._embed_top_k]
+            for idx in idxs:
+                if sims[idx] >= self._embed_threshold:
+                    norm = info["candidates"][idx]
+                    grouped[field].add(f"{field}={norm}")
+        if self.cfg.include_plot_keywords:
+            lowered = text.lower()
+            for kw in dataset.find_plot_keywords_in_text(lowered):
+                grouped.setdefault(self.cfg.plot_field, set()).add(f"{self.cfg.plot_field}={kw}")
+        return grouped
+
     def extract_fielded_terms(self, text: str) -> Dict[str, Set[str]]:
         """Return terms grouped by field using configured extractor."""
         if self.cfg.concept_extractor_mode == "llm":
             llm_grouped = self._extract_fielded_terms_llm(text)
             if llm_grouped and any(llm_grouped.values()):
                 return llm_grouped
+        if self.cfg.concept_extractor_mode == "embed":
+            if self._embed_index is not None:
+                return self._extract_fielded_terms_embed(text)
         return self._extract_fielded_terms_heuristic(text)
 
     def topic_set(self, text: str, fields: Optional[Iterable[str]] = None) -> Set[str]:

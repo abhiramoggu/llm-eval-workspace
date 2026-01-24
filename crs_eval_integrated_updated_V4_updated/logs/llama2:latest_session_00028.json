@@ -1,0 +1,2235 @@
+{
+  "session_id": "00028",
+  "model_name": "llama2:latest",
+  "true_genre": "western",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a western movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "western",
+        "anchor_title": "The Hateful Eight",
+        "constraints": {
+          "genre": "western"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure! Based on the user's preference for a western movie, I recommend \"A Fistful of Dollars\" and \"Once Upon a Time in Mexico.\" Both films offer exciting plots and memorable performances from their casts, including Clint Eastwood in the former and Antonio Banderas and Salma Hayek in the latter.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "western",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "A Fistful of Dollars",
+        "The Secret of My Success",
+        "Forsaken",
+        "Once Upon a Time in Mexico"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Brian Helgeland? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of A Fistful of Dollars.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Brian Helgeland",
+        "anchor_title": "Serenity",
+        "constraints": {
+          "genre": "western",
+          "director": "Brian Helgeland",
+          "plot": "each"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "each",
+          "from_anchor": "The Hateful Eight",
+          "to_anchor": "Serenity"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preference for a western movie directed by Brian Helgeland, I recommend \"Django Unchained\" and \"True Blood.\" Both of these movies offer exciting plots and an all-star cast, including Leonardo DiCaprio in \"Django Unchained\" and Misty Upham in \"True Blood.\"",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "A Fistful of Dollars",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland"
+      },
+      "rec_titles": [
+        "True Blood",
+        "Django Unchained",
+        "Posse",
+        "Jane Got a Gun"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Brian Helgeland",
+        "anchor_title": "Serenity",
+        "constraints": {
+          "genre": "western",
+          "director": "Brian Helgeland",
+          "plot": "each"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User: Just checking—do you have more recommendations like that?\n\nYou: Of course! Based on your preferences, I would recommend \"Tarnation\" and \"Fight Club.\" Both are thought-provoking and visually striking films that explore themes of identity and rebellion. \"Tarnation\" is a unique blend of documentary and fiction, showcasing the complex relationship between a filmmaker and his schizophrenic mother. \"Fight Club,\" on the other hand, is a cult classic that delves into the darker side of masculinity and consumerism.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland"
+      },
+      "rec_titles": [
+        "Tarnation",
+        "The Pink Panther 2",
+        "Django Unchained",
+        "Fight Club"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Brian Helgeland",
+        "anchor_title": "Serenity",
+        "constraints": {
+          "genre": "western",
+          "director": "Brian Helgeland",
+          "plot": "each"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Western genre, Brian Helgeland director/writer, and plot keywords \"what\" and \"kind\".\nBased on these cues, I recommend \"Monsters, Inc.\" and \"Dances with Wolves\". Both movies offer a unique and thought-provoking storyline that may appeal to the user's preferences. In \"Monsters, Inc.\", the movie takes a fresh approach to the traditional monster genre by exploring the idea of children being toxic to monsters, while \"Dances with Wolves\" tells a powerful tale of cultural clashes and personal growth through the eyes of a Lieutenant who finds himself questioning his own purpose.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland"
+      },
+      "rec_titles": [
+        "Monsters, Inc.",
+        "The Newton Boys",
+        "Mystic River",
+        "Dances with Wolves"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Brian Helgeland",
+        "anchor_title": "Serenity",
+        "constraints": {
+          "genre": "western",
+          "director": "Brian Helgeland",
+          "plot": "each"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user is looking for a movie that explores a deeper theme, has a Western genre, and features a director and writer known for their storytelling abilities.\nRecommendation: Based on the user's preferences, I would recommend \"Smilla's Sense of Snow\" or \"You\". Both movies delve into complex themes and feature talented actors and directors. \"Smilla's Sense of Snow\" is a thought-provoking mystery that explores the bond between an Inuit boy and his half-Inuit caregiver, while \"You\" raises questions about society's moral compass through its gripping narrative.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Deep",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland"
+      },
+      "rec_titles": [
+        "Smilla's Sense of Snow",
+        "Blood Work",
+        "Once Upon a Time in Mexico",
+        "You"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Brian Helgeland",
+        "anchor_title": "Serenity",
+        "constraints": {
+          "genre": "western",
+          "director": "Brian Helgeland",
+          "plot": "each"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I would recommend \"The Quick and the Dead\" (1995) starring Sharon Stone and Gary Busey. This movie fits their criteria as a western with a strong female lead and a focus on gunfights. Additionally, it features a unique dueling tournament that could appeal to the user's interest in the plot keywords \"like\" and \"sound.\"\n\nAnother recommendation I would like to suggest is \"3:10 to Yuma\" (2007) starring Christian Bale and Russell Crowe. This movie has a similar western theme and features a tense standoff between a rancher and an outlaw, which could satisfy the user's preference for action-packed plots.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "You",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland"
+      },
+      "rec_titles": [
+        "The Quick and the Dead",
+        "Tombstone",
+        "3:10 to Yuma",
+        "The Horse Whisperer"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Catherine Bell. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of 3:10 to Yuma.)",
+      "user_meta": {
+        "turn": 7,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Catherine Bell",
+        "anchor_title": "Bruce Almighty",
+        "constraints": {
+          "genre": "western",
+          "plot": "agrees",
+          "actor": "Catherine Bell"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 7,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "agrees",
+          "from_anchor": "Serenity",
+          "to_anchor": "Bruce Almighty"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, they seem to enjoy movies with Catherine Bell and a western theme. Here are two movie recommendations that fit within those constraints:\n\n* \"Divergent\" (2011) - This action-packed movie stars Shailene Woodley as Beatrice \"Tris\" Prior, a young woman who discovers she's Divergent, meaning she doesn't fit into any one category in a society divided by virtues. With the help of Four (Theo James), Tris must navigate a dangerous plot to destroy Divergents while uncovering the truth about her society.\n* \"Raiders of the Lost Ark\" (1981) - This classic adventure movie follows archaeologist Indiana Jones (Harrison Ford) as he races against the Nazis to find the Ark of the Covenant before they can use its powerful magic. With a mix of action, humor, and memorable characters, this movie is a thrilling ride from start to finish.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Her",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland",
+        "actor": "Catherine Bell"
+      },
+      "rec_titles": [
+        "Divergent",
+        "Raiders of the Lost Ark",
+        "The Order",
+        "Artemis Fowl"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Catherine Bell",
+        "anchor_title": "Bruce Almighty",
+        "constraints": {
+          "genre": "western",
+          "plot": "agrees",
+          "actor": "Catherine Bell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, I understand you're looking for more movies similar to the ones you've mentioned. Based on your previous cues, here are my recommendations:\n\n* If you enjoy lighthearted comedies with a fun cast, you might enjoy \"New York Minute\" (2004) starring Andrea Martin and Mary-Kate Olsen. The movie follows two sisters who embark on a series of misadventures in New York City.\n* If you're interested in a more complex and intriguing plot, \"Southland Tales\" (2006) might be up your alley. Starring a talented ensemble cast including Justin Timberlake, Mandy Moore, and Jon Lovitz, the movie explores themes of identity, conspiracy, and action.\n\nBoth movies offer an entertaining blend of humor and intrigue, so feel free to check them out!",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland",
+        "actor": "Catherine Bell"
+      },
+      "rec_titles": [
+        "New York Minute",
+        "Southland Tales",
+        "The Swindle",
+        "Wild Wild West"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Catherine Bell",
+        "anchor_title": "Bruce Almighty",
+        "constraints": {
+          "genre": "western",
+          "plot": "agrees",
+          "actor": "Catherine Bell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user is interested in a movie with a similar sound to \"Us\", starring Catherine Bell, and directed by Brian Helgeland or written by him.\nBased on the provided recommendations, I would suggest \"The Amazing Spider-Man\" (2012) starring Andrew Garfield and Emma Stone. The movie has a similar superhero vibe to \"Us\", with action-packed scenes and a intriguing plot. Additionally, Catherine Bell doesn't appear in this movie, but the cast is impressive, including Rhys Ifans, Jill Flint, Michael Papajohn, Chris Zylka, and others.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland",
+        "actor": "Catherine Bell"
+      },
+      "rec_titles": [
+        "X-Men: First Class",
+        "Restless",
+        "The Amazing Spider-Man",
+        "The Divide"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Hero? That sounds intriguing.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Catherine Bell",
+        "anchor_title": "Bruce Almighty",
+        "constraints": {
+          "genre": "western",
+          "plot": "agrees",
+          "actor": "Catherine Bell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: western, actor Catherine Bell, director Brian Helgeland, writer Brian Helgeland, plot keywords \"what\" and \"hero\".\nRecommendation: If you're looking for a movie with a similar tone and themes as \"Hero\", I would recommend \"Lady in the Water\" and \"Bruce Almighty\". Both films feature unique plots and intriguing characters, with a focus on the hero's journey and self-discovery.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "what",
+          "hero"
+        ],
+        "name": "Her",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland",
+        "actor": "Catherine Bell"
+      },
+      "rec_titles": [
+        "Lady in the Water",
+        "Bruce Almighty",
+        "Paycheck",
+        "The Equalizer"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Her tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Catherine Bell",
+        "anchor_title": "Bruce Almighty",
+        "constraints": {
+          "genre": "western",
+          "plot": "agrees",
+          "actor": "Catherine Bell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - western, actor - Catherine Bell, director - Brian Helgeland, writer - Brian Helgeland, plot keywords - what, kind.\nRecommendation: The Violent Kind is a gritty and intense horror film that explores the themes of possession and the supernatural, starring Taylor Cole in a leading role. For a more lighthearted recommendation, Butch Cassidy and the Sundance Kid is a classic adventure film with a great cast, including Paul Newman and Robert Redford, that follows the adventures of two outlaws on the run from the law.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland",
+        "actor": "Catherine Bell"
+      },
+      "rec_titles": [
+        "The Violent Kind",
+        "Butch Cassidy and the Sundance Kid",
+        "The Way Back Home",
+        "Taxi Driver"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, could we talk about Notes on a Scandal specifically? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "waiting_system",
+        "focus_field": "name",
+        "focus_value": "Notes on a Scandal",
+        "anchor_title": "Young Guns",
+        "constraints": {
+          "genre": "western",
+          "plot": "veteran",
+          "actor": "Catherine Bell",
+          "name": "Notes on a Scandal"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 12,
+          "from_focus": "actor",
+          "to_focus": "name",
+          "bridge_field": "plot",
+          "bridge_value": "veteran",
+          "from_anchor": "Bruce Almighty",
+          "to_anchor": "Young Guns"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Western genre, actor Catherine Bell, director Brian Helgeland, and plot keywords \"actually\" and \"could\".\nRecommendation: Based on the user's preferences, I would recommend \"The Homesman\" (2014) starring Miranda Otto and Barry Corbin. The movie follows three women who are driven mad by pioneer life and must be transported across the country by a pious and independent-minded Mary Bee Cuddy, with the help of a low-life drifter. Another recommendation would be \"Blood Work\" (1998) starring Clint Eastwood as a retired F.B.I. profiler who returns to service when his own blood analysis offers clues to the identity of a serial killer. Both movies offer a gripping and thought-provoking plot that aligns with the user's preferences.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "actually",
+          "could"
+        ],
+        "name": "Notes on a Scandal",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland",
+        "actor": "Catherine Bell"
+      },
+      "rec_titles": [
+        "The Homesman",
+        "The Alamo",
+        "Blood Work",
+        "The Horse Whisperer"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "Notes on a Scandal",
+        "anchor_title": "Young Guns",
+        "constraints": {
+          "genre": "western",
+          "plot": "veteran",
+          "actor": "Catherine Bell",
+          "name": "Notes on a Scandal"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, I recommend \"The Truth\" and \"Donnie Brasco.\" Both of these movies offer a gripping plot and talented actors, including Catherine Bell in \"The Truth\" and Johnny Depp in \"Donnie Brasco.\"",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland",
+        "actor": "Catherine Bell"
+      },
+      "rec_titles": [
+        "The Truth",
+        "Blood Work",
+        "The Last Stand",
+        "Donnie Brasco"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Donnie Brasco. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "Notes on a Scandal",
+        "anchor_title": "Young Guns",
+        "constraints": {
+          "genre": "western",
+          "plot": "veteran",
+          "actor": "Catherine Bell",
+          "name": "Notes on a Scandal"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Here are the user's constraints restated in natural language:\n\nThe user is interested in movies that have a similar sound and atmosphere to Donnie Brasco, specifically in the western genre with a focus on actors Catherine Bell and Brian Helgeland.\n\nBased on these constraints, I would recommend \"The Missing\" and \"Total Recall\". Both of these movies offer a unique blend of mystery, suspense, and action that are reminiscent of Donnie Brasco's sound and atmosphere. \"The Missing\" stars Ray McKinnon and Tommy Lee Jones in a thrilling tale of conspiracy and intrigue, while \"Total Recall\" features Arnold Schwarzenegger in a mind-bending sci-fi adventure that explores the themes of identity and reality.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Donnie Brasco",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland",
+        "actor": "Catherine Bell"
+      },
+      "rec_titles": [
+        "The Missing",
+        "Total Recall",
+        "It's a Wonderful Life",
+        "Young Guns"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Missing tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "Notes on a Scandal",
+        "anchor_title": "Young Guns",
+        "constraints": {
+          "genre": "western",
+          "plot": "veteran",
+          "actor": "Catherine Bell",
+          "name": "Notes on a Scandal"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: The user is interested in a movie with a western theme, starring Catherine Bell, and directed by Brian Helgeland or written by Brian Helgeland.\n\nRecommendation: If you're looking for a western movie with a comedic twist, I would recommend 'Witless Protection' starring Catherine Bell and Larry the Cable Guy. The movie follows a small-town sheriff as he tries to save a beautiful damsel in distress, leading to a series of hilarious mishaps. Alternatively, if you're interested in a more serious take on the western genre, 'Prometheus' directed by Brian Helgeland and starring Michael Fassbender and Charlize Theron is a thought-provoking and visually stunning film that explores the consequences of humanity's misuse of power.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The Missing",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland",
+        "actor": "Catherine Bell"
+      },
+      "rec_titles": [
+        "Witless Protection",
+        "Prometheus",
+        "September Dawn",
+        "Hitch"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "Notes on a Scandal",
+        "anchor_title": "Young Guns",
+        "constraints": {
+          "genre": "western",
+          "plot": "veteran",
+          "actor": "Catherine Bell",
+          "name": "Notes on a Scandal"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - western, actor - Catherine Bell, director - Brian Helgeland, writer - Brian Helgeland, plot keywords - what, and the user said they didn't expect that vibe. Based on these constraints, I recommend \"Utsav\" and \"A Fistful of Dollars\". \"Utsav\" is a faithful adaptation of an ancient Indian play, with a unique blend of drama and romance. \"A Fistful of Dollars\" is a classic spaghetti western that follows the adventures of a lone gunfighter in a town torn apart by greed and revenge, featuring Clint Eastwood in his iconic role. Both movies offer a gripping story with memorable characters and action-packed plot twists.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "X",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland",
+        "actor": "Catherine Bell"
+      },
+      "rec_titles": [
+        "Utsav",
+        "The Man from Snowy River",
+        "Divergent",
+        "A Fistful of Dollars"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Simon Pegg. That feels deeper than I thought. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 17,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Simon Pegg",
+        "anchor_title": "The Mask of Zorro",
+        "constraints": {
+          "genre": "western",
+          "plot": "prostitute",
+          "actor": "Simon Pegg",
+          "name": "Notes on a Scandal"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 17,
+          "from_focus": "name",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "prostitute",
+          "from_anchor": "Young Guns",
+          "to_anchor": "The Mask of Zorro"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - western, Actor - Simon Pegg, Director - Brian Helgeland, Writer - Simon Pegg.\nRecommendation: Based on the user's preferences, I would recommend \"The Legend of Zorro\" and \"Slow West\". Both movies feature Simon Pegg in a leading role, and they have similar western themes and action-packed plots that seem to align with the user's interests.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Deep",
+        "director": "Brian Helgeland",
+        "writer": "Simon Pegg",
+        "actor": "Simon Pegg"
+      },
+      "rec_titles": [
+        "The Legend of Zorro",
+        "Still Alice",
+        "I Love You, Man",
+        "Slow West"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Simon Pegg",
+        "anchor_title": "The Mask of Zorro",
+        "constraints": {
+          "genre": "western",
+          "plot": "prostitute",
+          "actor": "Simon Pegg",
+          "name": "Notes on a Scandal"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre: western; actor: Simon Pegg; director: Brian Helgeland; writer: Simon Pegg; plot keywords: just, more.\nBased on these cues, I recommend checking out 'Shaun of the Dead' and '12 Angry Men'. Both movies are critically acclaimed and feature Simon Pegg in a leading role. 'Shaun of the Dead' is a hilarious zombie comedy that follows a aimless Londoner as he navigates a zombie apocalypse, while '12 Angry Men' is a tense drama that explores the justice system through the lens of a single juror's skepticism. Both movies are thought-provoking and entertaining in their own unique ways.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Brian Helgeland",
+        "writer": "Simon Pegg",
+        "actor": "Simon Pegg"
+      },
+      "rec_titles": [
+        "Shaun of the Dead",
+        "12 Angry Men",
+        "The Secret of My Success",
+        "Braveheart"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of London. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Simon Pegg",
+        "anchor_title": "The Mask of Zorro",
+        "constraints": {
+          "genre": "western",
+          "plot": "prostitute",
+          "actor": "Simon Pegg",
+          "name": "Notes on a Scandal"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - western, Actor - Simon Pegg, Director - Brian Helgeland, Writer - Simon Pegg\nRecommendation: Based on your preferences, I would recommend \"No Country for Old Men\" and \"The Quick and the Dead\". Both movies are critically acclaimed westerns that feature strong performances from talented actors, including Josh Brolin, Javier Bardem, and Russell Crowe.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "London",
+        "director": "Brian Helgeland",
+        "writer": "Simon Pegg",
+        "actor": "Simon Pegg"
+      },
+      "rec_titles": [
+        "The Assassination of Jesse James by the Coward Robert Ford",
+        "No Country for Old Men",
+        "The Quick and the Dead",
+        "Cowboys & Aliens"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Quick and the Dead? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Simon Pegg",
+        "anchor_title": "The Mask of Zorro",
+        "constraints": {
+          "genre": "western",
+          "plot": "prostitute",
+          "actor": "Simon Pegg",
+          "name": "Notes on a Scandal"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - western, Actor - Simon Pegg, Director - Brian Helgeland, Writer - Simon Pegg.\nRecommendation: Django Unchained is a great choice for fans of Simon Pegg's work in the western genre. The film features a powerful cast, including Samuel L. Jackson and Leonardo DiCaprio, and explores themes of slavery and violence in a unique and thought-provoking way. Alternatively, The World's End is also worth checking out for its blend of action, comedy, and nostalgia, with a talented ensemble cast led by Pegg himself.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "what",
+          "quick"
+        ],
+        "name": "The Quick and the Dead",
+        "director": "Brian Helgeland",
+        "writer": "Simon Pegg",
+        "actor": "Simon Pegg"
+      },
+      "rec_titles": [
+        "Django Unchained",
+        "The Trouble with Harry",
+        "Gunless",
+        "The World's End"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Kirk DeMicco? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Django Unchained.)",
+      "user_meta": {
+        "turn": 21,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Kirk DeMicco",
+        "anchor_title": "The Homesman",
+        "constraints": {
+          "genre": "western",
+          "plot": "prostitute",
+          "actor": "Don Johnson",
+          "name": "Notes on a Scandal",
+          "writer": "Kirk DeMicco"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 21,
+          "from_focus": "actor",
+          "to_focus": "writer",
+          "bridge_field": "actor",
+          "bridge_value": "Don Johnson",
+          "from_anchor": "The Mask of Zorro",
+          "to_anchor": "The Homesman"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has provided us with some interesting constraints for movie recommendations, including the genre \"western,\" actor Simon Pegg, director Kirk DeMicco, and plot keywords \"written\" and \"kirk.\" Based on these cues, I would recommend two movies from this list: \"Star Trek IV: The Voyage Home\" (1986) and \"The Revenant\" (2015). Both of these films feature Simon Pegg in a starring role, with \"The Voyage Home\" being a classic sci-fi adventure and \"The Revenant\" being a gritty and intense survival story.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "written",
+          "kirk"
+        ],
+        "name": "Django Unchained",
+        "director": "Kirk DeMicco",
+        "writer": "Kirk DeMicco",
+        "actor": "Simon Pegg"
+      },
+      "rec_titles": [
+        "Star Trek IV: The Voyage Home",
+        "Shanghai Knights",
+        "Quigley Down Under",
+        "The Revenant"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Kirk DeMicco",
+        "anchor_title": "The Homesman",
+        "constraints": {
+          "genre": "western",
+          "plot": "prostitute",
+          "actor": "Don Johnson",
+          "name": "Notes on a Scandal",
+          "writer": "Kirk DeMicco"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: western; actor: Simon Pegg; director: Kirk DeMicco; writer: Kirk DeMicco; plot keywords: just, more. Based on these cues, I recommend checking out \"The Newton Boys\" (1998) and \"Slow West\" (2015). Both films feature a unique blend of humor and action, with talented actors such as Lew Temple and Jeanne Tripplehorn in the former, and Kodi Smit-McPhee and Michael Fassbender in the latter.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Kirk DeMicco",
+        "writer": "Kirk DeMicco",
+        "actor": "Simon Pegg"
+      },
+      "rec_titles": [
+        "The Newton Boys",
+        "Despicable Me 2",
+        "Slow West",
+        "Alex in Wonderland"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Kirk DeMicco",
+        "anchor_title": "The Homesman",
+        "constraints": {
+          "genre": "western",
+          "plot": "prostitute",
+          "actor": "Don Johnson",
+          "name": "Notes on a Scandal",
+          "writer": "Kirk DeMicco"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, they seem to enjoy movies with a western theme and actors such as Simon Pegg. Here are two movie recommendations that fit those criteria:\n\n* \"Elizabeth\" (1998) - This historical drama follows the early years of Queen Elizabeth I's reign and her struggles to learn what it takes to be a monarch. Starring Fanny Ardant, Eric Cantona, and John Gielgud, this movie is sure to provide an engaging and entertaining viewing experience.\n* \"Shanghai Knights\" (2003) - This action-comedy follows two outlaws as they team up with a former police officer to capture a Chinese rebel who murdered the officer's estranged father. Starring Anna-Louise Plowman, Georgina Chapman, and Fann Wong, this movie is full of laughs and action.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "You",
+        "director": "Kirk DeMicco",
+        "writer": "Kirk DeMicco",
+        "actor": "Simon Pegg"
+      },
+      "rec_titles": [
+        "Elizabeth",
+        "Sholay",
+        "Shanghai Knights",
+        "Old Yeller"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Her? That sounds intriguing.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Kirk DeMicco",
+        "anchor_title": "The Homesman",
+        "constraints": {
+          "genre": "western",
+          "plot": "prostitute",
+          "actor": "Don Johnson",
+          "name": "Notes on a Scandal",
+          "writer": "Kirk DeMicco"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: western; actor: Simon Pegg; director: Kirk DeMicco; writer: Kirk DeMicco; plot keywords: what, intriguing. Based on these constraints, I recommend the movie \"Taxi Driver\" (1976) starring Robert De Niro as a taxi driver who becomes obsessed with a damsel in distress and struggles to express his love for her. The film is a classic of the genre and features a gritty and intriguing plot that explores themes of obsession, love, and redemption. Alternatively, I suggest \"The Quick and the Dead\" (1995) starring Leonardo DiCaprio as a female gunfighter who seeks revenge for her father's death in a frontier town. The film is an exciting and well-crafted western that features impressive action sequences and memorable characters.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Her",
+        "director": "Kirk DeMicco",
+        "writer": "Kirk DeMicco",
+        "actor": "Simon Pegg"
+      },
+      "rec_titles": [
+        "Taxi Driver",
+        "Chain Reaction",
+        "The Quick and the Dead",
+        "Wild Wild West"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of RED. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Kirk DeMicco",
+        "anchor_title": "The Homesman",
+        "constraints": {
+          "genre": "western",
+          "plot": "prostitute",
+          "actor": "Don Johnson",
+          "name": "Notes on a Scandal",
+          "writer": "Kirk DeMicco"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: western, actor Simon Pegg, director/writer Kirk DeMicco, and plot keywords \"like\" and \"sound\".\nBased on these cues, I recommend \"Shaun of the Dead\" (2004) starring Simon Pegg as a hilarious take on the zombie genre that also explores themes of friendship and finding one's purpose in life. The film has a strong cast, including Kate Ashfield and Peter Serafinowicz, and is known for its witty dialogue and clever use of music. Another recommendation would be \"Young Guns\" (1988) starring Patrick Wayne and Brian Keith, which tells the story of a group of outlaws in the Wild West with a great soundtrack and exciting action scenes.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "director": "Kirk DeMicco",
+        "writer": "Kirk DeMicco",
+        "actor": "Simon Pegg"
+      },
+      "rec_titles": [
+        "Young Guns",
+        "Psychic Experiment",
+        "Maid in Manhattan",
+        "Shaun of the Dead"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Michael Shanks. That sounds intriguing. (I’m thinking of Wild.)",
+      "user_meta": {
+        "turn": 26,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Michael Shanks",
+        "anchor_title": "Rango",
+        "constraints": {
+          "genre": "western",
+          "plot": "hike",
+          "actor": "Michael Shanks",
+          "name": "Notes on a Scandal",
+          "writer": "Kirk DeMicco"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 26,
+          "from_focus": "writer",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "hike",
+          "from_anchor": "The Homesman",
+          "to_anchor": "Rango"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: The user is interested in movies with Michael Shanks and western genre. They have mentioned director Kirk DeMicco and writer Kirk DeMicco as potential recommendations.\n\nBased on the provided list, I would recommend 'Sleepless in Seattle' and 'The Only Good Indian'. Both movies feature Michael Shanks in a significant role, and they align with the western genre preference. 'Sleepless in Seattle' is a romantic comedy-drama that explores themes of love and loss, while 'The Only Good Indian' is a historical drama that delves into the complexities of Native American culture and identity.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Wild",
+        "director": "Kirk DeMicco",
+        "writer": "Kirk DeMicco",
+        "actor": "Michael Shanks"
+      },
+      "rec_titles": [
+        "Sleepless in Seattle",
+        "Takers",
+        "Saw VI",
+        "The Only Good Indian"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michael Shanks",
+        "anchor_title": "Rango",
+        "constraints": {
+          "genre": "western",
+          "plot": "hike",
+          "actor": "Michael Shanks",
+          "name": "Notes on a Scandal",
+          "writer": "Kirk DeMicco"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, I recommend \"Once Upon a Time in Mexico\" and \"Dinner for Schmucks.\" Both of these movies offer action-packed plots with memorable characters, just like what the user is looking for. In \"Once Upon a Time in Mexico,\" Antonio Banderas stars as a hitman caught up in international espionage, while in \"Dinner for Schmucks,\" a rising executive befriends a man who would be the perfect guest for his company's annual dinner celebration of idiocy.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Kirk DeMicco",
+        "writer": "Kirk DeMicco",
+        "actor": "Michael Shanks"
+      },
+      "rec_titles": [
+        "Once Upon a Time in Mexico",
+        "Thick as Thieves",
+        "Butch Cassidy and the Sundance Kid",
+        "Dinner for Schmucks"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michael Shanks",
+        "anchor_title": "Rango",
+        "constraints": {
+          "genre": "western",
+          "plot": "hike",
+          "actor": "Michael Shanks",
+          "name": "Notes on a Scandal",
+          "writer": "Kirk DeMicco"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre: western; actor: Michael Shanks; director: Kirk DeMicco; writer: Kirk DeMicco; plot keywords: what,\nBased on the user's preferences, I recommend \"The Expendables 2\" and \"Holes\". Both movies offer a thrilling and entertaining experience with a western twist. In \"The Expendables 2\", the team of mercenaries must fight against an unexpected threat, while in \"Holes\", a man seeks justice for his son's murder after a decade of legal proceedings. Both movies feature talented actors and have intriguing plots that are sure to keep the user engaged.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "X",
+        "director": "Kirk DeMicco",
+        "writer": "Kirk DeMicco",
+        "actor": "Michael Shanks"
+      },
+      "rec_titles": [
+        "The Expendables 2",
+        "Monsters, Inc.",
+        "3:10 to Yuma",
+        "Holes"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Expendables 2 tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michael Shanks",
+        "anchor_title": "Rango",
+        "constraints": {
+          "genre": "western",
+          "plot": "hike",
+          "actor": "Michael Shanks",
+          "name": "Notes on a Scandal",
+          "writer": "Kirk DeMicco"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: western genre, actor Michael Shanks, director and writer Kirk DeMicco, plot keywords \"what kind.\"\n\nBased on these constraints, I recommend checking out \"Fanboys\" (N/A) and \"Jane Got a Gun\" (2016). Both films feature a unique blend of humor and drama that aligns with the user's preferences. \"Fanboys\" is a quirky and heartwarming tale of a group of Star Wars fans on a mission to steal a copy of \"The Phantom Menace,\" while \"Jane Got a Gun\" is a tense and suspenseful drama about a woman seeking help from her ex-lover to protect her outlaw husband. Both films offer an intriguing mix of action, humor, and character development that are sure to keep the user engaged.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The Expendables 2",
+        "director": "Kirk DeMicco",
+        "writer": "Kirk DeMicco",
+        "actor": "Michael Shanks"
+      },
+      "rec_titles": [
+        "Louie",
+        "Jane Got a Gun",
+        "The Hateful Eight",
+        "Fanboys"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michael Shanks",
+        "anchor_title": "Rango",
+        "constraints": {
+          "genre": "western",
+          "plot": "hike",
+          "actor": "Michael Shanks",
+          "name": "Notes on a Scandal",
+          "writer": "Kirk DeMicco"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has expressed interest in movies with a western theme, starring Michael Shanks, and directed by Kirk DeMicco and written by Kirk DeMicco. Based on these constraints, I recommend \"It's a Wonderful Life\" and \"The Revenant.\" Both of these movies offer a unique blend of drama, adventure, and suspense that are sure to captivate the viewer.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "director": "Kirk DeMicco",
+        "writer": "Kirk DeMicco",
+        "actor": "Michael Shanks"
+      },
+      "rec_titles": [
+        "It's a Wonderful Life",
+        "The Revenant",
+        "The Missing",
+        "The Horse Whisperer"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Us. I want to try something more action—That sounds intriguing.",
+      "user_meta": {
+        "turn": 31,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "action",
+        "anchor_title": "Paycheck",
+        "constraints": {
+          "genre": "action",
+          "plot": "hike",
+          "actor": "Michael Shanks",
+          "name": "Notes on a Scandal",
+          "writer": "Kirk DeMicco"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 31,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "friends",
+          "from_anchor": "Rango",
+          "to_anchor": "Paycheck"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre: action; actor: Michael Shanks; director: Kirk DeMicco; writer: Kirk DeMicco; plot keywords: thanks, detail.\nBased on the user's preferences, I recommend \"Iron Man\" and \"Ocean's Eleven\". Both movies are high-energy action films with exciting plots and talented actors, including Robert Downey Jr. and George Clooney.",
+      "constraints": {
+        "genre": "action",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Us",
+        "director": "Kirk DeMicco",
+        "writer": "Kirk DeMicco",
+        "actor": "Michael Shanks"
+      },
+      "rec_titles": [
+        "Iron Man",
+        "Ocean's Eleven",
+        "Iron Man 3",
+        "Night at the Museum"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "action",
+        "anchor_title": "Paycheck",
+        "constraints": {
+          "genre": "action",
+          "plot": "hike",
+          "actor": "Michael Shanks",
+          "name": "Notes on a Scandal",
+          "writer": "Kirk DeMicco"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - action, actor - Michael Shanks, director - Kirk DeMicco, writer - Kirk DeMicco, plot keywords - just, more.\n\nBased on these constraints, I recommend the movie \"Riddick\" (2013) starring Vin Diesel and Nolan Gerard Funk. The film follows Riddick, a fugitive wanted by various alien races, as he finds himself up against an alien race of predators on a sun-scorched planet. With plenty of action and suspense, this movie should satisfy your desire for more exciting films like the ones you've already mentioned.\n\nAlternatively, you might enjoy \"Die Hard with a Vengeance\" (1995) starring Bruce Willis and John McClane. In this movie, McClane is targeted by a German terrorist in New York City, leading to a thrilling chase through the city's streets. With its fast-paced action and witty banter between the two leads, this film should provide plenty of excitement for fans of the genre.",
+      "constraints": {
+        "genre": "action",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Kirk DeMicco",
+        "writer": "Kirk DeMicco",
+        "actor": "Michael Shanks"
+      },
+      "rec_titles": [
+        "Riddick",
+        "Die Hard with a Vengeance",
+        "Underworld",
+        "The Goodbye Girl"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Jim Thomas (Screenwriter)? Hmm, I didn’t expect that vibe. (I’m thinking of Predators.)",
+      "user_meta": {
+        "turn": 33,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Jim Thomas (Screenwriter)",
+        "anchor_title": "Flash Gordon",
+        "constraints": {
+          "genre": "action",
+          "actor": "Michael Shanks",
+          "name": "Notes on a Scandal",
+          "writer": "Jim Thomas (Screenwriter)"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 33,
+          "from_focus": "genre",
+          "to_focus": "writer",
+          "bridge_field": "writer",
+          "bridge_value": "Jim Thomas (Screenwriter)",
+          "from_anchor": "Paycheck",
+          "to_anchor": "Flash Gordon"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, it seems they enjoy action movies with a mix of comedy and adventure. Of the titles listed, I would recommend \"Kiss Kiss Bang Bang\" and \"Daredevil.\" Both films offer a unique blend of humor and excitement, with talented actors delivering memorable performances.",
+      "constraints": {
+        "genre": "action",
+        "plot": [
+          "written",
+          "thomas"
+        ],
+        "name": "Predator",
+        "director": "Kirk DeMicco",
+        "writer": "Jim Thomas (Screenwriter)",
+        "actor": "Michael Shanks"
+      },
+      "rec_titles": [
+        "Daredevil",
+        "Kiss Kiss Bang Bang",
+        "Robin Hood",
+        "Warriors of Virtue"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 34,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Jim Thomas (Screenwriter)",
+        "anchor_title": "Flash Gordon",
+        "constraints": {
+          "genre": "action",
+          "actor": "Michael Shanks",
+          "name": "Notes on a Scandal",
+          "writer": "Jim Thomas (Screenwriter)"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I would recommend \"What's the Worst That Could Happen?\" and \"Man on Fire.\" Both movies feature action-packed plots with talented actors, including Michael Shanks and Denzel Washington. In \"What's the Worst That Could Happen?,\" a rich man tries to keep a thief's lucky ring by any means necessary, while in \"Man on Fire,\" a bitter ex-husband takes extreme measures to protect his child from his ex-wife.",
+      "constraints": {
+        "genre": "action",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Kirk DeMicco",
+        "writer": "Jim Thomas (Screenwriter)",
+        "actor": "Michael Shanks"
+      },
+      "rec_titles": [
+        "What's the Worst That Could Happen?",
+        "The River",
+        "Man on Fire",
+        "David and Goliath"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Jim Thomas (Screenwriter)",
+        "anchor_title": "Flash Gordon",
+        "constraints": {
+          "genre": "action",
+          "actor": "Michael Shanks",
+          "name": "Notes on a Scandal",
+          "writer": "Jim Thomas (Screenwriter)"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference cues, it seems they enjoy action movies with a unique twist. I recommend \"The Man in the Iron Mask\" (1998) starring Leonardo DiCaprio as it offers an exciting adventure filled with twists and turns, and features a talented cast led by Judith Godrèche and Anne Parillaud. Alternatively, if you're in the mood for something more recent and full of action, \"Zombie Hunter\" (2013) may be up your alley, with Shona Kay leading an impressive cast as a determined survivor facing off against an army of zombies.",
+      "constraints": {
+        "genre": "action",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "director": "Kirk DeMicco",
+        "writer": "Jim Thomas (Screenwriter)",
+        "actor": "Michael Shanks"
+      },
+      "rec_titles": [
+        "The Man in the Iron Mask",
+        "Zombie Hunter",
+        "Underworld: Evolution",
+        "The Pacifier"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Mark Brown? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of The Man in the Iron Mask.)",
+      "user_meta": {
+        "turn": 36,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Mark Brown",
+        "anchor_title": "300",
+        "constraints": {
+          "genre": "action",
+          "actor": "Michael Shanks",
+          "name": "Notes on a Scandal",
+          "writer": "Jim Thomas (Screenwriter)",
+          "director": "Mark Brown"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 36,
+          "from_focus": "writer",
+          "to_focus": "director",
+          "bridge_field": "writer",
+          "bridge_value": "Jim Thomas (Screenwriter)",
+          "from_anchor": "Flash Gordon",
+          "to_anchor": "300"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preference cues, here are two movie recommendations that might interest them:\n\n* Bangkok Dangerous (2008) stars Nicolas Cage as a deaf-mute hitman who forms a relationship with a young woman while continuing his deadly business. With its fast-paced action and gritty atmosphere, this movie could be right up the user's alley.\n* The Bourne Legacy (2012) introduces a new hero in the Bourne universe, centered on a character played by Jeremy Renner who must navigate a complex web of espionage and betrayal. With its high-octane action sequences and intricate plotting, this movie could be a great fit for fans of the genre.",
+      "constraints": {
+        "genre": "action",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "The Man in the Iron Mask",
+        "director": "Mark Brown",
+        "writer": "Jim Thomas (Screenwriter)",
+        "actor": "Michael Shanks"
+      },
+      "rec_titles": [
+        "Bangkok Dangerous",
+        "The Bourne Legacy",
+        "Get Smart",
+        "Speed Racer"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mark Brown",
+        "anchor_title": "300",
+        "constraints": {
+          "genre": "action",
+          "actor": "Michael Shanks",
+          "name": "Notes on a Scandal",
+          "writer": "Jim Thomas (Screenwriter)",
+          "director": "Mark Brown"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, here are two movie recommendations that match their criteria:\n\nThe first movie I would recommend is \"Bats\" (1999), starring Ned Bellamy and Leon. This horror film follows a family who returns to their abandoned village after a nuclear accident and discovers a radiated bat living in their attic. As they try to survive the night, they realize they're infected with a deadly plague and must find a way to escape before sunrise.\n\nAlternatively, if the user is interested in an action-packed movie with a unique premise, \"Wild Target\" (2010) starring Rory Kinnear and Geoff Bell could be a great choice. The film tells the story of a hitman who tries to retire but finds himself in a dangerous game after meeting a beautiful thief. With plenty of twists and turns, this movie will keep you on the edge of your seat!",
+      "constraints": {
+        "genre": "action",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Mark Brown",
+        "writer": "Jim Thomas (Screenwriter)",
+        "actor": "Michael Shanks"
+      },
+      "rec_titles": [
+        "Bats",
+        "Wild Target",
+        "Total Recall",
+        "Underworld: Evolution"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mark Brown",
+        "anchor_title": "300",
+        "constraints": {
+          "genre": "action",
+          "actor": "Michael Shanks",
+          "name": "Notes on a Scandal",
+          "writer": "Jim Thomas (Screenwriter)",
+          "director": "Mark Brown"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user likes the sound of \"Us\" and is looking for movies with similar genre, actor, director, and writer cues. They prefer action movies with a deeper storyline.\n\nRecommendation: Based on the user's preferences, I would recommend \"Ender's Game\" and \"300: Rise of an Empire\". Both movies offer a compelling blend of action and deeper storytelling elements, such as themes of leadership, conflict, and personal growth.",
+      "constraints": {
+        "genre": "action",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "director": "Mark Brown",
+        "writer": "Jim Thomas (Screenwriter)",
+        "actor": "Michael Shanks"
+      },
+      "rec_titles": [
+        "Ender's Game",
+        "Thunderball",
+        "X-Men Origins: Wolverine",
+        "300: Rise of an Empire"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mark Brown",
+        "anchor_title": "300",
+        "constraints": {
+          "genre": "action",
+          "actor": "Michael Shanks",
+          "name": "Notes on a Scandal",
+          "writer": "Jim Thomas (Screenwriter)",
+          "director": "Mark Brown"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: The user wants a movie recommendation that is not too specific and has a wide range of genres, actors, and directors.\n\nBased on the user's preference cues, I recommend \"The Legend of Tarzan\" (2016) starring Alexander Skarsgård and Christoph Waltz. This movie combines action and adventure elements with a compelling storyline and talented actors. Alternatively, \"Sherlock Holmes\" (2009) starring Robert Downey Jr. and Jude Law is another great option that fits the user's criteria, offering a thrilling mystery plot and top-notch acting.",
+      "constraints": {
+        "genre": "action",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "Deep",
+        "director": "Mark Brown",
+        "writer": "Jim Thomas (Screenwriter)",
+        "actor": "Michael Shanks"
+      },
+      "rec_titles": [
+        "The Legend of Tarzan",
+        "Two Can Play That Game",
+        "Sherlock Holmes",
+        "Soldier"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mark Brown",
+        "anchor_title": "300",
+        "constraints": {
+          "genre": "action",
+          "actor": "Michael Shanks",
+          "name": "Notes on a Scandal",
+          "writer": "Jim Thomas (Screenwriter)",
+          "director": "Mark Brown"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preference cues, here are two movie recommendations that might interest them:\n\nThe Pelican Brief (1992) stars Denzel Washington and Julia Roberts in a thrilling legal drama about a law student who uncovers a conspiracy and must navigate dangerous situations to expose the truth. Undercover Brother (2002) features a talented cast, including Robert Townsend, Chris Kattan, and Eddie Griffin, in a comedy-action film about a secret agent working to help a black candidate win the presidency. Both movies offer a mix of action and suspense that could potentially appeal to the user's taste in films.",
+      "constraints": {
+        "genre": "action",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "director": "Mark Brown",
+        "writer": "Jim Thomas (Screenwriter)",
+        "actor": "Michael Shanks"
+      },
+      "rec_titles": [
+        "The Pelican Brief",
+        "Undercover Brother",
+        "X-Men",
+        "Mission: Impossible - Ghost Protocol"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Pelican Brief tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mark Brown",
+        "anchor_title": "300",
+        "constraints": {
+          "genre": "action",
+          "actor": "Michael Shanks",
+          "name": "Notes on a Scandal",
+          "writer": "Jim Thomas (Screenwriter)",
+          "director": "Mark Brown"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - action, actor - Michael Shanks, director - Mark Brown, writer - Jim Thomas (Screenwriter). Based on these constraints, I recommend \"Indiana Jones and the Kingdom of the Crystal Skull\" for its exciting adventure and legendary actors like Harrison Ford and Shia LaBeouf. Alternatively, \"Tomorrow Never Dies\" features Pierce Brosnan as James Bond in a thrilling mission to stop a media mogul's war plot between China and the UK, with an all-star cast and heart-pumping action sequences.",
+      "constraints": {
+        "genre": "action",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The Pelican Brief",
+        "director": "Mark Brown",
+        "writer": "Jim Thomas (Screenwriter)",
+        "actor": "Michael Shanks"
+      },
+      "rec_titles": [
+        "One for the Money",
+        "The Mummy",
+        "Tomorrow Never Dies",
+        "Indiana Jones and the Kingdom of the Crystal Skull"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Adrian Lester. That feels deeper than I thought. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 42,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Adrian Lester",
+        "anchor_title": "Dance Flick",
+        "constraints": {
+          "genre": "action",
+          "actor": "Adrian Lester",
+          "name": "Notes on a Scandal",
+          "writer": "Jim Thomas (Screenwriter)",
+          "director": "Mark Brown",
+          "plot": "veteran"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 42,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "veteran",
+          "from_anchor": "300",
+          "to_anchor": "Dance Flick"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User Preference Cues:\nGenre: Action\nActor: Adrian Lester\nDirector: Mark Brown\nWriter: Jim Thomas (Screenwriter)\nPlot Keywords: could, find\n\nBased on the user's preferences, I recommend \"Cinder\" and \"Jason Bourne\". Both movies feature action-packed plots and star Adrian Lester in prominent roles. In \"Cinder\", Lester plays a modern prince who must think outside of the box to find his lost love, while in \"Jason Bourne\", he stars as an ex-CIA operative drawn out of hiding to uncover more explosive truths about his past.",
+      "constraints": {
+        "genre": "action",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Deep",
+        "director": "Mark Brown",
+        "writer": "Jim Thomas (Screenwriter)",
+        "actor": "Adrian Lester"
+      },
+      "rec_titles": [
+        "Cinder",
+        "Jason Bourne",
+        "Butch Cassidy and the Sundance Kid",
+        "Harsh Times"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Adrian Lester",
+        "anchor_title": "Dance Flick",
+        "constraints": {
+          "genre": "action",
+          "actor": "Adrian Lester",
+          "name": "Notes on a Scandal",
+          "writer": "Jim Thomas (Screenwriter)",
+          "director": "Mark Brown",
+          "plot": "veteran"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: The user is looking for movies with action, starring Adrian Lester, and directed by Mark Brown or Jim Thomas.\nRecommendation: If you enjoyed \"We Were Soldiers,\" you might also enjoy \"John Carter.\" Both movies feature intense action sequences and a strong cast, including Adrian Lester in a leading role. Alternatively, \"Blood Work\" is another thrilling movie with a similar plot and a talented cast, including Clint Eastwood and Anjelica Huston.",
+      "constraints": {
+        "genre": "action",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Mark Brown",
+        "writer": "Jim Thomas (Screenwriter)",
+        "actor": "Adrian Lester"
+      },
+      "rec_titles": [
+        "We Were Soldiers",
+        "Thunderbirds",
+        "John Carter",
+        "Blood Work"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Ted. I want to try something more indie—still with English if possible. Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 44,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "indie",
+        "anchor_title": "Hot Fuzz",
+        "constraints": {
+          "genre": "indie",
+          "actor": "Adrian Lester",
+          "writer": "Jim Thomas (Screenwriter)",
+          "director": "Mark Brown",
+          "plot": "veteran",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 44,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Dance Flick",
+          "to_anchor": "Hot Fuzz"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre: indie; actor: Adrian Lester; director: Mark Brown; writer: Jim Thomas (Screenwriter); language: English; plot keywords: thanks, detail.\nBased on the user's preferences, I recommend checking out 'Dance Flick' and 'Zero Effect'. Both movies offer a unique blend of humor and storytelling, with talented actors and directors behind them. 'Dance Flick' is a funny and energetic film about a group of dancers trying to make it big, while 'Zero Effect' is a quirky and mysterious comedy-drama about a detective investigating a strange case. Both movies are sure to provide an enjoyable watch!",
+      "constraints": {
+        "genre": "indie",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Ted",
+        "director": "Mark Brown",
+        "writer": "Jim Thomas (Screenwriter)",
+        "actor": "Adrian Lester",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Dance Flick",
+        "A Study in Scarlet",
+        "12 Angry Men",
+        "Zero Effect"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "indie",
+        "anchor_title": "Hot Fuzz",
+        "constraints": {
+          "genre": "indie",
+          "actor": "Adrian Lester",
+          "writer": "Jim Thomas (Screenwriter)",
+          "director": "Mark Brown",
+          "plot": "veteran",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your user's preferences, here are some movie recommendations that fit their constraints:\n\nYou've mentioned that you're looking for movies in the indie genre, starring Adrian Lester, and directed by Mark Brown or Jim Thomas. From this list, I would recommend \"Our Idiot Brother\" and \"The Swindle\". Both of these movies have a unique blend of comedy and drama that might suit your tastes. \"Our Idiot Brother\" features a great cast, including Paul Rudd and Emily Mortimer, while \"The Swindle\" has a fun and quirky premise with an all-star cast led by Michel Serrault.",
+      "constraints": {
+        "genre": "indie",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Mark Brown",
+        "writer": "Jim Thomas (Screenwriter)",
+        "actor": "Adrian Lester",
+        "language": "English"
+      },
+      "rec_titles": [
+        "The Cat in the Hat",
+        "Battleship",
+        "Our Idiot Brother",
+        "The Swindle"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Our Idiot Brother. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "indie",
+        "anchor_title": "Hot Fuzz",
+        "constraints": {
+          "genre": "indie",
+          "actor": "Adrian Lester",
+          "writer": "Jim Thomas (Screenwriter)",
+          "director": "Mark Brown",
+          "plot": "veteran",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - indie, Actor - Adrian Lester, Director - Mark Brown, Writer - Jim Thomas (Screenwriter), Language - English, Plot keywords - like, sound.\nBased on the user's preferences, I recommend checking out \"Die Hard with a Vengeance\" and \"The Help\". Both movies have a strong indie feel to them, and they feature compelling plots and talented actors that align with the user's preferences. In particular, \"Die Hard with a Vengeance\" has a gripping action-thriller plot with Bruce Willis and John McClane as the main characters, while \"The Help\" is a powerful drama with an all-star cast, including Emma Stone, Octavia Spencer, and Viola Davis.",
+      "constraints": {
+        "genre": "indie",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Her",
+        "director": "Mark Brown",
+        "writer": "Jim Thomas (Screenwriter)",
+        "actor": "Adrian Lester",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Die Hard with a Vengeance",
+        "The Order",
+        "The Help",
+        "Star Trek IV: The Voyage Home"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "indie",
+        "anchor_title": "Hot Fuzz",
+        "constraints": {
+          "genre": "indie",
+          "actor": "Adrian Lester",
+          "writer": "Jim Thomas (Screenwriter)",
+          "director": "Mark Brown",
+          "plot": "veteran",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: indie; actor: Adrian Lester; director: Mark Brown; writer: Jim Thomas (Screenwriter); language: English; plot keywords: what, kind. Based on these cues, I recommend the movie \"Fight Club\" starring Edward Norton and Brad Pitt. The film is a thought-provoking and visceral exploration of masculinity, rebellion, and the search for meaning in a mundane world. With its blend of dark humor, striking visuals, and a memorable cast, \"Fight Club\" is sure to captivate and inspire.",
+      "constraints": {
+        "genre": "indie",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "director": "Mark Brown",
+        "writer": "Jim Thomas (Screenwriter)",
+        "actor": "Adrian Lester",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Toy Story 2",
+        "The Eclipse",
+        "End of Days",
+        "Fight Club"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Alex Jones. Hmm, I didn’t expect that vibe. (I’m thinking of Fight Club.)",
+      "user_meta": {
+        "turn": 48,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Alex Jones",
+        "anchor_title": "The Incredibles",
+        "constraints": {
+          "genre": "indie",
+          "actor": "Alex Jones",
+          "writer": "Jim Thomas (Screenwriter)",
+          "director": "Mark Brown",
+          "plot": "worker",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 48,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "worker",
+          "from_anchor": "Hot Fuzz",
+          "to_anchor": "The Incredibles"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I recommend \"Sleepers\" (1995) and \"The French Connection\" (1971). Both of these movies feature a gritty, intense atmosphere that seems to align with the user's taste. \"Sleepers\" follows a group of boys who are brutalized in a detention center and seek revenge years later, while \"The French Connection\" is a classic crime drama about two NYPD detectives investigating a heroin smuggling ring. Both movies have strong performances from their actors and offer a compelling watch.",
+      "constraints": {
+        "genre": "indie",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Fight Club",
+        "director": "Mark Brown",
+        "writer": "Jim Thomas (Screenwriter)",
+        "actor": "Alex Jones",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Sleepers",
+        "The French Connection",
+        "Inferno",
+        "City of Lost Souls"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Alex Jones",
+        "anchor_title": "The Incredibles",
+        "constraints": {
+          "genre": "indie",
+          "actor": "Alex Jones",
+          "writer": "Jim Thomas (Screenwriter)",
+          "director": "Mark Brown",
+          "plot": "worker",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: indie; actor: Alex Jones; director: Mark Brown; writer: Jim Thomas (Screenwriter); language: English; plot keywords: just, more.\nBased on the user's constraints, I recommend \"Funny Games\" and \"The New World\". Both movies are independent films with complex plots that explore themes of violence, power dynamics, and cultural commentary, which seem to align with the user's preferences. \"Funny Games\" is a psychological thriller that delves into the darker aspects of human nature, while \"The New World\" offers a historical drama that explores the clash of cultures and values in the early years of American colonization.",
+      "constraints": {
+        "genre": "indie",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Mark Brown",
+        "writer": "Jim Thomas (Screenwriter)",
+        "actor": "Alex Jones",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Funny Games",
+        "Catwoman",
+        "Born on the Fourth of July",
+        "The New World"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The New World tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 50,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Alex Jones",
+        "anchor_title": "The Incredibles",
+        "constraints": {
+          "genre": "indie",
+          "actor": "Alex Jones",
+          "writer": "Jim Thomas (Screenwriter)",
+          "director": "Mark Brown",
+          "plot": "worker",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - indie, actor - Alex Jones, director - Mark Brown, writer - Jim Thomas (Screenwriter), language - English, plot keywords - what, kind.\nRecommendation: Based on the user's preferences, I would recommend \"The Watch\" and \"Groundhog Day\". Both movies offer unique and intriguing plots that explore themes of survival and self-discovery, which seem to align with the user's interests.",
+      "constraints": {
+        "genre": "indie",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The New World",
+        "director": "Mark Brown",
+        "writer": "Jim Thomas (Screenwriter)",
+        "actor": "Alex Jones",
+        "language": "English"
+      },
+      "rec_titles": [
+        "The Watch",
+        "Groundhog Day",
+        "Breakfast of Champions",
+        "The Hound of the Baskervilles"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "each",
+      "from_anchor": "The Hateful Eight",
+      "to_anchor": "Serenity"
+    },
+    {
+      "turn": 7,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "agrees",
+      "from_anchor": "Serenity",
+      "to_anchor": "Bruce Almighty"
+    },
+    {
+      "turn": 12,
+      "from_focus": "actor",
+      "to_focus": "name",
+      "bridge_field": "plot",
+      "bridge_value": "veteran",
+      "from_anchor": "Bruce Almighty",
+      "to_anchor": "Young Guns"
+    },
+    {
+      "turn": 17,
+      "from_focus": "name",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "prostitute",
+      "from_anchor": "Young Guns",
+      "to_anchor": "The Mask of Zorro"
+    },
+    {
+      "turn": 21,
+      "from_focus": "actor",
+      "to_focus": "writer",
+      "bridge_field": "actor",
+      "bridge_value": "Don Johnson",
+      "from_anchor": "The Mask of Zorro",
+      "to_anchor": "The Homesman"
+    },
+    {
+      "turn": 26,
+      "from_focus": "writer",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "hike",
+      "from_anchor": "The Homesman",
+      "to_anchor": "Rango"
+    },
+    {
+      "turn": 31,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "friends",
+      "from_anchor": "Rango",
+      "to_anchor": "Paycheck"
+    },
+    {
+      "turn": 33,
+      "from_focus": "genre",
+      "to_focus": "writer",
+      "bridge_field": "writer",
+      "bridge_value": "Jim Thomas (Screenwriter)",
+      "from_anchor": "Paycheck",
+      "to_anchor": "Flash Gordon"
+    },
+    {
+      "turn": 36,
+      "from_focus": "writer",
+      "to_focus": "director",
+      "bridge_field": "writer",
+      "bridge_value": "Jim Thomas (Screenwriter)",
+      "from_anchor": "Flash Gordon",
+      "to_anchor": "300"
+    },
+    {
+      "turn": 42,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "veteran",
+      "from_anchor": "300",
+      "to_anchor": "Dance Flick"
+    },
+    {
+      "turn": 44,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Dance Flick",
+      "to_anchor": "Hot Fuzz"
+    },
+    {
+      "turn": 48,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "worker",
+      "from_anchor": "Hot Fuzz",
+      "to_anchor": "The Incredibles"
+    }
+  ]
+}

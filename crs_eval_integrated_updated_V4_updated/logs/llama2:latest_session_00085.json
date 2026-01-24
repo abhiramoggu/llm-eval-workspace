@@ -1,0 +1,2283 @@
+{
+  "session_id": "00085",
+  "model_name": "llama2:latest",
+  "true_genre": "teen drama",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a teen drama movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "teen drama",
+        "anchor_title": "Edward Scissorhands",
+        "constraints": {
+          "genre": "teen drama"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: drama; plot keywords: teen, drama. Based on these cues, I recommend \"The Bodyguard\" and \"Walk the Line.\" Both movies feature compelling dramas centered around teen characters, with \"The Bodyguard\" showcasing a hapless bodyguard's journey and \"Walk the Line\" depicting the life of country music legend Johnny Cash.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "teen",
+          "drama"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "The Bodyguard",
+        "Walk the Line",
+        "Black Swan",
+        "War Horse"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Joe Roth? That sounds intriguing. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Joe Roth",
+        "anchor_title": "12 Angry Men",
+        "constraints": {
+          "genre": "teen drama",
+          "director": "Joe Roth",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Edward Scissorhands",
+          "to_anchor": "12 Angry Men"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I would recommend \"Funny Games\" and \"Mystic River.\" Both of these movies fit within the drama genre and feature suspenseful plots that may appeal to the user. In \"Funny Games,\" two violent young men take a family hostage and force them to play sadistic games, while in \"Mystic River,\" three childhood friends are reunited after a tragic murder and must navigate their complex relationships to uncover the truth. Both films have talented casts and were well-received critically.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Us",
+        "director": "Joe Roth"
+      },
+      "rec_titles": [
+        "Funny Games",
+        "The Haunting",
+        "Mystic River",
+        "Quigley Down Under"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Joe Roth",
+        "anchor_title": "12 Angry Men",
+        "constraints": {
+          "genre": "teen drama",
+          "director": "Joe Roth",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has expressed interest in drama movies directed by Joe Roth and with plots that include keywords such as \"just\" and \"more\". Based on these preferences, I recommend \"School Daze\" and \"Full Frontal\". \"School Daze\" is a classic 80s coming-of-age drama that explores the lives of African American students in a university, while \"Full Frontal\" is a comedy-drama that takes place over the course of one day in Hollywood and follows a group of men and women as they prepare for a friend's birthday party. Both movies feature talented actors and offer thought-provoking storylines.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Joe Roth"
+      },
+      "rec_titles": [
+        "School Daze",
+        "Click",
+        "Full Frontal",
+        "Tsotsi"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Joe Roth",
+        "anchor_title": "12 Angry Men",
+        "constraints": {
+          "genre": "teen drama",
+          "director": "Joe Roth",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: \"What's the mood of Ted? Hmm, I didn’t expect that vibe.\"\nRecommendation: Based on your preference for a drama movie with a unexpected vibe, I would recommend \"Mystic River\" (2001) starring Tim Robbins, Laurence Fishburne, and Sean Penn. The movie follows the tragic murder of a 19-year-old girl and the journey of three childhood friends as they uncover the truth behind her death.\n\nAlternatively, you might enjoy \"The Station Agent\" (2003) starring Peter Dinklage, Bobby Cannavale, and Paula Garcés. The movie tells the story of a man born with dwarfism who moves to rural New Jersey after his only friend dies, only to find connection and support in an unlikely place. Both movies offer unexpected plot twists and powerful performances that may resonate with your preference for drama.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "Ted",
+        "director": "Joe Roth"
+      },
+      "rec_titles": [
+        "Mystic River",
+        "Girl, Interrupted",
+        "The Break-Up",
+        "The Station Agent"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Joe Roth",
+        "anchor_title": "12 Angry Men",
+        "constraints": {
+          "genre": "teen drama",
+          "director": "Joe Roth",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, they might enjoy \"The Skeleton Twins\" and \"Next Day Air.\" Both of these movies offer thought-provoking dramas with compelling plots and talented actors. In \"The Skeleton Twins,\" estranged twins reunite after both cheating death on the same day, exploring themes of grief, redemption, and the complexities of human relationships. Meanwhile, \"Next Day Air\" is a gripping crime drama that follows two inept criminals who are mistakenly delivered a package of cocaine and must navigate a series of unexpected events that changes their lives forever.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Ted",
+        "director": "Joe Roth"
+      },
+      "rec_titles": [
+        "The Skeleton Twins",
+        "Amen.",
+        "Lilo & Stitch",
+        "Next Day Air"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Skeleton Twins tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Joe Roth",
+        "anchor_title": "12 Angry Men",
+        "constraints": {
+          "genre": "teen drama",
+          "director": "Joe Roth",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - drama, director - Joe Roth. You're interested in a story that sounds fascinating, so I recommend 'The Life Aquatic with Steve Zissou' and 'Why Did I Get Married Too?'. Both of these movies offer thought-provoking and emotionally charged stories with talented actors and directors.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The Skeleton Twins",
+        "director": "Joe Roth"
+      },
+      "rec_titles": [
+        "The Life Aquatic with Steve Zissou",
+        "The Fighter",
+        "Why Did I Get Married Too?",
+        "Be Kind Rewind"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Joe Roth",
+        "anchor_title": "12 Angry Men",
+        "constraints": {
+          "genre": "teen drama",
+          "director": "Joe Roth",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - drama, director - Joe Roth, plot keywords - like, sound.\nBased on these constraints, I recommend \"White House Down\" and \"Casablanca.\" Both movies have a deep, emotional tone that aligns with the user's preference for something that feels deeper than expected. \"White House Down\" is an action-packed thriller starring Channing Tatum as a Capitol policeman who must protect his daughter and the President from paramilitary invaders. \"Casablanca\" is a classic romantic drama set during World War II, where Humphrey Bogart plays a cynical cafe owner who must decide whether to help his former lover and her fugitive husband escape the Nazis in Morocco.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "director": "Joe Roth"
+      },
+      "rec_titles": [
+        "White House Down",
+        "Donnie Brasco",
+        "Kingdom of Heaven",
+        "Casablanca"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on War. I want to try something more animation—still with Jet Li if possible. That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "animation",
+        "anchor_title": "Whiplash",
+        "constraints": {
+          "genre": "animation",
+          "language": "English",
+          "actor": "Jet Li"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 8,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "Jet Li",
+          "from_anchor": "12 Angry Men",
+          "to_anchor": "Whiplash"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: animation; actor: Jet Li; director: Joe Roth; writer: Jet Li; plot keywords: thanks, detail.\n\nBased on the user's preferences, I recommend checking out \"Spirited Away\" and \"Nausicaä of the Valley of the Wind\". Both movies are highly acclaimed animated films that feature action-packed plots and memorable characters, while also exploring deeper themes like the importance of empathy and environmentalism.",
+      "constraints": {
+        "genre": "animation",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "War",
+        "director": "Joe Roth",
+        "actor": "Jet Li",
+        "writer": "Jet Li"
+      },
+      "rec_titles": [
+        "Space Jam",
+        "Sinbad: Legend of the Seven Seas",
+        "Spirited Away",
+        "Nausicaä of the Valley of the Wind"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "animation",
+        "anchor_title": "Whiplash",
+        "constraints": {
+          "genre": "animation",
+          "language": "English",
+          "actor": "Jet Li"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure! Based on the user's preferences, I recommend \"Monsters, Inc.\" and \"Kung Fu Panda\". Both of these movies feature animation, action, and comedic elements that seem to align with the user's tastes. In \"Monsters, Inc.\", the monsters are hilarious and lovable, while the plot twist adds an extra layer of excitement. \"Kung Fu Panda\" is a funny and heartwarming tale of an unlikely hero, Po, who must save his village from danger.",
+      "constraints": {
+        "genre": "animation",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Joe Roth",
+        "actor": "Jet Li",
+        "writer": "Jet Li"
+      },
+      "rec_titles": [
+        "The Jungle Book 2",
+        "Monsters, Inc.",
+        "Veronica Mars",
+        "Kung Fu Panda"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Gabriel Damon. That sounds intriguing. (I’m thinking of Hero.)",
+      "user_meta": {
+        "turn": 10,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Gabriel Damon",
+        "anchor_title": "The History Boys",
+        "constraints": {
+          "genre": "animation",
+          "language": "English",
+          "actor": "Gabriel Damon",
+          "plot": "activist"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 10,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "activist",
+          "from_anchor": "Whiplash",
+          "to_anchor": "The History Boys"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - animation, actor - Gabriel Damon, director - Joe Roth, writer - Jet Li.\nBased on these constraints, I recommend \"Peggy Sue Got Married\" and \"Turbo\". Both of these movies feature Gabriel Damon in a significant role, and they offer unique and engaging plots that are sure to entertain. In \"Peggy Sue Got Married\", Damon plays the role of Charlie, a love interest for the main character Peggy Sue. In \"Turbo\", he voices the character of Tito, a snail who dreams of becoming a race car driver.",
+      "constraints": {
+        "genre": "animation",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Her",
+        "director": "Joe Roth",
+        "actor": "Gabriel Damon",
+        "writer": "Jet Li"
+      },
+      "rec_titles": [
+        "Peggy Sue Got Married",
+        "Turbo",
+        "Heart of Darkness",
+        "The Hunted"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Gabriel Damon",
+        "anchor_title": "The History Boys",
+        "constraints": {
+          "genre": "animation",
+          "language": "English",
+          "actor": "Gabriel Damon",
+          "plot": "activist"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, I see that you're interested in movies with a similar tone and style as the ones you've already mentioned. Based on your preferences, I recommend checking out \"Neighbors 2: Sorority Rising\" and \"Bobby.\" Both of these films feature comedy and drama elements, and they have received positive reviews from audiences and critics alike. In \"Neighbors 2,\" you'll find a hilarious and entertaining story about a group of neighbors who team up to take down a rowdy sorority, while \"Bobby\" is a heartwarming and inspiring film that tells the true story of football legend Bobby Moore.",
+      "constraints": {
+        "genre": "animation",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Joe Roth",
+        "actor": "Gabriel Damon",
+        "writer": "Jet Li"
+      },
+      "rec_titles": [
+        "Neighbors 2: Sorority Rising",
+        "The Way Back Home",
+        "Bobby",
+        "The Way of the Gun"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does War tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Gabriel Damon",
+        "anchor_title": "The History Boys",
+        "constraints": {
+          "genre": "animation",
+          "language": "English",
+          "actor": "Gabriel Damon",
+          "plot": "activist"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: War, Gabriel Damon, Joe Roth, Jet Li.\nBased on these constraints, I recommend \"Patton\" (1970) and \"The Imitation Game\" (2014). Both movies feature powerful performances by actors who fit the user's preferences, and they both explore themes of war and leadership in compelling ways.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "War",
+        "director": "Joe Roth",
+        "actor": "Gabriel Damon",
+        "writer": "Jet Li"
+      },
+      "rec_titles": [
+        "Patton",
+        "Elizabeth",
+        "The Imitation Game",
+        "The Skulls"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Garth Nix? That sounds intriguing. (I’m thinking of War.)",
+      "user_meta": {
+        "turn": 13,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Garth Nix",
+        "anchor_title": "Our Idiot Brother",
+        "constraints": {
+          "genre": "animation",
+          "language": "English",
+          "actor": "Gabriel Damon",
+          "plot": "activist",
+          "writer": "Garth Nix"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 13,
+          "from_focus": "actor",
+          "to_focus": "writer",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "The History Boys",
+          "to_anchor": "Our Idiot Brother"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - war, actor - Gabriel Damon, director - Joe Roth, writer - Garth Nix.\nRecommendation: Based on your preferences, I would recommend \"The Pianist\" and \"Pearl Harbor\". Both of these movies are historical dramas that explore the struggles of everyday people during times of war, with strong performances from Gabriel Damon and other talented actors.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "written",
+          "intriguing"
+        ],
+        "name": "War",
+        "director": "Joe Roth",
+        "actor": "Gabriel Damon",
+        "writer": "Garth Nix"
+      },
+      "rec_titles": [
+        "The Pianist",
+        "Pearl Harbor",
+        "Doctor Zhivago",
+        "The Land Before Time"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Garth Nix",
+        "anchor_title": "Our Idiot Brother",
+        "constraints": {
+          "genre": "animation",
+          "language": "English",
+          "actor": "Gabriel Damon",
+          "plot": "activist",
+          "writer": "Garth Nix"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - war; actor - Gabriel Damon; director - Joe Roth; writer - Garth Nix; plot keywords - just, more. Based on these cues, I recommend the movie \"War Horse\" (1982) starring David Thewlis, David Dencik, and Gerard McSorley. This film is an extraordinary journey from rural Devon to First World War France, adapted from Michael Morpurgo's novel and told through the eyes of a horse. Alternatively, you might enjoy \"Turbo\" (2013) starring Ben Schwartz and Snoop Dogg, which follows a snail who dreams of racing in the Indy 500 after a freak accident. Both movies offer exciting plots and talented actors that align with your preferences.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Joe Roth",
+        "actor": "Gabriel Damon",
+        "writer": "Garth Nix"
+      },
+      "rec_titles": [
+        "War Horse",
+        "Jack and Jill",
+        "Turbo",
+        "The Lucky Ones"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Turbo. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Garth Nix",
+        "anchor_title": "Our Idiot Brother",
+        "constraints": {
+          "genre": "animation",
+          "language": "English",
+          "actor": "Gabriel Damon",
+          "plot": "activist",
+          "writer": "Garth Nix"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user likes the sound of Turbo and is interested in movies with a war theme, actor Gabriel Damon, director Joe Roth, and writer Garth Nix.\n\nRecommendation: Based on the user's preferences, I would recommend \"Cold Mountain\" (2003) starring Melora Walters, Kathy Baker, James Gammon, and Cillian Murphy. The film is a powerful drama that explores the emotional struggles of soldiers returning home from war, which aligns with the user's interest in movies with a war theme. Additionally, the movie features a strong cast and was directed by Anthony Minghella, who has a similar directing style to Joe Roth.\n\nAlternatively, the user may enjoy \"Annie Hall\" (1977) starring Diane Keaton, Woody Allen, and Christopher Walken. The film is a classic romantic comedy that explores the complexities of relationships and features witty dialogue and memorable performances, which aligns with the user's interest in movies with a strong cast.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Turbo",
+        "director": "Joe Roth",
+        "actor": "Gabriel Damon",
+        "writer": "Garth Nix"
+      },
+      "rec_titles": [
+        "Cold Mountain",
+        "Black Hawk Down",
+        "Annie Hall",
+        "The Best Years of Our Lives"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on X. I want to try something more animal—Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "animal",
+        "anchor_title": "The Infiltrator",
+        "constraints": {
+          "genre": "animal",
+          "language": "English",
+          "actor": "Gabriel Damon",
+          "plot": "activist"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 16,
+          "from_focus": "writer",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "girl",
+          "from_anchor": "Our Idiot Brother",
+          "to_anchor": "The Infiltrator"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: animal, Gabriel Damon, Joe Roth, Garth Nix.\n\nBased on the user's preferences, I recommend \"Christmas with the Kranks\" and \"Talladega Nights: The Ballad of Ricky Bobby.\" Both movies feature comedic elements and talented actors, such as Jamie Lee Curtis and Will Ferrell respectively. \"Christmas with the Kranks\" offers a heartwarming story about a family's holiday celebration, while \"Talladega Nights\" provides a hilarious portrayal of a NASCAR driver's rise to fame.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "X",
+        "director": "Joe Roth",
+        "actor": "Gabriel Damon",
+        "writer": "Garth Nix"
+      },
+      "rec_titles": [
+        "Christmas with the Kranks",
+        "Scream 4",
+        "Talladega Nights: The Ballad of Ricky Bobby",
+        "Little Women"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "animal",
+        "anchor_title": "The Infiltrator",
+        "constraints": {
+          "genre": "animal",
+          "language": "English",
+          "actor": "Gabriel Damon",
+          "plot": "activist"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User: Just checking—do you have more recommendations like that?\n\nYou: Of course! Based on your preferences, I recommend \"The Land Before Time\" and \"Tusk.\" Both are thought-provoking and entertaining films with unique plots and talented actors. \"The Land Before Time\" is a heartwarming adventure about a group of young dinosaurs teaming up to reunite with their families, while \"Tusk\" is a quirky thriller that explores the dark side of human obsession.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Joe Roth",
+        "actor": "Gabriel Damon",
+        "writer": "Garth Nix"
+      },
+      "rec_titles": [
+        "The Land Before Time",
+        "You",
+        "Green Card",
+        "Tusk"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does War tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "animal",
+        "anchor_title": "The Infiltrator",
+        "constraints": {
+          "genre": "animal",
+          "language": "English",
+          "actor": "Gabriel Damon",
+          "plot": "activist"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: war; actor: Gabriel Damon; director: Joe Roth; writer: Garth Nix; plot keywords: what, kind. Based on these cues, here are some potential movie recommendations:\n\n* Title: American Sniper (2014) - This powerful and thought-provoking film tells the true story of Navy S.E.A.L. sniper Chris Kyle's experiences during four tours of duty in Iraq. Starring Bradley Cooper as Kyle, the movie sheds light on the psychological toll of war on soldiers and their families, while also showcasing Kyle's exceptional marksmanship skills that saved countless lives on the battlefield.\n* Title: The Messenger (2002) - This moving drama follows an American soldier who struggles with an ethical dilemma when he becomes involved with a widow of a fallen officer. With a talented cast including Brendan Sexton III, Samantha Morton, and Ben Foster, this film is sure to leave a lasting impression on viewers.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "War",
+        "director": "Joe Roth",
+        "actor": "Gabriel Damon",
+        "writer": "Garth Nix"
+      },
+      "rec_titles": [
+        "American Sniper",
+        "The Messenger",
+        "Aladdin",
+        "Anyone But You"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe explore stories about soldier? Maybe I’m overthinking it, but it sounds fascinating. Maybe something that connects to The Messenger.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "waiting_system",
+        "focus_field": "plot",
+        "focus_value": "soldier",
+        "anchor_title": "X-Men Origins: Wolverine",
+        "constraints": {
+          "genre": "animal",
+          "language": "English",
+          "plot": "soldier"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 19,
+          "from_focus": "genre",
+          "to_focus": "plot",
+          "bridge_field": "plot",
+          "bridge_value": "soldier",
+          "from_anchor": "The Infiltrator",
+          "to_anchor": "X-Men Origins: Wolverine"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, you provided some great cues for movies! Based on your preferences, I recommend checking out \"Red Dawn\" and \"Date Night.\" Both of these films offer a gripping and intense experience, with talented actors and interesting plots. In \"Red Dawn,\" you'll see a claustrophobic experience involving a Mexican middle-class family and the atrocities committed by wild and heartless army forces, while \"Date Night\" follows a bored married couple in New York City who get caught up in something more thrilling and dangerous. I hope you enjoy these recommendations!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "soldier",
+          "something"
+        ],
+        "name": "Soldier",
+        "director": "Joe Roth",
+        "actor": "Gabriel Damon",
+        "writer": "Garth Nix",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Red Dawn",
+        "Date Night",
+        "Flyboys",
+        "Schindler's List"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "plot",
+        "focus_value": "soldier",
+        "anchor_title": "X-Men Origins: Wolverine",
+        "constraints": {
+          "genre": "animal",
+          "language": "English",
+          "plot": "soldier"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre = war, actor = Gabriel Damon, director = Joe Roth, writer = Garth Nix, language = German, plot keywords = just, more.\nBased on these cues, I recommend the movie \"Hopeless\" (2012) starring Gabriel Damon. The film follows Ben, who becomes attracted to his best friend's girlfriend after his friend moves away, and explores themes of love, friendship, and self-discovery. Alternatively, you might enjoy \"Schindler's List\" (1993) starring Ralph Fiennes and Embeth Davidtz, which tells the powerful story of Oskar Schindler's efforts to save his Jewish workers from the Nazis during World War II. Both movies offer thought-provoking and emotionally impactful experiences.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Joe Roth",
+        "actor": "Gabriel Damon",
+        "writer": "Garth Nix",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Hopeless",
+        "Schindler's List",
+        "A Farewell to Arms",
+        "The Princess Diaries"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Bill Duke. That sounds intriguing. (I’m thinking of 3.)",
+      "user_meta": {
+        "turn": 21,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Bill Duke",
+        "anchor_title": "The Good German",
+        "constraints": {
+          "genre": "animal",
+          "language": "English",
+          "plot": "soldier",
+          "actor": "Bill Duke",
+          "director": "Tom Tykwer"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 21,
+          "from_focus": "plot",
+          "to_focus": "actor",
+          "bridge_field": "director",
+          "bridge_value": "Tom Tykwer",
+          "from_anchor": "X-Men Origins: Wolverine",
+          "to_anchor": "The Good German"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, I understand that you're looking for movies with Bill Duke, and based on your previous input, I have recommendations for two movies that match your preferences. \"White Night\" (2007) is a mystery drama starring Bill Duke, which follows an inspector as he re-investigates a long-forgotten murder case that he couldn't solve years ago. The movie is known for its intricate plot and great acting performances. Alternatively, \"Cinder\" (2012) is a dark fantasy film that explores themes of survival and love in a post-modern underworld. The movie features Bill Duke in a supporting role, and its unique blend of drama and fantasy might appeal to your tastes.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "3",
+        "director": "Joe Roth",
+        "actor": "Bill Duke",
+        "writer": "Garth Nix",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "White Night",
+        "There Be Dragons",
+        "Peggy Sue Got Married",
+        "Cinder"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bill Duke",
+        "anchor_title": "The Good German",
+        "constraints": {
+          "genre": "animal",
+          "language": "English",
+          "plot": "soldier",
+          "actor": "Bill Duke",
+          "director": "Tom Tykwer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to recommend some movies based on your user's preferences! They seem to enjoy war-themed movies with Bill Duke, Joe Roth, and Garth Nix involved in the production. Out of the options provided, I would recommend \"The Lucky Ones\" and \"The Taming of the Shrew.\" Both of these movies have a unique plot and great cast, including Mark L. Young, John Heard, Katherine LaNasa, and  from the original play by William Shakespeare.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Joe Roth",
+        "actor": "Bill Duke",
+        "writer": "Garth Nix",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Without a Clue",
+        "The White Countess",
+        "The Lucky Ones",
+        "The Taming of the Shrew"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Us. I want to try something more motorsport—Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 23,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "motorsport",
+        "anchor_title": "Butch Cassidy and the Sundance Kid",
+        "constraints": {
+          "genre": "motorsport",
+          "language": "English",
+          "plot": "soldier",
+          "actor": "Bill Duke",
+          "director": "Tom Tykwer"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 23,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "friends",
+          "from_anchor": "The Good German",
+          "to_anchor": "Butch Cassidy and the Sundance Kid"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has expressed interest in watching a movie related to motorsports, specifically preferring films starring Bill Duke and directed by Joe Roth. Based on their previous input, I recommend \"Fast Five\" and \"Predator.\" Both of these movies feature high-octane action and exciting car chases that are sure to thrill any fan of the genre!",
+      "constraints": {
+        "genre": "motorsport",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Us",
+        "director": "Joe Roth",
+        "actor": "Bill Duke",
+        "writer": "Garth Nix",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Scream 4",
+        "Predator",
+        "2 Fast 2 Furious",
+        "Fast Five"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "motorsport",
+        "anchor_title": "Butch Cassidy and the Sundance Kid",
+        "constraints": {
+          "genre": "motorsport",
+          "language": "English",
+          "plot": "soldier",
+          "actor": "Bill Duke",
+          "director": "Tom Tykwer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has provided some helpful cues for their movie preferences, including the genre \"motorsport\", actor Bill Duke, director Joe Roth, writer Garth Nix, and language German. Based on these constraints, I recommend two movies from this list: \"Ocean's Twelve\" (2004) and \"We Need to Talk About Kevin\" (2011). Both of these films feature intriguing plots and talented actors that align with the user's preferences. In \"Ocean's Twelve,\" Brad Pitt leads a diverse ensemble cast in a sequel to \"Ocean's Eleven\" that promises high-stakes heists and witty banter. Meanwhile, \"We Need to Talk About Kevin\" is a psychological thriller that explores the dark side of human nature through the lens of a disturbed young man and his troubled mother, played by Tilda Swinton.",
+      "constraints": {
+        "genre": "motorsport",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Joe Roth",
+        "actor": "Bill Duke",
+        "writer": "Garth Nix",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Ocean's Twelve",
+        "Veronica Mars",
+        "Before I Fall",
+        "We Need to Talk About Kevin"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Her. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "motorsport",
+        "anchor_title": "Butch Cassidy and the Sundance Kid",
+        "constraints": {
+          "genre": "motorsport",
+          "language": "English",
+          "plot": "soldier",
+          "actor": "Bill Duke",
+          "director": "Tom Tykwer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user expressed a preference for movies that are deeper than they initially seemed, with a focus on motorsports and actor Bill Duke. Based on their cues, I recommend \"Smokin' Aces\" (2006) and \"Mama\" (2013). Both films feature strong performances from talented actors and explore themes of resilience, empowerment, and the human spirit.",
+      "constraints": {
+        "genre": "motorsport",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Her",
+        "director": "Joe Roth",
+        "actor": "Bill Duke",
+        "writer": "Garth Nix",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Smokin' Aces",
+        "Mama",
+        "In the Woods",
+        "2 Fast 2 Furious"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Tron? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "motorsport",
+        "anchor_title": "Butch Cassidy and the Sundance Kid",
+        "constraints": {
+          "genre": "motorsport",
+          "language": "English",
+          "plot": "soldier",
+          "actor": "Bill Duke",
+          "director": "Tom Tykwer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - motorsport, actor - Bill Duke, director - Joe Roth, writer - Garth Nix, language - German, plot keywords - what.\nBased on these constraints, I recommend the movie \"Chain Reaction\" (1996) starring Paula Kelly and David Wayne. The film is about a group of scientists working to discover the cause of a mysterious illness that is killing people in a small town, and how they must adapt their methods to uncover the truth. It has a similar tone and pace to \"Tron\" and features a talented cast, making it an interesting choice for fans of the movie.\n\nAlternatively, I also recommend \"The Secret\" (1992) starring Genevieve O'Reilly and James Nesbitt. The film is about a stranger who enters a couple's life and reveals a mysterious secret that could change their lives forever. It has a similar atmosphere and themes to \"Tron\" and features a talented cast, making it another great choice for fans of the movie.",
+      "constraints": {
+        "genre": "motorsport",
+        "plot": [
+          "what"
+        ],
+        "name": "Tron",
+        "director": "Joe Roth",
+        "actor": "Bill Duke",
+        "writer": "Garth Nix",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Chain Reaction",
+        "The Andromeda Strain",
+        "The Secret",
+        "Elizabeth"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "motorsport",
+        "anchor_title": "Butch Cassidy and the Sundance Kid",
+        "constraints": {
+          "genre": "motorsport",
+          "language": "English",
+          "plot": "soldier",
+          "actor": "Bill Duke",
+          "director": "Tom Tykwer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - motorsport, actor - Bill Duke, director - Joe Roth, writer - Garth Nix, language - German.\nBased on these constraints, I recommend \"Super\" and \"2 Fast 2 Furious.\" Both movies feature exciting action sequences and a mix of humor and adventure that may appeal to fans of motorsports.",
+      "constraints": {
+        "genre": "motorsport",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "director": "Joe Roth",
+        "actor": "Bill Duke",
+        "writer": "Garth Nix",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Super",
+        "2 Fast 2 Furious",
+        "Louie",
+        "2010"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, could we talk about The Fugitive specifically? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 28,
+        "stage": "waiting_system",
+        "focus_field": "name",
+        "focus_value": "The Fugitive",
+        "anchor_title": "Deconstructing Harry",
+        "constraints": {
+          "genre": "motorsport",
+          "language": "English",
+          "plot": "soldier",
+          "director": "Tom Tykwer",
+          "name": "The Fugitive"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 28,
+          "from_focus": "genre",
+          "to_focus": "name",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Butch Cassidy and the Sundance Kid",
+          "to_anchor": "Deconstructing Harry"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has provided some specific preferences for their movie recommendation, including a preference for movies with a \"motorsport\" genre, an actor named Bill Duke, and a director named Joe Roth. They have also expressed surprise at the vibe of The Fugitive, which suggests they are open to exploring new genres and directors. Based on these preferences, I recommend the movie \"Predator\" starring Carl Weathers and Bill Duke. This action-packed film features a team of commandos being hunted by an extraterrestrial warrior in a Central American jungle, offering a thrilling and exciting viewing experience.",
+      "constraints": {
+        "genre": "motorsport",
+        "plot": [
+          "actually",
+          "could"
+        ],
+        "name": "The Fugitive",
+        "director": "Joe Roth",
+        "actor": "Bill Duke",
+        "writer": "Garth Nix",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "True Blood",
+        "Alex in Wonderland",
+        "Christmas with the Kranks",
+        "Predator"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "The Fugitive",
+        "anchor_title": "Deconstructing Harry",
+        "constraints": {
+          "genre": "motorsport",
+          "language": "English",
+          "plot": "soldier",
+          "director": "Tom Tykwer",
+          "name": "The Fugitive"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: Genre - motorsport, actor - Bill Duke, director - Joe Roth, writer - Garth Nix, language - German, plot keywords - just, more.\n\nBased on the user's preferences, I recommend \"Wild Hogs\" and \"Neighbors 2: Sorority Rising\". Both movies feature exciting action sequences and a mix of comedy and drama. In \"Wild Hogs\", a group of suburban biker wannabes embark on an adventure that turns dangerous when they encounter a New Mexico gang, while in \"Neighbors 2: Sorority Rising\", a young woman is taken hostage by a trucker who enters her sports car in a cross-border race to reach Mexico before the police catch him. Both movies have an engaging plot and talented actors, including Kyle Gass, Drew Sidora, Jill Hennessy, Tichina Arnold, Michael Hitchcock, Ray Liotta, Peter Fonda, Tim Allen, William H. Macy, Marisa Tomei, Chloë Grace Moretz, and Ike Barinholtz.",
+      "constraints": {
+        "genre": "motorsport",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Joe Roth",
+        "actor": "Bill Duke",
+        "writer": "Garth Nix",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Wild Hogs",
+        "Neighbors 2: Sorority Rising",
+        "The Fast and the Furious",
+        "A Little Princess"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Mélanie Laurent. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 30,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Mélanie Laurent",
+        "anchor_title": "The Smurfs 2",
+        "constraints": {
+          "genre": "motorsport",
+          "language": "English",
+          "plot": "crazy",
+          "director": "Tom Tykwer",
+          "name": "The Fugitive",
+          "actor": "Mélanie Laurent"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 30,
+          "from_focus": "name",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "crazy",
+          "from_anchor": "Deconstructing Harry",
+          "to_anchor": "The Smurfs 2"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: The user wants to find movies similar to \"Us\" in terms of genre, actor, director, and language.\nRecommendation: Based on the user's preferences, I recommend \"The Constant Gardener\" and \"Speed Racer.\" Both movies offer a thrilling and suspenseful plot, with \"The Constant Gardner\" providing a transcontinental quest filled with explosive secrets, and \"Speed Racer\" showcasing a high-tech Mach 5 automobile and young driver's aspiration to become champion of the racing world.",
+      "constraints": {
+        "genre": "motorsport",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "RED",
+        "director": "Joe Roth",
+        "actor": "Mélanie Laurent",
+        "writer": "Garth Nix",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "The Constant Gardener",
+        "The Texas Chainsaw Massacre",
+        "Adventureland",
+        "Speed Racer"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Mélanie Laurent",
+        "anchor_title": "The Smurfs 2",
+        "constraints": {
+          "genre": "motorsport",
+          "language": "English",
+          "plot": "crazy",
+          "director": "Tom Tykwer",
+          "name": "The Fugitive",
+          "actor": "Mélanie Laurent"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User: Just checking—do you have more recommendations like that?\n\nYou: Sure! Based on your preferences, I would recommend \"Thick as Thieves\" and \"Donnie Brasco.\" Both are action-packed with interesting characters and plot twists. In \"Thick as Thieves,\" a group of criminals must work together to pull off a dangerous heist, while in \"Donnie Brasco,\" an FBI agent infiltrates the mob and finds himself caught between his loyalty to the agency and his growing allegiance to the Mafia. Both movies feature talented actors such as Tom Hardy and Al Pacino, making for a thrilling viewing experience.",
+      "constraints": {
+        "genre": "motorsport",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Joe Roth",
+        "actor": "Mélanie Laurent",
+        "writer": "Garth Nix",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Thick as Thieves",
+        "Constantine",
+        "White Night",
+        "Donnie Brasco"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Mélanie Laurent",
+        "anchor_title": "The Smurfs 2",
+        "constraints": {
+          "genre": "motorsport",
+          "language": "English",
+          "plot": "crazy",
+          "director": "Tom Tykwer",
+          "name": "The Fugitive",
+          "actor": "Mélanie Laurent"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - motorsport, actor - Mélanie Laurent, director - Joe Roth, writer - Garth Nix, language - ger.\nRecommendation: Based on the user's preferences, I would recommend \"Inglourious Basterds\" and \"Fast Five\". Both movies feature high-octane action and exciting car chases that are sure to thrill fans of motorsport. The plots also explore themes of revenge and redemption, which may appeal to users looking for complex and thought-provoking stories.",
+      "constraints": {
+        "genre": "motorsport",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "You",
+        "director": "Joe Roth",
+        "actor": "Mélanie Laurent",
+        "writer": "Garth Nix",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Inglourious Basterds",
+        "Fast Five",
+        "Speed Racer",
+        "Wonder Boys"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Inglourious Basterds. I want to try something more gay—still with Christoph Waltz if possible. I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 33,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "gay",
+        "anchor_title": "Thunderbirds",
+        "constraints": {
+          "genre": "gay",
+          "language": "English",
+          "plot": "crazy",
+          "director": "Tom Tykwer",
+          "actor": "Christoph Waltz"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 33,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "Christoph Waltz",
+          "from_anchor": "The Smurfs 2",
+          "to_anchor": "Thunderbirds"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: wants something more gay, actor Christoph Waltz possible.\n\nBased on the user's preferences, I recommend \"The Legend of Tarzan\" and \"Wanderlust\". Both movies feature Christoph Waltz in lead roles and offer an exciting adventure with a mix of humor and drama. \"The Legend of Tarzan\" follows Tarzan as he investigates a mining encampment in the jungle, while \"Wanderlust\" tells the story of a man who sets off on a bike tour of Iceland and discovers his childhood dream of becoming an explorer. Both movies offer a thrilling ride with stunning visuals and a touch of humor.",
+      "constraints": {
+        "genre": "gay",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Inglourious Basterds",
+        "director": "Joe Roth",
+        "actor": "Christoph Waltz",
+        "writer": "Garth Nix",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "The Legend of Tarzan",
+        "Wanderlust",
+        "Can You Keep a Secret?",
+        "Scream 4"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 34,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "gay",
+        "anchor_title": "Thunderbirds",
+        "constraints": {
+          "genre": "gay",
+          "language": "English",
+          "plot": "crazy",
+          "director": "Tom Tykwer",
+          "actor": "Christoph Waltz"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I recommend \"The Stuff\" and \"Ocean's Twelve.\" Both movies feature talented actors such as Christoph Waltz and Brad Pitt, respectively, and offer unique and engaging plots. \"The Stuff\" is a bizarre and campy horror-comedy about a mysterious substance that turns people into zombie-like creatures, while \"Ocean's Twelve\" is a thrilling heist movie with an all-star cast and plenty of twists and turns.",
+      "constraints": {
+        "genre": "gay",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Joe Roth",
+        "actor": "Christoph Waltz",
+        "writer": "Garth Nix",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "The Stuff",
+        "The River",
+        "Ocean's Twelve",
+        "Lakeview Terrace"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "gay",
+        "anchor_title": "Thunderbirds",
+        "constraints": {
+          "genre": "gay",
+          "language": "English",
+          "plot": "crazy",
+          "director": "Tom Tykwer",
+          "actor": "Christoph Waltz"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure! Based on the user's preference cues, I recommend \"The Kids Are All Right\" and \"Water for Elephants.\" Both films feature strong performances from the cast, including Christoph Waltz, who the user mentioned as a preferred actor. \"The Kids Are All Right\" is a heartwarming and thought-provoking drama about a non-traditional family, while \"Water for Elephants\" is a romantic tale of love and compassion set against the backdrop of a traveling circus.",
+      "constraints": {
+        "genre": "gay",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "You",
+        "director": "Joe Roth",
+        "actor": "Christoph Waltz",
+        "writer": "Garth Nix",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "The Kids Are All Right",
+        "Water for Elephants",
+        "Evil Dead II",
+        "Reservoir Dogs"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "gay",
+        "anchor_title": "Thunderbirds",
+        "constraints": {
+          "genre": "gay",
+          "language": "English",
+          "plot": "crazy",
+          "director": "Tom Tykwer",
+          "actor": "Christoph Waltz"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has provided us with some specific preferences, including a desire for movies with gay themes, actors like Christoph Waltz, and directors like Joe Roth. Based on these cues, I would recommend \"Brokeback Mountain\" and \"Inglourious Basterds.\" Both of these movies feature powerful performances from the cast, particularly in the case of \"Brokeback Mountain,\" which has become a classic of LGBTQ+ cinema.",
+      "constraints": {
+        "genre": "gay",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "You",
+        "director": "Joe Roth",
+        "actor": "Christoph Waltz",
+        "writer": "Garth Nix",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Prometheus",
+        "Brokeback Mountain",
+        "Inglourious Basterds",
+        "Water for Elephants"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Brokeback Mountain? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "gay",
+        "anchor_title": "Thunderbirds",
+        "constraints": {
+          "genre": "gay",
+          "language": "English",
+          "plot": "crazy",
+          "director": "Tom Tykwer",
+          "actor": "Christoph Waltz"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - gay, actor - Christoph Waltz, director - Joe Roth, writer - Garth Nix, language - German, plot keywords - what, mountain.\nBased on these cues, I recommend the movie \"The Three Musketeers\" (2011) starring Dexter Fletcher, James Corden, Orlando Bloom, Matthew Macfadyen, Milla Jovovich, Logan Lerman, and Christoph Waltz. The movie follows a group of Musketeers in 17th-century France as they face dangerous adventures and unexpected love interests.",
+      "constraints": {
+        "genre": "gay",
+        "plot": [
+          "what",
+          "mountain"
+        ],
+        "name": "Brokeback Mountain",
+        "director": "Joe Roth",
+        "actor": "Christoph Waltz",
+        "writer": "Garth Nix",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "The Three Musketeers",
+        "Waiting",
+        "Paradise Lost",
+        "I Heart Huckabees"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "gay",
+        "anchor_title": "Thunderbirds",
+        "constraints": {
+          "genre": "gay",
+          "language": "English",
+          "plot": "crazy",
+          "director": "Tom Tykwer",
+          "actor": "Christoph Waltz"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference cues, I recommend checking out \"Alex in Wonderland\" and \"Restless\". Both films offer a unique blend of artistic expression and personal exploration that seem to align with the user's interests. \"Alex in Wonderland\" is a thought-provoking and visually stunning film that delves into the creative process and personal identity, while \"Restless\" is a coming-of-age story that explores themes of love, freedom, and self-discovery.",
+      "constraints": {
+        "genre": "gay",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "director": "Joe Roth",
+        "actor": "Christoph Waltz",
+        "writer": "Garth Nix",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Alex in Wonderland",
+        "Restless",
+        "Jumper",
+        "The Amazing Spider-Man"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Wonder tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "gay",
+        "anchor_title": "Thunderbirds",
+        "constraints": {
+          "genre": "gay",
+          "language": "English",
+          "plot": "crazy",
+          "director": "Tom Tykwer",
+          "actor": "Christoph Waltz"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, I recommend \"Elizabeth\" and \"The Last Unicorn.\" Both of these films feature strong female leads and have a unique blend of drama and fantasy elements that may appeal to the user. In \"Elizabeth,\" Fanny Ardant plays the titular queen in her early years, while \"The Last Unicorna\" is an animated musical with a beautiful unicorn on a quest to find out if she's the last of her kind.",
+      "constraints": {
+        "genre": "gay",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Wonder",
+        "director": "Joe Roth",
+        "actor": "Christoph Waltz",
+        "writer": "Garth Nix",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Elizabeth",
+        "The Last Unicorn",
+        "Chain Reaction",
+        "Rogues"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Tatiana de Rosnay? Hmm, I didn’t expect that vibe. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 40,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Tatiana de Rosnay",
+        "anchor_title": "The Watcher",
+        "constraints": {
+          "genre": "gay",
+          "language": "English",
+          "plot": "childhood",
+          "actor": "Christoph Waltz",
+          "writer": "Tatiana de Rosnay"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 40,
+          "from_focus": "genre",
+          "to_focus": "writer",
+          "bridge_field": "plot",
+          "bridge_value": "childhood",
+          "from_anchor": "Thunderbirds",
+          "to_anchor": "The Watcher"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: gay, actor Christoph Waltz, director Joe Roth, language German, and plot keywords \"written\" and \"don't\".\nBased on these constraints, I recommend watching \"Wonder Boys\" and \"Boomerang\". Both movies feature Christoph Waltz in leading roles, and they both have a written element to their plots. \"Wonder Boys\" follows an English professor dealing with his personal struggles while trying to finish his book, while \"Boomerang\" tells the story of a blind man and a girl with a troubled past who find connection through writing. Both movies are also highly rated and have received critical acclaim.",
+      "constraints": {
+        "genre": "gay",
+        "plot": [
+          "written",
+          "didn"
+        ],
+        "name": "Ted",
+        "director": "Joe Roth",
+        "actor": "Christoph Waltz",
+        "writer": "Tatiana de Rosnay",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "America's Sweethearts",
+        "Water for Elephants",
+        "Boomerang",
+        "Wonder Boys"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Tatiana de Rosnay",
+        "anchor_title": "The Watcher",
+        "constraints": {
+          "genre": "gay",
+          "language": "English",
+          "plot": "childhood",
+          "actor": "Christoph Waltz",
+          "writer": "Tatiana de Rosnay"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - gay, actor - Christoph Waltz, director - Joe Roth, writer - Tatiana de Rosnay, language - German, plot keywords - just, more.\n\nBased on the user's preferences, I recommend the movie \"RED\" (2010) starring Bruce Willis and Morgan Freeman. The film follows two lookalike suspects and a team of cops with only 48 hours to solve a murder case. It has plenty of action and suspense, which should satisfy the user's preference for a thrilling movie.\n\nAlternatively, I also recommend \"Veronica Mars\" (N/A) starring Kristen Bell and Jason Dohring. The movie follows Veronica Mars, a former private eye who returns to her hometown for her high school reunion and gets pulled into a murder mystery involving her old flame. It has a great mix of mystery, drama, and comedy that should appeal to the user's preferences.",
+      "constraints": {
+        "genre": "gay",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Joe Roth",
+        "actor": "Christoph Waltz",
+        "writer": "Tatiana de Rosnay",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "RED",
+        "Bobby",
+        "Veronica Mars",
+        "Labyrinths"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? That sounds intriguing.",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Tatiana de Rosnay",
+        "anchor_title": "The Watcher",
+        "constraints": {
+          "genre": "gay",
+          "language": "English",
+          "plot": "childhood",
+          "actor": "Christoph Waltz",
+          "writer": "Tatiana de Rosnay"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThe user is looking for a movie with a intriguing plot and actor Christoph Waltz. They have also expressed interest in movies with a gay theme, German language, and director Joe Roth.\n\nRecommendation:\nBased on the user's preferences, I recommend \"Brokeback Mountain\" directed by Ang Lee, starring Heath Ledger and Jake Gyllenhaal. The movie tells a poignant and complex story of two men who develop a forbidden romance in rural Wyoming, exploring themes of love, identity, and societal norms. Additionally, Christoph Waltz has a supporting role as a conflicted ranch owner, adding to the film's star power.",
+      "constraints": {
+        "genre": "gay",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Us",
+        "director": "Joe Roth",
+        "actor": "Christoph Waltz",
+        "writer": "Tatiana de Rosnay",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "The Legend of Tarzan",
+        "Zero Effect",
+        "Brokeback Mountain",
+        "The Yearling"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Tatiana de Rosnay",
+        "anchor_title": "The Watcher",
+        "constraints": {
+          "genre": "gay",
+          "language": "English",
+          "plot": "childhood",
+          "actor": "Christoph Waltz",
+          "writer": "Tatiana de Rosnay"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, it seems they are interested in movies with a gay theme, star Christoph Waltz, and are open to different genres. Of the movies listed, I recommend \"Inglourious Basterds\" and \"Smokin' Aces\". Both of these movies feature Christoph Waltz in leading roles and offer a unique blend of action, drama, and humor that may appeal to the user's taste.",
+      "constraints": {
+        "genre": "gay",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "director": "Joe Roth",
+        "actor": "Christoph Waltz",
+        "writer": "Tatiana de Rosnay",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Inglourious Basterds",
+        "Smokin' Aces",
+        "Blow Out",
+        "The Stuff"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Tatiana de Rosnay",
+        "anchor_title": "The Watcher",
+        "constraints": {
+          "genre": "gay",
+          "language": "English",
+          "plot": "childhood",
+          "actor": "Christoph Waltz",
+          "writer": "Tatiana de Rosnay"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Here's my recommendation based on the user's preferences:\n\nThe user seems to enjoy stories with a mix of action, drama, and suspense. Out of the movies listed, I would recommend \"Taken\" and \"Super\". Both of these movies have elements of danger, adventure, and imagination that might appeal to the user's taste. In \"Taken\", Liam Neeson plays a former CIA operative who must rescue his daughter from a human trafficking ring, while in \"Super\", a young boy turns into a superhero to save the world from evil forces. Both movies have a fast-paced and thrilling plot that might keep the user engaged.",
+      "constraints": {
+        "genre": "gay",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "director": "Joe Roth",
+        "actor": "Christoph Waltz",
+        "writer": "Tatiana de Rosnay",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Wolfhound",
+        "Little Fockers",
+        "Taken",
+        "Super"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Richard Linklater. That sounds intriguing. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 45,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Richard Linklater",
+        "anchor_title": "Johns",
+        "constraints": {
+          "genre": "gay",
+          "plot": "yours",
+          "actor": "Richard Linklater",
+          "writer": "Tatiana de Rosnay"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 45,
+          "from_focus": "writer",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "yours",
+          "from_anchor": "The Watcher",
+          "to_anchor": "Johns"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - gay, actor - Richard Linklater, director - Richard Linklater, writer - Richard Linklater, language - German.\n\nBased on the user's preferences, I recommend \"The Martian\" and \"The Kids Are All Right\". Both movies are directed by Richard Linklater and feature compelling plots that explore themes of survival, family, and identity. In \"The Martian\", Matt Damon stars as an astronaut who must rely on his ingenuity to signal for help after he is stranded on Mars. In \"The Kids Are All Right\", Annette Bening and Mark Ruffalo play a lesbian couple who must navigate their non-traditional family dynamics when their teenage children discover their biological father.",
+      "constraints": {
+        "genre": "gay",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "You",
+        "director": "Richard Linklater",
+        "actor": "Richard Linklater",
+        "writer": "Richard Linklater",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "The Martian",
+        "The Underneath",
+        "The Constant Gardener",
+        "The Kids Are All Right"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Richard Linklater",
+        "anchor_title": "Johns",
+        "constraints": {
+          "genre": "gay",
+          "plot": "yours",
+          "actor": "Richard Linklater",
+          "writer": "Tatiana de Rosnay"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre: gay; actor: Richard Linklater; director: Richard Linklater; writer: Richard Linklater; language: ger; plot keywords: just, more.\nBased on the user's preferences, I recommend \"Neighbors 2: Sorority Rising\" and \"Wonder Boys.\" Both movies feature Richard Linklater as a director or actor, and they have interesting plots that align with the user's preferences. \"Neighbors 2\" is a comedy about a group of college students and their wild antics, while \"Wonder Boys\" is a drama about an English professor dealing with various personal and professional issues.",
+      "constraints": {
+        "genre": "gay",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Richard Linklater",
+        "actor": "Richard Linklater",
+        "writer": "Richard Linklater",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Neighbors 2: Sorority Rising",
+        "Braveheart",
+        "Wonder Boys",
+        "Hopeless"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Richard Linklater",
+        "anchor_title": "Johns",
+        "constraints": {
+          "genre": "gay",
+          "plot": "yours",
+          "actor": "Richard Linklater",
+          "writer": "Tatiana de Rosnay"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, it seems they are interested in movies with a gay theme, directed or written by Richard Linklater, and starring Liam Neeson or Matthew McConaughey. Of the movies listed, \"The Newton Boys\" and \"Waking Life\" are two recommendations that fit these criteria. \"The Newton Boys\" is a crime drama about a group of bank robbers in the 1900s, while \"Waking Life\" is a philosophical exploration of the meaning of life through the eyes of a man who wanders through a surreal dream landscape. Both are thought-provoking and well-crafted films that feature Liam Neeson and Richard Linklater in prominent roles.",
+      "constraints": {
+        "genre": "gay",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "You",
+        "director": "Richard Linklater",
+        "actor": "Richard Linklater",
+        "writer": "Richard Linklater",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "The Newton Boys",
+        "The Kids Are All Right",
+        "The Hours",
+        "Waking Life"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Bob Peterson? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of They.)",
+      "user_meta": {
+        "turn": 48,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Bob Peterson",
+        "anchor_title": "The Pathfinder",
+        "constraints": {
+          "genre": "gay",
+          "plot": "british",
+          "actor": "Richard Linklater",
+          "writer": "Tatiana de Rosnay",
+          "director": "Bob Peterson"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 48,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "british",
+          "from_anchor": "Johns",
+          "to_anchor": "The Pathfinder"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Here are some movie recommendations based on the user's preferences:\n\nThe user has expressed interest in watching a movie directed by Bob Peterson, so I recommend checking out \"Trees Lounge\" or \"Slacker,\" both of which were directed by Bob Peterson. Both movies offer a unique and quirky perspective on small-town life and the characters that inhabit it.",
+      "constraints": {
+        "genre": "gay",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "RED",
+        "director": "Bob Peterson",
+        "actor": "Richard Linklater",
+        "writer": "Bob Peterson",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Trees Lounge",
+        "Slacker",
+        "Ratatouille",
+        "Maleficent"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Bob Peterson",
+        "anchor_title": "The Pathfinder",
+        "constraints": {
+          "genre": "gay",
+          "plot": "british",
+          "actor": "Richard Linklater",
+          "writer": "Tatiana de Rosnay",
+          "director": "Bob Peterson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has provided several cues for their movie preferences, including genre (gay), actor (Richard Linklater), director (Bob Peterson), and language (German). Based on these cues, I recommend the films \"Southland Tales\" and \"Thick as Thieves.\" Both of these movies feature unique plots and talented actors, including Cheri Oteri, Zelda Rubinstein, Beth Grant, Christopher Lambert, Wood Harris, Bai Ling, Chris Andrew Ciulla, Mandy Moore, Nora Dunn, Seann William Scott, Kevin Smith, Justin Timberlake, Janeane Garofalo, and Miranda Richardson.",
+      "constraints": {
+        "genre": "gay",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Bob Peterson",
+        "actor": "Richard Linklater",
+        "writer": "Bob Peterson",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Southland Tales",
+        "Shutter",
+        "Johns",
+        "Thick as Thieves"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 50,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Bob Peterson",
+        "anchor_title": "The Pathfinder",
+        "constraints": {
+          "genre": "gay",
+          "plot": "british",
+          "actor": "Richard Linklater",
+          "writer": "Tatiana de Rosnay",
+          "director": "Bob Peterson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I recommend \"The Underneath\" and \"500 Days of Summer.\" Both movies offer a unique blend of drama, suspense, and romance that seem tailored to the user's tastes. \"The Underneath\" features a young couple trapped in underground caves with a terrifying secret lurking beneath, while \"500 Days of Summer\" is a heartwarming romantic comedy that explores the ups and downs of love and relationships.",
+      "constraints": {
+        "genre": "gay",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "You",
+        "director": "Bob Peterson",
+        "actor": "Richard Linklater",
+        "writer": "Bob Peterson",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "The Underneath",
+        "500 Days of Summer",
+        "Dance Flick",
+        "You"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Edward Scissorhands",
+      "to_anchor": "12 Angry Men"
+    },
+    {
+      "turn": 8,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "Jet Li",
+      "from_anchor": "12 Angry Men",
+      "to_anchor": "Whiplash"
+    },
+    {
+      "turn": 10,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "activist",
+      "from_anchor": "Whiplash",
+      "to_anchor": "The History Boys"
+    },
+    {
+      "turn": 13,
+      "from_focus": "actor",
+      "to_focus": "writer",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "The History Boys",
+      "to_anchor": "Our Idiot Brother"
+    },
+    {
+      "turn": 16,
+      "from_focus": "writer",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "girl",
+      "from_anchor": "Our Idiot Brother",
+      "to_anchor": "The Infiltrator"
+    },
+    {
+      "turn": 19,
+      "from_focus": "genre",
+      "to_focus": "plot",
+      "bridge_field": "plot",
+      "bridge_value": "soldier",
+      "from_anchor": "The Infiltrator",
+      "to_anchor": "X-Men Origins: Wolverine"
+    },
+    {
+      "turn": 21,
+      "from_focus": "plot",
+      "to_focus": "actor",
+      "bridge_field": "director",
+      "bridge_value": "Tom Tykwer",
+      "from_anchor": "X-Men Origins: Wolverine",
+      "to_anchor": "The Good German"
+    },
+    {
+      "turn": 23,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "friends",
+      "from_anchor": "The Good German",
+      "to_anchor": "Butch Cassidy and the Sundance Kid"
+    },
+    {
+      "turn": 28,
+      "from_focus": "genre",
+      "to_focus": "name",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Butch Cassidy and the Sundance Kid",
+      "to_anchor": "Deconstructing Harry"
+    },
+    {
+      "turn": 30,
+      "from_focus": "name",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "crazy",
+      "from_anchor": "Deconstructing Harry",
+      "to_anchor": "The Smurfs 2"
+    },
+    {
+      "turn": 33,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "Christoph Waltz",
+      "from_anchor": "The Smurfs 2",
+      "to_anchor": "Thunderbirds"
+    },
+    {
+      "turn": 40,
+      "from_focus": "genre",
+      "to_focus": "writer",
+      "bridge_field": "plot",
+      "bridge_value": "childhood",
+      "from_anchor": "Thunderbirds",
+      "to_anchor": "The Watcher"
+    },
+    {
+      "turn": 45,
+      "from_focus": "writer",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "yours",
+      "from_anchor": "The Watcher",
+      "to_anchor": "Johns"
+    },
+    {
+      "turn": 48,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "british",
+      "from_anchor": "Johns",
+      "to_anchor": "The Pathfinder"
+    }
+  ]
+}

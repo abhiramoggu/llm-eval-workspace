@@ -1,0 +1,2191 @@
+{
+  "session_id": "00070",
+  "model_name": "llama2:latest",
+  "true_genre": "massachusetts",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a police movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "police",
+        "anchor_title": "Die Hard with a Vengeance",
+        "constraints": {
+          "genre": "police"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - police, plot keywords - police, could.\nBased on the user's preferences, I recommend \"The Shadows\" and \"The Sweeney.\" Both of these movies offer a gripping and suspenseful police drama with intriguing plots and talented actors. In \"The Shadows,\" Stephen Grimes is trapped in a dangerous plot as his friend's sinister side is revealed, while \"The Sweeney\" follows a hardened detective in London's Flying Squad as they investigate a series of crimes.",
+      "constraints": {
+        "genre": "police",
+        "plot": [
+          "police",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "The Shadows",
+        "White Night",
+        "Thelma & Louise",
+        "The Sweeney"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Sweeney. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "police",
+        "anchor_title": "Die Hard with a Vengeance",
+        "constraints": {
+          "genre": "police"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: The user likes the sound of The Sweeney and is interested in movies with a police theme.\nRecommendation: Based on your preference for police-themed movies, I recommend \"Annie Hall\" (1977) starring Woody Allen and Diane Keaton, which explores a comedic and nostalgic look back at a past relationship through the lens of a Jewish comedian. Alternatively, \"X-Men: First Class\" (2011) features superpowered humans in the 1960s and their struggles with prejudice and power struggles within their community, which may appeal to your interest in police themes.",
+      "constraints": {
+        "genre": "police",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Sweeney"
+      },
+      "rec_titles": [
+        "Annie Hall",
+        "X-Men: First Class",
+        "It's a Wonderful Life",
+        "Castle in the Sky"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Gary Winick? That feels deeper than I thought. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 3,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Gary Winick",
+        "anchor_title": "13 Going on 30",
+        "constraints": {
+          "genre": "police",
+          "director": "Gary Winick"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 3,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "genre",
+          "bridge_value": "police",
+          "from_anchor": "Die Hard with a Vengeance",
+          "to_anchor": "13 Going on 30"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, I recommend \"13 Going on 30\" and \"The Seduction of Joe Tynan.\" Both of these movies offer a mix of drama and suspense that seem to align with the user's interests. In \"13 Going on 30,\" Jenna Rink finds herself unexpectedly transformed into a 30-year-old woman, which leads to some interesting and humorous situations. In \"The Seduction of Joe Tynan,\" a respected senator becomes embroiled in a complex web of political intrigue and personal relationships. Both movies feature talented actors and offer thought-provoking storylines that I think the user will enjoy.",
+      "constraints": {
+        "genre": "police",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Deep",
+        "director": "Gary Winick"
+      },
+      "rec_titles": [
+        "13 Going on 30",
+        "The Seduction of Joe Tynan",
+        "Psychic Experiment",
+        "The Surgeon"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Gary Winick",
+        "anchor_title": "13 Going on 30",
+        "constraints": {
+          "genre": "police",
+          "director": "Gary Winick"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - police; director - Gary Winick; plot keywords - just, more.\nBased on these constraints, I recommend \"The Truth\" and \"Jason Bourne.\" Both of these movies offer a thrilling and suspenseful storyline that align with the user's preferences. In \"The Truth,\" a glamorous couple is taken hostage in their mansion by a mysterious intruder, leading to a complicated situation. In \"Jason Bourne,\" the CIA's most dangerous former operative uncovers more explosive truths about his past. Both movies feature talented actors and are sure to provide an exciting viewing experience.",
+      "constraints": {
+        "genre": "police",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Gary Winick"
+      },
+      "rec_titles": [
+        "The Truth",
+        "Jason Bourne",
+        "Zack and Miri Make a Porno",
+        "Panic Room"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Taken tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Gary Winick",
+        "anchor_title": "13 Going on 30",
+        "constraints": {
+          "genre": "police",
+          "director": "Gary Winick"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - police, director - Gary Winick, plot keywords - what, kind.\nBased on these constraints, I recommend \"Taken\" (2008) and \"Man on Fire\" (2004). Both movies feature a thrilling and suspenseful plot with strong actors delivering convincing performances. In \"Taken,\" Liam Neeson plays a former CIA operative who must use his skills to rescue his daughter from a group of ruthless kidnappers, while in \"Man on Fire,\" Denzel Washington stars as a retired CIA operative who takes on a dangerous mission to protect a young girl from a group of corrupt cops.",
+      "constraints": {
+        "genre": "police",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Taken",
+        "director": "Gary Winick"
+      },
+      "rec_titles": [
+        "Roses Are Red",
+        "Taken",
+        "Find Me Guilty",
+        "Man on Fire"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Gary Winick",
+        "anchor_title": "13 Going on 30",
+        "constraints": {
+          "genre": "police",
+          "director": "Gary Winick"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - police; director - Gary Winick; plot keywords - like, sound. Based on these cues, I recommend \"The Surgeon\" (2001) and \"13 Going on 30\" (2004). Both films feature a unique and unsettling atmosphere, with \"The Surgeon\" offering a psychological thriller-horror experience and \"13 Going on 30\" providing a quirky and heartwarming comedy-drama.",
+      "constraints": {
+        "genre": "police",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "director": "Gary Winick"
+      },
+      "rec_titles": [
+        "The Surgeon",
+        "The Stuff",
+        "13 Going on 30",
+        "Jumper"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of 13 Going on 30? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Gary Winick",
+        "anchor_title": "13 Going on 30",
+        "constraints": {
+          "genre": "police",
+          "director": "Gary Winick"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user is looking for a movie with a deeper meaning than they initially thought, and they are interested in films that explore themes of what lies beyond life. They have provided genre, director, and plot keywords as cues for recommendations.\n\nRecommendation: Based on the user's preferences, I would recommend \"Eve's Bayou\" and \"Flatliners.\" Both of these movies explore themes of what lies beyond life and feature complex plots that delve into the mysterious and supernatural.",
+      "constraints": {
+        "genre": "police",
+        "plot": [
+          "what",
+          "going"
+        ],
+        "name": "13 Going on 30",
+        "director": "Gary Winick"
+      },
+      "rec_titles": [
+        "Yes",
+        "The Yearling",
+        "Flatliners",
+        "Eve's Bayou"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Gary Winick",
+        "anchor_title": "13 Going on 30",
+        "constraints": {
+          "genre": "police",
+          "director": "Gary Winick"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User Preference Cues:\nGenre: Police\nDirector: Gary Winick\nPlot Keywords: what, said\n\nBased on the user's constraints, I recommend \"American Dreamz\" and \"You\". Both movies explore themes of responsibility and the consequences of actions, which align with the user's preferences. \"American Dreamz\" follows a young man who realizes the power of making dreams come true, while \"You\" delves into the abuse of gun rights and the impact on society. Both films feature talented actors and offer thought-provoking plots that may interest the user.",
+      "constraints": {
+        "genre": "police",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "13 Going on 30",
+        "director": "Gary Winick"
+      },
+      "rec_titles": [
+        "American Dreamz",
+        "The Trouble with Harry",
+        "I Heart Huckabees",
+        "You"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Gary Winick",
+        "anchor_title": "13 Going on 30",
+        "constraints": {
+          "genre": "police",
+          "director": "Gary Winick"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user is unsure about their movie preferences and has mentioned the genre \"police\" and director \"Gary Winick\".\n\nBased on the provided cues, I recommend checking out \"The Secret of My Success\" (2001) starring Michael J. Fox as a young police officer who rises through the ranks with the help of three influential women in his life. The movie follows his journey to success and the unexpected twists and turns along the way.\n\nAlternatively, you might enjoy \"Die Hard with a Vengeance\" (1995) starring Bruce Willis and Alan Rickman as two opposing forces in a high-stakes game of cat and mouse. The movie's fast-paced action and clever plot twists make it an exciting watch.",
+      "constraints": {
+        "genre": "police",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "13 Going on 30",
+        "director": "Gary Winick"
+      },
+      "rec_titles": [
+        "The Secret of My Success",
+        "The Sinner",
+        "Roses Are Red",
+        "Die Hard with a Vengeance"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Gary Winick",
+        "anchor_title": "13 Going on 30",
+        "constraints": {
+          "genre": "police",
+          "director": "Gary Winick"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user wants a movie recommendation that is not too specific and does not involve specific actors or directors.\n\nBased on the user's preferences, I recommend \"Smilla's Sense of Snow\" and \"Flatliners\". Both of these movies have intriguing plots and offer a unique perspective on their respective themes. \"Smilla's Sense of Snow\" is a mystery drama that explores the death of a young Inuit boy, while \"Flatliners\" is a psychological thriller that delves into the afterlife through a near-death experiment conducted by medical students.",
+      "constraints": {
+        "genre": "police",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "13 Going on 30",
+        "director": "Gary Winick"
+      },
+      "rec_titles": [
+        "Smilla's Sense of Snow",
+        "Monsters, Inc.",
+        "13 Going on 30",
+        "Flatliners"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Lakota Language? Hmm, I didn’t expect that vibe. (I’m thinking of Flatliners.)",
+      "user_meta": {
+        "turn": 11,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "Lakota Language",
+        "anchor_title": "The Surgeon",
+        "constraints": {
+          "genre": "police",
+          "director": "Gary Winick",
+          "language": "Lakota Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 11,
+          "from_focus": "director",
+          "to_focus": "language",
+          "bridge_field": "director",
+          "bridge_value": "Gary Winick",
+          "from_anchor": "13 Going on 30",
+          "to_anchor": "The Surgeon"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie primarily in Lakota Language, with a director of Gary Winick and plot keywords of something and primarily. Based on these cues, I recommend \"Alex in Wonderland\" and \"Madame Bovary\". Both movies feature unique storylines and talented actors that are sure to captivate the viewer.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "Flatliners",
+        "director": "Gary Winick",
+        "language": "Lakota Language"
+      },
+      "rec_titles": [
+        "Alex in Wonderland",
+        "The Secret Garden",
+        "The Prince and the Pauper",
+        "Madame Bovary"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Lakota Language",
+        "anchor_title": "The Surgeon",
+        "constraints": {
+          "genre": "police",
+          "director": "Gary Winick",
+          "language": "Lakota Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues:\nGenre: Language\nDirector: Gary Winick\nPlot keywords: just, more\n\nBased on your preferences, I recommend \"Tender Is the Night\" (1933) and \"Braveheart\" (1995). Both movies are powerful dramas that explore themes of redemption and cultural conflict. \"Tender Is the Night\" stars Henry Fonda as a psychiatrist who becomes embroiled in a complex web of relationships with his patients, while \"Braveheart\" tells the story of a Scottish tribesman who leads a rebellion against oppressive English rule. Both movies feature strong performances from talented actors and are sure to keep you engaged.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Gary Winick",
+        "language": "Lakota Language"
+      },
+      "rec_titles": [
+        "Tender Is the Night",
+        "Lord Jim",
+        "Pride and Prejudice",
+        "Braveheart"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does 3 tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Lakota Language",
+        "anchor_title": "The Surgeon",
+        "constraints": {
+          "genre": "police",
+          "director": "Gary Winick",
+          "language": "Lakota Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - language; director - Gary Winick; language - Lakota Language; plot keywords - what, kind.\nBased on these cues, I recommend watching \"The Last Unicorn\" and \"Her\". Both movies are animated and feature unique stories that explore themes of identity, self-discovery, and the power of imagination. \"The Last Unicorn\" is a beautifully animated musical that follows a unicorn's journey to learn if she truly is the last of her kind, while \"Her\" is an experiential docu-narrative that explores the differences of dating for young single and committed women today. Both movies are visually stunning and feature talented actors, including Angela Lansbury, Mia Farrow, Christopher Lee, and Scarlett Johansson.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "3",
+        "director": "Gary Winick",
+        "language": "Lakota Language"
+      },
+      "rec_titles": [
+        "The Last Unicorn",
+        "Her",
+        "American Dreamz",
+        "The Yearling"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on X. I want to try something more time travel—I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "time travel",
+        "anchor_title": "Hot Tub Time Machine",
+        "constraints": {
+          "genre": "time travel",
+          "director": "Gary Winick",
+          "language": "Lakota Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 14,
+          "from_focus": "language",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "witness",
+          "from_anchor": "The Surgeon",
+          "to_anchor": "Hot Tub Time Machine"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: time travel; director: Gary Winick; language: Lakota Language; plot keywords: thanks, detail. Based on these cues, I recommend the movie \"Back to the Future Part III\" and \"12 Monkeys.\" Both of these movies offer exciting time travel elements and intriguing plots, while also featuring talented actors and directors.",
+      "constraints": {
+        "genre": "time travel",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "RED",
+        "director": "Gary Winick",
+        "language": "Lakota Language"
+      },
+      "rec_titles": [
+        "Back to the Future Part III",
+        "13 Going on 30",
+        "12 Monkeys",
+        "Groundhog Day"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "time travel",
+        "anchor_title": "Hot Tub Time Machine",
+        "constraints": {
+          "genre": "time travel",
+          "director": "Gary Winick",
+          "language": "Lakota Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre (time travel), director (Gary Winick), language (Lakota Language). Based on these cues, I recommend \"Braveheart\" and \"Panic Room\". Both movies are intense and suspenseful, with strong performances from the actors. \"Braveheart\" is a historical epic that follows a tribe fighting for their rights, while \"Panic Room\" is a thriller about a family trapped in a house by burglars.",
+      "constraints": {
+        "genre": "time travel",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Gary Winick",
+        "language": "Lakota Language"
+      },
+      "rec_titles": [
+        "Braveheart",
+        "Panic Room",
+        "The Fighter",
+        "Back to the Future Part II"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Panic Room. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "time travel",
+        "anchor_title": "Hot Tub Time Machine",
+        "constraints": {
+          "genre": "time travel",
+          "director": "Gary Winick",
+          "language": "Lakota Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User Constraints:\nThe user likes the sound of Panic Room and is unsure if they would enjoy it or be scared by it. They prefer movies with time travel elements, are open to directors such as Gary Winick, and enjoy Lakota Language in their movies.\n\nRecommendation:\nBased on your constraints, I recommend checking out \"Looper\" (2012) and \"Somewhere in Time\" (1980). Both films feature time travel elements and have a similar atmosphere of suspense and intrigue that you might enjoy. \"Looper\" stars Joseph Gordon-Levitt and Bruce Willis, while \"Somewhere in Time\" features Teresa Wright and George Voskovec.",
+      "constraints": {
+        "genre": "time travel",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Panic Room",
+        "director": "Gary Winick",
+        "language": "Lakota Language"
+      },
+      "rec_titles": [
+        "Looper",
+        "Somewhere in Time",
+        "Panic Room",
+        "Smokin' Aces"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does They tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "time travel",
+        "anchor_title": "Hot Tub Time Machine",
+        "constraints": {
+          "genre": "time travel",
+          "director": "Gary Winick",
+          "language": "Lakota Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - time travel, director - Gary Winick, language - Lakota Language, plot keywords - what, kind.\nBased on the user's preferences, I recommend \"The Trouble with Harry\" and \"Southland Tales\". Both films offer unique and thought-provoking storylines that incorporate elements of time travel and mystery, while also featuring talented casts and directors. In \"The Trouble with Harry\", Jerry Mathers and Royal Dano star in a film that explores the aftermath of a man's death and the responsibilities that come with it, while \"Southland Tales\" is a complex and surreal drama that follows an action star (Christopher Lambert) trying to uncover a vast conspiracy on the eve of a 4th of July celebration.",
+      "constraints": {
+        "genre": "time travel",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "They",
+        "director": "Gary Winick",
+        "language": "Lakota Language"
+      },
+      "rec_titles": [
+        "The Trouble with Harry",
+        "Super",
+        "Six-String Samurai",
+        "Southland Tales"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "time travel",
+        "anchor_title": "Hot Tub Time Machine",
+        "constraints": {
+          "genre": "time travel",
+          "director": "Gary Winick",
+          "language": "Lakota Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User: Actually, now that I think about it, I might want something different.\n\nYou: No problem! Based on your previous input, you're looking for a movie with time travel elements, directed by Gary Winick, and featuring actors who speak the Lakota language. One film that fits these criteria is \"Teenage Mutant Ninja Turtles III\" (1993), which follows the Turtles as they travel back in time to rescue a captured April O'Neil in 17th century Japan. The movie stars Matt Hill, Paige Turco, and John Aylward, among others. Another option is \"Donnie Darko\" (2001), which tells the story of a troubled teenager who is haunted by visions of a man in a large rabbit suit. The film features an impressive cast, including Jake Gyllenhaal, Maggie Gyllenhaal, and Patrick Swayze.",
+      "constraints": {
+        "genre": "time travel",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "They",
+        "director": "Gary Winick",
+        "language": "Lakota Language"
+      },
+      "rec_titles": [
+        "Teenage Mutant Ninja Turtles III",
+        "13 Going on 30",
+        "Lady in the Water",
+        "Donnie Darko"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "time travel",
+        "anchor_title": "Hot Tub Time Machine",
+        "constraints": {
+          "genre": "time travel",
+          "director": "Gary Winick",
+          "language": "Lakota Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has expressed uncertainty and a desire for movies with time travel elements, directed by Gary Winick, and featuring the Lakota Language. Based on these preferences, I recommend \"The Butterfly Effect\" and \"Army of Darkness.\" Both films offer an exciting blend of time travel and adventure, with talented actors and a unique directorial style.",
+      "constraints": {
+        "genre": "time travel",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "They",
+        "director": "Gary Winick",
+        "language": "Lakota Language"
+      },
+      "rec_titles": [
+        "The Butterfly Effect",
+        "Army of Darkness",
+        "Southland Tales",
+        "Teenage Mutant Ninja Turtles III"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "time travel",
+        "anchor_title": "Hot Tub Time Machine",
+        "constraints": {
+          "genre": "time travel",
+          "director": "Gary Winick",
+          "language": "Lakota Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user wants a movie that explores themes of mood, decision-making, and supernatural elements. They are interested in movies with a time travel element, directed by Gary Winick, and featuring the Lakota language.\n\nRecommendation 1: Super (2010) - This movie follows a young boy who decides to test his superpowers after watching a film that encourages his dreams of becoming a superhero. With a mix of humor and heartwarming moments, this movie explores the themes of mood and decision-making in a unique and entertaining way. Starring William Katt, Paul T. Taylor, Zach Gilford, James Gunn, and Ellen Page.\n\nRecommendation 2: Holes (1998) - This movie tells the story of a man who sets out to find the truth about his son's murder after a decade of legal proceedings. With a complex identity that unfolds throughout the film, it explores themes of mood and decision-making in a thought-provoking and emotional way. Starring  Oksana Akinshina.",
+      "constraints": {
+        "genre": "time travel",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "director": "Gary Winick",
+        "language": "Lakota Language"
+      },
+      "rec_titles": [
+        "Super",
+        "Holes",
+        "Wolfhound",
+        "Pride and Prejudice"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 21,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "time travel",
+        "anchor_title": "Hot Tub Time Machine",
+        "constraints": {
+          "genre": "time travel",
+          "director": "Gary Winick",
+          "language": "Lakota Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: The user wants a movie recommendation that is not too specific and does not require them to watch a particular film. They are open to suggestions in any genre, director, or language.\n\nRecommendation: Based on the user's preferences, I would recommend \"Man on Wire\" and \"Army of Darkness\". Both films offer unique and intriguing plots, with \"Man on Wire\" showcasing a daring high-wire act in the 1970s and \"Army of Darkness\" featuring Ash Williams battling an army of the dead.",
+      "constraints": {
+        "genre": "time travel",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "RED",
+        "director": "Gary Winick",
+        "language": "Lakota Language"
+      },
+      "rec_titles": [
+        "Man on Wire",
+        "Army of Darkness",
+        "Paradise Lost",
+        "Witless Protection"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Charles B. Wessler? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of They.)",
+      "user_meta": {
+        "turn": 22,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Charles B. Wessler",
+        "anchor_title": "Groundhog Day",
+        "constraints": {
+          "genre": "time travel",
+          "director": "Gary Winick",
+          "language": "Lakota Language",
+          "writer": "Charles B. Wessler",
+          "plot": "british"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 22,
+          "from_focus": "genre",
+          "to_focus": "writer",
+          "bridge_field": "plot",
+          "bridge_value": "british",
+          "from_anchor": "Hot Tub Time Machine",
+          "to_anchor": "Groundhog Day"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, I understand that you're looking for movies written by Charles B. Wessler and are unsure if you'll enjoy them or be scared by them. Based on your preferences, I recommend checking out \"The Jacket\" and \"Back to the Future Part III.\" Both of these movies have elements of time travel and feature interesting plots and actors that may appeal to you. In \"The Jacket,\" Mackenzie Phillips and Jason Lewis star in a supernatural tale of a man who is sent to a psychiatric hospital, where he is subjected to an experimental treatment that causes him to time-travel. Meanwhile, in \"Back to the Future Part III,\" Michael J. Fox and Thomas F. Wilson reprise their roles as Marty McFly and Doc Brown, respectively, as they travel back in time to the Old West to save Doc Brown from a fate worse than death.",
+      "constraints": {
+        "genre": "time travel",
+        "plot": [
+          "written",
+          "charles"
+        ],
+        "name": "RED",
+        "director": "Gary Winick",
+        "language": "Lakota Language",
+        "writer": "Charles B. Wessler"
+      },
+      "rec_titles": [
+        "The Jacket",
+        "X-Men: First Class",
+        "Army of Darkness",
+        "Back to the Future Part III"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Charles B. Wessler",
+        "anchor_title": "Groundhog Day",
+        "constraints": {
+          "genre": "time travel",
+          "director": "Gary Winick",
+          "language": "Lakota Language",
+          "writer": "Charles B. Wessler",
+          "plot": "british"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - time travel, director - Gary Winick, writer - Charles B. Wessler, language - Lakota Language. Recommendations:\n\n* Somewhere in Time (1980) - A romantic and nostalgic film about a playwright who travels back in time to meet the actress whose portrait he finds captivating. Starring Teresa Wright and George Voskovec, this movie is sure to captivate you with its beautiful score and poignant plot.\n* Before I Fall (2010) - A thought-provoking and emotional film about a high school girl who relives the same day over and over again, trying to untangle the mystery of her death. With an talented cast including Shiloh Fernandez, Amy Smart, and Alexandra Shipp, this movie will keep you on the edge of your seat until the very end.",
+      "constraints": {
+        "genre": "time travel",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Gary Winick",
+        "language": "Lakota Language",
+        "writer": "Charles B. Wessler"
+      },
+      "rec_titles": [
+        "Somewhere in Time",
+        "Jack and Jill",
+        "Before I Fall",
+        "The Jacket"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of 2010. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Charles B. Wessler",
+        "anchor_title": "Groundhog Day",
+        "constraints": {
+          "genre": "time travel",
+          "director": "Gary Winick",
+          "language": "Lakota Language",
+          "writer": "Charles B. Wessler",
+          "plot": "british"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure! Based on the user's preferences, here are two movie recommendations that might interest them:\n\n* \"Restless\" (2006) stars Mia Wasikowska and Hayley Atwell in a coming-of-age story about a young woman who struggles with emotional attachment. The film has a unique blend of humor, drama, and romance that might appeal to the user's taste for something deeper than they expected.\n* \"Unstoppable\" (2010) is a documentary that profiles five famous women whose lives were impacted by their sexuality. The film features intimate interviews with these women and offers an insightful look at their experiences, which might resonate with the user's interest in time travel and deeper themes.",
+      "constraints": {
+        "genre": "time travel",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "2010",
+        "director": "Gary Winick",
+        "language": "Lakota Language",
+        "writer": "Charles B. Wessler",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Restless",
+        "The Relic",
+        "Why Did I Get Married Too?",
+        "Unstoppable"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Charles B. Wessler",
+        "anchor_title": "Groundhog Day",
+        "constraints": {
+          "genre": "time travel",
+          "director": "Gary Winick",
+          "language": "Lakota Language",
+          "writer": "Charles B. Wessler",
+          "plot": "british"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - time travel, year - 2010, director - Gary Winick, writer - Charles B. Wessler, language - Lakota Language.\nBased on the provided cues, I recommend \"Matched\" and \"Let Me In.\" Both movies offer a psychological exploration of obsession and vulnerability, which aligns with the user's preferences. \"Matched\" is a character-driven comedy-thriller that delves into the dark side of online dating, while \"Let Me In\" is a chilling tale of a family's encounter with a hidden criminal in their own home.",
+      "constraints": {
+        "genre": "time travel",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "director": "Gary Winick",
+        "language": "Lakota Language",
+        "writer": "Charles B. Wessler",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Matched",
+        "The Lake House",
+        "Kick-Ass",
+        "Let Me In"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Drive? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Charles B. Wessler",
+        "anchor_title": "Groundhog Day",
+        "constraints": {
+          "genre": "time travel",
+          "director": "Gary Winick",
+          "language": "Lakota Language",
+          "writer": "Charles B. Wessler",
+          "plot": "british"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user wants a movie with a time travel theme, set in 2010, directed by Gary Winick, written by Charles B. Wessler, and featuring Lakota Language.\n\nBased on these constraints, I recommend \"How to Train Your Dragon\" and \"Galaxy Quest.\" Both movies offer exciting time travel elements and a mix of humor and action, which should appeal to the user's preferences. In \"How to Train Your Dragon,\" the protagonist learns that dragons may be more than just fearsome creatures, while in \"Galaxy Quest,\" the alumni cast of a cancelled science fiction show find themselves thrust into real-life space adventures.",
+      "constraints": {
+        "genre": "time travel",
+        "plot": [
+          "what",
+          "drive"
+        ],
+        "name": "Drive",
+        "director": "Gary Winick",
+        "language": "Lakota Language",
+        "writer": "Charles B. Wessler",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "How to Train Your Dragon",
+        "You",
+        "Never Let Me Go",
+        "Galaxy Quest"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Ted. I want to try something more urban legend—still with Charles B. Wessler if possible. I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 27,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "urban legend",
+        "anchor_title": "The Pathfinder",
+        "constraints": {
+          "genre": "urban legend",
+          "director": "Gary Winick",
+          "language": "Lakota Language",
+          "writer": "Charles B. Wessler",
+          "plot": "british"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 27,
+          "from_focus": "writer",
+          "to_focus": "genre",
+          "bridge_field": "writer",
+          "bridge_value": "Charles B. Wessler",
+          "from_anchor": "Groundhog Day",
+          "to_anchor": "The Pathfinder"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre: urban legend; year: 2010; director: Gary Winick; writer: Charles B. Wessler; language: Lakota Language. Based on these constraints, I recommend the movie \"Tracker\" for its unique blend of romantic comedy, gritty crime drama, and ghost story elements. The film features a talented cast, including Jed Brophy, Ray Winstone, and Temuera Morrison, and has an intriguing plot that will keep you on the edge of your seat. Alternatively, if you're looking for something more lighthearted, \"The Other Guys\" is a hilarious comedy with an all-star cast, including Will Ferrell and Mark Wahlberg.",
+      "constraints": {
+        "genre": "urban legend",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Ted",
+        "director": "Gary Winick",
+        "language": "Lakota Language",
+        "writer": "Charles B. Wessler",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Yogi Bear",
+        "3",
+        "Tracker",
+        "The Other Guys"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "urban legend",
+        "anchor_title": "The Pathfinder",
+        "constraints": {
+          "genre": "urban legend",
+          "director": "Gary Winick",
+          "language": "Lakota Language",
+          "writer": "Charles B. Wessler",
+          "plot": "british"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your user's preferences, here are two movie recommendations that fit their criteria:\n\nThe user is looking for movies with a similar theme and atmosphere to \"Dear John\" (2010), which they enjoyed. One recommendation is \"Before I Fall\" (2010), a thought-provoking and emotionally charged film about a girl who relives the same day over and over again, trying to untangle the mystery of her death. Another recommendation is \"The Book of Eli\" (2010), an intense and visually stunning post-apocalyptic drama featuring Denzel Washington as a drifter protecting a sacred book in a dangerous world. Both movies explore themes of self-discovery, redemption, and the human condition.",
+      "constraints": {
+        "genre": "urban legend",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Gary Winick",
+        "language": "Lakota Language",
+        "writer": "Charles B. Wessler",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Dear John",
+        "Before I Fall",
+        "The Book of Eli",
+        "The Skull"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by John Francis Daley? That sounds intriguing. (I’m thinking of Dear John.)",
+      "user_meta": {
+        "turn": 29,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "John Francis Daley",
+        "anchor_title": "Easy A",
+        "constraints": {
+          "genre": "urban legend",
+          "director": "John Francis Daley",
+          "language": "Lakota Language",
+          "writer": "Charles B. Wessler",
+          "plot": "girl"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 29,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "girl",
+          "from_anchor": "The Pathfinder",
+          "to_anchor": "Easy A"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, here are two movie recommendations that fit their criteria:\n\nThe user is interested in movies directed by John Francis Daley and starring John Francis Daley, so I recommend \"Shattered\" (1973) and \"Insidious\" (2010). Both of these movies showcase John Francis Daley's talent for creating tense and suspenseful plots with interesting characters. In \"Shattered,\" Corbin Bernsen and Tom Berenger play detectives trying to take down a Russian crime boss, while in \"Insidious,\" Patrick Wilson and Rose Byrne star as a young couple whose lives are turned upside down by supernatural forces.",
+      "constraints": {
+        "genre": "urban legend",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Dear John",
+        "director": "John Francis Daley",
+        "language": "Lakota Language",
+        "writer": "John Francis Daley",
+        "year": "2010",
+        "actor": "John Francis Daley"
+      },
+      "rec_titles": [
+        "Shattered",
+        "Freakonomics",
+        "Insidious",
+        "RED"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "John Francis Daley",
+        "anchor_title": "Easy A",
+        "constraints": {
+          "genre": "urban legend",
+          "director": "John Francis Daley",
+          "language": "Lakota Language",
+          "writer": "Charles B. Wessler",
+          "plot": "girl"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - urban legend; year - 2010; actor - John Francis Daley; language - Lakota Language; plot keywords - just, more.\nBased on the user's preferences, I recommend checking out \"The Expendables\" (2010) and \"Date Night\" (2010). Both movies feature a talented cast, including John Francis Daley, and offer a thrilling and entertaining experience with elements of action and comedy.",
+      "constraints": {
+        "genre": "urban legend",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "John Francis Daley",
+        "language": "Lakota Language",
+        "writer": "John Francis Daley",
+        "year": "2010",
+        "actor": "John Francis Daley"
+      },
+      "rec_titles": [
+        "The Expendables",
+        "Date Night",
+        "Wild Hogs",
+        "Fight Club"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "John Francis Daley",
+        "anchor_title": "Easy A",
+        "constraints": {
+          "genre": "urban legend",
+          "director": "John Francis Daley",
+          "language": "Lakota Language",
+          "writer": "Charles B. Wessler",
+          "plot": "girl"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User Preference Cues:\nGenre: Urban Legend\nYear: 2010\nActor: John Francis Daley\nDirector: John Francis Daley\nWriter: John Francis Daley\nLanguage: Lakota Language\nPlot Keywords: what, kind\n\nBased on the user's preferences, I recommend checking out \"Wild Target\" and \"The Social Network\". Both films feature intriguing plots and talented actors, including John Francis Daley in a leading role. \"Wild Target\" is a quirky comedy-drama about a hitman trying to retire, while \"The Social Network\" is a fascinating true story about the creation of Facebook and the legal battles that followed.",
+      "constraints": {
+        "genre": "urban legend",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "director": "John Francis Daley",
+        "language": "Lakota Language",
+        "writer": "John Francis Daley",
+        "year": "2010",
+        "actor": "John Francis Daley"
+      },
+      "rec_titles": [
+        "Wild Target",
+        "Furry Vengeance",
+        "Louie",
+        "The Social Network"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of 2010. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "John Francis Daley",
+        "anchor_title": "Easy A",
+        "constraints": {
+          "genre": "urban legend",
+          "director": "John Francis Daley",
+          "language": "Lakota Language",
+          "writer": "Charles B. Wessler",
+          "plot": "girl"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, I understand that you're looking for a movie that sounds intriguing and aligns with your preferences. Based on your cues, I recommend \"You Will Meet a Tall Dark Stranger\" and \"Easy A\". Both movies feature talented actors like Anthony Hopkins and Emma Stone, and they explore themes of urban legends and relationships respectively.",
+      "constraints": {
+        "genre": "urban legend",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "2010",
+        "director": "John Francis Daley",
+        "language": "Lakota Language",
+        "writer": "John Francis Daley",
+        "year": "2010",
+        "actor": "John Francis Daley"
+      },
+      "rec_titles": [
+        "You Will Meet a Tall Dark Stranger",
+        "Planet Terror",
+        "The Wolfman",
+        "Easy A"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Easy A? That sounds intriguing.",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "John Francis Daley",
+        "anchor_title": "Easy A",
+        "constraints": {
+          "genre": "urban legend",
+          "director": "John Francis Daley",
+          "language": "Lakota Language",
+          "writer": "Charles B. Wessler",
+          "plot": "girl"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user is interested in urban legends, and they want a movie from 2010 with a Lakota Language option. Based on their preference cues, I recommend \"Shutter Island\" and \"When a Stranger Calls.\" Both of these movies have an intriguing plot and feature actors who are sure to captivate the audience. In \"Shutter Island,\" Leonardo DiCaprio plays a US marshal investigating a mysterious disappearance at an asylum, while in \"When a Stranger Calls,\" Colleen Dewhurst and Tessa Thompson star as a babysitter and the children she's watching who are terrorized by a prank caller.",
+      "constraints": {
+        "genre": "urban legend",
+        "plot": [
+          "what",
+          "easy"
+        ],
+        "name": "Easy A",
+        "director": "John Francis Daley",
+        "language": "Lakota Language",
+        "writer": "John Francis Daley",
+        "year": "2010",
+        "actor": "John Francis Daley"
+      },
+      "rec_titles": [
+        "When a Stranger Calls",
+        "The Next Three Days",
+        "Vampires Suck",
+        "Shutter Island"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Kerry Washington. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Urban Legend.)",
+      "user_meta": {
+        "turn": 34,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Kerry Washington",
+        "anchor_title": "The Great Debaters",
+        "constraints": {
+          "genre": "urban legend",
+          "director": "John Francis Daley",
+          "language": "Lakota Language",
+          "writer": "Charles B. Wessler",
+          "plot": "college",
+          "actor": "Kerry Washington"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 34,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "college",
+          "from_anchor": "Easy A",
+          "to_anchor": "The Great Debaters"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - urban legend, year - 2010, actor - Kerry Washington, director - John Francis Daley, writer - John Francis Daley, language - Lakota Language.\nBased on the provided cues, I recommend \"The Wolfman\" and \"Blue Valentine.\" Both movies feature Kerry Washington in lead roles, and they are both suspenseful and intriguing stories that may appeal to your preferences. \"The Wolfman\" is a classic horror tale with a modern twist, while \"Blue Valentine\" is a poignant drama that explores the complexities of a relationship over time.",
+      "constraints": {
+        "genre": "urban legend",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Urban Legend",
+        "director": "John Francis Daley",
+        "language": "Lakota Language",
+        "writer": "John Francis Daley",
+        "year": "2010",
+        "actor": "Kerry Washington"
+      },
+      "rec_titles": [
+        "The Wolfman",
+        "Yogi Bear",
+        "Blue Valentine",
+        "The Constant Gardener"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Kerry Washington",
+        "anchor_title": "The Great Debaters",
+        "constraints": {
+          "genre": "urban legend",
+          "director": "John Francis Daley",
+          "language": "Lakota Language",
+          "writer": "Charles B. Wessler",
+          "plot": "college",
+          "actor": "Kerry Washington"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: urban legend; year: 2010; actor: Kerry Washington; director: John Francis Daley; writer: John Francis Daley; language: Lakota Language; plot keywords: just, more. Based on these cues, I recommend the movie \"In Time\" (2011) starring Justin Timberlake and Olivia Wilde. The film is set in a future where people stop aging at 25 but are engineered to live only one more year, making immortal youth a luxury that can be bought. Will Salas, played by Matt Bomer, is accused of murder and on the run with a hostage, adding an action-packed twist to the story.",
+      "constraints": {
+        "genre": "urban legend",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "John Francis Daley",
+        "language": "Lakota Language",
+        "writer": "John Francis Daley",
+        "year": "2010",
+        "actor": "Kerry Washington"
+      },
+      "rec_titles": [
+        "Three Kings",
+        "In Time",
+        "New York Minute",
+        "Insidious"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of RED. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Kerry Washington",
+        "anchor_title": "The Great Debaters",
+        "constraints": {
+          "genre": "urban legend",
+          "director": "John Francis Daley",
+          "language": "Lakota Language",
+          "writer": "Charles B. Wessler",
+          "plot": "college",
+          "actor": "Kerry Washington"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: The user is interested in a movie that features an urban legend and has a year of release of 2010, with actor Kerry Washington.\nRecommendation: Based on the user's preferences, I would recommend \"Restless\" (2006) starring Mia Wasikowska, Hayley Atwell, and Jane Adams. The movie follows a young woman who doesn't do relationships or attachments until she meets someone special, and it has an urban legend-inspired plot. Alternatively, \"Naked\" (2010) starring Christina Ricci and Oleg Taktarov could also be of interest to the user, as it explores themes of identity and isolation in the digital age.",
+      "constraints": {
+        "genre": "urban legend",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "director": "John Francis Daley",
+        "language": "Lakota Language",
+        "writer": "John Francis Daley",
+        "year": "2010",
+        "actor": "Kerry Washington"
+      },
+      "rec_titles": [
+        "Restless",
+        "The Expendables",
+        "Predators",
+        "Naked"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Urban Legend tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Kerry Washington",
+        "anchor_title": "The Great Debaters",
+        "constraints": {
+          "genre": "urban legend",
+          "director": "John Francis Daley",
+          "language": "Lakota Language",
+          "writer": "Charles B. Wessler",
+          "plot": "college",
+          "actor": "Kerry Washington"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, you've provided some great cues for movie recommendations! Based on your preferences, I would recommend \"Takers\" and \"Alice in Wonderland.\" Both of these movies offer a unique blend of action, humor, and style that align with your preferences. In \"Takers,\" a group of bank robbers must navigate their multi-million dollar plan while being pursued by a hard-boiled detective. Meanwhile, in \"Alice in Wonderland,\" our modern heroine discovers a fantastical world filled with humor and irreverence. I hope you enjoy these recommendations!",
+      "constraints": {
+        "genre": "urban legend",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Urban Legend",
+        "director": "John Francis Daley",
+        "language": "Lakota Language",
+        "writer": "John Francis Daley",
+        "year": "2010",
+        "actor": "Kerry Washington"
+      },
+      "rec_titles": [
+        "Takers",
+        "Alice in Wonderland",
+        "The Darkest Hour",
+        "Gunless"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Kerry Washington",
+        "anchor_title": "The Great Debaters",
+        "constraints": {
+          "genre": "urban legend",
+          "director": "John Francis Daley",
+          "language": "Lakota Language",
+          "writer": "Charles B. Wessler",
+          "plot": "college",
+          "actor": "Kerry Washington"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: The user wants a movie with an urban legend vibe, released in 2010, starring Kerry Washington, and directed by John Francis Daley.\n\nRecommendation: Based on the user's constraints, I would recommend \"Forsaken\" (2015) starring Landon Liboiron and Michael Wincott. The movie is a reimagining of MACBETH with a bloody twist, which fits the urban legend vibe the user is looking for. Alternatively, \"Why Did I Get Married Too?\" (2010) starring Valarie Pettiford and Michael Jai White also has an urban legend feel to it, with a focus on the struggles of marriage and relationships.",
+      "constraints": {
+        "genre": "urban legend",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "X",
+        "director": "John Francis Daley",
+        "language": "Lakota Language",
+        "writer": "John Francis Daley",
+        "year": "2010",
+        "actor": "Kerry Washington"
+      },
+      "rec_titles": [
+        "Forsaken",
+        "Why Did I Get Married Too?",
+        "The Passage",
+        "American Dreamz"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Kevin Smith? That feels deeper than I thought. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 39,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Kevin Smith",
+        "anchor_title": "The Skulls",
+        "constraints": {
+          "genre": "urban legend",
+          "director": "Kevin Smith",
+          "language": "Lakota Language",
+          "writer": "Charles B. Wessler",
+          "plot": "college",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 39,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Seth MacFarlane",
+          "from_anchor": "The Great Debaters",
+          "to_anchor": "The Skulls"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User: Could we switch to something else by Kevin Smith? That feels deeper than I thought. (I'm thinking of Ted.)\n\nYou: Of course! Based on your preferences, I recommend \"Clash of the Titans\" and \"Yoga Hosers\" - both are action-packed and feature Kevin Smith's unique storytelling style. In \"Clash of the Titans,\" Perseus must battle Medusa and the Kraken to save the Princess Andromeda, while in \"Yoga Hosers,\" two teenage yoga enthusiasts must do battle with an evil presence threatening their major party plans.",
+      "constraints": {
+        "genre": "urban legend",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Ted",
+        "director": "Kevin Smith",
+        "language": "Lakota Language",
+        "writer": "Kevin Smith",
+        "year": "2010",
+        "actor": "Kevin Smith"
+      },
+      "rec_titles": [
+        "Clash of the Titans",
+        "Yoga Hosers",
+        "Insidious",
+        "Little Fockers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Kevin Smith",
+        "anchor_title": "The Skulls",
+        "constraints": {
+          "genre": "urban legend",
+          "director": "Kevin Smith",
+          "language": "Lakota Language",
+          "writer": "Charles B. Wessler",
+          "plot": "college",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I would recommend \"You\" (2014) and \"Hot Tub Time Machine\" (2010). Both movies feature complex plots that explore themes of right and wrong, as well as an interesting cast of characters. In \"You,\" a man must confront the consequences of his actions after using a gun to kill, while in \"Hot Tub Time Machine,\" a group of friends must navigate a malfunctioning time machine and confront their past mistakes.",
+      "constraints": {
+        "genre": "urban legend",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Kevin Smith",
+        "language": "Lakota Language",
+        "writer": "Kevin Smith",
+        "year": "2010",
+        "actor": "Kevin Smith"
+      },
+      "rec_titles": [
+        "You",
+        "Hot Tub Time Machine",
+        "King Kong",
+        "The Twilight Saga: Eclipse"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Kevin Smith",
+        "anchor_title": "The Skulls",
+        "constraints": {
+          "genre": "urban legend",
+          "director": "Kevin Smith",
+          "language": "Lakota Language",
+          "writer": "Charles B. Wessler",
+          "plot": "college",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: urban legend; year: 2010; actor: Kevin Smith; director: Kevin Smith; writer: Kevin Smith; language: Lakota Language; plot keywords: what, kind.\n\nBased on the user's preferences, I recommend the movie \"Matched\" (2010) starring Kevin Smith. This modern day comedy-thriller explores the obsessions, betrayals, and psychosis of online dating in a provocative and entertaining way. The film is directed and written by Kevin Smith, known for his unique storytelling style and clever dialogue.",
+      "constraints": {
+        "genre": "urban legend",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Deep",
+        "director": "Kevin Smith",
+        "language": "Lakota Language",
+        "writer": "Kevin Smith",
+        "year": "2010",
+        "actor": "Kevin Smith"
+      },
+      "rec_titles": [
+        "Matched",
+        "Wolfhound",
+        "Alice in Wonderland",
+        "Witless Protection"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Urban Legend? That sounds intriguing.",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Kevin Smith",
+        "anchor_title": "The Skulls",
+        "constraints": {
+          "genre": "urban legend",
+          "director": "Kevin Smith",
+          "language": "Lakota Language",
+          "writer": "Charles B. Wessler",
+          "plot": "college",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has provided us with some helpful cues to narrow down their movie preferences, including the genre of urban legend, release year 2010, and starring Kevin Smith. Based on these constraints, I recommend checking out \"Super\" (2010) and \"You Will Meet a Tall Dark Stranger\" (2010). Both films feature quirky and imaginative plots, with a focus on characters navigating unusual situations.",
+      "constraints": {
+        "genre": "urban legend",
+        "plot": [
+          "what",
+          "urban"
+        ],
+        "name": "Urban Legend",
+        "director": "Kevin Smith",
+        "language": "Lakota Language",
+        "writer": "Kevin Smith",
+        "year": "2010",
+        "actor": "Kevin Smith"
+      },
+      "rec_titles": [
+        "Super",
+        "Paycheck",
+        "Hot Tub Time Machine",
+        "You Will Meet a Tall Dark Stranger"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Kevin Smith",
+        "anchor_title": "The Skulls",
+        "constraints": {
+          "genre": "urban legend",
+          "director": "Kevin Smith",
+          "language": "Lakota Language",
+          "writer": "Charles B. Wessler",
+          "plot": "college",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user likes the sound of \"Us\" and is interested in urban legends, 2010 releases, and movies starring Kevin Smith.\nRecommendation: Based on the user's preferences, I would recommend \"Hot Tub Time Machine\" or \"Providence.\" Both of these movies have an interesting plot and feature actors who star in \"Us,\" such as Diora Baird and Lynda Boyd.",
+      "constraints": {
+        "genre": "urban legend",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us",
+        "director": "Kevin Smith",
+        "language": "Lakota Language",
+        "writer": "Kevin Smith",
+        "year": "2010",
+        "actor": "Kevin Smith"
+      },
+      "rec_titles": [
+        "Hot Tub Time Machine",
+        "Takers",
+        "The Mortal Instruments: City of Bones",
+        "Providence"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Kevin Smith",
+        "anchor_title": "The Skulls",
+        "constraints": {
+          "genre": "urban legend",
+          "director": "Kevin Smith",
+          "language": "Lakota Language",
+          "writer": "Charles B. Wessler",
+          "plot": "college",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: urban legend; year: 2010; actor: Kevin Smith; director: Kevin Smith; language: Lakota Language; plot keywords: wrong, earlier.\nBased on the provided cues, I recommend the movie \"Matched\" (2010) starring Kevin Smith. The film is a modern day comedy-thriller that explores the obsessions, betrayals, and psychosis of online dating. It's a provocative character-driven story that delves into our deepest desires, fears, and vulnerabilities through online interactions.",
+      "constraints": {
+        "genre": "urban legend",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "Us",
+        "director": "Kevin Smith",
+        "language": "Lakota Language",
+        "writer": "Kevin Smith",
+        "year": "2010",
+        "actor": "Kevin Smith"
+      },
+      "rec_titles": [
+        "Matched",
+        "The Losers",
+        "Thick as Thieves",
+        "Abraham Lincoln: Vampire Hunter"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Jules Furthman? Hmm, I didn’t expect that vibe. (I’m thinking of 2010.)",
+      "user_meta": {
+        "turn": 45,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Jules Furthman",
+        "anchor_title": "2010",
+        "constraints": {
+          "genre": "urban legend",
+          "director": "Kevin Smith",
+          "language": "Lakota Language",
+          "writer": "Jules Furthman",
+          "plot": "jupiter",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 45,
+          "from_focus": "director",
+          "to_focus": "writer",
+          "bridge_field": "plot",
+          "bridge_value": "jupiter",
+          "from_anchor": "The Skulls",
+          "to_anchor": "2010"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Urban legend, year 2010, actor Kevin Smith, director Kevin Smith, writer Jules Furthman, language Lakota Language.\nRecommendation: Based on the user's preferences, I would recommend \"Little Fockers\" (2010) starring Yul Vazquez, Dustin Hoffman, and Kevin Hart. The movie follows a family patriarch who wants to appoint a successor, and his son-in-law's journey to prove himself worthy. With a talented cast and a mix of comedy and drama, this movie is sure to entertain.\n\nAlternatively, I would suggest \"Kick-Ass\" (2010) starring Aaron Taylor-Johnson, Nicolas Cage, and Chloë Grace Moretz. This action-packed superhero movie follows a young man who becomes a vigilante after being inspired by a comic book, and the hilarious and exciting adventures that ensue.",
+      "constraints": {
+        "genre": "urban legend",
+        "plot": [
+          "written",
+          "jules"
+        ],
+        "name": "2010",
+        "director": "Kevin Smith",
+        "language": "Lakota Language",
+        "writer": "Jules Furthman",
+        "year": "2010",
+        "actor": "Kevin Smith"
+      },
+      "rec_titles": [
+        "Little Fockers",
+        "Dead or Alive",
+        "Kick-Ass",
+        "Just Wright"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Jules Furthman",
+        "anchor_title": "2010",
+        "constraints": {
+          "genre": "urban legend",
+          "director": "Kevin Smith",
+          "language": "Lakota Language",
+          "writer": "Jules Furthman",
+          "plot": "jupiter",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - urban legend; year - 2010; actor - Kevin Smith; director - Kevin Smith; writer - Jules Furthman; language - Lakota Language; plot keywords - just, more.\n\nBased on the user's preferences, I recommend checking out 'Due Date' and 'Crescendo'. Both movies offer a unique blend of humor and drama, with talented actors like Danny McBride and Randy Quaid bringing their characters to life. In 'Due Date', a high-strung father-to-be must hitch a ride with an aspiring actor on a road trip to make it to his child's birth on time, while in 'Crescendo', a world-famous conductor is drawn into a tempest of unsolvable problems as he creates an Israeli-Palestinian youth orchestra.",
+      "constraints": {
+        "genre": "urban legend",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Kevin Smith",
+        "language": "Lakota Language",
+        "writer": "Jules Furthman",
+        "year": "2010",
+        "actor": "Kevin Smith"
+      },
+      "rec_titles": [
+        "Due Date",
+        "The Wraith",
+        "Crescendo",
+        "Harry Potter and the Half-Blood Prince"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Hitch tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Jules Furthman",
+        "anchor_title": "2010",
+        "constraints": {
+          "genre": "urban legend",
+          "director": "Kevin Smith",
+          "language": "Lakota Language",
+          "writer": "Jules Furthman",
+          "plot": "jupiter",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: urban legend; year: 2010; actor: Kevin Smith; director: Kevin Smith; writer: Jules Furthman; language: Lakota Language; plot keywords: what, kind.\nBased on the user's preferences, I recommend \"Never Let Me Go\" and \"Monsters, Inc.\" both released in 2010. \"Never Let Me Go\" is a thought-provoking film that explores themes of love, identity, and mortality, while \"Monsters, Inc.\" is a fun and imaginative movie that pokes fun at the monster genre. Both films feature talented actors and are sure to provide an engaging viewing experience.",
+      "constraints": {
+        "genre": "urban legend",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Hitch",
+        "director": "Kevin Smith",
+        "language": "Lakota Language",
+        "writer": "Jules Furthman",
+        "year": "2010",
+        "actor": "Kevin Smith"
+      },
+      "rec_titles": [
+        "Never Let Me Go",
+        "Monsters, Inc.",
+        "Vampires Suck",
+        "Passion"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Jules Furthman",
+        "anchor_title": "2010",
+        "constraints": {
+          "genre": "urban legend",
+          "director": "Kevin Smith",
+          "language": "Lakota Language",
+          "writer": "Jules Furthman",
+          "plot": "jupiter",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has provided some useful cues for their movie preferences, including the genre \"urban legend,\" the year 2010, and the involvement of Kevin Smith as director, writer, or actor. Based on these cues, I recommend checking out \"Kick-Ass\" and \"Date Night.\" Both movies offer a thrilling and entertaining experience with unique plots and talented actors.",
+      "constraints": {
+        "genre": "urban legend",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "Hitch",
+        "director": "Kevin Smith",
+        "language": "Lakota Language",
+        "writer": "Jules Furthman",
+        "year": "2010",
+        "actor": "Kevin Smith"
+      },
+      "rec_titles": [
+        "Kick-Ass",
+        "Insidious",
+        "Mallrats",
+        "Date Night"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of 2010. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Jules Furthman",
+        "anchor_title": "2010",
+        "constraints": {
+          "genre": "urban legend",
+          "director": "Kevin Smith",
+          "language": "Lakota Language",
+          "writer": "Jules Furthman",
+          "plot": "jupiter",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - urban legend; year - 2010; actor - Kevin Smith; director - Kevin Smith; writer - Jules Furthman; language - Lakota Language; plot keywords - like, sound.\nBased on the user's preferences, I recommend two movies from the list:\n\n* \"Matched\" (2010) - A provocative and thought-provoking movie that explores the obsessions, betrayals, and psychosis of online dating through a modern day comedy-thriller. Starring Peter Krause and Jennifer Coolidge.\n* \"Inception\" (2010) - A mind-bending sci-fi action movie that delves into the hidden side of human nature through the use of dream-sharing technology. Starring Leonardo DiCaprio, Joseph Gordon-Levitt, and Ellen Page.",
+      "constraints": {
+        "genre": "urban legend",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "2010",
+        "director": "Kevin Smith",
+        "language": "Lakota Language",
+        "writer": "Jules Furthman",
+        "year": "2010",
+        "actor": "Kevin Smith"
+      },
+      "rec_titles": [
+        "Matched",
+        "The Bounty Hunter",
+        "Freakonomics",
+        "Inception"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Psycho? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 50,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Jules Furthman",
+        "anchor_title": "2010",
+        "constraints": {
+          "genre": "urban legend",
+          "director": "Kevin Smith",
+          "language": "Lakota Language",
+          "writer": "Jules Furthman",
+          "plot": "jupiter",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a movie that may evoke feelings of fear or unease, and they have provided several cues to help narrow down their options. Based on their preferences, I recommend \"Incendies\" and \"Fanboys\". Both movies offer complex plots and strong performances that are sure to keep viewers engaged and invested.",
+      "constraints": {
+        "genre": "urban legend",
+        "plot": [
+          "what",
+          "psycho"
+        ],
+        "name": "Psycho",
+        "director": "Kevin Smith",
+        "language": "Lakota Language",
+        "writer": "Jules Furthman",
+        "year": "2010",
+        "actor": "Kevin Smith"
+      },
+      "rec_titles": [
+        "The Twilight Saga: New Moon",
+        "Fanboys",
+        "Incendies",
+        "The Wolfman"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 3,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "genre",
+      "bridge_value": "police",
+      "from_anchor": "Die Hard with a Vengeance",
+      "to_anchor": "13 Going on 30"
+    },
+    {
+      "turn": 11,
+      "from_focus": "director",
+      "to_focus": "language",
+      "bridge_field": "director",
+      "bridge_value": "Gary Winick",
+      "from_anchor": "13 Going on 30",
+      "to_anchor": "The Surgeon"
+    },
+    {
+      "turn": 14,
+      "from_focus": "language",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "witness",
+      "from_anchor": "The Surgeon",
+      "to_anchor": "Hot Tub Time Machine"
+    },
+    {
+      "turn": 22,
+      "from_focus": "genre",
+      "to_focus": "writer",
+      "bridge_field": "plot",
+      "bridge_value": "british",
+      "from_anchor": "Hot Tub Time Machine",
+      "to_anchor": "Groundhog Day"
+    },
+    {
+      "turn": 27,
+      "from_focus": "writer",
+      "to_focus": "genre",
+      "bridge_field": "writer",
+      "bridge_value": "Charles B. Wessler",
+      "from_anchor": "Groundhog Day",
+      "to_anchor": "The Pathfinder"
+    },
+    {
+      "turn": 29,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "girl",
+      "from_anchor": "The Pathfinder",
+      "to_anchor": "Easy A"
+    },
+    {
+      "turn": 34,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "college",
+      "from_anchor": "Easy A",
+      "to_anchor": "The Great Debaters"
+    },
+    {
+      "turn": 39,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Seth MacFarlane",
+      "from_anchor": "The Great Debaters",
+      "to_anchor": "The Skulls"
+    },
+    {
+      "turn": 45,
+      "from_focus": "director",
+      "to_focus": "writer",
+      "bridge_field": "plot",
+      "bridge_value": "jupiter",
+      "from_anchor": "The Skulls",
+      "to_anchor": "2010"
+    }
+  ]
+}

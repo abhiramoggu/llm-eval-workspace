@@ -1,0 +1,2285 @@
+{
+  "session_id": "00080",
+  "model_name": "qwen:7b",
+  "true_genre": "music",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a music movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "music",
+        "anchor_title": "The Red Violin",
+        "constraints": {
+          "genre": "music"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User is in the mood for a music movie with a focus on plot involving music and possibly featuring notable musicians or actors. Based on these constraints, I would recommend \"A Mighty Wind\" starring Larry Miller, Michael Hitchcock, and Fred Willard, as it perfectly captures the essence of a music movie.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "music",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "The Seduction of Joe Tynan",
+        "A Mighty Wind",
+        "Maleficent",
+        "Wayne's World"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "music",
+        "anchor_title": "The Red Violin",
+        "constraints": {
+          "genre": "music"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences for music and sound, I recommend watching 'The Other Guys' (2010). This comedy film features a soundtrack with catchy tunes, and an engaging plot that plays on like and sound themes.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us"
+      },
+      "rec_titles": [
+        "The Other Guys",
+        "Coyote Ugly",
+        "Vampyres",
+        "In the Woods"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Daniel Junge? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of The Other Guys.)",
+      "user_meta": {
+        "turn": 3,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Daniel Junge",
+        "anchor_title": "Goodfellas",
+        "constraints": {
+          "genre": "music",
+          "director": "Daniel Junge",
+          "actor": "Thomas Middleditch"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 3,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Thomas Middleditch",
+          "from_anchor": "The Red Violin",
+          "to_anchor": "Goodfellas"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with a potential mix of intrigue, music, and possibly a character dealing with familial relationships. Based on these preferences, I recommend 'Nowhere Boy' (2009), featuring Jack McElhone as the title character, exploring his relationship with his aunt Mimi and absent mother Julia.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Her",
+        "director": "Daniel Junge"
+      },
+      "rec_titles": [
+        "The Picture of Dorian Gray",
+        "The Rocker",
+        "Nowhere Boy",
+        "Her"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Daniel Junge",
+        "anchor_title": "Goodfellas",
+        "constraints": {
+          "genre": "music",
+          "director": "Daniel Junge",
+          "actor": "Thomas Middleditch"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has preferences for music-related movies, directed by Daniel Junge, and featuring just or plot keywords related to 'more'. From this list, I recommend 'Thick as Thieves' and 'Nowhere Boy'. 'Thick as Thieves' is a crime thriller with music elements, while 'Nowhere Boy' explores the life of a musician during his formative years. Both films offer intrigue and musical charm according to the user's preferences.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Daniel Junge"
+      },
+      "rec_titles": [
+        "Thick as Thieves",
+        "Three Kings",
+        "If I Stay",
+        "Nowhere Boy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Charlie McDermott. That feels deeper than I thought. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 5,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Charlie McDermott",
+        "anchor_title": "Transcendence",
+        "constraints": {
+          "genre": "music",
+          "director": "Daniel Junge",
+          "actor": "Charlie McDermott",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 5,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Goodfellas",
+          "to_anchor": "Transcendence"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies featuring Charlie McDermott and with themes like self-expression or adapting literary works for screen. Based on these preferences, I recommend watching 'American Beauty' (2013), which stars Charlie McDermott and explores the theme of self-expression through a character's art.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Deep",
+        "director": "Daniel Junge",
+        "actor": "Charlie McDermott"
+      },
+      "rec_titles": [
+        "American Beauty",
+        "Saving Mr. Banks",
+        "The Great Gatsby",
+        "The Dot"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Charlie McDermott",
+        "anchor_title": "Transcendence",
+        "constraints": {
+          "genre": "music",
+          "director": "Daniel Junge",
+          "actor": "Charlie McDermott",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You mentioned interest in movies with music or Charlie McDermott in the lead. Given those preferences, I would recommend 'Zack and Miri Make a Porno' for its musical aspect and featuring Charlie McDermott. It's a lighthearted comedy.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Daniel Junge",
+        "actor": "Charlie McDermott"
+      },
+      "rec_titles": [
+        "Zack and Miri Make a Porno",
+        "Pitch Perfect",
+        "A Night at the Roxbury",
+        "The Piano Teacher"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Joss Whedon? Hmm, I didn’t expect that vibe. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 7,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Joss Whedon",
+        "anchor_title": "Step Up",
+        "constraints": {
+          "genre": "music",
+          "director": "Joss Whedon",
+          "actor": "Charlie McDermott",
+          "plot": "wish"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 7,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "wish",
+          "from_anchor": "Transcendence",
+          "to_anchor": "Step Up"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User wants recommendations for movies with a Joss Whedon vibe, focusing on titles like 'Whiplash,' 'Be Cool,' 'The Red Violin,' and 'The Secret of My Success.' I recommend 'Whiplash' due to its intense plot and the presence of J.K. Simmons, who plays the mentor role inspired by Whedon.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Ted",
+        "director": "Joss Whedon",
+        "actor": "Joss Whedon",
+        "writer": "Joss Whedon"
+      },
+      "rec_titles": [
+        "Whiplash",
+        "Be Cool",
+        "The Red Violin",
+        "The Secret of My Success"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Joss Whedon",
+        "anchor_title": "Step Up",
+        "constraints": {
+          "genre": "music",
+          "director": "Joss Whedon",
+          "actor": "Charlie McDermott",
+          "plot": "wish"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movie recommendations with specific genre (music) and actor (Joss Whedon). Based on these cues, I suggest checking out 'Tell No One' which stars Joss Whedon in a thriller plot.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Joss Whedon",
+        "actor": "Joss Whedon",
+        "writer": "Joss Whedon"
+      },
+      "rec_titles": [
+        "The Swindle",
+        "Coyote Ugly",
+        "Tell No One",
+        "Yesterday Was a Lie"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Tell No One. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Joss Whedon",
+        "anchor_title": "Step Up",
+        "constraints": {
+          "genre": "music",
+          "director": "Joss Whedon",
+          "actor": "Charlie McDermott",
+          "plot": "wish"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user enjoys a music vibe and has an interest in Joss Whedon's work. Based on these preferences, I would recommend 'Step Up' (2006), starring Josh Henderson and featuring the musical energy of dance. It also aligns with Joss Whedon's creative touch, though he didn't direct this specific film.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Tell No One",
+        "director": "Joss Whedon",
+        "actor": "Joss Whedon",
+        "writer": "Joss Whedon"
+      },
+      "rec_titles": [
+        "Step Up",
+        "Mama",
+        "We Are Your Friends",
+        "The Bodyguard"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Step Up tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Joss Whedon",
+        "anchor_title": "Step Up",
+        "constraints": {
+          "genre": "music",
+          "director": "Joss Whedon",
+          "actor": "Charlie McDermott",
+          "plot": "wish"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a movie with music as a theme, featuring actor Joss Whedon in some capacity. Recommendations could be 'The Jungle Book 2' where Tony Jay, known for his voice acting, and Phil Collins are involved with music, or 'Get Him to the Greek' which stars Joyful Drake, with musical comedy aspects.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "director": "Joss Whedon",
+        "actor": "Joss Whedon",
+        "writer": "Joss Whedon"
+      },
+      "rec_titles": [
+        "The Jungle Book 2",
+        "Get Him to the Greek",
+        "The Wraith",
+        "Paycheck"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Joss Whedon",
+        "anchor_title": "Step Up",
+        "constraints": {
+          "genre": "music",
+          "director": "Joss Whedon",
+          "actor": "Charlie McDermott",
+          "plot": "wish"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with a mood that could be either exciting (like Divergent) or comforting, like The Way Back Home. Based on these preferences, I would recommend 'Divergent' as it offers the thrilling aspect you're seeking, while also featuring an interesting plot and actors like Shailene Woodley and Theo James.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "director": "Joss Whedon",
+        "actor": "Joss Whedon",
+        "writer": "Joss Whedon"
+      },
+      "rec_titles": [
+        "The Trouble with Harry",
+        "Elizabeth",
+        "Divergent",
+        "The Way Back Home"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Joss Whedon",
+        "anchor_title": "Step Up",
+        "constraints": {
+          "genre": "music",
+          "director": "Joss Whedon",
+          "actor": "Charlie McDermott",
+          "plot": "wish"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's constraints include a preference for music-related movies and actors such as Joss Whedon. Based on these preferences, I would recommend 'Music and Lyrics' since it stars Kristen Johnston, known for her roles in TV shows like \"Frasier,\" which often have musical elements. Additionally, the film features Matthew Morrison, who worked closely with Joss Whedon on the TV show \"Glee.\"",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "RED",
+        "director": "Joss Whedon",
+        "actor": "Joss Whedon",
+        "writer": "Joss Whedon"
+      },
+      "rec_titles": [
+        "The Cabin in the Woods",
+        "Prometheus",
+        "Music and Lyrics",
+        "The Jungle Book 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Welsh Language? That sounds intriguing. (I’m thinking of Music and Lyrics.)",
+      "user_meta": {
+        "turn": 13,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "Welsh Language",
+        "anchor_title": "Yesterday Was a Lie",
+        "constraints": {
+          "genre": "music",
+          "director": "Joss Whedon",
+          "actor": "Zak Orth",
+          "plot": "wish",
+          "language": "Welsh Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 13,
+          "from_focus": "director",
+          "to_focus": "language",
+          "bridge_field": "actor",
+          "bridge_value": "Zak Orth",
+          "from_anchor": "Step Up",
+          "to_anchor": "Yesterday Was a Lie"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movie recommendations in Welsh language, focusing on genres like music and featuring actors like Joss Whedon. Based on these preferences, I suggest 'Velvet Goldmine' for its mix of glam rock and Welsh language, along with the star-studded cast including Joss Whedon.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "Music and Lyrics",
+        "director": "Joss Whedon",
+        "actor": "Joss Whedon",
+        "writer": "Joss Whedon",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "Velvet Goldmine",
+        "Forgetting Sarah Marshall",
+        "A Night at the Roxbury",
+        "Happy Feet"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Welsh Language",
+        "anchor_title": "Yesterday Was a Lie",
+        "constraints": {
+          "genre": "music",
+          "director": "Joss Whedon",
+          "actor": "Zak Orth",
+          "plot": "wish",
+          "language": "Welsh Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movie recommendations with a music or Joss Whedon-related theme. From the list provided, I would recommend 'Serenity' and 'Terminator 2: Judgment Day'. 'Serenity' features a crew on a spaceship, aligning with the Joss Whedon connection. 'Terminator 2' has elements of both music (with the intense score) and a Joss Whedon-created character, T-100.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Joss Whedon",
+        "actor": "Joss Whedon",
+        "writer": "Joss Whedon",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "Dance Flick",
+        "Terminator 2: Judgment Day",
+        "Serenity",
+        "Saving Mr. Banks"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Terminator 2: Judgment Day tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Welsh Language",
+        "anchor_title": "Yesterday Was a Lie",
+        "constraints": {
+          "genre": "music",
+          "director": "Joss Whedon",
+          "actor": "Zak Orth",
+          "plot": "wish",
+          "language": "Welsh Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movie recommendations with a focus on music or transvestite themes, and featuring actors like Luke Benward or Channing Tatum. Based on these preferences, I would recommend 'Be Cool' starring Channing Tatum, as it has a musical theme and features his talent.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Terminator 2: Judgment Day",
+        "director": "Joss Whedon",
+        "actor": "Joss Whedon",
+        "writer": "Joss Whedon",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "The Rocker",
+        "Waterworld",
+        "Dear John",
+        "Be Cool"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Welsh Language",
+        "anchor_title": "Yesterday Was a Lie",
+        "constraints": {
+          "genre": "music",
+          "director": "Joss Whedon",
+          "actor": "Zak Orth",
+          "plot": "wish",
+          "language": "Welsh Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes movies with a strong sound element and featuring actors like Joss Whedon. Based on these preferences, I would recommend 'Looper' due to its music influence and Joss Whedon's directorial involvement.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "director": "Joss Whedon",
+        "actor": "Joss Whedon",
+        "writer": "Joss Whedon",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "Looper",
+        "Step Up",
+        "Smokin' Aces",
+        "Unleashed"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Welsh Language",
+        "anchor_title": "Yesterday Was a Lie",
+        "constraints": {
+          "genre": "music",
+          "director": "Joss Whedon",
+          "actor": "Zak Orth",
+          "plot": "wish",
+          "language": "Welsh Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movies that fit their preferences. They have mentioned a preference for music-related films, with actor Joss Whedon involved, and possibly Welsh language content. Based on these cues, I would recommend 'Yesterday Was a Lie' (2008) as it stars Chase Masterson, who worked closely with Joss Whedon in 'Buffy the Vampire Slayer'. This film combines music elements and has an Welsh language option.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "RED",
+        "director": "Joss Whedon",
+        "actor": "Joss Whedon",
+        "writer": "Joss Whedon",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "Yesterday Was a Lie",
+        "O Brother, Where Art Thou?",
+        "The Secret of My Success",
+        "The Last Dragon"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Welsh Language",
+        "anchor_title": "Yesterday Was a Lie",
+        "constraints": {
+          "genre": "music",
+          "director": "Joss Whedon",
+          "actor": "Zak Orth",
+          "plot": "wish",
+          "language": "Welsh Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You mentioned a preference for mood and themes related to music, Joss Whedon, and Welsh language. Based on these cues, I recommend 'Goodfellas' as it combines elements of music, crime, and Joss Whedon's directing style. It also features an English-speaking cast with notable Welsh actors like Paul Sorvino (who has Welsh heritage).",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Ted",
+        "director": "Joss Whedon",
+        "actor": "Joss Whedon",
+        "writer": "Joss Whedon",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "Goodfellas",
+        "The Jungle Book 2",
+        "8 Mile",
+        "Pitch Perfect"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Goodfellas. I want to try something more animation—still with Paul Sorvino if possible. That sounds intriguing.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "animation",
+        "anchor_title": "Titan A.E.",
+        "constraints": {
+          "genre": "animation",
+          "director": "Joss Whedon",
+          "actor": "Paul Sorvino",
+          "plot": "wish",
+          "language": "Welsh Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 19,
+          "from_focus": "language",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "Paul Sorvino",
+          "from_anchor": "Yesterday Was a Lie",
+          "to_anchor": "Titan A.E."
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants animation movies with Paul Sorvino and Joss Whedon as involved parties. Based on these preferences, I would recommend \"Tangled\" since it features both Paul Sorvino (in a voice role) and Joss Whedon as writers. The movie also has a talented cast, including the lead character, animated by Mandy Moore.",
+      "constraints": {
+        "genre": "animation",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Goodfellas",
+        "director": "Joss Whedon",
+        "actor": "Paul Sorvino",
+        "writer": "Joss Whedon",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "MegaMind",
+        "Ponyo",
+        "Tangled",
+        "A Bug's Life"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "animation",
+        "anchor_title": "Titan A.E.",
+        "constraints": {
+          "genre": "animation",
+          "director": "Joss Whedon",
+          "actor": "Paul Sorvino",
+          "plot": "wish",
+          "language": "Welsh Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for recommendations in the genre of animation with an actor named Paul Sorvino, and possibly a writer connection as well. Based on these preferences, I would recommend 'Jason Bourne' (2016), starring Matt Damon who plays Paul Sorvino's character here. It has a compelling plot involving animation elements and is written by Joss Whedon himself.",
+      "constraints": {
+        "genre": "animation",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Joss Whedon",
+        "actor": "Paul Sorvino",
+        "writer": "Joss Whedon",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "Jason Bourne",
+        "Arthur and the Invisibles",
+        "You Kill Me",
+        "Æon Flux"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Her. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 21,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "animation",
+        "anchor_title": "Titan A.E.",
+        "constraints": {
+          "genre": "animation",
+          "director": "Joss Whedon",
+          "actor": "Paul Sorvino",
+          "plot": "wish",
+          "language": "Welsh Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes stories with a sound element, like \"Her\". Recommendations could include \"Her\" itself, known for its unique soundscape and lead actress Scarlett Johansson. Another option could be \"Thunderbirds\", which features audio cues related to the characters' abilities and action sequences.",
+      "constraints": {
+        "genre": "animation",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Her",
+        "director": "Joss Whedon",
+        "actor": "Paul Sorvino",
+        "writer": "Joss Whedon",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "Arthur and the Invisibles",
+        "X-Men: First Class",
+        "Her",
+        "Thunderbirds"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "animation",
+        "anchor_title": "Titan A.E.",
+        "constraints": {
+          "genre": "animation",
+          "director": "Joss Whedon",
+          "actor": "Paul Sorvino",
+          "plot": "wish",
+          "language": "Welsh Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for animation movies with specific elements, such as a character named Paul Sorvino or a Welsh language option. Based on these preferences, I recommend 'Wreck-It Ralph' since it has an animated Paul Sorvino-like character (voiced by Maurice LaMarche) and features Welsh language in the dialogue.",
+      "constraints": {
+        "genre": "animation",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "Her",
+        "director": "Joss Whedon",
+        "actor": "Paul Sorvino",
+        "writer": "Joss Whedon",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "Arthur and the Invisibles",
+        "The Lego Movie",
+        "The Rugrats Movie",
+        "Wreck-It Ralph"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Bill Cowher. That feels deeper than I thought. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 23,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Bill Cowher",
+        "anchor_title": "Animal Kingdom: Let's go Ape",
+        "constraints": {
+          "genre": "animation",
+          "director": "Joss Whedon",
+          "actor": "Bill Cowher",
+          "plot": "wish",
+          "language": "Welsh Language",
+          "writer": "David Nicholls"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 23,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "writer",
+          "bridge_value": "David Nicholls",
+          "from_anchor": "Titan A.E.",
+          "to_anchor": "Animal Kingdom: Let's go Ape"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movie recommendations with Bill Cowher, a connection to animation and Welsh language. From the list, I suggest 'Looney Tunes: Back in Action' starring Brendan Fraser, who has worked with Cowher in real-life projects. This film combines humor and animation, also offering a Welsh language title option.",
+      "constraints": {
+        "genre": "animation",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Her",
+        "director": "Joss Whedon",
+        "actor": "Bill Cowher",
+        "writer": "Joss Whedon",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "Norbit",
+        "Looney Tunes: Back in Action",
+        "The Only Good Indian",
+        "Ratatouille"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bill Cowher",
+        "anchor_title": "Animal Kingdom: Let's go Ape",
+        "constraints": {
+          "genre": "animation",
+          "director": "Joss Whedon",
+          "actor": "Bill Cowher",
+          "plot": "wish",
+          "language": "Welsh Language",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants recommendations for movies with animation, Bill Cowher as an actor, or a Welsh language option. Based on these preferences, I suggest watching 'Tangled' (2010) featuring Mona Marshall and Bill Cowher's voice, or 'Penguins of Madagascar' (2014) starring Annet Mahendru and Andy Richter. Both offer animation and a Welsh language track if available.",
+      "constraints": {
+        "genre": "animation",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Joss Whedon",
+        "actor": "Bill Cowher",
+        "writer": "Joss Whedon",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "Tangled",
+        "We Need to Talk About Kevin",
+        "Creepshow",
+        "Penguins of Madagascar"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Madagascar tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bill Cowher",
+        "anchor_title": "Animal Kingdom: Let's go Ape",
+        "constraints": {
+          "genre": "animation",
+          "director": "Joss Whedon",
+          "actor": "Bill Cowher",
+          "plot": "wish",
+          "language": "Welsh Language",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with an animation genre, featuring at least one actor named Bill Cowher. Based on these preferences, I recommend 'Ice Age' (2002), which stars Chris Wedge and features Bill Cowher in the form of a voice actor. It's an animated adventure that combines humor and action.",
+      "constraints": {
+        "genre": "animation",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Madagascar",
+        "director": "Joss Whedon",
+        "actor": "Bill Cowher",
+        "writer": "Joss Whedon",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "Waiting",
+        "Ice Age",
+        "Why Did I Get Married?",
+        "WALL·E"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bill Cowher",
+        "anchor_title": "Animal Kingdom: Let's go Ape",
+        "constraints": {
+          "genre": "animation",
+          "director": "Joss Whedon",
+          "actor": "Bill Cowher",
+          "plot": "wish",
+          "language": "Welsh Language",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user enjoys animation films and is interested in characters like Bill Cowher. Based on these preferences, I would recommend 'Ice Age' (2002) as it combines humor with a well-known cast including Chris Wedge. If the user is also a fan of Snoop Dogg, they might enjoy 'Turbo' (2013), which features the rapper in a fun animated role.",
+      "constraints": {
+        "genre": "animation",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "director": "Joss Whedon",
+        "actor": "Bill Cowher",
+        "writer": "Joss Whedon",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "Ice Age",
+        "Turbo",
+        "The Relic",
+        "Treasure Planet"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Ted. I want to try something more zombie—That sounds intriguing.",
+      "user_meta": {
+        "turn": 27,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "zombie",
+        "anchor_title": "Night of the Living Dead",
+        "constraints": {
+          "genre": "zombie",
+          "director": "Joss Whedon",
+          "plot": "wish",
+          "language": "Welsh Language",
+          "writer": "David Nicholls"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 27,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "bennett",
+          "from_anchor": "Animal Kingdom: Let's go Ape",
+          "to_anchor": "Night of the Living Dead"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants zombie-themed movies with actor Bill Cowher and director Joss Whedon. Based on these preferences, I would recommend 'The Watcher' as it fits both categories with Cowher's involvement and Whedon's direction.",
+      "constraints": {
+        "genre": "zombie",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Ted",
+        "director": "Joss Whedon",
+        "actor": "Bill Cowher",
+        "writer": "Joss Whedon",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "Grindhouse",
+        "The Watcher",
+        "Wanderlust",
+        "The Return of the Living Dead"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "zombie",
+        "anchor_title": "Night of the Living Dead",
+        "constraints": {
+          "genre": "zombie",
+          "director": "Joss Whedon",
+          "plot": "wish",
+          "language": "Welsh Language",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movie recommendations with zombie elements, featuring Bill Cowher as an actor, and possibly written or directed by Joss Whedon. \n\nBased on these preferences, I would recommend 'Terminator 2: Judgment Day' due to its zombie-like cyborgs and Joss Whedon's involvement in writing the script.",
+      "constraints": {
+        "genre": "zombie",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Joss Whedon",
+        "actor": "Bill Cowher",
+        "writer": "Joss Whedon",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "Terminator 2: Judgment Day",
+        "Tusk",
+        "The Revenant",
+        "Ocean's Twelve"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "zombie",
+        "anchor_title": "Night of the Living Dead",
+        "constraints": {
+          "genre": "zombie",
+          "director": "Joss Whedon",
+          "plot": "wish",
+          "language": "Welsh Language",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes zombie-themed films, actor Bill Cowher, and movies with a combination of artistic and commercial success. Based on these preferences, I recommend watching 'Night of the Living Dead' (1968), which has a classic zombie film narrative starring Judith O'Dea in the lead role.",
+      "constraints": {
+        "genre": "zombie",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "director": "Joss Whedon",
+        "actor": "Bill Cowher",
+        "writer": "Joss Whedon",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "Night of the Living Dead",
+        "The Relic",
+        "American Dreamz",
+        "Alex in Wonderland"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Night of the Living Dead tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "zombie",
+        "anchor_title": "Night of the Living Dead",
+        "constraints": {
+          "genre": "zombie",
+          "director": "Joss Whedon",
+          "plot": "wish",
+          "language": "Welsh Language",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in zombie-themed movies with a focus on the actor Bill Cowher.推荐电影《Holes》(1998)，该片包含了僵尸和Bill Cowher的元素，适合用户口味。",
+      "constraints": {
+        "genre": "zombie",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Night of the Living Dead",
+        "director": "Joss Whedon",
+        "actor": "Bill Cowher",
+        "writer": "Joss Whedon",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "Holes",
+        "The Violent Kind",
+        "Hitch",
+        "We the Living"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "zombie",
+        "anchor_title": "Night of the Living Dead",
+        "constraints": {
+          "genre": "zombie",
+          "director": "Joss Whedon",
+          "plot": "wish",
+          "language": "Welsh Language",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has preferences for a zombie-themed movie, with actor Bill Cowher involved, and possibly directed by Joss Whedon. I recommend 'Zombieland' (2009), which perfectly fits these cues with its witty script, well-known cast including Bill Cowher, and僵尸 apocalypse setting.",
+      "constraints": {
+        "genre": "zombie",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "Night of the Living Dead",
+        "director": "Joss Whedon",
+        "actor": "Bill Cowher",
+        "writer": "Joss Whedon",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "Zombieland",
+        "Shaun of the Dead",
+        "Serenity",
+        "The Dark Knight Rises"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Ethan Coen? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 32,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Ethan Coen",
+        "anchor_title": "The SpongeBob SquarePants Movie",
+        "constraints": {
+          "genre": "zombie",
+          "director": "Ethan Coen",
+          "plot": "wish",
+          "language": "Welsh Language",
+          "writer": "David Nicholls",
+          "actor": "Scarlett Johansson"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 32,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Scarlett Johansson",
+          "from_anchor": "Night of the Living Dead",
+          "to_anchor": "The SpongeBob SquarePants Movie"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants something by Ethan Coen, possibly after \"Her.\" Based on these preferences, I recommend \"No Country for Old Men\" due to its Coen兄弟-directed crime thriller style, with iconic actors like Tommy Lee Jones and Javier Bardem involved.",
+      "constraints": {
+        "genre": "zombie",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Her",
+        "director": "Ethan Coen",
+        "actor": "Bill Cowher",
+        "writer": "Joss Whedon",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "The Queen",
+        "The Secret of My Success",
+        "No Country for Old Men",
+        "The Evil Dead"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ethan Coen",
+        "anchor_title": "The SpongeBob SquarePants Movie",
+        "constraints": {
+          "genre": "zombie",
+          "director": "Ethan Coen",
+          "plot": "wish",
+          "language": "Welsh Language",
+          "writer": "David Nicholls",
+          "actor": "Scarlett Johansson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants recommendations for movies with zombie elements, featuring Bill Cowher as an actor, and directed by Ethan Coen or Joss Whedon. Based on these preferences, I suggest watching 'Annie Hall' with its witty writing and the presence of both Bill Cowher (as himself) and Joss Whedon.",
+      "constraints": {
+        "genre": "zombie",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Ethan Coen",
+        "actor": "Bill Cowher",
+        "writer": "Joss Whedon",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "The Truth",
+        "The Deep End of the Ocean",
+        "Bobby",
+        "Annie Hall"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Jet Li. Hmm, I didn’t expect that vibe. (I’m thinking of Annie Hall.)",
+      "user_meta": {
+        "turn": 34,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Jet Li",
+        "anchor_title": "True Grit",
+        "constraints": {
+          "genre": "zombie",
+          "director": "Ethan Coen",
+          "plot": "jewish",
+          "language": "Welsh Language",
+          "writer": "David Nicholls",
+          "actor": "Jet Li"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 34,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "jewish",
+          "from_anchor": "The SpongeBob SquarePants Movie",
+          "to_anchor": "True Grit"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies with Jet Li, featuring zombie elements or a conspiracy aspect. I recommend 'The Missing' for its blend of film noir and science fiction, starring Ray McKinnon who has a role with Jet Li.",
+      "constraints": {
+        "genre": "zombie",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Annie Hall",
+        "director": "Ethan Coen",
+        "actor": "Jet Li",
+        "writer": "Jet Li",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "The Missing",
+        "Pirates of the Caribbean: On Stranger Tides",
+        "The Underneath",
+        "True Grit"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jet Li",
+        "anchor_title": "True Grit",
+        "constraints": {
+          "genre": "zombie",
+          "director": "Ethan Coen",
+          "plot": "jewish",
+          "language": "Welsh Language",
+          "writer": "David Nicholls",
+          "actor": "Jet Li"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's constraints include a preference for zombie-themed movies, starring Jet Li, and directed by Ethan Coen or with a writer credited as Jet Li. Based on these preferences, I would recommend 'The Number 23' (2007) which combines elements of a zombie story, Jet Li's acting, and the direction of Ethan Coen, even though the plot credit is to Jet Li himself.",
+      "constraints": {
+        "genre": "zombie",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Ethan Coen",
+        "actor": "Jet Li",
+        "writer": "Jet Li",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "The Number 23",
+        "The Warlords",
+        "War",
+        "Despicable Me 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jet Li",
+        "anchor_title": "True Grit",
+        "constraints": {
+          "genre": "zombie",
+          "director": "Ethan Coen",
+          "plot": "jewish",
+          "language": "Welsh Language",
+          "writer": "David Nicholls",
+          "actor": "Jet Li"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences for a zombie film with Jet Li, and excluding other genres, I recommend 'The Crazies'. This movie features John Aylward as the main character facing an infected town, which aligns with the sound of zombies and Jet Li's presence.",
+      "constraints": {
+        "genre": "zombie",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us",
+        "director": "Ethan Coen",
+        "actor": "Jet Li",
+        "writer": "Jet Li",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "The Crazies",
+        "The Rite",
+        "It's a Wonderful Life",
+        "Inside Llewyn Davis"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Anthony Minghella? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 37,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Anthony Minghella",
+        "anchor_title": "The Rocker",
+        "constraints": {
+          "genre": "zombie",
+          "director": "Anthony Minghella",
+          "plot": "jewish",
+          "language": "English",
+          "writer": "David Nicholls",
+          "actor": "Jet Li"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 37,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "True Grit",
+          "to_anchor": "The Rocker"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies related to Anthony Minghella, a director known for his unique style. They have mentioned specific elements such as zombies, Jet Li, and potentially Welsh language content.\n\nBased on these preferences, I would recommend two movies from the list:\n\n1. 'The English Patient' (1992) - This classic Minghella film tells the story of a severely burned man and his nurse during World War II. Meryl Streep gives a haunting performance as the patient.\n\n2. 'The Rite' (2011) - While this movie is not by Minghella, it still relates to his direction due to its focus on exorcism. The film follows an American seminary student who embarks on an exorcism course in Italy, showcasing the intense and often supernatural aspects of the exorcism process.",
+      "constraints": {
+        "genre": "zombie",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "X",
+        "director": "Anthony Minghella",
+        "actor": "Jet Li",
+        "writer": "Anthony Minghella",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "The Queen",
+        "The Seduction of Joe Tynan",
+        "The English Patient",
+        "The Rite"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Anthony Minghella",
+        "anchor_title": "The Rocker",
+        "constraints": {
+          "genre": "zombie",
+          "director": "Anthony Minghella",
+          "plot": "jewish",
+          "language": "English",
+          "writer": "David Nicholls",
+          "actor": "Jet Li"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's constraints include a preference for zombie-themed movies, starring Jet Li, and directed by Anthony Minghella. From the list, I recommend 'Grindhouse' as it matches all those criteria, featuring Quentin Tarantino's iconic zombie sequence.",
+      "constraints": {
+        "genre": "zombie",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Anthony Minghella",
+        "actor": "Jet Li",
+        "writer": "Anthony Minghella",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "Grindhouse",
+        "Dinner for Schmucks",
+        "Hesher",
+        "Lakeview Terrace"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Anthony Minghella",
+        "anchor_title": "The Rocker",
+        "constraints": {
+          "genre": "zombie",
+          "director": "Anthony Minghella",
+          "plot": "jewish",
+          "language": "English",
+          "writer": "David Nicholls",
+          "actor": "Jet Li"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's preferences include a zombie genre, actor Jet Li, and director Anthony Minghella. Based on these cues, I recommend 'War' (2007), starring Jason Statham, Jet Li, and featuring the plot of an Indian agent's mission to hunt Kabir, a rogue agent.",
+      "constraints": {
+        "genre": "zombie",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "You",
+        "director": "Anthony Minghella",
+        "actor": "Jet Li",
+        "writer": "Anthony Minghella",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "Wolfhound",
+        "The Way Back Home",
+        "War",
+        "The English Patient"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Anthony Minghella",
+        "anchor_title": "The Rocker",
+        "constraints": {
+          "genre": "zombie",
+          "director": "Anthony Minghella",
+          "plot": "jewish",
+          "language": "English",
+          "writer": "David Nicholls",
+          "actor": "Jet Li"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User wants a movie with zombie genre, featuring Jet Li as an actor, and possibly directed by Anthony Minghella. Based on these preferences, I recommend \"Unleashed\" (2005) which ticks all the boxes: it combines zombies and Jet Li's presence, with elements from Anthony Minghella's direction.",
+      "constraints": {
+        "genre": "zombie",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "You",
+        "director": "Anthony Minghella",
+        "actor": "Jet Li",
+        "writer": "Anthony Minghella",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "Unleashed",
+        "The Revenant",
+        "Evil Dead II",
+        "The Rite"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Anthony Minghella",
+        "anchor_title": "The Rocker",
+        "constraints": {
+          "genre": "zombie",
+          "director": "Anthony Minghella",
+          "plot": "jewish",
+          "language": "English",
+          "writer": "David Nicholls",
+          "actor": "Jet Li"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's constraints include a preference for zombie-themed movies, actor Jet Li, and director Anthony Minghella. Based on these preferences, I would recommend 'Smokin' Aces' as it has Jet Li in the cast and combines elements of crime and zombies, matching the user's interests.",
+      "constraints": {
+        "genre": "zombie",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "You",
+        "director": "Anthony Minghella",
+        "actor": "Jet Li",
+        "writer": "Anthony Minghella",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "The Secret of My Success",
+        "Nine",
+        "Smokin' Aces",
+        "Zombieland"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Smokin' Aces? That sounds intriguing.",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Anthony Minghella",
+        "anchor_title": "The Rocker",
+        "constraints": {
+          "genre": "zombie",
+          "director": "Anthony Minghella",
+          "plot": "jewish",
+          "language": "English",
+          "writer": "David Nicholls",
+          "actor": "Jet Li"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with a zombie theme, featuring Jet Li as an actor, and potentially directed by Anthony Minghella. From the list provided, I would recommend 'Evil Dead II' since it matches the zombie genre and has Jet Li in a supporting role. The film also features the Raimi brothers, known for their Evil Dead franchise.",
+      "constraints": {
+        "genre": "zombie",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Smokin' Aces",
+        "director": "Anthony Minghella",
+        "actor": "Jet Li",
+        "writer": "Anthony Minghella",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "The Talented Mr. Ripley",
+        "Evil Dead II",
+        "Man on Fire",
+        "American Dreamz"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Evil Dead II tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Anthony Minghella",
+        "anchor_title": "The Rocker",
+        "constraints": {
+          "genre": "zombie",
+          "director": "Anthony Minghella",
+          "plot": "jewish",
+          "language": "English",
+          "writer": "David Nicholls",
+          "actor": "Jet Li"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a zombie story featuring Jet Li as an actor. From the given list, I would recommend 'Divergent' since it fits the zombie and Jet Li genre you're looking for. The plot revolves around Tris, who discovers she's Divergent and must navigate the challenges of her newfound identity.",
+      "constraints": {
+        "genre": "zombie",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Evil Dead II",
+        "director": "Anthony Minghella",
+        "actor": "Jet Li",
+        "writer": "Anthony Minghella",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "Divergent",
+        "Training Day",
+        "We the Living",
+        "The Trouble with Harry"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Anthony Minghella",
+        "anchor_title": "The Rocker",
+        "constraints": {
+          "genre": "zombie",
+          "director": "Anthony Minghella",
+          "plot": "jewish",
+          "language": "English",
+          "writer": "David Nicholls",
+          "actor": "Jet Li"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes zombie-themed movies, with Jet Li as an actor. Recommendations include \"Army of Darkness\" (starring Bruce Campbell and featuring a zombies vs. heroes scenario), which fits their preferences for its undead theme and action star Jet Li.",
+      "constraints": {
+        "genre": "zombie",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "You",
+        "director": "Anthony Minghella",
+        "actor": "Jet Li",
+        "writer": "Anthony Minghella",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "District 9",
+        "X-Men: First Class",
+        "Paycheck",
+        "Army of Darkness"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Anthony Minghella",
+        "anchor_title": "The Rocker",
+        "constraints": {
+          "genre": "zombie",
+          "director": "Anthony Minghella",
+          "plot": "jewish",
+          "language": "English",
+          "writer": "David Nicholls",
+          "actor": "Jet Li"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user prefers zombie-themed movies, starring Jet Li. Based on these preferences, I recommend 'Zombieland' and 'Hero'. The former features a zombie apocalypse with notable cast including Jet Li, while 'Hero' has Jet Li in the role of an anti-establishment figure, making both films suitable for the user's interests.",
+      "constraints": {
+        "genre": "zombie",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "You",
+        "director": "Anthony Minghella",
+        "actor": "Jet Li",
+        "writer": "Anthony Minghella",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "Zombieland",
+        "Thick as Thieves",
+        "Hero",
+        "500 Days of Summer"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Michael J. Pollard. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 46,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Michael J. Pollard",
+        "anchor_title": "The Evil Dead",
+        "constraints": {
+          "genre": "zombie",
+          "director": "Anthony Minghella",
+          "plot": "online",
+          "writer": "David Nicholls",
+          "actor": "Michael J. Pollard"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 46,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "online",
+          "from_anchor": "The Rocker",
+          "to_anchor": "The Evil Dead"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for movies that involve elements of a zombie genre, with Michael J. Pollard as an actor, and possibly directed by Anthony Minghella. Based on these preferences, I recommend 'Cinder' (2012), which combines the survival aspect with a unique post-apocalyptic twist. The film stars AJ Cross, who could be similar to Michael J. Pollard in terms of his screen presence.",
+      "constraints": {
+        "genre": "zombie",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Her",
+        "director": "Anthony Minghella",
+        "actor": "Michael J. Pollard",
+        "writer": "Anthony Minghella",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "Cinder",
+        "The Dark Crystal",
+        "The Secret Garden",
+        "The Hateful Eight"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michael J. Pollard",
+        "anchor_title": "The Evil Dead",
+        "constraints": {
+          "genre": "zombie",
+          "director": "Anthony Minghella",
+          "plot": "online",
+          "writer": "David Nicholls",
+          "actor": "Michael J. Pollard"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movie recommendations with a zombie theme, featuring actor Michael J. Pollard, and potentially written or directed by Anthony Minghella. Based on these preferences, I recommend 'Cold Mountain' (2003) which has elements of survival and emotional journey, fitting the general mood but not directly zombies themed.",
+      "constraints": {
+        "genre": "zombie",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Anthony Minghella",
+        "actor": "Michael J. Pollard",
+        "writer": "Anthony Minghella",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "Cold Mountain",
+        "House of 1000 Corpses",
+        "Evil Dead II",
+        "Shutter"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? That sounds intriguing.",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michael J. Pollard",
+        "anchor_title": "The Evil Dead",
+        "constraints": {
+          "genre": "zombie",
+          "director": "Anthony Minghella",
+          "plot": "online",
+          "writer": "David Nicholls",
+          "actor": "Michael J. Pollard"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a movie with zombie elements, featuring actor Michael J. Pollard. Recommendations could be 'Evil Dead II' and its unique blend of zombie horror and character-driven story.",
+      "constraints": {
+        "genre": "zombie",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Ted",
+        "director": "Anthony Minghella",
+        "actor": "Michael J. Pollard",
+        "writer": "Anthony Minghella",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "Evil Dead II",
+        "What Women Want",
+        "Zero Effect",
+        "Paradise Lost"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Brett Leonard? That sounds intriguing. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 49,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Brett Leonard",
+        "anchor_title": "The Book of Eli",
+        "constraints": {
+          "genre": "zombie",
+          "director": "Brett Leonard",
+          "writer": "David Nicholls",
+          "actor": "Mila Kunis"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 49,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Mila Kunis",
+          "from_anchor": "The Evil Dead",
+          "to_anchor": "The Book of Eli"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants recommendations for zombie-themed movies featuring Leon, a director by Brett Leonard, and potentially with Anthony Minghella as a writer. I recommend 'Virtuosity' for its combination of zombie elements and Leon's presence, or 'Nine' if you're interested in a more complex storyline involving the characters' personal relationships.",
+      "constraints": {
+        "genre": "zombie",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Ted",
+        "director": "Brett Leonard",
+        "actor": "Leon",
+        "writer": "Anthony Minghella",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "Virtuosity",
+        "White Night",
+        "Nine",
+        "True Blood"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 50,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Brett Leonard",
+        "anchor_title": "The Book of Eli",
+        "constraints": {
+          "genre": "zombie",
+          "director": "Brett Leonard",
+          "writer": "David Nicholls",
+          "actor": "Mila Kunis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movie recommendations with specific criteria: zombie genre, actor Leon, director Brett Leonard, writer Anthony Minghella (with Welsh language), and keywords \"just\" and \"more\". Based on these preferences, I would recommend 'The Rocker' as it fits the zombie genre with actors including Howard Hesseman and Josh Gad. This recommendation combines elements of the user's specified criteria while offering an interesting film.",
+      "constraints": {
+        "genre": "zombie",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Brett Leonard",
+        "actor": "Leon",
+        "writer": "Anthony Minghella",
+        "language": "Welsh Language"
+      },
+      "rec_titles": [
+        "The Rocker",
+        "The Taming of the Shrew",
+        "The Stuff",
+        "Untraceable"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 3,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Thomas Middleditch",
+      "from_anchor": "The Red Violin",
+      "to_anchor": "Goodfellas"
+    },
+    {
+      "turn": 5,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Goodfellas",
+      "to_anchor": "Transcendence"
+    },
+    {
+      "turn": 7,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "wish",
+      "from_anchor": "Transcendence",
+      "to_anchor": "Step Up"
+    },
+    {
+      "turn": 13,
+      "from_focus": "director",
+      "to_focus": "language",
+      "bridge_field": "actor",
+      "bridge_value": "Zak Orth",
+      "from_anchor": "Step Up",
+      "to_anchor": "Yesterday Was a Lie"
+    },
+    {
+      "turn": 19,
+      "from_focus": "language",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "Paul Sorvino",
+      "from_anchor": "Yesterday Was a Lie",
+      "to_anchor": "Titan A.E."
+    },
+    {
+      "turn": 23,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "writer",
+      "bridge_value": "David Nicholls",
+      "from_anchor": "Titan A.E.",
+      "to_anchor": "Animal Kingdom: Let's go Ape"
+    },
+    {
+      "turn": 27,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "bennett",
+      "from_anchor": "Animal Kingdom: Let's go Ape",
+      "to_anchor": "Night of the Living Dead"
+    },
+    {
+      "turn": 32,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Scarlett Johansson",
+      "from_anchor": "Night of the Living Dead",
+      "to_anchor": "The SpongeBob SquarePants Movie"
+    },
+    {
+      "turn": 34,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "jewish",
+      "from_anchor": "The SpongeBob SquarePants Movie",
+      "to_anchor": "True Grit"
+    },
+    {
+      "turn": 37,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "True Grit",
+      "to_anchor": "The Rocker"
+    },
+    {
+      "turn": 46,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "online",
+      "from_anchor": "The Rocker",
+      "to_anchor": "The Evil Dead"
+    },
+    {
+      "turn": 49,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Mila Kunis",
+      "from_anchor": "The Evil Dead",
+      "to_anchor": "The Book of Eli"
+    }
+  ]
+}

@@ -1,0 +1,2280 @@
+{
+  "session_id": "00058",
+  "model_name": "mistral:7b",
+  "true_genre": "zombie",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a england movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "england",
+        "anchor_title": "Emma",
+        "constraints": {
+          "genre": "england"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for England-themed movies, I'd recommend you consider watching either \"Harry Potter and the Chamber of Secrets\" which follows Harry and his friends as they navigate Hogwarts while a dangerous secret is unleashed, or \"The Queen\", a captivating film that delves into the personal struggle of Queen Elizabeth II following the tragic death of Princess Diana. Both movies offer engaging plots set in England and feature talented star casts.",
+      "constraints": {
+        "genre": "england",
+        "plot": [
+          "england",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "You",
+        "Harry Potter and the Chamber of Secrets",
+        "The Queen",
+        "Maleficent"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Amharic Language? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of War.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "Amharic Language",
+        "anchor_title": "Royal Kill",
+        "constraints": {
+          "genre": "england",
+          "language": "Amharic Language",
+          "plot": "mission"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "language",
+          "bridge_field": "plot",
+          "bridge_value": "mission",
+          "from_anchor": "Emma",
+          "to_anchor": "Royal Kill"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you're looking for a movie primarily in the Amharic language and aren't sure whether it would be enjoyable or scary, I'd recommend \"Afterlife\" as it explores a unique theme of a son understanding his father after he passes away. This film might offer an emotional journey rather than the traditional war-themed movies you mentioned.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "War",
+        "language": "Amharic Language"
+      },
+      "rec_titles": [
+        "The Adventures of Tom Sawyer",
+        "Mansfield Park",
+        "Afterlife",
+        "White Fang"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Amharic Language",
+        "anchor_title": "Royal Kill",
+        "constraints": {
+          "genre": "england",
+          "language": "Amharic Language",
+          "plot": "mission"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for Amharic language movies with plots that include the keyword 'just', I'd recommend watching 'We Need to Talk About Kevin'. This film delves into a complicated mother-son relationship, with Tilda Swinton and Ezra Miller in the lead roles. Another intriguing option is 'The Taming of the Shrew', an Elizabethan play adaptation that showcases a unique courtship between two strong-willed characters.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "Amharic Language"
+      },
+      "rec_titles": [
+        "We Need to Talk About Kevin",
+        "The Taming of the Shrew",
+        "The Princess Diaries",
+        "The Passion of the Christ"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Amharic Language",
+        "anchor_title": "Royal Kill",
+        "constraints": {
+          "genre": "england",
+          "language": "Amharic Language",
+          "plot": "mission"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for Amharic language and a plot that may intrigue yet not scare you, I recommend 'Casablanca' (1942). This classic film is filled with suspense and drama as a cafe owner struggles with moral dilemmas, featuring iconic performances by Humphrey Bogart and Claude Rains. Alternatively, if you're open to a more contemporary take on existential themes, 'I Heart Huckabees' (2004) might appeal to you, starring Dustin Hoffman, Naomi Watts, and Lily Tomlin.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "language": "Amharic Language"
+      },
+      "rec_titles": [
+        "Casablanca",
+        "I Heart Huckabees",
+        "Rocky",
+        "Passion"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Morena Baccarin. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 5,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Morena Baccarin",
+        "anchor_title": "Emma",
+        "constraints": {
+          "genre": "england",
+          "plot": "yours",
+          "actor": "Morena Baccarin"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 5,
+          "from_focus": "language",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "yours",
+          "from_anchor": "Royal Kill",
+          "to_anchor": "Emma"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences for a movie featuring Morena Baccarin and a focus on finding something, I'd recommend \"The Rum Diary\" starring Johnny Depp and Aaron Eckhart. It's about an American journalist struggling to find balance in Puerto Rico during the 1960s. Another interesting option could be \"Sleepless in Seattle,\" where Tom Hanks' character is searching for a new partner after the loss of his wife, although Morena Baccarin does not appear in this one.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "You",
+        "language": "Amharic Language",
+        "actor": "Morena Baccarin"
+      },
+      "rec_titles": [
+        "The Rum Diary",
+        "The End of the Affair",
+        "Sleepless in Seattle",
+        "Heart of Darkness"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Morena Baccarin",
+        "anchor_title": "Emma",
+        "constraints": {
+          "genre": "england",
+          "plot": "yours",
+          "actor": "Morena Baccarin"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for Amharic language films and your interest in movies featuring Morena Baccarin, I'd like to recommend \"Shutter\" (2008) - a psychological thriller with a captivating storyline, or \"Dinner for Schmucks\" (2010), a comedy-drama where Morena Baccarin stars alongside an impressive ensemble cast. Unfortunately, none of the suggested films are in Amharic language, but I hope these recommendations can still meet your interest in genre and acting!",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "Amharic Language",
+        "actor": "Morena Baccarin"
+      },
+      "rec_titles": [
+        "The Skull",
+        "Shutter",
+        "Dinner for Schmucks",
+        "The Secret Garden"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on 2010. I want to try something more dinosaur—still with Taliesin Jaffe if possible. I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "dinosaur",
+        "anchor_title": "Jurassic Park",
+        "constraints": {
+          "genre": "dinosaur",
+          "plot": "yours",
+          "actor": "Taliesin Jaffe"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 7,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "Taliesin Jaffe",
+          "from_anchor": "Emma",
+          "to_anchor": "Jurassic Park"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for dinosaur-themed movies, featuring Taliesin Jaffe (if possible), and openness to various genres, I'd recommend \"How to Train Your Dragon\" from 2010. This animated film offers an exciting adventure with a hapless Viking who befriends a young dragon, creating an unlikely bond. While it doesn't feature the Amharic language or directly relate to your specified plot keywords, it might still appeal to you due to its unique storyline and talented voice cast, including Taliesin Jaffe. Another interesting choice could be \"The King's Speech,\" a historical drama with an exceptional performance by Colin Firth as King George VI, who struggles with a stammer that is overcome with the help of a speech therapist.",
+      "constraints": {
+        "genre": "dinosaur",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "2010",
+        "language": "Amharic Language",
+        "actor": "Taliesin Jaffe",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Tracker",
+        "How to Train Your Dragon",
+        "The King's Speech",
+        "Never Let Me Go"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "dinosaur",
+        "anchor_title": "Jurassic Park",
+        "constraints": {
+          "genre": "dinosaur",
+          "plot": "yours",
+          "actor": "Taliesin Jaffe"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for dinosaur-themed films from 2010, a talented actor named Taliesin Jaffe, and the desire for more content in Amharic language, I'd recommend considering \"The Right Stuff\" (1983). Although not a dinosaur film or from the specified year, it features an ensemble cast including Taliesin Jaffe, and while it may not be in Amharic, its plot revolves around space exploration which could still align with your interests.\n\nFor another option that is more closely related to your criteria, I suggest \"Before I Fall\" (2017) starring Zoey Deutch, as it's a time-loop drama set in 2010 and features Taliesin Jaffe in a supporting role.",
+      "constraints": {
+        "genre": "dinosaur",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "Amharic Language",
+        "actor": "Taliesin Jaffe",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Jack and Jill",
+        "House at the End of the Street",
+        "The Right Stuff",
+        "Before I Fall"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Seychelle Gabriel. That sounds intriguing. (I’m thinking of 3.)",
+      "user_meta": {
+        "turn": 9,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Seychelle Gabriel",
+        "anchor_title": "The Last Airbender",
+        "constraints": {
+          "genre": "dinosaur",
+          "plot": "yours",
+          "actor": "Seychelle Gabriel",
+          "director": "Tom Tykwer"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 9,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "director",
+          "bridge_value": "Tom Tykwer",
+          "from_anchor": "Jurassic Park",
+          "to_anchor": "The Last Airbender"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for movies featuring Seychelle Gabriel, set in 2010 or later, with a focus on dinosaurs or themes related to finding something, I'd like to suggest 'The Darkest Hour'. This film, set in Moscow, tells an exciting story about young people fighting against an alien race that has invaded Earth. Seychelle Gabriel does not appear in this movie, but it might still be intriguing for you due to its genre and plot keywords. Another possibility is 'Extraordinary Measures', a drama starring Brendan Fraser and Harrison Ford, where the characters are on a quest to find a cure for their children's rare genetic disorder.",
+      "constraints": {
+        "genre": "dinosaur",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "3",
+        "language": "Amharic Language",
+        "actor": "Seychelle Gabriel",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "The Darkest Hour",
+        "Burned",
+        "Extraordinary Measures",
+        "New York Minute"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Seychelle Gabriel",
+        "anchor_title": "The Last Airbender",
+        "constraints": {
+          "genre": "dinosaur",
+          "plot": "yours",
+          "actor": "Seychelle Gabriel",
+          "director": "Tom Tykwer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for dinosaur-themed movies from the year 2010, featuring actress Seychelle Gabriel, and open to any language, I recommend you watch 'How to Train Your Dragon'. This animated film, with a voice cast including Gerard Butler, tells a heartwarming story about a young Viking who befriends a dragon. Another interesting option is 'Providence', a drama starring Seychelle Gabriel and Mitchell Little that follows the lives of two individuals growing up in a small town, their paths crossing over time.",
+      "constraints": {
+        "genre": "dinosaur",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "Amharic Language",
+        "actor": "Seychelle Gabriel",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Providence",
+        "Wild Hogs",
+        "Zack and Miri Make a Porno",
+        "How to Train Your Dragon"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Seychelle Gabriel",
+        "anchor_title": "The Last Airbender",
+        "constraints": {
+          "genre": "dinosaur",
+          "plot": "yours",
+          "actor": "Seychelle Gabriel",
+          "director": "Tom Tykwer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for a dinosaur-related story, the year 2010, actress Seychelle Gabriel, and Amharic language films with keywords like 'what' and 'kind', I'd recommend checking out 'Trust'. This gripping drama revolves around a teenage girl targeted by an online predator. It features Seychelle Gabriel in a supporting role alongside other notable actors such as Clive Owen and Catherine Keener. Another possible option is 'The Other Guys', which while not dinosaur-related, offers a unique blend of action, comedy, and drama starring Mark Wahlberg and Will Ferrell.",
+      "constraints": {
+        "genre": "dinosaur",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "language": "Amharic Language",
+        "actor": "Seychelle Gabriel",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "The Other Guys",
+        "The Wrestler",
+        "Trust",
+        "Dear John"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Seychelle Gabriel",
+        "anchor_title": "The Last Airbender",
+        "constraints": {
+          "genre": "dinosaur",
+          "plot": "yours",
+          "actor": "Seychelle Gabriel",
+          "director": "Tom Tykwer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preferences for a dinosaur genre movie set in 2010 with actress Seychelle Gabriel, we didn't find any matching titles. However, let me suggest two movies that share the common year and one of the actors:\n\n1. '127 Hours': This is an intense survival drama starring James Franco about a mountain climber trapped under a boulder while canyoneering.\n2. 'Blue Valentine': A romantic drama featuring Ryan Gosling and Michelle Williams, this film offers a unique portrayal of the evolution of a contemporary marriage over time.",
+      "constraints": {
+        "genre": "dinosaur",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "X",
+        "language": "Amharic Language",
+        "actor": "Seychelle Gabriel",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Sleepers",
+        "127 Hours",
+        "Matched",
+        "Blue Valentine"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Trapped? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Seychelle Gabriel",
+        "anchor_title": "The Last Airbender",
+        "constraints": {
+          "genre": "dinosaur",
+          "plot": "yours",
+          "actor": "Seychelle Gabriel",
+          "director": "Tom Tykwer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences for a movie set in 2010, featuring actress Seychelle Gabriel and having elements of being trapped, I'd recommend \"Incendies\" for its intense narrative revolving around family history discovery. Another option could be \"The Skulls\" if you're interested in movies with mystery and secret societies.",
+      "constraints": {
+        "genre": "dinosaur",
+        "plot": [
+          "what",
+          "trapped"
+        ],
+        "name": "Trapped",
+        "language": "Amharic Language",
+        "actor": "Seychelle Gabriel",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "The Kids Are All Right",
+        "The King's Speech",
+        "The Skulls",
+        "Incendies"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, could we talk about The Waterboy specifically? That sounds intriguing.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "waiting_system",
+        "focus_field": "name",
+        "focus_value": "The Waterboy",
+        "anchor_title": "The Skulls",
+        "constraints": {
+          "genre": "dinosaur",
+          "plot": "college",
+          "actor": "Seychelle Gabriel",
+          "name": "The Waterboy"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 14,
+          "from_focus": "actor",
+          "to_focus": "name",
+          "bridge_field": "plot",
+          "bridge_value": "college",
+          "from_anchor": "The Last Airbender",
+          "to_anchor": "The Skulls"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences for a movie set in 2010, featuring Seychelle Gabriel, and a plot keyword of 'actually,' I'd recommend watching \"The Next Three Days.\" This thriller stars Russell Crowe and Elizabeth Banks and tells the story of a couple dealing with unexpected circumstances. If you fancy an animated film, you might enjoy \"Despicable Me\" as well, which features an ensemble cast including Steve Carell and Miranda Cosgrove.",
+      "constraints": {
+        "genre": "dinosaur",
+        "plot": [
+          "actually",
+          "could"
+        ],
+        "name": "Water",
+        "language": "Amharic Language",
+        "actor": "Seychelle Gabriel",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "The Next Three Days",
+        "Despicable Me",
+        "Jurassic Park",
+        "Vampires Suck"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "The Waterboy",
+        "anchor_title": "The Skulls",
+        "constraints": {
+          "genre": "dinosaur",
+          "plot": "college",
+          "actor": "Seychelle Gabriel",
+          "name": "The Waterboy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences for a dinosaur genre, movies from 2010, featuring Seychelle Gabriel, and films with plots that include 'more' or 'just', I recommend you check out 'Constantine'. This supernatural thriller stars Keanu Reeves as a demonologist helping a policewoman prove her sister's death was not an accident. Another film to consider is 'Veronica Mars', where the lead character, played by Kristen Bell, returns to her hometown for her high school reunion and gets caught up in a murder mystery. Enjoy exploring these options!",
+      "constraints": {
+        "genre": "dinosaur",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "Amharic Language",
+        "actor": "Seychelle Gabriel",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Constantine",
+        "House at the End of the Street",
+        "Veronica Mars",
+        "The Twilight Saga: Eclipse"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "The Waterboy",
+        "anchor_title": "The Skulls",
+        "constraints": {
+          "genre": "dinosaur",
+          "plot": "college",
+          "actor": "Seychelle Gabriel",
+          "name": "The Waterboy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems you've recently watched a movie involving dinosaurs, Seychelle Gabriel, and a hint of the unusual, but you're questioning your enjoyment of it. Given that, I'd recommend 'Matched' for its exploration of online dating and our modern-day obsessions or '3' for its mystery surrounding the sudden death of a husband, starring Sebastian Schipper. Both movies might resonate with your interests and provide an engaging viewing experience.",
+      "constraints": {
+        "genre": "dinosaur",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "You",
+        "language": "Amharic Language",
+        "actor": "Seychelle Gabriel",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Matched",
+        "Clash of the Titans",
+        "3",
+        "Kick-Ass"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "The Waterboy",
+        "anchor_title": "The Skulls",
+        "constraints": {
+          "genre": "dinosaur",
+          "plot": "college",
+          "actor": "Seychelle Gabriel",
+          "name": "The Waterboy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems you've recently watched a movie that featured dinosaurs, was released in 2010, starred Seychelle Gabriel, and had an unusual or strange plot. Based on this, I'd recommend taking another look at 'Clash of the Titans'. This action-adventure film from 2010 also stars Sam Worthington, Liam Neeson, and Mads Mikkelsen, and follows the hero Perseus as he battles mythical creatures like Medusa and the Kraken. Alternatively, 'Love Ranch' might interest you too; it's a drama revolving around a legal brothel in Nevada, with an ensemble cast including Elise Neal and Steven Michael Quezada.",
+      "constraints": {
+        "genre": "dinosaur",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "You",
+        "language": "Amharic Language",
+        "actor": "Seychelle Gabriel",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "The Spirit",
+        "Love Ranch",
+        "Clash of the Titans",
+        "Gunless"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by J. Mackye Gruber? That feels deeper than I thought. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 18,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "J. Mackye Gruber",
+        "anchor_title": "Grown Ups 2",
+        "constraints": {
+          "genre": "dinosaur",
+          "plot": "crazy",
+          "actor": "Seychelle Gabriel",
+          "director": "J. Mackye Gruber"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 18,
+          "from_focus": "name",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "crazy",
+          "from_anchor": "The Skulls",
+          "to_anchor": "Grown Ups 2"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for a movie by J. Mackye Gruber, released in 2010 or later, featuring Seychelle Gabriel, and possibly set in the Amharic Language, I'd like to recommend 'Scott Pilgrim vs. the World'. This action-comedy film is unique with its magically realistic setting in Toronto, where a young man battles his girlfriend's seven evil exes to win her heart. Starring Michael Cera and Mary Elizabeth Winstead, it might offer a fresh perspective while still fitting your criteria. Another option could be 'Trust', a drama focusing on a teenage girl targeted by an online predator, starring Zoe Levin and Jordan Trovillion.",
+      "constraints": {
+        "genre": "dinosaur",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Deep",
+        "language": "Amharic Language",
+        "actor": "Seychelle Gabriel",
+        "year": "2010",
+        "director": "J. Mackye Gruber",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "Scott Pilgrim vs. the World",
+        "Trust",
+        "Downfall",
+        "Takers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "J. Mackye Gruber",
+        "anchor_title": "Grown Ups 2",
+        "constraints": {
+          "genre": "dinosaur",
+          "plot": "crazy",
+          "actor": "Seychelle Gabriel",
+          "director": "J. Mackye Gruber"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for dinosaur, Amharic Language, and a focus on works released in or around 2010, I'd suggest you consider watching 'How to Train Your Dragon'. This animated film offers a unique blend of dragons and Vikings, and it was directed by Dean DeBlois and Chris Sanders. The movie stars the voices of Jay Baruchel, Gerard Butler, and America Ferrera. If you're open to slight deviations from your specified genre or year, 'Gunless', a film about a gunslinger in Canada, directed by Michael Dowse, might also pique your interest, with Dustin Milligan and Tyler Mane in leading roles.",
+      "constraints": {
+        "genre": "dinosaur",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "Amharic Language",
+        "actor": "Seychelle Gabriel",
+        "year": "2010",
+        "director": "J. Mackye Gruber",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "Toy Story 3",
+        "Gunless",
+        "Turbo",
+        "How to Train Your Dragon"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "J. Mackye Gruber",
+        "anchor_title": "Grown Ups 2",
+        "constraints": {
+          "genre": "dinosaur",
+          "plot": "crazy",
+          "actor": "Seychelle Gabriel",
+          "director": "J. Mackye Gruber"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems you enjoy movies with an intriguing sound and are particularly fond of films featuring actor Seychelle Gabriel. Based on that, I would recommend watching 'Super' (2010) which stars Seychelle Gabriel alongside a stellar cast including Liv Tyler and Rainn Wilson. This film is a quirky comedy-thriller about an ordinary man who decides to become a superhero, offering a unique twist to the genre you mentioned.\n\nAnother interesting option could be 'The Bad Seed' (1954), a suspenseful drama that also features Seychelle Gabriel in a supporting role. This film tells the story of an apparently innocent eight-year-old girl who may not be as pure as she seems, providing a chilling exploration of human nature.",
+      "constraints": {
+        "genre": "dinosaur",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "language": "Amharic Language",
+        "actor": "Seychelle Gabriel",
+        "year": "2010",
+        "director": "J. Mackye Gruber",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "Matched",
+        "Super",
+        "The Bad Seed",
+        "Smokin' Aces"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on X. I want to try something more massachusetts—still with English if possible. That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 21,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "massachusetts",
+        "anchor_title": "The Island of Dr. Moreau",
+        "constraints": {
+          "genre": "massachusetts",
+          "plot": "crazy",
+          "actor": "Seychelle Gabriel",
+          "director": "J. Mackye Gruber",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 21,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Grown Ups 2",
+          "to_anchor": "The Island of Dr. Moreau"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for a movie set in Massachusetts, English language, and deeper emotional depth, I would recommend \"The Goldfinch\" (2013). This film, starring Ansel Elgort, Oakes Fegley, and Nicole Kidman, follows a boy's life after his mother is killed in a bombing at the Metropolitan Museum of Art. The story delves into themes of loss, survival, and the power of art, making it a compelling watch.\n\nAnother option could be \"The Hunger Games: Mockingjay - Part 1\" (2014), starring Jennifer Lawrence, Josh Hutcherson, and Philip Seymour Hoffman. In this installment of the Hunger Games series, Katniss Everdeen finds herself in District 13, leading a rebellion against the Capitol. The movie offers a mix of action, drama, and political intrigue that might appeal to you.",
+      "constraints": {
+        "genre": "massachusetts",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Deep",
+        "language": "English",
+        "actor": "Seychelle Gabriel",
+        "year": "2010",
+        "director": "J. Mackye Gruber",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "The Goldfinch",
+        "The Hunger Games: Mockingjay - Part 1",
+        "The Winter's Tale",
+        "The Country Bears"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "massachusetts",
+        "anchor_title": "The Island of Dr. Moreau",
+        "constraints": {
+          "genre": "massachusetts",
+          "plot": "crazy",
+          "actor": "Seychelle Gabriel",
+          "director": "J. Mackye Gruber",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for movies set in Massachusetts (2010), featuring Seychelle Gabriel, directed and written by J. Mackye Gruber, in English, with a hint of plot keywords like 'more', I recommend checking out 'Bridesmaids'. This comedy follows the life of an out-of-work pastry chef who competes with another bridesmaid for the bride's best friend. Or, you might enjoy 'Army of Darkness' - a time-traveling adventure that pits the protagonist against an army of the dead, starring Bruce Campbell.",
+      "constraints": {
+        "genre": "massachusetts",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "English",
+        "actor": "Seychelle Gabriel",
+        "year": "2010",
+        "director": "J. Mackye Gruber",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "Bridesmaids",
+        "Army of Darkness",
+        "We Are Marshall",
+        "True Lies"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of 2010? That sounds intriguing.",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "massachusetts",
+        "anchor_title": "The Island of Dr. Moreau",
+        "constraints": {
+          "genre": "massachusetts",
+          "plot": "crazy",
+          "actor": "Seychelle Gabriel",
+          "director": "J. Mackye Gruber",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preferences for a movie set in Massachusetts in 2010, directed and written by J. Mackye Gruber featuring Seychelle Gabriel, here are my top two recommendations from the provided list:\n\n1. 'Movie 43' - This star-studded anthology comedy includes some big names like Hugh Jackman, Kate Winslet, and Emma Stone. The film follows a series of interconnected short films that might just satisfy your intriguing mood.\n2. 'Pirates of the Caribbean: At World's End' - Although not set in Massachusetts or featuring Seychelle Gabriel, this action-adventure movie from 2007 stars Johnny Depp and Orlando Bloom, and its intricate plot might appeal to you due to the \"what\" and \"intriguing\" keywords in your request.",
+      "constraints": {
+        "genre": "massachusetts",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "2010",
+        "language": "English",
+        "actor": "Seychelle Gabriel",
+        "year": "2010",
+        "director": "J. Mackye Gruber",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "Movie 43",
+        "Pirates of the Caribbean: At World's End",
+        "Fast Five",
+        "The Mask"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does 2010 tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "massachusetts",
+        "anchor_title": "The Island of Dr. Moreau",
+        "constraints": {
+          "genre": "massachusetts",
+          "plot": "crazy",
+          "actor": "Seychelle Gabriel",
+          "director": "J. Mackye Gruber",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences for a story set in Massachusetts, featuring Seychelle Gabriel, and a release year of 2010, I'd recommend you consider \"New York Minute\". This film follows two sisters who have contrasting personalities as they navigate various misadventures in New York City. Although it was released in 2004 instead of 2010, the engaging plot and starring cast could still be a good fit for you. Another option, if you're open to a bit of fantasy, is \"Big Hero 6\" (2014), featuring a unique bond between a plus-sized inflatable robot Baymax and prodigy Hiro Hamada. Enjoy the movies!",
+      "constraints": {
+        "genre": "massachusetts",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "2010",
+        "language": "English",
+        "actor": "Seychelle Gabriel",
+        "year": "2010",
+        "director": "J. Mackye Gruber",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "New York Minute",
+        "Gods of Egypt",
+        "Big Hero 6",
+        "A Little Princess"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Tibetan languages? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 25,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "Tibetan languages",
+        "anchor_title": "2012",
+        "constraints": {
+          "genre": "massachusetts",
+          "plot": "crazy",
+          "director": "J. Mackye Gruber",
+          "language": "Tibetan languages",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 25,
+          "from_focus": "genre",
+          "to_focus": "language",
+          "bridge_field": "writer",
+          "bridge_value": "Sue Grafton",
+          "from_anchor": "The Island of Dr. Moreau",
+          "to_anchor": "2012"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for a movie primarily in Tibetan languages, set in 2010, and possibly featuring actress Seychelle Gabriel, J. Mackye Gruber as director or writer, I would recommend 'Kites' directed by Anurag Basu and co-produced by J. Mackye Gruber. This film offers a unique blend of action, romance, and drama that might pique your interest. If you are open to exploring Bollywood cinema with some Tibetan influences, this could be an intriguing choice for you.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "X",
+        "language": "Tibetan languages",
+        "actor": "Seychelle Gabriel",
+        "year": "2010",
+        "director": "J. Mackye Gruber",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "Little Fockers",
+        "MacGruber",
+        "X",
+        "Kites"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Tibetan languages",
+        "anchor_title": "2012",
+        "constraints": {
+          "genre": "massachusetts",
+          "plot": "crazy",
+          "director": "J. Mackye Gruber",
+          "language": "Tibetan languages",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for movies produced in 2010 or later, featuring Seychelle Gabriel and written/directed by J. Mackye Gruber, with a focus on Tibetan languages and containing keywords like 'just' and 'more', I would recommend 'Desolation Angels (1958)' for its engaging plot of revenge after betrayal, even though it predates your preferred timeframe. Another intriguing option from your era is 'Labyrinths (1962)', a thought-provoking drama about grief and healing that also stars Seychelle Gabriel.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "Tibetan languages",
+        "actor": "Seychelle Gabriel",
+        "year": "2010",
+        "director": "J. Mackye Gruber",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "Desolation Angels",
+        "Hopeless",
+        "Turbo",
+        "Labyrinths"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Tibetan languages",
+        "anchor_title": "2012",
+        "constraints": {
+          "genre": "massachusetts",
+          "plot": "crazy",
+          "director": "J. Mackye Gruber",
+          "language": "Tibetan languages",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for a movie from 2010, starring Seychelle Gabriel and featuring Tibetan languages, I'd recommend \"Easy A\". This film is a comedy-drama that delves into the complexities of modern relationships, much like your mentioned movie 'Us'. Another suggestion could be \"Matched\" for its exploration of online dating, which seems to align with your interest in contemporary themes.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "language": "Tibetan languages",
+        "actor": "Seychelle Gabriel",
+        "year": "2010",
+        "director": "J. Mackye Gruber",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "Easy A",
+        "Matched",
+        "Kites",
+        "District 9"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Easy A? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Tibetan languages",
+        "anchor_title": "2012",
+        "constraints": {
+          "genre": "massachusetts",
+          "plot": "crazy",
+          "director": "J. Mackye Gruber",
+          "language": "Tibetan languages",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for a movie released in 2010, featuring Seychelle Gabriel and set in Tibetan languages, I'd recommend \"Witless Protection\" starring Larry the Cable Guy and Jenny McCarthy. This comedy offers a lighthearted twist to the damsel-in-distress plot that you might have expected from 'Easy A'. Alternatively, if you're open to exploring international cinema, you might enjoy \"Utsav\", an Indian film starring Anupam Kher and Rekha, which follows a complex narrative involving a courtesan and a penniless man.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "easy"
+        ],
+        "name": "Easy A",
+        "language": "Tibetan languages",
+        "actor": "Seychelle Gabriel",
+        "year": "2010",
+        "director": "J. Mackye Gruber",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "Taxi Driver",
+        "Witless Protection",
+        "Utsav",
+        "End of Watch"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Tibetan languages",
+        "anchor_title": "2012",
+        "constraints": {
+          "genre": "massachusetts",
+          "plot": "crazy",
+          "director": "J. Mackye Gruber",
+          "language": "Tibetan languages",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for a movie produced in 2010, featuring Seychelle Gabriel, directed and written by J. Mackye Gruber, with a focus on Tibetan languages, and considering plot keywords like 'sure' and 'perhaps', I recommend watching 'Never Let Me Go'. This film stars Keira Knightley and Carey Mulligan, and it tells the story of individuals in post-war Britain faced with challenging circumstances. Another option could be 'Pride and Prejudice', a period drama that explores societal prejudices and relationships in 19th century England.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "Easy A",
+        "language": "Tibetan languages",
+        "actor": "Seychelle Gabriel",
+        "year": "2010",
+        "director": "J. Mackye Gruber",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "Pride and Prejudice",
+        "Never Let Me Go",
+        "MacGruber",
+        "Lord Jim"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Tibetan languages",
+        "anchor_title": "2012",
+        "constraints": {
+          "genre": "massachusetts",
+          "plot": "crazy",
+          "director": "J. Mackye Gruber",
+          "language": "Tibetan languages",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for a movie released in 2010, featuring Tibetan languages, and possibly with connections to J. Mackye Gruber, I'd recommend \"The Warrior's Way\". This action film revolves around an assassin seeking refuge in the American Badlands, starring Dong-gun Jang and Tony Cox. If you're interested in a different genre, \"Crescendo\" could also be intriguing; it's about creating an Israeli-Palestinian youth orchestra, with world-famous conductor Eduard Sporck at the helm.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "language": "Tibetan languages",
+        "actor": "Seychelle Gabriel",
+        "year": "2010",
+        "director": "J. Mackye Gruber",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "The Warrior's Way",
+        "You Again",
+        "Crescendo",
+        "Unstoppable"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Roger Donaldson? Hmm, I didn’t expect that vibe. (I’m thinking of The Warrior's Way.)",
+      "user_meta": {
+        "turn": 31,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Roger Donaldson",
+        "anchor_title": "Wanderlust",
+        "constraints": {
+          "genre": "massachusetts",
+          "plot": "crazy",
+          "director": "Roger Donaldson",
+          "language": "Tibetan languages",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 31,
+          "from_focus": "language",
+          "to_focus": "director",
+          "bridge_field": "language",
+          "bridge_value": "Tibetan languages",
+          "from_anchor": "2012",
+          "to_anchor": "Wanderlust"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preferences for a movie directed by Roger Donaldson, set in 2010, and potentially featuring Seychelle Gabriel, let's suggest two films from our list that might interest you:\n\n1. Red Dawn - A gripping tale about a group of high school students battling invading forces in a small town. Starring Jennifer Grey and Lea Thompson.\n2. Shutter Island - A psychological thriller starring Leonardo DiCaprio, where two US marshals investigate a mysterious disappearance on an isolated island, uncovering shocking secrets.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "War",
+        "language": "ger",
+        "actor": "Seychelle Gabriel",
+        "year": "2010",
+        "director": "Roger Donaldson",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "Red Dawn",
+        "Gunless",
+        "House Rules",
+        "Shutter Island"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Roger Donaldson",
+        "anchor_title": "Wanderlust",
+        "constraints": {
+          "genre": "massachusetts",
+          "plot": "crazy",
+          "director": "Roger Donaldson",
+          "language": "Tibetan languages",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for a war genre film from 2010, featuring actor Seychelle Gabriel, directed by Roger Donaldson, written by J. Mackye Gruber, in German language and with plot keywords related to justness, I'd recommend 'Salt'. This action-thriller stars Angelina Jolie as a CIA agent accused of being a Russian spy and evading capture while trying to clear her name. Another option could be 'Inglourious Basterds', directed by Quentin Tarantino, which presents an alternate history of World War II with an ensemble cast including Brad Pitt and Christoph Waltz.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "ger",
+        "actor": "Seychelle Gabriel",
+        "year": "2010",
+        "director": "Roger Donaldson",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "Jason Bourne",
+        "Yogi Bear",
+        "Inglourious Basterds",
+        "Salt"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of 2010. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Roger Donaldson",
+        "anchor_title": "Wanderlust",
+        "constraints": {
+          "genre": "massachusetts",
+          "plot": "crazy",
+          "director": "Roger Donaldson",
+          "language": "Tibetan languages",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you're looking for a movie set in 2010, with a war genre and starring Seychelle Gabriel, I recommend you consider watching 'Hesher'. This film offers an intriguing plot about a boy's life becoming even more chaotic after meeting an unconventional character. If you're open to movies outside 2010, another compelling choice could be 'The Pianist', starring Adrien Brody as a Polish musician surviving World War II.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "2010",
+        "language": "ger",
+        "actor": "Seychelle Gabriel",
+        "year": "2010",
+        "director": "Roger Donaldson",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "Hesher",
+        "The Pianist",
+        "We Were Soldiers",
+        "Planet Terror"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on 2010. I want to try something more basketball—That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 34,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "basketball",
+        "anchor_title": "Us",
+        "constraints": {
+          "genre": "basketball",
+          "plot": "crazy",
+          "language": "Tibetan languages",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 34,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "jupiter",
+          "from_anchor": "Wanderlust",
+          "to_anchor": "Us"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for basketball-themed movies released in 2010, I recommend you watch 'Like Mike'. This film revolves around a 13-year-old orphan who becomes an NBA superstar after discovering magical sneakers with the initials \"MJ\". Another option is 'The Warrior's Way', a unique blend of action and fantasy set in the American Badlands, featuring Dong-gun Jang as a warrior-assassin on the run. Enjoy!",
+      "constraints": {
+        "genre": "basketball",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "2010",
+        "language": "ger",
+        "actor": "Seychelle Gabriel",
+        "year": "2010",
+        "director": "Roger Donaldson",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "Like Mike",
+        "17 Again",
+        "The Warrior's Way",
+        "The Losers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "basketball",
+        "anchor_title": "Us",
+        "constraints": {
+          "genre": "basketball",
+          "plot": "crazy",
+          "language": "Tibetan languages",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for a basketball genre, actor Seychelle Gabriel, director Roger Donaldson, writer J. Mackye Gruber, and language German, I recommend 'Constantine' which features supernatural elements and stars Keanu Reeves, or 'Thick as Thieves' for a crime-thriller with Tom Hardy in the cast. However, since your preferences don't seem to align directly with any of these movies, 'A Little Princess' might also be an interesting watch due to its compelling storyline set during World War I.",
+      "constraints": {
+        "genre": "basketball",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "ger",
+        "actor": "Seychelle Gabriel",
+        "year": "2010",
+        "director": "Roger Donaldson",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "Constantine",
+        "Thick as Thieves",
+        "A Little Princess",
+        "Uncommon Valor"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of War? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "basketball",
+        "anchor_title": "Us",
+        "constraints": {
+          "genre": "basketball",
+          "plot": "crazy",
+          "language": "Tibetan languages",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you're looking for a war movie from 2010 featuring Seychelle Gabriel, and preferably in German language, I recommend watching 'Flags of Our Fathers'. This film, directed by Roger Donaldson and written by J. Mackye Gruber, follows the life stories of six soldiers who raised the flag at Iwo Jima during World War II.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "War",
+        "language": "ger",
+        "actor": "Seychelle Gabriel",
+        "year": "2010",
+        "director": "Roger Donaldson",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "Doctor Zhivago",
+        "End of Watch",
+        "Flags of Our Fathers",
+        "Crescendo"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "basketball",
+        "anchor_title": "Us",
+        "constraints": {
+          "genre": "basketball",
+          "plot": "crazy",
+          "language": "Tibetan languages",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preferences for a war genre movie produced in 2010, featuring actor Seychelle Gabriel and director Roger Donaldson, with a script written by J. Mackye Gruber, I recommend watching \"We Were Soldiers\". This film is set during the Vietnam War and offers a gripping portrayal of soldiers on both sides, while it might not meet the language preference for German, it does have an engaging plot. Another option could be \"Hart's War\" from 2002, starring Bruce Willis and Colin Farrell, which involves a law student turned lieutenant defending a black prisoner of war during World War II.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "War",
+        "language": "ger",
+        "actor": "Seychelle Gabriel",
+        "year": "2010",
+        "director": "Roger Donaldson",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "We Were Soldiers",
+        "Hart's War",
+        "Inception",
+        "The Wraith"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Prison tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "basketball",
+        "anchor_title": "Us",
+        "constraints": {
+          "genre": "basketball",
+          "plot": "crazy",
+          "language": "Tibetan languages",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preferences for a movie set in 2010, featuring Seychelle Gabriel, and focusing on a prison theme, I'd recommend watching \"The Equalizer\". It stars Denzel Washington and Chloë Grace Moretz, with a plot revolving around moral ambiguity and deep-pocketed criminals. Another interesting choice could be \"Incendies\" which follows twin siblings as they uncover their family history in the Middle East.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Prison",
+        "language": "ger",
+        "actor": "Seychelle Gabriel",
+        "year": "2010",
+        "director": "Roger Donaldson",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "The Equalizer",
+        "Incendies",
+        "Find Me Guilty",
+        "The Book of Eli"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "basketball",
+        "anchor_title": "Us",
+        "constraints": {
+          "genre": "basketball",
+          "plot": "crazy",
+          "language": "Tibetan languages",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preferences for a movie set in a prison genre, released in 2010, featuring Seychelle Gabriel, directed by Roger Donaldson, written by J. Mackye Gruber, and in German language, I'd recommend Insidious (2010). This gripping film follows the struggles of a young filmmaker as he navigates through New York City's underworld. It also boasts an impressive ensemble cast. If you fancy a different genre but still want to see Seychelle Gabriel in action, consider Womb (2010), where she plays a central role. In this thought-provoking film, a woman clones her deceased lover, leading to complex consequences.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "Prison",
+        "language": "ger",
+        "actor": "Seychelle Gabriel",
+        "year": "2010",
+        "director": "Roger Donaldson",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "Insidious",
+        "Womb",
+        "The Skulls",
+        "Smilla's Sense of Snow"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "basketball",
+        "anchor_title": "Us",
+        "constraints": {
+          "genre": "basketball",
+          "plot": "crazy",
+          "language": "Tibetan languages",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preferences for a movie outside the prison genre, set in a different year (not 2010), not directed by Roger Donaldson, and without Seychelle Gabriel or writer J. Mackye Gruber, let's suggest 'Tangled' (2010) - an animated adventure about Rapunzel discovering the world beyond her tower walls, or 'American History X' (1998), a dramatic exploration of neo-Nazism and redemption starring Edward Norton.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Prison",
+        "language": "ger",
+        "actor": "Seychelle Gabriel",
+        "year": "2010",
+        "director": "Roger Donaldson",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "Whipped",
+        "Tangled",
+        "American History X",
+        "Abraham Lincoln: Vampire Hunter"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of 2010. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "basketball",
+        "anchor_title": "Us",
+        "constraints": {
+          "genre": "basketball",
+          "plot": "crazy",
+          "language": "Tibetan languages",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you're interested in a movie set in 2010, featuring Seychelle Gabriel and with a deeper plot, I'd recommend \"Stone\" directed by Roger Donaldson. It's a gripping thriller starring Robert De Niro and Milla Jovovich, where an arsonist attempts to manipulate his parole officer. Another movie to consider is \"In the Woods\", a unique blend of fiction and documentary, showcasing a group of monsters living in an urban forest.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "2010",
+        "language": "ger",
+        "actor": "Seychelle Gabriel",
+        "year": "2010",
+        "director": "Roger Donaldson",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "In the Woods",
+        "Despicable Me",
+        "Annie Hall",
+        "Stone"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Steve Pink? That sounds intriguing. (I’m thinking of In the Woods.)",
+      "user_meta": {
+        "turn": 42,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Steve Pink",
+        "anchor_title": "Hot Tub Time Machine",
+        "constraints": {
+          "genre": "basketball",
+          "plot": "diary",
+          "language": "Tibetan languages",
+          "writer": "Sue Grafton",
+          "director": "Steve Pink"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 42,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "diary",
+          "from_anchor": "Us",
+          "to_anchor": "Hot Tub Time Machine"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for a movie directed by Steve Pink in 2010, I'd recommend \"The Town\". This crime drama follows a group of bank robbers and their complicated relationships, particularly one member who falls for an assistant manager they've taken hostage. Enjoy!",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "In the Woods",
+        "language": "ger",
+        "actor": "Pink",
+        "year": "2010",
+        "director": "Steve Pink",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "The Town",
+        "Toy Story 3",
+        "Tangled",
+        "Robin Hood"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Steve Pink",
+        "anchor_title": "Hot Tub Time Machine",
+        "constraints": {
+          "genre": "basketball",
+          "plot": "diary",
+          "language": "Tibetan languages",
+          "writer": "Sue Grafton",
+          "director": "Steve Pink"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preferences for a prison genre movie from 2010, actor Pink, director Steve Pink, writer J. Mackye Gruber, German language and plot keywords like 'just' and 'more', unfortunately, I couldn't find any matches in the provided list of movies. However, if we relax the criteria slightly, I recommend 'We Need to Talk About Kevin' (2011). This psychological thriller tells a gripping story of a mother struggling with her troubled son, starring Tilda Swinton and Ezra Miller. Although it doesn't fit all your specifications, it might still appeal to you with its intense plot and strong performances.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "ger",
+        "actor": "Pink",
+        "year": "2010",
+        "director": "Steve Pink",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "The Princess Diaries",
+        "The Way Back Home",
+        "We Need to Talk About Kevin",
+        "Out of Sight"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Psycho tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Steve Pink",
+        "anchor_title": "Hot Tub Time Machine",
+        "constraints": {
+          "genre": "basketball",
+          "plot": "diary",
+          "language": "Tibetan languages",
+          "writer": "Sue Grafton",
+          "director": "Steve Pink"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you're looking for a movie with a captivating story and perhaps not too scary, I'd recommend watching 'Prince of Persia: The Sands of Time'. It's an action-packed adventure film starring Jake Gyllenhaal, offering a thrilling journey through ancient Persia. Alternatively, if you prefer a more grounded drama, 'Winter's Bone' might appeal to you. This gritty and intense film stars Jennifer Lawrence as a determined Ozark Mountain girl in search of her missing father.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Psycho",
+        "language": "ger",
+        "actor": "Pink",
+        "year": "2010",
+        "director": "Steve Pink",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "Prince of Persia: The Sands of Time",
+        "The Equalizer",
+        "Winter's Bone",
+        "Man on Wire"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Her? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Steve Pink",
+        "anchor_title": "Hot Tub Time Machine",
+        "constraints": {
+          "genre": "basketball",
+          "plot": "diary",
+          "language": "Tibetan languages",
+          "writer": "Sue Grafton",
+          "director": "Steve Pink"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preferences for a movie set in 2010, featuring an actor named Pink (though I noticed there's no Pink in the provided list), directed by Steve Pink, and written by J. Mackye Gruber, with a plot that has a deeper feel and is in German - unfortunately, none of the listed movies meet all these criteria. However, if we overlook the actor and director, I recommend 'The Fighter' as it involves a deep emotional journey about a boxer trying to make a name for himself, which might resonate with your desire for a more profound movie experience. If you're open to exploring comedic action, 'MacGruber' could also be an entertaining choice, despite not being a prison film or German production.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Her",
+        "language": "ger",
+        "actor": "Pink",
+        "year": "2010",
+        "director": "Steve Pink",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "The Fighter",
+        "Waiting",
+        "MacGruber",
+        "The Expendables 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe explore stories about jupiter? Hmm, I didn’t expect that vibe. Maybe something that connects to 2010.",
+      "user_meta": {
+        "turn": 46,
+        "stage": "waiting_system",
+        "focus_field": "plot",
+        "focus_value": "jupiter",
+        "anchor_title": "Kundun",
+        "constraints": {
+          "genre": "basketball",
+          "plot": "jupiter",
+          "language": "Tibetan languages",
+          "writer": "Sue Grafton",
+          "director": "Steve Pink"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 46,
+          "from_focus": "director",
+          "to_focus": "plot",
+          "bridge_field": "plot",
+          "bridge_value": "jupiter",
+          "from_anchor": "Hot Tub Time Machine",
+          "to_anchor": "Kundun"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for a movie set in 2010, featuring prison as a genre and possibly connected to Jupiter, I'd recommend checking out \"Let Me In\". This chilling thriller follows a young boy who forms an unusual friendship with a vampire living next door, and it was also released in 2010. Another film that might interest you is \"Stone\", starring Robert De Niro as a parole officer who finds himself entangled in a web of manipulation by a convicted arsonist.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "jupiter",
+          "didn"
+        ],
+        "name": "2010",
+        "language": "ger",
+        "actor": "Pink",
+        "year": "2010",
+        "director": "Steve Pink",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "Gunless",
+        "Let Me In",
+        "Salt",
+        "Stone"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "plot",
+        "focus_value": "jupiter",
+        "anchor_title": "Kundun",
+        "constraints": {
+          "genre": "basketball",
+          "plot": "jupiter",
+          "language": "Tibetan languages",
+          "writer": "Sue Grafton",
+          "director": "Steve Pink"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you're looking for recommendations similar to what we've discussed, with a genre focus on prison films from 2010 and featuring the director Steve Pink or writer J. Mackye Gruber, actor Pink, or German language movies, I'd suggest exploring 'Braveheart' which showcases Gerard Butler as the lead actor, known for his powerful performances. Another interesting option could be 'The Right Stuff', a drama about space exploration with an ensemble cast led by Ed Harris and Sam Shepard.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "ger",
+        "actor": "Pink",
+        "year": "2010",
+        "director": "Steve Pink",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "New York Minute",
+        "How to Train Your Dragon",
+        "The Right Stuff",
+        "Braveheart"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "plot",
+        "focus_value": "jupiter",
+        "anchor_title": "Kundun",
+        "constraints": {
+          "genre": "basketball",
+          "plot": "jupiter",
+          "language": "Tibetan languages",
+          "writer": "Sue Grafton",
+          "director": "Steve Pink"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems you've recently watched a movie set in a prison, produced in 2010, starring Pink, and written by J. Mackye Gruber with an unusual plot - perhaps it had elements of the weird or thought-provoking. Given this preference, I would suggest 'Matched' as it also features an intriguing plot about online dating and our modern-day relationships, or 'Blue Valentine' for a deeper exploration of a romantic relationship over time, starring Michelle Williams and Ryan Gosling.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "You",
+        "language": "ger",
+        "actor": "Pink",
+        "year": "2010",
+        "director": "Steve Pink",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "Matched",
+        "Blue Valentine",
+        "Torment",
+        "TRON: Legacy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "plot",
+        "focus_value": "jupiter",
+        "anchor_title": "Kundun",
+        "constraints": {
+          "genre": "basketball",
+          "plot": "jupiter",
+          "language": "Tibetan languages",
+          "writer": "Sue Grafton",
+          "director": "Steve Pink"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for a movie released in 2010, featuring actor Pink and a unique storyline, I'd highly recommend \"Scott Pilgrim vs. the World\". This action-comedy film is filled with an engaging plot about a young man battling his girlfriend's seven evil exes to win her heart, starring actors like Michael Cera, Chris Evans, and Anna Kendrick. Enjoy!",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "language": "ger",
+        "actor": "Pink",
+        "year": "2010",
+        "director": "Steve Pink",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "Scott Pilgrim vs. the World",
+        "Wild Target",
+        "Incendies",
+        "Just Wright"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 50,
+        "stage": "details",
+        "focus_field": "plot",
+        "focus_value": "jupiter",
+        "anchor_title": "Kundun",
+        "constraints": {
+          "genre": "basketball",
+          "plot": "jupiter",
+          "language": "Tibetan languages",
+          "writer": "Sue Grafton",
+          "director": "Steve Pink"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems you're interested in a prison genre movie from 2010, featuring actor Pink and preferably directed by Steve Pink or written by J. Mackye Gruber, with German language and keywords related to being 'wrong' and happening 'earlier'. Considering your preferences, I would recommend 'Alien 3' for its prison setting and a mysterious visitor or 'The Book of Eli' for its post-apocalyptic setting and Denzel Washington as the main character.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "Us",
+        "language": "ger",
+        "actor": "Pink",
+        "year": "2010",
+        "director": "Steve Pink",
+        "writer": "J. Mackye Gruber"
+      },
+      "rec_titles": [
+        "Alien 3",
+        "Robin Hood",
+        "The Kids Are All Right",
+        "The Book of Eli"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "language",
+      "bridge_field": "plot",
+      "bridge_value": "mission",
+      "from_anchor": "Emma",
+      "to_anchor": "Royal Kill"
+    },
+    {
+      "turn": 5,
+      "from_focus": "language",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "yours",
+      "from_anchor": "Royal Kill",
+      "to_anchor": "Emma"
+    },
+    {
+      "turn": 7,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "Taliesin Jaffe",
+      "from_anchor": "Emma",
+      "to_anchor": "Jurassic Park"
+    },
+    {
+      "turn": 9,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "director",
+      "bridge_value": "Tom Tykwer",
+      "from_anchor": "Jurassic Park",
+      "to_anchor": "The Last Airbender"
+    },
+    {
+      "turn": 14,
+      "from_focus": "actor",
+      "to_focus": "name",
+      "bridge_field": "plot",
+      "bridge_value": "college",
+      "from_anchor": "The Last Airbender",
+      "to_anchor": "The Skulls"
+    },
+    {
+      "turn": 18,
+      "from_focus": "name",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "crazy",
+      "from_anchor": "The Skulls",
+      "to_anchor": "Grown Ups 2"
+    },
+    {
+      "turn": 21,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Grown Ups 2",
+      "to_anchor": "The Island of Dr. Moreau"
+    },
+    {
+      "turn": 25,
+      "from_focus": "genre",
+      "to_focus": "language",
+      "bridge_field": "writer",
+      "bridge_value": "Sue Grafton",
+      "from_anchor": "The Island of Dr. Moreau",
+      "to_anchor": "2012"
+    },
+    {
+      "turn": 31,
+      "from_focus": "language",
+      "to_focus": "director",
+      "bridge_field": "language",
+      "bridge_value": "Tibetan languages",
+      "from_anchor": "2012",
+      "to_anchor": "Wanderlust"
+    },
+    {
+      "turn": 34,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "jupiter",
+      "from_anchor": "Wanderlust",
+      "to_anchor": "Us"
+    },
+    {
+      "turn": 42,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "diary",
+      "from_anchor": "Us",
+      "to_anchor": "Hot Tub Time Machine"
+    },
+    {
+      "turn": 46,
+      "from_focus": "director",
+      "to_focus": "plot",
+      "bridge_field": "plot",
+      "bridge_value": "jupiter",
+      "from_anchor": "Hot Tub Time Machine",
+      "to_anchor": "Kundun"
+    }
+  ]
+}

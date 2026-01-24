@@ -1,0 +1,2252 @@
+{
+  "session_id": "00043",
+  "model_name": "llama3:instruct",
+  "true_genre": "history",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a reference movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "reference",
+        "anchor_title": "The Adventures of Tom Sawyer",
+        "constraints": {
+          "genre": "reference"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you're looking for a movie that serves as a reference point, perhaps with themes of exploration and discovery. Based on your hint \"could,\" I'll recommend two movies from the list: Maleficent and The Great Gatsby. Both films feature complex characters and unexpected twists, with Maleficent showcasing Angelina Jolie Pitt's striking performance and The Great Gatsby offering a visually stunning adaptation of F. Scott Fitzgerald's classic novel.",
+      "constraints": {
+        "genre": "reference",
+        "plot": [
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "Maleficent",
+        "The Whistler",
+        "Psychic Experiment",
+        "The Great Gatsby"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Will Gluck? That sounds intriguing. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Will Gluck",
+        "anchor_title": "The Scarlet Letter",
+        "constraints": {
+          "genre": "reference",
+          "director": "Will Gluck"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "genre",
+          "bridge_value": "reference",
+          "from_anchor": "The Adventures of Tom Sawyer",
+          "to_anchor": "The Scarlet Letter"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for something else by Will Gluck, specifically thinking of \"I'm Thinking of You\" (which is actually a romantic comedy). Given that, I'd like to recommend two movies from the list: \"Running with Scissors\" (2002) and \"Downfall\" (2004). Both films showcase Will Gluck's versatility as a director, and they're quite different in tone and genre.",
+      "constraints": {
+        "genre": "reference",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "You",
+        "director": "Will Gluck",
+        "writer": "Will Gluck"
+      },
+      "rec_titles": [
+        "Shattered",
+        "The Adventures of Tom Sawyer",
+        "Downfall",
+        "Running with Scissors"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Will Gluck",
+        "anchor_title": "The Scarlet Letter",
+        "constraints": {
+          "genre": "reference",
+          "director": "Will Gluck"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for more recommendations like the ones they've seen, which seem to be a mix of thriller and mystery genres, possibly with some dark undertones. Based on that, I'd recommend checking out \"Bats\" (1999), a tense and suspenseful film about a family who must survive a night in their radiated home while being stalked by a deadly bat-like creature. With its atmospheric setting and eerie plot, this movie should provide a thrilling experience similar to what they've enjoyed before.",
+      "constraints": {
+        "genre": "reference",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Will Gluck",
+        "writer": "Will Gluck"
+      },
+      "rec_titles": [
+        "Bats",
+        "Donnie Brasco",
+        "Tell No One",
+        "Veronica Mars"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Scarlett Johansson. Hmm, I didn’t expect that vibe. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 4,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Scarlett Johansson",
+        "anchor_title": "Lucy",
+        "constraints": {
+          "genre": "reference",
+          "director": "Will Gluck",
+          "actor": "Scarlett Johansson"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 4,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Scarlett Johansson",
+          "from_anchor": "The Scarlet Letter",
+          "to_anchor": "Lucy"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for more movies with Scarlett Johansson, and you didn't expect a romantic vibe, but enjoyed Her. I've got some great recommendations for you! One that caught my attention is Captain America: Civil War (2016), where Scarlett Johansson reprises her role as Natasha Romanoff/Black Widow in a thrilling superhero adventure that pits the Avengers against each other.",
+      "constraints": {
+        "genre": "reference",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Her",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Scarlett Johansson"
+      },
+      "rec_titles": [
+        "The Santa Clause 2",
+        "Source Code",
+        "Disaster Movie",
+        "Captain America: Civil War"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Scarlett Johansson",
+        "anchor_title": "Lucy",
+        "constraints": {
+          "genre": "reference",
+          "director": "Will Gluck",
+          "actor": "Scarlett Johansson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more movies like \"To All the Boys I've Loved Before\" - in other words, romantic comedies with a dash of wit and charm, featuring Scarlett Johansson as one of the leads. Based on that, I think you might enjoy \"Annie Hall\" (1977), a classic rom-com directed by Woody Allen that shares some of the same offbeat humor and quirky charm.",
+      "constraints": {
+        "genre": "reference",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Scarlett Johansson"
+      },
+      "rec_titles": [
+        "Annie Hall",
+        "Avengers: Age of Ultron",
+        "Southland Tales",
+        "The Skull"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Her tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Scarlett Johansson",
+        "anchor_title": "Lucy",
+        "constraints": {
+          "genre": "reference",
+          "director": "Will Gluck",
+          "actor": "Scarlett Johansson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I understand what you're looking for! You mentioned that Her tells a story that feels deeper than expected, and you'd like recommendations with similar themes, starring Scarlett Johansson, directed by Will Gluck (although there aren't any matching directors), and written by Will Gluck as well. With those constraints in mind, I think two movies that might interest you are \"Flatliners\" (1990), a psychological thriller that explores the concept of death and the afterlife, starring Julia Roberts and Oliver Platt; and \"Monsters, Inc.\" (2001), an animated film that subverts expectations by showing what happens when children enter the monster world, featuring a talented voice cast.",
+      "constraints": {
+        "genre": "reference",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Scarlett Johansson"
+      },
+      "rec_titles": [
+        "Anyone But You",
+        "Monsters, Inc.",
+        "The Violent Kind",
+        "Flatliners"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Scarlett Johansson",
+        "anchor_title": "Lucy",
+        "constraints": {
+          "genre": "reference",
+          "director": "Will Gluck",
+          "actor": "Scarlett Johansson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems like you're looking for a movie that explores themes of relationships and whatnot, perhaps with a dash of intrigue and surprise, given Scarlett Johansson's involvement in one of the options. Based on those cues, I'd recommend \"The Prestige\" - it's a clever, visually stunning film about the world of magic and the lengths people will go to outdo each other, with a hint of mystery and romance that might appeal to your tastes.",
+      "constraints": {
+        "genre": "reference",
+        "plot": [
+          "what"
+        ],
+        "name": "Ted",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Scarlett Johansson"
+      },
+      "rec_titles": [
+        "Why Did I Get Married?",
+        "The Prestige",
+        "The Trouble with Harry",
+        "Monsters, Inc."
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Galician Language? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 8,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "Galician Language",
+        "anchor_title": "The BFG",
+        "constraints": {
+          "genre": "reference",
+          "director": "Will Gluck",
+          "language": "Galician Language",
+          "plot": "girl"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 8,
+          "from_focus": "actor",
+          "to_focus": "language",
+          "bridge_field": "plot",
+          "bridge_value": "girl",
+          "from_anchor": "Lucy",
+          "to_anchor": "The BFG"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie that's primarily in Galician Language, which is quite unique! Based on your constraints, I'd like to recommend \"Vicky Cristina Barcelona\" (2008), a romantic comedy-drama starring Scarlett Johansson, set against the beautiful backdrop of Spain. Although it's not entirely in Galician, it's a great choice if you're looking for something with international flair and stunning visuals!",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "X",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Scarlett Johansson",
+        "language": "Galician Language"
+      },
+      "rec_titles": [
+        "Happy Feet",
+        "Mansfield Park",
+        "Vicky Cristina Barcelona",
+        "Lucy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Galician Language",
+        "anchor_title": "The BFG",
+        "constraints": {
+          "genre": "reference",
+          "director": "Will Gluck",
+          "language": "Galician Language",
+          "plot": "girl"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for more movies with a strong focus on language, starring Scarlett Johansson, directed by Will Gluck, and featuring Galician Language - just to name a few of your constraints! Based on that, I think you might enjoy \"The Swindle\" (1997), a clever heist film with a witty script and charming performances from Michel Serrault and Isabelle Huppert.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Scarlett Johansson",
+        "language": "Galician Language"
+      },
+      "rec_titles": [
+        "Madame Bovary",
+        "The Taming of the Shrew",
+        "The Swindle",
+        "The Number 23"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Heist? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Galician Language",
+        "anchor_title": "The BFG",
+        "constraints": {
+          "genre": "reference",
+          "director": "Will Gluck",
+          "language": "Galician Language",
+          "plot": "girl"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a movie with a heist theme, featuring Scarlett Johansson, and directed by Will Gluck (although none of these movies match his specific direction). Considering your interest in the depth of \"Heist\", I'd recommend \"Captain America: Civil War\" - it's an action-packed Marvel movie with a thrilling heist plot and stars Scarlett Johansson as Black Widow.",
+      "constraints": {
+        "genre": "heist",
+        "plot": [
+          "what",
+          "heist"
+        ],
+        "name": "Heist",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Scarlett Johansson",
+        "language": "Galician Language"
+      },
+      "rec_titles": [
+        "The Avengers",
+        "Witless Protection",
+        "True Colors",
+        "Captain America: Civil War"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Galician Language",
+        "anchor_title": "The BFG",
+        "constraints": {
+          "genre": "reference",
+          "director": "Will Gluck",
+          "language": "Galician Language",
+          "plot": "girl"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie that's not quite sure about its genre, has Scarlett Johansson in mind, and might involve some Galician language (which is actually Spanish, but I'll get to that later!). You also have Will Gluck as the director and writer, which means the plot should be light-hearted and humorous. With those constraints in mind, I recommend \"Friends with Benefits\" (2011) starring Scarlett Johansson alongside Jason Segel. This romantic comedy is all about taking relationships to the next level, and I think it might just fit the bill!",
+      "constraints": {
+        "genre": "heist",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "Heist",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Scarlett Johansson",
+        "language": "Galician Language"
+      },
+      "rec_titles": [
+        "The Town",
+        "Friends with Benefits",
+        "Set It Off",
+        "The Spanish Prisoner"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Galician Language",
+        "anchor_title": "The BFG",
+        "constraints": {
+          "genre": "reference",
+          "director": "Will Gluck",
+          "language": "Galician Language",
+          "plot": "girl"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on what I've gathered, you're looking for a movie that tells an intriguing story with elements of a heist, stars Scarlett Johansson (although none of these movies feature her), is directed by Will Gluck, and has a plot that explores the theme of \"what\" or \"kind\". Given those constraints, I think you might enjoy \"I Heart Huckabees\", a quirky comedy-drama that features Dustin Hoffman and Naomi Watts as an investigative couple helping others uncover the meaning of life. The film's unique tone and premise might just scratch that itch!",
+      "constraints": {
+        "genre": "heist",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Scarlett Johansson",
+        "language": "Galician Language"
+      },
+      "rec_titles": [
+        "Man on Wire",
+        "I Heart Huckabees",
+        "What If...",
+        "You"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of RED. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Galician Language",
+        "anchor_title": "The BFG",
+        "constraints": {
+          "genre": "reference",
+          "director": "Will Gluck",
+          "language": "Galician Language",
+          "plot": "girl"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie that stars Scarlett Johansson and has elements of a heist, perhaps with some action-packed twists. I think \"Avengers: Age of Ultron\" might be up your alley! This Marvel blockbuster features Johansson as Black Widow, fighting alongside the Avengers to stop the villainous Ultron from wreaking havoc on Earth.",
+      "constraints": {
+        "genre": "heist",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Scarlett Johansson",
+        "language": "Galician Language"
+      },
+      "rec_titles": [
+        "Set It Off",
+        "Her",
+        "Unleashed",
+        "Avengers: Age of Ultron"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Us. I want to try something more backstage musical—That sounds intriguing.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "backstage musical",
+        "anchor_title": "Sucker Punch",
+        "constraints": {
+          "genre": "backstage musical",
+          "director": "Will Gluck",
+          "language": "Galician Language",
+          "plot": "girl"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 14,
+          "from_focus": "language",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "crazy",
+          "from_anchor": "The BFG",
+          "to_anchor": "Sucker Punch"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I remember, you're looking for a movie that's more backstage musical in nature, with Scarlett Johansson, directed by Will Gluck, and written by him as well - quite specific requirements! Based on your constraints, I think \"Moulin Rouge!\" (2001) could be an excellent fit. This romantic musical comedy stars Ewan McGregor and Nicole Kidman in a lively tale set in 1890s Paris, with catchy music and stunning visuals.",
+      "constraints": {
+        "genre": "backstage musical",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Us",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Scarlett Johansson",
+        "language": "Galician Language"
+      },
+      "rec_titles": [
+        "Avengers: Age of Ultron",
+        "The Spirit",
+        "Moulin Rouge!",
+        "The Princess and the Frog"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "backstage musical",
+        "anchor_title": "Sucker Punch",
+        "constraints": {
+          "genre": "backstage musical",
+          "director": "Will Gluck",
+          "language": "Galician Language",
+          "plot": "girl"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for recommendations similar to a backstage musical with Scarlett Johansson, directed by Will Gluck, and featuring Galician language - just to spice things up! Based on that, I'd like to recommend \"The Avengers\" (2012), an action-packed Marvel blockbuster that brings together some of the most iconic superheroes, including Black Widow played by none other than Scarlett Johansson.",
+      "constraints": {
+        "genre": "backstage musical",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Scarlett Johansson",
+        "language": "Galician Language"
+      },
+      "rec_titles": [
+        "Soul Men",
+        "Easy A",
+        "Compliance",
+        "The Avengers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of 2012? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "backstage musical",
+        "anchor_title": "Sucker Punch",
+        "constraints": {
+          "genre": "backstage musical",
+          "director": "Will Gluck",
+          "language": "Galician Language",
+          "plot": "girl"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a movie with a backstage musical feel from 2012, starring Scarlett Johansson and directed by Will Gluck, but since those specific criteria aren't met in this list, I'll recommend an alternative.\n\nBased on the mood you described, I think \"The Skulls\" (2000) could be a good fit. It's a drama that explores themes of decision-making and the consequences that come with it, which aligns with your uncertainty about enjoying or being scared by 2012. The movie features a strong cast, including Paul Walker and Leslie Bibb.",
+      "constraints": {
+        "genre": "backstage musical",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "2012",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Scarlett Johansson",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Wrath of the Titans",
+        "The Skulls",
+        "City of Lost Souls",
+        "Louie"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Skull tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "backstage musical",
+        "anchor_title": "Sucker Punch",
+        "constraints": {
+          "genre": "backstage musical",
+          "director": "Will Gluck",
+          "language": "Galician Language",
+          "plot": "girl"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a story that's deeper than what you initially thought, and you've got a taste for something with a strong musical component, with Scarlett Johansson as one of the stars (although she's not in any of these films). Based on your interest in backstage musicals and the 2012 release year, I'd recommend \"Romance & Cigarettes\" - it's a gritty yet romantic tale set to music, featuring an all-star cast including Kate Winslet and Steve Buscemi.",
+      "constraints": {
+        "genre": "backstage musical",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The Skull",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Scarlett Johansson",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Rise of the Guardians",
+        "Romance & Cigarettes",
+        "Corpse Bride",
+        "Step Up"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "backstage musical",
+        "anchor_title": "Sucker Punch",
+        "constraints": {
+          "genre": "backstage musical",
+          "director": "Will Gluck",
+          "language": "Galician Language",
+          "plot": "girl"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your interest in \"Us\" and its themes, I understand you're looking for movies that are deeper and thought-provoking. You mentioned liking the sound of \"Us,\" which suggests a preference for psychological thrillers or dramas with complex characters.\n\nOne movie from this list that caught my attention is \"Velvet Goldmine\" (1998). This musical drama stars Christian Bale as a rebellious rock star, exploring themes of identity and the darker side of fame. Its 1970s setting and glam rock aesthetic might appeal to fans of \"Us\"'s atmosphere and sound design.",
+      "constraints": {
+        "genre": "backstage musical",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Scarlett Johansson",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Aladdin",
+        "Black November",
+        "Trapped",
+        "Velvet Goldmine"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Martin Balsam. That feels deeper than I thought. (I’m thinking of Psycho.)",
+      "user_meta": {
+        "turn": 19,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Martin Balsam",
+        "anchor_title": "Promised Land",
+        "constraints": {
+          "genre": "backstage musical",
+          "director": "Will Gluck",
+          "plot": "girl",
+          "actor": "Martin Balsam"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 19,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Martin Balsam",
+          "from_anchor": "Sucker Punch",
+          "to_anchor": "Promised Land"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your interest in Martin Balsam and a deeper movie experience like Psycho, you're looking for something with more substance. None of these movies feature Martin Balsam, but I'd recommend \"I Love You, Man\" (2009) or \"The People I've Slept With\" (N/A).",
+      "constraints": {
+        "genre": "backstage musical",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Psycho",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Martin Balsam",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Goonies",
+        "The People I've Slept With",
+        "I Love You, Man",
+        "Magic Mike"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Martin Balsam",
+        "anchor_title": "Promised Land",
+        "constraints": {
+          "genre": "backstage musical",
+          "director": "Will Gluck",
+          "plot": "girl",
+          "actor": "Martin Balsam"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on what you're looking for, I understand that you're a fan of backstage musicals, particularly one from 2012 with Martin Balsam and directed by Will Gluck. You mentioned the Galician Language as a unique aspect, which isn't found in any of these movies.\n\nThat being said, if you enjoyed a mix of music, comedy, and heartwarming moments, I'd recommend \"The Rocker\" (2008). This movie features a talented cast, including Howard Hesseman and Bradley Cooper, and has a great soundtrack to boot!",
+      "constraints": {
+        "genre": "backstage musical",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Martin Balsam",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Rocker",
+        "Easy A",
+        "King Kong",
+        "Walk the Line"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of War. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 21,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Martin Balsam",
+        "anchor_title": "Promised Land",
+        "constraints": {
+          "genre": "backstage musical",
+          "director": "Will Gluck",
+          "plot": "girl",
+          "actor": "Martin Balsam"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It sounds like you're looking for a war movie, specifically one released in 2012 with no connection to Martin Balsam, Will Gluck, or the Galician Language. Based on your preferences, I think \"Trapped\" (2012) could be an interesting alternative. Although it's not a traditional war movie, it features a man fighting for survival in a high-rise building, which might scratch that \"trapped\" itch!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "War",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Martin Balsam",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Alamo",
+        "Rob Roy",
+        "Trapped",
+        "The Vow"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Peter Farrelly? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of 2012.)",
+      "user_meta": {
+        "turn": 22,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Peter Farrelly",
+        "anchor_title": "2012",
+        "constraints": {
+          "genre": "backstage musical",
+          "director": "Peter Farrelly",
+          "plot": "girl",
+          "actor": "Liam James"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 22,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Liam James",
+          "from_anchor": "Promised Land",
+          "to_anchor": "2012"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you'd like to switch to something else by Peter Farrelly, maybe considering his 2012 film? Unfortunately, none of the available options match Peter Farrelly's directorial work from that year (we didn't find any films he directed in 2012). However, I think \"Snow White and the Huntsman\" could be an interesting alternative. It's a fantasy adventure movie with Charlize Theron and Kristen Stewart, where the Huntsman becomes Snow White's protector on a quest to defeat the Evil Queen.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "2012",
+        "director": "Peter Farrelly",
+        "writer": "Peter Farrelly",
+        "actor": "Martin Balsam",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "True Blood",
+        "Restless",
+        "The Whistler",
+        "Snow White and the Huntsman"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Peter Farrelly",
+        "anchor_title": "2012",
+        "constraints": {
+          "genre": "backstage musical",
+          "director": "Peter Farrelly",
+          "plot": "girl",
+          "actor": "Liam James"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems like you're looking for more movie recommendations similar to a war-themed film from 2012, starring Martin Balsam (although he wasn't in any of these films), and directed by Peter Farrelly, who isn't associated with any of these movies either.\n\nGiven your interest in war movies, I think you might enjoy \"The Hurt Locker\" (2008). This Oscar-winning film follows a US Army bomb disposal unit in Iraq, exploring the psychological effects of war. The movie features a strong performance from Jeremy Renner and some intense action sequences.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Peter Farrelly",
+        "writer": "Peter Farrelly",
+        "actor": "Martin Balsam",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Born on the Fourth of July",
+        "Project X",
+        "Untraceable",
+        "The Hurt Locker"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Tron? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Peter Farrelly",
+        "anchor_title": "2012",
+        "constraints": {
+          "genre": "backstage musical",
+          "director": "Peter Farrelly",
+          "plot": "girl",
+          "actor": "Liam James"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're unsure about Tron's mood, whether it would be enjoyable or scary for you. Based on your preference cues, I'm guessing you'd appreciate a movie with a different tone and genre from science fiction.\n\nConsidering your interest in war movies from 2012 with Martin Balsam (although he wasn't involved in any of these films), I recommend \"Compliance\" instead. This psychological thriller shares some similarities with Tron's themes, such as decision-making and unexpected turns, but it takes place in a more grounded, realistic setting with a strong focus on human psychology.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "Tron",
+        "director": "Peter Farrelly",
+        "writer": "Peter Farrelly",
+        "actor": "Martin Balsam",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Where We Belong",
+        "Compliance",
+        "Flight",
+        "Paycheck"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Peter Farrelly",
+        "anchor_title": "2012",
+        "constraints": {
+          "genre": "backstage musical",
+          "director": "Peter Farrelly",
+          "plot": "girl",
+          "actor": "Liam James"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I understand what's fascinating about \"Ted\" - you're looking for a story that explores some kind of mystery or intrigue, perhaps with a strong scientific or historical background! Given your interest in war movies and the fact that none of these titles quite fit that bill, I'd recommend checking out \"Incendies\" (2010), which tells the powerful and emotional story of twin siblings uncovering their family's dark past during wartime.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "director": "Peter Farrelly",
+        "writer": "Peter Farrelly",
+        "actor": "Martin Balsam",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Andromeda Strain",
+        "Incendies",
+        "Lockout",
+        "The Vow"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Peter Farrelly",
+        "anchor_title": "2012",
+        "constraints": {
+          "genre": "backstage musical",
+          "director": "Peter Farrelly",
+          "plot": "girl",
+          "actor": "Liam James"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for a movie that takes place during a war and stars Martin Balsam, directed by Peter Farrelly, written by Peter Farrelly, and features Galician Language, with plot keywords like \"what\" and \"said\". Based on these constraints, I'd recommend \"You\" (2014), which deals with themes of right and wrong in the face of conflict.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "Ted",
+        "director": "Peter Farrelly",
+        "writer": "Peter Farrelly",
+        "actor": "Martin Balsam",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Good Deeds",
+        "You",
+        "Louie",
+        "Taken"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of War. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Peter Farrelly",
+        "anchor_title": "2012",
+        "constraints": {
+          "genre": "backstage musical",
+          "director": "Peter Farrelly",
+          "plot": "girl",
+          "actor": "Liam James"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your interest in the war movie \"War\" (2012) starring Martin Sheen, I understand that you're looking for a film with similar themes and settings. However, since none of the movies on our list match these exact criteria, I'd like to recommend two alternatives that might scratch that cinematic itch: \"Fury\" (2014), an intense war drama set in 1945 Germany, or \"Here Comes the Boom\" (2012), a comedy-drama with a strong performance by Kevin James.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "War",
+        "director": "Peter Farrelly",
+        "writer": "Peter Farrelly",
+        "actor": "Martin Balsam",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Project X",
+        "Fury",
+        "Here Comes the Boom",
+        "American Dreamz"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Jeff Bridges. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Tron.)",
+      "user_meta": {
+        "turn": 28,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Jeff Bridges",
+        "anchor_title": "The Princess and the Frog",
+        "constraints": {
+          "genre": "backstage musical",
+          "director": "Peter Farrelly",
+          "plot": "girl",
+          "actor": "Jeff Bridges"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 28,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Jeff Bridges",
+          "from_anchor": "2012",
+          "to_anchor": "The Princess and the Frog"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie with Jeff Bridges that has a war theme, was released in 2012, directed by Peter Farrelly, written by Peter Farrelly, and doesn't have any Galician language spoken - so I'll focus on the first condition. Unfortunately, none of these movies meet all your criteria, but I can suggest two that are worth considering: \"Masked and Anonymous\" (2003) which features Jeff Bridges alongside a talented ensemble cast, or \"The Last Unicorn\" (1968) which is an animated musical classic with Jeff Bridges providing his voice talents.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Tron",
+        "director": "Peter Farrelly",
+        "writer": "Peter Farrelly",
+        "actor": "Jeff Bridges",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Club Dead",
+        "The Tigger Movie",
+        "Masked and Anonymous",
+        "The Last Unicorn"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jeff Bridges",
+        "anchor_title": "The Princess and the Frog",
+        "constraints": {
+          "genre": "backstage musical",
+          "director": "Peter Farrelly",
+          "plot": "girl",
+          "actor": "Jeff Bridges"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for more recommendations similar to \"War, Love, and Betrayal\" (2012), which features Jeff Bridges in a war-themed movie. Based on your preferences, I'd like to recommend \"True Grit\" (1968) - a classic Western starring Jeff Bridges as U.S. Marshal Rooster Cogburn, alongside John Wayne. Alternatively, you might enjoy \"Casablanca\" (1942), another iconic film with a strong war theme and memorable performances from Humphrey Bogart and Claude Rains.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Peter Farrelly",
+        "writer": "Peter Farrelly",
+        "actor": "Jeff Bridges",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Stuck on You",
+        "The Hunting Party",
+        "True Grit",
+        "Casablanca"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jeff Bridges",
+        "anchor_title": "The Princess and the Frog",
+        "constraints": {
+          "genre": "backstage musical",
+          "director": "Peter Farrelly",
+          "plot": "girl",
+          "actor": "Jeff Bridges"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I understand what you're looking for! You've expressed some mixed feelings about a war movie from 2012, starring Jeff Bridges and directed by Peter Farrelly, but with a weird and thought-provoking plot.\n\nBased on these constraints, I'd like to recommend \"Born on the Fourth of July\" (1989) instead. This powerful biographical drama, directed by Oliver Stone and starring Tom Cruise, tells the story of Ron Kovic's transformation from a patriotic soldier to an anti-war activist after being paralyzed in Vietnam. It's a thought-provoking and emotionally intense film that explores the complexities of war and its aftermath.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "You",
+        "director": "Peter Farrelly",
+        "writer": "Peter Farrelly",
+        "actor": "Jeff Bridges",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Red Cliff",
+        "Catch-22",
+        "The Best Years of Our Lives",
+        "Born on the Fourth of July"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jeff Bridges",
+        "anchor_title": "The Princess and the Frog",
+        "constraints": {
+          "genre": "backstage musical",
+          "director": "Peter Farrelly",
+          "plot": "girl",
+          "actor": "Jeff Bridges"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on what you've told me, you're looking for a movie that's a war film from 2012, starring Jeff Bridges and directed by Peter Farrelly - but wait, none of the movies on this list match those exact criteria!\n\nHowever, if you're open to exploring other options, I think \"We Were Soldiers\" (2002) could be an excellent choice. Directed by Randall Wallace, it's a war drama that tells the story of the first major battle of the American phase of the Vietnam War. The film stars Mel Gibson and features an all-star cast, including Sam Elliott and Greg Kinnear.\n\nIf you'd like to explore another option, \"The Avengers\" (2012) is an action-packed superhero blockbuster that's also a war movie in disguise - it pits the world against an alien invasion!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "director": "Peter Farrelly",
+        "writer": "Peter Farrelly",
+        "actor": "Jeff Bridges",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Avengers",
+        "Alex in Wonderland",
+        "We Were Soldiers",
+        "The Bad Seed"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does 2012 tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jeff Bridges",
+        "anchor_title": "The Princess and the Frog",
+        "constraints": {
+          "genre": "backstage musical",
+          "director": "Peter Farrelly",
+          "plot": "girl",
+          "actor": "Jeff Bridges"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a movie that tells a story about war, and you mentioned the year 2012, Jeff Bridges, Peter Farrelly as director/writer, and no specific language. You also asked \"what kind\" of story it would be.\n\nBased on your preferences, I recommend \"The Book Thief\" (2013), which is set during World War II Germany and features a powerful and emotional story about a young girl who finds solace in books and shares them with others.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "2012",
+        "director": "Peter Farrelly",
+        "writer": "Peter Farrelly",
+        "actor": "Jeff Bridges",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Book Thief",
+        "End of Watch",
+        "The Odyssey",
+        "The Way Back Home"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of War? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jeff Bridges",
+        "anchor_title": "The Princess and the Frog",
+        "constraints": {
+          "genre": "backstage musical",
+          "director": "Peter Farrelly",
+          "plot": "girl",
+          "actor": "Jeff Bridges"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems like you're looking for a movie that captures the mood of War (2017), which is a film about a cowboy who helps a group of travelers survive in a harsh environment, so I think you'll appreciate movies with similar themes and tone. Based on your interest in war movies and Jeff Bridges' presence in War, I recommend checking out Dredd (2012) or The Wrestler (2008).",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "War",
+        "director": "Peter Farrelly",
+        "writer": "Peter Farrelly",
+        "actor": "Jeff Bridges",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Dredd",
+        "The Wrestler",
+        "Louie",
+        "Pandemonium"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Michel Gondry? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 34,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Michel Gondry",
+        "anchor_title": "Aladdin",
+        "constraints": {
+          "genre": "backstage musical",
+          "director": "Michel Gondry",
+          "plot": "girl",
+          "actor": "Jeff Bridges"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 34,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Jeff Bridges",
+          "from_anchor": "The Princess and the Frog",
+          "to_anchor": "Aladdin"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you're looking for a Michel Gondry movie that's not \"The Science of Sleep\" (which is romantic comedy) or \"Eternal Sunshine of the Spotless Mind\" (a sci-fi romance). You mentioned being unsure if \"You\" would be too intense, so I'll suggest two alternatives from the list. How about \"Lord of War\", a thought-provoking war drama starring Nicolas Cage as an arms dealer, or \"Promised Land\", a powerful and emotional film that explores the human cost of war?",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "RED",
+        "director": "Michel Gondry",
+        "writer": "Michel Gondry",
+        "actor": "Jeff Bridges",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Promised Land",
+        "The Sweeney",
+        "Lord of War",
+        "American Sniper"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Michel Gondry",
+        "anchor_title": "Aladdin",
+        "constraints": {
+          "genre": "backstage musical",
+          "director": "Michel Gondry",
+          "plot": "girl",
+          "actor": "Jeff Bridges"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for more war-themed movies like \"W.\" (2012), which starred Jeff Bridges and was directed by Michel Gondry. Given that, I think you might enjoy \"The Good German\" (2006), a gripping neo-noir thriller set in post-war Berlin, starring George Clooney and featuring a complex plot with twists and turns. Alternatively, if you're up for something more action-packed, \"300: Rise of an Empire\" (2014) could be just the ticket, with its epic battles and stunning visuals.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Michel Gondry",
+        "writer": "Michel Gondry",
+        "actor": "Jeff Bridges",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Good German",
+        "300: Rise of an Empire",
+        "Southland Tales",
+        "Before I Fall"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Michel Gondry",
+        "anchor_title": "Aladdin",
+        "constraints": {
+          "genre": "backstage musical",
+          "director": "Michel Gondry",
+          "plot": "girl",
+          "actor": "Jeff Bridges"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for a story that's quite different from Us, with no eerie vibes in sight! Based on your preferences for war movies from 2012, starring Jeff Bridges and directed by Michel Gondry (although it seems like none of these specific criteria match), I'd recommend \"Frankenweenie\" as a unique and fun alternative. The movie has a whimsical tone, with a great cast of characters, including Jeff Bennett (not to be confused with Jeff Bridges!)",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "director": "Michel Gondry",
+        "writer": "Michel Gondry",
+        "actor": "Jeff Bridges",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Trouble with Harry",
+        "That's My Boy",
+        "Frankenweenie",
+        "A Farewell to Arms"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Frankenweenie. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Michel Gondry",
+        "anchor_title": "Aladdin",
+        "constraints": {
+          "genre": "backstage musical",
+          "director": "Michel Gondry",
+          "plot": "girl",
+          "actor": "Jeff Bridges"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on what you've told me, I understand that you're looking for a movie that resonates with the themes and tone of Frankenweenie, which is a stop-motion animated film about a boy who brings his beloved dog back to life after it gets hit by a car. You're drawn to movies that explore deeper ideas and have a quirky sense of humor.\n\nWith that in mind, I think you might enjoy \"Dark Shadows\" (2012), which is another quirky and visually stunning film that also explores themes of identity, family, and the supernatural. The movie features an all-star cast, including Johnny Depp and Michelle Pfeiffer, and has a similar blend of humor and heart as Frankenweenie.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Frankenweenie",
+        "director": "Michel Gondry",
+        "writer": "Michel Gondry",
+        "actor": "Jeff Bridges",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Psychic Experiment",
+        "Dark Shadows",
+        "Catch-22",
+        "Spring Breakers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Deep? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Michel Gondry",
+        "anchor_title": "Aladdin",
+        "constraints": {
+          "genre": "backstage musical",
+          "director": "Michel Gondry",
+          "plot": "girl",
+          "actor": "Jeff Bridges"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for a movie that's different from \"Deep\" in terms of mood and vibe! Given your interest in war movies from 2012 with Jeff Bridges (even though he's not starring in any of these options), I'd recommend \"Won't Back Down\" instead. This inspiring drama tackles the theme of making a difference, which might provide a nice contrast to the seemingly abstract concept of \"Deep\".",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "deep"
+        ],
+        "name": "Deep",
+        "director": "Michel Gondry",
+        "writer": "Michel Gondry",
+        "actor": "Jeff Bridges",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Won't Back Down",
+        "Here Comes the Boom",
+        "Pearl Harbor",
+        "House at the End of the Street"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Won't Back Down. I want to try something more law—That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 39,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "law",
+        "anchor_title": "The Client",
+        "constraints": {
+          "genre": "law",
+          "director": "Michel Gondry",
+          "plot": "girl"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 39,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "mothers",
+          "from_anchor": "Aladdin",
+          "to_anchor": "The Client"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie that's deeper than you expected, and since you liked Won't Back Down, I'm guessing you want something with some emotional depth. Given your interest in law-themed movies from 2012 with Jeff Bridges (but not actually starring him), I think The Place Beyond the Pines is a great fit. This drama explores the consequences of choices and features a star-studded cast, including Ryan Gosling and Bradley Cooper.",
+      "constraints": {
+        "genre": "law",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Won't Back Down",
+        "director": "Michel Gondry",
+        "writer": "Michel Gondry",
+        "actor": "Jeff Bridges",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Safety Not Guaranteed",
+        "That's My Boy",
+        "The Place Beyond the Pines",
+        "21 Jump Street"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "law",
+        "anchor_title": "The Client",
+        "constraints": {
+          "genre": "law",
+          "director": "Michel Gondry",
+          "plot": "girl"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you're looking for recommendations similar to a movie with a law-themed plot, released in 2012, starring Jeff Bridges, and directed by Michel Gondry. Unfortunately, none of these movies exactly match those criteria. However, I think you might enjoy \"The Light Between Oceans\" (2012), a romantic drama that explores themes of responsibility and morality, much like the original movie you mentioned.",
+      "constraints": {
+        "genre": "law",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Michel Gondry",
+        "writer": "Michel Gondry",
+        "actor": "Jeff Bridges",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Light Between Oceans",
+        "The Third Wheel",
+        "Frankenweenie",
+        "In the Mouth of Madness"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "law",
+        "anchor_title": "The Client",
+        "constraints": {
+          "genre": "law",
+          "director": "Michel Gondry",
+          "plot": "girl"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your constraints, you're looking for a movie that tells a story related to law, set in 2012, starring Jeff Bridges, and directed by Michel Gondry. Unfortunately, none of the options on this list perfectly match these criteria. However, I think \"The Client\" (1994) could be an interesting choice for you. This thriller stars Tommy Lee Jones as a lawyer who takes on a case involving a man accused of killing his wife, and explores themes related to law and justice.",
+      "constraints": {
+        "genre": "law",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "director": "Michel Gondry",
+        "writer": "Michel Gondry",
+        "actor": "Jeff Bridges",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Utsav",
+        "The Client",
+        "The Dark Knight Rises",
+        "Disclosure"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "law",
+        "anchor_title": "The Client",
+        "constraints": {
+          "genre": "law",
+          "director": "Michel Gondry",
+          "plot": "girl"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie that explores complex themes and has a fascinating atmosphere, with Us being a great starting point! Based on your interest in law-related themes and the presence of Jeff Bridges in some of the movies, I'd recommend \"The Cabin in the Woods\" (2012) as it delves into moral ambiguity and features a talented cast. Alternatively, if you're in the mood for something more action-packed, \"John Carter\" (2012) could be an exciting choice, with its visually stunning Martian landscape and Jeff Bridges' involvement.",
+      "constraints": {
+        "genre": "law",
+        "plot": [
+          "what"
+        ],
+        "name": "Us",
+        "director": "Michel Gondry",
+        "writer": "Michel Gondry",
+        "actor": "Jeff Bridges",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Tron",
+        "The Cabin in the Woods",
+        "John Carter",
+        "The Equalizer"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "law",
+        "anchor_title": "The Client",
+        "constraints": {
+          "genre": "law",
+          "director": "Michel Gondry",
+          "plot": "girl"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you liked the sound of Ted, and you're looking for a movie that stars Jeff Bridges, is from 2012, and has a law-related theme. Based on your preferences, I recommend \"The Devil's Advocate\" (1997), which features Al Pacino as a charismatic lawyer who takes on a young attorney played by Keanu Reeves. With its blend of drama, mystery, and supernatural elements, this movie might be just the thing to pique your interest!",
+      "constraints": {
+        "genre": "law",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "director": "Michel Gondry",
+        "writer": "Michel Gondry",
+        "actor": "Jeff Bridges",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Good Deeds",
+        "Safety Not Guaranteed",
+        "Eternal Sunshine of the Spotless Mind",
+        "The Devil's Advocate"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Paul Gleason. That feels deeper than I thought. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 44,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Paul Gleason",
+        "anchor_title": "Star Wars: Episode IV - A New Hope",
+        "constraints": {
+          "genre": "law",
+          "plot": "girl",
+          "actor": "Paul Gleason",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 44,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "The Client",
+          "to_anchor": "Star Wars: Episode IV - A New Hope"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for a movie that features Paul Gleason, has a deeper tone like \"(I'm Thinking of) You\", and doesn't require Galician language as no movie with Paul Gleason in Galician language was found. I'd recommend \"Looper\" (2012), an action-packed sci-fi thriller that explores complex themes and features Joseph Gordon-Levitt alongside Bruce Willis - it's a thought-provoking ride!",
+      "constraints": {
+        "genre": "law",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Deep",
+        "director": "Michel Gondry",
+        "writer": "Michel Gondry",
+        "actor": "Paul Gleason",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "3",
+        "Afterlife",
+        "Deep",
+        "Looper"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Paul Gleason",
+        "anchor_title": "Star Wars: Episode IV - A New Hope",
+        "constraints": {
+          "genre": "law",
+          "plot": "girl",
+          "actor": "Paul Gleason",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've got it! The user is looking for more movie recommendations that match the genre of law, year of release in 2012 (or close), and stars Paul Gleason - although none of the current options quite fit those criteria.\n\nHowever, one movie from this list that caught my attention is \"Skyfall\" (2012). Not only does it have a great cast, including Daniel Craig as James Bond, but its action-packed plot also explores themes of loyalty, duty, and personal cost.",
+      "constraints": {
+        "genre": "law",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Michel Gondry",
+        "writer": "Michel Gondry",
+        "actor": "Paul Gleason",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Turbo",
+        "Wrath of the Titans",
+        "Skyfall",
+        "Harry Potter and the Half-Blood Prince"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does 2012 tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Paul Gleason",
+        "anchor_title": "Star Wars: Episode IV - A New Hope",
+        "constraints": {
+          "genre": "law",
+          "plot": "girl",
+          "actor": "Paul Gleason",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie with a law-related story, specifically from the year 2012, and featuring Paul Gleason (although he's not actually in any of these movies). You also mentioned Michel Gondry as the director or writer, which is an interesting connection.\n\nBased on your constraints, I think you might enjoy \"Michael Clayton\" (2007), a gripping law-based thriller starring George Clooney. The movie follows the story of a fixer who must clean up a mess left by one of his firm's lawyers, and it features some great performances and a complex plot.",
+      "constraints": {
+        "genre": "law",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "2012",
+        "director": "Michel Gondry",
+        "writer": "Michel Gondry",
+        "actor": "Paul Gleason",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Michael Clayton",
+        "Smilla's Sense of Snow",
+        "The Avengers",
+        "Super"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Paul Gleason",
+        "anchor_title": "Star Wars: Episode IV - A New Hope",
+        "constraints": {
+          "genre": "law",
+          "plot": "girl",
+          "actor": "Paul Gleason",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on what you've told me, you're looking for a movie that resonates with the theme of \"like\" and \"sound\" from 2012, possibly involving law, but with no specific genre or actor requirements beyond Paul Gleason (who isn't actually in any of these movies). I think you might enjoy \"Flight\", which features Denzel Washington in a gripping drama about a military pilot struggling with addiction.",
+      "constraints": {
+        "genre": "law",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "director": "Michel Gondry",
+        "writer": "Michel Gondry",
+        "actor": "Paul Gleason",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Flight",
+        "Restless",
+        "The Avengers",
+        "Fifty Shades Freed"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Flight? That sounds intriguing.",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Paul Gleason",
+        "anchor_title": "Star Wars: Episode IV - A New Hope",
+        "constraints": {
+          "genre": "law",
+          "plot": "girl",
+          "actor": "Paul Gleason",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a movie with a specific mood, and \"Flight\" sounds intriguing! Based on your interest in law-related movies from 2012, I recommend \"Frankenweenie\". This stop-motion animated film shares some of the same whimsical charm as Michel Gondry's work (another cue you provided). It's a heartwarming and quirky story about a boy who brings his beloved dog back to life through science.",
+      "constraints": {
+        "genre": "law",
+        "plot": [
+          "what",
+          "flight"
+        ],
+        "name": "Flight",
+        "director": "Michel Gondry",
+        "writer": "Michel Gondry",
+        "actor": "Paul Gleason",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Wolfhound",
+        "We the Living",
+        "2010",
+        "Frankenweenie"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Gavin Hood? That feels deeper than I thought. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 49,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Gavin Hood",
+        "anchor_title": "RoboCop",
+        "constraints": {
+          "genre": "law",
+          "plot": "dating",
+          "actor": "Paul Gleason",
+          "language": "English",
+          "director": "Gavin Hood"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 49,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "dating",
+          "from_anchor": "Star Wars: Episode IV - A New Hope",
+          "to_anchor": "RoboCop"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for something else by Gavin Hood that feels deeper than you thought, possibly a law-related film with a complex plot and strong characters. Based on those cues, I'd recommend \"The Pelican Brief\" (1992) starring Julia Roberts as it explores a conspiracy involving the US Supreme Court and features a gripping storyline with morally complex themes.",
+      "constraints": {
+        "genre": "law",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Her",
+        "director": "Gavin Hood",
+        "writer": "Gavin Hood",
+        "actor": "Paul Gleason",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Pelican Brief",
+        "Seven Psychopaths",
+        "A Few Good Men",
+        "The Expendables 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 50,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Gavin Hood",
+        "anchor_title": "RoboCop",
+        "constraints": {
+          "genre": "law",
+          "plot": "dating",
+          "actor": "Paul Gleason",
+          "language": "English",
+          "director": "Gavin Hood"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for more movies like \"Law\" (2012) starring Paul Gleason, directed by Gavin Hood, and written by Gavin Hood - perhaps with a similar tone or themes. Based on those cues, I'd recommend \"This Means War\" (2012), an action-comedy that also explores themes of competition and rivalry, this time between two C.I.A. operatives vying for the same woman's attention.\n\nAlternatively, if you're in the mood for something more serious and thought-provoking, \"Three Kings\" (1999) might be up your alley. This critically acclaimed war drama follows three soldiers on a mission to find a lost cache of gold in post-war Iraq, exploring themes of morality, loyalty, and redemption.\n\nLet me know if either of these options piques your interest!",
+      "constraints": {
+        "genre": "law",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Gavin Hood",
+        "writer": "Gavin Hood",
+        "actor": "Paul Gleason",
+        "language": "Galician Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "This Means War",
+        "Three Kings",
+        "The Dark Knight Rises",
+        "The Taming of the Shrew"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "genre",
+      "bridge_value": "reference",
+      "from_anchor": "The Adventures of Tom Sawyer",
+      "to_anchor": "The Scarlet Letter"
+    },
+    {
+      "turn": 4,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Scarlett Johansson",
+      "from_anchor": "The Scarlet Letter",
+      "to_anchor": "Lucy"
+    },
+    {
+      "turn": 8,
+      "from_focus": "actor",
+      "to_focus": "language",
+      "bridge_field": "plot",
+      "bridge_value": "girl",
+      "from_anchor": "Lucy",
+      "to_anchor": "The BFG"
+    },
+    {
+      "turn": 14,
+      "from_focus": "language",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "crazy",
+      "from_anchor": "The BFG",
+      "to_anchor": "Sucker Punch"
+    },
+    {
+      "turn": 19,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Martin Balsam",
+      "from_anchor": "Sucker Punch",
+      "to_anchor": "Promised Land"
+    },
+    {
+      "turn": 22,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Liam James",
+      "from_anchor": "Promised Land",
+      "to_anchor": "2012"
+    },
+    {
+      "turn": 28,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Jeff Bridges",
+      "from_anchor": "2012",
+      "to_anchor": "The Princess and the Frog"
+    },
+    {
+      "turn": 34,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Jeff Bridges",
+      "from_anchor": "The Princess and the Frog",
+      "to_anchor": "Aladdin"
+    },
+    {
+      "turn": 39,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "mothers",
+      "from_anchor": "Aladdin",
+      "to_anchor": "The Client"
+    },
+    {
+      "turn": 44,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "The Client",
+      "to_anchor": "Star Wars: Episode IV - A New Hope"
+    },
+    {
+      "turn": 49,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "dating",
+      "from_anchor": "Star Wars: Episode IV - A New Hope",
+      "to_anchor": "RoboCop"
+    }
+  ]
+}

@@ -1,0 +1,2183 @@
+{
+  "session_id": "00040",
+  "model_name": "qwen:7b",
+  "true_genre": "teen",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a teen movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "teen",
+        "anchor_title": "Fast Times at Ridgemont High",
+        "constraints": {
+          "genre": "teen"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a teen movie recommendation. Based on your preference for teen-themed movies, I would recommend 'The Queen' (2014). It features a young cast, including Michael Sheen, and delves into the aftermath of Princess Diana's death, offering a unique teenage perspective on grief and public figures.",
+      "constraints": {
+        "genre": "teen",
+        "plot": [
+          "teen",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "The Queen",
+        "Downfall",
+        "Unaccompanied Minors",
+        "Graduation Day"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Bob Barker. Hmm, I didn’t expect that vibe. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Bob Barker",
+        "anchor_title": "Step Up",
+        "constraints": {
+          "genre": "teen",
+          "actor": "Bob Barker",
+          "plot": "bullets"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "bullets",
+          "from_anchor": "Fast Times at Ridgemont High",
+          "to_anchor": "Step Up"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies with actor Bob Barker, focusing on a teen genre. Recommendations include \"The Good, the Bad and the Ugly,\" with its iconic cast led by Clint Eastwood, and \"Black Knight\" starring Martin Lawrence, both fitting the given preferences.",
+      "constraints": {
+        "genre": "teen",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "X",
+        "actor": "Bob Barker"
+      },
+      "rec_titles": [
+        "The Good, the Bad and the Ugly",
+        "Hell's Angels",
+        "The Dark Crystal",
+        "Black Knight"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bob Barker",
+        "anchor_title": "Step Up",
+        "constraints": {
+          "genre": "teen",
+          "actor": "Bob Barker",
+          "plot": "bullets"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: genre is teen, actor is Bob Barker, and plot keywords include \"just\" and \"more\". Movie recommendations: 'The Secret Life of Walter Mitty' with its adventurous plot and stars Joey Slotnick and Adam Scott aligns well with the given cues. Alternatively, 'Dinner for Schmucks' could also be recommended due to its comedy aspect and Bob Barker's involvement.",
+      "constraints": {
+        "genre": "teen",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Bob Barker"
+      },
+      "rec_titles": [
+        "The Secret Life of Walter Mitty",
+        "Dinner for Schmucks",
+        "RED",
+        "Green Card"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? That sounds intriguing.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bob Barker",
+        "anchor_title": "Step Up",
+        "constraints": {
+          "genre": "teen",
+          "actor": "Bob Barker",
+          "plot": "bullets"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a movie with teenage themes and possibly featuring actor Bob Barker. From the list, 'Easy A' fits those criteria as it has a teen focus and stars actor John D'Leo who could be seen as Bob Barker.",
+      "constraints": {
+        "genre": "teen",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Us",
+        "actor": "Bob Barker"
+      },
+      "rec_titles": [
+        "The Wrestler",
+        "Easy A",
+        "Beastly",
+        "Graduation Day"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Easy A. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bob Barker",
+        "anchor_title": "Step Up",
+        "constraints": {
+          "genre": "teen",
+          "actor": "Bob Barker",
+          "plot": "bullets"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences for a teen genre, with actor Bob Barker, and plot keywords like \"like\" and \"sound,\" I would recommend \"American Dreamz\" as it fits those criteria and stars Perrey Reeves who is known for her role in \"TV Land.\"",
+      "constraints": {
+        "genre": "teen",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Easy A",
+        "actor": "Bob Barker"
+      },
+      "rec_titles": [
+        "It's a Wonderful Life",
+        "American Dreamz",
+        "Chain Letter",
+        "The Bad Seed"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Her tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bob Barker",
+        "anchor_title": "Step Up",
+        "constraints": {
+          "genre": "teen",
+          "actor": "Bob Barker",
+          "plot": "bullets"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in stories with a teen vibe, featuring actor Bob Barker. Movie recommendations could be 'Aladdin' due to its Disney connection and teenage-friendly appeal, or 'End of Watch' if the focus on a partner's perspective and their struggle against criminal forces fits the given preferences.",
+      "constraints": {
+        "genre": "teen",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her",
+        "actor": "Bob Barker"
+      },
+      "rec_titles": [
+        "Paradise Lost",
+        "End of Watch",
+        "Aladdin",
+        "I Heart Huckabees"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Jodie Foster? That feels deeper than I thought. (I’m thinking of End of Watch.)",
+      "user_meta": {
+        "turn": 7,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Jodie Foster",
+        "anchor_title": "The History Boys",
+        "constraints": {
+          "genre": "teen",
+          "actor": "Frank Grillo",
+          "plot": "bullets",
+          "director": "Jodie Foster"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 7,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Frank Grillo",
+          "from_anchor": "Step Up",
+          "to_anchor": "The History Boys"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies with Jodie Foster, preferably with teen themes or directed by Jodie Foster herself. Based on these criteria, I recommend 'The Seduction of Joe Tynan' and 'Taxi Driver' as they feature both Jodie Foster and align with the specified genres.",
+      "constraints": {
+        "genre": "teen",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "End of Watch",
+        "actor": "Jodie Foster",
+        "director": "Jodie Foster"
+      },
+      "rec_titles": [
+        "The Seduction of Joe Tynan",
+        "When a Stranger Calls",
+        "White Night",
+        "Taxi Driver"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jodie Foster",
+        "anchor_title": "The History Boys",
+        "constraints": {
+          "genre": "teen",
+          "actor": "Frank Grillo",
+          "plot": "bullets",
+          "director": "Jodie Foster"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for recommendations in the genre of teen and featuring actor Jodie Foster. Based on those preferences, I suggest checking out 'Bend It Like Beckham' which has both Jodie Foster as a director and a storyline centered around teenagers and their dreams.",
+      "constraints": {
+        "genre": "teen",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Jodie Foster",
+        "director": "Jodie Foster"
+      },
+      "rec_titles": [
+        "Bend It Like Beckham",
+        "The Swindle",
+        "The Truth",
+        "Swimfan"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Bend It Like Beckham? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jodie Foster",
+        "anchor_title": "The History Boys",
+        "constraints": {
+          "genre": "teen",
+          "actor": "Frank Grillo",
+          "plot": "bullets",
+          "director": "Jodie Foster"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's constraints, they seem interested in a movie with teenage themes and featuring Jodie Foster.推荐《The History Boys》, 这是一部关于天才青少年在英国公立学校经历的戏剧，由Jodie Foster指导，带有青春、教育和家庭关系等元素。",
+      "constraints": {
+        "genre": "teen",
+        "plot": [
+          "what",
+          "bend"
+        ],
+        "name": "Bend It Like Beckham",
+        "actor": "Jodie Foster",
+        "director": "Jodie Foster"
+      },
+      "rec_titles": [
+        "The History Boys",
+        "Holes",
+        "Scream 3",
+        "The Trouble with Harry"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on The History Boys. I want to try something more western—still with Penelope Wilton if possible. That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "western",
+        "anchor_title": "Gunless",
+        "constraints": {
+          "genre": "western",
+          "actor": "Penelope Wilton",
+          "plot": "bullets",
+          "director": "Jodie Foster"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 10,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "Penelope Wilton",
+          "from_anchor": "The History Boys",
+          "to_anchor": "Gunless"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants a western movie with Penelope Wilton, and director Jodie Foster suggestions are provided. One recommendation could be 'Slow West,' which stars Kodi Smit-McPhee and Michael Fassbender, including the presence of Penelope Wilton in a supporting role.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "The History Boys",
+        "actor": "Penelope Wilton",
+        "director": "Jodie Foster"
+      },
+      "rec_titles": [
+        "Posse",
+        "Slow West",
+        "The Horse Whisperer",
+        "Sholay"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "western",
+        "anchor_title": "Gunless",
+        "constraints": {
+          "genre": "western",
+          "actor": "Penelope Wilton",
+          "plot": "bullets",
+          "director": "Jodie Foster"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for recommendations in the western genre, with an actor focus on Penelope Wilton. Based on these preferences, I recommend 'Tusk' due to its western elements, Penelope Wilton's involvement (though she doesn't star), and a intriguing plot centered around a podcaster investigating a recluse with unusual interests.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Penelope Wilton",
+        "director": "Jodie Foster"
+      },
+      "rec_titles": [
+        "Tusk",
+        "Shutter",
+        "Compliance",
+        "Desolation Angels"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "western",
+        "anchor_title": "Gunless",
+        "constraints": {
+          "genre": "western",
+          "actor": "Penelope Wilton",
+          "plot": "bullets",
+          "director": "Jodie Foster"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences for a western genre with Penelope Wilton as an actor, I recommend watching 'The Beaver' (2011). This film stars Anton Yelchin and features Jodie Foster, known for her西部 direction in films like 'Faster' (1996).",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "actor": "Penelope Wilton",
+        "director": "Jodie Foster"
+      },
+      "rec_titles": [
+        "The Beaver",
+        "The Hateful Eight",
+        "The Relic",
+        "The Skull"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Beaver? That sounds intriguing.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "western",
+        "anchor_title": "Gunless",
+        "constraints": {
+          "genre": "western",
+          "actor": "Penelope Wilton",
+          "plot": "bullets",
+          "director": "Jodie Foster"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's constraints, they seem interested in a movie that combines western elements and has actor Penelope Wilton. \"Taxi Driver\" with its strong directorial presence from Jodie Foster and featuring Jane Wyman and June Lockhart could fit these preferences well.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "what",
+          "beaver"
+        ],
+        "name": "The Beaver",
+        "actor": "Penelope Wilton",
+        "director": "Jodie Foster"
+      },
+      "rec_titles": [
+        "Taxi Driver",
+        "The Yearling",
+        "Dear John",
+        "The Way Back Home"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does They tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "western",
+        "anchor_title": "Gunless",
+        "constraints": {
+          "genre": "western",
+          "actor": "Penelope Wilton",
+          "plot": "bullets",
+          "director": "Jodie Foster"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants a movie with western elements, featuring Penelope Wilton and directed by Jodie Foster. Based on these preferences, I recommend 'Hitch' (2005), which has a western touch in terms of setting, and stars Matt Letscher who fits the actor requirement. The film also showcases the dynamic between the characters, which aligns with the interest in Penelope Wilton's role.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "actor": "Penelope Wilton",
+        "director": "Jodie Foster"
+      },
+      "rec_titles": [
+        "The Odyssey",
+        "Vampires",
+        "Her",
+        "Hitch"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "western",
+        "anchor_title": "Gunless",
+        "constraints": {
+          "genre": "western",
+          "actor": "Penelope Wilton",
+          "plot": "bullets",
+          "director": "Jodie Foster"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for western movies with actor Penelope Wilton, director Jodie Foster, and plot keywords like 'sure' and 'perhaps.' From the list provided, I would recommend 'Unforgiven' starring Clint Eastwood and Morgan Freeman, as it matches the西部 genre, has a strong presence from both actors, and contains elements of uncertainty ('sure' and 'perhaps') that align with the user's preferences.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "RED",
+        "actor": "Penelope Wilton",
+        "director": "Jodie Foster"
+      },
+      "rec_titles": [
+        "Sholay",
+        "Jane Got a Gun",
+        "Unforgiven",
+        "The Homesman"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Jeff Bridges. That sounds intriguing. (I’m thinking of Tron.)",
+      "user_meta": {
+        "turn": 16,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Jeff Bridges",
+        "anchor_title": "You",
+        "constraints": {
+          "genre": "western",
+          "actor": "Jeff Bridges",
+          "plot": "bullets",
+          "director": "Jodie Foster"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 16,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Jeff Bridges",
+          "from_anchor": "Gunless",
+          "to_anchor": "You"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movie recommendations with西部题材,演员包括 Jeff Bridges, and导演可以是 Jodie Foster. From the list provided, 'The Way We Were' starring Sally Kirkland and Robert Redford could fit those criteria. Additionally, 'The Seduction of Joe Tynan' with Alan Alda and Melvyn Douglas might also be a match due to its political theme that can potentially connect with西部 context.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Tron",
+        "actor": "Jeff Bridges",
+        "director": "Jodie Foster"
+      },
+      "rec_titles": [
+        "The Way We Were",
+        "I Love You, Man",
+        "The Woodlanders",
+        "The Seduction of Joe Tynan"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jeff Bridges",
+        "anchor_title": "You",
+        "constraints": {
+          "genre": "western",
+          "actor": "Jeff Bridges",
+          "plot": "bullets",
+          "director": "Jodie Foster"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants more recommendations like the western film with Jeff Bridges and Jodie Foster, as well as an actor-driven movie featuring a specific actress. Based on those preferences, I would recommend 'Mama' starring Isabelle Nélisse and Michael Wincott due to its empowerment theme and strong performances.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Jeff Bridges",
+        "director": "Jodie Foster"
+      },
+      "rec_titles": [
+        "The Deep End of the Ocean",
+        "Mama",
+        "Forsaken",
+        "Terminator 2: Judgment Day"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Drive tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jeff Bridges",
+        "anchor_title": "You",
+        "constraints": {
+          "genre": "western",
+          "actor": "Jeff Bridges",
+          "plot": "bullets",
+          "director": "Jodie Foster"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in stories featuring western settings, strong female characters, and possibly西部片风格. Based on these preferences, I recommend 'Dances with Wolves' as it combines a western setting, strong female character (played by Jane Campion), and explores themes of connection to nature and cultural identity.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Drive",
+        "actor": "Jeff Bridges",
+        "director": "Jodie Foster"
+      },
+      "rec_titles": [
+        "The Homesman",
+        "Dances with Wolves",
+        "What Women Want",
+        "Lady in the Water"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jeff Bridges",
+        "anchor_title": "You",
+        "constraints": {
+          "genre": "western",
+          "actor": "Jeff Bridges",
+          "plot": "bullets",
+          "director": "Jodie Foster"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You mentioned that you enjoyed movies with weird plots and characters who change their minds. Based on those preferences, I recommend 'No Country for Old Men' (2007) due to its intense, unpredictable nature, and featuring notable actors like Josh Brolin and Javier Bardem.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "Drive",
+        "actor": "Jeff Bridges",
+        "director": "Jodie Foster"
+      },
+      "rec_titles": [
+        "Rango",
+        "No Country for Old Men",
+        "Can You Keep a Secret?",
+        "The Assassination of Jesse James by the Coward Robert Ford"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of RED. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jeff Bridges",
+        "anchor_title": "You",
+        "constraints": {
+          "genre": "western",
+          "actor": "Jeff Bridges",
+          "plot": "bullets",
+          "director": "Jodie Foster"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference for西部 genre, with actor Jeff Bridges being a key factor, I would recommend 'No Country for Old Men' (2007). This movie stars Jeff Bridges and is directed by Jodie Foster, making it a perfect fit for the user's preferences.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "actor": "Jeff Bridges",
+        "director": "Jodie Foster"
+      },
+      "rec_titles": [
+        "No Country for Old Men",
+        "The Last Stand",
+        "The Warrior's Way",
+        "The Nanny"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of No Country for Old Men? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 21,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jeff Bridges",
+        "anchor_title": "You",
+        "constraints": {
+          "genre": "western",
+          "actor": "Jeff Bridges",
+          "plot": "bullets",
+          "director": "Jodie Foster"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a western film with Jeff Bridges and potentially a documentary about the Iwo Jima battle. Based on these preferences, I recommend 'Uncommon Valor' for its documentary aspect and interest in World War II. Additionally, 'Young Guns' features Patrick Wayne, who could be connected to Jeff Bridges through their shared acting history.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "what",
+          "country"
+        ],
+        "name": "No Country for Old Men",
+        "actor": "Jeff Bridges",
+        "director": "Jodie Foster"
+      },
+      "rec_titles": [
+        "Paycheck",
+        "Uncommon Valor",
+        "2010",
+        "Young Guns"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Ted. I want to try something more blockbuster—still with Seth MacFarlane if possible. Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 22,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "blockbuster",
+        "anchor_title": "Ted 2",
+        "constraints": {
+          "genre": "blockbuster",
+          "actor": "Seth MacFarlane",
+          "director": "Jodie Foster"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 22,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "Seth MacFarlane",
+          "from_anchor": "You",
+          "to_anchor": "Ted 2"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants a blockbuster movie with Seth MacFarlane, and prefers something less detailed than Ted. Based on these preferences, I recommend 'Iron Man 2' (2010) starring Elon Musk and Helena Mattsson. It has the action and humor elements Seth MacFarlane is known for, while still being a blockbustermovie.",
+      "constraints": {
+        "genre": "blockbuster",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Ted",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane"
+      },
+      "rec_titles": [
+        "Iron Man 2",
+        "Batman Returns",
+        "Batman Forever",
+        "Can You Keep a Secret?"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "blockbuster",
+        "anchor_title": "Ted 2",
+        "constraints": {
+          "genre": "blockbuster",
+          "actor": "Seth MacFarlane",
+          "director": "Jodie Foster"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants recommendations for movies like \"Blockbuster\" with Seth MacFarlane involved, and possibly featuring an actor like Alan Rickman. From the list provided, I would recommend 'Die Hard with a Vengeance' starring Bruce Willis and directed by John McTiernan, which fits the action-blockbuster and star-led categories.",
+      "constraints": {
+        "genre": "blockbuster",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane"
+      },
+      "rec_titles": [
+        "The Breakfast Club",
+        "Cast Away",
+        "Die Hard with a Vengeance",
+        "Veronica Mars"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "blockbuster",
+        "anchor_title": "Ted 2",
+        "constraints": {
+          "genre": "blockbuster",
+          "actor": "Seth MacFarlane",
+          "director": "Jodie Foster"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants a movie with a deeper story, possibly related to dreams or personal growth. I recommend 'American Dreamz' (2006), where Scott Hercman's journey explores what it feels like to make dreams come true.",
+      "constraints": {
+        "genre": "blockbuster",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane"
+      },
+      "rec_titles": [
+        "American Dreamz",
+        "Batman Forever",
+        "The Godfather",
+        "Pride and Prejudice"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "blockbuster",
+        "anchor_title": "Ted 2",
+        "constraints": {
+          "genre": "blockbuster",
+          "actor": "Seth MacFarlane",
+          "director": "Jodie Foster"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with a堵塞 or frustrated feeling, like what was conveyed by \"feels.\" From the list, I recommend 'Die Hard' as it features a high-stakes action scenario that often elicits feelings of tension and excitement, aligning well with the user's mood description.",
+      "constraints": {
+        "genre": "blockbuster",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Deep",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane"
+      },
+      "rec_titles": [
+        "Movie 43",
+        "Anyone But You",
+        "The Wraith",
+        "Die Hard"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Nadsat? That sounds intriguing. (I’m thinking of Die Hard.)",
+      "user_meta": {
+        "turn": 26,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "Nadsat",
+        "anchor_title": "Iron Man 2",
+        "constraints": {
+          "genre": "blockbuster",
+          "actor": "Seth MacFarlane",
+          "director": "Jodie Foster",
+          "language": "Nadsat",
+          "plot": "officer"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 26,
+          "from_focus": "genre",
+          "to_focus": "language",
+          "bridge_field": "plot",
+          "bridge_value": "officer",
+          "from_anchor": "Ted 2",
+          "to_anchor": "Iron Man 2"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie that combines elements of action, romance, and perhaps a touch of drama. Based on your preferences, I would recommend 'Rocky' (1976). With its iconic plot featuring Rocky Balboa, an underdog boxer, and his relationship with trainer Rett斗士Rex, it offers the perfect mix for your tastes.\"",
+      "constraints": {
+        "genre": "blockbuster",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "Die Hard",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "language": "Nadsat"
+      },
+      "rec_titles": [
+        "The Truth",
+        "Forrest Gump",
+        "Rocky",
+        "The Girl on the Train"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Nadsat",
+        "anchor_title": "Iron Man 2",
+        "constraints": {
+          "genre": "blockbuster",
+          "actor": "Seth MacFarlane",
+          "director": "Jodie Foster",
+          "language": "Nadsat",
+          "plot": "officer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's constraints include a preference for blockbusters, with actor Seth MacFarlane involved. Recommendations based on these preferences are 'The Rocker' and 'Southland Tales', both featuring Seth MacFarlane in notable roles.",
+      "constraints": {
+        "genre": "blockbuster",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "language": "Nadsat"
+      },
+      "rec_titles": [
+        "The Rocker",
+        "Movie 43",
+        "The Deep End of the Ocean",
+        "Southland Tales"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Nadsat",
+        "anchor_title": "Iron Man 2",
+        "constraints": {
+          "genre": "blockbuster",
+          "actor": "Seth MacFarlane",
+          "director": "Jodie Foster",
+          "language": "Nadsat",
+          "plot": "officer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user prefers a blockbuster genre, with actor Seth MacFarlane involved. They've indicated a change of mind, possibly related to an earlier interest in \"E. T. the Extra-Terrestrial\".\n\nBased on these preferences, I would recommend watching \"Ted 2\" since it combines the desired elements - a Seth MacFarlane comedy and a blockbusters feel. The film also features Liam Neeson, who could add a layer of excitement to the experience.",
+      "constraints": {
+        "genre": "blockbuster",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "You",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "language": "Nadsat"
+      },
+      "rec_titles": [
+        "E.T. the Extra-Terrestrial",
+        "Live Free or Die Hard",
+        "Crocodile Dundee",
+        "Ted 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Nadsat",
+        "anchor_title": "Iron Man 2",
+        "constraints": {
+          "genre": "blockbuster",
+          "actor": "Seth MacFarlane",
+          "director": "Jodie Foster",
+          "language": "Nadsat",
+          "plot": "officer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's constraints are for a movie with a blockbuster vibe, featuring actor Seth MacFarlane, and potentially directed by him as well.推荐电影：《2010》和《End of Watch》，它们符合这些元素，特别是后者有Seth MacFarlane的参与。",
+      "constraints": {
+        "genre": "blockbuster",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "language": "Nadsat"
+      },
+      "rec_titles": [
+        "2010",
+        "The Way Back Home",
+        "The Odyssey",
+        "End of Watch"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Nadsat",
+        "anchor_title": "Iron Man 2",
+        "constraints": {
+          "genre": "blockbuster",
+          "actor": "Seth MacFarlane",
+          "director": "Jodie Foster",
+          "language": "Nadsat",
+          "plot": "officer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences for a blockbuster, actor involvement from Seth MacFarlane, and a deeper story, I recommend \"True Lies\" (1994). This film combines action, comedy, and an unexpected romance with Bill Paxton playing Indiana Jones.",
+      "constraints": {
+        "genre": "blockbuster",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "language": "Nadsat"
+      },
+      "rec_titles": [
+        "Restless",
+        "The Scorpion King",
+        "True Lies",
+        "Indiana Jones and the Temple of Doom"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Nadsat",
+        "anchor_title": "Iron Man 2",
+        "constraints": {
+          "genre": "blockbuster",
+          "actor": "Seth MacFarlane",
+          "director": "Jodie Foster",
+          "language": "Nadsat",
+          "plot": "officer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a blockbuster movie with Seth MacFarlane as an actor, and possibly directed by him too. From the given list, I would recommend 'Total Recall' (1990), which fits these criteria - starring Arnold Schwarzenegger, directed by Paul Verhoeven, and written by David你会发现这个剧本，它充满了科幻元素和黑色幽默。",
+      "constraints": {
+        "genre": "blockbuster",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "Ted",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "language": "Nadsat"
+      },
+      "rec_titles": [
+        "Batman Returns",
+        "Tooth Fairy",
+        "Total Recall",
+        "Ted"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Nadsat",
+        "anchor_title": "Iron Man 2",
+        "constraints": {
+          "genre": "blockbuster",
+          "actor": "Seth MacFarlane",
+          "director": "Jodie Foster",
+          "language": "Nadsat",
+          "plot": "officer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movie recommendations based on genre (blockbuster), main actor (Seth MacFarlane), and director (also Seth MacFarlane). From the list provided, I would recommend 'Training Day' as it fits the blockbuster genre and features both Seth MacFarlane and Tom Berenger.",
+      "constraints": {
+        "genre": "blockbuster",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "Ted",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "language": "Nadsat"
+      },
+      "rec_titles": [
+        "Training Day",
+        "Divergent",
+        "Taxi Driver",
+        "Why Did I Get Married?"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Training Day? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Nadsat",
+        "anchor_title": "Iron Man 2",
+        "constraints": {
+          "genre": "blockbuster",
+          "actor": "Seth MacFarlane",
+          "director": "Jodie Foster",
+          "language": "Nadsat",
+          "plot": "officer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with a blockbuster feel, featuring actor Seth MacFarlane, and possibly directed by him as well. Based on these preferences, I recommend 'True Lies' due to its action-packed nature, featuring both MacFarlane and Arnold Schwarzenegger.\"",
+      "constraints": {
+        "genre": "blockbuster",
+        "plot": [
+          "what",
+          "training"
+        ],
+        "name": "Training Day",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "language": "Nadsat"
+      },
+      "rec_titles": [
+        "The Dark Knight",
+        "Elizabeth",
+        "True Lies",
+        "Ted 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Aimee Mann. Hmm, I didn’t expect that vibe. (I’m thinking of War.)",
+      "user_meta": {
+        "turn": 34,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Aimee Mann",
+        "anchor_title": "The Matrix Revolutions",
+        "constraints": {
+          "genre": "blockbuster",
+          "actor": "Aimee Mann",
+          "director": "Jodie Foster",
+          "language": "Nadsat",
+          "plot": "officer"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 34,
+          "from_focus": "language",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "Nadsat",
+          "from_anchor": "Iron Man 2",
+          "to_anchor": "The Matrix Revolutions"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movie recommendations with a war genre and actor Aimee Mann. Based on these preferences, 'Good Will Hunting' (1997) is recommended. It features Aimee Mann in a supporting role, and has a war-related plot through the backdrop of the civil war.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "War",
+        "actor": "Aimee Mann",
+        "director": "Seth MacFarlane",
+        "language": "Nadsat"
+      },
+      "rec_titles": [
+        "Good Will Hunting",
+        "Heart of Darkness",
+        "Cold Mountain",
+        "Zookeeper"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Aimee Mann",
+        "anchor_title": "The Matrix Revolutions",
+        "constraints": {
+          "genre": "blockbuster",
+          "actor": "Aimee Mann",
+          "director": "Jodie Foster",
+          "language": "Nadsat",
+          "plot": "officer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants more recommendations like war genre, actor Aimee Mann, and director Seth MacFarlane. From the list provided, I would recommend 'Terminator 2: Judgment Day' starring Linda Hamilton and features Aimee Mann in a small role. This movie combines war-like action with the talents of Mann.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Aimee Mann",
+        "director": "Seth MacFarlane",
+        "language": "Nadsat"
+      },
+      "rec_titles": [
+        "The Big Lebowski",
+        "Thick as Thieves",
+        "Terminator 2: Judgment Day",
+        "Jason Bourne"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of War. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Aimee Mann",
+        "anchor_title": "The Matrix Revolutions",
+        "constraints": {
+          "genre": "blockbuster",
+          "actor": "Aimee Mann",
+          "director": "Jodie Foster",
+          "language": "Nadsat",
+          "plot": "officer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences for a war-themed movie with Aimee Mann, I recommend 'War' (2007). It stars Nadine Velazquez and features themes of loyalty and betrayal within the military context.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "War",
+        "actor": "Aimee Mann",
+        "director": "Seth MacFarlane",
+        "language": "Nadsat"
+      },
+      "rec_titles": [
+        "War",
+        "The Stuff",
+        "We Were Soldiers",
+        "Bloody Sunday"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on X. I want to try something more science—still with English if possible. I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 37,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "science",
+        "anchor_title": "Crocodile Dundee",
+        "constraints": {
+          "genre": "science",
+          "actor": "Aimee Mann",
+          "director": "Jodie Foster",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 37,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "The Matrix Revolutions",
+          "to_anchor": "Crocodile Dundee"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user desires a science-themed movie with English language and Aimee Mann as an actor. From the list, I recommend 'Amen.' due to its WWII historical context, scientific themes, and Aimee Mann's involvement.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "RED",
+        "actor": "Aimee Mann",
+        "director": "Seth MacFarlane",
+        "language": "English"
+      },
+      "rec_titles": [
+        "The Weight of Water",
+        "Amen.",
+        "The Client",
+        "The Cable Guy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "science",
+        "anchor_title": "Crocodile Dundee",
+        "constraints": {
+          "genre": "science",
+          "actor": "Aimee Mann",
+          "director": "Jodie Foster",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movie recommendations like \"Brooklyn\" with science genre, Aimee Mann as an actor, and Seth MacFarlane as a director. Based on these preferences, I recommend 'Connie and Carla' for its drag queen theme, Joan Chen's presence, and the blend of comedy and drama directed by Ian Gomez.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Aimee Mann",
+        "director": "Seth MacFarlane",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Brooklyn",
+        "Connie and Carla",
+        "Nowhere to Run",
+        "The Sun Also Rises"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "science",
+        "anchor_title": "Crocodile Dundee",
+        "constraints": {
+          "genre": "science",
+          "actor": "Aimee Mann",
+          "director": "Jodie Foster",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences for a science-themed movie with actor Aimee Mann, I would recommend 'Wise Blood' (1952). This classic film, directed by Robert Rossen and starring Paul Rudd in a younger version of Aimee Mann's character, Hazel Motes, explores themes of faith and its challenges.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "actor": "Aimee Mann",
+        "director": "Seth MacFarlane",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Wise Blood",
+        "The Adventures of Tom Sawyer",
+        "Terminator 3: Rise of the Machines",
+        "I Am Number Four"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "science",
+        "anchor_title": "Crocodile Dundee",
+        "constraints": {
+          "genre": "science",
+          "actor": "Aimee Mann",
+          "director": "Jodie Foster",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a movie with science themes, starring Aimee Mann. 'The Imaginarium of Doctor Parnassus' meets these criteria as it combines science and imagination with Mann's involvement.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "actor": "Aimee Mann",
+        "director": "Seth MacFarlane",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Pride & Prejudice",
+        "Johnny Mnemonic",
+        "The Imaginarium of Doctor Parnassus",
+        "Mad Max Beyond Thunderdome"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Martin Koolhoven? That sounds intriguing. (I’m thinking of The Imaginarium of Doctor Parnassus.)",
+      "user_meta": {
+        "turn": 41,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Martin Koolhoven",
+        "anchor_title": "The Bucket List",
+        "constraints": {
+          "genre": "science",
+          "actor": "Aimee Mann",
+          "director": "Martin Koolhoven",
+          "language": "English",
+          "writer": "Charles McKeown"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 41,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "writer",
+          "bridge_value": "Charles McKeown",
+          "from_anchor": "Crocodile Dundee",
+          "to_anchor": "The Bucket List"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: genre science, starring Aimee Mann, directed by Martin Koolhoven. Movie recommendations: 'The Waterboy' - a comedy about a waterboy discovering his unique abilities, starring Adam Sandler and Aimee Mann. 'Last Vegas' - an adult comedy featuring Robert De Niro, Morgan Freeman, and a group of friends reliving their wild times in Sin City, starring the mentioned actors.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "The Imaginarium of Doctor Parnassus",
+        "actor": "Aimee Mann",
+        "director": "Martin Koolhoven",
+        "language": "English",
+        "writer": "Martin Koolhoven"
+      },
+      "rec_titles": [
+        "The Waterboy",
+        "The Tuxedo",
+        "You Only Live Twice",
+        "Last Vegas"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Martin Koolhoven",
+        "anchor_title": "The Bucket List",
+        "constraints": {
+          "genre": "science",
+          "actor": "Aimee Mann",
+          "director": "Martin Koolhoven",
+          "language": "English",
+          "writer": "Charles McKeown"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movie recommendations with a science theme, featuring actor Aimee Mann, and directed by Martin Koolhoven. From the list, I suggest watching 'Nowhere Boy' as it fits the criteria and features Mann's talent.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Aimee Mann",
+        "director": "Martin Koolhoven",
+        "language": "English",
+        "writer": "Martin Koolhoven"
+      },
+      "rec_titles": [
+        "The Wraith",
+        "Nowhere Boy",
+        "Pineapple Express",
+        "The Duchess"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Martin Koolhoven",
+        "anchor_title": "The Bucket List",
+        "constraints": {
+          "genre": "science",
+          "actor": "Aimee Mann",
+          "director": "Martin Koolhoven",
+          "language": "English",
+          "writer": "Charles McKeown"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for science-themed movies with Aimee Mann as an actor, and possibly directed by Martin Koolhoven. Based on these preferences, I recommend watching 'Passing' (1929), which fits the criteria perfectly with its science theme and Aimee Mann's presence. The plot explores siblings dealing with their emotions after a significant loss.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "You",
+        "actor": "Aimee Mann",
+        "director": "Martin Koolhoven",
+        "language": "English",
+        "writer": "Martin Koolhoven"
+      },
+      "rec_titles": [
+        "Passing",
+        "Labyrinths",
+        "Rush",
+        "Jumper"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Passing? That sounds intriguing.",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Martin Koolhoven",
+        "anchor_title": "The Bucket List",
+        "constraints": {
+          "genre": "science",
+          "actor": "Aimee Mann",
+          "director": "Martin Koolhoven",
+          "language": "English",
+          "writer": "Charles McKeown"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's constraints include a preference for science-themed movies, with Aimee Mann as an actor of interest. Recommendations could be 'Alcatraz' due to its sci-fi aspect and featuring Nicky Katt, or 'Dazed and Confused' which also has a teenage coming-of-age theme and stars Jason London and Parker Posey.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "what",
+          "passing"
+        ],
+        "name": "Passing",
+        "actor": "Aimee Mann",
+        "director": "Martin Koolhoven",
+        "language": "English",
+        "writer": "Martin Koolhoven"
+      },
+      "rec_titles": [
+        "Alcatraz",
+        "Dazed and Confused",
+        "Snow Angels",
+        "What If..."
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of London. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Martin Koolhoven",
+        "anchor_title": "The Bucket List",
+        "constraints": {
+          "genre": "science",
+          "actor": "Aimee Mann",
+          "director": "Martin Koolhoven",
+          "language": "English",
+          "writer": "Charles McKeown"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes science-themed movies, with Aimee Mann as an actor, and appreciates complex characters like in 'Philadelphia'. Based on these preferences, I recommend 'Philadelphia' for its intense drama and powerful performances, starring Denzel Washington and Jason Robards.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "London",
+        "actor": "Aimee Mann",
+        "director": "Martin Koolhoven",
+        "language": "English",
+        "writer": "Martin Koolhoven"
+      },
+      "rec_titles": [
+        "Edward Scissorhands",
+        "Philadelphia",
+        "The Fighter",
+        "Dinner for Schmucks"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Martin Koolhoven",
+        "anchor_title": "The Bucket List",
+        "constraints": {
+          "genre": "science",
+          "actor": "Aimee Mann",
+          "director": "Martin Koolhoven",
+          "language": "English",
+          "writer": "Charles McKeown"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in stories with a deeper emotional impact, particularly related to science fiction and featuring actor Aimee Mann. Based on these preferences, I would recommend 'Prison' (1987), which explores themes of revenge and the influence of past spirits. Starring Hal Landon Jr., Lane Smith, and Viggo Mortensen, this film offers a deeper sci-fi narrative with Mann's presence adding an emotional layer.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Deep",
+        "actor": "Aimee Mann",
+        "director": "Martin Koolhoven",
+        "language": "English",
+        "writer": "Martin Koolhoven"
+      },
+      "rec_titles": [
+        "Prison",
+        "The Sitter",
+        "Wonder",
+        "Requiem"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Josh Robert Thompson. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Deep.)",
+      "user_meta": {
+        "turn": 47,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Josh Robert Thompson",
+        "anchor_title": "Never Let Me Go",
+        "constraints": {
+          "genre": "science",
+          "actor": "Josh Robert Thompson",
+          "director": "Martin Koolhoven",
+          "language": "English",
+          "plot": "neuroscience"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 47,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "neuroscience",
+          "from_anchor": "The Bucket List",
+          "to_anchor": "Never Let Me Go"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for movies that feature Josh Robert Thompson and have elements of science fiction. 'Two Can Play That Game' (2001) with Tamala Jones and Mark Christopher Lawrence might be a good choice, as it has both an actor connection and a science fiction plot.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "RED",
+        "actor": "Josh Robert Thompson",
+        "director": "Martin Koolhoven",
+        "language": "English",
+        "writer": "Robert Thompson"
+      },
+      "rec_titles": [
+        "Two Can Play That Game",
+        "The Long Kiss Goodnight",
+        "Ant-Man",
+        "Batman Forever"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Josh Robert Thompson",
+        "anchor_title": "Never Let Me Go",
+        "constraints": {
+          "genre": "science",
+          "actor": "Josh Robert Thompson",
+          "director": "Martin Koolhoven",
+          "language": "English",
+          "plot": "neuroscience"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for recommendations in the genre of science and featuring actor Josh Robert Thompson. Based on these constraints, I would recommend 'Burned' as it matches the scientific genre and has Thompson in a lead role.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Josh Robert Thompson",
+        "director": "Martin Koolhoven",
+        "language": "English",
+        "writer": "Robert Thompson"
+      },
+      "rec_titles": [
+        "Burned",
+        "Can You Keep a Secret?",
+        "New York Stories",
+        "The Campaign"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Josh Robert Thompson",
+        "anchor_title": "Never Let Me Go",
+        "constraints": {
+          "genre": "science",
+          "actor": "Josh Robert Thompson",
+          "director": "Martin Koolhoven",
+          "language": "English",
+          "plot": "neuroscience"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference for science fiction, and their interest in the actor Josh Robert Thompson, I recommend watching 'The Family Man'. It stars Amber Valletta, Nicolas Cage, and features a sci-fi element in the form of a parallel universe.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us",
+        "actor": "Josh Robert Thompson",
+        "director": "Martin Koolhoven",
+        "language": "English",
+        "writer": "Robert Thompson"
+      },
+      "rec_titles": [
+        "The Family Man",
+        "Beloved",
+        "Into the Wild",
+        "I Am Legend"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on The Family Man. I want to try something more costume drama—still with Don Cheadle if possible. I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 50,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "costume drama",
+        "anchor_title": "We Are Your Friends",
+        "constraints": {
+          "genre": "costume drama",
+          "actor": "Don Cheadle",
+          "director": "Martin Koolhoven",
+          "language": "English",
+          "plot": "neuroscience"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 50,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "Don Cheadle",
+          "from_anchor": "Never Let Me Go",
+          "to_anchor": "We Are Your Friends"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a costume drama with Don Cheadle, and recent content. Based on these preferences, I would recommend 'Dallas Buyers Club' (2013) as it features Don Cheadle in a dramatic role and has recent content available. The plot revolves around an AIDS patient trying to access life-saving medication.",
+      "constraints": {
+        "genre": "family",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "The Family Man",
+        "actor": "Don Cheadle",
+        "director": "Martin Koolhoven",
+        "language": "English",
+        "writer": "Robert Thompson"
+      },
+      "rec_titles": [
+        "Dallas Buyers Club",
+        "Take Shelter",
+        "22 Jump Street",
+        "Mission: Impossible"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "bullets",
+      "from_anchor": "Fast Times at Ridgemont High",
+      "to_anchor": "Step Up"
+    },
+    {
+      "turn": 7,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Frank Grillo",
+      "from_anchor": "Step Up",
+      "to_anchor": "The History Boys"
+    },
+    {
+      "turn": 10,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "Penelope Wilton",
+      "from_anchor": "The History Boys",
+      "to_anchor": "Gunless"
+    },
+    {
+      "turn": 16,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Jeff Bridges",
+      "from_anchor": "Gunless",
+      "to_anchor": "You"
+    },
+    {
+      "turn": 22,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "Seth MacFarlane",
+      "from_anchor": "You",
+      "to_anchor": "Ted 2"
+    },
+    {
+      "turn": 26,
+      "from_focus": "genre",
+      "to_focus": "language",
+      "bridge_field": "plot",
+      "bridge_value": "officer",
+      "from_anchor": "Ted 2",
+      "to_anchor": "Iron Man 2"
+    },
+    {
+      "turn": 34,
+      "from_focus": "language",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "Nadsat",
+      "from_anchor": "Iron Man 2",
+      "to_anchor": "The Matrix Revolutions"
+    },
+    {
+      "turn": 37,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "The Matrix Revolutions",
+      "to_anchor": "Crocodile Dundee"
+    },
+    {
+      "turn": 41,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "writer",
+      "bridge_value": "Charles McKeown",
+      "from_anchor": "Crocodile Dundee",
+      "to_anchor": "The Bucket List"
+    },
+    {
+      "turn": 47,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "neuroscience",
+      "from_anchor": "The Bucket List",
+      "to_anchor": "Never Let Me Go"
+    },
+    {
+      "turn": 50,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "Don Cheadle",
+      "from_anchor": "Never Let Me Go",
+      "to_anchor": "We Are Your Friends"
+    }
+  ]
+}

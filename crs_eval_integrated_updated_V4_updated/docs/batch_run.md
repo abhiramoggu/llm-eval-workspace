@@ -17,6 +17,8 @@ This enables paired statistical tests across models (Wilcoxon / paired t-test).
 
 ## Typical usage
 ```bash
-python -c "from batch_run import run_batch; run_batch(n_sessions=50)"
+python -c "from batch_run import run_batch; run_batch(n_sessions=100)"
 python analyze_results.py
 ```
+
+You can also set `N_SESSIONS` in `config.py` or export `N_SESSIONS` in the shell.

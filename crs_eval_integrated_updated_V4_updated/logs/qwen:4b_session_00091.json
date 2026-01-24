@@ -1,0 +1,2243 @@
+{
+  "session_id": "00091",
+  "model_name": "qwen:4b",
+  "true_genre": "musical",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a musical movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "musical",
+        "anchor_title": "Tangled",
+        "constraints": {
+          "genre": "musical"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I would recommend \"A Mighty Wind\" and \"The Bodyguard\". Both movies have strong performances by the cast, including Angela Lansbury in \"A Mighty Wind\", and Jeff Bridges in \"The Bodyguard\". Additionally, both movies have engaging plots that keep the audience interested. Overall, \"A Mighty Wind\" and \"The Bodyguard\" are both excellent movies that I highly recommend to anyone who enjoys watching musical movies.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "musical",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "A Mighty Wind",
+        "The Hound of the Baskervilles",
+        "The Last Unicorn",
+        "The Bodyguard"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of A Mighty Wind? That sounds intriguing.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "musical",
+        "anchor_title": "Tangled",
+        "constraints": {
+          "genre": "musical"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences, here are two movie recommendations:\n1. \"Passion\" - This is a musical drama that tells the story of Jack Passion, a man who has defied social convention and become an ambassador for as. Through good times and bad, he has pushed on to become the two time world beard champion.\n2. \"That Thing You Do!\" - This is a biographical musical comedy film based on the true story of The Shins, a small-time American band that achieved great success in 1996 with their only album called \"That Thing You Do!\".",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "mighty"
+        ],
+        "name": "A Mighty Wind"
+      },
+      "rec_titles": [
+        "Passion",
+        "That Thing You Do!",
+        "Man on Fire",
+        "I Heart Huckabees"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Pat O'Connor (Director)? That sounds intriguing. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 3,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Pat O'Connor (Director)",
+        "anchor_title": "Chicago",
+        "constraints": {
+          "genre": "musical",
+          "director": "Pat O'Connor (Director)",
+          "plot": "childhood"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 3,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "childhood",
+          "from_anchor": "Tangled",
+          "to_anchor": "Chicago"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I would recommend \"Crazy Heart\" as it fits well with the genre and director mentioned. Another option could be \"Armageddon\", which is another popular action movie that could be of interest to the user. Ultimately, the choice between these two movies will depend on the specific tastes and preferences of the individual who is seeking recommendations for a movie.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Us",
+        "director": "Pat O'Connor"
+      },
+      "rec_titles": [
+        "The Wonderful Wizard of Oz",
+        "Armageddon",
+        "Crazy Heart",
+        "Spice World"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Pat O'Connor (Director)",
+        "anchor_title": "Chicago",
+        "constraints": {
+          "genre": "musical",
+          "director": "Pat O'Connor (Director)",
+          "plot": "childhood"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I would recommend \"RED\" (2010) as it is similar in genre and director to what the user has asked for.\n\"RED\" (2010) is an action-packed film that follows a team of skilled agents who are tasked with stopping a group of ruthless criminals who are planning to release a deadly virus into the world.\nThe film stars Bruce Willis, Morgan Freeman, Michelle Nolden, and Chris Pine as they lead their team through various challenges and obstacles in order to stop the group of criminals from releasing the deadly virus into the world.\nOverall, \"RED\" (2010) is an action-packed film that follows a team of skilled agents who are tasked with stopping a group of ruthless criminals who are planning to release a deadly virus into the world.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Pat O'Connor"
+      },
+      "rec_titles": [
+        "The Goodbye Girl",
+        "Happy Feet",
+        "Be Cool",
+        "RED"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Pamela Anderson. That feels deeper than I thought. (I’m thinking of They.)",
+      "user_meta": {
+        "turn": 5,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Pamela Anderson",
+        "anchor_title": "1900",
+        "constraints": {
+          "genre": "musical",
+          "director": "Pat O'Connor (Director)",
+          "plot": "childhood",
+          "actor": "Pamela Anderson"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 5,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "director",
+          "bridge_value": "Pat O'Connor (Director)",
+          "from_anchor": "Chicago",
+          "to_anchor": "1900"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I recommend \"The Goonies\". It is a classic adventure film with plenty of action and humor. The cast includes Josh Brolin, Robert Davi, Lupe Ontiveros, Steve Antin, Sean Astin, Martha Plimpton, Corey Feldman, Joe Pantoliano, Richard Donner.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "They",
+        "director": "Pat O'Connor",
+        "actor": "Pamela Anderson"
+      },
+      "rec_titles": [
+        "Source Code",
+        "The River Why",
+        "Happy Feet",
+        "The Goonies"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Pamela Anderson",
+        "anchor_title": "1900",
+        "constraints": {
+          "genre": "musical",
+          "director": "Pat O'Connor (Director)",
+          "plot": "childhood",
+          "actor": "Pamela Anderson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, here are two movie recommendations:\n\n1. Title: Lord Jim (1900) ) | Plot: After being discredited as a coward, a 19th century seaman lives for only one purpose: to redeem himself. \n\n2. Title: Panic Room (2002) ) | Plot: Leah Altman (Emma Meyer, A Lethal History) has just moved into her new house, and finds herself fleeing for her life, and hiding in the panic room, when three burglars break into her house to steal a fortune left behind, but it'",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Pat O'Connor",
+        "actor": "Pamela Anderson"
+      },
+      "rec_titles": [
+        "Three Kings",
+        "Happy Feet",
+        "Panic Room",
+        "Lord Jim"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does RED tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Pamela Anderson",
+        "anchor_title": "1900",
+        "constraints": {
+          "genre": "musical",
+          "director": "Pat O'Connor (Director)",
+          "plot": "childhood",
+          "actor": "Pamela Anderson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, here are some movie recommendations:\n\n1. Title: The Red Violin (1998) | Plot: A red-colored violin inspires passion, making its way through three centuries over several owners and countries, eventually ending up at an auction where it may find a new owner. | Starring: Johannes Silberschneider, Carlo Cecchi, Clotilde Mollet",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "director": "Pat O'Connor",
+        "actor": "Pamela Anderson"
+      },
+      "rec_titles": [
+        "The Red Violin",
+        "The Expendables 2",
+        "Witless Protection",
+        "Little Fockers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Passion. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Pamela Anderson",
+        "anchor_title": "1900",
+        "constraints": {
+          "genre": "musical",
+          "director": "Pat O'Connor (Director)",
+          "plot": "childhood",
+          "actor": "Pamela Anderson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend watching \"Masked and Anonymous\" as it is a musical comedy film that stars Steven Bauer, Laura Harring, Reggie Lee, Fred Ward, Chris Penn, Val Kilmer, Ed Harris, Cheech Marin, Cheech Marin, Bob Dylan, Bruce Dern, Bruce Dern, Jeff Bridges, Jeff Bridges",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Passion",
+        "director": "Pat O'Connor",
+        "actor": "Pamela Anderson"
+      },
+      "rec_titles": [
+        "Masked and Anonymous",
+        "Mama",
+        "Providence",
+        "That Thing You Do!"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we look at films from around 1940? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of War.)",
+      "user_meta": {
+        "turn": 9,
+        "stage": "waiting_system",
+        "focus_field": "year",
+        "focus_value": "1940",
+        "anchor_title": "The Country Bears",
+        "constraints": {
+          "genre": "musical",
+          "director": "Pat O'Connor (Director)",
+          "plot": "khalid",
+          "actor": "Pamela Anderson",
+          "year": "1940"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 9,
+          "from_focus": "actor",
+          "to_focus": "year",
+          "bridge_field": "plot",
+          "bridge_value": "khalid",
+          "from_anchor": "1900",
+          "to_anchor": "The Country Bears"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, here are two movie recommendations:\n- Title: The Godfather (1972) ) | Plot: The Godfather is a 1972 American crime film directed by Francis Ford Coppola and based on Mario Puzo's best-selling novel of the same name. It stars Marlon Brando as Don Vito Corleone, a powerful Mafia boss in New York City. The supporting cast includes Al Pacino as Sonny Bloomy, a violent criminal who is one of Don Vito Corleone's most trusted lieutenants. James Caan plays George R. Caan, Don Vito Corleone's youngest son and one of his most trusted lieutenants. Robert Duvall plays Harry Corleone, Don Vito Corleone's second oldest son and one of his most trusted lieutenants.\n- Title: The Shawshank Redemption (1994) ) | Plot: The Shawshank Redemption is a 1994 American drama film directed by Frank Darabont and based on Stephen King's novella \"Rita Hayworth and the Shining\" published in 1982.\n\nThe supporting cast includes Tim Robbins as Andy Dufresne, an ex-convict who has been living in Shawshank Penitentiary for over two decades. Meryl Streep plays Sara Guberman, a rich lawyer's wife who is on trial at Shawshank Penitentiary for her role in the murder of her husband's mistress. William Hurt plays Red, an old inmate at Shawshank Penitentiary who has been living there for over two decades. Bob Gunton plays Harry Callaway, a rich businessman and the owner of Shawshank Penitentiary. Jack Nicholson plays Warden Norton, the head of the corrections department at Shawshank Penitentiary.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "look"
+        ],
+        "name": "War",
+        "director": "Pat O'Connor",
+        "actor": "Pamela Anderson",
+        "year": "1940"
+      },
+      "rec_titles": [
+        "Patton",
+        "Flags of Our Fathers",
+        "The Book Thief",
+        "Hitch"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "year",
+        "focus_value": "1940",
+        "anchor_title": "The Country Bears",
+        "constraints": {
+          "genre": "musical",
+          "director": "Pat O'Connor (Director)",
+          "plot": "khalid",
+          "actor": "Pamela Anderson",
+          "year": "1940"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Insidious, Winter in Wartime, and Hopeless are good options if you're looking for something similar to Insidious. While Winter in Wartime is not as popular as Insidious, it still has some fans who enjoy its unique blend of horror and suspense. If you're looking for a movie that is both scary and suspenseful, then I would recommend checking out either Winter in Wartime or Hopeless.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Pat O'Connor",
+        "actor": "Pamela Anderson",
+        "year": "1940"
+      },
+      "rec_titles": [
+        "Insidious",
+        "Winter in Wartime",
+        "Hopeless",
+        "Fury"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of War. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "year",
+        "focus_value": "1940",
+        "anchor_title": "The Country Bears",
+        "constraints": {
+          "genre": "musical",
+          "director": "Pat O'Connor (Director)",
+          "plot": "khalid",
+          "actor": "Pamela Anderson",
+          "year": "1940"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I would recommend \"The Blood of My Brother\" (2005) and \"In the Woods\" (2007). Both movies feature monsters living in urban forests, similar to the protagonist in \"The Blood of My Brother\". Additionally, both movies have received positive reviews from audiences and critics alike. Therefore, I believe that both movies would be enjoyable for the user based on their preferences.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "War",
+        "director": "Pat O'Connor",
+        "actor": "Pamela Anderson",
+        "year": "1940"
+      },
+      "rec_titles": [
+        "The Blood of My Brother",
+        "In the Woods",
+        "A Bridge Too Far",
+        "The Pianist"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Matt Letscher. That feels deeper than I thought. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 12,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Matt Letscher",
+        "anchor_title": "For Whom the Bell Tolls",
+        "constraints": {
+          "genre": "musical",
+          "director": "Pat O'Connor (Director)",
+          "plot": "khalid",
+          "actor": "Matt Letscher",
+          "year": "1940"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 12,
+          "from_focus": "year",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Matt Letscher",
+          "from_anchor": "The Country Bears",
+          "to_anchor": "For Whom the Bell Tolls"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference cues, I would recommend watching \"Lord of War\" (1995) directed by Jean-Pierre Melville. The movie features an arms dealer who confronts his morality as he is chased by Interpol agents. The film stars Liya Kebede and Tony Kgoroge.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Her",
+        "director": "Pat O'Connor",
+        "actor": "Matt Letscher",
+        "year": "1940"
+      },
+      "rec_titles": [
+        "Lord of War",
+        "Trees Lounge",
+        "Dances with Wolves",
+        "The River Why"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Matt Letscher",
+        "anchor_title": "For Whom the Bell Tolls",
+        "constraints": {
+          "genre": "musical",
+          "director": "Pat O'Connor (Director)",
+          "plot": "khalid",
+          "actor": "Matt Letscher",
+          "year": "1940"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I would recommend \"Rob Roy\" to you. This movie stars Liam Neeson and is a historical drama set during the Scottish Wars of Independence in the late 17th century. The movie tells the story of Rob Roy MacGregor, a Scottish farmer who becomes an outlaw after being wronged by a nobleman. The movie follows Rob Roy as he travels across Scotland, fighting off Redcoats and other enemies along the way. Overall, \"Rob Roy\" is a well-made historical drama that tells the story of Rob Roy MacGregor, an Scottish farmer who becomes an outlaw after being wronged by a nobleman.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Pat O'Connor",
+        "actor": "Matt Letscher",
+        "year": "1940"
+      },
+      "rec_titles": [
+        "Alex in Wonderland",
+        "Rob Roy",
+        "Veronica Mars",
+        "Lincoln"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Rob Roy tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Matt Letscher",
+        "anchor_title": "For Whom the Bell Tolls",
+        "constraints": {
+          "genre": "musical",
+          "director": "Pat O'Connor (Director)",
+          "plot": "khalid",
+          "actor": "Matt Letscher",
+          "year": "1940"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Here are some recommendations based on the user's preferences:\n\n1. \"The Taming of the Shrew\" - This classic Shakespearean play tells the story of two feuding families in sixteenth century Italy, who fall in love and must overcome their differences to be happy together. The movie stars Matt Letscher as Petrus Casarini, Denzel Washington as Isabella de la Casa, Chloë Grace Moretz as Bianca de la Casa, Parker Sawyers as Lord Montague, Jenny McCarthy as Lady Capulet, Jenny McCarthy as Lady Capulet, Ivana Milicevic as Queen Elizabeth I, Yaphet Kotto as the Duke of York, Joe Mantegna as the Duke of Gloucester",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Rob Roy",
+        "director": "Pat O'Connor",
+        "actor": "Matt Letscher",
+        "year": "1940"
+      },
+      "rec_titles": [
+        "The Taming of the Shrew",
+        "The Equalizer",
+        "Zero Dark Thirty",
+        "Witless Protection"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Matt Letscher",
+        "anchor_title": "For Whom the Bell Tolls",
+        "constraints": {
+          "genre": "musical",
+          "director": "Pat O'Connor (Director)",
+          "plot": "khalid",
+          "actor": "Matt Letscher",
+          "year": "1940"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Here are a few recommendations based on the user's preferences:\n- \"Annie Hall\" (1977) directed by Alfonso Cuarón features performances from Meryl Streep, John Travolta, and Robert De Niro.\n- \"Uptown Girls\" (N/A) directed by Brian Tichmarsh explores themes of gender identity and personal growth through the lens of a modern-day nightclub singer.\n- \"District 9\" (2009) directed by Peter Berg explores themes of racial inequality and social justice through the lens of a modern-day alien invasion in South Africa.\n- \"Saving Private Ryan\" (1998) directed by Steven Spielberg explores themes of war, sacrifice, and brotherhood through the lens of a modern-day World War II combat in Europe.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "director": "Pat O'Connor",
+        "actor": "Matt Letscher",
+        "year": "1940"
+      },
+      "rec_titles": [
+        "Annie Hall",
+        "Uptown Girls",
+        "District 9",
+        "Saving Private Ryan"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Matt Letscher",
+        "anchor_title": "For Whom the Bell Tolls",
+        "constraints": {
+          "genre": "musical",
+          "director": "Pat O'Connor (Director)",
+          "plot": "khalid",
+          "actor": "Matt Letscher",
+          "year": "1940"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I would recommend \"Aladdin\" as a movie with a similar vibe. Another recommendation could be \"The End of the Affair\", which is also a love story with an element of surprise.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "Ted",
+        "director": "Pat O'Connor",
+        "actor": "Matt Letscher",
+        "year": "1940"
+      },
+      "rec_titles": [
+        "Aladdin",
+        "This Is Spinal Tap",
+        "The End of the Affair",
+        "Sweet November"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Matt Letscher",
+        "anchor_title": "For Whom the Bell Tolls",
+        "constraints": {
+          "genre": "musical",
+          "director": "Pat O'Connor (Director)",
+          "plot": "khalid",
+          "actor": "Matt Letscher",
+          "year": "1940"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences and constraints, I would recommend the movie \"There Be Dragons\" by director Christopher Nolan.\nThis movie follows the story of two brothers who find themselves in possession of a mysterious artifact known as \"Dragon's Breath.\" As they navigate through treacherous landscapes and face off against rival treasure hunters, the brothers must come to terms with their family history and work together to overcome their personal demons and fulfill their destiny.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "Ted",
+        "director": "Pat O'Connor",
+        "actor": "Matt Letscher",
+        "year": "1940"
+      },
+      "rec_titles": [
+        "Rob Roy",
+        "Redacted",
+        "There Be Dragons",
+        "The White Countess"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Ericson Core? That sounds intriguing. (I’m thinking of Hero.)",
+      "user_meta": {
+        "turn": 18,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Ericson Core",
+        "anchor_title": "Moulin Rouge!",
+        "constraints": {
+          "genre": "musical",
+          "director": "Ericson Core",
+          "plot": "khalid",
+          "actor": "Matt Letscher",
+          "writer": "Samantha Young"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 18,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "writer",
+          "bridge_value": "Samantha Young",
+          "from_anchor": "For Whom the Bell Tolls",
+          "to_anchor": "Moulin Rouge!"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'm sorry, but based on the user's preferences cues and constraints provided, there are no movies that match those criteria.\nIt seems like the user is looking for a movie that fits certain criteria such as being set in a German-occupied Netherlands and having a plot that involves getting involved in the Dutch resistance after coming to the aid of a wounded RAF pilot. It also seems like the user is looking for a movie that has been released within a specific timeframe, which is not mentioned by the user.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Her",
+        "director": "Ericson Core",
+        "actor": "Matt Letscher",
+        "year": "1940"
+      },
+      "rec_titles": [
+        "Red Dawn",
+        "Psychic Experiment",
+        "True Blood",
+        "Winter in Wartime"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ericson Core",
+        "anchor_title": "Moulin Rouge!",
+        "constraints": {
+          "genre": "musical",
+          "director": "Ericson Core",
+          "plot": "khalid",
+          "actor": "Matt Letscher",
+          "writer": "Samantha Young"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, here are two movie recommendations that fit their criteria:\n\n1. Title: The Warlords (2007) ) | Plot: In China in 1860s, a bandit leader Qingyun joins with other two bandit leaders as they raid on rebels and in blood oath. They form a Qing loyal army with eyes on rebel held Suzhou and Nanjing.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Ericson Core",
+        "actor": "Matt Letscher",
+        "year": "1940"
+      },
+      "rec_titles": [
+        "The Warlords",
+        "True Crime",
+        "The Secret of My Success",
+        "Braveheart"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ericson Core",
+        "anchor_title": "Moulin Rouge!",
+        "constraints": {
+          "genre": "musical",
+          "director": "Ericson Core",
+          "plot": "khalid",
+          "actor": "Matt Letscher",
+          "writer": "Samantha Young"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference cues, I would recommend two movies: \"The Pianist\" (2002) directed by Ericson Core and starring Frank Finlay, Emilia Fox, Ed Stoppard. The movie tells the story of Wladyslaw Szpilowicz, a renowned Polish pianist who experienced persecution and loss during World War II.\nAnother recommendation would be \"The Last Samurai\" (2003) directed by Samuiichi Kimura and starring Togo Igawa, William Atherton, Chad Lindberg, Chad Lindberg, Timothy Spall, Yuki Matsuzaki, Billy Connolly, Tony Goldwyn, Tony Goldwyn, Tom Cruise, Tom Cruise.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "You",
+        "director": "Ericson Core",
+        "actor": "Matt Letscher",
+        "year": "1940"
+      },
+      "rec_titles": [
+        "The Pianist",
+        "Starship Troopers",
+        "The Last Samurai",
+        "Lincoln"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 21,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ericson Core",
+        "anchor_title": "Moulin Rouge!",
+        "constraints": {
+          "genre": "musical",
+          "director": "Ericson Core",
+          "plot": "khalid",
+          "actor": "Matt Letscher",
+          "writer": "Samantha Young"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference cues and genre information, here are two movie recommendations:\n- Title: The Good布局  (2015)  | Plot: In this action-packed thriller, a young American businessman named John who has been successful in his business ventures is unexpectedly kidnapped while he is traveling on a private jet. When he is rescued from his kidnappers, John realizes that he has been targeted by some powerful enemies who have been using him as a pawn in their various political and financial schemes. In order to survive these powerful enemies' malicious schemes and plot against John's life, John realizes that the only way for him to escape these powerful enemies' malicious schemes and plot against his life is to take action himself and use all of his resources, including his extensive knowledge and experience in business and finance, as well as his vast network of contacts and allies throughout the world, to help him navigate through these powerful enemies' malicious schemes and plot against his life, and ultimately achieve success in his business ventures.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "You",
+        "director": "Ericson Core",
+        "actor": "Matt Letscher",
+        "year": "1940"
+      },
+      "rec_titles": [
+        "The Secret of My Success",
+        "The White Countess",
+        "Catch-22",
+        "The Lucky Ones"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ericson Core",
+        "anchor_title": "Moulin Rouge!",
+        "constraints": {
+          "genre": "musical",
+          "director": "Ericson Core",
+          "plot": "khalid",
+          "actor": "Matt Letscher",
+          "writer": "Samantha Young"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I would recommend 'Point Break'. This movie is known for its intense action scenes and impressive performances by the cast. If you are a fan of action movies, then this is definitely one movie that you should definitely watch out for.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "director": "Ericson Core",
+        "actor": "Matt Letscher",
+        "year": "1940"
+      },
+      "rec_titles": [
+        "Training Day",
+        "Point Break",
+        "Kundun",
+        "Her"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ericson Core",
+        "anchor_title": "Moulin Rouge!",
+        "constraints": {
+          "genre": "musical",
+          "director": "Ericson Core",
+          "plot": "khalid",
+          "actor": "Matt Letscher",
+          "writer": "Samantha Young"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I would recommend \"Black Hawk Down\" and \"The Wind That Shakes the Barley\" as they are both historical dramas with high ratings on Rotten Tomatoes. Additionally, these two movies have received positive reviews from critics and audiences alike.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "RED",
+        "director": "Ericson Core",
+        "actor": "Matt Letscher",
+        "year": "1940"
+      },
+      "rec_titles": [
+        "Black Hawk Down",
+        "The Wind That Shakes the Barley",
+        "Gladiator",
+        "Rob Roy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Black Hawk Down. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ericson Core",
+        "anchor_title": "Moulin Rouge!",
+        "constraints": {
+          "genre": "musical",
+          "director": "Ericson Core",
+          "plot": "khalid",
+          "actor": "Matt Letscher",
+          "writer": "Samantha Young"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I recommend the following movies from this list:\n\n- \"Hart' s War\" (1959) is a classic war movie directed by Robert Wise. The movie stars James Stewart and John Wayne as two soldiers during World War II who are part of an intelligence operation that uses fake soldiers to infiltrate enemy forces. The movie is known for its realistic portrayal of the lives of soldiers during World War II, as well as its portrayal of the complex relationships between soldiers during World War II.\n- \"Starship Troopers\" (1959) is a classic science fiction movie directed by Robert Wise and starring Rod Steiger and Marlon Brando. The movie tells the story of two soldiers during World War II who are part of an intelligence operation that uses fake soldiers to infiltrate enemy forces. The movie is known for its realistic portrayal of the lives of soldiers during World War II, as well as its portrayal of the complex relationships between soldiers during World War II.\n- \"Annie Hall\" (1977) is a classic romantic comedy directed by Woody Allen and starring Diane Keaton and Jack Nicholson. The movie tells the story of an aspiring nightclub singer named Annie Hall who falls in love with a successful Jewish comedian named Alvy Singer at a New York City nightclub called the \"Cleopatra\"\". The movie is known for its realistic portrayal of the lives of club singers during New York City, as well as its portrayal of the complex relationships between club singers during New York City.\n- \"Gone with the Wind\" (1936) is a classic romantic drama directed by Victor Fleming and starring Vivien Leigh and Clark Gable. The movie tells the story of a sheltered and manipulative Southern belle named Scarlett O'Hara who falls in love with a successful Jewish comedian named Rhett Butler at a time when the Civil War has ended, Reconstruction has begun, slavery has been abolished, and is being rebuilt during this period of time.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Black Hawk Down",
+        "director": "Ericson Core",
+        "actor": "Matt Letscher",
+        "year": "1940"
+      },
+      "rec_titles": [
+        "Hart's War",
+        "Starship Troopers",
+        "Annie Hall",
+        "Gone with the Wind"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ericson Core",
+        "anchor_title": "Moulin Rouge!",
+        "constraints": {
+          "genre": "musical",
+          "director": "Ericson Core",
+          "plot": "khalid",
+          "actor": "Matt Letscher",
+          "writer": "Samantha Young"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences, I would recommend \"Flags of Our Fathers\" as it tells the story of six men who raised the flag at the Battle of Iwo Jima during World War II. The movie stars Ryan Phillippe, Joseph Cross, and Tom McCarthy among others.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what"
+        ],
+        "name": "X",
+        "director": "Ericson Core",
+        "actor": "Matt Letscher",
+        "year": "1940"
+      },
+      "rec_titles": [
+        "Louie",
+        "Casablanca",
+        "Fury",
+        "Flags of Our Fathers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Steve Le Marquand. That sounds intriguing. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 26,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Steve Le Marquand",
+        "anchor_title": "Nine",
+        "constraints": {
+          "genre": "musical",
+          "director": "Ericson Core",
+          "plot": "veteran",
+          "actor": "Steve Le Marquand"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 26,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "veteran",
+          "from_anchor": "Moulin Rouge!",
+          "to_anchor": "Nine"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference cues, I recommend 'Something Wild'. This movie stars Tracey Walter and Charles Napier. The plot of this movie revolves around a young rape victim who tries desperately to pick up the pieces of her life. However, she finds herself at the mercy of a would- be rescuer. Overall, this movie is recommended based on the user's preference cues.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "X",
+        "director": "Ericson Core",
+        "actor": "Steve Le Marquand",
+        "year": "1940"
+      },
+      "rec_titles": [
+        "Something Wild",
+        "The Tigger Movie",
+        "We Were Soldiers",
+        "The Hateful Eight"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Steve Le Marquand",
+        "anchor_title": "Nine",
+        "constraints": {
+          "genre": "musical",
+          "director": "Ericson Core",
+          "plot": "veteran",
+          "actor": "Steve Le Marquand"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference cues, I recommend two movies from the list provided:\n1. \"We Were Soldiers\" (2002) - This movie tells the story of the first major battle of the American phase of the Vietnam War, and the soldiers on both sides that fought it.\n2. \"RED\" (2010) - This movie tells the story of fast climbing Arthur Tate rose to his fame, wealth and respectability quickly from a beginning as a naive constable His rise was also due to 3 women: dressmaker Violet Lawson, Lily, the Baroness von Lukenberg, and movie producer Marigold Marado, His rise was also due to Mrs. Tate, who always seemed to have an extra bit of information which would make her suggest to the people that her son Arthur be provided a position where he could do more good. Perhaps Mrs. Tate had a grander plan for herself.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Ericson Core",
+        "actor": "Steve Le Marquand",
+        "year": "1940"
+      },
+      "rec_titles": [
+        "We Were Soldiers",
+        "RED",
+        "300",
+        "The Secret of My Success"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Steve Le Marquand",
+        "anchor_title": "Nine",
+        "constraints": {
+          "genre": "musical",
+          "director": "Ericson Core",
+          "plot": "veteran",
+          "actor": "Steve Le Marquand"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I would recommend Hotel Rwanda, which tells a story of war between two groups of people: Tutsis and Hutus. The movie shows how the Hutus militia systematically killed thousands of Tutsi refugees during their struggle against the Hutu army in Rwanda, Africa.\n\nThe other movie that could be recommended based on the user's preferences is We the Living. This movie tells a story of war between two groups of people: Tutsis and Hutus. The movie shows how the Hutus militia systematically killed thousands in Tutsi refugees during their struggle against the Hutu army in Rwanda, Africa.\n\nThese are just some examples of movies that could be recommended based on the user's preferences.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "director": "Ericson Core",
+        "actor": "Steve Le Marquand",
+        "year": "1940"
+      },
+      "rec_titles": [
+        "Hotel Rwanda",
+        "We the Living",
+        "Dear John",
+        "Flags of Our Fathers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of We the Living? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Steve Le Marquand",
+        "anchor_title": "Nine",
+        "constraints": {
+          "genre": "musical",
+          "director": "Ericson Core",
+          "plot": "veteran",
+          "actor": "Steve Le Marquand"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I would recommend 'Doctor Zhivago'. This classic novel tells the story of a Russian physician and poet who falls in love with the wife of a political activist during World War II. The novel is renowned for its beauty, sensitivity, and complexity. It has won numerous awards, including the Nobel Prize for Literature, and has become one of the most beloved novels in human history.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "living"
+        ],
+        "name": "RED",
+        "director": "Ericson Core",
+        "actor": "Steve Le Marquand",
+        "year": "1940"
+      },
+      "rec_titles": [
+        "Elizabeth",
+        "You",
+        "Doctor Zhivago",
+        "Patton"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Steve Le Marquand",
+        "anchor_title": "Nine",
+        "constraints": {
+          "genre": "musical",
+          "director": "Ericson Core",
+          "plot": "veteran",
+          "actor": "Steve Le Marquand"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I would recommend \"Red Cliff\" and \"Vertical Limit\". Both movies have great performances from their actors, and they both tell stories that are engaging and entertaining. Additionally, I would recommend \"Maid in Manhattan\" and \"Treasure Planet\". Both movies have great performances from their actors, and they both tell stories that are engaging and entertaining. Additionally, I would recommend \"Red Cliff\" and \"Vertical Limit\". Both movies have great performances from",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "director": "Ericson Core",
+        "actor": "Steve Le Marquand",
+        "year": "1940"
+      },
+      "rec_titles": [
+        "Red Cliff",
+        "Maid in Manhattan",
+        "Vertical Limit",
+        "Treasure Planet"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Steve Le Marquand",
+        "anchor_title": "Nine",
+        "constraints": {
+          "genre": "musical",
+          "director": "Ericson Core",
+          "plot": "veteran",
+          "actor": "Steve Le Marquand"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference cues, I recommend the following two movies from this list:\n- Title: Fury  (2014) )  | Plot: A grizzled tank commander makes tough decisions as he and his crew fight their way across Germany in April, 1945.  | Starring: Jim Parrack, Brad Pitt, Logan Lerman\n- Title: Kundun  (1997) )  | Plot: From childhood to adulthood, Tibet' s fourteenth Dalai Lama deals with Chinese oppression and other problems.  | Starring: Tenzin Thuthob Tsarong, Tulku Jamyang Kunga Tenzin, Tencho Gyalpo",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "RED",
+        "director": "Ericson Core",
+        "actor": "Steve Le Marquand",
+        "year": "1940"
+      },
+      "rec_titles": [
+        "The Last Samurai",
+        "Pearl Harbor",
+        "Fury",
+        "Kundun"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Orson Welles? Hmm, I didn’t expect that vibe. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 32,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Orson Welles",
+        "anchor_title": "Tangled",
+        "constraints": {
+          "genre": "musical",
+          "director": "Orson Welles",
+          "plot": "wild",
+          "actor": "Steve Le Marquand"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 32,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "wild",
+          "from_anchor": "Nine",
+          "to_anchor": "Tangled"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I would recommend \"American Gangster\" (2007) and \"Platoon\" (1986). Both movies deal with themes of war, camaraderie, and sacrifice. Additionally, both movies feature strong performances from a talented cast, making them well worth watching.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "X",
+        "director": "Orson Welles",
+        "actor": "Orson Welles",
+        "year": "1940",
+        "writer": "Orson Welles"
+      },
+      "rec_titles": [
+        "The Siege",
+        "American Gangster",
+        "Platoon",
+        "Fury"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Orson Welles",
+        "anchor_title": "Tangled",
+        "constraints": {
+          "genre": "musical",
+          "director": "Orson Welles",
+          "plot": "wild",
+          "actor": "Steve Le Marquand"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's constraints, I recommend the following two movies from the provided list:\n\n1. \"Insidious\" (2010)\n   - Plot: A family' s reaction when Ben, the youngest son, is kidnapped and then found nine years later living in the same town where his family had just moved.\n   - Starring: Brenda Strong, John Kapelos, Alexa PenaVega, Treat Williams, Treat Williams, Jonathan Jackson, Jonathan Jackson\n\n2. \"The Deep End of the Ocean\" (1996)\n   - Plot: A group of Jewish U. S. soldiers coincides with a theatre owner' s vengeful plans for the same.\n   - Starring: Brenda Strong, John Kapelos, Alexa PenaVega, Treat Williams",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Orson Welles",
+        "actor": "Orson Welles",
+        "year": "1940",
+        "writer": "Orson Welles"
+      },
+      "rec_titles": [
+        "Insidious",
+        "The Deep End of the Ocean",
+        "Inglourious Basterds",
+        "True Crime"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Latin Language? That sounds intriguing. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 34,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "Latin Language",
+        "anchor_title": "Sucker Punch",
+        "constraints": {
+          "genre": "musical",
+          "director": "Orson Welles",
+          "plot": "girl",
+          "actor": "Steve Le Marquand",
+          "language": "Latin Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 34,
+          "from_focus": "director",
+          "to_focus": "language",
+          "bridge_field": "plot",
+          "bridge_value": "girl",
+          "from_anchor": "Tangled",
+          "to_anchor": "Sucker Punch"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I would recommend both 'Zookeeper' and 'Madame Bovary'. Both movies explore themes of passion, excitement, and the consequences of pursuing these desires. The casting in both movies is particularly strong, with standout performances from both lead actors and supporting characters.\nOverall, both 'Zookeeper' and 'Madame Bovary' offer compelling storytelling and memorable performances that make them worth seeing for anyone who enjoys exploring themes of passion, excitement, and the consequences of pursuing these desires.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "X",
+        "director": "Orson Welles",
+        "actor": "Orson Welles",
+        "year": "1940",
+        "writer": "Orson Welles",
+        "language": "Latin Language"
+      },
+      "rec_titles": [
+        "Zookeeper",
+        "Madame Bovary",
+        "Rushmore",
+        "Fantastic Beasts and Where to Find Them"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Latin Language",
+        "anchor_title": "Sucker Punch",
+        "constraints": {
+          "genre": "musical",
+          "director": "Orson Welles",
+          "plot": "girl",
+          "actor": "Steve Le Marquand",
+          "language": "Latin Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "One recommendation could be \"Madame Bovary\" by Starring: Isabelle Nélisse, Javier Botet, Kristen Wiig; Directed by: Federico Fellini; Written by: Federico Fellini, Leonardo Benetti, Elio Masotti",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Orson Welles",
+        "actor": "Orson Welles",
+        "year": "1940",
+        "writer": "Orson Welles",
+        "language": "Latin Language"
+      },
+      "rec_titles": [
+        "Braveheart",
+        "Madame Bovary",
+        "Mama",
+        "How to Train Your Dragon"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Latin Language",
+        "anchor_title": "Sucker Punch",
+        "constraints": {
+          "genre": "musical",
+          "director": "Orson Welles",
+          "plot": "girl",
+          "actor": "Steve Le Marquand",
+          "language": "Latin Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "One movie that fits the constraints provided by the user is \"Life of Brian\". This comedy film, directed by Terry Gilliam and based on a book by George Harrison, tells the story of a group of friends in London during the late 20th century.\nThe film explores themes such as politics, religion, and social norms. The movie's unique blend of humor, satire, and social commentary makes it a standout choice for someone who is interested in exploring themes related to politics, religion, and social norms through the lens of humor, satire, and social commentary.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "You",
+        "director": "Orson Welles",
+        "actor": "Orson Welles",
+        "year": "1940",
+        "writer": "Orson Welles",
+        "language": "Latin Language"
+      },
+      "rec_titles": [
+        "Haunted",
+        "Pride and Prejudice",
+        "Mansfield Park",
+        "Life of Brian"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Latin Language",
+        "anchor_title": "Sucker Punch",
+        "constraints": {
+          "genre": "musical",
+          "director": "Orson Welles",
+          "plot": "girl",
+          "actor": "Steve Le Marquand",
+          "language": "Latin Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I recommend watching \"End of Days\" (2015). This movie combines elements from multiple genres, including science fiction, horror, and suspense.\n\nIn addition to its intriguing plot and memorable characters, \"End of Days\" also features some impressive special effects.\n\nOverall, \"End of Days\" is a highly entertaining and visually stunning movie that definitely deserves your attention.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "director": "Orson Welles",
+        "actor": "Orson Welles",
+        "year": "1940",
+        "writer": "Orson Welles",
+        "language": "Latin Language"
+      },
+      "rec_titles": [
+        "End of Days",
+        "Smilla's Sense of Snow",
+        "Find Me Guilty",
+        "The Rite"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of End of Days? That sounds intriguing.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Latin Language",
+        "anchor_title": "Sucker Punch",
+        "constraints": {
+          "genre": "musical",
+          "director": "Orson Welles",
+          "plot": "girl",
+          "actor": "Steve Le Marquand",
+          "language": "Latin Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I would recommend \"Smilla's Sense of Snow\". It is a beautiful and emotional film that tells an incredible story about a little girl who is trying to understand snow for the first time in her life. The film is beautifully shot, the acting is excellent, and the story is incredibly powerful and moving. Overall, I would highly recommend \"Smilla's Sense of Snow\" to anyone who enjoys beautiful and emotional films that tell incredible stories about incredible characters.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "days"
+        ],
+        "name": "End of Days",
+        "director": "Orson Welles",
+        "actor": "Orson Welles",
+        "year": "1940",
+        "writer": "Orson Welles",
+        "language": "Latin Language"
+      },
+      "rec_titles": [
+        "Sin City",
+        "Smilla's Sense of Snow",
+        "Little Fockers",
+        "The Order"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Latin Language",
+        "anchor_title": "Sucker Punch",
+        "constraints": {
+          "genre": "musical",
+          "director": "Orson Welles",
+          "plot": "girl",
+          "actor": "Steve Le Marquand",
+          "language": "Latin Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences and constraints, here are some potential recommendations:\n\n- Title: Angels & Demons (2009) | Plot: Harvard symbologist Robert Langdon works with a nuclear physicist to solve a murder and prevent a terrorist act against the Vatican during one of the significant events within the church. | Starring: Vincent De Paul, Thure Lindhardt, Pierfrancesco Favino, Stellan Skarsgård, Carmen Argenziano, Tom Hanks, Tom Hanks, Armin Mueller-Stahl, Armin Mueller-Stahl, Ayelet Zurer, Ayelet Zurer",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "director": "Orson Welles",
+        "actor": "Orson Welles",
+        "year": "1940",
+        "writer": "Orson Welles",
+        "language": "Latin Language"
+      },
+      "rec_titles": [
+        "Angels & Demons",
+        "Mama",
+        "The Godfather",
+        "End of Days"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Latin Language",
+        "anchor_title": "Sucker Punch",
+        "constraints": {
+          "genre": "musical",
+          "director": "Orson Welles",
+          "plot": "girl",
+          "actor": "Steve Le Marquand",
+          "language": "Latin Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference cues, here are some potential recommendations:\n- Title: Gangs of New York  (2002)  | Plot: In 1862, Amsterdam Vallon returns to the Five Points area of New York City seeking revenge against Bill the Butcher; his father'...\n- Title: Heart of Darkness  (1910)  | Plot: A police officer in Rio de Janeiro is assigned on a dangerous mission to search through the outskirts of the city to find Captain Kurtz, a famous policeman who went missing under mysterious circumstances.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "RED",
+        "director": "Orson Welles",
+        "actor": "Orson Welles",
+        "year": "1940",
+        "writer": "Orson Welles",
+        "language": "Latin Language"
+      },
+      "rec_titles": [
+        "Gangs of New York",
+        "Heart of Darkness",
+        "The Great Gatsby",
+        "2012"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Latin Language",
+        "anchor_title": "Sucker Punch",
+        "constraints": {
+          "genre": "musical",
+          "director": "Orson Welles",
+          "plot": "girl",
+          "actor": "Steve Le Marquand",
+          "language": "Latin Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference cues, I would recommend \"The World' S End\" as one of the top movies recommended to the user based on their preferences.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "RED",
+        "director": "Orson Welles",
+        "actor": "Orson Welles",
+        "year": "1940",
+        "writer": "Orson Welles",
+        "language": "Latin Language"
+      },
+      "rec_titles": [
+        "The World's End",
+        "Pride and Prejudice",
+        "Monty Python and the Holy Grail",
+        "Braveheart"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Casey Kasem. That feels deeper than I thought. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 42,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Casey Kasem",
+        "anchor_title": "Taken",
+        "constraints": {
+          "genre": "musical",
+          "director": "Orson Welles",
+          "plot": "night",
+          "actor": "Casey Kasem",
+          "language": "Latin Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 42,
+          "from_focus": "language",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "night",
+          "from_anchor": "Sucker Punch",
+          "to_anchor": "Taken"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I would recommend The Godfather Part II (N/ A)). This movie is a sequel to The Godfather and is known for its gripping storyline and iconic performances by Al Pacino, Robert Duvall, etc. If you haven't seen this classic film yet, I highly recommend it.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Deep",
+        "director": "Orson Welles",
+        "actor": "Casey Kasem",
+        "year": "1940",
+        "writer": "Orson Welles",
+        "language": "Latin Language"
+      },
+      "rec_titles": [
+        "The Seduction of Joe Tynan",
+        "Jingle All the Way",
+        "Pride and Prejudice",
+        "The Godfather Part II"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Casey Kasem",
+        "anchor_title": "Taken",
+        "constraints": {
+          "genre": "musical",
+          "director": "Orson Welles",
+          "plot": "night",
+          "actor": "Casey Kasem",
+          "language": "Latin Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I recommend \"The Passion of the Christ\". It is a highly acclaimed drama film directed by Mel Gibson and starring Jim Cavieglia as Jesus, and other notable actors such as Miko Shimizu, Greg McDonald, and Marc de Montigny.\n\nAnother推荐 could be \"How to Train Your Dragon\" which is an animated adventure film produced by DreamWorks Animation SKG and distributed by Walt Disney Studios Motion Picture.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Orson Welles",
+        "actor": "Casey Kasem",
+        "year": "1940",
+        "writer": "Orson Welles",
+        "language": "Latin Language"
+      },
+      "rec_titles": [
+        "The Passion of the Christ",
+        "How to Train Your Dragon",
+        "End of Days",
+        "The Pink Panther 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on How to Train Your Dragon. I want to try something more road trip—still with Gerard Butler if possible. That sounds intriguing.",
+      "user_meta": {
+        "turn": 44,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "road trip",
+        "anchor_title": "Rango",
+        "constraints": {
+          "genre": "road trip",
+          "director": "Orson Welles",
+          "plot": "night",
+          "actor": "Gerard Butler",
+          "language": "Latin Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 44,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "Gerard Butler",
+          "from_anchor": "Taken",
+          "to_anchor": "Rango"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Here are some recommendations based on the user's preferences:\n\n- For Whom the Bell Tolls (1940): This classic film stars Orson Welles and Ingrid Bergman.\n\n- Reign of Fire (2002): This action-packed movie stars Matthew McConaughey, Djimon Hounsou, and Christian Bale.\n\n- How to Train Your Dragon 2 (2014): This animated adventure movie stars Craig Ferguson, Gerard Butler, Gerard Butler, America Ferrera, America Ferrera, Djimon Hounsou, Djimon Hounsou\n- Talladega Nights: The Ballad of Ricky Bobby (2006): This comedy film stars Leslie Bibb, Gary Cole, Will Ferrell",
+      "constraints": {
+        "genre": "road",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "How to Train Your Dragon",
+        "director": "Orson Welles",
+        "actor": "Gerard Butler",
+        "year": "1940",
+        "writer": "Orson Welles",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "For Whom the Bell Tolls",
+        "Reign of Fire",
+        "How to Train Your Dragon 2",
+        "Talladega Nights: The Ballad of Ricky Bobby"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "road trip",
+        "anchor_title": "Rango",
+        "constraints": {
+          "genre": "road trip",
+          "director": "Orson Welles",
+          "plot": "night",
+          "actor": "Gerard Butler",
+          "language": "Latin Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I would recommend \"The Wonderful Wizard of Oz\" (1900) to them. This classic novel tells the inside saga of a beautiful but disturbed young woman whose obsession with photography becomes more of an expression than observation. The story takes place in the Land of Oz where the protagonist, Dorothy, is swept up by a tornado and finds herself in the Land of Oz.",
+      "constraints": {
+        "genre": "road",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Orson Welles",
+        "actor": "Gerard Butler",
+        "year": "1940",
+        "writer": "Orson Welles",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Shutter",
+        "The Wonderful Wizard of Oz",
+        "Johnson Family Vacation",
+        "Shattered"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "road trip",
+        "anchor_title": "Rango",
+        "constraints": {
+          "genre": "road trip",
+          "director": "Orson Welles",
+          "plot": "night",
+          "actor": "Gerard Butler",
+          "language": "Latin Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, here are some potential recommendations:\n\n1. Divergent (2011) - A young woman discovers that she is a \"Divergent\" and must choose between two paths: one leads to safety, while the other leads to freedom. As she navigates through this world of contradictions, Tris will encounter various obstacles and enemies along the way.\n\nStarring:\n- Gerard Butler as Captain Jack Bauer\n- Callum Rennie as Theo Bauer\n\n2. Passion (2011) - A young man who has defied social convention and become an ambassador for the sport of competitive beard growing, shares this inspirational story with us and guides us through his world in a 6 minute narrative doc. He contemplates what his world has become due to his beard and contemplates the thought of a world without.",
+      "constraints": {
+        "genre": "road",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "director": "Orson Welles",
+        "actor": "Gerard Butler",
+        "year": "1940",
+        "writer": "Orson Welles",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Divergent",
+        "Shattered",
+        "How to Train Your Dragon",
+        "Passion"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "road trip",
+        "anchor_title": "Rango",
+        "constraints": {
+          "genre": "road trip",
+          "director": "Orson Welles",
+          "plot": "night",
+          "actor": "Gerard Butler",
+          "language": "Latin Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd recommend \"300\" for its epic battle between Greek and Persian armies, as well as the memorable characters and intense action sequences.",
+      "constraints": {
+        "genre": "road",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "You",
+        "director": "Orson Welles",
+        "actor": "Gerard Butler",
+        "year": "1940",
+        "writer": "Orson Welles",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Touch of Evil",
+        "300",
+        "Planet Terror",
+        "Soul Men"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of 300? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "road trip",
+        "anchor_title": "Rango",
+        "constraints": {
+          "genre": "road trip",
+          "director": "Orson Welles",
+          "plot": "night",
+          "actor": "Gerard Butler",
+          "language": "Latin Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences and constraints, here are some recommendations:\n\n- Title: Super (2010) | Plot: Ryan is a teenager from one of Peru's toughest barrios. He dreams of becoming a pro-surfer. When he is spotted by Peru's most successful surf champion, Sofia Mulanovich, he is given the chance to succeed. However, the pressure to do so weighs heavily on him. Without his father around, the lure of his friends and the risks of life in the barrios threaten to jeopardize everything he has worked for. When he is injured outside a nightclub in a drive by shooting, Ryan is forced to decide once and for all which path to take.",
+      "constraints": {
+        "genre": "road",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "300",
+        "director": "Orson Welles",
+        "actor": "Gerard Butler",
+        "year": "1940",
+        "writer": "Orson Welles",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Super",
+        "Into the Storm",
+        "We the Living",
+        "The Hunger Games: Mockingjay - Part 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "road trip",
+        "anchor_title": "Rango",
+        "constraints": {
+          "genre": "road trip",
+          "director": "Orson Welles",
+          "plot": "night",
+          "actor": "Gerard Butler",
+          "language": "Latin Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend \"Smilla's Sense of Snow\" and \"Anybody But You\". Both movies have excellent ratings, great actors and director who did a wonderful job in both movies. These are some of the best movies out there, so definitely check them out if you haven't already!",
+      "constraints": {
+        "genre": "road",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "300",
+        "director": "Orson Welles",
+        "actor": "Gerard Butler",
+        "year": "1940",
+        "writer": "Orson Welles",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Smilla's Sense of Snow",
+        "Anyone But You",
+        "What Women Want",
+        "Paradise Lost"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Jeffrey Wright. That feels deeper than I thought. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 50,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Jeffrey Wright",
+        "anchor_title": "Cadillac Records",
+        "constraints": {
+          "genre": "road trip",
+          "director": "Orson Welles",
+          "plot": "open",
+          "actor": "Jeffrey Wright",
+          "language": "Latin Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 50,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "open",
+          "from_anchor": "Rango",
+          "to_anchor": "Cadillac Records"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Here are two movie recommendations based on user preferences:\n- Title: Star Wars: Episode I  - The Phantom Menace\n- Title: Runaway Bride\nBoth of these movies have strong performances from their casts, and feature engaging plots that will keep viewers entertained. Additionally, both of these movies received high ratings and positive reviews from critics and audiences alike, making them great choices for those looking for engaging and entertaining movies to enjoy.",
+      "constraints": {
+        "genre": "road",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Her",
+        "director": "Orson Welles",
+        "actor": "Jeffrey Wright",
+        "year": "1940",
+        "writer": "Orson Welles",
+        "language": "fre"
+      },
+      "rec_titles": [
+        "Star Wars: Episode I - The Phantom Menace",
+        "Deep",
+        "Blade Runner",
+        "Runaway Bride"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 3,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "childhood",
+      "from_anchor": "Tangled",
+      "to_anchor": "Chicago"
+    },
+    {
+      "turn": 5,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "director",
+      "bridge_value": "Pat O'Connor (Director)",
+      "from_anchor": "Chicago",
+      "to_anchor": "1900"
+    },
+    {
+      "turn": 9,
+      "from_focus": "actor",
+      "to_focus": "year",
+      "bridge_field": "plot",
+      "bridge_value": "khalid",
+      "from_anchor": "1900",
+      "to_anchor": "The Country Bears"
+    },
+    {
+      "turn": 12,
+      "from_focus": "year",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Matt Letscher",
+      "from_anchor": "The Country Bears",
+      "to_anchor": "For Whom the Bell Tolls"
+    },
+    {
+      "turn": 18,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "writer",
+      "bridge_value": "Samantha Young",
+      "from_anchor": "For Whom the Bell Tolls",
+      "to_anchor": "Moulin Rouge!"
+    },
+    {
+      "turn": 26,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "veteran",
+      "from_anchor": "Moulin Rouge!",
+      "to_anchor": "Nine"
+    },
+    {
+      "turn": 32,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "wild",
+      "from_anchor": "Nine",
+      "to_anchor": "Tangled"
+    },
+    {
+      "turn": 34,
+      "from_focus": "director",
+      "to_focus": "language",
+      "bridge_field": "plot",
+      "bridge_value": "girl",
+      "from_anchor": "Tangled",
+      "to_anchor": "Sucker Punch"
+    },
+    {
+      "turn": 42,
+      "from_focus": "language",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "night",
+      "from_anchor": "Sucker Punch",
+      "to_anchor": "Taken"
+    },
+    {
+      "turn": 44,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "Gerard Butler",
+      "from_anchor": "Taken",
+      "to_anchor": "Rango"
+    },
+    {
+      "turn": 50,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "open",
+      "from_anchor": "Rango",
+      "to_anchor": "Cadillac Records"
+    }
+  ]
+}

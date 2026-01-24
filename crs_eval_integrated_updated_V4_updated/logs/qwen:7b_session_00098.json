@@ -1,0 +1,2178 @@
+{
+  "session_id": "00098",
+  "model_name": "qwen:7b",
+  "true_genre": "french",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a french movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "french",
+        "anchor_title": "Incendies",
+        "constraints": {
+          "genre": "french"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for French movies. Here are two recommendations based on your constraints: 'Amélie' (2001), a whimsical film about a young waitress who tries to spread happiness, starring Audrey Tautou. And 'Inception' (2010), an action-packed sci-fi movie about stealing corporate secrets through dream manipulation, featuring Leonardo DiCaprio and Tom Hardy.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "french",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "From Paris with Love",
+        "Fair Game",
+        "Inception",
+        "Amélie"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Her? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "french",
+        "anchor_title": "Incendies",
+        "constraints": {
+          "genre": "french"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's constraints, they seem interested in French language films with a focus on what plot keywords are mentioned. I would recommend 'Elizabeth' (1998), starring Fanny Ardant and featuring John Gielgud, as it meets these criteria with its English-language adaptation of Queen Elizabeth I's early reign.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "Her"
+      },
+      "rec_titles": [
+        "This Is Spinal Tap",
+        "Elizabeth",
+        "Red Dragon",
+        "The Others"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with James Shigeta. That sounds intriguing. (I’m thinking of They.)",
+      "user_meta": {
+        "turn": 3,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "James Shigeta",
+        "anchor_title": "Waiting",
+        "constraints": {
+          "genre": "french",
+          "actor": "James Shigeta",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 3,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Incendies",
+          "to_anchor": "Waiting"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in French language movies featuring James Shigeta. Based on these preferences, I recommend watching 'Something Wild' which stars Tracey Walter and John Waters, both featuring in this quirky French-language film.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "They",
+        "actor": "James Shigeta"
+      },
+      "rec_titles": [
+        "Something Wild",
+        "I Am Number Four",
+        "The Red Violin",
+        "Bram Stoker's Dracula"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "James Shigeta",
+        "anchor_title": "Waiting",
+        "constraints": {
+          "genre": "french",
+          "actor": "James Shigeta",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has specified French language, French actor (James Shigeta), and a preference for movies with French content. Based on these preferences, I recommend watching 'Tarnation' (2003), which is in French and stars James Shigeta. It offers a French language film experience with a unique plot about French upbringing.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "James Shigeta"
+      },
+      "rec_titles": [
+        "Tarnation",
+        "Schindler's List",
+        "Inglourious Basterds",
+        "Babel"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Sean Anders? That sounds intriguing. (I’m thinking of Tarnation.)",
+      "user_meta": {
+        "turn": 5,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Sean Anders",
+        "anchor_title": "The Piano Teacher",
+        "constraints": {
+          "genre": "french",
+          "actor": "Jonathan Caouette",
+          "director": "Sean Anders"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 5,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Jonathan Caouette",
+          "from_anchor": "Waiting",
+          "to_anchor": "The Piano Teacher"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movie recommendations from a list featuring \"Ocean's Twelve,\" \"Schindler's List,\" \"The Queen,\" and \"The Curious Case of Benjamin Button.\"\n\nBased on the genre (French), actor (James Shigeta), and the plot hint ('switch'), I would recommend \"Ocean's Twelve\" for its heist-driven French language adventure, featuring the talents of Jared Harris.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Tarnation",
+        "actor": "James Shigeta",
+        "director": "Sean Anders",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Ocean's Twelve",
+        "Schindler's List",
+        "The Queen",
+        "The Curious Case of Benjamin Button"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Sean Anders",
+        "anchor_title": "The Piano Teacher",
+        "constraints": {
+          "genre": "french",
+          "actor": "Jonathan Caouette",
+          "director": "Sean Anders"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants recommendations for French language movies with James Shigeta in the cast, and a focus on plots involving just discovering more. Based on these preferences, I recommend 'True Lies' which features both James Shigeta and a French language plot that involves discovery.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "James Shigeta",
+        "director": "Sean Anders",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Titanic",
+        "True Lies",
+        "In Bruges",
+        "To Have and Have Not"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of True Lies. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Sean Anders",
+        "anchor_title": "The Piano Teacher",
+        "constraints": {
+          "genre": "french",
+          "actor": "Jonathan Caouette",
+          "director": "Sean Anders"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You mentioned a preference for French language content and an interest in movies featuring actor James Shigeta. Based on these cues, I would recommend 'The Red Violin' as it stars Clotilde Mollet, a French actress, and features the enchanting story of a musical instrument.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "True Lies",
+        "actor": "James Shigeta",
+        "director": "Sean Anders",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "The Green Mile",
+        "The Red Violin",
+        "Incendies",
+        "The Mortal Instruments: City of Bones"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Sean Anders",
+        "anchor_title": "The Piano Teacher",
+        "constraints": {
+          "genre": "french",
+          "actor": "Jonathan Caouette",
+          "director": "Sean Anders"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in French language films, with a focus on characters played by James Shigeta and directed by Sean Anders. Based on these preferences, I recommend 'Thunderball' (1965) featuring Earl Cameron as James Bond and a plot involving international espionage and nuclear warheads.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Deep",
+        "actor": "James Shigeta",
+        "director": "Sean Anders",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Thunderball",
+        "Slumdog Millionaire",
+        "Outlander",
+        "Superman II"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Thunderball tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Sean Anders",
+        "anchor_title": "The Piano Teacher",
+        "constraints": {
+          "genre": "french",
+          "actor": "Jonathan Caouette",
+          "director": "Sean Anders"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for French movies with specific actors and directors. Based on these preferences, I recommend watching 'Aladdin' featuring Lea Salonga, or 'S.W. A.T.' starring Colin Farrell and LL Cool J. Both films offer a mix of French language, engaging plots, and notable casts.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Thunderball",
+        "actor": "James Shigeta",
+        "director": "Sean Anders",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Catch Me If You Can",
+        "Paycheck",
+        "Aladdin",
+        "S.W.A.T."
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Patrick Kilpatrick. That sounds intriguing. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 10,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Patrick Kilpatrick",
+        "anchor_title": "Thelma & Louise",
+        "constraints": {
+          "genre": "french",
+          "actor": "Patrick Kilpatrick",
+          "plot": "friends"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 10,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "friends",
+          "from_anchor": "The Piano Teacher",
+          "to_anchor": "Thelma & Louise"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're interested in movies featuring Patrick Kilpatrick, with a French language preference. Based on those criteria, I would recommend 'The Thomas Crown Affair' (1999), where Patrick Kilpatrick plays the title character. This film combines intrigue, romance, and a touch of humor, all set against a French backdrop.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Us",
+        "actor": "Patrick Kilpatrick",
+        "director": "Sean Anders",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "The Thomas Crown Affair",
+        "The Spiderwick Chronicles",
+        "Restless",
+        "The Dirty Dozen"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Patrick Kilpatrick",
+        "anchor_title": "Thelma & Louise",
+        "constraints": {
+          "genre": "french",
+          "actor": "Patrick Kilpatrick",
+          "plot": "friends"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're interested in French language films with Patrick Kilpatrick as an actor. I recommend checking out \"In Bruges\" since it's a French film featuring Patrick Kilpatrick, and also has a compelling storyline.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Patrick Kilpatrick",
+        "director": "Sean Anders",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "In Bruges",
+        "Iron Man 2",
+        "The Thomas Crown Affair",
+        "The Truth"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of In Bruges? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Patrick Kilpatrick",
+        "anchor_title": "Thelma & Louise",
+        "constraints": {
+          "genre": "french",
+          "actor": "Patrick Kilpatrick",
+          "plot": "friends"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for French films with specific cues like actor Patrick Kilpatrick and director Sean Anders. Based on these preferences, I would recommend watching 'Amélie' featuring Yolande Moreau as Amélie, or 'The Land Before Time' starring Gabriel Damon as the orphaned brontosaurus.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "what",
+          "bruges"
+        ],
+        "name": "In Bruges",
+        "actor": "Patrick Kilpatrick",
+        "director": "Sean Anders",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Groundhog Day",
+        "Amélie",
+        "Cars 2",
+        "The Land Before Time"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Land Before Time. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Patrick Kilpatrick",
+        "anchor_title": "Thelma & Louise",
+        "constraints": {
+          "genre": "french",
+          "actor": "Patrick Kilpatrick",
+          "plot": "friends"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user enjoys French language content and is interested in movies featuring Patrick Kilpatrick as an actor. From the given list, I would recommend 'Minority Report' since it stars Patrick Kilpatrick and also features a unique French-language plot involving预知未来科技.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Land Before Time",
+        "actor": "Patrick Kilpatrick",
+        "director": "Sean Anders",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Minority Report",
+        "American Dreamz",
+        "Arthur and the Invisibles",
+        "2012"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Patrick Kilpatrick",
+        "anchor_title": "Thelma & Louise",
+        "constraints": {
+          "genre": "french",
+          "actor": "Patrick Kilpatrick",
+          "plot": "friends"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in French language films with Patrick Kilpatrick as an actor, and Sean Anders involved as director or writer. Recommendations could be 'Man on Wire' for its real-life French high-wire story with Philippe Petit, or 'The Score' if you enjoy crime and redemption stories with notable actors like Edward Norton and Robert De Niro in a French-language setting.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "actor": "Patrick Kilpatrick",
+        "director": "Sean Anders",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Man on Wire",
+        "It's a Wonderful Life",
+        "The Curious Case of Benjamin Button",
+        "The Score"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Patrick Kilpatrick",
+        "anchor_title": "Thelma & Louise",
+        "constraints": {
+          "genre": "french",
+          "actor": "Patrick Kilpatrick",
+          "plot": "friends"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: French language preference, with Patrick Kilpatrick as an actor and Sean Anders involved in directing or writing.\n\nMovie recommendations:\n1. 'Slumdog Millionaire' (2008) - This heartwarming French-language film stars Freida Pinto and Anil Kapoor. It tells the story of a young boy's journey to win a life-changing prize.\n\n2. 'Ernest & Celestine' (2012) - For those interested in a more recent and gently illustrated French animated film, 'Ernest & Celestine' is a suitable choice. The film features Lambert Wilson and Mackenzie Foy in voice roles.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "Us",
+        "actor": "Patrick Kilpatrick",
+        "director": "Sean Anders",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Slumdog Millionaire",
+        "The Day After Tomorrow",
+        "Monsters, Inc.",
+        "Ernest & Celestine"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Norton Virgien? Hmm, I didn’t expect that vibe. (I’m thinking of Slumdog Millionaire.)",
+      "user_meta": {
+        "turn": 16,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Norton Virgien",
+        "anchor_title": "The Republic of Love",
+        "constraints": {
+          "genre": "french",
+          "actor": "Ayush Mahesh Khedekar",
+          "plot": "friends",
+          "director": "Norton Virgien"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 16,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Ayush Mahesh Khedekar",
+          "from_anchor": "Thelma & Louise",
+          "to_anchor": "The Republic of Love"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user prefers French movies with Patrick Kilpatrick as an actor and Norton Virgien as a director. I would recommend 'I Heart Huckabees' due to its French language, Patrick Kilpatrick's involvement, and the unique comedy-drama written by Sean Anders.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Slumdog Millionaire",
+        "actor": "Patrick Kilpatrick",
+        "director": "Norton Virgien",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "I Heart Huckabees",
+        "Miss Congeniality",
+        "The Usual Suspects",
+        "The International"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Norton Virgien",
+        "anchor_title": "The Republic of Love",
+        "constraints": {
+          "genre": "french",
+          "actor": "Ayush Mahesh Khedekar",
+          "plot": "friends",
+          "director": "Norton Virgien"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants recommendations for French language movies, focusing on those starring Patrick Kilpatrick or with a plot connected to \"just\" and \"more\". Based on these criteria, I suggest checking out 'The Replacement Killers' (1998) with Patrick Kilpatrick featuring in both the film and its director. This movie has a plot involving \"just\" wanting revenge for a past event and \"more\" as the sequence unfolds.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Patrick Kilpatrick",
+        "director": "Norton Virgien",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Minority Report",
+        "The Replacement Killers",
+        "Hannibal Rising",
+        "The Exorcist"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Norton Virgien",
+        "anchor_title": "The Republic of Love",
+        "constraints": {
+          "genre": "french",
+          "actor": "Ayush Mahesh Khedekar",
+          "plot": "friends",
+          "director": "Norton Virgien"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with French language and Patrick Kilpatrick as an actor. Based on these preferences, I recommend 'Hannibal Rising' since it meets both the French language requirement and features Patrick Kilpatrick in a notable role. The plot revolves around Hannibal Lecter seeking revenge against those responsible for his sister's death.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "Ted",
+        "actor": "Patrick Kilpatrick",
+        "director": "Norton Virgien",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "The Smurfs 2",
+        "The Exorcist",
+        "12 Monkeys",
+        "Hannibal Rising"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Norton Virgien",
+        "anchor_title": "The Republic of Love",
+        "constraints": {
+          "genre": "french",
+          "actor": "Ayush Mahesh Khedekar",
+          "plot": "friends",
+          "director": "Norton Virgien"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in French language movies with Patrick Kilpatrick as an actor and Norton Virgien as a director. Based on these preferences, I recommend watching 'Rushmore' which stars Stephen McCole and Mason Gamble, both fitting the actor criteria. This movie also has memorable performances by Bill Murray, who is known for his French-speaking roles.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "actor": "Patrick Kilpatrick",
+        "director": "Norton Virgien",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Sense and Sensibility",
+        "Rushmore",
+        "Fantastic Mr. Fox",
+        "The Monuments Men"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Norton Virgien",
+        "anchor_title": "The Republic of Love",
+        "constraints": {
+          "genre": "french",
+          "actor": "Ayush Mahesh Khedekar",
+          "plot": "friends",
+          "director": "Norton Virgien"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You mentioned a preference for French language content, with actor Patrick Kilpatrick being of interest. Based on these cues, I recommend 'Hannibal Rising' (2007), featuring Richard Brake and Stephen Walters in the French-speaking narrative.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "actor": "Patrick Kilpatrick",
+        "director": "Norton Virgien",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "12 Monkeys",
+        "Hannibal Rising",
+        "Fair Game",
+        "The Happening"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Herbert Lom. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 21,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Herbert Lom",
+        "anchor_title": "Tell No One",
+        "constraints": {
+          "genre": "french",
+          "actor": "Herbert Lom",
+          "plot": "children",
+          "director": "Norton Virgien"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 21,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "children",
+          "from_anchor": "The Republic of Love",
+          "to_anchor": "Tell No One"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for French movies with Herbert Lom, and a focus on could find. Based on these preferences, I would recommend 'Something Wild' (1967), featuring Herbert Lom and an engaging plot about unconventional relationships.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Her",
+        "actor": "Herbert Lom",
+        "director": "Norton Virgien",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Something Wild",
+        "The People I've Slept With",
+        "You Only Live Twice",
+        "Live Free or Die Hard"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Herbert Lom",
+        "anchor_title": "Tell No One",
+        "constraints": {
+          "genre": "french",
+          "actor": "Herbert Lom",
+          "plot": "children",
+          "director": "Norton Virgien"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for French language recommendations with actors like Herbert Lom. Based on these preferences, I recommend 'In Time' starring Justin Timberlake and featuring Matt Bomer, Olivia Wilde, and Vincent Kartheiser. This movie combines a French-speaking cast with an interesting sci-fi plot.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Herbert Lom",
+        "director": "Norton Virgien",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "The Way of the Gun",
+        "In Time",
+        "Just Married",
+        "The International"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of In Time? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Herbert Lom",
+        "anchor_title": "Tell No One",
+        "constraints": {
+          "genre": "french",
+          "actor": "Herbert Lom",
+          "plot": "children",
+          "director": "Norton Virgien"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's constraints, they are interested in French language films with actor Herbert Lom and director Norton Virgien. Given these preferences, I would recommend 'The Negotiator' (1989) as it features both Herbert Lom and Norton Virgien, and it has a French-language plot that aligns well with the user's interests.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "what",
+          "time"
+        ],
+        "name": "In Time",
+        "actor": "Herbert Lom",
+        "director": "Norton Virgien",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "The Negotiator",
+        "Multiplicity",
+        "Midnight in Paris",
+        "Waiting"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Negotiator tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Herbert Lom",
+        "anchor_title": "Tell No One",
+        "constraints": {
+          "genre": "french",
+          "actor": "Herbert Lom",
+          "plot": "children",
+          "director": "Norton Virgien"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in French movies with actor Herbert Lom and director Norton Virgien. I would recommend 'The Negotiator' since it matches these criteria, featuring an intense story with Lom's presence.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The Negotiator",
+        "actor": "Herbert Lom",
+        "director": "Norton Virgien",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Taken",
+        "Training Day",
+        "The Thomas Crown Affair",
+        "The Social Network"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Ian Sharp? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 25,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Ian Sharp",
+        "anchor_title": "House on Haunted Hill",
+        "constraints": {
+          "genre": "french",
+          "plot": "night",
+          "director": "Ian Sharp"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 25,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "night",
+          "from_anchor": "Tell No One",
+          "to_anchor": "House on Haunted Hill"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants French language recommendations with actor Herbert Lom involved. Based on these preferences, I recommend 'Hotel Transylvania' (2012) which stars Cam Clarke and has a mix of humor and family themes, fitting the general mood. Additionally, while not featuring Herbert Lom, the film 'Tell No One' (2008) could still be an interesting watch for those interested in French language content without the specific actor requirement.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Us",
+        "actor": "Herbert Lom",
+        "director": "Ian Sharp",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "The Devil Wears Prada",
+        "Angels & Demons",
+        "Tell No One",
+        "Hotel Transylvania"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ian Sharp",
+        "anchor_title": "House on Haunted Hill",
+        "constraints": {
+          "genre": "french",
+          "plot": "night",
+          "director": "Ian Sharp"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants French language recommendations, specifically mentioning 'Bobby' with its French version, 'Bobby (2006)'. Given this preference, I would recommend 'To Have and Have Not' as it features Walter Brennan in a French-speaking role, while still being set during World War II.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Herbert Lom",
+        "director": "Ian Sharp",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Bobby",
+        "Tooth Fairy",
+        "JFK",
+        "To Have and Have Not"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Bobby tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ian Sharp",
+        "anchor_title": "House on Haunted Hill",
+        "constraints": {
+          "genre": "french",
+          "plot": "night",
+          "director": "Ian Sharp"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movie recommendations based on French language, actor Herbert Lom, director Ian Sharp, and writer Sean Anders. From this list, I would recommend 'Maid in Manhattan' as it fits these criteria with a French-speaking cast led by actress who played the role of Brooke Fields (portraying herself), one of the actors listed is Herbert Lom who plays the character of Jean-Paul Thibaud, and Ian Sharp is credited as director.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Bobby",
+        "actor": "Herbert Lom",
+        "director": "Ian Sharp",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Maid in Manhattan",
+        "Bram Stoker's Dracula",
+        "Taxi Driver",
+        "Chain Reaction"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Maid in Manhattan? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ian Sharp",
+        "anchor_title": "House on Haunted Hill",
+        "constraints": {
+          "genre": "french",
+          "plot": "night",
+          "director": "Ian Sharp"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in French movies with actor Herbert Lom. Based on these preferences, I recommend 'Outlander' (1991), a Scottish historical drama featuring Sophia Myles and Graham McTavish, who both have connections to the character played by Herbert Lom.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "what",
+          "maid"
+        ],
+        "name": "Maid in Manhattan",
+        "actor": "Herbert Lom",
+        "director": "Ian Sharp",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "The Twilight Saga: New Moon",
+        "The Others",
+        "The Violent Kind",
+        "Outlander"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ian Sharp",
+        "anchor_title": "House on Haunted Hill",
+        "constraints": {
+          "genre": "french",
+          "plot": "night",
+          "director": "Ian Sharp"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes French films with actor Herbert Lom and a plot involving liking or a sound. Based on these preferences, I recommend 'Wings of Desire' starring Bruno Ganz and Peter Falk, which has the French language and an angel protagonist who longs for tangible experiences.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "actor": "Herbert Lom",
+        "director": "Ian Sharp",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Wings of Desire",
+        "Braveheart",
+        "We Were Soldiers",
+        "The Land Before Time"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ian Sharp",
+        "anchor_title": "House on Haunted Hill",
+        "constraints": {
+          "genre": "french",
+          "plot": "night",
+          "director": "Ian Sharp"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in French language movies with a weird or thought-provoking plot. Based on these preferences, I recommend watching 'Moulin Rouge!' due to its French language, musical and quirky nature that aligns with the user's interest in a weird movie.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "Ted",
+        "actor": "Herbert Lom",
+        "director": "Ian Sharp",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "The Day After Tomorrow",
+        "Ted",
+        "Moulin Rouge!",
+        "Connie and Carla"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe explore stories about Kylie Minogue? Maybe I’m overthinking it, but it sounds fascinating. Maybe something that connects to Moulin Rouge!.",
+      "user_meta": {
+        "turn": 31,
+        "stage": "waiting_system",
+        "focus_field": "plot",
+        "focus_value": "Kylie Minogue",
+        "anchor_title": "Moulin Rouge!",
+        "constraints": {
+          "genre": "french",
+          "plot": "Kylie Minogue",
+          "director": "Ian Sharp",
+          "actor": "Kylie Minogue"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 31,
+          "from_focus": "director",
+          "to_focus": "plot",
+          "bridge_field": "actor",
+          "bridge_value": "Kylie Minogue",
+          "from_anchor": "House on Haunted Hill",
+          "to_anchor": "Moulin Rouge!"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's constraints include French language preference, elements connecting to Moulin Rouge!, and featuring Kylie Minogue. Based on these preferences, I recommend watching 'Inglourious Basterds' (2009), which features a French-speaking cast, connects to the Moulin Rouge! spirit through its vibrant and rebellious nature, and has an appearance by Kylie Minogue in a cameo role.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "something",
+          "connects"
+        ],
+        "name": "Moulin Rouge!",
+        "actor": "Kylie Minogue",
+        "director": "Ian Sharp",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "The Matrix Revolutions",
+        "The Day After Tomorrow",
+        "Braveheart",
+        "Inglourious Basterds"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "plot",
+        "focus_value": "Kylie Minogue",
+        "anchor_title": "Moulin Rouge!",
+        "constraints": {
+          "genre": "french",
+          "plot": "Kylie Minogue",
+          "director": "Ian Sharp",
+          "actor": "Kylie Minogue"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants recommendations for French language movies with actor Kylie Minogue in them. Given the constraints, one movie that fits the criteria is 'The White Countess' (2005), starring Natasha Richardson and featuring Kylie Minogue in a minor role.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Kylie Minogue",
+        "director": "Ian Sharp",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "In Time",
+        "The White Countess",
+        "The Red Violin",
+        "What Just Happened"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The White Countess tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "plot",
+        "focus_value": "Kylie Minogue",
+        "anchor_title": "Moulin Rouge!",
+        "constraints": {
+          "genre": "french",
+          "plot": "Kylie Minogue",
+          "director": "Ian Sharp",
+          "actor": "Kylie Minogue"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user prefers French language films with actor Kylie Minogue and director Ian Sharp involved. I would recommend 'Utsav' as it is based on a French play and stars both Kylie Minogue and has Ian Sharp's direction touch.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The White Countess",
+        "actor": "Kylie Minogue",
+        "director": "Ian Sharp",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Utsav",
+        "Eye for an Eye",
+        "Angels & Demons",
+        "The Monuments Men"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Utsav? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 34,
+        "stage": "details",
+        "focus_field": "plot",
+        "focus_value": "Kylie Minogue",
+        "anchor_title": "Moulin Rouge!",
+        "constraints": {
+          "genre": "french",
+          "plot": "Kylie Minogue",
+          "director": "Ian Sharp",
+          "actor": "Kylie Minogue"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants French movies with actor Kylie Minogue and director Ian Sharp. Based on these criteria, 'Remember Me, My Love' (2003) starring Giulia Michelini, Silvio Muccino, Laura Morante, and directed by Ian Sharp would be a suitable recommendation.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "what",
+          "utsav"
+        ],
+        "name": "Utsav",
+        "actor": "Kylie Minogue",
+        "director": "Ian Sharp",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Remember Me, My Love",
+        "Amen.",
+        "Divergent",
+        "Maid in Manhattan"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Remember Me, My Love. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "plot",
+        "focus_value": "Kylie Minogue",
+        "anchor_title": "Moulin Rouge!",
+        "constraints": {
+          "genre": "french",
+          "plot": "Kylie Minogue",
+          "director": "Ian Sharp",
+          "actor": "Kylie Minogue"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user enjoys romantic love stories and is drawn to French language films. Based on these preferences, I would recommend 'Amélie' (2001), a charming French-language film about an imaginative young waitress named Amélia who decides to help people find happiness. The movie features the captivating performance of Audrey Tautou and has a delightful blend of romance and whimsy.",
+      "constraints": {
+        "genre": "love",
+        "language": "French",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Remember Me, My Love",
+        "actor": "Kylie Minogue",
+        "director": "Ian Sharp",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Outlander",
+        "Hotel Rwanda",
+        "Love Actually",
+        "Amélie"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on You. I want to try something more satire—Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 36,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "satire",
+        "anchor_title": "Pride and Prejudice",
+        "constraints": {
+          "genre": "satire",
+          "plot": "Kylie Minogue",
+          "director": "Ian Sharp"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 36,
+          "from_focus": "plot",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "mine",
+          "from_anchor": "Moulin Rouge!",
+          "to_anchor": "Pride and Prejudice"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants a satire film with actor Kylie Minogue, and director Ian Sharp. Based on these preferences, I recommend 'Ghostbusters II' (with its satirical elements) as it stars Ernie Hudson, who could be considered akin to Kylie Minogue.",
+      "constraints": {
+        "genre": "satire",
+        "language": "French",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "You",
+        "actor": "Kylie Minogue",
+        "director": "Ian Sharp",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Ghostbusters II",
+        "Micmacs",
+        "Lord of War",
+        "Nine"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "satire",
+        "anchor_title": "Pride and Prejudice",
+        "constraints": {
+          "genre": "satire",
+          "plot": "Kylie Minogue",
+          "director": "Ian Sharp"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: looking for recommendations in the genre of satire, with an actor featuring Kylie Minogue, and possibly French language involvement or plot keywords related to \"just\" and \"more.\"\n\nRecommendation: \"The Golden Compass\" (2007) meets your criteria with its satirical elements, Kylie Minogue's presence, and a touch of French language in the story.",
+      "constraints": {
+        "genre": "satire",
+        "language": "French",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Kylie Minogue",
+        "director": "Ian Sharp",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "The Golden Compass",
+        "The Girl on the Train",
+        "True Lies",
+        "Side Effects"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "satire",
+        "anchor_title": "Pride and Prejudice",
+        "constraints": {
+          "genre": "satire",
+          "plot": "Kylie Minogue",
+          "director": "Ian Sharp"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants a movie recommendation with satire as the genre, featuring Kylie Minogue as an actor, and potentially directed by Ian Sharp or written by Sean Anders.\n\nBased on these preferences, I would recommend 'Head of State' starring Lynn Whitfield and Tamala Jones, which incorporates satire and has Kylie Minogue in a supporting role.",
+      "constraints": {
+        "genre": "satire",
+        "language": "French",
+        "plot": [
+          "what"
+        ],
+        "name": "You",
+        "actor": "Kylie Minogue",
+        "director": "Ian Sharp",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "I Am Number Four",
+        "Head of State",
+        "Ocean's Thirteen",
+        "Six-String Samurai"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "satire",
+        "anchor_title": "Pride and Prejudice",
+        "constraints": {
+          "genre": "satire",
+          "plot": "Kylie Minogue",
+          "director": "Ian Sharp"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user enjoys satirical films and is interested in the casts involved. Based on these preferences, I recommend \"The International\" starring Ulrich Thomsen, with its blend of thriller and satire.",
+      "constraints": {
+        "genre": "satire",
+        "language": "French",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "actor": "Kylie Minogue",
+        "director": "Ian Sharp",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Bram Stoker's Dracula",
+        "The International",
+        "War, Inc.",
+        "Angels & Demons"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "satire",
+        "anchor_title": "Pride and Prejudice",
+        "constraints": {
+          "genre": "satire",
+          "plot": "Kylie Minogue",
+          "director": "Ian Sharp"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences for a story with satire elements and featuring Kylie Minogue, I would recommend 'Rushmore' (1998). This movie combines satire and comedy, with Stephen McCole as the teenager who falls in love with his teacher, played by Mason Gamble. The presence of Kylie Minogue in this film is limited to a cameo role.",
+      "constraints": {
+        "genre": "satire",
+        "language": "French",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Deep",
+        "actor": "Kylie Minogue",
+        "director": "Ian Sharp",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Rushmore",
+        "The Last Unicorn",
+        "Remember Me, My Love",
+        "The Red Violin"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Damien Dante Wayans? Hmm, I didn’t expect that vibe. (I’m thinking of Rushmore.)",
+      "user_meta": {
+        "turn": 41,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Damien Dante Wayans",
+        "anchor_title": "The Truman Show",
+        "constraints": {
+          "genre": "satire",
+          "plot": "older",
+          "writer": "Damien Dante Wayans"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 41,
+          "from_focus": "genre",
+          "to_focus": "writer",
+          "bridge_field": "plot",
+          "bridge_value": "older",
+          "from_anchor": "Pride and Prejudice",
+          "to_anchor": "The Truman Show"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movies written by Damien Dante Wayans, with a satirical vibe and featuring him as both actor and director. Based on these preferences, I would recommend 'Animal Kingdom: Let''s go Ape' (2015), starring Youssef Hajdi in a role that showcases Dante's humor.",
+      "constraints": {
+        "genre": "satire",
+        "language": "French",
+        "plot": [
+          "written",
+          "dante"
+        ],
+        "name": "Rush",
+        "actor": "Damien Dante Wayans",
+        "director": "Damien Dante Wayans",
+        "writer": "Damien Dante Wayans"
+      },
+      "rec_titles": [
+        "Animal Kingdom: Let's go Ape",
+        "Tell No One",
+        "The Simpsons Movie",
+        "Eye for an Eye"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Damien Dante Wayans",
+        "anchor_title": "The Truman Show",
+        "constraints": {
+          "genre": "satire",
+          "plot": "older",
+          "writer": "Damien Dante Wayans"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in recommendations for movies with a satire genre, featuring actor Damien Dante Wayans, and possibly written or directed by him as well. Based on these preferences, I would recommend 'Thunderball' (1965), which features Earl Cameron in the role of James Bond and has elements of satire in its portrayal of villain Emilio Largo.",
+      "constraints": {
+        "genre": "satire",
+        "language": "French",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Damien Dante Wayans",
+        "director": "Damien Dante Wayans",
+        "writer": "Damien Dante Wayans"
+      },
+      "rec_titles": [
+        "Thunderball",
+        "Ghostbusters II",
+        "Monty Python and the Holy Grail",
+        "This Is the End"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Damien Dante Wayans",
+        "anchor_title": "The Truman Show",
+        "constraints": {
+          "genre": "satire",
+          "plot": "older",
+          "writer": "Damien Dante Wayans"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a satire genre story with actor Damien Dante Wayans, director also by him, and potentially French language. I recommend 'The Great Dictator' as it combines these elements with Charlie Chaplin's satirical comedic style.",
+      "constraints": {
+        "genre": "satire",
+        "language": "French",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "actor": "Damien Dante Wayans",
+        "director": "Damien Dante Wayans",
+        "writer": "Damien Dante Wayans"
+      },
+      "rec_titles": [
+        "The Great Dictator",
+        "Used Cars",
+        "Titanic",
+        "Mars Attacks!"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Damien Dante Wayans",
+        "anchor_title": "The Truman Show",
+        "constraints": {
+          "genre": "satire",
+          "plot": "older",
+          "writer": "Damien Dante Wayans"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movies with satire or weird elements, featuring actors like Damien Dante Wayans or having French language and plot keywords like \"weird\" and \"thought.\" Based on these preferences, I would recommend 'Under the Tuscan Sun' due to its satire element, French language, and the presence of actor Frances Conroy, who also features in 'Thank You for Smoking'.",
+      "constraints": {
+        "genre": "satire",
+        "language": "French",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "RED",
+        "actor": "Damien Dante Wayans",
+        "director": "Damien Dante Wayans",
+        "writer": "Damien Dante Wayans"
+      },
+      "rec_titles": [
+        "Under the Tuscan Sun",
+        "Thank You for Smoking",
+        "Before Sunset",
+        "Maid in Manhattan"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Thank You for Smoking? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Damien Dante Wayans",
+        "anchor_title": "The Truman Show",
+        "constraints": {
+          "genre": "satire",
+          "plot": "older",
+          "writer": "Damien Dante Wayans"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies with a satirical tone, featuring actor Damien Dante Wayans, possibly directed by him as well. Recommendations include 'S. W. A. T.' and 'Her', both starring Wayans or featuring his unique brand of humor.",
+      "constraints": {
+        "genre": "satire",
+        "language": "French",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Thank You for Smoking",
+        "actor": "Damien Dante Wayans",
+        "director": "Damien Dante Wayans",
+        "writer": "Damien Dante Wayans"
+      },
+      "rec_titles": [
+        "Slumdog Millionaire",
+        "S.W.A.T.",
+        "The Deer Hunter",
+        "Her"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Damien Dante Wayans",
+        "anchor_title": "The Truman Show",
+        "constraints": {
+          "genre": "satire",
+          "plot": "older",
+          "writer": "Damien Dante Wayans"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes satirical movies, starring Damien Dante Wayans. Recommendations: 'Jumper' (2008), with its satirical elements and Wayans in a leading role, aligns well with the preference given.",
+      "constraints": {
+        "genre": "satire",
+        "language": "French",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "actor": "Damien Dante Wayans",
+        "director": "Damien Dante Wayans",
+        "writer": "Damien Dante Wayans"
+      },
+      "rec_titles": [
+        "Jumper",
+        "American Dreamz",
+        "In the Woods",
+        "Alex in Wonderland"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Jumper. I want to try something more psychiatry—still with David S. Goyer if possible. Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 47,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "psychiatry",
+        "anchor_title": "One Flew Over the Cuckoo's Nest",
+        "constraints": {
+          "genre": "psychiatry",
+          "plot": "older",
+          "writer": "David S. Goyer"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 47,
+          "from_focus": "writer",
+          "to_focus": "genre",
+          "bridge_field": "writer",
+          "bridge_value": "David S. Goyer",
+          "from_anchor": "The Truman Show",
+          "to_anchor": "One Flew Over the Cuckoo's Nest"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user desires a psychiatry-themed movie with actor Damien Dante Wayans and director involvement. From the list, 'Proof of Life' (2000) starring Russell Crowe fits this criteria, as it deals with themes of survival, captivity, and human connection.",
+      "constraints": {
+        "genre": "psychiatry",
+        "language": "French",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Jumper",
+        "actor": "Damien Dante Wayans",
+        "director": "Damien Dante Wayans",
+        "writer": "David S. Goyer"
+      },
+      "rec_titles": [
+        "Proof of Life",
+        "Bram Stoker's Dracula",
+        "Pulp Fiction",
+        "Dance Flick"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "psychiatry",
+        "anchor_title": "One Flew Over the Cuckoo's Nest",
+        "constraints": {
+          "genre": "psychiatry",
+          "plot": "older",
+          "writer": "David S. Goyer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in recommendations for movies with a psychiatry theme, featuring actor Damien Dante Wayans, and possibly directed or written by him. Given these preferences, I would suggest 'Once Upon a Time in America' as it fits the required genre and has Wayans in a notable role.",
+      "constraints": {
+        "genre": "psychiatry",
+        "language": "French",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Damien Dante Wayans",
+        "director": "Damien Dante Wayans",
+        "writer": "David S. Goyer"
+      },
+      "rec_titles": [
+        "Once Upon a Time in America",
+        "Moulin Rouge!",
+        "The Curious Case of Benjamin Button",
+        "Lord of War"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "psychiatry",
+        "anchor_title": "One Flew Over the Cuckoo's Nest",
+        "constraints": {
+          "genre": "psychiatry",
+          "plot": "older",
+          "writer": "David S. Goyer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a story involving a psychiatrist, with actor Damien Dante Wayans in the lead. From the given list, '2010' and 'What If...' could be recommended for their potential psychiatric storyline and connection to the requested actor.",
+      "constraints": {
+        "genre": "psychiatry",
+        "language": "French",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "actor": "Damien Dante Wayans",
+        "director": "Damien Dante Wayans",
+        "writer": "David S. Goyer"
+      },
+      "rec_titles": [
+        "2010",
+        "Little Fockers",
+        "The Dark Knight Rises",
+        "What If..."
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 50,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "psychiatry",
+        "anchor_title": "One Flew Over the Cuckoo's Nest",
+        "constraints": {
+          "genre": "psychiatry",
+          "plot": "older",
+          "writer": "David S. Goyer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user enjoys psychological thrillers with strong female leads. Based on these preferences, I would recommend 'Tell No One' due to its suspenseful plot and the powerful presence of Marina Hands as the protagonist. Additionally, 'What Women Want' could also be appealing given its focus on a female executive learning women's thoughts.",
+      "constraints": {
+        "genre": "psychiatry",
+        "language": "French",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "actor": "Damien Dante Wayans",
+        "director": "Damien Dante Wayans",
+        "writer": "David S. Goyer"
+      },
+      "rec_titles": [
+        "Tell No One",
+        "Bram Stoker's Dracula",
+        "Mama",
+        "What Women Want"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 3,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Incendies",
+      "to_anchor": "Waiting"
+    },
+    {
+      "turn": 5,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Jonathan Caouette",
+      "from_anchor": "Waiting",
+      "to_anchor": "The Piano Teacher"
+    },
+    {
+      "turn": 10,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "friends",
+      "from_anchor": "The Piano Teacher",
+      "to_anchor": "Thelma & Louise"
+    },
+    {
+      "turn": 16,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Ayush Mahesh Khedekar",
+      "from_anchor": "Thelma & Louise",
+      "to_anchor": "The Republic of Love"
+    },
+    {
+      "turn": 21,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "children",
+      "from_anchor": "The Republic of Love",
+      "to_anchor": "Tell No One"
+    },
+    {
+      "turn": 25,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "night",
+      "from_anchor": "Tell No One",
+      "to_anchor": "House on Haunted Hill"
+    },
+    {
+      "turn": 31,
+      "from_focus": "director",
+      "to_focus": "plot",
+      "bridge_field": "actor",
+      "bridge_value": "Kylie Minogue",
+      "from_anchor": "House on Haunted Hill",
+      "to_anchor": "Moulin Rouge!"
+    },
+    {
+      "turn": 36,
+      "from_focus": "plot",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "mine",
+      "from_anchor": "Moulin Rouge!",
+      "to_anchor": "Pride and Prejudice"
+    },
+    {
+      "turn": 41,
+      "from_focus": "genre",
+      "to_focus": "writer",
+      "bridge_field": "plot",
+      "bridge_value": "older",
+      "from_anchor": "Pride and Prejudice",
+      "to_anchor": "The Truman Show"
+    },
+    {
+      "turn": 47,
+      "from_focus": "writer",
+      "to_focus": "genre",
+      "bridge_field": "writer",
+      "bridge_value": "David S. Goyer",
+      "from_anchor": "The Truman Show",
+      "to_anchor": "One Flew Over the Cuckoo's Nest"
+    }
+  ]
+}

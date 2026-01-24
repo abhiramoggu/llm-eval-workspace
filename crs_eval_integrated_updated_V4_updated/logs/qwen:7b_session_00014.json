@@ -1,0 +1,2224 @@
+{
+  "session_id": "00014",
+  "model_name": "qwen:7b",
+  "true_genre": "epic",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a epic movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "epic",
+        "anchor_title": "Watership Down",
+        "constraints": {
+          "genre": "epic"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for epic movies that involve adventure, possibly with historical or mythical elements. Based on your preferences, I would recommend 'Dances with Wolves' as it combines war and cultural exchange, plus features Kevin Costner in an iconic role. Alternatively, 'Warrior' also offers a high-octane epic experience with Tom Hardy's participation.",
+      "constraints": {
+        "genre": "epic",
+        "plot": [
+          "epic",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "The Shadows",
+        "White Night",
+        "Dances with Wolves",
+        "Warrior"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Warrior? That sounds intriguing.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "epic",
+        "anchor_title": "Watership Down",
+        "constraints": {
+          "genre": "epic"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a war-themed movie with elements of what they are looking for, possibly containing strong acting performances.\n\nBased on these preferences, I recommend 'Kundun' (1997), starring Tenzin Thuthob Tsarong and Tulku Jamyang Kunga Tenzin, which offers a war narrative with Tibetan cultural context.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "warrior"
+        ],
+        "name": "War"
+      },
+      "rec_titles": [
+        "Kundun",
+        "Tears of the Sun",
+        "Doctor Zhivago",
+        "Predator"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "epic",
+        "anchor_title": "Watership Down",
+        "constraints": {
+          "genre": "epic"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's constraints include war genre and specific keywords like \"what\" and \"said.\" Based on these preferences, I would recommend 'Inglourious Basterds' as it satisfies both genre and plot keyword criteria with its focus on war and characters discussing what they say. The film features a star-studded cast including Liam Neeson, Brad Pitt, and Quentin Tarantino.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "War"
+      },
+      "rec_titles": [
+        "Inglourious Basterds",
+        "Amen.",
+        "Schindler's List",
+        "Lady in the Water"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does They tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "epic",
+        "anchor_title": "Watership Down",
+        "constraints": {
+          "genre": "epic"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in stories with a war theme and keywords like \"what\" and \"kind.\" Based on these preferences, I would recommend 'American Sniper' as it fits the war genre and features Chris Kyle, who embodies the element of curiosity ('what') in his story.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "They"
+      },
+      "rec_titles": [
+        "Schindler's List",
+        "Find Me Guilty",
+        "American Sniper",
+        "Alex in Wonderland"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "epic",
+        "anchor_title": "Watership Down",
+        "constraints": {
+          "genre": "epic"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user enjoys stories with a war theme and likes the sound of films with strong plots. Based on these preferences, I recommend 'A Farewell to Arms' for its compelling World War 1 story and the presence of stars such as James Stewart and Grace Kelly.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED"
+      },
+      "rec_titles": [
+        "Flyboys",
+        "A Farewell to Arms",
+        "The Patriot",
+        "300: Rise of an Empire"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Richard Lester? That sounds intriguing. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 6,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Richard Lester",
+        "anchor_title": "Mystic River",
+        "constraints": {
+          "genre": "epic",
+          "director": "Richard Lester",
+          "plot": "friends"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 6,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "friends",
+          "from_anchor": "Watership Down",
+          "to_anchor": "Mystic River"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in war-related movies directed by Richard Lester. I recommend 'Downfall' (2004), a thrilling war drama starring Juliane Köhler and Bruno Ganz. It offers an intense exploration of the war's impact.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Us",
+        "director": "Richard Lester"
+      },
+      "rec_titles": [
+        "Downfall",
+        "Born on the Fourth of July",
+        "Valkyrie",
+        "Zulu"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Richard Lester",
+        "anchor_title": "Mystic River",
+        "constraints": {
+          "genre": "epic",
+          "director": "Richard Lester",
+          "plot": "friends"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in recommendations for war-related movies directed by Richard Lester, with keywords like 'just' and 'more'. \n\nBased on these preferences, I would recommend 'RED' as it fits the genre and director, and also has elements of just solving a crime efficiently.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Richard Lester"
+      },
+      "rec_titles": [
+        "The River",
+        "RED",
+        "Schindler's List",
+        "Wolf Girl"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Gina Gershon. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 8,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Gina Gershon",
+        "anchor_title": "Wild Things",
+        "constraints": {
+          "genre": "epic",
+          "director": "Richard Lester",
+          "plot": "wild",
+          "actor": "Gina Gershon"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 8,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "wild",
+          "from_anchor": "Mystic River",
+          "to_anchor": "Wild Things"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies featuring Gina Gershon, with a war genre and possibly directed by Richard Lester. I recommend \"Inglourious Basterds\" (2009), which stars Gina Gershon among its ensemble cast, and has a war theme and Richard Lester's direction.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Us",
+        "director": "Richard Lester",
+        "actor": "Gina Gershon",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Dear John",
+        "Inglourious Basterds",
+        "Schindler's List",
+        "The Hangover"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Gina Gershon",
+        "anchor_title": "Wild Things",
+        "constraints": {
+          "genre": "epic",
+          "director": "Richard Lester",
+          "plot": "wild",
+          "actor": "Gina Gershon"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in recommendations for movies like war, featuring Gina Gershon as an actor, and possibly directed by Richard Lester. I suggest checking out 'Flyboys' (2006), which fits the genre and has Gina Gershon among the cast.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Richard Lester",
+        "actor": "Gina Gershon",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Flyboys",
+        "The Goodbye Girl",
+        "The Messenger",
+        "Zack and Miri Make a Porno"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Gina Gershon",
+        "anchor_title": "Wild Things",
+        "constraints": {
+          "genre": "epic",
+          "director": "Richard Lester",
+          "plot": "wild",
+          "actor": "Gina Gershon"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in war-themed movies with actor Gina Gershon.推荐《American Sniper》(演员包括Leonard Roberts和Keir O'Donnell)。这部电影是战争题材，也有Gina Gershon的参演。",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "You",
+        "director": "Richard Lester",
+        "actor": "Gina Gershon",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "American Sniper",
+        "Catch-22",
+        "Amen.",
+        "Dear John"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Gina Gershon",
+        "anchor_title": "Wild Things",
+        "constraints": {
+          "genre": "epic",
+          "director": "Richard Lester",
+          "plot": "wild",
+          "actor": "Gina Gershon"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences for a war-themed story, starring Gina Gershon, and directed by Richard Lester, I would recommend 'The Hunting Party'. This film, set during a brutal war, features Zan Marolt and Ljubomir Kerekes in the lead roles.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "director": "Richard Lester",
+        "actor": "Gina Gershon",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "The Hunting Party",
+        "Man on Wire",
+        "Valkyrie",
+        "Starship Troopers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Gina Gershon",
+        "anchor_title": "Wild Things",
+        "constraints": {
+          "genre": "epic",
+          "director": "Richard Lester",
+          "plot": "wild",
+          "actor": "Gina Gershon"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie that combines elements of war, with an actor like Gina Gershon, possibly directed by Richard Lester. 'The Good German' (2006) aligns well with these cues. It explores the aftermath of World War II in Berlin through the eyes of an American journalist played by Robin Weigert. With a strong cast and themes relevant to your preferences, this recommendation is particularly interesting.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what"
+        ],
+        "name": "Ted",
+        "director": "Richard Lester",
+        "actor": "Gina Gershon",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Her",
+        "Redacted",
+        "The Good German",
+        "Flatliners"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Gina Gershon",
+        "anchor_title": "Wild Things",
+        "constraints": {
+          "genre": "epic",
+          "director": "Richard Lester",
+          "plot": "wild",
+          "actor": "Gina Gershon"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes war-themed movies with strong female leads, and also enjoys celebrity cameos. Based on these preferences, I recommend '300' for its intense war aspect and Gina Gershon's presence as a strong female character. If the user is open to sci-fi, 'Jumper' could also be an interesting choice.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "You",
+        "director": "Richard Lester",
+        "actor": "Gina Gershon",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "300",
+        "Red Dawn",
+        "Maid in Manhattan",
+        "Jumper"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Matt Reeves? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 14,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Matt Reeves",
+        "anchor_title": "Just Visiting",
+        "constraints": {
+          "genre": "epic",
+          "director": "Matt Reeves",
+          "plot": "wild",
+          "actor": "Gina Gershon",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 14,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Wild Things",
+          "to_anchor": "Just Visiting"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a war-themed movie with Eve as an actor, and Matt Reeves as the director or writer. Based on these preferences, I recommend watching 'Elysium' (2013), featuring Sharlto Copley, Alice Braga, and Matt Damon in a sci-fi war context.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "RED",
+        "director": "Matt Reeves",
+        "actor": "Eve",
+        "language": "ger",
+        "writer": "Matt Reeves"
+      },
+      "rec_titles": [
+        "Elysium",
+        "RED",
+        "Restless",
+        "The Pianist"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Matt Reeves",
+        "anchor_title": "Just Visiting",
+        "constraints": {
+          "genre": "epic",
+          "director": "Matt Reeves",
+          "plot": "wild",
+          "actor": "Gina Gershon",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movie recommendations with a war theme, featuring actor Eve, and possibly directed by Matt Reeves or written by him. Based on these preferences, I recommend 'Donnie Brasco' due to its war theme, Eve's presence in the cast, and Matt Reeves' involvement as writer.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Matt Reeves",
+        "actor": "Eve",
+        "language": "ger",
+        "writer": "Matt Reeves"
+      },
+      "rec_titles": [
+        "Donnie Brasco",
+        "The Deer Hunter",
+        "Untraceable",
+        "Inglourious Basterds"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Matt Reeves",
+        "anchor_title": "Just Visiting",
+        "constraints": {
+          "genre": "epic",
+          "director": "Matt Reeves",
+          "plot": "wild",
+          "actor": "Gina Gershon",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes war-themed movies, with actors such as Eve or Tom Hulce. I recommend 'Black Hawk Down' for its realistic portrayal of a US military intervention in Somalia, featuring stars like Tom Sizemore and George Harris.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "director": "Matt Reeves",
+        "actor": "Eve",
+        "language": "ger",
+        "writer": "Matt Reeves"
+      },
+      "rec_titles": [
+        "Jumper",
+        "Born on the Fourth of July",
+        "Black Hawk Down",
+        "Psychic Experiment"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of War? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Matt Reeves",
+        "anchor_title": "Just Visiting",
+        "constraints": {
+          "genre": "epic",
+          "director": "Matt Reeves",
+          "plot": "wild",
+          "actor": "Gina Gershon",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies related to war, with an emphasis on actor Eve and director Matt Reeves. Based on these preferences, I would recommend 'Patton' (1970) starring George C. Scott, which perfectly fits the criteria given.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "War",
+        "director": "Matt Reeves",
+        "actor": "Eve",
+        "language": "ger",
+        "writer": "Matt Reeves"
+      },
+      "rec_titles": [
+        "Patton",
+        "Schindler's List",
+        "Born on the Fourth of July",
+        "Rain Man"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Alex Winter. That feels deeper than I thought. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 18,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Alex Winter",
+        "anchor_title": "The Selection",
+        "constraints": {
+          "genre": "epic",
+          "director": "Matt Reeves",
+          "plot": "wish",
+          "actor": "Alex Winter",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 18,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "wish",
+          "from_anchor": "Just Visiting",
+          "to_anchor": "The Selection"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for war-themed movies with actor Alex Winter and a directorial connection to Matt Reeves. Based on these preferences, I recommend 'Cinder' (2012) as it fits the genre and features both Alex Winter and Matt Reeves connections.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Ted",
+        "director": "Matt Reeves",
+        "actor": "Alex Winter",
+        "language": "ger",
+        "writer": "Matt Reeves"
+      },
+      "rec_titles": [
+        "Cinder",
+        "The Best Years of Our Lives",
+        "The Pallbearer",
+        "Black Hawk Down"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Alex Winter",
+        "anchor_title": "The Selection",
+        "constraints": {
+          "genre": "epic",
+          "director": "Matt Reeves",
+          "plot": "wish",
+          "actor": "Alex Winter",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants recommendations for movies similar to 'war' genre, featuring actor Alex Winter, and directed by Matt Reeves or written by him. Given these constraints, I recommend 'Veronica Mars' from the list as it matches the specified war genre and features Alex Winter in a notable role.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Matt Reeves",
+        "actor": "Alex Winter",
+        "language": "ger",
+        "writer": "Matt Reeves"
+      },
+      "rec_titles": [
+        "Veronica Mars",
+        "The Siege",
+        "Tora! Tora! Tora!",
+        "The Last Samurai"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by David Gelb? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 20,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "David Gelb",
+        "anchor_title": "Transcendence",
+        "constraints": {
+          "genre": "epic",
+          "director": "David Gelb",
+          "plot": "crazy",
+          "actor": "Alex Winter",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 20,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "crazy",
+          "from_anchor": "The Selection",
+          "to_anchor": "Transcendence"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for war-themed movies with David Gelb's touch. 'The Seduction of Joe Tynan' stars Melvyn Douglas and deals with political intrigue during a war. Alternatively, consider 'In the Land of Blood and Honey', which explores the conflict from two characters' perspectives.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "RED",
+        "director": "David Gelb",
+        "actor": "Alex Winter",
+        "language": "ger",
+        "writer": "Matt Reeves"
+      },
+      "rec_titles": [
+        "The Seduction of Joe Tynan",
+        "In the Land of Blood and Honey",
+        "The Hurt Locker",
+        "The Wind That Shakes the Barley"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 21,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "David Gelb",
+        "anchor_title": "Transcendence",
+        "constraints": {
+          "genre": "epic",
+          "director": "David Gelb",
+          "plot": "crazy",
+          "actor": "Alex Winter",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movie recommendations like 'Hotel Rwanda', with a focus on war genre, actor Alex Winter, and director David Gelb. Based on these preferences, I suggest checking out 'Red Cliff' which has a similar theme and features Wei Zhao and Takeshi Kaneshiro.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "David Gelb",
+        "actor": "Alex Winter",
+        "language": "ger",
+        "writer": "Matt Reeves"
+      },
+      "rec_titles": [
+        "Hotel Rwanda",
+        "Red Cliff",
+        "The Taming of the Shrew",
+        "The End of the Affair"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Winter? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "David Gelb",
+        "anchor_title": "Transcendence",
+        "constraints": {
+          "genre": "epic",
+          "director": "David Gelb",
+          "plot": "crazy",
+          "actor": "Alex Winter",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with winter themes, deep emotional impact, and featuring war genre, actor Alex Winter, and director David Gelb. From the given list, I would recommend 'Gladiator' due to its intense war theme, Alex Winter's presence as an actor, and the deep emotional resonance it evokes.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "winter"
+        ],
+        "name": "Deep",
+        "director": "David Gelb",
+        "actor": "Alex Winter",
+        "language": "ger",
+        "writer": "Matt Reeves"
+      },
+      "rec_titles": [
+        "Gladiator",
+        "Let Me In",
+        "Hart's War",
+        "The Last Samurai"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does War tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "David Gelb",
+        "anchor_title": "Transcendence",
+        "constraints": {
+          "genre": "epic",
+          "director": "David Gelb",
+          "plot": "crazy",
+          "actor": "Alex Winter",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in war-themed movies with Alex Winter as an actor, and David Gelb or Matt Reeves as a director. Based on these preferences, I would recommend 'Proof of Life' (2000) starring Russell Crowe, Michael Kitchen, and Alex Winter. It has elements of war and rescue, making it suitable for the user's interest.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "War",
+        "director": "David Gelb",
+        "actor": "Alex Winter",
+        "language": "ger",
+        "writer": "Matt Reeves"
+      },
+      "rec_titles": [
+        "Proof of Life",
+        "Inglourious Basterds",
+        "The Deer Hunter",
+        "Tombstone"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Winter. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "David Gelb",
+        "anchor_title": "Transcendence",
+        "constraints": {
+          "genre": "epic",
+          "director": "David Gelb",
+          "plot": "crazy",
+          "actor": "Alex Winter",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes war-themed movies with Alex Winter as the actor. Based on these preferences, I recommend \"Blow Out\" (1981), which features John McMartin in a war-related role and also stars Dennis Franz. This movie combines elements of war and espionage, making it an interesting choice for the user's tastes.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "director": "David Gelb",
+        "actor": "Alex Winter",
+        "language": "ger",
+        "writer": "Matt Reeves"
+      },
+      "rec_titles": [
+        "Flubber",
+        "Dear John",
+        "Blow Out",
+        "A Farewell to Arms"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "David Gelb",
+        "anchor_title": "Transcendence",
+        "constraints": {
+          "genre": "epic",
+          "director": "David Gelb",
+          "plot": "crazy",
+          "actor": "Alex Winter",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: They enjoyed movies with a war theme, liked actor Alex Winter, and found David Gelb's direction intriguing. Recommendations: I suggest watching 'Saving Private Ryan' directed by David Gelb and starring Alex Winter. It captures the war aspect and has memorable performances by the cast.\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "Deep",
+        "director": "David Gelb",
+        "actor": "Alex Winter",
+        "language": "ger",
+        "writer": "Matt Reeves"
+      },
+      "rec_titles": [
+        "The Best Years of Our Lives",
+        "The Pallbearer",
+        "Saving Private Ryan",
+        "Zack and Miri Make a Porno"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on War. I want to try something more science—I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 26,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "science",
+        "anchor_title": "Never Let Me Go",
+        "constraints": {
+          "genre": "science",
+          "director": "David Gelb",
+          "plot": "crazy",
+          "actor": "Alex Winter",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 26,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "agent",
+          "from_anchor": "Transcendence",
+          "to_anchor": "Never Let Me Go"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a science-themed movie with actor Alex Winter and director David Gelb. Recommendations could be 'Run Lola Run' due to its unique science-driven narrative, or 'Watchers' since it features both actor Winter and director Gelb's collaboration in a sci-fi context.\"",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "War",
+        "director": "David Gelb",
+        "actor": "Alex Winter",
+        "language": "ger",
+        "writer": "Matt Reeves"
+      },
+      "rec_titles": [
+        "Run Lola Run",
+        "The Stars My Destination",
+        "Watchers",
+        "Hot Tub Time Machine"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "science",
+        "anchor_title": "Never Let Me Go",
+        "constraints": {
+          "genre": "science",
+          "director": "David Gelb",
+          "plot": "crazy",
+          "actor": "Alex Winter",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for science-themed movies with actor Alex Winter, and director David Gelb. Based on these preferences, I recommend 'The River' (2011) which stars Alex Winter and documents a scientific project related to the Mississippi River. It combines the requested genre, actor, and director.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "David Gelb",
+        "actor": "Alex Winter",
+        "language": "ger",
+        "writer": "Matt Reeves"
+      },
+      "rec_titles": [
+        "The River",
+        "Eternal Sunshine of the Spotless Mind",
+        "My Girl 2",
+        "The Jacket"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "science",
+        "anchor_title": "Never Let Me Go",
+        "constraints": {
+          "genre": "science",
+          "director": "David Gelb",
+          "plot": "crazy",
+          "actor": "Alex Winter",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants opposite preferences, with a focus on science genre, actor Alex Winter, and German language. Based on these constraints, I recommend 'Young Frankenstein' (1974), which has a mix of comedy, sci-fi, and features Madeline Kahn as the title character, who plays opposite roles to showcase her acting range.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "You",
+        "director": "David Gelb",
+        "actor": "Alex Winter",
+        "language": "ger",
+        "writer": "Matt Reeves"
+      },
+      "rec_titles": [
+        "Beastly",
+        "You",
+        "The Incredible Hulk",
+        "Young Frankenstein"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "science",
+        "anchor_title": "Never Let Me Go",
+        "constraints": {
+          "genre": "science",
+          "director": "David Gelb",
+          "plot": "crazy",
+          "actor": "Alex Winter",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants opposite preferences, with a focus on science fiction, an actor named Alex Winter, and a director by David Gelb. Based on these constraints, I recommend 'Face/Off' since it meets the science fiction genre (though not focused solely on science), features Alex Winter in a significant role as part of the villain Castor Troy's team, and is directed by David Gelb who wrote the script.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "You",
+        "director": "David Gelb",
+        "actor": "Alex Winter",
+        "language": "ger",
+        "writer": "Matt Reeves"
+      },
+      "rec_titles": [
+        "The Truth",
+        "The Buried Giant",
+        "Real Steel",
+        "Face/Off"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "science",
+        "anchor_title": "Never Let Me Go",
+        "constraints": {
+          "genre": "science",
+          "director": "David Gelb",
+          "plot": "crazy",
+          "actor": "Alex Winter",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user enjoys science fiction and is interested in films featuring Alex Winter. Based on these preferences, I recommend 'The Imaginarium of Doctor Parnassus' (2009), which stars Colin Farrell and features Alex Winter's character, Parnassus. This film explores imaginative worlds and the power of storytelling.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "You",
+        "director": "David Gelb",
+        "actor": "Alex Winter",
+        "language": "ger",
+        "writer": "Matt Reeves"
+      },
+      "rec_titles": [
+        "The Imaginarium of Doctor Parnassus",
+        "THX 1138",
+        "Battleship",
+        "The Maze Runner"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "science",
+        "anchor_title": "Never Let Me Go",
+        "constraints": {
+          "genre": "science",
+          "director": "David Gelb",
+          "plot": "crazy",
+          "actor": "Alex Winter",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with science as a genre, featuring actor Alex Winter, and possibly directed by David Gelb or written by Matt Reeves. I recommend \"Tron\" (1982), which fits these criteria perfectly - starring Alex Winter as Clu, the game master, and directed by David Fincher (under pseudonym 'Darryl砸墙'), it combines science fiction with gaming concepts.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "X",
+        "director": "David Gelb",
+        "actor": "Alex Winter",
+        "language": "ger",
+        "writer": "Matt Reeves"
+      },
+      "rec_titles": [
+        "Tron",
+        "Safety Not Guaranteed",
+        "The Secret",
+        "What If..."
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Winter tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "science",
+        "anchor_title": "Never Let Me Go",
+        "constraints": {
+          "genre": "science",
+          "director": "David Gelb",
+          "plot": "crazy",
+          "actor": "Alex Winter",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's constraints, they seem to enjoy science fiction and stories involving a specific character. I recommend \"Outlander\" for its blend of time travel and romance with Sophia Myles playing the lead role.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Winter",
+        "director": "David Gelb",
+        "actor": "Alex Winter",
+        "language": "ger",
+        "writer": "Matt Reeves"
+      },
+      "rec_titles": [
+        "Womb",
+        "Outlander",
+        "Anyone But You",
+        "The Return of the King"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "science",
+        "anchor_title": "Never Let Me Go",
+        "constraints": {
+          "genre": "science",
+          "director": "David Gelb",
+          "plot": "crazy",
+          "actor": "Alex Winter",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes science-themed movies, with actor Alex Winter involved. Recommendations: 'District 9' has sci-fi elements and stars Ken Nkosi, while 'The Butterfly Effect' discusses social issues through the lens of time manipulation, featuring Eric Stoltz among others.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "director": "David Gelb",
+        "actor": "Alex Winter",
+        "language": "ger",
+        "writer": "Matt Reeves"
+      },
+      "rec_titles": [
+        "District 9",
+        "The Core",
+        "The Right Stuff",
+        "The Butterfly Effect"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Terry Jones (Historian)? Hmm, I didn’t expect that vibe. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 34,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Terry Jones (Historian)",
+        "anchor_title": "Lucky Number Slevin",
+        "constraints": {
+          "genre": "science",
+          "director": "Terry Jones (Historian)",
+          "plot": "crazy",
+          "actor": "Alex Winter",
+          "language": "English",
+          "writer": "David Nicholls"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 34,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "writer",
+          "bridge_value": "David Nicholls",
+          "from_anchor": "Never Let Me Go",
+          "to_anchor": "Lucky Number Slevin"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in science-themed movies, featuring actor Terry Jones and directed by Terry Jones himself. Based on these preferences, I recommend 'Jurassic Park' (1990), which combines science with adventure starring Jeff Goldblum, and has a strong Terry Jones connection through the writing involved.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "X",
+        "director": "Terry Jones (Historian)",
+        "actor": "Terry",
+        "language": "ger",
+        "writer": "Terry Jones (Historian)"
+      },
+      "rec_titles": [
+        "Jurassic Park",
+        "City of Ember",
+        "Flubber",
+        "Watchers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Terry Jones (Historian)",
+        "anchor_title": "Lucky Number Slevin",
+        "constraints": {
+          "genre": "science",
+          "director": "Terry Jones (Historian)",
+          "plot": "crazy",
+          "actor": "Alex Winter",
+          "language": "English",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences for a science-themed movie with Terry as an actor, I recommend 'Treasure Planet'. It combines elements of adventure and science fiction, starring Terry as Jim Hawkins, along with other talented actors.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Terry Jones (Historian)",
+        "actor": "Terry",
+        "language": "ger",
+        "writer": "Terry Jones (Historian)"
+      },
+      "rec_titles": [
+        "Treasure Planet",
+        "Lost",
+        "Uglies",
+        "The Man from Earth"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Terry Jones (Historian)",
+        "anchor_title": "Lucky Number Slevin",
+        "constraints": {
+          "genre": "science",
+          "director": "Terry Jones (Historian)",
+          "plot": "crazy",
+          "actor": "Alex Winter",
+          "language": "English",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a story with elements of science, featuring Terry as an actor and Terry Jones as a director. Recommendations could be 'Ghostbusters' (featuring Ernie Hudson and William Atherton) or 'Just Visiting' (starring Christian Clavier and Matt Ross).",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "director": "Terry Jones (Historian)",
+        "actor": "Terry",
+        "language": "ger",
+        "writer": "Terry Jones (Historian)"
+      },
+      "rec_titles": [
+        "The Watch",
+        "Just Visiting",
+        "Ghostbusters",
+        "The Twilight Saga: New Moon"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ghostbusters? That sounds intriguing.",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Terry Jones (Historian)",
+        "anchor_title": "Lucky Number Slevin",
+        "constraints": {
+          "genre": "science",
+          "director": "Terry Jones (Historian)",
+          "plot": "crazy",
+          "actor": "Alex Winter",
+          "language": "English",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies with a science theme, featuring actor Terry, and potentially directed by Terry Jones. Based on these constraints, I would recommend 'The Last Airbender' since it has a scientific element (energy manipulation via the elements), features Terry as one of the voice actors, and was co-directed by Terry Jones.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "what",
+          "ghostbusters"
+        ],
+        "name": "Ghostbusters",
+        "director": "Terry Jones (Historian)",
+        "actor": "Terry",
+        "language": "ger",
+        "writer": "Terry Jones (Historian)"
+      },
+      "rec_titles": [
+        "The Last Airbender",
+        "Holes",
+        "Monsters vs. Aliens",
+        "Despicable Me 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Terry Jones (Historian)",
+        "anchor_title": "Lucky Number Slevin",
+        "constraints": {
+          "genre": "science",
+          "director": "Terry Jones (Historian)",
+          "plot": "crazy",
+          "actor": "Alex Winter",
+          "language": "English",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user enjoys science fiction with actor Terry in the lead. I recommend 'The Matrix Revolutions' due to its sci-fi action with Keanu Reeves and the iconic 'Matrix' world.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "director": "Terry Jones (Historian)",
+        "actor": "Terry",
+        "language": "ger",
+        "writer": "Terry Jones (Historian)"
+      },
+      "rec_titles": [
+        "Outlander",
+        "The Matrix Revolutions",
+        "The Abyss",
+        "Flatliners"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Terry Jones (Historian)",
+        "anchor_title": "Lucky Number Slevin",
+        "constraints": {
+          "genre": "science",
+          "director": "Terry Jones (Historian)",
+          "plot": "crazy",
+          "actor": "Alex Winter",
+          "language": "English",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in science-themed movies with actor Terry involved, and possibly featuring a writer who's also Terry Jones. Based on these preferences, I recommend \"12 Monkeys\" due to its blend of science, Terry as an actor, and Terry Jones as both actor and writer.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "X",
+        "director": "Terry Jones (Historian)",
+        "actor": "Terry",
+        "language": "ger",
+        "writer": "Terry Jones (Historian)"
+      },
+      "rec_titles": [
+        "12 Monkeys",
+        "The Wraith",
+        "Cinder",
+        "The Incredible Hulk"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Terry Jones (Historian)",
+        "anchor_title": "Lucky Number Slevin",
+        "constraints": {
+          "genre": "science",
+          "director": "Terry Jones (Historian)",
+          "plot": "crazy",
+          "actor": "Alex Winter",
+          "language": "English",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User wants a movie recommendation with genre science, featuring actor Terry, and directed by either Terry Jones (Historian) or related. Based on these criteria, \"SpaceCamp\" starring Tate Donovan and directed by Terry Jones would be a suitable recommendation.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "X",
+        "director": "Terry Jones (Historian)",
+        "actor": "Terry",
+        "language": "ger",
+        "writer": "Terry Jones (Historian)"
+      },
+      "rec_titles": [
+        "SpaceCamp",
+        "Super 8",
+        "Lady in the Water",
+        "The Darkest Hour"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Wallace Wolodarsky. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 41,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Wallace Wolodarsky",
+        "anchor_title": "A Wrinkle in Time",
+        "constraints": {
+          "genre": "science",
+          "director": "Terry Jones (Historian)",
+          "plot": "reunite",
+          "actor": "Wallace Wolodarsky",
+          "language": "English",
+          "writer": "David Nicholls"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 41,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "reunite",
+          "from_anchor": "Lucky Number Slevin",
+          "to_anchor": "A Wrinkle in Time"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I recommend 'The Future of Us'. This film, with its storyline about kids finding their way in a future world, aligns well with the mention of characters learning and getting mixed up in trouble.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Us",
+        "director": "Terry Jones (Historian)",
+        "actor": "Wallace Wolodarsky",
+        "language": "ger",
+        "writer": "Wallace Wolodarsky"
+      },
+      "rec_titles": [
+        "Divergent",
+        "Men in Black",
+        "Ariel",
+        "The Future of Us"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Wallace Wolodarsky",
+        "anchor_title": "A Wrinkle in Time",
+        "constraints": {
+          "genre": "science",
+          "director": "Terry Jones (Historian)",
+          "plot": "reunite",
+          "actor": "Wallace Wolodarsky",
+          "language": "English",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You mentioned a preference for science-themed movies, with actor Wallace Wolodarsky in mind. Based on those cues, I would recommend 'Never Let Me Go' (2010) due to its science aspect and the involvement of Wolodarsky.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Terry Jones (Historian)",
+        "actor": "Wallace Wolodarsky",
+        "language": "ger",
+        "writer": "Wallace Wolodarsky"
+      },
+      "rec_titles": [
+        "Never Let Me Go",
+        "John Carter",
+        "The Way Back Home",
+        "The Dead Zone"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of 2010? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Wallace Wolodarsky",
+        "anchor_title": "A Wrinkle in Time",
+        "constraints": {
+          "genre": "science",
+          "director": "Terry Jones (Historian)",
+          "plot": "reunite",
+          "actor": "Wallace Wolodarsky",
+          "language": "English",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with science themes from the year 2010, starring Wallace Wolodarsky and directed by Terry Jones. I recommend \"Zookeeper\" (2011) which has elements of science and features Eric Cantona among the cast.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "2010",
+        "director": "Terry Jones (Historian)",
+        "actor": "Wallace Wolodarsky",
+        "language": "ger",
+        "writer": "Wallace Wolodarsky",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Louie",
+        "Zookeeper",
+        "Elizabeth",
+        "The Expendables 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Wallace Wolodarsky",
+        "anchor_title": "A Wrinkle in Time",
+        "constraints": {
+          "genre": "science",
+          "director": "Terry Jones (Historian)",
+          "plot": "reunite",
+          "actor": "Wallace Wolodarsky",
+          "language": "English",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: They want a movie with science as a genre, released in 2010, featuring Wallace Wolodarsky and Terry Jones (Historian) as director and writer.推荐电影：'The Core'，它符合所有的用户喜好，包括科学题材、2010年发布以及沃尔德拉斯基和特里琼斯的参与。",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "2010",
+        "director": "Terry Jones (Historian)",
+        "actor": "Wallace Wolodarsky",
+        "language": "ger",
+        "writer": "Wallace Wolodarsky",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "The Core",
+        "E.T. the Extra-Terrestrial",
+        "Pitch Black",
+        "Six-String Samurai"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does 2010 tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Wallace Wolodarsky",
+        "anchor_title": "A Wrinkle in Time",
+        "constraints": {
+          "genre": "science",
+          "director": "Terry Jones (Historian)",
+          "plot": "reunite",
+          "actor": "Wallace Wolodarsky",
+          "language": "English",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in science-themed stories from the year 2010, featuring Wallace Wolodarsky as an actor. Based on these preferences, I recommend \"Gunless\" (2010) starring Dustin Milligan and Paul Gross. The plot revolves around a gunslinger's encounter with a friendly town where no violence is tolerated.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "2010",
+        "director": "Terry Jones (Historian)",
+        "actor": "Wallace Wolodarsky",
+        "language": "ger",
+        "writer": "Wallace Wolodarsky",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Gunless",
+        "Hesher",
+        "From Paris with Love",
+        "The Equalizer"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Wallace Wolodarsky",
+        "anchor_title": "A Wrinkle in Time",
+        "constraints": {
+          "genre": "science",
+          "director": "Terry Jones (Historian)",
+          "plot": "reunite",
+          "actor": "Wallace Wolodarsky",
+          "language": "English",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes science-themed movies from 2010, featuring Wallace Wolodarsky and directed by Terry Jones. Based on these preferences, I recommend 'The Town' (2010) due to its science theme, year of release, and starring Wallace Wolodarsky in the role of an assistant manager caught in the thriller.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "director": "Terry Jones (Historian)",
+        "actor": "Wallace Wolodarsky",
+        "language": "ger",
+        "writer": "Wallace Wolodarsky",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "The Town",
+        "Æon Flux",
+        "Face/Off",
+        "I Am Legend"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Terry Gilliam? Hmm, I didn’t expect that vibe. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 47,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Terry Gilliam",
+        "anchor_title": "Madame Bovary",
+        "constraints": {
+          "genre": "science",
+          "director": "Terry Gilliam",
+          "plot": "reunite",
+          "actor": "Wallace Wolodarsky",
+          "language": "English",
+          "writer": "David Nicholls"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 47,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "A Wrinkle in Time",
+          "to_anchor": "Madame Bovary"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants recommendations for movies with science genre, released in 2010, featuring Terry as an actor or director. Based on these preferences, I suggest 'Salt' (2010) starring Terry Colter and directed by Terry Gilliam, which matches your requirements.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Ted",
+        "director": "Terry Gilliam",
+        "actor": "Terry",
+        "language": "ger",
+        "writer": "Terry Gilliam",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Salt",
+        "Dead or Alive",
+        "Gattaca",
+        "Downfall"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Terry Gilliam",
+        "anchor_title": "Madame Bovary",
+        "constraints": {
+          "genre": "science",
+          "director": "Terry Gilliam",
+          "plot": "reunite",
+          "actor": "Wallace Wolodarsky",
+          "language": "English",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: Just checking for more science-themed movies from 2010 with Terry as an actor, preferably featuring Gilliam as director or writer.\n\nMovie recommendation: Based on your preferences, I would recommend \"The King's Speech\" (2010). It features Terry Gilliam as the writer and Michael Gambon as King George VI, both roles played by Terry. The movie is a heartwarming tale of overcoming stuttering with the help of a skilled speech therapist.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Terry Gilliam",
+        "actor": "Terry",
+        "language": "ger",
+        "writer": "Terry Gilliam",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Back to the Future Part II",
+        "3",
+        "Hopeless",
+        "The King's Speech"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Terry Gilliam",
+        "anchor_title": "Madame Bovary",
+        "constraints": {
+          "genre": "science",
+          "director": "Terry Gilliam",
+          "plot": "reunite",
+          "actor": "Wallace Wolodarsky",
+          "language": "English",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants science-themed movies from 2010, starring Terry, and directed by Terry Gilliam. Based on these criteria, I recommend 'Extraordinary Measures' which fits all the conditions mentioned. It stars Patrick Bauchau and Dee Wallace, with a plot centered around finding a cure for children's rare genetic disorder.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "You",
+        "director": "Terry Gilliam",
+        "actor": "Terry",
+        "language": "ger",
+        "writer": "Terry Gilliam",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Star Trek Into Darkness",
+        "Extraordinary Measures",
+        "Pitch Black",
+        "The Andromeda Strain"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does 2010 tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 50,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Terry Gilliam",
+        "anchor_title": "Madame Bovary",
+        "constraints": {
+          "genre": "science",
+          "director": "Terry Gilliam",
+          "plot": "reunite",
+          "actor": "Wallace Wolodarsky",
+          "language": "English",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in science-themed films from 2010, featuring Terry or directed by Terry Gilliam. Based on these preferences, I recommend 'Southland Tales' (2006), a sci-fi drama with elements of action and reality TV, featuring Cheri Oteri among others.",
+      "constraints": {
+        "genre": "science",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "2010",
+        "director": "Terry Gilliam",
+        "actor": "Terry",
+        "language": "ger",
+        "writer": "Terry Gilliam",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Anyone But You",
+        "The Other Guys",
+        "Southland Tales",
+        "Training Day"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 6,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "friends",
+      "from_anchor": "Watership Down",
+      "to_anchor": "Mystic River"
+    },
+    {
+      "turn": 8,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "wild",
+      "from_anchor": "Mystic River",
+      "to_anchor": "Wild Things"
+    },
+    {
+      "turn": 14,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Wild Things",
+      "to_anchor": "Just Visiting"
+    },
+    {
+      "turn": 18,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "wish",
+      "from_anchor": "Just Visiting",
+      "to_anchor": "The Selection"
+    },
+    {
+      "turn": 20,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "crazy",
+      "from_anchor": "The Selection",
+      "to_anchor": "Transcendence"
+    },
+    {
+      "turn": 26,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "agent",
+      "from_anchor": "Transcendence",
+      "to_anchor": "Never Let Me Go"
+    },
+    {
+      "turn": 34,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "writer",
+      "bridge_value": "David Nicholls",
+      "from_anchor": "Never Let Me Go",
+      "to_anchor": "Lucky Number Slevin"
+    },
+    {
+      "turn": 41,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "reunite",
+      "from_anchor": "Lucky Number Slevin",
+      "to_anchor": "A Wrinkle in Time"
+    },
+    {
+      "turn": 47,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "A Wrinkle in Time",
+      "to_anchor": "Madame Bovary"
+    }
+  ]
+}

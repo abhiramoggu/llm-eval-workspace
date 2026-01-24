@@ -1,0 +1,2190 @@
+{
+  "session_id": "00041",
+  "model_name": "llama2:latest",
+  "true_genre": "buddy",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a buddy movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "buddy",
+        "anchor_title": "The Hangover Part II",
+        "constraints": {
+          "genre": "buddy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: buddy; plot keywords: buddy, could. Based on those cues, I recommend \"Elysium\" and \"Hollywood Homicide\" as they both feature a buddy dynamic between the main characters. In \"Elysium,\" Matt Damon and Sharlto Copley play two individuals from different worlds who must work together to bring equality to their polarized world. In \"Hollywood Homicide,\" two detectives (played by Isaiah Washington and Lolita Davidovich) investigate a murder in the rap music industry, forming an unlikely bond along the way.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "buddy",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "Elysium",
+        "White Night",
+        "Hollywood Homicide",
+        "Friday After Next"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does They tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "buddy",
+        "anchor_title": "The Hangover Part II",
+        "constraints": {
+          "genre": "buddy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has expressed interest in stories with a buddy element and plots that explore what kind of story they tell. Based on these preferences, I recommend \"Prometheus\" and \"Eve's Bayou\". Both films feature strong casts and intriguing plots that delve into the themes of humanity, secrets, and mysterious forces.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "They"
+      },
+      "rec_titles": [
+        "Prometheus",
+        "Eve's Bayou",
+        "Wolfhound",
+        "Taxi Driver"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Tron. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "buddy",
+        "anchor_title": "The Hangover Part II",
+        "constraints": {
+          "genre": "buddy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has expressed interest in movies with a buddy plot and a sound that intrigues them, so I will recommend two movies from this list that fit those criteria. \"Providence\" is a drama about two childhood friends who are reunited years later after a tragedy, featuring actors like Mitchel Musso and Linda Cardellini. \"Rockshow\" is a concert film starring Paul McCartney and Wings, offering a unique opportunity to see the legendary musician perform live on stage.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Tron"
+      },
+      "rec_titles": [
+        "Providence",
+        "Rockshow",
+        "American Dreamz",
+        "The Other Guys"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? That sounds intriguing.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "buddy",
+        "anchor_title": "The Hangover Part II",
+        "constraints": {
+          "genre": "buddy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - buddy, plot keywords - what, intriguing\nBased on the user's preferences, I recommend \"Hot Fuzz\" and \"This Is Spinal Tap\". Both movies are comedic thrillers with a focus on witty dialogue and memorable characters. \"Hot Fuss\" follows an overachieving London police sergeant who clashes with his new rural partners, while \"This Is Spinal Tap\" chronicles the misadventures of a fictional rock band on tour. Both movies are hilarious and have received critical acclaim for their clever writing and acting.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "X"
+      },
+      "rec_titles": [
+        "Hot Fuzz",
+        "This Is Spinal Tap",
+        "Wolfhound",
+        "The Trouble with Harry"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Rowan Atkinson. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of This Is Spinal Tap.)",
+      "user_meta": {
+        "turn": 5,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Rowan Atkinson",
+        "anchor_title": "This Is Spinal Tap",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Rowan Atkinson",
+          "writer": "Michael McKean"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 5,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "writer",
+          "bridge_value": "Michael McKean",
+          "from_anchor": "The Hangover Part II",
+          "to_anchor": "This Is Spinal Tap"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre: buddy; actor: Rowan Atkinson; writer: Rowan Atkinson; plot keywords: could, find.\nBased on the user's constraints, I recommend \"The Incredible Hulk\" and \"Frozen.\" Both movies feature Rowan Atkinson in lead roles, and they align with the user's preference for buddy movies and a lighthearted tone. \"The Incredible Hulk\" is an action-packed superhero movie that follows Bruce Banner as he tries to find a cure for his monster alter ego, while \"Frozen\" is a heartwarming animated adventure about sisterly love and determination.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "This Is Spinal Tap",
+        "actor": "Rowan Atkinson",
+        "writer": "Rowan Atkinson"
+      },
+      "rec_titles": [
+        "The Incredible Hulk",
+        "The Seduction of Joe Tynan",
+        "The Aftermath",
+        "Frozen"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Rowan Atkinson",
+        "anchor_title": "This Is Spinal Tap",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Rowan Atkinson",
+          "writer": "Michael McKean"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, I see that you're looking for more movie recommendations based on your preferences. As before, I have a few suggestions that might interest you:\n\n* The Lincoln Lawyer (2011) is a legal drama starring Matthew McConaughey as a defense attorney who becomes increasingly convinced of his client's guilt beyond just one crime. With a strong cast and an engaging plot, this movie is sure to keep you on the edge of your seat.\n* We Need to Talk About Kevin (2011) is a psychological thriller that follows a mother's struggles to love her strange child as he grows up and commits increasingly dangerous acts. With a standout performance from Tilda Swinton, this movie will keep you guessing until the very end.\n\nI hope you find these recommendations helpful! Let me know if you have any other questions.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Rowan Atkinson",
+        "writer": "Rowan Atkinson"
+      },
+      "rec_titles": [
+        "The Lincoln Lawyer",
+        "We Need to Talk About Kevin",
+        "Jack and Jill",
+        "Connie and Carla"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Tron? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Rowan Atkinson",
+        "anchor_title": "This Is Spinal Tap",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Rowan Atkinson",
+          "writer": "Michael McKean"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: The user wants a movie that is similar in mood to Tron, but they are unsure if they will enjoy it or be scared by it. They prefer movies with a buddy genre, starring Rowan Atkinson, and with a plot centered around decision-making.\n\nBased on the user's constraints, I recommend watching \"Mallrats\" and \"Flatliners.\" Both of these movies have a similar tone to Tron in terms of their futuristic and action-packed plots, while also featuring buddy genres and starring Rowan Atkinson. In \"Mallrats,\" Brian O'Halloran and Jason Mewes play two best friends seeking refuge in a mall after being dumped by their girlfriends, while in \"Flatliners,\" five medical students embark on a dangerous experiment to trigger near-death experiences and gain insight into the afterlife. Both movies are sure to provide an engaging and thrilling viewing experience!",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "Tron",
+        "actor": "Rowan Atkinson",
+        "writer": "Rowan Atkinson"
+      },
+      "rec_titles": [
+        "Mallrats",
+        "Pride and Prejudice",
+        "Flatliners",
+        "Friends with Kids"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Rowan Atkinson",
+        "anchor_title": "This Is Spinal Tap",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Rowan Atkinson",
+          "writer": "Michael McKean"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! The user has provided some helpful cues, including the genre \"buddy,\" the actor Rowan Atkinson, and the keywords \"like\" and \"sound.\" Based on these cues, I recommend the concert film \"Rockshow\" starring Paul McCartney, as it features a live concert experience with a 5.1 mix for the first time. Alternatively, if you're in the mood for something else, the comedy \"The Other Guys\" with Will Ferrell and Mark Wahlberg is also worth checking out. Both movies have a fun and entertaining vibe that aligns with the user's preferences!",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "actor": "Rowan Atkinson",
+        "writer": "Rowan Atkinson"
+      },
+      "rec_titles": [
+        "Rockshow",
+        "The Other Guys",
+        "It's a Wonderful Life",
+        "Due Date"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Other Guys tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Rowan Atkinson",
+        "anchor_title": "This Is Spinal Tap",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Rowan Atkinson",
+          "writer": "Michael McKean"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, it seems they enjoy movies with a buddy dynamic and may appreciate films with a unique or unexpected twist. Of the movies listed, I would recommend \"Lady in the Water\" and \"Find Me Guilty.\" Both of these films feature an intriguing plot and talented actors, including Paul Giamatti and Vin Diesel respectively.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her",
+        "actor": "Rowan Atkinson",
+        "writer": "Rowan Atkinson"
+      },
+      "rec_titles": [
+        "Lady in the Water",
+        "Find Me Guilty",
+        "2010",
+        "Holes"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Jan de Bont? That feels deeper than I thought. (I’m thinking of Water.)",
+      "user_meta": {
+        "turn": 10,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Jan de Bont",
+        "anchor_title": "The Sting",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Rowan Atkinson",
+          "writer": "Michael McKean",
+          "director": "Jan de Bont",
+          "plot": "medics"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 10,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "medics",
+          "from_anchor": "This Is Spinal Tap",
+          "to_anchor": "The Sting"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has expressed a preference for movies directed by Jan de Bont, featuring actor Rowan Atkinson, and with a plot related to switching or could. Based on these constraints, I recommend the movie \"Hot Fuzz\" starring Simon Pegg and Nick Frost as two bumbling police officers who must solve a series of murders in a small town. The film is a hilarious and action-packed ride filled with witty dialogue and memorable characters. Alternatively, \"In Bruges\" (2008) also directed by Jan de Bont and starring Colin Farrell and Ralph Fiennes as two hitmen hiding out in the picturesque city of Bruges, is another great option.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Water",
+        "actor": "Jan de Bont",
+        "writer": "Rowan Atkinson",
+        "director": "Jan de Bont"
+      },
+      "rec_titles": [
+        "In Bruges",
+        "True Blood",
+        "Hot Fuzz",
+        "Mr. Bean's Holiday"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jan de Bont",
+        "anchor_title": "The Sting",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Rowan Atkinson",
+          "writer": "Michael McKean",
+          "director": "Jan de Bont",
+          "plot": "medics"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your user's preferences, I would recommend \"Friday After Next\" and \"The Princess Diaries.\" Both of these movies feature comedic elements and talented actors, including Ice Cube, Mike Epps, Katt Williams, and Anne Hathaway. In \"Friday After Next,\" two security guards try to catch a thief who stole their Christmas presents, while in \"The Princess Diaries,\" a teenage girl discovers she's the heir to a small country and must navigate her new royal life with the help of her friends.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Jan de Bont",
+        "writer": "Rowan Atkinson",
+        "director": "Jan de Bont"
+      },
+      "rec_titles": [
+        "Friday After Next",
+        "The Princess Diaries",
+        "In Time",
+        "Harry Potter and the Half-Blood Prince"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Frida? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jan de Bont",
+        "anchor_title": "The Sting",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Rowan Atkinson",
+          "writer": "Michael McKean",
+          "director": "Jan de Bont",
+          "plot": "medics"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user is interested in a movie with a similar mood to Frida, but they are unsure if they will enjoy it or be scared by it. They prefer movies with a buddy genre, starring Jan de Bont, Rowan Atkinson, or featuring a plot related to what or frida.\nRecommendation: Based on the user's constraints, I recommend watching \"Waiting\" (1999) or \"Grown Ups\" (2010). Both movies have a similar mood to Frida and feature actors who match the user's preferences. \"Waiting\" follows a group of friends as they gather for the birth of a child, while \"Grown Ups\" reunites a group of friends for a Fourth of July holiday weekend. Both movies have a heartwarming and relatable plot that explores the complexities of relationships and friendships.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "what",
+          "frida"
+        ],
+        "name": "Frida",
+        "actor": "Jan de Bont",
+        "writer": "Rowan Atkinson",
+        "director": "Jan de Bont"
+      },
+      "rec_titles": [
+        "Waiting",
+        "Grown Ups",
+        "The Yearling",
+        "Wild Hogs"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does War tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jan de Bont",
+        "anchor_title": "The Sting",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Rowan Atkinson",
+          "writer": "Michael McKean",
+          "director": "Jan de Bont",
+          "plot": "medics"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThe user is interested in movies about war, specifically the Vietnam War, and they prefer movies with Jan de Bont as director or actor. They are also open to other genres such as animation and small business-focused documentaries.\n\nRecommendation:\nBased on the user's constraints, I recommend \"Born on the Fourth of July\" (1989) starring Tom Berenger as Ron Kovic, a paralyzed Vietnam War veteran who becomes an anti-war activist. The movie is a powerful biography that explores themes of patriotism, betrayal, and the human cost of war. Alternatively, \"The Last Unicorn\" (1968) is an animated musical that tells the story of a unicorn's journey to find out if she is truly alone in the world. With a talented voice cast including Alan Arkin and Mia Farrow, this movie is a timeless classic that explores themes of identity and belonging.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "War",
+        "actor": "Jan de Bont",
+        "writer": "Rowan Atkinson",
+        "director": "Jan de Bont"
+      },
+      "rec_titles": [
+        "Born on the Fourth of July",
+        "300",
+        "The Last Unicorn",
+        "Chain Reaction"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Born on the Fourth of July. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jan de Bont",
+        "anchor_title": "The Sting",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Rowan Atkinson",
+          "writer": "Michael McKean",
+          "director": "Jan de Bont",
+          "plot": "medics"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User Constraints:\nThe user likes the sound of Born on the Fourth of July and is interested in movies related to war. They are open to other genres as well, specifically actor Jan de Bont and director Oliver Stone.\n\nRecommendation:\nBased on your preferences, I highly recommend \"Born on the Fourth of July\" (1989) starring Tom Berenger as a Vietnam War veteran who becomes an anti-war activist after feeling betrayed by his country. This powerful and thought-provoking film explores themes of patriotism, disillusionment, and the human cost of war, all under the direction of Oliver Stone. Alternatively, if you're interested in a more recent war drama, \"American Sniper\" (2014) starring Bradley Cooper as a Navy SEAL sniper may also be of interest to you, with its intense portrayal of the psychological and emotional toll of war on soldiers.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Born on the Fourth of July",
+        "actor": "Jan de Bont",
+        "writer": "Rowan Atkinson",
+        "director": "Jan de Bont"
+      },
+      "rec_titles": [
+        "The Blood of My Brother",
+        "American Sniper",
+        "In the Woods",
+        "Born on the Fourth of July"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Robert Duvall. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Psycho.)",
+      "user_meta": {
+        "turn": 15,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Robert Duvall",
+        "anchor_title": "Jupiter Ascending",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Robert Duvall",
+          "writer": "Michael McKean",
+          "director": "Jan de Bont",
+          "plot": "medics",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 15,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "The Sting",
+          "to_anchor": "Jupiter Ascending"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User Constraints:\nThe user is interested in finding movies with Robert Duvall, specifically in the genres of war and thriller. They are open to watching a movie directed, written, or starring Robert Duvall.\n\nRecommendation:\nBased on the user's preferences, I would recommend \"Raiders of the Lost Ark\" (1981) starring Harrison Ford as Indiana Jones. This classic adventure film combines elements of war and thriller genres, and features a memorable performance by Robert Duvall as the villainous Ark-obsessed German officer. Alternatively, \"Pirates of the Caribbean: On Stranger Tides\" (2011) starring Johnny Depp and Sam Claflin is also an exciting adventure film that fits the user's constraints, with a memorable performance by Robert Duvall as the enigmatic Blackbeard.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Psycho",
+        "actor": "Robert Duvall",
+        "writer": "Robert Duvall",
+        "director": "Robert Duvall"
+      },
+      "rec_titles": [
+        "Saw VI",
+        "Takers",
+        "Raiders of the Lost Ark",
+        "Pirates of the Caribbean: On Stranger Tides"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Robert Duvall",
+        "anchor_title": "Jupiter Ascending",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Robert Duvall",
+          "writer": "Michael McKean",
+          "director": "Jan de Bont",
+          "plot": "medics",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre = war, actor = Robert Duvall, director = Robert Duvall, writer = Robert Duvall, plot keywords = just, more.\n\nBased on the user's preferences, I recommend \"The River\" and \"Hart's War\". Both of these movies are historical dramas that deal with themes of war and sacrifice, which seem to align with the user's interests. \"The River\" is a documentary short film that explores the devastating effects of the Mississippi River system, while \"Hart's War\" is a feature film that follows a law student who becomes a lieutenant during World War II and must defend a black prisoner of war falsely accused of murder.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Robert Duvall",
+        "writer": "Robert Duvall",
+        "director": "Robert Duvall"
+      },
+      "rec_titles": [
+        "The River",
+        "House at the End of the Street",
+        "Flyboys",
+        "Hart's War"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Robert Duvall",
+        "anchor_title": "Jupiter Ascending",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Robert Duvall",
+          "writer": "Michael McKean",
+          "director": "Jan de Bont",
+          "plot": "medics",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user is interested in a war movie, starring Robert Duvall, and with a plot that involves perhaps or sure. Based on these cues, I recommend \"Schindler's List\" and \"The Deer Hunter.\" Both of these movies feature Robert Duvall in significant roles and explore themes of war and uncertainty, respectively.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "You",
+        "actor": "Robert Duvall",
+        "writer": "Robert Duvall",
+        "director": "Robert Duvall"
+      },
+      "rec_titles": [
+        "Zulu",
+        "Schindler's List",
+        "The Deer Hunter",
+        "Incendies"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Robert Duvall",
+        "anchor_title": "Jupiter Ascending",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Robert Duvall",
+          "writer": "Michael McKean",
+          "director": "Jan de Bont",
+          "plot": "medics",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: war; actor: Robert Duvall; director: Robert Duvall; writer: Robert Duvall; plot keywords: like, sound. Based on these constraints, I recommend \"We Own the Night\" and \"Schindler's List.\" Both of these movies feature Robert Duvall in prominent roles, with \"We Own the Night\" showcasing his talent for drama and action, while \"Schindler's List\" offers a powerful and emotional portrayal of the horrors of war.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "actor": "Robert Duvall",
+        "writer": "Robert Duvall",
+        "director": "Robert Duvall"
+      },
+      "rec_titles": [
+        "We Own the Night",
+        "Zulu",
+        "Patriot Games",
+        "Schindler's List"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does War tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Robert Duvall",
+        "anchor_title": "Jupiter Ascending",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Robert Duvall",
+          "writer": "Michael McKean",
+          "director": "Jan de Bont",
+          "plot": "medics",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: War, Robert Duvall, director/writer/actor, and superhero/adventure genres.\nRecommendation 1: 'Super' (2010) is a unique blend of superhero and coming-of-age themes, starring William Katt and Ellen Page. The film follows a young man who decides to test his powers by \"flying\" off his balcony, leading to an adventure that will continue on.\nRecommendation 2: 'Redacted' (2007) is a powerful and thought-provoking drama that explores the devastating events of a rape and murder of a 15-year-old Iraqi girl by American soldiers in Samarra in 2006. The film features an impressive cast, including Ohad Knoller, Kel O'Neill, and Don McKellar.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "War",
+        "actor": "Robert Duvall",
+        "writer": "Robert Duvall",
+        "director": "Robert Duvall"
+      },
+      "rec_titles": [
+        "Super",
+        "Redacted",
+        "What If...",
+        "Battleship"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Robert Duvall",
+        "anchor_title": "Jupiter Ascending",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Robert Duvall",
+          "writer": "Michael McKean",
+          "director": "Jan de Bont",
+          "plot": "medics",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User Constraints: The user is looking for a movie that has a deeper feeling than they initially thought, with cues such as war, Robert Duvall, and a sense of claustrophobia.\n\nRecommendation: One movie that fits these constraints is \"Black Hawk Down\" (2001), which provides an in-depth look at the troubled US intervention in Somalia and features a talented cast including Eric Bana, Ewan McGregor, and Josh Hartnett. The film's depiction of intense battles between marines and Somalis is sure to provide a gripping and thought-provoking experience.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Deep",
+        "actor": "Robert Duvall",
+        "writer": "Robert Duvall",
+        "director": "Robert Duvall"
+      },
+      "rec_titles": [
+        "Red Dawn",
+        "The Violent Kind",
+        "Lady in the Water",
+        "Black Hawk Down"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 21,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Robert Duvall",
+        "anchor_title": "Jupiter Ascending",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Robert Duvall",
+          "writer": "Michael McKean",
+          "director": "Jan de Bont",
+          "plot": "medics",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences for a war movie with Robert Duvall, I recommend \"The Best Years of Our Lives\" (1946) and \"The Warlords\" (2007). Both of these movies feature Robert Duvall in lead roles and explore themes of war and its impact on individuals and society.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "Deep",
+        "actor": "Robert Duvall",
+        "writer": "Robert Duvall",
+        "director": "Robert Duvall"
+      },
+      "rec_titles": [
+        "What Women Want",
+        "The Best Years of Our Lives",
+        "The Warlords",
+        "Paradise Lost"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Huang Jianxin? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of The Warlords.)",
+      "user_meta": {
+        "turn": 22,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Huang Jianxin",
+        "anchor_title": "The Last Battle",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Robert Duvall",
+          "writer": "Huang Jianxin",
+          "plot": "medics",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 22,
+          "from_focus": "actor",
+          "to_focus": "writer",
+          "bridge_field": "writer",
+          "bridge_value": "Huang Jianxin",
+          "from_anchor": "Jupiter Ascending",
+          "to_anchor": "The Last Battle"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I recommend \"The Perfect Score\" and \"Patton\". Both films share similar themes of decision-making and high stakes, which seem to align with the user's interests. \"The Perfect Score\" is a thrilling drama about six high school seniors who conspire to cheat on their SAT exams, while \"Patton\" is a historical epic that follows the career of controversial general George S. Patton during World War II.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "written",
+          "decide"
+        ],
+        "name": "War",
+        "actor": "Robert Duvall",
+        "writer": "Huang Jianxin",
+        "director": "Robert Duvall"
+      },
+      "rec_titles": [
+        "The Perfect Score",
+        "Casablanca",
+        "Proof of Life",
+        "Patton"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Huang Jianxin",
+        "anchor_title": "The Last Battle",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Robert Duvall",
+          "writer": "Huang Jianxin",
+          "plot": "medics",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I recommend \"The Good German\" and \"Big Fish.\" Both of these movies offer a unique blend of war, drama, and intriguing plots that are likely to appeal to the user's tastes. In \"The Good German,\" Robin Weigert and Tobey Maguire deliver compelling performances in a murder mystery set against the backdrop of post-war Berlin, while \"Big Fish\" tells a moving story of family, love, and the power of storytelling through a fantastic cast including Ewan McGregor, Albert Finney, and Marion Cotillard.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Robert Duvall",
+        "writer": "Huang Jianxin",
+        "director": "Robert Duvall"
+      },
+      "rec_titles": [
+        "The Good German",
+        "Pearl Harbor",
+        "Big Fish",
+        "The Book Thief"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? That sounds intriguing.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Huang Jianxin",
+        "anchor_title": "The Last Battle",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Robert Duvall",
+          "writer": "Huang Jianxin",
+          "plot": "medics",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\n\"What's the mood of Us? That sounds intriguing.\"\n\nBased on the user's preference for war movies, actor Robert Duvall, and director/writer Huang Jianxin, I recommend \"Hart's War\" (2002) and \"The Imitation Game\" (2014). Both films feature powerful performances from talented actors, including Colin Farrell in \"Hart's War\" and Benedict Cumberbatch in \"The Imitation Game.\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Us",
+        "actor": "Robert Duvall",
+        "writer": "Huang Jianxin",
+        "director": "Robert Duvall"
+      },
+      "rec_titles": [
+        "Hart's War",
+        "Hitch",
+        "The Wraith",
+        "The Imitation Game"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does War tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Huang Jianxin",
+        "anchor_title": "The Last Battle",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Robert Duvall",
+          "writer": "Huang Jianxin",
+          "plot": "medics",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: War, Robert Duvall, Huang Jianxin, and a mix of drama and comedy genres.\nBased on these constraints, I recommend \"Waiting\" and \"The Trouble with Harry.\" Both movies offer a unique blend of drama and comedy, while also featuring Robert Duvall in a starring role. \"Waiting\" is a thought-provoking drama that explores the complex emotions of a woman considering adoption, while \"The Trouble with Harry\" is a classic whodunit mystery with a twist of dark humor.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "War",
+        "actor": "Robert Duvall",
+        "writer": "Huang Jianxin",
+        "director": "Robert Duvall"
+      },
+      "rec_titles": [
+        "Waiting",
+        "2010",
+        "Passion",
+        "The Trouble with Harry"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Huang Jianxin",
+        "anchor_title": "The Last Battle",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Robert Duvall",
+          "writer": "Huang Jianxin",
+          "plot": "medics",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: war; actor: Robert Duvall; director: Robert Duvall; writer: Huang Jianxin; plot keywords: like, sound. Based on these cues, I recommend the movies \"Providence\" and \"The Book Thief\". Both of these films feature powerful stories with a focus on human emotion and connection, which aligns with the user's preference for movies that evoke a particular mood or atmosphere. In \"Providence\", two childhood friends are reunited years later after a tragic event, while in \"The Book Thief\", a young girl finds solace in books during the horrors of World War II Germany. Both films feature strong performances from the actors, including Robert Duvall, who stars in both movies.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "actor": "Robert Duvall",
+        "writer": "Huang Jianxin",
+        "director": "Robert Duvall"
+      },
+      "rec_titles": [
+        "Providence",
+        "Treasure Planet",
+        "THX 1138",
+        "The Book Thief"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Jason Statham. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of War.)",
+      "user_meta": {
+        "turn": 27,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Jason Statham",
+        "anchor_title": "Without Remorse",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Jason Statham",
+          "plot": "medics",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 27,
+          "from_focus": "writer",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Jason Statham",
+          "from_anchor": "The Last Battle",
+          "to_anchor": "Without Remorse"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preference cues for a movie with Jason Statham, war theme, and director Robert Duvall, here are two potential recommendations:\n\n* \"Blade Runner\" (1982) is a classic sci-fi thriller directed by Robert Duvall and starring Harrison Ford. The movie follows a blade runner who must pursue and terminate four replicants who have returned to Earth. With its thought-provoking themes and visually stunning imagery, this movie is sure to captivate fans of the genre.\n* \"Source Code\" (2011) is a mind-bending thriller directed by Robert Duvall and starring Jake Gyllenhaal. When a soldier wakes up in someone else's body, he discovers he's part of an experimental government program to find the bomber of a commuter train within 8 minutes. With its complex plot and strong performances, this movie is a must-see for fans of action-packed dramas.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "War",
+        "actor": "Jason Statham",
+        "writer": "Huang Jianxin",
+        "director": "Robert Duvall"
+      },
+      "rec_titles": [
+        "Blade Runner",
+        "Source Code",
+        "The Way We Were",
+        "Do You Believe?"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jason Statham",
+        "anchor_title": "Without Remorse",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Jason Statham",
+          "plot": "medics",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, I see that you're looking for movies similar to the ones you've already mentioned. Based on your preferences, I recommend checking out 'The Taming of the Shrew' and 'Bats'. Both films feature strong actors, such as Jason Statham and Leon in 'Bats', and offer exciting plots that are sure to keep you entertained. In 'The Taming of the Shrew', Petruchio's unconventional behavior and Katherine's headstrong nature make for a thrilling and witty romance.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Jason Statham",
+        "writer": "Huang Jianxin",
+        "director": "Robert Duvall"
+      },
+      "rec_titles": [
+        "The Taming of the Shrew",
+        "Bats",
+        "Rob Roy",
+        "The Italian Job"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Her? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jason Statham",
+        "anchor_title": "Without Remorse",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Jason Statham",
+          "plot": "medics",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThe user is looking for a movie that has a similar mood to \"Her\", but they are unsure if they will enjoy it or be scared by it. They have provided genre, actor, director, and plot keywords as cues to help with the recommendation.\n\nRecommendation:\nBased on the user's constraints, I recommend \"Proof of Life\" and \"Valkyrie\". Both movies have a similar intensity and drama as \"Her\", with complex plots and strong performances from the actors. \"Proof of Life\" is a tense thriller about a woman negotiating for her husband's release after he's been kidnapped by guerrillas, while \"Valkyrie\" is a historical drama about a group of German soldiers plotting to assassinate Adolf Hitler during World War II.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "Her",
+        "actor": "Jason Statham",
+        "writer": "Huang Jianxin",
+        "director": "Robert Duvall"
+      },
+      "rec_titles": [
+        "Proof of Life",
+        "Valkyrie",
+        "Flyboys",
+        "300"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Her tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jason Statham",
+        "anchor_title": "Without Remorse",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Jason Statham",
+          "plot": "medics",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, here are two movie recommendations that might interest them:\n\nThe Trouble with Harry (1955) is a classic whodunit mystery film starring Jerry Mathers and Royal Dano. When a dead body is found in the woods, the local community must work together to determine who the victim was and how they died. With a twisty plot and a talented cast, this movie is sure to keep you on the edge of your seat.\n\nAlternatively, Saving Private Ryan (1998) is a powerful war drama starring Matt Damon and Vin Diesel. After the Normandy Landings, a group of U.S. soldiers embark on a dangerous mission to find and rescue a paratrooper whose brothers have been killed in action. With its intense battle scenes and strong performances, this movie is a must-see for fans of war movies.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her",
+        "actor": "Jason Statham",
+        "writer": "Huang Jianxin",
+        "director": "Robert Duvall"
+      },
+      "rec_titles": [
+        "The Trouble with Harry",
+        "Saving Private Ryan",
+        "Redacted",
+        "The Best Years of Our Lives"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Soldier. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jason Statham",
+        "anchor_title": "Without Remorse",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Jason Statham",
+          "plot": "medics",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\n\"I like the sound of Soldier, but I'm not sure if I'll enjoy it or be scared by it. The movie stars Jason Statham, is directed by Robert Duvall, and was written by Huang Jianxin.\"\n\nRecommendation:\nBased on your preferences, I would recommend \"Dear John\" (2010) starring Channing Tatum. The movie follows a young woman who is stalked by a psychotic manic and finds refuge with transvestites who turn out to be not what they seem. It has a similar tone and theme as Soldier, with a focus on suspense and drama. Alternatively, you may enjoy \"Zulu\" (2013) starring Orlando Bloom, which explores the brutal murder of a young white woman in South Africa and its connection to the disappearance of black street children. Both movies offer a gripping plot and strong performances.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Soldier",
+        "actor": "Jason Statham",
+        "writer": "Huang Jianxin",
+        "director": "Robert Duvall"
+      },
+      "rec_titles": [
+        "Dear John",
+        "The White Countess",
+        "Proof of Life",
+        "Zulu"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on RED. I want to try something more language—I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "language",
+        "anchor_title": "Fast & Furious 6",
+        "constraints": {
+          "genre": "language",
+          "actor": "Jason Statham",
+          "plot": "medics"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 32,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "evidence",
+          "from_anchor": "Without Remorse",
+          "to_anchor": "Fast & Furious 6"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Here are my recommendations based on your user's preferences:\n\nThe user seems to enjoy stories with detailed plots and a mix of action and drama, as well as movies starring actors like Jason Statham and Robert Duvall. I would recommend \"Island of the Blue Dolphins\" (1960) and \"Lord Jim\" (1900). Both films have a strong focus on character development and feature intense moments that will keep the viewer engaged.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "RED",
+        "actor": "Jason Statham",
+        "writer": "Huang Jianxin",
+        "director": "Robert Duvall"
+      },
+      "rec_titles": [
+        "Island of the Blue Dolphins",
+        "White Fang",
+        "Lord Jim",
+        "Emma"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "language",
+        "anchor_title": "Fast & Furious 6",
+        "constraints": {
+          "genre": "language",
+          "actor": "Jason Statham",
+          "plot": "medics"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - language; actor - Jason Statham; director - Robert Duvall; writer - Huang Jianxin; plot keywords - just, more. Based on these cues, I recommend \"The Expendables\" and \"This Is the End\". Both movies feature Jason Statham in a leading role and have action-packed plots that seem to align with the user's preferences.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Jason Statham",
+        "writer": "Huang Jianxin",
+        "director": "Robert Duvall"
+      },
+      "rec_titles": [
+        "The Expendables",
+        "Alex in Wonderland",
+        "This Is the End",
+        "Thick as Thieves"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Expendables? That sounds intriguing.",
+      "user_meta": {
+        "turn": 34,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "language",
+        "anchor_title": "Fast & Furious 6",
+        "constraints": {
+          "genre": "language",
+          "actor": "Jason Statham",
+          "plot": "medics"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has provided some helpful cues for movie recommendations, including genre (language), actor (Jason Statham), director (Robert Duvall), and plot keywords (what, expendables). Based on these cues, I would recommend the movies \"The Way Back Home\" and \"Wolfhound.\" Both of these films offer a thought-provoking and emotionally engaging experience, with strong performances from their casts.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "expendables"
+        ],
+        "name": "The Expendables",
+        "actor": "Jason Statham",
+        "writer": "Huang Jianxin",
+        "director": "Robert Duvall"
+      },
+      "rec_titles": [
+        "The Way Back Home",
+        "White Fang",
+        "Her",
+        "Wolfhound"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "language",
+        "anchor_title": "Fast & Furious 6",
+        "constraints": {
+          "genre": "language",
+          "actor": "Jason Statham",
+          "plot": "medics"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, here are two movie recommendations that match their constraints:\n\nThe user seems to enjoy language-based movies and action-packed films with talented actors like Jason Statham. Therefore, I recommend \"The Expendables\" (2010) starring David Zayas, Dolph Lundren, Charisma Carpenter, Gary Daniels, Terry Crews, Randy Couture, Stone Cold Steve Austin, Eric Roberts, Arnold Schwarzenegger, Mickey Rourke, Sylvester Stallone, and Jason Statham. This movie brings together a talented cast of actors for an action-packed adventure.\n\nAlternatively, \"Total Recall\" (1990) starring Marshall Bell, Ronny Cox, Rachel Ticotin, Sharon Stone, Arnold Schwarzenegger, and Robert Costanzo is another great option. This movie features a thrilling plot with plenty of action and suspense, making it a great fit for fans of language-based movies and Jason Statham's acting.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us",
+        "actor": "Jason Statham",
+        "writer": "Huang Jianxin",
+        "director": "Robert Duvall"
+      },
+      "rec_titles": [
+        "White Fang",
+        "The Expendables",
+        "Vampyres",
+        "Total Recall"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does 2010 tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "language",
+        "anchor_title": "Fast & Furious 6",
+        "constraints": {
+          "genre": "language",
+          "actor": "Jason Statham",
+          "plot": "medics"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nGenre: language, year: 2010, actor: Jason Statham, director: Robert Duvall, writer: Huang Jianxin.\n\nBased on the user's preferences, I recommend \"The Twilight Saga: Eclipse\" and \"Super\". Both movies feature action-packed plots and talented actors, including Robert Pattinson and Kristen Stewart in \"The Twilight Saga: Eclipse\", and William Katt and Paul T. Taylor in \"Super\".",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "2010",
+        "actor": "Jason Statham",
+        "writer": "Huang Jianxin",
+        "director": "Robert Duvall",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "The Twilight Saga: Eclipse",
+        "Salt",
+        "Divergent",
+        "Super"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Uli Edel? Hmm, I didn’t expect that vibe. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 37,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Uli Edel",
+        "anchor_title": "Heart of Darkness",
+        "constraints": {
+          "genre": "language",
+          "actor": "Jason Statham",
+          "plot": "friends",
+          "director": "Uli Edel"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 37,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "friends",
+          "from_anchor": "Fast & Furious 6",
+          "to_anchor": "Heart of Darkness"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Here's my recommendation based on the user's cues:\n\nYou mentioned you're interested in movies directed by Uli Edel and starring Jason Statham. Based on your preference for language and year 2010, I recommend checking out \"The Other Guys\" (2010) or \"Grown Ups\" (2010). Both movies have a great cast, including Adam Sandler, Kevin James, and Chris Rock, and offer an entertaining blend of comedy and action.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "X",
+        "actor": "Jason Statham",
+        "writer": "Uli Edel",
+        "director": "Uli Edel",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Mansfield Park",
+        "The Queen",
+        "Grown Ups",
+        "The Other Guys"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Uli Edel",
+        "anchor_title": "Heart of Darkness",
+        "constraints": {
+          "genre": "language",
+          "actor": "Jason Statham",
+          "plot": "friends",
+          "director": "Uli Edel"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, I see that you're interested in movies with specific genres, actors, and directors. Based on your preferences, I recommend \"Fight Club\" and \"The Cabin in the Woods.\" Both of these movies have a gripping plot and an impressive cast, including Brad Pitt and Chris Hemsworth. In \"Fight Club,\" you'll see a dark and thought-provoking story about an insomniac office worker who forms an underground fight club, while in \"The Cabin in the Woods,\" five college friends are terrorized by sinister forces at a remote cabin. I hope you enjoy these recommendations!",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Jason Statham",
+        "writer": "Uli Edel",
+        "director": "Uli Edel",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Fight Club",
+        "The Secret Garden",
+        "The Cabin in the Woods",
+        "Tell No One"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Uli Edel",
+        "anchor_title": "Heart of Darkness",
+        "constraints": {
+          "genre": "language",
+          "actor": "Jason Statham",
+          "plot": "friends",
+          "director": "Uli Edel"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user wants a movie that is in a similar mood to \"You\", but they are unsure if they will enjoy it or be scared by it. They prefer movies from the year 2010 and starring Jason Statham, with a language-based plot.\nRecommendation: Based on these constraints, I recommend checking out \"MacGruber\" (2010) starring Jason Statham. This action-comedy film follows MacGruber, a former special operative, as he takes down his arch-enemy who's in possession of a nuclear warhead and bent on destroying Washington, D.C. With its fast-paced plot and comedic elements, it should provide an entertaining watch. Alternatively, you could also consider \"Hitch\" (2005), which stars Will Smith as a professional \"date doctor\" who helps men improve their dating lives. This romantic comedy has a lighthearted tone and should be an enjoyable watch for fans of the genre.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "actor": "Jason Statham",
+        "writer": "Uli Edel",
+        "director": "Uli Edel",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "MacGruber",
+        "Hitch",
+        "The Darkest Hour",
+        "The Baader Meinhof Complex"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of 2010. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Uli Edel",
+        "anchor_title": "Heart of Darkness",
+        "constraints": {
+          "genre": "language",
+          "actor": "Jason Statham",
+          "plot": "friends",
+          "director": "Uli Edel"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThe user likes the sound of the movie \"2010\" and is interested in movies with a similar vibe. They prefer movies from the year 2010, starring Jason Statham, and directed or written by Uli Edel.\n\nRecommendation:\nBased on the user's preferences, I recommend checking out \"War\" (2007) and \"Looper\" (2012). Both movies feature Jason Statham in lead roles and have a similar action-packed and intense vibe to \"2010.\"",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "2010",
+        "actor": "Jason Statham",
+        "writer": "Uli Edel",
+        "director": "Uli Edel",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "War",
+        "Looper",
+        "Naked",
+        "Incendies"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Uli Edel",
+        "anchor_title": "Heart of Darkness",
+        "constraints": {
+          "genre": "language",
+          "actor": "Jason Statham",
+          "plot": "friends",
+          "director": "Uli Edel"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Language, year 2010, Jason Statham, Uli Edel, and a preference for stories that are \"not too scary.\"\n\nBased on the user's preferences, I would recommend \"Inception\" (2010) starring Leonardo DiCaprio and Joseph Gordon-Levitt. This movie offers a unique blend of action, drama, and sci-fi elements, with a complex plot that will keep you engaged. Alternatively, \"Taxi Driver\" (1976) featuring Robert De Niro and Jodie Foster is another great choice. It's a classic tale of a troubled protagonist who becomes obsessed with saving a damsel in distress, and it's sure to provide plenty of suspense and intrigue.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "actor": "Jason Statham",
+        "writer": "Uli Edel",
+        "director": "Uli Edel",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Inception",
+        "Fair Game",
+        "Taxi Driver",
+        "Prince of Persia: The Sands of Time"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Marilyn Manson. That feels deeper than I thought. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 42,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Marilyn Manson",
+        "anchor_title": "The Business of Strangers",
+        "constraints": {
+          "genre": "language",
+          "actor": "Marilyn Manson",
+          "plot": "friends",
+          "director": "Uli Edel",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 42,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Heart of Darkness",
+          "to_anchor": "The Business of Strangers"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user wants to find movies with Marilyn Manson, specifically from the year 2010 and starring Marilyn Manson as an actor or director. They are also interested in movies with language and Native American themes.\n\nRecommendation: Based on the user's constraints, I would recommend \"The Only Good Indian\" starring Wes Studi. This movie is a thought-provoking drama that explores themes of cultural identity and oppression, which aligns with Marilyn Manson's interests. The film also features a powerful performance by Studi as a bounty hunter who must confront his own past and the injustices of the Indian boarding school system.\n\nAlternatively, I would suggest \"Babel\" starring Elle Fanning and Brad Pitt. This movie is a complex and emotional drama that explores the interconnectedness of different cultures and languages, which aligns with the user's interest in language and Native American themes. The film features a talented cast and offers a thought-provoking exploration of the human condition.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Her",
+        "actor": "Marilyn Manson",
+        "writer": "Uli Edel",
+        "director": "Uli Edel",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "The Only Good Indian",
+        "Deep",
+        "Babel",
+        "The Incredible Hulk"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Marilyn Manson",
+        "anchor_title": "The Business of Strangers",
+        "constraints": {
+          "genre": "language",
+          "actor": "Marilyn Manson",
+          "plot": "friends",
+          "director": "Uli Edel",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - language, year - 2010, actor - Marilyn Manson, director - Uli Edel, writer - Uli Edel.\nBased on these constraints, I recommend \"My Girl 2\" and \"Let Me In\". Both movies are drama/thriller with a strong focus on character development and plot twists, which seem to align with the user's preferences. \"My Girl 2\" features Richard Masur and Ben Stein in lead roles, while \"Let Me In\" has an impressive cast including Kodi Smit-McPhee, Chloë Grace Moretz, and Ritchie Coster.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Marilyn Manson",
+        "writer": "Uli Edel",
+        "director": "Uli Edel",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "My Girl 2",
+        "Let Me In",
+        "Clash of the Titans",
+        "The Way Back Home"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Karen Hesse? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of 2010.)",
+      "user_meta": {
+        "turn": 44,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Karen Hesse",
+        "anchor_title": "Like Mike",
+        "constraints": {
+          "genre": "language",
+          "plot": "jupiter",
+          "director": "Uli Edel",
+          "language": "English",
+          "writer": "Karen Hesse"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 44,
+          "from_focus": "actor",
+          "to_focus": "writer",
+          "bridge_field": "plot",
+          "bridge_value": "jupiter",
+          "from_anchor": "The Business of Strangers",
+          "to_anchor": "Like Mike"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I recommend \"The Kids Are All Right\" and \"The American.\" Both of these movies are from 2010 and feature strong acting performances, with \"The Kids Are All Right\" starring Annette Bening and Julianne Moore, and \"The American\" featuring George Clooney.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "written",
+          "karen"
+        ],
+        "name": "2010",
+        "actor": "Marilyn Manson",
+        "writer": "Karen Hesse",
+        "director": "Uli Edel",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Robin Hood",
+        "The Kids Are All Right",
+        "The American",
+        "Takers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Karen Hesse",
+        "anchor_title": "Like Mike",
+        "constraints": {
+          "genre": "language",
+          "plot": "jupiter",
+          "director": "Uli Edel",
+          "language": "English",
+          "writer": "Karen Hesse"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has expressed interest in movies with a similar theme, tone, and style as their previous query. Based on their constraints, I recommend \"Madame Bovary\" and \"My Girl 2\". Both films explore the inner lives of their protagonists and offer a thought-provoking and emotionally resonant experience.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Marilyn Manson",
+        "writer": "Karen Hesse",
+        "director": "Uli Edel",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Without a Clue",
+        "Madame Bovary",
+        "Freakonomics",
+        "My Girl 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Madame Bovary. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Karen Hesse",
+        "anchor_title": "Like Mike",
+        "constraints": {
+          "genre": "language",
+          "plot": "jupiter",
+          "director": "Uli Edel",
+          "language": "English",
+          "writer": "Karen Hesse"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: language, year 2010, actor Marilyn Manson, director Uli Edel, writer Karen Hesse.\n\nBased on these constraints, I recommend \"Yogi Bear\" (2010) starring Josh Robert Thompson, Tom Cavanagh, and Justin Timberlake. The film is a fun and lighthearted documentary that explores the lives of Yogi Bear and his friends in Jellystone Park.\n\nAlternatively, \"The Right Stuff\" (1983) starring Ed Harris, Kevin Pollak, and Barbara Hershey is also a great choice. This film tells the story of the U.S. space program's development from the breaking of the sound barrier to the selection of the Mercury 7 astronauts, with a unique blend of humor and drama.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Madame Bovary",
+        "actor": "Marilyn Manson",
+        "writer": "Karen Hesse",
+        "director": "Uli Edel",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Yogi Bear",
+        "In the Woods",
+        "Furry Vengeance",
+        "The Right Stuff"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Karen Hesse",
+        "anchor_title": "Like Mike",
+        "constraints": {
+          "genre": "language",
+          "plot": "jupiter",
+          "director": "Uli Edel",
+          "language": "English",
+          "writer": "Karen Hesse"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I recommend \"The Secret Garden\" and \"Winter's Bone.\" Both movies are psychological thrillers with intriguing plots and talented actors. In \"The Secret Garden,\" AJ Cross plays a lone spy who must face a global threat, while in \"Winter's Bone,\" Jennifer Lawrence shines as an unflinching Ozark Mountain girl on a dangerous mission to find her drug-dealing father.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "actor": "Marilyn Manson",
+        "writer": "Karen Hesse",
+        "director": "Uli Edel",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "The Secret Garden",
+        "Winter's Bone",
+        "The Taming of the Shrew",
+        "The King's Speech"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Karen Hesse",
+        "anchor_title": "Like Mike",
+        "constraints": {
+          "genre": "language",
+          "plot": "jupiter",
+          "director": "Uli Edel",
+          "language": "English",
+          "writer": "Karen Hesse"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThe user is looking for a movie with a mood similar to Ted, but with a different genre, year, actor, director, and plot keywords. They are interested in movies that have a language focus, were released in 2010, and star Marilyn Manson or feature directors Uli Edel or Karen Hesse.\n\nRecommendation:\nBased on the user's constraints, I recommend \"The Social Network\" (2010) starring Jesse Eisenberg, Andrew Garfield, and Justin Timberlake. This movie follows the story of Mark Zuckerberg and the creation of Facebook, with a language focus that may appeal to fans of Ted. Alternatively, \"Due Date\" (2010) starring Robert Downey Jr., Zach Galifianakis, and Michelle Monaghan could also be a good fit, as it features a road trip with a comedic tone similar to Ted.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "Ted",
+        "actor": "Marilyn Manson",
+        "writer": "Karen Hesse",
+        "director": "Uli Edel",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Extraordinary Measures",
+        "The Social Network",
+        "The Andromeda Strain",
+        "Due Date"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Gemma Jones. That sounds intriguing. (I’m thinking of 2010.)",
+      "user_meta": {
+        "turn": 49,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Gemma Jones",
+        "anchor_title": "The War of the Worlds",
+        "constraints": {
+          "genre": "language",
+          "plot": "soviet",
+          "director": "Uli Edel",
+          "language": "English",
+          "writer": "Karen Hesse",
+          "actor": "Gemma Jones"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 49,
+          "from_focus": "writer",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "soviet",
+          "from_anchor": "Like Mike",
+          "to_anchor": "The War of the Worlds"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user wants to find movies with Gemma Jones from 2010. They are interested in genres such as language, year, and actor.\n\nRecommendation: Based on the user's preferences, I would recommend \"The Ghost Writer\" starring Gemma Jones. The movie is a thrilling drama that explores secrets and intrigue, with a talented cast including Ewan McGregor and Pierce Brosnan. Alternatively, \"Grandma's Boy\" is another comedy-drama with a great cast, including Kevin Nash and Shirley Jones. Both movies are from 2010 and fit the user's preferences well.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "2010",
+        "actor": "Gemma Jones",
+        "writer": "Karen Hesse",
+        "director": "Uli Edel",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Grandma's Boy",
+        "The Family Man",
+        "The Passage",
+        "The Ghost Writer"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 50,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Gemma Jones",
+        "anchor_title": "The War of the Worlds",
+        "constraints": {
+          "genre": "language",
+          "plot": "soviet",
+          "director": "Uli Edel",
+          "language": "English",
+          "writer": "Karen Hesse",
+          "actor": "Gemma Jones"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, I understand you're looking for more movies based on your preferences. Based on your previous cues, I recommend \"Madame Bovary\" and \"Despicable Me.\" \"Madame Bovary\" is a classic literary adaptation with a strong female lead and themes of passion and dissatisfaction, while \"Despicable Me\" is an animated comedy with a lovable villain and heartwarming moments. Both movies offer unique and engaging experiences that I think you'll enjoy!",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Gemma Jones",
+        "writer": "Karen Hesse",
+        "director": "Uli Edel",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Madame Bovary",
+        "Despicable Me",
+        "127 Hours",
+        "12 Angry Men"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 5,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "writer",
+      "bridge_value": "Michael McKean",
+      "from_anchor": "The Hangover Part II",
+      "to_anchor": "This Is Spinal Tap"
+    },
+    {
+      "turn": 10,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "medics",
+      "from_anchor": "This Is Spinal Tap",
+      "to_anchor": "The Sting"
+    },
+    {
+      "turn": 15,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "The Sting",
+      "to_anchor": "Jupiter Ascending"
+    },
+    {
+      "turn": 22,
+      "from_focus": "actor",
+      "to_focus": "writer",
+      "bridge_field": "writer",
+      "bridge_value": "Huang Jianxin",
+      "from_anchor": "Jupiter Ascending",
+      "to_anchor": "The Last Battle"
+    },
+    {
+      "turn": 27,
+      "from_focus": "writer",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Jason Statham",
+      "from_anchor": "The Last Battle",
+      "to_anchor": "Without Remorse"
+    },
+    {
+      "turn": 32,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "evidence",
+      "from_anchor": "Without Remorse",
+      "to_anchor": "Fast & Furious 6"
+    },
+    {
+      "turn": 37,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "friends",
+      "from_anchor": "Fast & Furious 6",
+      "to_anchor": "Heart of Darkness"
+    },
+    {
+      "turn": 42,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Heart of Darkness",
+      "to_anchor": "The Business of Strangers"
+    },
+    {
+      "turn": 44,
+      "from_focus": "actor",
+      "to_focus": "writer",
+      "bridge_field": "plot",
+      "bridge_value": "jupiter",
+      "from_anchor": "The Business of Strangers",
+      "to_anchor": "Like Mike"
+    },
+    {
+      "turn": 49,
+      "from_focus": "writer",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "soviet",
+      "from_anchor": "Like Mike",
+      "to_anchor": "The War of the Worlds"
+    }
+  ]
+}

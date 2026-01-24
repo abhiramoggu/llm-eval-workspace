@@ -75,10 +75,14 @@ CONCEPT_EXTRACTOR_MODEL = os.getenv("CONCEPT_EXTRACTOR_MODEL", TOPIC_EXTRACTOR_M
 TOPIC_EXTRACTOR_MODE = os.getenv("TOPIC_EXTRACTOR_MODE", "lda")   # "llm", "heuristic", or "lda"
 # Concept extractor mode for TAS/grounded evaluation: "catalog" or "llm".
 CONCEPT_EXTRACTOR_MODE = os.getenv("CONCEPT_EXTRACTOR_MODE", "catalog")
+CONCEPT_EMBED_THRESHOLD = float(os.getenv("CONCEPT_EMBED_THRESHOLD", "0.35"))
+CONCEPT_EMBED_TOP_K = int(os.getenv("CONCEPT_EMBED_TOP_K", "3"))
 
 
 # ============ SIMULATION ============
-N_TURNS = 20               # turns per conversation
+N_TURNS = int(os.getenv("N_TURNS", "50"))            # turns per conversation
+N_SESSIONS = int(os.getenv("N_SESSIONS", "100"))     # total conversations per model
+SHIFT_AFTER_TURNS = int(os.getenv("SHIFT_AFTER_TURNS", "12"))  # force first shift after this turn
 ERROR_RATE = 0.3             # chance to start with wrong genreollama 
 
 # ============ EVAL THRESHOLDS ============
@@ -88,6 +92,9 @@ ALIGNMENT_THRESHOLD = 0.65
 TOPIC_JACCARD_SHIFT = 0.35
 SIM_CONCEPT_SHIFT = SIM_TOPIC_SHIFT  # alias
 CONCEPT_JACCARD_SHIFT = TOPIC_JACCARD_SHIFT  # alias
+
+# Recommendation satisfaction proxy (disabled by default)
+ENABLE_REC_SAT = bool(int(os.getenv("ENABLE_REC_SAT", "0")))
 CONCEPT_ALIGNMENT_THRESHOLD = ALIGNMENT_THRESHOLD  # alias
 
 # ============ CAS WEIGHTS (sum doesn't have to be 1; code normalizes) ============

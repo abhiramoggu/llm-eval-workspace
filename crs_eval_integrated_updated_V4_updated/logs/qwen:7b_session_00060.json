@@ -1,0 +1,2171 @@
+{
+  "session_id": "00060",
+  "model_name": "qwen:7b",
+  "true_genre": "steampunk",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a news movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "news",
+        "anchor_title": "Click",
+        "constraints": {
+          "genre": "news"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants a news movie recommendation. From the list, 'Trees Lounge' is suggested as it has a plot involving an unemployed mechanic in a small town, which could align with the news theme.",
+      "constraints": {
+        "genre": "news",
+        "plot": [
+          "news",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "The Glass House",
+        "Trees Lounge",
+        "The Queen",
+        "White Night"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "news",
+        "anchor_title": "Click",
+        "constraints": {
+          "genre": "news"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movies with a story focus on what kind or genre, and with plot keywords like \"what.\" From the list provided, I would recommend \"The Secret\" as it fits the user's criteria with its focus on uncovering a secret. Additionally, it features actors like Genevieve O'Reilly who can add interest to the movie experience.",
+      "constraints": {
+        "genre": "news",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED"
+      },
+      "rec_titles": [
+        "The Expendables 2",
+        "The Secret",
+        "I Heart Huckabees",
+        "It's a Wonderful Life"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Secret. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "news",
+        "anchor_title": "Click",
+        "constraints": {
+          "genre": "news"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes movies with a like or sound theme. Based on these preferences, I recommend 'The Mortal Instruments: City of Bones' for its action-packed like sound story involving supernatural warriors protecting Earth. Key actors include Kevin Zegers, Aidan Turner, and CCH Pounder.",
+      "constraints": {
+        "genre": "news",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Secret"
+      },
+      "rec_titles": [
+        "The Bad Seed",
+        "The Mortal Instruments: City of Bones",
+        "Uptown Girls",
+        "The Skull"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of War? That sounds intriguing.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "news",
+        "anchor_title": "Click",
+        "constraints": {
+          "genre": "news"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in war-related movies with keywords \"what\" and \"intriguing\". Based on these preferences, I recommend 'Battleship' (2012) due to its war theme, plot involving \"what\" as the main challenge, and featuring actors like Rami Malek and Rihanna.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "War"
+      },
+      "rec_titles": [
+        "Battleship",
+        "Pride and Prejudice",
+        "What If...",
+        "Doctor Zhivago"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Bai Ling. That feels deeper than I thought. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 5,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Bai Ling",
+        "anchor_title": "The Call",
+        "constraints": {
+          "genre": "news",
+          "actor": "Bai Ling",
+          "plot": "crazy"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 5,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "crazy",
+          "from_anchor": "Click",
+          "to_anchor": "The Call"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies with Bai Ling, set in a war context. I recommend 'Inglourious Basterds', featuring Bai Ling (portrayed by Mads Mikkelsen), as well as the war and character aspects that align with the user's preferences.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Deep",
+        "actor": "Bai Ling"
+      },
+      "rec_titles": [
+        "The Messenger",
+        "The Truth About Charlie",
+        "Saving Grace",
+        "Inglourious Basterds"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bai Ling",
+        "anchor_title": "The Call",
+        "constraints": {
+          "genre": "news",
+          "actor": "Bai Ling",
+          "plot": "crazy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in recommendations for movies with war-themed plots and featuring actor Bai Ling. Based on these preferences, I would suggest 'The Good German' (2006) due to its war backdrop and Bai Ling's involvement. Another option could be 'Schindler'本人在\"Schindler's List\"（1993）中的角色，这也符合您的要求。",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Bai Ling"
+      },
+      "rec_titles": [
+        "The Good German",
+        "Schindler's List",
+        "The Princess Diaries",
+        "The Fighter"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bai Ling",
+        "anchor_title": "The Call",
+        "constraints": {
+          "genre": "news",
+          "actor": "Bai Ling",
+          "plot": "crazy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movies that have a war theme, featuring actor Bai Ling, and with elements of weirdness or being thought about differently in the plot. Based on these preferences, I would recommend 'Hotel Rwanda' (2004), starring Don Cheadle, which effectively addresses the war theme, actor Bai Ling's role is not prominent, but the story and its portrayal of the character Paul Rusesabagina make it a fitting recommendation.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "You",
+        "actor": "Bai Ling"
+      },
+      "rec_titles": [
+        "You",
+        "The Wind That Shakes the Barley",
+        "Hotel Rwanda",
+        "Journey 2: The Mysterious Island"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of War. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bai Ling",
+        "anchor_title": "The Call",
+        "constraints": {
+          "genre": "news",
+          "actor": "Bai Ling",
+          "plot": "crazy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You mentioned a preference for war-themed movies with specific actor cues. Based on that, I recommend 'War Horse' since it fits your criteria of a war film and stars Jeremy Irvine, who you seemed interested in. Enjoy the movie!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "War",
+        "actor": "Bai Ling"
+      },
+      "rec_titles": [
+        "To Have and Have Not",
+        "Incendies",
+        "The English Patient",
+        "War Horse"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bai Ling",
+        "anchor_title": "The Call",
+        "constraints": {
+          "genre": "news",
+          "actor": "Bai Ling",
+          "plot": "crazy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in stories featuring war, Bai Ling as an actor, and keywords like \"what kind.\" From the list provided, I recommend 'Winter in Wartime' (2008) since it fits the war genre and features Bai Ling. The plot revolves around a Dutch teenager helping the RAF during World War II.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "actor": "Bai Ling"
+      },
+      "rec_titles": [
+        "Winter in Wartime",
+        "Ted",
+        "Dances with Wolves",
+        "Divergent"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Hungarian language? That feels deeper than I thought. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 10,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "Hungarian language",
+        "anchor_title": "The Notebook",
+        "constraints": {
+          "genre": "news",
+          "actor": "Bai Ling",
+          "plot": "whose",
+          "language": "Hungarian language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 10,
+          "from_focus": "actor",
+          "to_focus": "language",
+          "bridge_field": "plot",
+          "bridge_value": "whose",
+          "from_anchor": "The Call",
+          "to_anchor": "The Notebook"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movies primarily in Hungarian language, featuring Bai Ling. Based on these preferences, I recommend 'Delirium' (2011) and 'Mansfield Park' (1983). Both feature Bai Ling and have elements in Hungarian language.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "Ted",
+        "actor": "Bai Ling",
+        "language": "Hungarian language"
+      },
+      "rec_titles": [
+        "Delirium",
+        "Mansfield Park",
+        "The Hunted",
+        "Sky Captain and the World of Tomorrow"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Hungarian language",
+        "anchor_title": "The Notebook",
+        "constraints": {
+          "genre": "news",
+          "actor": "Bai Ling",
+          "plot": "whose",
+          "language": "Hungarian language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movie recommendations that match specific genre (language), actor (Bai Ling), and plot keywords ('just', 'more'). From the list provided, I recommend watching 'Veronica Mars' as it combines language (English), actors like Leslie Bibb and Rosario Dawson, and a 'just more' type plot about coming back to hometown and solving high school reunion mysteries.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Bai Ling",
+        "language": "Hungarian language"
+      },
+      "rec_titles": [
+        "Zookeeper",
+        "Veronica Mars",
+        "Tender Is the Night",
+        "The Number 23"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Phyllis Diller. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 12,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Phyllis Diller",
+        "anchor_title": "Rango",
+        "constraints": {
+          "genre": "news",
+          "actor": "Phyllis Diller",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 12,
+          "from_focus": "language",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "The Notebook",
+          "to_anchor": "Rango"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies featuring Phyllis Diller and having themes around finding something. Based on these preferences, I recommend 'Sleepless in Seattle' as it features both David Hyde Pierce (who doesn't have a Phyllis Diller connection) and Phyllis Diller herself in a supporting role. This movie has the plot element of searching for a connection or partner.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Ted",
+        "actor": "Phyllis Diller",
+        "language": "Hungarian language"
+      },
+      "rec_titles": [
+        "Sleepless in Seattle",
+        "Extraordinary Measures",
+        "The Martian",
+        "The Buried Giant"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Phyllis Diller",
+        "anchor_title": "Rango",
+        "constraints": {
+          "genre": "news",
+          "actor": "Phyllis Diller",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movie recommendations with specific preferences, such as a language (Hungarian) or an actor (Phyllis Diller). Based on these cues, I would recommend 'Panic Room' starring Jodie Foster and featuring the unique perspective of a character hiding in a panic room.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Phyllis Diller",
+        "language": "Hungarian language"
+      },
+      "rec_titles": [
+        "You Kill Me",
+        "The Lincoln Lawyer",
+        "Panic Room",
+        "Untraceable"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Room. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Phyllis Diller",
+        "anchor_title": "Rango",
+        "constraints": {
+          "genre": "news",
+          "actor": "Phyllis Diller",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes stories with a like sound, featuring specific actors like Phyllis Diller and having Hungarian language elements. Based on these preferences, I recommend 'Providence' as it stars Laurie Metcalf who has a likable demeanor, and features Phyllis Diller. The Hungarian language aspect is present in the form of characters or dialogue.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Room",
+        "actor": "Phyllis Diller",
+        "language": "Hungarian language"
+      },
+      "rec_titles": [
+        "Providence",
+        "Treasure Planet",
+        "Who Killed the Electric Car?",
+        "Blade Runner"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Providence. I want to try something more friendship—I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "friendship",
+        "anchor_title": "The Trumpet of the Swan",
+        "constraints": {
+          "genre": "friendship",
+          "actor": "Phyllis Diller"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 15,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "rachel",
+          "from_anchor": "Rango",
+          "to_anchor": "The Trumpet of the Swan"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user desires a movie with a focus on friendship and featuring actor Phyllis Diller. I recommend 'Uglies' (2005), which fits these criteria due to its exploration of friendships amidst societal norms, and the presence of actress Uma Thurman in a minor role.",
+      "constraints": {
+        "genre": "friendship",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "RED",
+        "actor": "Phyllis Diller",
+        "language": "Hungarian language"
+      },
+      "rec_titles": [
+        "Blade Runner",
+        "Uglies",
+        "Can You Keep a Secret?",
+        "The Watcher"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "friendship",
+        "anchor_title": "The Trumpet of the Swan",
+        "constraints": {
+          "genre": "friendship",
+          "actor": "Phyllis Diller"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movie recommendations with a focus on friendship, featuring Phyllis Diller, and possibly in Hungarian language. Given these constraints, I recommend 'Braveheart' (1995) due to its strong friendship theme involving the character of Gerard McSorley, who shares screen time with Phyllis Diller. The film is also available in Hungarian subtitles.",
+      "constraints": {
+        "genre": "friendship",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Phyllis Diller",
+        "language": "Hungarian language"
+      },
+      "rec_titles": [
+        "Braveheart",
+        "The Lincoln Lawyer",
+        "The Way Back Home",
+        "The Secret of My Success"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "friendship",
+        "anchor_title": "The Trumpet of the Swan",
+        "constraints": {
+          "genre": "friendship",
+          "actor": "Phyllis Diller"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies with a focus on friendship, featuring Phyllis Diller, and potentially with Hungarian language elements. From the list provided, I would recommend 'Aladdin' (1992) as it fits the given criteria with its themes of friendship and the importance of following one's heart. The movie also stars Scott Weinger who plays Aladdin alongside his animated counterpart.",
+      "constraints": {
+        "genre": "friendship",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "actor": "Phyllis Diller",
+        "language": "Hungarian language"
+      },
+      "rec_titles": [
+        "Aladdin",
+        "The Andromeda Strain",
+        "It's a Wonderful Life",
+        "Her"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "friendship",
+        "anchor_title": "The Trumpet of the Swan",
+        "constraints": {
+          "genre": "friendship",
+          "actor": "Phyllis Diller"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a movie with a friendship theme, featuring Phyllis Diller. Based on these preferences, I recommend 'Divergent' (2011), a film that explores friendship and fits the criteria with its lead characters Tris and Four. The movie stars Shailene Woodley and Theo James.",
+      "constraints": {
+        "genre": "friendship",
+        "plot": [
+          "what"
+        ],
+        "name": "Us",
+        "actor": "Phyllis Diller",
+        "language": "Hungarian language"
+      },
+      "rec_titles": [
+        "Divergent",
+        "The Usual Suspects",
+        "Stuart Little",
+        "Aladdin"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "friendship",
+        "anchor_title": "The Trumpet of the Swan",
+        "constraints": {
+          "genre": "friendship",
+          "actor": "Phyllis Diller"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies that feature friendship, an actor named Phyllis Diller, and a Hungarian language plot element. From the list provided, I would recommend 'Downfall' as it fits these criteria with its themes of friendship and overcoming adversity, featuring actors like Juliane Köhler and Bruno Ganz.",
+      "constraints": {
+        "genre": "friendship",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "actor": "Phyllis Diller",
+        "language": "Hungarian language"
+      },
+      "rec_titles": [
+        "Downfall",
+        "Maid in Manhattan",
+        "Holes",
+        "The Right Stuff"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Damien Dante Wayans? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Downfall.)",
+      "user_meta": {
+        "turn": 20,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Damien Dante Wayans",
+        "anchor_title": "The Old Man and the Sea",
+        "constraints": {
+          "genre": "friendship",
+          "director": "Damien Dante Wayans",
+          "language": "Russian Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 20,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "language",
+          "bridge_value": "Russian Language",
+          "from_anchor": "The Trumpet of the Swan",
+          "to_anchor": "The Old Man and the Sea"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a movie with elements of friendship, starring Damien Dante Wayans, and possibly directed by him as well. From the list, 'Hitch' (2005) fits these criteria - it features a friendship between two characters, played by Will Smith and Robin Wright, and was directed by Alfred Hitchcock himself, although he did not star in the film.",
+      "constraints": {
+        "genre": "friendship",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Downfall",
+        "actor": "Damien Dante Wayans",
+        "language": "Hungarian language",
+        "director": "Damien Dante Wayans",
+        "writer": "Damien Dante Wayans"
+      },
+      "rec_titles": [
+        "A Tale of Two Cities",
+        "True Blood",
+        "Armageddon",
+        "Hitch"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 21,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Damien Dante Wayans",
+        "anchor_title": "The Old Man and the Sea",
+        "constraints": {
+          "genre": "friendship",
+          "director": "Damien Dante Wayans",
+          "language": "Russian Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: They are interested in recommendations featuring friendship, a specific actor (Damien Dante Wayans), and possibly Hungarian language content.\n\nRecommended movie: 'Jack and Jill' (2011) starring Damien Dante Wayans. This comedy film revolves around the unconventional friendship between two siblings with different personalities. The Hungarian language aspect might be present in the subtitles or dialogue.",
+      "constraints": {
+        "genre": "friendship",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Damien Dante Wayans",
+        "language": "Hungarian language",
+        "director": "Damien Dante Wayans",
+        "writer": "Damien Dante Wayans"
+      },
+      "rec_titles": [
+        "Jack and Jill",
+        "The River",
+        "The Secret Life of Walter Mitty",
+        "King Kong"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Damien Dante Wayans",
+        "anchor_title": "The Old Man and the Sea",
+        "constraints": {
+          "genre": "friendship",
+          "director": "Damien Dante Wayans",
+          "language": "Russian Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a movie with a friendship theme, featuring actor Damien Dante Wayans. \"Pride and Prejudice\" (1813) matches these preferences as it has a focus on friendships and features the versatile Wayans. Another option could be \"Witless Protection\" (2008), which also stars Richard Bull, known for his comedic roles, adding an extra layer of humor to match the friendliness theme.",
+      "constraints": {
+        "genre": "friendship",
+        "plot": [
+          "what"
+        ],
+        "name": "Ted",
+        "actor": "Damien Dante Wayans",
+        "language": "Hungarian language",
+        "director": "Damien Dante Wayans",
+        "writer": "Damien Dante Wayans"
+      },
+      "rec_titles": [
+        "Pride and Prejudice",
+        "Witless Protection",
+        "Eve's Bayou",
+        "Why Did I Get Married?"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Damien Dante Wayans",
+        "anchor_title": "The Old Man and the Sea",
+        "constraints": {
+          "genre": "friendship",
+          "director": "Damien Dante Wayans",
+          "language": "Russian Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes movies with a friendship theme and featuring actor Damien Dante Wayans. Based on these preferences, I recommend 'Tinker Tailor Soldier Spy' as it has a strong friendship storyline and stars Damien Dante Wayans.",
+      "constraints": {
+        "genre": "friendship",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "actor": "Damien Dante Wayans",
+        "language": "Hungarian language",
+        "director": "Damien Dante Wayans",
+        "writer": "Damien Dante Wayans"
+      },
+      "rec_titles": [
+        "Tinker Tailor Soldier Spy",
+        "Vampyres",
+        "The Relic",
+        "The Amazing Spider-Man"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Soldier tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Damien Dante Wayans",
+        "anchor_title": "The Old Man and the Sea",
+        "constraints": {
+          "genre": "friendship",
+          "director": "Damien Dante Wayans",
+          "language": "Russian Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in stories with a focus on friendship and featuring actor Damien Dante Wayans. Based on these preferences, I recommend 'A Separate Peace' as it fits the category of friendship-driven stories with an emphasis on character relationships. The movie stars Affleck brothers, which includes Wayans.",
+      "constraints": {
+        "genre": "friendship",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Soldier",
+        "actor": "Damien Dante Wayans",
+        "language": "Hungarian language",
+        "director": "Damien Dante Wayans",
+        "writer": "Damien Dante Wayans"
+      },
+      "rec_titles": [
+        "A Separate Peace",
+        "The Wrestler",
+        "Utsav",
+        "The Andromeda Strain"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Tom Skerritt. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 25,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Tom Skerritt",
+        "anchor_title": "Top Gun",
+        "constraints": {
+          "genre": "friendship",
+          "director": "Damien Dante Wayans",
+          "actor": "Tom Skerritt"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 25,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Tom Skerritt",
+          "from_anchor": "The Old Man and the Sea",
+          "to_anchor": "Top Gun"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies with Tom Skerritt, featuring friendship themes and potentially Hungarian language content. I recommend 'The Constant Gardener' as it meets these criteria with its captivating storyline and Tom Skerritt's presence.",
+      "constraints": {
+        "genre": "friendship",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Ted",
+        "actor": "Tom Skerritt",
+        "language": "Hungarian language",
+        "director": "Damien Dante Wayans",
+        "writer": "Damien Dante Wayans"
+      },
+      "rec_titles": [
+        "The Constant Gardener",
+        "Jingle All the Way",
+        "This Must Be the Place",
+        "Torn Curtain"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tom Skerritt",
+        "anchor_title": "Top Gun",
+        "constraints": {
+          "genre": "friendship",
+          "director": "Damien Dante Wayans",
+          "actor": "Tom Skerritt"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movie recommendations that fall under the genre of friendship, have Tom Skerritt in a lead role, and feature unique directors such as Damien Dante Wayans. From the list provided, I would recommend 'Thick as Thieves' as it fits all these criteria - a friendship-focused film with Tom Skerritt, directed by Damien Dante Wayans.",
+      "constraints": {
+        "genre": "friendship",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Tom Skerritt",
+        "language": "Hungarian language",
+        "director": "Damien Dante Wayans",
+        "writer": "Damien Dante Wayans"
+      },
+      "rec_titles": [
+        "Thick as Thieves",
+        "Tears of the Sun",
+        "12 Angry Men",
+        "Jack and Jill"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tom Skerritt",
+        "anchor_title": "Top Gun",
+        "constraints": {
+          "genre": "friendship",
+          "director": "Damien Dante Wayans",
+          "actor": "Tom Skerritt"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a story with friendship and featuring Tom Skerritt. Based on these preferences, I recommend \"Ted\" (2012), which has a strong friendship theme and stars Tom Skerritt alongside Mila Kunis and Seth MacFarlane.",
+      "constraints": {
+        "genre": "friendship",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "actor": "Tom Skerritt",
+        "language": "Hungarian language",
+        "director": "Damien Dante Wayans",
+        "writer": "Damien Dante Wayans"
+      },
+      "rec_titles": [
+        "Ted",
+        "Downfall",
+        "War, Inc.",
+        "Smilla's Sense of Snow"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Tron. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tom Skerritt",
+        "anchor_title": "Top Gun",
+        "constraints": {
+          "genre": "friendship",
+          "director": "Damien Dante Wayans",
+          "actor": "Tom Skerritt"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user enjoys stories with a friendly theme, featuring Tom Skerritt. Given these preferences, I recommend 'Ted' (2012), starring Mila Kunis, Seth MacFarlane, and Tom Skerritt. It combines humor with the bond between characters.",
+      "constraints": {
+        "genre": "friendship",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Tron",
+        "actor": "Tom Skerritt",
+        "language": "Hungarian language",
+        "director": "Damien Dante Wayans",
+        "writer": "Damien Dante Wayans"
+      },
+      "rec_titles": [
+        "Ted",
+        "Holes",
+        "A Separate Peace",
+        "American Dreamz"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by James Wong? That sounds intriguing. (I’m thinking of 2012.)",
+      "user_meta": {
+        "turn": 29,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "James Wong",
+        "anchor_title": "Uglies",
+        "constraints": {
+          "genre": "friendship",
+          "director": "James Wong",
+          "actor": "Tom McCarthy"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 29,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Tom McCarthy",
+          "from_anchor": "Top Gun",
+          "to_anchor": "Uglies"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a movie with a friendship theme, released in 2012, featuring Tom Skerritt. \"Safe House\" fits these criteria: It's a CIA agent's experience with a fugitive in a safe house, released in 2012, and stars Tom Skerritt alongside Nora Arnezeder.",
+      "constraints": {
+        "genre": "friendship",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "2012",
+        "actor": "Tom Skerritt",
+        "language": "Hungarian language",
+        "director": "James Wong",
+        "writer": "James Wong",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Seven Psychopaths",
+        "Safe House",
+        "Ted",
+        "Dark Shadows"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "James Wong",
+        "anchor_title": "Uglies",
+        "constraints": {
+          "genre": "friendship",
+          "director": "James Wong",
+          "actor": "Tom McCarthy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's preferences include a movie about friendship, set in 2012, with Tom Skerritt and James Wong involved. From the given list, I recommend \"Three Kings\" due to its themes of friendship and the inspiring story of an athlete overcoming adversity.",
+      "constraints": {
+        "genre": "friendship",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Tom Skerritt",
+        "language": "Hungarian language",
+        "director": "James Wong",
+        "writer": "James Wong",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Three Kings",
+        "Harry Potter and the Half-Blood Prince",
+        "12 Angry Men",
+        "All in"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does 2012 tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "James Wong",
+        "anchor_title": "Uglies",
+        "constraints": {
+          "genre": "friendship",
+          "director": "James Wong",
+          "actor": "Tom McCarthy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movies with a focus on friendship, released in 2012, featuring Tom Skerritt, and directed by James Wong. Based on these preferences, I recommend 'What Women Want' (2000), which stars Ana Gasteyer and Mark Feuerstein, both known for their comedic chemistry, making the friendship dynamic engaging. Additionally, the movie's plot revolves around a man gaining the ability to hear women's thoughts, thus creating an insightful and humorous exploration of friendships and communication through a unique lens.",
+      "constraints": {
+        "genre": "friendship",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "2012",
+        "actor": "Tom Skerritt",
+        "language": "Hungarian language",
+        "director": "James Wong",
+        "writer": "James Wong",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Secret Garden",
+        "What Women Want",
+        "Spring Breakers",
+        "The Twilight Saga: Breaking Dawn - Part 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of What Women Want. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "James Wong",
+        "anchor_title": "Uglies",
+        "constraints": {
+          "genre": "friendship",
+          "director": "James Wong",
+          "actor": "Tom McCarthy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences for a film with a sound element, a focus on friendship, released in 2012, and featuring Tom Skerritt as an actor, I would recommend \"The Hobbit: An Unexpected Journey\" from this list. It not only fits the criteria but also offers an enjoyable adventure with strong friendships.",
+      "constraints": {
+        "genre": "friendship",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "actor": "Tom Skerritt",
+        "language": "Hungarian language",
+        "director": "James Wong",
+        "writer": "James Wong",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Psychic Experiment",
+        "The Hobbit: An Unexpected Journey",
+        "Smokin' Aces",
+        "A Tale of Two Cities"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? That sounds intriguing.",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "James Wong",
+        "anchor_title": "Uglies",
+        "constraints": {
+          "genre": "friendship",
+          "director": "James Wong",
+          "actor": "Tom McCarthy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with a friendship theme from 2012, starring Tom Skerritt. Based on these preferences, I recommend 'Training Day' (2001), which features a strong friendship between a rookie cop and his experienced mentor, played by Tom Berenger and Matt Damon respectively.",
+      "constraints": {
+        "genre": "friendship",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "X",
+        "actor": "Tom Skerritt",
+        "language": "Hungarian language",
+        "director": "James Wong",
+        "writer": "James Wong",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Wraith",
+        "The Bourne Legacy",
+        "Training Day",
+        "Flight"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on 2012. I want to try something more iraq war—still with Oliver Platt if possible. Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 34,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "iraq war",
+        "anchor_title": "Year One",
+        "constraints": {
+          "genre": "iraq war",
+          "director": "James Wong",
+          "actor": "Oliver Platt"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 34,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "Oliver Platt",
+          "from_anchor": "Uglies",
+          "to_anchor": "Year One"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with an Iraq War theme, released in 2012, featuring Oliver Platt, and possibly written or directed by James Wong.\n\nBased on these preferences, I would recommend 'All in' (2012), as it fits the criteria with its Iraq War theme,Oliver Platt's involvement, and being written and directed by James Wong.",
+      "constraints": {
+        "genre": "iraq war",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "War",
+        "actor": "Oliver Platt",
+        "language": "Hungarian language",
+        "director": "James Wong",
+        "writer": "James Wong",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "All in",
+        "Hotel Transylvania",
+        "Downfall",
+        "Rise of the Guardians"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "iraq war",
+        "anchor_title": "Year One",
+        "constraints": {
+          "genre": "iraq war",
+          "director": "James Wong",
+          "actor": "Oliver Platt"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movie recommendations with specific constraints: a war-related film from 2012, and featuring Oliver Platt. Based on those preferences, I suggest 'War, Inc.' (2008) starring Oliver Platt, which fits the criteria.",
+      "constraints": {
+        "genre": "iraq war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Oliver Platt",
+        "language": "Hungarian language",
+        "director": "James Wong",
+        "writer": "James Wong",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Campaign",
+        "War, Inc.",
+        "The Amazing Spider-Man",
+        "Zero Dark Thirty"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does War tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "iraq war",
+        "anchor_title": "Year One",
+        "constraints": {
+          "genre": "iraq war",
+          "director": "James Wong",
+          "actor": "Oliver Platt"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a war-themed movie with an actor named Oliver Platt. From the list, 'Platoon' (starring Tom Berenger and Kevin Dillon) matches these preferences.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "War",
+        "actor": "Oliver Platt",
+        "language": "Hungarian language",
+        "director": "James Wong",
+        "writer": "James Wong",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Wolfhound",
+        "The Rite",
+        "What Women Want",
+        "Platoon"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "iraq war",
+        "anchor_title": "Year One",
+        "constraints": {
+          "genre": "iraq war",
+          "director": "James Wong",
+          "actor": "Oliver Platt"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with a war theme from 2012, starring Oliver Platt. From the list provided, 'Windtalkers' fits these criteria, offering a war-related film from 2012 starring Platt.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what"
+        ],
+        "name": "Us",
+        "actor": "Oliver Platt",
+        "language": "Hungarian language",
+        "director": "James Wong",
+        "writer": "James Wong",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Windtalkers",
+        "Arbitrage",
+        "Training Day",
+        "Where'd You Go, Bernadette"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "iraq war",
+        "anchor_title": "Year One",
+        "constraints": {
+          "genre": "iraq war",
+          "director": "James Wong",
+          "actor": "Oliver Platt"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes films with a sound that gives them a specific vibe. Based on these preferences, I would recommend 'Prometheus' due to its contemporary quest story and the exploration of humanity's relationship with science and technology. The film stars Patrick Wilson and features strong performances by Noomi Rapace, Guy Pearce, and others.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "actor": "Oliver Platt",
+        "language": "Hungarian language",
+        "director": "James Wong",
+        "writer": "James Wong",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "City of Lost Souls",
+        "Gone with the Wind",
+        "Frankenweenie",
+        "Prometheus"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Jeff Bridges. Hmm, I didn’t expect that vibe. (I’m thinking of Tron.)",
+      "user_meta": {
+        "turn": 39,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Jeff Bridges",
+        "anchor_title": "The Open Road",
+        "constraints": {
+          "genre": "iraq war",
+          "director": "James Wong",
+          "actor": "Jeff Bridges"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 39,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Jeff Bridges",
+          "from_anchor": "Year One",
+          "to_anchor": "The Open Road"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in war-themed movies from the late 20th century with notable actors. I recommend 'Raiders of the Lost Ark' starring Harrison Ford, which perfectly fits their preferences.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Tron",
+        "actor": "Jeff Bridges",
+        "language": "Hungarian language",
+        "director": "James Wong",
+        "writer": "James Wong",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Expendables 2",
+        "Raiders of the Lost Ark",
+        "Windtalkers",
+        "Princess Mononoke"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jeff Bridges",
+        "anchor_title": "The Open Road",
+        "constraints": {
+          "genre": "iraq war",
+          "director": "James Wong",
+          "actor": "Jeff Bridges"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for recommendations like those in the list, which include war-themed movies from 2012 and featuring Jeff Bridges.\n\nBased on these preferences, I would recommend checking out 'The Bourne Legacy' (2012) as it fits your requirements perfectly. The movie combines elements of the war genre with the lead role played by Jeff Bridges.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Jeff Bridges",
+        "language": "Hungarian language",
+        "director": "James Wong",
+        "writer": "James Wong",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Bourne Legacy",
+        "Catch-22",
+        "Dinner for Schmucks",
+        "The River"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jeff Bridges",
+        "anchor_title": "The Open Road",
+        "constraints": {
+          "genre": "iraq war",
+          "director": "James Wong",
+          "actor": "Jeff Bridges"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has preferences for a war-themed movie from 2012, featuring Jeff Bridges as an actor. Recommendations could be 'Battleship' starring Rami Malek and featuring the desired elements.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "You",
+        "actor": "Jeff Bridges",
+        "language": "Hungarian language",
+        "director": "James Wong",
+        "writer": "James Wong",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Pride and Prejudice",
+        "Princess Mononoke",
+        "Battleship",
+        "Inglourious Basterds"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Peter Berg? That sounds intriguing. (I’m thinking of Battleship.)",
+      "user_meta": {
+        "turn": 42,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Peter Berg",
+        "anchor_title": "Very Bad Things",
+        "constraints": {
+          "genre": "iraq war",
+          "director": "Peter Berg",
+          "actor": "Jeff Bridges"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 42,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "director",
+          "bridge_value": "Peter Berg",
+          "from_anchor": "The Open Road",
+          "to_anchor": "Very Bad Things"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants recommendations for movies by Peter Berg, within a war genre, released in 2012, and featuring actors mentioned. Based on these constraints, I suggest 'The Usual Suspects' (1995) starring Pete Postlethwaite, which perfectly fits your criteria.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Battleship",
+        "actor": "Peter Berg",
+        "language": "Hungarian language",
+        "director": "Peter Berg",
+        "writer": "Peter Berg",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Usual Suspects",
+        "Born on the Fourth of July",
+        "The Rite",
+        "The Good German"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Peter Berg",
+        "anchor_title": "Very Bad Things",
+        "constraints": {
+          "genre": "iraq war",
+          "director": "Peter Berg",
+          "actor": "Jeff Bridges"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movie recommendations with genre war, released in 2012, featuring actor Peter Berg, and possibly directed by him as well. Based on these preferences, I would recommend '300: Rise of an Empire' starring Sullivan Stapleton and directed by Peter Berg himself.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Peter Berg",
+        "language": "Hungarian language",
+        "director": "Peter Berg",
+        "writer": "Peter Berg",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Neighbors 2: Sorority Rising",
+        "The River",
+        "A Farewell to Arms",
+        "300: Rise of an Empire"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of 300: Rise of an Empire. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Peter Berg",
+        "anchor_title": "Very Bad Things",
+        "constraints": {
+          "genre": "iraq war",
+          "director": "Peter Berg",
+          "actor": "Jeff Bridges"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes war-themed movies from 2012 with Peter Berg involved. Recommendations include \"Fury\" (2014), starring Jim Parrack, Brad Pitt, and Logan Lerman, which has a similar plot to the user's interest.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "300",
+        "actor": "Peter Berg",
+        "language": "Hungarian language",
+        "director": "Peter Berg",
+        "writer": "Peter Berg",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Fury",
+        "Smokin' Aces",
+        "Dear John",
+        "That's My Boy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Fury? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Peter Berg",
+        "anchor_title": "Very Bad Things",
+        "constraints": {
+          "genre": "iraq war",
+          "director": "Peter Berg",
+          "actor": "Jeff Bridges"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a war-themed movie from 2012, starring Peter Berg as the director and writer. I recommend \"Fury\" (2014), which fits those criteria perfectly. The movie features Denzel Washington as the commanding officer and a gripping battle sequence.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "Fury",
+        "actor": "Peter Berg",
+        "language": "Hungarian language",
+        "director": "Peter Berg",
+        "writer": "Peter Berg",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Equalizer",
+        "Safety Not Guaranteed",
+        "The Good German",
+        "The Siege"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Peter Berg",
+        "anchor_title": "Very Bad Things",
+        "constraints": {
+          "genre": "iraq war",
+          "director": "Peter Berg",
+          "actor": "Jeff Bridges"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user prefers movies with a war theme, released in 2012, starring Peter Berg, and featuring an element of weirdness or thought-provoking plot. Based on these preferences, I would recommend 'Looper' and 'Zulu'. 'Looper' has a war setting, Peter Berg directing, and a plot full of weirdness and thoughtfulness. 'Zulu', although not exactly released in 2012, still fits the war theme with its battle scenes during the Zulu War. Both movies star Klaus Kinski, further adding interest to your recommendation.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "Fury",
+        "actor": "Peter Berg",
+        "language": "Hungarian language",
+        "director": "Peter Berg",
+        "writer": "Peter Berg",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Looper",
+        "Promised Land",
+        "Doctor Zhivago",
+        "Zulu"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Her tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Peter Berg",
+        "anchor_title": "Very Bad Things",
+        "constraints": {
+          "genre": "iraq war",
+          "director": "Peter Berg",
+          "actor": "Jeff Bridges"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in stories with a deeper emotional aspect, specifically related to loss and love. Based on these preferences, I recommend 'The English Patient', known for its exploration of love and loss during World War II. The film features outstanding actors such as Ralph Fiennes and Juliette Binoche.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her",
+        "actor": "Peter Berg",
+        "language": "Hungarian language",
+        "director": "Peter Berg",
+        "writer": "Peter Berg",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Rite",
+        "The Way Back Home",
+        "The English Patient",
+        "300"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Evangeline Lilly. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of The English Patient.)",
+      "user_meta": {
+        "turn": 48,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Evangeline Lilly",
+        "anchor_title": "In the Valley of Elah",
+        "constraints": {
+          "genre": "iraq war",
+          "actor": "Evangeline Lilly",
+          "plot": "close"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 48,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "close",
+          "from_anchor": "Very Bad Things",
+          "to_anchor": "In the Valley of Elah"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies with Evangeline Lilly, featuring war themes and released in 2012. Recommendations could be 'A Walk in the Woods' (2017) starring Robert Redford and Lilly or 'Vanilla Sky' (2001) featuring both actors.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "The English Patient",
+        "actor": "Evangeline Lilly",
+        "language": "English",
+        "director": "Peter Berg",
+        "writer": "Peter Berg",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "A Walk in the Woods",
+        "Vanilla Sky",
+        "Born on the Fourth of July",
+        "Frida"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Evangeline Lilly",
+        "anchor_title": "In the Valley of Elah",
+        "constraints": {
+          "genre": "iraq war",
+          "actor": "Evangeline Lilly",
+          "plot": "close"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movie recommendations with a war theme, released in 2012, featuring Evangeline Lilly, and directed by Peter Berg.\n\nBased on these preferences, I would recommend 'Restless' (2006). This war-themed movie, though not released in 2012, still meets the other criteria. It stars Mia Wasikowska and has a strong Peter Berg directorial influence.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Evangeline Lilly",
+        "language": "English",
+        "director": "Peter Berg",
+        "writer": "Peter Berg",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Fun with Dick and Jane",
+        "Restless",
+        "Alien",
+        "We Need to Talk About Kevin"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by André Téchiné? That feels deeper than I thought. (I’m thinking of Restless.)",
+      "user_meta": {
+        "turn": 50,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "André Téchiné",
+        "anchor_title": "Club Dead",
+        "constraints": {
+          "genre": "iraq war",
+          "actor": "Evangeline Lilly",
+          "plot": "doesn",
+          "director": "André Téchiné"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 50,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "doesn",
+          "from_anchor": "In the Valley of Elah",
+          "to_anchor": "Club Dead"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for war-themed movies from 2012, starring Evangeline Lilly, directed by André Téchiné, and written by him. From the given list, I recommend 'The Informers' (2014), despite being a year later than requested, as it fits the genre, time period, and stars Evangeline Lilly in a war-related role.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Restless",
+        "actor": "Evangeline Lilly",
+        "language": "English",
+        "director": "André Téchiné",
+        "writer": "André Téchiné",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Informers",
+        "This Is the End",
+        "The Color of Money",
+        "Stepmom"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 5,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "crazy",
+      "from_anchor": "Click",
+      "to_anchor": "The Call"
+    },
+    {
+      "turn": 10,
+      "from_focus": "actor",
+      "to_focus": "language",
+      "bridge_field": "plot",
+      "bridge_value": "whose",
+      "from_anchor": "The Call",
+      "to_anchor": "The Notebook"
+    },
+    {
+      "turn": 12,
+      "from_focus": "language",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "The Notebook",
+      "to_anchor": "Rango"
+    },
+    {
+      "turn": 15,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "rachel",
+      "from_anchor": "Rango",
+      "to_anchor": "The Trumpet of the Swan"
+    },
+    {
+      "turn": 20,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "language",
+      "bridge_value": "Russian Language",
+      "from_anchor": "The Trumpet of the Swan",
+      "to_anchor": "The Old Man and the Sea"
+    },
+    {
+      "turn": 25,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Tom Skerritt",
+      "from_anchor": "The Old Man and the Sea",
+      "to_anchor": "Top Gun"
+    },
+    {
+      "turn": 29,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Tom McCarthy",
+      "from_anchor": "Top Gun",
+      "to_anchor": "Uglies"
+    },
+    {
+      "turn": 34,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "Oliver Platt",
+      "from_anchor": "Uglies",
+      "to_anchor": "Year One"
+    },
+    {
+      "turn": 39,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Jeff Bridges",
+      "from_anchor": "Year One",
+      "to_anchor": "The Open Road"
+    },
+    {
+      "turn": 42,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "director",
+      "bridge_value": "Peter Berg",
+      "from_anchor": "The Open Road",
+      "to_anchor": "Very Bad Things"
+    },
+    {
+      "turn": 48,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "close",
+      "from_anchor": "Very Bad Things",
+      "to_anchor": "In the Valley of Elah"
+    },
+    {
+      "turn": 50,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "doesn",
+      "from_anchor": "In the Valley of Elah",
+      "to_anchor": "Club Dead"
+    }
+  ]
+}

@@ -1,0 +1,2211 @@
+{
+  "session_id": "00005",
+  "model_name": "llama2:latest",
+  "true_genre": "piracy",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a french movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "french",
+        "anchor_title": "Incendies",
+        "constraints": {
+          "genre": "french"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preference for a French movie, I recommend \"The Dirty Dozen\" and \"Thunderball.\" Both of these movies are classic action films with exciting plots and talented actors. \"The Dirty Dozen\" follows a group of off-road motorcycle riders as they train and compete in grueling races, while \"Thunderball\" features James Bond on a mission to recover stolen nuclear warheads in the Bahamas. I hope you enjoy these recommendations!",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "french",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "The Dirty Dozen",
+        "Braveheart",
+        "The Smurfs 2",
+        "Thunderball"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of They. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "french",
+        "anchor_title": "Incendies",
+        "constraints": {
+          "genre": "french"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThe user prefers French movies, with language in French, and a plot that sounds intriguing.\n\nRecommendation:\nBased on the user's preferences, I would recommend \"Red Dragon\" starring Anthony Hopkins and Edward Norton. This psychological thriller follows a retired FBI agent who teams up with a imprisoned forensic psychiatrist to track down a serial killer. The plot is intriguing and features a talented cast. Alternatively, \"The Interpreter\" starring Sean Penn and Naomi Watts is another great option. It's a political thriller that unfolds inside the United Nations, where a U.S. Secret Service agent investigates an interpreter who overhears an assassination plot. Both movies offer a gripping and engaging viewing experience.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "They"
+      },
+      "rec_titles": [
+        "Red Dragon",
+        "12 Monkeys",
+        "The Interpreter",
+        "The Returned"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Sean Anders? That sounds intriguing. (I’m thinking of RED.)",
+      "user_meta": {
+        "turn": 3,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Sean Anders",
+        "anchor_title": "Bedazzled",
+        "constraints": {
+          "genre": "french",
+          "writer": "Sean Anders",
+          "language": "Russian Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 3,
+          "from_focus": "genre",
+          "to_focus": "writer",
+          "bridge_field": "language",
+          "bridge_value": "Russian Language",
+          "from_anchor": "Incendies",
+          "to_anchor": "Bedazzled"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to recommend some movies based on your user's preferences! It seems like they enjoy French films with a mix of genres, and they mentioned Sean Anders as an author who intrigues them. From this list, I would recommend \"Maid in Manhattan\" and \"The Life Aquatic with Steve Zissou.\" Both of these movies have a unique blend of humor, drama, and quirky characters that seem to align with the user's preferences.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "written",
+          "sean"
+        ],
+        "name": "RED",
+        "director": "Sean Anders",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Maid in Manhattan",
+        "The Green Mile",
+        "The Life Aquatic with Steve Zissou",
+        "Mars Attacks!"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Sean Anders",
+        "anchor_title": "Bedazzled",
+        "constraints": {
+          "genre": "french",
+          "writer": "Sean Anders",
+          "language": "Russian Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: French genre, director Sean Anders, language French, and plot keywords \"just\" and \"more\".\n\nRecommendation: If you enjoyed the mix of comedy and drama in \"Maid in Manhattan\", you might enjoy \"The Bourne Identity\" for its high-octane action and mystery. Alternatively, \"Thick as Thieves\" offers a similar blend of action and humor with a unique twist on the classic heist movie. Both films feature strong performances from their casts and are sure to keep you entertained.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Sean Anders",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Maid in Manhattan",
+        "The Bourne Identity",
+        "Thick as Thieves",
+        "Snowpiercer"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Bourne Identity. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Sean Anders",
+        "anchor_title": "Bedazzled",
+        "constraints": {
+          "genre": "french",
+          "writer": "Sean Anders",
+          "language": "Russian Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - French, director - Sean Anders, language - French, plot keywords - like, sound.\nBased on these cues, I recommend \"Ernest & Celestine\" and \"X-Men: First Class\". Both movies have a unique and captivating storyline that may appeal to the user's taste. In \"Ernest & Celestine\", the unlikely friendship between a bear and a mouse is sure to delight, while the superpowered mutants in \"X-Men: First Class\" will keep you on the edge of your seat.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Bourne Identity",
+        "director": "Sean Anders",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Ernest & Celestine",
+        "Titanic",
+        "Schindler's List",
+        "X-Men: First Class"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Sean Anders",
+        "anchor_title": "Bedazzled",
+        "constraints": {
+          "genre": "french",
+          "writer": "Sean Anders",
+          "language": "Russian Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: The user is open to watching a French movie, and they are no longer sure about their original choice.\nRecommendation: If you're looking for an exciting adventure film with a mix of action and drama, \"The Day After Tomorrow\" might be the perfect choice. Starring Dennis Quaid and Jake Gyllenhaal, this movie follows a paleoclimatologist on a dangerous journey to reach his son who is trapped in a sudden international storm that plunges the planet into a new Ice Age. Alternatively, if you're in the mood for a quirky and heartwarming film with a unique plot, \"Amélie\" might be more up your alley. With a talented cast including Audrey Tautou and Mathieu Kassovitz, this movie follows a young waitress as she tries to help people find happiness in her imaginative world.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "The Bourne Identity",
+        "director": "Sean Anders",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "The Day After Tomorrow",
+        "Thunderball",
+        "Amélie",
+        "Fantastic Mr. Fox"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does War tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Sean Anders",
+        "anchor_title": "Bedazzled",
+        "constraints": {
+          "genre": "french",
+          "writer": "Sean Anders",
+          "language": "Russian Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: war; director: Sean Anders; writer: Sean Anders; language: French; plot keywords: what, kind. Based on these cues, I recommend \"Before Sunset\" and \"Hotel Rwanda\". Both of these movies are powerful and thought-provoking, with strong performances from the actors. In \"Before Sunset\", Jesse and Celine's relationship is explored in a poignant and intimate way, while \"Hotel Rwanda\" tells a harrowing true story of survival and resilience during the Rwandan genocide.",
+      "constraints": {
+        "genre": "war",
+        "language": "French",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "War",
+        "director": "Sean Anders",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Before Sunset",
+        "Funny Games",
+        "Hotel Rwanda",
+        "Battleship"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of War? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Sean Anders",
+        "anchor_title": "Bedazzled",
+        "constraints": {
+          "genre": "french",
+          "writer": "Sean Anders",
+          "language": "Russian Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user is looking for a movie with a war theme, directed by Sean Anders, and featuring French language.\n\nRecommendation: Based on the user's preferences, I recommend \"The Book Thief\" (2013) or \"Valkyrie\" (2008). Both movies have a strong war theme and feature important actors such as Tom Cruise in \"Valkyrie,\" and a talented cast including Geoffrey Rush, Emily Blunt, and Sophie Nélisse in \"The Book Thief.\"",
+      "constraints": {
+        "genre": "war",
+        "language": "French",
+        "plot": [
+          "what"
+        ],
+        "name": "War",
+        "director": "Sean Anders",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "The Incredibles",
+        "Dear John",
+        "The Book Thief",
+        "Valkyrie"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Nadsat? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of The Book Thief.)",
+      "user_meta": {
+        "turn": 9,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "Nadsat",
+        "anchor_title": "Prince of Persia: The Sands of Time",
+        "constraints": {
+          "genre": "french",
+          "language": "Nadsat",
+          "plot": "young"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 9,
+          "from_focus": "writer",
+          "to_focus": "language",
+          "bridge_field": "plot",
+          "bridge_value": "young",
+          "from_anchor": "Bedazzled",
+          "to_anchor": "Prince of Persia: The Sands of Time"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThe user is interested in movies primarily in Nadsat, a fictional language created by Russian author Anthony Burgess for his novel \"A Clockwork Orange.\" They are also drawn to war themes and directors Sean Anders.\n\nRecommendation:\nBased on the user's preferences, I would recommend \"The Imitation Game\" (2014) starring Benedict Cumberbatch as Alan Turing. This movie is a historical drama that explores Turing's efforts to crack the German Enigma code during World War II, while also delving into his personal struggles. The film is well-crafted and features powerful performances from its cast.",
+      "constraints": {
+        "genre": "war",
+        "language": "Nadsat",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "The Book Thief",
+        "director": "Sean Anders",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Redacted",
+        "Compliance",
+        "The Lucky Ones",
+        "The Imitation Game"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Nadsat",
+        "anchor_title": "Prince of Persia: The Sands of Time",
+        "constraints": {
+          "genre": "french",
+          "language": "Nadsat",
+          "plot": "young"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - war; director - Sean Anders; writer - Sean Anders; language - Nadsat; plot keywords - just, more.\n\nBased on these constraints, I recommend \"The Secret Life of Walter Mitty\" and \"Born on the Fourth of July.\" Both movies are thought-provoking and visually stunning, with engaging plots and talented actors. \"The Secret Life of Walter Mitty\" follows a man who embarks on an adventure to escape his mundane life, while \"Born on the Fourth of July\" tells the story of a Vietnam War veteran turned anti-war activist.",
+      "constraints": {
+        "genre": "war",
+        "language": "Nadsat",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Sean Anders",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "The Secret Life of Walter Mitty",
+        "Pearl Harbor",
+        "Born on the Fourth of July",
+        "House at the End of the Street"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Born on the Fourth of July. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Nadsat",
+        "anchor_title": "Prince of Persia: The Sands of Time",
+        "constraints": {
+          "genre": "french",
+          "language": "Nadsat",
+          "plot": "young"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - war, director - Sean Anders, writer - Sean Anders, language - Nadsat\nBased on these cues, I recommend checking out \"Big Fish\" (2003) and \"District 9\" (2009). Both movies have a unique and intriguing plot, with talented actors such as Jessica Lange, Matthew McGrory, Alison Lohman, and Sharlto Copley. In \"Big Fish,\" a frustrated son tries to determine the fact from fiction in his dying father's life, while in \"District 9,\" violence ensues after an extraterrestrial race is forced to live in slum-like conditions on Earth finds a kindred spirit in a government agent exposed to their biotechnology.",
+      "constraints": {
+        "genre": "war",
+        "language": "Nadsat",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Born on the Fourth of July",
+        "director": "Sean Anders",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Big Fish",
+        "The Relic",
+        "Dear John",
+        "District 9"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Big Fish tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Nadsat",
+        "anchor_title": "Prince of Persia: The Sands of Time",
+        "constraints": {
+          "genre": "french",
+          "language": "Nadsat",
+          "plot": "young"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - war, director - Sean Anders, writer - Sean Anders, language - Nadsat.\nBased on these constraints, I recommend \"Prometheus\" and \"The Hurt Locker\". Both movies deal with themes of conflict and destruction, but also offer a glimpse into the human experience during times of war. \"Prometheus\" is a contemporary quest story that explores the consequences of playing with fire, while \"The Hurt Locker\" delves into the psychological effects of war on soldiers. Both movies feature strong acting performances and are sure to provide an engaging viewing experience.",
+      "constraints": {
+        "genre": "war",
+        "language": "Nadsat",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Big Fish",
+        "director": "Sean Anders",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Prometheus",
+        "The Odyssey",
+        "We the Living",
+        "The Hurt Locker"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Nadsat",
+        "anchor_title": "Prince of Persia: The Sands of Time",
+        "constraints": {
+          "genre": "french",
+          "language": "Nadsat",
+          "plot": "young"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThe user is looking for a movie with a war theme, directed by Sean Anders, and featuring Nadsat language. They are also interested in a movie that explores themes of obsession and addiction.\n\nRecommendation:\nBased on the user's preferences, I recommend \"The End of the Affair\" (1999) directed by Sean Anders. The movie is a thought-provoking drama that explores the complexities of human obsession and addiction, set against the backdrop of World War II. The film features an impressive cast, including Ralph Fiennes, Ian Hart, and Stephen Rea. Another great option could be \"Find Me Guilty\" (2006), also directed by Sean Anders, which tells the story of a low-level gangster who defends himself in court during what becomes the longest criminal trial in American judicial history.",
+      "constraints": {
+        "genre": "war",
+        "language": "Nadsat",
+        "plot": [
+          "what"
+        ],
+        "name": "X",
+        "director": "Sean Anders",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "The End of the Affair",
+        "Downfall",
+        "Black Hawk Down",
+        "Find Me Guilty"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Ted. I want to try something more werewolf—still with Mila Kunis if possible. Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "werewolf",
+        "anchor_title": "Tuck Everlasting",
+        "constraints": {
+          "genre": "werewolf",
+          "plot": "young",
+          "actor": "Mila Kunis"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 14,
+          "from_focus": "language",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "Mila Kunis",
+          "from_anchor": "Prince of Persia: The Sands of Time",
+          "to_anchor": "Tuck Everlasting"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Here's my recommendation:\n\nBased on your preference for werewolf movies starring Mila Kunis, I recommend checking out \"Forgetting Sarah Marshall\" and \"Hot Tub Time Machine.\" Both films feature Mila Kunis in lead roles and offer a mix of comedy and adventure. In \"Forgetting Sarah Marshall,\" Peter (played by Jason Segel) is heartbroken after his girlfriend Sarah (played by Kristen Bell) leaves him, so he takes a trip to Hawaii where he runs into her and her new boyfriend. Meanwhile, in \"Hot Tub Time Machine,\" a group of friends travel back in time to 1986 where they must relive a fateful night without changing anything to ensure the nephew's birth. Both movies offer plenty of laughs and are definitely worth checking out!",
+      "constraints": {
+        "genre": "werewolf",
+        "language": "Nadsat",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Wolf",
+        "director": "Sean Anders",
+        "writer": "Sean Anders",
+        "actor": "Mila Kunis"
+      },
+      "rec_titles": [
+        "Wolf",
+        "Forgetting Sarah Marshall",
+        "Hot Tub Time Machine",
+        "Friends with Benefits"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "werewolf",
+        "anchor_title": "Tuck Everlasting",
+        "constraints": {
+          "genre": "werewolf",
+          "plot": "young",
+          "actor": "Mila Kunis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I recommend \"Bad Moms\" and \"Alex in Wonderland.\" Both movies feature Mila Kunis and have a unique blend of humor, drama, and social commentary that align with the user's interests. \"Bad Moms\" is a lighthearted comedy about three overworked moms who take a break from their responsibilities to rediscover themselves, while \"Alex in Wonderland\" is a quirky and imaginative film about a movie director navigating the challenges of Hollywood and his personal life.",
+      "constraints": {
+        "genre": "werewolf",
+        "language": "Nadsat",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Sean Anders",
+        "writer": "Sean Anders",
+        "actor": "Mila Kunis"
+      },
+      "rec_titles": [
+        "Alex in Wonderland",
+        "Bad Moms",
+        "Mama",
+        "The Cabin in the Woods"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Alex in Wonderland? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "werewolf",
+        "anchor_title": "Tuck Everlasting",
+        "constraints": {
+          "genre": "werewolf",
+          "plot": "young",
+          "actor": "Mila Kunis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, I understand that you're looking for a movie that fits the mood of \"Alex in Wonderland,\" which you find deeper than expected. Based on your preferences, I recommend \"The Expendables 2\" and \"Forgetting Sarah Marshall.\" Both films feature action-packed plots and talented actors, including Sylvester Stallone, Jason Statham, and Mila Kunis.",
+      "constraints": {
+        "genre": "werewolf",
+        "language": "Nadsat",
+        "plot": [
+          "what",
+          "alex"
+        ],
+        "name": "Alex in Wonderland",
+        "director": "Sean Anders",
+        "writer": "Sean Anders",
+        "actor": "Mila Kunis"
+      },
+      "rec_titles": [
+        "The Expendables 2",
+        "Forgetting Sarah Marshall",
+        "The Way Back Home",
+        "American Dreamz"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "werewolf",
+        "anchor_title": "Tuck Everlasting",
+        "constraints": {
+          "genre": "werewolf",
+          "plot": "young",
+          "actor": "Mila Kunis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: werewolf; actor: Mila Kunis; director: Sean Anders; writer: Sean Anders; language: Nadsat; plot keywords: what, kind. Based on these cues, I recommend the movie \"Alex in Wonderland\" (N/A) starring Angelo Rossitto, Jeanne Moreau, Paul Mazursky, Ellen Burstyn. This film is a unique blend of artistic and commercial success, following the journey of a bohemian director named Alex who must navigate the Hollywood community while fantasizing about movie scenarios influenced by his idols. Alternatively, I suggest \"Oz the Great and Powerful\" (2013) starring Zach Braff, Bill Cobbs, Tim Holmes, Ted Raimi, James Franco, Mila Kunis, Bruce Campbell, Tony Cox, Abigail Spencer. This movie tells the story of a small-time magician who is swept away to an enchanted land and must navigate a power struggle between three witches.",
+      "constraints": {
+        "genre": "werewolf",
+        "language": "Nadsat",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "director": "Sean Anders",
+        "writer": "Sean Anders",
+        "actor": "Mila Kunis"
+      },
+      "rec_titles": [
+        "Alex in Wonderland",
+        "Oz the Great and Powerful",
+        "Man on Fire",
+        "Zero Effect"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Denzel Washington. Hmm, I didn’t expect that vibe. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 18,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Denzel Washington",
+        "anchor_title": "Virtuosity",
+        "constraints": {
+          "genre": "werewolf",
+          "actor": "Denzel Washington"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 18,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "genre",
+          "bridge_value": "werewolf",
+          "from_anchor": "Tuck Everlasting",
+          "to_anchor": "Virtuosity"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThe user is interested in finding movies with Denzel Washington, specifically a werewolf genre and directed by him.\n\nRecommendation:\nBased on the user's preferences, I recommend \"Grandma's Boy\" and \"Wilder Napalm\". Both films feature Denzel Washington as an actor, while \"Grandma's Boy\" is a werewolf movie with a unique blend of comedy and drama. \"Wilder Napalm\" explores the theme of sibling conflict in a psychedelic and visually stunning manner.",
+      "constraints": {
+        "genre": "werewolf",
+        "language": "Nadsat",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Ted",
+        "director": "Denzel Washington",
+        "writer": "Sean Anders",
+        "actor": "Denzel Washington"
+      },
+      "rec_titles": [
+        "Grandma's Boy",
+        "The Texas Chainsaw Massacre",
+        "Wilder Napalm",
+        "The River Why"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Denzel Washington",
+        "anchor_title": "Virtuosity",
+        "constraints": {
+          "genre": "werewolf",
+          "actor": "Denzel Washington"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre: werewolf; actor: Denzel Washington; director: Denzel Washington; writer: Sean Anders; language: Nadsat; plot keywords: just, more.\nBased on the user's preferences, I recommend \"Compliance\" and \"Donnie Brasco\". Both movies star Denzel Washington and have a gripping plot that will keep you engaged. In \"Compliance\", a normal day at a fast food restaurant turns sinister when a police officer makes a shocking accusation, while in \"Donnie Brasco\", an FBI agent infiltrates the mob but finds himself questioning his loyalties.",
+      "constraints": {
+        "genre": "werewolf",
+        "language": "Nadsat",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Denzel Washington",
+        "writer": "Sean Anders",
+        "actor": "Denzel Washington"
+      },
+      "rec_titles": [
+        "Compliance",
+        "Donnie Brasco",
+        "Bobby",
+        "A Clockwork Orange"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Donnie Brasco? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Denzel Washington",
+        "anchor_title": "Virtuosity",
+        "constraints": {
+          "genre": "werewolf",
+          "actor": "Denzel Washington"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: The user is looking for a movie with a similar mood to Donnie Brasco, possibly involving werewolves, and featuring actor Denzel Washington or directed by him. They have also expressed interest in movies with a unique plot or interesting actors.\nRecommendation: Based on the user's constraints, I would recommend \"Paycheck\" (2003) starring Ryan Robbins and Joe Morton. The movie follows an engineer who finds himself on the run after discovering a hidden suitcase filled with money, leading to a thrilling adventure as he tries to uncover why he's being pursued. Alternatively, \"Hot Tub Time Machine\" (2010) starring John Cusack and Rob Corddry could also be of interest, as it features a unique time-travel plot and a talented cast of actors.",
+      "constraints": {
+        "genre": "werewolf",
+        "language": "Nadsat",
+        "plot": [
+          "what"
+        ],
+        "name": "Donnie Brasco",
+        "director": "Denzel Washington",
+        "writer": "Sean Anders",
+        "actor": "Denzel Washington"
+      },
+      "rec_titles": [
+        "Paycheck",
+        "The Secret",
+        "The Twilight Saga: New Moon",
+        "Hot Tub Time Machine"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 21,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Denzel Washington",
+        "anchor_title": "Virtuosity",
+        "constraints": {
+          "genre": "werewolf",
+          "actor": "Denzel Washington"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: The user prefers movies with a werewolf theme, starring Denzel Washington, and directed by Sean Anders.\nRecommendation: Based on the user's preferences, I would recommend \"A Clockwork Orange\" (1962) starring George Coulouris, Warren Clarke, Steven Berkoff, Malcolm McDowell. The film is a classic dystopian drama that explores themes of violence and rehabilitation, featuring a memorable performance by Malcolm McDowell. Alternatively, \"The Equalizer\" (2014) starring Denzel Washington and Chloë Grace Moretz could also be a good fit, as it features a gripping plot centered around justice and morality, with Washington delivering a strong performance as a retired CIA operative who seeks revenge against a ruthless criminal gang.",
+      "constraints": {
+        "genre": "werewolf",
+        "language": "Nadsat",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "director": "Denzel Washington",
+        "writer": "Sean Anders",
+        "actor": "Denzel Washington"
+      },
+      "rec_titles": [
+        "A Clockwork Orange",
+        "The Nanny",
+        "The Amazing Spider-Man",
+        "The Equalizer"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Denzel Washington",
+        "anchor_title": "Virtuosity",
+        "constraints": {
+          "genre": "werewolf",
+          "actor": "Denzel Washington"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre: werewolf; actor: Denzel Washington; director: Denzel Washington; writer: Sean Anders; language: Nadsat; plot keywords: what, kind.\nBased on the user's preferences, I recommend the movie \"Hot Tub Time Machine\" starring Denzel Washington. The film is a fun and quirky take on time travel, with a great cast of characters and a unique premise that will keep you entertained from start to finish. Alternatively, \"Anyone But You\" also starring Denzel Washington is another great option, with a more emotional and heartwarming storyline that explores the complexities of relationships and personal growth.",
+      "constraints": {
+        "genre": "werewolf",
+        "language": "Nadsat",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "director": "Denzel Washington",
+        "writer": "Sean Anders",
+        "actor": "Denzel Washington"
+      },
+      "rec_titles": [
+        "Hot Tub Time Machine",
+        "Waiting",
+        "Anyone But You",
+        "Louie"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Danish Language? That feels deeper than I thought. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 23,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "Danish Language",
+        "anchor_title": "The Thing",
+        "constraints": {
+          "genre": "werewolf",
+          "actor": "Denzel Washington",
+          "language": "Danish Language",
+          "plot": "wild"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 23,
+          "from_focus": "actor",
+          "to_focus": "language",
+          "bridge_field": "plot",
+          "bridge_value": "wild",
+          "from_anchor": "Virtuosity",
+          "to_anchor": "The Thing"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues:\nGenre: Language\nActor: Denzel Washington\nDirector: Denzel Washington\nWriter: Sean Anders\nLanguage: Danish Language\nPlot keywords: something, primarily\n\nBased on the user's preferences, I recommend \"The Equalizer\" starring Denzel Washington. The movie is a thrilling tale of justice and morality, with Denzel playing a skilled private investigator who works with criminals to fight injustice. Additionally, \"Madame Bovary\" is another great option, featuring Emma Bovary's (played by Mia Wasikowska) quest for passion and excitement despite the consequences.",
+      "constraints": {
+        "genre": "language",
+        "language": "Danish Language",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "Deep",
+        "director": "Denzel Washington",
+        "writer": "Sean Anders",
+        "actor": "Denzel Washington"
+      },
+      "rec_titles": [
+        "The Siege",
+        "The Equalizer",
+        "Madame Bovary",
+        "Mansfield Park"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Danish Language",
+        "anchor_title": "The Thing",
+        "constraints": {
+          "genre": "werewolf",
+          "actor": "Denzel Washington",
+          "language": "Danish Language",
+          "plot": "wild"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - language; actor - Denzel Washington; director - Denzel Washington; writer - Sean Anders; language - Danish Language; plot keywords - just, more.\nBased on the user's preferences, I recommend \"Training Day\" and \"Fight Club.\" Both movies star Denzel Washington and have a gripping plot that will keep you engaged. In \"Training Day,\" a rookie cop must navigate a dangerous world with a corrupt detective, while in \"Fight Club,\" an insomniac office worker finds himself caught up in a underground fight club that becomes much more than he bargained for.",
+      "constraints": {
+        "genre": "language",
+        "language": "Danish Language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Denzel Washington",
+        "writer": "Sean Anders",
+        "actor": "Denzel Washington"
+      },
+      "rec_titles": [
+        "Training Day",
+        "True Crime",
+        "Fight Club",
+        "The 13th Warrior"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Danish Language",
+        "anchor_title": "The Thing",
+        "constraints": {
+          "genre": "werewolf",
+          "actor": "Denzel Washington",
+          "language": "Danish Language",
+          "plot": "wild"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThe user wants a movie recommendation that is not too specific, and they are open to various genres and actors. They have provided some preferences, including language (Danish), director (Denzel Washington), and plot keywords (\"what\", \"said\").\n\nRecommendation:\nBased on the user's constraints, I recommend \"What Women Want\" (2000) starring Mel Gibson, Helen Hunt, and Marisa Tomei. This movie follows a chauvinistic advertising executive who magically acquires the ability to hear what women are thinking, leading to hilarious and unexpected consequences. Alternatively, \"The Book of Eli\" (2010) starring Denzel Washington and Mila Kunis could also be a great fit, as it's an action-packed post-apocalyptic movie with a compelling plot and strong actors.",
+      "constraints": {
+        "genre": "language",
+        "language": "Danish Language",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "You",
+        "director": "Denzel Washington",
+        "writer": "Sean Anders",
+        "actor": "Denzel Washington"
+      },
+      "rec_titles": [
+        "What Women Want",
+        "American Dreamz",
+        "Prometheus",
+        "The Book of Eli"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Women? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Danish Language",
+        "anchor_title": "The Thing",
+        "constraints": {
+          "genre": "werewolf",
+          "actor": "Denzel Washington",
+          "language": "Danish Language",
+          "plot": "wild"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: language, actor Denzel Washington, director or writer Sean Anders.\nBased on these constraints, I recommend \"Training Day\" (2001) starring Denzel Washington as a rookie cop navigating a dangerous day with a corrupt detective. The film is directed by Ants and written by David Ayer, who also directed several other movies featuring Denzel Washington. Alternatively, if you're interested in a different type of movie, \"Wimbledon\" (2004) stars Kirsten Dunst as a rising tennis player who helps a struggling pro player regain his focus for Wimbledon.",
+      "constraints": {
+        "genre": "language",
+        "language": "Danish Language",
+        "plot": [
+          "what",
+          "women"
+        ],
+        "name": "Women",
+        "director": "Denzel Washington",
+        "writer": "Sean Anders",
+        "actor": "Denzel Washington"
+      },
+      "rec_titles": [
+        "Training Day",
+        "Find Me Guilty",
+        "Wimbledon",
+        "Wolfhound"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Danish Language",
+        "anchor_title": "The Thing",
+        "constraints": {
+          "genre": "werewolf",
+          "actor": "Denzel Washington",
+          "language": "Danish Language",
+          "plot": "wild"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, they seem to enjoy movies with a mix of language and actor Denzel Washington. Here are two recommendations that fit their criteria:\n\n\"Easy A\" (2010) is a fun and lighthearted comedy-drama starring Patricia Clarkson, Lalaine, and Jake Sandvig. The movie follows a high school girl who lies about losing her virginity and how the story spreads like wildfire throughout the school. With a talented cast and an engaging plot, this movie is sure to entertain.\n\n\"Flight\" (2012) stars Denzel Washington in a powerful role as a pilot struggling with alcoholism. The movie explores themes of redemption and second chances, and features a strong performance from Washington. With a gripping plot and great acting, this movie is definitely worth checking out.",
+      "constraints": {
+        "genre": "language",
+        "language": "Danish Language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us",
+        "director": "Denzel Washington",
+        "writer": "Sean Anders",
+        "actor": "Denzel Washington"
+      },
+      "rec_titles": [
+        "Easy A",
+        "Flight",
+        "The Preacher's Wife",
+        "X-Men: First Class"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Danish Language",
+        "anchor_title": "The Thing",
+        "constraints": {
+          "genre": "werewolf",
+          "actor": "Denzel Washington",
+          "language": "Danish Language",
+          "plot": "wild"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: language; actor: Denzel Washington; director: Denzel Washington; writer: Sean Anders; language: Danish Language; plot keywords: what, said. Based on these cues, I recommend the movie \"Antwone Fisher\" starring Denzel Washington. The film is a powerful drama that explores the complex identity of a young navy man struggling to come to terms with his painful past. With its thought-provoking plot and strong performances, \"Antwone Fisher\" is sure to captivate and inspire.",
+      "constraints": {
+        "genre": "language",
+        "language": "Danish Language",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "Us",
+        "director": "Denzel Washington",
+        "writer": "Sean Anders",
+        "actor": "Denzel Washington"
+      },
+      "rec_titles": [
+        "The Secret Garden",
+        "End of Watch",
+        "Holes",
+        "Antwone Fisher"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Danish Language",
+        "anchor_title": "The Thing",
+        "constraints": {
+          "genre": "werewolf",
+          "actor": "Denzel Washington",
+          "language": "Danish Language",
+          "plot": "wild"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Language, Denzel Washington, director, and plot keywords \"what kind\".\nBased on the user's preferences, I recommend watching \"Philadelphia\" (1993) or \"Taxi Driver\" (1976). Both movies feature Denzel Washington in a lead role and explore themes of social justice and personal struggle. \"Philadelphia\" is a powerful drama about a man with HIV who faces discrimination and marginalization, while \"Taxi Driver\" is a classic tale of a troubled loner who becomes obsessed with saving a young woman from danger. Both movies are thought-provoking and emotionally resonant.",
+      "constraints": {
+        "genre": "language",
+        "language": "Danish Language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "director": "Denzel Washington",
+        "writer": "Sean Anders",
+        "actor": "Denzel Washington"
+      },
+      "rec_titles": [
+        "Philadelphia",
+        "Taxi Driver",
+        "The Siege",
+        "Tender Is the Night"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Steve McQueen (Director)? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Philadelphia.)",
+      "user_meta": {
+        "turn": 30,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Steve McQueen (Director)",
+        "anchor_title": "Burn After Reading",
+        "constraints": {
+          "genre": "werewolf",
+          "language": "English",
+          "plot": "wild",
+          "director": "Steve McQueen (Director)"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 30,
+          "from_focus": "language",
+          "to_focus": "director",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "The Thing",
+          "to_anchor": "Burn After Reading"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User Constraints:\nSteve McQueen (Director), language (Danish), actor (Eve), plot keywords (could, switch).\n\nBased on the user's constraints, I recommend \"The Queen\" and \"Shattered.\" Both movies are directed by Steve McQueen and feature a strong female lead, with \"The Queen\" focusing on Queen Elizabeth II struggling with her reaction to a series of events after Princess Diana's death, and \"Shattered\" centered around two detectives taking down a Russian crime boss with the help of a sarcastic computer hacker. Both movies have a unique plot and strong acting performances, which should appeal to the user's preferences.",
+      "constraints": {
+        "genre": "language",
+        "language": "Danish Language",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Philadelphia",
+        "director": "Steve McQueen (Director)",
+        "writer": "Steve McQueen (Director)",
+        "actor": "Eve"
+      },
+      "rec_titles": [
+        "The Queen",
+        "Shattered",
+        "True Blood",
+        "Afterlife"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Steve McQueen (Director)",
+        "anchor_title": "Burn After Reading",
+        "constraints": {
+          "genre": "werewolf",
+          "language": "English",
+          "plot": "wild",
+          "director": "Steve McQueen (Director)"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: language; actor: Eve; director: Steve McQueen (Director); writer: Steve McQueen (Director); language: Danish Language; plot keywords: just, more. Based on these cues, I recommend the movie \"The Princess Diaries\" starring Anne Hathaway and Heather Matarazzo. The film follows Mia Thermopolis as she navigates her royal heritage and high school life with the help of her friends Lilly and Michael Moscovitz. Alternatively, you might enjoy \"Despicable Me 2\" which features Steve Carell as Gru, a super-villain turned father, and his adventures with his adopted daughters and a new villainous character. Both movies offer lighthearted humor and fun performances from their talented casts.",
+      "constraints": {
+        "genre": "language",
+        "language": "Danish Language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Steve McQueen (Director)",
+        "writer": "Steve McQueen (Director)",
+        "actor": "Eve"
+      },
+      "rec_titles": [
+        "The Princess Diaries",
+        "JFK",
+        "The Stuff",
+        "Despicable Me 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Her? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Steve McQueen (Director)",
+        "anchor_title": "Burn After Reading",
+        "constraints": {
+          "genre": "werewolf",
+          "language": "English",
+          "plot": "wild",
+          "director": "Steve McQueen (Director)"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: The mood of Her is unexpected, so I'm looking for movies with a similar tone and atmosphere.\nRecommendation: If you enjoyed the unexpected mood of Her, you might enjoy The Yearling (1930) or Taken (2008). Both are tense and suspenseful thrillers that feature unexpected plot twists and turns.",
+      "constraints": {
+        "genre": "language",
+        "language": "Danish Language",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "Her",
+        "director": "Steve McQueen (Director)",
+        "writer": "Steve McQueen (Director)",
+        "actor": "Eve"
+      },
+      "rec_titles": [
+        "The Yearling",
+        "The Skulls",
+        "Taken",
+        "The Thing"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Steve McQueen (Director)",
+        "anchor_title": "Burn After Reading",
+        "constraints": {
+          "genre": "werewolf",
+          "language": "English",
+          "plot": "wild",
+          "director": "Steve McQueen (Director)"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: language; actor: Eve; director: Steve McQueen (Director); writer: Steve McQueen (Director); language: Danish Language; plot keywords: what, kind.\nBased on your preferences, I recommend \"Utsav\" and \"The Trouble with Harry\". Both movies have a unique storyline and interesting actors, which align with your preferences. \"Utsav\" is a historical drama set in ancient India, while \"The Trouble with Harry\" is a classic whodunit murder mystery featuring an ensemble cast.",
+      "constraints": {
+        "genre": "language",
+        "language": "Danish Language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "director": "Steve McQueen (Director)",
+        "writer": "Steve McQueen (Director)",
+        "actor": "Eve"
+      },
+      "rec_titles": [
+        "Utsav",
+        "The Expendables 2",
+        "Louie",
+        "The Trouble with Harry"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 34,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Steve McQueen (Director)",
+        "anchor_title": "Burn After Reading",
+        "constraints": {
+          "genre": "werewolf",
+          "language": "English",
+          "plot": "wild",
+          "director": "Steve McQueen (Director)"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: language; actor: Eve; director: Steve McQueen (Director); writer: Steve McQueen (Director); language: Danish Language; plot keywords: like, sound. Based on these cues, I recommend the movie \"Maid in Manhattan\" starring Eve and directed by Steve McQueen. The film follows a frustrated actress who takes a break from Hollywood by staying with distant family friends in New York City, where she finds herself caught up in a web of romantic and professional intrigue. With its focus on language and sound, this movie is sure to delight viewers who enjoy thoughtful and nuanced storytelling.",
+      "constraints": {
+        "genre": "language",
+        "language": "Danish Language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "director": "Steve McQueen (Director)",
+        "writer": "Steve McQueen (Director)",
+        "actor": "Eve"
+      },
+      "rec_titles": [
+        "Maid in Manhattan",
+        "It's a Wonderful Life",
+        "Jumper",
+        "Smokin' Aces"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Michael Price (TV Writer)? That sounds intriguing. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 35,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Michael Price (TV Writer)",
+        "anchor_title": "The Spirit",
+        "constraints": {
+          "genre": "werewolf",
+          "language": "English",
+          "plot": "wild",
+          "director": "Spike Jonze",
+          "writer": "Michael Price (TV Writer)"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 35,
+          "from_focus": "director",
+          "to_focus": "writer",
+          "bridge_field": "director",
+          "bridge_value": "Spike Jonze",
+          "from_anchor": "Burn After Reading",
+          "to_anchor": "The Spirit"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, I understand that you're looking for movies written by Michael Price (TV Writer), with a focus on language and actor Eve. Based on your preferences, I recommend \"The Secret Garden\" and \"The Rite.\" Both of these movies feature intriguing plots and talented actors, including AJ Cross in \"The Secret Garden\" and Colin O'Donoghue in \"The Rite.\" I hope you enjoy them!",
+      "constraints": {
+        "genre": "language",
+        "language": "Danish Language",
+        "plot": [
+          "written",
+          "michael"
+        ],
+        "name": "Her",
+        "director": "Steve McQueen (Director)",
+        "writer": "Michael Price (TV Writer)",
+        "actor": "Eve"
+      },
+      "rec_titles": [
+        "The Secret Garden",
+        "The Rite",
+        "The Adventures of Tom Sawyer",
+        "The International"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Michael Price (TV Writer)",
+        "anchor_title": "The Spirit",
+        "constraints": {
+          "genre": "werewolf",
+          "language": "English",
+          "plot": "wild",
+          "director": "Spike Jonze",
+          "writer": "Michael Price (TV Writer)"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - language; actor - Eve; director - Steve McQueen (Director); writer - Michael Price (TV Writer); language - Danish Language; plot keywords - just, more.\nBased on the user's preferences, I recommend \"Ocean's Twelve\" and \"The Fighter\". Both movies feature a talented cast, including Eve, and were directed by Steve McQueen (Director) and written by Michael Price (TV Writer). \"Ocean's Twelve\" is a thrilling heist movie with a great ensemble cast, while \"The Fighter\" is a gripping true story of boxer Micky Ward and his journey to the top.",
+      "constraints": {
+        "genre": "language",
+        "language": "Danish Language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Steve McQueen (Director)",
+        "writer": "Michael Price (TV Writer)",
+        "actor": "Eve"
+      },
+      "rec_titles": [
+        "Ocean's Twelve",
+        "The Fighter",
+        "The Right Stuff",
+        "The Number 23"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ocean's Twelve? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Michael Price (TV Writer)",
+        "anchor_title": "The Spirit",
+        "constraints": {
+          "genre": "werewolf",
+          "language": "English",
+          "plot": "wild",
+          "director": "Spike Jonze",
+          "writer": "Michael Price (TV Writer)"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user wants a movie that has a similar mood and tone to Ocean's Twelve, but with a different language and cultural context. They are interested in movies with a mix of action, drama, and suspense.\n\nBased on the provided list, I would recommend \"The 13th Warrior\" and \"Divergent\". Both movies have a similar blend of action, drama, and suspense as Ocean's Twelve, but with a different language and cultural context. \"The 13th Warrior\" is set in a Viking village and features Antonio Banderas and Vladimir Kulich in leading roles, while \"Divergent\" takes place in a dystopian future and stars Shailene Woodley and Theo James. Both movies have received positive reviews for their engaging plots and strong performances.",
+      "constraints": {
+        "genre": "language",
+        "language": "Danish Language",
+        "plot": [
+          "what",
+          "ocean"
+        ],
+        "name": "Ocean's Twelve",
+        "director": "Steve McQueen (Director)",
+        "writer": "Michael Price (TV Writer)",
+        "actor": "Eve"
+      },
+      "rec_titles": [
+        "The 13th Warrior",
+        "Divergent",
+        "Man on Fire",
+        "The Great Gatsby"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Nestor Carbonell. Hmm, I didn’t expect that vibe. (I’m thinking of Tron.)",
+      "user_meta": {
+        "turn": 38,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Nestor Carbonell",
+        "anchor_title": "We Are Marshall",
+        "constraints": {
+          "genre": "werewolf",
+          "language": "English",
+          "plot": "computer",
+          "writer": "Michael Price (TV Writer)",
+          "actor": "Nestor Carbonell"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 38,
+          "from_focus": "writer",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "computer",
+          "from_anchor": "The Spirit",
+          "to_anchor": "We Are Marshall"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, here are two movie recommendations that fit their constraints:\n\n* \"Heart of Darkness\" (1910) is a classic adventure film starring Charlie Chaplin as a police officer on a dangerous mission to find missing colleague Captain Kurtz. With its blend of humor and suspense, this movie should appeal to fans of Nestor Carbonell's work in \"Tron.\"\n* \"A Walk Among the Tombstones\" (2014) is a gripping thriller starring Liam Neeson as a private investigator searching for a drug kingpin's missing wife. With its dark and atmospheric setting, this movie should appeal to fans of Steve McQueen's directing style.\n\nBoth of these movies feature strong performances from their actors and offer an exciting blend of suspense and intrigue that I think the user will enjoy!",
+      "constraints": {
+        "genre": "language",
+        "language": "Danish Language",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Tron",
+        "director": "Steve McQueen (Director)",
+        "writer": "Michael Price (TV Writer)",
+        "actor": "Nestor Carbonell"
+      },
+      "rec_titles": [
+        "Heart of Darkness",
+        "Still Alice",
+        "A Walk Among the Tombstones",
+        "Club Dead"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Nestor Carbonell",
+        "anchor_title": "We Are Marshall",
+        "constraints": {
+          "genre": "werewolf",
+          "language": "English",
+          "plot": "computer",
+          "writer": "Michael Price (TV Writer)",
+          "actor": "Nestor Carbonell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - language; actor - Nestor Carbonell; director - Steve McQueen (Director); writer - Michael Price (TV Writer); language - Danish Language; plot keywords - just, more.\nBased on these cues, I recommend the movie \"12 Angry Men\" starring Jack Warden, John Fiedler, Lee J. Cobb, and Martin Balsam. This classic drama follows a jury of 12 men as they deliberate on a murder trial, highlighting the importance of critical thinking and careful consideration of evidence. Alternatively, I suggest \"The Prince and the Pauper,\" a timeless tale of two boys who switch places and learn valuable lessons about class and identity.",
+      "constraints": {
+        "genre": "language",
+        "language": "Danish Language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Steve McQueen (Director)",
+        "writer": "Michael Price (TV Writer)",
+        "actor": "Nestor Carbonell"
+      },
+      "rec_titles": [
+        "12 Angry Men",
+        "The Secret of My Success",
+        "Pride and Prejudice",
+        "The Prince and the Pauper"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Prince? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Nestor Carbonell",
+        "anchor_title": "We Are Marshall",
+        "constraints": {
+          "genre": "werewolf",
+          "language": "English",
+          "plot": "computer",
+          "writer": "Michael Price (TV Writer)",
+          "actor": "Nestor Carbonell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Language - Danish, Actor - Nestor Carbonell, Director - Steve McQueen (Director), Writer - Michael Price (TV Writer).\nBased on the user's preferences, I recommend \"What Women Want\" and \"Paycheck\". Both movies feature an interesting plot and a talented cast, including Ana Gasteyer, Mark Feuerstein, Lauren Holly, Helen Hunt, Alan Alda, Ben Affleck, and more.",
+      "constraints": {
+        "genre": "language",
+        "language": "Danish Language",
+        "plot": [
+          "what",
+          "prince"
+        ],
+        "name": "The Prince",
+        "director": "Steve McQueen (Director)",
+        "writer": "Michael Price (TV Writer)",
+        "actor": "Nestor Carbonell"
+      },
+      "rec_titles": [
+        "What Women Want",
+        "Paycheck",
+        "The International",
+        "The Skulls"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Robert Zemeckis? That sounds intriguing. (I’m thinking of Women.)",
+      "user_meta": {
+        "turn": 41,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Robert Zemeckis",
+        "anchor_title": "Anger Management",
+        "constraints": {
+          "genre": "werewolf",
+          "language": "English",
+          "plot": "computer",
+          "writer": "Michael Price (TV Writer)",
+          "actor": "Nestor Carbonell",
+          "director": "Robert Zemeckis"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 41,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "We Are Marshall",
+          "to_anchor": "Anger Management"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, here are two movie recommendations that might interest them:\n\n* \"Maleficent\" (2014) - This film tells a unique retelling of the classic Disney tale, \"Sleeping Beauty,\" with a twist. The vengeful fairy Maleficent is driven to curse an infant princess, but discoveries that the child could be the one person who can restore peace to their troubled land. Starring Angelina Jolie Pitt and Elle Fanning, this movie features impressive visual effects and a compelling storyline.\n* \"Back to the Future Part III\" (1990) - In this third installment of the beloved time-traveling trilogy, Marty McFly and Doc Brown find themselves stranded in 1955 after a botched attempt to travel back in time. With no fuel available for the DeLorean, the two must figure out how to escape the Old West before Doc is murdered. Starring Michael J. Fox and Christopher Lloyd, this movie is full of action, humor, and heart.",
+      "constraints": {
+        "genre": "language",
+        "language": "Danish Language",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Women",
+        "director": "Robert Zemeckis",
+        "writer": "Robert Zemeckis",
+        "actor": "Nestor Carbonell"
+      },
+      "rec_titles": [
+        "Maleficent",
+        "White Fang",
+        "Back to the Future Part III",
+        "Smokin' Aces"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Robert Zemeckis",
+        "anchor_title": "Anger Management",
+        "constraints": {
+          "genre": "werewolf",
+          "language": "English",
+          "plot": "computer",
+          "writer": "Michael Price (TV Writer)",
+          "actor": "Nestor Carbonell",
+          "director": "Robert Zemeckis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has provided several cues that suggest they are interested in watching a movie with a specific genre, cast, and plot. Based on these cues, I recommend \"Bobby\" and \"Back to the Future Part II.\" Both of these movies have a strong focus on language, as they are based on true events and feature actors who are known for their performances in different languages. Additionally, both movies have a unique blend of humor and drama that may appeal to the user's preference for a film with a mix of genres.",
+      "constraints": {
+        "genre": "language",
+        "language": "Danish Language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Robert Zemeckis",
+        "writer": "Robert Zemeckis",
+        "actor": "Nestor Carbonell"
+      },
+      "rec_titles": [
+        "Bobby",
+        "Back to the Future Part II",
+        "How to Train Your Dragon",
+        "Bats"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Back to the Future tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Robert Zemeckis",
+        "anchor_title": "Anger Management",
+        "constraints": {
+          "genre": "werewolf",
+          "language": "English",
+          "plot": "computer",
+          "writer": "Michael Price (TV Writer)",
+          "actor": "Nestor Carbonell",
+          "director": "Robert Zemeckis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: language, actor Nestor Carbonell, director Robert Zemeckis, writer Robert Zemeckis, and plot keywords \"what\" and \"kind\".\nBased on these constraints, I recommend the movie \"Flight\" (2012) starring Denzel Washington and Nadine Velazquez. The film tells the story of two men who fall for the same beautiful nurse, while also exploring themes of redemption and second chances. Alternatively, you might enjoy \"The Dark Knight\" (2008) featuring Heath Ledger as the iconic Joker, along with a talented cast including Christian Bale, Michael Caine, and Gary Oldman.",
+      "constraints": {
+        "genre": "language",
+        "language": "Danish Language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Back to the Future",
+        "director": "Robert Zemeckis",
+        "writer": "Robert Zemeckis",
+        "actor": "Nestor Carbonell"
+      },
+      "rec_titles": [
+        "Flight",
+        "Used Cars",
+        "The Dark Knight",
+        "The Skulls"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of 2012? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Robert Zemeckis",
+        "anchor_title": "Anger Management",
+        "constraints": {
+          "genre": "werewolf",
+          "language": "English",
+          "plot": "computer",
+          "writer": "Michael Price (TV Writer)",
+          "actor": "Nestor Carbonell",
+          "director": "Robert Zemeckis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThe user is looking for a movie with a deeper mood than they initially thought, and they have specific preferences for the year 2012, actor Nestor Carbonell, director Robert Zemeckis, and language Danish.\n\nRecommendation:\nBased on the user's preferences, I recommend \"The Light Between Oceans\" (2012) starring Nestor Carbonell. The movie is a dramatic and emotional tale of loss, grief, and identity that explores complex themes in a deeper and more thought-provoking way than many other films from 2012. Alternatively, \"The Cabin in the Woods\" (2012) also starring Nestor Carbonell offers a unique blend of horror and humor, with an intricate plot that will keep viewers engaged and surprised.",
+      "constraints": {
+        "genre": "language",
+        "language": "Danish Language",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "2012",
+        "director": "Robert Zemeckis",
+        "writer": "Robert Zemeckis",
+        "actor": "Nestor Carbonell",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Holes",
+        "Smokin' Aces",
+        "The Light Between Oceans",
+        "The Cabin in the Woods"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Deep. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Robert Zemeckis",
+        "anchor_title": "Anger Management",
+        "constraints": {
+          "genre": "werewolf",
+          "language": "English",
+          "plot": "computer",
+          "writer": "Michael Price (TV Writer)",
+          "actor": "Nestor Carbonell",
+          "director": "Robert Zemeckis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "No problem! Based on the user's preferences, I would recommend \"Wreck-It Ralph\" and \"The Mortal Instruments: City of Bones\". Both movies feature an exciting plot and a talented cast, including actors like Mona Marshall, Debi Derryberry, Kath Soucie, Jennifer Hale, Kyle Hebert, Maurice LaMarche, Rich Moore, Jess Harnell, Horatio Sanz, Joe Lo Truglio, Adam Carolla, Fred Tatasciore, Jack McBrayer, and Mindy Kaling.",
+      "constraints": {
+        "genre": "language",
+        "language": "Danish Language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "director": "Robert Zemeckis",
+        "writer": "Robert Zemeckis",
+        "actor": "Nestor Carbonell",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Wreck-It Ralph",
+        "The Great Gatsby",
+        "The Mortal Instruments: City of Bones",
+        "The Skull"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Toby Jones. That sounds intriguing. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 46,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Toby Jones",
+        "anchor_title": "Capote",
+        "constraints": {
+          "genre": "werewolf",
+          "language": "English",
+          "plot": "wild",
+          "writer": "Michael Price (TV Writer)",
+          "actor": "Toby Jones",
+          "director": "Robert Zemeckis"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 46,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "wild",
+          "from_anchor": "Anger Management",
+          "to_anchor": "Capote"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure! Based on the user's preferences, I recommend \"Hitch\" and \"The Rum Diary.\" Both of these movies feature Toby Jones in a starring role, and they were released in 2012 or earlier, which fits within the user's time constraint. \"Hitch\" is a fun and lighthearted film about a man who tries to help people find love through matchmaking, while \"The Rum Diary\" is a unique coming-of-age story set in Puerto Rico during the 1960s. Both movies have interesting plots and talented casts, and I think the user will enjoy them!",
+      "constraints": {
+        "genre": "language",
+        "language": "Danish Language",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Us",
+        "director": "Robert Zemeckis",
+        "writer": "Robert Zemeckis",
+        "actor": "Toby Jones",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Hitch",
+        "The Rum Diary",
+        "The Thing",
+        "The Only Good Indian"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Toby Jones",
+        "anchor_title": "Capote",
+        "constraints": {
+          "genre": "werewolf",
+          "language": "English",
+          "plot": "wild",
+          "writer": "Michael Price (TV Writer)",
+          "actor": "Toby Jones",
+          "director": "Robert Zemeckis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - language; year - 2012; actor - Toby Jones; director - Robert Zemeckis; writer - Robert Zemeckis; language - Danish Language; plot keywords - just, more.\nBased on these cues, I recommend the movie \"Finding Neverland\" (2004) starring Toby Jones, Dustin Hoffman, and Kate Winslet. The movie is a heartwarming tale of friendship and creativity, following the story of Sir J.M. Barrie's inspiration for his famous play \"Peter Pan\".\n\nAlternatively, you might enjoy \"In Time\" (2011) starring Justin Timberlake, Olivia Wilde, and Matt Bomer. This movie is set in a future where people stop aging at 25, but are engineered to live only one more year, and follows the story of a man accused of murder who goes on the run with a hostage.",
+      "constraints": {
+        "genre": "language",
+        "language": "Danish Language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Robert Zemeckis",
+        "writer": "Robert Zemeckis",
+        "actor": "Toby Jones",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Finding Neverland",
+        "In Time",
+        "The Number 23",
+        "Ocean's Twelve"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Wilde? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Toby Jones",
+        "anchor_title": "Capote",
+        "constraints": {
+          "genre": "werewolf",
+          "language": "English",
+          "plot": "wild",
+          "writer": "Michael Price (TV Writer)",
+          "actor": "Toby Jones",
+          "director": "Robert Zemeckis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Language (Danish), year (2012), actor (Toby Jones), director (Robert Zemeckis), writer (Robert Zemeckis).\nBased on these constraints, I recommend the movie \"W.\" (2008) starring Josh Brolin as George W. Bush, which offers a fascinating and insightful portrayal of a controversial political figure. Alternatively, \"The Campaign\" (2012) also stars Toby Jones and features a hilarious performance by Will Ferrell as a bumbling politician. Both movies offer thought-provoking and entertaining content that aligns with the user's preferences.",
+      "constraints": {
+        "genre": "language",
+        "language": "Danish Language",
+        "plot": [
+          "what",
+          "wilde"
+        ],
+        "name": "Wild",
+        "director": "Robert Zemeckis",
+        "writer": "Robert Zemeckis",
+        "actor": "Toby Jones",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "W.",
+        "Spring Breakers",
+        "The Mist",
+        "The Campaign"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Toby Jones",
+        "anchor_title": "Capote",
+        "constraints": {
+          "genre": "werewolf",
+          "language": "English",
+          "plot": "wild",
+          "writer": "Michael Price (TV Writer)",
+          "actor": "Toby Jones",
+          "director": "Robert Zemeckis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The movie should be from 2012, have a Danish language option, and star Toby Jones.\nBased on these constraints, I recommend \"Frankenweenie\" and \"The Bourne Legacy\". Both movies are from 2012, offer a Danish language option, and feature Toby Jones in a prominent role. \"Frankenweenie\" is a unique and quirky animated film about a boy who brings his dead dog back to life through science, while \"The Bourne Legacy\" is an action-packed expansion of the Bourne universe with Jeremy Renner starring as a new hero triggered by events from the previous films.",
+      "constraints": {
+        "genre": "language",
+        "language": "Danish Language",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "Wild",
+        "director": "Robert Zemeckis",
+        "writer": "Robert Zemeckis",
+        "actor": "Toby Jones",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The 13th Warrior",
+        "Can You Keep a Secret?",
+        "Frankenweenie",
+        "The Bourne Legacy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of RED. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 50,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Toby Jones",
+        "anchor_title": "Capote",
+        "constraints": {
+          "genre": "werewolf",
+          "language": "English",
+          "plot": "wild",
+          "writer": "Michael Price (TV Writer)",
+          "actor": "Toby Jones",
+          "director": "Robert Zemeckis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThe user is interested in a movie that stars Toby Jones and was released in 2012, but they are unsure if they would enjoy it or be scared by it.\n\nRecommendation:\nBased on the user's preferences, I would recommend \"The Cabin in the Woods\" (2012) starring Toby Jones. This movie is a horror-comedy that follows five college friends who discover a sinister plot at a remote cabin, and it features a talented cast including Chris Hemsworth, Fran Kranz, and Sigourney Weaver. Alternatively, \"To Rome with Love\" (2012) also starring Toby Jones could be a good option. This romantic comedy follows the lives of visitors and residents of Rome and their romantic adventures, and it features an all-star cast including Woody Allen, Judy Davis, and Greta Gerwig.",
+      "constraints": {
+        "genre": "language",
+        "language": "Danish Language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "director": "Robert Zemeckis",
+        "writer": "Robert Zemeckis",
+        "actor": "Toby Jones",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Flubber",
+        "Hotel Transylvania",
+        "The Cabin in the Woods",
+        "To Rome with Love"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 3,
+      "from_focus": "genre",
+      "to_focus": "writer",
+      "bridge_field": "language",
+      "bridge_value": "Russian Language",
+      "from_anchor": "Incendies",
+      "to_anchor": "Bedazzled"
+    },
+    {
+      "turn": 9,
+      "from_focus": "writer",
+      "to_focus": "language",
+      "bridge_field": "plot",
+      "bridge_value": "young",
+      "from_anchor": "Bedazzled",
+      "to_anchor": "Prince of Persia: The Sands of Time"
+    },
+    {
+      "turn": 14,
+      "from_focus": "language",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "Mila Kunis",
+      "from_anchor": "Prince of Persia: The Sands of Time",
+      "to_anchor": "Tuck Everlasting"
+    },
+    {
+      "turn": 18,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "genre",
+      "bridge_value": "werewolf",
+      "from_anchor": "Tuck Everlasting",
+      "to_anchor": "Virtuosity"
+    },
+    {
+      "turn": 23,
+      "from_focus": "actor",
+      "to_focus": "language",
+      "bridge_field": "plot",
+      "bridge_value": "wild",
+      "from_anchor": "Virtuosity",
+      "to_anchor": "The Thing"
+    },
+    {
+      "turn": 30,
+      "from_focus": "language",
+      "to_focus": "director",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "The Thing",
+      "to_anchor": "Burn After Reading"
+    },
+    {
+      "turn": 35,
+      "from_focus": "director",
+      "to_focus": "writer",
+      "bridge_field": "director",
+      "bridge_value": "Spike Jonze",
+      "from_anchor": "Burn After Reading",
+      "to_anchor": "The Spirit"
+    },
+    {
+      "turn": 38,
+      "from_focus": "writer",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "computer",
+      "from_anchor": "The Spirit",
+      "to_anchor": "We Are Marshall"
+    },
+    {
+      "turn": 41,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "We Are Marshall",
+      "to_anchor": "Anger Management"
+    },
+    {
+      "turn": 46,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "wild",
+      "from_anchor": "Anger Management",
+      "to_anchor": "Capote"
+    }
+  ]
+}

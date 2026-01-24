@@ -1,0 +1,2289 @@
+{
+  "session_id": "00065",
+  "model_name": "llama3:instruct",
+  "true_genre": "melodrama",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a disaster movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "disaster",
+        "anchor_title": "Reign of Fire",
+        "constraints": {
+          "genre": "disaster"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a disaster movie, huh? Well, I've got just the thing! I highly recommend \"Airplane!\" - a classic comedy that's all about a series of disasters unfolding on a commercial flight, with a hilarious cast of characters trying to survive the chaos. With its wacky humor and over-the-top situations, it's a disaster movie like no other!",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "disaster",
+          "could"
+        ],
+        "name": "Disaster Movie"
+      },
+      "rec_titles": [
+        "Z for Zachariah",
+        "There's Something About Mary",
+        "Elysium",
+        "Airplane!"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Conrad Vernon? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Conrad Vernon",
+        "anchor_title": "Us",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "plot": "crazy"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "crazy",
+          "from_anchor": "Reign of Fire",
+          "to_anchor": "Us"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you'd like to switch gears and explore something new by Conrad Vernon, possibly due to the fascination with \"Us\"! Given that, I think you might enjoy \"Reign of Fire\" (2002), a disaster film that features Gerard Butler and Christian Bale as they battle against dragons taking over the planet. The action-packed plot and impressive visual effects will surely keep you engaged!",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Us",
+        "actor": "Conrad Vernon",
+        "director": "Conrad Vernon",
+        "writer": "Conrad Vernon"
+      },
+      "rec_titles": [
+        "Downfall",
+        "Reign of Fire",
+        "War of the Worlds",
+        "2012"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Conrad Vernon",
+        "anchor_title": "Us",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "plot": "crazy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more disaster-themed movies with Conrad Vernon, and it seems like you enjoyed something on this list! Based on that, I'd recommend \"Reign of Fire\" - it's an action-packed disaster movie about fire-breathing dragons taking over the world, starring Gerard Butler and Christian Bale. If you're in the mood for something a bit more light-hearted, \"The Rocker\" could be a great choice too, with its fun premise of a washed-up drummer getting a second chance at stardom.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Conrad Vernon",
+        "director": "Conrad Vernon",
+        "writer": "Conrad Vernon"
+      },
+      "rec_titles": [
+        "JFK",
+        "The Rocker",
+        "Reign of Fire",
+        "Hopeless"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Rocker tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Conrad Vernon",
+        "anchor_title": "Us",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "plot": "crazy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a movie with a story that involves danger, disaster, and possibly some twists! Based on your interest in Conrad Vernon's work (as writer, director, etc.) and the genre of disaster, I recommend \"Disaster Movie\" (2008) - a playful take on catastrophic events, featuring a cast of lovable characters navigating chaos. If you'd like to explore more serious territory, \"The Andromeda Strain\" (1971) is a classic sci-fi thriller about scientists racing against time to stop a deadly contagion.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "actor": "Conrad Vernon",
+        "director": "Conrad Vernon",
+        "writer": "Conrad Vernon"
+      },
+      "rec_titles": [
+        "End of Watch",
+        "Lady in the Water",
+        "Disaster Movie",
+        "The Andromeda Strain"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? That sounds intriguing.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Conrad Vernon",
+        "anchor_title": "Us",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "plot": "crazy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie with an intriguing vibe, and since you mentioned \"You\" sounds like a disaster movie, I'm assuming that's what you're going for! Based on your constraints, I'd recommend either \"Disaster Movie\" or \"Shrek 2\". Both films have elements of surprise and excitement, with the former offering a more lighthearted take on disasters and the latter featuring beloved characters in a fun-filled adventure.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "You",
+        "actor": "Conrad Vernon",
+        "director": "Conrad Vernon",
+        "writer": "Conrad Vernon"
+      },
+      "rec_titles": [
+        "Man on Wire",
+        "What Women Want",
+        "Disaster Movie",
+        "Shrek 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Conrad Vernon",
+        "anchor_title": "Us",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "plot": "crazy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you liked the sound of Ted and didn't expect that vibe, so you're looking for something quite different! Based on your interest in disaster movies with Conrad Vernon as actor, director, and writer, I think you might enjoy \"The Life Before Her Eyes\" (2007). This movie explores themes of tragedy and its aftermath, which fits well with the disaster genre.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "actor": "Conrad Vernon",
+        "director": "Conrad Vernon",
+        "writer": "Conrad Vernon"
+      },
+      "rec_titles": [
+        "The Skull",
+        "The Life Before Her Eyes",
+        "Maid in Manhattan",
+        "It's a Wonderful Life"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Tatum O'Neal. That feels deeper than I thought. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 7,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Tatum O'Neal",
+        "anchor_title": "The Core",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "actor": "Tatum O'Neal"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 7,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "director",
+          "bridge_value": "Conrad Vernon",
+          "from_anchor": "Us",
+          "to_anchor": "The Core"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a disaster movie with Tatum O'Neal, and something that feels deeper than you initially thought, like Her. I think I have just the two movies for you! Let me recommend \"War of the Worlds\" (2005), an intense and thrilling disaster movie where Tom Cruise stars alongside Dakota Fanning as they fight to survive a Martian invasion.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Her",
+        "actor": "Tatum O'Neal",
+        "director": "Conrad Vernon",
+        "writer": "Conrad Vernon"
+      },
+      "rec_titles": [
+        "War of the Worlds",
+        "Theodore Rex",
+        "3",
+        "Cinder"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tatum O'Neal",
+        "anchor_title": "The Core",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "actor": "Tatum O'Neal"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more recommendations like \"The Breakfast Club\", right? Unfortunately, none of these movies fit that exact bill, but I think \"Tusk\" might be up your alley! It's a quirky disaster movie with some great performances from Michael Parks and Haley Joel Osment, and it's definitely a unique ride.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Tatum O'Neal",
+        "director": "Conrad Vernon",
+        "writer": "Conrad Vernon"
+      },
+      "rec_titles": [
+        "The Breakfast Club",
+        "Shutter",
+        "Tusk",
+        "Tooth Fairy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Syriac language? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 9,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "Syriac language",
+        "anchor_title": "Shrek 2",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "Syriac language",
+          "plot": "yours"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 9,
+          "from_focus": "actor",
+          "to_focus": "language",
+          "bridge_field": "plot",
+          "bridge_value": "yours",
+          "from_anchor": "The Core",
+          "to_anchor": "Shrek 2"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie that's primarily in Syriac language, but you're not sure if you'd enjoy it or find it scary (thinking of \"You\"). I understand! Based on your constraints, I highly recommend \"Afterlife\" (2011), which might surprise you with its heartwarming and insightful portrayal of a father-son relationship.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "RED",
+        "actor": "Tatum O'Neal",
+        "director": "Conrad Vernon",
+        "writer": "Conrad Vernon",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "Madame Bovary",
+        "This Is 40",
+        "Compliance",
+        "Afterlife"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Syriac language",
+        "anchor_title": "Shrek 2",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "Syriac language",
+          "plot": "yours"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your previous preferences, I understand you're looking for movies that explore language, specifically Syriac, and have a connection to actor Tatum O'Neal, director Conrad Vernon, writer Conrad Vernon, and plot keywords \"just\" and \"more\". Given these constraints, I recommend \"Pride and Prejudice\" which is a classic novel adapted into a film, and also \"Neighbors 2: Sorority Rising\" which has a lighthearted tone and a fun cast.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Tatum O'Neal",
+        "director": "Conrad Vernon",
+        "writer": "Conrad Vernon",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "Fight Club",
+        "Neighbors 2: Sorority Rising",
+        "Velocity",
+        "Pride and Prejudice"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Syriac language",
+        "anchor_title": "Shrek 2",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "Syriac language",
+          "plot": "yours"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your previous statement, you're looking for a movie that explores themes of being wrong and earlier events coming back to haunt us. From the list, I think \"Thick as Thieves\" might be a great fit! This action-packed film features a talented cast, including Antonio Banderas and Tom Hardy, and delves into the consequences of past mistakes.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "You",
+        "actor": "Tatum O'Neal",
+        "director": "Conrad Vernon",
+        "writer": "Conrad Vernon",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "Island of the Blue Dolphins",
+        "Heart of Darkness",
+        "Pain & Gain",
+        "Thick as Thieves"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Syriac language",
+        "anchor_title": "Shrek 2",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "Syriac language",
+          "plot": "yours"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on what you've shared, I understand that you're intrigued by the eerie and fascinating vibe of Us, and you'd like some movie recommendations that fit a similar genre and mood.\n\nFrom the list provided, I think Lady in the Water (2006) might be an excellent match for you. This fantasy drama film shares a sense of mystique and wonder, with a unique storyline about a character from a bedtime story trying to find her way back home. The movie features a talented ensemble cast, including Bryce Dallas Howard and Paul Giamatti.\n\nAlternatively, if you'd like something even more thought-provoking and atmospheric, Flatliners (1990) might be an interesting choice. This supernatural thriller explores the idea of near-death experiences and the consequences that follow, featuring a star-studded cast, including Julia Roberts and Kiefer Sutherland.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what"
+        ],
+        "name": "Us",
+        "actor": "Tatum O'Neal",
+        "director": "Conrad Vernon",
+        "writer": "Conrad Vernon",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "Lady in the Water",
+        "The Way Back Home",
+        "Paycheck",
+        "Flatliners"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Water. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Syriac language",
+        "anchor_title": "Shrek 2",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "Syriac language",
+          "plot": "yours"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems you're interested in films that explore deeper themes, like the Syriac language film \"Water\" does. Given your fondness for Tatum O'Neal and Conrad Vernon's work, I recommend \"Shrek 2\", a fun-filled adventure that cleverly pokes fun at societal norms and expectations, with a dash of humor and wit. You'll also get to see the talented Mike Myers bring Shrek to life!",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Water",
+        "actor": "Tatum O'Neal",
+        "director": "Conrad Vernon",
+        "writer": "Conrad Vernon",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "Planet Terror",
+        "The Relic",
+        "Shrek 2",
+        "Paycheck"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Shrek tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Syriac language",
+        "anchor_title": "Shrek 2",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "Syriac language",
+          "plot": "yours"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a story that has an interesting and fascinating narrative, with possible connections to language, director Conrad Vernon, writer Conrad Vernon, and Syriac language as themes or elements. Based on these constraints, I recommend \"Shrek\" (2001) - a humorous and imaginative film with a unique blend of fairy tale characters, witty dialogue, and engaging storyline. The movie features the voice talents of Mike Myers, Eddie Murphy, and Cameron Diaz, among others.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Shrek",
+        "actor": "Tatum O'Neal",
+        "director": "Conrad Vernon",
+        "writer": "Conrad Vernon",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "Alex in Wonderland",
+        "Dear John",
+        "The Order",
+        "Shrek"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Shawnee Smith. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 15,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Shawnee Smith",
+        "anchor_title": "War of the Worlds",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "Syriac language",
+          "plot": "yours",
+          "actor": "Shawnee Smith"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 15,
+          "from_focus": "language",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "yours",
+          "from_anchor": "Shrek 2",
+          "to_anchor": "War of the Worlds"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for movies featuring Shawnee Smith, and you're intrigued by the Syriac language and a plot involving finding something or someone. Well, I think I have just the recommendations for you! You might enjoy \"You\" (I assume that's the film with Shawnee Smith), but if you're in the mood for something different, how about \"Taken 3\" where Liam Neeson goes on a thrilling adventure to clear his name? Or if you'd prefer a more laid-back vibe, \"The Rum Diary\" might be up your alley, with Johnny Depp and Amber Heard starring in this Puerto Rican-set drama.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "You",
+        "actor": "Shawnee Smith",
+        "director": "Conrad Vernon",
+        "writer": "Conrad Vernon",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "Taken 3",
+        "The Rum Diary",
+        "King Kong",
+        "Good Will Hunting"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Shawnee Smith",
+        "anchor_title": "War of the Worlds",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "Syriac language",
+          "plot": "yours",
+          "actor": "Shawnee Smith"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I noticed you enjoyed a movie with Shawnee Smith, Conrad Vernon, and a unique language element - specifically Syriac! You're looking for something similar, perhaps with a blend of intrigue, humor, or suspense. Based on that, I recommend \"The Number 23\" (2007) starring Shawnee Smith herself, which explores the connection between reality and fiction in a fascinating way.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Shawnee Smith",
+        "director": "Conrad Vernon",
+        "writer": "Conrad Vernon",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "The Number 23",
+        "The Pink Panther 2",
+        "Saw III",
+        "Monsters vs. Aliens"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Shawnee Smith",
+        "anchor_title": "War of the Worlds",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "Syriac language",
+          "plot": "yours",
+          "actor": "Shawnee Smith"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your constraints, I understand that you're looking for a movie with a unique tone and possibly some action elements, given the presence of Shawnee Smith as an actor. You also mentioned Syriac language and plot keywords like \"what\" and \"what\", which suggests you might appreciate a thought-provoking film.\n\nWith that in mind, I'd recommend \"Super\" (2010), a quirky superhero comedy starring Ellen Page and Rainn Wilson, which explores themes of imagination and empowerment. Alternatively, if you're open to a more serious sci-fi adventure, \"Prometheus\" (2012) might be up your alley, with its thought-provoking questions about humanity's relationship with technology and the natural world.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "X",
+        "actor": "Shawnee Smith",
+        "director": "Conrad Vernon",
+        "writer": "Conrad Vernon",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "Super",
+        "Prometheus",
+        "Monsters vs. Aliens",
+        "You"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Shawnee Smith",
+        "anchor_title": "War of the Worlds",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "Syriac language",
+          "plot": "yours",
+          "actor": "Shawnee Smith"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I understand what you're looking for! You want a movie that tells a story with intrigue, and since you mentioned Us, I'm guessing you're open to something thought-provoking and perhaps a bit unconventional.\n\nBased on your cues, I highly recommend \"Saw VI\" (2009) starring Shawnee Smith. This film is part of the popular Saw franchise, known for its mind-bending plot twists and gruesome surprises. With Shawnee Smith reprising her role as Amanda Young, you can expect a thrilling ride that will keep you guessing until the very end!",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "actor": "Shawnee Smith",
+        "director": "Conrad Vernon",
+        "writer": "Conrad Vernon",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "Saw VI",
+        "Tender Is the Night",
+        "Heart of Darkness",
+        "Emma"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Saw. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Shawnee Smith",
+        "anchor_title": "War of the Worlds",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "Syriac language",
+          "plot": "yours",
+          "actor": "Shawnee Smith"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you liked the sound of Saw and are looking for some movie recommendations! Based on your interest in that film, I think you might enjoy something with a strong plot and a dash of intrigue.\n\nI recommend checking out \"Grace Unplugged\" (2013), which stars Shawnee Smith - you mentioned liking her work, after all! The movie follows a talented young singer as she navigates the challenges of fame and faith. With its themes of self-discovery and perseverance, it might appeal to fans of Saw's gritty tone.\n\nIf you're in the mood for something even more thought-provoking, \"Madame Bovary\" (1856) could be an interesting choice. This classic novel has been adapted into a film that explores the consequences of chasing one's desires, which might resonate with you if you enjoyed the complex plot of Saw.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "W.",
+        "actor": "Shawnee Smith",
+        "director": "Conrad Vernon",
+        "writer": "Conrad Vernon",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "Emma",
+        "Mansfield Park",
+        "Grace Unplugged",
+        "Madame Bovary"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Patrick Melton? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Madame Bovary.)",
+      "user_meta": {
+        "turn": 20,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Patrick Melton",
+        "anchor_title": "The Football Factory",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "Syriac language",
+          "plot": "bored",
+          "actor": "Shawnee Smith",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 20,
+          "from_focus": "actor",
+          "to_focus": "writer",
+          "bridge_field": "plot",
+          "bridge_value": "bored",
+          "from_anchor": "War of the Worlds",
+          "to_anchor": "The Football Factory"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you're looking for movie recommendations written by Patrick Melton, and you're intrigued by Madame Bovary (perhaps because of its literary roots?). Given that you mentioned Shawnee Smith and Conrad Vernon as references, I think you might enjoy \"The Order\" (2003), a supernatural thriller starring Benno Fürmann and Heath Ledger.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "written",
+          "patrick"
+        ],
+        "name": "RED",
+        "actor": "Shawnee Smith",
+        "director": "Conrad Vernon",
+        "writer": "Patrick Melton",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "The Order",
+        "White Fang",
+        "Tender Is the Night",
+        "Mansfield Park"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 21,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Patrick Melton",
+        "anchor_title": "The Football Factory",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "Syriac language",
+          "plot": "bored",
+          "actor": "Shawnee Smith",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you liked \"Saw VI\" and are looking for more movies with a similar vibe, featuring Shawnee Smith, and perhaps some thrilling plots? I'd recommend checking out \"Shutter\", which also explores the darker side of human nature through its eerie and suspenseful photography-themed plot. Alternatively, if you're in the mood for something even more intense, \"Compliance\" is a gripping thriller that will keep you on the edge of your seat!",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Shawnee Smith",
+        "director": "Conrad Vernon",
+        "writer": "Patrick Melton",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "Shutter",
+        "Compliance",
+        "The Lincoln Lawyer",
+        "Saw VI"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Patrick Melton",
+        "anchor_title": "The Football Factory",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "Syriac language",
+          "plot": "bored",
+          "actor": "Shawnee Smith",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a story that features the Syriac language, with Shawnee Smith as an actor, and a director/writer combo including Conrad Vernon and Patrick Melton. Based on these unique constraints, I recommend \"Hitch\" (2005) - it's a fascinating film that explores the intersection of two legendary filmmakers, Alfred Hitchcock and François Truffaut, in a clever and humorous way.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "You",
+        "actor": "Shawnee Smith",
+        "director": "Conrad Vernon",
+        "writer": "Patrick Melton",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "Pride and Prejudice",
+        "This Is Spinal Tap",
+        "White Fang",
+        "Hitch"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Legend? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Patrick Melton",
+        "anchor_title": "The Football Factory",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "Syriac language",
+          "plot": "bored",
+          "actor": "Shawnee Smith",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you're looking for a movie that captures the mood of Legend, and you're unsure if you'd enjoy it or find it scary due to its dark tone. Based on your interest in Shawnee Smith, Conrad Vernon, Patrick Melton, and the Syriac language, I recommend \"Man on Wire\" (2008), a documentary-style film about Philippe Petit's daring high-wire routine between the Twin Towers. While it's not as dark as Legend, it shares a sense of awe and wonder that might appeal to you.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "legend"
+        ],
+        "name": "RED",
+        "actor": "Shawnee Smith",
+        "director": "Conrad Vernon",
+        "writer": "Patrick Melton",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "Training Day",
+        "Find Me Guilty",
+        "Man on Wire",
+        "RED"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Patrick Melton",
+        "anchor_title": "The Football Factory",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "Syriac language",
+          "plot": "bored",
+          "actor": "Shawnee Smith",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a movie that resonates with you, much like \"You\" did. You seem to appreciate thought-provoking films with strong performances and complex characters. Based on your interest in the Syriac language and themes of sound and liking, I think you might enjoy \"Planet Terror\", a zombie-infested action film with a talented cast, including Rose McGowan and Robert Rodriguez. Alternatively, if you're in the mood for something more grounded, \"The Other Guys\" offers a humorous take on buddy cop movies with Will Ferrell and Mark Wahlberg delivering strong performances.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "actor": "Shawnee Smith",
+        "director": "Conrad Vernon",
+        "writer": "Patrick Melton",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "Planet Terror",
+        "White Fang",
+        "The Other Guys",
+        "The Secret Garden"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Serbian language? That feels deeper than I thought. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 25,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "Serbian language",
+        "anchor_title": "The Bucket List",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "Serbian language",
+          "plot": "wish",
+          "actor": "Shawnee Smith",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 25,
+          "from_focus": "writer",
+          "to_focus": "language",
+          "bridge_field": "plot",
+          "bridge_value": "wish",
+          "from_anchor": "The Football Factory",
+          "to_anchor": "The Bucket List"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a movie primarily in Serbian language, with some deeper meaning behind it, similar to the tone of Ted. None of the movies on this list fit your language constraint, but I'd like to recommend two options that might scratch that \"something deeper\" itch.\n\nFirstly, The Adventures of Tom Sawyer could be an interesting choice, as it's a classic tale with themes of friendship, adventure, and self-discovery - all set in the 1840s. Secondly, Alex in Wonderland is a unique film that explores the creative process, personal growth, and the tension between artistic freedom and commercial success.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "Ted",
+        "actor": "Shawnee Smith",
+        "director": "Conrad Vernon",
+        "writer": "Patrick Melton",
+        "language": "Serbian language"
+      },
+      "rec_titles": [
+        "The Adventures of Tom Sawyer",
+        "Alex in Wonderland",
+        "The Prince",
+        "The Prince and the Pauper"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Serbian language",
+        "anchor_title": "The Bucket List",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "Serbian language",
+          "plot": "wish",
+          "actor": "Shawnee Smith",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for more recommendations like \"Cyrus\" - something with a mix of language, acting talent, and quirky storytelling. Based on that, I'd highly recommend \"Hesher\" (2010) starring Shawnee Smith, which explores themes of grief, chaos, and finding one's place in the world. Or, if you're up for something even more offbeat and thrilling, \"The Cabin in the Woods\" (2012) might be just what you're looking for!",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Shawnee Smith",
+        "director": "Conrad Vernon",
+        "writer": "Patrick Melton",
+        "language": "Serbian language"
+      },
+      "rec_titles": [
+        "Hesher",
+        "The Cabin in the Woods",
+        "Heart of Darkness",
+        "King Kong"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Hesher. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Serbian language",
+        "anchor_title": "The Bucket List",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "Serbian language",
+          "plot": "wish",
+          "actor": "Shawnee Smith",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie that's similar in tone and style to Hesher, which is known for its dark humor and quirky characters. Based on your interest in Shawnee Smith from Hesher, I think you might enjoy Grace Unplugged, which also stars her as a singer trying to navigate the music industry while staying true to her faith. It's a heartwarming and humorous film that explores themes of identity and self-discovery.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Her",
+        "actor": "Shawnee Smith",
+        "director": "Conrad Vernon",
+        "writer": "Patrick Melton",
+        "language": "Serbian language"
+      },
+      "rec_titles": [
+        "The Relic",
+        "The Other Guys",
+        "Total Recall",
+        "Grace Unplugged"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Serbian language",
+        "anchor_title": "The Bucket List",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "Serbian language",
+          "plot": "wish",
+          "actor": "Shawnee Smith",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for a story that explores deeper themes, and you've got a fondness for Shawnee Smith, Conrad Vernon, and Patrick Melton's work. Based on these cues, I think you might enjoy \"What Women Want\" (2000), which features Shawnee Smith in the cast alongside Mel Gibson. The movie has a unique premise that delves into the world of what women are thinking, offering a humorous and thought-provoking exploration of relationships and communication.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Deep",
+        "actor": "Shawnee Smith",
+        "director": "Conrad Vernon",
+        "writer": "Patrick Melton",
+        "language": "Serbian language"
+      },
+      "rec_titles": [
+        "The Twilight Saga: New Moon",
+        "What Women Want",
+        "Utsav",
+        "Monsters vs. Aliens"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Serbian language",
+        "anchor_title": "The Bucket List",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "Serbian language",
+          "plot": "wish",
+          "actor": "Shawnee Smith",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for a movie that features the Serbian language and stars Shawnee Smith, with Conrad Vernon as the director and Patrick Melton as the writer - and you'd like something related to \"what\" or \"said\" in the plot. With those constraints in mind, I think you might enjoy \"I Heart Huckabees\"! This quirky film has a unique tone and features an all-star cast, including Shawnee Smith, which aligns with your preferences.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "Deep",
+        "actor": "Shawnee Smith",
+        "director": "Conrad Vernon",
+        "writer": "Patrick Melton",
+        "language": "Serbian language"
+      },
+      "rec_titles": [
+        "Anyone But You",
+        "The Twilight Saga: New Moon",
+        "I Heart Huckabees",
+        "American Dreamz"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? That sounds intriguing.",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Serbian language",
+        "anchor_title": "The Bucket List",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "Serbian language",
+          "plot": "wish",
+          "actor": "Shawnee Smith",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for a movie that captures the mood and intrigue of Ted, with a focus on existential themes, Serbian language, and starring Shawnee Smith. Based on these constraints, I'd recommend \"I Heart Huckabees\" (2004), a quirky and thought-provoking film that explores the human search for meaning through its unconventional detective duo. The movie features a talented ensemble cast, including Dustin Hoffman and Naomi Watts, and is known for its unique storytelling and philosophical undertones.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Ted",
+        "actor": "Shawnee Smith",
+        "director": "Conrad Vernon",
+        "writer": "Patrick Melton",
+        "language": "Serbian language"
+      },
+      "rec_titles": [
+        "I Heart Huckabees",
+        "Smilla's Sense of Snow",
+        "We the Living",
+        "Prometheus"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Seth MacFarlane. That feels deeper than I thought. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 31,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Seth MacFarlane",
+        "anchor_title": "Reign of Fire",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "Serbian language",
+          "plot": "wish",
+          "actor": "Seth MacFarlane",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 31,
+          "from_focus": "language",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Seth MacFarlane",
+          "from_anchor": "The Bucket List",
+          "to_anchor": "Reign of Fire"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more movies with Seth MacFarlane, and you felt that Ted was deeper than expected! Given your interest in his films, I think you might enjoy \"Peggy Sue Got Married\" (1986), a charming comedy starring Nicolas Cage as a high school student reliving memories of his past. With its blend of humor and heartwarming moments, this film shares some of the same lighthearted and entertaining qualities found in Ted.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Ted",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "writer": "Patrick Melton",
+        "language": "Serbian language"
+      },
+      "rec_titles": [
+        "Peggy Sue Got Married",
+        "Black Knight",
+        "The Hangover",
+        "Torn Curtain"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Seth MacFarlane",
+        "anchor_title": "Reign of Fire",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "Serbian language",
+          "plot": "wish",
+          "actor": "Seth MacFarlane",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more recommendations like \"Ted\" (starring Seth MacFarlane, directed by Seth MacFarlane), perhaps with a similar blend of humor and action? Based on that, I think you might enjoy \"The Stuff\", a campy horror-comedy about a mysterious goo that wreaks havoc on the world.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "writer": "Patrick Melton",
+        "language": "Serbian language"
+      },
+      "rec_titles": [
+        "The Stuff",
+        "Veronica Mars",
+        "Three Kings",
+        "Jason Bourne"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Seth MacFarlane",
+        "anchor_title": "Reign of Fire",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "Serbian language",
+          "plot": "wish",
+          "actor": "Seth MacFarlane",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your interest in stories that delve deeper than expected, I noticed you're looking for a film with a Serbian language element, starring Seth MacFarlane, and exploring themes of what kind of story.\n\nGiven these constraints, I highly recommend \"In the Land of Blood and Honey\" (2011). This critically acclaimed drama tells a poignant tale of love and conflict set against the backdrop of the Bosnian War. With its powerful performances and thought-provoking narrative, this film is sure to resonate with you.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Deep",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "writer": "Patrick Melton",
+        "language": "Serbian language"
+      },
+      "rec_titles": [
+        "Ted 2",
+        "In the Land of Blood and Honey",
+        "Deep",
+        "Titanic"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 34,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Seth MacFarlane",
+        "anchor_title": "Reign of Fire",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "Serbian language",
+          "plot": "wish",
+          "actor": "Seth MacFarlane",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I understand what you're looking for! You liked the quirky humor and pop culture references in Ted, and are now curious about other movies that share similar qualities. Based on your interest in Seth MacFarlane's work, I recommend checking out The Other Guys (2010), an action-comedy starring Will Ferrell and Mark Wahlberg as mismatched police officers trying to live up to their idols. With its wacky humor and lighthearted tone, it might be right up your alley!",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "writer": "Patrick Melton",
+        "language": "Serbian language"
+      },
+      "rec_titles": [
+        "Emma",
+        "The Other Guys",
+        "White Fang",
+        "The Right Stuff"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of 2010? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Seth MacFarlane",
+        "anchor_title": "Reign of Fire",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "Serbian language",
+          "plot": "wish",
+          "actor": "Seth MacFarlane",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie from 2010 that's not too scary and is in line with the tone of Seth MacFarlane, who directed and starred in one of the movies on this list. Based on your preference for a non-scary movie, I'd recommend \"Get Him to the Greek\" (2010), a raunchy comedy starring Russell Brand as an out-of-control rock star, which should provide plenty of laughs.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "2010",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "writer": "Patrick Melton",
+        "language": "Serbian language",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Pride and Prejudice",
+        "Get Him to the Greek",
+        "If I Stay",
+        "Just Wright"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in English Language? That sounds intriguing. (I’m thinking of RED.)",
+      "user_meta": {
+        "turn": 36,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "English Language",
+        "anchor_title": "Dinner for Schmucks",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "English Language",
+          "plot": "wish",
+          "actor": "Seth MacFarlane",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 36,
+          "from_focus": "actor",
+          "to_focus": "language",
+          "bridge_field": "language",
+          "bridge_value": "English Language",
+          "from_anchor": "Reign of Fire",
+          "to_anchor": "Dinner for Schmucks"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for something primarily in English Language, set around 2010, with Seth MacFarlane involved as director, writer, or actor, and having a certain plot tone. Based on those constraints, I think you might enjoy \"The Incredible Burt Wonderstone\" (2013), a hilarious comedy about a struggling magician trying to revive his career. With Steve Carell, Jim Carrey, and Olivia Wilde in the cast, it's a fun ride with plenty of laughs!",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "RED",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "writer": "Patrick Melton",
+        "language": "English Language",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "The Incredible Burt Wonderstone",
+        "The World's End",
+        "Jackie Brown",
+        "The Nutty Professor"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "English Language",
+        "anchor_title": "Dinner for Schmucks",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "English Language",
+          "plot": "wish",
+          "actor": "Seth MacFarlane",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for more movies like the one that features Seth MacFarlane, right? That means you might enjoy films with clever writing and a touch of humor. Based on that, I'd recommend \"The Words\" (2012) - it's a thought-provoking drama about a writer who must confront the consequences of plagiarism, starring Bradley Cooper and Jeremy Irons. Alternatively, if you're in the mood for something more light-hearted, \"Mars Attacks!\" (1996) could be up your alley - it's a campy sci-fi comedy directed by Tim Burton, with a star-studded cast including Jack Nicholson and Glenn Close.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "writer": "Patrick Melton",
+        "language": "English Language",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "The Words",
+        "Mars Attacks!",
+        "Jackie Brown",
+        "Hell's Angels"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of 2012? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "English Language",
+        "anchor_title": "Dinner for Schmucks",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "English Language",
+          "plot": "wish",
+          "actor": "Seth MacFarlane",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you're looking for a movie from 2012 with Seth MacFarlane involved in its production, and the genre seems to be a mystery. Based on your interest in what's fascinating, I think you might enjoy \"Ted\" (2012) - a comedy about an adult who still talks to his childhood teddy bear that comes to life. With Seth MacFarlane at the helm as writer, director, and voice of the titular character, this film promises to be a wild ride with plenty of humor and wit.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "what"
+        ],
+        "name": "2012",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "writer": "Patrick Melton",
+        "language": "English Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Hoosiers",
+        "Armageddon",
+        "Coraline",
+        "Chasing Amy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Jeff Fahey. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 39,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Jeff Fahey",
+        "anchor_title": "Shallow Hal",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "English Language",
+          "plot": "bennett",
+          "actor": "Jeff Fahey",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 39,
+          "from_focus": "language",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "bennett",
+          "from_anchor": "Dinner for Schmucks",
+          "to_anchor": "Shallow Hal"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you're looking for more movies with Jeff Fahey, possibly something similar to Ted (2012) directed by Seth MacFarlane. You'd like English-language films from around 2012, starring Jeff Fahey, and potentially featuring a mix of humor and adventure.\n\nBased on your preferences, I recommend checking out \"Urban Legend\" (1998). This horror-comedy film features Jeff Fahey as Professor Perry, a mysterious figure who may be connected to the bizarre deaths plaguing a college campus. The movie blends urban legends with witty banter, making it an entertaining watch.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Ted",
+        "actor": "Jeff Fahey",
+        "director": "Seth MacFarlane",
+        "writer": "Patrick Melton",
+        "language": "English Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Shanghai Knights",
+        "The Rum Diary",
+        "The Breakfast Club",
+        "Urban Legend"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jeff Fahey",
+        "anchor_title": "Shallow Hal",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "English Language",
+          "plot": "bennett",
+          "actor": "Jeff Fahey",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more recommendations like \"Ted\" (2012) - an English-language film from 2012, starring Jeff Fahey and directed by Seth MacFarlane.\n\nI think I have just the thing: how about \"True Crime\"? It's a gripping thriller with a great cast, including Diane Venora, Isaiah Washington, and Clint Eastwood. The plot follows an over-the-hill journalist trying to clear a death row inmate's name just hours before his execution - it's a real nail-biter!",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Jeff Fahey",
+        "director": "Seth MacFarlane",
+        "writer": "Patrick Melton",
+        "language": "English Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "True Crime",
+        "Immortals",
+        "A View to a Kill",
+        "The Box"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jeff Fahey",
+        "anchor_title": "Shallow Hal",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "English Language",
+          "plot": "bennett",
+          "actor": "Jeff Fahey",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I noticed that you mentioned earlier that maybe you were wrong, and I'm here to help you find a new movie that fits your preferences! Based on your previous cues, you seem to enjoy English language movies from 2012 with Jeff Fahey, directed by Seth MacFarlane, and written by Patrick Melton.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "You",
+        "actor": "Jeff Fahey",
+        "director": "Seth MacFarlane",
+        "writer": "Patrick Melton",
+        "language": "English Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Requiem for a Dream",
+        "The Man from Earth",
+        "Prometheus",
+        "My Cousin Vinny"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Her tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jeff Fahey",
+        "anchor_title": "Shallow Hal",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "English Language",
+          "plot": "bennett",
+          "actor": "Jeff Fahey",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie that tells an unusual kind of story, but aren't sure if you'd enjoy it or find it scary! Based on your interest in English language movies from 2012, and the presence of Jeff Fahey, I think I Want Someone to Eat Cheese With might be right up your alley. This quirky comedy follows a man's struggles with his job and love life, all while using food as a coping mechanism - no scary scenes or intense plot twists here!",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her",
+        "actor": "Jeff Fahey",
+        "director": "Seth MacFarlane",
+        "writer": "Patrick Melton",
+        "language": "English Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Hotel Rwanda",
+        "The Color of Money",
+        "I Want Someone to Eat Cheese With",
+        "Nine"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jeff Fahey",
+        "anchor_title": "Shallow Hal",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "English Language",
+          "plot": "bennett",
+          "actor": "Jeff Fahey",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a movie that you think might be similar to \"You\" (2012), which stars Jeff Fahey, and you're not sure if you'd enjoy it or find it scary. Based on your constraints, I recommend checking out \"From Paris with Love\" (2010) - it's an action-packed thriller starring John Travolta as a tough-as-nails CIA agent, alongside Jonathan Rhys Meyers, who plays a young diplomat trying to stop a terrorist attack in the city of love.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "actor": "Jeff Fahey",
+        "director": "Seth MacFarlane",
+        "writer": "Patrick Melton",
+        "language": "English Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Interview with the Assassin",
+        "Black Hawk Down",
+        "Cinder",
+        "From Paris with Love"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jeff Fahey",
+        "anchor_title": "Shallow Hal",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "English Language",
+          "plot": "bennett",
+          "actor": "Jeff Fahey",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for a movie that's in English, released in 2012, starring Jeff Fahey, directed by Seth MacFarlane, and written by Patrick Melton. Given those constraints have changed, I'm recommending \"Fast Times at Ridgemont High\" (1982) instead, which is a classic coming-of-age comedy with memorable performances from Phoebe Cates, Sean Penn, and Jennifer Jason Leigh, exploring themes of youth, rebellion, and self-discovery.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "RED",
+        "actor": "Jeff Fahey",
+        "director": "Seth MacFarlane",
+        "writer": "Patrick Melton",
+        "language": "English Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Fast Times at Ridgemont High",
+        "Mad Max Beyond Thunderdome",
+        "Revolutionary Road",
+        "Reign of Fire"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of 2012? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jeff Fahey",
+        "anchor_title": "Shallow Hal",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Conrad Vernon",
+          "language": "English Language",
+          "plot": "bennett",
+          "actor": "Jeff Fahey",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie from 2012 that's not too intense, but still has an air of uncertainty and decision-making - you're torn between enjoying it and being scared! I'd recommend \"Wicker Park\" (2004) instead, as it explores themes of obsession and the blurred lines between reality and fantasy. With its moody atmosphere and complex characters, it might not be a perfect match for 2012, but it's definitely an intriguing choice that could satisfy your curiosity!",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "2012",
+        "actor": "Jeff Fahey",
+        "director": "Seth MacFarlane",
+        "writer": "Patrick Melton",
+        "language": "English Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Monty Python and the Holy Grail",
+        "Wicker Park",
+        "Unforgiven",
+        "A Night at the Roxbury"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Ken Russell? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of 2012.)",
+      "user_meta": {
+        "turn": 46,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Ken Russell",
+        "anchor_title": "War Horse",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Ken Russell",
+          "language": "English Language",
+          "plot": "bennett",
+          "actor": "Jeff Fahey",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 46,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Jeff Fahey",
+          "from_anchor": "Shallow Hal",
+          "to_anchor": "War Horse"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you'd like to switch gears and explore something else by Ken Russell, perhaps inspired by his 2012 film featuring Jeff Fahey? I think \"What's the Worst That Could Happen?\" (2001) could be an entertaining choice, starring Martin Lawrence as a thief trying to recover his lucky ring from a rich man.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "2012",
+        "actor": "Jeff Fahey",
+        "director": "Ken Russell",
+        "writer": "Patrick Melton",
+        "language": "English Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "True Lies",
+        "Little Fockers",
+        "What's the Worst That Could Happen?",
+        "Gone Baby Gone"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ken Russell",
+        "anchor_title": "War Horse",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Ken Russell",
+          "language": "English Language",
+          "plot": "bennett",
+          "actor": "Jeff Fahey",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your interest in a movie like \"Straw Dogs\" (2012), which features Jeff Fahey and is directed by Ken Russell, I think you might enjoy \"Dinner for Schmucks\" (2010). This dark comedy shares some of the same tense and awkward moments as \"Straw Dogs\", with Steve Carell and Paul Rudd delivering hilarious performances. Give it a try!",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Jeff Fahey",
+        "director": "Ken Russell",
+        "writer": "Patrick Melton",
+        "language": "English Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Straw Dogs",
+        "The Matrix Revolutions",
+        "Dinner for Schmucks",
+        "Scary Movie"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ken Russell",
+        "anchor_title": "War Horse",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Ken Russell",
+          "language": "English Language",
+          "plot": "bennett",
+          "actor": "Jeff Fahey",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a story that tells an English-language tale from 2012, starring Jeff Fahey and directed by Ken Russell, with Patrick Melton as the writer - quite a specific set of criteria!\n\nI think I have just the thing: \"The Light Between Oceans\" (2012) seems like a great match. This beautiful film, set off the coast of Western Australia, tells the poignant story of a lighthouse keeper and his wife who rescue a baby from a drifting rowing boat, raising questions about what it means to be a parent and to protect something precious. Jeff Fahey stars alongside Emily Watson and Hugo Weaving in this stunning adaptation.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "You",
+        "actor": "Jeff Fahey",
+        "director": "Ken Russell",
+        "writer": "Patrick Melton",
+        "language": "English Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Into the Blue",
+        "The Light Between Oceans",
+        "True Lies",
+        "The Dead Zone"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ken Russell",
+        "anchor_title": "War Horse",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Ken Russell",
+          "language": "English Language",
+          "plot": "bennett",
+          "actor": "Jeff Fahey",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you're looking for a movie that resonates emotionally, like \"Us\", and are open to suggestions from English-language films released in 2012 with Jeff Fahey, Ken Russell, Patrick Melton, or none of these actors. Based on your preferences, I think you might enjoy \"Compliance\" (2012), a psychological thriller that explores the complexities of human nature through a gripping plot featuring James McCaffrey and Dreama Walker.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "actor": "Jeff Fahey",
+        "director": "Ken Russell",
+        "writer": "Patrick Melton",
+        "language": "English Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Just Married",
+        "Hobo with a Shotgun",
+        "Compliance",
+        "Ghostbusters II"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 50,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ken Russell",
+        "anchor_title": "War Horse",
+        "constraints": {
+          "genre": "disaster",
+          "director": "Ken Russell",
+          "language": "English Language",
+          "plot": "bennett",
+          "actor": "Jeff Fahey",
+          "writer": "Patrick Melton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie with a certain vibe, and you didn't quite expect that from X (whatever that was!). Given your preference for an English-language film from 2012 starring Jeff Fahey, directed by Ken Russell, written by Patrick Melton, and some keywords like \"what\" and \"what\", I think you might enjoy \"The American\". This movie features George Clooney as a retired assassin trying to live a peaceful life in Italy, but things take a turn when he gets caught up in a complex web of espionage.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "X",
+        "actor": "Jeff Fahey",
+        "director": "Ken Russell",
+        "writer": "Patrick Melton",
+        "language": "English Language",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "My Sister's Keeper",
+        "The Golden Compass",
+        "The American",
+        "Rise of the Guardians"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "crazy",
+      "from_anchor": "Reign of Fire",
+      "to_anchor": "Us"
+    },
+    {
+      "turn": 7,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "director",
+      "bridge_value": "Conrad Vernon",
+      "from_anchor": "Us",
+      "to_anchor": "The Core"
+    },
+    {
+      "turn": 9,
+      "from_focus": "actor",
+      "to_focus": "language",
+      "bridge_field": "plot",
+      "bridge_value": "yours",
+      "from_anchor": "The Core",
+      "to_anchor": "Shrek 2"
+    },
+    {
+      "turn": 15,
+      "from_focus": "language",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "yours",
+      "from_anchor": "Shrek 2",
+      "to_anchor": "War of the Worlds"
+    },
+    {
+      "turn": 20,
+      "from_focus": "actor",
+      "to_focus": "writer",
+      "bridge_field": "plot",
+      "bridge_value": "bored",
+      "from_anchor": "War of the Worlds",
+      "to_anchor": "The Football Factory"
+    },
+    {
+      "turn": 25,
+      "from_focus": "writer",
+      "to_focus": "language",
+      "bridge_field": "plot",
+      "bridge_value": "wish",
+      "from_anchor": "The Football Factory",
+      "to_anchor": "The Bucket List"
+    },
+    {
+      "turn": 31,
+      "from_focus": "language",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Seth MacFarlane",
+      "from_anchor": "The Bucket List",
+      "to_anchor": "Reign of Fire"
+    },
+    {
+      "turn": 36,
+      "from_focus": "actor",
+      "to_focus": "language",
+      "bridge_field": "language",
+      "bridge_value": "English Language",
+      "from_anchor": "Reign of Fire",
+      "to_anchor": "Dinner for Schmucks"
+    },
+    {
+      "turn": 39,
+      "from_focus": "language",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "bennett",
+      "from_anchor": "Dinner for Schmucks",
+      "to_anchor": "Shallow Hal"
+    },
+    {
+      "turn": 46,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Jeff Fahey",
+      "from_anchor": "Shallow Hal",
+      "to_anchor": "War Horse"
+    }
+  ]
+}

@@ -1,0 +1,2281 @@
+{
+  "session_id": "00055",
+  "model_name": "qwen:4b",
+  "true_genre": "comedy",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a comedy movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy",
+        "anchor_title": "Year One",
+        "constraints": {
+          "genre": "comedy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference cues, I recommend two movies from this list:\n1. \"The Interview\" (2014): This comedy movie revolves around two unscrupulous and daft gym employees who attempt to sell a disk containing mysterious information from a CIA agent.\n2. \"The Rum Diary\" (1998): This comedy movie revolves around an American journalist Paul Kemp takes on a freelance job in Puerto Rico for a local newspaper during the 1960s and struggles to find a balance between island culture and the expatriates who live there.\nIn summary, these two comedy movies offer different perspectives on island culture and the relationships between people from different backgrounds.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "comedy",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "The Interview",
+        "The Rum Diary",
+        "Burn After Reading",
+        "The Truman Show"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy",
+        "anchor_title": "Year One",
+        "constraints": {
+          "genre": "comedy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I would recommend \"The Country Bears\". It is a comedy movie which might interest the user. The other movies in the list are either not comedies or have different themes from \"The Country Bears\" and may not be suitable for the user based on their preferences.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "The Country Bears",
+        "Sex Tape",
+        "George of the Jungle",
+        "Our Idiot Brother"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Rutger Hauer. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 3,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Rutger Hauer",
+        "anchor_title": "Welcome to Mooseport",
+        "constraints": {
+          "genre": "comedy",
+          "actor": "Rutger Hauer",
+          "plot": "night"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 3,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "night",
+          "from_anchor": "Year One",
+          "to_anchor": "Welcome to Mooseport"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, here are two movie recommendations: \n\n- Title: Monsters vs. Aliens' | Plot: A woman transformed into a giant after she is struck by a meteorite on her wedding day becomes part of a team of monsters sent in by the U. S. government to defeat an alien mastermind trying to take over Earth.  | Starring: Tom McGrath, Jeffrey Tambor, Rob Letterman, Conrad Vernon, Paul Rudd, Seth Rogen, John Krasinski, Kiefer Sutherland, Reese Witherspoon, Will Arnett, Renée Zellweger, Hugh Laurie, Rainn Wilson, Rainn Wilson",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "RED",
+        "actor": "Rutger Hauer",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Monsters vs. Aliens",
+        "Mr. Bean's Holiday",
+        "Clerks",
+        "The Skeleton Twins"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Rutger Hauer",
+        "anchor_title": "Welcome to Mooseport",
+        "constraints": {
+          "genre": "comedy",
+          "actor": "Rutger Hauer",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Here are some recommendations based on the user's preferences:\n- Title: The Cable Guy  | Plot: A designer makes a grievious mistake when he rejects the friendship of a borderline cable guy.\n- Title: Compliance  | Plot: A normal Friday service at a fast food restaurant becomes interrupted by a police officer who claims an employee stole from a customer, but something more sinister is going on.\n- Title: The Santa Clause 2  | Plot: Scott Calvin has been a humble Santa Claus for eight years, but it might come to an end if he doesn'nt find a Mrs. Claus.\n- Title: The Sword in the Stone  | Plot: A poor boy named Arthur learns the power of love, kindness, knowledge and bravery with the help of a wizard called Merlin in the path to become one of the most beloved kings in English history.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Rutger Hauer",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "The Cable Guy",
+        "Compliance",
+        "The Santa Clause 2",
+        "The Sword in the Stone"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Neil Burger? That sounds intriguing. (I’m thinking of The Santa Clause 2.)",
+      "user_meta": {
+        "turn": 5,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Neil Burger",
+        "anchor_title": "Here Comes the Boom",
+        "constraints": {
+          "genre": "comedy",
+          "actor": "Rutger Hauer",
+          "director": "Neil Burger",
+          "language": "English Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 5,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "language",
+          "bridge_value": "English Language",
+          "from_anchor": "Welcome to Mooseport",
+          "to_anchor": "Here Comes the Boom"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend \"21 Jump Street\", a highly entertaining action-comedy film directed by Seth Rogen and Evan Goldberg, based on a comic book series created by Greg Roman and Evan Goldberg, which stars Jonah Hill, Jason Sudekis, Nick Frost, David Krumholtz, Ed Begley Jr., Eric Stoltz, Steve Buscemi, Burt Reynolds, Tom Hanks, John Travolta, James Caan, Richard Gere, Joe Pesci, Al Pacino, Robert De Niro, William Hurt",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "The Santa Clause 2",
+        "actor": "Rutger Hauer",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Kung Fu Hustle",
+        "The Shadows",
+        "21 Jump Street",
+        "Antz"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Neil Burger",
+        "anchor_title": "Here Comes the Boom",
+        "constraints": {
+          "genre": "comedy",
+          "actor": "Rutger Hauer",
+          "director": "Neil Burger",
+          "language": "English Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend \"Zero Effect\" for someone who likes comedy films with witty humor and unexpected plot twists that keep you on the edge of your seat!",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Rutger Hauer",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Soul Men",
+        "The Princess Diaries 2: Royal Engagement",
+        "Zero Effect",
+        "Bedazzled"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Neil Burger",
+        "anchor_title": "Here Comes the Boom",
+        "constraints": {
+          "genre": "comedy",
+          "actor": "Rutger Hauer",
+          "director": "Neil Burger",
+          "language": "English Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I recommend two movies from this list: 'Snow Dogs' and 'The Return of the Living Dead'.\n'Snow Dogs' is a heartwarming romantic comedy that follows the journey of four friends - Max, Misha, Luke, and Sarah - who travel from New York City to Russia to take part in a sled dog competition.\n'The Return of the Living Dead', on the other hand, is a thrilling horror comedy that revolves around a group of friends who accidentally release a deadly gas into the air at a medical supply warehouse, causing the dead to rise again as zombies.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "what"
+        ],
+        "name": "Ted",
+        "actor": "Rutger Hauer",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "The Return of the Living Dead",
+        "Snow Dogs",
+        "The Player",
+        "17 Again"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Neil Burger",
+        "anchor_title": "Here Comes the Boom",
+        "constraints": {
+          "genre": "comedy",
+          "actor": "Rutger Hauer",
+          "director": "Neil Burger",
+          "language": "English Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference cues, here are a few recommendations from this list:\n\n- Title: Despicable Me (2010) ) | Plot: Gru, a criminal mastermind, adopts three orphans as pawns to carry out the biggest heist in history. His life takes an unexpected turn when the little girls see the evildoer as their potential father.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "actor": "Rutger Hauer",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Despicable Me",
+        "Army of Darkness",
+        "Slacker",
+        "The Wendell Baker Story"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Her. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Neil Burger",
+        "anchor_title": "Here Comes the Boom",
+        "constraints": {
+          "genre": "comedy",
+          "actor": "Rutger Hauer",
+          "director": "Neil Burger",
+          "language": "English Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend \"The Pacifier.\" It stars Tate Donovan and Vin Diesel, and is based on a children's book. With its exciting plot and talented cast, \"The Pacifier\" is definitely worth checking out!",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Her",
+        "actor": "Rutger Hauer",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Grown Ups",
+        "Blow Out",
+        "The Pacifier",
+        "Ocean's Thirteen"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Ryan Sheckler. That sounds intriguing. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 10,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Ryan Sheckler",
+        "anchor_title": "The Third Wheel",
+        "constraints": {
+          "genre": "comedy",
+          "actor": "Ryan Sheckler",
+          "director": "Neil Burger",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 10,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Here Comes the Boom",
+          "to_anchor": "The Third Wheel"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference cues, here are some potential recommendations:\n- Title: The Truman Show (1998) | Plot: An insurance salesman discovers his whole life is actually a reality TV show.\n- Title: The Three Stooges (2012) | Plot: While trying to save their childhood orphanage, Moe, Larry, and Curly inadvertently stumble into a murder plot and wind up starring in a reality television show.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "X",
+        "actor": "Ryan Sheckler",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "The Truman Show",
+        "The Three Stooges",
+        "The Kid",
+        "The Simpsons Movie"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Ryan Sheckler",
+        "anchor_title": "The Third Wheel",
+        "constraints": {
+          "genre": "comedy",
+          "actor": "Ryan Sheckler",
+          "director": "Neil Burger",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I would recommend two movies: \"I Want Someone to Eat Cheese With\" (2006) and \"Safety Not Guaranteed\" (2012). Both movies feature comedic performances from well-known actors such as Jeff Garlin, Jeff Garlin, Mark Duplass, Mark Duplass, Mary Lynn Rajskub, Mary Lynn Rajskub, Lynn Shelton. Additionally, both movies explore humorous themes and offer plenty of laughs throughout. Overall, \"I Want Someone to Eat Cheese With\" (2006) and \"Safety Not Guaranteed\" (2012) are two great movies that feature comedic performances from well-known actors such as Jeff Garlin, Jeff Garlin, Mark Duplass, Mark Duplass, Mary Lynn Rajskub, Mary Lynn Rajskub, Lynn Shelton.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Ryan Sheckler",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "I Want Someone to Eat Cheese With",
+        "The Wolf of Wall Street",
+        "Safety Not Guaranteed",
+        "The Last Dragon"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Ryan Sheckler",
+        "anchor_title": "The Third Wheel",
+        "constraints": {
+          "genre": "comedy",
+          "actor": "Ryan Sheckler",
+          "director": "Neil Burger",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences, I would recommend \"Veronica Mars\" and \"Hobo with a Shotgun\". Both movies have exciting plots and talented actors.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "You",
+        "actor": "Ryan Sheckler",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Keeping the Faith",
+        "Veronica Mars",
+        "Hobo with a Shotgun",
+        "Thunderbirds"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Hobo with a Shotgun? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Ryan Sheckler",
+        "anchor_title": "The Third Wheel",
+        "constraints": {
+          "genre": "comedy",
+          "actor": "Ryan Sheckler",
+          "director": "Neil Burger",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference cues, I would recommend \"Young Frankenstein\" and \"Animal Kingdom: Let' s go Ape\".",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "what",
+          "shotgun"
+        ],
+        "name": "Hobo with a Shotgun",
+        "actor": "Ryan Sheckler",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Young Frankenstein",
+        "Animal Kingdom: Let's go Ape",
+        "Star Trek IV: The Voyage Home",
+        "The Big Lebowski"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Ryan Sheckler",
+        "anchor_title": "The Third Wheel",
+        "constraints": {
+          "genre": "comedy",
+          "actor": "Ryan Sheckler",
+          "director": "Neil Burger",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I would recommend two movies from this list:\n1. When Harry Met Sally... (1989): This classic romantic comedy tells the story of Harry and Sally's ten-year friendship and their unexpected romance.\n2. Stuart Little 2 (2002): This sequel to the beloved animated film Stuart Little follows the adventures of Stuart Little, his little sister Lily, and their pet cat Snowball as they travel from place to place.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Hobo with a Shotgun",
+        "actor": "Ryan Sheckler",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "When Harry Met Sally...",
+        "Stuart Little 2",
+        "Inside Out",
+        "Mallrats"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Ryan Sheckler",
+        "anchor_title": "The Third Wheel",
+        "constraints": {
+          "genre": "comedy",
+          "actor": "Ryan Sheckler",
+          "director": "Neil Burger",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "One recommendation could be \"The Thomas Crown Affair\" (1999) directed by Ben Gazzara and starring Peter Hermann, Michael Landes, Mehcad Brooks, Mehcad Brooks, Laz Alonso, Laz Alonso, Phylicia Rashad, Common, Common, Marv Albert, James Pickens Jr.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "actor": "Ryan Sheckler",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "The Thomas Crown Affair",
+        "Just Wright",
+        "Monsters, Inc.",
+        "Scream 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Ryan Sheckler",
+        "anchor_title": "The Third Wheel",
+        "constraints": {
+          "genre": "comedy",
+          "actor": "Ryan Sheckler",
+          "director": "Neil Burger",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I would recommend \"The Nutty Professor.\" It stars David Ramsey and Leslie Mann, and is a comedy about a scientist who discovers a potion that transforms him into a suave and handsome womanizer.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "actor": "Ryan Sheckler",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Shrek 2",
+        "The Nutty Professor",
+        "Funny People",
+        "Saving Face"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on The Nutty Professor. I want to try something more nuclear holocaust—still with Dave Chappelle if possible. That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "nuclear holocaust",
+        "anchor_title": "Stargirl",
+        "constraints": {
+          "genre": "nuclear holocaust",
+          "actor": "Dave Chappelle",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 17,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "Dave Chappelle",
+          "from_anchor": "The Third Wheel",
+          "to_anchor": "Stargirl"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I would recommend 'The Watcher.' It has a similar storyline where someone becomes obsessed with capturing another person. The main difference is that 'The Watcher' has better acting, and it also has better cinematography. Overall, both movies are worth watching and I would recommend both movies to anyone who wants to watch something entertaining.\"",
+      "constraints": {
+        "genre": "nuclear holocaust",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "The Nutty Professor",
+        "actor": "Dave Chappelle",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Wonder Boys",
+        "You've Got Mail",
+        "The Nutty Professor",
+        "The Watcher"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "nuclear holocaust",
+        "anchor_title": "Stargirl",
+        "constraints": {
+          "genre": "nuclear holocaust",
+          "actor": "Dave Chappelle",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I would recommend either \"Turbo\" or \"Maid in Manhattan.\" Both of these movies have been well-received by audiences and critics alike. The plot of \"Turbo\" revolves around a garden snail named Brooke who dreams of becoming an actress like her idol Sarah Silverman. However, when she applies to attend the prestigious Lincoln Center Institute's acting program, she is turned down and sent home in defeat. This causes Brooke to question whether it was really worth pursuing her dream of becoming an actress. In the end, \"Turbo\" follows Brooke as she navigates through her challenges and ultimately succeeds in realizing her dreams of becoming an actress like Sarah Silverman.\nOn the other hand, \"Maid in Manhattan\" is a musical film directed by David O. Russell and starring Elizabeth Taylor, Robert Redford, Richard Burton, John Travolta, Mary-Lynn Parker, Tichina Arnold, Amy Sedaris, Bill Murray and others.\nThe plot of \"Maid in Manhattan\" revolves around the life of a young woman named Brooke who dreams of becoming an actress like her idol Sarah Silverman. However, when she applies to attend the prestigious Lincoln Center Institute's acting program, she is turned down and sent home in defeat. This causes Brooke to question whether it was really worth pursuing her dream of becoming an actress.",
+      "constraints": {
+        "genre": "nuclear holocaust",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Dave Chappelle",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Turbo",
+        "New York Minute",
+        "Wild Hogs",
+        "Maid in Manhattan"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Konstantin Khabenskiy. That feels deeper than I thought. (I’m thinking of Turbo.)",
+      "user_meta": {
+        "turn": 19,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Konstantin Khabenskiy",
+        "anchor_title": "Evermore",
+        "constraints": {
+          "genre": "nuclear holocaust",
+          "actor": "Konstantin Khabenskiy",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 19,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "genre",
+          "bridge_value": "nuclear holocaust",
+          "from_anchor": "Stargirl",
+          "to_anchor": "Evermore"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference cues, here are some potential recommendations from this list:\n\n1. Sin City (2005) | Plot: Sin City tells the story of Philip  (Kunle Remi ) and Julia  (Yvonne Nelson), a couple high up on the ladder of success and living their dream. Their marriage seems perfect except they can' t seem to get to spend time with each other owing to Philips' frequent trips. Finally when they decide to spend time together and go away for a few days, only to find their relationship tested in unexpected ways.",
+      "constraints": {
+        "genre": "nuclear holocaust",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Turbo",
+        "actor": "Konstantin Khabenskiy",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Sin City",
+        "The Underneath",
+        "Wheelmen",
+        "Artemis Fowl"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Konstantin Khabenskiy",
+        "anchor_title": "Evermore",
+        "constraints": {
+          "genre": "nuclear holocaust",
+          "actor": "Konstantin Khabenskiy",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference cues, here are some potential recommendations:\n\n1. The Way Back Home (2008) directed by Neil Burger and starring Danny Nucci and Ruby Dee.\nThis movie explores themes of life affirming spiritual drama about love and loss set in the lush surroundings of Central Florida.\n\n2. House at the End of the Street (2012) directed by Neil Burger and starring Gil Bellows, Gil Bellows, Nolan Gerard Funk, Nolan Gerard Funk, Jennifer Lawrence, Jennifer Lawrence.\nThis movie is based on a popular book series \"The Lucky One\". The story revolves around three different soldiers - a woman and two men - return from war and facing the peaceful life's problems of each other.",
+      "constraints": {
+        "genre": "nuclear holocaust",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Konstantin Khabenskiy",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "The Way Back Home",
+        "House at the End of the Street",
+        "Before I Fall",
+        "The Lucky Ones"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of 2012? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 21,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Konstantin Khabenskiy",
+        "anchor_title": "Evermore",
+        "constraints": {
+          "genre": "nuclear holocaust",
+          "actor": "Konstantin Khabenskiy",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences and constraints, I recommend 'The Equalizer' from this list.\n\n'The Equalizer' is a gripping action movie directed by Antoine Fuqua. The film features an ensemble cast including Denzel Washington, James Wilcox, and Chloë Grace Moretz. \n\nThe plot of 'The Equalizer' revolves around a former Los Angeles police detective named Robert McCall (played by Denzel Washington)). McCall has become disillusioned with the justice system in America after witnessing the widespread use of false testimony by LAPD using jailhouse informants during the 90's. \n\nMcCall is recruited by an unknown organization that seeks to correct what they see as the moral corruption of American law enforcement agencies.\n\nThe film follows McCall and his team as they embark on a dangerous mission to stop the corrupt organization from carrying out its destructive plans.\n\nOverall, 'The Equalizer' is an intense action movie with a compelling storyline and strong performances by the cast. It is definitely worth watching for anyone who enjoys action movies with a good story line.",
+      "constraints": {
+        "genre": "nuclear holocaust",
+        "plot": [
+          "what"
+        ],
+        "name": "2012",
+        "actor": "Konstantin Khabenskiy",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Taken 2",
+        "Black November",
+        "Seven Psychopaths",
+        "The Equalizer"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Denzel Washington? That feels deeper than I thought. (I’m thinking of They.)",
+      "user_meta": {
+        "turn": 22,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Denzel Washington",
+        "anchor_title": "Antwone Fisher",
+        "constraints": {
+          "genre": "nuclear holocaust",
+          "actor": "Marc Blucas",
+          "director": "Denzel Washington"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 22,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Marc Blucas",
+          "from_anchor": "Evermore",
+          "to_anchor": "Antwone Fisher"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, here are two movie recommendations:\n- The Place Beyond the Pines (2012) directed by Denzel Washington stars Denzel Washington, Harris Yulin, Ben Mendelsohn, Bradley Cooper, Bruce Greenwood, Ryan Gosling, Ryan Gosling)\n- All in (2012) directed by Jorma Taccone stars Jorma Taccone, Dax Flame, Nicholas Braun, Nicholas Braun, Akiva Schaffer, Rosemarie DeWitt, Rosemarie DeWitt, Richard Ayoade",
+      "constraints": {
+        "genre": "nuclear holocaust",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "They",
+        "actor": "Denzel Washington",
+        "language": "ger",
+        "director": "Denzel Washington",
+        "writer": "Neil Burger",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Place Beyond the Pines",
+        "All in",
+        "The Watch",
+        "Easy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Denzel Washington",
+        "anchor_title": "Antwone Fisher",
+        "constraints": {
+          "genre": "nuclear holocaust",
+          "actor": "Marc Blucas",
+          "director": "Denzel Washington"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's constraints, I would recommend two movies from this list:\n- Title: The Great Debaters  (2007) ) | Plot: A drama based on the true story of Melvin B. Tolson, a professor at Wiley College Texas. In 1935, he inspired students to form the school' s first debate team, which went on to challenge Harvard in the national championship.  | Starring: Jurnee Smollett-Bell, John Heard, Denzel Washington",
+      "constraints": {
+        "genre": "nuclear holocaust",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Denzel Washington",
+        "language": "ger",
+        "director": "Denzel Washington",
+        "writer": "Neil Burger",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Wonderful Wizard of Oz",
+        "The Great Debaters",
+        "Tarnation",
+        "RED"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Denzel Washington",
+        "anchor_title": "Antwone Fisher",
+        "constraints": {
+          "genre": "nuclear holocaust",
+          "actor": "Marc Blucas",
+          "director": "Denzel Washington"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference cues, I would recommend \"The Pelican Brief\" as one of the movies on the list that best matches the user's preferences. \"The Pelican Brief\" is a classic movie about political intrigue and conspiracy. The movie stars Julia Roberts and Denzel Washington, who play two lawyers who are tasked with uncovering a conspiracy involving a presidential candidate. Overall, \"The Pelican Brief\" is a classic movie that offers plenty of twists, turns, and surprises throughout its runtime. Therefore, I would highly recommend \"The Pelican Brief\" to anyone who enjoys classic movies that offer plenty of twists, turns, and surprises",
+      "constraints": {
+        "genre": "nuclear holocaust",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "You",
+        "actor": "Denzel Washington",
+        "language": "ger",
+        "director": "Denzel Washington",
+        "writer": "Neil Burger",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "All in",
+        "Project X",
+        "Interview with the Assassin",
+        "The Pelican Brief"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Heidi Klum. That feels deeper than I thought. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 25,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Heidi Klum",
+        "anchor_title": "Six-String Samurai",
+        "constraints": {
+          "genre": "nuclear holocaust",
+          "actor": "Heidi Klum",
+          "director": "Denzel Washington"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 25,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "director",
+          "bridge_value": "Denzel Washington",
+          "from_anchor": "Antwone Fisher",
+          "to_anchor": "Six-String Samurai"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I recommend two movies from this list:  ['The Hangover',  'Elysium',  'The Third Wheel',  'Blade Runner']. You can mention the plot or actors to make it more interesting. Keep your response to 1-3 sentences.",
+      "constraints": {
+        "genre": "nuclear holocaust",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Deep",
+        "actor": "Heidi Klum",
+        "language": "ger",
+        "director": "Denzel Washington",
+        "writer": "Neil Burger",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Hangover",
+        "Elysium",
+        "The Third Wheel",
+        "Blade Runner"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Heidi Klum",
+        "anchor_title": "Six-String Samurai",
+        "constraints": {
+          "genre": "nuclear holocaust",
+          "actor": "Heidi Klum",
+          "director": "Denzel Washington"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, here are two movie recommendations:\n1. Title: The Sweeney (2012) ) | Plot: A British journalist working in Norway during WWII finds himself hunted by the Germans when he' s tasked with a secret combat mission, while the daughter of a Norwegian sea captain helps the Brits combat the Nazi menace.  | Starring: Alan Ford, Hayley Atwell, Ray Winstone\n2. Title: The Avengers (2012) ) | Plot: Three high-school seniors throw a birthday party to make a name for themselves. As the night progresses, things spiral out of control as word of the party spreads.  | Starring: Kirby Bliss Blanton, Kirby Bliss Blanton, Oliver Cooper, Oliver Cooper",
+      "constraints": {
+        "genre": "nuclear holocaust",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Heidi Klum",
+        "language": "ger",
+        "director": "Denzel Washington",
+        "writer": "Neil Burger",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Sweeney",
+        "The Avengers",
+        "Project X",
+        "Thick as Thieves"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of 2012. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Heidi Klum",
+        "anchor_title": "Six-String Samurai",
+        "constraints": {
+          "genre": "nuclear holocaust",
+          "actor": "Heidi Klum",
+          "director": "Denzel Washington"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences, here are some recommendations from the list you provided:\nPrometheus (2012) - This movie follows a team of explorers who travel to another planet in search of signs of extraterrestrial life. Along the way, they encounter strange creatures and face many challenges.\nJack Reacher (2012) - This movie is based on a novel by Michael Connelly. The story revolves around a former army officer who now works as a private detective. When he takes on a case involving two missing children, he discovers that there are many people involved in this case, and that some of them may not be what they seem.\nWhere' d You Go, Bernadette (2012) - This movie is based on a novel by Jane Austen. The story revolves around a wealthy merchant named Mr. Darcy who has invited two of his friends, Mr. Bingley and Miss Elizabeth Bennet, to visit him at his mansion in the English countryside.\nWhile Mr. Darcy and his guests are enjoying each other's company, they discover that there is some kind of problem with the water supply to the mansion. As a result, there is no water for anyone to drink or use for any other purpose.\nIn order to resolve this problem, Mr. Bingley, Miss Elizabeth Bennet, and Mr. Darcy agree to work together to find a solution to this problem.",
+      "constraints": {
+        "genre": "nuclear holocaust",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "2012",
+        "actor": "Heidi Klum",
+        "language": "ger",
+        "director": "Denzel Washington",
+        "writer": "Neil Burger",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Prometheus",
+        "Jack Reacher",
+        "Where'd You Go, Bernadette",
+        "The Stuff"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Prometheus tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Heidi Klum",
+        "anchor_title": "Six-String Samurai",
+        "constraints": {
+          "genre": "nuclear holocaust",
+          "actor": "Heidi Klum",
+          "director": "Denzel Washington"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "One movie that I would recommend is \"The Godfather\" (1972) directed by Francis Ford Coppola.\n\"The Godfather\" tells the story of Michael Corleone, a powerful and respected Mafia boss who has become involved in local politics as the head of the Corleone crime family, which he controls through his son Michael Jr. and daughter Kay.",
+      "constraints": {
+        "genre": "nuclear holocaust",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Prometheus",
+        "actor": "Heidi Klum",
+        "language": "ger",
+        "director": "Denzel Washington",
+        "writer": "Neil Burger",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Passion",
+        "The Words",
+        "The Taming of the Shrew",
+        "Argo"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Her? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Heidi Klum",
+        "anchor_title": "Six-String Samurai",
+        "constraints": {
+          "genre": "nuclear holocaust",
+          "actor": "Heidi Klum",
+          "director": "Denzel Washington"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference cues, I recommend \"Journey 2: The Mysterious Island\" and \"Training Day\". Both movies feature strong performances by their respective casts. \"Journey 2: The Mysterious Island\" is a thrilling adventure movie that takes viewers on an incredible journey through time and space. \"Training Day\" is a powerful drama movie that exposes the dark side of police officer life.",
+      "constraints": {
+        "genre": "nuclear holocaust",
+        "plot": [
+          "what"
+        ],
+        "name": "Her",
+        "actor": "Heidi Klum",
+        "language": "ger",
+        "director": "Denzel Washington",
+        "writer": "Neil Burger",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Journey 2: The Mysterious Island",
+        "Training Day",
+        "Won't Back Down",
+        "Cinder"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, could we talk about Sky Captain and the World of Tomorrow specifically? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 30,
+        "stage": "waiting_system",
+        "focus_field": "name",
+        "focus_value": "Sky Captain and the World of Tomorrow",
+        "anchor_title": "The Mask",
+        "constraints": {
+          "genre": "nuclear holocaust",
+          "actor": "Heidi Klum",
+          "name": "Sky Captain and the World of Tomorrow",
+          "plot": "world"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 30,
+          "from_focus": "actor",
+          "to_focus": "name",
+          "bridge_field": "plot",
+          "bridge_value": "world",
+          "from_anchor": "Six-String Samurai",
+          "to_anchor": "The Mask"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference cues, here are some potential recommendations: \n- Title: Zoo (2012) ) Plot: In a dystopian world, thirty-five girls are chosen to participate in the \"Selection\", live in the palace, and compete for the heart of Prince Maxon. But for America Singer, being selected is a true nightmare. Starring: - Title: The Selection (2012) ) Plot: In a dystopian world, thirty-five girls are chosen to participate in the \"Selection\", live in the palace, and compete for the heart of Prince Maxon. But for America Singer, being selected is a true nightmare.",
+      "constraints": {
+        "genre": "nuclear holocaust",
+        "plot": [
+          "actually",
+          "could"
+        ],
+        "name": "Sky Captain and the World of Tomorrow",
+        "actor": "Heidi Klum",
+        "language": "ger",
+        "director": "Denzel Washington",
+        "writer": "Neil Burger",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Zoo",
+        "The Selection",
+        "Where We Belong",
+        "The Reflecting Skin"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "Sky Captain and the World of Tomorrow",
+        "anchor_title": "The Mask",
+        "constraints": {
+          "genre": "nuclear holocaust",
+          "actor": "Heidi Klum",
+          "name": "Sky Captain and the World of Tomorrow",
+          "plot": "world"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences, I would recommend \"WarGames\" and \"The Princess Diaries\". Both of these movies have interesting plots that you might enjoy. Additionally, both \"WarGames\" and \"The Princess Diaries\" feature talented actors who bring their characters to life.",
+      "constraints": {
+        "genre": "nuclear holocaust",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Heidi Klum",
+        "language": "ger",
+        "director": "Denzel Washington",
+        "writer": "Neil Burger",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "WarGames",
+        "The Princess Diaries",
+        "Flight",
+        "This Is the End"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "Sky Captain and the World of Tomorrow",
+        "anchor_title": "The Mask",
+        "constraints": {
+          "genre": "nuclear holocaust",
+          "actor": "Heidi Klum",
+          "name": "Sky Captain and the World of Tomorrow",
+          "plot": "world"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I would recommend either \"Skyfall\" or \"The Amazing Spider-Man\". Both movies are highly rated and feature excellent performances by their casts. So if you're looking for a great movie to watch, either of these movies might be just what you're looking for.",
+      "constraints": {
+        "genre": "nuclear holocaust",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "actor": "Heidi Klum",
+        "language": "ger",
+        "director": "Denzel Washington",
+        "writer": "Neil Burger",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Skyfall",
+        "The Amazing Spider-Man",
+        "The Skull",
+        "Rise of the Guardians"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "Sky Captain and the World of Tomorrow",
+        "anchor_title": "The Mask",
+        "constraints": {
+          "genre": "nuclear holocaust",
+          "actor": "Heidi Klum",
+          "name": "Sky Captain and the World of Tomorrow",
+          "plot": "world"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's constraints, here are some potential recommendations:\n- Title: The Wrestler  (2008) ) | Plot: Frank Bass takes a stand and defends what he thinks is right. Gamblers and money-grubbing conspire to corrupt the industry. Frank' s efforts climax as he promotes an over-",
+      "constraints": {
+        "genre": "nuclear holocaust",
+        "plot": [
+          "what"
+        ],
+        "name": "X",
+        "actor": "Heidi Klum",
+        "language": "ger",
+        "director": "Denzel Washington",
+        "writer": "Neil Burger",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Wrestler",
+        "Pride and Prejudice",
+        "The Twilight Saga: New Moon",
+        "The Violent Kind"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Wrestler tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 34,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "Sky Captain and the World of Tomorrow",
+        "anchor_title": "The Mask",
+        "constraints": {
+          "genre": "nuclear holocaust",
+          "actor": "Heidi Klum",
+          "name": "Sky Captain and the World of Tomorrow",
+          "plot": "world"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "One possible recommendation is \"Flatliners\". It's a science fiction thriller film that tells the story of five medical students who embark on a daring experiment: by stopping their hearts for short periods, each triggers a near-death experience.\n\nThe film stars Patricia Belcher, Beth Grant, William Baldwin, Hope Davis, Hope Davis, Oliver Platt, Oliver Platt, Julia Roberts, Julia Roberts\n\nAnother recommendation is \"Zoo\". It's an action horror film directed by Andy Wachowski and written by Andy Wachowski and Matt Damon. The film stars Joseph Gordon-Levitt, Michael Peña, Kevin Spacey, James Franco, James Franco, Luis Guzmán, Luis Guzmán",
+      "constraints": {
+        "genre": "nuclear holocaust",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The Wrestler",
+        "actor": "Heidi Klum",
+        "language": "ger",
+        "director": "Denzel Washington",
+        "writer": "Neil Burger",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Andromeda Strain",
+        "Flatliners",
+        "Zoo",
+        "That's My Boy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Ivan Reitman? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Flatliners.)",
+      "user_meta": {
+        "turn": 35,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Ivan Reitman",
+        "anchor_title": "Flatliners",
+        "constraints": {
+          "genre": "nuclear holocaust",
+          "actor": "Heidi Klum",
+          "name": "Sky Captain and the World of Tomorrow",
+          "plot": "lies",
+          "director": "Ivan Reitman"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 35,
+          "from_focus": "name",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "lies",
+          "from_anchor": "The Mask",
+          "to_anchor": "Flatliners"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's constraints, I recommend \"Dark Shadows\". This movie is a classic horror film that revolves around an imprisoned vampire named Barnabas Collins. The movie follows his journey back to his ancestral home where he encounters his dysfunctional descendants who need his protection. Overall, \"Dark Shadows\" is a classic horror film that is worth watching for horror fans.",
+      "constraints": {
+        "genre": "nuclear holocaust",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Flatliners",
+        "actor": "Ivan Reitman",
+        "language": "ger",
+        "director": "Ivan Reitman",
+        "writer": "Neil Burger",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Dark Shadows",
+        "All in",
+        "The Vow",
+        "Ghostbusters II"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ivan Reitman",
+        "anchor_title": "Flatliners",
+        "constraints": {
+          "genre": "nuclear holocaust",
+          "actor": "Heidi Klum",
+          "name": "Sky Captain and the World of Tomorrow",
+          "plot": "lies",
+          "director": "Ivan Reitman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I would highly recommend True Crime to you. This movie is based on an investigation of a death row inmate who was convicted of murder. The movie follows the investigation and the trial, as well as the life of the inmate before and after his conviction. The movie stars several famous actors, including Diane Venora, Isaiah Washington, Mary McCormack, Bernard Hill, Denis Leary, Michael McKean, Clint Eastwood, Frances Fisher, Michael Jeter. Overall, True Crime is a highly entertaining and informative movie that I would highly recommend to you.",
+      "constraints": {
+        "genre": "nuclear holocaust",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Ivan Reitman",
+        "language": "ger",
+        "director": "Ivan Reitman",
+        "writer": "Neil Burger",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Hopeless",
+        "White Night",
+        "Wanderlust",
+        "True Crime"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Her. I want to try something more terrorism—still with Scarlett Johansson if possible. Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 37,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "terrorism",
+        "anchor_title": "Ghostbusters II",
+        "constraints": {
+          "genre": "terrorism",
+          "actor": "Scarlett Johansson",
+          "name": "Sky Captain and the World of Tomorrow",
+          "plot": "lies",
+          "director": "Ivan Reitman"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 37,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "Scarlett Johansson",
+          "from_anchor": "Flatliners",
+          "to_anchor": "Ghostbusters II"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's constraints, I would recommend \"Angels & Demons\" and \"United 93\". Both movies have strong performances by their lead actors, as well as engaging plots that keep viewers interested throughout the duration of each movie. Therefore, based on the user's constraints and the strong performances and engaging plots of both movies, I would recommend \"Angels & Demons\" and \"United 93\".\"",
+      "constraints": {
+        "genre": "terrorism",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Her",
+        "actor": "Scarlett Johansson",
+        "language": "ger",
+        "director": "Ivan Reitman",
+        "writer": "Neil Burger",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Angels & Demons",
+        "United 93",
+        "The Cabin in the Woods",
+        "Can You Keep a Secret?"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "terrorism",
+        "anchor_title": "Ghostbusters II",
+        "constraints": {
+          "genre": "terrorism",
+          "actor": "Scarlett Johansson",
+          "name": "Sky Captain and the World of Tomorrow",
+          "plot": "lies",
+          "director": "Ivan Reitman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I would recommend \"12 Angry Men\" (1957) and \"Untraceable\" (2008). These two movies are similar in that they both deal with a high-stakes trial where one member of the jury seems skeptical about the evidence presented by the defense. However, there are some notable differences between these two movies. For example, \"12 Angry Men\" is based on a real-life murder trial that took place in New York City back in 1957. In contrast, \"Untraceable\" is a fictional movie that was released in 2008 and has received mixed reviews from both critics and audiences alike.\nBased on the user's preferences, I would recommend \"12 Angry Men\" (1957) and \"Untraceable\" (2008). These two movies are similar",
+      "constraints": {
+        "genre": "terrorism",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Scarlett Johansson",
+        "language": "ger",
+        "director": "Ivan Reitman",
+        "writer": "Neil Burger",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "12 Angry Men",
+        "Untraceable",
+        "Fifty Shades Freed",
+        "This Is the End"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "terrorism",
+        "anchor_title": "Ghostbusters II",
+        "constraints": {
+          "genre": "terrorism",
+          "actor": "Scarlett Johansson",
+          "name": "Sky Captain and the World of Tomorrow",
+          "plot": "lies",
+          "director": "Ivan Reitman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I would recommend \"Frankenweenie\" and \"The Violent Kind\". Both movies are based on horror elements and can be quite thrilling for those who enjoy this type of content. Additionally, both movies feature talented actors and have received positive reviews from audiences around the world.",
+      "constraints": {
+        "genre": "terrorism",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Deep",
+        "actor": "Scarlett Johansson",
+        "language": "ger",
+        "director": "Ivan Reitman",
+        "writer": "Neil Burger",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Frankenweenie",
+        "The Violent Kind",
+        "Chain Reaction",
+        "Zoo"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Frankenweenie. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "terrorism",
+        "anchor_title": "Ghostbusters II",
+        "constraints": {
+          "genre": "terrorism",
+          "actor": "Scarlett Johansson",
+          "name": "Sky Captain and the World of Tomorrow",
+          "plot": "lies",
+          "director": "Ivan Reitman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Here are some recommendations based on user preference cues:\n\n  1. 'American Dreamz' (2006) directed by Ivan Reitman stars: Perrey Reeves, Noureen DeWulf, Aldis Hodge, Seth Meyers, Carmen Electra, Chris Klein, Chris Klein, Dennis Quaid, Dennis Quaid, Willem Dafoe, Judy Greer, Judy Greer\n  2. 'The Campaign' (2012) directed by Jay Stone stars: Jorma Taccone, Dax Flame, Nicholas Braun, Nicholas Braun, Akiva Schaffer, Rosemarie DeWitt, Rosemarie DeWitt, Richard Ayoade, Ben Stiller, Will Forte, Will Forte",
+      "constraints": {
+        "genre": "terrorism",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Frankenweenie",
+        "actor": "Scarlett Johansson",
+        "language": "ger",
+        "director": "Ivan Reitman",
+        "writer": "Neil Burger",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "American Dreamz",
+        "The Campaign",
+        "Ghostbusters",
+        "The Watch"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Phylicia Rashad. That sounds intriguing. (I’m thinking of 2012.)",
+      "user_meta": {
+        "turn": 41,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Phylicia Rashad",
+        "anchor_title": "Die Hard",
+        "constraints": {
+          "genre": "terrorism",
+          "actor": "Phylicia Rashad",
+          "name": "Sky Captain and the World of Tomorrow",
+          "plot": "alive"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 41,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "alive",
+          "from_anchor": "Ghostbusters II",
+          "to_anchor": "Die Hard"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference cues, I would recommend \"Patriot Games\" and \"True Lies\". Both movies have thrilling action sequences, well-developed characters, and engaging plots. Whether you're a fan of espionage thrillers or looking for some adrenaline-pumping action, \"Patriot Games\" and \"True Lies\" are definitely worth checking out.",
+      "constraints": {
+        "genre": "terrorism",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "2012",
+        "actor": "Phylicia Rashad",
+        "language": "ger",
+        "director": "Ivan Reitman",
+        "writer": "Neil Burger",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Patriot Games",
+        "The Future of Us",
+        "New York Minute",
+        "True Lies"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Phylicia Rashad",
+        "anchor_title": "Die Hard",
+        "constraints": {
+          "genre": "terrorism",
+          "actor": "Phylicia Rashad",
+          "name": "Sky Captain and the World of Tomorrow",
+          "plot": "alive"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Here are a few recommendations based on the user's preferences:\n1. \"White Night\" (2007) - This film stars Ben Stiller and Michelle Pfeiffer, among others. The plot revolves around a pawnbroker who is murdered, and the investigation that follows.\n2. \"John Carter\" (2012) - This film stars Taylor Kitsch as John Carter, and Mark Strong as Tarsus. The plot revolves around John Carter, who is transported to Barsoom, a barren planet seemingly inhabited by 12- foot tall barbarians.",
+      "constraints": {
+        "genre": "terrorism",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Phylicia Rashad",
+        "language": "ger",
+        "director": "Ivan Reitman",
+        "writer": "Neil Burger",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "White Night",
+        "John Carter",
+        "Django Unchained",
+        "In the Mouth of Madness"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Goran Dukic? Hmm, I didn’t expect that vibe. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 43,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Goran Dukic",
+        "anchor_title": "Good Deeds",
+        "constraints": {
+          "genre": "terrorism",
+          "actor": "Phylicia Rashad",
+          "plot": "alive",
+          "director": "Goran Dukic"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 43,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Phylicia Rashad",
+          "from_anchor": "Die Hard",
+          "to_anchor": "Good Deeds"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I would recommend two movies from this list:\n\n  * True Lies (1994): This movie stars Tom Arnold and Jamie Lee Curtis as the main characters. The plot involves a group of terrorists who are trying to smuggle nuclear warheads into the United States. A team of secret agents is tasked with stopping the terrorists before they can smuggle the nuclear warheads into the United States.\n  * Wonder Boys (1995): This movie stars Alan Tudyk, Katie Holmes, Tobey Maguire, Frances McDormand, Jane Adams, Richard Thomas, Rip Torn, Rip Torn, Robert Downey Jr., Robert Downey Jr., Michael Douglas",
+      "constraints": {
+        "genre": "terrorism",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "X",
+        "actor": "Phylicia Rashad",
+        "language": "ger",
+        "director": "Goran Dukic",
+        "writer": "Neil Burger",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "True Lies",
+        "The Three Stooges",
+        "The Avengers",
+        "Wonder Boys"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Goran Dukic",
+        "anchor_title": "Good Deeds",
+        "constraints": {
+          "genre": "terrorism",
+          "actor": "Phylicia Rashad",
+          "plot": "alive",
+          "director": "Goran Dukic"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's constraints, I would recommend \"The Words\" as it tells a story about two sisters who just can't get along and have to travel to New York City together and find themselves on numerous misadventures in order to accomplish their goals. The other movies that are available in this list do not have a similar plot or actors.",
+      "constraints": {
+        "genre": "terrorism",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Phylicia Rashad",
+        "language": "ger",
+        "director": "Goran Dukic",
+        "writer": "Neil Burger",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Words",
+        "New York Minute",
+        "Promised Land",
+        "Panic Room"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Goran Dukic",
+        "anchor_title": "Good Deeds",
+        "constraints": {
+          "genre": "terrorism",
+          "actor": "Phylicia Rashad",
+          "plot": "alive",
+          "director": "Goran Dukic"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences and constraints, I would recommend the following movie from the list provided:\n\nTitle: Jack Reacher\n\nPlot Summary: A lighthouse keeper and his wife living off the coast of Western Australia raise a baby they rescue from a drifting rowing boat.\n\nStarring: David Oyelowo, Tom Cruise, Robert Duvall",
+      "constraints": {
+        "genre": "terrorism",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "You",
+        "actor": "Phylicia Rashad",
+        "language": "ger",
+        "director": "Goran Dukic",
+        "writer": "Neil Burger",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Jack Reacher",
+        "Shrek 2",
+        "The Light Between Oceans",
+        "Pandemonium"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Goran Dukic",
+        "anchor_title": "Good Deeds",
+        "constraints": {
+          "genre": "terrorism",
+          "actor": "Phylicia Rashad",
+          "plot": "alive",
+          "director": "Goran Dukic"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I would recommend \"The Dictator\". It stars Rizwan Manji, Fred Melamed, Jason Mantzoukas, Chris Parnell, Bobby Lee, Adam LeFevre, Joey Slotnick, Marcia DeBonis, Sayed Badreya, Sayed Badreya, Horatio Sanz, Horatio Sanz, Fred Armisen, Chris Elliott, Sacha Baron Cohen, John C. Reilly, Megan Fox, Anna Faris, Kevin Corrigan, Edward Norton, Aasif Mandvi, Aasif Mandvi, Garry Shandling",
+      "constraints": {
+        "genre": "terrorism",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us",
+        "actor": "Phylicia Rashad",
+        "language": "ger",
+        "director": "Goran Dukic",
+        "writer": "Neil Burger",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Psychic Experiment",
+        "Bel Canto",
+        "The Dictator",
+        "Mama"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Dictator? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Goran Dukic",
+        "anchor_title": "Good Deeds",
+        "constraints": {
+          "genre": "terrorism",
+          "actor": "Phylicia Rashad",
+          "plot": "alive",
+          "director": "Goran Dukic"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's constraints, I would recommend \"The Campaign.\" The movie is about two unscrupulous billionaire lobbyist brothers who fund a novice political candidate in an attempt to get him elected into office and then use him as a puppet for their own selfish interests. The movie features well-known actors such as Katherine LaNasa, Wood Harris, Matthew Glave, Scott Elrod, Michael Parks, Tate Donovan, Tate Donovan, Ben Affleck, Scoot McNairy, Scoot McNairy, Keith Szarabajka, Adrienne Barbeau, Philip Baker Hall, Rory Cochrane, Clea DuVall, Clea DuVall, Bob Gunton",
+      "constraints": {
+        "genre": "terrorism",
+        "plot": [
+          "what",
+          "dictator"
+        ],
+        "name": "The Dictator",
+        "actor": "Phylicia Rashad",
+        "language": "ger",
+        "director": "Goran Dukic",
+        "writer": "Neil Burger",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Wonder",
+        "The Campaign",
+        "Dredd",
+        "Argo"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Goran Dukic",
+        "anchor_title": "Good Deeds",
+        "constraints": {
+          "genre": "terrorism",
+          "actor": "Phylicia Rashad",
+          "plot": "alive",
+          "director": "Goran Dukic"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "After hearing about the movie Us, I think The Skulls would be a great recommendation for someone interested in similar themes.\nBased on those cues, here are some potential recommendations:  ['The Yearling',  'End of Watch',  'Cinder',  'The Skulls']. You can mention the plot or actors to make it more interesting. Keep your response",
+      "constraints": {
+        "genre": "terrorism",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "actor": "Phylicia Rashad",
+        "language": "ger",
+        "director": "Goran Dukic",
+        "writer": "Neil Burger",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Yearling",
+        "End of Watch",
+        "Cinder",
+        "The Skulls"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, could we talk about Her specifically? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 49,
+        "stage": "waiting_system",
+        "focus_field": "name",
+        "focus_value": "Her",
+        "anchor_title": "The Siege",
+        "constraints": {
+          "genre": "terrorism",
+          "actor": "Phylicia Rashad",
+          "plot": "online",
+          "director": "Goran Dukic",
+          "name": "Her"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 49,
+          "from_focus": "director",
+          "to_focus": "name",
+          "bridge_field": "plot",
+          "bridge_value": "online",
+          "from_anchor": "Good Deeds",
+          "to_anchor": "The Siege"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I recommend the following movies from this list:\n\n1. \"That' s My Boy\" (2012) directed by Goran Dukic.\n   Plot summary: This movie tells the story of two men and their sons who must deal with unforeseen consequences of their actions.\n\n   Starring: Johanna Wokalek, Bruno Ganz, Moritz Bleibtreu, Moritz Bleibtreu, Martina Gedeck, Martina Gedeck, Alexandra Maria Lara\n   Language: ger\n\n2. \"The Place Beyond the Pines\" (2012) directed by Goran Dukic.\n   Plot summary: This movie tells the story of two men and their sons who must deal with unforeseen consequences of their actions.\n\n   Starring: Vincent De Paul, Robinne Lee, Matt Malloy, Adam LeFevre, Kevin Sussman, Kevin Sussman, Amber Valletta, Ato Essandoh, Joe Lo Truglio, Kevin James, Maria Thayer, Jeffrey Donovan, Eva Mendes, Michael Rapaport, Michael Rapaport, Adam Arkin",
+      "constraints": {
+        "genre": "terrorism",
+        "plot": [
+          "actually",
+          "could"
+        ],
+        "name": "Her",
+        "actor": "Phylicia Rashad",
+        "language": "ger",
+        "director": "Goran Dukic",
+        "writer": "Neil Burger",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "That's My Boy",
+        "The Place Beyond the Pines",
+        "The Baader Meinhof Complex",
+        "Hitch"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 50,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "Her",
+        "anchor_title": "The Siege",
+        "constraints": {
+          "genre": "terrorism",
+          "actor": "Phylicia Rashad",
+          "plot": "online",
+          "director": "Goran Dukic",
+          "name": "Her"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences, I would recommend \"The Avengers\". It is a superhero film that features an ensemble cast including Robert Downey Jr., Iron Man; Chris Hemsworth, Thor; Captain America: Steve Rogers played by Chris Evans. The movie revolves around the idea of bringing together all the superheroes to defeat a common enemy.",
+      "constraints": {
+        "genre": "terrorism",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Phylicia Rashad",
+        "language": "ger",
+        "director": "Goran Dukic",
+        "writer": "Neil Burger",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Die Hard",
+        "The Avengers",
+        "How to Train Your Dragon",
+        "This Means War"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 3,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "night",
+      "from_anchor": "Year One",
+      "to_anchor": "Welcome to Mooseport"
+    },
+    {
+      "turn": 5,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "language",
+      "bridge_value": "English Language",
+      "from_anchor": "Welcome to Mooseport",
+      "to_anchor": "Here Comes the Boom"
+    },
+    {
+      "turn": 10,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Here Comes the Boom",
+      "to_anchor": "The Third Wheel"
+    },
+    {
+      "turn": 17,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "Dave Chappelle",
+      "from_anchor": "The Third Wheel",
+      "to_anchor": "Stargirl"
+    },
+    {
+      "turn": 19,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "genre",
+      "bridge_value": "nuclear holocaust",
+      "from_anchor": "Stargirl",
+      "to_anchor": "Evermore"
+    },
+    {
+      "turn": 22,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Marc Blucas",
+      "from_anchor": "Evermore",
+      "to_anchor": "Antwone Fisher"
+    },
+    {
+      "turn": 25,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "director",
+      "bridge_value": "Denzel Washington",
+      "from_anchor": "Antwone Fisher",
+      "to_anchor": "Six-String Samurai"
+    },
+    {
+      "turn": 30,
+      "from_focus": "actor",
+      "to_focus": "name",
+      "bridge_field": "plot",
+      "bridge_value": "world",
+      "from_anchor": "Six-String Samurai",
+      "to_anchor": "The Mask"
+    },
+    {
+      "turn": 35,
+      "from_focus": "name",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "lies",
+      "from_anchor": "The Mask",
+      "to_anchor": "Flatliners"
+    },
+    {
+      "turn": 37,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "Scarlett Johansson",
+      "from_anchor": "Flatliners",
+      "to_anchor": "Ghostbusters II"
+    },
+    {
+      "turn": 41,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "alive",
+      "from_anchor": "Ghostbusters II",
+      "to_anchor": "Die Hard"
+    },
+    {
+      "turn": 43,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Phylicia Rashad",
+      "from_anchor": "Die Hard",
+      "to_anchor": "Good Deeds"
+    },
+    {
+      "turn": 49,
+      "from_focus": "director",
+      "to_focus": "name",
+      "bridge_field": "plot",
+      "bridge_value": "online",
+      "from_anchor": "Good Deeds",
+      "to_anchor": "The Siege"
+    }
+  ]
+}

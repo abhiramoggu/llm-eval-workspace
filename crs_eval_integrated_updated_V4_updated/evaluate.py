@@ -49,6 +49,7 @@ from config import (
     CONCEPT_JACCARD_SHIFT,
     PLOT_FIELD,
     TITLE_FIELD,
+    ENABLE_REC_SAT,
 )
 from dataset import MOVIE_DB, recommend # Import movie database for LDA training
 
@@ -1386,10 +1387,11 @@ def evaluate_grounded(
         rec_titles = s.get("rec_titles") if isinstance(s.get("rec_titles"), list) else []
         if not rec_titles:
             rec_titles = _recommend_titles_from_constraints(s.get("constraints"))
-        if rec_titles:
-            sat_list.append(max(_constraint_satisfaction(t, gold_set) for t in rec_titles))
-        else:
-            sat_list.append(0.0)
+        if ENABLE_REC_SAT:
+            if rec_titles:
+                sat_list.append(max(_constraint_satisfaction(t, gold_set) for t in rec_titles))
+            else:
+                sat_list.append(0.0)
         missing_per_turn.append(missing)
         hallucinated_per_turn.append(hallucinated)
         missing_counter.update(missing)
@@ -1426,7 +1428,7 @@ def evaluate_grounded(
     dst_recall_mean = float(np.mean(dst_r_list)) if dst_r_list else 0.0
     dst_f1_mean = float(np.mean(dst_f1_list)) if dst_f1_list else 0.0
     dst_joint_accuracy_mean = float(np.mean(dst_joint_list)) if dst_joint_list else 0.0
-    recommendation_satisfaction_mean = float(np.mean(sat_list)) if sat_list else 0.0
+    recommendation_satisfaction_mean = float(np.mean(sat_list)) if sat_list else None
 
     shift_points, meta_present = _shift_points_from_meta(conversation, shift_events=shift_events)
     if meta_present:

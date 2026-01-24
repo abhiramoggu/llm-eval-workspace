@@ -1,0 +1,2199 @@
+{
+  "session_id": "00028",
+  "model_name": "qwen:7b",
+  "true_genre": "western",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a western movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "western",
+        "anchor_title": "The Hateful Eight",
+        "constraints": {
+          "genre": "western"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a western movie recommendation. Based on the given constraints, I would recommend 'A Fistful of Dollars' due to its classic西部 vibe and iconic cast like Clint Eastwood.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "western",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "A Fistful of Dollars",
+        "The Secret of My Success",
+        "Forsaken",
+        "Once Upon a Time in Mexico"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Brian Helgeland? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of A Fistful of Dollars.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Brian Helgeland",
+        "anchor_title": "Serenity",
+        "constraints": {
+          "genre": "western",
+          "director": "Brian Helgeland",
+          "plot": "each"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "each",
+          "from_anchor": "The Hateful Eight",
+          "to_anchor": "Serenity"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants something by Brian Helgeland, preferably not too scary or too intense. From the list, I recommend 'Django Unchained' due to itsBrian Helgeland-written script and the presence of actors like Misty Upham and John Jarratt.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "A Fistful of Dollars",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland"
+      },
+      "rec_titles": [
+        "True Blood",
+        "Django Unchained",
+        "Posse",
+        "Jane Got a Gun"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Brian Helgeland",
+        "anchor_title": "Serenity",
+        "constraints": {
+          "genre": "western",
+          "director": "Brian Helgeland",
+          "plot": "each"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movie recommendations with西部题材,由Brian Helgeland执导或编剧的作品. Based on these preferences, I recommend 'Django Unchained' for its西部 setting, Brian Helgeland's involvement as writer and director, and the iconic performance by Leonardo DiCaprio.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland"
+      },
+      "rec_titles": [
+        "Tarnation",
+        "The Pink Panther 2",
+        "Django Unchained",
+        "Fight Club"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Django Unchained tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Brian Helgeland",
+        "anchor_title": "Serenity",
+        "constraints": {
+          "genre": "western",
+          "director": "Brian Helgeland",
+          "plot": "each"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a movie with a western theme, directed by Brian Helgeland, and possibly featuring elements of what, kind of story. Based on these preferences, I would recommend 'Django Unchained' as it perfectly fits the西部 genre, has Brian Helgeland's direction, and features the story of Django, a freed slave seeking revenge against those who wronged him.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Django Unchained",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland"
+      },
+      "rec_titles": [
+        "Chain Reaction",
+        "Pride and Prejudice",
+        "Smilla's Sense of Snow",
+        "The Last Stand"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Mila Kunis. That sounds intriguing. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 5,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Mila Kunis",
+        "anchor_title": "The Legend of Zorro",
+        "constraints": {
+          "genre": "western",
+          "director": "Brian Helgeland",
+          "plot": "each",
+          "actor": "Mila Kunis"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 5,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Mila Kunis",
+          "from_anchor": "Serenity",
+          "to_anchor": "The Legend of Zorro"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's constraints of a Mila Kunis western movie, I recommend \"Takers\" (2010). With Gideon Emery playing the role opposite Mila Kunis, the film combines elements of heist and Western genres.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Ted",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland",
+        "actor": "Mila Kunis"
+      },
+      "rec_titles": [
+        "Takers",
+        "Jackie Brown",
+        "Adventureland",
+        "The Good, the Bad and the Ugly"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Mila Kunis",
+        "anchor_title": "The Legend of Zorro",
+        "constraints": {
+          "genre": "western",
+          "director": "Brian Helgeland",
+          "plot": "each",
+          "actor": "Mila Kunis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're interested in recommendations based on western genre, starring Mila Kunis, and directed by Brian Helgeland. Here's one suggestion: \"Check out 'Dances with Wolves' (1990), which features Mila Kunis and explores the western theme with a poignant story.\"",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland",
+        "actor": "Mila Kunis"
+      },
+      "rec_titles": [
+        "Without a Clue",
+        "The Newton Boys",
+        "Dances with Wolves",
+        "Hopeless"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Mila Kunis",
+        "anchor_title": "The Legend of Zorro",
+        "constraints": {
+          "genre": "western",
+          "director": "Brian Helgeland",
+          "plot": "each",
+          "actor": "Mila Kunis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with western genre, featuring Mila Kunis as an actor, and possibly Brian Helgeland involved in directing or writing. Based on these preferences, I recommend \"Bad Moms\" since it fits the西部 genre, has Mila Kunis in the lead role, and Brian Helgeland isn't directly associated with this film.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland",
+        "actor": "Mila Kunis"
+      },
+      "rec_titles": [
+        "Flatliners",
+        "The Hunger Games: Mockingjay - Part 2",
+        "Bad Moms",
+        "The Warrior's Way"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Bad Moms tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Mila Kunis",
+        "anchor_title": "The Legend of Zorro",
+        "constraints": {
+          "genre": "western",
+          "director": "Brian Helgeland",
+          "plot": "each",
+          "actor": "Mila Kunis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in stories with a western feel, featuring Mila Kunis as an actor, and possibly directed by Brian Helgeland. Based on these preferences, I recommend 'Dances with Wolves' (1990), which combines the西部 theme with memorable performances including Kevin Costner and Maury Chaykin.\"",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Bad Moms",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland",
+        "actor": "Mila Kunis"
+      },
+      "rec_titles": [
+        "The Andromeda Strain",
+        "The Twilight Saga: New Moon",
+        "The Taming of the Shrew",
+        "Dances with Wolves"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Mila Kunis",
+        "anchor_title": "The Legend of Zorro",
+        "constraints": {
+          "genre": "western",
+          "director": "Brian Helgeland",
+          "plot": "each",
+          "actor": "Mila Kunis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for western movies with Mila Kunis as a lead, and director Brian Helgeland involved. Based on these preferences, I would recommend 'Black Swan' (2010) since it matches the西部 genre, has Mila Kunis in a prominent role, and Brian Helgeland is the writer.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "Bad Moms",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland",
+        "actor": "Mila Kunis"
+      },
+      "rec_titles": [
+        "Black Swan",
+        "Vampires",
+        "Friends with Benefits",
+        "Butch Cassidy and the Sundance Kid"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Mila Kunis",
+        "anchor_title": "The Legend of Zorro",
+        "constraints": {
+          "genre": "western",
+          "director": "Brian Helgeland",
+          "plot": "each",
+          "actor": "Mila Kunis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user enjoys western genres and is interested in movies starring Mila Kunis. Based on these preferences, I recommend 'True Grit' (1968) with Jeff Bridges in the lead role. It's a western classic that matches the user's interests.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland",
+        "actor": "Mila Kunis"
+      },
+      "rec_titles": [
+        "The Hateful Eight",
+        "Vampires",
+        "True Grit",
+        "Uptown Girls"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, could we talk about Mystic River specifically? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "waiting_system",
+        "focus_field": "name",
+        "focus_value": "Mystic River",
+        "anchor_title": "Last Vegas",
+        "constraints": {
+          "genre": "western",
+          "plot": "childhood",
+          "actor": "Mila Kunis",
+          "name": "Mystic River"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 11,
+          "from_focus": "actor",
+          "to_focus": "name",
+          "bridge_field": "plot",
+          "bridge_value": "childhood",
+          "from_anchor": "The Legend of Zorro",
+          "to_anchor": "Last Vegas"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in Mystic River, but also enjoys western films and has a preference for Mila Kunis as an actor. Based on these preferences, I would recommend 'Forsaken' since it's a western film with Michael Wincott, who might appeal to Mila Kunis fans.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "actually",
+          "could"
+        ],
+        "name": "Mystic River",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland",
+        "actor": "Mila Kunis"
+      },
+      "rec_titles": [
+        "The Good, the Bad and the Ugly",
+        "Forsaken",
+        "Old Yeller",
+        "Gunless"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "Mystic River",
+        "anchor_title": "Last Vegas",
+        "constraints": {
+          "genre": "western",
+          "plot": "childhood",
+          "actor": "Mila Kunis",
+          "name": "Mystic River"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for recommendations like those from a list including 'Wild Wild West', 'Bad Moms', 'The Quick and the Dead', and 'The Secret Life of Walter Mitty'. I suggest 'The Secret Life of Walter Mitty' as an interesting choice, featuring Adam Scott in the lead role.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland",
+        "actor": "Mila Kunis"
+      },
+      "rec_titles": [
+        "Wild Wild West",
+        "Bad Moms",
+        "The Quick and the Dead",
+        "The Secret Life of Walter Mitty"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Bad Moms. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "Mystic River",
+        "anchor_title": "Last Vegas",
+        "constraints": {
+          "genre": "western",
+          "plot": "childhood",
+          "actor": "Mila Kunis",
+          "name": "Mystic River"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes western genres and is interested in movies starring Mila Kunis, such as \"The Amazing Spider-Man\" with its spider元素 and Mila Kunis' performance, or \"Shanghai Knights\" featuring her alongside Keanu Reeves, offering a blend of action and comedy.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Bad Moms",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland",
+        "actor": "Mila Kunis"
+      },
+      "rec_titles": [
+        "The Amazing Spider-Man",
+        "September Dawn",
+        "Rango",
+        "Shanghai Knights"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Amazing Spider-Man? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "Mystic River",
+        "anchor_title": "Last Vegas",
+        "constraints": {
+          "genre": "western",
+          "plot": "childhood",
+          "actor": "Mila Kunis",
+          "name": "Mystic River"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a western movie with Mila Kunis as an actor, and Brian Helgeland as a director. From the list provided, I would recommend 'Dances with Wolves' due to its西部 setting, Mila Kunis's involvement, and Brian Helgeland's directing touch.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "what",
+          "amazing"
+        ],
+        "name": "The Amazing Spider-Man",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland",
+        "actor": "Mila Kunis"
+      },
+      "rec_titles": [
+        "Shanghai Knights",
+        "Dances with Wolves",
+        "Wolfhound",
+        "The Legend of Zorro"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "Mystic River",
+        "anchor_title": "Last Vegas",
+        "constraints": {
+          "genre": "western",
+          "plot": "childhood",
+          "actor": "Mila Kunis",
+          "name": "Mystic River"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's constraints include a preference for western genre, actor Mila Kunis, and director Brian Helgeland. Based on these preferences, I would recommend 'We the Living' since it fits all the criteria - a western film directed by Brian Helgeland with Mila Kunis in the cast.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "The Amazing Spider-Man",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland",
+        "actor": "Mila Kunis"
+      },
+      "rec_titles": [
+        "We the Living",
+        "Paradise Lost",
+        "Forsaken",
+        "The Yearling"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "Mystic River",
+        "anchor_title": "Last Vegas",
+        "constraints": {
+          "genre": "western",
+          "plot": "childhood",
+          "actor": "Mila Kunis",
+          "name": "Mystic River"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences for a western genre with Mila Kunis as an actor, I would recommend \"Waiting\" (1999). This film has a western feel and features Mila Kunis in a lead role. The plot revolves around art and friendship, which aligns well with the western theme.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "The Amazing Spider-Man",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland",
+        "actor": "Mila Kunis"
+      },
+      "rec_titles": [
+        "Waiting",
+        "The Expendables 2",
+        "Flatliners",
+        "You"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Waiting tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "Mystic River",
+        "anchor_title": "Last Vegas",
+        "constraints": {
+          "genre": "western",
+          "plot": "childhood",
+          "actor": "Mila Kunis",
+          "name": "Mystic River"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants a western movie with Mila Kunis as an actor, Brian Helgeland as director, and possibly themes of what and kind. Based on these preferences, I recommend 'Butch Cassidy and the Sundance Kid' due to its western setting, Mila Kunis's role, and Brian Helgeland's direction, which often deliver a strong plot of 'what' and 'kind'.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Waiting",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland",
+        "actor": "Mila Kunis"
+      },
+      "rec_titles": [
+        "Butch Cassidy and the Sundance Kid",
+        "September Dawn",
+        "Rango",
+        "The Alamo"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Kenneth Mars. That sounds intriguing. (I’m thinking of Butch Cassidy and the Sundance Kid.)",
+      "user_meta": {
+        "turn": 18,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Kenneth Mars",
+        "anchor_title": "Dances with Wolves",
+        "constraints": {
+          "genre": "western",
+          "plot": "childhood",
+          "actor": "Kenneth Mars",
+          "name": "Mystic River"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 18,
+          "from_focus": "name",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Kenneth Mars",
+          "from_anchor": "Last Vegas",
+          "to_anchor": "Dances with Wolves"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies featuring actor Kenneth Mars, with a dance theme. I recommend 'Amélie' due to its enchanting dance-oriented storyline and the presence of Kenneth Mars in a supporting role.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Butch Cassidy and the Sundance Kid",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland",
+        "actor": "Kenneth Mars"
+      },
+      "rec_titles": [
+        "Amélie",
+        "Walking Tall",
+        "Beastly",
+        "Good Will Hunting"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Kenneth Mars",
+        "anchor_title": "Dances with Wolves",
+        "constraints": {
+          "genre": "western",
+          "plot": "childhood",
+          "actor": "Kenneth Mars",
+          "name": "Mystic River"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences for a dance genre and actor Kenneth Mars, I recommend watching 'Blood Work' (1998) which combines dance with Mars' presence as an actor. For those interested in a story involving a marriage scam, 'The Swindle' (1962) might be of interest, featuring Michel Serrault and Isabelle Huppert.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland",
+        "actor": "Kenneth Mars"
+      },
+      "rec_titles": [
+        "Blood Work",
+        "Velocity",
+        "The Swindle",
+        "Labyrinths"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Kenneth Mars",
+        "anchor_title": "Dances with Wolves",
+        "constraints": {
+          "genre": "western",
+          "plot": "childhood",
+          "actor": "Kenneth Mars",
+          "name": "Mystic River"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for dance-themed movies with actor Kenneth Mars and director Brian Helgeland. Recommendations could be 'Monsters, Inc.' and 'What Women Want' due to their elements mentioned.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Deep",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland",
+        "actor": "Kenneth Mars"
+      },
+      "rec_titles": [
+        "Monsters, Inc.",
+        "Eve's Bayou",
+        "Wolfhound",
+        "What Women Want"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does What Women Want tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 21,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Kenneth Mars",
+        "anchor_title": "Dances with Wolves",
+        "constraints": {
+          "genre": "western",
+          "plot": "childhood",
+          "actor": "Kenneth Mars",
+          "name": "Mystic River"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies with dance and Kenneth Mars as key elements. Recommendations would be 'Radio Days', featuring Danny Aiello, Kenneth Mars, and radio theme music, and 'I Heart Huckabees', starring Dustin Hoffman and Saïd Taghmaoui, where both actors showcase their comedic skills while incorporating dance moments.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "What Women Want",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland",
+        "actor": "Kenneth Mars"
+      },
+      "rec_titles": [
+        "Radio Days",
+        "I Heart Huckabees",
+        "It's a Wonderful Life",
+        "What If..."
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Kenneth Mars",
+        "anchor_title": "Dances with Wolves",
+        "constraints": {
+          "genre": "western",
+          "plot": "childhood",
+          "actor": "Kenneth Mars",
+          "name": "Mystic River"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user enjoys dance and has acted alongside Kenneth Mars. Based on these preferences, I recommend 'Annie Hall' (1977), which features a romantic comedy with dance elements and the presence of both actor preferences. It also stars Diane Keaton, who collaborated with Kenneth Mars in other projects.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "director": "Brian Helgeland",
+        "writer": "Brian Helgeland",
+        "actor": "Kenneth Mars"
+      },
+      "rec_titles": [
+        "Annie Hall",
+        "The Life Before Her Eyes",
+        "The Amazing Spider-Man",
+        "Maid in Manhattan"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Jonathan Glazer? Hmm, I didn’t expect that vibe. (I’m thinking of Annie Hall.)",
+      "user_meta": {
+        "turn": 23,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Jonathan Glazer",
+        "anchor_title": "Butch Cassidy and the Sundance Kid",
+        "constraints": {
+          "genre": "western",
+          "plot": "comedian",
+          "actor": "Kenneth Mars",
+          "director": "Jonathan Glazer"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 23,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "comedian",
+          "from_anchor": "Dances with Wolves",
+          "to_anchor": "Butch Cassidy and the Sundance Kid"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movies with a dance theme, involving actor Kenneth Mars, and directed by Jonathan Glazer. From the list, 'Shattered' (1973) matches these criteria with its blend of dance and crime elements, along with the presence of火星 in a supporting role.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Annie Hall",
+        "director": "Jonathan Glazer",
+        "writer": "Brian Helgeland",
+        "actor": "Kenneth Mars"
+      },
+      "rec_titles": [
+        "Shattered",
+        "Psychic Experiment",
+        "Man on Fire",
+        "The Seduction of Joe Tynan"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jonathan Glazer",
+        "anchor_title": "Butch Cassidy and the Sundance Kid",
+        "constraints": {
+          "genre": "western",
+          "plot": "comedian",
+          "actor": "Kenneth Mars",
+          "director": "Jonathan Glazer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: They are looking for movie recommendations with dance and Kenneth Mars as prominent elements. Additionally, they don't mind if the movies have a just and more theme.\n\nBased on these preferences, I recommend 'Step Up' (2006). The film features dance as central element, with Josh Henderson's character Tyler taking up dancing to improve his chances. Kenneth Mars does not appear in this specific movie, but it is a great choice for someone looking for dance and an element of justness and more.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Jonathan Glazer",
+        "writer": "Brian Helgeland",
+        "actor": "Kenneth Mars"
+      },
+      "rec_titles": [
+        "Fight Club",
+        "The Wonderful Wizard of Oz",
+        "Step Up",
+        "Veronica Mars"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jonathan Glazer",
+        "anchor_title": "Butch Cassidy and the Sundance Kid",
+        "constraints": {
+          "genre": "western",
+          "plot": "comedian",
+          "actor": "Kenneth Mars",
+          "director": "Jonathan Glazer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movies that are dance-themed, have actor Kenneth Mars in them, or are related to Butch Cassidy and the Sundance Kid or Step Up. Based on these preferences, I recommend checking out 'Step Up' (2006), which has a dance-centric plot with Channing Tatum's character learning to dance to compete for a scholarship. It also features Kenneth Mars in a small role.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "You",
+        "director": "Jonathan Glazer",
+        "writer": "Brian Helgeland",
+        "actor": "Kenneth Mars"
+      },
+      "rec_titles": [
+        "Dance Flick",
+        "Zack and Miri Make a Porno",
+        "Butch Cassidy and the Sundance Kid",
+        "Step Up"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jonathan Glazer",
+        "anchor_title": "Butch Cassidy and the Sundance Kid",
+        "constraints": {
+          "genre": "western",
+          "plot": "comedian",
+          "actor": "Kenneth Mars",
+          "director": "Jonathan Glazer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference for dance-related content, with an actor like Kenneth Mars involved, I recommend 'Blow Out'. This 1981 film, starring John McMartin and directed by Jonathan Glazer, combines elements of a movie sound recordist's story with suspenseful dance music.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us",
+        "director": "Jonathan Glazer",
+        "writer": "Brian Helgeland",
+        "actor": "Kenneth Mars"
+      },
+      "rec_titles": [
+        "Blow Out",
+        "Looper",
+        "The Other Guys",
+        "Unleashed"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jonathan Glazer",
+        "anchor_title": "Butch Cassidy and the Sundance Kid",
+        "constraints": {
+          "genre": "western",
+          "plot": "comedian",
+          "actor": "Kenneth Mars",
+          "director": "Jonathan Glazer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has constraints in a dance genre, with actor Kenneth Mars and director Jonathan Glazer involved. Recommendations could be 'In Bruges' due to its dance elements and Colin Farrell's connection, or 'Moulin Rouge!' for its high-energy dance atmosphere and the presence of Nicole Kidman.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "Us",
+        "director": "Jonathan Glazer",
+        "writer": "Brian Helgeland",
+        "actor": "Kenneth Mars"
+      },
+      "rec_titles": [
+        "In Bruges",
+        "Sexy Beast",
+        "Thick as Thieves",
+        "Moulin Rouge!"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Her? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jonathan Glazer",
+        "anchor_title": "Butch Cassidy and the Sundance Kid",
+        "constraints": {
+          "genre": "western",
+          "plot": "comedian",
+          "actor": "Kenneth Mars",
+          "director": "Jonathan Glazer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's constraints, they seem to enjoy dance-related content and are intrigued by characters who break the rules for a purpose. \n\nI would recommend 'American Dreamz' (2006) since it combines dance with an unconventional story about breaking dreams. The film stars Perrey Reeves, who brings a charming energy to the role.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "Her",
+        "director": "Jonathan Glazer",
+        "writer": "Brian Helgeland",
+        "actor": "Kenneth Mars"
+      },
+      "rec_titles": [
+        "American Dreamz",
+        "The Perfect Score",
+        "Paycheck",
+        "Shark Tale"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jonathan Glazer",
+        "anchor_title": "Butch Cassidy and the Sundance Kid",
+        "constraints": {
+          "genre": "western",
+          "plot": "comedian",
+          "actor": "Kenneth Mars",
+          "director": "Jonathan Glazer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences for dance and weird plots, I recommend watching 'Step Up' (2006). It combines dance with a peculiar story of redemption and self-discovery.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "Her",
+        "director": "Jonathan Glazer",
+        "writer": "Brian Helgeland",
+        "actor": "Kenneth Mars"
+      },
+      "rec_titles": [
+        "Step Up",
+        "The Lego Movie",
+        "Mystic River",
+        "Blood Work"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, could we talk about RED specifically? That sounds intriguing.",
+      "user_meta": {
+        "turn": 30,
+        "stage": "waiting_system",
+        "focus_field": "name",
+        "focus_value": "RED",
+        "anchor_title": "Jane Got a Gun",
+        "constraints": {
+          "genre": "western",
+          "plot": "pictorial",
+          "actor": "Kenneth Mars",
+          "director": "Jonathan Glazer",
+          "name": "RED"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 30,
+          "from_focus": "director",
+          "to_focus": "name",
+          "bridge_field": "plot",
+          "bridge_value": "pictorial",
+          "from_anchor": "Butch Cassidy and the Sundance Kid",
+          "to_anchor": "Jane Got a Gun"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in discussing RED specifically, focusing on elements such as dance and the involvement of actor Kenneth Mars. Based on these preferences, I would recommend 'Blood Work' (1998) due to its elements of a retired FBI profiler returning for a case involving his own blood analysis. This movie also stars Viggo Mortensen, who aligns with Kenneth Mars in terms of comedy and dramatic presence.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "actually",
+          "could"
+        ],
+        "name": "RED",
+        "director": "Jonathan Glazer",
+        "writer": "Brian Helgeland",
+        "actor": "Kenneth Mars"
+      },
+      "rec_titles": [
+        "The Reflecting Skin",
+        "Blood Work",
+        "The Order",
+        "Psychic Experiment"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "RED",
+        "anchor_title": "Jane Got a Gun",
+        "constraints": {
+          "genre": "western",
+          "plot": "pictorial",
+          "actor": "Kenneth Mars",
+          "director": "Jonathan Glazer",
+          "name": "RED"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants recommendations for movies with dance and Kenneth Mars as key elements. Based on that, I suggest watching 'Step Up' (2006), featuring Josh Henderson and Drew Sidora, and also showcasing Kenneth Mars in a cameo. This movie blend dance and humor perfectly.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Jonathan Glazer",
+        "writer": "Brian Helgeland",
+        "actor": "Kenneth Mars"
+      },
+      "rec_titles": [
+        "What's Up, Doc?",
+        "RED",
+        "Step Up",
+        "Dinner for Schmucks"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "RED",
+        "anchor_title": "Jane Got a Gun",
+        "constraints": {
+          "genre": "western",
+          "plot": "pictorial",
+          "actor": "Kenneth Mars",
+          "director": "Jonathan Glazer",
+          "name": "RED"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes films with a dance theme and starring Kenneth Mars. Based on these preferences, I would recommend 'American Dreamz' due to its plot involving dreams and themes of self-discovery, which might resonate with the user's interest in dance and emotional depth. The film stars Perrey Reeves and includes Kenneth Mars in a supporting role.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "director": "Jonathan Glazer",
+        "writer": "Brian Helgeland",
+        "actor": "Kenneth Mars"
+      },
+      "rec_titles": [
+        "American Dreamz",
+        "Conspiracy Theory",
+        "The Stuff",
+        "Total Recall"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of American Dreamz? That sounds intriguing.",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "RED",
+        "anchor_title": "Jane Got a Gun",
+        "constraints": {
+          "genre": "western",
+          "plot": "pictorial",
+          "actor": "Kenneth Mars",
+          "director": "Jonathan Glazer",
+          "name": "RED"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a dance-themed movie with actor Kenneth Mars. Based on these preferences, I would recommend \"The Situation\" (1997) starring Shaun Evans and Connie Nielsen. It features elements of dance and has Kenneth Mars in a supporting role.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "what",
+          "american"
+        ],
+        "name": "American Dreamz",
+        "director": "Jonathan Glazer",
+        "writer": "Brian Helgeland",
+        "actor": "Kenneth Mars"
+      },
+      "rec_titles": [
+        "Island of the Blue Dolphins",
+        "The Situation",
+        "The Namesake",
+        "Tortilla Flat"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Situation tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 34,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "RED",
+        "anchor_title": "Jane Got a Gun",
+        "constraints": {
+          "genre": "western",
+          "plot": "pictorial",
+          "actor": "Kenneth Mars",
+          "director": "Jonathan Glazer",
+          "name": "RED"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a movie with a dance theme, featuring actor Kenneth Mars. Recommendations could be 'Radio Days,' known for its nostalgic look at radio's golden age, or 'Holes,' which has an element of dance in the story while still featuring Mars.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The Situation",
+        "director": "Jonathan Glazer",
+        "writer": "Brian Helgeland",
+        "actor": "Kenneth Mars"
+      },
+      "rec_titles": [
+        "Radio Days",
+        "Little Fockers",
+        "Holes",
+        "Witless Protection"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Joe Mantegna. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 35,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Joe Mantegna",
+        "anchor_title": "The Missing",
+        "constraints": {
+          "genre": "western",
+          "plot": "wish",
+          "actor": "Joe Mantegna",
+          "director": "Jonathan Glazer"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 35,
+          "from_focus": "name",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "wish",
+          "from_anchor": "Jane Got a Gun",
+          "to_anchor": "The Missing"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies featuring Joe Mantegna, with a dance genre and possibly containing elements of fear or danger. Based on these preferences, I recommend checking out 'King Kong' (2005), where Joe Mantegna plays a character caught between danger and survival in the world of giant beasts.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Ted",
+        "director": "Jonathan Glazer",
+        "writer": "Brian Helgeland",
+        "actor": "Joe Mantegna"
+      },
+      "rec_titles": [
+        "King Kong",
+        "Star Trek Into Darkness",
+        "SpaceCamp",
+        "Downfall"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Joe Mantegna",
+        "anchor_title": "The Missing",
+        "constraints": {
+          "genre": "western",
+          "plot": "wish",
+          "actor": "Joe Mantegna",
+          "director": "Jonathan Glazer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's constraints are for movies that match the genre dance, have actor Joe Mantegna, director Jonathan Glazer, and plot keywords just and more.\n\nBased on these preferences, I recommend watching 'Maid in Manhattan' (2002), starring Natasha Richardson, Chris Eigeman, and Joe Mantegna. This movie combines dance with a romantic storyline that includes the mentioned plot keywords.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Jonathan Glazer",
+        "writer": "Brian Helgeland",
+        "actor": "Joe Mantegna"
+      },
+      "rec_titles": [
+        "Maid in Manhattan",
+        "Velocity",
+        "In the Mouth of Madness",
+        "The Secret Life of Walter Mitty"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Maid in Manhattan. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Joe Mantegna",
+        "anchor_title": "The Missing",
+        "constraints": {
+          "genre": "western",
+          "plot": "wish",
+          "actor": "Joe Mantegna",
+          "director": "Jonathan Glazer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes dance and has an interest in films featuring actors like Joe Mantegna and with unique directors such as Jonathan Glazer. Based on these preferences, I would recommend 'Flubber' (1997) starring Robin Williams, which combines humor and dance-like flubber action. It also has a memorable cast including Sam Lloyd and Jodi Benson.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Maid in Manhattan",
+        "director": "Jonathan Glazer",
+        "writer": "Brian Helgeland",
+        "actor": "Joe Mantegna"
+      },
+      "rec_titles": [
+        "The Nanny",
+        "Alex in Wonderland",
+        "Flubber",
+        "The Life Before Her Eyes"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Us. I want to try something more historical period drama—That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "historical period drama",
+        "anchor_title": "Sexy Beast",
+        "constraints": {
+          "genre": "historical period drama",
+          "plot": "wish",
+          "actor": "Joe Mantegna",
+          "director": "Jonathan Glazer"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 38,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "reunite",
+          "from_anchor": "The Missing",
+          "to_anchor": "Sexy Beast"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants a historical period drama with actor Joe Mantegna, and director Jonathan Glazer recommended options are 'Without Limits' and 'There Be Dragons'. Both films feature Joe Mantegna in significant roles and touch on historical periods to some extent.",
+      "constraints": {
+        "genre": "historical period drama",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Deep",
+        "director": "Jonathan Glazer",
+        "writer": "Brian Helgeland",
+        "actor": "Joe Mantegna"
+      },
+      "rec_titles": [
+        "The End of the Affair",
+        "Without Limits",
+        "There Be Dragons",
+        "Dead Poets Society"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "historical period drama",
+        "anchor_title": "Sexy Beast",
+        "constraints": {
+          "genre": "historical period drama",
+          "plot": "wish",
+          "actor": "Joe Mantegna",
+          "director": "Jonathan Glazer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for recommendations based on a historical period drama with Joe Mantegna, and other genres listed - 'just,' 'more.' From this list, I recommend watching 'The Truth' (2000) due to its blend of historical drama and Joe Mantegna's presence. It also has a plot that involves more than just the initial request for recommendations.",
+      "constraints": {
+        "genre": "historical period drama",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Jonathan Glazer",
+        "writer": "Brian Helgeland",
+        "actor": "Joe Mantegna"
+      },
+      "rec_titles": [
+        "The Truth",
+        "Maid in Manhattan",
+        "Witless Protection",
+        "Desolation Angels"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Truth tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "historical period drama",
+        "anchor_title": "Sexy Beast",
+        "constraints": {
+          "genre": "historical period drama",
+          "plot": "wish",
+          "actor": "Joe Mantegna",
+          "director": "Jonathan Glazer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're interested in a historical period drama with Joe Mantegna, and possibly a film exploring justice and morality, like 'The Equalizer'. I recommend checking out 'The Godfather' for its iconic status in the crime genre.",
+      "constraints": {
+        "genre": "historical period drama",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The Truth",
+        "director": "Jonathan Glazer",
+        "writer": "Brian Helgeland",
+        "actor": "Joe Mantegna"
+      },
+      "rec_titles": [
+        "The Violent Kind",
+        "The Godfather",
+        "The Equalizer",
+        "JFK"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Lisa Ann Walter. Hmm, I didn’t expect that vibe. (I’m thinking of The Equalizer.)",
+      "user_meta": {
+        "turn": 41,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Lisa Ann Walter",
+        "anchor_title": "Butch Cassidy and the Sundance Kid",
+        "constraints": {
+          "genre": "historical period drama",
+          "plot": "wish",
+          "actor": "Lisa Ann Walter",
+          "director": "Jonathan Glazer",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 41,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Sexy Beast",
+          "to_anchor": "Butch Cassidy and the Sundance Kid"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for movies with Lisa Ann Walter, which leans towards historical period dramas. Based on your preferences, I recommend checking out 'Takers' (2010), where Lisa Ann Walters stars alongside Matt Dillon. This action-packed film offers a blend of intrigue and thrilling moments.",
+      "constraints": {
+        "genre": "historical period drama",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "The Equalizer",
+        "director": "Jonathan Glazer",
+        "writer": "Brian Helgeland",
+        "actor": "Lisa Ann Walter"
+      },
+      "rec_titles": [
+        "Takers",
+        "The Phantom Tollbooth",
+        "Mission: Impossible II",
+        "The Dark Crystal"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Lisa Ann Walter",
+        "anchor_title": "Butch Cassidy and the Sundance Kid",
+        "constraints": {
+          "genre": "historical period drama",
+          "plot": "wish",
+          "actor": "Lisa Ann Walter",
+          "director": "Jonathan Glazer",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants recommendations for historical period dramas starring Lisa Ann Walter and directed by Jonathan Glazer. Based on those preferences, I suggest checking out 'American Psycho' (1991), which perfectly fits the criteria with its historical setting, Lisa Ann Walter's involvement as an actor, and Jonathan Glazer's direction.",
+      "constraints": {
+        "genre": "historical period drama",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Jonathan Glazer",
+        "writer": "Brian Helgeland",
+        "actor": "Lisa Ann Walter"
+      },
+      "rec_titles": [
+        "American Psycho",
+        "Blood Work",
+        "Year One",
+        "Date Night"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Herb Freed? That feels deeper than I thought. (I’m thinking of American Psycho.)",
+      "user_meta": {
+        "turn": 43,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Herb Freed",
+        "anchor_title": "Shutter Island",
+        "constraints": {
+          "genre": "historical period drama",
+          "plot": "banking",
+          "actor": "Lisa Ann Walter",
+          "director": "Herb Freed"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 43,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "banking",
+          "from_anchor": "Butch Cassidy and the Sundance Kid",
+          "to_anchor": "Shutter Island"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: looking for historical period dramas with Lisa Ann Walter as an actor, and Herb Freed as a director.推荐电影：《The Painted Veil》和《Hell' s Angels》。前者的剧情与历史背景相符，且有刘文华与费雯丽的精彩演绎；后者则是一部经典的历史题材电影，充满冒险精神和戏剧张力。",
+      "constraints": {
+        "genre": "historical period drama",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Her",
+        "director": "Herb Freed",
+        "writer": "Brian Helgeland",
+        "actor": "Lisa Ann Walter",
+        "language": "fre"
+      },
+      "rec_titles": [
+        "A Bridge Too Far",
+        "The Painted Veil",
+        "Isn't She Great",
+        "Hell's Angels"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Herb Freed",
+        "anchor_title": "Shutter Island",
+        "constraints": {
+          "genre": "historical period drama",
+          "plot": "banking",
+          "actor": "Lisa Ann Walter",
+          "director": "Herb Freed"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movie recommendations like 'Three Kings' (historical drama, actor: Lisa Ann Walter), focusing on a specific genre (historical period drama) and including notable director Brian Helgeland.\n\nBased on these preferences, I would recommend 'Forrest Gump' (also a historical drama, starring Tom Hanks), which shares the theme of a man's journey through history while identifying with different cultures.",
+      "constraints": {
+        "genre": "historical period drama",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Herb Freed",
+        "writer": "Brian Helgeland",
+        "actor": "Lisa Ann Walter",
+        "language": "fre"
+      },
+      "rec_titles": [
+        "Three Kings",
+        "Forrest Gump",
+        "Eve's Bayou",
+        "Donnie Brasco"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Herb Freed",
+        "anchor_title": "Shutter Island",
+        "constraints": {
+          "genre": "historical period drama",
+          "plot": "banking",
+          "actor": "Lisa Ann Walter",
+          "director": "Herb Freed"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's constraints, they seem to enjoy historical period dramas with strong female leads and a touch of intrigue. From the list, 'Gangs of New York' (2002) starring Leonardo DiCaprio and directed by Martin Scorsese, would be a fitting recommendation. The plot revolves around Amsterdam Vallon seeking revenge against Bill the Butcher, set in 1862 New York City.",
+      "constraints": {
+        "genre": "historical period drama",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "You",
+        "director": "Herb Freed",
+        "writer": "Brian Helgeland",
+        "actor": "Lisa Ann Walter",
+        "language": "fre"
+      },
+      "rec_titles": [
+        "The Patriot",
+        "1900",
+        "Gangs of New York",
+        "The Ice Storm"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Herb Freed",
+        "anchor_title": "Shutter Island",
+        "constraints": {
+          "genre": "historical period drama",
+          "plot": "banking",
+          "actor": "Lisa Ann Walter",
+          "director": "Herb Freed"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a historical period drama featuring Lisa Ann Walter as an actor, and directed by Herb Freed with Brian Helgeland writing the screenplay. Based on these preferences, I would recommend 'Training Day' (2001) due to its blend of historical context and strong cast, including Tom Berenger as the main character, a role Lisa Ann Walter also plays in the film.",
+      "constraints": {
+        "genre": "historical period drama",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "director": "Herb Freed",
+        "writer": "Brian Helgeland",
+        "actor": "Lisa Ann Walter",
+        "language": "fre"
+      },
+      "rec_titles": [
+        "Training Day",
+        "Into the Storm",
+        "The Skulls",
+        "A Dangerous Method"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Training Day. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Herb Freed",
+        "anchor_title": "Shutter Island",
+        "constraints": {
+          "genre": "historical period drama",
+          "plot": "banking",
+          "actor": "Lisa Ann Walter",
+          "director": "Herb Freed"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes stories that feel deeper, with a focus on historical period dramas and actor performances. Based on these preferences, I recommend 'The End of the Affair' for its sophisticated storytelling and Lisa Ann Walter's performance. If you're also interested in the right stuff of real-life astronauts, 'The Right Stuff' might be a good choice.",
+      "constraints": {
+        "genre": "historical period drama",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Training Day",
+        "director": "Herb Freed",
+        "writer": "Brian Helgeland",
+        "actor": "Lisa Ann Walter",
+        "language": "fre"
+      },
+      "rec_titles": [
+        "The End of the Affair",
+        "The Right Stuff",
+        "JFK",
+        "A Bridge Too Far"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Herb Freed",
+        "anchor_title": "Shutter Island",
+        "constraints": {
+          "genre": "historical period drama",
+          "plot": "banking",
+          "actor": "Lisa Ann Walter",
+          "director": "Herb Freed"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in historical period dramas with Lisa Ann Walter as an actor, and Herb Freed as a director. Based on these preferences, I would recommend \"Isn't She Great\" (2000) due to its comedy nature featuring Lisa Ann Walter and a plot inspired by the life of Jacqueline Susann.",
+      "constraints": {
+        "genre": "historical period drama",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Training Day",
+        "director": "Herb Freed",
+        "writer": "Brian Helgeland",
+        "actor": "Lisa Ann Walter",
+        "language": "fre"
+      },
+      "rec_titles": [
+        "Isn't She Great",
+        "The Tree of Life",
+        "Bram Stoker's Dracula",
+        "Wild Wild West"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Isn't She Great? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Herb Freed",
+        "anchor_title": "Shutter Island",
+        "constraints": {
+          "genre": "historical period drama",
+          "plot": "banking",
+          "actor": "Lisa Ann Walter",
+          "director": "Herb Freed"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's constraints, they seem to enjoy historical period dramas with strong female leads. From the list, I would recommend 'That Thing You Do!' as it combines a historical period drama (set in 1960s) with an inspiring underdog story, featuring Lisa Ann Walter as a significant character.",
+      "constraints": {
+        "genre": "historical period drama",
+        "plot": [
+          "what",
+          "great"
+        ],
+        "name": "Isn't She Great",
+        "director": "Herb Freed",
+        "writer": "Brian Helgeland",
+        "actor": "Lisa Ann Walter",
+        "language": "fre"
+      },
+      "rec_titles": [
+        "That Thing You Do!",
+        "The Skulls",
+        "Hitch",
+        "The Breakfast Club"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Ethan Embry. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of They.)",
+      "user_meta": {
+        "turn": 50,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Ethan Embry",
+        "anchor_title": "Born on the Fourth of July",
+        "constraints": {
+          "genre": "historical period drama",
+          "plot": "banking",
+          "actor": "Ethan Embry",
+          "director": "Herb Freed"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 50,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Ethan Embry",
+          "from_anchor": "Shutter Island",
+          "to_anchor": "Born on the Fourth of July"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies with Ethan Embry, set in historical periods, and possibly featuring director Herb Freed or writer Brian Helgeland. Based on these preferences, I recommend 'Under the Volcano' as it meets most of the criteria with Ethan Embry, a historical drama directed by Herb Freed, and featuring the plot elements mentioned.",
+      "constraints": {
+        "genre": "historical period drama",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "They",
+        "director": "Herb Freed",
+        "writer": "Brian Helgeland",
+        "actor": "Ethan Embry",
+        "language": "fre"
+      },
+      "rec_titles": [
+        "Under the Volcano",
+        "The Santa Clause 2",
+        "The End of the Affair",
+        "Star Trek Into Darkness"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "each",
+      "from_anchor": "The Hateful Eight",
+      "to_anchor": "Serenity"
+    },
+    {
+      "turn": 5,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Mila Kunis",
+      "from_anchor": "Serenity",
+      "to_anchor": "The Legend of Zorro"
+    },
+    {
+      "turn": 11,
+      "from_focus": "actor",
+      "to_focus": "name",
+      "bridge_field": "plot",
+      "bridge_value": "childhood",
+      "from_anchor": "The Legend of Zorro",
+      "to_anchor": "Last Vegas"
+    },
+    {
+      "turn": 18,
+      "from_focus": "name",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Kenneth Mars",
+      "from_anchor": "Last Vegas",
+      "to_anchor": "Dances with Wolves"
+    },
+    {
+      "turn": 23,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "comedian",
+      "from_anchor": "Dances with Wolves",
+      "to_anchor": "Butch Cassidy and the Sundance Kid"
+    },
+    {
+      "turn": 30,
+      "from_focus": "director",
+      "to_focus": "name",
+      "bridge_field": "plot",
+      "bridge_value": "pictorial",
+      "from_anchor": "Butch Cassidy and the Sundance Kid",
+      "to_anchor": "Jane Got a Gun"
+    },
+    {
+      "turn": 35,
+      "from_focus": "name",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "wish",
+      "from_anchor": "Jane Got a Gun",
+      "to_anchor": "The Missing"
+    },
+    {
+      "turn": 38,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "reunite",
+      "from_anchor": "The Missing",
+      "to_anchor": "Sexy Beast"
+    },
+    {
+      "turn": 41,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Sexy Beast",
+      "to_anchor": "Butch Cassidy and the Sundance Kid"
+    },
+    {
+      "turn": 43,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "banking",
+      "from_anchor": "Butch Cassidy and the Sundance Kid",
+      "to_anchor": "Shutter Island"
+    },
+    {
+      "turn": 50,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Ethan Embry",
+      "from_anchor": "Shutter Island",
+      "to_anchor": "Born on the Fourth of July"
+    }
+  ]
+}

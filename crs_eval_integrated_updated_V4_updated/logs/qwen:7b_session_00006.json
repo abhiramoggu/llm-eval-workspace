@@ -1,0 +1,2219 @@
+{
+  "session_id": "00006",
+  "model_name": "qwen:7b",
+  "true_genre": "poetry",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a poetry movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "poetry",
+        "anchor_title": "Paradise Lost",
+        "constraints": {
+          "genre": "poetry"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a poetry movie with a touch of drama. Based on their preferences, I would recommend 'Dead Poets Society' due to its iconic exploration of poetry and self-expression, featuring an ensemble cast including Robin Williams.",
+      "constraints": {
+        "genre": "poetry",
+        "plot": [
+          "poetry",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "Dead Poets Society",
+        "True Blood",
+        "The Queen",
+        "Trees Lounge"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Ian Whyte. That sounds intriguing. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Ian Whyte",
+        "anchor_title": "X",
+        "constraints": {
+          "genre": "poetry",
+          "actor": "Ian Whyte",
+          "plot": "prostitute"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "prostitute",
+          "from_anchor": "Paradise Lost",
+          "to_anchor": "X"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for movies featuring Ian Whyte and having a poetic or introspective theme. I recommend checking out 'Prometheus' (2012), as it explores themes of humanity's relationship with advanced technology, often compared to Prometheus' gift of fire. The film features both Ian Whyte and Patrick Wilson, who also stars in the movie.",
+      "constraints": {
+        "genre": "poetry",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "X",
+        "actor": "Ian Whyte"
+      },
+      "rec_titles": [
+        "Prometheus",
+        "A Walk Among the Tombstones",
+        "The Only Good Indian",
+        "Sleepless in Seattle"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Ian Whyte",
+        "anchor_title": "X",
+        "constraints": {
+          "genre": "poetry",
+          "actor": "Ian Whyte",
+          "plot": "prostitute"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're interested in recommendations based on a preference for poetry, an actor named Ian Whyte, and plots involving \"just\" and \"more\". From the list provided, I would recommend watching 'Braveheart' (1995) as it fits your criteria with its poetic themes, Ian Whyte's role, and the plot involving standing up for justice.",
+      "constraints": {
+        "genre": "poetry",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Ian Whyte"
+      },
+      "rec_titles": [
+        "Braveheart",
+        "Tooth Fairy",
+        "The Swindle",
+        "The Way Back Home"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Braveheart? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Ian Whyte",
+        "anchor_title": "X",
+        "constraints": {
+          "genre": "poetry",
+          "actor": "Ian Whyte",
+          "plot": "prostitute"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie that combines elements of poetry, strong performances, and potentially a mood similar to Braveheart. Based on your criteria, I would recommend 'Zero Effect' starring Angela Featherstone and Jake Kasdan due to its elements of poetry and strong performances.",
+      "constraints": {
+        "genre": "poetry",
+        "plot": [
+          "what",
+          "braveheart"
+        ],
+        "name": "Braveheart",
+        "actor": "Ian Whyte"
+      },
+      "rec_titles": [
+        "Zero Effect",
+        "The Trouble with Harry",
+        "Training Day",
+        "The Equalizer"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Stone tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Ian Whyte",
+        "anchor_title": "X",
+        "constraints": {
+          "genre": "poetry",
+          "actor": "Ian Whyte",
+          "plot": "prostitute"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a story with deeper meaning, possibly featuring poetry and an actor like Ian Whyte. I recommend 'Elizabeth' (1998) as it fits this criteria with its focus on Elizabeth I's early reign and her inner turmoil. The film stars Fanny Ardant and Eric Cantona, who might pique the user's interest.",
+      "constraints": {
+        "genre": "poetry",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Stone",
+        "actor": "Ian Whyte"
+      },
+      "rec_titles": [
+        "Elizabeth",
+        "The Way Back Home",
+        "The Odyssey",
+        "Man on Fire"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Ian Whyte",
+        "anchor_title": "X",
+        "constraints": {
+          "genre": "poetry",
+          "actor": "Ian Whyte",
+          "plot": "prostitute"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User is interested in movies that feature poetry, a specific actor (Ian Whyte), and plots with elements like liking sound. Based on these preferences, I recommend 'The Mortal Instruments: City of Bones' starring Ian Whyte. This film features poetry and a plot involving a character who likes the sound.",
+      "constraints": {
+        "genre": "poetry",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "actor": "Ian Whyte"
+      },
+      "rec_titles": [
+        "The Mortal Instruments: City of Bones",
+        "Maid in Manhattan",
+        "The Nanny",
+        "Clash of the Titans"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by David Mamet? Hmm, I didn’t expect that vibe. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 7,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "David Mamet",
+        "anchor_title": "Eraserhead",
+        "constraints": {
+          "genre": "poetry",
+          "actor": "Ian Whyte",
+          "plot": "prostitute",
+          "director": "David Mamet",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 7,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "X",
+          "to_anchor": "Eraserhead"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User is looking for a movie with a switch in bodies theme, similar to 'The Change-Up'.推荐这部作品， starring Gregory Itzin and Mircea Monroe.",
+      "constraints": {
+        "genre": "poetry",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "X",
+        "actor": "Ian Whyte",
+        "director": "David Mamet",
+        "writer": "David Mamet"
+      },
+      "rec_titles": [
+        "The Change-Up",
+        "Maleficent",
+        "The Shadows",
+        "Things Fall Apart"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "David Mamet",
+        "anchor_title": "Eraserhead",
+        "constraints": {
+          "genre": "poetry",
+          "actor": "Ian Whyte",
+          "plot": "prostitute",
+          "director": "David Mamet",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in recommendations for movies with a poetry theme, featuring actor Ian Whyte, and possibly directed by David Mamet. From the list provided, I would recommend 'Tell No One' since it combines poetry (through the plot rather than an explicit focus), Ian Whyte's presence, and a David Mamet-directed script.",
+      "constraints": {
+        "genre": "poetry",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Ian Whyte",
+        "director": "David Mamet",
+        "writer": "David Mamet"
+      },
+      "rec_titles": [
+        "Tell No One",
+        "The Way of the Gun",
+        "Heist",
+        "In Time"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Tell No One. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "David Mamet",
+        "anchor_title": "Eraserhead",
+        "constraints": {
+          "genre": "poetry",
+          "actor": "Ian Whyte",
+          "plot": "prostitute",
+          "director": "David Mamet",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes stories with a poetic touch and has shown interest in works involving Ian Whyte. Based on these preferences, I recommend 'Looper' for its blend of science fiction and Ian Whyte's presence. The plot revolves around time travel and the complex relationships between characters.",
+      "constraints": {
+        "genre": "poetry",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Tell No One",
+        "actor": "Ian Whyte",
+        "director": "David Mamet",
+        "writer": "David Mamet"
+      },
+      "rec_titles": [
+        "Castle in the Sky",
+        "The Skull",
+        "Looper",
+        "Blow Out"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Looper tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "David Mamet",
+        "anchor_title": "Eraserhead",
+        "constraints": {
+          "genre": "poetry",
+          "actor": "Ian Whyte",
+          "plot": "prostitute",
+          "director": "David Mamet",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences for a story with elements of poetry, a focused actor like Ian Whyte, and works from directors known for their writing prowess such as David Mamet, I recommend two movies:\n\n1. \"Pride and Prejudice\" (1813) - This classic novel by Jane Austen, adapted into numerous films, fits the poetic and character-driven aspects you prefer. Starring Elizabeth Bennet played by Keira Knightley.\n\n2. \"Louie\" (N/A) - This non-fiction documentary film, directed by David Amram, follows Louie Evans, a Boston tricycle rider known for his unique \"siren noise.\" Though not exactly a story with poetry elements, it offers an intimate look into the life of a character that resonates deeply.",
+      "constraints": {
+        "genre": "poetry",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Looper",
+        "actor": "Ian Whyte",
+        "director": "David Mamet",
+        "writer": "David Mamet"
+      },
+      "rec_titles": [
+        "Pride and Prejudice",
+        "Louie",
+        "It's a Wonderful Life",
+        "The Yearling"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on 3. I want to try something more romantic comedy—still with Devid Striesow if possible. I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "romantic comedy",
+        "anchor_title": "The Terminal",
+        "constraints": {
+          "genre": "romantic comedy",
+          "actor": "Devid Striesow",
+          "plot": "prostitute",
+          "director": "David Mamet",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 11,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "Devid Striesow",
+          "from_anchor": "Eraserhead",
+          "to_anchor": "The Terminal"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user desires a romantic comedy featuring actor David Striesow, with potential director David Mamet. From the given list, 'Win a Date with Tad Hamilton!' (2004) starring Topher Grace and Paris Hilton, meets these criteria. It's an enjoyable romantic comedy with elements of humor and charm.",
+      "constraints": {
+        "genre": "romantic comedy",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "RED",
+        "actor": "Devid Striesow",
+        "director": "David Mamet",
+        "writer": "David Mamet"
+      },
+      "rec_titles": [
+        "Win a Date with Tad Hamilton!",
+        "Peggy Sue Got Married",
+        "Friends with Kids",
+        "How to Lose a Guy in 10 Days"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "romantic comedy",
+        "anchor_title": "The Terminal",
+        "constraints": {
+          "genre": "romantic comedy",
+          "actor": "Devid Striesow",
+          "plot": "prostitute",
+          "director": "David Mamet",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: They are looking for romantic comedy movies with actor David Striesow in a leading role, and possibly directed by David Mamet or written by him.\n\nRecommended Movie: 'The Nutty Professor' (1996) is the perfect match, featuring David Striesow as part of the cast, and directed by David Mamet. The movie also has a delightful romantic comedy plot.",
+      "constraints": {
+        "genre": "romantic comedy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Devid Striesow",
+        "director": "David Mamet",
+        "writer": "David Mamet"
+      },
+      "rec_titles": [
+        "The Nutty Professor",
+        "The Spanish Prisoner",
+        "17 Again",
+        "Chasing Amy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Nutty Professor? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "romantic comedy",
+        "anchor_title": "The Terminal",
+        "constraints": {
+          "genre": "romantic comedy",
+          "actor": "Devid Striesow",
+          "plot": "prostitute",
+          "director": "David Mamet",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: They prefer romantic comedies, with actor David Striesow and director David Mamet involved. Movie recommendations: I suggest 'What Just Happened' since it's a romantic comedy featuring both David Striesow and David Mamet. The plot also has elements of intrigue and unexpected twists, which could appeal to the user's interest in 'nutty' and 'what just happened'.",
+      "constraints": {
+        "genre": "romantic comedy",
+        "plot": [
+          "what",
+          "professor"
+        ],
+        "name": "The Nutty Professor",
+        "actor": "Devid Striesow",
+        "director": "David Mamet",
+        "writer": "David Mamet"
+      },
+      "rec_titles": [
+        "Unknown",
+        "The Man from Earth",
+        "What Just Happened",
+        "The Nutty Professor"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of They. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "romantic comedy",
+        "anchor_title": "The Terminal",
+        "constraints": {
+          "genre": "romantic comedy",
+          "actor": "Devid Striesow",
+          "plot": "prostitute",
+          "director": "David Mamet",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user enjoys romantic comedies with David Striesow as the lead actor. I recommend 'Looper' (2012), starring Paul Dano and Piper Perabo, which combines romance and action with a strong Striesow presence.",
+      "constraints": {
+        "genre": "romantic comedy",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "They",
+        "actor": "Devid Striesow",
+        "director": "David Mamet",
+        "writer": "David Mamet"
+      },
+      "rec_titles": [
+        "The Relic",
+        "Looper",
+        "Shallow Hal",
+        "Unleashed"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does 2012 tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "romantic comedy",
+        "anchor_title": "The Terminal",
+        "constraints": {
+          "genre": "romantic comedy",
+          "actor": "Devid Striesow",
+          "plot": "prostitute",
+          "director": "David Mamet",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in romantic comedy movies from the year 2012, featuring David Striesow as an actor. I recommend \"Smilla''s Sense of Snow\" (1997), which matches these criteria and features the acting talents of the desired cast.",
+      "constraints": {
+        "genre": "romantic comedy",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "2012",
+        "actor": "Devid Striesow",
+        "director": "David Mamet",
+        "writer": "David Mamet",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Smilla's Sense of Snow",
+        "Serving Sara",
+        "That Thing You Do!",
+        "Home for the Holidays"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with John Candy. Hmm, I didn’t expect that vibe. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 16,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "John Candy",
+        "anchor_title": "Tomorrow Never Dies",
+        "constraints": {
+          "genre": "romantic comedy",
+          "actor": "John Candy",
+          "plot": "bennett",
+          "director": "David Mamet",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 16,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "bennett",
+          "from_anchor": "The Terminal",
+          "to_anchor": "Tomorrow Never Dies"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: They're looking for romantic comedy movies from 2012, featuring John Candy. Recommendations: 'The X Files' (1998) and 'Out of Sight' (1998) both fit the criteria with memorable performances by John Candy and other actors.'",
+      "constraints": {
+        "genre": "romantic comedy",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Ted",
+        "actor": "John Candy",
+        "director": "David Mamet",
+        "writer": "David Mamet",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The X Files",
+        "Jackie Brown",
+        "Out of Sight",
+        "The Queen"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "John Candy",
+        "anchor_title": "Tomorrow Never Dies",
+        "constraints": {
+          "genre": "romantic comedy",
+          "actor": "John Candy",
+          "plot": "bennett",
+          "director": "David Mamet",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants recommendations for romantic comedy movies released in 2012, featuring John Candy and written by David Mamet. I suggest checking out 'Panic Room' from this list as it fits the criteria and has both John Candy and a Mamet-written script.",
+      "constraints": {
+        "genre": "romantic comedy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "John Candy",
+        "director": "David Mamet",
+        "writer": "David Mamet",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "I Want Someone to Eat Cheese With",
+        "Panic Room",
+        "Wrath of the Titans",
+        "Braveheart"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Room tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "John Candy",
+        "anchor_title": "Tomorrow Never Dies",
+        "constraints": {
+          "genre": "romantic comedy",
+          "actor": "John Candy",
+          "plot": "bennett",
+          "director": "David Mamet",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a romantic comedy with a release date around 2012, featuring John Candy as the main actor. Based on these preferences, I recommend 'Just Wright' since it fits all the given criteria. It stars Dwyane Wade and Peter Hermann, with John Lithgow in a supporting role.",
+      "constraints": {
+        "genre": "romantic comedy",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Room",
+        "actor": "John Candy",
+        "director": "David Mamet",
+        "writer": "David Mamet",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Room",
+        "Just Wright",
+        "The World According to Garp",
+        "Chasing Amy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of 2012. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "John Candy",
+        "anchor_title": "Tomorrow Never Dies",
+        "constraints": {
+          "genre": "romantic comedy",
+          "actor": "John Candy",
+          "plot": "bennett",
+          "director": "David Mamet",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You mentioned a preference for romantic comedies and actors like John Candy. Given these cues, I recommend checking out 'Why Did I Get Married Too?' as it fits your genre and has an actor you enjoy. It's a light-hearted comedy about marriage.",
+      "constraints": {
+        "genre": "romantic comedy",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "2012",
+        "actor": "John Candy",
+        "director": "David Mamet",
+        "writer": "David Mamet",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Why Did I Get Married Too?",
+        "Easy",
+        "The Dark Knight Rises",
+        "Flight"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Why Did I Get Married Too?? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "John Candy",
+        "anchor_title": "Tomorrow Never Dies",
+        "constraints": {
+          "genre": "romantic comedy",
+          "actor": "John Candy",
+          "plot": "bennett",
+          "director": "David Mamet",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a romantic comedy movie from 2012, featuring John Candy and possibly written or directed by David Mamet. I recommend \"The Light Between Oceans\" (2012), which meets these criteria with its star cast including Ryan Gosling and Robin Wright, and its emotional storyline.",
+      "constraints": {
+        "genre": "romantic comedy",
+        "plot": [
+          "what",
+          "married"
+        ],
+        "name": "Why Did I Get Married Too?",
+        "actor": "John Candy",
+        "director": "David Mamet",
+        "writer": "David Mamet",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Wackness",
+        "Louie",
+        "Truly Madly Guilty",
+        "The Light Between Oceans"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Ted. I want to try something more language—That sounds intriguing.",
+      "user_meta": {
+        "turn": 21,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "language",
+        "anchor_title": "New York Minute",
+        "constraints": {
+          "genre": "language",
+          "actor": "John Candy",
+          "plot": "bennett",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 21,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "wish",
+          "from_anchor": "Tomorrow Never Dies",
+          "to_anchor": "New York Minute"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a movie with language focus and released in 2012. Based on these preferences, I recommend 'Prometheus' (2012), which explores themes of technology, humanity, and the consequences of our actions. Starring Patrick Wilson, Kate Dickie, and an ensemble, it offers a thought-provoking language-driven experience.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Ted",
+        "actor": "John Candy",
+        "director": "David Mamet",
+        "writer": "David Mamet",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Tender Is the Night",
+        "Prometheus",
+        "House at the End of the Street",
+        "The Spanish Prisoner"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "language",
+        "anchor_title": "New York Minute",
+        "constraints": {
+          "genre": "language",
+          "actor": "John Candy",
+          "plot": "bennett",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's constraints include genre preferences for language-based films and a specific interest in plots related to adventure, exploration, or change of life. Based on these preferences, I would recommend 'Zero Dark Thirty' as it fits the theme of an adult following childhood dreams and explores the world of espionage and law enforcement. The cast, featuring talents like Jennifer Chastain, Mark Duplass, and David Schwimmer, adds intrigue to the story.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "John Candy",
+        "director": "David Mamet",
+        "writer": "David Mamet",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Great Gatsby",
+        "Underworld: Awakening",
+        "Zero Dark Thirty",
+        "Wanderlust"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Zero Dark Thirty tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "language",
+        "anchor_title": "New York Minute",
+        "constraints": {
+          "genre": "language",
+          "actor": "John Candy",
+          "plot": "bennett",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a movie with a story about an accidental discovery of a crime, possibly involving double murder. They prefer movies from the year 2012 and may be drawn to films featuring John Candy or David Mamet.\n\nBased on these preferences, I would recommend 'House at the End of the Street' (2012), which features John Candy in a plot that includes an accidental discovery of a crime. This movie combines elements of mystery and character development, making it a suitable recommendation for the user's interests.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Zero Dark Thirty",
+        "actor": "John Candy",
+        "director": "David Mamet",
+        "writer": "David Mamet",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "House at the End of the Street",
+        "Underworld: Awakening",
+        "Promised Land",
+        "Flatliners"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "language",
+        "anchor_title": "New York Minute",
+        "constraints": {
+          "genre": "language",
+          "actor": "John Candy",
+          "plot": "bennett",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movies that are opposite to their preference cues, which include genre: language; year: 2012; actor: John Candy; director: David Mamet; writer: David Mamet.\n\nRecommendations:\n- 'Home Alone' (1990) - This film is the complete opposite with its comedy and family-oriented plot, featuring Macaulay Culkin as the mischievous protagonist.\n- 'The Spanish Prisoner' (1997) - Although John Candy doesn't appear in this one, it's another contrast to the user's preferences. It's a psychological thriller with an enigmatic plot involving a corporate espionage scheme.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Zero Dark Thirty",
+        "actor": "John Candy",
+        "director": "David Mamet",
+        "writer": "David Mamet",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Uptown Girls",
+        "Promised Land",
+        "The Spanish Prisoner",
+        "Home Alone"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Spanish Prisoner? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "language",
+        "anchor_title": "New York Minute",
+        "constraints": {
+          "genre": "language",
+          "actor": "John Candy",
+          "plot": "bennett",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with prison-related elements, released in 2012, featuring John Candy or written and directed by David Mamet. I recommend 'House at the End of the Street' (2012), which fits those criteria and has Jennifer Lawrence in the lead role.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "what",
+          "spanish"
+        ],
+        "name": "Prison",
+        "actor": "John Candy",
+        "director": "David Mamet",
+        "writer": "David Mamet",
+        "year": "2012",
+        "language": "spa"
+      },
+      "rec_titles": [
+        "Taken",
+        "The Wraith",
+        "House at the End of the Street",
+        "The Way Back Home"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Aramaic? That feels deeper than I thought. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 26,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "Aramaic",
+        "anchor_title": "White Fang",
+        "constraints": {
+          "genre": "language",
+          "plot": "crazy",
+          "language": "Aramaic"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 26,
+          "from_focus": "genre",
+          "to_focus": "language",
+          "bridge_field": "plot",
+          "bridge_value": "crazy",
+          "from_anchor": "New York Minute",
+          "to_anchor": "White Fang"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants a movie primarily in Aramaic, with genre elements like prison and featuring actor John Candy. Based on these preferences, I recommend 'Project X' (2012), as it has elements of the prison genre and features John Candy in a supporting role. The plot involves high school seniors throwing a party to gain popularity, which could potentially have aAramaic language element due to its setting.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "Deep",
+        "actor": "John Candy",
+        "director": "David Mamet",
+        "writer": "David Mamet",
+        "year": "2012",
+        "language": "Aramaic"
+      },
+      "rec_titles": [
+        "The Dictator",
+        "Project X",
+        "Flight",
+        "Black November"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Aramaic",
+        "anchor_title": "White Fang",
+        "constraints": {
+          "genre": "language",
+          "plot": "crazy",
+          "language": "Aramaic"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in prison-themed movies from 2012, with actor John Candy involved. Recommendations could be 'Prometheus' due to its contemporary themes and John Candy's role, or 'Desolation Angels' which matches the prison setting and the year.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "John Candy",
+        "director": "David Mamet",
+        "writer": "David Mamet",
+        "year": "2012",
+        "language": "Aramaic"
+      },
+      "rec_titles": [
+        "Prometheus",
+        "This Is 40",
+        "Desolation Angels",
+        "Jack Reacher"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does 2012 tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Aramaic",
+        "anchor_title": "White Fang",
+        "constraints": {
+          "genre": "language",
+          "plot": "crazy",
+          "language": "Aramaic"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in stories with a prison theme, released in 2012, and featuring actor John Candy. Recommendations could be 'Skyfall' (2012) with Daniel Craig as James Bond, or 'Where'd You Go, Bernadette' (2014), which stars Tina Fey as the lead, though it doesn't meet all the specific criteria mentioned.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "2012",
+        "actor": "John Candy",
+        "director": "David Mamet",
+        "writer": "David Mamet",
+        "year": "2012",
+        "language": "Aramaic"
+      },
+      "rec_titles": [
+        "Skyfall",
+        "Where'd You Go, Bernadette",
+        "Paradise Lost",
+        "2012"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Aramaic",
+        "anchor_title": "White Fang",
+        "constraints": {
+          "genre": "language",
+          "plot": "crazy",
+          "language": "Aramaic"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You've mentioned a preference for prison-themed movies with specific years and actors. Based on those cues, I recommend 'Dark Shadows' (2012) starring Thomas McDonell as Barnabas Collins, a vampire returning to his ancestral home. The film combines elements of a prison-like atmosphere within the Collins family's mansion.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "2012",
+        "actor": "John Candy",
+        "director": "David Mamet",
+        "writer": "David Mamet",
+        "year": "2012",
+        "language": "Aramaic"
+      },
+      "rec_titles": [
+        "The Yearling",
+        "Dark Shadows",
+        "The Skulls",
+        "City of Lost Souls"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Jonathan Newman? That sounds intriguing. (I’m thinking of Dark Shadows.)",
+      "user_meta": {
+        "turn": 30,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Jonathan Newman",
+        "anchor_title": "A Tale of Two Cities",
+        "constraints": {
+          "genre": "language",
+          "plot": "crazy",
+          "director": "Jonathan Newman",
+          "actor": "Thomas McDonell"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 30,
+          "from_focus": "language",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Thomas McDonell",
+          "from_anchor": "White Fang",
+          "to_anchor": "A Tale of Two Cities"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: They're interested in a prison-themed movie from 2012, starring John Candy.推荐：'Alien 3' (2012) with John Candy's involvement. It fits the prison theme and is from the specified year.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Dark Shadows",
+        "actor": "John Candy",
+        "director": "Jonathan Newman",
+        "writer": "David Mamet",
+        "year": "2012",
+        "language": "Aramaic"
+      },
+      "rec_titles": [
+        "Prometheus",
+        "Wag the Dog",
+        "The Passion of the Christ",
+        "Alien 3"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jonathan Newman",
+        "anchor_title": "A Tale of Two Cities",
+        "constraints": {
+          "genre": "language",
+          "plot": "crazy",
+          "director": "Jonathan Newman",
+          "actor": "Thomas McDonell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's constraints, I recommend \"The Swindle\" (1997) starring Richard Basehart, Michel Serrault, and François Cluzet. It's a crime thriller with a marriage scam plot.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "John Candy",
+        "director": "Jonathan Newman",
+        "writer": "David Mamet",
+        "year": "2012",
+        "language": "Aramaic"
+      },
+      "rec_titles": [
+        "RED",
+        "The Swindle",
+        "The Sweeney",
+        "The Truth"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Swindle. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jonathan Newman",
+        "anchor_title": "A Tale of Two Cities",
+        "constraints": {
+          "genre": "language",
+          "plot": "crazy",
+          "director": "Jonathan Newman",
+          "actor": "Thomas McDonell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes stories with a sound element, like The Swindle, and they're interested in prison-themed movies from 2012. Based on these preferences, I recommend 'Hotel Transylvania' (2012), which has a comical prison-like atmosphere with Dracula running the high-end resort. It stars Selena Gomez, who adds a charming sound element to the film.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Swindle",
+        "actor": "John Candy",
+        "director": "Jonathan Newman",
+        "writer": "David Mamet",
+        "year": "2012",
+        "language": "Aramaic"
+      },
+      "rec_titles": [
+        "All in",
+        "Battleship",
+        "Snow White and the Huntsman",
+        "Hotel Transylvania"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jonathan Newman",
+        "anchor_title": "A Tale of Two Cities",
+        "constraints": {
+          "genre": "language",
+          "plot": "crazy",
+          "director": "Jonathan Newman",
+          "actor": "Thomas McDonell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a movie with prison settings, released in 2012, featuring actor John Candy and directed by Jonathan Newman. Based on these preferences, I recommend 'Tombstone' (1993), which fits the described story and has Patrick Wilson as the lead, similar to John Candy's role in 'Us'.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "actor": "John Candy",
+        "director": "Jonathan Newman",
+        "writer": "David Mamet",
+        "year": "2012",
+        "language": "Aramaic"
+      },
+      "rec_titles": [
+        "Tombstone",
+        "Prometheus",
+        "The Avengers",
+        "Aladdin"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? That sounds intriguing.",
+      "user_meta": {
+        "turn": 34,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jonathan Newman",
+        "anchor_title": "A Tale of Two Cities",
+        "constraints": {
+          "genre": "language",
+          "plot": "crazy",
+          "director": "Jonathan Newman",
+          "actor": "Thomas McDonell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's constraints, they seem interested in a movie set in prison with a release condition related to rescuing someone.推荐《Elizabeth》(1998)，它描绘了伊丽莎白女王初期的统治，虽然并非监狱场景，但涉及到奖学金和秘密社团这样的元素，可能与用户的兴趣点相交。",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Ted",
+        "actor": "John Candy",
+        "director": "Jonathan Newman",
+        "writer": "David Mamet",
+        "year": "2012",
+        "language": "Aramaic"
+      },
+      "rec_titles": [
+        "Elizabeth",
+        "The Skulls",
+        "Hitch",
+        "Lockout"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Ryan Sheckler. Hmm, I didn’t expect that vibe. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 35,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Ryan Sheckler",
+        "anchor_title": "The Great Gatsby",
+        "constraints": {
+          "genre": "language",
+          "director": "Jonathan Newman",
+          "actor": "Ryan Sheckler"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 35,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "director",
+          "bridge_value": "Jonathan Newman",
+          "from_anchor": "A Tale of Two Cities",
+          "to_anchor": "The Great Gatsby"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies with Ryan Sheckler, featuring prison themes and released in 2012. I recommend 'Wreck-It Ralph' (2012) as it matches the criteria and has Ryan Sheckler voicing a character. The movie combines elements of prison setting with an entertaining animation plot.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "X",
+        "actor": "Ryan Sheckler",
+        "director": "Jonathan Newman",
+        "writer": "David Mamet",
+        "year": "2012",
+        "language": "Aramaic"
+      },
+      "rec_titles": [
+        "Wreck-It Ralph",
+        "Grandma's Boy",
+        "National Treasure",
+        "Mission: Impossible II"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Ryan Sheckler",
+        "anchor_title": "The Great Gatsby",
+        "constraints": {
+          "genre": "language",
+          "director": "Jonathan Newman",
+          "actor": "Ryan Sheckler"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in recommendations for prison-themed movies released in 2012, with actor Ryan Sheckler involved. Based on these criteria, 'A Clockwork Orange' (2012) starring Ryan Sheckler could be a fitting recommendation despite being set in a dystopian future rather than a traditional prison setting.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Ryan Sheckler",
+        "director": "Jonathan Newman",
+        "writer": "David Mamet",
+        "year": "2012",
+        "language": "Aramaic"
+      },
+      "rec_titles": [
+        "The Three Stooges",
+        "Wag the Dog",
+        "Shutter Island",
+        "A Clockwork Orange"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Ted. I want to try something more religion (tv genre)—I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 37,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "religion (tv genre)",
+        "anchor_title": "A Christmas Carol",
+        "constraints": {
+          "genre": "religion (tv genre)",
+          "director": "Jonathan Newman"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 37,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "john",
+          "from_anchor": "The Great Gatsby",
+          "to_anchor": "A Christmas Carol"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a religious TV genre from 2012, with actor Ryan Sheckler. Based on these preferences, I recommend 'Compliance' (2012) starring James McCaffrey, which combines religion and intrigue in a TV drama.",
+      "constraints": {
+        "genre": "religion (tv genre)",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Ted",
+        "actor": "Ryan Sheckler",
+        "director": "Jonathan Newman",
+        "writer": "David Mamet",
+        "year": "2012",
+        "language": "Aramaic"
+      },
+      "rec_titles": [
+        "Compliance",
+        "The Spanish Prisoner",
+        "The Hobbit: An Unexpected Journey",
+        "Spring Breakers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "religion (tv genre)",
+        "anchor_title": "A Christmas Carol",
+        "constraints": {
+          "genre": "religion (tv genre)",
+          "director": "Jonathan Newman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for recommendations with a religious theme, set in 2012, featuring Ryan Sheckler, and potentially written by David Mamet. Based on these preferences, I would recommend 'Compliance' due to its 2012 setting, focus on religion within the fast food context, and the presence of Ryan Sheckler in the cast.",
+      "constraints": {
+        "genre": "religion (tv genre)",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Ryan Sheckler",
+        "director": "Jonathan Newman",
+        "writer": "David Mamet",
+        "year": "2012",
+        "language": "Aramaic"
+      },
+      "rec_titles": [
+        "Compliance",
+        "The Princess Diaries",
+        "Shutter",
+        "Untraceable"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "religion (tv genre)",
+        "anchor_title": "A Christmas Carol",
+        "constraints": {
+          "genre": "religion (tv genre)",
+          "director": "Jonathan Newman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants a movie with religious themes, released in 2012, and starring Ryan Sheckler. Based on these constraints, I recommend 'Safety Not Guaranteed' (2012) which has elements of religion in its plot, even though the main characters are not explicitly religious. The film stars Ryan Sheckler along with Jeff Garlin等人.",
+      "constraints": {
+        "genre": "religion (tv genre)",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "You",
+        "actor": "Ryan Sheckler",
+        "director": "Jonathan Newman",
+        "writer": "David Mamet",
+        "year": "2012",
+        "language": "Aramaic"
+      },
+      "rec_titles": [
+        "Safety Not Guaranteed",
+        "Dredd",
+        "The Reflecting Skin",
+        "This Girl"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "religion (tv genre)",
+        "anchor_title": "A Christmas Carol",
+        "constraints": {
+          "genre": "religion (tv genre)",
+          "director": "Jonathan Newman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user enjoys films with religious themes, set in 2012, and featuring notable actors like Ryan Sheckler or Rizwan Manji. Based on these preferences, I recommend 'Zero DarkThirty' for its tense detective drama with a religious twist, starring Ryan Sheckler as a supporting role.",
+      "constraints": {
+        "genre": "religion (tv genre)",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "actor": "Ryan Sheckler",
+        "director": "Jonathan Newman",
+        "writer": "David Mamet",
+        "year": "2012",
+        "language": "Aramaic"
+      },
+      "rec_titles": [
+        "Zero Dark Thirty",
+        "The Dictator",
+        "Dark Shadows",
+        "The Selection"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does 2012 tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "religion (tv genre)",
+        "anchor_title": "A Christmas Carol",
+        "constraints": {
+          "genre": "religion (tv genre)",
+          "director": "Jonathan Newman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in stories with religious elements, set in 2012, and featuring specific actors like Ryan Sheckler. Based on these preferences, I recommend 'Passion' (2011) as it fits the narrative and star cue. It's a story about an unconventional beard grower who becomes a symbol of faith and rebellion.",
+      "constraints": {
+        "genre": "religion (tv genre)",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "2012",
+        "actor": "Ryan Sheckler",
+        "director": "Jonathan Newman",
+        "writer": "David Mamet",
+        "year": "2012",
+        "language": "Aramaic"
+      },
+      "rec_titles": [
+        "Passion",
+        "Heist",
+        "Good Deeds",
+        "The Wrestler"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of 2012? That sounds intriguing.",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "religion (tv genre)",
+        "anchor_title": "A Christmas Carol",
+        "constraints": {
+          "genre": "religion (tv genre)",
+          "director": "Jonathan Newman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's constraints include a focus on religion, set in 2012, and featuring actor Ryan Sheckler. Based on these preferences, I would recommend 'The Passion of the Christ' as it not only fits the religious theme with its portrayal of Jesus, but also has Ryan Sheckler's involvement through his supporting role.",
+      "constraints": {
+        "genre": "religion (tv genre)",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "2012",
+        "actor": "Ryan Sheckler",
+        "director": "Jonathan Newman",
+        "writer": "David Mamet",
+        "year": "2012",
+        "language": "Aramaic"
+      },
+      "rec_titles": [
+        "The Untouchables",
+        "City of Lost Souls",
+        "The Passion of the Christ",
+        "Wolfhound"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Standard Chinese? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of 2012.)",
+      "user_meta": {
+        "turn": 43,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "Standard Chinese",
+        "anchor_title": "Titan A.E.",
+        "constraints": {
+          "genre": "religion (tv genre)",
+          "language": "Standard Chinese"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 43,
+          "from_focus": "genre",
+          "to_focus": "language",
+          "bridge_field": "language",
+          "bridge_value": "Standard Chinese",
+          "from_anchor": "A Christmas Carol",
+          "to_anchor": "Titan A.E."
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants a movie primarily in Standard Chinese, with a focus on the year 2012. Based on these preferences, I recommend 'The Sweeney' from the list, as it fits the criteria and features actors speaking in English, which is close to Standard Chinese.",
+      "constraints": {
+        "genre": "standard chinese",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "2012",
+        "actor": "Ryan Sheckler",
+        "director": "Jonathan Newman",
+        "writer": "David Mamet",
+        "year": "2012",
+        "language": "Standard Chinese"
+      },
+      "rec_titles": [
+        "Tooth Fairy",
+        "Kundun",
+        "Wag the Dog",
+        "The Sweeney"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Standard Chinese",
+        "anchor_title": "Titan A.E.",
+        "constraints": {
+          "genre": "religion (tv genre)",
+          "language": "Standard Chinese"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants recommendations for standard Chinese language films, released in 2012 with actor Ryan Sheckler. Based on those criteria, I suggest checking out 'Underworld: Awakening' and 'Magic Mike'. Both movies have a connection to Ryan Scheckler, although the latter ('Magic Mike') does not feature him prominently.",
+      "constraints": {
+        "genre": "standard chinese",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Ryan Sheckler",
+        "director": "Jonathan Newman",
+        "writer": "David Mamet",
+        "year": "2012",
+        "language": "Standard Chinese"
+      },
+      "rec_titles": [
+        "Kundun",
+        "Underworld: Awakening",
+        "Magic Mike",
+        "Battleship"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Standard Chinese",
+        "anchor_title": "Titan A.E.",
+        "constraints": {
+          "genre": "religion (tv genre)",
+          "language": "Standard Chinese"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants a movie with a story about a dictator, starring Rizwan Manji. I recommend 'The Dictator' (2012), featuring Rizwan Manji in this comedic and satirical role.",
+      "constraints": {
+        "genre": "standard chinese",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "actor": "Ryan Sheckler",
+        "director": "Jonathan Newman",
+        "writer": "David Mamet",
+        "year": "2012",
+        "language": "Standard Chinese"
+      },
+      "rec_titles": [
+        "Frankenweenie",
+        "The Dictator",
+        "Tombstone",
+        "Lady in the Water"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Dictator? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Standard Chinese",
+        "anchor_title": "Titan A.E.",
+        "constraints": {
+          "genre": "religion (tv genre)",
+          "language": "Standard Chinese"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movies that match their preferences, which include a standard Chinese language option and a 2012 release with actor Ryan Sheckler. Based on these cues, I would recommend 'Witless Protection' (2008) starring Richard Bull, Larry the Cable Guy, and Jenny McCarthy, as it fits the language and year requirements mentioned.",
+      "constraints": {
+        "genre": "standard chinese",
+        "plot": [
+          "what",
+          "dictator"
+        ],
+        "name": "The Dictator",
+        "actor": "Ryan Sheckler",
+        "director": "Jonathan Newman",
+        "writer": "David Mamet",
+        "year": "2012",
+        "language": "Standard Chinese"
+      },
+      "rec_titles": [
+        "Witless Protection",
+        "We the Living",
+        "21 Jump Street",
+        "I Heart Huckabees"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of 2012. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Standard Chinese",
+        "anchor_title": "Titan A.E.",
+        "constraints": {
+          "genre": "religion (tv genre)",
+          "language": "Standard Chinese"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user enjoys standard Chinese language films and is drawn to titles with a like or sound vibe. Based on these preferences, I recommend 'Django Unchained' for its blend of Django's adventure with historical elements in standard Chinese. The star-studded cast, including Jamie Foxx, Christoph Waltz, and Leonardo DiCaprio, adds to the film's appeal.",
+      "constraints": {
+        "genre": "standard chinese",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "2012",
+        "actor": "Ryan Sheckler",
+        "director": "Jonathan Newman",
+        "writer": "David Mamet",
+        "year": "2012",
+        "language": "Standard Chinese"
+      },
+      "rec_titles": [
+        "The Third Wheel",
+        "Django Unchained",
+        "Black November",
+        "Flubber"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Standard Chinese",
+        "anchor_title": "Titan A.E.",
+        "constraints": {
+          "genre": "religion (tv genre)",
+          "language": "Standard Chinese"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You mentioned a preference for standard Chinese language and a genre from the past, specifically 'standard chinese' and 'action'. Based on those constraints, I recommend 'The Light Between Oceans' as it meets the language requirement and has an action-oriented plot suitable for fans of the genre.",
+      "constraints": {
+        "genre": "standard chinese",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "2012",
+        "actor": "Ryan Sheckler",
+        "director": "Jonathan Newman",
+        "writer": "David Mamet",
+        "year": "2012",
+        "language": "Standard Chinese"
+      },
+      "rec_titles": [
+        "Seven Psychopaths",
+        "The Light Between Oceans",
+        "Kiss of the Dragon",
+        "The Expendables 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Mike Wallace. That sounds intriguing. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 49,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Mike Wallace",
+        "anchor_title": "The Golden Compass",
+        "constraints": {
+          "genre": "religion (tv genre)",
+          "actor": "Mike Wallace",
+          "writer": "Caroline Kepnes"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 49,
+          "from_focus": "language",
+          "to_focus": "actor",
+          "bridge_field": "writer",
+          "bridge_value": "Caroline Kepnes",
+          "from_anchor": "Titan A.E.",
+          "to_anchor": "The Golden Compass"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre is standard Chinese, year is 2012, actor includes Mike Wallace, director is Jonathan Newman, writer is David Mamet. Recommendations: 'The Only Good Indian' starring Wes Studi due to its matching criteria and involvement with Mike Wallace.",
+      "constraints": {
+        "genre": "standard chinese",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "You",
+        "actor": "Mike Wallace",
+        "director": "Jonathan Newman",
+        "writer": "David Mamet",
+        "year": "2012",
+        "language": "Standard Chinese"
+      },
+      "rec_titles": [
+        "Ariel",
+        "The Only Good Indian",
+        "Saw VI",
+        "The Good, the Bad and the Ugly"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 50,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Mike Wallace",
+        "anchor_title": "The Golden Compass",
+        "constraints": {
+          "genre": "religion (tv genre)",
+          "actor": "Mike Wallace",
+          "writer": "Caroline Kepnes"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User has specified a preference for standard Chinese language films released in 2012 with actor Mike Wallace involved. Based on these criteria, I recommend watching \"Labyrinths\" (1962), which stars Mike Wallace and explores themes of grief and healing.",
+      "constraints": {
+        "genre": "standard chinese",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Mike Wallace",
+        "director": "Jonathan Newman",
+        "writer": "David Mamet",
+        "year": "2012",
+        "language": "Standard Chinese"
+      },
+      "rec_titles": [
+        "Labyrinths",
+        "In Time",
+        "Where'd You Go, Bernadette",
+        "The Expendables 2"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "prostitute",
+      "from_anchor": "Paradise Lost",
+      "to_anchor": "X"
+    },
+    {
+      "turn": 7,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "X",
+      "to_anchor": "Eraserhead"
+    },
+    {
+      "turn": 11,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "Devid Striesow",
+      "from_anchor": "Eraserhead",
+      "to_anchor": "The Terminal"
+    },
+    {
+      "turn": 16,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "bennett",
+      "from_anchor": "The Terminal",
+      "to_anchor": "Tomorrow Never Dies"
+    },
+    {
+      "turn": 21,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "wish",
+      "from_anchor": "Tomorrow Never Dies",
+      "to_anchor": "New York Minute"
+    },
+    {
+      "turn": 26,
+      "from_focus": "genre",
+      "to_focus": "language",
+      "bridge_field": "plot",
+      "bridge_value": "crazy",
+      "from_anchor": "New York Minute",
+      "to_anchor": "White Fang"
+    },
+    {
+      "turn": 30,
+      "from_focus": "language",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Thomas McDonell",
+      "from_anchor": "White Fang",
+      "to_anchor": "A Tale of Two Cities"
+    },
+    {
+      "turn": 35,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "director",
+      "bridge_value": "Jonathan Newman",
+      "from_anchor": "A Tale of Two Cities",
+      "to_anchor": "The Great Gatsby"
+    },
+    {
+      "turn": 37,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "john",
+      "from_anchor": "The Great Gatsby",
+      "to_anchor": "A Christmas Carol"
+    },
+    {
+      "turn": 43,
+      "from_focus": "genre",
+      "to_focus": "language",
+      "bridge_field": "language",
+      "bridge_value": "Standard Chinese",
+      "from_anchor": "A Christmas Carol",
+      "to_anchor": "Titan A.E."
+    },
+    {
+      "turn": 49,
+      "from_focus": "language",
+      "to_focus": "actor",
+      "bridge_field": "writer",
+      "bridge_value": "Caroline Kepnes",
+      "from_anchor": "Titan A.E.",
+      "to_anchor": "The Golden Compass"
+    }
+  ]
+}

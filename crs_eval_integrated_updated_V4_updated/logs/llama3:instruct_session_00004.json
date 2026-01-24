@@ -11,7 +11,7 @@
         "stage": "details",
         "focus_field": "genre",
         "focus_value": "cult",
-        "anchor_title": "The Stepfather",
+        "anchor_title": "A Clockwork Orange",
         "constraints": {
           "genre": "cult"
         },
@@ -21,7 +21,7 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I have just the cult movie for you! Have you considered \"Final Destination\" (2000)? It's a thrilling ride that combines clever plotting with some really great performances, including Kristen Cloke and Brendan Fehr. And who can forget those iconic death scenes?",
+      "text": "So you're in the mood for a cult movie, specifically one that explores themes of cults and has some dark secrets lurking beneath its surface. I highly recommend \"Psychic Experiment\" - this eerie and unsettling film follows a group of individuals as they uncover the sinister truth behind an idyllic community, leading to some seriously trippy and reality-bending moments. The cast, featuring Adrienne King and Glenn Morshower, adds to the overall sense of unease and foreboding.",
       "constraints": {
         "genre": "cult",
         "plot": [
@@ -31,55 +31,55 @@
         "name": "You"
       },
       "rec_titles": [
-        "Final Destination",
-        "Hitch",
-        "Downfall",
-        "The Queen"
+        "Psychic Experiment",
+        "The Queen",
+        "The Big Lebowski",
+        "Blade Runner"
       ]
     },
     {
       "speaker": "USER",
-      "text": "Maybe we could find more movies with Lolita Davidovich. That feels deeper than I thought. (I’m thinking of Final Destination.)",
+      "text": "Maybe we could find more movies with Lolita Davidovich. That feels deeper than I thought. (I’m thinking of Psychic Experiment.)",
       "user_meta": {
         "turn": 2,
         "stage": "waiting_system",
         "focus_field": "actor",
         "focus_value": "Lolita Davidovich",
-        "anchor_title": "Blade Runner",
+        "anchor_title": "Junkhearts",
         "constraints": {
           "genre": "cult",
           "actor": "Lolita Davidovich",
-          "writer": "Glen Morgan"
+          "plot": "surface"
         },
         "shift_event": true,
         "shift_event_obj": {
           "turn": 2,
           "from_focus": "genre",
           "to_focus": "actor",
-          "bridge_field": "writer",
-          "bridge_value": "Glen Morgan",
-          "from_anchor": "The Stepfather",
-          "to_anchor": "Blade Runner"
+          "bridge_field": "plot",
+          "bridge_value": "surface",
+          "from_anchor": "A Clockwork Orange",
+          "to_anchor": "Junkhearts"
         }
       }
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I've found some great matches for you! If you're looking for a cult classic that's as action-packed as Final Destination, I'd recommend \"Predator\" (1987). This sci-fi thriller stars Carl Weathers and features an iconic performance by the alien predator itself - it's a must-see for any fan of campy humor and over-the-top action.",
+      "text": "It seems like you're looking for a movie that features Lolita Davidovich and has a deeper, cult-like vibe to it. Given those constraints, I think \"Anyone But You\" (1996) might be an excellent choice! This romantic comedy stars Lolita Davidovich alongside Pierce Brosnan and has a unique premise that explores the complexities of relationships.",
       "constraints": {
         "genre": "cult",
         "plot": [
           "could",
           "find"
         ],
-        "name": "Final Destination",
+        "name": "Psychic Experiment",
         "actor": "Lolita Davidovich"
       },
       "rec_titles": [
-        "Predator",
-        "The Missing",
-        "Cutthroat Island",
-        "Creepshow 2"
+        "Anyone But You",
+        "Armageddon",
+        "2001: A Space Odyssey",
+        "Afterlife"
       ]
     },
     {
@@ -90,11 +90,11 @@
         "stage": "details",
         "focus_field": "actor",
         "focus_value": "Lolita Davidovich",
-        "anchor_title": "Blade Runner",
+        "anchor_title": "Junkhearts",
         "constraints": {
           "genre": "cult",
           "actor": "Lolita Davidovich",
-          "writer": "Glen Morgan"
+          "plot": "surface"
         },
         "shift_event": false,
         "shift_event_obj": null
@@ -102,7 +102,7 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I have just the thing for you! Have you considered \"Six-String Samurai\"? It's a cult classic that combines post-apocalyptic adventure with rock 'n' roll spirit, starring Kim De Angelo and Stephane Gauger. The movie has a really fun, quirky vibe that I think you'll enjoy!",
+      "text": "So you're looking for more recommendations like those that feature a cult vibe, star Lolita Davidovich, and have keywords like \"just\" and \"more\" in their plots. Based on these constraints, I think you might enjoy \"The Secret of My Success\", which has a fun, lighthearted tone and stars Michael J. Fox as a clever but naive young man who rises to fame through a series of coincidences and chance encounters.",
       "constraints": {
         "genre": "cult",
         "plot": [
@@ -113,71 +113,62 @@
         "actor": "Lolita Davidovich"
       },
       "rec_titles": [
-        "Six-String Samurai",
-        "The Swindle",
-        "The Truth",
-        "Braveheart"
+        "The Secret of My Success",
+        "Three Kings",
+        "Uncommon Valor",
+        "Bats"
       ]
     },
     {
       "speaker": "USER",
-      "text": "Do you have recommendations written by Francis Barrett? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of You.)",
+      "text": "I like the sound of Ted. Who stars in it? Hmm, I didn’t expect that vibe.",
       "user_meta": {
         "turn": 4,
-        "stage": "waiting_system",
-        "focus_field": "writer",
-        "focus_value": "Francis Barrett",
-        "anchor_title": "Creepshow 2",
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Lolita Davidovich",
+        "anchor_title": "Junkhearts",
         "constraints": {
           "genre": "cult",
-          "writer": "Francis Barrett",
-          "plot": "mine"
+          "actor": "Lolita Davidovich",
+          "plot": "surface"
         },
-        "shift_event": true,
-        "shift_event_obj": {
-          "turn": 4,
-          "from_focus": "actor",
-          "to_focus": "writer",
-          "bridge_field": "plot",
-          "bridge_value": "mine",
-          "from_anchor": "Blade Runner",
-          "to_anchor": "Creepshow 2"
-        }
+        "shift_event": false,
+        "shift_event_obj": null
       }
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I have just the thing for you! If you're looking for a cult classic that will keep you on the edge of your seat, I'd highly recommend \"Final Destination\". The premonition plot twist is genius, and the deathly consequences that follow are both thrilling and unsettling. Plus, it stars Lolita Davidovich's co-star from \"You Were Never Really Here\", Seann William Scott!",
+      "text": "You're looking for a cult classic with a unique vibe, and you mentioned liking the sound of Ted, which has a quirky tone. Based on that, I think you might enjoy \"The Return of the Living Dead\" (1985), a campy zombie comedy starring Thom Mathews, Beverly Randolph, and Linnea Quigley. It's a cult classic with a similar offbeat humor to Ted!",
       "constraints": {
         "genre": "cult",
         "plot": [
-          "written",
-          "francis"
+          "like",
+          "sound"
         ],
-        "name": "RED",
-        "actor": "Lolita Davidovich",
-        "writer": "Francis Barrett"
+        "name": "Ted",
+        "actor": "Lolita Davidovich"
       },
       "rec_titles": [
-        "Final Destination",
-        "The Husband's Secret",
-        "Saw V",
-        "Night of the Living Dead"
+        "Providence",
+        "The Return of the Living Dead",
+        "Unleashed",
+        "Jumper"
       ]
     },
     {
       "speaker": "USER",
-      "text": "Just checking—do you have more recommendations like that?",
+      "text": "What's the mood of You? Maybe I’m overthinking it, but it sounds fascinating.",
       "user_meta": {
         "turn": 5,
         "stage": "details",
-        "focus_field": "writer",
-        "focus_value": "Francis Barrett",
-        "anchor_title": "Creepshow 2",
+        "focus_field": "actor",
+        "focus_value": "Lolita Davidovich",
+        "anchor_title": "Junkhearts",
         "constraints": {
           "genre": "cult",
-          "writer": "Francis Barrett",
-          "plot": "mine"
+          "actor": "Lolita Davidovich",
+          "plot": "surface"
         },
         "shift_event": false,
         "shift_event_obj": null
@@ -185,37 +176,35 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I've got just the thing for you! Have you considered \"The Swindle\"? It's a cult classic with a fun premise and some fantastic performances from Michel Serrault and Isabelle Huppert. Plus, it's got that extra layer of humor and wit that makes it really stand out.",
+      "text": "Based on what you've shared, I understand that you're looking for a cult classic with Lolita Davidovich involved and a plot that piques your interest.\n\nI'd like to recommend two movies from the list: 'Dear John' (2010) and 'Evil Dead II' (1987). 'Dear John' stars Lolita Davidovich, and its unique blend of psychological thriller and cult classic elements might just be what you're looking for. Meanwhile, 'Evil Dead II' is a horror cult classic that's known for its over-the-top action and dark humor - with Lolita Davidovich not involved in this one, but the plot's sure to grab your attention!",
       "constraints": {
         "genre": "cult",
         "plot": [
-          "just",
-          "more"
+          "what"
         ],
         "name": "You",
-        "actor": "Lolita Davidovich",
-        "writer": "Francis Barrett"
+        "actor": "Lolita Davidovich"
       },
       "rec_titles": [
-        "Jason Bourne",
-        "The Swindle",
-        "Creepshow 2",
-        "How to Train Your Dragon"
+        "Dear John",
+        "Evil Dead II",
+        "Friday the 13th Part 2",
+        "Pride and Prejudice"
       ]
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of The Thing? I can’t decide if I’d enjoy it or be scared by it.",
+      "text": "What kind of story does RED tell? Maybe I’m overthinking it, but it sounds fascinating.",
       "user_meta": {
         "turn": 6,
         "stage": "details",
-        "focus_field": "writer",
-        "focus_value": "Francis Barrett",
-        "anchor_title": "Creepshow 2",
+        "focus_field": "actor",
+        "focus_value": "Lolita Davidovich",
+        "anchor_title": "Junkhearts",
         "constraints": {
           "genre": "cult",
-          "writer": "Francis Barrett",
-          "plot": "mine"
+          "actor": "Lolita Davidovich",
+          "plot": "surface"
         },
         "shift_event": false,
         "shift_event_obj": null
@@ -223,424 +212,82 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think you might enjoy \"The Trouble with Harry\"! It's a classic mystery film with a unique and quirky tone, much like \"The Thing\". The story follows a group of people trying to figure out what happened to Harry's body, which is found in the woods, and it's a great example of how a mysterious plot can be entertaining without being scary.",
-      "constraints": {
-        "genre": "cult",
-        "plot": [
-          "what",
-          "thing"
-        ],
-        "name": "The Thing",
-        "actor": "Lolita Davidovich",
-        "writer": "Francis Barrett"
-      },
-      "rec_titles": [
-        "Utsav",
-        "Find Me Guilty",
-        "The Trouble with Harry",
-        "Bram Stoker's Dracula"
-      ]
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does The Trouble with Harry tell? Hmm, I didn’t expect that vibe.",
-      "user_meta": {
-        "turn": 7,
-        "stage": "details",
-        "focus_field": "writer",
-        "focus_value": "Francis Barrett",
-        "anchor_title": "Creepshow 2",
-        "constraints": {
-          "genre": "cult",
-          "writer": "Francis Barrett",
-          "plot": "mine"
-        },
-        "shift_event": false,
-        "shift_event_obj": null
-      }
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I've found a great match for you! Based on your interest in \"The Trouble with Harry\", I'm going to recommend \"The Big Lebowski\". This cult classic shares a similar offbeat humor and quirky characters, and who knows, you might even find yourself pondering what kind of trouble would ensue if Jeff Bridges' The Dude got mixed up with the EDL!",
+      "text": "I understand that you're looking for a story that explores what kind of life would be like if certain events hadn't occurred, and you've mentioned Lolita Davidovich as an actor you enjoy. Based on these constraints, I think you might appreciate \"It's a Wonderful Life\" (1946), which features an angel showing a businessman what the world would be like without him. The film is a classic cult favorite that explores themes of identity and the value of human life.",
       "constraints": {
         "genre": "cult",
         "plot": [
           "what",
           "kind"
         ],
-        "name": "The Trouble with Harry",
-        "actor": "Lolita Davidovich",
-        "writer": "Francis Barrett"
+        "name": "RED",
+        "actor": "Lolita Davidovich"
       },
       "rec_titles": [
-        "Pride and Prejudice",
-        "Divergent",
-        "Passion",
+        "It's a Wonderful Life",
+        "Wolfhound",
+        "Training Day",
         "The Big Lebowski"
       ]
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of X. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "text": "Could we switch to something else by Ed Harris? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of You.)",
       "user_meta": {
-        "turn": 8,
-        "stage": "details",
-        "focus_field": "writer",
-        "focus_value": "Francis Barrett",
-        "anchor_title": "Creepshow 2",
-        "constraints": {
-          "genre": "cult",
-          "writer": "Francis Barrett",
-          "plot": "mine"
-        },
-        "shift_event": false,
-        "shift_event_obj": null
-      }
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think you might enjoy \"Creepshow 2\" - it's a cult classic with a similar tone and style to what you're looking for. The movie features three separate stories, each with its own unique blend of horror and dark humor, and has a great cast including Dorothy Lamour and Stephen King himself!",
-      "constraints": {
-        "genre": "cult",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "RED",
-        "actor": "Lolita Davidovich",
-        "writer": "Francis Barrett"
-      },
-      "rec_titles": [
-        "Mama",
-        "Creepshow 2",
-        "Dogma",
-        "The Way of the Gun"
-      ]
-    },
-    {
-      "speaker": "USER",
-      "text": "Maybe we could find more movies with Milos Forman. Hmm, I didn’t expect that vibe. (I’m thinking of Creepshow 2.)",
-      "user_meta": {
-        "turn": 9,
-        "stage": "waiting_system",
-        "focus_field": "actor",
-        "focus_value": "Milos Forman",
-        "anchor_title": "The Return of the Living Dead",
-        "constraints": {
-          "genre": "cult",
-          "writer": "George A. Romero",
-          "plot": "mine",
-          "actor": "Milos Forman"
-        },
-        "shift_event": true,
-        "shift_event_obj": {
-          "turn": 9,
-          "from_focus": "writer",
-          "to_focus": "actor",
-          "bridge_field": "writer",
-          "bridge_value": "George A. Romero",
-          "from_anchor": "Creepshow 2",
-          "to_anchor": "The Return of the Living Dead"
-        }
-      }
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I've found a perfect match for you! Have you considered \"Keeping the Faith\"? It's a charming comedy that features Milos Forman, and its blend of romance, humor, and faith is sure to delight. With a talented cast including Jenna Elfman, Ben Stiller, and Edward Norton, this film is a great way to spend an evening.",
-      "constraints": {
-        "genre": "cult",
-        "plot": [
-          "could",
-          "find"
-        ],
-        "name": "Creepshow 2",
-        "actor": "Milos Forman",
-        "writer": "Francis Barrett",
-        "director": "Milos Forman"
-      },
-      "rec_titles": [
-        "The Rosie Project",
-        "The Good, the Bad and the Ugly",
-        "Disaster Movie",
-        "Keeping the Faith"
-      ]
-    },
-    {
-      "speaker": "USER",
-      "text": "Just checking—do you have more recommendations like that?",
-      "user_meta": {
-        "turn": 10,
-        "stage": "details",
-        "focus_field": "actor",
-        "focus_value": "Milos Forman",
-        "anchor_title": "The Return of the Living Dead",
-        "constraints": {
-          "genre": "cult",
-          "writer": "George A. Romero",
-          "plot": "mine",
-          "actor": "Milos Forman"
-        },
-        "shift_event": false,
-        "shift_event_obj": null
-      }
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I have just the thing for you! Have you considered \"The Stuff\"? It's a cult classic with a delightfully quirky premise and some great performances from Danny Aiello, Garrett Morris, and Paul Sorvino. Plus, it's a fun commentary on consumer culture and societal obsession.\n\nIf that doesn't strike your fancy, I'd also recommend \"Blade Runner\" - it's a sci-fi masterpiece with stunning visuals and a thought-provoking exploration of humanity.",
-      "constraints": {
-        "genre": "cult",
-        "plot": [
-          "just",
-          "more"
-        ],
-        "name": "You",
-        "actor": "Milos Forman",
-        "writer": "Francis Barrett",
-        "director": "Milos Forman"
-      },
-      "rec_titles": [
-        "The Stuff",
-        "Blade Runner",
-        "Hopeless",
-        "The Cabin in the Woods"
-      ]
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of Blade Runner? Maybe I’m overthinking it, but it sounds fascinating.",
-      "user_meta": {
-        "turn": 11,
-        "stage": "details",
-        "focus_field": "actor",
-        "focus_value": "Milos Forman",
-        "anchor_title": "The Return of the Living Dead",
-        "constraints": {
-          "genre": "cult",
-          "writer": "George A. Romero",
-          "plot": "mine",
-          "actor": "Milos Forman"
-        },
-        "shift_event": false,
-        "shift_event_obj": null
-      }
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think you might really enjoy \"The Trouble with Harry\"! It's a classic whodunit with a quirky tone and some great character interactions, not unlike something Milos Forman might have done. Plus, the setting and themes of small-town secrets and mysterious deaths seem like they could be right up your alley.",
-      "constraints": {
-        "genre": "cult",
-        "plot": [
-          "what",
-          "blade"
-        ],
-        "name": "Blade Runner",
-        "actor": "Milos Forman",
-        "writer": "Francis Barrett",
-        "director": "Milos Forman"
-      },
-      "rec_titles": [
-        "Wolf Creek",
-        "The Trouble with Harry",
-        "Lady in the Water",
-        "Zero Effect"
-      ]
-    },
-    {
-      "speaker": "USER",
-      "text": "Thanks for all the detail on The Trouble with Harry. I want to try something more germany—Maybe I’m overthinking it, but it sounds fascinating.",
-      "user_meta": {
-        "turn": 12,
-        "stage": "waiting_system",
-        "focus_field": "genre",
-        "focus_value": "germany",
-        "anchor_title": "Keeping the Faith",
-        "constraints": {
-          "genre": "germany",
-          "writer": "George A. Romero",
-          "plot": "mine",
-          "actor": "Milos Forman"
-        },
-        "shift_event": true,
-        "shift_event_obj": {
-          "turn": 12,
-          "from_focus": "actor",
-          "to_focus": "genre",
-          "bridge_field": "plot",
-          "bridge_value": "minds",
-          "from_anchor": "The Return of the Living Dead",
-          "to_anchor": "Keeping the Faith"
-        }
-      }
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think you might enjoy \"Wanderlust\" (2012), a film that combines elements of adventure, self-discovery, and spiritual questing. With its stunning Icelandic landscapes and themes of letting go of the past, it's a great match for someone looking for a thought-provoking German-language movie.",
-      "constraints": {
-        "genre": "germany",
-        "plot": [
-          "thanks",
-          "detail"
-        ],
-        "name": "The Trouble with Harry",
-        "actor": "Milos Forman",
-        "writer": "Francis Barrett",
-        "director": "Milos Forman",
-        "language": "German"
-      },
-      "rec_titles": [
-        "Wanderlust",
-        "3",
-        "The NeverEnding Story",
-        "Man on the Moon"
-      ]
-    },
-    {
-      "speaker": "USER",
-      "text": "Just checking—do you have more recommendations like that?",
-      "user_meta": {
-        "turn": 13,
-        "stage": "details",
-        "focus_field": "genre",
-        "focus_value": "germany",
-        "anchor_title": "Keeping the Faith",
-        "constraints": {
-          "genre": "germany",
-          "writer": "George A. Romero",
-          "plot": "mine",
-          "actor": "Milos Forman"
-        },
-        "shift_event": false,
-        "shift_event_obj": null
-      }
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "I think I have just the right recommendations for you! Based on your interest in German culture and Milos Forman, I'd like to suggest \"You\" (2014) - a thought-provoking film that explores themes of justice and morality, which seems to resonate with your previous preferences. The movie also features a gripping plot and strong performances.",
-      "constraints": {
-        "genre": "germany",
-        "plot": [
-          "just",
-          "more"
-        ],
-        "name": "You",
-        "actor": "Milos Forman",
-        "writer": "Francis Barrett",
-        "director": "Milos Forman",
-        "language": "German"
-      },
-      "rec_titles": [
-        "You",
-        "True Crime",
-        "The Cabin in the Woods",
-        "Tusk"
-      ]
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does X tell? That sounds intriguing.",
-      "user_meta": {
-        "turn": 14,
-        "stage": "details",
-        "focus_field": "genre",
-        "focus_value": "germany",
-        "anchor_title": "Keeping the Faith",
-        "constraints": {
-          "genre": "germany",
-          "writer": "George A. Romero",
-          "plot": "mine",
-          "actor": "Milos Forman"
-        },
-        "shift_event": false,
-        "shift_event_obj": null
-      }
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "What a fascinating combination of preferences! I think you'd really enjoy \"Amadeus\" (1979) - Milos Forman, the director and writer Francis Barrett are both associated with this iconic film about Wolfgang Amadeus Mozart's life, as told by his rival Antonio Salieri. Tom Hulce's portrayal of Mozart is particularly noteworthy, bringing to life one of history's most fascinating figures!",
-      "constraints": {
-        "genre": "germany",
-        "plot": [
-          "what",
-          "kind"
-        ],
-        "name": "X",
-        "actor": "Milos Forman",
-        "writer": "Francis Barrett",
-        "director": "Milos Forman",
-        "language": "German"
-      },
-      "rec_titles": [
-        "Amadeus",
-        "Pride and Prejudice",
-        "The Yearling",
-        "Witless Protection"
-      ]
-    },
-    {
-      "speaker": "USER",
-      "text": "Could we switch to something else by Mike Nichols? Hmm, I didn’t expect that vibe. (I’m thinking of Wolf.)",
-      "user_meta": {
-        "turn": 15,
+        "turn": 7,
         "stage": "waiting_system",
         "focus_field": "director",
-        "focus_value": "Mike Nichols",
-        "anchor_title": "You",
+        "focus_value": "Ed Harris",
+        "anchor_title": "The Cable Guy",
         "constraints": {
-          "genre": "germany",
-          "writer": "George A. Romero",
-          "plot": "mine",
-          "actor": "Milos Forman",
-          "director": "Mike Nichols"
+          "genre": "cult",
+          "plot": "killing",
+          "director": "Ed Harris"
         },
         "shift_event": true,
         "shift_event_obj": {
-          "turn": 15,
-          "from_focus": "genre",
+          "turn": 7,
+          "from_focus": "actor",
           "to_focus": "director",
-          "bridge_field": "genre",
-          "bridge_value": "germany",
-          "from_anchor": "Keeping the Faith",
-          "to_anchor": "You"
+          "bridge_field": "plot",
+          "bridge_value": "killing",
+          "from_anchor": "Junkhearts",
+          "to_anchor": "The Cable Guy"
         }
       }
     },
     {
       "speaker": "SYSTEM",
-      "text": "You've had a taste of Mike Nichols' work, and now you're looking for something else that might scratch that same itch! I think you'd really enjoy \"The Lives of Others\" - it's a powerful drama set in East Berlin, with incredible performances from Ulrich Mühe and Sebastian Koch. Plus, the themes of surveillance and human connection might resonate with you after experiencing the complex characters in Wolf.",
+      "text": "So you'd like to switch to something else by Ed Harris, but you're unsure if you'll enjoy or be scared by his movie \"You\". I understand! Based on your interest in cult movies and Ed Harris' involvement, I recommend checking out \"Afterlife\" (2011), a thought-provoking drama that explores the complexities of human relationships through the lens of the afterlife. With its unique premise and emotional depth, it's a great choice if you're looking for something that will resonate with you.",
       "constraints": {
-        "genre": "germany",
+        "genre": "cult",
         "plot": [
           "could",
           "switch"
         ],
-        "name": "Wolf",
-        "actor": "Milos Forman",
-        "writer": "Francis Barrett",
-        "director": "Mike Nichols",
-        "language": "German"
+        "name": "RED",
+        "actor": "Ed Harris",
+        "director": "Ed Harris"
       },
       "rec_titles": [
-        "Keeping the Faith",
-        "Trees Lounge",
-        "3",
-        "The Lives of Others"
+        "Afterlife",
+        "The Secret of My Success",
+        "Final Destination",
+        "A Clockwork Orange"
       ]
     },
     {
       "speaker": "USER",
       "text": "Just checking—do you have more recommendations like that?",
       "user_meta": {
-        "turn": 16,
+        "turn": 8,
         "stage": "details",
         "focus_field": "director",
-        "focus_value": "Mike Nichols",
-        "anchor_title": "You",
+        "focus_value": "Ed Harris",
+        "anchor_title": "The Cable Guy",
         "constraints": {
-          "genre": "germany",
-          "writer": "George A. Romero",
-          "plot": "mine",
-          "actor": "Milos Forman",
-          "director": "Mike Nichols"
+          "genre": "cult",
+          "plot": "killing",
+          "director": "Ed Harris"
         },
         "shift_event": false,
         "shift_event_obj": null
@@ -648,41 +295,37 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I have just the thing for you! Have you considered \"What Planet Are You From?\"? It's a unique blend of sci-fi and romance, with a great cast that includes Linda Fiorentino and Janeane Garofalo. Plus, the premise is just so intriguing - who wouldn't want to fall in love on another planet?",
+      "text": "Based on your interest in cult classics featuring Ed Harris, I understand you're looking for movies that share a similar vibe. From our previous list, I'd recommend \"The Fury\" (1991), which stars Ed Harris alongside an impressive cast, including Daryl Hannah and Amy Irving. This supernatural thriller explores the intersection of psychic abilities and government secrets, making it a great fit for fans of cult classics.",
       "constraints": {
-        "genre": "germany",
+        "genre": "cult",
         "plot": [
           "just",
           "more"
         ],
         "name": "You",
-        "actor": "Milos Forman",
-        "writer": "Francis Barrett",
-        "director": "Mike Nichols",
-        "language": "German"
+        "actor": "Ed Harris",
+        "director": "Ed Harris"
       },
       "rec_titles": [
-        "Shutter",
-        "What Planet Are You From?",
-        "My Girl 2",
-        "The Skull"
+        "Lakeview Terrace",
+        "Tell No One",
+        "The Fury",
+        "Friday the 13th Part 2"
       ]
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of RED. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "text": "I like the sound of Us. Who stars in it? That feels deeper than I thought.",
       "user_meta": {
-        "turn": 17,
+        "turn": 9,
         "stage": "details",
         "focus_field": "director",
-        "focus_value": "Mike Nichols",
-        "anchor_title": "You",
+        "focus_value": "Ed Harris",
+        "anchor_title": "The Cable Guy",
         "constraints": {
-          "genre": "germany",
-          "writer": "George A. Romero",
-          "plot": "mine",
-          "actor": "Milos Forman",
-          "director": "Mike Nichols"
+          "genre": "cult",
+          "plot": "killing",
+          "director": "Ed Harris"
         },
         "shift_event": false,
         "shift_event_obj": null
@@ -690,41 +333,311 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I've got just the thing for you! Have you considered \"The Stuff\"? It's a cult classic that shares some of the same quirky, offbeat energy as RED. Plus, with Danny Aiello and Garrett Morris starring, you're in for a treat - it's a wild ride filled with humor and suspense!",
+      "text": "I think I understand what you're looking for! You mentioned liking \"Us\" and wanting to explore movies with similar themes, which might be deeper than expected. Based on that, I'd recommend \"Fight Club\" (1996) starring Ed Harris (who also directed it!) - it's a cult classic that explores complex human relationships and the struggle against societal norms. If you're not in the mood for something quite so intense, I could also suggest \"Vampires\" (1998), which has a unique premise and some great performances from its cast.",
       "constraints": {
-        "genre": "germany",
+        "genre": "cult",
         "plot": [
           "like",
           "sound"
         ],
-        "name": "RED",
-        "actor": "Milos Forman",
-        "writer": "Francis Barrett",
-        "director": "Mike Nichols",
-        "language": "German"
+        "name": "Deep",
+        "actor": "Ed Harris",
+        "director": "Ed Harris"
       },
       "rec_titles": [
-        "The Stuff",
-        "The Magus",
-        "The Nanny",
-        "The Relic"
+        "Flubber",
+        "The Mortal Instruments: City of Bones",
+        "Fight Club",
+        "Vampires"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Deep tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ed Harris",
+        "anchor_title": "The Cable Guy",
+        "constraints": {
+          "genre": "cult",
+          "plot": "killing",
+          "director": "Ed Harris"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems you're looking for a movie that tells a story with a cult vibe, starring Ed Harris and directed by none other than Ed Harris himself! Based on your preferences, I'd recommend \"The Cable Guy\" (1996), which fits the bill with its quirky cult-like tone, featuring Ben Stiller as a socially awkward cable installer who takes his job very seriously.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Deep",
+        "actor": "Ed Harris",
+        "director": "Ed Harris"
+      },
+      "rec_titles": [
+        "The Expendables 2",
+        "Divergent",
+        "The Ring Two",
+        "The Cable Guy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ed Harris",
+        "anchor_title": "The Cable Guy",
+        "constraints": {
+          "genre": "cult",
+          "plot": "killing",
+          "director": "Ed Harris"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie that's the opposite of what you initially thought, and given your interest in Ed Harris as an actor, cult classic genre, and themes related to \"actually\" and \"think\". With those cues in mind, I'd recommend checking out \"A Clockwork Orange\" (1962), directed by Stanley Kubrick and starring Malcolm McDowell. This iconic film explores the complexities of human nature through a thought-provoking story that will keep you engaged and challenged.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Deep",
+        "actor": "Ed Harris",
+        "director": "Ed Harris"
+      },
+      "rec_titles": [
+        "The Right Stuff",
+        "Next Day Air",
+        "Alex in Wonderland",
+        "A Clockwork Orange"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ed Harris",
+        "anchor_title": "The Cable Guy",
+        "constraints": {
+          "genre": "cult",
+          "plot": "killing",
+          "director": "Ed Harris"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie with a cult vibe, starring Ed Harris, directed by Ed Harris, and involving themes of what and the unknown. Based on those constraints, I think you might enjoy \"Waiting\" (1999), which explores the complex emotions and relationships surrounding a pregnancy, much like Ted's introspective journey in Pride and Prejudice.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "Ted",
+        "actor": "Ed Harris",
+        "director": "Ed Harris"
+      },
+      "rec_titles": [
+        "Shaun of the Dead",
+        "Pride and Prejudice",
+        "Waiting",
+        "Friday the 13th Part 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ed Harris",
+        "anchor_title": "The Cable Guy",
+        "constraints": {
+          "genre": "cult",
+          "plot": "killing",
+          "director": "Ed Harris"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for something that's opposite of what you initially thought, right? That means I should suggest some movies that are a bit unconventional and might surprise you. Based on your preferences for cult movies with Ed Harris (actor or director), I think you'd enjoy \"Lady in the Water\" (2006). It's a fantasy film with a unique plot about an apartment building superintendent who rescues what he thinks is a young woman from his pool, only to discover she's actually a character from a bedtime story trying to get back home.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Ted",
+        "actor": "Ed Harris",
+        "director": "Ed Harris"
+      },
+      "rec_titles": [
+        "Next Day Air",
+        "Monty Python and the Holy Grail",
+        "Lady in the Water",
+        "Creepshow 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Super. I want to try something more cannabis (abused substance)—still with Liv Tyler if possible. That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "cannabis (abused substance)",
+        "anchor_title": "Knocked Up",
+        "constraints": {
+          "genre": "cannabis (abused substance)",
+          "director": "Ed Harris",
+          "actor": "Liv Tyler"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 14,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "Liv Tyler",
+          "from_anchor": "The Cable Guy",
+          "to_anchor": "Knocked Up"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you're looking for a movie that's related to cannabis and features Liv Tyler, with a deeper tone than expected. Given those constraints, I recommend \"Pineapple Express\" (2008), a stoner comedy that brings together Seth Rogen and James Franco as a process server and marijuana dealer who go on the run from hitmen and corrupt authorities after witnessing a murder.",
+      "constraints": {
+        "genre": "cannabis (abused substance)",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Super",
+        "actor": "Liv Tyler",
+        "director": "Ed Harris"
+      },
+      "rec_titles": [
+        "Can You Keep a Secret?",
+        "Scream 4",
+        "The Incredible Hulk",
+        "Pineapple Express"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "cannabis (abused substance)",
+        "anchor_title": "Knocked Up",
+        "constraints": {
+          "genre": "cannabis (abused substance)",
+          "director": "Ed Harris",
+          "actor": "Liv Tyler"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for more recommendations that match the vibe of a movie with cannabis as an abused substance, starring Liv Tyler, and directed by Ed Harris. That's a unique combination! Based on your preferences, I think \"Tusk\" could be a great fit - it's a dark comedy with a quirky tone, featuring Michael Parks in a memorable performance as a walrus-obsessed recluse.",
+      "constraints": {
+        "genre": "cannabis (abused substance)",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Liv Tyler",
+        "director": "Ed Harris"
+      },
+      "rec_titles": [
+        "Uncommon Valor",
+        "Knocked Up",
+        "Tusk",
+        "The Breakfast Club"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "cannabis (abused substance)",
+        "anchor_title": "Knocked Up",
+        "constraints": {
+          "genre": "cannabis (abused substance)",
+          "director": "Ed Harris",
+          "actor": "Liv Tyler"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're trying to decide if you'd enjoy or be scared by Us, and you're looking for a movie that explores themes of decision-making and uncertainty. Given your interest in Liv Tyler and Ed Harris, I think Smilla's Sense of Snow might be a great fit! This 1997 mystery drama stars Julia Ormond alongside Jim Broadbent and Tom Wilkinson, and it delves into the complexities of human behavior as Smilla uncovers clues to unravel a young boy's tragic death.",
+      "constraints": {
+        "genre": "cannabis (abused substance)",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "actor": "Liv Tyler",
+        "director": "Ed Harris"
+      },
+      "rec_titles": [
+        "Teddy Scares",
+        "The Equalizer",
+        "This Is Spinal Tap",
+        "Smilla's Sense of Snow"
       ]
     },
     {
       "speaker": "USER",
       "text": "What kind of story does Us tell? That feels deeper than I thought.",
       "user_meta": {
-        "turn": 18,
+        "turn": 17,
         "stage": "details",
-        "focus_field": "director",
-        "focus_value": "Mike Nichols",
-        "anchor_title": "You",
+        "focus_field": "genre",
+        "focus_value": "cannabis (abused substance)",
+        "anchor_title": "Knocked Up",
         "constraints": {
-          "genre": "germany",
-          "writer": "George A. Romero",
-          "plot": "mine",
-          "actor": "Milos Forman",
-          "director": "Mike Nichols"
+          "genre": "cannabis (abused substance)",
+          "director": "Ed Harris",
+          "actor": "Liv Tyler"
         },
         "shift_event": false,
         "shift_event_obj": null
@@ -732,74 +645,106 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I have just the right fit for you! Have you considered \"The Lives of Others\"? It's a critically acclaimed film that explores the complexities of human connection in a fascinating way, much like \"Us\". You'll be transported to East Berlin in the 1980s and get caught up in the lives of a writer and his lover through the eyes of an observant agent.",
+      "text": "Based on your interest in Us and its deeper themes, I understand you're looking for stories that explore what kind of meaning lies beneath the surface. You mentioned a connection to cannabis as an abused substance, the presence of Liv Tyler, Ed Harris (as director), and plot keywords related to \"what\" and \"kind\". With those constraints in mind, I recommend \"American Dreamz\" (2006) starring Dennis Quaid, Chris Klein, and Willem Dafoe. The movie pokes fun at the American Dream, exploring themes of identity, community, and what it means to be an outsider.",
       "constraints": {
-        "genre": "germany",
+        "genre": "cannabis (abused substance)",
         "plot": [
           "what",
           "kind"
         ],
         "name": "Deep",
-        "actor": "Milos Forman",
-        "writer": "Francis Barrett",
-        "director": "Mike Nichols",
-        "language": "German"
+        "actor": "Liv Tyler",
+        "director": "Ed Harris"
       },
       "rec_titles": [
-        "Little Fockers",
-        "The Lives of Others",
-        "Downfall",
-        "3"
+        "Witless Protection",
+        "Waiting",
+        "American Dreamz",
+        "It's a Wonderful Life"
       ]
     },
     {
       "speaker": "USER",
-      "text": "Thanks for all the detail on Ted. I want to try something more vietnam war—That feels deeper than I thought.",
+      "text": "I like the sound of Us. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "cannabis (abused substance)",
+        "anchor_title": "Knocked Up",
+        "constraints": {
+          "genre": "cannabis (abused substance)",
+          "director": "Ed Harris",
+          "actor": "Liv Tyler"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you liked the sound of \"Us\" and were surprised by its vibe, which means you're open to exploring films with unconventional themes or genres. Based on this, I recommend two movies from the list: \"Looper\" and \"Restless\". \"Looper\" features a unique time-travel premise and a standout performance by Joseph Gordon-Levitt, while \"Restless\" is a coming-of-age drama that explores themes of identity and relationships through its relatable protagonist.",
+      "constraints": {
+        "genre": "cannabis (abused substance)",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "actor": "Liv Tyler",
+        "director": "Ed Harris"
+      },
+      "rec_titles": [
+        "Restless",
+        "Maid in Manhattan",
+        "Looper",
+        "The Right Stuff"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Kyle Chandler. Hmm, I didn’t expect that vibe. (I’m thinking of X.)",
       "user_meta": {
         "turn": 19,
         "stage": "waiting_system",
-        "focus_field": "genre",
-        "focus_value": "vietnam war",
-        "anchor_title": "Full Metal Jacket",
+        "focus_field": "actor",
+        "focus_value": "Kyle Chandler",
+        "anchor_title": "The Big Lebowski",
         "constraints": {
-          "genre": "vietnam war",
-          "writer": "George A. Romero",
-          "plot": "mine",
-          "actor": "Milos Forman",
-          "director": "Mike Nichols"
+          "genre": "cannabis (abused substance)",
+          "actor": "Kyle Chandler",
+          "writer": "Sue Grafton"
         },
         "shift_event": true,
         "shift_event_obj": {
           "turn": 19,
-          "from_focus": "director",
-          "to_focus": "genre",
-          "bridge_field": "plot",
-          "bridge_value": "wish",
-          "from_anchor": "You",
-          "to_anchor": "Full Metal Jacket"
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "writer",
+          "bridge_value": "Sue Grafton",
+          "from_anchor": "Knocked Up",
+          "to_anchor": "The Big Lebowski"
         }
       }
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I've got just the film for you! Have you considered \"The Wind That Shakes the Barley\"? It's a powerful and poignant portrayal of the Irish War of Independence, with incredible performances from Orla Fitzgerald and Padraic Delaney. The cinematography is stunning, and the story really gets under your skin.\n\nIf that doesn't strike your fancy, I think you might enjoy \"Braveheart\" instead. Who can resist a good epic battle scene? Mel Gibson's performance as William Wallace is legendary, and the film's themes of freedom and sacrifice are sure to resonate.",
+      "text": "So you're looking for movies that feature Kyle Chandler, perhaps with a twist of unexpectedness, and also touch on themes related to finding something (whether it's a person, an answer, or a way out). Let me suggest two options from this list: \"The Only Good Indian\" has Wes Studi, known for his strong performances in Native American-themed films, playing a bounty hunter who must find a young runaway. Alternatively, \"Deep\" is a tense thriller that explores the concept of finding one's way out of a precarious situation, with a cast of med students trapped in a neuroscience experiment gone wrong.",
       "constraints": {
-        "genre": "war",
+        "genre": "cannabis (abused substance)",
         "plot": [
-          "thanks",
-          "detail"
+          "could",
+          "find"
         ],
-        "name": "War",
-        "actor": "Milos Forman",
-        "writer": "Francis Barrett",
-        "director": "Mike Nichols",
-        "language": "German"
+        "name": "X",
+        "actor": "Kyle Chandler",
+        "director": "Ed Harris"
       },
       "rec_titles": [
-        "The Wind That Shakes the Barley",
-        "Princess Mononoke",
-        "The Siege",
-        "Braveheart"
+        "The Only Good Indian",
+        "Wedding Crashers",
+        "You Only Live Twice",
+        "Deep"
       ]
     },
     {
@@ -808,15 +753,13 @@
       "user_meta": {
         "turn": 20,
         "stage": "details",
-        "focus_field": "genre",
-        "focus_value": "vietnam war",
-        "anchor_title": "Full Metal Jacket",
+        "focus_field": "actor",
+        "focus_value": "Kyle Chandler",
+        "anchor_title": "The Big Lebowski",
         "constraints": {
-          "genre": "vietnam war",
-          "writer": "George A. Romero",
-          "plot": "mine",
-          "actor": "Milos Forman",
-          "director": "Mike Nichols"
+          "genre": "cannabis (abused substance)",
+          "actor": "Kyle Chandler",
+          "writer": "Sue Grafton"
         },
         "shift_event": false,
         "shift_event_obj": null
@@ -824,24 +767,1253 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "I think I have just the thing for you! Have you considered \"Schindler's List\"? It's a powerful and emotional film that tells an important true story, and Liam Neeson gives a remarkable performance as Oskar Schindler. Plus, it's a great opportunity to learn more about an often-overlooked aspect of World War II history.",
+      "text": "So you're looking for more movies like those featuring Kyle Chandler, Ed Harris, and a focus on substance abuse or more? I think \"Panic Room\" would be a great fit! This thriller starring Jodie Foster has a similar tone of tension and suspense that might scratch that itch.",
       "constraints": {
-        "genre": "war",
+        "genre": "cannabis (abused substance)",
         "plot": [
           "just",
           "more"
         ],
         "name": "You",
-        "actor": "Milos Forman",
-        "writer": "Francis Barrett",
-        "director": "Mike Nichols",
-        "language": "German"
+        "actor": "Kyle Chandler",
+        "director": "Ed Harris"
       },
       "rec_titles": [
-        "Catch-22",
-        "Saving Private Ryan",
-        "Schindler's List",
-        "The White Countess"
+        "Panic Room",
+        "The Stuff",
+        "My Girl 2",
+        "Wolf Girl"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Panic Room tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 21,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Kyle Chandler",
+        "anchor_title": "The Big Lebowski",
+        "constraints": {
+          "genre": "cannabis (abused substance)",
+          "actor": "Kyle Chandler",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for a movie that doesn't quite fit with the vibe of Panic Room, which had a thriller/drama genre with intense moments. You'd like something different, perhaps with a unique plot or unexpected twists.\n\nBased on your cues, I think Lady in the Water (2006) might be an interesting choice. This fantasy drama film features Ed Harris as one of its main actors, and it has a fascinating storyline about a character from a bedtime story trying to get back home. The movie also explores themes of friendship, sacrifice, and the power of stories.\n\nAlternatively, if you're open to exploring other genres, Utsav (2003) is an Indian drama film that tells a poignant love story set in ancient India. With its rich cultural context and strong performances from Anupam Kher and Rekha, it's a great choice for those who appreciate international cinema.",
+      "constraints": {
+        "genre": "cannabis (abused substance)",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Panic Room",
+        "actor": "Kyle Chandler",
+        "director": "Ed Harris"
+      },
+      "rec_titles": [
+        "Utsav",
+        "Lady in the Water",
+        "The Andromeda Strain",
+        "Pride and Prejudice"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Tron. I want to try something more romantic comedy—I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 22,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "romantic comedy",
+        "anchor_title": "Purple Violets",
+        "constraints": {
+          "genre": "romantic comedy",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 22,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "forced",
+          "from_anchor": "The Big Lebowski",
+          "to_anchor": "Purple Violets"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a romantic comedy that's not too intense, and you'd like to see Kyle Chandler or Ed Harris involved somehow (although neither of them are starring in these recommendations). You're also open to trying something new! Based on this, I think you might enjoy \"Lost in Translation\" (2003), which is a critically acclaimed romantic drama starring Bill Murray and Scarlett Johansson. The film follows two strangers who form an unlikely bond in Tokyo, and it's a beautifully shot and poignant exploration of human connection.",
+      "constraints": {
+        "genre": "romantic comedy",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Tron",
+        "actor": "Kyle Chandler",
+        "director": "Ed Harris"
+      },
+      "rec_titles": [
+        "Two Can Play That Game",
+        "Lost in Translation",
+        "In Good Company",
+        "I Love You Phillip Morris"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "romantic comedy",
+        "anchor_title": "Purple Violets",
+        "constraints": {
+          "genre": "romantic comedy",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more romantic comedies with Kyle Chandler, and possibly something light-hearted that doesn't have Ed Harris as a director. Based on your preferences, I think you might enjoy \"13 Going on 30\" (2004), which stars Jennifer Garner in a fun and quirky story about a teenage girl who wakes up one day to find herself 30 years older. The movie has a great balance of humor, heart, and romance that's hard to resist!",
+      "constraints": {
+        "genre": "romantic comedy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Kyle Chandler",
+        "director": "Ed Harris"
+      },
+      "rec_titles": [
+        "13 Going on 30",
+        "Outside Providence",
+        "The Secret of My Success",
+        "The Kingdom"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "romantic comedy",
+        "anchor_title": "Purple Violets",
+        "constraints": {
+          "genre": "romantic comedy",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you like the sound of Ted and are interested in romantic comedies starring Kyle Chandler, with a director who is not Ed Harris (as he's known for directing dramas). Based on your preferences, I think you might enjoy \"Forgetting Sarah Marshall\" - it's a hilarious rom-com about a guy dealing with his recent break-up at a Hawaiian resort, where he runs into his ex and her new beau. The film features Jason Segel, Kristen Bell, and Russell Brand in memorable roles.",
+      "constraints": {
+        "genre": "romantic comedy",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "actor": "Kyle Chandler",
+        "director": "Ed Harris"
+      },
+      "rec_titles": [
+        "Alfie",
+        "Lost in Translation",
+        "That Thing You Do!",
+        "Forgetting Sarah Marshall"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Hawaii? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "romantic comedy",
+        "anchor_title": "Purple Violets",
+        "constraints": {
+          "genre": "romantic comedy",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a romantic comedy that captures the essence of Hawaii, with Kyle Chandler and Ed Harris being two of your favorite connections. None of these movies quite fit the bill, but I think I can suggest a couple that might scratch that romantic itch! How about \"This Means War\", which stars Chris Pine alongside Reese Witherspoon in a fun-loving battle of the sexes? Or if you're open to something a bit more offbeat, \"Outside Providence\" has a quirky charm and a coming-of-age story that might appeal.",
+      "constraints": {
+        "genre": "romantic comedy",
+        "plot": [
+          "what"
+        ],
+        "name": "Hawaii",
+        "actor": "Kyle Chandler",
+        "director": "Ed Harris"
+      },
+      "rec_titles": [
+        "This Means War",
+        "Outside Providence",
+        "Taxi Driver",
+        "This Is Spinal Tap"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Her tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "romantic comedy",
+        "anchor_title": "Purple Violets",
+        "constraints": {
+          "genre": "romantic comedy",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a romantic comedy with a feel-good vibe, featuring Kyle Chandler as an actor and Ed Harris as a director. Unfortunately, none of these movies quite fit that bill.\n\nHowever, if you're open to something a bit different, I think \"She's the Man\" could be a great choice! This lighthearted rom-com stars Channing Tatum and Amanda Bynes (not Kyle Chandler or Ed Harris, but still a fun watch). It's about a girl who disguises herself as her brother to play soccer at an elite boarding school, and hilarity ensues.",
+      "constraints": {
+        "genre": "romantic comedy",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her",
+        "actor": "Kyle Chandler",
+        "director": "Ed Harris"
+      },
+      "rec_titles": [
+        "Up in the Air",
+        "Elizabeth",
+        "She's the Man",
+        "The Perez Family"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "romantic comedy",
+        "anchor_title": "Purple Violets",
+        "constraints": {
+          "genre": "romantic comedy",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on what you said, you're looking for a romantic comedy that features Kyle Chandler (although he's not in any of these films) and Ed Harris (who is a director, but not specifically in these movies). Let me recommend \"Love Actually\" instead! This classic rom-com has a delightful ensemble cast, including Hugh Grant and Liam Neeson, and follows the interconnected love stories of eight couples during the holiday season.",
+      "constraints": {
+        "genre": "romantic comedy",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "Her",
+        "actor": "Kyle Chandler",
+        "director": "Ed Harris"
+      },
+      "rec_titles": [
+        "The Brothers Bloom",
+        "Zero Effect",
+        "Love Actually",
+        "You've Got Mail"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Burr Steers? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 28,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Burr Steers",
+        "anchor_title": "Fool's Gold",
+        "constraints": {
+          "genre": "romantic comedy",
+          "writer": "Sue Grafton",
+          "director": "Burr Steers",
+          "plot": "your"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 28,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "your",
+          "from_anchor": "Purple Violets",
+          "to_anchor": "Fool's Gold"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for something by Burr Steers that's not \"I Can't Think Straight\", which is a romantic comedy, right? Let me recommend \"That Thing You Do!\" (1996), a delightful film with a similar tone and wit. It's a nostalgic and heartwarming story about a one-hit wonder band, with great performances from the cast and a catchy soundtrack to boot!",
+      "constraints": {
+        "genre": "romantic comedy",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "RED",
+        "actor": "Burr Steers",
+        "director": "Burr Steers",
+        "writer": "Burr Steers"
+      },
+      "rec_titles": [
+        "Hollywood Ending",
+        "Home Fries",
+        "That Thing You Do!",
+        "Downfall"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Burr Steers",
+        "anchor_title": "Fool's Gold",
+        "constraints": {
+          "genre": "romantic comedy",
+          "writer": "Sue Grafton",
+          "director": "Burr Steers",
+          "plot": "your"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for more romantic comedies like those with Burr Steers involved, right? Based on that, I'd recommend \"The Rocker\" (2008), which has a similar tone and humor to what Burr Steers brings to the table. This one's about a drummer who gets a second chance at stardom through his teenage nephew's high school rock band - it's a funny and heartwarming ride!",
+      "constraints": {
+        "genre": "romantic comedy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Burr Steers",
+        "director": "Burr Steers",
+        "writer": "Burr Steers"
+      },
+      "rec_titles": [
+        "The Rocker",
+        "12 Angry Men",
+        "New York Minute",
+        "Shaun of the Dead"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Chad Hayes? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of The Rocker.)",
+      "user_meta": {
+        "turn": 30,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Chad Hayes",
+        "anchor_title": "The Pallbearer",
+        "constraints": {
+          "genre": "romantic comedy",
+          "writer": "Chad Hayes",
+          "plot": "your",
+          "actor": "Bradley Cooper"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 30,
+          "from_focus": "director",
+          "to_focus": "writer",
+          "bridge_field": "actor",
+          "bridge_value": "Bradley Cooper",
+          "from_anchor": "Fool's Gold",
+          "to_anchor": "The Pallbearer"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a movie written by Chad Hayes, and you're torn between enjoying the romantic comedy aspects and being scared - which doesn't seem like the case given his writing credits!\n\nBased on your preferences, I think you might enjoy \"Chasing Amy\" (1997), a romantic comedy written by Kevin Smith, not Chad Hayes. However, if you'd like to stick with a movie actually written by Chad Hayes, I recommend \"The Rocker\" (2008) which is a romantic comedy starring Rainn Wilson and Christina Applegate.\n\nIf neither of these options appeal to you, another alternative could be \"Zookeeper\" (2011), an animal-themed rom-com with a touch of adventure, featuring Kevin James as the lovable zookeeper.",
+      "constraints": {
+        "genre": "romantic comedy",
+        "plot": [
+          "written",
+          "decide"
+        ],
+        "name": "Yes",
+        "actor": "Burr Steers",
+        "director": "Burr Steers",
+        "writer": "Chad Hayes"
+      },
+      "rec_titles": [
+        "Forrest Gump",
+        "Chasing Amy",
+        "Zookeeper",
+        "Without a Paddle"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Chad Hayes",
+        "anchor_title": "The Pallbearer",
+        "constraints": {
+          "genre": "romantic comedy",
+          "writer": "Chad Hayes",
+          "plot": "your",
+          "actor": "Bradley Cooper"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more romantic comedies like those starring Burr Steers, and with plots that touch on themes of relationships and more. I think \"Definitely, Maybe\" would be a great fit - it's a witty and charming film that explores the complexities of love and relationships through a father's attempt to explain his past to his 11-year-old daughter. With Ryan Reynolds leading the cast, you're in for a treat!",
+      "constraints": {
+        "genre": "romantic comedy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Burr Steers",
+        "director": "Burr Steers",
+        "writer": "Chad Hayes"
+      },
+      "rec_titles": [
+        "Monster-in-Law",
+        "Definitely, Maybe",
+        "Friends with Kids",
+        "A Guy Thing"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Definitely, Maybe? That sounds intriguing.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Chad Hayes",
+        "anchor_title": "The Pallbearer",
+        "constraints": {
+          "genre": "romantic comedy",
+          "writer": "Chad Hayes",
+          "plot": "your",
+          "actor": "Bradley Cooper"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a romantic comedy that's intriguing, with no signs of action or crime dramas in sight! Given that Definitely, Maybe sounds like an appealing title, I think you might enjoy 50 First Dates (2004). This Adam Sandler-starring film tells the story of Henry, who falls for Lucy despite her short-term memory loss, and it's a sweet, lighthearted take on love and relationships.",
+      "constraints": {
+        "genre": "romantic comedy",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Definitely, Maybe",
+        "actor": "Burr Steers",
+        "director": "Burr Steers",
+        "writer": "Chad Hayes"
+      },
+      "rec_titles": [
+        "The Equalizer",
+        "That Thing You Do!",
+        "Training Day",
+        "50 First Dates"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Lucy. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Chad Hayes",
+        "anchor_title": "The Pallbearer",
+        "constraints": {
+          "genre": "romantic comedy",
+          "writer": "Chad Hayes",
+          "plot": "your",
+          "actor": "Bradley Cooper"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a movie that's not scary, but rather enjoyable and maybe even romantic! Based on your interest in \"Lucy\" and your preferences for Burr Steers as an actor, I think you might enjoy the light-hearted and quirky \"The Puffy Chair\" (2005). This indie rom-com follows Josh's hilarious misadventures as he tries to deliver his father's birthday gift, and it stars Mark Duplass and Katie Aselton.",
+      "constraints": {
+        "genre": "romantic comedy",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Lucy",
+        "actor": "Burr Steers",
+        "director": "Burr Steers",
+        "writer": "Chad Hayes"
+      },
+      "rec_titles": [
+        "In the Woods",
+        "The Puffy Chair",
+        "The Nutty Professor",
+        "Shallow Hal"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 34,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Chad Hayes",
+        "anchor_title": "The Pallbearer",
+        "constraints": {
+          "genre": "romantic comedy",
+          "writer": "Chad Hayes",
+          "plot": "your",
+          "actor": "Bradley Cooper"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on what I've gathered, you're looking for a story that explores themes of identity and family dynamics, with a touch of quirkiness and humor, all while being directed by Burr Steers. Considering these constraints, I think you might enjoy \"The Family Stone\" (2005), where Diane Keaton shines as the matriarch of a lovably eccentric family, or perhaps \"Outside Providence\" (1999), which follows a young outsider as he navigates his way through prep school and self-discovery.",
+      "constraints": {
+        "genre": "romantic comedy",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "actor": "Burr Steers",
+        "director": "Burr Steers",
+        "writer": "Chad Hayes"
+      },
+      "rec_titles": [
+        "The Family Stone",
+        "Outside Providence",
+        "Super",
+        "Jerry Maguire"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Her. I want to try something more british cuisine—still with Scarlett Johansson if possible. That sounds intriguing.",
+      "user_meta": {
+        "turn": 35,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "british cuisine",
+        "anchor_title": "Vicky Cristina Barcelona",
+        "constraints": {
+          "genre": "british cuisine",
+          "writer": "Chad Hayes",
+          "plot": "your",
+          "actor": "Scarlett Johansson"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 35,
+          "from_focus": "writer",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "Scarlett Johansson",
+          "from_anchor": "The Pallbearer",
+          "to_anchor": "Vicky Cristina Barcelona"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie that combines British cuisine with Scarlett Johansson, and given the mention of detail in your previous request, I think you might enjoy \"Avengers: Age of Ultron\"! This Marvel blockbuster brings together some of Hollywood's biggest stars, including Scarlett Johansson as Black Widow, in an action-packed adventure that's sure to deliver.",
+      "constraints": {
+        "genre": "british cuisine",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Her",
+        "actor": "Scarlett Johansson",
+        "director": "Burr Steers",
+        "writer": "Chad Hayes"
+      },
+      "rec_titles": [
+        "The Island",
+        "Whiteout",
+        "Avengers: Age of Ultron",
+        "Scream 4"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "british cuisine",
+        "anchor_title": "Vicky Cristina Barcelona",
+        "constraints": {
+          "genre": "british cuisine",
+          "writer": "Chad Hayes",
+          "plot": "your",
+          "actor": "Scarlett Johansson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems like you're looking for more recommendations similar to what we've discussed earlier, with a focus on British cuisine and featuring Scarlett Johansson, along with some common plot keywords like \"just\" and \"more\". Based on those cues, I'd recommend checking out \"Her\" (2013), an intriguing sci-fi romance that explores the complexities of human connection in a futuristic world, starring Scarlett Johansson alongside Joaquin Phoenix. Alternatively, if you're in the mood for something more light-hearted, \"Manny & Lo\" (N/A) is another option that features Scarlett Johansson in a coming-of-age story with a strong female lead.",
+      "constraints": {
+        "genre": "british cuisine",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Scarlett Johansson",
+        "director": "Burr Steers",
+        "writer": "Chad Hayes"
+      },
+      "rec_titles": [
+        "Her",
+        "Manny & Lo",
+        "Iron Man 2",
+        "Despicable Me 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "british cuisine",
+        "anchor_title": "Vicky Cristina Barcelona",
+        "constraints": {
+          "genre": "british cuisine",
+          "writer": "Chad Hayes",
+          "plot": "your",
+          "actor": "Scarlett Johansson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your interest in Ted and your preferences for British cuisine, Scarlett Johansson, Burr Steers, Chad Hayes, and plot keywords like \"sound\", I'm recommending two movies that might resonate with you.\n\nFirstly, I think Alex in Wonderland (1976) could be an interesting choice. This film, directed by Paul Mazursky, features a protagonist who is a filmmaker struggling to balance artistic vision with commercial success - a theme that aligns with your interest in Ted's blend of humor and heart. The movie also stars Jeanne Moreau, Ellen Burstyn, and Angelo Rossitto, making it a unique and thought-provoking watch.\n\nSecondly, Castle in the Sky (1986) might be another great fit for you. This animated film by Hayao Miyazaki has a whimsical quality to its storytelling and visuals, which could appeal to your sense of humor and love for British cuisine. The themes of creativity, perseverance, and chasing one's dreams are also central to this movie, making it an uplifting watch.\n\nLet me know if you'd like more recommendations or have any questions about these films!",
+      "constraints": {
+        "genre": "british cuisine",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "actor": "Scarlett Johansson",
+        "director": "Burr Steers",
+        "writer": "Chad Hayes"
+      },
+      "rec_titles": [
+        "Lord Jim",
+        "The Skull",
+        "Alex in Wonderland",
+        "Castle in the Sky"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "british cuisine",
+        "anchor_title": "Vicky Cristina Barcelona",
+        "constraints": {
+          "genre": "british cuisine",
+          "writer": "Chad Hayes",
+          "plot": "your",
+          "actor": "Scarlett Johansson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I understand what you're looking for - a story that explores the theme of \"what\" and \"kind\", with a hint of British cuisine flair, starring Scarlett Johansson (although she's not in any of these movies), directed by Burr Steers or Chad Hayes (who also didn't work on any of these films), and possibly a dash of animation. Based on your constraints, I recommend checking out the animated classic \"The Last Unicorn\" (1968), featuring stunning animation, beautiful music, and a whimsical story that will transport you to a magical world.",
+      "constraints": {
+        "genre": "british cuisine",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "actor": "Scarlett Johansson",
+        "director": "Burr Steers",
+        "writer": "Chad Hayes"
+      },
+      "rec_titles": [
+        "The Last Unicorn",
+        "The Yearling",
+        "Hitch",
+        "2010"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "british cuisine",
+        "anchor_title": "Vicky Cristina Barcelona",
+        "constraints": {
+          "genre": "british cuisine",
+          "writer": "Chad Hayes",
+          "plot": "your",
+          "actor": "Scarlett Johansson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie that explores deeper themes and emotions, feeling like \"You\" (2000) did, with a hint of British flair, perhaps? Based on those cues, I recommend \"Waiting\" (1999), which follows an artist's inner turmoil as she navigates the complexities of carrying a child for another couple. The film features a thought-provoking plot and explores what it means to feel deeply, all while showcasing Scarlett Johansson in one of her early roles.",
+      "constraints": {
+        "genre": "british cuisine",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Deep",
+        "actor": "Scarlett Johansson",
+        "director": "Burr Steers",
+        "writer": "Chad Hayes"
+      },
+      "rec_titles": [
+        "Waiting",
+        "The Wraith",
+        "Monsters, Inc.",
+        "Alex in Wonderland"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Connie Ray. That sounds intriguing. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 40,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Connie Ray",
+        "anchor_title": "Lord Jim",
+        "constraints": {
+          "genre": "british cuisine",
+          "writer": "Chad Hayes",
+          "actor": "Connie Ray"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 40,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "genre",
+          "bridge_value": "british cuisine",
+          "from_anchor": "Vicky Cristina Barcelona",
+          "to_anchor": "Lord Jim"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for movies that feature Connie Ray, possibly with a hint of British cuisine, and maybe some connections to Burr Steers, Chad Hayes, or a thrilling plot involving finding something or someone. Based on these cues, I'd recommend \"Thank You for Smoking\" (2005), a satirical comedy starring Connie Ray alongside an impressive cast, including William H. Macy and J.K. Simmons.",
+      "constraints": {
+        "genre": "british cuisine",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "X",
+        "actor": "Connie Ray",
+        "director": "Burr Steers",
+        "writer": "Chad Hayes"
+      },
+      "rec_titles": [
+        "Torn Curtain",
+        "Adventureland",
+        "Thank You for Smoking",
+        "The Missing"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Connie Ray",
+        "anchor_title": "Lord Jim",
+        "constraints": {
+          "genre": "british cuisine",
+          "writer": "Chad Hayes",
+          "actor": "Connie Ray"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more recommendations like \"just checking—do you have more recommendations like that?\" with a hint of British cuisine, Connie Ray, Burr Steers, Chad Hayes, and plot keywords including \"just\" and \"more\". Based on these cues, I'd recommend \"Labyrinths\" (1962), a gripping drama that explores themes of grief, despair, and the complexity of human relationships - much like the emotional depth found in British cuisine.",
+      "constraints": {
+        "genre": "british cuisine",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Connie Ray",
+        "director": "Burr Steers",
+        "writer": "Chad Hayes"
+      },
+      "rec_titles": [
+        "The Right Stuff",
+        "Labyrinths",
+        "Things Fall Apart",
+        "White Night"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Connie Ray",
+        "anchor_title": "Lord Jim",
+        "constraints": {
+          "genre": "british cuisine",
+          "writer": "Chad Hayes",
+          "actor": "Connie Ray"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for something that's quite the opposite of what we initially discussed! I've got just the recommendations for you.\n\nI think you might enjoy \"The Reflecting Skin\" (1990) - a cult classic with a unique blend of vampire lore and small-town Americana, starring Viggo Mortensen. Its eerie atmosphere and themes of secrets and disappearance should provide an interesting contrast to your initial preferences. Alternatively, \"Haunted\" (2002) could also be a great fit, as it explores the idea of homes having a haunting presence on their former occupants' lives.",
+      "constraints": {
+        "genre": "british cuisine",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "You",
+        "actor": "Connie Ray",
+        "director": "Burr Steers",
+        "writer": "Chad Hayes"
+      },
+      "rec_titles": [
+        "Haunted",
+        "Things Fall Apart",
+        "The Reflecting Skin",
+        "Wide Sargasso Sea"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Reflecting Skin? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Connie Ray",
+        "anchor_title": "Lord Jim",
+        "constraints": {
+          "genre": "british cuisine",
+          "writer": "Chad Hayes",
+          "actor": "Connie Ray"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on what I've gathered, you're looking for a movie with a unique vibe that's different from The Reflecting Skin. You seem to be drawn to British culture, with no specific actor preferences other than Connie Ray, and the writers Chad Hayes and Burr Steers aren't associated with these movies either.\n\nOne film that caught my attention is Paycheck (2003), an action-packed thriller where Ben Affleck plays an engineer who discovers his memories have been erased, and he must uncover what's really going on to survive. The movie has a similar blend of mystery and action found in The Reflecting Skin, but with a more fast-paced tone.",
+      "constraints": {
+        "genre": "british cuisine",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "The Reflecting Skin",
+        "actor": "Connie Ray",
+        "director": "Burr Steers",
+        "writer": "Chad Hayes"
+      },
+      "rec_titles": [
+        "Wide Sargasso Sea",
+        "Paycheck",
+        "Prometheus",
+        "Zero Effect"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Florian Henckel von Donnersmarck? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of The Reflecting Skin.)",
+      "user_meta": {
+        "turn": 44,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Florian Henckel von Donnersmarck",
+        "anchor_title": "Things Fall Apart",
+        "constraints": {
+          "genre": "british cuisine",
+          "writer": "Chad Hayes",
+          "actor": "Lindsay Duncan",
+          "director": "Florian Henckel von Donnersmarck"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 44,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Lindsay Duncan",
+          "from_anchor": "Lord Jim",
+          "to_anchor": "Things Fall Apart"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking to switch gears and try something else by Florian Henckel von Donnersmarck, but you're unsure if you'd enjoy his style in \"The Reflecting Skin\" due to potential scares. \n\nI think I can help! Have you considered watching \"The Lives of Others\"? This critically acclaimed film is a thought-provoking exploration of human nature during the East Berlin era, with outstanding performances from Ulrich Mühe and Martina Gedeck.",
+      "constraints": {
+        "genre": "british cuisine",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "RED",
+        "actor": "Connie Ray",
+        "director": "Florian Henckel von Donnersmarck",
+        "writer": "Florian Henckel von Donnersmarck"
+      },
+      "rec_titles": [
+        "The Lives of Others",
+        "The Seduction of Joe Tynan",
+        "True Blood",
+        "The Whistler"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Florian Henckel von Donnersmarck",
+        "anchor_title": "Things Fall Apart",
+        "constraints": {
+          "genre": "british cuisine",
+          "writer": "Chad Hayes",
+          "actor": "Lindsay Duncan",
+          "director": "Florian Henckel von Donnersmarck"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more recommendations like those British cuisine-inspired films with Connie Ray, directed by Florian Henckel von Donnersmarck, and featuring a certain \"just\" theme in the plots. Based on that, I think you might enjoy \"Compliance\", a thought-provoking thriller that explores the darker side of human nature when an employee is accused of stealing at a fast food joint. The film's tense atmosphere and themes of power dynamics are reminiscent of some British dramas.",
+      "constraints": {
+        "genre": "british cuisine",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Connie Ray",
+        "director": "Florian Henckel von Donnersmarck",
+        "writer": "Florian Henckel von Donnersmarck"
+      },
+      "rec_titles": [
+        "Compliance",
+        "RED",
+        "You Kill Me",
+        "This Is the End"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Florian Henckel von Donnersmarck",
+        "anchor_title": "Things Fall Apart",
+        "constraints": {
+          "genre": "british cuisine",
+          "writer": "Chad Hayes",
+          "actor": "Lindsay Duncan",
+          "director": "Florian Henckel von Donnersmarck"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you mentioned earlier that maybe things didn't quite go as planned, and I'm here to help you find a movie that resonates with that theme. Based on your interest in British cuisine (which I'll assume is just a fun fact!), Connie Ray, Florian Henckel von Donnersmarck, and the plot keywords \"wrong\" and \"earlier\", I'd recommend checking out \"Evil Dead II\". This cult classic features Ash Williams trying to survive an earlier onslaught of demons, which fits nicely with your theme.",
+      "constraints": {
+        "genre": "british cuisine",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "You",
+        "actor": "Connie Ray",
+        "director": "Florian Henckel von Donnersmarck",
+        "writer": "Florian Henckel von Donnersmarck"
+      },
+      "rec_titles": [
+        "Avengers: Age of Ultron",
+        "Sorority Row",
+        "Evil Dead II",
+        "Thick as Thieves"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Evil Dead II? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Florian Henckel von Donnersmarck",
+        "anchor_title": "Things Fall Apart",
+        "constraints": {
+          "genre": "british cuisine",
+          "writer": "Chad Hayes",
+          "actor": "Lindsay Duncan",
+          "director": "Florian Henckel von Donnersmarck"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a movie with a fascinating mood, possibly similar to Evil Dead II, considering your interest in British cuisine and the involvement of Connie Ray, Florian Henckel von Donnersmarck, or his writing credits.\n\nBased on these cues, I'd like to recommend 'Prometheus' (2012), which explores themes of humanity's relationship with fire, technology, and destruction. The movie features an all-star cast, including Michael Fassbender and Noomi Rapace, set in end-of-millennium Britain and continental Europe.",
+      "constraints": {
+        "genre": "british cuisine",
+        "plot": [
+          "what",
+          "evil"
+        ],
+        "name": "Evil Dead II",
+        "actor": "Connie Ray",
+        "director": "Florian Henckel von Donnersmarck",
+        "writer": "Florian Henckel von Donnersmarck"
+      },
+      "rec_titles": [
+        "Prometheus",
+        "Chain Reaction",
+        "The Equalizer",
+        "Wither"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Prometheus. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Florian Henckel von Donnersmarck",
+        "anchor_title": "Things Fall Apart",
+        "constraints": {
+          "genre": "british cuisine",
+          "writer": "Chad Hayes",
+          "actor": "Lindsay Duncan",
+          "director": "Florian Henckel von Donnersmarck"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you liked the sound of Prometheus and are looking for a fascinating movie with unique elements. Based on your preference cues, I recommend \"Alex in Wonderland\" (2002) starring Angelo Rossitto, Jeanne Moreau, Paul Mazursky, and Ellen Burstyn. This film is a self-aware comedy-drama that explores the life of a filmmaker, which aligns with your interest in Florian Henckel von Donnersmarck's work as writer-director.",
+      "constraints": {
+        "genre": "british cuisine",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Prometheus",
+        "actor": "Connie Ray",
+        "director": "Florian Henckel von Donnersmarck",
+        "writer": "Florian Henckel von Donnersmarck"
+      },
+      "rec_titles": [
+        "The Nanny",
+        "Alex in Wonderland",
+        "The Relic",
+        "The Lives of Others"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does War tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Florian Henckel von Donnersmarck",
+        "anchor_title": "Things Fall Apart",
+        "constraints": {
+          "genre": "british cuisine",
+          "writer": "Chad Hayes",
+          "actor": "Lindsay Duncan",
+          "director": "Florian Henckel von Donnersmarck"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a story about war, and I noticed you mentioned Connie Ray, Florian Henckel von Donnersmarck, and plot keywords like \"what\" and \"kind\". That got me thinking about films that explore the human side of conflict.\n\nOne recommendation that caught my attention is \"The Best Years of Our Lives\" (1946), a classic war movie that delves into the lives of three veterans returning home after World War II. The film, directed by John Huston, features strong performances from Dana Andrews and Myrna Loy, among others.\n\nAnother option I'd like to suggest is \"Find Me Guilty\" (2006), a quirky true-story-based film about an unlikely defense attorney who takes on the system in what becomes the longest criminal trial in American history.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "War",
+        "actor": "Connie Ray",
+        "director": "Florian Henckel von Donnersmarck",
+        "writer": "Florian Henckel von Donnersmarck"
+      },
+      "rec_titles": [
+        "Man on Wire",
+        "Passion",
+        "The Best Years of Our Lives",
+        "Find Me Guilty"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Billy Zane. That feels deeper than I thought. (I’m thinking of Tron.)",
+      "user_meta": {
+        "turn": 50,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Billy Zane",
+        "anchor_title": "Attachments",
+        "constraints": {
+          "genre": "british cuisine",
+          "actor": "Billy Zane",
+          "director": "Florian Henckel von Donnersmarck",
+          "plot": "computer"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 50,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "computer",
+          "from_anchor": "Things Fall Apart",
+          "to_anchor": "Attachments"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for movies that feature Billy Zane, with a deeper tone than Tron suggests, and also have a connection to war or adventure. Based on this, I think you might enjoy \"The Alamo\" (2004), which stars Billy Zane as David Crockett, a famous figure in the Texas Revolution against Mexico. The film is an epic drama that explores themes of sacrifice, courage, and patriotism, and features impressive battle scenes and strong performances from its cast.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Tron",
+        "actor": "Billy Zane",
+        "director": "Florian Henckel von Donnersmarck",
+        "writer": "Florian Henckel von Donnersmarck"
+      },
+      "rec_titles": [
+        "Journey 2: The Mysterious Island",
+        "The Alamo",
+        "Jingle All the Way",
+        "The Rosie Project"
       ]
     }
   ],
@@ -850,55 +2022,100 @@
       "turn": 2,
       "from_focus": "genre",
       "to_focus": "actor",
-      "bridge_field": "writer",
-      "bridge_value": "Glen Morgan",
-      "from_anchor": "The Stepfather",
-      "to_anchor": "Blade Runner"
-    },
-    {
-      "turn": 4,
-      "from_focus": "actor",
-      "to_focus": "writer",
       "bridge_field": "plot",
-      "bridge_value": "mine",
-      "from_anchor": "Blade Runner",
-      "to_anchor": "Creepshow 2"
+      "bridge_value": "surface",
+      "from_anchor": "A Clockwork Orange",
+      "to_anchor": "Junkhearts"
     },
     {
-      "turn": 9,
-      "from_focus": "writer",
-      "to_focus": "actor",
-      "bridge_field": "writer",
-      "bridge_value": "George A. Romero",
-      "from_anchor": "Creepshow 2",
-      "to_anchor": "The Return of the Living Dead"
-    },
-    {
-      "turn": 12,
+      "turn": 7,
       "from_focus": "actor",
-      "to_focus": "genre",
-      "bridge_field": "plot",
-      "bridge_value": "minds",
-      "from_anchor": "The Return of the Living Dead",
-      "to_anchor": "Keeping the Faith"
-    },
-    {
-      "turn": 15,
-      "from_focus": "genre",
       "to_focus": "director",
-      "bridge_field": "genre",
-      "bridge_value": "germany",
-      "from_anchor": "Keeping the Faith",
-      "to_anchor": "You"
+      "bridge_field": "plot",
+      "bridge_value": "killing",
+      "from_anchor": "Junkhearts",
+      "to_anchor": "The Cable Guy"
+    },
+    {
+      "turn": 14,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "Liv Tyler",
+      "from_anchor": "The Cable Guy",
+      "to_anchor": "Knocked Up"
     },
     {
       "turn": 19,
-      "from_focus": "director",
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "writer",
+      "bridge_value": "Sue Grafton",
+      "from_anchor": "Knocked Up",
+      "to_anchor": "The Big Lebowski"
+    },
+    {
+      "turn": 22,
+      "from_focus": "actor",
       "to_focus": "genre",
       "bridge_field": "plot",
-      "bridge_value": "wish",
-      "from_anchor": "You",
-      "to_anchor": "Full Metal Jacket"
+      "bridge_value": "forced",
+      "from_anchor": "The Big Lebowski",
+      "to_anchor": "Purple Violets"
+    },
+    {
+      "turn": 28,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "your",
+      "from_anchor": "Purple Violets",
+      "to_anchor": "Fool's Gold"
+    },
+    {
+      "turn": 30,
+      "from_focus": "director",
+      "to_focus": "writer",
+      "bridge_field": "actor",
+      "bridge_value": "Bradley Cooper",
+      "from_anchor": "Fool's Gold",
+      "to_anchor": "The Pallbearer"
+    },
+    {
+      "turn": 35,
+      "from_focus": "writer",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "Scarlett Johansson",
+      "from_anchor": "The Pallbearer",
+      "to_anchor": "Vicky Cristina Barcelona"
+    },
+    {
+      "turn": 40,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "genre",
+      "bridge_value": "british cuisine",
+      "from_anchor": "Vicky Cristina Barcelona",
+      "to_anchor": "Lord Jim"
+    },
+    {
+      "turn": 44,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Lindsay Duncan",
+      "from_anchor": "Lord Jim",
+      "to_anchor": "Things Fall Apart"
+    },
+    {
+      "turn": 50,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "computer",
+      "from_anchor": "Things Fall Apart",
+      "to_anchor": "Attachments"
     }
   ]
 }

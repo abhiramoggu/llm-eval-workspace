@@ -12,7 +12,7 @@ import shutil
 from rich.live import Live
 from rich.progress import Progress, BarColumn, TextColumn, TimeElapsedColumn, MofNCompleteColumn
 
-from config import LLM_SYSTEMS, RESULTS_FILE, SUMMARY_CSV, LOG_DIR, FIG_DIR
+from config import LLM_SYSTEMS, RESULTS_FILE, SUMMARY_CSV, LOG_DIR, FIG_DIR, N_SESSIONS
 from simulate import run_simulation
 from evaluate import evaluate, llm_judge
 
@@ -70,7 +70,7 @@ def _write_summaries(rows):
     print(f"\nSaved summary → {SUMMARY_CSV}")
 
 
-def run_batch(n_sessions=1000):
+def run_batch(n_sessions=N_SESSIONS):
     # Setup a single Rich Progress instance for a multi-line display
     _clear_previous_run_data()
     progress = Progress(
@@ -132,4 +132,4 @@ def run_batch(n_sessions=1000):
 
 
 if __name__ == "__main__":
-    run_batch(n_sessions=5) # Reduced for quick testing
+    run_batch()

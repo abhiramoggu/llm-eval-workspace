@@ -1,0 +1,2147 @@
+{
+  "session_id": "00045",
+  "model_name": "llama2:latest",
+  "true_genre": "music",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a music movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "music",
+        "anchor_title": "The Great Gatsby",
+        "constraints": {
+          "genre": "music"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preference for a music movie, I recommend \"8 Mile\" and \"True Blood.\" Both of these movies have a strong focus on music and are sure to provide an enjoyable experience for fans of the genre. In \"8 Mile,\" Eminem stars as a young rapper struggling to make it big in Detroit, while \"True Blood\" is a vampire-themed series that features plenty of music and musical performances throughout its run.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "music",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "8 Mile",
+        "The Picture of Dorian Gray",
+        "Amadeus",
+        "True Blood"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "music",
+        "anchor_title": "The Great Gatsby",
+        "constraints": {
+          "genre": "music"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - music, plot keywords - what, kind. Based on these cues, I recommend \"Beyond the Sea\" and \"Happy Feet\". Both movies feature music as a central element of their plots, with \"Beyond the Sea\" focusing on the life and career of singer Bobby Darin, and \"Happy Feet\" showcasing the unique way penguins express themselves through dance.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X"
+      },
+      "rec_titles": [
+        "Beyond the Sea",
+        "Happy Feet",
+        "American Beauty",
+        "A Night at the Roxbury"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "music",
+        "anchor_title": "The Great Gatsby",
+        "constraints": {
+          "genre": "music"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: The movie should have a fascinating plot and feature music as a key element.\nBased on the user's preferences, I recommend \"The Social Network\" and \"Super\". Both of these movies have intriguing plots that revolve around creativity, imagination, and the power of music to inspire and transform. In \"The Social Network\", the story of how Facebook was created is intertwined with a compelling soundtrack that captures the energy and excitement of the era. In \"Super\", the use of music as a tool for self-expression and empowerment adds depth and emotion to the film's exploration of youthful idealism and the struggle for identity.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what"
+        ],
+        "name": "Us"
+      },
+      "rec_titles": [
+        "The Hound of the Baskervilles",
+        "You",
+        "The Social Network",
+        "Super"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "music",
+        "anchor_title": "The Great Gatsby",
+        "constraints": {
+          "genre": "music"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has expressed interest in music and plots that sound intriguing, so I recommend checking out \"Soul Men\" and \"Uptown Girls\". Both movies feature talented actors and musicians, with engaging stories that explore themes of self-discovery and empowerment. In \"Soul Men\", two estranged soul singers come together for a reunion performance at the Apollo Theater, while in \"Uptown Girls\", a grown woman rediscovers her childlike spirit as she takes on the role of a nanny for an 8-year-old girl who acts like an adult.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X"
+      },
+      "rec_titles": [
+        "Soul Men",
+        "Uptown Girls",
+        "Mama",
+        "Taking Woodstock"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Terry Gilliam? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 5,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Terry Gilliam",
+        "anchor_title": "The Imaginarium of Doctor Parnassus",
+        "constraints": {
+          "genre": "music",
+          "director": "Terry Gilliam",
+          "writer": "David Nicholls"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 5,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "writer",
+          "bridge_value": "David Nicholls",
+          "from_anchor": "The Great Gatsby",
+          "to_anchor": "The Imaginarium of Doctor Parnassus"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preference cues, I recommend \"The Secret of My Success\" and \"Amadeus.\" Both movies are directed by Terry Gilliam and have a unique blend of humor and depth that may appeal to the user's taste. \"The Secret of My Success\" features a fast-rising protagonist who is driven by three women, while \"Amadeus\" tells the story of Wolfgang Amadeus Mozart's life and success, as well as his troubles, through the eyes of his contemporaneous composer Antonio Salieri.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "RED",
+        "actor": "Terry",
+        "director": "Terry Gilliam",
+        "writer": "Terry Gilliam"
+      },
+      "rec_titles": [
+        "The Secret of My Success",
+        "Amadeus",
+        "American Dreamz",
+        "Beyond the Sea"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Terry Gilliam",
+        "anchor_title": "The Imaginarium of Doctor Parnassus",
+        "constraints": {
+          "genre": "music",
+          "director": "Terry Gilliam",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - music, actor - Terry, director - Terry Gilliam, writer - Terry Gilliam, plot keywords - just, more.\nBased on these cues, I recommend the movie \"Terminator 2: Judgment Day\" starring Jenette Goldstein and S. Epatha Merkerson. This classic sci-fi action film is a must-see for fans of Terry Gilliam's work, with its iconic cyborg characters and thrilling plot. Alternatively, I suggest \"Grace Unplugged,\" a heartwarming drama starring Michael Welch and Shawnee Smith, which explores the impact of music on faith and relationships.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Terry",
+        "director": "Terry Gilliam",
+        "writer": "Terry Gilliam"
+      },
+      "rec_titles": [
+        "Terminator 2: Judgment Day",
+        "Grace Unplugged",
+        "In the Mouth of Madness",
+        "Hopeless"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Grace Unplugged. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Terry Gilliam",
+        "anchor_title": "The Imaginarium of Doctor Parnassus",
+        "constraints": {
+          "genre": "music",
+          "director": "Terry Gilliam",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User Constraints: The user likes the sound of \"Grace Unplugged\" and is unsure if they would enjoy it or be scared by it. They are interested in movies that feature music, Terry Gilliam, or Terry as an actor/director/writer.\n\nRecommendation: Based on the user's preferences, I recommend \"8 Mile\" (2002) and \"Total Recall\" (1990). Both of these movies showcase music as a central element of the plot, with \"8 Mile\" following a young rapper's journey to make it big in the Detroit area, and \"Total Recall\" featuring a character who visits a company that provides implanted fake memories, which could be seen as a metaphor for the power of music to transport us to another world. Both movies also star Terry Gilliam as a director or writer, making them great options for fans of his work.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "actor": "Terry",
+        "director": "Terry Gilliam",
+        "writer": "Terry Gilliam"
+      },
+      "rec_titles": [
+        "8 Mile",
+        "The Red Violin",
+        "The Rocker",
+        "Total Recall"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Her? That sounds intriguing.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Terry Gilliam",
+        "anchor_title": "The Imaginarium of Doctor Parnassus",
+        "constraints": {
+          "genre": "music",
+          "director": "Terry Gilliam",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - music, actor - Terry, director/writer - Terry Gilliam.\nBased on these constraints, I recommend \"8 Mile\" and \"O Brother, Where Art Thou?\" Both movies showcase the musical talent of the actors and have a unique, intriguing plot that aligns with the user's preferences. In \"8 Mile,\" Eminem stars as a young rapper struggling to make it big in Detroit, while in \"O Brother, Where Art Thou?\" George Clooney leads a group of escaped convicts on a wild adventure through the deep south in the 1930s.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Her",
+        "actor": "Terry",
+        "director": "Terry Gilliam",
+        "writer": "Terry Gilliam"
+      },
+      "rec_titles": [
+        "8 Mile",
+        "The Yearling",
+        "O Brother, Where Art Thou?",
+        "The Bodyguard"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Deep tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Terry Gilliam",
+        "anchor_title": "The Imaginarium of Doctor Parnassus",
+        "constraints": {
+          "genre": "music",
+          "director": "Terry Gilliam",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - music, actor - Terry, director - Terry Gilliam, writer - Terry Gilliam, plot keywords - what, kind. Based on these cues, I recommend the movie \"A Mighty Wind\" (2003) starring Eugene Levy, Christopher Guest, and Catherine O'Hara. The film is a mockumentary that captures the reunion of a 1960s folk trio as they prepare for a show at The Town Hall to memorialize a recently deceased concert promoter. With a talented cast and a hilarious plot, \"A Mighty Wind\" is sure to delight fans of music-based comedies.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Deep",
+        "actor": "Terry",
+        "director": "Terry Gilliam",
+        "writer": "Terry Gilliam"
+      },
+      "rec_titles": [
+        "A Mighty Wind",
+        "Utsav",
+        "The Piano Teacher",
+        "Happy Feet"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Sophie Rois. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of 3.)",
+      "user_meta": {
+        "turn": 10,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Sophie Rois",
+        "anchor_title": "A Night at the Roxbury",
+        "constraints": {
+          "genre": "music",
+          "director": "Terry Gilliam",
+          "writer": "David Nicholls",
+          "actor": "Sophie Rois"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 10,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Sophie Rois",
+          "from_anchor": "The Imaginarium of Doctor Parnassus",
+          "to_anchor": "A Night at the Roxbury"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user is looking for movies with Sophie Rois, specifically in the genres of music and science fiction. They are also open to recommendations from Terry Gilliam as director or writer.\n\nBased on these constraints, I would recommend \"American Dreamz\" and \"Nowhere Boy\". Both of these movies feature Sophie Rois in leading roles and were directed by Terry Gilliam, who is known for his unique blend of music and science fiction elements in his films. \"American Dreamz\" follows a group of people as they compete to become the next American Idol-style show, while \"Nowhere Boy\" tells the story of John Lennon's formative years and his relationship with his aunt and mother. Both movies offer a fascinating blend of music and science fiction that I think the user will enjoy.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "3",
+        "actor": "Sophie Rois",
+        "director": "Terry Gilliam",
+        "writer": "Terry Gilliam"
+      },
+      "rec_titles": [
+        "American Dreamz",
+        "Armageddon",
+        "Nowhere Boy",
+        "Wayne's World"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Sophie Rois",
+        "anchor_title": "A Night at the Roxbury",
+        "constraints": {
+          "genre": "music",
+          "director": "Terry Gilliam",
+          "writer": "David Nicholls",
+          "actor": "Sophie Rois"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - music, actor - Sophie Rois, director - Terry Gilliam, writer - Terry Gilliam. Based on these cues, I recommend \"Date Night\" and \"Mama\". Both movies have a unique blend of humor, suspense, and inspiration that align with the user's preferences. In \"Date Night\", a bored married couple's evening takes an unexpected turn, while in \"Mama\", a trainer helps bullied children learn self-defense techniques.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Sophie Rois",
+        "director": "Terry Gilliam",
+        "writer": "Terry Gilliam"
+      },
+      "rec_titles": [
+        "Date Night",
+        "The Truth",
+        "The Fighter",
+        "Mama"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Andrew Niccol? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Mama.)",
+      "user_meta": {
+        "turn": 12,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Andrew Niccol",
+        "anchor_title": "The Great Gatsby",
+        "constraints": {
+          "genre": "music",
+          "director": "Andrew Niccol",
+          "actor": "Isabelle Nélisse"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 12,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Isabelle Nélisse",
+          "from_anchor": "A Night at the Roxbury",
+          "to_anchor": "The Great Gatsby"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: The user is interested in watching a movie directed by Andrew Niccol and starring Sophie Rois, but they are unsure if they will enjoy it or be scared by it (like Mama).\n\nRecommendation: Based on your preferences, I recommend checking out \"The Whistler\" (2016) and \"Grace Unplugged\" (2013). Both films feature a mix of music and drama, with strong performances from the cast. \"The Whistler\" tells the story of a gentle giant who defends his true love against a group of thugs, while \"Grace Unplugged\" follows an 18-year-old singer as she navigates the challenges of the music industry and her faith.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Mama",
+        "actor": "Sophie Rois",
+        "director": "Andrew Niccol",
+        "writer": "Andrew Niccol"
+      },
+      "rec_titles": [
+        "The Whistler",
+        "Dance Flick",
+        "Whiplash",
+        "Grace Unplugged"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Andrew Niccol",
+        "anchor_title": "The Great Gatsby",
+        "constraints": {
+          "genre": "music",
+          "director": "Andrew Niccol",
+          "actor": "Isabelle Nélisse"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your user's preferences, here are two movie recommendations that may interest them:\n\nThe user enjoys music and has a preference for movies with actor Sophie Rois, so I recommend \"This Is the End\" (2013) starring James Franco, Seth Rogen, and a talented ensemble cast. The film combines humor and self-reflection as a group of celebrities try to survive a series of apocalyptic events in James Franco's house.\n\nAlternatively, \"Before I Fall\" (2010) may also be of interest due to its focus on the main character's personal growth and reflection. The film stars Shailene Woodley as Sam, who relives the same day over and over until she uncovers the mystery behind her death. With a talented young cast and a thought-provoking plot, \"Before I Fall\" offers a compelling and emotional viewing experience.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Sophie Rois",
+        "director": "Andrew Niccol",
+        "writer": "Andrew Niccol"
+      },
+      "rec_titles": [
+        "This Is the End",
+        "The Deep End of the Ocean",
+        "Before I Fall",
+        "Saving Mr. Banks"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Andrew Niccol",
+        "anchor_title": "The Great Gatsby",
+        "constraints": {
+          "genre": "music",
+          "director": "Andrew Niccol",
+          "actor": "Isabelle Nélisse"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure! Based on the user's preferences, I recommend \"Uptown Girls\" and \"X\". Both movies have a fun and lighthearted tone, with catchy music and engaging plots. In \"Uptown Girls\", Marley Shelton and Donald Faison play a pair of misfits who find themselves unexpectedly connected through their love for a young girl. In \"X\", a veteran call girl and a runaway prostitute must evade a killer as they navigate the gritty streets of Sydney.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "actor": "Sophie Rois",
+        "director": "Andrew Niccol",
+        "writer": "Andrew Niccol"
+      },
+      "rec_titles": [
+        "Uptown Girls",
+        "The Red Violin",
+        "Aladdin",
+        "X"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Uptown Girls tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Andrew Niccol",
+        "anchor_title": "The Great Gatsby",
+        "constraints": {
+          "genre": "music",
+          "director": "Andrew Niccol",
+          "actor": "Isabelle Nélisse"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - music, actor - Sophie Rois, director - Andrew Niccol, writer - Andrew Niccol.\nRecommendation: Based on the user's preferences, I would recommend \"Lord of War\" and \"The Andromeda Strain\". Both movies offer a gripping storyline with strong performances from the actors involved. In \"Lord of War\", Nicolas Cage plays an arms dealer who confronts the morality of his work, while in \"The Andromeda Strain\", a team of scientists work to stop a deadly contagion that has killed a small town's citizens.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Uptown Girls",
+        "actor": "Sophie Rois",
+        "director": "Andrew Niccol",
+        "writer": "Andrew Niccol"
+      },
+      "rec_titles": [
+        "Masked and Anonymous",
+        "The Red Violin",
+        "Lord of War",
+        "The Andromeda Strain"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Andrew Niccol",
+        "anchor_title": "The Great Gatsby",
+        "constraints": {
+          "genre": "music",
+          "director": "Andrew Niccol",
+          "actor": "Isabelle Nélisse"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, here are two movie recommendations that might interest them:\n\n* \"We Are Your Friends\" (2015) is a heartwarming and inspiring film about an aspiring DJ who finds himself caught between a forbidden romance and the expectations of his friends. Starring Jonny Weston, Vanessa Lengies, and Emily Ratajkowski, this movie follows Cole Carter's journey as he tries to find the path in life that leads to fame and fortune.\n* \"Inside Llewyn Davis\" (2013) is a thought-provoking and emotional film set in the Greenwich Village folk scene of 1961. Starring Justin Timberlake, Max Casella, and Alex Karpovsky, this movie follows a young singer as he navigates the ups and downs of the music industry. With its captivating plot and talented cast, \"Inside Llewyn Davis\" is sure to leave a lasting impression.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "Uptown Girls",
+        "actor": "Sophie Rois",
+        "director": "Andrew Niccol",
+        "writer": "Andrew Niccol"
+      },
+      "rec_titles": [
+        "We Are Your Friends",
+        "The Wrestler",
+        "Utsav",
+        "Inside Llewyn Davis"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Andrew Niccol",
+        "anchor_title": "The Great Gatsby",
+        "constraints": {
+          "genre": "music",
+          "director": "Andrew Niccol",
+          "actor": "Isabelle Nélisse"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, I understand you're looking for a movie that aligns with your preferences. Based on your cues, I recommend \"Beyond the Sea\" and \"Forgetting Sarah Marshall.\" Both movies feature strong performances from talented actors, with \"Beyond the Sea\" offering a poignant love story and \"Forgetting Sarah Marshall\" providing a hilarious and heartwarming comedy.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "X",
+        "actor": "Sophie Rois",
+        "director": "Andrew Niccol",
+        "writer": "Andrew Niccol"
+      },
+      "rec_titles": [
+        "Beyond the Sea",
+        "The Equalizer",
+        "The Skulls",
+        "Forgetting Sarah Marshall"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Ed Solomon? That feels deeper than I thought. (I’m thinking of Beyond the Sea.)",
+      "user_meta": {
+        "turn": 18,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Ed Solomon",
+        "anchor_title": "Coyote Ugly",
+        "constraints": {
+          "genre": "music",
+          "director": "Andrew Niccol",
+          "actor": "Isabelle Nélisse",
+          "writer": "Ed Solomon",
+          "plot": "swooning"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 18,
+          "from_focus": "director",
+          "to_focus": "writer",
+          "bridge_field": "plot",
+          "bridge_value": "swooning",
+          "from_anchor": "The Great Gatsby",
+          "to_anchor": "Coyote Ugly"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - music, actor - Sophie Rois, director - Andrew Niccol, writer - Ed Solomon.\nBased on these constraints, I recommend watching \"Aladdin\" and \"Connie and Carla\". Both movies feature musical elements and star actors who worked with Ed Solomon in the past, such as Robin Williams in \"Aladdin\" and Nia Vardalos in \"Connie and Carla\". The plots of these movies also align with the user's preferences, exploring themes of self-discovery and unexpected love.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "written",
+          "solomon"
+        ],
+        "name": "Beyond the Sea",
+        "actor": "Sophie Rois",
+        "director": "Andrew Niccol",
+        "writer": "Ed Solomon"
+      },
+      "rec_titles": [
+        "The Doors",
+        "Connie and Carla",
+        "Aladdin",
+        "The Daytrippers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Ed Solomon",
+        "anchor_title": "Coyote Ugly",
+        "constraints": {
+          "genre": "music",
+          "director": "Andrew Niccol",
+          "actor": "Isabelle Nélisse",
+          "writer": "Ed Solomon",
+          "plot": "swooning"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I recommend \"Walk the Line\" and \"Amadeus.\" Both of these movies have great music and acting, which seem to align with your interests. \"Walk the Line\" tells the life story of country music legend Johnny Cash, while \"Amadeus\" explores the life and troubles of Wolfgang Amadeus Mozart through the eyes of his contemporaneous composer Antonio Salieri. Both movies are critically acclaimed and have received numerous awards.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Sophie Rois",
+        "director": "Andrew Niccol",
+        "writer": "Ed Solomon"
+      },
+      "rec_titles": [
+        "Walk the Line",
+        "Amadeus",
+        "Six-String Samurai",
+        "Tooth Fairy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Amadeus? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Ed Solomon",
+        "anchor_title": "Coyote Ugly",
+        "constraints": {
+          "genre": "music",
+          "director": "Andrew Niccol",
+          "actor": "Isabelle Nélisse",
+          "writer": "Ed Solomon",
+          "plot": "swooning"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: The movie should have a music theme, and the actors should include Sophie Rois.\nBased on these constraints, I recommend \"Waiting\" and \"Wayne's World.\" Both movies feature music as a central theme, with \"Waiting\" focusing on an artist who agrees to bear a child for another couple and \"Wayne's World\" showcasing two slacker friends trying to promote their public-access cable show. Both movies also star Sophie Rois in leading roles.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "amadeus"
+        ],
+        "name": "Amadeus",
+        "actor": "Sophie Rois",
+        "director": "Andrew Niccol",
+        "writer": "Ed Solomon"
+      },
+      "rec_titles": [
+        "Waiting",
+        "Hitch",
+        "Wolfhound",
+        "Wayne's World"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Waiting tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 21,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Ed Solomon",
+        "anchor_title": "Coyote Ugly",
+        "constraints": {
+          "genre": "music",
+          "director": "Andrew Niccol",
+          "actor": "Isabelle Nélisse",
+          "writer": "Ed Solomon",
+          "plot": "swooning"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, I understand you're looking for a movie with a similar vibe to Waiting. Based on your preferences, I recommend \"Beyond the Sea\" and \"What Women Want\". Both movies feature music as a central element and have a lighthearted, comedic tone. \"Beyond the Sea\" tells the story of a singer's relationship with his wife, while \"What Women Want\" follows a chauvinistic advertising executive who gains the ability to hear what women are thinking. Both movies star talented actors and have enjoyable plots.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Waiting",
+        "actor": "Sophie Rois",
+        "director": "Andrew Niccol",
+        "writer": "Ed Solomon"
+      },
+      "rec_titles": [
+        "Beyond the Sea",
+        "Pride and Prejudice",
+        "Why Did I Get Married?",
+        "What Women Want"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Ed Solomon",
+        "anchor_title": "Coyote Ugly",
+        "constraints": {
+          "genre": "music",
+          "director": "Andrew Niccol",
+          "actor": "Isabelle Nélisse",
+          "writer": "Ed Solomon",
+          "plot": "swooning"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - music; actor - Sophie Rois; director - Andrew Niccol; writer - Ed Solomon; plot keywords - actually, think. Based on these cues, I recommend the movie \"In Time\" starring Justin Timberlake and Olivia Wilde. The film is a thought-provoking sci-fi drama that explores themes of time, aging, and social inequality in a futuristic society where people stop aging at 25 but can buy their way to immortal youth. Alternatively, \"Gattaca\" (1997) also starring Ethan Hawke and Uma Thurman is another great choice that delves into the themes of identity, class, and the impact of genetic engineering on society.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Waiting",
+        "actor": "Sophie Rois",
+        "director": "Andrew Niccol",
+        "writer": "Ed Solomon"
+      },
+      "rec_titles": [
+        "In Time",
+        "Yesterday Was a Lie",
+        "The Great Gatsby",
+        "Gattaca"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Gaby Hoffmann. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Wild.)",
+      "user_meta": {
+        "turn": 23,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Gaby Hoffmann",
+        "anchor_title": "A Mighty Wind",
+        "constraints": {
+          "genre": "music",
+          "director": "Andrew Niccol",
+          "actor": "Gaby Hoffmann",
+          "plot": "swooning"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 23,
+          "from_focus": "writer",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Gaby Hoffmann",
+          "from_anchor": "Coyote Ugly",
+          "to_anchor": "A Mighty Wind"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - music, actor - Gaby Hoffmann, director - Andrew Niccol, writer - Ed Solomon. Based on these cues, I recommend \"Now You See Me\" and \"The Piano Teacher.\" Both movies feature Gaby Hoffmann in a starring role and were directed by Andrew Niccol, with Ed Solomon as the screenwriter. \"Now You See Me\" is an action-packed heist film that combines music and illusions, while \"The Piano Teacher\" is a psychological drama that explores themes of obsession and desire through the lens of piano playing.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Wild",
+        "actor": "Gaby Hoffmann",
+        "director": "Andrew Niccol",
+        "writer": "Ed Solomon"
+      },
+      "rec_titles": [
+        "Now You See Me",
+        "The Piano Teacher",
+        "Coyote Ugly",
+        "Dance Flick"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Gaby Hoffmann",
+        "anchor_title": "A Mighty Wind",
+        "constraints": {
+          "genre": "music",
+          "director": "Andrew Niccol",
+          "actor": "Gaby Hoffmann",
+          "plot": "swooning"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your user's preferences, here are two movie recommendations that match their constraints:\n\n* The Bodyguard (1992) - This classic romantic thriller starring Kevin Costner and Whitney Houston is a great fit for users looking for a movie with music and Gaby Hoffmann. The film follows a former Secret Service agent who falls in love with a famous pop star and must protect her from an stalker.\n* Braveheart (1995) - This epic historical drama directed by Mel Gibson features a gripping story of Scottish warrior William Wallace fighting for Scotland's independence against English oppression. The film stars Angus Macfadyen, Catherine McCormack, and Patrick McGoohan, among others.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Gaby Hoffmann",
+        "director": "Andrew Niccol",
+        "writer": "Ed Solomon"
+      },
+      "rec_titles": [
+        "The Bodyguard",
+        "The Great Gatsby",
+        "Braveheart",
+        "The Piano Teacher"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ice Age. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Gaby Hoffmann",
+        "anchor_title": "A Mighty Wind",
+        "constraints": {
+          "genre": "music",
+          "director": "Andrew Niccol",
+          "actor": "Gaby Hoffmann",
+          "plot": "swooning"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has provided us with some useful cues to recommend movies that might appeal to their tastes. They have expressed interest in music, specifically the sound of a movie, and have mentioned actors such as Gaby Hoffmann and directors like Andrew Niccol and Ed Solomon. Based on these cues, I would recommend \"Psychic Experiment\" and \"The Rocker\". Both of these movies feature unique plots and talented actors that may resonate with the user's preferences.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ice Age",
+        "actor": "Gaby Hoffmann",
+        "director": "Andrew Niccol",
+        "writer": "Ed Solomon"
+      },
+      "rec_titles": [
+        "Psychic Experiment",
+        "The Rocker",
+        "Smokin' Aces",
+        "The Piano Teacher"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of They? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Gaby Hoffmann",
+        "anchor_title": "A Mighty Wind",
+        "constraints": {
+          "genre": "music",
+          "director": "Andrew Niccol",
+          "actor": "Gaby Hoffmann",
+          "plot": "swooning"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The mood is unexpected, and the user enjoys music, Gaby Hoffmann, Andrew Niccol, Ed Solomon, and plot keywords \"what\" and \"don't\". Based on these cues, I recommend \"Training Day\" (2001) starring Denzel Washington and Ethan Hawke, or \"Beyond the Sea\" (2004) starring Kevin Spacey and Bob Hoskins. Both movies offer a gripping and unexpected narrative with strong performances from talented actors.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "They",
+        "actor": "Gaby Hoffmann",
+        "director": "Andrew Niccol",
+        "writer": "Ed Solomon"
+      },
+      "rec_titles": [
+        "Training Day",
+        "We the Living",
+        "Louie",
+        "Beyond the Sea"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Gaby Hoffmann",
+        "anchor_title": "A Mighty Wind",
+        "constraints": {
+          "genre": "music",
+          "director": "Andrew Niccol",
+          "actor": "Gaby Hoffmann",
+          "plot": "swooning"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThe user wants a movie recommendation that is not too specific, and they have provided some actor and director names as well as a genre and a plot keyword.\n\nRecommendation:\nBased on the user's preferences, I would recommend \"In Time\" (2011) starring Matt Bomer and Justin Timberlake. The movie is set in a future where people stop aging at 25 but are engineered to live only one more year, and it follows a man accused of murder on the run with a hostage. It's an interesting blend of action, drama, and sci-fi elements that may appeal to the user's tastes.\n\nAlternatively, I would suggest \"Cadillac Records\" (2008) starring Adrien Brody, Beyoncé Knowles, and Jeff Bridges. This movie tells the story of the rise of Chess Records and its recording artists, which may appeal to the user's interest in music. It's a well-reviewed biographical drama with an all-star cast that could be enjoyable for fans of the genre.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "They",
+        "actor": "Gaby Hoffmann",
+        "director": "Andrew Niccol",
+        "writer": "Ed Solomon"
+      },
+      "rec_titles": [
+        "In Time",
+        "Cadillac Records",
+        "Masked and Anonymous",
+        "The Secret"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Cadillac Records tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Gaby Hoffmann",
+        "anchor_title": "A Mighty Wind",
+        "constraints": {
+          "genre": "music",
+          "director": "Andrew Niccol",
+          "actor": "Gaby Hoffmann",
+          "plot": "swooning"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - music, actor - Gaby Hoffmann, director - Andrew Niccol, writer - Ed Solomon.\nBased on these constraints, I recommend \"O Brother, Where Art Thou?\" and \"Lord Jim\". Both movies have a unique blend of music and storytelling that may appeal to fans of \"Cadillac Records\". In \"O Brother, Where Art Thou?\", three escaped convicts search for hidden treasure while being pursued by a relentless lawman, featuring a star-studded cast including George Clooney, John Turturro, and John Goodman. \"Lord Jim\" is a 19th century seaman who lives to redeem himself after being discredited as a coward, with a powerful performance by Peter Gallagher.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Cadillac Records",
+        "actor": "Gaby Hoffmann",
+        "director": "Andrew Niccol",
+        "writer": "Ed Solomon"
+      },
+      "rec_titles": [
+        "Tombstone",
+        "O Brother, Where Art Thou?",
+        "Lord Jim",
+        "Step Up Revolution"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Philip G. Atwell? That sounds intriguing. (I’m thinking of War.)",
+      "user_meta": {
+        "turn": 29,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Philip G. Atwell",
+        "anchor_title": "Dance Flick",
+        "constraints": {
+          "genre": "music",
+          "director": "Philip G. Atwell",
+          "actor": "Gaby Hoffmann",
+          "plot": "swooning"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 29,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "director",
+          "bridge_value": "Philip G. Atwell",
+          "from_anchor": "A Mighty Wind",
+          "to_anchor": "Dance Flick"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, they seem to enjoy war movies with strong acting performances. I would recommend \"The Best Years of Our Lives\" and \"A Bridge Too Far\" from this list. Both of these films feature powerful storytelling and a talented cast, including Myrna Loy, Teresa Wright, Dana Andrews, Hardy Krüger, Edward Fox, Maximilian Schell, and more.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "War",
+        "actor": "Gaby Hoffmann",
+        "director": "Philip G. Atwell",
+        "writer": "Ed Solomon"
+      },
+      "rec_titles": [
+        "The Best Years of Our Lives",
+        "A Bridge Too Far",
+        "Hell's Angels",
+        "Tears of the Sun"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Philip G. Atwell",
+        "anchor_title": "Dance Flick",
+        "constraints": {
+          "genre": "music",
+          "director": "Philip G. Atwell",
+          "actor": "Gaby Hoffmann",
+          "plot": "swooning"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - war; actor - Gaby Hoffmann; director - Philip G. Atwell; writer - Ed Solomon.\nRecommendation: If you enjoyed \"You Kill Me,\" you might also enjoy \"Red Cliff\" for its epic battle scenes and strong performances from the cast, including Takeshi Kaneshiro and Tony Chiu Wai Leung. Alternatively, \"The Monuments Men\" offers a unique blend of action, comedy, and historical significance, with a talented ensemble cast led by George Clooney, Matt Damon, and Bill Murray.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Gaby Hoffmann",
+        "director": "Philip G. Atwell",
+        "writer": "Ed Solomon"
+      },
+      "rec_titles": [
+        "You Kill Me",
+        "Red Cliff",
+        "The Monuments Men",
+        "The Wonderful Wizard of Oz"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of War? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Philip G. Atwell",
+        "anchor_title": "Dance Flick",
+        "constraints": {
+          "genre": "music",
+          "director": "Philip G. Atwell",
+          "actor": "Gaby Hoffmann",
+          "plot": "swooning"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: The user is looking for a movie that explores themes of war and emotion, with a focus on the actor Gaby Hoffmann and the director Philip G. Atwell.\n\nRecommendation: Based on the user's preferences, I would recommend \"Dances with Wolves\" (1990) starring Kevin Costner and Mary McDonnell. The movie explores themes of war and emotion through its portrayal of a Civil War soldier who befriends a group of Native Americans, leading to a deeper understanding of the human experience.\n\nAlternatively, I would suggest \"Passion\" (2011) starring Gaby Hoffmann, which follows the story of a man who has dedicated his life to competitive beard growing and explores themes of passion and obsession.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "War",
+        "actor": "Gaby Hoffmann",
+        "director": "Philip G. Atwell",
+        "writer": "Ed Solomon"
+      },
+      "rec_titles": [
+        "Passion",
+        "Wolfhound",
+        "Flyboys",
+        "Dances with Wolves"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Wolves. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Philip G. Atwell",
+        "anchor_title": "Dance Flick",
+        "constraints": {
+          "genre": "music",
+          "director": "Philip G. Atwell",
+          "actor": "Gaby Hoffmann",
+          "plot": "swooning"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to recommend some movies based on the user's preferences! It seems like they're interested in war-themed movies with strong female leads and a focus on artistic expression. Of the movies listed, I would recommend \"Mama\" and \"The Monuments Men.\" Both of these films feature strong female characters and explore themes of artistic expression and cultural preservation, which align with the user's preferences.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Wolves",
+        "actor": "Gaby Hoffmann",
+        "director": "Philip G. Atwell",
+        "writer": "Ed Solomon"
+      },
+      "rec_titles": [
+        "Alex in Wonderland",
+        "Mama",
+        "The Monuments Men",
+        "Psychic Experiment"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does War tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Philip G. Atwell",
+        "anchor_title": "Dance Flick",
+        "constraints": {
+          "genre": "music",
+          "director": "Philip G. Atwell",
+          "actor": "Gaby Hoffmann",
+          "plot": "swooning"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, I recommend \"Casablanca\" and \"Why Did I Get Married?\" Both movies feature intriguing plots and talented actors, including Humphrey Bogart and Claude Rains in \"Casablanca,\" and Malik Yoba and Janet Jackson in \"Why Did I Get Married?\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "War",
+        "actor": "Gaby Hoffmann",
+        "director": "Philip G. Atwell",
+        "writer": "Ed Solomon"
+      },
+      "rec_titles": [
+        "Casablanca",
+        "The Andromeda Strain",
+        "The Good German",
+        "Why Did I Get Married?"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Us. I want to try something more basketball—still with David Nicholls if possible. I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 34,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "basketball",
+        "anchor_title": "Wild",
+        "constraints": {
+          "genre": "basketball",
+          "actor": "Gaby Hoffmann",
+          "plot": "swooning",
+          "writer": "David Nicholls"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 34,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "writer",
+          "bridge_value": "David Nicholls",
+          "from_anchor": "Dance Flick",
+          "to_anchor": "Wild"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: basketball; actor: Gaby Hoffmann; director: Philip G. Atwell; writer: David Nicholls; plot keywords: thanks, detail. Based on the user's constraints, I recommend checking out 'You Can Count on Me' and 'Wild'. Both movies feature Gaby Hoffmann in a starring role, and they have received critical acclaim for their storytelling and performances. 'You Can Count on Me' is a heartwarming drama about family and relationships, while 'Wild' is a powerful true story of one woman's journey of self-discovery and resilience.",
+      "constraints": {
+        "genre": "basketball",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "RED",
+        "actor": "Gaby Hoffmann",
+        "director": "Philip G. Atwell",
+        "writer": "David Nicholls"
+      },
+      "rec_titles": [
+        "American History X",
+        "Talladega Nights: The Ballad of Ricky Bobby",
+        "Wild",
+        "You Can Count on Me"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "basketball",
+        "anchor_title": "Wild",
+        "constraints": {
+          "genre": "basketball",
+          "actor": "Gaby Hoffmann",
+          "plot": "swooning",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to recommend some movies based on your user's preferences! It seems like they enjoy basketball, Gaby Hoffmann, and Philip G. Atwell, among other things. Here are two movie recommendations that fit their tastes:\n\n* \"Tarnation\" (2003) - This documentary follows the life of filmmaker Jonathan Caouette and his schizophrenic mother, using a mix of snapshots, Super-8 footage, and other media. It's a unique and emotional look at family dynamics and mental illness, which I think you'll find interesting based on your user's preferences.\n* \"You Kill Me\" (2007) - This dark comedy stars Aaron Hughes as an alcoholic hitman who befriends a tart-tongued woman (played by Jayne Eastwood) while drying out in California. It's a quirky and entertaining film with plenty of humor and heart, which I think you might enjoy.",
+      "constraints": {
+        "genre": "basketball",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Gaby Hoffmann",
+        "director": "Philip G. Atwell",
+        "writer": "David Nicholls"
+      },
+      "rec_titles": [
+        "Tarnation",
+        "The Cabin in the Woods",
+        "The Taming of the Shrew",
+        "You Kill Me"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of 3? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "basketball",
+        "anchor_title": "Wild",
+        "constraints": {
+          "genre": "basketball",
+          "actor": "Gaby Hoffmann",
+          "plot": "swooning",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user is interested in a movie with a similar mood to \"3\", but they are unsure what that mood is. They have provided some actor, director, and plot keywords as potential clues.\n\nBased on the provided information, I recommend checking out \"You Can Count on Me\" and \"Eve's Bayou\". Both of these movies share a similar atmospheric and emotional tone with \"3\", with a focus on character-driven stories and exploring themes of family, identity, and the supernatural.",
+      "constraints": {
+        "genre": "basketball",
+        "plot": [
+          "what"
+        ],
+        "name": "3",
+        "actor": "Gaby Hoffmann",
+        "director": "Philip G. Atwell",
+        "writer": "David Nicholls"
+      },
+      "rec_titles": [
+        "Elizabeth",
+        "You Can Count on Me",
+        "The Wraith",
+        "Eve's Bayou"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "basketball",
+        "anchor_title": "Wild",
+        "constraints": {
+          "genre": "basketball",
+          "actor": "Gaby Hoffmann",
+          "plot": "swooning",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user likes the sound of \"You\" and is unsure if they would enjoy it or be scared by it. They also mentioned basketball, Gaby Hoffmann, Philip G. Atwell, and David Nicholls as preferences.\n\nRecommendation: Based on the user's preferences, I would recommend \"Flubber\" (1997) starring Gaby Hoffmann and Robin Williams. The movie is a light-hearted comedy about an absent-minded professor discovering a rubber-like super-bouncy substance. It has a similar feel-good and imaginative tone as \"You,\" and features a talented cast. Alternatively, I would suggest \"Field of Dreams\" (N/A) starring Amy Madigan, Gaby Hoffmann, and Kevin Costner. The movie is a heartwarming tale about a farmer who turns his cornfield into a place where dreams can come true, which may appeal to the user's preference for basketball and the cast's performances.",
+      "constraints": {
+        "genre": "basketball",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "actor": "Gaby Hoffmann",
+        "director": "Philip G. Atwell",
+        "writer": "David Nicholls"
+      },
+      "rec_titles": [
+        "Flubber",
+        "Field of Dreams",
+        "Smokin' Aces",
+        "Alex in Wonderland"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Chelcie Ross. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 38,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Chelcie Ross",
+        "anchor_title": "Emma",
+        "constraints": {
+          "genre": "basketball",
+          "actor": "Chelcie Ross",
+          "plot": "children",
+          "writer": "David Nicholls"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 38,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "children",
+          "from_anchor": "Wild",
+          "to_anchor": "Emma"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference cues, here are two movie recommendations that might interest them:\n\n* \"Men in Black II\" (2002) stars Tommy Lee Jones and Will Smith as agents who must find and restore an agent's memory after a case from their past resurfaces. This action-packed comedy has a similar blend of humor and sci-fi elements that the user seemed to enjoy in \"You.\"\n* \"Saving Grace\" (1993) follows a young nurse struggling with addiction, who finds solace in an odd survivalist. This emotional drama stars Holly Hunter and Bokeem Woodbine, both of whom deliver powerful performances. The user may appreciate the darker themes and strong acting in this movie.",
+      "constraints": {
+        "genre": "basketball",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "RED",
+        "actor": "Chelcie Ross",
+        "director": "Philip G. Atwell",
+        "writer": "David Nicholls"
+      },
+      "rec_titles": [
+        "Men in Black II",
+        "Saving Grace",
+        "The Red Violin",
+        "3"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Chelcie Ross",
+        "anchor_title": "Emma",
+        "constraints": {
+          "genre": "basketball",
+          "actor": "Chelcie Ross",
+          "plot": "children",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre: basketball, actor: Chelcie Ross, director: Philip G. Atwell, writer: David Nicholls. The user is looking for more movie recommendations similar to the ones provided earlier.\n\nBased on the user's preferences, I would recommend \"The Stuff\" and \"Uncommon Valor\". Both movies are action-packed and feature Chelcie Ross in a starring role. \"The Stuff\" is a cult classic about a mysterious goo that turns people into zombie-like snackers, while \"Uncommon Valor\" is a documentary film about the famous flag-raising at Mount Suribachi during World War II. Both movies are sure to provide an exciting and entertaining watch!",
+      "constraints": {
+        "genre": "basketball",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Chelcie Ross",
+        "director": "Philip G. Atwell",
+        "writer": "David Nicholls"
+      },
+      "rec_titles": [
+        "The Stuff",
+        "Neighbors 2: Sorority Rising",
+        "Mama",
+        "Uncommon Valor"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Chelcie Ross",
+        "anchor_title": "Emma",
+        "constraints": {
+          "genre": "basketball",
+          "actor": "Chelcie Ross",
+          "plot": "children",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre: basketball; actor: Chelcie Ross; director: Philip G. Atwell; writer: David Nicholls; plot keywords: actually, think.\nBased on the user's constraints, I recommend the movie \"Rudy\" starring Chelcie Ross. The film is a sports drama about a young man who defies the odds to pursue his dream of playing college football for Notre Dame, despite being told he's too small. It's a feel-good movie that will inspire and motivate the viewer to think positively and believe in themselves. Alternatively, \"The Truman Show\" is another great choice, as it's a thought-provoking film that explores the idea of reality television and the consequences of living in a controlled environment.",
+      "constraints": {
+        "genre": "basketball",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "You",
+        "actor": "Chelcie Ross",
+        "director": "Philip G. Atwell",
+        "writer": "David Nicholls"
+      },
+      "rec_titles": [
+        "Haunted",
+        "The Truman Show",
+        "Rudy",
+        "War"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Chelcie Ross",
+        "anchor_title": "Emma",
+        "constraints": {
+          "genre": "basketball",
+          "actor": "Chelcie Ross",
+          "plot": "children",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - basketball; actor - Chelcie Ross; director - Philip G. Atwell; writer - David Nicholls; plot keywords - what, said. Based on these cues, I recommend the movie \"Divergent\" (2011) starring Shailene Woodley and Theo James. The film follows a young woman named Tris who discovers she's Divergent, a quality that makes her dangerous in a society divided by factions based on virtues. With the help of a mysterious man named Four, Tris must navigate a plot to destroy Divergents and uncover the truth about their dangerous nature before it's too late.",
+      "constraints": {
+        "genre": "basketball",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "You",
+        "actor": "Chelcie Ross",
+        "director": "Philip G. Atwell",
+        "writer": "David Nicholls"
+      },
+      "rec_titles": [
+        "Divergent",
+        "Chain Reaction",
+        "The Yearling",
+        "Wolfhound"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by John Wayne? Hmm, I didn’t expect that vibe. (I’m thinking of The Truth.)",
+      "user_meta": {
+        "turn": 42,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "John Wayne",
+        "anchor_title": "The Majestic",
+        "constraints": {
+          "genre": "basketball",
+          "actor": "Chelcie Ross",
+          "writer": "Terry Pratchett",
+          "director": "John Wayne"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 42,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "writer",
+          "bridge_value": "Terry Pratchett",
+          "from_anchor": "Emma",
+          "to_anchor": "The Majestic"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: The user is looking for a movie similar to \"The Truth,\" but with a different genre, actor, director, and plot keywords. They are open to exploring other options that match their preferences.\n\nRecommendation: Based on the user's constraints, I would recommend \"Downfall\" and \"Elysium.\" Both movies offer a gripping and thought-provoking storyline, with talented actors and directors at the helm. \"Downfall\" is a tense and emotional drama that explores themes of redemption and second chances, while \"Elysium\" is a visually stunning and timely sci-fi film that delves into issues of inequality and social justice.",
+      "constraints": {
+        "genre": "basketball",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "X",
+        "actor": "Chelcie Ross",
+        "director": "John Wayne",
+        "writer": "David Nicholls"
+      },
+      "rec_titles": [
+        "Downfall",
+        "Elysium",
+        "Armageddon",
+        "The Secret of My Success"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "John Wayne",
+        "anchor_title": "The Majestic",
+        "constraints": {
+          "genre": "basketball",
+          "actor": "Chelcie Ross",
+          "writer": "Terry Pratchett",
+          "director": "John Wayne"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preference cues, here are two movie recommendations that fit their criteria:\n\n* \"Bats\" (1999) - This horror film follows a group of people who return to their abandoned village after a nuclear disaster, only to find a radiated bat living in their attic. As they try to survive the night, they discover that the creature has infected them with a deadly plague. With a talented cast including Ned Bellamy and Leon, this movie will keep you on the edge of your seat.\n* \"In the Mouth of Madness\" (N/A) - This psychological thriller explores the dark side of horror fiction, as an insurance investigator discovers that the books of a popular author are having a dangerous impact on his fans. With a star-studded cast featuring Frances Bay and Peter Jason, this movie is sure to keep you guessing until the very end.",
+      "constraints": {
+        "genre": "basketball",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Chelcie Ross",
+        "director": "John Wayne",
+        "writer": "David Nicholls"
+      },
+      "rec_titles": [
+        "Bats",
+        "In the Mouth of Madness",
+        "The Truth",
+        "The Alamo"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Psycho tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "John Wayne",
+        "anchor_title": "The Majestic",
+        "constraints": {
+          "genre": "basketball",
+          "actor": "Chelcie Ross",
+          "writer": "Terry Pratchett",
+          "director": "John Wayne"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, it seems they enjoy movies with a mix of action and comedy. Of the titles listed, I would recommend \"Training Day\" starring Denzel Washington as it offers a gripping storyline with plenty of action and suspense, while also providing some humor through its cast of characters. Alternatively, \"What Women Want\" with Mel Gibson and Helen Hunt could be an interesting choice for fans of romantic comedies with a unique twist on gender dynamics.",
+      "constraints": {
+        "genre": "basketball",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Psycho",
+        "actor": "Chelcie Ross",
+        "director": "John Wayne",
+        "writer": "David Nicholls"
+      },
+      "rec_titles": [
+        "The Untouchables",
+        "Training Day",
+        "Tombstone",
+        "What Women Want"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Training Day? That sounds intriguing.",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "John Wayne",
+        "anchor_title": "The Majestic",
+        "constraints": {
+          "genre": "basketball",
+          "actor": "Chelcie Ross",
+          "writer": "Terry Pratchett",
+          "director": "John Wayne"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: basketball, actor Chelcie Ross, director John Wayne, writer David Nicholls, plot keywords \"what\" and \"training\".\n\nBased on these constraints, I recommend the movie \"Her\" (2013) starring Scarlett Johansson. The film is a documentary-narrative that explores the differences in dating experiences for young single and committed women today, with a unique visual interpretation of the interviewees' emotions and beliefs. Alternatively, I suggest \"Paycheck\" (2003) starring Ben Affleck, which follows an engineer who finds himself on the run for his life after a seemingly simple idea ends up causing chaos. Both movies offer thought-provoking plots and strong performances that align with the user's preferences.",
+      "constraints": {
+        "genre": "basketball",
+        "plot": [
+          "what",
+          "training"
+        ],
+        "name": "Training Day",
+        "actor": "Chelcie Ross",
+        "director": "John Wayne",
+        "writer": "David Nicholls"
+      },
+      "rec_titles": [
+        "Her",
+        "The Violent Kind",
+        "Waiting",
+        "Paycheck"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "John Wayne",
+        "anchor_title": "The Majestic",
+        "constraints": {
+          "genre": "basketball",
+          "actor": "Chelcie Ross",
+          "writer": "Terry Pratchett",
+          "director": "John Wayne"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - basketball; actor - Chelcie Ross; director - John Wayne; writer - David Nicholls; plot keywords - like, sound.\nBased on these cues, I recommend the movie \"Rudy\" starring Chelcie Ross. The film is about a young man who dreams of playing football for Notre Dame despite being told he's too small, and it has a similar feel-good and inspiring tone as \"Ted.\" Additionally, \"Rudy\" was directed by John Patrick Shanley, who also wrote the screenplay for \"Moonstruck,\" which features Chelcie Ross in a supporting role.",
+      "constraints": {
+        "genre": "basketball",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "actor": "Chelcie Ross",
+        "director": "John Wayne",
+        "writer": "David Nicholls"
+      },
+      "rec_titles": [
+        "Planet Terror",
+        "Uptown Girls",
+        "Rudy",
+        "The Stuff"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with David Belle. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 47,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "David Belle",
+        "anchor_title": "Mad Max Beyond Thunderdome",
+        "constraints": {
+          "genre": "basketball",
+          "actor": "David Belle",
+          "writer": "Terry Pratchett",
+          "plot": "children"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 47,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "children",
+          "from_anchor": "The Majestic",
+          "to_anchor": "Mad Max Beyond Thunderdome"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to help! Based on the user's preferences, here are two movie recommendations that might fit their interests:\n\nThe Rum Diary (1998) is a unique blend of culture and adventure that might appeal to fans of David Belle. Starring Giovanni Ribisi and Johnny Depp, this film follows an American journalist on a freelance assignment in Puerto Rico during the 1960s. With its mix of island culture and expatriate life, this movie could provide a thrilling and thought-provoking experience for viewers.\n\nAlternatively, Waterworld (1995) is an epic post-apocalyptic adventure that might satisfy the user's desire for action and drama. Starring Kevin Costner and Dennis Hopper, this movie takes place in a future where Earth is mostly underwater, and follows a mutated mariner as he fights against starvation and dangerous outlaws to help a woman and child find dry land. With its impressive visual effects and gripping storyline, Waterworld could be a great fit for fans of David Belle's action-packed movies.",
+      "constraints": {
+        "genre": "basketball",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "RED",
+        "actor": "David Belle",
+        "director": "John Wayne",
+        "writer": "David Nicholls"
+      },
+      "rec_titles": [
+        "Heart of Darkness",
+        "The Rum Diary",
+        "Waterworld",
+        "Beastly"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "David Belle",
+        "anchor_title": "Mad Max Beyond Thunderdome",
+        "constraints": {
+          "genre": "basketball",
+          "actor": "David Belle",
+          "writer": "Terry Pratchett",
+          "plot": "children"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, I understand you're looking for movies similar to the ones you've already mentioned. Based on your preferences, I recommend \"The Lincoln Lawyer\" and \"Thick as Thieves.\" Both of these movies share a similar tone and style to the ones you've mentioned, with engaging plots and talented actors. In \"The Lincoln Lawyer,\" Matthew McConaughey plays a defense attorney who becomes embroiled in a complex case, while in \"Thick as Thieves,\" a group of misfits must work together to take down a dangerous criminal. I hope you enjoy these recommendations!",
+      "constraints": {
+        "genre": "basketball",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "David Belle",
+        "director": "John Wayne",
+        "writer": "David Nicholls"
+      },
+      "rec_titles": [
+        "The Lincoln Lawyer",
+        "Hopeless",
+        "Thick as Thieves",
+        "Green Card"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Her? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "David Belle",
+        "anchor_title": "Mad Max Beyond Thunderdome",
+        "constraints": {
+          "genre": "basketball",
+          "actor": "David Belle",
+          "writer": "Terry Pratchett",
+          "plot": "children"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Basketball, David Belle, John Wayne, David Nicholls, what keyword.\nBased on these constraints, I recommend \"Man on Wire\" and \"The Wrestler\". Both movies feature male leads who are known for their athleticism and determination, similar to the qualities associated with basketball and David Belle. Additionally, both films have a strong focus on individual effort and determination, which aligns with the user's preference for John Wayne and David Nicholls.",
+      "constraints": {
+        "genre": "basketball",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "Her",
+        "actor": "David Belle",
+        "director": "John Wayne",
+        "writer": "David Nicholls"
+      },
+      "rec_titles": [
+        "Man on Wire",
+        "Monsters, Inc.",
+        "The Wrestler",
+        "American Dreamz"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Man on Wire. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 50,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "David Belle",
+        "anchor_title": "Mad Max Beyond Thunderdome",
+        "constraints": {
+          "genre": "basketball",
+          "actor": "David Belle",
+          "writer": "Terry Pratchett",
+          "plot": "children"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user likes the sound of Man on Wire and didn't expect the vibe. They prefer movies with a basketball theme, starring David Belle, and directed by John Wayne or David Nicholls.\n\nRecommendation: Based on the user's preferences, I would recommend \"Looper\" (2012) and \"American Dreamz\" (2006). Both movies have a unique plot and feature actors who match the user's preferences. \"Looper\" stars Joseph Gordon-Levitt and Bruce Willis in a time-travel thriller with a basketball-like vibe, while \"American Dreamz\" has a sports-themed plot with actors like David Belle and Noureen DeWulf.",
+      "constraints": {
+        "genre": "basketball",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Man on Wire",
+        "actor": "David Belle",
+        "director": "John Wayne",
+        "writer": "David Nicholls"
+      },
+      "rec_titles": [
+        "American Dreamz",
+        "The Right Stuff",
+        "Smokin' Aces",
+        "Looper"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 5,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "writer",
+      "bridge_value": "David Nicholls",
+      "from_anchor": "The Great Gatsby",
+      "to_anchor": "The Imaginarium of Doctor Parnassus"
+    },
+    {
+      "turn": 10,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Sophie Rois",
+      "from_anchor": "The Imaginarium of Doctor Parnassus",
+      "to_anchor": "A Night at the Roxbury"
+    },
+    {
+      "turn": 12,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Isabelle Nélisse",
+      "from_anchor": "A Night at the Roxbury",
+      "to_anchor": "The Great Gatsby"
+    },
+    {
+      "turn": 18,
+      "from_focus": "director",
+      "to_focus": "writer",
+      "bridge_field": "plot",
+      "bridge_value": "swooning",
+      "from_anchor": "The Great Gatsby",
+      "to_anchor": "Coyote Ugly"
+    },
+    {
+      "turn": 23,
+      "from_focus": "writer",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Gaby Hoffmann",
+      "from_anchor": "Coyote Ugly",
+      "to_anchor": "A Mighty Wind"
+    },
+    {
+      "turn": 29,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "director",
+      "bridge_value": "Philip G. Atwell",
+      "from_anchor": "A Mighty Wind",
+      "to_anchor": "Dance Flick"
+    },
+    {
+      "turn": 34,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "writer",
+      "bridge_value": "David Nicholls",
+      "from_anchor": "Dance Flick",
+      "to_anchor": "Wild"
+    },
+    {
+      "turn": 38,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "children",
+      "from_anchor": "Wild",
+      "to_anchor": "Emma"
+    },
+    {
+      "turn": 42,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "writer",
+      "bridge_value": "Terry Pratchett",
+      "from_anchor": "Emma",
+      "to_anchor": "The Majestic"
+    },
+    {
+      "turn": 47,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "children",
+      "from_anchor": "The Majestic",
+      "to_anchor": "Mad Max Beyond Thunderdome"
+    }
+  ]
+}

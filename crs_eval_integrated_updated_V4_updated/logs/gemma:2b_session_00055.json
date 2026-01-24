@@ -1,0 +1,2210 @@
+{
+  "session_id": "00055",
+  "model_name": "gemma:2b",
+  "true_genre": "comedy",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a comedy movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy",
+        "anchor_title": "Year One",
+        "constraints": {
+          "genre": "comedy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response you requested:\n\nThe Interview and The Rum Diary are great comedies with unique plots and interesting characters. If you're looking for something with more action and a bigger cast, Burn After Reading might be a fun choice. The Truman Show is a classic satire about reality TV that will make you laugh and think at the same time.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "comedy",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "The Interview",
+        "The Rum Diary",
+        "Burn After Reading",
+        "The Truman Show"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy",
+        "anchor_title": "Year One",
+        "constraints": {
+          "genre": "comedy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response:\n\nThe user's preference for comedy is evident by their mention of \"sure\" and \"perhaps.\" Based on that, \"The Country Bears\" seems to be a good fit. It's an adventure about a band of bears coming together to save their beloved venue.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "The Country Bears",
+        "Sex Tape",
+        "George of the Jungle",
+        "Our Idiot Brother"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Country Bears. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy",
+        "anchor_title": "Year One",
+        "constraints": {
+          "genre": "comedy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's preference for funny comedies is evident, so \"Get Low\" and \"Bridesmaids\" would likely be the best recommendations. \"Get Low\" boasts fantastic sound and quirky characters, while \"Bridesmaids\" delivers witty humor with a strong female cast.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Country Bears"
+      },
+      "rec_titles": [
+        "Get Low",
+        "Back to the Future",
+        "Bridesmaids",
+        "Megamind"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Get Low? That sounds intriguing.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy",
+        "anchor_title": "Year One",
+        "constraints": {
+          "genre": "comedy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user seems to be looking for something light and humorous. How about \"The Crocodile Hunter: Collision Course\" with Aden Young and Steve Bastoni? It's a comedic crime movie with a lot of heart and laughs.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Get Low"
+      },
+      "rec_titles": [
+        "The Crocodile Hunter: Collision Course",
+        "Zero Effect",
+        "Eternal Sunshine of the Spotless Mind",
+        "How to Lose a Guy in 10 Days"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy",
+        "anchor_title": "Year One",
+        "constraints": {
+          "genre": "comedy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Hmm, interesting! It seems you're looking for something light and humorous. How about \"Hitch\" starring Vincent De Paul? The film follows a summer of intrigue and suspense when a corpse turns up in the office of a Hollywood film studio, and Alfred Hitchcock and François Truffaut's worlds collide when they cross paths.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X"
+      },
+      "rec_titles": [
+        "Hitch",
+        "Galaxy Quest",
+        "The Lucky Ones",
+        "Lilo & Stitch"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Keir Dullea. That sounds intriguing. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 6,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Keir Dullea",
+        "anchor_title": "The Big Lebowski",
+        "constraints": {
+          "genre": "comedy",
+          "actor": "Keir Dullea",
+          "writer": "David Nicholls"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 6,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "writer",
+          "bridge_value": "David Nicholls",
+          "from_anchor": "Year One",
+          "to_anchor": "The Big Lebowski"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommended movie based on the user's constraints:\n\n**Recommended movie:** 50 First Dates (2004)\n\nThis romantic comedy follows the story of a man with a fear of commitment who finds love with a woman who has short-term memory loss.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Us",
+        "actor": "Keir Dullea"
+      },
+      "rec_titles": [
+        "50 First Dates",
+        "Happy Gilmore",
+        "A Night at the Roxbury",
+        "2010"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Keir Dullea",
+        "anchor_title": "The Big Lebowski",
+        "constraints": {
+          "genre": "comedy",
+          "actor": "Keir Dullea",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response you requested:\n\nSince you're looking for comedies with Keir Dullea, check out \"The Nut Job\" (2014), where he plays a squirrel who helps his former park brethren survive by raiding a nut store.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Keir Dullea"
+      },
+      "rec_titles": [
+        "The Nut Job",
+        "Due Date",
+        "Mr. Bean's Holiday",
+        "Bedazzled"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Her. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Keir Dullea",
+        "anchor_title": "The Big Lebowski",
+        "constraints": {
+          "genre": "comedy",
+          "actor": "Keir Dullea",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sounds like you're looking for something light and fun! I recommend either \"The Grand Budapest Hotel\" or \"Ant-Man\". \"The Grand Budapest Hotel\" is a witty comedy with charming characters and a delightful soundtrack, while \"Ant-Man\" is an adrenaline-fueled superhero movie with a heart.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Her",
+        "actor": "Keir Dullea"
+      },
+      "rec_titles": [
+        "The Grand Budapest Hotel",
+        "Ant-Man",
+        "Zombie Hunter",
+        "Wild Target"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Hero? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Keir Dullea",
+        "anchor_title": "The Big Lebowski",
+        "constraints": {
+          "genre": "comedy",
+          "actor": "Keir Dullea",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response you requested:\n\nThe user's preference for comedy and a unique protagonist are perfectly suited to 'Pushing Tin' (1999), where a feud between air traffic controllers unfolds due to personalities clashing.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "what",
+          "hero"
+        ],
+        "name": "Her",
+        "actor": "Keir Dullea"
+      },
+      "rec_titles": [
+        "Pushing Tin",
+        "Liar Liar",
+        "Young Adult",
+        "Under the Tuscan Sun"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Keir Dullea",
+        "anchor_title": "The Big Lebowski",
+        "constraints": {
+          "genre": "comedy",
+          "actor": "Keir Dullea",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation:\n\nIf you're looking for a hilarious and heartwarming comedy with stellar performances, check out \"The Longest Yard.\" This heartwarming film features a stellar cast and a captivating story about prison inmates forming a football team to challenge the guards.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "actor": "Keir Dullea"
+      },
+      "rec_titles": [
+        "The Open Road",
+        "The Longest Yard",
+        "Evil Dead II",
+        "Cutthroat Island"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Phillip Noyce? Hmm, I didn’t expect that vibe. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 11,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Phillip Noyce",
+        "anchor_title": "The Hangover",
+        "constraints": {
+          "genre": "comedy",
+          "actor": "Keir Dullea",
+          "writer": "David Nicholls",
+          "director": "Phillip Noyce",
+          "plot": "diverse"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 11,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "diverse",
+          "from_anchor": "The Big Lebowski",
+          "to_anchor": "The Hangover"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response based on the user's cues:\n\nThe user's preference for Phillip Noyce and a comedic tone suggests titles like \"Kung Pow: Enter the Fist\" and \"The Beaver\".",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Her",
+        "actor": "Phillip Noyce",
+        "director": "Phillip Noyce"
+      },
+      "rec_titles": [
+        "Kung Pow: Enter the Fist",
+        "The Beaver",
+        "Pretty Woman",
+        "This Christmas"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Phillip Noyce",
+        "anchor_title": "The Hangover",
+        "constraints": {
+          "genre": "comedy",
+          "actor": "Keir Dullea",
+          "writer": "David Nicholls",
+          "director": "Phillip Noyce",
+          "plot": "diverse"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation based on the user's constraints:\n\n\"Based on your preferences, 'Aloha' starring Bradley Cooper and Bill Murray might be your next pick. It's a romantic comedy about a half-caste island girl defying tradition to follow her heart.\"",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Phillip Noyce",
+        "director": "Phillip Noyce"
+      },
+      "rec_titles": [
+        "Aloha",
+        "Boomerang",
+        "The Longest Yard",
+        "Tooth Fairy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Rutger Hauer. Hmm, I didn’t expect that vibe. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 13,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Rutger Hauer",
+        "anchor_title": "Retribution",
+        "constraints": {
+          "genre": "comedy",
+          "actor": "Rutger Hauer",
+          "director": "Phillip Noyce",
+          "plot": "diverse",
+          "language": "Japanese Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 13,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "Japanese Language",
+          "from_anchor": "The Hangover",
+          "to_anchor": "Retribution"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommended movie:\n\n\"If you're looking for something with similar vibes to 'You', consider checking out 'White Chicks' or 'Home Fries'.\"",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "X",
+        "actor": "Rutger Hauer",
+        "director": "Phillip Noyce",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "How to Lose a Guy in 10 Days",
+        "White Chicks",
+        "Kung Fu Panda",
+        "Home Fries"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Rutger Hauer",
+        "anchor_title": "Retribution",
+        "constraints": {
+          "genre": "comedy",
+          "actor": "Rutger Hauer",
+          "director": "Phillip Noyce",
+          "plot": "diverse",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommendation:\n\nBased on your preference for comedies with Rutger Hauer and Phillip Noyce, I recommend \"The Interview\" or \"Dogma\". \"The Interview\" features a surprising and comedic plot about a tabloid interview with a dictator, while \"Dogma\" combines dark humor with elements of a religious satire.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Rutger Hauer",
+        "director": "Phillip Noyce",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "The Interview",
+        "Dogma",
+        "The Sisterhood of the Traveling Pants",
+        "Disaster Movie"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Dogma? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Rutger Hauer",
+        "anchor_title": "Retribution",
+        "constraints": {
+          "genre": "comedy",
+          "actor": "Rutger Hauer",
+          "director": "Phillip Noyce",
+          "plot": "diverse",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's preference for comedy and the intriguing subject matter suggest \"Get Low\" or \"She's All That\". \"Get Low\" captivates with its darkly humorous portrayal of a funeral celebration gone wrong, while \"She's All That\" offers a lighter, more optimistic comedic escape with unexpected romantic undertones.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "what",
+          "dogma"
+        ],
+        "name": "Dogma",
+        "actor": "Rutger Hauer",
+        "director": "Phillip Noyce",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Get Low",
+        "TMNT",
+        "She's All That",
+        "We the Living"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Rutger Hauer",
+        "anchor_title": "Retribution",
+        "constraints": {
+          "genre": "comedy",
+          "actor": "Rutger Hauer",
+          "director": "Phillip Noyce",
+          "plot": "diverse",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommended movie:\n\nBased on your preferences, \"Magic Mike\" seems to be the perfect fit. It features Rutger Hauer's comedic charm and the sound of great music that you mentioned.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "actor": "Rutger Hauer",
+        "director": "Phillip Noyce",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Magic Mike",
+        "Woman on Top",
+        "America's Sweethearts",
+        "Monsters University"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Rutger Hauer",
+        "anchor_title": "Retribution",
+        "constraints": {
+          "genre": "comedy",
+          "actor": "Rutger Hauer",
+          "director": "Phillip Noyce",
+          "plot": "diverse",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a response:\n\nConsidering your preference for comedies, I would recommend \"Bruce Almighty\" (2003) starring Eddie Jemison. It's a heartwarming film about a news reporter who gets a chance to step into God's shoes.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "X",
+        "actor": "Rutger Hauer",
+        "director": "Phillip Noyce",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Bruce Almighty",
+        "The Tempest",
+        "Super",
+        "The Sting"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does War tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Rutger Hauer",
+        "anchor_title": "Retribution",
+        "constraints": {
+          "genre": "comedy",
+          "actor": "Rutger Hauer",
+          "director": "Phillip Noyce",
+          "plot": "diverse",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommended movie based on the user's constraints:\n\nBased on the user's preference for a war story with Rutger Hauer and Phillip Noyce, **Blade Runner** would be a strong candidate to explore. The dystopian world and the protagonist's pursuit of a rogue blade runner are themes that could be both thrilling and thought-provoking.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "War",
+        "actor": "Rutger Hauer",
+        "director": "Phillip Noyce",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "American Dreamz",
+        "Blade Runner",
+        "What If...",
+        "The Good German"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Mark Waters? That sounds intriguing. (I’m thinking of War.)",
+      "user_meta": {
+        "turn": 19,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Mark Waters",
+        "anchor_title": "The Shaggy Dog",
+        "constraints": {
+          "genre": "comedy",
+          "director": "Mark Waters",
+          "plot": "mission",
+          "language": "Japanese Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 19,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "mission",
+          "from_anchor": "Retribution",
+          "to_anchor": "The Shaggy Dog"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response:\n\nWhile the war theme is interesting, you might enjoy more nuanced stories that explore the human stories behind the conflicts. 'The Imitation Game', 'The Queen', and 'Valkyrie' might be better fits for your preferences.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Water",
+        "actor": "Rutger Hauer",
+        "director": "Mark Waters",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Valkyrie",
+        "The Imitation Game",
+        "The Queen",
+        "The Warlords"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mark Waters",
+        "anchor_title": "The Shaggy Dog",
+        "constraints": {
+          "genre": "comedy",
+          "director": "Mark Waters",
+          "plot": "mission",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommended movie:\n\nBased on your preferences, I would recommend \"Veronica Mars\". This war movie features Rutger Hauer in a compelling role and is packed with action and suspense.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Rutger Hauer",
+        "director": "Mark Waters",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Veronica Mars",
+        "Jason Bourne",
+        "True Crime",
+        "Tooth Fairy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Robert Redford. Hmm, I didn’t expect that vibe. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 21,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Robert Redford",
+        "anchor_title": "Shrek 2",
+        "constraints": {
+          "genre": "comedy",
+          "director": "Mark Waters",
+          "language": "Japanese Language",
+          "actor": "Robert Redford"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 21,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "director",
+          "bridge_value": "Mark Waters",
+          "from_anchor": "The Shaggy Dog",
+          "to_anchor": "Shrek 2"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response:\n\n\"Sounds like you might be looking for something with a complex and nuanced plot like 'Siddhartha' or 'The Queen'. 'Good Will Hunting' with its political themes and the iconic performance by Will Hunting would also be a great choice.\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Her",
+        "actor": "Robert Redford",
+        "director": "Robert Redford",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Siddhartha",
+        "The Queen",
+        "Good Will Hunting",
+        "The Seduction of Joe Tynan"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Robert Redford",
+        "anchor_title": "Shrek 2",
+        "constraints": {
+          "genre": "comedy",
+          "director": "Mark Waters",
+          "language": "Japanese Language",
+          "actor": "Robert Redford"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation based on the user's preference cues:\n\nThe River (1991) is a documentary about the devastating and costly problems associated with the Mississippi River system. The film highlights the need for more federal projects to address this issue.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Robert Redford",
+        "director": "Robert Redford",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "The River",
+        "The Patriot",
+        "The Deep End of the Ocean",
+        "Catch-22"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Robert Redford",
+        "anchor_title": "Shrek 2",
+        "constraints": {
+          "genre": "comedy",
+          "director": "Mark Waters",
+          "language": "Japanese Language",
+          "actor": "Robert Redford"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's my recommendation:\n\nBased on the user's preference for war and historical films, \"The Best Years of Our Lives\" or \"Three Kings\" would be suitable recommendations. \"The Best Years of Our Lives\" portrays the hardships faced by veterans returning home to a changed world, while \"Three Kings\" showcases the dedication and perseverance of athletes training for the triathlon World Championships.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "actor": "Robert Redford",
+        "director": "Robert Redford",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Treasure Planet",
+        "The Best Years of Our Lives",
+        "Braveheart",
+        "Three Kings"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Robert Redford",
+        "anchor_title": "Shrek 2",
+        "constraints": {
+          "genre": "comedy",
+          "director": "Mark Waters",
+          "language": "Japanese Language",
+          "actor": "Robert Redford"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response:\n\nIt seems you're looking for something with a similar tone to \"Actually, now that I think about it, I might want the opposite.\" Consider exploring films about the complexities of war, the struggles of ordinary people caught in the midst of conflict, or stories about finding hope and beauty amidst darkness. \"Inglourious Basterds\", \"Ordinary People\", and \"Pan's Labyrinth\" are excellent choices that explore these themes in a captivating and thought-provoking way.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Ted",
+        "actor": "Robert Redford",
+        "director": "Robert Redford",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Inglourious Basterds",
+        "Ordinary People",
+        "Red Cliff",
+        "Pan's Labyrinth"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Joe Carnahan? Hmm, I didn’t expect that vibe. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 25,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Joe Carnahan",
+        "anchor_title": "Zookeeper",
+        "constraints": {
+          "genre": "comedy",
+          "director": "Joe Carnahan",
+          "language": "English",
+          "actor": "Robert Redford"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 25,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Shrek 2",
+          "to_anchor": "Zookeeper"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response you requested:\n\nThe user's preference for a war film with historical figures like Robert Redford and Joe Carnahan suggests 'The Best Years of Our Lives'. This heartwarming story explores the impact of war on both veterans and their families, focusing on their resilience and the bonds they share.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "X",
+        "actor": "Robert Redford",
+        "director": "Joe Carnahan",
+        "language": "ger",
+        "writer": "Joe Carnahan"
+      },
+      "rec_titles": [
+        "Flyboys",
+        "The Best Years of Our Lives",
+        "Dances with Wolves",
+        "Afterlife"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Joe Carnahan",
+        "anchor_title": "Zookeeper",
+        "constraints": {
+          "genre": "comedy",
+          "director": "Joe Carnahan",
+          "language": "English",
+          "actor": "Robert Redford"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a potential recommendation:\n\n\"Based on your preferences, 'A Bridge Too Far' seems like a good match. It's a thrilling historical action film starring Robert Redford and Edward Fox that chronicles a daring operation during World War II.\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Robert Redford",
+        "director": "Joe Carnahan",
+        "language": "ger",
+        "writer": "Joe Carnahan"
+      },
+      "rec_titles": [
+        "Patton",
+        "A Bridge Too Far",
+        "Zero Dark Thirty",
+        "The Pink Panther 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Joe Carnahan",
+        "anchor_title": "Zookeeper",
+        "constraints": {
+          "genre": "comedy",
+          "director": "Joe Carnahan",
+          "language": "English",
+          "actor": "Robert Redford"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Okay, here's the response you requested:\n\nIt seems that the user might be interested in movies about overcoming adversity and fighting for what they believe in. 'The Book Thief', 'Butch Cassidy and the Sundance Kid', and 'Lincoln' might be films that resonate with their preferences.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "You",
+        "actor": "Robert Redford",
+        "director": "Joe Carnahan",
+        "language": "ger",
+        "writer": "Joe Carnahan"
+      },
+      "rec_titles": [
+        "The Book Thief",
+        "Butch Cassidy and the Sundance Kid",
+        "Monsters, Inc.",
+        "Lincoln"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Joe Carnahan",
+        "anchor_title": "Zookeeper",
+        "constraints": {
+          "genre": "comedy",
+          "director": "Joe Carnahan",
+          "language": "English",
+          "actor": "Robert Redford"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommendation you requested:\n\nThe movie that best fits the user's constraints is **The Siege (1998)**. The movie showcases a group of soldiers who are forced to endure difficult and dangerous conditions to survive. It stars Mark Valley, Mark Valley, and Bruce Willis, who deliver strong performances that capture the hardship and sacrifice of the characters.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "actor": "Robert Redford",
+        "director": "Joe Carnahan",
+        "language": "ger",
+        "writer": "Joe Carnahan"
+      },
+      "rec_titles": [
+        "What Women Want",
+        "The Monuments Men",
+        "Doctor Zhivago",
+        "The Siege"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Tron. I want to try something more erotica—still with Joe Carnahan if possible. That sounds intriguing.",
+      "user_meta": {
+        "turn": 29,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "erotica",
+        "anchor_title": "White Chicks",
+        "constraints": {
+          "genre": "erotica",
+          "director": "Joe Carnahan",
+          "language": "English",
+          "actor": "Robert Redford"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 29,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "director",
+          "bridge_value": "Joe Carnahan",
+          "from_anchor": "Zookeeper",
+          "to_anchor": "White Chicks"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Thanks for all the detail on Tron. I want to try something more erotica—still with Joe Carnahan if possible. That sounds intriguing.\n\nFrom the list, 'For Whom the Bell Tolls' and 'Wanderlust' seem like good choices. Both films have Joe Carnahan and are rated R. 'For Whom the Bell Tolls' is a romantic action film about an American allied with the Republicans during the Spanish Civil War. 'Wanderlust' is a drama about a child who sets out on a bike tour of Iceland.",
+      "constraints": {
+        "genre": "erotica",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Tron",
+        "actor": "Robert Redford",
+        "director": "Joe Carnahan",
+        "language": "ger",
+        "writer": "Joe Carnahan"
+      },
+      "rec_titles": [
+        "For Whom the Bell Tolls",
+        "Scream 4",
+        "The Way We Were",
+        "Wanderlust"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "erotica",
+        "anchor_title": "White Chicks",
+        "constraints": {
+          "genre": "erotica",
+          "director": "Joe Carnahan",
+          "language": "English",
+          "actor": "Robert Redford"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response you requested:\n\nJust checking—do you have any movies with couples that are facing a tough breakup? 'Jack and Jill' and 'Annie Hall' would be perfect for that situation.",
+      "constraints": {
+        "genre": "erotica",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Robert Redford",
+        "director": "Joe Carnahan",
+        "language": "ger",
+        "writer": "Joe Carnahan"
+      },
+      "rec_titles": [
+        "Jack and Jill",
+        "Hesher",
+        "The Secret of My Success",
+        "Annie Hall"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "erotica",
+        "anchor_title": "White Chicks",
+        "constraints": {
+          "genre": "erotica",
+          "director": "Joe Carnahan",
+          "language": "English",
+          "actor": "Robert Redford"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a summary of your request and potential recommendations:\n\n**User's Constraints:** Erotica, Robert Redford, Joe Carnahan, ger, plot keywords: what, said.\n\n**Recommendation:** \"Hitch\" (2005) starring Vincent De Paul, Robinne Lee, Matt Malloy, Adam LeFevre, Kevin Sussman, Kevin Sussman, Amber Valletta, Ato Essandoh, Joe Lo Truglio, Kevin James, Maria Thayer, Jeffrey Donovan, Eva Mendes, Michael Rapaport, Michael Rapaport, Adam Arkin, Rebecca Mader, Will Smith, Will Smith.\n\nThis movie perfectly aligns with the user's preferences, featuring eroticism, a central romantic storyline, and a talented cast led by Robert Redford.",
+      "constraints": {
+        "genre": "erotica",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "You",
+        "actor": "Robert Redford",
+        "director": "Joe Carnahan",
+        "language": "ger",
+        "writer": "Joe Carnahan"
+      },
+      "rec_titles": [
+        "Dear John",
+        "Anyone But You",
+        "Hitch",
+        "You"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does RED tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "erotica",
+        "anchor_title": "White Chicks",
+        "constraints": {
+          "genre": "erotica",
+          "director": "Joe Carnahan",
+          "language": "English",
+          "actor": "Robert Redford"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response you requested:\n\nThe user's preference for erotic, dramatic films with morally gray characters suggests 'I Heart Huckabees' or 'The Violent Kind'. 'The Sting' might also be interesting if they're looking for something with similar themes but with more traditional action.",
+      "constraints": {
+        "genre": "erotica",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "actor": "Robert Redford",
+        "director": "Joe Carnahan",
+        "language": "ger",
+        "writer": "Joe Carnahan"
+      },
+      "rec_titles": [
+        "The Sting",
+        "I Heart Huckabees",
+        "A Bridge Too Far",
+        "The Violent Kind"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "erotica",
+        "anchor_title": "White Chicks",
+        "constraints": {
+          "genre": "erotica",
+          "director": "Joe Carnahan",
+          "language": "English",
+          "actor": "Robert Redford"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has specified a preference for films with erotic themes, historical settings, and strong performances. Based on these preferences, \"Alex in Wonderland\" and \"Taken\" would be strong contenders.",
+      "constraints": {
+        "genre": "erotica",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "RED",
+        "actor": "Robert Redford",
+        "director": "Joe Carnahan",
+        "language": "ger",
+        "writer": "Joe Carnahan"
+      },
+      "rec_titles": [
+        "Alex in Wonderland",
+        "2010",
+        "Anyone But You",
+        "Taken"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? That sounds intriguing.",
+      "user_meta": {
+        "turn": 34,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "erotica",
+        "anchor_title": "White Chicks",
+        "constraints": {
+          "genre": "erotica",
+          "director": "Joe Carnahan",
+          "language": "English",
+          "actor": "Robert Redford"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response you requested:\n\nThe mood of the movie seems to be dark and brooding, considering the theme of secrets and betrayal. If you're looking for something with a similar intensity and intrigue, then \"Eve's Bayou\" and \"The Expendables 2\" might be a good fit.",
+      "constraints": {
+        "genre": "erotica",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "X",
+        "actor": "Robert Redford",
+        "director": "Joe Carnahan",
+        "language": "ger",
+        "writer": "Joe Carnahan"
+      },
+      "rec_titles": [
+        "Eve's Bayou",
+        "The Expendables 2",
+        "Training Day",
+        "Divergent"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Eve's Bayou. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "erotica",
+        "anchor_title": "White Chicks",
+        "constraints": {
+          "genre": "erotica",
+          "director": "Joe Carnahan",
+          "language": "English",
+          "actor": "Robert Redford"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response you requested:\n\nThe user's desire for something \"fascinating\" suggests an interest in dark romantic and erotic themes. Considering the writer's involvement, 'Lolita' and 'Vampyres' seem like strong contenders.",
+      "constraints": {
+        "genre": "erotica",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Eve's Bayou",
+        "actor": "Eve",
+        "director": "Joe Carnahan",
+        "language": "ger",
+        "writer": "Joe Carnahan"
+      },
+      "rec_titles": [
+        "Lolita",
+        "Wonder Boys",
+        "Vampyres",
+        "District 9"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Richard Schenkman? That feels deeper than I thought. (I’m thinking of Tron.)",
+      "user_meta": {
+        "turn": 36,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Richard Schenkman",
+        "anchor_title": "The Crocodile Hunter: Collision Course",
+        "constraints": {
+          "genre": "erotica",
+          "director": "Richard Schenkman",
+          "language": "English",
+          "actor": "Barnard Hughes"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 36,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Barnard Hughes",
+          "from_anchor": "White Chicks",
+          "to_anchor": "The Crocodile Hunter: Collision Course"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommendation you requested:\n\nBased on your preferences, \"The Man from Earth\" would be a perfect match. It involves a similar plot where an impromptu goodbye party takes a mysterious turn. The film also features interesting performances by David Lee Smith and William Katt.",
+      "constraints": {
+        "genre": "erotica",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Tron",
+        "actor": "Eve",
+        "director": "Richard Schenkman",
+        "language": "ger",
+        "writer": "Joe Carnahan"
+      },
+      "rec_titles": [
+        "The Man from Earth",
+        "Maleficent",
+        "Tron",
+        "And Then Came Love"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Richard Schenkman",
+        "anchor_title": "The Crocodile Hunter: Collision Course",
+        "constraints": {
+          "genre": "erotica",
+          "director": "Richard Schenkman",
+          "language": "English",
+          "actor": "Barnard Hughes"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation based on the user's cues:\n\nLooking for something more chaotic and chaotic? Check out \"Hesher\" (2010) starring Piper Laurie and Joseph Gordon-Levitt. It's a wild ride about a young boy losing his way in life.",
+      "constraints": {
+        "genre": "erotica",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Eve",
+        "director": "Richard Schenkman",
+        "language": "ger",
+        "writer": "Joe Carnahan"
+      },
+      "rec_titles": [
+        "Hesher",
+        "House at the End of the Street",
+        "The Man from Earth",
+        "Wild Hogs"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of 2010. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Richard Schenkman",
+        "anchor_title": "The Crocodile Hunter: Collision Course",
+        "constraints": {
+          "genre": "erotica",
+          "director": "Richard Schenkman",
+          "language": "English",
+          "actor": "Barnard Hughes"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here is the recommended movie:\n\n\"If you're looking for something that combines suspense and romance, then 'Let Me In' (2010)' starring Kodi Smit-McPhee and Chloë Grace Moretz might be the perfect movie for you. It's a film about a family dealing with the aftermath of a violent murder, and the emotional and psychological impact it has on everyone involved.\"",
+      "constraints": {
+        "genre": "erotica",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "2010",
+        "actor": "Eve",
+        "director": "Richard Schenkman",
+        "language": "ger",
+        "writer": "Joe Carnahan",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Why Did I Get Married Too?",
+        "Let Me In",
+        "Takers",
+        "And Then Came Love"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Aftermath? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Richard Schenkman",
+        "anchor_title": "The Crocodile Hunter: Collision Course",
+        "constraints": {
+          "genre": "erotica",
+          "director": "Richard Schenkman",
+          "language": "English",
+          "actor": "Barnard Hughes"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response:\n\nThe mood of The Aftermath sounds intriguing, but it seems to be more of a comedy than an erotic film. If you're looking for something with a similar vibe but with a more intense emotional tone, consider watching MacGruber (2010) or Freakonomics (2010).",
+      "constraints": {
+        "genre": "erotica",
+        "plot": [
+          "what",
+          "aftermath"
+        ],
+        "name": "The Aftermath",
+        "actor": "Eve",
+        "director": "Richard Schenkman",
+        "language": "ger",
+        "writer": "Joe Carnahan",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Witless Protection",
+        "MacGruber",
+        "Freakonomics",
+        "127 Hours"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Richard Schenkman",
+        "anchor_title": "The Crocodile Hunter: Collision Course",
+        "constraints": {
+          "genre": "erotica",
+          "director": "Richard Schenkman",
+          "language": "English",
+          "actor": "Barnard Hughes"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response:\n\nIt seems you're looking for something a little more lighthearted and adventurous. How about Alice in Wonderland, where a modern Alice discovers a fantastical world?",
+      "constraints": {
+        "genre": "erotica",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "The Aftermath",
+        "actor": "Eve",
+        "director": "Richard Schenkman",
+        "language": "ger",
+        "writer": "Joe Carnahan",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Alice in Wonderland",
+        "The Warrior's Way",
+        "The Darkest Hour",
+        "MacGruber"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Us. I want to try something more music—still with David Nicholls if possible. I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 41,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "music",
+        "anchor_title": "Things to Do in Denver When You're Dead",
+        "constraints": {
+          "genre": "music",
+          "director": "Richard Schenkman",
+          "language": "English",
+          "actor": "Barnard Hughes",
+          "writer": "David Nicholls"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 41,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "writer",
+          "bridge_value": "David Nicholls",
+          "from_anchor": "The Crocodile Hunter: Collision Course",
+          "to_anchor": "Things to Do in Denver When You're Dead"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation based on the user's preferences:\n\n\"For a music-driven movie with a similar atmosphere to 'Us', consider 'The King's Speech' starring the enigmatic Colin Firth. The film captures the complexities of a historical figure grappling with personal demons while maintaining his public image.\"",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "RED",
+        "actor": "Eve",
+        "director": "Richard Schenkman",
+        "language": "ger",
+        "writer": "David Nicholls",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Shutter Island",
+        "House Rules",
+        "The King's Speech",
+        "Never Let Me Go"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "music",
+        "anchor_title": "Things to Do in Denver When You're Dead",
+        "constraints": {
+          "genre": "music",
+          "director": "Richard Schenkman",
+          "language": "English",
+          "actor": "Barnard Hughes",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a potential recommendation:\n\n\"Based on your preference for music and the 2010s, I recommend 'The Secret Life of Walter Mitty'. This film features a great performance from Walter Mitty, an eccentric and adventurous character, who embarks on an extraordinary adventure that will keep you on the edge of your seat.\"",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Eve",
+        "director": "Richard Schenkman",
+        "language": "ger",
+        "writer": "David Nicholls",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Matched",
+        "The Red Queen",
+        "The Secret Life of Walter Mitty",
+        "Black Swan"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "music",
+        "anchor_title": "Things to Do in Denver When You're Dead",
+        "constraints": {
+          "genre": "music",
+          "director": "Richard Schenkman",
+          "language": "English",
+          "actor": "Barnard Hughes",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the suggested response:\n\n\"I would recommend \"Coyote Ugly\" if you're looking for a heartwarming story about a woman coming out. It was released in 2000 and features some memorable performances from a talented cast.\"",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "actor": "Eve",
+        "director": "Richard Schenkman",
+        "language": "ger",
+        "writer": "David Nicholls",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Coyote Ugly",
+        "Vampires Suck",
+        "Torment",
+        "The Last Airbender"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "music",
+        "anchor_title": "Things to Do in Denver When You're Dead",
+        "constraints": {
+          "genre": "music",
+          "director": "Richard Schenkman",
+          "language": "English",
+          "actor": "Barnard Hughes",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response you requested:\n\n\"Hey, you're looking for something with a unique vibe? Check out 'Robin Hood' (2010) starring Paul Terry and Frank Mozer. It's an animated short with singing and sword battles that's full of personality.\"",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "X",
+        "actor": "Eve",
+        "director": "Richard Schenkman",
+        "language": "ger",
+        "writer": "David Nicholls",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Robin Hood",
+        "Prometheus",
+        "Music and Lyrics",
+        "Blue Valentine"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Tom Amandes. Hmm, I didn’t expect that vibe. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 45,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Tom Amandes",
+        "anchor_title": "Reign of Fire",
+        "constraints": {
+          "genre": "music",
+          "director": "Richard Schenkman",
+          "language": "English",
+          "actor": "Tom Amandes",
+          "writer": "David Nicholls",
+          "plot": "live"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 45,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "live",
+          "from_anchor": "Things to Do in Denver When You're Dead",
+          "to_anchor": "Reign of Fire"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the 1-3 sentence response you requested:\n\nThe movie that best aligns with the user's preference seems to be \"The Seduction of Joe Tynan\". It offers a compelling romantic story with complex characters and a captivating plot that would resonate with fans of Tom Amandes.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Her",
+        "actor": "Tom Amandes",
+        "director": "Richard Schenkman",
+        "language": "ger",
+        "writer": "David Nicholls",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "The Seduction of Joe Tynan",
+        "Saving Mr. Banks",
+        "My Soul to Take",
+        "Wild Target"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tom Amandes",
+        "anchor_title": "Reign of Fire",
+        "constraints": {
+          "genre": "music",
+          "director": "Richard Schenkman",
+          "language": "English",
+          "actor": "Tom Amandes",
+          "writer": "David Nicholls",
+          "plot": "live"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here are two movie recommendations that match the user's constraints:\n\n- **The Princess Diaries** (2001) starring Larry Miller, Caroline Goodall, Rene Auberjonois, Hector Elizondo, and Heather Matarazzo is a light and humorous romantic comedy about a teenage girl who finds out she is the heir to the throne of Genovia.\n\n- **Jack and Jill** (2011) starring Eugenio Derbez, Caitlyn Jenner, and Tim Meadows is a romantic comedy about two people who work together at Sellex, an electronics company.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Tom Amandes",
+        "director": "Richard Schenkman",
+        "language": "ger",
+        "writer": "David Nicholls",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "The Princess Diaries",
+        "Jack and Jill",
+        "Shutter",
+        "Clash of the Titans"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Prince. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tom Amandes",
+        "anchor_title": "Reign of Fire",
+        "constraints": {
+          "genre": "music",
+          "director": "Richard Schenkman",
+          "language": "English",
+          "actor": "Tom Amandes",
+          "writer": "David Nicholls",
+          "plot": "live"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's preference for music and the intriguing premise of a curse on a young girl suggest exploring films with haunting melodies and compelling narratives.\n\n**Recommendation:** Consider watching \"The Picture of Dorian Gray\" (2011) starring Tom Amandes, which explores the complexities of a forbidden love story set against a sinister background.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "actor": "Tom Amandes",
+        "director": "Richard Schenkman",
+        "language": "ger",
+        "writer": "David Nicholls",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "The Picture of Dorian Gray",
+        "Furry Vengeance",
+        "Looper",
+        "The Bad Seed"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Picture of Dorian Gray tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tom Amandes",
+        "anchor_title": "Reign of Fire",
+        "constraints": {
+          "genre": "music",
+          "director": "Richard Schenkman",
+          "language": "English",
+          "actor": "Tom Amandes",
+          "writer": "David Nicholls",
+          "plot": "live"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommendation you requested:\n\nThe Picture of Dorian Gray sounds like a dark and compelling film that deals with morality and the human condition. If you're looking for something with a deeper and more philosophical storyline, then \"Goodfellas\" or \"The King's Speech\" might be a better choice.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Deep",
+        "actor": "Tom Amandes",
+        "director": "Richard Schenkman",
+        "language": "ger",
+        "writer": "David Nicholls",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Goodfellas",
+        "The Ghost Writer",
+        "Predators",
+        "The King's Speech"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Her? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tom Amandes",
+        "anchor_title": "Reign of Fire",
+        "constraints": {
+          "genre": "music",
+          "director": "Richard Schenkman",
+          "language": "English",
+          "actor": "Tom Amandes",
+          "writer": "David Nicholls",
+          "plot": "live"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response based on the user's preferences:\n\nWhile Her's intriguing premise piqued your interest, the other options better align with the user's preference for music and relatable narratives. Wayne's World and From Paris with Love offer escapist adventures with charismatic performances, while Yogi Bear and The Social Network delve into social commentary and complex themes.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what"
+        ],
+        "name": "Her",
+        "actor": "Tom Amandes",
+        "director": "Richard Schenkman",
+        "language": "ger",
+        "writer": "David Nicholls",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Wayne's World",
+        "From Paris with Love",
+        "Yogi Bear",
+        "The Social Network"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on The Social Network. I want to try something more dance—still with Caleb Landry Jones if possible. Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 50,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "dance",
+        "anchor_title": "Rise of the Planet of the Apes",
+        "constraints": {
+          "genre": "dance",
+          "director": "Richard Schenkman",
+          "language": "English",
+          "actor": "Caleb Landry Jones",
+          "writer": "David Nicholls"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 50,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "Caleb Landry Jones",
+          "from_anchor": "Reign of Fire",
+          "to_anchor": "Rise of the Planet of the Apes"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response you requested:\n\nThanks for all the detail on The Social Network. I want to try something more dance—still with Caleb Landry Jones if possible. How about The Next Three Days? It's a high-octane thriller about a couple whose lives are turned upside down when she's accused of a murder.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "The Social Network",
+        "actor": "Caleb Landry Jones",
+        "director": "Richard Schenkman",
+        "language": "ger",
+        "writer": "David Nicholls",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "The Next Three Days",
+        "The Twilight Saga: Eclipse",
+        "The Passage",
+        "Winter's Bone"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 6,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "writer",
+      "bridge_value": "David Nicholls",
+      "from_anchor": "Year One",
+      "to_anchor": "The Big Lebowski"
+    },
+    {
+      "turn": 11,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "diverse",
+      "from_anchor": "The Big Lebowski",
+      "to_anchor": "The Hangover"
+    },
+    {
+      "turn": 13,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "Japanese Language",
+      "from_anchor": "The Hangover",
+      "to_anchor": "Retribution"
+    },
+    {
+      "turn": 19,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "mission",
+      "from_anchor": "Retribution",
+      "to_anchor": "The Shaggy Dog"
+    },
+    {
+      "turn": 21,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "director",
+      "bridge_value": "Mark Waters",
+      "from_anchor": "The Shaggy Dog",
+      "to_anchor": "Shrek 2"
+    },
+    {
+      "turn": 25,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Shrek 2",
+      "to_anchor": "Zookeeper"
+    },
+    {
+      "turn": 29,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "director",
+      "bridge_value": "Joe Carnahan",
+      "from_anchor": "Zookeeper",
+      "to_anchor": "White Chicks"
+    },
+    {
+      "turn": 36,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Barnard Hughes",
+      "from_anchor": "White Chicks",
+      "to_anchor": "The Crocodile Hunter: Collision Course"
+    },
+    {
+      "turn": 41,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "writer",
+      "bridge_value": "David Nicholls",
+      "from_anchor": "The Crocodile Hunter: Collision Course",
+      "to_anchor": "Things to Do in Denver When You're Dead"
+    },
+    {
+      "turn": 45,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "live",
+      "from_anchor": "Things to Do in Denver When You're Dead",
+      "to_anchor": "Reign of Fire"
+    },
+    {
+      "turn": 50,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "Caleb Landry Jones",
+      "from_anchor": "Reign of Fire",
+      "to_anchor": "Rise of the Planet of the Apes"
+    }
+  ]
+}

@@ -149,7 +149,7 @@ class CRSSystem:
             f"The user just said: '{user_message}'. "
             f"User preference cues → {constraints_text}.\n"
             f"Based on those cues, here are some potential recommendations:\n{rec_details_str or '- No precise matches; fall back to broadly liked titles.'}\n"
-            f"Politely and conversationally recommend one or two of these movies from this list: {rec_titles}. You can mention the plot or actors to make it more interesting. Keep your response to 1-3 sentences."
+            f"Start your reply by briefly restating the user's constraints in natural language, then recommend one or two of these movies from this list: {rec_titles}. You can mention the plot or actors to make it more interesting. Keep your response to 1-3 sentences."
         )
         reply = self.call_ollama(reply_prompt)
         return reply

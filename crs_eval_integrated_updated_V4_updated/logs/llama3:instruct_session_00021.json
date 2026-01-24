@@ -1,0 +1,2143 @@
+{
+  "session_id": "00021",
+  "model_name": "llama3:instruct",
+  "true_genre": "television",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a television movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "television",
+        "anchor_title": "The Equalizer",
+        "constraints": {
+          "genre": "television"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a TV movie, specifically one that revolves around television and its themes. I've got just the thing! Have you considered \"Get Smart\" (2008)? This hilarious spy comedy stars Dwayne Johnson as the lovable but bumbling Agent 86, and it's full of clever nods to classic TV shows and spy movies.",
+      "constraints": {
+        "genre": "television",
+        "plot": [
+          "television",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "Get Smart",
+        "I Spy",
+        "Lost",
+        "Elysium"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Thing tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "television",
+        "anchor_title": "The Equalizer",
+        "constraints": {
+          "genre": "television"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for stories that explore what and kind, perhaps with elements of mystery, intrigue, and human connection. Based on this, I'd recommend \"Holes\" (1998) - a critically acclaimed film with a unique blend of adventure, coming-of-age themes, and mystery, all set in a desert camp. The movie features an impressive cast, including Shia LaBeouf, Khleo Thomas, and Patricia Arquette.",
+      "constraints": {
+        "genre": "television",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The Thing"
+      },
+      "rec_titles": [
+        "Holes",
+        "Dollhouse",
+        "It's a Wonderful Life",
+        "The Walking Dead"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Ron Hansen? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 3,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Ron Hansen",
+        "anchor_title": "Gran Torino",
+        "constraints": {
+          "genre": "television",
+          "writer": "Ron Hansen",
+          "plot": "veteran"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 3,
+          "from_focus": "genre",
+          "to_focus": "writer",
+          "bridge_field": "plot",
+          "bridge_value": "veteran",
+          "from_anchor": "The Equalizer",
+          "to_anchor": "Gran Torino"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for recommendations written by Ron Hansen, specifically in the genre of television (not a movie, I assume there's been a miscommunication!). Given that constraint, I think \"Galaxy Quest\" (1999) would be an excellent choice. This sci-fi comedy stars Tim Allen and Sigourney Weaver, and its clever blend of parody and adventure will surely delight you.",
+      "constraints": {
+        "genre": "television",
+        "plot": [
+          "written",
+          "hansen"
+        ],
+        "name": "X",
+        "writer": "Ron Hansen"
+      },
+      "rec_titles": [
+        "Galaxy Quest",
+        "Dollhouse",
+        "500 Days of Summer",
+        "Bruce Almighty"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Ron Hansen",
+        "anchor_title": "Gran Torino",
+        "constraints": {
+          "genre": "television",
+          "writer": "Ron Hansen",
+          "plot": "veteran"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more recommendations like \"just\" a specific TV show with Ron Hansen as the writer, right? Based on that, I think \"Dinner for Schmucks\" (2010) could be up your alley. It's a quirky comedy about two socially awkward characters who get caught up in a series of absurd events, featuring an impressive ensemble cast including Steve Carell and Paul Rudd.",
+      "constraints": {
+        "genre": "television",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "writer": "Ron Hansen"
+      },
+      "rec_titles": [
+        "Dinner for Schmucks",
+        "The Fighter",
+        "Insidious",
+        "The Goodbye Girl"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Ron Hansen",
+        "anchor_title": "Gran Torino",
+        "constraints": {
+          "genre": "television",
+          "writer": "Ron Hansen",
+          "plot": "veteran"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a TV show or movie with a connection to Ron Hansen's writing style, which explores themes related to what was said. Based on this constraint, I recommend \"Elizabeth\" (1998), a historical drama that delves into the early years of Queen Elizabeth I's reign and her struggle to learn what is necessary to be a monarch. This film, starring Fanny Ardant, Eric Cantona, and John Gielgud, is an excellent choice for those interested in a thoughtful and engaging story about leadership and power.",
+      "constraints": {
+        "genre": "television",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "You",
+        "writer": "Ron Hansen"
+      },
+      "rec_titles": [
+        "The Violent Kind",
+        "Elizabeth",
+        "Utsav",
+        "Divergent"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Ron Hansen",
+        "anchor_title": "Gran Torino",
+        "constraints": {
+          "genre": "television",
+          "writer": "Ron Hansen",
+          "plot": "veteran"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you're looking for a recommendation that fits the genre of television, is written by Ron Hansen (although he didn't write any of these TV shows), and has plot keywords related to being wrong earlier.\n\nBased on those constraints, I'd like to recommend \"Buffy the Vampire Slayer\"! This cult classic TV series follows Buffy, a teenage girl who's destined to battle vampires and other supernatural forces. With its blend of action, humor, and memorable characters, it's a great fit for anyone looking for an engaging and entertaining show.",
+      "constraints": {
+        "genre": "television",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "You",
+        "writer": "Ron Hansen"
+      },
+      "rec_titles": [
+        "Thunderbirds",
+        "The Odyssey",
+        "The World's End",
+        "Buffy the Vampire Slayer"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Buffy the Vampire Slayer. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Ron Hansen",
+        "anchor_title": "Gran Torino",
+        "constraints": {
+          "genre": "television",
+          "writer": "Ron Hansen",
+          "plot": "veteran"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It sounds like you enjoyed the blend of action and depth in Buffy the Vampire Slayer! Based on your interest in vampires and a deeper storyline, I'd recommend \"Vampire in Brooklyn\" (1995) starring Joanna Cassidy and Allen Payne. This comedy-horror film tells the story of a Caribbean vampire who falls for a Brooklyn police officer, and it's got a great balance of humor and intrigue. Alternatively, if you're in the mood for something with a bit more action, \"Unleashed\" (2005) starring Jet Li might be up your alley - it's an intense martial arts film about a man raised as a fighting dog who seeks to break free from his captors.",
+      "constraints": {
+        "genre": "vampire",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Buffy the Vampire Slayer",
+        "writer": "Ron Hansen"
+      },
+      "rec_titles": [
+        "Vampire in Brooklyn",
+        "The Skull",
+        "Unleashed",
+        "In the Woods"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Stephen McCole. Hmm, I didn’t expect that vibe. (I’m thinking of Deep.)",
+      "user_meta": {
+        "turn": 8,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Stephen McCole",
+        "anchor_title": "Requiem for a Dream",
+        "constraints": {
+          "genre": "television",
+          "writer": "Ron Hansen",
+          "plot": "four",
+          "actor": "Stephen McCole"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 8,
+          "from_focus": "writer",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "four",
+          "from_anchor": "Gran Torino",
+          "to_anchor": "Requiem for a Dream"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for a movie with Stephen McCole and want something that fits a vampire genre vibe, possibly related to finding or searching for something, which is quite intriguing! Based on these constraints, I'd recommend \"Deep\" itself, but if you'd like more options, I'd suggest checking out \"Blade Runner\", which has a similar atmospheric tone and explores themes of searching and discovery.",
+      "constraints": {
+        "genre": "vampire",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Deep",
+        "writer": "Ron Hansen",
+        "actor": "Stephen McCole"
+      },
+      "rec_titles": [
+        "Peggy Sue Got Married",
+        "White Night",
+        "The Whistler",
+        "Blade Runner"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Stephen McCole",
+        "anchor_title": "Requiem for a Dream",
+        "constraints": {
+          "genre": "television",
+          "writer": "Ron Hansen",
+          "plot": "four",
+          "actor": "Stephen McCole"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for more movie recommendations that are similar in genre (vampire) and feature Stephen McCole, writer Ron Hansen, and plot keywords like \"just\" and \"more\". Based on these constraints, I recommend \"Donnie Brasco\" (1997), a crime drama that explores the themes of identity and loyalty as an FBI undercover agent infiltrates the mob. The film features strong performances from Al Pacino and Johnny Depp, and its gritty tone might appeal to fans of vampire movies.",
+      "constraints": {
+        "genre": "vampire",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "writer": "Ron Hansen",
+        "actor": "Stephen McCole"
+      },
+      "rec_titles": [
+        "Thick as Thieves",
+        "Donnie Brasco",
+        "Uncommon Valor",
+        "Dead to the World"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Tron? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Stephen McCole",
+        "anchor_title": "Requiem for a Dream",
+        "constraints": {
+          "genre": "television",
+          "writer": "Ron Hansen",
+          "plot": "four",
+          "actor": "Stephen McCole"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie that resonates with the mood of Tron, which seems to have struck a deeper chord than expected! Based on your preference for vampire movies, Stephen McCole's presence, Ron Hansen's writing, and plot keywords like \"what\" and \"feels\", I think you might appreciate \"The Equalizer\" (2014) or \"Paycheck\" (2003).\n\n\"The Equalizer\" is a thought-provoking thriller that explores the moral gray areas of justice, much like Tron's philosophical undertones. Denzel Washington stars as a private detective grappling with the consequences of his actions.\n\n\"Paycheck\", on the other hand, is an action-packed puzzle movie that delves into the themes of identity and free will, which might appeal to your interest in \"what\" and \"feels\". The film features Ben Affleck and a clever plot that keeps you guessing.",
+      "constraints": {
+        "genre": "vampire",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Tron",
+        "writer": "Ron Hansen",
+        "actor": "Stephen McCole"
+      },
+      "rec_titles": [
+        "The Equalizer",
+        "The Way Back Home",
+        "End of Watch",
+        "Paycheck"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Paycheck. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Stephen McCole",
+        "anchor_title": "Requiem for a Dream",
+        "constraints": {
+          "genre": "television",
+          "writer": "Ron Hansen",
+          "plot": "four",
+          "actor": "Stephen McCole"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you liked Paycheck and are looking for something that feels deeper than you thought, with Stephen McCole as an actor? Based on your preferences, I think \"The Life Before Her Eyes\" might be a great fit for you! This 2007 drama starring Eva Amurri Martino explores themes of survivor's guilt and the complexities of human emotions, which seems to align with your desire for something more thought-provoking.",
+      "constraints": {
+        "genre": "vampire",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Paycheck",
+        "writer": "Ron Hansen",
+        "actor": "Stephen McCole"
+      },
+      "rec_titles": [
+        "Planet Terror",
+        "The Life Before Her Eyes",
+        "It's a Wonderful Life",
+        "Marked"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Her tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Stephen McCole",
+        "anchor_title": "Requiem for a Dream",
+        "constraints": {
+          "genre": "television",
+          "writer": "Ron Hansen",
+          "plot": "four",
+          "actor": "Stephen McCole"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on what you've told me, it seems like you're looking for a movie that explores deeper themes and has a unique storyline, maybe with some unexpected twists. You mentioned being intrigued by Her, which suggests you appreciate complex narratives. From the list I have, I think Club Dead might be a great fit - its blend of mystery, suspense, and supernatural elements could captivate your attention, especially since it's run by vampires!",
+      "constraints": {
+        "genre": "vampire",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her",
+        "writer": "Ron Hansen",
+        "actor": "Stephen McCole"
+      },
+      "rec_titles": [
+        "The Yearling",
+        "You",
+        "The Skulls",
+        "Club Dead"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Keenen Ivory Wayans? That sounds intriguing. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 13,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Keenen Ivory Wayans",
+        "anchor_title": "The Three Stooges",
+        "constraints": {
+          "genre": "television",
+          "writer": "Ron Hansen",
+          "plot": "childhood",
+          "director": "Keenen Ivory Wayans"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 13,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "childhood",
+          "from_anchor": "Requiem for a Dream",
+          "to_anchor": "The Three Stooges"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for something else by Keenen Ivory Wayans, and you mentioned Ted as a reference point! Based on that, I think you might enjoy Afterlife (2011), which is a horror-comedy that explores the world of ghosts and afterlives in a unique and humorous way.",
+      "constraints": {
+        "genre": "vampire",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Ted",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Keenen Ivory Wayans",
+        "director": "Keenen Ivory Wayans"
+      },
+      "rec_titles": [
+        "Van Helsing",
+        "Afterlife",
+        "The Shadows",
+        "The Secret of My Success"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Keenen Ivory Wayans",
+        "anchor_title": "The Three Stooges",
+        "constraints": {
+          "genre": "television",
+          "writer": "Ron Hansen",
+          "plot": "childhood",
+          "director": "Keenen Ivory Wayans"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for more movies like \"Vampire in Brooklyn\", right? That means you're probably craving some vampire-themed fun with a dash of humor and maybe even some action! With that in mind, I think you'd really enjoy \"The Passage\" (2010) - it's an adventure-packed WWII drama with a unique take on the vampire genre.",
+      "constraints": {
+        "genre": "vampire",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Keenen Ivory Wayans",
+        "director": "Keenen Ivory Wayans"
+      },
+      "rec_titles": [
+        "The Passage",
+        "Vampire in Brooklyn",
+        "Constantine",
+        "How to Train Your Dragon"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Vampire in Brooklyn? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Keenen Ivory Wayans",
+        "anchor_title": "The Three Stooges",
+        "constraints": {
+          "genre": "television",
+          "writer": "Ron Hansen",
+          "plot": "childhood",
+          "director": "Keenen Ivory Wayans"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a movie with a similar mood to \"Vampire in Brooklyn\", which feels deeper than expected. Based on your interest in vampires and Keenen Ivory Wayans' work, I think you might enjoy \"Vampires Suck\" (2010), a vampire-themed spoof with a lighthearted tone that pokes fun at the genre. It's a humorous take on vampire movies, starring Dave Foley and Anneliese van der Pol.",
+      "constraints": {
+        "genre": "vampire",
+        "plot": [
+          "what",
+          "vampire"
+        ],
+        "name": "Brooklyn",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Keenen Ivory Wayans",
+        "director": "Keenen Ivory Wayans"
+      },
+      "rec_titles": [
+        "Vampires Suck",
+        "The Passage",
+        "Paradise Lost",
+        "Wolfhound"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Keenen Ivory Wayans",
+        "anchor_title": "The Three Stooges",
+        "constraints": {
+          "genre": "television",
+          "writer": "Ron Hansen",
+          "plot": "childhood",
+          "director": "Keenen Ivory Wayans"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie that tells a story similar to Us, which sounds intriguing! Based on your preference for vampire movies featuring Keenen Ivory Wayans as an actor and director, I think Scary Movie might be up your alley. This horror comedy classic spoofs popular slasher films while delivering plenty of laughs and scares, thanks in part to its talented cast, including Keenen himself and Anna Faris.",
+      "constraints": {
+        "genre": "vampire",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Keenen Ivory Wayans",
+        "director": "Keenen Ivory Wayans"
+      },
+      "rec_titles": [
+        "Training Day",
+        "Dead to the World",
+        "The Way Back Home",
+        "Scary Movie"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Keenen Ivory Wayans",
+        "anchor_title": "The Three Stooges",
+        "constraints": {
+          "genre": "television",
+          "writer": "Ron Hansen",
+          "plot": "childhood",
+          "director": "Keenen Ivory Wayans"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you like the sound of Us and are looking for a movie with similar themes, perhaps with a touch of vampirism? Based on that, I'd recommend checking out \"Bram Stoker's Dracula\" - an epic adaptation of the classic novel starring Gary Oldman as the iconic Count, alongside Winona Ryder and Anthony Hopkins.",
+      "constraints": {
+        "genre": "vampire",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Keenen Ivory Wayans",
+        "director": "Keenen Ivory Wayans"
+      },
+      "rec_titles": [
+        "Castle in the Sky",
+        "The Stuff",
+        "Bram Stoker's Dracula",
+        "The Revenant"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on You. I want to try something more poetry—That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "poetry",
+        "anchor_title": "1900",
+        "constraints": {
+          "genre": "poetry",
+          "writer": "Ron Hansen",
+          "plot": "childhood",
+          "director": "Keenen Ivory Wayans"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 18,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "bullets",
+          "from_anchor": "The Three Stooges",
+          "to_anchor": "1900"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on what you're looking for, I understand that you want a movie with a poetry vibe - something that feels deeper and more artistic than usual. Given your interest in Keenen Ivory Wayans' work, I think \"Dance Flick\" might be up your alley! This musical comedy features a talented cast, including Keenen himself, and is filled with witty humor and impressive dance moves.",
+      "constraints": {
+        "genre": "poetry",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Deep",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Keenen Ivory Wayans",
+        "director": "Keenen Ivory Wayans"
+      },
+      "rec_titles": [
+        "Paradise Lost",
+        "White Chicks",
+        "Talladega Nights: The Ballad of Ricky Bobby",
+        "Dance Flick"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "poetry",
+        "anchor_title": "1900",
+        "constraints": {
+          "genre": "poetry",
+          "writer": "Ron Hansen",
+          "plot": "childhood",
+          "director": "Keenen Ivory Wayans"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for more recommendations like those, which seem to involve complex stories and intriguing characters. Given that, I'd highly recommend \"House at the End of the Street\" - Jennifer Lawrence's early work is engaging, and the mystery surrounding the accident-turned-double-murder will keep you on your toes!",
+      "constraints": {
+        "genre": "poetry",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Keenen Ivory Wayans",
+        "director": "Keenen Ivory Wayans"
+      },
+      "rec_titles": [
+        "The Truth",
+        "House at the End of the Street",
+        "Tooth Fairy",
+        "Wolf Girl"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Erica Leerhsen. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 20,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Erica Leerhsen",
+        "anchor_title": "Paradise Lost",
+        "constraints": {
+          "genre": "poetry",
+          "plot": "witness",
+          "director": "Keenen Ivory Wayans",
+          "actor": "Erica Leerhsen"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 20,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "witness",
+          "from_anchor": "1900",
+          "to_anchor": "Paradise Lost"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on what you're looking for, I understand that you'd like to find movies with Erica Leerhsen, possibly with a poetic tone and themes of exploration and discovery. \n\nI think Bats (1999) could be an intriguing choice for you! The film features Erica Leerhsen alongside a cast of talented actors, and its plot revolves around a family's desperate struggle to survive against a deadly creature in their home.",
+      "constraints": {
+        "genre": "poetry",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "X",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Erica Leerhsen",
+        "director": "Keenen Ivory Wayans"
+      },
+      "rec_titles": [
+        "Bats",
+        "The Rosie Project",
+        "Welcome to Sarajevo",
+        "The Whistler"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 21,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Erica Leerhsen",
+        "anchor_title": "Paradise Lost",
+        "constraints": {
+          "genre": "poetry",
+          "plot": "witness",
+          "director": "Keenen Ivory Wayans",
+          "actor": "Erica Leerhsen"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more recommendations like that, which means you enjoyed something with a touch of poetry and the talents of Erica Leerhsen. I think you might enjoy \"Hollywood Ending\" (2002), where Erica Leerhsen stars alongside Woody Allen in a film about a director's crisis of confidence - it's a witty and charming comedy that pokes fun at Hollywood and its eccentricities.",
+      "constraints": {
+        "genre": "poetry",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Erica Leerhsen",
+        "director": "Keenen Ivory Wayans"
+      },
+      "rec_titles": [
+        "The Pink Panther 2",
+        "RED",
+        "Hollywood Ending",
+        "This Is the End"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Her. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Erica Leerhsen",
+        "anchor_title": "Paradise Lost",
+        "constraints": {
+          "genre": "poetry",
+          "plot": "witness",
+          "director": "Keenen Ivory Wayans",
+          "actor": "Erica Leerhsen"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you like the emotional depth and poignancy of \"Her\"! Based on your interest in poetry, Erica Leerhsen, Keenen Ivory Wayans, and Keenen Ivory Wayans' unique style, I'd recommend two movies that might resonate with you.\n\nFirstly, \"Easy A\" (2010) starring Emma Stone is a great match. The film's exploration of identity, relationships, and the complexities of human emotions are all woven together in a witty, charming package. Emma Stone shines as Olive, and her character's journey is both relatable and thought-provoking.\n\nAdditionally, I think \"X-Men: First Class\" (2011) might also strike a chord with you. Michael Fassbender and Jennifer Lawrence deliver powerful performances as Charles Xavier and Erik Lensherr, respectively. The film's themes of prejudice, understanding, and the struggle for acceptance are all intertwined in a compelling narrative that explores what it means to be human.",
+      "constraints": {
+        "genre": "poetry",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Her",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Erica Leerhsen",
+        "director": "Keenen Ivory Wayans"
+      },
+      "rec_titles": [
+        "The Amazing Spider-Man",
+        "The Mortal Instruments: City of Bones",
+        "Easy A",
+        "X-Men: First Class"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Kyle Newman? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Emma.)",
+      "user_meta": {
+        "turn": 23,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Kyle Newman",
+        "anchor_title": "Things Fall Apart",
+        "constraints": {
+          "genre": "poetry",
+          "plot": "housekeeper",
+          "director": "Kyle Newman",
+          "actor": "Erica Leerhsen"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 23,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "housekeeper",
+          "from_anchor": "Paradise Lost",
+          "to_anchor": "Things Fall Apart"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems like you're looking for something new by Kyle Newman, perhaps drawn in by the intriguing premise of \"Emma\". Given your interest in poetry and Erica Leerhsen, I think you might enjoy \"Dance Flick\" (2009), a musical comedy that brings together a talented cast, including Leerhsen herself. The film's lighthearted tone and dance battles will likely provide an entertaining contrast to the darkness of \"Emma\".",
+      "constraints": {
+        "genre": "poetry",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Emma",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Erica Leerhsen",
+        "director": "Kyle Newman"
+      },
+      "rec_titles": [
+        "White Night",
+        "Maleficent",
+        "Dance Flick",
+        "Paradise Lost"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Kyle Newman",
+        "anchor_title": "Things Fall Apart",
+        "constraints": {
+          "genre": "poetry",
+          "plot": "housekeeper",
+          "director": "Kyle Newman",
+          "actor": "Erica Leerhsen"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for more recommendations that share some similarities with a poetry-inspired film featuring Erica Leerhsen, directed by Kyle Newman, and written by Keenen Ivory Wayans. Based on those cues, I'd like to suggest \"The Breakfast Club\" as a potential match. This classic 80s teen drama features an ensemble cast, including Molly Ringwald, Ally Sheedy, and Judd Nelson, who come together from different cliques to discover their shared struggles and connect with each other in meaningful ways - all set against the backdrop of a Saturday detention.",
+      "constraints": {
+        "genre": "poetry",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Erica Leerhsen",
+        "director": "Kyle Newman"
+      },
+      "rec_titles": [
+        "The Wonderful Wizard of Oz",
+        "The Skull",
+        "The Breakfast Club",
+        "Untraceable"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Breakfast Club. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Kyle Newman",
+        "anchor_title": "Things Fall Apart",
+        "constraints": {
+          "genre": "poetry",
+          "plot": "housekeeper",
+          "director": "Kyle Newman",
+          "actor": "Erica Leerhsen"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your interest in The Breakfast Club, I sense that you appreciate coming-of-age stories and relatable characters. With your affinity for poetry, Erica Leerhsen, Kyle Newman, Keenen Ivory Wayans, and the themes of \"like\" and \"sound\", I recommend Maid in Manhattan (2002) - a romantic comedy with a touch of drama, starring Jennifer Lopez and Ralph Fiennes. Alternatively, Looper (2012), a thought-provoking sci-fi thriller that explores complex moral dilemmas and features Joseph Gordon-Levitt and Bruce Willis, might also resonate with you.",
+      "constraints": {
+        "genre": "poetry",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Breakfast Club",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Erica Leerhsen",
+        "director": "Kyle Newman"
+      },
+      "rec_titles": [
+        "Maid in Manhattan",
+        "Looper",
+        "Smokin' Aces",
+        "The Breakfast Club"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of 2012? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Kyle Newman",
+        "anchor_title": "Things Fall Apart",
+        "constraints": {
+          "genre": "poetry",
+          "plot": "housekeeper",
+          "director": "Kyle Newman",
+          "actor": "Erica Leerhsen"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie from 2012 that fits a mood that sounds fascinating, and you've got some specific preferences like poetry as a genre and Erica Leerhsen being an actress involved. I think I can help!\n\nBased on your cues, I'm going to recommend \"That's My Boy\" (2012) - it's a comedy with Adam Sandler and Eva Amalie Roberts (not Erica Leerhsen, sorry!), but the plot itself has some great moments of humor and wit.",
+      "constraints": {
+        "genre": "poetry",
+        "plot": [
+          "what"
+        ],
+        "name": "2012",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Erica Leerhsen",
+        "director": "Kyle Newman",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Zero Dark Thirty",
+        "That's My Boy",
+        "Elizabeth",
+        "Paycheck"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Kyle Newman",
+        "anchor_title": "Things Fall Apart",
+        "constraints": {
+          "genre": "poetry",
+          "plot": "housekeeper",
+          "director": "Kyle Newman",
+          "actor": "Erica Leerhsen"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a movie that is the opposite of what we initially discussed, which was inspired by poetry and had certain specific elements such as Erica Leerhsen, Keenen Ivory Wayans, or Kyle Newman. Based on this new direction, I recommend \"Safety Not Guaranteed\" (2012), a quirky indie film about time travel and human connection, starring Mark Duplass and Mary Lynn Rajskub. The movie's offbeat tone and exploration of themes like actually thinking and considering the unknown might be right up your alley!",
+      "constraints": {
+        "genre": "poetry",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "2012",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Erica Leerhsen",
+        "director": "Kyle Newman",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Safety Not Guaranteed",
+        "Pandemonium",
+        "Step Up Revolution",
+        "Blow Out"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Kyle Newman",
+        "anchor_title": "Things Fall Apart",
+        "constraints": {
+          "genre": "poetry",
+          "plot": "housekeeper",
+          "director": "Kyle Newman",
+          "actor": "Erica Leerhsen"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a story that explores themes of what and kind, and you're intrigued by the concept of Us. Given your fascination with poetry from 2012, the director Kyle Newman, writer Keenen Ivory Wayans, and actress Erica Leerhsen, I think you might enjoy \"The Texas Chainsaw Massacre\". This classic horror film features Erica Leerhsen alongside a talented cast, and its suspenseful plot will keep you on the edge of your seat.",
+      "constraints": {
+        "genre": "poetry",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Erica Leerhsen",
+        "director": "Kyle Newman",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "This Is Spinal Tap",
+        "Eve's Bayou",
+        "Hitch",
+        "The Texas Chainsaw Massacre"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Christian Bale. Hmm, I didn’t expect that vibe. (I’m thinking of Saw.)",
+      "user_meta": {
+        "turn": 29,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Christian Bale",
+        "anchor_title": "Batman Begins",
+        "constraints": {
+          "genre": "poetry",
+          "plot": "recollection",
+          "actor": "Christian Bale"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 29,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "recollection",
+          "from_anchor": "Things Fall Apart",
+          "to_anchor": "Batman Begins"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie with Christian Bale, possibly with an unexpected vibe like Saw, from 2012, and related to poetry and finding something (a red violin or happiness). Based on these unique constraints, I highly recommend \"Here Comes the Boom\" (2012) starring Christian Bale, which has a fun and uplifting tone.",
+      "constraints": {
+        "genre": "poetry",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "W.",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Christian Bale",
+        "director": "Kyle Newman",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Two Hands",
+        "Here Comes the Boom",
+        "Amélie",
+        "The Red Violin"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Christian Bale",
+        "anchor_title": "Batman Begins",
+        "constraints": {
+          "genre": "poetry",
+          "plot": "recollection",
+          "actor": "Christian Bale"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your interest in poetry, specifically the movie recommendations with a genre that fits poetry, and year of release being 2012, I'm assuming you're looking for a thought-provoking film. Given the actor Christian Bale wasn't featured in any of these movies, let me suggest two options: \"John Carter\" (2012) which is an epic sci-fi adventure with stunning visuals and an interesting take on Mars' ancient civilization; or \"Black November\" (2012), an inspirational drama that explores the struggles of a Nigerian community fighting for their land's protection.",
+      "constraints": {
+        "genre": "poetry",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Christian Bale",
+        "director": "Kyle Newman",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "John Carter",
+        "That's My Boy",
+        "Black November",
+        "Maid in Manhattan"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Christian Bale",
+        "anchor_title": "Batman Begins",
+        "constraints": {
+          "genre": "poetry",
+          "plot": "recollection",
+          "actor": "Christian Bale"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems like you're open to changing your mind, and I'm here to help! Based on your interest in poetry from 2012 with Christian Bale, I'll focus on movies that might capture a similar essence. Given the constraints, I recommend \"Flight\" (2012), starring Denzel Washington, which explores themes of redemption and self-discovery - perfect for a thought-provoking cinematic experience. Alternatively, if you're in the mood for something more action-packed, \"The Expendables 2\" (2012) with its all-star cast and non-stop thrills might be up your alley!",
+      "constraints": {
+        "genre": "poetry",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "You",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Christian Bale",
+        "director": "Kyle Newman",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Expendables 2",
+        "Smokin' Aces",
+        "Fifty Shades Freed",
+        "Flight"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Christian Bale",
+        "anchor_title": "Batman Begins",
+        "constraints": {
+          "genre": "poetry",
+          "plot": "recollection",
+          "actor": "Christian Bale"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you thought you liked something, but maybe not - that's a curious conundrum! Based on your interest in poetry from 2012 with Christian Bale and Kyle Newman's involvement, I'm going to take a chance and recommend \"Prometheus\" (2012). This sci-fi epic features stunning visuals, an intriguing plot, and a talented cast including Michael Fassbender and Noomi Rapace.",
+      "constraints": {
+        "genre": "poetry",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "You",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Christian Bale",
+        "director": "Kyle Newman",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Wrath of the Titans",
+        "Passion",
+        "Connie and Carla",
+        "Prometheus"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Prometheus. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Christian Bale",
+        "anchor_title": "Batman Begins",
+        "constraints": {
+          "genre": "poetry",
+          "plot": "recollection",
+          "actor": "Christian Bale"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a movie that stars Christian Bale, is directed by Kyle Newman, written by Keenen Ivory Wayans, and has themes of \"like\" and \"sound\". None of these movies match those exact criteria, but I think I can suggest some alternatives that might pique your interest. Have you considered checking out \"House at the End of the Street\" (2012) starring Jennifer Lawrence? It's a suspenseful thriller with a complex plot that explores themes of relationships and secrets, which might resonate with your poetry background.",
+      "constraints": {
+        "genre": "poetry",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Prometheus",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Christian Bale",
+        "director": "Kyle Newman",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "House at the End of the Street",
+        "Wrath of the Titans",
+        "Paycheck",
+        "Compliance"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of House at the End of the Street? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 34,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Christian Bale",
+        "anchor_title": "Batman Begins",
+        "constraints": {
+          "genre": "poetry",
+          "plot": "recollection",
+          "actor": "Christian Bale"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your request for a movie with a mood that's not what you expected, I understand you're looking for something with a unique tone and atmosphere.\n\nI'd recommend \"American Hustle\" (2013) as a great fit. This crime drama has a complex web of characters, including Christian Bale, who played the role of Irving Rosenfeld, a con man trying to navigate his way through a world of FBI agents and organized crime. The film's tone is witty and suspenseful, with standout performances from its ensemble cast.\n\nAlternatively, if you're in the mood for something more dark and gritty, \"Harsh Times\" (2005) could be a good choice. This intense drama stars Christian Bale as an ex-Marine struggling to make ends meet, and it explores themes of violence and redemption.",
+      "constraints": {
+        "genre": "poetry",
+        "plot": [
+          "what",
+          "house"
+        ],
+        "name": "House at the End of the Street",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Christian Bale",
+        "director": "Kyle Newman",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "American Hustle",
+        "Harsh Times",
+        "The Wraith",
+        "2010"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Christian Bale",
+        "anchor_title": "Batman Begins",
+        "constraints": {
+          "genre": "poetry",
+          "plot": "recollection",
+          "actor": "Christian Bale"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a movie that tells a story with themes related to \"what\" and \"kind\", and you have a fondness for poetry, Christian Bale, and films from 2012 or earlier. Considering these constraints, I'd recommend \"The Fighter\" (2010) as it's a gripping drama that explores the complexities of family relationships and personal struggles, featuring a strong performance by Christian Bale.",
+      "constraints": {
+        "genre": "poetry",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Christian Bale",
+        "director": "Kyle Newman",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Smilla's Sense of Snow",
+        "Skyfall",
+        "The Fighter",
+        "The Dark Knight"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on 2012. I want to try something more future noir—I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 36,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "future noir",
+        "anchor_title": "American Hustle",
+        "constraints": {
+          "genre": "future noir",
+          "plot": "recollection",
+          "actor": "Christian Bale"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 36,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "struggles",
+          "from_anchor": "Batman Begins",
+          "to_anchor": "American Hustle"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you're looking for a future noir movie, but you're hesitant due to concerns about enjoying or being scared by it. Given your interest in Christian Bale and 2012 as reference points, I think you might enjoy \"American Psycho\" (1991), which features Bale in a critically acclaimed performance as the dark and twisted Patrick Bateman.",
+      "constraints": {
+        "genre": "future noir",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "2012",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Christian Bale",
+        "director": "Kyle Newman",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Velvet Goldmine",
+        "American Psycho",
+        "Pitch Perfect",
+        "The Vow"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "future noir",
+        "anchor_title": "American Hustle",
+        "constraints": {
+          "genre": "future noir",
+          "plot": "recollection",
+          "actor": "Christian Bale"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more recommendations like \"Future Noir\" (2012) starring Christian Bale, which combines elements of science fiction and crime drama. Based on that, I think you might enjoy \"The Machinist\" (2004), a psychological thriller also starring Christian Bale, where he plays an industrial worker struggling with insomnia and paranoia.",
+      "constraints": {
+        "genre": "future noir",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Christian Bale",
+        "director": "Kyle Newman",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Before I Fall",
+        "The Machinist",
+        "A Little Princess",
+        "In Time"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "future noir",
+        "anchor_title": "American Hustle",
+        "constraints": {
+          "genre": "future noir",
+          "plot": "recollection",
+          "actor": "Christian Bale"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a movie with a future noir vibe, released in 2012, starring Christian Bale, and directed by Kyle Newman (although, I must note that none of these movies quite match those exact criteria). Based on your interest in \"You\", which seems to have some intriguing themes and sound design, I'd recommend checking out \"The Machinist\" (2004) - it's a psychological thriller that explores the mind-bending effects of sleep deprivation, starring Christian Bale in a critically acclaimed performance. The eerie atmosphere and Bale's intense portrayal might scratch that future noir itch!",
+      "constraints": {
+        "genre": "future noir",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "You",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Christian Bale",
+        "director": "Kyle Newman",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Machinist",
+        "Skyfall",
+        "Zero Dark Thirty",
+        "Pandemonium"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "future noir",
+        "anchor_title": "American Hustle",
+        "constraints": {
+          "genre": "future noir",
+          "plot": "recollection",
+          "actor": "Christian Bale"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on what you're looking for, I understand that you want a story with elements of intrigue and surprise, set in the year 2012 with Christian Bale, directed by Kyle Newman, and written by Keenen Ivory Wayans - quite an interesting combination! From the list provided, I'd recommend \"The Three Stooges\" (2012) for its unique blend of slapstick humor, adventure, and unexpected twists. The all-star cast, including Kate Upton, Larry David, and Sean Hayes, adds to the movie's entertainment value. Alternatively, if you're in the mood for something more intense, \"Compliance\" (2012) is a thought-provoking thriller that explores themes of conformity and human nature.",
+      "constraints": {
+        "genre": "future noir",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Christian Bale",
+        "director": "Kyle Newman",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Three Stooges",
+        "Compliance",
+        "Titanic",
+        "I Heart Huckabees"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "future noir",
+        "anchor_title": "American Hustle",
+        "constraints": {
+          "genre": "future noir",
+          "plot": "recollection",
+          "actor": "Christian Bale"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie with a fascinating mood, possibly leaning towards the genre of future noir, set in 2012, starring Christian Bale, directed by Kyle Newman, and written by Keenen Ivory Wayans (but I know that's a tough ask!). Based on your cues, I'd recommend \"Zoo\" (2012), which features a unique blend of action, romance, and post-apocalyptic chaos.",
+      "constraints": {
+        "genre": "future noir",
+        "plot": [
+          "what"
+        ],
+        "name": "You",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Christian Bale",
+        "director": "Kyle Newman",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Zoo",
+        "Paradise Lost",
+        "Wolfhound",
+        "Fifty Shades Freed"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Tom McCarthy. Hmm, I didn’t expect that vibe. (I’m thinking of 2012.)",
+      "user_meta": {
+        "turn": 41,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Tom McCarthy",
+        "anchor_title": "Children of Men",
+        "constraints": {
+          "genre": "future noir",
+          "actor": "Tom McCarthy"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 41,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Tom McCarthy",
+          "from_anchor": "American Hustle",
+          "to_anchor": "Children of Men"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more Tom McCarthy vibes, perhaps with a darker tone, and you liked his work in 2012 (which I assume is \"Win Win\" since that's when the movie was released). You didn't expect the vibe of one of his movies, which makes me curious! Based on your cues, I recommend \"Without Remorse\" (1993) as it has a future noir theme and an elite Navy SEAL seeking revenge.",
+      "constraints": {
+        "genre": "future noir",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "2012",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Tom McCarthy",
+        "director": "Tom McCarthy",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Without Remorse",
+        "Minority Report",
+        "The Aftermath",
+        "I Love You, Man"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tom McCarthy",
+        "anchor_title": "Children of Men",
+        "constraints": {
+          "genre": "future noir",
+          "actor": "Tom McCarthy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more recommendations like \"The Recess\" (2012), a futuristic noir film directed by Tom McCarthy, starring Tom McCarthy, and written by Keenen Ivory Wayans. Based on that, I think you might enjoy the sci-fi thriller \"12 Monkeys\", where Bruce Willis plays a convict sent back in time to prevent a deadly virus from wiping out humanity.",
+      "constraints": {
+        "genre": "future noir",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Tom McCarthy",
+        "director": "Tom McCarthy",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Zookeeper",
+        "Mama",
+        "Date Night",
+        "12 Monkeys"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tom McCarthy",
+        "anchor_title": "Children of Men",
+        "constraints": {
+          "genre": "future noir",
+          "actor": "Tom McCarthy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie that's similar to Ted, with a dash of future noir and a hint of complexity. Based on your preferences, I think you'll really enjoy \"12 Monkeys\" (1995). This thought-provoking sci-fi classic stars Bruce Willis and Brad Pitt in a time-traveling adventure that explores the consequences of playing with reality. With its intricate plot and impressive cast, it's sure to keep you engaged!",
+      "constraints": {
+        "genre": "future noir",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Tom McCarthy",
+        "director": "Tom McCarthy",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Psychic Experiment",
+        "City of Lost Souls",
+        "12 Monkeys",
+        "The Avengers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tom McCarthy",
+        "anchor_title": "Children of Men",
+        "constraints": {
+          "genre": "future noir",
+          "actor": "Tom McCarthy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you're looking for a movie that has a deeper tone, given your interest in \"You\" and its exploration of complex emotions. Based on your constraints, I'd like to recommend \"The Station Agent\" (2003) - it's a poignant film that explores themes of loneliness, grief, and human connection, starring Peter Dinklage and Patricia Clarkson. Alternatively, if you're in the mood for something more action-packed with a similar sense of depth, you might enjoy \"Jack Reacher\" (2012), starring Tom Cruise as the titular character.",
+      "constraints": {
+        "genre": "future noir",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Deep",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Tom McCarthy",
+        "director": "Tom McCarthy",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Yearling",
+        "The Station Agent",
+        "Jack Reacher",
+        "Project X"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Her tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tom McCarthy",
+        "anchor_title": "Children of Men",
+        "constraints": {
+          "genre": "future noir",
+          "actor": "Tom McCarthy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on what you said, you're looking for a movie that tells a story about \"what kind\" of thing, and you thought Her felt deeper than expected. Given your preference for future noir and the presence of Tom McCarthy as an actor/director, I recommend checking out Super (2010). This superhero comedy-drama stars James Gunn, Kevin Bacon, and Ellen Page, and explores themes of imagination, spirit, and what it means to be a hero.",
+      "constraints": {
+        "genre": "future noir",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Tom McCarthy",
+        "director": "Tom McCarthy",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Project X",
+        "Super",
+        "Little Fockers",
+        "Tombstone"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Seth MacFarlane? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 46,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Seth MacFarlane",
+        "anchor_title": "Ted",
+        "constraints": {
+          "genre": "future noir",
+          "actor": "Tom McCarthy",
+          "director": "Seth MacFarlane"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 46,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "director",
+          "bridge_value": "Seth MacFarlane",
+          "from_anchor": "Children of Men",
+          "to_anchor": "Ted"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie by Seth MacFarlane that's similar to Ted, but with a future noir vibe and from 2012 - got it! Based on your interest in a futuristic thriller, I highly recommend \"Minority Report\" (2002) starring Tom Cruise. This sci-fi classic explores themes of free will and predetermination, with stunning visuals and a gripping storyline that'll keep you engaged.",
+      "constraints": {
+        "genre": "future noir",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Ted",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "12 Monkeys",
+        "The Amazing Spider-Man",
+        "Movie 43",
+        "Minority Report"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Seth MacFarlane",
+        "anchor_title": "Ted",
+        "constraints": {
+          "genre": "future noir",
+          "actor": "Tom McCarthy",
+          "director": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more recommendations like \"Ted\" (2012) and enjoying a mix of future noir, comedy, and action. Based on that, I think you might enjoy \"Movie 43\" (2013), an outrageous comedy featuring Seth MacFarlane in one of its many hilarious sketches. Alternatively, if you'd prefer something darker, \"You Kill Me\" (2007) is a crime comedy with a great performance by Aaron Hughes and some sharp dialogue.",
+      "constraints": {
+        "genre": "future noir",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "You Kill Me",
+        "Trapped",
+        "True Crime",
+        "Movie 43"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Seth MacFarlane",
+        "anchor_title": "Ted",
+        "constraints": {
+          "genre": "future noir",
+          "actor": "Tom McCarthy",
+          "director": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie that shares some similarities with Us, such as a thought-provoking and intriguing plot. Based on your interest in future noir and the year 2012, I'd like to recommend Minority Report (2002), directed by Steven Spielberg and starring Tom Cruise. This sci-fi thriller explores themes of free will and predetermination, following a special police unit that can predict crimes before they happen - it's a gripping and visually stunning ride!",
+      "constraints": {
+        "genre": "future noir",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Paycheck",
+        "Flubber",
+        "Children of Men",
+        "Minority Report"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Seth MacFarlane",
+        "anchor_title": "Ted",
+        "constraints": {
+          "genre": "future noir",
+          "actor": "Tom McCarthy",
+          "director": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie that captures the moody vibe of X, which had a future noir tone and featured Seth MacFarlane in 2012. Based on those cues, I think I can recommend \"Easy\" as a good fit. It's a romantic drama that explores the search for love and affection, which might align with the themes you enjoyed in X.",
+      "constraints": {
+        "genre": "future noir",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "X",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Wraith",
+        "Ernest & Celestine",
+        "Easy",
+        "American Dreamz"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Easy tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 50,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Seth MacFarlane",
+        "anchor_title": "Ted",
+        "constraints": {
+          "genre": "future noir",
+          "actor": "Tom McCarthy",
+          "director": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you're looking for a story that doesn't quite fit what you expected, something with a unique vibe. Based on your interest in future noir, Seth MacFarlane's direction and writing, I'm going to take a chance and recommend \"The Vow\" (2012). This romantic drama stars Rachel McAdams and Channing Tatum, and its plot explores the complexities of love and memory loss.",
+      "constraints": {
+        "genre": "future noir",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Easy",
+        "writer": "Keenen Ivory Wayans",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Vow",
+        "Hopeless",
+        "Promised Land",
+        "Pride and Prejudice"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 3,
+      "from_focus": "genre",
+      "to_focus": "writer",
+      "bridge_field": "plot",
+      "bridge_value": "veteran",
+      "from_anchor": "The Equalizer",
+      "to_anchor": "Gran Torino"
+    },
+    {
+      "turn": 8,
+      "from_focus": "writer",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "four",
+      "from_anchor": "Gran Torino",
+      "to_anchor": "Requiem for a Dream"
+    },
+    {
+      "turn": 13,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "childhood",
+      "from_anchor": "Requiem for a Dream",
+      "to_anchor": "The Three Stooges"
+    },
+    {
+      "turn": 18,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "bullets",
+      "from_anchor": "The Three Stooges",
+      "to_anchor": "1900"
+    },
+    {
+      "turn": 20,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "witness",
+      "from_anchor": "1900",
+      "to_anchor": "Paradise Lost"
+    },
+    {
+      "turn": 23,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "housekeeper",
+      "from_anchor": "Paradise Lost",
+      "to_anchor": "Things Fall Apart"
+    },
+    {
+      "turn": 29,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "recollection",
+      "from_anchor": "Things Fall Apart",
+      "to_anchor": "Batman Begins"
+    },
+    {
+      "turn": 36,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "struggles",
+      "from_anchor": "Batman Begins",
+      "to_anchor": "American Hustle"
+    },
+    {
+      "turn": 41,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Tom McCarthy",
+      "from_anchor": "American Hustle",
+      "to_anchor": "Children of Men"
+    },
+    {
+      "turn": 46,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "director",
+      "bridge_value": "Seth MacFarlane",
+      "from_anchor": "Children of Men",
+      "to_anchor": "Ted"
+    }
+  ]
+}

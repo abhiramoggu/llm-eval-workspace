@@ -22,6 +22,7 @@ Returns a dict with:
 - `topic_recovery_rate`, `avg_recovery_delay` (recovered if CO OR WCS meets threshold within window)
 - `missing_concepts_total`, `hallucinated_concepts_total` (aggregate concept deltas)
 - `detail`: per-turn arrays, segments, shift points
+  - `recommendation_satisfaction_mean` is optional and disabled by default (`ENABLE_REC_SAT=0`).
 
 These fields are written to `results.jsonl` by `batch_run.py`.
 

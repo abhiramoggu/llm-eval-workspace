@@ -1,0 +1,2252 @@
+{
+  "session_id": "00055",
+  "model_name": "llama3:instruct",
+  "true_genre": "comedy",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a comedy movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy",
+        "anchor_title": "Year One",
+        "constraints": {
+          "genre": "comedy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're in the mood for a comedy movie! Based on that, I'd like to recommend two movies that fit the bill: \"The Interview\" (2014) starring James Franco and Randall Park, which is a hilarious and unexpected comedy about a TV host who lands an interview with North Korea's dictator; or \"Burn After Reading\" (2008) featuring an all-star cast including George Clooney, Brad Pitt, and Frances McDormand, which is a wacky and absurd comedy about gym employees trying to sell top-secret information. Both are sure to bring the laughs!",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "comedy",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "The Interview",
+        "The Rum Diary",
+        "Burn After Reading",
+        "The Truman Show"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy",
+        "anchor_title": "Year One",
+        "constraints": {
+          "genre": "comedy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a comedy that's all about being unsure and maybe, just maybe, getting things right? Based on that, I think \"The Country Bears\" is a great fit! It's a fun adventure with a quirky plot and lovable characters - who can resist the charm of talking bears?\n\nAlternatively, if you'd like something more recent and racy, \"Sex Tape\" could be up your alley. With its wild premise and hilarious cast (think Nat Faxon and James Wilcox), it's sure to provide some laughs.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "The Country Bears",
+        "Sex Tape",
+        "George of the Jungle",
+        "Our Idiot Brother"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Rutger Hauer. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 3,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Rutger Hauer",
+        "anchor_title": "Welcome to Mooseport",
+        "constraints": {
+          "genre": "comedy",
+          "actor": "Rutger Hauer",
+          "plot": "night"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 3,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "night",
+          "from_anchor": "Year One",
+          "to_anchor": "Welcome to Mooseport"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie with Rutger Hauer that's more on the comedic side and has nothing to do with being scared, right? I think \"Mr. Bean's Holiday\" could be just the ticket! It stars Steve Pemberton (not Rutger Hauer, I know, but it fits your comedy constraint), features plenty of hilarious moments as Mr. Bean gets into all sorts of misadventures in France, and has a sweet heartwarming ending to boot.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "RED",
+        "actor": "Rutger Hauer",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Monsters vs. Aliens",
+        "Mr. Bean's Holiday",
+        "Clerks",
+        "The Skeleton Twins"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Rutger Hauer",
+        "anchor_title": "Welcome to Mooseport",
+        "constraints": {
+          "genre": "comedy",
+          "actor": "Rutger Hauer",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more movies like ones featuring Rutger Hauer, with a comedic tone and in German - am I right? From my list, I think \"The Cable Guy\" (1996) could be a great fit! This hilarious comedy stars Ben Stiller as a man who gets stuck with a quirky cable guy, played by Jim Carrey. It's a classic 90s romp that's sure to bring some laughs.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Rutger Hauer",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "The Cable Guy",
+        "Compliance",
+        "The Santa Clause 2",
+        "The Sword in the Stone"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Neil Burger? That sounds intriguing. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 5,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Neil Burger",
+        "anchor_title": "Zack and Miri Make a Porno",
+        "constraints": {
+          "genre": "comedy",
+          "plot": "children",
+          "director": "Neil Burger"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 5,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "children",
+          "from_anchor": "Welcome to Mooseport",
+          "to_anchor": "Zack and Miri Make a Porno"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for something by Neil Burger, and since \"I'm Thinking of You\" doesn't quite fit the bill, let me suggest some other movies that match your genre preference for comedy and feature Rutger Hauer. How about \"Mallrats\"? It's a hilarious 90s comedy that follows two friends as they navigate love, loss, and the mall - it even stars Rutger Hauer!",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "You",
+        "actor": "Rutger Hauer",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Star Trek IV: The Voyage Home",
+        "Mallrats",
+        "The Santa Clause 2",
+        "Chasing Amy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Neil Burger",
+        "anchor_title": "Zack and Miri Make a Porno",
+        "constraints": {
+          "genre": "comedy",
+          "plot": "children",
+          "director": "Neil Burger"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for more recommendations like those, which means you enjoy comedies with a touch of adventure and perhaps some quirky characters! Based on that, I think you might enjoy \"Ace Ventura: Pet Detective\" (1994) starring the one and only Jim Carrey as the titular character - a goofy detective specializing in animals. The movie is full of humor and has a great cast, so it's definitely worth checking out!",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Rutger Hauer",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Ace Ventura: Pet Detective",
+        "The Good Dinosaur",
+        "The Princess Diaries",
+        "Galaxy Quest"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ace Ventura: Pet Detective. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Neil Burger",
+        "anchor_title": "Zack and Miri Make a Porno",
+        "constraints": {
+          "genre": "comedy",
+          "plot": "children",
+          "director": "Neil Burger"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a movie that stars Rutger Hauer, has a detective genre, and is not too scary. Based on these constraints, I think you might enjoy \"The Curse of the Jade Scorpion\" (2001) starring Woody Allen as an insurance investigator who gets hypnotized into stealing jewels. It's a lighthearted, comedic take on the detective genre with a unique plot and some great performances.",
+      "constraints": {
+        "genre": "detective",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "actor": "Rutger Hauer",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "The Departed",
+        "Smokin' Aces",
+        "Interview with the Assassin",
+        "The Curse of the Jade Scorpion"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? That sounds intriguing.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Neil Burger",
+        "anchor_title": "Zack and Miri Make a Porno",
+        "constraints": {
+          "genre": "comedy",
+          "plot": "children",
+          "director": "Neil Burger"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie that captures the essence of intrigue, with a detective genre twist and the presence of Rutger Hauer (a nod to one of his iconic roles). Based on your preferences, I'd recommend \"The Equalizer\" (2014), starring Denzel Washington as a private detective grappling with moral ambiguity. The film's exploration of justice and its complexities is sure to pique your interest!",
+      "constraints": {
+        "genre": "detective",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "You",
+        "actor": "Rutger Hauer",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Super",
+        "It's a Wonderful Life",
+        "The Equalizer",
+        "Why Did I Get Married?"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Neil Burger",
+        "anchor_title": "Zack and Miri Make a Porno",
+        "constraints": {
+          "genre": "comedy",
+          "plot": "children",
+          "director": "Neil Burger"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a movie with a detective story, possibly featuring Rutger Hauer (since he's one of your favorite actors). Given your interest in Neil Burger and his writing/directing style, I'll recommend two options from the list: 'Tombstone' and 'Taken'. Both films have elements of detective work or investigation, and while they may not feature Rutger Hauer directly, they share some similarities with Burger's style.",
+      "constraints": {
+        "genre": "detective",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "actor": "Rutger Hauer",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Takers",
+        "Tombstone",
+        "Taken",
+        "Elizabeth"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Jason Trost. Hmm, I didn’t expect that vibe. (I’m thinking of They.)",
+      "user_meta": {
+        "turn": 10,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Jason Trost",
+        "anchor_title": "She's All That",
+        "constraints": {
+          "genre": "comedy",
+          "plot": "children",
+          "director": "Neil Burger",
+          "actor": "Jason Trost",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 10,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Zack and Miri Make a Porno",
+          "to_anchor": "She's All That"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a detective movie featuring Jason Trost, perhaps inspired by his role in They? Unfortunately, none of these movies specifically star Jason Trost, but I think I can suggest some intriguing alternatives. How about \"The River Why\" (1983), an adventure-drama that explores themes of self-discovery and solitude, starring Zach Gilford and William Hurt? Or, if you're open to a more unconventional choice, \"Babel\" (2006) is a complex, interconnected story that might surprise you with its unexpected turns and diverse cast.",
+      "constraints": {
+        "genre": "detective",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "They",
+        "actor": "Jason Trost",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "The River Why",
+        "Peggy Sue Got Married",
+        "Man of Steel",
+        "Babel"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jason Trost",
+        "anchor_title": "She's All That",
+        "constraints": {
+          "genre": "comedy",
+          "plot": "children",
+          "director": "Neil Burger",
+          "actor": "Jason Trost",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I understand what you're looking for - a movie that's similar to something with Jason Trost, Neil Burger, and a detective theme, right? Based on that, I'd recommend \"Tell No One\" (2001) as it has a detective-like plot with a twisty mystery to unravel. The French thriller also features a strong lead performance, reminiscent of some of the actors in your original movie. Give it a try!",
+      "constraints": {
+        "genre": "detective",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Jason Trost",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Hesher",
+        "We Need to Talk About Kevin",
+        "Tell No One",
+        "Alex in Wonderland"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Tell No One. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jason Trost",
+        "anchor_title": "She's All That",
+        "constraints": {
+          "genre": "comedy",
+          "plot": "children",
+          "director": "Neil Burger",
+          "actor": "Jason Trost",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for movies with a detective genre, starring Jason Trost (who's not actually in any of these films), directed by Neil Burger (again, none of these are directed by him), and written by Neil Burger (still not applicable). However, I'd like to recommend \"Providence\" as it has a similar tone to Tell No One, with a mystery that unfolds over time. The film explores the complex relationships between its characters, which might appeal to your interest in intriguing plots!",
+      "constraints": {
+        "genre": "detective",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Tell No One",
+        "actor": "Jason Trost",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Providence",
+        "Alex in Wonderland",
+        "The Nanny",
+        "Psychic Experiment"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jason Trost",
+        "anchor_title": "She's All That",
+        "constraints": {
+          "genre": "comedy",
+          "plot": "children",
+          "director": "Neil Burger",
+          "actor": "Jason Trost",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for a movie that matches the mood of \"You\" and is perhaps a bit mysterious and fascinating! Based on your interest in detective movies with Jason Trost (which I assume is actually Jason Statham, since there's no Neil Burger connection), I recommend checking out \"The Curse of the Jade Scorpion\". This 2001 Woody Allen film has all the hallmarks of a quirky mystery, with Mark Rydell and Charlize Theron joining Jason Trost in a tale of hypnotism, jewels, and insurance investigations.",
+      "constraints": {
+        "genre": "detective",
+        "plot": [
+          "what"
+        ],
+        "name": "You",
+        "actor": "Jason Trost",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "The Curse of the Jade Scorpion",
+        "Divergent",
+        "Smilla's Sense of Snow",
+        "Little Fockers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jason Trost",
+        "anchor_title": "She's All That",
+        "constraints": {
+          "genre": "comedy",
+          "plot": "children",
+          "director": "Neil Burger",
+          "actor": "Jason Trost",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're unsure about whether you'd enjoy or be scared by the movie Us, and you're looking for recommendations based on genres like detective, with Jason Trost as an actor, directed by Neil Burger, and written by him too!",
+      "constraints": {
+        "genre": "detective",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "actor": "Jason Trost",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Witless Protection",
+        "The Expendables 2",
+        "It's a Wonderful Life",
+        "The Twilight Saga: New Moon"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jason Trost",
+        "anchor_title": "She's All That",
+        "constraints": {
+          "genre": "comedy",
+          "plot": "children",
+          "director": "Neil Burger",
+          "actor": "Jason Trost",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for a movie with a detective genre, starring Jason Trost (who isn't actually in any of these films), directed by Neil Burger, and written by Neil Burger, all while considering the plot keywords \"what\" and \"said\". That's a unique combination! Based on your preferences, I highly recommend \"Eve's Bayou\", which has a mysterious and haunting atmosphere that explores secrets and mystic forces. The film features a talented ensemble cast, including Roger Guenveur Smith, Tamara Tunie, and Vondie Curtis-Hall.",
+      "constraints": {
+        "genre": "detective",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "RED",
+        "actor": "Jason Trost",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Eve's Bayou",
+        "Wonder Boys",
+        "The Hound of the Baskervilles",
+        "What If..."
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Eve's Bayou. I want to try something more great britain—still with Diahann Carroll if possible. Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "great britain",
+        "anchor_title": "Twixt",
+        "constraints": {
+          "genre": "great britain",
+          "plot": "children",
+          "director": "Neil Burger",
+          "actor": "Diahann Carroll",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 16,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "Diahann Carroll",
+          "from_anchor": "She's All That",
+          "to_anchor": "Twixt"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for a movie that's deeply rooted in Great Britain, features Diahann Carroll (but not necessarily directed by Neil Burger), and has a unique tone that resonates with the vibe of \"Eve's Bayou\". Considering these constraints, I'd recommend \"Little Lord Fauntleroy\" - an adaptation of the classic novel about an American boy who inherits a British title and must navigate the complexities of aristocratic life. With its blend of humor, drama, and fish-out-of-water story, this film might just satisfy your cravings for a more laid-back, nostalgic Great Britain experience.",
+      "constraints": {
+        "genre": "great britain",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Eve's Bayou",
+        "actor": "Diahann Carroll",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Little Lord Fauntleroy",
+        "The Picture of Dorian Gray",
+        "Great Expectations",
+        "Oliver Twist"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "great britain",
+        "anchor_title": "Twixt",
+        "constraints": {
+          "genre": "great britain",
+          "plot": "children",
+          "director": "Neil Burger",
+          "actor": "Diahann Carroll",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on our conversation, you're looking for more recommendations that share some similarities with a specific set of films, which includes movies about Great Britain, starring Diahann Carroll, directed by Neil Burger (or written by him), and in German.\n\nGiven those constraints, I think you might enjoy \"Annie Hall\" (1977). This classic Woody Allen film is a romantic comedy that explores the complexities of relationships, much like some of your preferred films. It's also a great example of storytelling through self-reflection, as Alvy Singer narrates his past and present experiences with Annie Hall.",
+      "constraints": {
+        "genre": "great britain",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Diahann Carroll",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Annie Hall",
+        "Before I Fall",
+        "The Adventures of Tom Sawyer",
+        "The Stuff"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "great britain",
+        "anchor_title": "Twixt",
+        "constraints": {
+          "genre": "great britain",
+          "plot": "children",
+          "director": "Neil Burger",
+          "actor": "Diahann Carroll",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie that's opposite in some way to what you were thinking of earlier. Given that, I think \"The Truman Show\" could be an intriguing choice. This film, directed by Neil Burger (who also wrote the screenplay), explores themes of reality and perception, which might appeal to your interest in actually thinking about things. Plus, it stars Jim Carrey, who brings his signature energy to the role of Truman Burbank, a man whose entire life is being broadcast on TV without his knowledge.",
+      "constraints": {
+        "genre": "great britain",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "You",
+        "actor": "Diahann Carroll",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Monsters, Inc.",
+        "You",
+        "The Truman Show",
+        "This Girl"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Truman? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "great britain",
+        "anchor_title": "Twixt",
+        "constraints": {
+          "genre": "great britain",
+          "plot": "children",
+          "director": "Neil Burger",
+          "actor": "Diahann Carroll",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you're looking for a movie that matches the mood of Truman, which seems fascinating! Based on your preferences for Great Britain and Diahann Carroll as an actor, I'll focus on recommendations that share similar themes or elements. Considering these constraints, I'd like to suggest Truman (1992) itself, as it's already matched with some of your preferences.",
+      "constraints": {
+        "genre": "great britain",
+        "plot": [
+          "what",
+          "truman"
+        ],
+        "name": "Truman",
+        "actor": "Diahann Carroll",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "The Equalizer",
+        "Lady in the Water",
+        "The Andromeda Strain",
+        "Truman"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "great britain",
+        "anchor_title": "Twixt",
+        "constraints": {
+          "genre": "great britain",
+          "plot": "children",
+          "director": "Neil Burger",
+          "actor": "Diahann Carroll",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I sense that you're looking for a story with depth, much like the thought-provoking tale of \"Us\". You seem to have a fondness for British culture, as well as Diahann Carroll's acting and Neil Burger's direction. Given these cues, I recommend \"Smilla's Sense of Snow\", a mystery-thriller that shares some similarities with \"Us\" in its exploration of the human condition.",
+      "constraints": {
+        "genre": "great britain",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Deep",
+        "actor": "Diahann Carroll",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Smilla's Sense of Snow",
+        "Oliver Twist",
+        "Little Fockers",
+        "Holes"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Michael Jordan. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 21,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Michael Jordan",
+        "anchor_title": "Virgin Territory",
+        "constraints": {
+          "genre": "great britain",
+          "plot": "killing",
+          "director": "Neil Burger",
+          "actor": "Michael Jordan",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 21,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "killing",
+          "from_anchor": "Twixt",
+          "to_anchor": "Virgin Territory"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems like you're looking for a movie featuring Michael Jordan, but you're not sure if you'd enjoy an action-packed film or something else entirely! Based on that, I think you might appreciate \"Welcome to Sarajevo\" - it's a powerful drama set in the midst of war, with a strong focus on human stories and characters.",
+      "constraints": {
+        "genre": "great britain",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "RED",
+        "actor": "Michael Jordan",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Princess Mononoke",
+        "Welcome to Sarajevo",
+        "The Illusionist",
+        "You Only Live Twice"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michael Jordan",
+        "anchor_title": "Virgin Territory",
+        "constraints": {
+          "genre": "great britain",
+          "plot": "killing",
+          "director": "Neil Burger",
+          "actor": "Michael Jordan",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for more recommendations like those Great Britain-set films with Michael Jordan (not to be confused with the famous basketball player!) and Neil Burger's directorial style. Based on your interest in British settings, I'd recommend \"Little Lord Fauntleroy\" - an oldie but a goodie about an American boy who inherits a British fortune and must navigate the aristocracy.",
+      "constraints": {
+        "genre": "great britain",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Michael Jordan",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Little Lord Fauntleroy",
+        "The Swindle",
+        "Pride and Prejudice",
+        "The Illusionist"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michael Jordan",
+        "anchor_title": "Virgin Territory",
+        "constraints": {
+          "genre": "great britain",
+          "plot": "killing",
+          "director": "Neil Burger",
+          "actor": "Michael Jordan",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie that tells a story set in Great Britain, features Michael Jordan (who's not actually an actor in this case!), and has elements of suspense and intrigue. Given these constraints, I think \"Wonder Boys\" would be a great fit - it's a British-American comedy-drama film directed by Curtis Hanson, starring Michael Caine, Toby Maguire, and Woody Harrelson, set against the backdrop of a literary festival in Oxfordshire.",
+      "constraints": {
+        "genre": "great britain",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "actor": "Michael Jordan",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "The Twilight Saga: New Moon",
+        "Wonder Boys",
+        "Super",
+        "The Secret Garden"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michael Jordan",
+        "anchor_title": "Virgin Territory",
+        "constraints": {
+          "genre": "great britain",
+          "plot": "killing",
+          "director": "Neil Burger",
+          "actor": "Michael Jordan",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I understand what you're looking for - you like the sound of \"Us\" and are interested in movies that feature great Britain, Michael Jordan (as an actor), Neil Burger (as director/writer), and a German language plot with keywords like \"like\" and \"sound\". Based on these cues, I'd recommend \"Wonder Boys\", which features Alan Tudyk as a professor dealing with personal and professional issues, set in the UK.",
+      "constraints": {
+        "genre": "great britain",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us",
+        "actor": "Michael Jordan",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Providence",
+        "Uptown Girls",
+        "Castle in the Sky",
+        "Wonder Boys"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michael Jordan",
+        "anchor_title": "Virgin Territory",
+        "constraints": {
+          "genre": "great britain",
+          "plot": "killing",
+          "director": "Neil Burger",
+          "actor": "Michael Jordan",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for a movie that's set in Great Britain, features Michael Jordan (not the basketball player!), and has some thought-provoking themes to ponder. Based on your preferences, I think \"Waiting\" might be a great fit - it's a contemplative drama that explores complex emotions and relationships, all set against the backdrop of a fascinating premise.\n\nAlternatively, if you're in the mood for something more action-packed, \"Paycheck\" could be an entertaining choice. This sci-fi thriller features Ben Affleck as an engineer who finds himself on the run from mysterious forces after waking up with no memory of who he is or what he's done - it's a gripping and fast-paced ride that explores themes of identity and purpose.\n\nIn any case, I hope one of these options catches your eye!",
+      "constraints": {
+        "genre": "great britain",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "Us",
+        "actor": "Michael Jordan",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Waiting",
+        "Prometheus",
+        "Paycheck",
+        "The Way Back Home"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michael Jordan",
+        "anchor_title": "Virgin Territory",
+        "constraints": {
+          "genre": "great britain",
+          "plot": "killing",
+          "director": "Neil Burger",
+          "actor": "Michael Jordan",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie that's the opposite of what we initially thought, and you're interested in films related to Great Britain, with no Michael Jordan (although I'm sure he'd be great in a film!), directed or written by Neil Burger, and perhaps featuring German as one of the languages. With those constraints in mind, I highly recommend \"The Buried Giant\" (2015), an epic adventure set in post-Arthurian England, starring Emily Blunt and Jim Broadbent.",
+      "constraints": {
+        "genre": "great britain",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Us",
+        "actor": "Michael Jordan",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "The Buried Giant",
+        "Oliver Twist",
+        "The Prince and the Pauper",
+        "Haunted"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michael Jordan",
+        "anchor_title": "Virgin Territory",
+        "constraints": {
+          "genre": "great britain",
+          "plot": "killing",
+          "director": "Neil Burger",
+          "actor": "Michael Jordan",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie that's not too intense, but still has some humor and depth - something that won't leave you feeling scared or unsettled. Based on your interest in movies from Great Britain and the works of Neil Burger, I think \"Friends with Kids\" could be a great fit. It's a witty and relatable comedy that explores the complexities of relationships and decision-making, starring Kristen Wiig and Jon Hamm among others.",
+      "constraints": {
+        "genre": "great britain",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "Ted",
+        "actor": "Michael Jordan",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Friends with Kids",
+        "Passion",
+        "The Adventures of Tom Sawyer",
+        "Little Fockers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Richard Adams? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of RED.)",
+      "user_meta": {
+        "turn": 28,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Richard Adams",
+        "anchor_title": "Extraordinary Measures",
+        "constraints": {
+          "genre": "great britain",
+          "plot": "lookalike",
+          "director": "Neil Burger",
+          "actor": "Michael Jordan",
+          "language": "English",
+          "writer": "Richard Adams"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 28,
+          "from_focus": "actor",
+          "to_focus": "writer",
+          "bridge_field": "plot",
+          "bridge_value": "lookalike",
+          "from_anchor": "Virgin Territory",
+          "to_anchor": "Extraordinary Measures"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you're looking for recommendations that match certain criteria - specifically, movies written by Richard Adams (although he's not actually involved in any of these films), set in Great Britain, and starring Michael Jordan (no, not the basketball player!). You also mentioned a fascination with something written, which piqued my interest. Based on your cues, I recommend \"Wonder Boys\" - an intriguing character-driven drama that explores themes of identity, relationships, and creative struggle, all set against the backdrop of 1960s Great Britain.",
+      "constraints": {
+        "genre": "great britain",
+        "plot": [
+          "written",
+          "richard"
+        ],
+        "name": "RED",
+        "actor": "Michael Jordan",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Richard Adams"
+      },
+      "rec_titles": [
+        "Captain Phillips",
+        "The Illusionist",
+        "Interview with the Assassin",
+        "Wonder Boys"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Richard Adams",
+        "anchor_title": "Extraordinary Measures",
+        "constraints": {
+          "genre": "great britain",
+          "plot": "lookalike",
+          "director": "Neil Burger",
+          "actor": "Michael Jordan",
+          "language": "English",
+          "writer": "Richard Adams"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for more movie recommendations that share similarities with a film about Great Britain, featuring Michael Jordan (although I'll assume you meant the basketball legend isn't actually an actor in any of these films), and possibly hinting at themes of \"just\" or \"more\". Given those constraints, I think \"A Little Princess\" would be a great fit. This classic British film tells the story of Sara Crewe, a young girl who becomes embattled with her strict boarding school headmistress after her father goes off to war, and features a strong young lead performance that's sure to captivate.",
+      "constraints": {
+        "genre": "great britain",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Michael Jordan",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Richard Adams"
+      },
+      "rec_titles": [
+        "A Little Princess",
+        "Annie Hall",
+        "Dinner for Schmucks",
+        "The Pink Panther 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Tron. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Richard Adams",
+        "anchor_title": "Extraordinary Measures",
+        "constraints": {
+          "genre": "great britain",
+          "plot": "lookalike",
+          "director": "Neil Burger",
+          "actor": "Michael Jordan",
+          "language": "English",
+          "writer": "Richard Adams"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you liked Tron and are looking for something with a similar depth, but with a distinctly British flavor, starring Michael Jordan (not the basketball player!), directed by Neil Burger, and written by Richard Adams - quite a unique combination! From my list, I think \"The Illusionist\" would be an excellent choice, as it's a visually stunning film with a captivating performance by Edward Norton.",
+      "constraints": {
+        "genre": "great britain",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Tron",
+        "actor": "Michael Jordan",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Richard Adams"
+      },
+      "rec_titles": [
+        "The Lucky Ones",
+        "The Illusionist",
+        "The Prince and the Pauper",
+        "Rockshow"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Richard Adams",
+        "anchor_title": "Extraordinary Measures",
+        "constraints": {
+          "genre": "great britain",
+          "plot": "lookalike",
+          "director": "Neil Burger",
+          "actor": "Michael Jordan",
+          "language": "English",
+          "writer": "Richard Adams"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your constraints, I understand that you're looking for a movie related to Great Britain, perhaps with Michael Jordan (though I'm guessing you might mean Michael Cera?), and possibly written by Richard Adams, all in German. Given these cues, I'd recommend \"Black Beauty\" as a great starting point! This classic tale of an extraordinary horse's journey has been delighting audiences for centuries, and its themes of perseverance and friendship are timeless.",
+      "constraints": {
+        "genre": "great britain",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "Tron",
+        "actor": "Michael Jordan",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Richard Adams"
+      },
+      "rec_titles": [
+        "Black Beauty",
+        "Two Years Before the Mast",
+        "The Other Boleyn Girl",
+        "Tron"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Richard Adams",
+        "anchor_title": "Extraordinary Measures",
+        "constraints": {
+          "genre": "great britain",
+          "plot": "lookalike",
+          "director": "Neil Burger",
+          "actor": "Michael Jordan",
+          "language": "English",
+          "writer": "Richard Adams"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on what you're looking for, I understand that you want a story set in Great Britain, starring Michael Jordan (although I'm guessing this might be a mistake, as there's no notable actor with the name Michael Jordan), directed by Neil Burger or inspired by Richard Adams' work, and told in German. You also seem to be intrigued by plots related to \"what\" and \"kind\". Given these constraints, I'd like to recommend \"Flatliners\" (1990) - a thought-provoking film that explores the boundaries of life and death, starring Patricia Belcher, Beth Grant, William Baldwin, and Julia Roberts.",
+      "constraints": {
+        "genre": "great britain",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "You",
+        "actor": "Michael Jordan",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Richard Adams"
+      },
+      "rec_titles": [
+        "Flatliners",
+        "The Illusionist",
+        "Alex in Wonderland",
+        "The Secret Garden"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Richard Adams",
+        "anchor_title": "Extraordinary Measures",
+        "constraints": {
+          "genre": "great britain",
+          "plot": "lookalike",
+          "director": "Neil Burger",
+          "actor": "Michael Jordan",
+          "language": "English",
+          "writer": "Richard Adams"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I sense that you're looking for a movie that's a far cry from what we initially discussed, given your desire for something opposite. To recap, you're interested in a film set in Great Britain, featuring Michael Jordan (as an actor), directed by Neil Burger, written by Richard Adams, and with German as the primary language - all while exploring the themes of \"actually\" and \"think\". Based on these unusual constraints, I highly recommend \"Pride and Prejudice\", a classic British romance that's sure to delight.",
+      "constraints": {
+        "genre": "great britain",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "You",
+        "actor": "Michael Jordan",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Richard Adams"
+      },
+      "rec_titles": [
+        "This Girl",
+        "Pride and Prejudice",
+        "The Reflecting Skin",
+        "Alex in Wonderland"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? That sounds intriguing.",
+      "user_meta": {
+        "turn": 34,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Richard Adams",
+        "anchor_title": "Extraordinary Measures",
+        "constraints": {
+          "genre": "great britain",
+          "plot": "lookalike",
+          "director": "Neil Burger",
+          "actor": "Michael Jordan",
+          "language": "English",
+          "writer": "Richard Adams"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a movie with an intriguing mood, set in Great Britain, featuring Michael Jordan (not the basketball legend!), and possibly related to what sounds like a fascinating plot. Given these constraints, I highly recommend \"Man on Wire\" (2008), which tells the extraordinary true story of Philippe Petit's high-wire walk between the Twin Towers of New York City's World Trade Center. The film is directed by Neil Burger, who also directed some of Michael Jordan's movies!",
+      "constraints": {
+        "genre": "great britain",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "You",
+        "actor": "Michael Jordan",
+        "language": "ger",
+        "director": "Neil Burger",
+        "writer": "Richard Adams"
+      },
+      "rec_titles": [
+        "Super",
+        "Chain Reaction",
+        "The Adventures of Tom Sawyer",
+        "Man on Wire"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on You. I want to try something more bollywood—still with Japanese Language if possible. That sounds intriguing.",
+      "user_meta": {
+        "turn": 35,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "bollywood",
+        "anchor_title": "You",
+        "constraints": {
+          "genre": "bollywood",
+          "plot": "lookalike",
+          "director": "Neil Burger",
+          "actor": "Michael Jordan",
+          "language": "Japanese Language",
+          "writer": "Richard Adams"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 35,
+          "from_focus": "writer",
+          "to_focus": "genre",
+          "bridge_field": "language",
+          "bridge_value": "Japanese Language",
+          "from_anchor": "Extraordinary Measures",
+          "to_anchor": "You"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a Bollywood-style movie with Japanese language, but no Michael Jordan, Neil Burger, Richard Adams, or any specific plot keywords like \"thanks\" and \"detail\". Let me suggest two options that might fit the bill: 'Spirited Away' (2001), a beautifully animated fantasy film set in Japan, where a young girl gets transported to a magical world; and 'Wanderlust' (2012), an adventure comedy about a man who leaves his old life behind to explore the unknown, featuring a star-studded cast. Both films showcase stunning visuals and engaging stories!",
+      "constraints": {
+        "genre": "japanese language",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "You",
+        "actor": "Michael Jordan",
+        "language": "Japanese",
+        "director": "Neil Burger",
+        "writer": "Richard Adams"
+      },
+      "rec_titles": [
+        "Spirited Away",
+        "Tora! Tora! Tora!",
+        "Wanderlust",
+        "Retribution"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "bollywood",
+        "anchor_title": "You",
+        "constraints": {
+          "genre": "bollywood",
+          "plot": "lookalike",
+          "director": "Neil Burger",
+          "actor": "Michael Jordan",
+          "language": "Japanese Language",
+          "writer": "Richard Adams"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for more recommendations that fit a Japanese language theme, with no Michael Jordan, Neil Burger, Richard Adams, or any of those specific directors/writers in sight! I'd like to suggest \"Princess Mononoke\" (1997) - an epic adventure that explores the conflict between humans and nature, with stunning animation and a strong narrative. Alternatively, if you're in the mood for something lighter, \"Ponyo\" (2008) is a heartwarming tale of friendship and self-discovery, featuring lovable characters and beautiful animation.",
+      "constraints": {
+        "genre": "japanese language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Michael Jordan",
+        "language": "Japanese",
+        "director": "Neil Burger",
+        "writer": "Richard Adams"
+      },
+      "rec_titles": [
+        "Princess Mononoke",
+        "Wolf Girl",
+        "RED",
+        "Ponyo"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Elle Fanning. That sounds intriguing. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 37,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Elle Fanning",
+        "anchor_title": "The Last Samurai",
+        "constraints": {
+          "genre": "bollywood",
+          "plot": "prostitute",
+          "director": "Neil Burger",
+          "actor": "Elle Fanning",
+          "language": "Japanese Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 37,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "prostitute",
+          "from_anchor": "You",
+          "to_anchor": "The Last Samurai"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a movie with Elle Fanning, and you've mentioned Japanese language as one of your preferences. Let me recommend two movies from this list that fit your bill: 'Babel' (2006) is a thought-provoking film that explores the complexities of human relationships across cultures and languages, featuring Elle Fanning in a notable role alongside Brad Pitt and Adriana Barraza. If you're in the mood for something more whimsical, I think 'Ponyo' (2008) could be a delightful choice - it's a charming animated film that tells the story of a young boy and his underwater friend Ponyo, with beautiful animation and a heartwarming tale.",
+      "constraints": {
+        "genre": "japanese language",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "X",
+        "actor": "Elle Fanning",
+        "language": "Japanese",
+        "director": "Neil Burger",
+        "writer": "Richard Adams"
+      },
+      "rec_titles": [
+        "Source Code",
+        "Ponyo",
+        "Babel",
+        "The River Why"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Elle Fanning",
+        "anchor_title": "The Last Samurai",
+        "constraints": {
+          "genre": "bollywood",
+          "plot": "prostitute",
+          "director": "Neil Burger",
+          "actor": "Elle Fanning",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for movie recommendations with a Japanese language, Elle Fanning, Neil Burger, Richard Adams, and plot keywords like \"just\" and \"more\". Based on these cues, I'd recommend \"Bobby\" (2006) - a film that explores the life of football icon Bobby Moore, featuring a star-studded cast including Anthony Hopkins and Demi Moore. Alternatively, you might enjoy \"True Crime\" (N/A), a thriller about an over-the-hill journalist racing against time to prove a death row inmate's innocence, starring Clint Eastwood and Frances Fisher.",
+      "constraints": {
+        "genre": "japanese language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Elle Fanning",
+        "language": "Japanese",
+        "director": "Neil Burger",
+        "writer": "Richard Adams"
+      },
+      "rec_titles": [
+        "Bobby",
+        "Velocity",
+        "True Crime",
+        "My Girl 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Bobby? That sounds intriguing.",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Elle Fanning",
+        "anchor_title": "The Last Samurai",
+        "constraints": {
+          "genre": "bollywood",
+          "plot": "prostitute",
+          "director": "Neil Burger",
+          "actor": "Elle Fanning",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie that captures the mood of Bobby, which sounds intriguing! Based on your preference cues, I'm going to recommend two movies from this list.\n\nFirstly, if you're in the mood for something unique and visually stunning, I'd suggest \"The Illusionist\" (2006). This film features a magician's journey filled with illusions that will amaze and humor you. With an all-star cast including Edward Norton and Rufus Sewell, this movie is sure to captivate your attention.\n\nIf you're looking for something more action-packed and dramatic, I'd recommend \"Tora! Tora! Tora!\" (1970). This historic film tells the story of the 1941 Japanese air raid on Pearl Harbor and features a star-studded cast including James Whitmore, Richard Anderson, and Martin Balsam.",
+      "constraints": {
+        "genre": "japanese language",
+        "plot": [
+          "what",
+          "bobby"
+        ],
+        "name": "Bobby",
+        "actor": "Elle Fanning",
+        "language": "Japanese",
+        "director": "Neil Burger",
+        "writer": "Richard Adams"
+      },
+      "rec_titles": [
+        "The Illusionist",
+        "Dear John",
+        "Tora! Tora! Tora!",
+        "The Twilight Saga: New Moon"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of War. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Elle Fanning",
+        "anchor_title": "The Last Samurai",
+        "constraints": {
+          "genre": "bollywood",
+          "plot": "prostitute",
+          "director": "Neil Burger",
+          "actor": "Elle Fanning",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you're looking for a movie that's related to war, features Elle Fanning (although not starring her), has a director like Neil Burger, and is inspired by Richard Adams' work. You also have a fascination with sounds and plots that explore \"like\" and \"sound\". Given these constraints, I think you might enjoy \"Starship Troopers\" (1959), a classic sci-fi war film about humanity's battle against giant alien bugs.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "War",
+        "actor": "Elle Fanning",
+        "language": "Japanese",
+        "director": "Neil Burger",
+        "writer": "Richard Adams"
+      },
+      "rec_titles": [
+        "Starship Troopers",
+        "The Nanny",
+        "Downfall",
+        "The Stuff"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Elle Fanning",
+        "anchor_title": "The Last Samurai",
+        "constraints": {
+          "genre": "bollywood",
+          "plot": "prostitute",
+          "director": "Neil Burger",
+          "actor": "Elle Fanning",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a war-themed movie with a hint of adventure, starring Elle Fanning (although she's not in any of these classics), directed by Neil Burger (not here either), written by Richard Adams (author of Watership Down, but his work hasn't been directly adapted into any of these films), and featuring Japanese elements to boot! With that in mind, I highly recommend \"Princess Mononoke\" - a breathtakingly beautiful animated epic set amidst a war between humans and the natural world. The film's themes of sacrifice, loyalty, and environmentalism are woven together with stunning visuals and a memorable cast of characters.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "actor": "Elle Fanning",
+        "language": "Japanese",
+        "director": "Neil Burger",
+        "writer": "Richard Adams"
+      },
+      "rec_titles": [
+        "Red Dawn",
+        "Princess Mononoke",
+        "The Deer Hunter",
+        "A Farewell to Arms"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Benedek Fliegauf? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of War.)",
+      "user_meta": {
+        "turn": 42,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Benedek Fliegauf",
+        "anchor_title": "Snowpiercer",
+        "constraints": {
+          "genre": "bollywood",
+          "plot": "goes",
+          "director": "Benedek Fliegauf",
+          "actor": "Elle Fanning",
+          "language": "Japanese Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 42,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "goes",
+          "from_anchor": "The Last Samurai",
+          "to_anchor": "Snowpiercer"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for something by Benedek Fliegauf, perhaps something that's a bit of a departure from his usual style, given your interest in War and Elle Fanning. With that in mind, I'd recommend \"Apocalypse Now\" - it's a classic war film with a powerful story, memorable characters, and stunning visuals.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "War",
+        "actor": "Elle Fanning",
+        "language": "Japanese",
+        "director": "Benedek Fliegauf",
+        "writer": "Benedek Fliegauf"
+      },
+      "rec_titles": [
+        "Apocalypse Now",
+        "Platoon",
+        "Dances with Wolves",
+        "Big Fish"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Benedek Fliegauf",
+        "anchor_title": "Snowpiercer",
+        "constraints": {
+          "genre": "bollywood",
+          "plot": "goes",
+          "director": "Benedek Fliegauf",
+          "actor": "Elle Fanning",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more recommendations like a war-themed movie starring Elle Fanning, directed by Benedek Fliegauf, and written by him, all with a Japanese language setting. Based on those constraints, I think I can suggest two movies that might interest you! \n\nFirstly, I'd recommend 'Super 8' (2011), an adventure film set during the summer of 1979, starring Elle Fanning and featuring unexplained events in their small town after a train crash. It's an exciting blend of sci-fi, mystery, and coming-of-age themes that you might enjoy!\n\nSecondly, if you're open to exploring another genre, 'The Alamo' (2004) is an epic war drama based on the 1836 standoff between Texan and Tejano forces and Mexican dictator Santa Anna's army. It features a strong cast, including Dennis Quaid and Patrick Wayne.\n\nLet me know if either of these movies pique your interest!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Elle Fanning",
+        "language": "Japanese",
+        "director": "Benedek Fliegauf",
+        "writer": "Benedek Fliegauf"
+      },
+      "rec_titles": [
+        "You",
+        "Super 8",
+        "The Alamo",
+        "Maid in Manhattan"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Benedek Fliegauf",
+        "anchor_title": "Snowpiercer",
+        "constraints": {
+          "genre": "bollywood",
+          "plot": "goes",
+          "director": "Benedek Fliegauf",
+          "actor": "Elle Fanning",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your interest in the movie \"You\" and its unique vibe, I noticed you're looking for films with a war genre, starring Elle Fanning, directed by Benedek Fliegauf, written by him as well, and featuring Japanese elements. Given these constraints, I recommend \"Tora! Tora! Tora!\" (1970), a historical drama that takes place during World War II, showcasing the events leading up to the infamous Pearl Harbor attack. The film's accuracy and attention to detail make it an engaging watch.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "actor": "Elle Fanning",
+        "language": "Japanese",
+        "director": "Benedek Fliegauf",
+        "writer": "Benedek Fliegauf"
+      },
+      "rec_titles": [
+        "Doctor Zhivago",
+        "Red Cliff",
+        "It's a Wonderful Life",
+        "Tora! Tora! Tora!"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Benedek Fliegauf",
+        "anchor_title": "Snowpiercer",
+        "constraints": {
+          "genre": "bollywood",
+          "plot": "goes",
+          "director": "Benedek Fliegauf",
+          "actor": "Elle Fanning",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on what I understand, you're looking for a war-themed movie that features Elle Fanning, is directed by Benedek Fliegauf, and has Japanese language elements. Unfortunately, none of the movies on this list meet all these criteria.\n\nHowever, if you're open to exploring different options, I'd recommend \"Fury\" (2014), which is an intense war drama starring Brad Pitt as a grizzled tank commander fighting his way across Germany in April 1945. The film explores the psychological toll of war on its characters, and it's an gripping watch from start to finish.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "You",
+        "actor": "Elle Fanning",
+        "language": "Japanese",
+        "director": "Benedek Fliegauf",
+        "writer": "Benedek Fliegauf"
+      },
+      "rec_titles": [
+        "Her",
+        "Gone with the Wind",
+        "Gladiator",
+        "Fury"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Benedek Fliegauf",
+        "anchor_title": "Snowpiercer",
+        "constraints": {
+          "genre": "bollywood",
+          "plot": "goes",
+          "director": "Benedek Fliegauf",
+          "actor": "Elle Fanning",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie with a war theme, starring Elle Fanning (although she isn't in any of these specific titles), directed by Benedek Fliegauf (not applicable here), and written by him as well (again, not applicable). You also mentioned Japanese plot keywords like \"what\" and \"where\". Based on your constraints, I recommend checking out \"Pan's Labyrinth\" - it's a critically acclaimed film set in post-Civil War Spain with a unique blend of fantasy and reality.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "X",
+        "actor": "Elle Fanning",
+        "language": "Japanese",
+        "director": "Benedek Fliegauf",
+        "writer": "Benedek Fliegauf"
+      },
+      "rec_titles": [
+        "Pan's Labyrinth",
+        "Rob Roy",
+        "War Horse",
+        "Wolfhound"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Jon Bernthal. That feels deeper than I thought. (I’m thinking of War.)",
+      "user_meta": {
+        "turn": 47,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Jon Bernthal",
+        "anchor_title": "The Return of a Man Called Horse",
+        "constraints": {
+          "genre": "bollywood",
+          "plot": "indian",
+          "director": "Benedek Fliegauf",
+          "actor": "Jon Bernthal",
+          "language": "Japanese Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 47,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "indian",
+          "from_anchor": "Snowpiercer",
+          "to_anchor": "The Return of a Man Called Horse"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for movies that feature Jon Bernthal, with a war theme in mind, but also willing to consider other genres and directors like Benedek Fliegauf. You might enjoy \"The Good German\" (2006), starring George Clooney, which takes place in post-war Berlin and has a murder investigation at its core. Alternatively, \"Three Kings\" (1999) could be an interesting choice, as it's a war drama that explores the experiences of American soldiers in Iraq after the Gulf War.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "War",
+        "actor": "Jon Bernthal",
+        "language": "Japanese",
+        "director": "Benedek Fliegauf",
+        "writer": "Benedek Fliegauf"
+      },
+      "rec_titles": [
+        "Norbit",
+        "The Good German",
+        "Psychic Experiment",
+        "Three Kings"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jon Bernthal",
+        "anchor_title": "The Return of a Man Called Horse",
+        "constraints": {
+          "genre": "bollywood",
+          "plot": "indian",
+          "director": "Benedek Fliegauf",
+          "actor": "Jon Bernthal",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for more recommendations that match their previous preferences, which include a war genre, starring Jon Bernthal, directed by Benedek Fliegauf, written by Benedek Fliegauf, and featuring Japanese plot keywords. Given these constraints, I highly recommend \"Gladiator\" (2000), an epic historical drama that explores the brutal world of Roman gladiators, with Russell Crowe delivering a powerful performance.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Jon Bernthal",
+        "language": "Japanese",
+        "director": "Benedek Fliegauf",
+        "writer": "Benedek Fliegauf"
+      },
+      "rec_titles": [
+        "Gladiator",
+        "Dances with Wolves",
+        "Bobby",
+        "Casablanca"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jon Bernthal",
+        "anchor_title": "The Return of a Man Called Horse",
+        "constraints": {
+          "genre": "bollywood",
+          "plot": "indian",
+          "director": "Benedek Fliegauf",
+          "actor": "Jon Bernthal",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems you're looking for a movie that tells a story about war, with Jon Bernthal as one of the actors and directed by Benedek Fliegauf - but since there's no match on this list, I'll recommend some alternatives! \n\nBased on your preferences, I think \"Proof of Life\" could be an intriguing choice. This 2000 film stars Russell Crowe and explores themes of war, kidnapping, and negotiation in South America. With Jon Bernthal not being part of the cast, you might enjoy this intense drama as a compromise.\n\nIf you're interested in exploring more options beyond these recommendations, please let me know!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "actor": "Jon Bernthal",
+        "language": "Japanese",
+        "director": "Benedek Fliegauf",
+        "writer": "Benedek Fliegauf"
+      },
+      "rec_titles": [
+        "Her",
+        "Chain Reaction",
+        "Hell's Angels",
+        "Proof of Life"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 50,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jon Bernthal",
+        "anchor_title": "The Return of a Man Called Horse",
+        "constraints": {
+          "genre": "bollywood",
+          "plot": "indian",
+          "director": "Benedek Fliegauf",
+          "actor": "Jon Bernthal",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems you're looking for a movie that captures the essence of war, perhaps with a dash of drama and intrigue. Given your interest in Jon Bernthal's work, I think \"The Lucky Ones\" (2008) could be a great fit. This film tells the story of three soldiers trying to adjust to civilian life, with strong performances from its cast, including John Heard and Katherine LaNasa.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what"
+        ],
+        "name": "Ted",
+        "actor": "Jon Bernthal",
+        "language": "Japanese",
+        "director": "Benedek Fliegauf",
+        "writer": "Benedek Fliegauf"
+      },
+      "rec_titles": [
+        "A Bridge Too Far",
+        "The Imitation Game",
+        "The Yearling",
+        "The Lucky Ones"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 3,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "night",
+      "from_anchor": "Year One",
+      "to_anchor": "Welcome to Mooseport"
+    },
+    {
+      "turn": 5,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "children",
+      "from_anchor": "Welcome to Mooseport",
+      "to_anchor": "Zack and Miri Make a Porno"
+    },
+    {
+      "turn": 10,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Zack and Miri Make a Porno",
+      "to_anchor": "She's All That"
+    },
+    {
+      "turn": 16,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "Diahann Carroll",
+      "from_anchor": "She's All That",
+      "to_anchor": "Twixt"
+    },
+    {
+      "turn": 21,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "killing",
+      "from_anchor": "Twixt",
+      "to_anchor": "Virgin Territory"
+    },
+    {
+      "turn": 28,
+      "from_focus": "actor",
+      "to_focus": "writer",
+      "bridge_field": "plot",
+      "bridge_value": "lookalike",
+      "from_anchor": "Virgin Territory",
+      "to_anchor": "Extraordinary Measures"
+    },
+    {
+      "turn": 35,
+      "from_focus": "writer",
+      "to_focus": "genre",
+      "bridge_field": "language",
+      "bridge_value": "Japanese Language",
+      "from_anchor": "Extraordinary Measures",
+      "to_anchor": "You"
+    },
+    {
+      "turn": 37,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "prostitute",
+      "from_anchor": "You",
+      "to_anchor": "The Last Samurai"
+    },
+    {
+      "turn": 42,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "goes",
+      "from_anchor": "The Last Samurai",
+      "to_anchor": "Snowpiercer"
+    },
+    {
+      "turn": 47,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "indian",
+      "from_anchor": "Snowpiercer",
+      "to_anchor": "The Return of a Man Called Horse"
+    }
+  ]
+}

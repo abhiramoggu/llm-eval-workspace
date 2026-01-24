@@ -1,0 +1,2144 @@
+{
+  "session_id": "00099",
+  "model_name": "qwen:7b",
+  "true_genre": "parody",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a parody movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "parody",
+        "anchor_title": "Burn After Reading",
+        "constraints": {
+          "genre": "parody"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a parody movie with elements of could in the mood. Based on these preferences, I recommend 'Disaster Movie' (2008), which features a series of chaotic and comical events that involve \"coulds.\" Starring Ike Barinholtz, Carmen Electra, and Tony Cox among others, this movie should provide the humor and parody elements the user is seeking.",
+      "constraints": {
+        "genre": "parody",
+        "plot": [
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "Maleficent",
+        "White Night",
+        "Disaster Movie",
+        "Gentlemen Broncos"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Disaster Movie. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "parody",
+        "anchor_title": "Burn After Reading",
+        "constraints": {
+          "genre": "parody"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user enjoys disaster-themed movies with a sound appeal, and they're considering watching \"It's a Wonderful Life\" if its life-altering themes resonate. I recommend \"Jumper\" since it features teleportation abilities, which might align well with the user's interest in disaster movies.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Disaster Movie"
+      },
+      "rec_titles": [
+        "The Amazing Spider-Man",
+        "Jumper",
+        "It's a Wonderful Life",
+        "Alex in Wonderland"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does It's a Wonderful Life tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "parody",
+        "anchor_title": "Burn After Reading",
+        "constraints": {
+          "genre": "parody"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're interested in movies with a disaster theme and keywords like \"what\" and \"kind.\" Based on those preferences, I would recommend 'The Andromeda Strain' due to its science fiction disaster plot involving the discovery of a deadly contagion. The film stars Paula Kelly and David Wayne, who deliver compelling performances.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "It's a Wonderful Life"
+      },
+      "rec_titles": [
+        "The Andromeda Strain",
+        "The Equalizer",
+        "The Violent Kind",
+        "Man on Fire"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Michael Douglas. Hmm, I didn’t expect that vibe. (I’m thinking of The Andromeda Strain.)",
+      "user_meta": {
+        "turn": 4,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Michael Douglas",
+        "anchor_title": "Wonder Boys",
+        "constraints": {
+          "genre": "parody",
+          "actor": "Michael Douglas",
+          "plot": "laboratory"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 4,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "laboratory",
+          "from_anchor": "Burn After Reading",
+          "to_anchor": "Wonder Boys"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies featuring Michael Douglas and with a disaster theme. Recommendations could be 'Reign of Fire' due to its fire-breathing dragons element, and also 'Without Remorse' as it has an action-packed plot involving revenge and Navy SEALs.\"",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "The Andromeda Strain",
+        "actor": "Michael Douglas"
+      },
+      "rec_titles": [
+        "Reign of Fire",
+        "Without Remorse",
+        "The Spiderwick Chronicles",
+        "King Kong"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michael Douglas",
+        "anchor_title": "Wonder Boys",
+        "constraints": {
+          "genre": "parody",
+          "actor": "Michael Douglas",
+          "plot": "laboratory"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: Looking for recommendations in the genre of disaster and featuring actor Michael Douglas.推荐电影： Disclosure（1994），这是一部由Michael Douglas主演的灾难剧情片，讲述了一位计算机专家因性骚扰诉讼而面临职业生涯和私人生活的挑战。",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Michael Douglas"
+      },
+      "rec_titles": [
+        "Disclosure",
+        "Tooth Fairy",
+        "Annie Hall",
+        "The Core"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Disclosure? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michael Douglas",
+        "anchor_title": "Wonder Boys",
+        "constraints": {
+          "genre": "parody",
+          "actor": "Michael Douglas",
+          "plot": "laboratory"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with disaster genre, featuring Michael Douglas as an actor, and possibly involving decision-making or unexpected events. Based on these preferences, I would recommend 'Shark Tale' as it fits the given criteria and offers an entertaining mix of disaster, humor, and decision-making.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "Disclosure",
+        "actor": "Michael Douglas"
+      },
+      "rec_titles": [
+        "Shark Tale",
+        "Little Fockers",
+        "Yours, Mine and Ours",
+        "Why Did I Get Married?"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Shark Tale tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michael Douglas",
+        "anchor_title": "Wonder Boys",
+        "constraints": {
+          "genre": "parody",
+          "actor": "Michael Douglas",
+          "plot": "laboratory"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences for a story involving revenge, along with actor Michael Douglas, I recommend watching 'The Expendables 2'. This action-packed film features Michael Douglas and a cast of other ex-military characters seeking revenge against those who wronged them.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Shark Tale",
+        "actor": "Michael Douglas"
+      },
+      "rec_titles": [
+        "The Expendables 2",
+        "American Dreamz",
+        "I Heart Huckabees",
+        "Chain Reaction"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michael Douglas",
+        "anchor_title": "Wonder Boys",
+        "constraints": {
+          "genre": "parody",
+          "actor": "Michael Douglas",
+          "plot": "laboratory"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user preferences include a disaster genre, actor Michael Douglas, and elements of weirdness and thoughtfulness in the plot. Based on these cues, I recommend 'The Ghost and the Darkness' (1996) as it combines the disaster genre with Michael Douglas's acting, while also featuring elements of intrigue, weirdness, and intellectual exploration.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "Shark Tale",
+        "actor": "Michael Douglas"
+      },
+      "rec_titles": [
+        "The Breakfast Club",
+        "The Ghost and the Darkness",
+        "Journey 2: The Mysterious Island",
+        "Shrek 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michael Douglas",
+        "anchor_title": "Wonder Boys",
+        "constraints": {
+          "genre": "parody",
+          "actor": "Michael Douglas",
+          "plot": "laboratory"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences for a disaster genre with Michael Douglas and plot keywords like \"wrong\" and \"earlier,\" I would recommend 'The Ghost and the Darkness' due to its disaster theme, Michael Douglas's involvement, and the elements of wrong and earlier in the plot.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "Shark Tale",
+        "actor": "Michael Douglas"
+      },
+      "rec_titles": [
+        "The Ghost and the Darkness",
+        "Total Recall",
+        "Truly Madly Guilty",
+        "Red Dawn"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Frank Darabont? That feels deeper than I thought. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 10,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Frank Darabont",
+        "anchor_title": "The Ghost and the Darkness",
+        "constraints": {
+          "genre": "parody",
+          "actor": "Michael Douglas",
+          "plot": "wild",
+          "director": "Frank Darabont"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 10,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "wild",
+          "from_anchor": "Wonder Boys",
+          "to_anchor": "The Ghost and the Darkness"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with elements of disaster, featuring Michael Douglas, directed by Frank Darabont, and possibly written by Darabont himself. Based on these preferences, I recommend 'The Ghost and the Darkness' as it ticks all the boxes you mentioned. The film features Michael Douglas and was directed and written by Frank Darabont.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Deep",
+        "actor": "Michael Douglas",
+        "director": "Frank Darabont",
+        "writer": "Frank Darabont"
+      },
+      "rec_titles": [
+        "The Ghost and the Darkness",
+        "True Blood",
+        "Afterlife",
+        "The Mist"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Frank Darabont",
+        "anchor_title": "The Ghost and the Darkness",
+        "constraints": {
+          "genre": "parody",
+          "actor": "Michael Douglas",
+          "plot": "wild",
+          "director": "Frank Darabont"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for more movie recommendations with specific genre (disaster) and actor (Michael Douglas). From the list provided, I would recommend 'Reign of Fire' as it fits both criteria while featuring Michael Douglas in a lead role.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Michael Douglas",
+        "director": "Frank Darabont",
+        "writer": "Frank Darabont"
+      },
+      "rec_titles": [
+        "Tarnation",
+        "Reign of Fire",
+        "Alex in Wonderland",
+        "How to Train Your Dragon"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Reign of Fire. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Frank Darabont",
+        "anchor_title": "The Ghost and the Darkness",
+        "constraints": {
+          "genre": "parody",
+          "actor": "Michael Douglas",
+          "plot": "wild",
+          "director": "Frank Darabont"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user enjoys disaster-themed movies with Michael Douglas as a main actor. Based on these preferences, I recommend 'Vampyres' for its Disaster genre and Michael Byrne's presence. It has a deep rural English countryside setting that might appeal to the user.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Reign of Fire",
+        "actor": "Michael Douglas",
+        "director": "Frank Darabont",
+        "writer": "Frank Darabont"
+      },
+      "rec_titles": [
+        "Vampyres",
+        "The Game",
+        "Last Vegas",
+        "The Life Before Her Eyes"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Frank Darabont",
+        "anchor_title": "The Ghost and the Darkness",
+        "constraints": {
+          "genre": "parody",
+          "actor": "Michael Douglas",
+          "plot": "wild",
+          "director": "Frank Darabont"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in stories with a disaster vibe, featuring actor Michael Douglas, and possibly written or directed by Frank Darabont. Based on these preferences, I recommend watching 'We the Living' (1936) due to its historical context and themes relevant to the user's interests.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "actor": "Michael Douglas",
+        "director": "Frank Darabont",
+        "writer": "Frank Darabont"
+      },
+      "rec_titles": [
+        "We the Living",
+        "Titanic",
+        "The Twilight Saga: New Moon",
+        "Man on Wire"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of 3? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Frank Darabont",
+        "anchor_title": "The Ghost and the Darkness",
+        "constraints": {
+          "genre": "parody",
+          "actor": "Michael Douglas",
+          "plot": "wild",
+          "director": "Frank Darabont"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's constraints, they seem interested in disaster-themed movies with well-known actors. From the list provided, 'Turbulence' starring Catherine Hicks and Lauren Holly would be a good recommendation due to its disaster theme and recognizable cast.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "what"
+        ],
+        "name": "3",
+        "actor": "Michael Douglas",
+        "director": "Frank Darabont",
+        "writer": "Frank Darabont"
+      },
+      "rec_titles": [
+        "Monsters, Inc.",
+        "The Shawshank Redemption",
+        "Turbulence",
+        "Divergent"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Tom Skerritt. Hmm, I didn’t expect that vibe. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 15,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Tom Skerritt",
+        "anchor_title": "The Green Mile",
+        "constraints": {
+          "genre": "parody",
+          "actor": "Tom Skerritt",
+          "director": "Frank Darabont"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 15,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Tom Skerritt",
+          "from_anchor": "The Ghost and the Darkness",
+          "to_anchor": "The Green Mile"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movie recommendations with the constraints of having disaster-related genre, actor Tom Skerritt, and director Frank Darabont. Based on these criteria, I recommend 'The Negotiator' and 'White Squall'. Both films feature disaster themes, Skerritt's presence, and Darabont's direction.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Ted",
+        "actor": "Tom Skerritt",
+        "director": "Frank Darabont",
+        "writer": "Frank Darabont"
+      },
+      "rec_titles": [
+        "The Negotiator",
+        "White Squall",
+        "Holes",
+        "Maid in Manhattan"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tom Skerritt",
+        "anchor_title": "The Green Mile",
+        "constraints": {
+          "genre": "parody",
+          "actor": "Tom Skerritt",
+          "director": "Frank Darabont"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movie recommendations with disaster genre and actor Tom Skerritt. Based on those preferences, I would recommend 'The River' (1991), a documentary short film about the Mississippi River's environmental challenges, which stars Tom Skerritt in his role as a narrator and advocate for river remediation.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Tom Skerritt",
+        "director": "Frank Darabont",
+        "writer": "Frank Darabont"
+      },
+      "rec_titles": [
+        "The River",
+        "The Mist",
+        "The Pink Panther 2",
+        "Poltergeist III"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tom Skerritt",
+        "anchor_title": "The Green Mile",
+        "constraints": {
+          "genre": "parody",
+          "actor": "Tom Skerritt",
+          "director": "Frank Darabont"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for disaster genre movies with Tom Skerritt, Frank Darabont as director or writer, and plot keywords containing \"sure\" and \"perhaps\". Based on these preferences, I recommend 'The Dead Zone' (1983) and 'The Green Mile' (1996), both featuring Tom Skerritt and Frank Darabont's directing touch. The first movie involves a psychic abilities protagonist trying to prevent disasters, while the latter is set in a death row facility where healing through the power of storytelling plays a significant role.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "You",
+        "actor": "Tom Skerritt",
+        "director": "Frank Darabont",
+        "writer": "Frank Darabont"
+      },
+      "rec_titles": [
+        "The Dead Zone",
+        "Hot Tub Time Machine",
+        "Reign of Fire",
+        "The Green Mile"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tom Skerritt",
+        "anchor_title": "The Green Mile",
+        "constraints": {
+          "genre": "parody",
+          "actor": "Tom Skerritt",
+          "director": "Frank Darabont"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes movies with a sound-related theme, like disaster or survivor's guilt. Based on these preferences, I recommend 'The Life Before Her Eyes' for its touching story about survivor's guilt, and 'Annie Hall' for its iconic comedy featuring Woody Allen and the exploration of relationships through sound.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us",
+        "actor": "Tom Skerritt",
+        "director": "Frank Darabont",
+        "writer": "Frank Darabont"
+      },
+      "rec_titles": [
+        "The Life Before Her Eyes",
+        "The Mortal Instruments: City of Bones",
+        "Disaster Movie",
+        "Annie Hall"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Life Before Her Eyes? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tom Skerritt",
+        "anchor_title": "The Green Mile",
+        "constraints": {
+          "genre": "parody",
+          "actor": "Tom Skerritt",
+          "director": "Frank Darabont"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a movie with disaster genre, Tom Skerritt as an actor, and Frank Darabont involved in writing and direction. Based on these preferences, I would recommend '1900' due to its epic plot set against the backdrop of Italy's social unrest during the twentieth century.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "what",
+          "eyes"
+        ],
+        "name": "Yes",
+        "actor": "Tom Skerritt",
+        "director": "Frank Darabont",
+        "writer": "Frank Darabont"
+      },
+      "rec_titles": [
+        "1900",
+        "Top Gun",
+        "Little Fockers",
+        "Find Me Guilty"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tom Skerritt",
+        "anchor_title": "The Green Mile",
+        "constraints": {
+          "genre": "parody",
+          "actor": "Tom Skerritt",
+          "director": "Frank Darabont"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're interested in a story about what happens when things go awry, possibly involving a young deer and mature adults pretending to be a couple. For that, I recommend \"任何人但你\" (Anyone But You), a delightful romantic comedy where characters must pretend to be a couple to solve a mystery.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "actor": "Tom Skerritt",
+        "director": "Frank Darabont",
+        "writer": "Frank Darabont"
+      },
+      "rec_titles": [
+        "The Yearling",
+        "Us",
+        "Anyone But You",
+        "Zero Effect"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by James Mather? Hmm, I didn’t expect that vibe. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 21,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "James Mather",
+        "anchor_title": "Antwone Fisher",
+        "constraints": {
+          "genre": "parody",
+          "director": "James Mather",
+          "language": "Japanese Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 21,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "language",
+          "bridge_value": "Japanese Language",
+          "from_anchor": "The Green Mile",
+          "to_anchor": "Antwone Fisher"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a disaster genre movie with Tom Skerritt, and directed by James Mather.推荐电影《Psychic Experiment》，它结合了这些元素，讲述了一个有预知能力的男人的故事。",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Her",
+        "actor": "Tom Skerritt",
+        "director": "James Mather",
+        "writer": "Frank Darabont"
+      },
+      "rec_titles": [
+        "Psychic Experiment",
+        "Trees Lounge",
+        "The Dead Zone",
+        "Red Dawn"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "James Mather",
+        "anchor_title": "Antwone Fisher",
+        "constraints": {
+          "genre": "parody",
+          "director": "James Mather",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in disaster-related movies, featuring Tom Skerritt and directed by James Mather. Based on these preferences, I recommend checking out 'We Need to Talk About Kevin' due to its plot revolving around a disastrous event. The movie also stars Jennifer Grey, adding another layer of interest.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Tom Skerritt",
+        "director": "James Mather",
+        "writer": "Frank Darabont"
+      },
+      "rec_titles": [
+        "We Need to Talk About Kevin",
+        "Red Dawn",
+        "True Crime",
+        "Wolf Girl"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Her? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "James Mather",
+        "anchor_title": "Antwone Fisher",
+        "constraints": {
+          "genre": "parody",
+          "director": "James Mather",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with a disaster vibe, featuring actor Tom Skerritt, and potentially written by Frank Darabont. Based on these preferences, I would recommend 'Poltergeist III' as it matches the desired genre, actor, and writer. The plot revolves around supernatural forces haunting Carol Anne in a high-rise building.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "Her",
+        "actor": "Tom Skerritt",
+        "director": "James Mather",
+        "writer": "Frank Darabont"
+      },
+      "rec_titles": [
+        "Alex in Wonderland",
+        "The Way Back Home",
+        "SpaceCamp",
+        "Poltergeist III"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "James Mather",
+        "anchor_title": "Antwone Fisher",
+        "constraints": {
+          "genre": "parody",
+          "director": "James Mather",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You mentioned a preference for disaster genre movies, with Tom Skerritt as an actor of interest. From the list ['The Core', 'Armageddon'], I would recommend 'The Core' since it fits both your preferences and includes Tom Skerritt.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Her",
+        "actor": "Tom Skerritt",
+        "director": "James Mather",
+        "writer": "Frank Darabont"
+      },
+      "rec_titles": [
+        "The Core",
+        "Armageddon",
+        "Her",
+        "Ted"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "James Mather",
+        "anchor_title": "Antwone Fisher",
+        "constraints": {
+          "genre": "parody",
+          "director": "James Mather",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes movies with a sound they enjoy, featuring disaster genre and actor Tom Skerritt. Based on these preferences, I recommend 'The Dead Zone' and '2012', both featuring Tom Skerritt and elements of the disaster genre.",
+      "constraints": {
+        "genre": "disaster",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "actor": "Tom Skerritt",
+        "director": "James Mather",
+        "writer": "Frank Darabont"
+      },
+      "rec_titles": [
+        "The Shawshank Redemption",
+        "The Mortal Instruments: City of Bones",
+        "The Dead Zone",
+        "2012"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on 2012. I want to try something more musical—still with John Billingsley if possible. Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 26,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "musical",
+        "anchor_title": "Nanking",
+        "constraints": {
+          "genre": "musical",
+          "language": "Japanese Language",
+          "actor": "John Billingsley"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 26,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "John Billingsley",
+          "from_anchor": "Antwone Fisher",
+          "to_anchor": "Nanking"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a musical movie from 2012 with John Billingsley, and featuring elements of thanks and detailed plot description. Based on these preferences, I recommend 'Seven Psychopaths' (2012) which has the actor John Billingsley and fits the required plot and thematic elements.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "2012",
+        "actor": "John Billingsley",
+        "director": "James Mather",
+        "writer": "Frank Darabont",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Hopeless",
+        "Talladega Nights: The Ballad of Ricky Bobby",
+        "Coyote Ugly",
+        "Seven Psychopaths"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "musical",
+        "anchor_title": "Nanking",
+        "constraints": {
+          "genre": "musical",
+          "language": "Japanese Language",
+          "actor": "John Billingsley"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: Looking for movies with a music theme, released in 2012, featuring actor John Billingsley, and possibly directed by James Mather.推荐电影：'Mama' (2013)。这部电影符合用户的全部条件，由John Billingsley主演，同时也满足了音乐和2012年的主题要求。",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "John Billingsley",
+        "director": "James Mather",
+        "writer": "Frank Darabont",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Mama",
+        "The Secret Life of Walter Mitty",
+        "The Man from Earth",
+        "The Deep End of the Ocean"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of 3? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "musical",
+        "anchor_title": "Nanking",
+        "constraints": {
+          "genre": "musical",
+          "language": "Japanese Language",
+          "actor": "John Billingsley"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies with a music theme, released in 2012, featuring actor John Billingsley, and possibly involving revenge or retribution.推荐观看电影《Nell》(演员：Richard Libertini等)，它具备音乐元素，以及关于复仇和情感纠葛的剧情。",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "3",
+        "actor": "John Billingsley",
+        "director": "James Mather",
+        "writer": "Frank Darabont",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Nell",
+        "Fifty Shades Freed",
+        "3",
+        "Spice World"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Retribution. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "musical",
+        "anchor_title": "Nanking",
+        "constraints": {
+          "genre": "musical",
+          "language": "Japanese Language",
+          "actor": "John Billingsley"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes films with a musical sound, such as \"The Country Bears\" in 2002. The recommendation could be \"Wreck-It Ralph\" from 2012, featuring animation and a catchy soundtrack, with actors like Mona Marshall and Debi Derryberry.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Retribution",
+        "actor": "John Billingsley",
+        "director": "James Mather",
+        "writer": "Frank Darabont",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Country Bears",
+        "Wreck-It Ralph",
+        "Dark Shadows",
+        "The Last Dragon"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does 2012 tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "musical",
+        "anchor_title": "Nanking",
+        "constraints": {
+          "genre": "musical",
+          "language": "Japanese Language",
+          "actor": "John Billingsley"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with a story about what kind of journey someone goes through, potentially involving adventure and overcoming obstacles. From the list, 'The Country Bears' might be suitable due to its theme of saving a hall and bringing beloved characters together, which could resonate with an adventurous journey.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "2012",
+        "actor": "John Billingsley",
+        "director": "James Mather",
+        "writer": "Frank Darabont",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Country Bears",
+        "Velvet Goldmine",
+        "We Are Your Friends",
+        "The Twilight Saga: New Moon"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "musical",
+        "anchor_title": "Nanking",
+        "constraints": {
+          "genre": "musical",
+          "language": "Japanese Language",
+          "actor": "John Billingsley"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You mentioned that you enjoyed movies with weird plots, like those where characters think they like something but later discover不然。 Based on these preferences, I recommend watching 'The Words' (2012) which features a plot about stealing someone else's work and the consequences. It has a touch of weirdness and thought-provoking moments.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "2012",
+        "actor": "John Billingsley",
+        "director": "James Mather",
+        "writer": "Frank Darabont",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Words",
+        "Zack and Miri Make a Porno",
+        "Whiplash",
+        "Journey 2: The Mysterious Island"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "musical",
+        "anchor_title": "Nanking",
+        "constraints": {
+          "genre": "musical",
+          "language": "Japanese Language",
+          "actor": "John Billingsley"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You've mentioned a preference for movies with music as a genre, featuring actors like John Billingsley and having plot keywords such as \"Actually,\" \"Think.\" \n\nBased on these preferences, I would recommend 'Wanderlust' (2012) which has music as part of the soundtrack and features both John Billingsley and Michaela Watkins. The film's plot revolves around a character who reconnects with their childhood dream, making it an interesting choice for someone looking to explore a spiritual quest through the lens of adventure.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "2012",
+        "actor": "John Billingsley",
+        "director": "James Mather",
+        "writer": "Frank Darabont",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Cinder",
+        "Taking Woodstock",
+        "Wanderlust",
+        "The Vow"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Renée Zellweger. Hmm, I didn’t expect that vibe. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 33,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Renée Zellweger",
+        "anchor_title": "Frozen",
+        "constraints": {
+          "genre": "musical",
+          "actor": "Renée Zellweger",
+          "plot": "yours"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 33,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "yours",
+          "from_anchor": "Nanking",
+          "to_anchor": "Frozen"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies featuring Renée Zellweger, with a focus on music genre and a year of 2012. Based on these preferences, I recommend checking out 'Yesterday Was a Lie' (2008), which stars Renée Zellweger and features a musical plot. If you're also interested in the same actor's role in a 2012 movie, 'Crazy Heart' (2009) would be a good choice with Jeff Bridges playing opposite Renée Zellweger.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "X",
+        "actor": "Renée Zellweger",
+        "director": "James Mather",
+        "writer": "Frank Darabont",
+        "year": "2012",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Yesterday Was a Lie",
+        "The Secret of My Success",
+        "White Night",
+        "Crazy Heart"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 34,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Renée Zellweger",
+        "anchor_title": "Frozen",
+        "constraints": {
+          "genre": "musical",
+          "actor": "Renée Zellweger",
+          "plot": "yours"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: looking for movie recommendations with a music theme, released in 2012, featuring Renée Zellweger, and directed by James Mather. Recommendations: 'Safe House' (2012) starring Nora Arnezeder, and 'The Bodyguard' (1992), an iconic film featuring Renée Zellweger alongside Dwayne 'The Rock' Johnson.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Renée Zellweger",
+        "director": "James Mather",
+        "writer": "Frank Darabont",
+        "year": "2012",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Safe House",
+        "The Bodyguard",
+        "Hesher",
+        "A Mighty Wind"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Renée Zellweger",
+        "anchor_title": "Frozen",
+        "constraints": {
+          "genre": "musical",
+          "actor": "Renée Zellweger",
+          "plot": "yours"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user enjoys music-related movies, released in 2012, with a focus on actors like Renée Zellweger. Based on these preferences, I recommend 'Snow White and the Huntsman' (2012), featuring Renée Zellweger, and its blend of music and fantasy elements.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us",
+        "actor": "Renée Zellweger",
+        "director": "James Mather",
+        "writer": "Frank Darabont",
+        "year": "2012",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "Snow White and the Huntsman",
+        "Yesterday Was a Lie",
+        "Easy A",
+        "Flubber"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does 2012 tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Renée Zellweger",
+        "anchor_title": "Frozen",
+        "constraints": {
+          "genre": "musical",
+          "actor": "Renée Zellweger",
+          "plot": "yours"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're interested in films that have a specific storyline or relate to certain actors. From the list provided, I would recommend 'The Social Network' for its exploration of the creation of Facebook and the characters played by Jesse Eisenberg and Aaron Sorkin. This movie combines technology with interpersonal drama.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "2012",
+        "actor": "Renée Zellweger",
+        "director": "James Mather",
+        "writer": "Frank Darabont",
+        "year": "2012",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "The Social Network",
+        "The Wrestler",
+        "Dark Shadows",
+        "Battleship"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Renée Zellweger",
+        "anchor_title": "Frozen",
+        "constraints": {
+          "genre": "musical",
+          "actor": "Renée Zellweger",
+          "plot": "yours"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: They are looking for movie recommendations based on a mood of introspection and reflection, with cues such as a music genre (music), a year of release (2012), an actor involved (Renée Zellweger), and specific titles (\"The Wonderful Wizard of Oz,\" \"It'",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "X",
+        "actor": "Renée Zellweger",
+        "director": "James Mather",
+        "writer": "Frank Darabont",
+        "year": "2012",
+        "language": "ger"
+      },
+      "rec_titles": [
+        "The Wonderful Wizard of Oz",
+        "It's a Wonderful Life",
+        "Be Cool",
+        "Taking Woodstock"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe explore stories about Hindi Language? Maybe I’m overthinking it, but it sounds fascinating. Maybe something that connects to 2012.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "waiting_system",
+        "focus_field": "plot",
+        "focus_value": "Hindi Language",
+        "anchor_title": "Kites",
+        "constraints": {
+          "genre": "musical",
+          "plot": "Hindi Language",
+          "language": "Hindi Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 38,
+          "from_focus": "actor",
+          "to_focus": "plot",
+          "bridge_field": "language",
+          "bridge_value": "Hindi Language",
+          "from_anchor": "Frozen",
+          "to_anchor": "Kites"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in stories involving Hindi language, set in 2012, and possibly featuring actor Renée Zellweger. Based on these preferences, I recommend 'Fantastic Beasts and Where to Find Them' (2001), which features magical creatures often associated with Hindi culture, and has a connection to the wizarding world of Harry Potter.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "language",
+          "something"
+        ],
+        "name": "2012",
+        "actor": "Renée Zellweger",
+        "director": "James Mather",
+        "writer": "Frank Darabont",
+        "year": "2012",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "House at the End of the Street",
+        "Looper",
+        "Fantastic Beasts and Where to Find Them",
+        "Zookeeper"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "plot",
+        "focus_value": "Hindi Language",
+        "anchor_title": "Kites",
+        "constraints": {
+          "genre": "musical",
+          "plot": "Hindi Language",
+          "language": "Hindi Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You mentioned interest in movies with specific genre, language, and year constraints. Based on those preferences, I recommend watching 'The Green Mile' (1996) which combines a touching tale of healing and redemption with strong performances by the cast.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Renée Zellweger",
+        "director": "James Mather",
+        "writer": "Frank Darabont",
+        "year": "2012",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "The Avengers",
+        "Without a Clue",
+        "The Green Mile",
+        "The Princess Diaries"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Tron tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "plot",
+        "focus_value": "Hindi Language",
+        "anchor_title": "Kites",
+        "constraints": {
+          "genre": "musical",
+          "plot": "Hindi Language",
+          "language": "Hindi Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a movie with a story about revenge and survival, possibly featuring a warrior character named Volkodav. I recommend 'Wolfhound', where Oksana Akinshina plays the lead role of Volkodav, making it a perfect fit for the user's preferences.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Tron",
+        "actor": "Renée Zellweger",
+        "director": "James Mather",
+        "writer": "Frank Darabont",
+        "year": "2012",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "The Wraith",
+        "Wolfhound",
+        "Seven Psychopaths",
+        "Promised Land"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Lenny Venito. Hmm, I didn’t expect that vibe. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 41,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Lenny Venito",
+        "anchor_title": "The Princess and the Frog",
+        "constraints": {
+          "genre": "musical",
+          "plot": "online",
+          "language": "Hindi Language",
+          "actor": "Lenny Venito"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 41,
+          "from_focus": "plot",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "online",
+          "from_anchor": "Kites",
+          "to_anchor": "The Princess and the Frog"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for movies with Lenny Venito in them. Based on your preferences, I recommend checking out 'Torn Curtain' where he plays a key role. It's a thrilling Cold War era movie.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Her",
+        "actor": "Lenny Venito",
+        "director": "James Mather",
+        "writer": "Frank Darabont",
+        "year": "2012",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "The Incredible Hulk",
+        "Torn Curtain",
+        "Source Code",
+        "Jingle All the Way"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Lenny Venito",
+        "anchor_title": "The Princess and the Frog",
+        "constraints": {
+          "genre": "musical",
+          "plot": "online",
+          "language": "Hindi Language",
+          "actor": "Lenny Venito"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's constraints include preference for Hindi language, a movie released in 2012, featuring Lenny Venito as an actor, and directed by James Mather.\n\nBased on these preferences, I recommend 'Wolf Girl' as it meets all the specified criteria including being released in 2012, having Lenny Venito in the cast, and being available in Hindi language.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Lenny Venito",
+        "director": "James Mather",
+        "writer": "Frank Darabont",
+        "year": "2012",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "Wolf Girl",
+        "In Time",
+        "Argo",
+        "Snow White and the Huntsman"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Lenny Venito",
+        "anchor_title": "The Princess and the Frog",
+        "constraints": {
+          "genre": "musical",
+          "plot": "online",
+          "language": "Hindi Language",
+          "actor": "Lenny Venito"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movies with a story depth like \"Us\" but from the year 2012, featuring Lenny Venito in the cast. Based on these preferences, I recommend 'Moonrise Kingdom' (2012) due to its emotional depth and the presence of actors like Jared Gilman who shares screen time with Lenny Venito.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Deep",
+        "actor": "Lenny Venito",
+        "director": "James Mather",
+        "writer": "Frank Darabont",
+        "year": "2012",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "This Means War",
+        "Wreck-It Ralph",
+        "Men in Black II",
+        "Moonrise Kingdom"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Lenny Venito",
+        "anchor_title": "The Princess and the Frog",
+        "constraints": {
+          "genre": "musical",
+          "plot": "online",
+          "language": "Hindi Language",
+          "actor": "Lenny Venito"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in films with a theme of redemption, maybe involving a character who was wronged earlier. Based on these preferences, I would recommend 'Where We Belong' as it features a protagonist who seeks forgiveness and redemption after engaging in delinquent behavior. The movie also has an interesting cast, including Kassie Wesley DePaiva and Holly Hunter.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "Deep",
+        "actor": "Lenny Venito",
+        "director": "James Mather",
+        "writer": "Frank Darabont",
+        "year": "2012",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "Easy",
+        "Evil Dead II",
+        "Where We Belong",
+        "Won't Back Down"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Lenny Venito",
+        "anchor_title": "The Princess and the Frog",
+        "constraints": {
+          "genre": "musical",
+          "plot": "online",
+          "language": "Hindi Language",
+          "actor": "Lenny Venito"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I would recommend 'The Green Mile' (1996) and 'Pandemonium' (2012). 'The Green Mile' is a heartwarming tale about healing and redemption, featuring actors like Tom Hanks and James Cromwell. 'Pandemonium' offers an intriguing mix of cheerleading, mystery, and character development, with stars such as Joss Ackman and Amber Tamblyn.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "Deep",
+        "actor": "Lenny Venito",
+        "director": "James Mather",
+        "writer": "Frank Darabont",
+        "year": "2012",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "The Green Mile",
+        "Wanderlust",
+        "Utsav",
+        "Pandemonium"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? That sounds intriguing.",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Lenny Venito",
+        "anchor_title": "The Princess and the Frog",
+        "constraints": {
+          "genre": "musical",
+          "plot": "online",
+          "language": "Hindi Language",
+          "actor": "Lenny Venito"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's constraints, they are interested in movies with a intrigue-building mood. The recommended movies from this list that fit this description are:\n\n1. 'The Andromeda Strain' - This 1971 science fiction movie follows top scientists trying to uncover and stop an alien contagion. The suspenseful plot would engage the user's interest.\n\n2. 'Dark Shadows' (2012) - This supernatural horror film revolves around a vampire, Barnabas Collins, who returns home after centuries in imprisonment. The dark themes and eerie atmosphere could appeal to someone seeking intrigue.\n\nBoth movies offer intricate plots and intriguing elements that would cater to the user's mood preferences.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "X",
+        "actor": "Lenny Venito",
+        "director": "James Mather",
+        "writer": "Frank Darabont",
+        "year": "2012",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "The Watch",
+        "The Andromeda Strain",
+        "Dark Shadows",
+        "Anyone But You"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Dark Shadows. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Lenny Venito",
+        "anchor_title": "The Princess and the Frog",
+        "constraints": {
+          "genre": "musical",
+          "plot": "online",
+          "language": "Hindi Language",
+          "actor": "Lenny Venito"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You enjoy movies with a sound要素 that interests you, like \"Dark Shadows\" suggests. Based on those preferences, I recommend watching 'Zero DarkThirty', which has a gripping sound accompaniment and its intense plot aligns well with your interest in sound elements.\"",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "actor": "Lenny Venito",
+        "director": "James Mather",
+        "writer": "Frank Darabont",
+        "year": "2012",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "The Relic",
+        "The Three Stooges",
+        "Zoo",
+        "Zero Dark Thirty"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Richard Donner? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 48,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Richard Donner",
+        "anchor_title": "Slumdog Millionaire",
+        "constraints": {
+          "genre": "musical",
+          "plot": "mine",
+          "language": "Hindi Language",
+          "actor": "Lenny Venito",
+          "director": "Richard Donner"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 48,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "mine",
+          "from_anchor": "The Princess and the Frog",
+          "to_anchor": "Slumdog Millionaire"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants something from Richard Donner's works, preferably with a Hindi language option. Based on those preferences, I recommend 'Bend It Like Beckham' as it is directed by Richard Donner and features Hindi language elements.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "RED",
+        "actor": "Richard Donner",
+        "director": "Richard Donner",
+        "writer": "Frank Darabont",
+        "year": "2012",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "The Seduction of Joe Tynan",
+        "Won't Back Down",
+        "Bend It Like Beckham",
+        "That's My Boy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Richard Donner",
+        "anchor_title": "Slumdog Millionaire",
+        "constraints": {
+          "genre": "musical",
+          "plot": "mine",
+          "language": "Hindi Language",
+          "actor": "Lenny Venito",
+          "director": "Richard Donner"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movie recommendations using specific genre (language-based), year (2012), and some notable actors or director (Richard Donner). Based on these constraints, I recommend 'Arbitrage' starring Chris Eigeman and directed by Richard Donner. This film fits your preferences perfectly with its 2012 release and focus on corporate finance.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Richard Donner",
+        "director": "Richard Donner",
+        "writer": "Frank Darabont",
+        "year": "2012",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "Mansfield Park",
+        "How to Train Your Dragon",
+        "Arbitrage",
+        "To Rome with Love"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 50,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Richard Donner",
+        "anchor_title": "Slumdog Millionaire",
+        "constraints": {
+          "genre": "musical",
+          "plot": "mine",
+          "language": "Hindi Language",
+          "actor": "Lenny Venito",
+          "director": "Richard Donner"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's constraints include a preference for weird, thought-provoking movies from the years 2012, featuring Hindi language.推荐电影：'Seven Psychopaths'，它于2012年上映，包含英文对白，并以印度为背景展现了一种怪诞的、深层思考的故事。",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "You",
+        "actor": "Richard Donner",
+        "director": "Richard Donner",
+        "writer": "Frank Darabont",
+        "year": "2012",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "Seven Psychopaths",
+        "This Is 40",
+        "Easy",
+        "The Ghost and the Darkness"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 4,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "laboratory",
+      "from_anchor": "Burn After Reading",
+      "to_anchor": "Wonder Boys"
+    },
+    {
+      "turn": 10,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "wild",
+      "from_anchor": "Wonder Boys",
+      "to_anchor": "The Ghost and the Darkness"
+    },
+    {
+      "turn": 15,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Tom Skerritt",
+      "from_anchor": "The Ghost and the Darkness",
+      "to_anchor": "The Green Mile"
+    },
+    {
+      "turn": 21,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "language",
+      "bridge_value": "Japanese Language",
+      "from_anchor": "The Green Mile",
+      "to_anchor": "Antwone Fisher"
+    },
+    {
+      "turn": 26,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "John Billingsley",
+      "from_anchor": "Antwone Fisher",
+      "to_anchor": "Nanking"
+    },
+    {
+      "turn": 33,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "yours",
+      "from_anchor": "Nanking",
+      "to_anchor": "Frozen"
+    },
+    {
+      "turn": 38,
+      "from_focus": "actor",
+      "to_focus": "plot",
+      "bridge_field": "language",
+      "bridge_value": "Hindi Language",
+      "from_anchor": "Frozen",
+      "to_anchor": "Kites"
+    },
+    {
+      "turn": 41,
+      "from_focus": "plot",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "online",
+      "from_anchor": "Kites",
+      "to_anchor": "The Princess and the Frog"
+    },
+    {
+      "turn": 48,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "mine",
+      "from_anchor": "The Princess and the Frog",
+      "to_anchor": "Slumdog Millionaire"
+    }
+  ]
+}

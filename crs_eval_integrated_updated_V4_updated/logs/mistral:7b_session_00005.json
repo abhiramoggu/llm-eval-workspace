@@ -1,0 +1,2274 @@
+{
+  "session_id": "00005",
+  "model_name": "mistral:7b",
+  "true_genre": "piracy",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a french movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "french",
+        "anchor_title": "Incendies",
+        "constraints": {
+          "genre": "french"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're in search of French films! Here are two recommendations that fit your criteria:\n\n1. The Dirty Dozen - A high-octane, action-packed movie about a group of professional off-road motorcycle riders in grueling tracks and trails, starring Charles Bronson and Lee Marvin.\n2. Thunderball - James Bond is back in this thrilling adventure set in the Bahamas, where he battles S.P.E.C.T.R.E. to recover two nuclear warheads stolen by Emilio Largo, played by Adolfo Celi.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "french",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "The Dirty Dozen",
+        "Braveheart",
+        "The Smurfs 2",
+        "Thunderball"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Argo. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "french",
+        "anchor_title": "Incendies",
+        "constraints": {
+          "genre": "french"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you're interested in French movies and plots with an intriguing sound, I recommend checking out 'The Returned'. This series is set in a post-zombie world where the infected live normal lives, with the French language and culture prominently featured. Another option could be '12 Monkeys', a thought-provoking film about time travel and political intrigue, starring Bruce Willis and Brad Pitt.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Argo"
+      },
+      "rec_titles": [
+        "Red Dragon",
+        "12 Monkeys",
+        "The Interpreter",
+        "The Returned"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Sean Anders? That sounds intriguing. (I’m thinking of RED.)",
+      "user_meta": {
+        "turn": 3,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Sean Anders",
+        "anchor_title": "Bedazzled",
+        "constraints": {
+          "genre": "french",
+          "writer": "Sean Anders",
+          "language": "Russian Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 3,
+          "from_focus": "genre",
+          "to_focus": "writer",
+          "bridge_field": "language",
+          "bridge_value": "Russian Language",
+          "from_anchor": "Incendies",
+          "to_anchor": "Bedazzled"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for French language films, directed and written by Sean Anders, I'd like to suggest two movies from the provided list that might interest you:\n\n1. 'Maid in Manhattan': A comedic drama about a Hollywood actress who gets embroiled in a family's affairs while pretending to be a maid in New York City, starring Natasha Richardson and Ralph Fiennes.\n2. 'The Green Mile': Although not written by Sean Anders, this acclaimed film directed by Frank Darabont tells the story of a gentle giant with healing powers on death row, featuring Tom Hanks in a compelling performance.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "written",
+          "sean"
+        ],
+        "name": "RED",
+        "director": "Sean Anders",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Maid in Manhattan",
+        "The Green Mile",
+        "The Life Aquatic with Steve Zissou",
+        "Mars Attacks!"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Sean Anders",
+        "anchor_title": "Bedazzled",
+        "constraints": {
+          "genre": "french",
+          "writer": "Sean Anders",
+          "language": "Russian Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you're looking for more French films, directed and written by Sean Anders, here are two recommendations:\n\n1. 'Kiss of the Dragon': An action-packed movie starring Jet Li as a betrayed intelligence officer fighting a deadly conspiracy.\n2. 'Alex in Wonderland': A film about a director, played by Paul Mazursky, navigating his personal and professional life while fantasizing about movie scenarios influenced by his idols.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Sean Anders",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Kiss of the Dragon",
+        "Labyrinths",
+        "Thick as Thieves",
+        "Alex in Wonderland"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Sean Anders",
+        "anchor_title": "Bedazzled",
+        "constraints": {
+          "genre": "french",
+          "writer": "Sean Anders",
+          "language": "Russian Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for a French movie with a fascinating sounding plot, I'd suggest you consider watching \"Remember Me, My Love.\" This film is an Italian production and tells the story of a family dealing with various secrets and dilemmas. It stars Giulia Michelini, Silvio Muccino, and Laura Morante. Another intriguing option from the list could be \"The Imaginarium of Doctor Parnassus,\" a fantastical adventure featuring stars like Heath Ledger, Christopher Plummer, and Jude Law.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "director": "Sean Anders",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "Remember Me, My Love",
+        "The Imaginarium of Doctor Parnassus",
+        "We Were Soldiers",
+        "X-Men: First Class"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Sean Anders",
+        "anchor_title": "Bedazzled",
+        "constraints": {
+          "genre": "french",
+          "writer": "Sean Anders",
+          "language": "Russian Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for French films, a movie by Sean Anders, and a potential interest in plot keywords like 'sure' and 'perhaps', I recommend considering \"Thunderball\" - a classic James Bond film with an international espionage plot that might intrigue you, or perhaps \"Outlander\", a fantasy romance set in 18th-century Scotland.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "Ted",
+        "director": "Sean Anders",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "That's My Boy",
+        "Funny Games",
+        "Thunderball",
+        "Outlander"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Outlander tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Sean Anders",
+        "anchor_title": "Bedazzled",
+        "constraints": {
+          "genre": "french",
+          "writer": "Sean Anders",
+          "language": "Russian Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for French films, a director and writer named Sean Anders, and a request for understanding the kind of story Outlander tells, I'd recommend you watch \"The Social Network\" (2010). It's an intriguing drama about the creation of Facebook, starring Jesse Eisenberg, Andrew Garfield, and Justin Timberlake. While it may not be French, its captivating plot might help satisfy your curiosity about Outlander's genre.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Outlander",
+        "director": "Sean Anders",
+        "writer": "Sean Anders"
+      },
+      "rec_titles": [
+        "The Social Network",
+        "Never Say Never Again",
+        "That's My Boy",
+        "Just Married"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of 2010? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Sean Anders",
+        "anchor_title": "Bedazzled",
+        "constraints": {
+          "genre": "french",
+          "writer": "Sean Anders",
+          "language": "Russian Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for a French movie from 2010, directed by Sean Anders, written by him as well, and with a plot featuring some form of 'what' or 'don', I would recommend watching 'Alex in Wonderland'. This film is not from 2010 but shares similar creative aspects and explores the life of a director navigating various projects and personal dilemmas. Another option could be 'Frida' (2002), a biopic about the famous Mexican artist Frida Kahlo, which features a star-studded cast including Salma Hayek and Alfred Molina.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "2010",
+        "director": "Sean Anders",
+        "writer": "Sean Anders",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "The Green Mile",
+        "Alex in Wonderland",
+        "Frida",
+        "The French Connection"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Sean Anders",
+        "anchor_title": "Bedazzled",
+        "constraints": {
+          "genre": "french",
+          "writer": "Sean Anders",
+          "language": "Russian Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for French films, released in 2010, directed by Sean Anders, and written by him as well, let me suggest two movies that might interest you:\n\n1. 'I Am Number Four' - An action-packed alien story with a unique plot that could cater to your taste for the unexpected.\n2. 'Hesher' - A thought-provoking drama starring Joseph Gordon-Levitt, who delivers an intriguing performance as an unconventional character that might resonate with you.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "2010",
+        "director": "Sean Anders",
+        "writer": "Sean Anders",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "I Am Number Four",
+        "Nine",
+        "Hesher",
+        "Monty Python and the Holy Grail"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Chris Elliott. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of I Am Number Four.)",
+      "user_meta": {
+        "turn": 10,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Chris Elliott",
+        "anchor_title": "Hannibal Rising",
+        "constraints": {
+          "genre": "french",
+          "writer": "Pittacus Lore",
+          "language": "Russian Language",
+          "actor": "Chris Elliott"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 10,
+          "from_focus": "writer",
+          "to_focus": "actor",
+          "bridge_field": "writer",
+          "bridge_value": "Pittacus Lore",
+          "from_anchor": "Bedazzled",
+          "to_anchor": "Hannibal Rising"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for a French movie from 2010, featuring Chris Elliott and written by Sean Anders, I'd like to suggest 'Abraham Lincoln: Vampire Hunter'. This action-horror film offers an unusual twist on American history with an all-star cast including Benjamin Walker as the title character. If you're open to exploring other genres from the provided list, you might also enjoy 'Inglourious Basterds', a World War II drama directed by Quentin Tarantino and starring Brad Pitt.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "I Am Number Four",
+        "director": "Sean Anders",
+        "writer": "Sean Anders",
+        "year": "2010",
+        "actor": "Chris Elliott"
+      },
+      "rec_titles": [
+        "Abraham Lincoln: Vampire Hunter",
+        "Never Let Me Go",
+        "Days of Thunder",
+        "Inglourious Basterds"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Chris Elliott",
+        "anchor_title": "Hannibal Rising",
+        "constraints": {
+          "genre": "french",
+          "writer": "Pittacus Lore",
+          "language": "Russian Language",
+          "actor": "Chris Elliott"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for French films, comedies from 2010 featuring Chris Elliott, and plots with a unique twist, I'd recommend you check out \"Velocity\". This film offers a blend of racing action and drama, set within the MotoGP Championship. If you're open to a more serious tone, \"Hotel Rwanda\" is another powerful choice, starring Don Cheadle and Sophie Okonedo.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Sean Anders",
+        "writer": "Sean Anders",
+        "year": "2010",
+        "actor": "Chris Elliott"
+      },
+      "rec_titles": [
+        "Velocity",
+        "Hotel Rwanda",
+        "Furry Vengeance",
+        "Alice in Wonderland"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of 2010? That sounds intriguing.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Chris Elliott",
+        "anchor_title": "Hannibal Rising",
+        "constraints": {
+          "genre": "french",
+          "writer": "Pittacus Lore",
+          "language": "Russian Language",
+          "actor": "Chris Elliott"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preferences for a French movie from 2010, starring Chris Elliott and with an intriguing plot, I'd recommend \"Arthur and the Invisibles.\" This film features a young boy seeking hidden treasure in the land of tiny people, and it boasts an international cast including Snoop Dogg, Emilio Estevez, and Jason Bateman. However, if you're open to considering films from other years, I'd also suggest \"Mars Attacks!\" for its unique blend of comedy, action, and a star-studded cast like Tom Jones, Danny DeVito, and Willie Garson.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "2010",
+        "director": "Sean Anders",
+        "writer": "Sean Anders",
+        "year": "2010",
+        "actor": "Chris Elliott"
+      },
+      "rec_titles": [
+        "Arthur and the Invisibles",
+        "The Twilight Saga: Eclipse",
+        "Mars Attacks!",
+        "Anyone But You"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does 2010 tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Chris Elliott",
+        "anchor_title": "Hannibal Rising",
+        "constraints": {
+          "genre": "french",
+          "writer": "Pittacus Lore",
+          "language": "Russian Language",
+          "actor": "Chris Elliott"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for a French movie from 2010, I would recommend \"The International\" starring Naomi Watts and Armin Mueller-Stahl. This film tells an intriguing story about an Interpol agent trying to expose a high-profile financial institution's involvement in international arms dealing. Another option could be \"Saving Private Ryan\" from 1998, featuring Tom Hanks, if you're open to movies outside your stated timeframe, as it is widely praised for its compelling plot and powerful performances.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "2010",
+        "director": "Sean Anders",
+        "writer": "Sean Anders",
+        "year": "2010",
+        "actor": "Chris Elliott"
+      },
+      "rec_titles": [
+        "The International",
+        "Saving Private Ryan",
+        "The Wolfman",
+        "Dear John"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Mario Van Peebles? That feels deeper than I thought. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 14,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Mario Van Peebles",
+        "anchor_title": "Night Watch",
+        "constraints": {
+          "genre": "french",
+          "writer": "Pittacus Lore",
+          "language": "Russian Language",
+          "actor": "Seth MacFarlane",
+          "director": "Mario Van Peebles"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 14,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Seth MacFarlane",
+          "from_anchor": "Hannibal Rising",
+          "to_anchor": "Night Watch"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for a movie directed by Mario Van Peebles, starring him as an actor, in the French language, and containing keywords like \"switch,\" here are two recommendations:\n\n1. 'The Usual Suspects' (1995) - A thrilling crime drama that tells the intricate story of five criminals brought together by fate.\n2. 'The French Connection' (1971) - An iconic police thriller set in France, featuring a gripping narrative about detectives chasing down a dangerous heroin smuggling ring.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Ted",
+        "director": "Mario Van Peebles",
+        "writer": "Sean Anders",
+        "year": "2010",
+        "actor": "Mario Van Peebles"
+      },
+      "rec_titles": [
+        "The Usual Suspects",
+        "Inception",
+        "The French Connection",
+        "Ratatouille"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mario Van Peebles",
+        "anchor_title": "Night Watch",
+        "constraints": {
+          "genre": "french",
+          "writer": "Pittacus Lore",
+          "language": "Russian Language",
+          "actor": "Seth MacFarlane",
+          "director": "Mario Van Peebles"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for French films from 2010 or later, starring Mario Van Peebles and with a plot that contains keywords like 'just', you might enjoy watching 'Colombiana'. This action thriller follows a young girl who becomes an assassin after witnessing her parents' murder. Another film you may find interesting is 'Tell No One', a mystery-thriller about a man whose life takes an unexpected turn when he uncovers some painful memories from the past.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Mario Van Peebles",
+        "writer": "Sean Anders",
+        "year": "2010",
+        "actor": "Mario Van Peebles"
+      },
+      "rec_titles": [
+        "Arthur and the Invisibles",
+        "Colombiana",
+        "Desolation Angels",
+        "Tell No One"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mario Van Peebles",
+        "anchor_title": "Night Watch",
+        "constraints": {
+          "genre": "french",
+          "writer": "Pittacus Lore",
+          "language": "Russian Language",
+          "actor": "Seth MacFarlane",
+          "director": "Mario Van Peebles"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for French films from 2010, directed and starring Mario Van Peebles, produced in France, and with plot keywords like \"what\" and \"kind\", I'd recommend 'Before I Fall'. It's a thought-provoking drama about a young woman who relives her last day over and over. Although it doesn't directly match all of your criteria, it shares the French setting, year, and director with your preferences.",
+      "constraints": {
+        "genre": "french",
+        "language": "French",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "You",
+        "director": "Mario Van Peebles",
+        "writer": "Sean Anders",
+        "year": "2010",
+        "actor": "Mario Van Peebles"
+      },
+      "rec_titles": [
+        "2010",
+        "The Wraith",
+        "Clash of the Titans",
+        "Before I Fall"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Afrikaans Language? That feels deeper than I thought. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 17,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "Afrikaans Language",
+        "anchor_title": "Incendies",
+        "constraints": {
+          "genre": "french",
+          "writer": "Pittacus Lore",
+          "language": "Afrikaans Language",
+          "actor": "Seth MacFarlane",
+          "director": "Mario Van Peebles"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 17,
+          "from_focus": "director",
+          "to_focus": "language",
+          "bridge_field": "director",
+          "bridge_value": "Mario Van Peebles",
+          "from_anchor": "Night Watch",
+          "to_anchor": "Incendies"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preferences for a movie primarily in Afrikaans Language, here are my top picks from the list:\n\n1. Tracker (2010) - A unique blend of romance, crime drama, and ghost story that offers a captivating cinematic experience.\n2. Unstoppable (2010) - While not in Afrikaans, this thrilling action movie stars Denzel Washington, who delivers a powerful performance you wouldn't want to miss.",
+      "constraints": {
+        "genre": "language",
+        "language": "Afrikaans Language",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "Deep",
+        "director": "Mario Van Peebles",
+        "writer": "Sean Anders",
+        "year": "2010",
+        "actor": "Mario Van Peebles"
+      },
+      "rec_titles": [
+        "Tracker",
+        "How to Train Your Dragon",
+        "Unbreakable",
+        "Unstoppable"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Afrikaans Language",
+        "anchor_title": "Incendies",
+        "constraints": {
+          "genre": "french",
+          "writer": "Pittacus Lore",
+          "language": "Afrikaans Language",
+          "actor": "Seth MacFarlane",
+          "director": "Mario Van Peebles"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preferences for a movie made in 2010, featuring Mario Van Peebles as actor and director, with a plot keyword being \"just\", and the language being Afrikaans, I'd recommend watching 'Stone'. It's a gripping drama starring Robert De Niro and Milla Jovovich about a parole officer and a convict in a complicated relationship. However, since your preferences don't exactly match with this list, you might also find 'Fight Club' interesting, even though it was made in 1996. This classic film features an ensemble cast including Brad Pitt and Edward Norton and revolves around the formation of an underground fight club.",
+      "constraints": {
+        "genre": "language",
+        "language": "Afrikaans Language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Mario Van Peebles",
+        "writer": "Sean Anders",
+        "year": "2010",
+        "actor": "Mario Van Peebles"
+      },
+      "rec_titles": [
+        "The Twilight Saga: Eclipse",
+        "Stone",
+        "Compliance",
+        "Fight Club"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Afrikaans Language",
+        "anchor_title": "Incendies",
+        "constraints": {
+          "genre": "french",
+          "writer": "Pittacus Lore",
+          "language": "Afrikaans Language",
+          "actor": "Seth MacFarlane",
+          "director": "Mario Van Peebles"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you enjoyed Ted and expressed interest in a movie from 2010, featuring Mario Van Peebles as an actor and director, with a focus on language being Afrikaans, I'd recommend 'The Kids Are All Right'. This film is about two children conceived by artificial insemination who bring their biological father into their non-traditional family life. Another possibility could be 'Tender Is the Night', although it was made in 1933 and not 2010, featuring an intriguing plot of a psychiatrist's life with a patient he helped to recover.",
+      "constraints": {
+        "genre": "language",
+        "language": "Afrikaans Language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "director": "Mario Van Peebles",
+        "writer": "Sean Anders",
+        "year": "2010",
+        "actor": "Mario Van Peebles"
+      },
+      "rec_titles": [
+        "The Kids Are All Right",
+        "Tender Is the Night",
+        "Yogi Bear",
+        "Planet Terror"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Afrikaans Language",
+        "anchor_title": "Incendies",
+        "constraints": {
+          "genre": "french",
+          "writer": "Pittacus Lore",
+          "language": "Afrikaans Language",
+          "actor": "Seth MacFarlane",
+          "director": "Mario Van Peebles"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems you're looking for a movie produced in 2010, starring Mario Van Peebles and featuring a unique or odd theme. Given that, I would recommend \"Takers\" as it revolves around a group of bank robbers, or perhaps \"Easy A\", which offers a humorous take on a high school student's lies about losing her virginity. Both movies have been well-received and might pique your interest.",
+      "constraints": {
+        "genre": "language",
+        "language": "Afrikaans Language",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "Ted",
+        "director": "Mario Van Peebles",
+        "writer": "Sean Anders",
+        "year": "2010",
+        "actor": "Mario Van Peebles"
+      },
+      "rec_titles": [
+        "Takers",
+        "Shrek 2",
+        "Easy A",
+        "My Soul to Take"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Nonso Anozie. That sounds intriguing. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 21,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Nonso Anozie",
+        "anchor_title": "The Piano Teacher",
+        "constraints": {
+          "genre": "french",
+          "writer": "Pittacus Lore",
+          "actor": "Nonso Anozie",
+          "director": "Mario Van Peebles",
+          "plot": "relationships"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 21,
+          "from_focus": "language",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "relationships",
+          "from_anchor": "Incendies",
+          "to_anchor": "The Piano Teacher"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for a movie featuring Nonso Anozie, released in or around 2010, and with an Afrikaans language, I'd recommend you watch 'Insidious'. This suspenseful film features a talented ensemble cast, including Nonso Anozie, and is set in New York City. It tells the story of Donny Rocconi, a struggling filmmaker who finds himself embroiled in a dangerous situation. Another movie that might interest you is 'Providence', although it's slightly outside your year range, it's a drama about two individuals growing up in a small town in Tennessee whose paths cross and separate over time.",
+      "constraints": {
+        "genre": "language",
+        "language": "Afrikaans Language",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Her",
+        "director": "Mario Van Peebles",
+        "writer": "Sean Anders",
+        "year": "2010",
+        "actor": "Nonso Anozie"
+      },
+      "rec_titles": [
+        "Insidious",
+        "Divergent",
+        "Providence",
+        "Zoolander 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Nonso Anozie",
+        "anchor_title": "The Piano Teacher",
+        "constraints": {
+          "genre": "french",
+          "writer": "Pittacus Lore",
+          "actor": "Nonso Anozie",
+          "director": "Mario Van Peebles",
+          "plot": "relationships"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for a movie released in 2010, featuring Nonso Anozie, and with the Afrikaans language, I recommend 'Tracker'. This gritty crime drama also stars Jed Brophy and Ray Winstone. Alternatively, if you're interested in a mix of sci-fi and action, you might enjoy 'TRON: Legacy', which features Olivia Wilde and Jeff Bridges.",
+      "constraints": {
+        "genre": "language",
+        "language": "Afrikaans Language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Mario Van Peebles",
+        "writer": "Sean Anders",
+        "year": "2010",
+        "actor": "Nonso Anozie"
+      },
+      "rec_titles": [
+        "Tracker",
+        "TRON: Legacy",
+        "Date Night",
+        "The King's Speech"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does 2010 tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Nonso Anozie",
+        "anchor_title": "The Piano Teacher",
+        "constraints": {
+          "genre": "french",
+          "writer": "Pittacus Lore",
+          "actor": "Nonso Anozie",
+          "director": "Mario Van Peebles",
+          "plot": "relationships"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preferences for a movie released in 2010, featuring the Afrikaans language and non-specific actor Nonso Anozie, I would recommend 'The Next Three Days' as it was also released in 2010 and stars Aisha Hinds, who appears in your cues list. This film is a gripping thriller about a man trying to free his wife from prison after she's accused of murder.\n\nIf you prefer a more lighthearted approach, 'Despicable Me' might be an enjoyable choice as well. It tells the story of a criminal mastermind who adopts three orphans and discovers a new purpose in life.",
+      "constraints": {
+        "genre": "language",
+        "language": "Afrikaans Language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "2010",
+        "director": "Mario Van Peebles",
+        "writer": "Sean Anders",
+        "year": "2010",
+        "actor": "Nonso Anozie"
+      },
+      "rec_titles": [
+        "The Twilight Saga: New Moon",
+        "The Next Three Days",
+        "Despicable Me",
+        "The Secret Garden"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Nonso Anozie",
+        "anchor_title": "The Piano Teacher",
+        "constraints": {
+          "genre": "french",
+          "writer": "Pittacus Lore",
+          "actor": "Nonso Anozie",
+          "director": "Mario Van Peebles",
+          "plot": "relationships"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preferences for a movie set around 2010, featuring Afrikaans language, and potentially directed by Mario Van Peebles or written by Sean Anders, I'd recommend watching 'Tsotsi'. This gritty drama follows the six-day journey of a young Johannesburg gang leader, providing an immersive look into South African urban life. Another compelling option is '3', a German thriller about a high school sweetheart seeking truth after her husband mysteriously commits suicide.",
+      "constraints": {
+        "genre": "language",
+        "language": "Afrikaans Language",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "X",
+        "director": "Mario Van Peebles",
+        "writer": "Sean Anders",
+        "year": "2010",
+        "actor": "Nonso Anozie"
+      },
+      "rec_titles": [
+        "Tsotsi",
+        "3",
+        "Fair Game",
+        "What Women Want"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of 3. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Nonso Anozie",
+        "anchor_title": "The Piano Teacher",
+        "constraints": {
+          "genre": "french",
+          "writer": "Pittacus Lore",
+          "actor": "Nonso Anozie",
+          "director": "Mario Van Peebles",
+          "plot": "relationships"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems you're a fan of movies from 2010, featuring Afrikaans Language and starring Nonso Anozie. Given that you mentioned enjoying a specific sound, I'd like to recommend 'Planet Terror'. This film is a gritty, action-packed tale about survivors battling zombie-like creatures after a bio-weapon release. Another movie to consider might be 'Grown Ups', a comedy featuring an ensemble cast reuniting for a Fourth of July weekend. Enjoy your movie time!",
+      "constraints": {
+        "genre": "language",
+        "language": "Afrikaans Language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "3",
+        "director": "Mario Van Peebles",
+        "writer": "Sean Anders",
+        "year": "2010",
+        "actor": "Nonso Anozie"
+      },
+      "rec_titles": [
+        "Planet Terror",
+        "Grown Ups",
+        "Paycheck",
+        "X-Men: First Class"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Lawrence Kasdan? That feels deeper than I thought. (I’m thinking of Planet Terror.)",
+      "user_meta": {
+        "turn": 26,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Lawrence Kasdan",
+        "anchor_title": "Pulp Fiction",
+        "constraints": {
+          "genre": "french",
+          "writer": "Pittacus Lore",
+          "actor": "Bruce Willis",
+          "director": "Lawrence Kasdan",
+          "plot": "relationships"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 26,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Bruce Willis",
+          "from_anchor": "The Piano Teacher",
+          "to_anchor": "Pulp Fiction"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for a movie written, directed, and starring Lawrence Kasdan in the Afrikaans language with a deeper plot than Planet Terror, I recommend 'The Passage' (2010). This film involves a Basque shepherd leading a scientist and his family across the Pyrenees while being pursued by a German soldier. Alternatively, if you're open to exploring movies outside of 2010, you might also enjoy 'A Few Good Men' (1992), a compelling courtroom drama featuring an all-star cast including Tom Cruise and Jack Nicholson.",
+      "constraints": {
+        "genre": "law",
+        "language": "Afrikaans Language",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Planet Terror",
+        "director": "Lawrence Kasdan",
+        "writer": "Lawrence Kasdan",
+        "year": "2010",
+        "actor": "Lawrence Kasdan"
+      },
+      "rec_titles": [
+        "The Passage",
+        "Wanted",
+        "The Change-Up",
+        "A Few Good Men"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Lawrence Kasdan",
+        "anchor_title": "Pulp Fiction",
+        "constraints": {
+          "genre": "french",
+          "writer": "Pittacus Lore",
+          "actor": "Bruce Willis",
+          "director": "Lawrence Kasdan",
+          "plot": "relationships"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for a movie by Lawrence Kasdan in the Afrikaans language from around 2010, you might enjoy \"Scott Pilgrim vs. the World\". This film is set in Toronto and features a unique blend of action, romance, and comedy with an impressive cast including Chris Evans and Anna Kendrick. Another potential choice could be \"The Book of Eli\", a post-apocalyptic drama starring Denzel Washington and Gary Oldman.",
+      "constraints": {
+        "genre": "law",
+        "language": "Afrikaans Language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Lawrence Kasdan",
+        "writer": "Lawrence Kasdan",
+        "year": "2010",
+        "actor": "Lawrence Kasdan"
+      },
+      "rec_titles": [
+        "Zookeeper",
+        "Scott Pilgrim vs. the World",
+        "The Book of Eli",
+        "Hesher"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Book of Eli? That sounds intriguing.",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Lawrence Kasdan",
+        "anchor_title": "Pulp Fiction",
+        "constraints": {
+          "genre": "french",
+          "writer": "Pittacus Lore",
+          "actor": "Bruce Willis",
+          "director": "Lawrence Kasdan",
+          "plot": "relationships"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for a film released in 2010 with a focus on law and featuring Lawrence Kasdan, I'd recommend you watch \"Wonder Boys\". This movie follows an English Professor dealing with personal issues and professional pressures, starring actors like Robert Downey Jr., Michael Douglas, and Tobey Maguire. If you enjoy character-driven dramas, this might be a great fit for you!\n\nAlternatively, you could consider \"Chasing Amy\", a romantic comedy about two comic book artists with captivating performances by Joey Lauren Adams and Ben Affleck. This film also has a 1997 release date, but it still might pique your interest due to its engaging plot and strong acting.",
+      "constraints": {
+        "genre": "law",
+        "language": "Afrikaans Language",
+        "plot": [
+          "what",
+          "book"
+        ],
+        "name": "The Book of Eli",
+        "director": "Lawrence Kasdan",
+        "writer": "Lawrence Kasdan",
+        "year": "2010",
+        "actor": "Lawrence Kasdan"
+      },
+      "rec_titles": [
+        "The Taming of the Shrew",
+        "Torment",
+        "Wonder Boys",
+        "Chasing Amy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by David Ronn? Hmm, I didn’t expect that vibe. (I’m thinking of Wonder.)",
+      "user_meta": {
+        "turn": 29,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "David Ronn",
+        "anchor_title": "The Rules of Attraction",
+        "constraints": {
+          "genre": "french",
+          "writer": "David Ronn",
+          "actor": "Bruce Willis",
+          "plot": "incredibly"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 29,
+          "from_focus": "director",
+          "to_focus": "writer",
+          "bridge_field": "plot",
+          "bridge_value": "incredibly",
+          "from_anchor": "Pulp Fiction",
+          "to_anchor": "The Rules of Attraction"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences for a movie written by David Ronn, set in the year 2010, directed and starring Lawrence Kasdan, and in the Afrikaans language, I'd like to recommend \"RED\". This action-comedy film revolves around a group of retired CIA agents who come together to stop a common enemy. If you prefer something different within your specified constraints, consider \"Before I Fall\", a thought-provoking drama about a teenager stuck reliving the same day until she discovers the importance of her actions.",
+      "constraints": {
+        "genre": "law",
+        "language": "Afrikaans Language",
+        "plot": [
+          "written",
+          "david"
+        ],
+        "name": "Wonder",
+        "director": "Lawrence Kasdan",
+        "writer": "David Ronn",
+        "year": "2010",
+        "actor": "Lawrence Kasdan"
+      },
+      "rec_titles": [
+        "RED",
+        "Tangled",
+        "Blood Diamond",
+        "Before I Fall"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "David Ronn",
+        "anchor_title": "The Rules of Attraction",
+        "constraints": {
+          "genre": "french",
+          "writer": "David Ronn",
+          "actor": "Bruce Willis",
+          "plot": "incredibly"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences for a movie by Lawrence Kasdan from 2010, featuring law as a genre, and set in Afrikaans language, I'd recommend \"The Wolfman\" for its unique take on the classic werewolf story, starring Anthony Hopkins. Additionally, you might also enjoy \"Invictus\", a gripping tale about Nelson Mandela and South Africa's national rugby team, starring Morgan Freeman and Matt Damon.",
+      "constraints": {
+        "genre": "law",
+        "language": "Afrikaans Language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Lawrence Kasdan",
+        "writer": "David Ronn",
+        "year": "2010",
+        "actor": "Lawrence Kasdan"
+      },
+      "rec_titles": [
+        "The Wolfman",
+        "Fair Game",
+        "Changing Lanes",
+        "Invictus"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Wolf tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "David Ronn",
+        "anchor_title": "The Rules of Attraction",
+        "constraints": {
+          "genre": "french",
+          "writer": "David Ronn",
+          "actor": "Bruce Willis",
+          "plot": "incredibly"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preferences for a movie set in the law genre, released in 2010, directed and written by Lawrence Kasdan, and starring David Ronn, I'd like to recommend 'Due Date'. This comedy road trip film stars Danny McBride and Robert Downey Jr., and follows their humorous yet challenging journey as they try to make it to a baby's birth on time.\n\nAnother intriguing option from the list is '127 Hours', a riveting survival drama starring James Franco, based on a true story about a mountain climber trapped under a boulder and his struggle to survive.",
+      "constraints": {
+        "genre": "law",
+        "language": "Afrikaans Language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Wolf",
+        "director": "Lawrence Kasdan",
+        "writer": "David Ronn",
+        "year": "2010",
+        "actor": "Lawrence Kasdan"
+      },
+      "rec_titles": [
+        "Due Date",
+        "127 Hours",
+        "Titanic",
+        "Inception"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "David Ronn",
+        "anchor_title": "The Rules of Attraction",
+        "constraints": {
+          "genre": "french",
+          "writer": "David Ronn",
+          "actor": "Bruce Willis",
+          "plot": "incredibly"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preferences for a movie in the law genre, released in 2010, directed and written by Lawrence Kasdan, with actor David Ronn, and preferably in the Afrikaans language, I'd recommend \"Fair Game.\" This action-thriller stars notable actors like Naomi Watts and Sean Penn, focusing on a cop and a civil law attorney who must evade a KGB team.",
+      "constraints": {
+        "genre": "law",
+        "language": "Afrikaans Language",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "Wolf",
+        "director": "Lawrence Kasdan",
+        "writer": "David Ronn",
+        "year": "2010",
+        "actor": "Lawrence Kasdan"
+      },
+      "rec_titles": [
+        "Fair Game",
+        "Why Did I Get Married?",
+        "Yogi Bear",
+        "The Warrior's Way"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Steven Soderbergh? That sounds intriguing. (I’m thinking of 2010.)",
+      "user_meta": {
+        "turn": 33,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Steven Soderbergh",
+        "anchor_title": "Moonrise Kingdom",
+        "constraints": {
+          "genre": "french",
+          "writer": "David Ronn",
+          "actor": "Bruce Willis",
+          "plot": "sent",
+          "director": "Steven Soderbergh"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 33,
+          "from_focus": "writer",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "sent",
+          "from_anchor": "The Rules of Attraction",
+          "to_anchor": "Moonrise Kingdom"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for a movie directed by Steven Soderbergh from the year 2010, I'd recommend watching \"The Social Network.\" This film follows the story of Facebook's creation and the subsequent lawsuits that arise, with an all-star cast including Jesse Eisenberg, Rooney Mara, and Andrew Garfield. Another interesting choice could be \"Megamind,\" a comedic animated movie starring Will Ferrell and Brad Pitt about an evil genius who loses his purpose when he defeats his nemesis.",
+      "constraints": {
+        "genre": "law",
+        "language": "Afrikaans Language",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "2010",
+        "director": "Steven Soderbergh",
+        "writer": "Steven Soderbergh",
+        "year": "2010",
+        "actor": "Steven Soderbergh"
+      },
+      "rec_titles": [
+        "The Social Network",
+        "Kites",
+        "The Darkest Hour",
+        "Megamind"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 34,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Steven Soderbergh",
+        "anchor_title": "Moonrise Kingdom",
+        "constraints": {
+          "genre": "french",
+          "writer": "David Ronn",
+          "actor": "Bruce Willis",
+          "plot": "sent",
+          "director": "Steven Soderbergh"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for a movie directed, written, and starring Steven Soderbergh in the year 2010 with a focus on law and the Afrikaans language, I'd suggest you check out 'The Other Guys'. This action-comedy features an ensemble cast and offers a unique twist on the buddy cop genre. Alternatively, if you're open to exploring outside of your preference parameters, you might enjoy 'Without a Clue', where a drunken Sherlock Holmes turns out to be just a cover for the real detective, Dr. Watson.",
+      "constraints": {
+        "genre": "law",
+        "language": "Afrikaans Language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Steven Soderbergh",
+        "writer": "Steven Soderbergh",
+        "year": "2010",
+        "actor": "Steven Soderbergh"
+      },
+      "rec_titles": [
+        "The Other Guys",
+        "The Wonderful Wizard of Oz",
+        "Despicable Me",
+        "Without a Clue"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Steven Soderbergh",
+        "anchor_title": "Moonrise Kingdom",
+        "constraints": {
+          "genre": "french",
+          "writer": "David Ronn",
+          "actor": "Bruce Willis",
+          "plot": "sent",
+          "director": "Steven Soderbergh"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences for a movie made in 2010 by director and writer Steven Soderbergh, featuring actor Steven Soderbergh, with a plot involving \"wrong\" and \"earlier\", I'd like to suggest you consider 'Naked'. This film centers around a Danish porn star who returns to L.A., and although it doesn't seem to fit the Afrikaans language requirement, it might still be an intriguing watch given your stated interests. If you're open to exploring different genres or languages, another option could be 'Easy A', which is a comedic take on a high school student falsely claiming to have lost her virginity, starring Emma Stone.",
+      "constraints": {
+        "genre": "law",
+        "language": "Afrikaans Language",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "You",
+        "director": "Steven Soderbergh",
+        "writer": "Steven Soderbergh",
+        "year": "2010",
+        "actor": "Steven Soderbergh"
+      },
+      "rec_titles": [
+        "Naked",
+        "Dear John",
+        "Easy A",
+        "Despicable Me"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Lost tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Steven Soderbergh",
+        "anchor_title": "Moonrise Kingdom",
+        "constraints": {
+          "genre": "french",
+          "writer": "David Ronn",
+          "actor": "Bruce Willis",
+          "plot": "sent",
+          "director": "Steven Soderbergh"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences for a story set in the law genre, directed by Steven Soderbergh (though none of the provided movies match this cue), starring Steven Soderbergh as writer and actor, set in the year 2010, and with an Afrikaans language, I'd recommend \"My Cousin Vinny.\" It's a comedy about two New Yorkers accused of murder in rural Alabama, featuring Joe Pesci and Marisa Tomei in starring roles. Another option might be \"Zero Effect,\" which centers around a brilliant but eccentric detective investigating a complex case of blackmail, starring Ben Stiller and Ryan O'Neal. However, it was directed by Jake Kasdan rather than Steven Soderbergh.",
+      "constraints": {
+        "genre": "law",
+        "language": "Afrikaans Language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Lost",
+        "director": "Steven Soderbergh",
+        "writer": "Steven Soderbergh",
+        "year": "2010",
+        "actor": "Steven Soderbergh"
+      },
+      "rec_titles": [
+        "It's a Wonderful Life",
+        "Zero Effect",
+        "My Cousin Vinny",
+        "My Soul to Take"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Steven Soderbergh",
+        "anchor_title": "Moonrise Kingdom",
+        "constraints": {
+          "genre": "french",
+          "writer": "David Ronn",
+          "actor": "Bruce Willis",
+          "plot": "sent",
+          "director": "Steven Soderbergh"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems you've expressed a preference for movies directed, written, and starring Steven Soderbergh that were released in 2010, with an unusual theme. Given this, I recommend watching 'Get Him to the Greek', a comedic film about managing a rockstar, or 'Super', a unique superhero-themed movie that might appeal to your preference for the unusual. Both films have stars associated with Soderbergh, and 'Get Him to the Greek' was also released in 2010, as per your specifications.",
+      "constraints": {
+        "genre": "law",
+        "language": "Afrikaans Language",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "Lost",
+        "director": "Steven Soderbergh",
+        "writer": "Steven Soderbergh",
+        "year": "2010",
+        "actor": "Steven Soderbergh"
+      },
+      "rec_titles": [
+        "Blood Diamond",
+        "A Few Good Men",
+        "Get Him to the Greek",
+        "Super"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Get Him to the Greek. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Steven Soderbergh",
+        "anchor_title": "Moonrise Kingdom",
+        "constraints": {
+          "genre": "french",
+          "writer": "David Ronn",
+          "actor": "Bruce Willis",
+          "plot": "sent",
+          "director": "Steven Soderbergh"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for a movie set in 2010, featuring Steven Soderbergh as director or writer, and having an intriguing sound, I'd recommend 'District 9'. This sci-fi film tells the story of an extraterrestrial race living in slum-like conditions on Earth and their encounter with a government agent. The movie stars Sharlto Copley and was directed by Neill Blomkamp, not Steven Soderbergh, but it might still be fascinating for you. If you're open to exploring a different genre, 'Out of Sight', a crime comedy starring George Clooney and Don Cheadle, is another interesting choice with a unique plot and catchy music.",
+      "constraints": {
+        "genre": "law",
+        "language": "Afrikaans Language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Get Him to the Greek",
+        "director": "Steven Soderbergh",
+        "writer": "Steven Soderbergh",
+        "year": "2010",
+        "actor": "Steven Soderbergh"
+      },
+      "rec_titles": [
+        "District 9",
+        "Planet Terror",
+        "Robin Hood",
+        "Out of Sight"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? That sounds intriguing.",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Steven Soderbergh",
+        "anchor_title": "Moonrise Kingdom",
+        "constraints": {
+          "genre": "french",
+          "writer": "David Ronn",
+          "actor": "Bruce Willis",
+          "plot": "sent",
+          "director": "Steven Soderbergh"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences for a movie directed, written and starring Steven Soderbergh, set in the year 2010, with a mood of intrigue, and in Afrikaans language, I'd recommend 'Wild Target'. This film follows the story of a hit-man trying to retire but a beautiful thief may change his plans, featuring actors like Rupert Everett and Rupert Grint. Another option is 'Dead or Alive', which has a western plot with elements of intrigue and adventure.",
+      "constraints": {
+        "genre": "law",
+        "language": "Afrikaans Language",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Us",
+        "director": "Steven Soderbergh",
+        "writer": "Steven Soderbergh",
+        "year": "2010",
+        "actor": "Steven Soderbergh"
+      },
+      "rec_titles": [
+        "Wild Target",
+        "The Expendables 2",
+        "Takers",
+        "Dead or Alive"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Stuart M. Kaminsky? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 40,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Stuart M. Kaminsky",
+        "anchor_title": "Terminator Salvation",
+        "constraints": {
+          "genre": "french",
+          "writer": "Stuart M. Kaminsky",
+          "actor": "Bruce Willis",
+          "plot": "john",
+          "director": "Steven Soderbergh"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 40,
+          "from_focus": "director",
+          "to_focus": "writer",
+          "bridge_field": "plot",
+          "bridge_value": "john",
+          "from_anchor": "Moonrise Kingdom",
+          "to_anchor": "Terminator Salvation"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preferences for a movie written by Stuart M. Kaminsky, from the year 2010, and in the law genre, I'd like to suggest \"MacGruber\". This action-comedy stars Will Forte as a former special operative called back into duty to thwart a nuclear threat. While it doesn't seem to fit the Afrikaans language constraint you mentioned, it is still an entertaining choice based on your writer and genre preferences.",
+      "constraints": {
+        "genre": "law",
+        "language": "Afrikaans Language",
+        "plot": [
+          "written",
+          "stuart"
+        ],
+        "name": "Ted",
+        "director": "Steven Soderbergh",
+        "writer": "Stuart M. Kaminsky",
+        "year": "2010",
+        "actor": "Steven Soderbergh"
+      },
+      "rec_titles": [
+        "The Sorcerer's Apprentice",
+        "MacGruber",
+        "The King's Speech",
+        "The Warrior's Way"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Stuart M. Kaminsky",
+        "anchor_title": "Terminator Salvation",
+        "constraints": {
+          "genre": "french",
+          "writer": "Stuart M. Kaminsky",
+          "actor": "Bruce Willis",
+          "plot": "john",
+          "director": "Steven Soderbergh"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for movies from the law genre released in 2010, directed by Steven Soderbergh, written by Stuart M. Kaminsky, and in the Afrikaans language, I'd like to recommend 'Zookeeper' (2011) which is a comedy about a group of zoo animals helping their zookeeper find love, and 'The Taming of the Shrew' (1593), a classic Shakespearean play adapted by Soderbergh in 2000 that tells the story of two feisty characters playing games of one-upmanship in a marriage. Both movies offer unique plots and star-studded casts.",
+      "constraints": {
+        "genre": "law",
+        "language": "Afrikaans Language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Steven Soderbergh",
+        "writer": "Stuart M. Kaminsky",
+        "year": "2010",
+        "actor": "Steven Soderbergh"
+      },
+      "rec_titles": [
+        "Zookeeper",
+        "The Taming of the Shrew",
+        "Despicable Me 2",
+        "Terminator 2: Judgment Day"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does 2010 tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Stuart M. Kaminsky",
+        "anchor_title": "Terminator Salvation",
+        "constraints": {
+          "genre": "french",
+          "writer": "Stuart M. Kaminsky",
+          "actor": "Bruce Willis",
+          "plot": "john",
+          "director": "Steven Soderbergh"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preferences for a law-related story, a comedy, and a movie released in 2010 directed by Steven Soderbergh, I would recommend \"Get Him to the Greek\". This film combines humor with music industry themes, featuring actors like Russell Brand and Jonah Hill. However, if you're open to exploring a classic sci-fi thriller also directed by Soderbergh, you might enjoy \"The Andromeda Strain\" as well.",
+      "constraints": {
+        "genre": "law",
+        "language": "Afrikaans Language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "2010",
+        "director": "Steven Soderbergh",
+        "writer": "Stuart M. Kaminsky",
+        "year": "2010",
+        "actor": "Steven Soderbergh"
+      },
+      "rec_titles": [
+        "Get Him to the Greek",
+        "Dead or Alive",
+        "The Andromeda Strain",
+        "Ocean's Twelve"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Stuart M. Kaminsky",
+        "anchor_title": "Terminator Salvation",
+        "constraints": {
+          "genre": "french",
+          "writer": "Stuart M. Kaminsky",
+          "actor": "Bruce Willis",
+          "plot": "john",
+          "director": "Steven Soderbergh"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preferences for a law genre movie directed by Steven Soderbergh, released in 2010, and featuring an Afrikaans language, I'd recommend \"The Town.\" This thrilling film revolves around a group of bank robbers led by Ben Affleck, creating an engaging plot within the specified constraints. Although it doesn't exactly match your actor and writer cues, it might still appeal to you due to its director and genre alignment.",
+      "constraints": {
+        "genre": "law",
+        "language": "Afrikaans Language",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "2010",
+        "director": "Steven Soderbergh",
+        "writer": "Stuart M. Kaminsky",
+        "year": "2010",
+        "actor": "Steven Soderbergh"
+      },
+      "rec_titles": [
+        "Hitch",
+        "Predators",
+        "I Am Number Four",
+        "The Town"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of 2010? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Stuart M. Kaminsky",
+        "anchor_title": "Terminator Salvation",
+        "constraints": {
+          "genre": "french",
+          "writer": "Stuart M. Kaminsky",
+          "actor": "Bruce Willis",
+          "plot": "john",
+          "director": "Steven Soderbergh"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for a 2010 movie directed by Steven Soderbergh with a hint of suspense, I'd recommend \"The Expendables 2.\" This action-packed film features an ensemble cast led by Sylvester Stallone and includes other notable actors such as Jason Statham and Bruce Willis. The plot revolves around the team's quest for revenge, which might provide a thrilling experience while still leaving room for enjoyment rather than fear.",
+      "constraints": {
+        "genre": "law",
+        "language": "Afrikaans Language",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "2010",
+        "director": "Steven Soderbergh",
+        "writer": "Stuart M. Kaminsky",
+        "year": "2010",
+        "actor": "Steven Soderbergh"
+      },
+      "rec_titles": [
+        "Megamind",
+        "The Expendables 2",
+        "Side Effects",
+        "Yours, Mine and Ours"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Stuart M. Kaminsky",
+        "anchor_title": "Terminator Salvation",
+        "constraints": {
+          "genre": "french",
+          "writer": "Stuart M. Kaminsky",
+          "actor": "Bruce Willis",
+          "plot": "john",
+          "director": "Steven Soderbergh"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you're a fan of movies directed by Steven Soderbergh, starring Steven Soderbergh, and set in 2010, I'd recommend 'Invictus' for its captivating storyline about Nelson Mandela uniting South Africa through the power of rugby, or 'TRON: Legacy' if you're intrigued by a digital world adventure with a unique cast. Both films offer engaging plots and stellar performances.",
+      "constraints": {
+        "genre": "law",
+        "language": "Afrikaans Language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "director": "Steven Soderbergh",
+        "writer": "Stuart M. Kaminsky",
+        "year": "2010",
+        "actor": "Steven Soderbergh"
+      },
+      "rec_titles": [
+        "Invictus",
+        "TRON: Legacy",
+        "Abraham Lincoln: Vampire Hunter",
+        "Total Recall"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Bob Odenkirk? That sounds intriguing. (I’m thinking of 2010.)",
+      "user_meta": {
+        "turn": 46,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Bob Odenkirk",
+        "anchor_title": "Amélie",
+        "constraints": {
+          "genre": "french",
+          "writer": "Stuart M. Kaminsky",
+          "plot": "john",
+          "director": "Bob Odenkirk"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 46,
+          "from_focus": "writer",
+          "to_focus": "director",
+          "bridge_field": "writer",
+          "bridge_value": "Stuart M. Kaminsky",
+          "from_anchor": "Terminator Salvation",
+          "to_anchor": "Amélie"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for a movie from 2010 starring Bob Odenkirk, I'd like to recommend \"True Blood\" which is a gripping crime drama about a man seeking redemption in his old neighborhood, and \"Prince of Persia: The Sands of Time\" - an action-packed adventure featuring Jake Gyllenhaal as a prince navigating through dangerous territories. Enjoy!",
+      "constraints": {
+        "genre": "law",
+        "language": "Afrikaans Language",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "2010",
+        "director": "Bob Odenkirk",
+        "writer": "Bob Odenkirk",
+        "year": "2010",
+        "actor": "Bob Odenkirk"
+      },
+      "rec_titles": [
+        "True Blood",
+        "Elysium",
+        "Prince of Persia: The Sands of Time",
+        "Hitch"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Bob Odenkirk",
+        "anchor_title": "Amélie",
+        "constraints": {
+          "genre": "french",
+          "writer": "Stuart M. Kaminsky",
+          "plot": "john",
+          "director": "Bob Odenkirk"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for a movie featuring Bob Odenkirk, set in 2010, and with Afrikaans language, I'd like to recommend \"Takers\" to you. This action-packed film stars Bob Odenkirk alongside other notable actors such as Paul Walker and Matt Dillon. The plot revolves around a group of bank robbers whose plans are disrupted by a relentless detective. Enjoy!\n\nAdditionally, if you're interested in movies with historical or biographical themes, I'd suggest \"The American\" which features George Clooney as the life story of American Leonard Bernstein, who began conducting for the New York Philharmonic at the age of 25.",
+      "constraints": {
+        "genre": "law",
+        "language": "Afrikaans Language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Bob Odenkirk",
+        "writer": "Bob Odenkirk",
+        "year": "2010",
+        "actor": "Bob Odenkirk"
+      },
+      "rec_titles": [
+        "Maid in Manhattan",
+        "Takers",
+        "Dead or Alive",
+        "The American"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Bob Odenkirk",
+        "anchor_title": "Amélie",
+        "constraints": {
+          "genre": "french",
+          "writer": "Stuart M. Kaminsky",
+          "plot": "john",
+          "director": "Bob Odenkirk"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences for a movie with a law genre, released in 2010, featuring Bob Odenkirk as actor, director, and writer, and in Afrikaans language, I'd recommend you check out 'Tracker'. This film combines elements of romance, crime drama, and even ghost story, making it a unique blend that might intrigue you. Another option is 'The Stuff', a thrilling movie about a mysterious goo that turns consumers into zombie-like snackers, starring Danny Aiello, Garrett Morris, and Paul Sorvino. Enjoy the exploration!",
+      "constraints": {
+        "genre": "law",
+        "language": "Afrikaans Language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "director": "Bob Odenkirk",
+        "writer": "Bob Odenkirk",
+        "year": "2010",
+        "actor": "Bob Odenkirk"
+      },
+      "rec_titles": [
+        "Psychic Experiment",
+        "The Stuff",
+        "Tracker",
+        "How to Train Your Dragon"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Bob Odenkirk",
+        "anchor_title": "Amélie",
+        "constraints": {
+          "genre": "french",
+          "writer": "Stuart M. Kaminsky",
+          "plot": "john",
+          "director": "Bob Odenkirk"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for a movie set in the law genre released in 2010, starring Bob Odenkirk, and with plot keywords related to wrongdoings from earlier, I'd recommend you watch 'The Ghost Writer'. This thriller follows a ghost writer who uncovers dangerous secrets while working on the memoirs of a former British Prime Minister. Another movie that might interest you is 'Black Swan', a psychological thriller about a ballet dancer who becomes increasingly obsessed with her rival.",
+      "constraints": {
+        "genre": "law",
+        "language": "Afrikaans Language",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "Deep",
+        "director": "Bob Odenkirk",
+        "writer": "Bob Odenkirk",
+        "year": "2010",
+        "actor": "Bob Odenkirk"
+      },
+      "rec_titles": [
+        "Wild Target",
+        "Matched",
+        "The Ghost Writer",
+        "Black Swan"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Psycho tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 50,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Bob Odenkirk",
+        "anchor_title": "Amélie",
+        "constraints": {
+          "genre": "french",
+          "writer": "Stuart M. Kaminsky",
+          "plot": "john",
+          "director": "Bob Odenkirk"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for a movie set in the law genre, released around 2010 or later, featuring Bob Odenkirk (either as actor, director, or writer), in Afrikaans language, and with keywords related to \"what kind\", I'd recommend \"End of Watch\" starring Jake Gyllenhaal and America Ferrera. This gritty drama follows two LAPD officers and their harrowing encounters with criminal forces beyond their control. However, since your preference for a movie released in 2010 was specified, let me also suggest \"The Crazies\" - a thrilling tale of a small town overtaken by a deadly virus, starring Radha Mitchell and Glenn Morshower.",
+      "constraints": {
+        "genre": "law",
+        "language": "Afrikaans Language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Psycho",
+        "director": "Bob Odenkirk",
+        "writer": "Bob Odenkirk",
+        "year": "2010",
+        "actor": "Bob Odenkirk"
+      },
+      "rec_titles": [
+        "The Crazies",
+        "End of Watch",
+        "The Darkest Hour",
+        "Training Day"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 3,
+      "from_focus": "genre",
+      "to_focus": "writer",
+      "bridge_field": "language",
+      "bridge_value": "Russian Language",
+      "from_anchor": "Incendies",
+      "to_anchor": "Bedazzled"
+    },
+    {
+      "turn": 10,
+      "from_focus": "writer",
+      "to_focus": "actor",
+      "bridge_field": "writer",
+      "bridge_value": "Pittacus Lore",
+      "from_anchor": "Bedazzled",
+      "to_anchor": "Hannibal Rising"
+    },
+    {
+      "turn": 14,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Seth MacFarlane",
+      "from_anchor": "Hannibal Rising",
+      "to_anchor": "Night Watch"
+    },
+    {
+      "turn": 17,
+      "from_focus": "director",
+      "to_focus": "language",
+      "bridge_field": "director",
+      "bridge_value": "Mario Van Peebles",
+      "from_anchor": "Night Watch",
+      "to_anchor": "Incendies"
+    },
+    {
+      "turn": 21,
+      "from_focus": "language",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "relationships",
+      "from_anchor": "Incendies",
+      "to_anchor": "The Piano Teacher"
+    },
+    {
+      "turn": 26,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Bruce Willis",
+      "from_anchor": "The Piano Teacher",
+      "to_anchor": "Pulp Fiction"
+    },
+    {
+      "turn": 29,
+      "from_focus": "director",
+      "to_focus": "writer",
+      "bridge_field": "plot",
+      "bridge_value": "incredibly",
+      "from_anchor": "Pulp Fiction",
+      "to_anchor": "The Rules of Attraction"
+    },
+    {
+      "turn": 33,
+      "from_focus": "writer",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "sent",
+      "from_anchor": "The Rules of Attraction",
+      "to_anchor": "Moonrise Kingdom"
+    },
+    {
+      "turn": 40,
+      "from_focus": "director",
+      "to_focus": "writer",
+      "bridge_field": "plot",
+      "bridge_value": "john",
+      "from_anchor": "Moonrise Kingdom",
+      "to_anchor": "Terminator Salvation"
+    },
+    {
+      "turn": 46,
+      "from_focus": "writer",
+      "to_focus": "director",
+      "bridge_field": "writer",
+      "bridge_value": "Stuart M. Kaminsky",
+      "from_anchor": "Terminator Salvation",
+      "to_anchor": "Amélie"
+    }
+  ]
+}

@@ -1,0 +1,2201 @@
+{
+  "session_id": "00026",
+  "model_name": "llama2:latest",
+  "true_genre": "social criticism",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a social criticism movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "social criticism",
+        "anchor_title": "The Old Curiosity Shop",
+        "constraints": {
+          "genre": "social criticism"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: The user is in the mood for a social criticism movie.\nRecommendation: Based on your preference, I highly recommend \"Nicholas Nickleby\" (1839) and \"Unseen\" (2013). Both films offer thought-provoking commentary on social issues, with \"Nicholas Nickleby\" depicting the struggles of a young man against his abusive uncle and \"Unseen\" exploring the plight of an undocumented immigrant from Mexico seeking to make a better life for himself and his family.",
+      "constraints": {
+        "genre": "social criticism",
+        "plot": [
+          "social",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "Nicholas Nickleby",
+        "Slacker",
+        "Restless",
+        "Unseen"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "social criticism",
+        "anchor_title": "The Old Curiosity Shop",
+        "constraints": {
+          "genre": "social criticism"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie that explores social criticism and has a unique plot. Based on their preferences, I recommend \"This Is Spinal Tap\" and \"Alex in Wonderland\". Both movies offer a satirical and thought-provoking take on the film industry, while also delving into the creative process and personal struggles of artists.",
+      "constraints": {
+        "genre": "social criticism",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "Ted"
+      },
+      "rec_titles": [
+        "This Is Spinal Tap",
+        "Zero Effect",
+        "The Hunger Games: Mockingjay - Part 2",
+        "Alex in Wonderland"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "social criticism",
+        "anchor_title": "The Old Curiosity Shop",
+        "constraints": {
+          "genre": "social criticism"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user is interested in movies with social criticism and plots that involve being wrong earlier.\n\nBased on these constraints, I recommend \"Butch Cassidy and the Sundance Kid\" and \"Evil Dead II.\" Both of these movies have strong social commentary elements and feature characters who must deal with the consequences of their actions after making a mistake earlier in the story. In \"Butch Cassidy and the Sundance Kid,\" the two outlaws are on the run after a train robbery goes wrong, while in \"Evil Dead II,\" Ash Williams must battle the demons that possess him after he makes a fatal mistake early in the movie. Both films are classics of their respective genres and offer plenty of thrills and social commentary to keep viewers engaged.",
+      "constraints": {
+        "genre": "social criticism",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "Ted"
+      },
+      "rec_titles": [
+        "Butch Cassidy and the Sundance Kid",
+        "The 13th Warrior",
+        "Great Expectations",
+        "Evil Dead II"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Evil Dead II. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "social criticism",
+        "anchor_title": "The Old Curiosity Shop",
+        "constraints": {
+          "genre": "social criticism"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: The user is interested in movies that star someone who sounds fascinating, with a plot that involves liking something and sounding interesting.\n\nBased on the user's preferences, I recommend checking out \"Looper\" starring Joseph Gordon-Levitt and Bruce Willis. The movie follows a looper (a person who is hired to kill someone sent from the future) as he navigates a complex time travel situation that raises questions about fate, free will, and the consequences of our actions. Additionally, \"Bleak House\" starring Charles Dickens and Diana Rigg could also be of interest, as it's a classic adaptation of Dickens' novel that explores themes of social criticism and the like.",
+      "constraints": {
+        "genre": "social criticism",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Evil Dead II"
+      },
+      "rec_titles": [
+        "Bleak House",
+        "Castle in the Sky",
+        "The Stuff",
+        "Looper"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Robert Duvall? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 5,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Robert Duvall",
+        "anchor_title": "Bleak House",
+        "constraints": {
+          "genre": "social criticism",
+          "director": "Robert Duvall",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 5,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "writer",
+          "bridge_value": "Sue Grafton",
+          "from_anchor": "The Old Curiosity Shop",
+          "to_anchor": "Bleak House"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: social criticism; actor: Robert Duvall; director: Robert Duvall; writer: Robert Duvall; plot keywords: could, switch.\nBased on the user's constraints, I recommend checking out \"THX 1138\" and \"Days of Thunder\". Both movies feature Robert Duvall in lead roles, with \"THX 1138\" being a classic sci-fi film that explores themes of rebellion and control, while \"Days of Thunder\" is an action-packed race car drama.",
+      "constraints": {
+        "genre": "social criticism",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "X",
+        "actor": "Robert Duvall",
+        "director": "Robert Duvall",
+        "writer": "Robert Duvall"
+      },
+      "rec_titles": [
+        "THX 1138",
+        "Great Expectations",
+        "Hitch",
+        "Days of Thunder"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Robert Duvall",
+        "anchor_title": "Bleak House",
+        "constraints": {
+          "genre": "social criticism",
+          "director": "Robert Duvall",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, I see that you're looking for movies with a similar theme and actors as your previous request. Based on your constraints, I recommend \"How to Train Your Dragon\" and \"In Time.\" Both of these movies have a strong social critique element, and they feature Robert Duvall in a starring role. \"How to Train Your Dragon\" is an animated adventure about a young Viking who learns to appreciate the value of friendship and diversity, while \"In Time\" is a dystopian thriller that explores the themes of wealth inequality and the commodification of time. I hope you enjoy these recommendations!",
+      "constraints": {
+        "genre": "social criticism",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Robert Duvall",
+        "director": "Robert Duvall",
+        "writer": "Robert Duvall"
+      },
+      "rec_titles": [
+        "How to Train Your Dragon",
+        "The Truth",
+        "In Time",
+        "Gone in 60 Seconds"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Robert Duvall",
+        "anchor_title": "Bleak House",
+        "constraints": {
+          "genre": "social criticism",
+          "director": "Robert Duvall",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: The user wants a movie recommendation that fits their preferences for social criticism, starring Robert Duvall, and with a plot related to what was said.\n\nRecommendation: Based on the user's constraints, I highly recommend \"End of Watch\" (2016) starring Jake Gyllenhaal and David Harbour. The movie follows two young police officers in LA as they navigate their daily grind and encounter criminal forces greater than themselves. The documentary-style filming and gritty plot will surely satisfy the user's preferences for social criticism.\n\nAlternatively, \"Find Me Guilty\" (2006) starring Vin Diesel and Linus Roache is another great choice that fits the user's constraints. The movie tells the story of a low-level gangster who defends himself in court in what became the longest criminal trial in American judicial history, providing a thought-provoking and engaging viewing experience.",
+      "constraints": {
+        "genre": "social criticism",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "You",
+        "actor": "Robert Duvall",
+        "director": "Robert Duvall",
+        "writer": "Robert Duvall"
+      },
+      "rec_titles": [
+        "End of Watch",
+        "The Godfather Part II",
+        "Aladdin",
+        "Find Me Guilty"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Robert Duvall",
+        "anchor_title": "Bleak House",
+        "constraints": {
+          "genre": "social criticism",
+          "director": "Robert Duvall",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - social criticism, actor - Robert Duvall, director - Robert Duvall, writer - Robert Duvall, plot keywords - like, sound.\nBased on these cues, I recommend \"The Godfather\" (1972) and \"A Christmas Carol\" (1843). Both of these movies star Robert Duvall and offer a thought-provoking and engaging storyline that explores themes of family, power, and the human condition.",
+      "constraints": {
+        "genre": "social criticism",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "You",
+        "actor": "Robert Duvall",
+        "director": "Robert Duvall",
+        "writer": "Robert Duvall"
+      },
+      "rec_titles": [
+        "Four Christmases",
+        "Smokin' Aces",
+        "A Christmas Carol",
+        "The Godfather"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Robert Duvall",
+        "anchor_title": "Bleak House",
+        "constraints": {
+          "genre": "social criticism",
+          "director": "Robert Duvall",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user wants a movie that is a social criticism, stars Robert Duvall, and has a plot related to thinking or actuality.\n\nBased on the provided cues, I recommend \"Next Day Air\" and \"The Truman Show\". Both movies feature Robert Duvall in lead roles and explore themes of reality and perception. \"Next Day Air\" is a crime drama that delves into the consequences of two inept criminals who are mistakenly delivered a package of cocaine, while \"The Truman Show\" is a thought-provoking sci-fi movie that questions the nature of reality through its protagonist's discovery of his life being a TV show.",
+      "constraints": {
+        "genre": "social criticism",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "You",
+        "actor": "Robert Duvall",
+        "director": "Robert Duvall",
+        "writer": "Robert Duvall"
+      },
+      "rec_titles": [
+        "Next Day Air",
+        "The Truman Show",
+        "Great Expectations",
+        "THX 1138"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Taken? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Robert Duvall",
+        "anchor_title": "Bleak House",
+        "constraints": {
+          "genre": "social criticism",
+          "director": "Robert Duvall",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThe user is interested in movies with a social criticism theme, featuring Robert Duvall as an actor, and directed or written by Robert Duvall.\n\nBased on these constraints, I recommend \"Get Low\" and \"Little Fockers.\" Both movies feature Robert Duvall in significant roles, and they touch on themes of social criticism and satire. \"Get Low\" is a quirky and thought-provoking film about a hermit who throws his own funeral while still alive, while \"Little Fockers\" is a comedy that explores the dynamics of a dysfunctional family and the challenges of appointing a successor.",
+      "constraints": {
+        "genre": "social criticism",
+        "plot": [
+          "what",
+          "taken"
+        ],
+        "name": "Taken",
+        "actor": "Robert Duvall",
+        "director": "Robert Duvall",
+        "writer": "Robert Duvall"
+      },
+      "rec_titles": [
+        "The Condemned",
+        "Get Low",
+        "The Trouble with Harry",
+        "Little Fockers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Her tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Robert Duvall",
+        "anchor_title": "Bleak House",
+        "constraints": {
+          "genre": "social criticism",
+          "director": "Robert Duvall",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has provided us with some useful preferences, including a desire for social criticism and a preference for movies featuring Robert Duvall. Based on these constraints, I would recommend \"It's a Wonderful Life\" and \"THX 1138.\" Both of these films are thought-provoking and offer a critique of society, while also featuring strong performances from Robert Duvall.",
+      "constraints": {
+        "genre": "social criticism",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her",
+        "actor": "Robert Duvall",
+        "director": "Robert Duvall",
+        "writer": "Robert Duvall"
+      },
+      "rec_titles": [
+        "It's a Wonderful Life",
+        "What Women Want",
+        "THX 1138",
+        "This Is Spinal Tap"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Sean Pertwee. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 12,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Sean Pertwee",
+        "anchor_title": "Yesterday Was a Lie",
+        "constraints": {
+          "genre": "social criticism",
+          "director": "Robert Duvall",
+          "actor": "Sean Pertwee",
+          "plot": "girl"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 12,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "girl",
+          "from_anchor": "Bleak House",
+          "to_anchor": "Yesterday Was a Lie"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User Constraints:\nYou're looking for movies with Sean Pertwee, and you're unsure if you'll enjoy it or be scared by it (thinking of X).\n\nRecommendation:\nBased on your preferences, I suggest checking out \"Still Alice\" (2007) starring Julianne Moore, an intense drama that follows a linguistics professor and her family as they navigate the challenges of Alzheimer's disease. Alternatively, if you're in the mood for an adventurous movie with a talented cast, \"The Goonies\" (N/A) might be up your alley, featuring Josh Brolin, Robert Davi, and other memorable actors on a treasure-hunting quest.",
+      "constraints": {
+        "genre": "social criticism",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "RED",
+        "actor": "Sean Pertwee",
+        "director": "Robert Duvall",
+        "writer": "Robert Duvall"
+      },
+      "rec_titles": [
+        "Still Alice",
+        "The Goonies",
+        "The End of the Affair",
+        "Burned"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Sean Pertwee",
+        "anchor_title": "Yesterday Was a Lie",
+        "constraints": {
+          "genre": "social criticism",
+          "director": "Robert Duvall",
+          "actor": "Sean Pertwee",
+          "plot": "girl"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, I'm glad you're interested in more movies like the ones we previously discussed! Based on your preferences, I recommend checking out \"Lakeview Terrace\" and \"Insidious\". Both films feature strong ensemble casts and explore themes of social criticism and desperation. \"Lakeview Terrace\" stars Patrick Wilson as a racist LAPD officer who tries to force out an interracial couple, while \"Insidious\" follows a young filmmaker's battle against a seductive ambush that turns his world upside down. Both movies are sure to keep you on the edge of your seat!",
+      "constraints": {
+        "genre": "social criticism",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Sean Pertwee",
+        "director": "Robert Duvall",
+        "writer": "Robert Duvall"
+      },
+      "rec_titles": [
+        "Lakeview Terrace",
+        "Insidious",
+        "Constantine",
+        "The Secret Life of Walter Mitty"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Wes Anderson? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Insidious.)",
+      "user_meta": {
+        "turn": 14,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Wes Anderson",
+        "anchor_title": "Exit Through the Gift Shop",
+        "constraints": {
+          "genre": "social criticism",
+          "director": "Wes Anderson",
+          "actor": "Sean Pertwee",
+          "plot": "filmmaker"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 14,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "filmmaker",
+          "from_anchor": "Yesterday Was a Lie",
+          "to_anchor": "Exit Through the Gift Shop"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! The user has expressed interest in watching a movie by Wes Anderson, but is unsure if they would enjoy it or be scared by it (similar to their feelings towards Insidious). Based on their preferences, I recommend the movies \"The Royal Tenenbaums\" and \"Moonrise Kingdom.\" Both of these films feature Wes Anderson's signature style and quirky humor, while also offering thought-provoking social commentary and engaging plotlines.",
+      "constraints": {
+        "genre": "social criticism",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Insidious",
+        "actor": "Wes Anderson",
+        "director": "Wes Anderson",
+        "writer": "Wes Anderson"
+      },
+      "rec_titles": [
+        "Jane Eyre",
+        "Moonrise Kingdom",
+        "The Queen",
+        "The Royal Tenenbaums"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Wes Anderson",
+        "anchor_title": "Exit Through the Gift Shop",
+        "constraints": {
+          "genre": "social criticism",
+          "director": "Wes Anderson",
+          "actor": "Sean Pertwee",
+          "plot": "filmmaker"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your user's preferences, I would recommend \"The Deep End of the Ocean\" and \"New York Minute.\" Both movies have a similar tone and style to Wes Anderson's works, with complex plots and quirky characters that are sure to keep you engaged. In \"The Deep End of the Ocean,\" a family's life is turned upside down when their youngest son is kidnapped and found nine years later, while in \"New York Minute,\" two sisters must navigate their differences and embark on various misadventures in the city that never sleeps.",
+      "constraints": {
+        "genre": "social criticism",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Wes Anderson",
+        "director": "Wes Anderson",
+        "writer": "Wes Anderson"
+      },
+      "rec_titles": [
+        "The Deep End of the Ocean",
+        "New York Minute",
+        "The Truth",
+        "Constantine"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Nine? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Wes Anderson",
+        "anchor_title": "Exit Through the Gift Shop",
+        "constraints": {
+          "genre": "social criticism",
+          "director": "Wes Anderson",
+          "actor": "Sean Pertwee",
+          "plot": "filmmaker"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - social criticism, actor - Wes Anderson, director - Wes Anderson, writer - Wes Anderson, plot keywords - what, nine.\nBased on these constraints, I recommend watching \"Passion\" and \"The Way Back Home\". Both movies are thought-provoking and emotionally resonant, with a focus on themes of identity, self-discovery, and the human experience. \"Passion\" is a documentary that follows the story of Jack Passion, a man who has become an ambassador for competitive beard growing, while \"The Way Back Home\" is a life-affirming drama set in Central Florida that explores love, loss, and the importance of connection with others.",
+      "constraints": {
+        "genre": "social criticism",
+        "plot": [
+          "what",
+          "nine"
+        ],
+        "name": "RED",
+        "actor": "Wes Anderson",
+        "director": "Wes Anderson",
+        "writer": "Wes Anderson"
+      },
+      "rec_titles": [
+        "Passion",
+        "The Giving Tree",
+        "The Twilight Saga: New Moon",
+        "The Way Back Home"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Wes Anderson",
+        "anchor_title": "Exit Through the Gift Shop",
+        "constraints": {
+          "genre": "social criticism",
+          "director": "Wes Anderson",
+          "actor": "Sean Pertwee",
+          "plot": "filmmaker"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure! The user has expressed interest in movies with social criticism, actor Wes Anderson, and director/writer Wes Anderson. Based on these preferences, I recommend \"The Royal Tenenbaums\" and \"The Grand Budapest Hotel.\" Both of these movies offer quirky and thought-provoking storylines that are characteristic of Wes Anderson's style.",
+      "constraints": {
+        "genre": "social criticism",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "RED",
+        "actor": "Wes Anderson",
+        "director": "Wes Anderson",
+        "writer": "Wes Anderson"
+      },
+      "rec_titles": [
+        "The Lego Movie",
+        "The Royal Tenenbaums",
+        "The Skulls",
+        "The Grand Budapest Hotel"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Wes Anderson",
+        "anchor_title": "Exit Through the Gift Shop",
+        "constraints": {
+          "genre": "social criticism",
+          "director": "Wes Anderson",
+          "actor": "Sean Pertwee",
+          "plot": "filmmaker"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - social criticism; Actor - Wes Anderson; Director - Wes Anderson; Writer - Wes Anderson; Plot keywords - what, kind.\nBased on these constraints, I recommend the movie \"You\" (2014) starring Bill Farmer, Mona Marshall, Rodger Bumpass, Marc John Jefferies, and John Goodman. The film explores themes of gun violence and societal responsibility, raising questions about what is right and wrong in our society. Additionally, the animation style and dark fantasy realm will likely appeal to fans of Wes Anderson's work.",
+      "constraints": {
+        "genre": "social criticism",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "actor": "Wes Anderson",
+        "director": "Wes Anderson",
+        "writer": "Wes Anderson"
+      },
+      "rec_titles": [
+        "You",
+        "A Christmas Carol",
+        "Monsters, Inc.",
+        "The Odyssey"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Wes Anderson",
+        "anchor_title": "Exit Through the Gift Shop",
+        "constraints": {
+          "genre": "social criticism",
+          "director": "Wes Anderson",
+          "actor": "Sean Pertwee",
+          "plot": "filmmaker"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - social criticism, actor - Wes Anderson, director - Wes Anderson, writer - Wes Anderson, plot keywords - like, sound.\nBased on these cues, I recommend the movie \"The Grand Budapest Hotel\" starring F. Murray Abraham, Bill Murray, and Tom Wilkinson. The film's whimsical and quirky tone, combined with its social commentary on class and power dynamics, make it a perfect match for your preferences. Additionally, the film's sound design is top-notch, with a memorable score and immaculate sound editing.\nAlternatively, if you're looking for something a bit more lighthearted, \"Uptown Girls\" starring Marley Shelton, Donald Faison, and Dave Navarro may also be up your alley. The film's playful take on adulthood and childhood, combined with its catchy soundtrack, make it a fun and enjoyable watch.",
+      "constraints": {
+        "genre": "social criticism",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us",
+        "actor": "Wes Anderson",
+        "director": "Wes Anderson",
+        "writer": "Wes Anderson"
+      },
+      "rec_titles": [
+        "Nicholas Nickleby",
+        "The Grand Budapest Hotel",
+        "Uptown Girls",
+        "The Skull"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Uptown Girls. I want to try something more street racing—still with Fisher Stevens if possible. That sounds intriguing.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "street racing",
+        "anchor_title": "Moonrise Kingdom",
+        "constraints": {
+          "genre": "street racing",
+          "director": "Wes Anderson",
+          "actor": "Fisher Stevens"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 20,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "Fisher Stevens",
+          "from_anchor": "Exit Through the Gift Shop",
+          "to_anchor": "Moonrise Kingdom"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: street racing, actor Fisher Stevens (if possible), director Wes Anderson, writer Wes Anderson.\n\nBased on the user's preferences, I recommend \"Fantastic Mr. Fox\" and \"Her.\" Both movies offer a unique blend of humor, style, and depth that align with the user's taste. In \"Fantastic Mr. Fox,\" Wes Anderson's direction and the voice talents of George Clooney, Bill Murray, and Meryl Streep bring to life a charming and witty animated adventure. In \"Her,\" Spike Jonze's thought-provoking film explores themes of technology, relationships, and identity through a captivating performance by Scarlett Johansson.",
+      "constraints": {
+        "genre": "street racing",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Her",
+        "actor": "Fisher Stevens",
+        "director": "Wes Anderson",
+        "writer": "Wes Anderson"
+      },
+      "rec_titles": [
+        "Fantastic Mr. Fox",
+        "The Watcher",
+        "One for the Money",
+        "Her"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 21,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "street racing",
+        "anchor_title": "Moonrise Kingdom",
+        "constraints": {
+          "genre": "street racing",
+          "director": "Wes Anderson",
+          "actor": "Fisher Stevens"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - street racing; actor - Fisher Stevens; director - Wes Anderson; writer - Wes Anderson; plot keywords - just, more.\nBased on these cues, I recommend the movie \"The Stuff\" (1985) and \"Tusk\" (2014). Both of these movies have a unique and quirky tone that aligns with Wes Anderson's style, while also exploring themes of obsession and more. In \"The Stuff,\" a mysterious substance becomes a fad dessert sensation, but it has unexpected consequences when zombie-like snackers begin infesting the world. In \"Tusk,\" a brash podcaster gets more than he bargained for when he interviews a reclusive man with a strange fascination for walruses.",
+      "constraints": {
+        "genre": "street racing",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Fisher Stevens",
+        "director": "Wes Anderson",
+        "writer": "Wes Anderson"
+      },
+      "rec_titles": [
+        "The Stuff",
+        "Tusk",
+        "JFK",
+        "Hopeless"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Her tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "street racing",
+        "anchor_title": "Moonrise Kingdom",
+        "constraints": {
+          "genre": "street racing",
+          "director": "Wes Anderson",
+          "actor": "Fisher Stevens"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - street racing, actor - Fisher Stevens, director - Wes Anderson, writer - Wes Anderson.\nBased on these constraints, I recommend \"What If...\". The film is a poignant and thought-provoking exploration of the intersection of fate and free will, featuring a talented cast including Kristy Swanson and John Ratzenberger. It has a unique blend of romance, drama, and sci-fi elements that may appeal to fans of Wes Anderson's distinctive style.",
+      "constraints": {
+        "genre": "street racing",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her",
+        "actor": "Fisher Stevens",
+        "director": "Wes Anderson",
+        "writer": "Wes Anderson"
+      },
+      "rec_titles": [
+        "What If...",
+        "End of Watch",
+        "The Last Unicorn",
+        "I Heart Huckabees"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "street racing",
+        "anchor_title": "Moonrise Kingdom",
+        "constraints": {
+          "genre": "street racing",
+          "director": "Wes Anderson",
+          "actor": "Fisher Stevens"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user is looking for a movie with a mood similar to what they experienced while watching X, but with a different actor and director. They are interested in movies that have a unique vibe and are not too mainstream.\n\nRecommendation: Based on the user's preferences, I would recommend \"Flatliners\" (1990) or \"The Life Aquatic with Steve Zissou\" (2004). Both of these movies have a distinctive vibe and are not too mainstream. \"Flatliners\" is a psychological horror film that explores the afterlife, while \"The Life Aquatic\" is a quirky comedy-drama with a unique blend of humor and heart.",
+      "constraints": {
+        "genre": "street racing",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "X",
+        "actor": "Fisher Stevens",
+        "director": "Wes Anderson",
+        "writer": "Wes Anderson"
+      },
+      "rec_titles": [
+        "Flatliners",
+        "Man on Wire",
+        "The Life Aquatic with Steve Zissou",
+        "Dear John"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Simone Elkeles? That feels deeper than I thought. (I’m thinking of They.)",
+      "user_meta": {
+        "turn": 24,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Simone Elkeles",
+        "anchor_title": "Fantastic Mr. Fox",
+        "constraints": {
+          "genre": "street racing",
+          "director": "Wes Anderson",
+          "actor": "Fisher Stevens",
+          "writer": "Simone Elkeles",
+          "plot": "raises"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 24,
+          "from_focus": "genre",
+          "to_focus": "writer",
+          "bridge_field": "plot",
+          "bridge_value": "raises",
+          "from_anchor": "Moonrise Kingdom",
+          "to_anchor": "Fantastic Mr. Fox"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference cues, it seems they are interested in movies that feature street racing, Fisher Stevens, and Wes Anderson-esque elements. Of the suggestions provided, I would recommend \"Real Steel\" and \"Nell.\" Both of these movies have a unique blend of action, drama, and quirky characters that seem to align with the user's preferences. In \"Real Steel,\" Hugh Jackman plays a struggling ex-boxer who finds success with a discarded robot in the world of robot boxing, while in \"Nell,\" Jodie Foster plays a bitter and vengeful old woman who seeks revenge on her neighbor using their own son.",
+      "constraints": {
+        "genre": "street racing",
+        "plot": [
+          "written",
+          "feels"
+        ],
+        "name": "They",
+        "actor": "Fisher Stevens",
+        "director": "Wes Anderson",
+        "writer": "Simone Elkeles"
+      },
+      "rec_titles": [
+        "One for the Money",
+        "Peep World",
+        "Real Steel",
+        "Nell"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Simone Elkeles",
+        "anchor_title": "Fantastic Mr. Fox",
+        "constraints": {
+          "genre": "street racing",
+          "director": "Wes Anderson",
+          "actor": "Fisher Stevens",
+          "writer": "Simone Elkeles",
+          "plot": "raises"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - street racing, actor - Fisher Stevens, director - Wes Anderson, writer - Simone Elkeles\nBased on these cues, I recommend \"In the Mouth of Madness\" and \"Velocity\". Both movies offer a unique blend of action, suspense, and intriguing plot twists that are sure to keep you engaged. In \"In the Mouth of Madness\", an insurance investigator uncovers the dark impact of a horror writer's books on his fans, while in \"Velocity\", a young couple finds themselves embroiled in a dangerous race for money and justice within the high-stakes world of motorcycle racing.",
+      "constraints": {
+        "genre": "street racing",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Fisher Stevens",
+        "director": "Wes Anderson",
+        "writer": "Simone Elkeles"
+      },
+      "rec_titles": [
+        "In the Mouth of Madness",
+        "Velocity",
+        "You",
+        "The Wraith"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does In the Mouth of Madness tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Simone Elkeles",
+        "anchor_title": "Fantastic Mr. Fox",
+        "constraints": {
+          "genre": "street racing",
+          "director": "Wes Anderson",
+          "actor": "Fisher Stevens",
+          "writer": "Simone Elkeles",
+          "plot": "raises"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - street racing, Actor - Fisher Stevens, Director - Wes Anderson, Writer - Simone Elkeles.\nBased on these constraints, I recommend \"Undisputed\" (2002) and \"Divergent\" (2011). Both movies feature Fisher Stevens in prominent roles, and they share a similar tone and style with Wes Anderson's direction and Simone Elkeles' writing. \"Undisputed\" is an action-packed prison drama that explores themes of redemption and personal growth, while \"Divergent\" is a dystopian thriller that pits individuality against conformity in a world divided by factions.",
+      "constraints": {
+        "genre": "street racing",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "In the Mouth of Madness",
+        "actor": "Fisher Stevens",
+        "director": "Wes Anderson",
+        "writer": "Simone Elkeles"
+      },
+      "rec_titles": [
+        "Undisputed",
+        "Divergent",
+        "We the Living",
+        "Anyone But You"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Syriac language? That sounds intriguing. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 27,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "Syriac language",
+        "anchor_title": "2 Fast 2 Furious",
+        "constraints": {
+          "genre": "street racing",
+          "director": "Wes Anderson",
+          "actor": "Seth MacFarlane",
+          "writer": "Simone Elkeles",
+          "plot": "raises",
+          "language": "Syriac language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 27,
+          "from_focus": "writer",
+          "to_focus": "language",
+          "bridge_field": "actor",
+          "bridge_value": "Seth MacFarlane",
+          "from_anchor": "Fantastic Mr. Fox",
+          "to_anchor": "2 Fast 2 Furious"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: The user is interested in movies primarily in Syriac language, similar to Ted.\nRecommendation: Based on the user's preferences, I recommend \"Unbreakable\" (2000) and \"Zookeeper\" (2011). Both movies feature an interesting plot and talented actors, including Bruce Willis and Samuel L. Jackson in \"Unbreakable,\" and Leslie Bibb and Rosario Dawson in \"Zookeeper.\"",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "Ted",
+        "actor": "Fisher Stevens",
+        "director": "Wes Anderson",
+        "writer": "Simone Elkeles",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "Unbreakable",
+        "Zookeeper",
+        "The Underneath",
+        "Tender Is the Night"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Syriac language",
+        "anchor_title": "2 Fast 2 Furious",
+        "constraints": {
+          "genre": "street racing",
+          "director": "Wes Anderson",
+          "actor": "Seth MacFarlane",
+          "writer": "Simone Elkeles",
+          "plot": "raises",
+          "language": "Syriac language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: language; actor: Fisher Stevens; director: Wes Anderson; writer: Simone Elkeles; language: Syriac language; plot keywords: just, more. Based on these cues, I recommend the movie \"How to Train Your Dragon\" (2010) and \"The Number 23\" (2007). Both movies have a unique storyline and interesting actors, with \"How to Train Your Dragon\" featuring Jay Baruchel and Gerard Butler, and \"The Number 23\" starring Bud Cort and Virginia Madsen.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Fisher Stevens",
+        "director": "Wes Anderson",
+        "writer": "Simone Elkeles",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "How to Train Your Dragon",
+        "Hopeless",
+        "Ocean's Twelve",
+        "The Number 23"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Number 23. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Syriac language",
+        "anchor_title": "2 Fast 2 Furious",
+        "constraints": {
+          "genre": "street racing",
+          "director": "Wes Anderson",
+          "actor": "Seth MacFarlane",
+          "writer": "Simone Elkeles",
+          "plot": "raises",
+          "language": "Syriac language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: The user likes the sound of \"The Number 23\" and is interested in movies with a similar tone or style. They prefer movies with a language focus, such as Syriac, and enjoy actors like Fisher Stevens.\n\nRecommendation: Based on your preferences, I would recommend \"Uptown Girls\" and \"The Relic\". Both of these movies have an interesting plot and feature actors you enjoy watching. \"Uptown Girls\" is a heartwarming comedy-drama about a grown-up woman who acts like a child, while \"The Relic\" is a suspenseful horror movie about a homicide detective and anthropologist trying to stop a killer in a Chicago museum.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Number 23",
+        "actor": "Fisher Stevens",
+        "director": "Wes Anderson",
+        "writer": "Simone Elkeles",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "Uptown Girls",
+        "Island of the Blue Dolphins",
+        "The Relic",
+        "Vampyres"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? That sounds intriguing.",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Syriac language",
+        "anchor_title": "2 Fast 2 Furious",
+        "constraints": {
+          "genre": "street racing",
+          "director": "Wes Anderson",
+          "actor": "Seth MacFarlane",
+          "writer": "Simone Elkeles",
+          "plot": "raises",
+          "language": "Syriac language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user is looking for a movie with a intriguing plot and Syriac language. They have also mentioned actor Fisher Stevens, director Wes Anderson, and writer Simone Elkeles as preferences.\n\nRecommendation: Based on the user's preferences, I would recommend \"Fantastic Mr. Fox\" (2009) starring Adrien Brody, Mario Batali, Wallace Wolodarsky, Michael Gambon, Jarvis Cocker, Jason Schwartzman, Helen McCrory, and Willem Dafoe. The movie has an intriguing plot that combines humor and heartwarming moments, and features a talented cast. Alternatively, \"Island of the Blue Dolphins\" (1960) starring  could also be a good fit, as it tells a captivating story of a Native American girl abandoned on an island and protected by a wild dog.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Ted",
+        "actor": "Fisher Stevens",
+        "director": "Wes Anderson",
+        "writer": "Simone Elkeles",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "Island of the Blue Dolphins",
+        "Elizabeth",
+        "Passion",
+        "Fantastic Mr. Fox"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Her tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Syriac language",
+        "anchor_title": "2 Fast 2 Furious",
+        "constraints": {
+          "genre": "street racing",
+          "director": "Wes Anderson",
+          "actor": "Seth MacFarlane",
+          "writer": "Simone Elkeles",
+          "plot": "raises",
+          "language": "Syriac language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - language, actor - Fisher Stevens, director - Wes Anderson, writer - Simone Elkeles, language - Syriac language. Based on these cues, I recommend \"The Royal Tenenbaums\" and \"Flatliners\". Both movies feature quirky and dysfunctional families, which seem to align with the user's interests. \"The Royal Tenenbaums\" is a comedy-drama directed by Wes Anderson, known for his unique visual style and offbeat characters. \"Flatliners\" is a psychological horror movie that explores themes of near-death experiences and the afterlife, which may resonate with the user's interest in the Syriac language.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her",
+        "actor": "Fisher Stevens",
+        "director": "Wes Anderson",
+        "writer": "Simone Elkeles",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "The Equalizer",
+        "Flatliners",
+        "Anyone But You",
+        "The Royal Tenenbaums"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Her. I want to try something more france—still with Brian Johnson if possible. I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "france",
+        "anchor_title": "Chain Reaction",
+        "constraints": {
+          "genre": "france",
+          "director": "Wes Anderson",
+          "actor": "Brian Johnson",
+          "writer": "Simone Elkeles",
+          "plot": "raises",
+          "language": "Syriac language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 32,
+          "from_focus": "language",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "Brian Johnson",
+          "from_anchor": "2 Fast 2 Furious",
+          "to_anchor": "Chain Reaction"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: France, Brian Johnson, Rian Johnson, Syriac language, thanks, detail.\n\nBased on these constraints, I would recommend \"Madame Bovary\" and \"Amen.\" Both of these movies are set in France and feature actors who work with Brian Johnson or Rian Johnson. \"Madame Bovary\" is a classic literary adaptation that explores themes of passion and boredom, while \"Amen.\" is a historical drama that tackles difficult subjects like the Holocaust. Both films have received critical acclaim and offer engaging stories with strong performances.",
+      "constraints": {
+        "genre": "france",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Her",
+        "actor": "Brian Johnson",
+        "director": "Rian Johnson",
+        "writer": "Rian Johnson",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "Madame Bovary",
+        "Amen.",
+        "Micmacs",
+        "A Tale of Two Cities"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "france",
+        "anchor_title": "Chain Reaction",
+        "constraints": {
+          "genre": "france",
+          "director": "Wes Anderson",
+          "actor": "Brian Johnson",
+          "writer": "Simone Elkeles",
+          "plot": "raises",
+          "language": "Syriac language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, here are two movie recommendations that fit their criteria:\n\nThe Number 23 (2007) is a psychological thriller starring Bud Cort and Danny Huston as two men who become increasingly obsessed with a novel that seems to be written about their lives. This movie may appeal to fans of Rian Johnson's work and the Syriac language.\n\nAlternatively, The Breakfast Club (N/A) is a classic coming-of-age film featuring a talented young cast, including Molly Ringwald and Emilio Estevez. This movie has a similar feel-good vibe to Rian Johnson's films and may be enjoyed by users who prefer a more lighthearted and relatable storyline.",
+      "constraints": {
+        "genre": "france",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Brian Johnson",
+        "director": "Rian Johnson",
+        "writer": "Rian Johnson",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "The Number 23",
+        "The Breakfast Club",
+        "A Little Princess",
+        "Turbo"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 34,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "france",
+        "anchor_title": "Chain Reaction",
+        "constraints": {
+          "genre": "france",
+          "director": "Wes Anderson",
+          "actor": "Brian Johnson",
+          "writer": "Simone Elkeles",
+          "plot": "raises",
+          "language": "Syriac language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: France, Brian Johnson, Rian Johnson, Syriac language, wrong earlier.\nBased on these cues, I recommend watching \"The World's End\" and \"Amélie\". Both movies are comedies with interesting plots and talented actors. In \"The World's End\", a group of friends reunite to complete an epic pub crawl from their youth, but find themselves in a desperate fight for humanity's survival. In \"Amélie\", a young waitress decides to help people find happiness, leading her on a journey of self-discovery and true love.",
+      "constraints": {
+        "genre": "france",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "You",
+        "actor": "Brian Johnson",
+        "director": "Rian Johnson",
+        "writer": "Rian Johnson",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "The World's End",
+        "Amélie",
+        "Pain & Gain",
+        "The Good Thief"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "france",
+        "anchor_title": "Chain Reaction",
+        "constraints": {
+          "genre": "france",
+          "director": "Wes Anderson",
+          "actor": "Brian Johnson",
+          "writer": "Simone Elkeles",
+          "plot": "raises",
+          "language": "Syriac language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a movie with a specific mood, and I have some recommendations based on your preferences. You mentioned that you didn't expect that vibe, so I will suggest two movies that may fit the bill. \"End of Watch\" is a gritty and intense police drama starring Jake Gyllenhaal and Michael Peña, while \"Hitch\" is a lighthearted comedy with Will Smith in the lead role. Both movies offer different takes on the mood you mentioned.",
+      "constraints": {
+        "genre": "france",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "X",
+        "actor": "Brian Johnson",
+        "director": "Rian Johnson",
+        "writer": "Rian Johnson",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "End of Watch",
+        "The Expendables 2",
+        "Witless Protection",
+        "Hitch"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "france",
+        "anchor_title": "Chain Reaction",
+        "constraints": {
+          "genre": "france",
+          "director": "Wes Anderson",
+          "actor": "Brian Johnson",
+          "writer": "Simone Elkeles",
+          "plot": "raises",
+          "language": "Syriac language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - France, actor - Brian Johnson, director - Rian Johnson, language - Syriac language, plot keywords - weird, thought.\nBased on these constraints, I would recommend \"The Lego Movie\" and \"Her\". Both of these movies are visually stunning and feature unique plots that explore the themes of creativity and self-discovery. \"The Lego Movie\" is an animated adventure about a regular LEGO construction worker who becomes the chosen one to stop an evil tyrant from gluing the LEGO universe, while \"Her\" is a thought-provoking drama about the experiences of young single and committed women in today's dating world. Both movies have received critical acclaim and feature talented actors such as Alison Brie, Will Ferrell, Morgan Freeman, Scarlett Johansson, Heath Ledger, and Mark Addy.",
+      "constraints": {
+        "genre": "france",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "X",
+        "actor": "Brian Johnson",
+        "director": "Rian Johnson",
+        "writer": "Rian Johnson",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "The Lego Movie",
+        "Her",
+        "The Order",
+        "Micmacs"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Johns. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "france",
+        "anchor_title": "Chain Reaction",
+        "constraints": {
+          "genre": "france",
+          "director": "Wes Anderson",
+          "actor": "Brian Johnson",
+          "writer": "Simone Elkeles",
+          "plot": "raises",
+          "language": "Syriac language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure! Based on the user's preferences, I recommend \"Maid in Manhattan\" and \"Annie Hall.\" Both of these movies have a similar tone and style to the ones the user mentioned they enjoy, with a mix of humor, drama, and intriguing plotlines. \"Maid in Manhattan\" features a romantic comedy plot with a unique twist, while \"Annie Hall\" is a classic Woody Allen film that explores themes of relationships and identity. Both movies have talented actors and are sure to provide an enjoyable viewing experience!",
+      "constraints": {
+        "genre": "france",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Johns",
+        "actor": "Brian Johnson",
+        "director": "Rian Johnson",
+        "writer": "Rian Johnson",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "Maid in Manhattan",
+        "Annie Hall",
+        "Total Recall",
+        "Psychic Experiment"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "france",
+        "anchor_title": "Chain Reaction",
+        "constraints": {
+          "genre": "france",
+          "director": "Wes Anderson",
+          "actor": "Brian Johnson",
+          "writer": "Simone Elkeles",
+          "plot": "raises",
+          "language": "Syriac language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: France, Brian Johnson, Rian Johnson, Syriac language, wrong earlier.\n\nBased on the user's preferences, I recommend \"Total Recall\" (1990) starring Arnold Schwarzenegger and Rachel Ticotin. The movie follows a factory worker who suspects he is a spy after visiting a company that provides implanted memories, and goes wrong when he finds himself on the run. Additionally, I suggest \"Evil Dead II\" (1987) starring Bruce Campbell, which tells the story of Ash Williams, the lone survivor of an earlier demonic attack, who holes up in a cabin with strangers while the demons continue their assault. Both movies offer action-packed plots and exciting actor performances.",
+      "constraints": {
+        "genre": "france",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "Johns",
+        "actor": "Brian Johnson",
+        "director": "Rian Johnson",
+        "writer": "Rian Johnson",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "Motives",
+        "Total Recall",
+        "Kiss of the Dragon",
+        "Evil Dead II"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does War tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "france",
+        "anchor_title": "Chain Reaction",
+        "constraints": {
+          "genre": "france",
+          "director": "Wes Anderson",
+          "actor": "Brian Johnson",
+          "writer": "Simone Elkeles",
+          "plot": "raises",
+          "language": "Syriac language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - War, Actor - Brian Johnson, Director - Rian Johnson, Language - Syriac language, Plot keywords - what, kind.\n\nBased on the user's preferences, I recommend watching \"Titanic\" (1997) and \"Princess Mononoke\" (1997). Both movies offer a gripping story with memorable characters, and they were directed by Rian Johnson, who is known for his unique storytelling style. In \"Titanic,\" the tragic love story between Jack and Rose is set against the backdrop of the ill-fated ship's maiden voyage, while in \"Princess Mononoke,\" Ashitaka finds himself in the middle of a war between the forest gods and a mining colony.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "War",
+        "actor": "Brian Johnson",
+        "director": "Rian Johnson",
+        "writer": "Rian Johnson",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "Titanic",
+        "Princess Mononoke",
+        "The Siege",
+        "Proof of Life"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Jada Pinkett Smith. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Princess Mononoke.)",
+      "user_meta": {
+        "turn": 40,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Jada Pinkett Smith",
+        "anchor_title": "The Nutty Professor",
+        "constraints": {
+          "genre": "france",
+          "director": "Wes Anderson",
+          "actor": "Jada Pinkett Smith",
+          "writer": "Simone Elkeles",
+          "plot": "raises",
+          "language": "Syriac language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 40,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Jada Pinkett Smith",
+          "from_anchor": "Chain Reaction",
+          "to_anchor": "The Nutty Professor"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure! Based on the user's preferences, here are two movie recommendations that fit their constraints:\n\nThe user might enjoy \"Madagascar\" (2005), a heartwarming animated film starring Jada Pinkett Smith, which follows a group of animals as they navigate their new life in the jungle. Alternatively, \"Tears of the Sun\" (2003) is an action-packed movie featuring Bruce Willis and a diverse cast, including Nick Chinlund and Peter Mensah, that explores the rescue of a doctor and his patients in the Nigerian jungle. Both movies offer exciting plotlines and talented actors that align with the user's preferences.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Princess Mononoke",
+        "actor": "Jada Pinkett Smith",
+        "director": "Rian Johnson",
+        "writer": "Rian Johnson",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "Madagascar",
+        "Braveheart",
+        "The Only Good Indian",
+        "Tears of the Sun"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jada Pinkett Smith",
+        "anchor_title": "The Nutty Professor",
+        "constraints": {
+          "genre": "france",
+          "director": "Wes Anderson",
+          "actor": "Jada Pinkett Smith",
+          "writer": "Simone Elkeles",
+          "plot": "raises",
+          "language": "Syriac language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, I understand that you're looking for movies similar to the ones you've already mentioned. Based on your preferences, I recommend checking out \"Desolation Angels\" and \"Velocity.\" Both of these movies have a strong focus on action and drama, much like the movies you mentioned earlier. \"Desolation Angels\" is a gritty and intense film about revenge and betrayal, while \"Velocity\" is a thrilling ride through the world of MotoGP racing. I hope you enjoy them!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Jada Pinkett Smith",
+        "director": "Rian Johnson",
+        "writer": "Rian Johnson",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "Desolation Angels",
+        "Velocity",
+        "Bloody Sunday",
+        "Jason Bourne"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Tron tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jada Pinkett Smith",
+        "anchor_title": "The Nutty Professor",
+        "constraints": {
+          "genre": "france",
+          "director": "Wes Anderson",
+          "actor": "Jada Pinkett Smith",
+          "writer": "Simone Elkeles",
+          "plot": "raises",
+          "language": "Syriac language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The story of Tron feels deeper than expected, preferring war movies, Jada Pinkett Smith as an actor, Rian Johnson as a director and writer, and Syriac language.\nRecommendation: Based on your preferences, I suggest checking out 'The Alamo' (2004) starring Patrick Wayne, Jordi Mollà, and Marc Blucas. The movie tells the story of the 1836 standoff between Texan and Tejano men and Mexican dictator Santa Anna's forces at the Alamo in San Antonio Texas. Another recommendation would be 'Alex in Wonderland' (N/A), a bohemian director's fantasies about movie scenarios influenced by his idols, featuring Angelo Rossitto, Jeanne Moreau, and Ellen Burstyn.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Tron",
+        "actor": "Jada Pinkett Smith",
+        "director": "Rian Johnson",
+        "writer": "Rian Johnson",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "The Alamo",
+        "Incendies",
+        "Redacted",
+        "Alex in Wonderland"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jada Pinkett Smith",
+        "anchor_title": "The Nutty Professor",
+        "constraints": {
+          "genre": "france",
+          "director": "Wes Anderson",
+          "actor": "Jada Pinkett Smith",
+          "writer": "Simone Elkeles",
+          "plot": "raises",
+          "language": "Syriac language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user wants a movie with a war theme, starring Jada Pinkett Smith, directed by Rian Johnson, and featuring Syriac language dialogue.\n\nBased on the user's preferences, I recommend \"Gladiator\" (2000) starring Russell Crowe and Oliver Reed. The movie is set in ancient Rome and features intense action scenes and historical drama. Additionally, it was directed by Ridley Scott, who has worked with Jada Pinkett Smith on other projects.\n\nAlternatively, the user may enjoy \"Casablanca\" (1942) starring Humphrey Bogart and Claude Rains. The movie is a classic war-time drama that explores themes of love, loyalty, and sacrifice during World War II. It does not feature Syriac language dialogue, but it is a powerful and emotionally resonant film that has stood the test of time.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what"
+        ],
+        "name": "X",
+        "actor": "Jada Pinkett Smith",
+        "director": "Rian Johnson",
+        "writer": "Rian Johnson",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "The Expendables 2",
+        "Casablanca",
+        "Gladiator",
+        "Winter in Wartime"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jada Pinkett Smith",
+        "anchor_title": "The Nutty Professor",
+        "constraints": {
+          "genre": "france",
+          "director": "Wes Anderson",
+          "actor": "Jada Pinkett Smith",
+          "writer": "Simone Elkeles",
+          "plot": "raises",
+          "language": "Syriac language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User: I'm not sure anymore; perhaps I changed my mind.\n\nYou: No worries! Based on your previous preferences, I recommend \"The Deer Hunter\" and \"Saving Private Ryan.\" Both are powerful war dramas that explore the impact of conflict on individuals and society. \"The Deer Hunter\" follows a group of friends in a small town as they navigate the traumas of the Vietnam War, while \"Saving Private Ryan\" depicts a group of soldiers on a dangerous mission to find and rescue a paratrooper whose brothers have been killed in action.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "X",
+        "actor": "Jada Pinkett Smith",
+        "director": "Rian Johnson",
+        "writer": "Rian Johnson",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "The Deer Hunter",
+        "Saving Private Ryan",
+        "Pan's Labyrinth",
+        "The English Patient"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of They. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jada Pinkett Smith",
+        "anchor_title": "The Nutty Professor",
+        "constraints": {
+          "genre": "france",
+          "director": "Wes Anderson",
+          "actor": "Jada Pinkett Smith",
+          "writer": "Simone Elkeles",
+          "plot": "raises",
+          "language": "Syriac language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: The user prefers movies that star Jada Pinkett Smith and are about war, but they're not sure if they'll enjoy it or be scared by it.\n\nRecommendation: Based on the user's preferences, I would recommend \"The Imitation Game\" starring Benedict Cumberbatch, which tells the story of a mathematician trying to crack the German Enigma code during World War II. The movie is a thought-provoking and historically accurate portrayal of war, and Cumberbatch's performance is excellent. Alternatively, \"Proof of Life\" starring Russell Crowe could be another good choice, as it's an intense and suspenseful movie about a woman hiring a professional negotiator to obtain the release of her engineer husband who has been kidnapped by anti-government guerrillas in South America. Both movies are well-crafted and engaging, so you can't go wrong with either one!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "actor": "Jada Pinkett Smith",
+        "director": "Rian Johnson",
+        "writer": "Rian Johnson",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "The Imitation Game",
+        "Tora! Tora! Tora!",
+        "The Brothers Bloom",
+        "Proof of Life"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on They. I want to try something more romantic comedy—still with Marc Blucas if possible. That sounds intriguing.",
+      "user_meta": {
+        "turn": 46,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "romantic comedy",
+        "anchor_title": "You've Got Mail",
+        "constraints": {
+          "genre": "romantic comedy",
+          "director": "Wes Anderson",
+          "actor": "Marc Blucas",
+          "writer": "Simone Elkeles",
+          "plot": "raises",
+          "language": "Syriac language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 46,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "Marc Blucas",
+          "from_anchor": "The Nutty Professor",
+          "to_anchor": "You've Got Mail"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre: romantic comedy; actor: Marc Blucas if possible; director: Rian Johnson; writer: Rian Johnson; language: Syriac language; plot keywords: thanks, detail.\nBased on the user's preferences, I recommend \"I Love You Phillip Morris\" and \"How to Lose a Guy in 10 Days.\" Both movies are romantic comedies with interesting plots and talented actors, including Marc Blucas in a supporting role in \"I Love You Phillip Morris.\"",
+      "constraints": {
+        "genre": "romantic comedy",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "They",
+        "actor": "Marc Blucas",
+        "director": "Rian Johnson",
+        "writer": "Rian Johnson",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "I Love You Phillip Morris",
+        "How to Lose a Guy in 10 Days",
+        "As Good as It Gets",
+        "What Planet Are You From?"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "romantic comedy",
+        "anchor_title": "You've Got Mail",
+        "constraints": {
+          "genre": "romantic comedy",
+          "director": "Wes Anderson",
+          "actor": "Marc Blucas",
+          "writer": "Simone Elkeles",
+          "plot": "raises",
+          "language": "Syriac language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, I see that you're looking for more movie recommendations based on your preferences. Based on your previous input, I have found two movies that might interest you:\n\n* \"Mickey Blue Eyes\" (1999) is a romantic comedy starring Marc Blucas and featuring a unique plot that combines humor and drama. The movie follows an English auctioneer who proposes to the daughter of a Mafia kingpin, only to realize that certain \"favors\" would be asked of him.\n* \"The Fighter\" (2010) is a sports drama based on the true story of boxer Micky Ward and his troubled older brother. The movie features a talented cast, including Christian Bale and Mark Wahlberg, and explores themes of family, redemption, and the sacrifices that come with chasing greatness.",
+      "constraints": {
+        "genre": "romantic comedy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Marc Blucas",
+        "director": "Rian Johnson",
+        "writer": "Rian Johnson",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "Mickey Blue Eyes",
+        "Constantine",
+        "Uncommon Valor",
+        "The Fighter"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "romantic comedy",
+        "anchor_title": "You've Got Mail",
+        "constraints": {
+          "genre": "romantic comedy",
+          "director": "Wes Anderson",
+          "actor": "Marc Blucas",
+          "writer": "Simone Elkeles",
+          "plot": "raises",
+          "language": "Syriac language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Romantic comedy, actor Marc Blucas, director Rian Johnson, language Syriac.\nBased on these cues, I recommend \"Wedding Crashers\" and \"Maid in Manhattan.\" Both movies offer lighthearted romantic comedies with interesting plot twists and talented actors. \"Wedding Crashers\" stars Vince Vaughn and Owen Wilson as two friends who crash weddings for fun, but find themselves in a love triangle with a charming woman (Rachel McAdams). \"Maid in Manhattan\" features a complex web of relationships between a successful actress (Natasha Richardson) and her family, including a romantic subplot with a handyman (Bruce Willis).",
+      "constraints": {
+        "genre": "romantic comedy",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "actor": "Marc Blucas",
+        "director": "Rian Johnson",
+        "writer": "Rian Johnson",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "Wedding Crashers",
+        "The Pallbearer",
+        "RED",
+        "Maid in Manhattan"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Crash? That sounds intriguing.",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "romantic comedy",
+        "anchor_title": "You've Got Mail",
+        "constraints": {
+          "genre": "romantic comedy",
+          "director": "Wes Anderson",
+          "actor": "Marc Blucas",
+          "writer": "Simone Elkeles",
+          "plot": "raises",
+          "language": "Syriac language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - romantic comedy; actor - Marc Blucas; director - Rian Johnson; writer - Rian Johnson; language - Syriac language; plot keywords - what, crash.\nBased on these cues, I recommend the movie \"Crash\" (2004) directed by Paul Haggis and starring Don Cheadle, Sandra Bullock, and Matt Dillon. The film explores the complex relationships between a diverse group of characters after a violent crash in Los Angeles, delving into themes of race, class, and redemption. Alternatively, I suggest \"13 Going on 30\" (2004) directed by Gary Winick and starring Jennifer Garner, Mark Ruffalo, and Judy Greer. This romantic comedy follows a 13-year-old girl who wishes to be 30 and wakes up the next day as a grown woman, leading to a series of humorous and touching moments as she navigates her new life.",
+      "constraints": {
+        "genre": "romantic comedy",
+        "plot": [
+          "what",
+          "crash"
+        ],
+        "name": "Crash",
+        "actor": "Marc Blucas",
+        "director": "Rian Johnson",
+        "writer": "Rian Johnson",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "Prometheus",
+        "Hitch",
+        "13 Going on 30",
+        "Tin Cup"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of 13 Going on 30. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 50,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "romantic comedy",
+        "anchor_title": "You've Got Mail",
+        "constraints": {
+          "genre": "romantic comedy",
+          "director": "Wes Anderson",
+          "actor": "Marc Blucas",
+          "writer": "Simone Elkeles",
+          "plot": "raises",
+          "language": "Syriac language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user likes the sound of 13 Going on 30 and is interested in a romantic comedy with actor Marc Blucas. They are unsure if they will enjoy it or be scared by it.\nRecommendation: Based on your preferences, I recommend checking out \"America's Sweethearts\" (2001) and \"You, Me and Dupree\" (2006). Both movies have a light-hearted tone and feature Marc Blucas in lead roles. \"America's Sweethearts\" follows the story of a movie publicist dealing with a messy split between co-stars, while \"You, Me and Dupree\" tells the story of a houseguest who overstays his welcome with a newlywed couple.",
+      "constraints": {
+        "genre": "romantic comedy",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "13 Going on 30",
+        "actor": "Marc Blucas",
+        "director": "Rian Johnson",
+        "writer": "Rian Johnson",
+        "language": "Syriac language"
+      },
+      "rec_titles": [
+        "America's Sweethearts",
+        "The Puffy Chair",
+        "You, Me and Dupree",
+        "The Perez Family"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 5,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "writer",
+      "bridge_value": "Sue Grafton",
+      "from_anchor": "The Old Curiosity Shop",
+      "to_anchor": "Bleak House"
+    },
+    {
+      "turn": 12,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "girl",
+      "from_anchor": "Bleak House",
+      "to_anchor": "Yesterday Was a Lie"
+    },
+    {
+      "turn": 14,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "filmmaker",
+      "from_anchor": "Yesterday Was a Lie",
+      "to_anchor": "Exit Through the Gift Shop"
+    },
+    {
+      "turn": 20,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "Fisher Stevens",
+      "from_anchor": "Exit Through the Gift Shop",
+      "to_anchor": "Moonrise Kingdom"
+    },
+    {
+      "turn": 24,
+      "from_focus": "genre",
+      "to_focus": "writer",
+      "bridge_field": "plot",
+      "bridge_value": "raises",
+      "from_anchor": "Moonrise Kingdom",
+      "to_anchor": "Fantastic Mr. Fox"
+    },
+    {
+      "turn": 27,
+      "from_focus": "writer",
+      "to_focus": "language",
+      "bridge_field": "actor",
+      "bridge_value": "Seth MacFarlane",
+      "from_anchor": "Fantastic Mr. Fox",
+      "to_anchor": "2 Fast 2 Furious"
+    },
+    {
+      "turn": 32,
+      "from_focus": "language",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "Brian Johnson",
+      "from_anchor": "2 Fast 2 Furious",
+      "to_anchor": "Chain Reaction"
+    },
+    {
+      "turn": 40,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Jada Pinkett Smith",
+      "from_anchor": "Chain Reaction",
+      "to_anchor": "The Nutty Professor"
+    },
+    {
+      "turn": 46,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "Marc Blucas",
+      "from_anchor": "The Nutty Professor",
+      "to_anchor": "You've Got Mail"
+    }
+  ]
+}

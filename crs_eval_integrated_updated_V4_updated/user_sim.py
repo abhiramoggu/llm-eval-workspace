@@ -12,7 +12,7 @@ import subprocess
 from dataclasses import dataclass, asdict
 from typing import Dict, List, Optional, Tuple
 
-from config import MODE, USER_MODEL, ERROR_RATE
+from config import MODE, USER_MODEL, ERROR_RATE, SHIFT_AFTER_TURNS
 from dataset import (
     recommend,
     get_available_genres,
@@ -392,6 +392,10 @@ Rules:
             # sometimes reflect mid-conversation
             if random.random() < 0.15:
                 msg = self._reflect_or_contradict()
+            # ensure at least one shift by the configured turn
+            elif (not self.shift_events) and (self.turn_count >= max(1, SHIFT_AFTER_TURNS)):
+                msg, shift_event_obj = self._compose_focus_shift_message()
+                self.stage = "waiting_system"
             # shift after exhausting detail questions OR occasionally earlier
             elif (not self.remaining_details) or (random.random() < 0.18):
                 msg, shift_event_obj = self._compose_focus_shift_message()

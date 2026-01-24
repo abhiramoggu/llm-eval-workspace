@@ -9,7 +9,7 @@ catalog-grounded **concepts** `(field=value)`, and `TOPIC_FIELDS` is an alias of
 ## Core idea
 Given an utterance `x`, extract:
 - a **set** of grounded concepts `E(x)` for Jaccard (CC)
-- a **TF–IDF-like vector** `phi(x)` for cosine (CR)
+- a **TF-IDF-like vector** `phi(x)` for cosine (CR)
 
 By default, TAS uses **structured fields only** (`genre, actor, director, writer, language, year`).
 Title mentions (`name`) and plot keywords (`plot_kw`) are excluded unless explicitly enabled.
@@ -19,6 +19,7 @@ Title mentions (`name`) and plot keywords (`plot_kw`) are excluded unless explic
   - `topic_set(text)` → returns set of strings like `"actor=Dev Patel"`.
   - `attribute_vector(text)` → returns IDF-weighted vector over the same vocabulary.
   - Optional LLM-based extraction can be enabled with `CONCEPT_EXTRACTOR_MODE=llm`.
+  - Grounded fuzzy matching can be enabled with `CONCEPT_EXTRACTOR_MODE=embed` (char n-gram TF-IDF over catalog values).
 
 - Similarities (canonical names; legacy aliases in parentheses):
   - `jaccard(set_a, set_b)` (`jaccard_similarity`)

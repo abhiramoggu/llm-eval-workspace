@@ -1,0 +1,2196 @@
+{
+  "session_id": "00080",
+  "model_name": "llama2:latest",
+  "true_genre": "music",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a music movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "music",
+        "anchor_title": "The Red Violin",
+        "constraints": {
+          "genre": "music"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure! The user is in the mood for a music movie, and they mentioned that they would like recommendations based on their preferred genre and plot keywords. Based on their input, I would recommend \"A Mighty Wind\" and \"Maleficent.\" Both of these movies feature music as a central element of the plot, and they have received critical acclaim for their performances. \"A Mighty Wind\" is a mockumentary that follows the reunion of a 1960s folk trio, while \"Maleficent\" tells the story of a vengeful fairy who curses an infant princess. Both movies have talented casts and are sure to provide an enjoyable viewing experience for fans of music-driven films.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "music",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "The Seduction of Joe Tynan",
+        "A Mighty Wind",
+        "Maleficent",
+        "Wayne's World"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "music",
+        "anchor_title": "The Red Violin",
+        "constraints": {
+          "genre": "music"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - music, plot keywords - like, sound.\nBased on the user's preferences, I recommend \"The Other Guys\" and \"Coyote Ugly\". Both movies have a fun and upbeat tone that should appeal to the user's interest in music and enjoyment of lighthearted plots. In \"The Other Guys\", two mismatched detectives try to step up their game, while \"Coyote Ugly\" follows an aspiring songwriter who finds her voice at a unique bar full of strong women.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us"
+      },
+      "rec_titles": [
+        "The Other Guys",
+        "Coyote Ugly",
+        "Vampyres",
+        "In the Woods"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Daniel Junge? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of The Other Guys.)",
+      "user_meta": {
+        "turn": 3,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Daniel Junge",
+        "anchor_title": "Goodfellas",
+        "constraints": {
+          "genre": "music",
+          "director": "Daniel Junge",
+          "actor": "Thomas Middleditch"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 3,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Thomas Middleditch",
+          "from_anchor": "The Red Violin",
+          "to_anchor": "Goodfellas"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure! The user is looking for a movie recommendations based on their preference for music, with a focus on the director Daniel Junge and the keyword \"switch\". Based on these cues, I would recommend \"Her\" (2013) or \"Nowhere Boy\" (2009). Both of these movies explore themes of identity, relationships, and personal growth, which seem to align with the user's preferences.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Her",
+        "director": "Daniel Junge"
+      },
+      "rec_titles": [
+        "The Picture of Dorian Gray",
+        "The Rocker",
+        "Nowhere Boy",
+        "Her"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Daniel Junge",
+        "anchor_title": "Goodfellas",
+        "constraints": {
+          "genre": "music",
+          "director": "Daniel Junge",
+          "actor": "Thomas Middleditch"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has expressed interest in movies with music, directorial works by Daniel Junge, and plots involving action and drama. Based on these preferences, I recommend \"Thick as Thieves\" and \"Nowhere Boy.\" Both films offer a mix of exciting action sequences and emotional depth, with talented actors and directors involved in their production.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Daniel Junge"
+      },
+      "rec_titles": [
+        "Thick as Thieves",
+        "Three Kings",
+        "If I Stay",
+        "Nowhere Boy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Charlie McDermott. That feels deeper than I thought. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 5,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Charlie McDermott",
+        "anchor_title": "Transcendence",
+        "constraints": {
+          "genre": "music",
+          "director": "Daniel Junge",
+          "actor": "Charlie McDermott",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 5,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Goodfellas",
+          "to_anchor": "Transcendence"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - music, actor - Charlie McDermott, director - Daniel Junge.\nBased on these constraints, I recommend watching \"American Beauty\" and \"Saving Mr. Banks\". Both movies feature Charlie McDermott in significant roles, and they touch upon themes of beauty and self-expression, which align with the user's interests. \"American Beauty\" is a critically acclaimed drama that explores the superficiality of suburban life, while \"Saving Mr. Banks\" tells the story of an author struggling to come to terms with her past and find inspiration for her writing.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Deep",
+        "director": "Daniel Junge",
+        "actor": "Charlie McDermott"
+      },
+      "rec_titles": [
+        "American Beauty",
+        "Saving Mr. Banks",
+        "The Great Gatsby",
+        "The Dot"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Charlie McDermott",
+        "anchor_title": "Transcendence",
+        "constraints": {
+          "genre": "music",
+          "director": "Daniel Junge",
+          "actor": "Charlie McDermott",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - music, actor - Charlie McDermott, director - Daniel Junge.\nBased on these constraints, I recommend \"Zack and Miri Make a Porno\" and \"Pitch Perfect\". Both of these movies feature music and comedy, which align with the user's preferences. \"Zack and Miri Make a Porno\" is a raunchy and hilarious film about two friends who try to make an adult film together, while \"Pitch Perfect\" is a funny and entertaining movie about a group of college students who form a singing group.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Daniel Junge",
+        "actor": "Charlie McDermott"
+      },
+      "rec_titles": [
+        "Zack and Miri Make a Porno",
+        "Pitch Perfect",
+        "A Night at the Roxbury",
+        "The Piano Teacher"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Joss Whedon? Hmm, I didn’t expect that vibe. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 7,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Joss Whedon",
+        "anchor_title": "Pitch Perfect",
+        "constraints": {
+          "genre": "music",
+          "director": "Joss Whedon",
+          "actor": "Charlie McDermott",
+          "plot": "relationships"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 7,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "relationships",
+          "from_anchor": "Transcendence",
+          "to_anchor": "Pitch Perfect"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, here are two movie recommendations that fit their constraints:\n\nThe Piano Teacher (2008) is a unique and captivating film starring Isabelle Huppert as a masochistic piano teacher who becomes obsessed with her young student. With a plot that explores themes of desire, obsession, and the complexities of human relationships, this movie is sure to fascinate fans of Joss Whedon's work.\n\nAlternatively, The Rocker (2008) offers a fun and nostalgic look at the rock music scene in the 1980s. Starring Josh Gad as a drummer who finds his second chance at stardom with his teenage nephew's high school band, this movie is full of humor and heart. With a talented cast that includes Bradley Cooper, Emma Stone, and Jane Lynch, The Rocker is sure to delight viewers looking for a lighthearted and entertaining film.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Her",
+        "director": "Joss Whedon",
+        "actor": "Joss Whedon",
+        "writer": "Joss Whedon"
+      },
+      "rec_titles": [
+        "The Piano Teacher",
+        "The Rocker",
+        "Beyond the Sea",
+        "Waterworld"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Joss Whedon",
+        "anchor_title": "Pitch Perfect",
+        "constraints": {
+          "genre": "music",
+          "director": "Joss Whedon",
+          "actor": "Charlie McDermott",
+          "plot": "relationships"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I recommend \"In Time\" and \"Compliance.\" Both of these movies offer a unique blend of drama and suspense that align with the user's interests in music and Joss Whedon's direction. \"In Time\" is a thought-provoking sci-fi thriller that explores themes of time, class, and immortality, while \"Compliance\" is a chilling examination of the human psyche and the dangers of blindly following authority.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Joss Whedon",
+        "actor": "Joss Whedon",
+        "writer": "Joss Whedon"
+      },
+      "rec_titles": [
+        "In Time",
+        "The Lincoln Lawyer",
+        "Step Up",
+        "Compliance"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Thor. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Joss Whedon",
+        "anchor_title": "Pitch Perfect",
+        "constraints": {
+          "genre": "music",
+          "director": "Joss Whedon",
+          "actor": "Charlie McDermott",
+          "plot": "relationships"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, it seems they enjoy movies with a musical element and are interested in works by Joss Whedon. From this list, I recommend \"The Piano Teacher\" and \"American Dreamz.\" Both of these films feature talented actors and offer unique storylines that blend music and drama.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Thor",
+        "director": "Joss Whedon",
+        "actor": "Joss Whedon",
+        "writer": "Joss Whedon"
+      },
+      "rec_titles": [
+        "The Piano Teacher",
+        "American Dreamz",
+        "Jumper",
+        "The Mortal Instruments: City of Bones"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Joss Whedon",
+        "anchor_title": "Pitch Perfect",
+        "constraints": {
+          "genre": "music",
+          "director": "Joss Whedon",
+          "actor": "Charlie McDermott",
+          "plot": "relationships"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has provided some helpful cues for their preferred movie, including genre (music), director and writer (Joss Whedon), and plot keywords (\"what\" and \"kind\"). Based on these cues, I recommend the movies \"I Heart Huckabees\" and \"Zero Effect.\" Both of these films feature complex, thought-provoking plots and a talented cast, including Dustin Hoffman, Jake Kasdan, Angela Featherstone, and Ben Stiller.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "director": "Joss Whedon",
+        "actor": "Joss Whedon",
+        "writer": "Joss Whedon"
+      },
+      "rec_titles": [
+        "I Heart Huckabees",
+        "Zero Effect",
+        "Get Rich or Die Tryin'",
+        "This Is Spinal Tap"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Joss Whedon",
+        "anchor_title": "Pitch Perfect",
+        "constraints": {
+          "genre": "music",
+          "director": "Joss Whedon",
+          "actor": "Charlie McDermott",
+          "plot": "relationships"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User Preference Cues: Genre - Music, Actor - Joss Whedon, Director - Joss Whedon, Writer - Joss Whedon\nBased on the user's preferences, I recommend watching \"50 First Dates\" and \"Goodfellas.\" Both movies have a unique plot and great acting from talented actors, which align with the user's preference for music and works by Joss Whedon. In \"50 First Dates,\" Adam Sandler plays a lovable character who falls in love with a woman (played by Drew Barrymore) with short-term memory loss, creating a funny and heartwarming story. \"Goodfellas\" is a gripping crime drama that follows the life of Henry Hill (played by Ray Liotta) as he navigates the dangerous world of organized crime, featuring an all-star cast including Robert De Niro and Joe Pesci.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Ted",
+        "director": "Joss Whedon",
+        "actor": "Joss Whedon",
+        "writer": "Joss Whedon"
+      },
+      "rec_titles": [
+        "50 First Dates",
+        "The Reflecting Skin",
+        "The Social Network",
+        "Goodfellas"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Goodfellas? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Joss Whedon",
+        "anchor_title": "Pitch Perfect",
+        "constraints": {
+          "genre": "music",
+          "director": "Joss Whedon",
+          "actor": "Charlie McDermott",
+          "plot": "relationships"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure! The user is looking for a movie that they might enjoy, but are unsure due to potential scary elements. Based on their preference cues, I recommend \"Forgetting Sarah Marshall\" and \"Walk the Line\". Both of these movies offer a mix of comedy and drama, with engaging plotlines and talented actors.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "Goodfellas",
+        "director": "Joss Whedon",
+        "actor": "Joss Whedon",
+        "writer": "Joss Whedon"
+      },
+      "rec_titles": [
+        "Yours, Mine and Ours",
+        "The Piano Teacher",
+        "Forgetting Sarah Marshall",
+        "Walk the Line"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Japanese? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 13,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "Japanese",
+        "anchor_title": "Get Him to the Greek",
+        "constraints": {
+          "genre": "music",
+          "director": "Joss Whedon",
+          "actor": "Charlie McDermott",
+          "language": "Japanese"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 13,
+          "from_focus": "director",
+          "to_focus": "language",
+          "bridge_field": "director",
+          "bridge_value": "Joss Whedon",
+          "from_anchor": "Pitch Perfect",
+          "to_anchor": "Get Him to the Greek"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, I recommend checking out \"Waterworld\" and \"The Cabin in the Woods.\" Both movies offer exciting and unique plots that align with the user's interests. In \"Waterworld,\" the user can enjoy a post-apocalyptic setting and a talented cast led by Kevin Costner, while \"The Cabin in the Woods\" offers a clever twist on the traditional horror genre with a talented ensemble cast.",
+      "constraints": {
+        "genre": "japan",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "Us",
+        "director": "Joss Whedon",
+        "actor": "Joss Whedon",
+        "writer": "Joss Whedon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "Waterworld",
+        "Date Night",
+        "The Cabin in the Woods",
+        "The Prince"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Japanese",
+        "anchor_title": "Get Him to the Greek",
+        "constraints": {
+          "genre": "music",
+          "director": "Joss Whedon",
+          "actor": "Charlie McDermott",
+          "language": "Japanese"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre: Japan; actor: Joss Whedon; director: Joss Whedon; writer: Joss Whedon; language: Japanese; plot keywords: just, more.\nBased on the user's preferences, I recommend checking out \"Tusk\" and \"Uncommon Valor.\" Both movies have a strong narrative focus and feature actors who have worked with Joss Whedon, making them relevant to the user's interests. \"Tusk\" is a dark comedy with an intriguing plot, while \"Uncommon Valor\" is a documentary that tells a powerful story of courage and sacrifice.",
+      "constraints": {
+        "genre": "japan",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Joss Whedon",
+        "actor": "Joss Whedon",
+        "writer": "Joss Whedon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "Tusk",
+        "Braveheart",
+        "Uncommon Valor",
+        "The Stuff"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Uncommon Valor? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Japanese",
+        "anchor_title": "Get Him to the Greek",
+        "constraints": {
+          "genre": "music",
+          "director": "Joss Whedon",
+          "actor": "Charlie McDermott",
+          "language": "Japanese"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: The user is looking for a movie that has a deeper mood than Uncommon Valor, with a focus on Japanese genre, actor Common, director Joss Whedon, and language Japanese.\n\nRecommendation: Based on the user's preferences, I would recommend \"Her\" (2013) starring Scarlett Johansson. The movie explores the themes of modern dating experiences and generational attributes, providing a thought-provoking and emotional journey for the viewer. Alternatively, \"I Heart Huckabees\" (2004) directed by Joss Whedon features a unique blend of comedy and existentialism, with a talented cast including Dustin Hoffman and Lily Tomlin.",
+      "constraints": {
+        "genre": "japan",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Uncommon Valor",
+        "director": "Joss Whedon",
+        "actor": "Common",
+        "writer": "Joss Whedon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "The Wraith",
+        "2010",
+        "I Heart Huckabees",
+        "Her"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Japanese",
+        "anchor_title": "Get Him to the Greek",
+        "constraints": {
+          "genre": "music",
+          "director": "Joss Whedon",
+          "actor": "Charlie McDermott",
+          "language": "Japanese"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre: Japanese; actor: Common; director: Joss Whedon; writer: Joss Whedon; language: Japanese; plot keywords: what, kind.\nBased on the user's constraints, I recommend \"The Way Back Home\" and \"Taxi Driver\". Both movies are thought-provoking and emotionally resonant, with complex characters and storylines that explore themes of love, loss, and self-discovery.",
+      "constraints": {
+        "genre": "japan",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "director": "Joss Whedon",
+        "actor": "Common",
+        "writer": "Joss Whedon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "The Way Back Home",
+        "Waterworld",
+        "Happy Feet Two",
+        "Taxi Driver"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Drive. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Japanese",
+        "anchor_title": "Get Him to the Greek",
+        "constraints": {
+          "genre": "music",
+          "director": "Joss Whedon",
+          "actor": "Charlie McDermott",
+          "language": "Japanese"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, it seems they enjoy deeper movies with a mix of action and drama. Of the movies listed, I would recommend \"Princess Mononoke\" and \"X-Men: First Class.\" Both of these movies offer a compelling storyline with a talented cast, including Claire Danes, Jada Pinkett Smith, and Gillian Anderson in \"Princess Mononoke,\" and Michael Fassbender, Jennifer Lawrence, and Oliver Platt in \"X-Men: First Class.\"",
+      "constraints": {
+        "genre": "japan",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Drive",
+        "director": "Joss Whedon",
+        "actor": "Common",
+        "writer": "Joss Whedon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "Princess Mononoke",
+        "X-Men: First Class",
+        "Run All Night",
+        "Just Wright"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Deon Richmond. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Deep.)",
+      "user_meta": {
+        "turn": 18,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Deon Richmond",
+        "anchor_title": "Spider-Man",
+        "constraints": {
+          "genre": "music",
+          "director": "Joss Whedon",
+          "actor": "Deon Richmond",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 18,
+          "from_focus": "language",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Get Him to the Greek",
+          "to_anchor": "Spider-Man"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - Japanese, Actor - Deon Richmond, Director/Writer - Joss Whedon.\nBased on these constraints, I recommend checking out \"The X-Files\" (1998) and \"American Pie\" (1999). Both movies feature Deon Richmond in supporting roles, and were directed and written by Joss Whedon. \"The X-Files\" is a suspenseful sci-fi thriller that follows FBI agents Mulder and Scully as they uncover a government conspiracy, while \"American Pie\" is a hilarious comedy about a group of high school friends who find themselves in various misadventures on the night before their graduation.",
+      "constraints": {
+        "genre": "japan",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "RED",
+        "director": "Joss Whedon",
+        "actor": "Deon Richmond",
+        "writer": "Joss Whedon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "The X Files",
+        "American Pie",
+        "Cutthroat Island",
+        "The Goonies"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Deon Richmond",
+        "anchor_title": "Spider-Man",
+        "constraints": {
+          "genre": "music",
+          "director": "Joss Whedon",
+          "actor": "Deon Richmond",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - Japanese; actor - Deon Richmond; director - Joss Whedon; language - Japanese; plot keywords - just, more.\nBased on these cues, I recommend \"Panic Room\" and \"Zack and Miri Make a Porno\". Both movies have a thrilling plot and an interesting cast, including actors Deon Richmond and Jennifer Schwalbach Smith in \"Panic Room\", and Jim Norton and Jason Mewes in \"Zack and Miri Make a Porno\".",
+      "constraints": {
+        "genre": "japan",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Joss Whedon",
+        "actor": "Deon Richmond",
+        "writer": "Joss Whedon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "12 Angry Men",
+        "Desolation Angels",
+        "Zack and Miri Make a Porno",
+        "Panic Room"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Zack and Miri Make a Porno tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Deon Richmond",
+        "anchor_title": "Spider-Man",
+        "constraints": {
+          "genre": "music",
+          "director": "Joss Whedon",
+          "actor": "Deon Richmond",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - Japanese, Actor - Deon Richmond, Director - Joss Whedon, Writer - Joss Whedon, Language - Japanese.\n\nBased on the user's preferences, I recommend \"Paycheck\" and \"Princess Mononoke\". Both movies are action-packed and feature intricate plots that will keep you on the edge of your seat. In \"Paycheck\", Ryan Robbins and Krista Allen star as a couple caught up in a dangerous game of cat and mouse, while \"Princess Mononoke\" tells the story of Ashitaka (Claire Danes) and his journey through a magical forest filled with mythical creatures and political intrigue.",
+      "constraints": {
+        "genre": "japan",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Zack and Miri Make a Porno",
+        "director": "Joss Whedon",
+        "actor": "Deon Richmond",
+        "writer": "Joss Whedon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "Paycheck",
+        "The Secret",
+        "Holes",
+        "Princess Mononoke"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 21,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Deon Richmond",
+        "anchor_title": "Spider-Man",
+        "constraints": {
+          "genre": "music",
+          "director": "Joss Whedon",
+          "actor": "Deon Richmond",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User: Maybe I was wrong earlier. Can you recommend some movies based on my preferences?\n\nYou: Of course! Based on your preference for Japanese genres, actor Deon Richmond, director Joss Whedon, and language Japanese, I suggest checking out \"Titan A.E.\" and \"Princess Mononoke\". Both films offer exciting plots and talented actors, with \"Titan A.E.\" featuring Ron Perlman and Matt Damon in a thrilling adventure through space, and \"Princess Mononoke\" showcasing Claire Danes and Billy Crudup in a mythical tale of war and magic.",
+      "constraints": {
+        "genre": "japan",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "Zack and Miri Make a Porno",
+        "director": "Joss Whedon",
+        "actor": "Deon Richmond",
+        "writer": "Joss Whedon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "Titan A.E.",
+        "You",
+        "No Country for Old Men",
+        "Princess Mononoke"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Deon Richmond",
+        "anchor_title": "Spider-Man",
+        "constraints": {
+          "genre": "music",
+          "director": "Joss Whedon",
+          "actor": "Deon Richmond",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThe user likes the sound of a movie and wants to know who stars in it. They are interested in Japanese movies, with a focus on actor Deon Richmond and director Joss Whedon. The language of the movie is also important, as the user wants to watch something in Japanese.\n\nRecommendation:\nBased on the user's constraints, I would recommend \"Ponyo\" (2008) directed by Hayao Miyazaki and starring Rumi Hiiragi, Yûki Amami, and Yuria Nara. The movie follows a young goldfish princess who longs to become human after falling in love with a young boy, creating a heartwarming and visually stunning tale. Alternatively, \"Serenity\" (2005) directed by Joss Whedon and starring a talented cast including Summer Glau, Morena Baccarin, and Adam Baldwin, offers an action-packed sci-fi adventure with complex characters and themes that are sure to delight fans of the genre.",
+      "constraints": {
+        "genre": "japan",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "director": "Joss Whedon",
+        "actor": "Deon Richmond",
+        "writer": "Joss Whedon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "Ponyo",
+        "Serenity",
+        "District 9",
+        "Seven Samurai"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Serenity? That sounds intriguing.",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Deon Richmond",
+        "anchor_title": "Spider-Man",
+        "constraints": {
+          "genre": "music",
+          "director": "Joss Whedon",
+          "actor": "Deon Richmond",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Japanese movie, actor Deon Richmond, director Joss Whedon, writer Joss Whedon, and plot keywords \"what\" and \"serenity\".\n\nBased on the user's preferences, I recommend \"The Taming of the Shrew\" and \"Super\". Both movies feature strong female leads and have a similar tone and style to \"Serenity\". \"The Taming of the Shrew\" is a classic Shakespearean comedy with a strong-willed heroine, while \"Super\" is a quirky and imaginative superhero movie with a memorable cast of characters.",
+      "constraints": {
+        "genre": "japan",
+        "plot": [
+          "what",
+          "serenity"
+        ],
+        "name": "Serenity",
+        "director": "Joss Whedon",
+        "actor": "Deon Richmond",
+        "writer": "Joss Whedon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "The Taming of the Shrew",
+        "Ponyo",
+        "Dear John",
+        "Super"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Her. I want to try something more film adaptation—still with Scarlett Johansson if possible. That sounds intriguing.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "film adaptation",
+        "anchor_title": "Starship Troopers",
+        "constraints": {
+          "genre": "film adaptation",
+          "director": "Joss Whedon",
+          "actor": "Scarlett Johansson",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 24,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "Scarlett Johansson",
+          "from_anchor": "Spider-Man",
+          "to_anchor": "Starship Troopers"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre: film adaptation; actor: Scarlett Johansson; director: Joss Whedon; writer: Joss Whedon; language: Japanese; plot keywords: thanks, detail.\nBased on the user's preferences, I recommend \"The Golden Compass\" and \"City of Ember\". Both movies are film adaptations with a unique storyline and talented actors, including Scarlett Johansson in a supporting role. \"The Golden Compass\" is an adventurous tale set in a parallel universe, while \"City of Ember\" is a captivating story of a city facing a crisis with its power source. Both movies offer a great combination of detail and thanks, as the user requested.",
+      "constraints": {
+        "genre": "film adaptation",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Her",
+        "director": "Joss Whedon",
+        "actor": "Scarlett Johansson",
+        "writer": "Joss Whedon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "The Golden Compass",
+        "Random Hearts",
+        "City of Ember",
+        "The Perez Family"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "film adaptation",
+        "anchor_title": "Starship Troopers",
+        "constraints": {
+          "genre": "film adaptation",
+          "director": "Joss Whedon",
+          "actor": "Scarlett Johansson",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "No problem! Based on the user's preferences, I would recommend \"Vicky Cristina Barcelona\" and \"Thank You for Smoking.\" Both of these movies feature strong performances from Scarlett Johansson and other talented actors, and they offer thought-provoking stories with interesting plots. In \"Vicky Cristina Barcelona,\" Johansson plays a young woman who becomes involved in a romantic triangle with two men, while in \"Thank You for Smoking,\" she stars as the daughter of a tobacco industry executive struggling to come to terms with her father's unethical business practices.",
+      "constraints": {
+        "genre": "film adaptation",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Joss Whedon",
+        "actor": "Scarlett Johansson",
+        "writer": "Joss Whedon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "Vicky Cristina Barcelona",
+        "Thank You for Smoking",
+        "Tusk",
+        "Disclosure"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "film adaptation",
+        "anchor_title": "Starship Troopers",
+        "constraints": {
+          "genre": "film adaptation",
+          "director": "Joss Whedon",
+          "actor": "Scarlett Johansson",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThe user likes the sound of Ted and is interested in movies that are deeper than they initially seem. They prefer films with a Japanese language element, and are drawn to genres such as film adaptations and dramas.\n\nRecommendation:\nBased on your preferences, I would recommend checking out \"Snow Angels\" (2007) or \"The Nanny\" (2003). Both of these movies offer a deeper exploration of their respective themes than they initially suggest, with \"Snow Angels\" delving into the complexities of relationships and \"The Nanny\" uncovering the darker side of wealth and privilege.",
+      "constraints": {
+        "genre": "film adaptation",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "director": "Joss Whedon",
+        "actor": "Scarlett Johansson",
+        "writer": "Joss Whedon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "2010",
+        "Snow Angels",
+        "The Juror",
+        "The Nanny"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? That sounds intriguing.",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "film adaptation",
+        "anchor_title": "Starship Troopers",
+        "constraints": {
+          "genre": "film adaptation",
+          "director": "Joss Whedon",
+          "actor": "Scarlett Johansson",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: The movie should have a intriguing plot and star Scarlett Johansson.\nBased on the user's preferences, I recommend \"No Country for Old Men\" (2007) starring Josh Brolin, Javier Bardem, and Woody Harrelson in an intense thriller about a drug deal gone wrong and the violence that ensues. Alternatively, \"Elizabeth\" (1998) stars Fanny Ardant, Eric Cantona, and John Gielgud in a historical drama about the early years of Queen Elizabeth I's reign. Both movies are critically acclaimed and feature strong performances from their actors.",
+      "constraints": {
+        "genre": "film adaptation",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "X",
+        "director": "Joss Whedon",
+        "actor": "Scarlett Johansson",
+        "writer": "Joss Whedon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "No Country for Old Men",
+        "Elizabeth",
+        "Monsters, Inc.",
+        "Training Day"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Tron tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "film adaptation",
+        "anchor_title": "Starship Troopers",
+        "constraints": {
+          "genre": "film adaptation",
+          "director": "Joss Whedon",
+          "actor": "Scarlett Johansson",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: film adaptation; actor: Scarlett Johansson; director: Joss Whedon; writer: Joss Whedon; language: Japanese; plot keywords: what, kind. Based on these cues, I recommend the movie \"Vicky Cristina Barcelona\" starring Scarlett Johansson and directed by Joss Whedon. The film is a romantic drama that follows two friends on a summer holiday in Spain who become enamored with the same painter, unaware of his tempestuous relationship with his ex-wife.",
+      "constraints": {
+        "genre": "film adaptation",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Tron",
+        "director": "Joss Whedon",
+        "actor": "Scarlett Johansson",
+        "writer": "Joss Whedon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "Vicky Cristina Barcelona",
+        "The Twilight Saga: New Moon",
+        "Why Did I Get Married?",
+        "Utsav"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Seth Gordon? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of War.)",
+      "user_meta": {
+        "turn": 29,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Seth Gordon",
+        "anchor_title": "City of Ember",
+        "constraints": {
+          "genre": "film adaptation",
+          "director": "Seth Gordon",
+          "actor": "Nadine Velazquez"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 29,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Nadine Velazquez",
+          "from_anchor": "Starship Troopers",
+          "to_anchor": "City of Ember"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preference cues, they seem to be interested in movies related to war and Seth Gordon. Here are two movie recommendations that might fit the bill:\n\n* \"Black Hawk Down\" (2001) is a gripping and intense depiction of the US military intervention in Somalia. The film features an all-star cast, including Josh Hartnett, Eric Bana, and Ewan McGregor, and reconstructs the chaotic and brutal battle between US soldiers and Somali militiamen using real army broadcasts.\n* \"Apocalypse Now\" (1979) is a classic war film that explores the psychological effects of war on soldiers and society. Starring Martin Sheen, Marlon Brando, and Robert Duvall, the film follows a US Army officer as he navigates the horrors of the Vietnam War. With its surreal and thought-provoking plot, \"Apocalypse Now\" is sure to leave a lasting impression.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "War",
+        "director": "Seth Gordon",
+        "actor": "Seth Gordon",
+        "writer": "Seth Gordon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "Black Hawk Down",
+        "Apocalypse Now",
+        "War Horse",
+        "Hell's Angels"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Seth Gordon",
+        "anchor_title": "City of Ember",
+        "constraints": {
+          "genre": "film adaptation",
+          "director": "Seth Gordon",
+          "actor": "Nadine Velazquez"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - war, actor - Seth Gordon, director - Seth Gordon, writer - Seth Gordon, language - Japanese, plot keywords - just, more.\nBased on these cues, I recommend two movies from the list provided: \"Compliance\" (2012) and \"The Warlords\" (2007). Both of these movies have a war-related plot and feature actors and directors whose work you might enjoy. \"Compliance\" is a thought-provoking drama that explores themes of obedience and power, while \"The Warlords\" is an action-packed historical epic set during the Taiping Rebellion in 19th century China. I hope you find these recommendations helpful!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Seth Gordon",
+        "actor": "Seth Gordon",
+        "writer": "Seth Gordon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "Compliance",
+        "Without a Clue",
+        "Kundun",
+        "The Warlords"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Seth Gordon",
+        "anchor_title": "City of Ember",
+        "constraints": {
+          "genre": "film adaptation",
+          "director": "Seth Gordon",
+          "actor": "Nadine Velazquez"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - war, actor - Seth Gordon, director - Seth Gordon, language - Japanese, plot keywords - wrong, earlier.\n\nBased on these constraints, I recommend \"Redacted\" (2007) and \"Amen.\" (2002). Both films deal with difficult and controversial topics, such as the mistreatment of women during wartime and the Nazi's extermination of Jews during WWII. The acting in both movies is superb, with standout performances from Ohad Knoller in \"Redacted\" and Ulrich Mühe in \"Amen.\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "You",
+        "director": "Seth Gordon",
+        "actor": "Seth Gordon",
+        "writer": "Seth Gordon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "Redacted",
+        "Kingdom of Heaven",
+        "Red Cliff",
+        "Amen."
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Seth Gordon",
+        "anchor_title": "City of Ember",
+        "constraints": {
+          "genre": "film adaptation",
+          "director": "Seth Gordon",
+          "actor": "Nadine Velazquez"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - War, Actor - Seth Gordon, Director - Seth Gordon, Language - Japanese, Plot keywords - what, kind.\n\nBased on the user's preferences, I recommend watching \"Patton\" and \"The Messenger\". Both movies are historical dramas that explore themes of war and ethical dilemmas, which seem to align with the user's interests. \"Patton\" is a classic film about the life of controversial American general George S. Patton during World War II, while \"The Messenger\" follows an American soldier who becomes involved with a widow of a fallen officer and struggles with an ethical dilemma.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "director": "Seth Gordon",
+        "actor": "Seth Gordon",
+        "writer": "Seth Gordon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "Patton",
+        "Waiting",
+        "Wolfhound",
+        "The Messenger"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Seth Gordon",
+        "anchor_title": "City of Ember",
+        "constraints": {
+          "genre": "film adaptation",
+          "director": "Seth Gordon",
+          "actor": "Nadine Velazquez"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - war, actor - Seth Gordon, director - Seth Gordon, language - Japanese, plot keywords - what, said.\nBased on these cues, I recommend the movie \"You\" (2014) starring Tatsuya Nakadai and Hiroshi Abe. The film explores themes of morality and ethics in a gripping tale of revenge and redemption. Alternatively, \"Patton\" (1970) starring George C. Scott as the titular general is also a compelling choice, delving into the psychology of a controversial historical figure during World War II.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "X",
+        "director": "Seth Gordon",
+        "actor": "Seth Gordon",
+        "writer": "Seth Gordon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "You",
+        "Cold Mountain",
+        "Patton",
+        "We Were Soldiers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Psycho? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 34,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Seth Gordon",
+        "anchor_title": "City of Ember",
+        "constraints": {
+          "genre": "film adaptation",
+          "director": "Seth Gordon",
+          "actor": "Nadine Velazquez"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: The user wants a movie that explores the hidden side of human nature through the use of economics, but is unsure if they'll enjoy it or be scared by it. Recommendations:\n\n* Freakonomics (2010) - This documentary collection explores the unconventional and fascinating aspects of human behavior through the lens of economics. With a star-studded cast, including Tempestt Bledsoe, Greg Crowe, James Ransone, and more, this film is both informative and thought-provoking.\n* Dances with Wolves (1990) - This epic western drama follows Lieutenant John Dunbar as he finds himself caught between his own culture and that of the neighboring Sioux tribe. With a talented cast led by Kevin Costner, this film is both visually stunning and emotionally powerful.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "psycho"
+        ],
+        "name": "Psycho",
+        "director": "Seth Gordon",
+        "actor": "Seth Gordon",
+        "writer": "Seth Gordon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "Freakonomics",
+        "The Patriot",
+        "To Have and Have Not",
+        "Dances with Wolves"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Seth Gordon",
+        "anchor_title": "City of Ember",
+        "constraints": {
+          "genre": "film adaptation",
+          "director": "Seth Gordon",
+          "actor": "Nadine Velazquez"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - war, actor - Seth Gordon, director - Seth Gordon, language - Japanese, plot keywords - wrong, earlier.\nBased on these cues, I recommend \"Platoon\" (1986) and \"Hotel Rwanda\" (2004). Both are powerful and thought-provoking films that deal with themes of war, conflict, and the human experience. \"Platoon\" is a shrewd examination of the brutality of war and the duality of man in conflict, while \"Hotel Rwanda\" tells the true story of Paul Rusesabagina, a hotel manager who houses over a thousand Tutsi refugees during their struggle against the Hutu militia in Rwanda. Both films feature strong performances from talented actors and are sure to leave a lasting impression.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "Psycho",
+        "director": "Seth Gordon",
+        "actor": "Seth Gordon",
+        "writer": "Seth Gordon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "Platoon",
+        "Three Kings",
+        "Hotel Rwanda",
+        "To Have and Have Not"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Tron. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Seth Gordon",
+        "anchor_title": "City of Ember",
+        "constraints": {
+          "genre": "film adaptation",
+          "director": "Seth Gordon",
+          "actor": "Nadine Velazquez"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThe user likes the sound of Tron and is interested in movies with a similar vibe. They prefer genres such as war, actor Seth Gordon, director Seth Gordon, and language Japanese.\n\nRecommendation:\nBased on these constraints, I recommend checking out Princess Mononoke (1997) and The Other Guys (2010). Both movies have a similar action-packed and visually stunning style to Tron, with a war theme in Princess Mononoke and a comedic twist in The Other Guys.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Tron",
+        "director": "Seth Gordon",
+        "actor": "Seth Gordon",
+        "writer": "Seth Gordon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "Princess Mononoke",
+        "The Other Guys",
+        "War Horse",
+        "Starship Troopers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Sebastian Stan. That sounds intriguing. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 37,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Sebastian Stan",
+        "anchor_title": "The Client",
+        "constraints": {
+          "genre": "film adaptation",
+          "director": "Seth Gordon",
+          "actor": "Sebastian Stan"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 37,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "director",
+          "bridge_value": "Seth Gordon",
+          "from_anchor": "City of Ember",
+          "to_anchor": "The Client"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, I see you're interested in finding movies with Sebastian Stan. Based on your preferences, I recommend \"Source Code\" (2011) and \"The Only Good Indian\" (N/A). Both films feature Sebastian Stan in leading roles and offer an exciting blend of action, drama, and suspense that align with your preferences. In \"Source Code,\" Jake Gyllenhaal's character wakes up in someone else's body, a concept that may appeal to your fascination with body swapping. Meanwhile, \"The Only Good Indian\" is a thought-provoking drama that delves into themes of identity, culture, and the complexities of the human experience, all while showcasing Sebastian Stan's acting prowess.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Us",
+        "director": "Seth Gordon",
+        "actor": "Sebastian Stan",
+        "writer": "Seth Gordon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "Source Code",
+        "The Only Good Indian",
+        "Adventureland",
+        "In the Land of Blood and Honey"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Sebastian Stan",
+        "anchor_title": "The Client",
+        "constraints": {
+          "genre": "film adaptation",
+          "director": "Seth Gordon",
+          "actor": "Sebastian Stan"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - war; actor - Sebastian Stan; director - Seth Gordon; writer - Seth Gordon; language - Japanese; plot keywords - just, more.\nBased on the user's preferences, I recommend \"300: Rise of an Empire\" and \"The Hurt Locker\". Both movies feature intense action and suspense, with strong performances from the cast. \"300: Rise of an Empire\" is a thrilling historical epic set in ancient Greece, while \"The Hurt Locker\" is a gripping war drama that explores the psychological effects of combat on soldiers.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Seth Gordon",
+        "actor": "Sebastian Stan",
+        "writer": "Seth Gordon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "300: Rise of an Empire",
+        "The Hurt Locker",
+        "We Need to Talk About Kevin",
+        "King Kong"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Sebastian Stan",
+        "anchor_title": "The Client",
+        "constraints": {
+          "genre": "film adaptation",
+          "director": "Seth Gordon",
+          "actor": "Sebastian Stan"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, I understand you're looking for a movie that fits your current mood and preferences. Based on your constraints, I recommend \"The Lucky Ones\" and \"Rachel Getting Married.\" Both of these movies have powerful plots and talented actors, including Sebastian Stan, who you mentioned as a preference. \"The Lucky Ones\" follows three soldiers as they adjust to civilian life after war, while \"Rachel Getting Married\" explores the complexities of family dynamics and addiction through the lens of a wedding weekend.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what"
+        ],
+        "name": "X",
+        "director": "Seth Gordon",
+        "actor": "Sebastian Stan",
+        "writer": "Seth Gordon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "The Lucky Ones",
+        "The End of the Affair",
+        "Three Kings",
+        "Rachel Getting Married"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Sebastian Stan",
+        "anchor_title": "The Client",
+        "constraints": {
+          "genre": "film adaptation",
+          "director": "Seth Gordon",
+          "actor": "Sebastian Stan"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThe user is looking for a movie that tells a deeper story than they initially thought, with a focus on war and Japanese language. They have also mentioned actor Sebastian Stan and directors Seth Gordon and Deepak Chopra.\n\nRecommendation:\nBased on the user's preferences, I would recommend \"Black Hawk Down\" (2001) directed by Ridley Scott and starring a talented ensemble cast, including Sebastian Stan. This intense and thought-provoking film provides an in-depth look at the troubled US intervention in Somalia, using real-life broadcasts to reconstruct the devastating battles between marines and Somalis. With its focus on war and Japanese language, this movie is sure to resonate with the user.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Deep",
+        "director": "Seth Gordon",
+        "actor": "Sebastian Stan",
+        "writer": "Seth Gordon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "Little Fockers",
+        "Red Cliff",
+        "It's a Wonderful Life",
+        "Black Hawk Down"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Deep. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Sebastian Stan",
+        "anchor_title": "The Client",
+        "constraints": {
+          "genre": "film adaptation",
+          "director": "Seth Gordon",
+          "actor": "Sebastian Stan"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\n\"I like the sound of Deep, maybe I'm overthinking it, but it sounds fascinating. My preferences are for war movies, starring Sebastian Stan, directed by Seth Gordon, written by Seth Gordon, and set in Japanese.\"\n\nRecommendation:\nBased on your preferences, I highly recommend \"Fury\" (2014) and \"Black Hawk Down\" (2001). Both movies are gripping war dramas that feature strong performances from talented actors, including Sebastian Stan in \"Fury.\" The plots of both movies are intense and thought-provoking, and they have received critical acclaim for their realistic depictions of war.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "director": "Seth Gordon",
+        "actor": "Sebastian Stan",
+        "writer": "Seth Gordon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "Fury",
+        "Winter in Wartime",
+        "The Mortal Instruments: City of Bones",
+        "Black Hawk Down"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Len Wiseman? That sounds intriguing. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 42,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Len Wiseman",
+        "anchor_title": "Live Free or Die Hard",
+        "constraints": {
+          "genre": "film adaptation",
+          "director": "Len Wiseman",
+          "actor": "Sebastian Stan"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 42,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Sebastian Stan",
+          "from_anchor": "The Client",
+          "to_anchor": "Live Free or Die Hard"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - war, actor - Sebastian Stan, director - Len Wiseman, writer - Seth Gordon, language - Japanese, plot keywords - could, switch. Based on these cues, I recommend \"The Shadows\" and \"Dances with Wolves.\" Both films explore themes of danger and uncertainty, while also showcasing the talents of their respective directors and actors. In \"The Shadows,\" Sebastian Stan stars in a suspenseful tale of a young man's descent into a sinister plot, while in \"Dances with Wolves,\" Kevin Costner leads an epic journey of self-discovery and cultural exchange amidst the backdrop of a civil war.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Ted",
+        "director": "Len Wiseman",
+        "actor": "Sebastian Stan",
+        "writer": "Seth Gordon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "The Shadows",
+        "The Deer Hunter",
+        "Incendies",
+        "Dances with Wolves"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Len Wiseman",
+        "anchor_title": "Live Free or Die Hard",
+        "constraints": {
+          "genre": "film adaptation",
+          "director": "Len Wiseman",
+          "actor": "Sebastian Stan"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: war, Sebastian Stan, Len Wiseman, Seth Gordon, Japanese, just, more.\nRecommendation 1: Casablanca (1942) - A classic tale of love and sacrifice during a time of war, starring Humphrey Bogart and Claude Rains.\nRecommendation 2: Mama (2013) - A chilling drama that explores the themes of domestic violence and empowerment, featuring standout performances from Megan Charpentier and Isabelle Nélisse.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Len Wiseman",
+        "actor": "Sebastian Stan",
+        "writer": "Seth Gordon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "Casablanca",
+        "The Messenger",
+        "Dinner for Schmucks",
+        "Mama"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does War tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Len Wiseman",
+        "anchor_title": "Live Free or Die Hard",
+        "constraints": {
+          "genre": "film adaptation",
+          "director": "Len Wiseman",
+          "actor": "Sebastian Stan"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: War, Sebastian Stan, Len Wiseman, Seth Gordon, Japanese language, and plot keywords \"what kind\".\nRecommendation: Based on the user's preferences, I recommend \"Amen.\" (2002) and \"Flags of Our Fathers\" (2000). Both movies are war dramas that star Sebastian Stan and feature powerful storytelling. \"Amen.\" is a historical drama that follows the story of a SS officer trying to inform the Pope about the Holocaust, while \"Flags of Our Fathers\" tells the life stories of the soldiers who raised the flag at the Battle of Iwo Jima. Both movies are thought-provoking and emotionally impactful.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "War",
+        "director": "Len Wiseman",
+        "actor": "Sebastian Stan",
+        "writer": "Seth Gordon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "Amen.",
+        "Flags of Our Fathers",
+        "The Siege",
+        "Chain Reaction"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Her. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Len Wiseman",
+        "anchor_title": "Live Free or Die Hard",
+        "constraints": {
+          "genre": "film adaptation",
+          "director": "Len Wiseman",
+          "actor": "Sebastian Stan"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, here are two movie recommendations that might interest them:\n\nThe user expressed a preference for movies with a war theme, and both \"300\" (1998) and \"Underworld: Evolution\" (2006) fit this category. \"300\" is an epic historical action film based on the Battle of Thermopylae, while \"Underworld: Evolution\" is a vampire-themed action movie that continues the story of Selene and Michael's hunt for clues about their races' history. Both movies feature strong performances from the cast, including Gerard Butler and Derek Jacobi in \"300,\" and Kate Beckinsale and Scott Speedman in \"Underworld: Evolution.\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Her",
+        "director": "Len Wiseman",
+        "actor": "Sebastian Stan",
+        "writer": "Seth Gordon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "Rachel Getting Married",
+        "Ponyo",
+        "300",
+        "Underworld: Evolution"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Robert Carlyle. That feels deeper than I thought. (I’m thinking of Underworld: Evolution.)",
+      "user_meta": {
+        "turn": 46,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Robert Carlyle",
+        "anchor_title": "Christmas with the Kranks",
+        "constraints": {
+          "genre": "film adaptation",
+          "director": "Len Wiseman",
+          "actor": "Robert Carlyle",
+          "plot": "selene"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 46,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "selene",
+          "from_anchor": "Live Free or Die Hard",
+          "to_anchor": "Christmas with the Kranks"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, they seem to enjoy movies with a war theme, and specifically mentioned Robert Carlyle as an actor they enjoy. The user also mentioned Japanese language, which means they might appreciate movies with international appeal. Here are two movie recommendations that fit their criteria:\n\n\"You might enjoy 'Braveheart,' a historical epic starring Robert Carlyle as a Scottish warrior fighting for his people's rights. The film is known for its intense battle scenes and powerful performances. Alternatively, 'Saving Private Ryan' is a critically acclaimed war drama also starring Tom Hanks and Matt Damon, which explores the sacrifices made by soldiers during World War II.\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Underworld: Evolution",
+        "director": "Len Wiseman",
+        "actor": "Robert Carlyle",
+        "writer": "Seth Gordon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "Braveheart",
+        "We Were Soldiers",
+        "Titan A.E.",
+        "Saving Private Ryan"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Robert Carlyle",
+        "anchor_title": "Christmas with the Kranks",
+        "constraints": {
+          "genre": "film adaptation",
+          "director": "Len Wiseman",
+          "actor": "Robert Carlyle",
+          "plot": "selene"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! The user has expressed interest in movies with a war theme, starring Robert Carlyle, and directed by Len Wiseman or Seth Gordon. Based on these preferences, I recommend \"Pan's Labyrinth\" and \"300\". Both of these movies offer intense and visually striking depictions of war, with \"Pan's Labyrinth\" focusing on a young girl's fantastical escape from the brutality of fascist Spain during World War II, and \"300\" showcasing the legendary battle of Thermopylae between the Spartans and the Persians.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Len Wiseman",
+        "actor": "Robert Carlyle",
+        "writer": "Seth Gordon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "Pan's Labyrinth",
+        "300",
+        "Uncommon Valor",
+        "Doctor Zhivago"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Pan's Labyrinth? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Robert Carlyle",
+        "anchor_title": "Christmas with the Kranks",
+        "constraints": {
+          "genre": "film adaptation",
+          "director": "Len Wiseman",
+          "actor": "Robert Carlyle",
+          "plot": "selene"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user is looking for a movie with a deeper feel than Pan's Labyrinth, and they prefer war-themed movies, actor Robert Carlyle, director Len Wiseman, or language Japanese.\n\nRecommendation: If you're looking for a war movie with a deeper feel, I would recommend \"Flags of Our Fathers\" (2000). This film tells the life stories of the six men who raised the flag at the Battle of Iwo Jima, and it features an all-star cast including Ryan Phillippe, Neal McDonough, and Barry Pepper. The movie explores themes of sacrifice, bravery, and the human cost of war.\n\nAlternatively, if you're interested in a more action-packed war movie, \"The Expendables 2\" (2012) might be up your alley. This sequel to the original \"Expendables\" film features an ensemble cast including Sylvester Stallone, Jason Statham, and Jet Li as they take on a dangerous mission deep in enemy territory. The movie has plenty of action and suspense, and it's sure to keep you entertained.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Pan's Labyrinth",
+        "director": "Len Wiseman",
+        "actor": "Robert Carlyle",
+        "writer": "Seth Gordon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "Flags of Our Fathers",
+        "The Expendables 2",
+        "Hart's War",
+        "Little Fockers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Pan's Labyrinth. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Robert Carlyle",
+        "anchor_title": "Christmas with the Kranks",
+        "constraints": {
+          "genre": "film adaptation",
+          "director": "Len Wiseman",
+          "actor": "Robert Carlyle",
+          "plot": "selene"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user expressed interest in \"Pan's Labyrinth\" and provided cues related to war, actor Robert Carlyle, director Len Wiseman, language Japanese, and plot keywords \"like\" and \"sound.\" Based on these cues, I recommend the movies \"Hart's War\" and \"Mama.\" Both films feature war themes and star actors who are similar to Robert Carlyle. Additionally, both movies have a strong focus on character development and storytelling, which aligns with the user's interest in the plot keywords \"like\" and \"sound.\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Pan's Labyrinth",
+        "director": "Len Wiseman",
+        "actor": "Robert Carlyle",
+        "writer": "Seth Gordon",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "Hart's War",
+        "Braveheart",
+        "Mama",
+        "Paycheck"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by James Gray? Hmm, I didn’t expect that vibe. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 50,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "James Gray",
+        "anchor_title": "Fair Game",
+        "constraints": {
+          "genre": "film adaptation",
+          "actor": "Robert Carlyle",
+          "plot": "selene",
+          "writer": "James Gray"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 50,
+          "from_focus": "actor",
+          "to_focus": "writer",
+          "bridge_field": "actor",
+          "bridge_value": "Robert Carlyle",
+          "from_anchor": "Christmas with the Kranks",
+          "to_anchor": "Fair Game"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - War, Actor - Robert Carlyle, Director - James Gray, Language - Japanese, Plot keywords - written, james.\nBased on these constraints, I recommend \"Proof of Life\" (2000) and \"The Imitation Game\" (2014). Both movies are directed by James Gray and star Robert Carlyle, with intriguing plots that explore the themes of survival, sacrifice, and heroism during times of conflict.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "written",
+          "james"
+        ],
+        "name": "X",
+        "director": "James Gray",
+        "actor": "Robert Carlyle",
+        "writer": "James Gray",
+        "language": "Japanese"
+      },
+      "rec_titles": [
+        "Proof of Life",
+        "The Imitation Game",
+        "Flyboys",
+        "The Siege"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 3,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Thomas Middleditch",
+      "from_anchor": "The Red Violin",
+      "to_anchor": "Goodfellas"
+    },
+    {
+      "turn": 5,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Goodfellas",
+      "to_anchor": "Transcendence"
+    },
+    {
+      "turn": 7,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "relationships",
+      "from_anchor": "Transcendence",
+      "to_anchor": "Pitch Perfect"
+    },
+    {
+      "turn": 13,
+      "from_focus": "director",
+      "to_focus": "language",
+      "bridge_field": "director",
+      "bridge_value": "Joss Whedon",
+      "from_anchor": "Pitch Perfect",
+      "to_anchor": "Get Him to the Greek"
+    },
+    {
+      "turn": 18,
+      "from_focus": "language",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Get Him to the Greek",
+      "to_anchor": "Spider-Man"
+    },
+    {
+      "turn": 24,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "Scarlett Johansson",
+      "from_anchor": "Spider-Man",
+      "to_anchor": "Starship Troopers"
+    },
+    {
+      "turn": 29,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Nadine Velazquez",
+      "from_anchor": "Starship Troopers",
+      "to_anchor": "City of Ember"
+    },
+    {
+      "turn": 37,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "director",
+      "bridge_value": "Seth Gordon",
+      "from_anchor": "City of Ember",
+      "to_anchor": "The Client"
+    },
+    {
+      "turn": 42,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Sebastian Stan",
+      "from_anchor": "The Client",
+      "to_anchor": "Live Free or Die Hard"
+    },
+    {
+      "turn": 46,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "selene",
+      "from_anchor": "Live Free or Die Hard",
+      "to_anchor": "Christmas with the Kranks"
+    },
+    {
+      "turn": 50,
+      "from_focus": "actor",
+      "to_focus": "writer",
+      "bridge_field": "actor",
+      "bridge_value": "Robert Carlyle",
+      "from_anchor": "Christmas with the Kranks",
+      "to_anchor": "Fair Game"
+    }
+  ]
+}

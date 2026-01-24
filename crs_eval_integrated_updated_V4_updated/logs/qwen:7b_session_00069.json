@@ -1,0 +1,2187 @@
+{
+  "session_id": "00069",
+  "model_name": "qwen:7b",
+  "true_genre": "iraq war",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a children's literature movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "children's literature",
+        "anchor_title": "The Chocolate War",
+        "constraints": {
+          "genre": "children's literature"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a children's literature movie recommendation. Based on your preferences, I suggest 'Tuck Everlasting' (1975) due to its adaptation from a children's book and features themes of love, immortality, and family.",
+      "constraints": {
+        "genre": "literature",
+        "plot": [
+          "children",
+          "literature"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "Tuck Everlasting",
+        "Emma",
+        "Welcome to Sarajevo",
+        "A Time to Kill"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Michelle Pfeiffer. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Michelle Pfeiffer",
+        "anchor_title": "Uglies",
+        "constraints": {
+          "genre": "children's literature",
+          "actor": "Michelle Pfeiffer",
+          "plot": "mine"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "mine",
+          "from_anchor": "The Chocolate War",
+          "to_anchor": "Uglies"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies featuring Michelle Pfeiffer and have a literary theme. I recommend 'A Farewell to Arms' as it meets these criteria with its star performance by Michelle Pfeiffer and its literature-inspired plot set during World War 1.",
+      "constraints": {
+        "genre": "literature",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "RED",
+        "actor": "Michelle Pfeiffer"
+      },
+      "rec_titles": [
+        "A Farewell to Arms",
+        "The Constant Gardener",
+        "The Bell Jar",
+        "Disaster Movie"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michelle Pfeiffer",
+        "anchor_title": "Uglies",
+        "constraints": {
+          "genre": "children's literature",
+          "actor": "Michelle Pfeiffer",
+          "plot": "mine"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: genre is literature and actor is Michelle Pfeiffer. Movie recommendations: 'Batman Returns' as it stars Michelle Pfeiffer in a literary superhero role, and 'Despicable Me 2' though it doesn't feature Michelle Pfeiffer directly, but has a similar level of storytelling and character development.",
+      "constraints": {
+        "genre": "literature",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Michelle Pfeiffer"
+      },
+      "rec_titles": [
+        "Batman Returns",
+        "Despicable Me 2",
+        "The Way of the Gun",
+        "Holes"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Batman tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michelle Pfeiffer",
+        "anchor_title": "Uglies",
+        "constraints": {
+          "genre": "children's literature",
+          "actor": "Michelle Pfeiffer",
+          "plot": "mine"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a Batman story with Michelle Pfeiffer as the lead actress, and keywords related to what kind of story it is. Based on these preferences, I recommend checking out 'Paycheck' from the list, which features both Michelle Pfeiffer and a plot involving an engineer being chased for his life, potentially connected to a money-generating idea gone wrong.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Batman",
+        "actor": "Michelle Pfeiffer"
+      },
+      "rec_titles": [
+        "Taken",
+        "Eve's Bayou",
+        "Paycheck",
+        "Paradise Lost"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michelle Pfeiffer",
+        "anchor_title": "Uglies",
+        "constraints": {
+          "genre": "children's literature",
+          "actor": "Michelle Pfeiffer",
+          "plot": "mine"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a movie with Michelle Pfeiffer, possibly related to themes of dreams coming true or justice. I recommend 'American Dreamz' (2006), where Michelle Pfeiffer plays a role linked to helping individuals achieve their aspirations.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "what"
+        ],
+        "name": "Us",
+        "actor": "Michelle Pfeiffer"
+      },
+      "rec_titles": [
+        "American Dreamz",
+        "The Equalizer",
+        "Us",
+        "Pride and Prejudice"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michelle Pfeiffer",
+        "anchor_title": "Uglies",
+        "constraints": {
+          "genre": "children's literature",
+          "actor": "Michelle Pfeiffer",
+          "plot": "mine"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user preferences revolve around a mix of weird, thought-provoking, and potentially action-packed movies with strong characters.\n\nBased on these cues, I would recommend 'The Lego Movie' (2014) as it combines the element of weirdness with a fun and creative plot that involves thought-provoking ideas. The movie features Will Ferrell and Morgan Freeman, providing both comedic and memorable performances.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "Us",
+        "actor": "Michelle Pfeiffer"
+      },
+      "rec_titles": [
+        "Shrek 2",
+        "The Lego Movie",
+        "The Breakfast Club",
+        "Dark Shadows"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Lynne Ramsay? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Tron.)",
+      "user_meta": {
+        "turn": 7,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Lynne Ramsay",
+        "anchor_title": "The Partner",
+        "constraints": {
+          "genre": "children's literature",
+          "actor": "Jeff Bridges",
+          "director": "Lynne Ramsay"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 7,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Jeff Bridges",
+          "from_anchor": "Uglies",
+          "to_anchor": "The Partner"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movie recommendations featuring an actor named Michelle Pfeiffer, directed by Lynne Ramsay, and potentially having a plot centered around switching to something else. Based on these criteria, I recommend 'Maleficent' (2014) starring Michelle Pfeiffer and directed by Lynne Ramsay. It has a plot involving a character trying to change the perceived evil of Maleficent.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Tron",
+        "actor": "Michelle Pfeiffer",
+        "director": "Lynne Ramsay",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "Elysium",
+        "Maleficent",
+        "Batman Forever",
+        "Shattered"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Lynne Ramsay",
+        "anchor_title": "The Partner",
+        "constraints": {
+          "genre": "children's literature",
+          "actor": "Jeff Bridges",
+          "director": "Lynne Ramsay"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movie recommendations featuring Batman, Michelle Pfeiffer, a director named Lynne Ramsay, and plot keywords like \"just\" and \"more.\" Based on these preferences, I would recommend watching 'Date Night' as it combines the desired elements with an entertaining storyline starring Michelle Pfeiffer.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Michelle Pfeiffer",
+        "director": "Lynne Ramsay",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "Date Night",
+        "Hesher",
+        "Wild Hogs",
+        "Untraceable"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Lynne Ramsay",
+        "anchor_title": "The Partner",
+        "constraints": {
+          "genre": "children's literature",
+          "actor": "Jeff Bridges",
+          "director": "Lynne Ramsay"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user prefers a movie with Batman, Michelle Pfeiffer, and elements of being wrong or earlier in the story. Based on these preferences, I recommend 'Batman' (1989) directed by Tim Burton and starring Michael Keaton as Batman, Michelle Pfeiffer as Catwoman, and featuring elements of their characters being introduced to the public, which aligns with the user's context.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "You",
+        "actor": "Michelle Pfeiffer",
+        "director": "Lynne Ramsay",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "Pain & Gain",
+        "Evil Dead II",
+        "Bleak House",
+        "Reservoir Dogs"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Lynne Ramsay",
+        "anchor_title": "The Partner",
+        "constraints": {
+          "genre": "children's literature",
+          "actor": "Jeff Bridges",
+          "director": "Lynne Ramsay"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in stories about motivation, pride, and personal growth. From the list provided, 'Pride and Prejudice' could be a great fit as it explores themes of societal expectations, personal growth, and love. Starring Keira Knightley and Matthew McConaughey, the film offers an engaging blend of romance and social commentary.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "actor": "Michelle Pfeiffer",
+        "director": "Lynne Ramsay",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "The Equalizer",
+        "Pride and Prejudice",
+        "The Trouble with Harry",
+        "It's a Wonderful Life"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Pride and Prejudice? That sounds intriguing.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Lynne Ramsay",
+        "anchor_title": "The Partner",
+        "constraints": {
+          "genre": "children's literature",
+          "actor": "Jeff Bridges",
+          "director": "Lynne Ramsay"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's constraints include preferences for movies with Michelle Pfeiffer, batman themes, and Lynne Ramsay as director or writer. Based on these criteria, I would recommend 'Batman Returns' (2004) starring Michelle Pfeiffer as Catwoman, and directed by Lynne Ramsay. It has a strong Batman theme and aligns well with the user's preferences.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "what",
+          "pride"
+        ],
+        "name": "Pride and Prejudice",
+        "actor": "Michelle Pfeiffer",
+        "director": "Lynne Ramsay",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "Utsav",
+        "Aladdin",
+        "Scarface",
+        "It's a Wonderful Life"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Lynne Ramsay",
+        "anchor_title": "The Partner",
+        "constraints": {
+          "genre": "children's literature",
+          "actor": "Jeff Bridges",
+          "director": "Lynne Ramsay"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user prefers movies with specific elements, such as a batman-themed film with Michelle Pfeiffer. Based on these cues, I would recommend 'Batman & Robin' (1997) starring Coolio and Alicia Silverstone, which fits the bill with its Batman and Robin dynamic, and Michelle Pfeiffer's portrayal of Catwoman.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "Pride and Prejudice",
+        "actor": "Michelle Pfeiffer",
+        "director": "Lynne Ramsay",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "Hot Tub Time Machine",
+        "Batman & Robin",
+        "Scarface",
+        "Pride and Prejudice"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Catwoman. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Lynne Ramsay",
+        "anchor_title": "The Partner",
+        "constraints": {
+          "genre": "children's literature",
+          "actor": "Jeff Bridges",
+          "director": "Lynne Ramsay"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference for a Batman-related movie with Michelle Pfeiffer, I recommend ' Scarface'. This classic 1983 film, although not directly tied to Batman, features Michelle Pfeiffer as the ambitious and violent gangster, Tony Montana. The movie also stars Al Pacino in the lead role.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Catwoman",
+        "actor": "Michelle Pfeiffer",
+        "director": "Lynne Ramsay",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "Unleashed",
+        "Treasure Planet",
+        "The Other Guys",
+        "Scarface"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Jack Palance. That feels deeper than I thought. (I’m thinking of Batman.)",
+      "user_meta": {
+        "turn": 14,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Jack Palance",
+        "anchor_title": "The Nightingale",
+        "constraints": {
+          "genre": "children's literature",
+          "actor": "Jack Palance",
+          "director": "Lynne Ramsay"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 14,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Jack Palance",
+          "from_anchor": "The Partner",
+          "to_anchor": "The Nightingale"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies featuring Jack Palance and set in a batman-like genre. I recommend 'The Secret Garden' as it stars Ralph Fiennes, who played Batman's nemesis the Joker in 'The Dark Knight,' and features elements of intrigue similar to a spy movie.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Batman",
+        "actor": "Jack Palance",
+        "director": "Lynne Ramsay",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "Cinder",
+        "The End of the Affair",
+        "The Secret Garden",
+        "Waterworld"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jack Palance",
+        "anchor_title": "The Nightingale",
+        "constraints": {
+          "genre": "children's literature",
+          "actor": "Jack Palance",
+          "director": "Lynne Ramsay"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movie recommendations similar to Batman, with specific elements like a batman-inspired character and an actor like Jack Palance.\n\nBased on these preferences, I would recommend 'Batman' (1989), which features Jack Palance as Dr. Daka and Michael Gough in the role of the Batman. This classic adaptation captures many of the elements you're looking for.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Jack Palance",
+        "director": "Lynne Ramsay",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "Veronica Mars",
+        "Untraceable",
+        "Tooth Fairy",
+        "Batman"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of RED? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jack Palance",
+        "anchor_title": "The Nightingale",
+        "constraints": {
+          "genre": "children's literature",
+          "actor": "Jack Palance",
+          "director": "Lynne Ramsay"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie recommendation that matches their preferences, which include elements of Batman (with actor Jack Palance), man-on-fire styled action, and possibly taken or forsaken type themes with intense situations. Based on these cues, I would recommend 'Taken' since it fits the thriller and high-stakes action categories while also featuring Liam Neeson in the lead role.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "RED",
+        "actor": "Jack Palance",
+        "director": "Lynne Ramsay",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "Batman & Robin",
+        "Man on Fire",
+        "Taken",
+        "Forsaken"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Taken tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jack Palance",
+        "anchor_title": "The Nightingale",
+        "constraints": {
+          "genre": "children's literature",
+          "actor": "Jack Palance",
+          "director": "Lynne Ramsay"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants a story recommendation with elements of batman, Jack Palance's vibe, and Lynne Ramsay's writing. From the list, 'The Wrestler' aligns well with these cues, featuring a Batman-like figure (Frank Bass), an actor associated with Palance's intensity (Mickey Rourke), and Ramsay's signature directorial style.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Taken",
+        "actor": "Jack Palance",
+        "director": "Lynne Ramsay",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "The Wrestler",
+        "We the Living",
+        "Paradise Lost",
+        "Little Fockers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Batman. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jack Palance",
+        "anchor_title": "The Nightingale",
+        "constraints": {
+          "genre": "children's literature",
+          "actor": "Jack Palance",
+          "director": "Lynne Ramsay"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes the sound of Batman and is interested in a film starring Jack Palance, possibly related to the Bat universe. Based on these preferences, I recommend 'Looper' featuring both Jack Palance and a connection to Batman through the concept of time travel.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Batman",
+        "actor": "Jack Palance",
+        "director": "Lynne Ramsay",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "Looper",
+        "Flubber",
+        "Jumper",
+        "The Right Stuff"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by David Yates? That feels deeper than I thought. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 19,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "David Yates",
+        "anchor_title": "Charlotte's Web",
+        "constraints": {
+          "genre": "children's literature",
+          "director": "David Yates",
+          "plot": "crazy"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 19,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "crazy",
+          "from_anchor": "The Nightingale",
+          "to_anchor": "Charlotte's Web"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a movie related to Batman, possibly featuring Jack Palance as an actor.推荐电影《蝙蝠侠》(1989)，由杰克·潘 Lance主演。",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Deep",
+        "actor": "Jack Palance",
+        "director": "David Yates",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "Batman",
+        "White Night",
+        "Armageddon",
+        "The Whistler"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "David Yates",
+        "anchor_title": "Charlotte's Web",
+        "constraints": {
+          "genre": "children's literature",
+          "director": "David Yates",
+          "plot": "crazy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movie recommendations like \"Batman\" with actor Jack Palance, or \"Fight Club\" directed by David Yates and written by Lynne Ramsay. Based on these preferences, I would recommend \"The Rocker\" (2008) starring Howard Hesseman and featuring a plot similar to the desire for a Batman film.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Jack Palance",
+        "director": "David Yates",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "The Rocker",
+        "The Stuff",
+        "Fight Club",
+        "Neighbors 2: Sorority Rising"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Bradley Cooper. That sounds intriguing. (I’m thinking of The Rocker.)",
+      "user_meta": {
+        "turn": 21,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Bradley Cooper",
+        "anchor_title": "The Nightingale",
+        "constraints": {
+          "genre": "children's literature",
+          "director": "David Yates",
+          "plot": "crazy",
+          "actor": "Bradley Cooper"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 21,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Bradley Cooper",
+          "from_anchor": "Charlotte's Web",
+          "to_anchor": "The Nightingale"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movie recommendations featuring actor Bradley Cooper, possibly in genres like Batman or with director David Yates. Based on these preferences, I suggest watching 'The Constant Gardener' (2001) directed by David Yates and starring Pete Postlethwaite and Rachel Weisz. It features both Cooper and Yates in a gripping thriller.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "The Rocker",
+        "actor": "Bradley Cooper",
+        "director": "David Yates",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "Jingle All the Way",
+        "The Constant Gardener",
+        "The Legend of Tarzan",
+        "Shrek 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bradley Cooper",
+        "anchor_title": "The Nightingale",
+        "constraints": {
+          "genre": "children's literature",
+          "director": "David Yates",
+          "plot": "crazy",
+          "actor": "Bradley Cooper"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movie recommendations with specific criteria, such as featuring Batman, actor Bradley Cooper, and David Yates as director. Based on these preferences, I would recommend 'The Pink Panther 2' starring Lily Tomlin and Yuki Matsuzaki, which combines elements of action, comedy, and a memorable cast.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Bradley Cooper",
+        "director": "David Yates",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "New York Minute",
+        "The Pink Panther 2",
+        "Terminator 2: Judgment Day",
+        "How to Train Your Dragon"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Her. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bradley Cooper",
+        "anchor_title": "The Nightingale",
+        "constraints": {
+          "genre": "children's literature",
+          "director": "David Yates",
+          "plot": "crazy",
+          "actor": "Bradley Cooper"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user enjoys movies with soundscapes and characters driven by their desires. Based on these preferences, I recommend 'The Mortal Instruments: City of Bones' due to its emphasis on sounds and a character-driven plot. The film stars Kevin Zegers and has a cast including Aidan Turner and CCH Pounder.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Her",
+        "actor": "Bradley Cooper",
+        "director": "David Yates",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "The Mortal Instruments: City of Bones",
+        "Castle in the Sky",
+        "Batman Forever",
+        "It's a Wonderful Life"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bradley Cooper",
+        "anchor_title": "The Nightingale",
+        "constraints": {
+          "genre": "children's literature",
+          "director": "David Yates",
+          "plot": "crazy",
+          "actor": "Bradley Cooper"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in stories that delve into deeper themes, specifically mentioning a desire for woman builders and tales of political revolution with personal反抗. Based on these preferences, I would recommend 'Paradise Lost' as it explores the俄国 Revolution through the characters' personal struggles. Additionally, 'We the Living' by Ayn Rand aligns well with the user's interest in both politics and individual resistance.",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Deep",
+        "actor": "Bradley Cooper",
+        "director": "David Yates",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "Wedding Crashers",
+        "Paradise Lost",
+        "Training Day",
+        "We the Living"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Paradise Lost? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bradley Cooper",
+        "anchor_title": "The Nightingale",
+        "constraints": {
+          "genre": "children's literature",
+          "director": "David Yates",
+          "plot": "crazy",
+          "actor": "Bradley Cooper"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a movie with elements of Batman, featuring actor Bradley Cooper and director David Yates.推荐电影 'Batman Forever'，它就有这些特点。",
+      "constraints": {
+        "genre": "batman",
+        "plot": [
+          "what",
+          "lost"
+        ],
+        "name": "Lost",
+        "actor": "Bradley Cooper",
+        "director": "David Yates",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "Batman Forever",
+        "Hitch",
+        "The Goonies",
+        "I Heart Huckabees"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Ted. I want to try something more prison—That sounds intriguing.",
+      "user_meta": {
+        "turn": 26,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "prison",
+        "anchor_title": "Out of Sight",
+        "constraints": {
+          "genre": "prison",
+          "director": "David Yates",
+          "plot": "crazy",
+          "actor": "Bradley Cooper"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 26,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "bennett",
+          "from_anchor": "The Nightingale",
+          "to_anchor": "Out of Sight"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants prison-themed movies with actor Bradley Cooper and director David Yates. From the list, I recommend 'Prisoners' (2013), which has both Cooper and Yates involved. It's a gripping thriller about a father who takes matters into his own hands when his daughter is kidnapped.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Prison",
+        "actor": "Bradley Cooper",
+        "director": "David Yates",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "Can You Keep a Secret?",
+        "Lucky Break",
+        "American History X",
+        "A Clockwork Orange"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "prison",
+        "anchor_title": "Out of Sight",
+        "constraints": {
+          "genre": "prison",
+          "director": "David Yates",
+          "plot": "crazy",
+          "actor": "Bradley Cooper"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movie recommendations with a prison theme, featuring actor Bradley Cooper, and possibly directed by David Yates. Based on these preferences, I recommend 'Donnie Brasco' (1997), starring Cooper as an undercover FBI agent infiltrating the Mafia, directed by Yates, and filled with suspenseful moments.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Bradley Cooper",
+        "director": "David Yates",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "The Wonderful Wizard of Oz",
+        "House at the End of the Street",
+        "Untraceable",
+        "Donnie Brasco"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Prison. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "prison",
+        "anchor_title": "Out of Sight",
+        "constraints": {
+          "genre": "prison",
+          "director": "David Yates",
+          "plot": "crazy",
+          "actor": "Bradley Cooper"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user enjoys prison-themed movies, with a preference for actor Bradley Cooper. Based on these preferences, I recommend 'The Skull' (2006) starring George Coulouris and Peter Cushing. This film has a prison setting and features both Cooper and Coulouris, who are known actors in the genre.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Prison",
+        "actor": "Bradley Cooper",
+        "director": "David Yates",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "The Skull",
+        "Restless",
+        "Aloha",
+        "Wedding Crashers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "prison",
+        "anchor_title": "Out of Sight",
+        "constraints": {
+          "genre": "prison",
+          "director": "David Yates",
+          "plot": "crazy",
+          "actor": "Bradley Cooper"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants a movie with prison as its genre, Bradley Cooper as an actor, and possibly elements of intrigue or reflection. Based on these preferences, I recommend 'The Hangover' (2009), which features Cooper and a prison-like environment through the raucous bachelor party sequence.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Prison",
+        "actor": "Bradley Cooper",
+        "director": "David Yates",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "The Hangover",
+        "American Hustle",
+        "A Clockwork Orange",
+        "The Reflecting Skin"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "prison",
+        "anchor_title": "Out of Sight",
+        "constraints": {
+          "genre": "prison",
+          "director": "David Yates",
+          "plot": "crazy",
+          "actor": "Bradley Cooper"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a story with prison elements, featuring actor Bradley Cooper, and possibly directed by David Yates. Based on these preferences, I recommend watching 'Prison' (if available with the given names), which could potentially meet those criteria. Alternatively, 'The Words' might also be of interest due to its narrative nature and potential connection to writing or creativity.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "actor": "Bradley Cooper",
+        "director": "David Yates",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "The Words",
+        "Waiting",
+        "Passion",
+        "2010"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Prison? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "prison",
+        "anchor_title": "Out of Sight",
+        "constraints": {
+          "genre": "prison",
+          "director": "David Yates",
+          "plot": "crazy",
+          "actor": "Bradley Cooper"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in prison-related movies with an actor like Bradley Cooper.推荐《曼 on 火》(2004)，由丹泽尔·华盛顿主演，结合了紧张的监狱情节和演员的出色表演。",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "what",
+          "prison"
+        ],
+        "name": "Prison",
+        "actor": "Bradley Cooper",
+        "director": "David Yates",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "Below Zero",
+        "Smilla's Sense of Snow",
+        "Man on Fire",
+        "The Wrestler"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Seth MacFarlane. That feels deeper than I thought. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 32,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Seth MacFarlane",
+        "anchor_title": "Ted",
+        "constraints": {
+          "genre": "prison",
+          "plot": "crazy",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 32,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Seth MacFarlane",
+          "from_anchor": "Out of Sight",
+          "to_anchor": "Ted"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies featuring Seth MacFarlane, with a prison theme. I recommend 'Zoolander 2' as it stars both Seth MacFarlane and has a comedic prison element.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Ted",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "Zoolander 2",
+        "Heart of Darkness",
+        "Frozen",
+        "Lucky Break"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Seth MacFarlane",
+        "anchor_title": "Ted",
+        "constraints": {
+          "genre": "prison",
+          "plot": "crazy",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in recommendations with a prison theme, featuring actor Seth MacFarlane, and potentially written by Lynne Ramsay. Based on these preferences, I would recommend 'The Longest Yard' due to its mix of comedy and prison setting with Seth MacFarlane involved.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "The Longest Yard",
+        "The Swindle",
+        "Date Night",
+        "The Truth"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 34,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Seth MacFarlane",
+        "anchor_title": "Ted",
+        "constraints": {
+          "genre": "prison",
+          "plot": "crazy",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in prison-themed movies with Seth MacFarlane involved as actor, director, or writer. I recommend 'Thick as Thieves' (starring B.R. Smith and Bob Ferguson) for its prison setting and the involvement of MacFarlane. It's an interesting choice within the given constraints.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "You",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "Thick as Thieves",
+        "I Love You Phillip Morris",
+        "Pain & Gain",
+        "500 Days of Summer"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Seth MacFarlane",
+        "anchor_title": "Ted",
+        "constraints": {
+          "genre": "prison",
+          "plot": "crazy",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user mentioned a preference for weird, thought-provoking movies with a prison theme and featuring actor Seth MacFarlane. Based on these cues, I would recommend \"Zack and Miri Make a Porno\" as it combines the elements of a weird prison-themed comedy with Seth MacFarlane's presence.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "You",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "Zack and Miri Make a Porno",
+        "The Skulls",
+        "The Shawshank Redemption",
+        "One Flew Over the Cuckoo's Nest"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Seth MacFarlane",
+        "anchor_title": "Ted",
+        "constraints": {
+          "genre": "prison",
+          "plot": "crazy",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a movie with prison setting, featuring actor Seth MacFarlane, and potentially directed by him as well. Based on these preferences, I would recommend 'I Heart Huckabees' (2004) which fits the criteria with its prison-related plot involving Seth MacFarlane's character, and also stars other notable actors like Dustin Hoffman.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "I Heart Huckabees",
+        "Zero Effect",
+        "Chain Reaction",
+        "We the Living"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Stewart Hendler? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 37,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Stewart Hendler",
+        "anchor_title": "W.",
+        "constraints": {
+          "genre": "prison",
+          "plot": "crazy",
+          "actor": "Seth MacFarlane",
+          "director": "Stewart Hendler",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 37,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Ted",
+          "to_anchor": "W."
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's constraints, they seem interested in war-related movies with notable actors. I would recommend 'The Last Samurai' and 'Three Kings' from this list. 'The Last Samurai' features a star-studded cast including Seth MacFarlane and Togo Igawa, while 'Three Kings' has Dougray Scott and Jordi Mollà in the lead roles.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "War",
+        "actor": "Seth MacFarlane",
+        "director": "Stewart Hendler",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "The Last Samurai",
+        "Three Kings",
+        "Flyboys",
+        "There Be Dragons"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Stewart Hendler",
+        "anchor_title": "W.",
+        "constraints": {
+          "genre": "prison",
+          "plot": "crazy",
+          "actor": "Seth MacFarlane",
+          "director": "Stewart Hendler",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants recommendations for movies with war genre, Seth MacFarlane as an actor, and Stewart Hendler or Lynne Ramsay involved in directing or writing. Based on these preferences, I suggest checking out 'Movie 43' (2013) which stars Seth MacFarlane and has a comedy War plot.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Seth MacFarlane",
+        "director": "Stewart Hendler",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "Movie 43",
+        "Cold Mountain",
+        "Battleship",
+        "This Is the End"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Stewart Hendler",
+        "anchor_title": "W.",
+        "constraints": {
+          "genre": "prison",
+          "plot": "crazy",
+          "actor": "Seth MacFarlane",
+          "director": "Stewart Hendler",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with a war theme, potentially featuring actor Seth MacFarlane. From the list provided, I recommend 'Fury' (2014), starring Jim Parrack and Brad Pitt, as it fits the desired mood and has MacFarlane in a supporting role.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "actor": "Seth MacFarlane",
+        "director": "Stewart Hendler",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "Tears of the Sun",
+        "Black Hawk Down",
+        "Fury",
+        "The Blood of My Brother"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Stewart Hendler",
+        "anchor_title": "W.",
+        "constraints": {
+          "genre": "prison",
+          "plot": "crazy",
+          "actor": "Seth MacFarlane",
+          "director": "Stewart Hendler",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants opposite preferences, targeting a war genre with Seth MacFarlane and a focus on characters facing Nazi persecution. Based on these criteria, I recommend \"Saving Private Ryan\" and \"Schindler' s List\" from the list provided. Both films deliver intense战争 scenes and explore themes of survival and heroism amidst adversity.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "RED",
+        "actor": "Seth MacFarlane",
+        "director": "Stewart Hendler",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "Saving Private Ryan",
+        "Flags of Our Fathers",
+        "Pan's Labyrinth",
+        "Schindler's List"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Hero. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Stewart Hendler",
+        "anchor_title": "W.",
+        "constraints": {
+          "genre": "prison",
+          "plot": "crazy",
+          "actor": "Seth MacFarlane",
+          "director": "Stewart Hendler",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user enjoys war-themed movies with a focus on actor Seth MacFarlane. Based on these preferences, \"Three Kings\" (1999) is a highly recommended movie, featuring MacFarlane and a gripping war drama.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Her",
+        "actor": "Seth MacFarlane",
+        "director": "Stewart Hendler",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "Three Kings",
+        "The Life Before Her Eyes",
+        "In the Woods",
+        "Blow Out"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with David Fincher. That feels deeper than I thought. (I’m thinking of War.)",
+      "user_meta": {
+        "turn": 42,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "David Fincher",
+        "anchor_title": "Wolves",
+        "constraints": {
+          "genre": "prison",
+          "plot": "indian",
+          "actor": "David Fincher",
+          "director": "Stewart Hendler",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 42,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "indian",
+          "from_anchor": "W.",
+          "to_anchor": "Wolves"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're interested in movies with David Fincher, particularly those related to war. I recommend 'The Last Samurai' and 'Black Hawk Down,' both featuring David Fincher and offering intense war scenarios.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "War",
+        "actor": "David Fincher",
+        "director": "David Fincher",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "The Last Samurai",
+        "Pan's Labyrinth",
+        "Black Hawk Down",
+        "Patton"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "David Fincher",
+        "anchor_title": "Wolves",
+        "constraints": {
+          "genre": "prison",
+          "plot": "indian",
+          "actor": "David Fincher",
+          "director": "Stewart Hendler",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's constraints, they seem interested in war-related movies and those featuring David Fincher as a director. From the list provided, I would recommend 'Bloody Sunday' for its direct connection to Irish civil rights protests and British troops' violence. Additionally, 'Dances with Wolves' also has a historical aspect related to the American West, which might align with the user's interest in war themes.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "David Fincher",
+        "director": "David Fincher",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "Dances with Wolves",
+        "The Taming of the Shrew",
+        "Bloody Sunday",
+        "Being John Malkovich"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Dances with Wolves? That sounds intriguing.",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "David Fincher",
+        "anchor_title": "Wolves",
+        "constraints": {
+          "genre": "prison",
+          "plot": "indian",
+          "actor": "David Fincher",
+          "director": "Stewart Hendler",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a movie with dance elements and possibly featuring David Fincher as a director. Based on these preferences, I recommend 'Eve''s Bayou' (1997) due to its plot involving dance and the connection to director David Fincher through actor Roger Guenveur Smith.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "what",
+          "dances"
+        ],
+        "name": "Dances with Wolves",
+        "actor": "David Fincher",
+        "director": "David Fincher",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "Eve's Bayou",
+        "Super",
+        "Hitch",
+        "Fight Club"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Kathryn Bigelow? That feels deeper than I thought. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 45,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Kathryn Bigelow",
+        "anchor_title": "Next Day Air",
+        "constraints": {
+          "genre": "prison",
+          "plot": "reunite",
+          "actor": "David Fincher",
+          "director": "Kathryn Bigelow",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 45,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "reunite",
+          "from_anchor": "Wolves",
+          "to_anchor": "Next Day Air"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with dance genre, an actor involvement from David Fincher, and directed by Kathryn Bigelow. Suggestions could be 'Afterlife' (with its dark past and psychic elements) or 'Psychic Experiment' (if the user is interested in experimental and supernatural themes).",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Deep",
+        "actor": "David Fincher",
+        "director": "Kathryn Bigelow",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "Afterlife",
+        "Armageddon",
+        "Moulin Rouge!",
+        "Psychic Experiment"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Kathryn Bigelow",
+        "anchor_title": "Next Day Air",
+        "constraints": {
+          "genre": "prison",
+          "plot": "reunite",
+          "actor": "David Fincher",
+          "director": "Kathryn Bigelow",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants recommendations for movies with dance or a teenage girl with a unique condition as main themes. From the list provided, 'Step Up Revolution' and 'Wolf Girl' would be fitting suggestions due to their dancing central plots and the uniqueness of the characters in each film.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "David Fincher",
+        "director": "Kathryn Bigelow",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "Labyrinths",
+        "Wolf Girl",
+        "Step Up Revolution",
+        "The Number 23"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Patrick Stewart. Hmm, I didn’t expect that vibe. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 47,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Patrick Stewart",
+        "anchor_title": "Disaster Movie",
+        "constraints": {
+          "genre": "prison",
+          "actor": "Patrick Stewart",
+          "director": "Kathryn Bigelow",
+          "language": "English",
+          "writer": "David Nicholls"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 47,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "writer",
+          "bridge_value": "David Nicholls",
+          "from_anchor": "Next Day Air",
+          "to_anchor": "Disaster Movie"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies featuring Patrick Stewart, with a focus on genres like war and having writers like Lynne Ramsay. Based on these constraints, I recommend 'The White Countess' (2005) as it stars Patrick Stewart and has a storyline by renowned writer Lynne Ramsay.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "War",
+        "actor": "Patrick Stewart",
+        "director": "Kathryn Bigelow",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "The Incredible Hulk",
+        "The White Countess",
+        "Sin City",
+        "Trees Lounge"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Patrick Stewart",
+        "anchor_title": "Disaster Movie",
+        "constraints": {
+          "genre": "prison",
+          "actor": "Patrick Stewart",
+          "director": "Kathryn Bigelow",
+          "language": "English",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in war-themed movies with Patrick Stewart as an actor, and possibly directed by Kathryn Bigelow. I recommend \"There Be Dragons\" which fits those criteria, starring Dougray Scott as the main character.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Patrick Stewart",
+        "director": "Kathryn Bigelow",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "New York Minute",
+        "There Be Dragons",
+        "Hell's Angels",
+        "Without a Clue"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Patrick Stewart",
+        "anchor_title": "Disaster Movie",
+        "constraints": {
+          "genre": "prison",
+          "actor": "Patrick Stewart",
+          "director": "Kathryn Bigelow",
+          "language": "English",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes stories about sound and characters like Patrick Stewart. Based on these preferences, I recommend watching 'Point Break' as it stars Patrick Stewart and has a plot centered around the sound. It's an action-packed film that aligns well with the user's interests.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "actor": "Patrick Stewart",
+        "director": "Kathryn Bigelow",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "Point Break",
+        "The White Countess",
+        "The Patriot",
+        "Rockshow"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Ronny Yu? Hmm, I didn’t expect that vibe. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 50,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Ronny Yu",
+        "anchor_title": "Whispers",
+        "constraints": {
+          "genre": "prison",
+          "actor": "Patrick Stewart",
+          "director": "Ronny Yu",
+          "language": "English",
+          "writer": "David Nicholls",
+          "plot": "wild"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 50,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "wild",
+          "from_anchor": "Disaster Movie",
+          "to_anchor": "Whispers"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in war-themed movies, featuring Patrick Stewart as an actor. Recommendations include 'Battleship' (2012) with its alien bug plot and Patrick Stewart's presence, and 'Dances with Wolves' (1990), where the character of John Dunbar interacts with the Sioux tribe, though not featuring Patrick Stewart directly.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "X",
+        "actor": "Patrick Stewart",
+        "director": "Ronny Yu",
+        "writer": "Lynne Ramsay"
+      },
+      "rec_titles": [
+        "Battleship",
+        "Dances with Wolves",
+        "Starship Troopers",
+        "The Shadows"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "mine",
+      "from_anchor": "The Chocolate War",
+      "to_anchor": "Uglies"
+    },
+    {
+      "turn": 7,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Jeff Bridges",
+      "from_anchor": "Uglies",
+      "to_anchor": "The Partner"
+    },
+    {
+      "turn": 14,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Jack Palance",
+      "from_anchor": "The Partner",
+      "to_anchor": "The Nightingale"
+    },
+    {
+      "turn": 19,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "crazy",
+      "from_anchor": "The Nightingale",
+      "to_anchor": "Charlotte's Web"
+    },
+    {
+      "turn": 21,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Bradley Cooper",
+      "from_anchor": "Charlotte's Web",
+      "to_anchor": "The Nightingale"
+    },
+    {
+      "turn": 26,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "bennett",
+      "from_anchor": "The Nightingale",
+      "to_anchor": "Out of Sight"
+    },
+    {
+      "turn": 32,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Seth MacFarlane",
+      "from_anchor": "Out of Sight",
+      "to_anchor": "Ted"
+    },
+    {
+      "turn": 37,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Ted",
+      "to_anchor": "W."
+    },
+    {
+      "turn": 42,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "indian",
+      "from_anchor": "W.",
+      "to_anchor": "Wolves"
+    },
+    {
+      "turn": 45,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "reunite",
+      "from_anchor": "Wolves",
+      "to_anchor": "Next Day Air"
+    },
+    {
+      "turn": 47,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "writer",
+      "bridge_value": "David Nicholls",
+      "from_anchor": "Next Day Air",
+      "to_anchor": "Disaster Movie"
+    },
+    {
+      "turn": 50,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "wild",
+      "from_anchor": "Disaster Movie",
+      "to_anchor": "Whispers"
+    }
+  ]
+}

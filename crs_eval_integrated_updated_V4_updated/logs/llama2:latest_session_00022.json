@@ -1,0 +1,2159 @@
+{
+  "session_id": "00022",
+  "model_name": "llama2:latest",
+  "true_genre": "massachusetts",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a biographical movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "biographical",
+        "anchor_title": "Into the Wild",
+        "constraints": {
+          "genre": "biographical"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're in the mood for a biographical movie, and I have some great recommendations for you! Based on your preference for a biographical film, I suggest checking out \"Rob Roy\" (1995) or \"American Gangster\" (2007). Both of these movies are based on real-life stories and feature strong performances from talented actors. In \"Rob Roy,\" Andrew Keir and Liam Neeson deliver powerful performances as a Scottish outlaw and his nemesis, while in \"American Gangster,\" Denzel Washington shines as a drug lord whose true story inspired the film.",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "biographical",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "Rob Roy",
+        "The Seduction of Joe Tynan",
+        "True Blood",
+        "American Gangster"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Tron. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "biographical",
+        "anchor_title": "Into the Wild",
+        "constraints": {
+          "genre": "biographical"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user likes the sound of Tron and is interested in biographical movies with a focus on the storyline and acting performance.\nRecommendation: Based on the user's preferences, I would recommend \"Born on the Fourth of July\" starring Tom Berenger as it tells the biography of a Vietnam War veteran who becomes an anti-war activist after feeling betrayed by the country. The movie features powerful acting performances and a gripping storyline that explores themes of patriotism, trauma, and social justice. Alternatively, \"Freeheld\" (2015) starring Steve Carell and Luke Grimes is another great choice as it tells the true story of a New Jersey police lieutenant and her registered domestic partner who fight to secure her pension benefits when she is diagnosed with terminal cancer. Both movies offer thought-provoking stories and strong performances that are sure to captivate the viewer.",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Tron"
+      },
+      "rec_titles": [
+        "The Baader Meinhof Complex",
+        "Smokin' Aces",
+        "Born on the Fourth of July",
+        "Freeheld"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "biographical",
+        "anchor_title": "Into the Wild",
+        "constraints": {
+          "genre": "biographical"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: The user has specified that they want a movie recommendation that is biographical and has the keyword \"what said\". Based on this information, I recommend \"Born on the Fourth of July\" starring Tom Berenger as Ron Kovic, a paralyzed Vietnam war veteran who becomes an anti-war activist after feeling betrayed by his country. The film is a powerful biography that explores the themes of patriotism, disillusionment, and the impact of political actions on individual lives.",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "Tron"
+      },
+      "rec_titles": [
+        "Born on the Fourth of July",
+        "Monsters, Inc.",
+        "Patton",
+        "The Andromeda Strain"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of War? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "biographical",
+        "anchor_title": "Into the Wild",
+        "constraints": {
+          "genre": "biographical"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user is looking for a movie that has a deeper meaning than they initially thought, and they are interested in movies with a war theme.\n\nBased on the user's preferences, I recommend \"The Good German\" and \"Red Cliff.\" Both of these movies have complex plots that explore themes of war, politics, and personal relationships. \"The Good German\" stars George Clooney and Tobey Maguire in a murder mystery set in post-war Berlin, while \"Red Cliff\" is a historical epic about a battle fought in China's Three Kingdoms period. Both movies are thought-provoking and engaging, and I think the user will find them satisfying.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "War"
+      },
+      "rec_titles": [
+        "The Good German",
+        "Red Cliff",
+        "Anyone But You",
+        "The Siege"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Don Stark. That feels deeper than I thought. (I’m thinking of They.)",
+      "user_meta": {
+        "turn": 5,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Don Stark",
+        "anchor_title": "Stuck on You",
+        "constraints": {
+          "genre": "biographical",
+          "actor": "Don Stark",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 5,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Into the Wild",
+          "to_anchor": "Stuck on You"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Don Stark, war genre, and plot keywords \"could find\".\nBased on these constraints, I recommend \"Ariel\" (1965) and \"The Hateful Eight\" (2015). Both films feature Don Stark in significant roles, and they touch on themes of struggle and survival that the user may find interesting. In \"Ariel\", a Finnish man faces difficult circumstances after his mine is closed and his father commits suicide, while in \"The Hateful Eight\", a bounty hunter and his prisoner find shelter in a dangerous cabin inhabited by nefarious characters during a Wyoming winter.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "They",
+        "actor": "Don Stark"
+      },
+      "rec_titles": [
+        "Ariel",
+        "Sleepless in Seattle",
+        "The Ice Storm",
+        "The Hateful Eight"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Don Stark",
+        "anchor_title": "Stuck on You",
+        "constraints": {
+          "genre": "biographical",
+          "actor": "Don Stark",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, here are two movie recommendations that might interest them:\n\n* \"The Deep End of the Ocean\" (1996) stars Brenda Strong, John Kapelos, Alexa PenaVega, and Treat Williams in a powerful drama about a family's emotional journey when their youngest son is kidnapped and found nine years later.\n* \"Date Night\" (2010) features an all-star cast, including Taraji P. Henson, Jon Bernthal, Ray Liotta, Kristen Wiig, Mark Ruffalo, James Franco, Mila Kunis, and Mark Wahlberg, in a hilarious and thrilling tale of mistaken identity that turns a couple's romantic evening into a dangerous adventure.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Don Stark"
+      },
+      "rec_titles": [
+        "The Deep End of the Ocean",
+        "Date Night",
+        "Shutter",
+        "Tarnation"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Don Stark",
+        "anchor_title": "Stuck on You",
+        "constraints": {
+          "genre": "biographical",
+          "actor": "Don Stark",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: The user is looking for a movie with a war theme, starring Don Stark, and with keywords \"what\" and \"don't\".\n\nBased on these constraints, I recommend \"Hotel Rwanda\" (2004) starring Don Cheadle and Sophie Okonedo. The movie is based on a true story and depicts the struggles of Rwandan refugees during the genocide in 1994. It's a powerful and thought-provoking film that explores themes of survival, humanity, and the importance of standing up against injustice.\n\nAlternatively, I suggest \"Proof of Life\" (2000) starring Russell Crowe and Pamela Reed. The movie is about a woman who hires a professional negotiator to obtain the release of her engineer husband, who has been kidnapped by anti-government guerrillas in South America. It's a tense and thrilling film that explores themes of survival, hope, and the lengths people will go to save their loved ones.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "X",
+        "actor": "Don Stark"
+      },
+      "rec_titles": [
+        "American Dreamz",
+        "Bloody Sunday",
+        "Proof of Life",
+        "Hotel Rwanda"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Hotel Rwanda tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Don Stark",
+        "anchor_title": "Stuck on You",
+        "constraints": {
+          "genre": "biographical",
+          "actor": "Don Stark",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - war, actor - Don Stark, plot keywords - what, kind.\nBased on the user's preferences, I recommend \"The Blood of My Brother\" and \"Wolfhound.\" Both of these movies offer a gripping and intense storyline that explores themes of revenge, survival, and tribal conflicts. \"The Blood of My Brother\" follows the story of a man who seeks revenge after his brother is killed by an American patrol, while \"Wolfhound\" tells the tale of a warrior who is determined to avenge the annihilation of his tribe. Both movies feature strong performances from their actors and offer a thought-provoking viewing experience.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Hotel Rwanda",
+        "actor": "Don Stark"
+      },
+      "rec_titles": [
+        "The Blood of My Brother",
+        "Louie",
+        "Wolfhound",
+        "Chain Reaction"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Wolf. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Don Stark",
+        "anchor_title": "Stuck on You",
+        "constraints": {
+          "genre": "biographical",
+          "actor": "Don Stark",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure! The user expressed interest in movies with a war theme, starring Don Stark, and featuring a soundtrack that resonates with them. Based on these preferences, I recommend \"Born on the Fourth of July\" and \"Hotel Rwanda.\" Both films are powerful dramas that explore the impact of war on individuals and society, with strong performances from the casts and memorable soundtracks.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Wolf",
+        "actor": "Don Stark"
+      },
+      "rec_titles": [
+        "Born on the Fourth of July",
+        "Hotel Rwanda",
+        "Paycheck",
+        "It's a Wonderful Life"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Kathryn Bigelow? That sounds intriguing. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 10,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Kathryn Bigelow",
+        "anchor_title": "The Passage",
+        "constraints": {
+          "genre": "biographical",
+          "actor": "Don Stark",
+          "language": "English",
+          "director": "Kathryn Bigelow"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 10,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Stuck on You",
+          "to_anchor": "The Passage"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - war, actor - Don Stark, director - Kathryn Bigelow, plot keywords - could, switch. Based on these cues, I recommend \"Born on the Fourth of July\" and \"The Pianist\". Both movies are powerful and thought-provoking, with engaging plots and strong performances from the actors involved.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Us",
+        "actor": "Don Stark",
+        "director": "Kathryn Bigelow"
+      },
+      "rec_titles": [
+        "Born on the Fourth of July",
+        "The Best Years of Our Lives",
+        "The Pianist",
+        "Patriot Games"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Kathryn Bigelow",
+        "anchor_title": "The Passage",
+        "constraints": {
+          "genre": "biographical",
+          "actor": "Don Stark",
+          "language": "English",
+          "director": "Kathryn Bigelow"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to recommend some movies based on your user's preferences! Based on their interest in war and actor Don Stark, I would recommend \"War Horse\" (1982) and \"Black Hawk Down\" (2001). Both of these films are intense and powerful dramas that explore the horrors of war through compelling storytelling and strong performances.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Don Stark",
+        "director": "Kathryn Bigelow"
+      },
+      "rec_titles": [
+        "War Horse",
+        "Black Hawk Down",
+        "Uncommon Valor",
+        "Neighbors 2: Sorority Rising"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Black Hawk Down? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Kathryn Bigelow",
+        "anchor_title": "The Passage",
+        "constraints": {
+          "genre": "biographical",
+          "actor": "Don Stark",
+          "language": "English",
+          "director": "Kathryn Bigelow"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - war, actor - Don Stark, director - Kathryn Bigelow, plot keywords - what, black.\nBased on these constraints, I recommend \"Lord of War\" and \"The Wraith.\" Both movies deal with themes of power, morality, and the consequences of one's actions, which seem to align with the user's interests. \"Lord of War\" is a thought-provoking drama that explores the arms trade industry through the eyes of an arms dealer, while \"The Wraith\" is a cult classic that features a mysterious figure targeting a violent road-racing gang in a small town. Both movies have great acting performances and are sure to keep you engaged.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "black"
+        ],
+        "name": "Black Hawk Down",
+        "actor": "Don Stark",
+        "director": "Kathryn Bigelow"
+      },
+      "rec_titles": [
+        "Lord of War",
+        "I Heart Huckabees",
+        "Patton",
+        "The Wraith"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does War tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Kathryn Bigelow",
+        "anchor_title": "The Passage",
+        "constraints": {
+          "genre": "biographical",
+          "actor": "Don Stark",
+          "language": "English",
+          "director": "Kathryn Bigelow"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: War movie, actor Don Stark, director Kathryn Bigelow, and plot keywords \"what\" and \"kind\".\nBased on these constraints, I recommend \"We Were Soldiers\" (2002) starring Mel Gibson and Jon Hamm. The film is a powerful and moving account of the Battle of Hamburger Hill during the Vietnam War, and its exploration of the human cost of war will resonate with you. Alternatively, you may enjoy \"Find Me Guilty\" (2006), which tells the true story of Jackie DiNorscio's trial in the late 1980s and features a talented cast including Vin Diesel and Peter Dinklage. Both films offer thought-provoking and emotionally impactful stories that I believe you will enjoy.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "War",
+        "actor": "Don Stark",
+        "director": "Kathryn Bigelow"
+      },
+      "rec_titles": [
+        "Proof of Life",
+        "The Monuments Men",
+        "We Were Soldiers",
+        "Find Me Guilty"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Suzie Plakson. That sounds intriguing. (I’m thinking of Soldier.)",
+      "user_meta": {
+        "turn": 14,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Suzie Plakson",
+        "anchor_title": "The Rock",
+        "constraints": {
+          "genre": "biographical",
+          "actor": "Suzie Plakson",
+          "language": "English",
+          "plot": "demons"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 14,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "demons",
+          "from_anchor": "The Passage",
+          "to_anchor": "The Rock"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre (war), actor (Suzie Plakson), director (Kathryn Bigelow), and plot keywords (\"could\", \"find\").\nBased on these constraints, I recommend the movie \"Princess Mononoke\" starring Claire Danes and Jada Pinkett Smith. This film is a epic fantasy adventure that explores themes of environmentalism and war, while featuring Suzie Plakson in a supporting role. Additionally, it was directed by Kathryn Bigelow, who is known for her visceral and intense filmmaking style.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Soldier",
+        "actor": "Suzie Plakson",
+        "director": "Kathryn Bigelow"
+      },
+      "rec_titles": [
+        "Princess Mononoke",
+        "The Ice Storm",
+        "Red Dawn",
+        "Star Wars: Episode I - The Phantom Menace"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Suzie Plakson",
+        "anchor_title": "The Rock",
+        "constraints": {
+          "genre": "biographical",
+          "actor": "Suzie Plakson",
+          "language": "English",
+          "plot": "demons"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I would recommend \"Redacted\" and \"Disclosure.\" Both movies deal with themes of conflict and injustice, and they feature strong performances from the actors mentioned. \"Redacted\" is a powerful drama that explores the rape and murder of an Iraqi girl by American soldiers during the Iraq War, while \"Disclosure\" is a thought-provoking thriller about a man who is sued for sexual harassment by his former lover turned boss.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Suzie Plakson",
+        "director": "Kathryn Bigelow"
+      },
+      "rec_titles": [
+        "Redacted",
+        "Wolf Girl",
+        "Disclosure",
+        "12 Angry Men"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Ted. I want to try something more autobiography—still with English if possible. Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "autobiography",
+        "anchor_title": "Sherlock Holmes: A Game of Shadows",
+        "constraints": {
+          "genre": "autobiography",
+          "language": "English",
+          "plot": "demons"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 16,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "The Rock",
+          "to_anchor": "Sherlock Holmes: A Game of Shadows"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: autobiography; actor: Suzie Plakson; director: Kathryn Bigelow; language: English; plot keywords: thanks, detail. Based on these cues, I recommend the movie \"Outlander\" (1991) starring Sophia Myles and Tobias Menzies. The movie is a historical drama that follows a British nurse who travels back in time to Scotland in 1945 and finds herself in the 18th Century, which sounds fascinating and detail-oriented. Alternatively, \"There Be Dragons\" (2011) starring Charlie Cox and Dougray Scott is another great choice as it explores a dark and devastating connection to a saint's life during the Spanish Civil War.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Ted",
+        "actor": "Suzie Plakson",
+        "director": "Kathryn Bigelow",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Outlander",
+        "The Bourne Legacy",
+        "Toy Story 2",
+        "There Be Dragons"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "autobiography",
+        "anchor_title": "Sherlock Holmes: A Game of Shadows",
+        "constraints": {
+          "genre": "autobiography",
+          "language": "English",
+          "plot": "demons"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, here are two movie recommendations that fit their criteria:\n\nYou mentioned you're interested in autobiographical movies, and \"Pirates of the Caribbean: At World's End\" features an exciting plot with plenty of action and adventure. Starring Johnny Depp as Captain Jack Sparrow, this movie is sure to provide an entertaining experience.\n\nAlternatively, if you're interested in movies starring Suzie Plakson, \"Two Can Play That Game\" is a great choice. This romantic comedy follows the complicated relationship between two co-workers who engage in a series of mind games with each other. With a talented cast including Tamala Jones and Vivica A. Fox, this movie is sure to provide some laughs.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Suzie Plakson",
+        "director": "Kathryn Bigelow",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Pirates of the Caribbean: At World's End",
+        "Two Can Play That Game",
+        "Iron Man",
+        "Casino Royale"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "autobiography",
+        "anchor_title": "Sherlock Holmes: A Game of Shadows",
+        "constraints": {
+          "genre": "autobiography",
+          "language": "English",
+          "plot": "demons"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - autobiography, Actor - Suzie Plakson, Language - English, Plot keywords - like, sound.\n\nBased on these constraints, I recommend \"Young Adult\" and \"Mean Streets\". Both movies have a strong focus on character development and dialogue, which aligns with the user's preference for autobiographical films. \"Young Adult\" features a powerful performance by Charlize Theron as a self-destructive writer trying to reconnect with her ex-boyfriend, while \"Mean Streets\" is a gritty and intense drama about a mobster struggling with his own demons. Both movies have a distinct sound and feel that I think the user will enjoy.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "actor": "Suzie Plakson",
+        "director": "Kathryn Bigelow",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Young Adult",
+        "The Wizard of Oz",
+        "Mean Streets",
+        "The Woodlanders"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Her? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "autobiography",
+        "anchor_title": "Sherlock Holmes: A Game of Shadows",
+        "constraints": {
+          "genre": "autobiography",
+          "language": "English",
+          "plot": "demons"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: The user wants a movie with a similar mood to Her, but with different genres, actors, and directors. They are interested in autobiographical stories, and the movies should be in English with prominent actors.\n\nBased on the provided list, I would recommend \"Fury\" (2014) and \"Amadeus\" (1979). Both of these movies offer a gripping and intense atmosphere similar to Her, while providing different genres and storylines. \"Fury\" is a war drama that follows a tank crew in the final months of World War II, while \"Amadeus\" is a historical drama that tells the life story of Wolfgang Amadeus Mozart through the perspective of his contemporaneous composer Antonio Salieri. Both movies feature prominent actors and are directed by acclaimed filmmakers, Kathryn Bigelow and Miloš Forman, respectively.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "Her",
+        "actor": "Suzie Plakson",
+        "director": "Kathryn Bigelow",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Fury",
+        "Hook",
+        "Minority Report",
+        "Amadeus"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Tony Danza. Hmm, I didn’t expect that vibe. (I’m thinking of Wolf.)",
+      "user_meta": {
+        "turn": 20,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Tony Danza",
+        "anchor_title": "The Bell Jar",
+        "constraints": {
+          "genre": "autobiography",
+          "plot": "demon",
+          "actor": "Tony Danza"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 20,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "demon",
+          "from_anchor": "Sherlock Holmes: A Game of Shadows",
+          "to_anchor": "The Bell Jar"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - autobiography, actor - Tony Danza, director - Kathryn Bigelow, language - English, plot keywords - could, find.\nBased on these constraints, I recommend \"The Mechanic\" and \"Constantine.\" Both of these movies feature Tony Danza in a leading role, and they have a similar tone and style to \"Wolf.\" \"The Mechanic\" is an action-packed thriller about an aging hitman befriending a young apprentice, while \"Constantine\" is a supernatural drama with a dark and gritty atmosphere. Both movies also feature strong performances from the cast, including Danza.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Wolf",
+        "actor": "Tony Danza",
+        "director": "Kathryn Bigelow",
+        "language": "English"
+      },
+      "rec_titles": [
+        "The Mechanic",
+        "Sex Tape",
+        "Austin Powers in Goldmember",
+        "Constantine"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 21,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tony Danza",
+        "anchor_title": "The Bell Jar",
+        "constraints": {
+          "genre": "autobiography",
+          "plot": "demon",
+          "actor": "Tony Danza"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! The user has expressed interest in movies with a specific genre, actor, director, and language. Based on their preferences, I would recommend \"Black Knight\" (2001) and \"Triple 9\" (2016). Both films offer an exciting plot and talented actors, including Martin Lawrence and Kate Winslet in the former, and Norman Reedus and Clifton Collins Jr. in the latter.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Tony Danza",
+        "director": "Kathryn Bigelow",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Black Knight",
+        "Bel Canto",
+        "The Imaginarium of Doctor Parnassus",
+        "Triple 9"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Triple 9. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tony Danza",
+        "anchor_title": "The Bell Jar",
+        "constraints": {
+          "genre": "autobiography",
+          "plot": "demon",
+          "actor": "Tony Danza"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure! Based on the user's preferences, I recommend the movie \"The BFG\" (1982) starring Tony Danza. This film is an autobiographical tale that follows a young orphan girl named Sophie as she gets taken away to a faraway land populated by Giants and Dreams. The movie is directed by Kathryn Bigelow, and it's spoken in English. Another recommendation would be \"Graceling\" (2008) starring Ruth Negga, Dominic Cooper, and Callum Rennie. This film is about a smart, beautiful young woman living in a world where select people born with an extreme skill -- called a Grace -- are feared and exploited. Both of these movies have a deep plot that aligns with the user's preferences.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Triple 9",
+        "actor": "Tony Danza",
+        "director": "Kathryn Bigelow",
+        "language": "English"
+      },
+      "rec_titles": [
+        "The BFG",
+        "Graceling",
+        "Warcraft",
+        "Star Wars: Episode III - Revenge of the Sith"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tony Danza",
+        "anchor_title": "The Bell Jar",
+        "constraints": {
+          "genre": "autobiography",
+          "plot": "demon",
+          "actor": "Tony Danza"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I would recommend \"22 Jump Street\" and \"Where the Wild Things Are.\" Both of these movies offer a mix of comedy and adventure, which aligns with the user's interest in a deep and meaningful movie. In \"22 Jump Street,\" Channing Tatum and Jonah Hill reprise their roles as bumbling undercover officers, while \"Where the Wild Things Are\" features a young boy's fantastical journey to a far-off land inhabited by lovable monsters.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Ted",
+        "actor": "Tony Danza",
+        "director": "Kathryn Bigelow",
+        "language": "English"
+      },
+      "rec_titles": [
+        "22 Jump Street",
+        "Where the Wild Things Are",
+        "A Time to Kill",
+        "Black November"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does 22 Jump Street tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tony Danza",
+        "anchor_title": "The Bell Jar",
+        "constraints": {
+          "genre": "autobiography",
+          "plot": "demon",
+          "actor": "Tony Danza"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues:\nGenre: Autobiography\nActor: Tony Danza\nDirector: Kathryn Bigelow\nLanguage: English\nPlot keywords: what, kind\n\nBased on the user's preferences, I recommend the psychological thriller \"Memento\" (2000) starring Jorja Fox and Guy Pearce. The film follows a man with short-term memory loss as he tries to track down his wife's murderer. The unique storytelling device of non-linear narrative adds an extra layer of intrigue to the plot.\n\nAlternatively, I suggest \"In Bruges\" (2008) directed by Martin McDonagh and starring Colin Farrell, Ralph Fiennes, and Jordan Prentice. This dark comedy follows two hitmen hiding out in the picturesque town of Bruges, Belgium, and explores themes of morality, redemption, and the consequences of violence.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "22 Jump Street",
+        "actor": "Tony Danza",
+        "director": "Kathryn Bigelow",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Memento",
+        "Wise Blood",
+        "Fifty Shades of Grey",
+        "In Bruges"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Barry Cook? Hmm, I didn’t expect that vibe. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 25,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Barry Cook",
+        "anchor_title": "You Will Meet a Tall Dark Stranger",
+        "constraints": {
+          "genre": "autobiography",
+          "plot": "prostitute",
+          "director": "Barry Cook"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 25,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "prostitute",
+          "from_anchor": "The Bell Jar",
+          "to_anchor": "You Will Meet a Tall Dark Stranger"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I recommend \"Soldier\" and \"Talladega Nights: The Ballad of Ricky Bobby.\" Both movies offer a unique blend of autobiographical elements, with \"Soldier\" exploring the struggles of a returning soldier and \"Talladega Nights\" delving into the world of NASCAR racing. The films also star talented actors, including Jason Scott Lee and Will Ferrell, respectively.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "X",
+        "actor": "Tony Danza",
+        "director": "Barry Cook",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Soldier",
+        "Wag the Dog",
+        "Talladega Nights: The Ballad of Ricky Bobby",
+        "China Dolls"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Barry Cook",
+        "anchor_title": "You Will Meet a Tall Dark Stranger",
+        "constraints": {
+          "genre": "autobiography",
+          "plot": "prostitute",
+          "director": "Barry Cook"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre, actor, director, language, and plot keywords. Based on these cues, I recommend \"The Rugrats Movie\" and \"The Italian Job\". \"The Rugrats Movie\" is an entertaining and heartwarming film about babies getting lost in the forest, starring Christine Cavanaugh, Cree Summer, and Elizabeth Daily. \"The Italian Job\" is a hilarious caper movie about a gold heist set in Turin, featuring an all-star cast including Mark Wahlberg, Donald Sutherland, and Charlize Theron.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Tony Danza",
+        "director": "Barry Cook",
+        "language": "English"
+      },
+      "rec_titles": [
+        "The Rugrats Movie",
+        "The Deep End of the Ocean",
+        "The Clan of the Cave Bear",
+        "The Italian Job"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does War tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Barry Cook",
+        "anchor_title": "You Will Meet a Tall Dark Stranger",
+        "constraints": {
+          "genre": "autobiography",
+          "plot": "prostitute",
+          "director": "Barry Cook"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: War, Tony Danza, English language, and plot keywords \"what\" and \"kind\".\nBased on these constraints, I recommend \"Find Me Guilty\" and \"The Lord of the Rings: The Fellowship of the Ring\". Both movies are action-packed and feature strong performances from their casts. \"Find Me Guilty\" is a gripping courtroom drama starring Ron Silver as a low-level gangster defending himself in a lengthy trial, while \"The Lord of the Rings\" is an epic fantasy adventure that follows a brave hobbit and his companions on a quest to destroy the powerful One Ring and save Middle-earth from darkness.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "War",
+        "actor": "Tony Danza",
+        "director": "Barry Cook",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Find Me Guilty",
+        "Click",
+        "What's the Worst That Could Happen?",
+        "The Lord of the Rings: The Fellowship of the Ring"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Gary Lewis. That sounds intriguing. (I’m thinking of Room.)",
+      "user_meta": {
+        "turn": 28,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Gary Lewis",
+        "anchor_title": "Gangs of New York",
+        "constraints": {
+          "genre": "autobiography",
+          "plot": "held",
+          "director": "Barry Cook",
+          "actor": "Gary Lewis"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 28,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "held",
+          "from_anchor": "You Will Meet a Tall Dark Stranger",
+          "to_anchor": "Gangs of New York"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, here are two movie recommendations that fit their constraints:\n\n* \"Vampire in Brooklyn\" (1995) is a unique blend of horror and comedy that features Joanna Cassidy as a Caribbean vampire who seduces a Brooklyn police officer played by Allen Payne. The movie has a great balance of humor and suspense, making it an enjoyable watch for fans of the genre.\n* \"Cloverfield\" (2008) is a thrilling monster movie that follows a group of friends as they navigate a rampaging creature attack in New York City. With a talented young cast and intense action sequences, this movie is sure to keep you on the edge of your seat.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Room",
+        "actor": "Gary Lewis",
+        "director": "Barry Cook",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Vampire in Brooklyn",
+        "Cloverfield",
+        "Buffy the Vampire Slayer",
+        "Stand by Me"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Gary Lewis",
+        "anchor_title": "Gangs of New York",
+        "constraints": {
+          "genre": "autobiography",
+          "plot": "held",
+          "director": "Barry Cook",
+          "actor": "Gary Lewis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! The user has expressed interest in movies with a specific genre, actor, director, and language. Based on their preferences, I would recommend \"John Carter\" and \"Pitch Perfect.\" Both of these movies offer exciting plots and talented actors, including Taylor Kitsch and Anna Kendrick.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Gary Lewis",
+        "director": "Barry Cook",
+        "language": "English"
+      },
+      "rec_titles": [
+        "John Carter",
+        "Sweet November",
+        "Pitch Perfect",
+        "Malibu's Most Wanted"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Pitch Perfect. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Gary Lewis",
+        "anchor_title": "Gangs of New York",
+        "constraints": {
+          "genre": "autobiography",
+          "plot": "held",
+          "director": "Barry Cook",
+          "actor": "Gary Lewis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, I recommend the movie \"Fantastic Mr. Fox\" and \"There's Something About Mary\". Both of these movies have a unique tone and style that align with the user's preference for something different and fascinating. \"Fantastic Mr. Fox\" is an animated adventure film directed by Wes Anderson, featuring a star-studded cast including George Clooney, Bill Murray, and Meryl Streep. On the other hand, \"There's Something About Mary\" is a quirky romantic comedy starring Cameron Diaz, Ben Stiller, and Lin Shaye in a series of hilarious misadventures.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Pitch Perfect",
+        "actor": "Gary Lewis",
+        "director": "Barry Cook",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Fantastic Mr. Fox",
+        "The Nanny Diaries",
+        "Traffic",
+        "There's Something About Mary"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Gary Lewis",
+        "anchor_title": "Gangs of New York",
+        "constraints": {
+          "genre": "autobiography",
+          "plot": "held",
+          "director": "Barry Cook",
+          "actor": "Gary Lewis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - war, Actor - Gary Lewis, Director - Barry Cook, Language - English, Plot keywords - what, kind.\nBased on these constraints, I recommend \"Dark Places\" and \"White Chicks.\" Both movies offer a unique and captivating storyline that aligns with the user's preferences. \"Dark Places\" is a crime drama that delves into the darker side of human nature, while \"White Chicks\" is an action-comedy that features two disgraced FBI agents going undercover to protect hotel heiresses from a kidnapping plot.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "actor": "Gary Lewis",
+        "director": "Barry Cook",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Dark Places",
+        "Where the Wild Things Are",
+        "Dogma",
+        "White Chicks"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of War? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Gary Lewis",
+        "anchor_title": "Gangs of New York",
+        "constraints": {
+          "genre": "autobiography",
+          "plot": "held",
+          "director": "Barry Cook",
+          "actor": "Gary Lewis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: The user wants to watch a movie that explores themes of war and has a deep emotional impact. They are interested in movies with a gripping plot and strong acting performances.\n\nBased on the user's preferences, I recommend \"Face/Off\" (1997) and \"Once Upon a Time in America\" (1984). Both of these movies deliver a powerful and thought-provoking experience, with engaging plots and outstanding acting performances. In \"Face/Off,\" Nicolas Cage and John Travolta deliver unforgettable performances as enemies who switch identities through facial transplant surgery, while in \"Once Upon a Time in America,\" Robert De Niro and James Russo shine as aging gangsters who must confront their past mistakes.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "War",
+        "actor": "Gary Lewis",
+        "director": "Barry Cook",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Face/Off",
+        "Max Payne",
+        "The Lovely Bones",
+        "Once Upon a Time in America"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Gary Lewis",
+        "anchor_title": "Gangs of New York",
+        "constraints": {
+          "genre": "autobiography",
+          "plot": "held",
+          "director": "Barry Cook",
+          "actor": "Gary Lewis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - war, actor - Gary Lewis, director - Barry Cook, language - English, and plot keywords - \"actually\" and \"think\". Based on these cues, I recommend the movie \"Redacted\" (2007) starring Ohad Knoller, Kel O'Neill, Mike Figueroa, Daniel Stewart Sherman, Don McKellar. The film is a powerful and thought-provoking drama that explores the devastating consequences of a real-life event, the rape and murder of an Iraqi girl by American soldiers in 2006. Alternatively, you might enjoy \"The Pledge\" (2001) starring Michael O'Keefe, Françoise Yip, Lois Smith, Tom Noonan, Nels Lennarson, Costas Mandylor, Adrien Dorval, Sam Shepard, Vanessa Redgrave, and Robin Wright. It's a gripping mystery that keeps you on the edge of your seat as a retiring police detective tries to solve the murder of a young child.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "War",
+        "actor": "Gary Lewis",
+        "director": "Barry Cook",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Redacted",
+        "The Pledge",
+        "The Crucible",
+        "Slither"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Jerry Zucker? Hmm, I didn’t expect that vibe. (I’m thinking of War.)",
+      "user_meta": {
+        "turn": 34,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Jerry Zucker",
+        "anchor_title": "Iron Man",
+        "constraints": {
+          "genre": "autobiography",
+          "plot": "held",
+          "director": "Jerry Zucker",
+          "actor": "Nadine Velazquez"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 34,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Nadine Velazquez",
+          "from_anchor": "Gangs of New York",
+          "to_anchor": "Iron Man"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I recommend \"The Lorax\" and \"Brokeback Mountain\". Both films are thought-provoking and emotionally charged, with talented actors and unique storylines that explore themes of identity, relationships, and social commentary.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "War",
+        "actor": "Jerry Zucker",
+        "director": "Jerry Zucker",
+        "language": "English",
+        "writer": "Jerry Zucker"
+      },
+      "rec_titles": [
+        "The Wonderful Wizard of Oz",
+        "The Lorax",
+        "Paycheck",
+        "Brokeback Mountain"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jerry Zucker",
+        "anchor_title": "Iron Man",
+        "constraints": {
+          "genre": "autobiography",
+          "plot": "held",
+          "director": "Jerry Zucker",
+          "actor": "Nadine Velazquez"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I would recommend \"Seveneves\" and \"Flash Gordon.\" Both of these movies have a sci-fi theme that aligns with their preference for war movies, and they also feature talented actors like Jimmi Simpson and Sam J. Jones. \"Seveneves\" is a thought-provoking and visually stunning film about a group of survivors trying to return to Earth after thousands of years in space, while \"Flash Gordon\" is a classic '80s sci-fi adventure with an epic scope and memorable characters.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Jerry Zucker",
+        "director": "Jerry Zucker",
+        "language": "English",
+        "writer": "Jerry Zucker"
+      },
+      "rec_titles": [
+        "Seveneves",
+        "The Cat in the Hat",
+        "Flash Gordon",
+        "Where the Heart Is"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does War tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jerry Zucker",
+        "anchor_title": "Iron Man",
+        "constraints": {
+          "genre": "autobiography",
+          "plot": "held",
+          "director": "Jerry Zucker",
+          "actor": "Nadine Velazquez"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, I recommend \"What's Eating Gilbert Grape\" and \"The King's Speech.\" Both of these movies are powerful dramas that explore themes of family, identity, and overcoming adversity. \"What's Eating Gilbert Grape\" features a standout performance by Johnny Depp as a young man caring for his mentally disabled brother, while \"The King's Speech\" tells the inspiring story of King George VI's journey to overcome his stammer and lead his country during a time of crisis.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "War",
+        "actor": "Jerry Zucker",
+        "director": "Jerry Zucker",
+        "language": "English",
+        "writer": "Jerry Zucker"
+      },
+      "rec_titles": [
+        "What's Eating Gilbert Grape",
+        "The King's Speech",
+        "Tortilla Flat",
+        "Outside Providence"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jerry Zucker",
+        "anchor_title": "Iron Man",
+        "constraints": {
+          "genre": "autobiography",
+          "plot": "held",
+          "director": "Jerry Zucker",
+          "actor": "Nadine Velazquez"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I would recommend \"Afterlife\" and \"Magic Mike.\" \"Afterlife\" is a unique and thought-provoking film that explores the relationship between a father and son, while \"Magic Mike\" is an entertaining and sexy movie with a talented cast. Both films offer something different from the user's preferred genres, but are still enjoyable and worth checking out!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "You",
+        "actor": "Jerry Zucker",
+        "director": "Jerry Zucker",
+        "language": "English",
+        "writer": "Jerry Zucker"
+      },
+      "rec_titles": [
+        "Afterlife",
+        "Spectre",
+        "The Rosie Project",
+        "Magic Mike"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Her? That sounds intriguing.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jerry Zucker",
+        "anchor_title": "Iron Man",
+        "constraints": {
+          "genre": "autobiography",
+          "plot": "held",
+          "director": "Jerry Zucker",
+          "actor": "Nadine Velazquez"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - war; actor - Jerry Zucker; director - Jerry Zucker; language - English; plot keywords - what, intriguing. Based on these constraints, I recommend \"The Tragedy of Macbeth\" (1606) and \"A Serious Man\" (2009). Both films feature complex plots that explore themes of ambition, power, and the search for meaning in life, which seem to align with your interest in intriguing stories.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Her",
+        "actor": "Jerry Zucker",
+        "director": "Jerry Zucker",
+        "language": "English",
+        "writer": "Jerry Zucker"
+      },
+      "rec_titles": [
+        "The Tragedy of Macbeth",
+        "Harry Potter and the Goblet of Fire",
+        "The Wendell Baker Story",
+        "A Serious Man"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Gregory Itzin. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 39,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Gregory Itzin",
+        "anchor_title": "Forgetting Sarah Marshall",
+        "constraints": {
+          "genre": "autobiography",
+          "plot": "held",
+          "director": "Jerry Zucker",
+          "actor": "Gregory Itzin",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 39,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Iron Man",
+          "to_anchor": "Forgetting Sarah Marshall"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - war, Actor - Gregory Itzin, Director - Jerry Zucker, Writer - Jerry Zucker, Language - English, Plot keywords - could, find.\nBased on the user's preferences, I recommend watching \"Tusk\" and \"The Piano Teacher\". Both movies have an interesting plot and great acting, especially from Gregory Itzin in \"The Piano Teacher\". In \"Tusk\", Michael Parks delivers a memorable performance as a peculiar recluse with a strange fondness for walruses.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "X",
+        "actor": "Gregory Itzin",
+        "director": "Jerry Zucker",
+        "language": "English",
+        "writer": "Jerry Zucker"
+      },
+      "rec_titles": [
+        "Tusk",
+        "Easy",
+        "Dance Flick",
+        "The Piano Teacher"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Gregory Itzin",
+        "anchor_title": "Forgetting Sarah Marshall",
+        "constraints": {
+          "genre": "autobiography",
+          "plot": "held",
+          "director": "Jerry Zucker",
+          "actor": "Gregory Itzin",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I recommend the classic Shakespearean play \"The Taming of the Shrew\" and the recent sci-fi movie \"The 5th Wave.\" Both offer a unique and engaging storyline that aligns with the user's interests. In \"The Taming of the Shrew,\" the audience can enjoy a timeless tale of courtship and marriage, while in \"The 5th Wave,\" they can experience an action-packed adventure through the eyes of a strong and determined protagonist.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Gregory Itzin",
+        "director": "Jerry Zucker",
+        "language": "English",
+        "writer": "Jerry Zucker"
+      },
+      "rec_titles": [
+        "The Taming of the Shrew",
+        "Spring Breakers",
+        "What's Your Number?",
+        "The 5th Wave"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Taming of the Shrew tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Gregory Itzin",
+        "anchor_title": "Forgetting Sarah Marshall",
+        "constraints": {
+          "genre": "autobiography",
+          "plot": "held",
+          "director": "Jerry Zucker",
+          "actor": "Gregory Itzin",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - war, Actor - Gregory Itzin, Director - Jerry Zucker, Language - English, Plot keywords - what, kind.\nBased on these constraints, I recommend checking out \"The Gathering\" and \"Gattaca\". Both movies offer unique storylines and talented actors, which align with the user's preferences. \"The Gathering\" is a documentary that showcases the graceful partnership of horses and their riders, while \"Gattaca\" is a thought-provoking sci-fi film that explores themes of identity and self-discovery.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The Taming of the Shrew",
+        "actor": "Gregory Itzin",
+        "director": "Jerry Zucker",
+        "language": "English",
+        "writer": "Jerry Zucker"
+      },
+      "rec_titles": [
+        "The Gathering",
+        "Gattaca",
+        "Alice's Adventures in Wonderland",
+        "Full Frontal"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Gregory Itzin",
+        "anchor_title": "Forgetting Sarah Marshall",
+        "constraints": {
+          "genre": "autobiography",
+          "plot": "held",
+          "director": "Jerry Zucker",
+          "actor": "Gregory Itzin",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to recommend some movies based on the user's preferences! The user has expressed interest in movies with a war theme, starring Gregory Itzin, and directed by Jerry Zucker. Based on these constraints, I would recommend \"Deconstructing Harry\" and \"The Hangover.\" Both of these movies have a unique blend of humor and drama that I think the user will enjoy!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "actor": "Gregory Itzin",
+        "director": "Jerry Zucker",
+        "language": "English",
+        "writer": "Jerry Zucker"
+      },
+      "rec_titles": [
+        "Deconstructing Harry",
+        "Johnson Family Vacation",
+        "White Oleander",
+        "The Hangover"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of War? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Gregory Itzin",
+        "anchor_title": "Forgetting Sarah Marshall",
+        "constraints": {
+          "genre": "autobiography",
+          "plot": "held",
+          "director": "Jerry Zucker",
+          "actor": "Gregory Itzin",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: The user is looking for a movie that they may enjoy or be scared by, based on their preference for war movies, Gregory Itzin, Jerry Zucker, and English language.\n\nRecommendation: Based on the user's preferences, I would recommend \"Mission: Impossible II\" (2000) starring Tom Cruise as IMF agent Ethan Hunt on a dangerous mission to find and destroy a genetically modified disease called \"Chimera\". The movie features high-stakes action and suspenseful plot twists that are sure to keep the user engaged. Alternatively, \"Man on Wire\" (2008) is a fascinating documentary that tells the story of Philippe Petit's daring high-wire routine between the Twin Towers of the World Trade Center in 1974, which some consider the \"artistic crime of the century\". Both movies offer a unique and thrilling experience for the user.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "War",
+        "actor": "Gregory Itzin",
+        "director": "Jerry Zucker",
+        "language": "English",
+        "writer": "Jerry Zucker"
+      },
+      "rec_titles": [
+        "Mission: Impossible II",
+        "A Million Little Pieces",
+        "A View to a Kill",
+        "Man on Wire"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Welsh Language? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Mission: Impossible II.)",
+      "user_meta": {
+        "turn": 44,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "Welsh Language",
+        "anchor_title": "Running with Scissors",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "John Woo",
+          "actor": "Gregory Itzin",
+          "language": "Welsh Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 44,
+          "from_focus": "actor",
+          "to_focus": "language",
+          "bridge_field": "director",
+          "bridge_value": "John Woo",
+          "from_anchor": "Forgetting Sarah Marshall",
+          "to_anchor": "Running with Scissors"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user wants a movie primarily in Welsh language, with actor Gregory Itzin, director Jerry Zucker, and writer Jerry Zucker.\n\nBased on the user's preferences, I would recommend \"Mansfield Park\" (1814) and \"Afterlife\" (2011). Both of these movies meet the user's criteria for language and actors, and offer a unique and intriguing plot. \"Mansfield Park\" is a classic period drama that explores themes of social class and identity, while \"Afterlife\" is a quirky and heartwarming film about a man who can see his deceased father's ghost and the unexpected bond they form.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "RED",
+        "actor": "Gregory Itzin",
+        "director": "Jerry Zucker",
+        "language": "Welsh Language",
+        "writer": "Jerry Zucker"
+      },
+      "rec_titles": [
+        "Mansfield Park",
+        "Afterlife",
+        "The Rite",
+        "A Tale of Two Cities"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Welsh Language",
+        "anchor_title": "Running with Scissors",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "John Woo",
+          "actor": "Gregory Itzin",
+          "language": "Welsh Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "No problem! Based on the user's preferences, I recommend \"The Way of the Gun\" and \"Donnie Brasco.\" Both movies feature strong performances from the cast, with complex plots that will keep viewers engaged. In \"The Way of the Gun,\" Nicky Katt and Kristin Lehman deliver standout performances as two criminals who find themselves in over their heads, while \"Donnie Brasco\" tells a gripping story of an FBI agent's undercover work in the mob, with great performances from Al Pacino, Johnny Depp, and Anne Heche.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Gregory Itzin",
+        "director": "Jerry Zucker",
+        "language": "Welsh Language",
+        "writer": "Jerry Zucker"
+      },
+      "rec_titles": [
+        "The Way of the Gun",
+        "The Princess Diaries",
+        "Madame Bovary",
+        "Donnie Brasco"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Tron. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Welsh Language",
+        "anchor_title": "Running with Scissors",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "John Woo",
+          "actor": "Gregory Itzin",
+          "language": "Welsh Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has expressed a preference for movies with Welsh language, and has also mentioned the sound of Tron as a reference point. Based on these cues, I recommend the movie \"Uptown Girls\" starring Marley Shelton and Donald Faison, which features a unique blend of humor and heartwarming moments. Alternatively, \"Maid in Manhattan\" with Natasha Richardson, Chris Eigeman, and Vincent De Paul offers a witty and engaging story of love, family, and social class dynamics.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Tron",
+        "actor": "Gregory Itzin",
+        "director": "Jerry Zucker",
+        "language": "Welsh Language",
+        "writer": "Jerry Zucker"
+      },
+      "rec_titles": [
+        "Uptown Girls",
+        "Original Sin",
+        "The Bad Seed",
+        "Maid in Manhattan"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does War tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Welsh Language",
+        "anchor_title": "Running with Scissors",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "John Woo",
+          "actor": "Gregory Itzin",
+          "language": "Welsh Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, here are two movie recommendations that may interest them:\n\nThe Wind That Shakes the Barley (2006) is a powerful and emotional film set against the backdrop of the Irish War of Independence. The movie follows two brothers who engage in a guerrilla war against British forces, highlighting the brutal realities of conflict and the impact it has on individuals and communities. With a talented cast and poignant storytelling, this film is sure to leave a lasting impression.\n\nAlternatively, What Women Want (2000) offers a humorous and insightful look into the inner workings of the female mind. When a chauvinistic advertising executive magically gains the ability to hear women's thoughts, he must navigate a complex web of emotions and perspectives to find true understanding and empathy. With a talented cast and clever writing, this movie is both entertaining and thought-provoking.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "War",
+        "actor": "Gregory Itzin",
+        "director": "Jerry Zucker",
+        "language": "Welsh Language",
+        "writer": "Jerry Zucker"
+      },
+      "rec_titles": [
+        "The Wind That Shakes the Barley",
+        "What Women Want",
+        "The Best Years of Our Lives",
+        "In the Land of Blood and Honey"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Women? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Welsh Language",
+        "anchor_title": "Running with Scissors",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "John Woo",
+          "actor": "Gregory Itzin",
+          "language": "Welsh Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: The user wants a movie that will either entertain them or scare them, but they are unsure which one to choose. They prefer movies with war-related content, starring Gregory Itzin, and featuring the Welsh language.\n\nRecommendation 1: \"I think you might enjoy 'What Women Want'! This movie has a fun and lighthearted plot, while also touching on some deeper themes about gender dynamics. With a talented cast including Helen Hunt and Mel Gibson, it's sure to be an entertaining watch.\"\n\nRecommendation 2: \"If you're looking for something a bit more intense, I would recommend 'Children of Men'! This movie explores a dystopian world where women have become infertile, and the desperation and fear that comes with it. With an all-star cast including Julianne Moore and Michael Caine, it's sure to be a thought-provoking and suspenseful watch.\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "women"
+        ],
+        "name": "RED",
+        "actor": "Gregory Itzin",
+        "director": "Jerry Zucker",
+        "language": "Welsh Language",
+        "writer": "Jerry Zucker"
+      },
+      "rec_titles": [
+        "What Women Want",
+        "The Violent Kind",
+        "Thelma & Louise",
+        "Children of Men"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Her. I want to try something more cold war—I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 49,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "cold war",
+        "anchor_title": "Windtalkers",
+        "constraints": {
+          "genre": "cold war",
+          "director": "John Woo",
+          "language": "Welsh Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 49,
+          "from_focus": "language",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "online",
+          "from_anchor": "Running with Scissors",
+          "to_anchor": "Windtalkers"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Cold War, actor Gregory Itzin, director Jerry Zucker, language Welsh.\nBased on these constraints, I recommend \"Tinker Tailor Soldier Spy\" and \"Wanderlust\". Both of these movies offer a unique blend of cold war intrigue and personal spiritual quests that may resonate with the user's preferences. \"Tinker Tailor Soldier Spy\" is a gripping espionage thriller set in the bleak days of the Cold War, while \"Wanderlust\" is an adventure-comedy that follows a man's journey to rediscover his childhood dreams and connect with nature.",
+      "constraints": {
+        "genre": "cold war",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "War",
+        "actor": "Gregory Itzin",
+        "director": "Jerry Zucker",
+        "language": "Welsh Language",
+        "writer": "Jerry Zucker"
+      },
+      "rec_titles": [
+        "Tinker Tailor Soldier Spy",
+        "Wanderlust",
+        "Red Dawn",
+        "Can You Keep a Secret?"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 50,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "cold war",
+        "anchor_title": "Windtalkers",
+        "constraints": {
+          "genre": "cold war",
+          "director": "John Woo",
+          "language": "Welsh Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, I see that you're interested in movies with a Cold War theme, featuring actor Gregory Itzin, directed by Jerry Zucker, and written by Jerry Zucker. Based on your preferences, I recommend \"Red Dawn\" (1984) and \"Fight Club\" (1996). Both films offer a gripping and thought-provoking experience with strong performances from the cast. In \"Red Dawn,\" you'll witness a claustrophobic experience as a Mexican middle-class family faces atrocities committed by heartless army forces, while in \"Fight Club,\" you'll follow an insomniac office worker and a devil-may-care soap maker as their underground fight club evolves into something much more unexpected.",
+      "constraints": {
+        "genre": "cold war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Gregory Itzin",
+        "director": "Jerry Zucker",
+        "language": "Welsh Language",
+        "writer": "Jerry Zucker"
+      },
+      "rec_titles": [
+        "Red Dawn",
+        "Tusk",
+        "The Taming of the Shrew",
+        "Fight Club"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 5,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Into the Wild",
+      "to_anchor": "Stuck on You"
+    },
+    {
+      "turn": 10,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Stuck on You",
+      "to_anchor": "The Passage"
+    },
+    {
+      "turn": 14,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "demons",
+      "from_anchor": "The Passage",
+      "to_anchor": "The Rock"
+    },
+    {
+      "turn": 16,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "The Rock",
+      "to_anchor": "Sherlock Holmes: A Game of Shadows"
+    },
+    {
+      "turn": 20,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "demon",
+      "from_anchor": "Sherlock Holmes: A Game of Shadows",
+      "to_anchor": "The Bell Jar"
+    },
+    {
+      "turn": 25,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "prostitute",
+      "from_anchor": "The Bell Jar",
+      "to_anchor": "You Will Meet a Tall Dark Stranger"
+    },
+    {
+      "turn": 28,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "held",
+      "from_anchor": "You Will Meet a Tall Dark Stranger",
+      "to_anchor": "Gangs of New York"
+    },
+    {
+      "turn": 34,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Nadine Velazquez",
+      "from_anchor": "Gangs of New York",
+      "to_anchor": "Iron Man"
+    },
+    {
+      "turn": 39,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Iron Man",
+      "to_anchor": "Forgetting Sarah Marshall"
+    },
+    {
+      "turn": 44,
+      "from_focus": "actor",
+      "to_focus": "language",
+      "bridge_field": "director",
+      "bridge_value": "John Woo",
+      "from_anchor": "Forgetting Sarah Marshall",
+      "to_anchor": "Running with Scissors"
+    },
+    {
+      "turn": 49,
+      "from_focus": "language",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "online",
+      "from_anchor": "Running with Scissors",
+      "to_anchor": "Windtalkers"
+    }
+  ]
+}

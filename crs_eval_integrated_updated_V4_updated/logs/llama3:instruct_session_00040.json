@@ -1,0 +1,2230 @@
+{
+  "session_id": "00040",
+  "model_name": "llama3:instruct",
+  "true_genre": "teen",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a teen movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "teen",
+        "anchor_title": "Fast Times at Ridgemont High",
+        "constraints": {
+          "genre": "teen"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're in the mood for a teen movie! Specifically, you're looking for something that features teens as main characters, possibly with some drama and coming-of-age themes. Based on your preferences, I think you might enjoy \"Unaccompanied Minors\" (2006), a fun and lighthearted film about a group of teenagers who find camaraderie while stuck at an airport during the holiday season. The talented young cast, including Tyler James Williams and Gia Mantegna, bring energy and humor to their roles.",
+      "constraints": {
+        "genre": "teen",
+        "plot": [
+          "teen",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "The Queen",
+        "Downfall",
+        "Unaccompanied Minors",
+        "Graduation Day"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Bob Barker. Hmm, I didn’t expect that vibe. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Bob Barker",
+        "anchor_title": "Step Up",
+        "constraints": {
+          "genre": "teen",
+          "actor": "Bob Barker",
+          "plot": "bullets"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "bullets",
+          "from_anchor": "Fast Times at Ridgemont High",
+          "to_anchor": "Step Up"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for movies featuring Bob Barker, but since he's not in these films, let me suggest some that fit your teen genre and \"find\" plot keyword. Here are two recommendations: \"Black Knight\" starring Martin Lawrence is a medieval adventure with a fish-out-of-water storyline where the protagonist must find his way back to his own time. Another option is \"The Dark Crystal\", a fantasy classic by Jim Henson, where a Gelfling embarks on a quest to find a magical crystal to save his world.",
+      "constraints": {
+        "genre": "teen",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "X",
+        "actor": "Bob Barker"
+      },
+      "rec_titles": [
+        "The Good, the Bad and the Ugly",
+        "Hell's Angels",
+        "The Dark Crystal",
+        "Black Knight"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bob Barker",
+        "anchor_title": "Step Up",
+        "constraints": {
+          "genre": "teen",
+          "actor": "Bob Barker",
+          "plot": "bullets"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for recommendations that fit a teen genre, feature Bob Barker (not actually starring in these movies, but I'll assume you meant another famous actor!), and have \"just\" and \"more\" as plot keywords. In that case, I'd recommend \"The Secret Life of Walter Mitty\", which is a heartwarming adventure about a man who embarks on an extraordinary journey to save his job - it's a beautiful film with stunning visuals!",
+      "constraints": {
+        "genre": "teen",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Bob Barker"
+      },
+      "rec_titles": [
+        "The Secret Life of Walter Mitty",
+        "Dinner for Schmucks",
+        "RED",
+        "Green Card"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? That sounds intriguing.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bob Barker",
+        "anchor_title": "Step Up",
+        "constraints": {
+          "genre": "teen",
+          "actor": "Bob Barker",
+          "plot": "bullets"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie with an intriguing tone, and you mentioned Us sounds like something that caught your attention! I've got two recommendations that fit your genre preference of teen movies, with one of them starring none other than Bob Barker (yes, the Price is Right host!).\n\nI'd recommend either \"The History Boys\" or \"I Heart Huckabees\". The former is a witty and heartwarming comedy about teenagers navigating their way through school and relationships. Meanwhile, \"I Heart Huckabees\" is a quirky and thought-provoking exploration of existential crises, with a fascinating husband-and-wife detective duo at its center.",
+      "constraints": {
+        "genre": "teen",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Us",
+        "actor": "Bob Barker"
+      },
+      "rec_titles": [
+        "Her",
+        "Dear John",
+        "The History Boys",
+        "I Heart Huckabees"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bob Barker",
+        "anchor_title": "Step Up",
+        "constraints": {
+          "genre": "teen",
+          "actor": "Bob Barker",
+          "plot": "bullets"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you like the sound of \"You\" and are unsure if you'll enjoy or be scared by it! Based on that, I think you might appreciate \"When a Stranger Calls\" (2006), which features a similar tone of psychological suspense and unease as \"You\". The film follows a high school student who's harassed by a threatening prank caller while babysitting, and the tense atmosphere and eerie vibes might resonate with your preferences.",
+      "constraints": {
+        "genre": "teen",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "actor": "Bob Barker"
+      },
+      "rec_titles": [
+        "When a Stranger Calls",
+        "Vampyres",
+        "X-Men: First Class",
+        "The Stuff"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Chan-wook Park? That sounds intriguing. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 6,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Chan-wook Park",
+        "anchor_title": "Dead Poets Society",
+        "constraints": {
+          "genre": "teen",
+          "actor": "Bob Barker",
+          "plot": "relationships",
+          "director": "Chan-wook Park"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 6,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "relationships",
+          "from_anchor": "Step Up",
+          "to_anchor": "Dead Poets Society"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie by Chan-wook Park that has some connection to \"Her\" and also fits your preferences, which include teen genre, Bob Barker (who isn't actually in any of these movies), and the director Chan-wook Park.\n\nBased on those cues, I think you might enjoy \"Swimfan\" (2002) which is a thriller about a high school senior with a promising swimming career who has a one-night stand with consequences.",
+      "constraints": {
+        "genre": "teen",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Her",
+        "actor": "Bob Barker",
+        "director": "Chan-wook Park"
+      },
+      "rec_titles": [
+        "Step Up",
+        "White Night",
+        "Swimfan",
+        "Graduation Day"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Chan-wook Park",
+        "anchor_title": "Dead Poets Society",
+        "constraints": {
+          "genre": "teen",
+          "actor": "Bob Barker",
+          "plot": "relationships",
+          "director": "Chan-wook Park"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for more recommendations in the teen genre, with a hint of excitement and adventure, perhaps something that captures the essence of just wanting more? Based on your interest in Bob Barker, I'm going to take a chance and recommend \"Friday the 13th Part 2\" - it's a classic horror flick with plenty of suspense and gore, starring Amy Steel as one of the camp counselors trying to survive Jason's wrath. Or, if you'd like something a bit more offbeat, \"The Stuff\" is a quirky cult classic that combines teen angst with zombie-like snackers in search of their next fix!",
+      "constraints": {
+        "genre": "teen",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Bob Barker",
+        "director": "Chan-wook Park"
+      },
+      "rec_titles": [
+        "The Stuff",
+        "Friday the 13th Part 2",
+        "The Wonderful Wizard of Oz",
+        "Veronica Mars"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Frida. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Chan-wook Park",
+        "anchor_title": "Dead Poets Society",
+        "constraints": {
+          "genre": "teen",
+          "actor": "Bob Barker",
+          "plot": "relationships",
+          "director": "Chan-wook Park"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you liked the sound of Frida and are looking for something that feels deeper, right? Based on that, I think you might enjoy \"Fast Times at Ridgemont High\" - it's a classic coming-of-age teen movie that explores themes of identity, relationships, and self-discovery. Plus, it has an iconic soundtrack and some memorable performances from its young cast!",
+      "constraints": {
+        "genre": "teen",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Frida",
+        "actor": "Bob Barker",
+        "director": "Chan-wook Park"
+      },
+      "rec_titles": [
+        "The Other Guys",
+        "Fast Times at Ridgemont High",
+        "Stay Alive",
+        "Uptown Girls"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Chan-wook Park",
+        "anchor_title": "Dead Poets Society",
+        "constraints": {
+          "genre": "teen",
+          "actor": "Bob Barker",
+          "plot": "relationships",
+          "director": "Chan-wook Park"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a story that explores what kind of tale, and I sense you're in the mood for something teen-focused with a dash of humor. Considering your fondness for Bob Barker (or at least his name!), I think \"Happy Gilmore\" could be a great fit. This classic Adam Sandler movie is all about self-discovery, golf, and a healthy dose of quirkiness - what's not to love?",
+      "constraints": {
+        "genre": "teen",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "You",
+        "actor": "Bob Barker",
+        "director": "Chan-wook Park"
+      },
+      "rec_titles": [
+        "She's All That",
+        "Dead Poets Society",
+        "Happy Gilmore",
+        "New York Minute"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Chan-wook Park",
+        "anchor_title": "Dead Poets Society",
+        "constraints": {
+          "genre": "teen",
+          "actor": "Bob Barker",
+          "plot": "relationships",
+          "director": "Chan-wook Park"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I understand what you're getting at! You were looking for a movie that involves being wrong about something earlier, and you've got some specific preferences in mind - specifically, teen movies with Bob Barker (although, I should note, he's not actually starring in any of these films). Given those constraints, I'd recommend checking out \"Oldboy\" - it's a gripping thriller from acclaimed director Chan-wook Park that explores themes of being wronged and seeking revenge.",
+      "constraints": {
+        "genre": "teen",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "You",
+        "actor": "Bob Barker",
+        "director": "Chan-wook Park"
+      },
+      "rec_titles": [
+        "Malibu's Most Wanted",
+        "New York Minute",
+        "Oldboy",
+        "Easy A"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Chan-wook Park",
+        "anchor_title": "Dead Poets Society",
+        "constraints": {
+          "genre": "teen",
+          "actor": "Bob Barker",
+          "plot": "relationships",
+          "director": "Chan-wook Park"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie with a vibe that's different from what you expected, and you're open to a teen-friendly film starring Bob Barker (although I should note he's not actually in any of these movies). Based on your interest in Chan-wook Park as the director, I think \"The Violent Kind\" could be up your alley - it has a dark and suspenseful tone that might surprise you!",
+      "constraints": {
+        "genre": "teen",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "X",
+        "actor": "Bob Barker",
+        "director": "Chan-wook Park"
+      },
+      "rec_titles": [
+        "The Violent Kind",
+        "An Early Frost",
+        "X",
+        "She's All That"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Scott Cohen. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 12,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Scott Cohen",
+        "anchor_title": "Chain Letter",
+        "constraints": {
+          "genre": "teen",
+          "actor": "Scott Cohen",
+          "plot": "relationships",
+          "director": "Seth MacFarlane"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 12,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "director",
+          "bridge_value": "Seth MacFarlane",
+          "from_anchor": "Dead Poets Society",
+          "to_anchor": "Chain Letter"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie with Scott Cohen, possibly something that's not too scary and leans towards being fun, like \"Ted\"! Based on your cues, I think \"SpaceCamp\" could be a great fit. This classic 80s film has a similar sense of adventure and excitement to \"Ted\", but is a teen-friendly space-themed romp with a talented young cast. Give it a try!",
+      "constraints": {
+        "genre": "teen",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Ted",
+        "actor": "Scott Cohen",
+        "director": "Chan-wook Park"
+      },
+      "rec_titles": [
+        "SpaceCamp",
+        "Ted",
+        "Blade Runner",
+        "Wilder Napalm"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Scott Cohen",
+        "anchor_title": "Chain Letter",
+        "constraints": {
+          "genre": "teen",
+          "actor": "Scott Cohen",
+          "plot": "relationships",
+          "director": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more recommendations like those that feature a teenage main character, a critically acclaimed director like Chan-wook Park, and perhaps some unexpected twists in the plot. Based on these constraints, I'd highly recommend \"The Deep End of the Ocean\", which tells the heart-wrenching story of a family's reunion with their long-lost son, played by Jonathan Jackson.",
+      "constraints": {
+        "genre": "teen",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Scott Cohen",
+        "director": "Chan-wook Park"
+      },
+      "rec_titles": [
+        "The Deep End of the Ocean",
+        "12 Angry Men",
+        "Ocean's Twelve",
+        "JFK"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Robert Altman? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 14,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Robert Altman",
+        "anchor_title": "The Understudy",
+        "constraints": {
+          "genre": "teen",
+          "actor": "Scott Cohen",
+          "plot": "witness",
+          "director": "Robert Altman"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 14,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "witness",
+          "from_anchor": "Chain Letter",
+          "to_anchor": "The Understudy"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a Robert Altman movie, but you're hesitant about \"X\" (which I assume is \"Secret Honor\" based on the context). You mentioned liking teen movies and having Scott Cohen in mind - no match there with Robert Altman's filmography! However, if you'd like to explore something else by him, I recommend checking out \"The History Boys\" (2006) - it's a critically acclaimed comedy-drama that explores the lives of exceptional teenage boys and their teachers.",
+      "constraints": {
+        "genre": "teen",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "RED",
+        "actor": "Scott Cohen",
+        "director": "Robert Altman"
+      },
+      "rec_titles": [
+        "Dead Poets Society",
+        "17 Again",
+        "Swimfan",
+        "The History Boys"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Robert Altman",
+        "anchor_title": "The Understudy",
+        "constraints": {
+          "genre": "teen",
+          "actor": "Scott Cohen",
+          "plot": "witness",
+          "director": "Robert Altman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you're looking for more recommendations like those that feature teen-centric stories, starring Scott Cohen (not found in this list), directed by Robert Altman (also not a match). You mentioned just and more as keywords, which caught my attention. Based on these constraints, I'd recommend \"Outside Providence\" (1999) - an coming-of-age comedy-drama that explores the struggles of a teenage boy from a working-class background as he navigates prep school and his own identity. With its relatable themes and nostalgic '90s vibes, this film might resonate with you!",
+      "constraints": {
+        "genre": "teen",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Scott Cohen",
+        "director": "Robert Altman"
+      },
+      "rec_titles": [
+        "Tell No One",
+        "The Karate Kid",
+        "Outside Providence",
+        "The Right Stuff"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Robert Altman",
+        "anchor_title": "The Understudy",
+        "constraints": {
+          "genre": "teen",
+          "actor": "Scott Cohen",
+          "plot": "witness",
+          "director": "Robert Altman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie that's not too scary and has a teenage vibe, with Scott Cohen as an actor - but unfortunately, none of these movies star him. Instead, I recommend \"Beastly\" (2011) - it's a teen romance film with a unique twist, where the lead character is transformed into a monster to find true love!",
+      "constraints": {
+        "genre": "teen",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "Ted",
+        "actor": "Scott Cohen",
+        "director": "Robert Altman"
+      },
+      "rec_titles": [
+        "Beastly",
+        "American Dreamz",
+        "Unaccompanied Minors",
+        "Stay Alive"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Her. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Robert Altman",
+        "anchor_title": "The Understudy",
+        "constraints": {
+          "genre": "teen",
+          "actor": "Scott Cohen",
+          "plot": "witness",
+          "director": "Robert Altman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You mentioned enjoying the vibe of Her, and you're looking for movies with Scott Cohen, Robert Altman, teen genre, and keywords like \"like\" and \"sound\". Based on these cues, I think you might enjoy When a Stranger Calls (2006) - it's a suspenseful thriller that features a strong performance from Tessa Thompson as the babysitting protagonist who receives terrifying phone calls.",
+      "constraints": {
+        "genre": "teen",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Her",
+        "actor": "Scott Cohen",
+        "director": "Robert Altman"
+      },
+      "rec_titles": [
+        "Friday the 13th Part 2",
+        "When a Stranger Calls",
+        "The Right Stuff",
+        "Unaccompanied Minors"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Tron tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Robert Altman",
+        "anchor_title": "The Understudy",
+        "constraints": {
+          "genre": "teen",
+          "actor": "Scott Cohen",
+          "plot": "witness",
+          "director": "Robert Altman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you're looking for a story that's intriguing, with a focus on what and kind, perhaps exploring themes of identity, morality, and relationships. Given your interest in teen movies and Scott Cohen, I recommend \"The Skulls\" - it's a thrilling tale about a college student who gets entangled in a secret society, starring Kevin Allen and Rob Cohen (no relation to the director).",
+      "constraints": {
+        "genre": "teen",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Tron",
+        "actor": "Scott Cohen",
+        "director": "Robert Altman"
+      },
+      "rec_titles": [
+        "The Skulls",
+        "Training Day",
+        "Anyone But You",
+        "End of Watch"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on You. I want to try something more iraq war—still with Robert Altman if possible. That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "iraq war",
+        "anchor_title": "Super 8",
+        "constraints": {
+          "genre": "iraq war",
+          "actor": "Scott Cohen",
+          "plot": "witness",
+          "director": "Robert Altman"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 19,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "director",
+          "bridge_value": "Robert Altman",
+          "from_anchor": "The Understudy",
+          "to_anchor": "Super 8"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for something related to the Iraq War, possibly directed by Robert Altman and starring Scott Cohen. You mentioned appreciating the detail in \"You\" and wanting to explore a deeper storyline.\n\nBased on your preferences, I recommend \"The Understudy\". This movie stars Scott Cohen and tells the story of an underdog struggling with his personal life, which aligns with the themes of depth and complexity you appreciated in \"You\".",
+      "constraints": {
+        "genre": "iraq war",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "War",
+        "actor": "Scott Cohen",
+        "director": "Robert Altman"
+      },
+      "rec_titles": [
+        "Can You Keep a Secret?",
+        "The Player",
+        "Wanderlust",
+        "The Understudy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "iraq war",
+        "anchor_title": "Super 8",
+        "constraints": {
+          "genre": "iraq war",
+          "actor": "Scott Cohen",
+          "plot": "witness",
+          "director": "Robert Altman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more recommendations like \"Gothic\" (Iraq War, starring Scott Cohen, directed by Robert Altman). Based on that, I think you might enjoy \"Thick as Thieves\", an action-packed movie with a star-studded cast, including Antonio Banderas and Morgan Freeman.",
+      "constraints": {
+        "genre": "iraq war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Scott Cohen",
+        "director": "Robert Altman"
+      },
+      "rec_titles": [
+        "Thick as Thieves",
+        "Date Night",
+        "The Secret of My Success",
+        "Before I Fall"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of War? That sounds intriguing.",
+      "user_meta": {
+        "turn": 21,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "iraq war",
+        "anchor_title": "Super 8",
+        "constraints": {
+          "genre": "iraq war",
+          "actor": "Scott Cohen",
+          "plot": "witness",
+          "director": "Robert Altman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It sounds like you're in the mood for a war movie that's intriguing and maybe even features Scott Glenn, an actor known for his roles in films by director Robert Altman. Based on your preferences, I think \"Patton\" (1970) would be a great choice! This classic film is a biographical epic about George S. Patton, one of the most famous generals of World War II, played by none other than Scott Glenn himself.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "War",
+        "actor": "Scott Cohen",
+        "director": "Robert Altman"
+      },
+      "rec_titles": [
+        "Pearl Harbor",
+        "Chain Reaction",
+        "Patton",
+        "Waiting"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "iraq war",
+        "anchor_title": "Super 8",
+        "constraints": {
+          "genre": "iraq war",
+          "actor": "Scott Cohen",
+          "plot": "witness",
+          "director": "Robert Altman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for a movie that tells a story about what kind of thing, and Us is piquing your interest. Based on your preference cues, I think you might enjoy \"Hart's War\" (2002), which features Scott Glenn, not Scott Cohen, but still an impressive cast, including Bruce Willis. The film is a gripping drama set during World War II, with themes of loyalty and redemption that might resonate with you.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "actor": "Scott Cohen",
+        "director": "Robert Altman"
+      },
+      "rec_titles": [
+        "Tears of the Sun",
+        "The Last Unicorn",
+        "Hart's War",
+        "Doctor Zhivago"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "iraq war",
+        "anchor_title": "Super 8",
+        "constraints": {
+          "genre": "iraq war",
+          "actor": "Scott Cohen",
+          "plot": "witness",
+          "director": "Robert Altman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems like you're looking for a war movie with Scott Cohen, but since he's not an actor in any of these films, I'll recommend some great alternatives that fit your genre and earlier plot keywords \"wrong\" - such as the themes of mistakes or regret.\n\nI suggest checking out 'The Siege' (1998), which stars Bruce Willis and Denzel Washington in a gripping story about military operations gone wrong. Alternatively, 'Zero Dark Thirty' (2012) is a thrilling account of the decade-long hunt for Osama bin Laden, where mistakes are made but ultimately lead to justice.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "Us",
+        "actor": "Scott Cohen",
+        "director": "Robert Altman"
+      },
+      "rec_titles": [
+        "The Siege",
+        "Tears of the Sun",
+        "Zulu",
+        "Zero Dark Thirty"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Her. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "iraq war",
+        "anchor_title": "Super 8",
+        "constraints": {
+          "genre": "iraq war",
+          "actor": "Scott Cohen",
+          "plot": "witness",
+          "director": "Robert Altman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you're looking for a movie with a unique sound and an emotional impact, much like Her. However, I see that you also have a preference for war-related genres, with nods to Scott Cohen, Robert Altman, and plot keywords like \"like\" and \"sound\". Based on these cues, I highly recommend \"The Right Stuff\" (1983), a historical drama about the early years of the US space program, featuring an all-star cast including Ed Harris, Dennis Quaid, and Sam Shepard. The film's blend of human drama, scientific achievement, and historic significance will surely resonate with you!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Her",
+        "actor": "Scott Cohen",
+        "director": "Robert Altman"
+      },
+      "rec_titles": [
+        "Incendies",
+        "The Imitation Game",
+        "Dear John",
+        "The Right Stuff"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Betty Thomas. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of War.)",
+      "user_meta": {
+        "turn": 25,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Betty Thomas",
+        "anchor_title": "The Adventures of Tom Sawyer",
+        "constraints": {
+          "genre": "iraq war",
+          "actor": "Betty Thomas",
+          "plot": "indian"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 25,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "indian",
+          "from_anchor": "Super 8",
+          "to_anchor": "The Adventures of Tom Sawyer"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a movie with Betty Thomas, possibly a war film since you mentioned \"War\" as an example. You also want something that's not too scary or intense. Based on these constraints, I'd recommend \"American Sniper\" (2014), which features Bradley Cooper and is a critically acclaimed war drama that explores the psychological impact of war on its protagonist. Alternatively, if you're open to a more adventurous option, \"The Goonies\" (1985) could be an entertaining choice, starring Sean Astin and Corey Feldman in a classic coming-of-age adventure film.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "War",
+        "actor": "Betty Thomas",
+        "director": "Betty Thomas"
+      },
+      "rec_titles": [
+        "American Sniper",
+        "Waterworld",
+        "The Goonies",
+        "White Night"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Betty Thomas",
+        "anchor_title": "The Adventures of Tom Sawyer",
+        "constraints": {
+          "genre": "iraq war",
+          "actor": "Betty Thomas",
+          "plot": "indian"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I see you're looking for more recommendations like that, which means you're interested in war movies with Betty Thomas as the director or starring actress. Given those constraints, I think \"12 Angry Men\" would be a great choice. This classic drama directed by Sidney Lumet (not Betty Thomas, I apologize for the mismatch) is a gripping tale of jury deliberation that explores themes of justice and morality.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Betty Thomas",
+        "director": "Betty Thomas"
+      },
+      "rec_titles": [
+        "The Princess Diaries",
+        "Bats",
+        "12 Angry Men",
+        "Maid in Manhattan"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Paul Greengrass? That feels deeper than I thought. (I’m thinking of War.)",
+      "user_meta": {
+        "turn": 27,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Paul Greengrass",
+        "anchor_title": "Anger Management",
+        "constraints": {
+          "genre": "iraq war",
+          "actor": "Betty Thomas",
+          "plot": "indian",
+          "director": "Paul Greengrass",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 27,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "The Adventures of Tom Sawyer",
+          "to_anchor": "Anger Management"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for something by Paul Greengrass that's deeper and perhaps more intense than War, which is a great starting point! Based on your interest in war movies and the director's work, I'd like to recommend \"Hotel Rwanda\" (2004) - a powerful true story about a hotel manager who saves over a thousand refugees during the Rwandan genocide. The film features an impressive ensemble cast, including Nick Nolte and Sophie Okonedo, and is a gripping and emotional experience.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "War",
+        "actor": "Betty Thomas",
+        "director": "Paul Greengrass",
+        "writer": "Paul Greengrass"
+      },
+      "rec_titles": [
+        "The Pianist",
+        "Dear John",
+        "Tora! Tora! Tora!",
+        "Hotel Rwanda"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Paul Greengrass",
+        "anchor_title": "Anger Management",
+        "constraints": {
+          "genre": "iraq war",
+          "actor": "Betty Thomas",
+          "plot": "indian",
+          "director": "Paul Greengrass",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for more war-themed movies like those that feature Paul Greengrass' direction and Betty Thomas' acting, but without a specific plot keyword \"just\" in mind.\n\nBased on your preferences, I highly recommend \"Windtalkers\" (2002), an intense war drama starring Nicolas Cage as a U.S. Marine who is part of a team tasked with protecting Navajo Marines during World War II. The film features stunning action sequences and powerful performances from its ensemble cast.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Betty Thomas",
+        "director": "Paul Greengrass",
+        "writer": "Paul Greengrass"
+      },
+      "rec_titles": [
+        "Terminator 2: Judgment Day",
+        "Windtalkers",
+        "In Time",
+        "The Lincoln Lawyer"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Paul Greengrass",
+        "anchor_title": "Anger Management",
+        "constraints": {
+          "genre": "iraq war",
+          "actor": "Betty Thomas",
+          "plot": "indian",
+          "director": "Paul Greengrass",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you're looking for a story that tells something about war, with Betty Thomas as an actor, and directed by Paul Greengrass. That's quite specific!\n\nBased on those cues, I'd recommend \"The Good German\" (2006) - it's a gripping neo-noir mystery set in post-war Berlin, starring George Clooney and Tobey Maguire. The film is known for its complex characters and intricate plot, which should appeal to fans of Paul Greengrass' directing style.\n\nAlternatively, if you're looking for something more historic and iconic, \"The Best Years of Our Lives\" (1946) would be an excellent choice - it's a powerful and poignant portrayal of American veterans returning home after WWII.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "actor": "Betty Thomas",
+        "director": "Paul Greengrass",
+        "writer": "Paul Greengrass"
+      },
+      "rec_titles": [
+        "The Good German",
+        "The Best Years of Our Lives",
+        "Redacted",
+        "Chain Reaction"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Good German. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Paul Greengrass",
+        "anchor_title": "Anger Management",
+        "constraints": {
+          "genre": "iraq war",
+          "actor": "Betty Thomas",
+          "plot": "indian",
+          "director": "Paul Greengrass",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I understand what you're looking for - a movie that explores themes of war and conflict, possibly with a strong historical or cultural context, featuring notable actors or directors. Based on your interest in \"The Good German\", I'm going to recommend \"Bloody Sunday\" (2002), a powerful dramatization of a pivotal moment in Irish history, directed by Paul Greengrass himself!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Good German",
+        "actor": "Betty Thomas",
+        "director": "Paul Greengrass",
+        "writer": "Paul Greengrass",
+        "language": "German"
+      },
+      "rec_titles": [
+        "Lincoln",
+        "American Dreamz",
+        "300: Rise of an Empire",
+        "Bloody Sunday"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Paul Greengrass",
+        "anchor_title": "Anger Management",
+        "constraints": {
+          "genre": "iraq war",
+          "actor": "Betty Thomas",
+          "plot": "indian",
+          "director": "Paul Greengrass",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for something that's opposite of what we previously discussed, which means you want a movie that's not about war, doesn't feature Betty Thomas, and isn't directed by Paul Greengrass - got it! With those constraints in mind, I'd recommend \"To Have and Have Not\" (1937) - it's a classic romantic drama set during World War II, starring Humphrey Bogart as an American boat captain who helps transport French Resistance leaders.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "The Good German",
+        "actor": "Betty Thomas",
+        "director": "Paul Greengrass",
+        "writer": "Paul Greengrass",
+        "language": "German"
+      },
+      "rec_titles": [
+        "Platoon",
+        "Kingdom of Heaven",
+        "To Have and Have Not",
+        "The Alamo"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Paul Greengrass",
+        "anchor_title": "Anger Management",
+        "constraints": {
+          "genre": "iraq war",
+          "actor": "Betty Thomas",
+          "plot": "indian",
+          "director": "Paul Greengrass",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on what I understand, you're looking for a movie that fits within the war genre and features German as the primary language spoken (although not exclusively). You also mentioned Betty Thomas, Paul Greengrass, and writer Paul Greengrass, which seems to be more of a hint than a hard constraint.\n\nGiven these constraints, I'd recommend \"The Deer Hunter\" (1978) for its powerful exploration of the human cost of war. The film's gritty portrayal of the Vietnam War, combined with the performances of Christopher Walken and Robert De Niro, make it a compelling watch.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "The Good German",
+        "actor": "Betty Thomas",
+        "director": "Paul Greengrass",
+        "writer": "Paul Greengrass",
+        "language": "German"
+      },
+      "rec_titles": [
+        "2010",
+        "The Deer Hunter",
+        "End of Watch",
+        "The Best Years of Our Lives"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Paul Greengrass",
+        "anchor_title": "Anger Management",
+        "constraints": {
+          "genre": "iraq war",
+          "actor": "Betty Thomas",
+          "plot": "indian",
+          "director": "Paul Greengrass",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a movie with a mood that's perhaps thought-provoking and intense, but not necessarily scary. You've also mentioned an interest in war-related movies with German influences. Considering these constraints, I'd like to recommend \"Amen.\" (2002) starring Ulrich Mühe, which explores the moral dilemmas of a SS officer trying to inform Pope Pius XII about the Holocaust. The film is a gripping and intense portrayal of the human experience during wartime, with a strong focus on morality and decision-making - perhaps resonating with your \"what\" and \"decide\" plot keywords!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "actor": "Betty Thomas",
+        "director": "Paul Greengrass",
+        "writer": "Paul Greengrass",
+        "language": "German"
+      },
+      "rec_titles": [
+        "Platoon",
+        "The Hurt Locker",
+        "Amen.",
+        "Run Lola Run"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Jim Kouf? That sounds intriguing. (I’m thinking of War.)",
+      "user_meta": {
+        "turn": 34,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Jim Kouf",
+        "anchor_title": "Kung Pow: Enter the Fist",
+        "constraints": {
+          "genre": "iraq war",
+          "actor": "Betty Thomas",
+          "plot": "indian",
+          "director": "Paul Greengrass",
+          "language": "English",
+          "writer": "Jim Kouf"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 34,
+          "from_focus": "director",
+          "to_focus": "writer",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Anger Management",
+          "to_anchor": "Kung Pow: Enter the Fist"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for war movies written by Jim Kouf, which makes you think of \"War\". Based on that, I'll suggest a few options that fit your criteria. You're interested in films with German language and plot elements, so let me recommend \"A Bridge Too Far\" (1977), an epic World War II film about Operation Market Garden, with a star-studded cast including Sean Connery, Michael Caine, and Richard Attenborough. Alternatively, if you'd like to explore another option, I suggest \"We Were Soldiers\" (2002) which tells the story of the first major battle of the Vietnam War, starring Mel Gibson.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "written",
+          "intriguing"
+        ],
+        "name": "War",
+        "actor": "Betty Thomas",
+        "director": "Paul Greengrass",
+        "writer": "Jim Kouf",
+        "language": "German"
+      },
+      "rec_titles": [
+        "We Were Soldiers",
+        "Patton",
+        "Bloody Sunday",
+        "A Bridge Too Far"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Jim Kouf",
+        "anchor_title": "Kung Pow: Enter the Fist",
+        "constraints": {
+          "genre": "iraq war",
+          "actor": "Betty Thomas",
+          "plot": "indian",
+          "director": "Paul Greengrass",
+          "language": "English",
+          "writer": "Jim Kouf"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you're looking for more war movies like those that feature Betty Thomas, Paul Greengrass, Jim Kouf, and German language keywords \"just\" and \"more\". Based on your preferences, I highly recommend \"Tora! Tora! Tora!\" (1970), a historical drama that recreates the 1941 Japanese air raid on Pearl Harbor with impressive attention to detail.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Betty Thomas",
+        "director": "Paul Greengrass",
+        "writer": "Jim Kouf",
+        "language": "German"
+      },
+      "rec_titles": [
+        "Tora! Tora! Tora!",
+        "The Truth",
+        "The Hunting Party",
+        "Amen."
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on You. I want to try something more slasher—still with English if possible. Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 36,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "slasher",
+        "anchor_title": "Isn't She Great",
+        "constraints": {
+          "genre": "slasher",
+          "actor": "Betty Thomas",
+          "plot": "indian",
+          "director": "Paul Greengrass",
+          "language": "English",
+          "writer": "Jim Kouf"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 36,
+          "from_focus": "writer",
+          "to_focus": "genre",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Kung Pow: Enter the Fist",
+          "to_anchor": "Isn't She Great"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a slasher movie with English dialogue, possibly featuring actor Slash (although I should note he's not in any of these recommendations). You also mentioned being intrigued by the detail in \"You\", which I'll keep in mind as we explore options.\n\nBased on your preferences, I'd like to recommend \"The Watcher\" (2000), a psychological thriller that fits well into the slasher genre. This movie follows a detective's quest to catch a meticulous killer who taunts him with gruesome details and photos of his victims. The film features Keanu Reeves as the protagonist, and its dark atmosphere might appeal to your taste for something more intense.",
+      "constraints": {
+        "genre": "slasher",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Her",
+        "actor": "Slash",
+        "director": "Paul Greengrass",
+        "writer": "Jim Kouf",
+        "language": "English"
+      },
+      "rec_titles": [
+        "The Lost World: Jurassic Park",
+        "The Watcher",
+        "Cloverfield",
+        "Liar Liar"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "slasher",
+        "anchor_title": "Isn't She Great",
+        "constraints": {
+          "genre": "slasher",
+          "actor": "Betty Thomas",
+          "plot": "indian",
+          "director": "Paul Greengrass",
+          "language": "English",
+          "writer": "Jim Kouf"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for more recommendations similar to the ones you previously mentioned, which were slasher movies starring Slash, directed by Paul Greengrass, written by Jim Kouf, and in English. You'd like me to suggest some films with a slasher vibe!\n\nBased on your preferences, I think you might enjoy \"Compliance\" (2012), a tense thriller that's more suspenseful than outright gory. The film's plot, which takes place almost entirely in one location, is reminiscent of classic slasher movies, and the cast delivers strong performances.",
+      "constraints": {
+        "genre": "slasher",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Slash",
+        "director": "Paul Greengrass",
+        "writer": "Jim Kouf",
+        "language": "English"
+      },
+      "rec_titles": [
+        "The Country Bears",
+        "Maleficent",
+        "Compliance",
+        "You Kill Me"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of 2012. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "slasher",
+        "anchor_title": "Isn't She Great",
+        "constraints": {
+          "genre": "slasher",
+          "actor": "Betty Thomas",
+          "plot": "indian",
+          "director": "Paul Greengrass",
+          "language": "English",
+          "writer": "Jim Kouf"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie that was released in 2012 and features Slash, one of the most iconic guitarists in rock history! Unfortunately, there isn't a movie from 2012 that fits this unique combination of criteria.\n\nHowever, I'd like to recommend \"The Lego Movie\" (2014) as a great alternative. This animated adventure stars Alison Brie, Will Ferrell, and Morgan Freeman, and takes you on an epic quest to stop an evil tyrant from gluing the LEGO universe into eternal stasis. The movie's blend of humor, action, and heart might be just what you're looking for!",
+      "constraints": {
+        "genre": "slasher",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "2012",
+        "actor": "Slash",
+        "director": "Paul Greengrass",
+        "writer": "Jim Kouf",
+        "language": "English",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Lego Movie",
+        "Trees Lounge",
+        "Grandma's Boy",
+        "We the Living"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? That sounds intriguing.",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "slasher",
+        "anchor_title": "Isn't She Great",
+        "constraints": {
+          "genre": "slasher",
+          "actor": "Betty Thomas",
+          "plot": "indian",
+          "director": "Paul Greengrass",
+          "language": "English",
+          "writer": "Jim Kouf"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you're looking for a movie with an intriguing mood, and Ted sounds like a great starting point! Based on your interest in slasher movies from 2012 with Slash involved, I think you might enjoy \"Wanted\" (2010), an action-packed thriller with Angelina Jolie Pitt and Morgan Freeman. Alternatively, if you're open to exploring other genres, \"Kingdom of Heaven\" (2005) is a visually stunning epic that explores themes of courage and sacrifice during the Crusades.",
+      "constraints": {
+        "genre": "slasher",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Ted",
+        "actor": "Slash",
+        "director": "Paul Greengrass",
+        "writer": "Jim Kouf",
+        "language": "English",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Wolverine",
+        "Wanted",
+        "Kingdom of Heaven",
+        "Something Borrowed"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "slasher",
+        "anchor_title": "Isn't She Great",
+        "constraints": {
+          "genre": "slasher",
+          "actor": "Betty Thomas",
+          "plot": "indian",
+          "director": "Paul Greengrass",
+          "language": "English",
+          "writer": "Jim Kouf"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you thought you liked a slasher movie from 2012, but maybe not? Based on your preferences for genre and year, I'm going to take a chance and recommend \"Below Zero\" (2011). This intense thriller features a prison transport being brutally assaulted, which fits with the dark tone of a slasher film. Plus, it stars Michael Berryman, who's known for his roles in horror movies!",
+      "constraints": {
+        "genre": "slasher",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "Ted",
+        "actor": "Slash",
+        "director": "Paul Greengrass",
+        "writer": "Jim Kouf",
+        "language": "English",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "That Summer",
+        "Below Zero",
+        "The Queen",
+        "Roses Are Red"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "slasher",
+        "anchor_title": "Isn't She Great",
+        "constraints": {
+          "genre": "slasher",
+          "actor": "Betty Thomas",
+          "plot": "indian",
+          "director": "Paul Greengrass",
+          "language": "English",
+          "writer": "Jim Kouf"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a movie that doesn't quite fit the genre of slasher, but still wants to explore some exciting and thrilling options! Based on your previous preferences for a 2012 film with Slash, Paul Greengrass, Jim Kouf, and English language, I'm not seeing any direct matches. However, if you're open to exploring different genres, I'd recommend \"Adventureland\" (2009) - it's a coming-of-age comedy-drama that follows a college graduate as he navigates his summer at an amusement park, played by Martin Starr alongside Kristen Stewart and other talented actors.",
+      "constraints": {
+        "genre": "slasher",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "Ted",
+        "actor": "Slash",
+        "director": "Paul Greengrass",
+        "writer": "Jim Kouf",
+        "language": "English",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Adventureland",
+        "The Hunger Games: Mockingjay - Part 2",
+        "Whale Rider",
+        "Woman on Top"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "slasher",
+        "anchor_title": "Isn't She Great",
+        "constraints": {
+          "genre": "slasher",
+          "actor": "Betty Thomas",
+          "plot": "indian",
+          "director": "Paul Greengrass",
+          "language": "English",
+          "writer": "Jim Kouf"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you were looking for a story that's deeper than you expected, right? You wanted something with a thriller/slasher vibe, no specific actor (although Slash would be awesome!), and an English language film from the early 2000s.\n\nBased on your cues, I recommend \"Eyes Wide Shut\" (1999) - a visually stunning and thought-provoking film that explores themes of identity, intimacy, and the human psyche. Tom Cruise stars alongside Nicole Kidman in this critically acclaimed adaptation of Arthur Schnitzler's play, set during the holiday season.\n\nIf you'd like to explore more, I can also suggest \"The History Boys\" (2006), a witty and engaging comedy-drama that delves into the world of competitive education.",
+      "constraints": {
+        "genre": "slasher",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Deep",
+        "actor": "Slash",
+        "director": "Paul Greengrass",
+        "writer": "Jim Kouf",
+        "language": "English",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Young Sherlock Holmes",
+        "The Black Stallion",
+        "Eyes Wide Shut",
+        "The History Boys"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Billy Campbell. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Deep.)",
+      "user_meta": {
+        "turn": 43,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Billy Campbell",
+        "anchor_title": "The Fog",
+        "constraints": {
+          "genre": "slasher",
+          "actor": "Billy Campbell",
+          "plot": "insomniac",
+          "director": "Paul Greengrass",
+          "language": "English",
+          "writer": "Jim Kouf"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 43,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "insomniac",
+          "from_anchor": "Isn't She Great",
+          "to_anchor": "The Fog"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for movies with Billy Campbell, and you're intrigued by his role in Deep (1990) - a classic slasher film! Based on that, I think you might enjoy Tripwire (1999), which stars Billy Campbell as an FBI agent fighting against a terrorist. The movie has a similar gritty tone to Deep, and it's a great example of a tense thriller.",
+      "constraints": {
+        "genre": "slasher",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Deep",
+        "actor": "Billy Campbell",
+        "director": "Paul Greengrass",
+        "writer": "Jim Kouf",
+        "language": "English",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Giver",
+        "Hollywood Homicide",
+        "Tripwire",
+        "Ex Machina"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Billy Campbell",
+        "anchor_title": "The Fog",
+        "constraints": {
+          "genre": "slasher",
+          "actor": "Billy Campbell",
+          "plot": "insomniac",
+          "director": "Paul Greengrass",
+          "language": "English",
+          "writer": "Jim Kouf"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for more movies like the ones that feature Billy Campbell, Paul Greengrass, Jim Kouf, and slasher elements, specifically from 2012? Well, I think \"The Rules of Attraction\" (1987) might be up your alley - it's a dark comedy with a complex plot and an all-star cast, featuring Fred Savage and Faye Dunaway. If you're looking for something more action-packed, \"Die Hard with a Vengeance\" (1995) is another great option, starring Bruce Willis as the iconic John McClane.",
+      "constraints": {
+        "genre": "slasher",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Billy Campbell",
+        "director": "Paul Greengrass",
+        "writer": "Jim Kouf",
+        "language": "English",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Rules of Attraction",
+        "Lady in the Water",
+        "Wag the Dog",
+        "Die Hard with a Vengeance"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Billy Campbell",
+        "anchor_title": "The Fog",
+        "constraints": {
+          "genre": "slasher",
+          "actor": "Billy Campbell",
+          "plot": "insomniac",
+          "director": "Paul Greengrass",
+          "language": "English",
+          "writer": "Jim Kouf"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I understand that you're looking for something entirely different from a slasher movie, and instead want a film that's lighthearted and fun! With Billy Campbell not being in any of these movies, let me suggest \"Megamind\" (2010) - an animated superhero comedy with a great voice cast, including Will Ferrell and Brad Pitt.",
+      "constraints": {
+        "genre": "slasher",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "You",
+        "actor": "Billy Campbell",
+        "director": "Paul Greengrass",
+        "writer": "Jim Kouf",
+        "language": "English",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Megamind",
+        "Kung Fu Panda",
+        "The Last Colony",
+        "Ultraviolet"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Billy Campbell",
+        "anchor_title": "The Fog",
+        "constraints": {
+          "genre": "slasher",
+          "actor": "Billy Campbell",
+          "plot": "insomniac",
+          "director": "Paul Greengrass",
+          "language": "English",
+          "writer": "Jim Kouf"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on what you're looking for, I understand that you're interested in a story with a deeper meaning, and since you've mentioned the word \"what\" and \"kind\", I'll assume you want something thought-provoking. \n\nConsidering these constraints, I'd recommend either \"The Wind That Shakes the Barley\" (2006), which explores the complexities of war and human relationships against the backdrop of Irish history, or \"Incident at Loch Ness\" (2004), a documentary that delves into the intriguing myth of the Loch Ness monster.",
+      "constraints": {
+        "genre": "slasher",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "actor": "Billy Campbell",
+        "director": "Paul Greengrass",
+        "writer": "Jim Kouf",
+        "language": "English",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Wind That Shakes the Barley",
+        "I Don't Know How She Does It",
+        "Incident at Loch Ness",
+        "Wedding Night"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Billy Campbell",
+        "anchor_title": "The Fog",
+        "constraints": {
+          "genre": "slasher",
+          "actor": "Billy Campbell",
+          "plot": "insomniac",
+          "director": "Paul Greengrass",
+          "language": "English",
+          "writer": "Jim Kouf"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're wondering about the mood of X, but you're unsure if you'd enjoy it or find it scary due to its association with a slasher genre movie from 2012 starring Billy Campbell and directed by Paul Greengrass.\n\nBased on your constraints, I think \"The Game\" (2005) would be an interesting contrast. This psychological thriller, also starring Michael Douglas, explores themes of identity and existential crises, which might provide a refreshing change of pace from the slasher genre.",
+      "constraints": {
+        "genre": "slasher",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "actor": "Billy Campbell",
+        "director": "Paul Greengrass",
+        "writer": "Jim Kouf",
+        "language": "English",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Annie Hall",
+        "The Game",
+        "The Young and Prodigious T.S. Spivet",
+        "Stay Alive"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of 2012. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Billy Campbell",
+        "anchor_title": "The Fog",
+        "constraints": {
+          "genre": "slasher",
+          "actor": "Billy Campbell",
+          "plot": "insomniac",
+          "director": "Paul Greengrass",
+          "language": "English",
+          "writer": "Jim Kouf"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you like the sound of 2012 and think it's deeper than you thought, which makes me think you're looking for a movie that might have some complexity and nuance. Based on that, I'd recommend \"The Life Before Her Eyes\" (2007), which explores themes of guilt, trauma, and redemption in a thought-provoking way. With its strong performances from Lynn Cohen and Eva Amurri Martino, this film is sure to resonate with you.",
+      "constraints": {
+        "genre": "slasher",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "2012",
+        "actor": "Billy Campbell",
+        "director": "Paul Greengrass",
+        "writer": "Jim Kouf",
+        "language": "English",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Blade Runner",
+        "The Life Before Her Eyes",
+        "Unforgiven",
+        "The Lucky Ones"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Billy Campbell",
+        "anchor_title": "The Fog",
+        "constraints": {
+          "genre": "slasher",
+          "actor": "Billy Campbell",
+          "plot": "insomniac",
+          "director": "Paul Greengrass",
+          "language": "English",
+          "writer": "Jim Kouf"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for something that's the opposite of a slasher movie from 2012 starring Billy Campbell and directed by Paul Greengrass, right? Well, I think I can help you with that! I'd recommend \"The Infiltrator\" (2016), a crime drama starring Bryan Cranston as a U.S. Customs official who goes undercover to take down a notorious drug lord. It's a thrilling ride with great performances and a gripping story.",
+      "constraints": {
+        "genre": "slasher",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "2012",
+        "actor": "Billy Campbell",
+        "director": "Paul Greengrass",
+        "writer": "Jim Kouf",
+        "language": "English",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "The Infiltrator",
+        "Saving Grace",
+        "The Rookie",
+        "Oliver Twist"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by James Mangold? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 50,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "James Mangold",
+        "anchor_title": "Taxi Driver",
+        "constraints": {
+          "genre": "slasher",
+          "actor": "Billy Campbell",
+          "plot": "insomniac",
+          "director": "James Mangold",
+          "language": "English",
+          "writer": "Jim Kouf"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 50,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Billy Campbell",
+          "from_anchor": "The Fog",
+          "to_anchor": "Taxi Driver"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems like you're looking for something new by James Mangold, possibly a thriller or action movie that catches your attention. Considering your interest in \"You\" and the fact that James Mangold wasn't involved in that film, I'd recommend checking out \"Into the Blue\" (2005). This adrenaline-fueled movie features Paul Walker as an ex-stunt pilot turned treasure hunter, with a thrilling underwater adventure as its backdrop.",
+      "constraints": {
+        "genre": "slasher",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "You",
+        "actor": "Billy Campbell",
+        "director": "James Mangold",
+        "writer": "James Mangold",
+        "language": "English",
+        "year": "2012"
+      },
+      "rec_titles": [
+        "Into the Blue",
+        "Fool's Gold",
+        "Losin' It",
+        "Shadowland"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "bullets",
+      "from_anchor": "Fast Times at Ridgemont High",
+      "to_anchor": "Step Up"
+    },
+    {
+      "turn": 6,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "relationships",
+      "from_anchor": "Step Up",
+      "to_anchor": "Dead Poets Society"
+    },
+    {
+      "turn": 12,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "director",
+      "bridge_value": "Seth MacFarlane",
+      "from_anchor": "Dead Poets Society",
+      "to_anchor": "Chain Letter"
+    },
+    {
+      "turn": 14,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "witness",
+      "from_anchor": "Chain Letter",
+      "to_anchor": "The Understudy"
+    },
+    {
+      "turn": 19,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "director",
+      "bridge_value": "Robert Altman",
+      "from_anchor": "The Understudy",
+      "to_anchor": "Super 8"
+    },
+    {
+      "turn": 25,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "indian",
+      "from_anchor": "Super 8",
+      "to_anchor": "The Adventures of Tom Sawyer"
+    },
+    {
+      "turn": 27,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "The Adventures of Tom Sawyer",
+      "to_anchor": "Anger Management"
+    },
+    {
+      "turn": 34,
+      "from_focus": "director",
+      "to_focus": "writer",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Anger Management",
+      "to_anchor": "Kung Pow: Enter the Fist"
+    },
+    {
+      "turn": 36,
+      "from_focus": "writer",
+      "to_focus": "genre",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Kung Pow: Enter the Fist",
+      "to_anchor": "Isn't She Great"
+    },
+    {
+      "turn": 43,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "insomniac",
+      "from_anchor": "Isn't She Great",
+      "to_anchor": "The Fog"
+    },
+    {
+      "turn": 50,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Billy Campbell",
+      "from_anchor": "The Fog",
+      "to_anchor": "Taxi Driver"
+    }
+  ]
+}

@@ -1,0 +1,2278 @@
+{
+  "session_id": "00020",
+  "model_name": "llama3:instruct",
+  "true_genre": "autobiographical novel",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a autobiographical novel movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "autobiographical novel",
+        "anchor_title": "The Bell Jar",
+        "constraints": {
+          "genre": "autobiographical novel"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you're looking for an autobiographical novel movie, specifically a film adaptation of a book that's loosely based on someone's life story. \n\nGiven your request, I highly recommend \"The Grapes of Wrath\" (1939), a classic John Ford-directed drama that tells the powerful story of the Joad family during the Great Depression and Dust Bowl era. The film stars Henry Fonda as the determined Ma Joad, Jane Darwell, and John Carradine, among others.",
+      "constraints": {
+        "genre": "novel",
+        "plot": [
+          "novel",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "The Virgin Suicides",
+        "The Seduction of Joe Tynan",
+        "The Grapes of Wrath",
+        "Great Expectations"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Kurt Luedtke? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of The Grapes of Wrath.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Kurt Luedtke",
+        "anchor_title": "Jack the Giant Slayer",
+        "constraints": {
+          "genre": "autobiographical novel",
+          "writer": "Kurt Luedtke",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "writer",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "The Bell Jar",
+          "to_anchor": "Jack the Giant Slayer"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie written by Kurt Luedtke, but you're unsure if you'd enjoy it or be scared by it, and you're considering something like \"The Grapes of Wrath\". Based on that, I think you might appreciate \"Mother Night\", which is a thought-provoking drama about an American spy living in Nazi-occupied Europe.",
+      "constraints": {
+        "genre": "novel",
+        "plot": [
+          "written",
+          "kurt"
+        ],
+        "name": "RED",
+        "writer": "Kurt Luedtke"
+      },
+      "rec_titles": [
+        "Amen.",
+        "The Daytrippers",
+        "Mother Night",
+        "Jane Eyre"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Kurt Luedtke",
+        "anchor_title": "Jack the Giant Slayer",
+        "constraints": {
+          "genre": "autobiographical novel",
+          "writer": "Kurt Luedtke",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for recommendations like \"Just Checking\" by Kurt Luedtke, which means you're interested in a novel-like story with thought-provoking themes and character-driven plots.\n\nI highly recommend \"Wise Blood\" (1952), an adaptation of Flannery O'Connor's classic novella. With its unique blend of Southern Gothic atmosphere and philosophical undertones, this film will keep you engaged and contemplating the human condition.",
+      "constraints": {
+        "genre": "novel",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "writer": "Kurt Luedtke"
+      },
+      "rec_titles": [
+        "Bobby",
+        "Three Kings",
+        "Wise Blood",
+        "Terminator 2: Judgment Day"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Keith David. Hmm, I didn’t expect that vibe. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 4,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Keith David",
+        "anchor_title": "Trees Lounge",
+        "constraints": {
+          "genre": "autobiographical novel",
+          "writer": "Kurt Luedtke",
+          "language": "English",
+          "actor": "Keith David",
+          "plot": "live"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 4,
+          "from_focus": "writer",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "live",
+          "from_anchor": "Jack the Giant Slayer",
+          "to_anchor": "Trees Lounge"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for a movie that features Keith David and has a novel-like vibe, possibly with themes of finding or searching. Considering these constraints, I think you might enjoy \"The Subterraneans\" (1958), a classic romance film starring Keith David, which explores the lives of two misunderstood new bohemians.",
+      "constraints": {
+        "genre": "novel",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Her",
+        "writer": "Kurt Luedtke",
+        "actor": "Keith David"
+      },
+      "rec_titles": [
+        "Shrek 2",
+        "Mission: Impossible II",
+        "The Subterraneans",
+        "The Whistler"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Keith David",
+        "anchor_title": "Trees Lounge",
+        "constraints": {
+          "genre": "autobiographical novel",
+          "writer": "Kurt Luedtke",
+          "language": "English",
+          "actor": "Keith David",
+          "plot": "live"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more recommendations that share some similarities with a novel-inspired film featuring Keith David and a writer like Kurt Luedtke, perhaps with themes of complexity and depth. Based on those cues, I'd recommend \"JFK\" (1991), a thought-provoking and conspiracy-laden thriller that explores the darker side of human nature, much like \"Loser\". The film features an all-star cast, including Kevin Costner, Tommy Lee Jones, and Joe Pesci, which adds to its gripping narrative.",
+      "constraints": {
+        "genre": "novel",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "writer": "Kurt Luedtke",
+        "actor": "Keith David"
+      },
+      "rec_titles": [
+        "Loser",
+        "The Swindle",
+        "JFK",
+        "Dark Places"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Loser tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Keith David",
+        "anchor_title": "Trees Lounge",
+        "constraints": {
+          "genre": "autobiographical novel",
+          "writer": "Kurt Luedtke",
+          "language": "English",
+          "actor": "Keith David",
+          "plot": "live"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems you're looking for a story that explores what kind of characters emerge in a particular situation, and you've got a soft spot for Keith David's acting - great choice! Based on your interest in Kurt Luedtke's writing style, I think \"Head of State\" might be right up your alley. This comedy takes an unexpected turn when Bernie Mac plays Mays Gilliam, a local alderman who finds himself as the unlikely candidate to become the next US President - what kind of person will he reveal himself to be under pressure?",
+      "constraints": {
+        "genre": "novel",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Loser",
+        "writer": "Kurt Luedtke",
+        "actor": "Keith David"
+      },
+      "rec_titles": [
+        "We the Living",
+        "The Expendables 2",
+        "Madame Bovary",
+        "Head of State"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Keith David",
+        "anchor_title": "Trees Lounge",
+        "constraints": {
+          "genre": "autobiographical novel",
+          "writer": "Kurt Luedtke",
+          "language": "English",
+          "actor": "Keith David",
+          "plot": "live"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on what you've told me, I understand that you're looking for a movie that has a deeper tone than you initially thought, with connections to novels, Keith David, Kurt Luedtke, and themes of feeling or emotional depth.\n\nI think I can help you find something fitting! Have you considered \"House Rules\" (2010)? It's a mystery-thriller that explores the darker side of human nature, much like the works of Kurt Luedtke. Keith David is not in this particular film, but it's an engaging tale with a strong sense of tension and suspense.",
+      "constraints": {
+        "genre": "novel",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Deep",
+        "writer": "Kurt Luedtke",
+        "actor": "Keith David"
+      },
+      "rec_titles": [
+        "House Rules",
+        "Little Women",
+        "Madame Bovary",
+        "The Old Curiosity Shop"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of 2010. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Keith David",
+        "anchor_title": "Trees Lounge",
+        "constraints": {
+          "genre": "autobiographical novel",
+          "writer": "Kurt Luedtke",
+          "language": "English",
+          "actor": "Keith David",
+          "plot": "live"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on what you like about \"2010\", I understand that you're looking for a movie with strong storytelling and a deeper exploration of themes, perhaps with a touch of humor. With Keith David being involved in the original film, I'm going to recommend \"Due Date\" (2010) as it shares a similar tone and has a great cast, including Robert Downey Jr. and Zach Galifianakis. The movie follows two unlikely travel companions on a wild road trip, and their contrasting personalities make for some hilarious moments.",
+      "constraints": {
+        "genre": "novel",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "2010",
+        "writer": "Kurt Luedtke",
+        "actor": "Keith David",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Due Date",
+        "Megamind",
+        "The Grapes of Wrath",
+        "Freakonomics"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Keith David",
+        "anchor_title": "Trees Lounge",
+        "constraints": {
+          "genre": "autobiographical novel",
+          "writer": "Kurt Luedtke",
+          "language": "English",
+          "actor": "Keith David",
+          "plot": "live"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I understand what you're looking for! You were looking for a movie from around 2010, possibly with Keith David in it, and maybe something that explores the theme of being \"wrong\" earlier on. Based on those cues, I'd recommend \"Johns\" (2009) - it's an interesting character-driven drama that features Keith David, and its story revolves around mistaken decisions and trying to make amends.\n\nIf you're not in the mood for a more serious film, \"You Again\" (2010) could be a fun alternative. It's a lighthearted comedy with Jamie Lee Curtis and Dwayne Johnson, but it also deals with themes of being wrong earlier on - this time, it's about learning to let go of past mistakes and move forward.",
+      "constraints": {
+        "genre": "novel",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "2010",
+        "writer": "Kurt Luedtke",
+        "actor": "Keith David",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "You Again",
+        "Hollywood Homicide",
+        "Clash of the Titans",
+        "Johns"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Penelope Spheeris? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Johns.)",
+      "user_meta": {
+        "turn": 10,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Penelope Spheeris",
+        "anchor_title": "Frostbite",
+        "constraints": {
+          "genre": "autobiographical novel",
+          "writer": "Kurt Luedtke",
+          "language": "English",
+          "actor": "Wilson Cruz",
+          "plot": "live",
+          "director": "Penelope Spheeris"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 10,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Wilson Cruz",
+          "from_anchor": "Trees Lounge",
+          "to_anchor": "Frostbite"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems you're looking for something new by Penelope Spheeris, possibly with Keith David and a 2010 release date. I'd recommend checking out \"The Chronicles of Riddick\" (2004), which features Keith David in the cast alongside Vin Diesel. The film is an action-packed sci-fi adventure that follows Richard Bruno Riddick as he faces off against the Necromongers.",
+      "constraints": {
+        "genre": "novel",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Johns",
+        "writer": "Kurt Luedtke",
+        "actor": "Keith David",
+        "year": "2010",
+        "director": "Penelope Spheeris"
+      },
+      "rec_titles": [
+        "A Separate Peace",
+        "The Chronicles of Riddick",
+        "Unstoppable",
+        "Dead or Alive"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Penelope Spheeris",
+        "anchor_title": "Frostbite",
+        "constraints": {
+          "genre": "autobiographical novel",
+          "writer": "Kurt Luedtke",
+          "language": "English",
+          "actor": "Wilson Cruz",
+          "plot": "live",
+          "director": "Penelope Spheeris"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you're looking for more recommendations like \"novel\" (2010) starring Keith David, directed by Penelope Spheeris, and written by Kurt Luedtke - in other words, a thought-provoking film with complex characters. Based on your cues, I think you might enjoy \"Blue Valentine\" (2010), a critically acclaimed drama that explores the intricacies of a relationship through non-linear storytelling. The performances by Michelle Williams and Ryan Gosling are particularly noteworthy.",
+      "constraints": {
+        "genre": "novel",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "writer": "Kurt Luedtke",
+        "actor": "Keith David",
+        "year": "2010",
+        "director": "Penelope Spheeris"
+      },
+      "rec_titles": [
+        "The Warrior's Way",
+        "Blue Valentine",
+        "Donnie Brasco",
+        "My Girl 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Blue Valentine. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Penelope Spheeris",
+        "anchor_title": "Frostbite",
+        "constraints": {
+          "genre": "autobiographical novel",
+          "writer": "Kurt Luedtke",
+          "language": "English",
+          "actor": "Wilson Cruz",
+          "plot": "live",
+          "director": "Penelope Spheeris"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you liked the sound of Blue Valentine and are looking for something with a similar tone. Based on your interest in novel-inspired films from 2010, I recommend checking out Tangled. This animated film has a unique blend of fantasy and romance, much like Blue Valentine's exploration of human relationships. The voice cast, featuring Mandy Moore and Zachary Levi, adds to the movie's charm.",
+      "constraints": {
+        "genre": "novel",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Blue Valentine",
+        "writer": "Kurt Luedtke",
+        "actor": "Keith David",
+        "year": "2010",
+        "director": "Penelope Spheeris"
+      },
+      "rec_titles": [
+        "Uptown Girls",
+        "Paycheck",
+        "Tangled",
+        "Abraham Lincoln: Vampire Hunter"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does 2010 tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Penelope Spheeris",
+        "anchor_title": "Frostbite",
+        "constraints": {
+          "genre": "autobiographical novel",
+          "writer": "Kurt Luedtke",
+          "language": "English",
+          "actor": "Wilson Cruz",
+          "plot": "live",
+          "director": "Penelope Spheeris"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a story that tells something about \"what kind\" of thing, and they're intrigued by the year 2010. Based on their interest in novels from that era, I think I have just the right recommendations.\n\nI'd like to suggest \"Random Hearts\" (1999) starring Harrison Ford, which explores themes of love, loss, and self-discovery after a tragic event. Alternatively, if you're open to a more classic novel-based recommendation, \"A Separate Peace\" (1959) is a great choice - it's an iconic tale of friendship and coming-of-age set against the backdrop of World War II.",
+      "constraints": {
+        "genre": "novel",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "2010",
+        "writer": "Kurt Luedtke",
+        "actor": "Keith David",
+        "year": "2010",
+        "director": "Penelope Spheeris"
+      },
+      "rec_titles": [
+        "A Separate Peace",
+        "Passion",
+        "Random Hearts",
+        "Jane Eyre"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of A Separate Peace? That sounds intriguing.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Penelope Spheeris",
+        "anchor_title": "Frostbite",
+        "constraints": {
+          "genre": "autobiographical novel",
+          "writer": "Kurt Luedtke",
+          "language": "English",
+          "actor": "Wilson Cruz",
+          "plot": "live",
+          "director": "Penelope Spheeris"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie that captures the mood of A Separate Peace, which sounds intriguing! Based on your preference cues, I think you might enjoy \"Random Hearts\" (1999), starring Harrison Ford and Kristin Scott Thomas. This romantic drama explores the complexities of relationships and the aftermath of tragedy, much like A Separate Peace delves into themes of identity, morality, and mortality.",
+      "constraints": {
+        "genre": "novel",
+        "plot": [
+          "what",
+          "separate"
+        ],
+        "name": "A Separate Peace",
+        "writer": "Kurt Luedtke",
+        "actor": "Keith David",
+        "year": "2010",
+        "director": "Penelope Spheeris"
+      },
+      "rec_titles": [
+        "The Town",
+        "This Is Spinal Tap",
+        "Random Hearts",
+        "I Am Number Four"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Penelope Spheeris",
+        "anchor_title": "Frostbite",
+        "constraints": {
+          "genre": "autobiographical novel",
+          "writer": "Kurt Luedtke",
+          "language": "English",
+          "actor": "Wilson Cruz",
+          "plot": "live",
+          "director": "Penelope Spheeris"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems like you're looking for a movie that resonates with themes of uncertainty and exploration, perhaps something that explores the idea of being \"sure\" or \"perhaps\" about certain aspects of life. Based on your interest in a novel (2010) film with Keith David, I think \"The Next Three Days\" might be an intriguing choice. This movie features a married couple navigating a dramatic turn of events, and Keith David has a supporting role - it's a gripping thriller that explores the complexities of relationships and uncertainty.",
+      "constraints": {
+        "genre": "novel",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "A Separate Peace",
+        "writer": "Kurt Luedtke",
+        "actor": "Keith David",
+        "year": "2010",
+        "director": "Penelope Spheeris"
+      },
+      "rec_titles": [
+        "In the Woods",
+        "Mr. & Mrs. Smith",
+        "Trust",
+        "The Next Three Days"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on X. I want to try something more film adaptation—That sounds intriguing.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "film adaptation",
+        "anchor_title": "Mother Night",
+        "constraints": {
+          "genre": "film adaptation",
+          "writer": "Kurt Luedtke",
+          "language": "English",
+          "actor": "Wilson Cruz",
+          "plot": "live",
+          "director": "Penelope Spheeris"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 16,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "prostitute",
+          "from_anchor": "Frostbite",
+          "to_anchor": "Mother Night"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I understand what you're looking for! You want a film adaptation movie from 2010, starring Keith David (or at least with him involved in some way), directed by Penelope Spheeris, and written by Kurt Luedtke. Unfortunately, none of the options on this list quite fit that criteria.\n\nHowever, I think you might enjoy \"Black Swan\" (2010) - it's a psychological thriller with a complex plot and strong performances from Natalie Portman and Mila Kunis.",
+      "constraints": {
+        "genre": "film adaptation",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "X",
+        "writer": "Kurt Luedtke",
+        "actor": "Keith David",
+        "year": "2010",
+        "director": "Penelope Spheeris"
+      },
+      "rec_titles": [
+        "Furry Vengeance",
+        "Stand by Me",
+        "The Princess and the Frog",
+        "Black Swan"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "film adaptation",
+        "anchor_title": "Mother Night",
+        "constraints": {
+          "genre": "film adaptation",
+          "writer": "Kurt Luedtke",
+          "language": "English",
+          "actor": "Wilson Cruz",
+          "plot": "live",
+          "director": "Penelope Spheeris"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more recommendations similar to a film adaptation from 2010, starring Keith David and directed by Penelope Spheeris, with themes of just checking if there's more. I think you might enjoy \"The Expendables\" (2010), an action-packed flick featuring a star-studded cast, including Sylvester Stallone, Jason Statham, Jet Li, and Bruce Willis, as they take on a Latin dictator and a renegade CIA agent in a thrilling adventure.",
+      "constraints": {
+        "genre": "film adaptation",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "writer": "Kurt Luedtke",
+        "actor": "Keith David",
+        "year": "2010",
+        "director": "Penelope Spheeris"
+      },
+      "rec_titles": [
+        "The Ghost Writer",
+        "The Expendables",
+        "Takers",
+        "Ocean's Twelve"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of 2010. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "film adaptation",
+        "anchor_title": "Mother Night",
+        "constraints": {
+          "genre": "film adaptation",
+          "writer": "Kurt Luedtke",
+          "language": "English",
+          "actor": "Wilson Cruz",
+          "plot": "live",
+          "director": "Penelope Spheeris"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a movie with a strong film adaptation feel, released in 2010, starring Keith David, and having a deeper plot than expected. Based on these constraints, I recommend \"Robin Hood\" (2010) which is an animated adaptation of the classic tale, featuring Scott Grimes, Mark Addy, and William Hurt. The movie has a similar adventurous tone to your initial mention of 2010.",
+      "constraints": {
+        "genre": "film adaptation",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "2010",
+        "writer": "Kurt Luedtke",
+        "actor": "Keith David",
+        "year": "2010",
+        "director": "Penelope Spheeris"
+      },
+      "rec_titles": [
+        "There's Something About Mary",
+        "Maid in Manhattan",
+        "Robin Hood",
+        "Planet Terror"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does 2010 tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "film adaptation",
+        "anchor_title": "Mother Night",
+        "constraints": {
+          "genre": "film adaptation",
+          "writer": "Kurt Luedtke",
+          "language": "English",
+          "actor": "Wilson Cruz",
+          "plot": "live",
+          "director": "Penelope Spheeris"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a film adaptation that was released in 2010, stars Keith David, and has a specific vibe that surprised you. Based on those constraints, I'd recommend \"Hot Tub Time Machine\" (2010) - it's a fun and quirky time-travel comedy starring John Cusack, Rob Corddry, and Charlie McDermott as three friends who travel back to 1986 and try to relive their glory days.",
+      "constraints": {
+        "genre": "film adaptation",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "2010",
+        "writer": "Kurt Luedtke",
+        "actor": "Keith David",
+        "year": "2010",
+        "director": "Penelope Spheeris"
+      },
+      "rec_titles": [
+        "The American",
+        "Hot Tub Time Machine",
+        "Bee Season",
+        "Hitch"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of 2010? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "film adaptation",
+        "anchor_title": "Mother Night",
+        "constraints": {
+          "genre": "film adaptation",
+          "writer": "Kurt Luedtke",
+          "language": "English",
+          "actor": "Wilson Cruz",
+          "plot": "live",
+          "director": "Penelope Spheeris"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I understand what you're looking for! You mentioned that \"2010\" has a deeper feel than expected, and you're interested in film adaptations from 2010 with Keith David involved, directed by Penelope Spheeris, written by Kurt Luedtke, and plot keywords related to \"what\" and \"feels\". With those constraints in mind, I'd like to recommend two movies that might fit the bill: \"Dear John\" (2010), a romantic drama with Channing Tatum and Amanda Seyfried, which explores complex emotions; or \"Man on Wire\" (2008), an Oscar-winning documentary that delves into the art of tightrope walking and the risks involved.",
+      "constraints": {
+        "genre": "film adaptation",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "2010",
+        "writer": "Kurt Luedtke",
+        "actor": "Keith David",
+        "year": "2010",
+        "director": "Penelope Spheeris"
+      },
+      "rec_titles": [
+        "End of Watch",
+        "Man on Wire",
+        "Out of Sight",
+        "Dear John"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 21,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "film adaptation",
+        "anchor_title": "Mother Night",
+        "constraints": {
+          "genre": "film adaptation",
+          "writer": "Kurt Luedtke",
+          "language": "English",
+          "actor": "Wilson Cruz",
+          "plot": "live",
+          "director": "Penelope Spheeris"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a film adaptation from 2010, starring Keith David, directed by Penelope Spheeris, and with plot keywords \"sure\" and \"perhaps\". I think I can help!\n\nI recommend \"Stone\" (2010) - it's a gripping drama that explores themes of manipulation and deceit, starring Robert De Niro alongside Milla Jovovich.",
+      "constraints": {
+        "genre": "film adaptation",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "2010",
+        "writer": "Kurt Luedtke",
+        "actor": "Keith David",
+        "year": "2010",
+        "director": "Penelope Spheeris"
+      },
+      "rec_titles": [
+        "The Twilight Saga: Eclipse",
+        "The Bourne Identity",
+        "Stone",
+        "The Secret of My Success"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Krio Language? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 22,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "Krio Language",
+        "anchor_title": "Mansfield Park",
+        "constraints": {
+          "genre": "film adaptation",
+          "writer": "Kurt Luedtke",
+          "language": "Krio Language",
+          "actor": "Wilson Cruz",
+          "plot": "live"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 22,
+          "from_focus": "genre",
+          "to_focus": "language",
+          "bridge_field": "genre",
+          "bridge_value": "film adaptation",
+          "from_anchor": "Mother Night",
+          "to_anchor": "Mansfield Park"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie that's primarily in Krio Language, perhaps something thought-provoking and culturally fascinating. I'd recommend \"Kites\" (2010), an action-packed film set in the Mexican desert with stunning visuals and a thrilling storyline. With a unique blend of romance, drama, and adventure, it might just capture your attention!",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "Ted",
+        "writer": "Kurt Luedtke",
+        "actor": "Keith David",
+        "year": "2010",
+        "director": "Penelope Spheeris",
+        "language": "Krio Language"
+      },
+      "rec_titles": [
+        "Kites",
+        "Afterlife",
+        "Just Wright",
+        "The Gazebo"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Krio Language",
+        "anchor_title": "Mansfield Park",
+        "constraints": {
+          "genre": "film adaptation",
+          "writer": "Kurt Luedtke",
+          "language": "Krio Language",
+          "actor": "Wilson Cruz",
+          "plot": "live"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for more recommendations like \"Something New\" (2010), which features Keith David, Penelope Spheeris, Kurt Luedtke, and the Krio language - a unique combination! Given these constraints, I think you might enjoy \"Hesher\" (2010) starring Joseph Gordon-Levitt, who brings his signature quirky charm to the role of Hesher. The film's offbeat humor and exploration of grief will likely resonate with you.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "writer": "Kurt Luedtke",
+        "actor": "Keith David",
+        "year": "2010",
+        "director": "Penelope Spheeris",
+        "language": "Krio Language"
+      },
+      "rec_titles": [
+        "RED",
+        "Hesher",
+        "Bats",
+        "The Rocker"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Hesher. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Krio Language",
+        "anchor_title": "Mansfield Park",
+        "constraints": {
+          "genre": "film adaptation",
+          "writer": "Kurt Luedtke",
+          "language": "Krio Language",
+          "actor": "Wilson Cruz",
+          "plot": "live"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you like the sound of Hesher and are looking for movies with similar qualities, such as a fascinating plot and great performances. Based on your interest in Hesher, I think you might enjoy \"Wanted\" (2010), which features Angelina Jolie Pitt and Morgan Freeman in a thrilling action movie with a complex plot. Alternatively, if you're in the mood for something more light-hearted, \"The Prince and the Pauper\" could be an enjoyable choice, with its classic tale of mistaken identities and royal intrigue.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Her",
+        "writer": "Kurt Luedtke",
+        "actor": "Keith David",
+        "year": "2010",
+        "director": "Penelope Spheeris",
+        "language": "Krio Language"
+      },
+      "rec_titles": [
+        "The Twilight Saga: Eclipse",
+        "Wanted",
+        "The Prince and the Pauper",
+        "Jumper"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Taken tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Krio Language",
+        "anchor_title": "Mansfield Park",
+        "constraints": {
+          "genre": "film adaptation",
+          "writer": "Kurt Luedtke",
+          "language": "Krio Language",
+          "actor": "Wilson Cruz",
+          "plot": "live"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie that tells a story with depth, specifically ones from around 2010 featuring Keith David, Penelope Spheeris, Kurt Luedtke, and/or Krio Language. Based on these cues, I'd recommend \"The Social Network\" (2010) - it's a thought-provoking film about the rise of Facebook, with strong performances from Jesse Eisenberg and Andrew Garfield.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Taken",
+        "writer": "Kurt Luedtke",
+        "actor": "Keith David",
+        "year": "2010",
+        "director": "Penelope Spheeris",
+        "language": "Krio Language"
+      },
+      "rec_titles": [
+        "The Social Network",
+        "Gunless",
+        "The Last Airbender",
+        "Blue Valentine"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Social Network? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Krio Language",
+        "anchor_title": "Mansfield Park",
+        "constraints": {
+          "genre": "film adaptation",
+          "writer": "Kurt Luedtke",
+          "language": "Krio Language",
+          "actor": "Wilson Cruz",
+          "plot": "live"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie that has a similar vibe to The Social Network, which seems to have had a unexpected tone. Based on your preferences for genre (language), year (2010), and actor (Keith David), I'm going to recommend two movies from the list: \"127 Hours\" and \"Why Did I Get Married?\".\n\n\"Why Did I Get Married?\" is a comedy-drama that explores the complexities of marriage, which might be an interesting contrast to The Social Network's tone. On the other hand, \"127 Hours\" is a thrilling survival story with stunning visuals and a gripping plot, which could provide an exciting change of pace from the social drama of The Social Network.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "social"
+        ],
+        "name": "The Social Network",
+        "writer": "Kurt Luedtke",
+        "actor": "Keith David",
+        "year": "2010",
+        "director": "Penelope Spheeris",
+        "language": "Krio Language"
+      },
+      "rec_titles": [
+        "Mansfield Park",
+        "127 Hours",
+        "Why Did I Get Married?",
+        "Clash of the Titans"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Krio Language",
+        "anchor_title": "Mansfield Park",
+        "constraints": {
+          "genre": "film adaptation",
+          "writer": "Kurt Luedtke",
+          "language": "Krio Language",
+          "actor": "Wilson Cruz",
+          "plot": "live"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie that's outside the box, with a quirky tone and maybe some surprises along the way? Based on your preferences, I think you might enjoy \"MacGruber\" (2010) - this comedy stars Will Forte as a bumbling special operative trying to stop a nuclear warhead from getting into the wrong hands. With its absurd humor and over-the-top action, it's definitely a weird and wild ride!",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "The Social Network",
+        "writer": "Kurt Luedtke",
+        "actor": "Keith David",
+        "year": "2010",
+        "director": "Penelope Spheeris",
+        "language": "Krio Language"
+      },
+      "rec_titles": [
+        "MacGruber",
+        "Extraordinary Measures",
+        "Super",
+        "The Losers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Powers Boothe. That feels deeper than I thought. (I’m thinking of MacGruber.)",
+      "user_meta": {
+        "turn": 28,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Powers Boothe",
+        "anchor_title": "Bee Season",
+        "constraints": {
+          "genre": "film adaptation",
+          "writer": "Kurt Luedtke",
+          "actor": "Powers Boothe",
+          "plot": "live"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 28,
+          "from_focus": "language",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Powers Boothe",
+          "from_anchor": "Mansfield Park",
+          "to_anchor": "Bee Season"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems like you're looking for movies that feature Powers Boothe, with a focus on deeper storytelling and potentially some action elements. Given your interest in MacGruber's darker tone, I'd recommend checking out Red Dawn (1984) or Peggy Sue Got Married (1986). Both films showcase Boothe's acting skills and have more mature themes at their core.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "MacGruber",
+        "writer": "Kurt Luedtke",
+        "actor": "Powers Boothe",
+        "year": "2010",
+        "director": "Penelope Spheeris",
+        "language": "Krio Language"
+      },
+      "rec_titles": [
+        "The Twilight Saga: Eclipse",
+        "Red Dawn",
+        "Peggy Sue Got Married",
+        "How to Train Your Dragon"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Powers Boothe",
+        "anchor_title": "Bee Season",
+        "constraints": {
+          "genre": "film adaptation",
+          "writer": "Kurt Luedtke",
+          "actor": "Powers Boothe",
+          "plot": "live"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more recommendations like a movie from 2010 that features Powers Boothe, is directed by Penelope Spheeris, and has a plot centered around the Krio language - just to name a few similarities! In that case, I think you might enjoy \"Hesher\" (2010), which stars Joseph Gordon-Levitt in a quirky and chaotic role. The movie's offbeat humor and exploration of complex relationships might resonate with you.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "writer": "Kurt Luedtke",
+        "actor": "Powers Boothe",
+        "year": "2010",
+        "director": "Penelope Spheeris",
+        "language": "Krio Language"
+      },
+      "rec_titles": [
+        "Prince of Persia: The Sands of Time",
+        "3",
+        "Abraham Lincoln: Vampire Hunter",
+        "Hesher"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on X. I want to try something more young-adult—still with Powers Boothe if possible. That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 30,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "young-adult",
+        "anchor_title": "The People I've Slept With",
+        "constraints": {
+          "genre": "young-adult",
+          "actor": "Powers Boothe",
+          "plot": "live"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 30,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "Powers Boothe",
+          "from_anchor": "Bee Season",
+          "to_anchor": "The People I've Slept With"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a young-adult movie, preferably with Powers Boothe, and something that feels deeper than you thought. Unfortunately, none of the movies on this list fit those exact criteria, but I can recommend two options that might interest you! How about \"Black Swan\" (2010), starring Natalie Portman in a psychological thriller that explores the darker side of ambition? Alternatively, \"The Passage\" (2010) is a World War II drama that features a strong lead character and a gripping storyline.",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Deep",
+        "writer": "Kurt Luedtke",
+        "actor": "Powers Boothe",
+        "year": "2010",
+        "director": "Penelope Spheeris",
+        "language": "Krio Language"
+      },
+      "rec_titles": [
+        "The Other Guys",
+        "Little Fockers",
+        "The Passage",
+        "Black Swan"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "young-adult",
+        "anchor_title": "The People I've Slept With",
+        "constraints": {
+          "genre": "young-adult",
+          "actor": "Powers Boothe",
+          "plot": "live"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I noticed you liked a young-adult movie from 2010 with Powers Boothe, and you're looking for more recommendations like that. That's an interesting combination! Based on your interest in a light-hearted adventure, I'd recommend \"Prince of Persia: The Sands of Time\" (2010), which features a thrilling quest with a dash of romance, starring Reece Ritchie and Jake Gyllenhaal. Alternatively, if you're up for some high-octane action, \"Con Air\" (1997) might be a great fit, starring Nicolas Cage and the talented Powers Boothe himself!",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "writer": "Kurt Luedtke",
+        "actor": "Powers Boothe",
+        "year": "2010",
+        "director": "Penelope Spheeris",
+        "language": "Krio Language"
+      },
+      "rec_titles": [
+        "The Other Guys",
+        "Prince of Persia: The Sands of Time",
+        "Con Air",
+        "The Giver"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Prince of Persia: The Sands of Time tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "young-adult",
+        "anchor_title": "The People I've Slept With",
+        "constraints": {
+          "genre": "young-adult",
+          "actor": "Powers Boothe",
+          "plot": "live"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It sounds like you're unsure if Prince of Persia: The Sands of Time is up your alley, and you'd like some alternative suggestions! Based on your interest in young-adult stories from 2010 with Powers Boothe (who isn't involved in any of these films), I think you might enjoy \"The Book Thief\" (2013) instead. This film tells a powerful story about a young girl's journey during World War II, and its themes of hope and resilience might resonate with you more than an action-adventure like Prince of Persia.",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "writer": "Kurt Luedtke",
+        "actor": "Powers Boothe",
+        "year": "2010",
+        "director": "Penelope Spheeris",
+        "language": "Krio Language"
+      },
+      "rec_titles": [
+        "The Book Thief",
+        "Wayne's World",
+        "Lord of the Flies",
+        "TRON: Legacy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Sophie Rois. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of 3.)",
+      "user_meta": {
+        "turn": 33,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Sophie Rois",
+        "anchor_title": "Crescendo",
+        "constraints": {
+          "genre": "young-adult",
+          "actor": "Sophie Rois",
+          "plot": "live"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 33,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Sophie Rois",
+          "from_anchor": "The People I've Slept With",
+          "to_anchor": "Crescendo"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It sounds like you're looking for movies featuring Sophie Rois, and possibly ones that fit certain genres, timeframes, or themes. Based on your hints about young-adult films from 2010 with Sophie Rois, I think \"You Again\" (2010) could be a great match! This comedy stars Jamie Lee Curtis and Dwayne Johnson, and follows a woman's hilarious attempts to expose her brother's fiancée for being the same high school bully who tormented her.",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "3",
+        "writer": "Kurt Luedtke",
+        "actor": "Sophie Rois",
+        "year": "2010",
+        "director": "Penelope Spheeris",
+        "language": "Krio Language"
+      },
+      "rec_titles": [
+        "Armageddon",
+        "Kites",
+        "Love Ranch",
+        "You Again"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 34,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Sophie Rois",
+        "anchor_title": "Crescendo",
+        "constraints": {
+          "genre": "young-adult",
+          "actor": "Sophie Rois",
+          "plot": "live"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences, I understand you're looking for more young-adult movies from around 2010 with a dash of whimsy and fun. Among our list, I'd recommend \"Alice in Wonderland\" - an imaginative and visually stunning adaptation that brings the beloved classic to life. You might also enjoy its quirky cast, including Johnny Depp's iconic portrayal of the Mad Hatter!",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "writer": "Kurt Luedtke",
+        "actor": "Sophie Rois",
+        "year": "2010",
+        "director": "Penelope Spheeris",
+        "language": "Krio Language"
+      },
+      "rec_titles": [
+        "Alice in Wonderland",
+        "Terminator 2: Judgment Day",
+        "The Princess Diaries",
+        "The Rocker"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of 2010? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Sophie Rois",
+        "anchor_title": "Crescendo",
+        "constraints": {
+          "genre": "young-adult",
+          "actor": "Sophie Rois",
+          "plot": "live"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you're looking for a movie released in 2010 that fits a young-adult genre, stars Sophie Rois, is directed by Penelope Spheeris, and written by Kurt Luedtke. Based on these constraints, I'd recommend \"Black Swan\" (2010) - it's a psychological thriller that explores themes of identity and uncertainty, starring Natalie Portman in a critically acclaimed performance.",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "2010",
+        "writer": "Kurt Luedtke",
+        "actor": "Sophie Rois",
+        "year": "2010",
+        "director": "Penelope Spheeris",
+        "language": "Krio Language"
+      },
+      "rec_titles": [
+        "WALL·E",
+        "Black Swan",
+        "The Book of Eli",
+        "Shark Tale"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Psycho. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Sophie Rois",
+        "anchor_title": "Crescendo",
+        "constraints": {
+          "genre": "young-adult",
+          "actor": "Sophie Rois",
+          "plot": "live"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems like you're looking for movies that are a bit darker and more thought-provoking, as you mentioned \"Psycho\" feeling deeper than expected. Based on your preferences for young-adult films from the year 2010, I'd recommend \"I Am Number Four\" which explores themes of identity, danger, and survival.",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Psycho",
+        "writer": "Kurt Luedtke",
+        "actor": "Sophie Rois",
+        "year": "2010",
+        "director": "Penelope Spheeris",
+        "language": "Krio Language"
+      },
+      "rec_titles": [
+        "The Life Before Her Eyes",
+        "Abraham Lincoln: Vampire Hunter",
+        "How to Train Your Dragon",
+        "I Am Number Four"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Peter Ramsey? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Psycho.)",
+      "user_meta": {
+        "turn": 37,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Peter Ramsey",
+        "anchor_title": "The Fault in Our Stars",
+        "constraints": {
+          "genre": "young-adult",
+          "plot": "sant",
+          "director": "Peter Ramsey"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 37,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "sant",
+          "from_anchor": "Crescendo",
+          "to_anchor": "The Fault in Our Stars"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you're looking for something by Peter Ramsey, but not quite \"Psycho\"! Based on your interest in young-adult movies from 2010 with Sophie Rois and a hint of switching genres, I recommend \"Clash of the Titans\" (2010). This fantasy adventure film features stunning visuals, an epic battle between mythological creatures, and an all-star cast including Sam Worthington, Liam Neeson, and Ralph Fiennes. Give it a try!",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Psycho",
+        "writer": "Kurt Luedtke",
+        "actor": "Sophie Rois",
+        "year": "2010",
+        "director": "Peter Ramsey",
+        "language": "Krio Language"
+      },
+      "rec_titles": [
+        "Clash of the Titans",
+        "White Night",
+        "The Social Network",
+        "The Outsiders"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Peter Ramsey",
+        "anchor_title": "The Fault in Our Stars",
+        "constraints": {
+          "genre": "young-adult",
+          "plot": "sant",
+          "director": "Peter Ramsey"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more recommendations like \"The Last Holiday\" (which I'm assuming didn't exist based on your cues). You mentioned young-adult, 2010, Sophie Rois, Peter Ramsey, Kurt Luedtke, and Krio Language as preferences. \n\nBased on these constraints, I think you might enjoy \"Untraceable\" (2008) starring Sophie Rois! The movie's plot about a serial killer posting live videos of his victims online has some eerie similarities to your original request.",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "writer": "Kurt Luedtke",
+        "actor": "Sophie Rois",
+        "year": "2010",
+        "director": "Peter Ramsey",
+        "language": "Krio Language"
+      },
+      "rec_titles": [
+        "My Girl 2",
+        "White Night",
+        "Untraceable",
+        "The Swindle"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Peter Ramsey",
+        "anchor_title": "The Fault in Our Stars",
+        "constraints": {
+          "genre": "young-adult",
+          "plot": "sant",
+          "director": "Peter Ramsey"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I understand! You're looking for movies that have a similar mood to X, which feels deeper than you thought. Based on that, I'd recommend \"A Wrinkle in Time\" (1962) and \"Crescendo\" (2010). Both of these films explore complex themes and feature intriguing stories that delve into the human experience, much like the movie X.",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Deep",
+        "writer": "Kurt Luedtke",
+        "actor": "Sophie Rois",
+        "year": "2010",
+        "director": "Peter Ramsey",
+        "language": "Krio Language"
+      },
+      "rec_titles": [
+        "Salt",
+        "A Wrinkle in Time",
+        "Crescendo",
+        "The Last Airbender"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of A Wrinkle in Time. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Peter Ramsey",
+        "anchor_title": "The Fault in Our Stars",
+        "constraints": {
+          "genre": "young-adult",
+          "plot": "sant",
+          "director": "Peter Ramsey"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie that resonates with you, just like A Wrinkle in Time did! Based on your interest in young-adult stories and Sophie Rois' presence in one of the options, I'd recommend checking out \"3\" (2010). This emotional drama explores themes of love, loss, and mystery, all while featuring Sophie Rois as part of an ensemble cast. Give it a try and see if it strikes a chord with you!",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "In Time",
+        "writer": "Kurt Luedtke",
+        "actor": "Sophie Rois",
+        "year": "2010",
+        "director": "Peter Ramsey",
+        "language": "Krio Language"
+      },
+      "rec_titles": [
+        "Stargirl",
+        "The Bounty Hunter",
+        "Megamind",
+        "3"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Peter Ramsey",
+        "anchor_title": "The Fault in Our Stars",
+        "constraints": {
+          "genre": "young-adult",
+          "plot": "sant",
+          "director": "Peter Ramsey"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a story that explores themes of what and kind, with a young-adult twist from the year 2010. Since Sophie Rois is an actor associated with this genre, I'm going to recommend two movies that might fit the bill: \"Black Swan\" (2010), which features Mila Kunis in a dark and intense thriller about a ballerina's descent into madness, and \"Awakened\" (2011), which has a supernatural element and explores themes of deception and evil.",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "writer": "Kurt Luedtke",
+        "actor": "Sophie Rois",
+        "year": "2010",
+        "director": "Peter Ramsey",
+        "language": "Krio Language"
+      },
+      "rec_titles": [
+        "Elizabeth",
+        "Why Did I Get Married?",
+        "Awakened",
+        "Black Swan"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Peter Ramsey",
+        "anchor_title": "The Fault in Our Stars",
+        "constraints": {
+          "genre": "young-adult",
+          "plot": "sant",
+          "director": "Peter Ramsey"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for something that's the opposite of what you initially wanted, and you gave me some hints about being open to suggestions in the genre of young-adult movies from around 2010 with Sophie Rois (who isn't actually in any of these movies). Given those constraints, I'd recommend \"TRON: Legacy\" - it's an action-packed sci-fi adventure that explores a virtual world, featuring Jeff Bridges and Olivia Wilde.",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "X",
+        "writer": "Kurt Luedtke",
+        "actor": "Sophie Rois",
+        "year": "2010",
+        "director": "Peter Ramsey",
+        "language": "Krio Language"
+      },
+      "rec_titles": [
+        "Little Fockers",
+        "The Warrior's Way",
+        "TRON: Legacy",
+        "Harry Potter and the Order of the Phoenix"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Bokeem Woodbine. That sounds intriguing. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 43,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Bokeem Woodbine",
+        "anchor_title": "Saving Grace",
+        "constraints": {
+          "genre": "young-adult",
+          "plot": "sant",
+          "director": "Peter Ramsey",
+          "actor": "Bokeem Woodbine",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 43,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "The Fault in Our Stars",
+          "to_anchor": "Saving Grace"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I understand what you're looking for - maybe we could find some movies with Bokeem Woodbine, specifically ones that have a young-adult vibe, were released around 2010, and perhaps have some exciting plot twists! Based on your cues, I'd recommend \"3\" (2010), a mystery drama that explores the truth behind a sudden death, featuring Bokeem Woodbine as one of the main characters.",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Ted",
+        "writer": "Kurt Luedtke",
+        "actor": "Bokeem Woodbine",
+        "year": "2010",
+        "director": "Peter Ramsey",
+        "language": "Krio Language"
+      },
+      "rec_titles": [
+        "Naked",
+        "House Rules",
+        "Shattered",
+        "3"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bokeem Woodbine",
+        "anchor_title": "Saving Grace",
+        "constraints": {
+          "genre": "young-adult",
+          "plot": "sant",
+          "director": "Peter Ramsey",
+          "actor": "Bokeem Woodbine",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for recommendations that are similar to a young-adult movie from 2010 with Bokeem Woodbine and Peter Ramsey involved, but it seems we don't have any exact matches in our list. However, I think \"The Breakfast Club\" might be of interest to you. This iconic John Hughes film features a group of high school students from different cliques who find common ground during a Saturday detention, exploring themes of identity, social status, and the struggles of adolescence - all set to an 80s soundtrack!",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "writer": "Kurt Luedtke",
+        "actor": "Bokeem Woodbine",
+        "year": "2010",
+        "director": "Peter Ramsey",
+        "language": "Krio Language"
+      },
+      "rec_titles": [
+        "Annie Hall",
+        "Naked",
+        "Crescendo",
+        "The Breakfast Club"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bokeem Woodbine",
+        "anchor_title": "Saving Grace",
+        "constraints": {
+          "genre": "young-adult",
+          "plot": "sant",
+          "director": "Peter Ramsey",
+          "actor": "Bokeem Woodbine",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie that shares some similarities with \"Us\", such as a fascinating plot and intriguing stars. Based on your interest in young-adult movies from 2010, I recommend checking out \"Wanted\" (2010), an action-packed film starring Angelina Jolie Pitt and Morgan Freeman, where a young man's life takes an unexpected turn after he becomes the double of a wanted criminal.\n\nAlternatively, if you're in the mood for something more romantic and thrilling, \"From Paris with Love\" (2010) is another great option, featuring John Travolta as a charming spy who teams up with a young employee to prevent a terrorist attack in Paris.",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us",
+        "writer": "Kurt Luedtke",
+        "actor": "Bokeem Woodbine",
+        "year": "2010",
+        "director": "Peter Ramsey",
+        "language": "Krio Language"
+      },
+      "rec_titles": [
+        "Wanted",
+        "From Paris with Love",
+        "Why Did I Get Married Too?",
+        "Unstoppable"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bokeem Woodbine",
+        "anchor_title": "Saving Grace",
+        "constraints": {
+          "genre": "young-adult",
+          "plot": "sant",
+          "director": "Peter Ramsey",
+          "actor": "Bokeem Woodbine",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie that fits certain criteria, including a genre of young-adult, a release year of 2010, an actor named Bokeem Woodbine, a director named Peter Ramsey, and a writer named Kurt Luedtke. Unfortunately, none of the movies on this list match those exact specifications. However, if you're open to exploring other options that might scratch that same itch, I'd recommend \"Winter's Bone\" (2010) - it's an Oscar-nominated film with a strong lead performance from Jennifer Lawrence, and its themes of perseverance and family are sure to resonate.",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "Us",
+        "writer": "Kurt Luedtke",
+        "actor": "Bokeem Woodbine",
+        "year": "2010",
+        "director": "Peter Ramsey",
+        "language": "Krio Language"
+      },
+      "rec_titles": [
+        "Naked",
+        "Winter's Bone",
+        "Milkweed",
+        "Let Me In"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Her tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bokeem Woodbine",
+        "anchor_title": "Saving Grace",
+        "constraints": {
+          "genre": "young-adult",
+          "plot": "sant",
+          "director": "Peter Ramsey",
+          "actor": "Bokeem Woodbine",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I understand what you're looking for! Based on your interest in the story behind \"Her\", which seems to have a deeper, emotional tone, and considering your preference cues (genre: young-adult; year: 2010; actor: Bokeem Woodbine; director: Peter Ramsey), I'd like to recommend two movies that might resonate with you.\n\nFirstly, \"Black Swan\" (2010) is a psychological thriller that explores the darker side of human emotions. Starring Natalie Portman and Mila Kunis, it's a gripping tale of obsession and tragedy that will keep you on the edge of your seat.",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her",
+        "writer": "Kurt Luedtke",
+        "actor": "Bokeem Woodbine",
+        "year": "2010",
+        "director": "Peter Ramsey",
+        "language": "Krio Language"
+      },
+      "rec_titles": [
+        "The Next Three Days",
+        "Providence",
+        "Tomorrow, When the War Began",
+        "Black Swan"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on X. I want to try something more zombie (media genre)—still with Bokeem Woodbine if possible. Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 48,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "zombie (media genre)",
+        "anchor_title": "In the Woods",
+        "constraints": {
+          "genre": "zombie (media genre)",
+          "director": "Peter Ramsey",
+          "actor": "Bokeem Woodbine",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 48,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "Bokeem Woodbine",
+          "from_anchor": "Saving Grace",
+          "to_anchor": "In the Woods"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for something with a zombie twist, possibly featuring Bokeem Woodbine, and not expecting a vibe similar to what we previously discussed. Considering these constraints, I think you might enjoy \"Scream 4\" (2011), which features Bokeem Woodbine in the cast, along with a mix of horror and suspense elements. Alternatively, if you're open to something completely different, \"Hot Tub Time Machine\" (2010) offers a fun and quirky time-travel adventure that's not related to zombies but might provide a nice change of pace.",
+      "constraints": {
+        "genre": "zombie (media genre)",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "X",
+        "writer": "Kurt Luedtke",
+        "actor": "Bokeem Woodbine",
+        "year": "2010",
+        "director": "Peter Ramsey",
+        "language": "Krio Language"
+      },
+      "rec_titles": [
+        "Gunless",
+        "Scream 4",
+        "Alice in Wonderland",
+        "Hot Tub Time Machine"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "zombie (media genre)",
+        "anchor_title": "In the Woods",
+        "constraints": {
+          "genre": "zombie (media genre)",
+          "director": "Peter Ramsey",
+          "actor": "Bokeem Woodbine",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for more movie recommendations similar to a zombie-themed film from 2010 starring Bokeem Woodbine and directed by Peter Ramsey, with Krio Language as one of the languages used in the plot.\n\nBased on your preference, I recommend \"Black Swan\" (2010) - a psychological thriller that shares some dark and intense elements with zombie movies. The film stars Natalie Portman and Mila Kunis, both critically acclaimed actresses who bring depth to their characters.",
+      "constraints": {
+        "genre": "zombie (media genre)",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "writer": "Kurt Luedtke",
+        "actor": "Bokeem Woodbine",
+        "year": "2010",
+        "director": "Peter Ramsey",
+        "language": "Krio Language"
+      },
+      "rec_titles": [
+        "In Time",
+        "Crescendo",
+        "Black Swan",
+        "Easy A"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 50,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "zombie (media genre)",
+        "anchor_title": "In the Woods",
+        "constraints": {
+          "genre": "zombie (media genre)",
+          "director": "Peter Ramsey",
+          "actor": "Bokeem Woodbine",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a story similar in tone and style to Us, which sounds fascinating indeed! Based on your interest in zombie movies from around 2010, I'd recommend \"The Passage\" (2010) as it's a thrilling adventure film with a strong plot and great actors. Alternatively, if you're in the mood for something more intense and action-packed, \"Man on Fire\" (2004) starring Denzel Washington is an excellent choice.",
+      "constraints": {
+        "genre": "zombie (media genre)",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "writer": "Kurt Luedtke",
+        "actor": "Bokeem Woodbine",
+        "year": "2010",
+        "director": "Peter Ramsey",
+        "language": "Krio Language"
+      },
+      "rec_titles": [
+        "The Passage",
+        "Man on Fire",
+        "The Ghost Writer",
+        "The Twilight Saga: New Moon"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "writer",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "The Bell Jar",
+      "to_anchor": "Jack the Giant Slayer"
+    },
+    {
+      "turn": 4,
+      "from_focus": "writer",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "live",
+      "from_anchor": "Jack the Giant Slayer",
+      "to_anchor": "Trees Lounge"
+    },
+    {
+      "turn": 10,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Wilson Cruz",
+      "from_anchor": "Trees Lounge",
+      "to_anchor": "Frostbite"
+    },
+    {
+      "turn": 16,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "prostitute",
+      "from_anchor": "Frostbite",
+      "to_anchor": "Mother Night"
+    },
+    {
+      "turn": 22,
+      "from_focus": "genre",
+      "to_focus": "language",
+      "bridge_field": "genre",
+      "bridge_value": "film adaptation",
+      "from_anchor": "Mother Night",
+      "to_anchor": "Mansfield Park"
+    },
+    {
+      "turn": 28,
+      "from_focus": "language",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Powers Boothe",
+      "from_anchor": "Mansfield Park",
+      "to_anchor": "Bee Season"
+    },
+    {
+      "turn": 30,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "Powers Boothe",
+      "from_anchor": "Bee Season",
+      "to_anchor": "The People I've Slept With"
+    },
+    {
+      "turn": 33,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Sophie Rois",
+      "from_anchor": "The People I've Slept With",
+      "to_anchor": "Crescendo"
+    },
+    {
+      "turn": 37,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "sant",
+      "from_anchor": "Crescendo",
+      "to_anchor": "The Fault in Our Stars"
+    },
+    {
+      "turn": 43,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "The Fault in Our Stars",
+      "to_anchor": "Saving Grace"
+    },
+    {
+      "turn": 48,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "Bokeem Woodbine",
+      "from_anchor": "Saving Grace",
+      "to_anchor": "In the Woods"
+    }
+  ]
+}

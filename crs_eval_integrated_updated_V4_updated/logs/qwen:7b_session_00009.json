@@ -1,0 +1,2170 @@
+{
+  "session_id": "00009",
+  "model_name": "qwen:7b",
+  "true_genre": "dance",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a dance movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "dance",
+        "anchor_title": "Step Up Revolution",
+        "constraints": {
+          "genre": "dance"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for dance-themed movies. From the list, 'White Night' (2007) with its plot involving a murdered pawnbroker and a dance-related crime, and 'Trees Lounge' (1996) starring Mimi Rogers and featuring themes of love and desire, both could be good choices if you're interested in dance movies.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "dance",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "White Night",
+        "Trees Lounge",
+        "The Shadows",
+        "The Secret of My Success"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Trees Lounge tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "dance",
+        "anchor_title": "Step Up Revolution",
+        "constraints": {
+          "genre": "dance"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in stories with dance themes and involving what kind of thing happened. Based on these preferences, I recommend 'You' (2014), starring Jake Kasdan, due to its dance element and the exploration of a mysterious blackmail case that involves questioning societal norms.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Trees Lounge"
+      },
+      "rec_titles": [
+        "You",
+        "Zero Effect",
+        "The Andromeda Strain",
+        "The Skulls"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "dance",
+        "anchor_title": "Step Up Revolution",
+        "constraints": {
+          "genre": "dance"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with a dance genre and keywords like 'what' and 'decide'. Based on these preferences, I recommend watching 'The Expendables 2'. This action-packed film features plenty of dance moments, as well as elements of decision-making due to the high-stakes nature of the story.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED"
+      },
+      "rec_titles": [
+        "The Expendables 2",
+        "The Hunger Games: Mockingjay - Part 2",
+        "Without a Paddle",
+        "Witless Protection"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "dance",
+        "anchor_title": "Step Up Revolution",
+        "constraints": {
+          "genre": "dance"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're interested in movies that feature sound and like elements. From the list, I recommend 'Psychic Experiment' for its unique premise involving strange sounds and an alternate reality. It stars Adrienne King, known for her roles in classic films.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X"
+      },
+      "rec_titles": [
+        "Psychic Experiment",
+        "The Other Guys",
+        "Jumper",
+        "It's a Wonderful Life"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "dance",
+        "anchor_title": "Step Up Revolution",
+        "constraints": {
+          "genre": "dance"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences for dance, uncertainty ('sure,' 'perhaps'), and potentially involving women characters (Violet Lawson, Lily, Marigold Marado), I recommend watching 'Step Up' (2006). The film features dance as a central element, and the relationships between the characters, especially those involving the female characters, align with the uncertainty and character dynamics you mentioned.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "X"
+      },
+      "rec_titles": [
+        "Hot Tub Time Machine",
+        "Step Up",
+        "X",
+        "The Secret of My Success"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Brad Peyton? That sounds intriguing. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 6,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Brad Peyton",
+        "anchor_title": "The Illustrated Man",
+        "constraints": {
+          "genre": "dance",
+          "director": "Brad Peyton",
+          "plot": "night"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 6,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "night",
+          "from_anchor": "Step Up Revolution",
+          "to_anchor": "The Illustrated Man"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants something by Brad Peyton, with dance elements and a plot involving possibility of change. Based on these preferences, I recommend 'Hitch' (2005), starring Vince DePaul and Robinne Lee, as it matches the criteria you provided. The film's light-hearted romantic comedy style and Peyton's direction make it an enjoyable choice.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Us",
+        "director": "Brad Peyton"
+      },
+      "rec_titles": [
+        "Hitch",
+        "The Whistler",
+        "White Night",
+        "Restless"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Brad Peyton",
+        "anchor_title": "The Illustrated Man",
+        "constraints": {
+          "genre": "dance",
+          "director": "Brad Peyton",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movie recommendations with a dance theme, directed by Brad Peyton, and featuring just or more as keywords in the plot. Based on these preferences, I would recommend 'Braveheart' due to its epic scope and strong dance elements during battle scenes. Additionally, 'Donnie Brasco' could also be a fit, featuring dance routines as part of the movie's Italian Mafia culture.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Brad Peyton"
+      },
+      "rec_titles": [
+        "Braveheart",
+        "Moulin Rouge!",
+        "Donnie Brasco",
+        "King Kong"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Braveheart. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Brad Peyton",
+        "anchor_title": "The Illustrated Man",
+        "constraints": {
+          "genre": "dance",
+          "director": "Brad Peyton",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes stories with a dance element, directed by Brad Peyton, and featuring plot keywords like \"like\" and \"sound\". Based on these preferences, I would recommend 'Restless' (2006) due to its dance-inspired plot and the director Brad Peyton being involved. The cast includes Mia Wasikowska and Rufus Sewell, adding interest with their talent.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Braveheart",
+        "director": "Brad Peyton"
+      },
+      "rec_titles": [
+        "Restless",
+        "The Bad Seed",
+        "Maid in Manhattan",
+        "X-Men: First Class"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Restless tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Brad Peyton",
+        "anchor_title": "The Illustrated Man",
+        "constraints": {
+          "genre": "dance",
+          "director": "Brad Peyton",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a story with elements of dance and what kind of outlaws the protagonist deals with.推荐电影《Tombstone》,它就有这样的元素，讲述了一位退休律师与当地恶势力的对抗故事。",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Restless",
+        "director": "Brad Peyton"
+      },
+      "rec_titles": [
+        "Tombstone",
+        "Little Fockers",
+        "The Wraith",
+        "Holes"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Brad Peyton",
+        "anchor_title": "The Illustrated Man",
+        "constraints": {
+          "genre": "dance",
+          "director": "Brad Peyton",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with a dance genre, directed by Brad Peyton, and featuring decision-making or exploration of what lies beyond life. From the list provided, I would recommend 'Passion' as it aligns closely with the user's preferences. The film follows a man who embodies the sport of competitive beard growing, which could be interpreted as a unique dance form.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "director": "Brad Peyton"
+      },
+      "rec_titles": [
+        "Passion",
+        "Flatliners",
+        "Monsters, Inc.",
+        "Alex in Wonderland"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Lou Ferrigno. That sounds intriguing. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 11,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Lou Ferrigno",
+        "anchor_title": "I Love You, Man",
+        "constraints": {
+          "genre": "dance",
+          "director": "Brad Peyton",
+          "plot": "runaway",
+          "actor": "Lou Ferrigno"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 11,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "runaway",
+          "from_anchor": "The Illustrated Man",
+          "to_anchor": "I Love You, Man"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in finding more movies with Lou Ferrigno. Based on the given list, I recommend 'The Only Good Indian' (starring Wes Studi) as a potential movie featuring both Lou Ferrigno and Native American characters.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "X",
+        "director": "Brad Peyton",
+        "actor": "Lou Ferrigno"
+      },
+      "rec_titles": [
+        "The Only Good Indian",
+        "Trees Lounge",
+        "My Own Private Idaho",
+        "Norbit"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Lou Ferrigno",
+        "anchor_title": "I Love You, Man",
+        "constraints": {
+          "genre": "dance",
+          "director": "Brad Peyton",
+          "plot": "runaway",
+          "actor": "Lou Ferrigno"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movie recommendations with a dance genre, featuring actor Lou Ferrigno, and directed by Brad Peyton. From the list provided, '12 Angry Men' might not fit those specific preferences, but 'Velocity' could be a suitable recommendation considering all given cues.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Brad Peyton",
+        "actor": "Lou Ferrigno"
+      },
+      "rec_titles": [
+        "12 Angry Men",
+        "Terminator 2: Judgment Day",
+        "Harry Potter and the Half-Blood Prince",
+        "Velocity"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Lou Ferrigno",
+        "anchor_title": "I Love You, Man",
+        "constraints": {
+          "genre": "dance",
+          "director": "Brad Peyton",
+          "plot": "runaway",
+          "actor": "Lou Ferrigno"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a story featuring what, kind of elements, with Lou Ferrigno as an actor and Brad Peyton as director. Recommendations: 'Prometheus' for its contemporary quest story and探讨科技、能量与人性的关系; or 'Monsters, Inc.' for its heartwarming story about friendship, fear, and the importance of understanding others.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "director": "Brad Peyton",
+        "actor": "Lou Ferrigno"
+      },
+      "rec_titles": [
+        "Prometheus",
+        "Little Fockers",
+        "Elizabeth",
+        "Monsters, Inc."
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Lou Ferrigno",
+        "anchor_title": "I Love You, Man",
+        "constraints": {
+          "genre": "dance",
+          "director": "Brad Peyton",
+          "plot": "runaway",
+          "actor": "Lou Ferrigno"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user enjoys dance and is interested in the actor Lou Ferrigno. Recommendations: 'X-Men: First Class' combines dance with a strong Ferrigno presence, while 'Total Recall' has a thrilling dance scene involving a character played by a dancer-like actor (in this case, Sharon Stone).",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "director": "Brad Peyton",
+        "actor": "Lou Ferrigno"
+      },
+      "rec_titles": [
+        "X-Men: First Class",
+        "Smokin' Aces",
+        "Blow Out",
+        "Total Recall"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X-Men: First Class? That sounds intriguing.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Lou Ferrigno",
+        "anchor_title": "I Love You, Man",
+        "constraints": {
+          "genre": "dance",
+          "director": "Brad Peyton",
+          "plot": "runaway",
+          "actor": "Lou Ferrigno"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with dance as a genre preference, and Lou Ferrigno as an actor of interest. Based on these preferences, I recommend 'Eve''s Bayou' (1997), featuring Roger Guenveur Smith and Tamara Tunie, which has elements of dance and includes Lou Ferrigno in a supporting role.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "what",
+          "first"
+        ],
+        "name": "X-Men",
+        "director": "Brad Peyton",
+        "actor": "Lou Ferrigno"
+      },
+      "rec_titles": [
+        "Eve's Bayou",
+        "The Violent Kind",
+        "Superman",
+        "Captain Phillips"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Lou Ferrigno",
+        "anchor_title": "I Love You, Man",
+        "constraints": {
+          "genre": "dance",
+          "director": "Brad Peyton",
+          "plot": "runaway",
+          "actor": "Lou Ferrigno"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's constraints include a preference for dance-themed movies with actor Lou Ferrigno, and recent releases. Based on these preferences, I would recommend 'In Bruges' as it fits the dance genre and features Lou Ferrigno in a supporting role.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "X-Men",
+        "director": "Brad Peyton",
+        "actor": "Lou Ferrigno"
+      },
+      "rec_titles": [
+        "In Bruges",
+        "I Love You, Man",
+        "Thick as Thieves",
+        "Truly Madly Guilty"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, could we talk about Us specifically? That sounds intriguing.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "waiting_system",
+        "focus_field": "name",
+        "focus_value": "Us",
+        "anchor_title": "X",
+        "constraints": {
+          "genre": "dance",
+          "director": "Brad Peyton",
+          "plot": "runaway",
+          "name": "Us",
+          "writer": "David Nicholls"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 17,
+          "from_focus": "actor",
+          "to_focus": "name",
+          "bridge_field": "writer",
+          "bridge_value": "David Nicholls",
+          "from_anchor": "I Love You, Man",
+          "to_anchor": "X"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in dance-related movies with Lou Ferrigno as an actor, and Brad Peyton as a director. I recommend 'Lady in the Water' which features both Lou Ferrigno and Paul Mazursky, and has a dance-like quality to its aquatic setting.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "actually",
+          "could"
+        ],
+        "name": "Us",
+        "director": "Brad Peyton",
+        "actor": "Lou Ferrigno"
+      },
+      "rec_titles": [
+        "Alex in Wonderland",
+        "Lady in the Water",
+        "Us",
+        "Hitch"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "Us",
+        "anchor_title": "X",
+        "constraints": {
+          "genre": "dance",
+          "director": "Brad Peyton",
+          "plot": "runaway",
+          "name": "Us",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: genre is dance, actor is Lou Ferrigno, director is Brad Peyton, and the user is interested in just more recommendations like that.\n\nMovie recommendation: I suggest 'The Princess Diaries' (2001). This movie fits your criteria with its dance elements and connection to Lou Ferrigno. Enjoy!",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Brad Peyton",
+        "actor": "Lou Ferrigno"
+      },
+      "rec_titles": [
+        "This Is the End",
+        "The Princess Diaries",
+        "Moulin Rouge!",
+        "The Truth"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "Us",
+        "anchor_title": "X",
+        "constraints": {
+          "genre": "dance",
+          "director": "Brad Peyton",
+          "plot": "runaway",
+          "name": "Us",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences for dance genre and actor Lou Ferrigno, I recommend watching 'Blow Out' (1981). This movie features both dance and Lou Ferrigno's acting in a suspenseful thriller context.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "director": "Brad Peyton",
+        "actor": "Lou Ferrigno"
+      },
+      "rec_titles": [
+        "It's a Wonderful Life",
+        "The Nanny",
+        "Blow Out",
+        "The Relic"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "Us",
+        "anchor_title": "X",
+        "constraints": {
+          "genre": "dance",
+          "director": "Brad Peyton",
+          "plot": "runaway",
+          "name": "Us",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You mentioned a preference for dance genre and actor Lou Ferrigno in your movie recommendations. Based on those criteria, 'The Incredible Hulk' (2008) starring Edward Norton as Bruce Banner/ Hulk and Lou Ferrigno voiceing the character, aligns well with your preferences.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "Ted",
+        "director": "Brad Peyton",
+        "actor": "Lou Ferrigno"
+      },
+      "rec_titles": [
+        "The Incredible Hulk",
+        "Ted",
+        "I Love You, Man",
+        "The Lego Movie"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Matt Craven. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of RED.)",
+      "user_meta": {
+        "turn": 21,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Matt Craven",
+        "anchor_title": "Step Up Revolution",
+        "constraints": {
+          "genre": "dance",
+          "director": "Brad Peyton",
+          "plot": "pictorial",
+          "name": "Us",
+          "writer": "David Nicholls",
+          "actor": "Matt Craven"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 21,
+          "from_focus": "name",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "pictorial",
+          "from_anchor": "X",
+          "to_anchor": "Step Up Revolution"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies with Matt Craven, featuring dance, and possibly having \"could find\" in the plot keywords. Based on these preferences, I recommend 'The Life of David Gale' (2003) starring Matt Craven, as it combines elements of drama and could have a \"could find\" plot element related to the search for meaning.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "RED",
+        "director": "Brad Peyton",
+        "actor": "Matt Craven"
+      },
+      "rec_titles": [
+        "The Good, the Bad and the Ugly",
+        "Zookeeper",
+        "The Life of David Gale",
+        "Siddhartha"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Matt Craven",
+        "anchor_title": "Step Up Revolution",
+        "constraints": {
+          "genre": "dance",
+          "director": "Brad Peyton",
+          "plot": "pictorial",
+          "name": "Us",
+          "writer": "David Nicholls",
+          "actor": "Matt Craven"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in recommendations for dance-oriented movies, featuring actor Matt Craven as a main cast member, and directed by Brad Peyton. Based on these preferences, I recommend 'Wild Hogs' and 'Turbo'. In 'Wild Hogs', Matt Craven plays the role of Ben, while 'Turbo' features both Craven (as a voice actor for the snail, Shurik) and his character from 'Wild Hogs', Phil, in a humorous and dance-filled movie.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Brad Peyton",
+        "actor": "Matt Craven"
+      },
+      "rec_titles": [
+        "Wild Hogs",
+        "Hopeless",
+        "Turbo",
+        "Zookeeper"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Matt Craven",
+        "anchor_title": "Step Up Revolution",
+        "constraints": {
+          "genre": "dance",
+          "director": "Brad Peyton",
+          "plot": "pictorial",
+          "name": "Us",
+          "writer": "David Nicholls",
+          "actor": "Matt Craven"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie that feels weird, has thoughts associated with it, and features dance as a genre. Recommendations could be 'Dance Flick' due to its blend of dance and unusual plot, or 'Public Enemies' if the thought aspect interests more, and dance is present in the heist scenes.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "You",
+        "director": "Brad Peyton",
+        "actor": "Matt Craven"
+      },
+      "rec_titles": [
+        "Public Enemies",
+        "Dance Flick",
+        "White House Down",
+        "The Juror"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Matt Craven",
+        "anchor_title": "Step Up Revolution",
+        "constraints": {
+          "genre": "dance",
+          "director": "Brad Peyton",
+          "plot": "pictorial",
+          "name": "Us",
+          "writer": "David Nicholls",
+          "actor": "Matt Craven"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes stories with a dance theme and has an interest in Matt Craven's work. Based on these preferences, I would recommend 'Step Up Revolution' featuring Stephen Boss and Ryan Guzman, both of whom the user might recognize from previous projects.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us",
+        "director": "Brad Peyton",
+        "actor": "Matt Craven"
+      },
+      "rec_titles": [
+        "The Bad Seed",
+        "The Juror",
+        "Psychic Experiment",
+        "Step Up Revolution"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Matt Craven",
+        "anchor_title": "Step Up Revolution",
+        "constraints": {
+          "genre": "dance",
+          "director": "Brad Peyton",
+          "plot": "pictorial",
+          "name": "Us",
+          "writer": "David Nicholls",
+          "actor": "Matt Craven"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in stories involving questioning societal norms and gun abuse. Based on these preferences, I recommend \"You\" (2014), a psychological thriller with a narrative that questions the line between fiction and reality.主演包括: John David Washington, Rosamund Pike, keirnan clark, Mary Elizabeth Winstead.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "director": "Brad Peyton",
+        "actor": "Matt Craven"
+      },
+      "rec_titles": [
+        "Eve's Bayou",
+        "The Juror",
+        "Prometheus",
+        "You"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Albert Hughes? That sounds intriguing. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 26,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Albert Hughes",
+        "anchor_title": "Black Swan",
+        "constraints": {
+          "genre": "dance",
+          "director": "Albert Hughes",
+          "plot": "pictorial",
+          "writer": "David Nicholls",
+          "actor": "Mila Kunis"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 26,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Mila Kunis",
+          "from_anchor": "Step Up Revolution",
+          "to_anchor": "Black Swan"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're interested in a movie recommendation based on genre (dance), specific actors (Matt Craven and Channing Tatum), director (Albert Hughes), and plot keywords like 'switch'. From this list, I would suggest watching 'Step Up' as it combines dance with the leads you mentioned and has an exciting storyline involving a chance opportunity.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Ted",
+        "director": "Albert Hughes",
+        "actor": "Matt Craven"
+      },
+      "rec_titles": [
+        "The Secret of My Success",
+        "White Night",
+        "Armageddon",
+        "Step Up"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Albert Hughes",
+        "anchor_title": "Black Swan",
+        "constraints": {
+          "genre": "dance",
+          "director": "Albert Hughes",
+          "plot": "pictorial",
+          "writer": "David Nicholls",
+          "actor": "Mila Kunis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User wants more recommendations like those in dance and featuring actor Matt Craven. Based on these preferences, I recommend 'Shutter' (2008), a dance-themed film with John Hensley and James Kyson starring, and Matt Craven in a supporting role.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Albert Hughes",
+        "actor": "Matt Craven"
+      },
+      "rec_titles": [
+        "Shutter",
+        "Zack and Miri Make a Porno",
+        "King Kong",
+        "The Wonderful Wizard of Oz"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Albert Hughes",
+        "anchor_title": "Black Swan",
+        "constraints": {
+          "genre": "dance",
+          "director": "Albert Hughes",
+          "plot": "pictorial",
+          "writer": "David Nicholls",
+          "actor": "Mila Kunis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movie recommendations with a dance genre and actor Matt Craven. From the given list, 'End of Watch' meets these criteria as it features Matt Craven in a dance-oriented documentary-style plot.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Deep",
+        "director": "Albert Hughes",
+        "actor": "Matt Craven"
+      },
+      "rec_titles": [
+        "End of Watch",
+        "Holes",
+        "Restless",
+        "2010"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Albert Hughes",
+        "anchor_title": "Black Swan",
+        "constraints": {
+          "genre": "dance",
+          "director": "Albert Hughes",
+          "plot": "pictorial",
+          "writer": "David Nicholls",
+          "actor": "Mila Kunis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're interested in stories that delve deeper, with dance themes and Matt Craven as a notable actor. Based on those preferences, I recommend 'The Juror' and 'Dance Flick'. The latter features the hilarious and heartfelt story of street dancers trying to achieve their dreams.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "director": "Albert Hughes",
+        "actor": "Matt Craven"
+      },
+      "rec_titles": [
+        "The Juror",
+        "Dance Flick",
+        "Why Did I Get Married?",
+        "Pride and Prejudice"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Deep. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Albert Hughes",
+        "anchor_title": "Black Swan",
+        "constraints": {
+          "genre": "dance",
+          "director": "Albert Hughes",
+          "plot": "pictorial",
+          "writer": "David Nicholls",
+          "actor": "Mila Kunis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes dance and sound in movies, with a focus on Matt Craven. Recommendations could be 'Dance Flick', starring Essence Atkins and featuring Matt Craven, or 'The Book of Eli' with Denzel Washington, both offering dance-inspired and sound-rich experiences.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "director": "Albert Hughes",
+        "actor": "Matt Craven"
+      },
+      "rec_titles": [
+        "A Few Good Men",
+        "The Skull",
+        "Dance Flick",
+        "The Book of Eli"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, could we talk about The Book of Eli specifically? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 31,
+        "stage": "waiting_system",
+        "focus_field": "name",
+        "focus_value": "The Book of Eli",
+        "anchor_title": "Ted",
+        "constraints": {
+          "genre": "dance",
+          "director": "Albert Hughes",
+          "plot": "ravaged",
+          "writer": "David Nicholls",
+          "actor": "Mila Kunis",
+          "name": "The Book of Eli"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 31,
+          "from_focus": "director",
+          "to_focus": "name",
+          "bridge_field": "plot",
+          "bridge_value": "ravaged",
+          "from_anchor": "Black Swan",
+          "to_anchor": "Ted"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference for dance and Matt Craven as an actor, I recommend watching 'The Shadows' (2015). This film combines elements of dance and horror, with a focus on character development, similar to what you might find in a Matt Craven-led project.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "actually",
+          "could"
+        ],
+        "name": "The Book of Eli",
+        "director": "Albert Hughes",
+        "actor": "Matt Craven"
+      },
+      "rec_titles": [
+        "The Shadows",
+        "Downfall",
+        "The Truman Show",
+        "Afterlife"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "The Book of Eli",
+        "anchor_title": "Ted",
+        "constraints": {
+          "genre": "dance",
+          "director": "Albert Hughes",
+          "plot": "ravaged",
+          "writer": "David Nicholls",
+          "actor": "Mila Kunis",
+          "name": "The Book of Eli"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for dance-themed movies with actor Matt Craven and director Albert Hughes. Based on these preferences, I would recommend 'Ocean''s Twelve' (2004) due to its dance elements, Matt Craven's involvement, and the collaboration between Albert Hughes.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Albert Hughes",
+        "actor": "Matt Craven"
+      },
+      "rec_titles": [
+        "Ocean's Twelve",
+        "Moulin Rouge!",
+        "Labyrinths",
+        "How to Train Your Dragon"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Twelve tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "The Book of Eli",
+        "anchor_title": "Ted",
+        "constraints": {
+          "genre": "dance",
+          "director": "Albert Hughes",
+          "plot": "ravaged",
+          "writer": "David Nicholls",
+          "actor": "Mila Kunis",
+          "name": "The Book of Eli"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies with a dance vibe, featuring actor Matt Craven, and directed by Albert Hughes. Based on these preferences, I would recommend 'Tombstone' (2003) starring Dana Delany and Powers Boothe, which features Matt Craven and has elements of dance and adventure.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Twelve",
+        "director": "Albert Hughes",
+        "actor": "Matt Craven"
+      },
+      "rec_titles": [
+        "Tombstone",
+        "Monsters, Inc.",
+        "Find Me Guilty",
+        "The Way Back Home"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 34,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "The Book of Eli",
+        "anchor_title": "Ted",
+        "constraints": {
+          "genre": "dance",
+          "director": "Albert Hughes",
+          "plot": "ravaged",
+          "writer": "David Nicholls",
+          "actor": "Mila Kunis",
+          "name": "The Book of Eli"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for dance-related movies with specific actor and director cues. Based on your preferences, I recommend 'Dance Flick' (2009) which stars David Alan Grier and has a plot centered around sure and perhaps themes. Alternatively, you might enjoy 'Moulin Rouge!' (2001), featuring Kylie Minogue and Ewan McGregor in a lively dance spectacle with romance twists.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "Twelve",
+        "director": "Albert Hughes",
+        "actor": "Matt Craven"
+      },
+      "rec_titles": [
+        "Dance Flick",
+        "Moulin Rouge!",
+        "A Few Good Men",
+        "The Life of David Gale"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Dance Flick? That sounds intriguing.",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "The Book of Eli",
+        "anchor_title": "Ted",
+        "constraints": {
+          "genre": "dance",
+          "director": "Albert Hughes",
+          "plot": "ravaged",
+          "writer": "David Nicholls",
+          "actor": "Mila Kunis",
+          "name": "The Book of Eli"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in dance films with a focus on the actor Matt Craven and possibly featuring what as a plot keyword. Based on these preferences, I recommend 'You' (2014) starring Yul Vazquez and Matt Cravan, where his character's gun handling skills are showcased. This film offers a unique blend of dance and drama with Matt Craven's presence.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "what",
+          "dance"
+        ],
+        "name": "Dance Flick",
+        "director": "Albert Hughes",
+        "actor": "Matt Craven"
+      },
+      "rec_titles": [
+        "You",
+        "Little Fockers",
+        "Up in the Air",
+        "White House Down"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "name",
+        "focus_value": "The Book of Eli",
+        "anchor_title": "Ted",
+        "constraints": {
+          "genre": "dance",
+          "director": "Albert Hughes",
+          "plot": "ravaged",
+          "writer": "David Nicholls",
+          "actor": "Mila Kunis",
+          "name": "The Book of Eli"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user enjoys dance-oriented films with Matt Craven as an actor. Based on these preferences, I recommend \"Planet Terror\" due to its action-packed plot with Naveen Andrews and Robert Rodriguez involved.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "director": "Albert Hughes",
+        "actor": "Matt Craven"
+      },
+      "rec_titles": [
+        "Psychic Experiment",
+        "Planet Terror",
+        "A Few Good Men",
+        "Smokin' Aces"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Tom Bosley. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 37,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Tom Bosley",
+        "anchor_title": "The Land Before Time",
+        "constraints": {
+          "genre": "dance",
+          "director": "Albert Hughes",
+          "plot": "reunite",
+          "writer": "David Nicholls",
+          "actor": "Tom Bosley",
+          "name": "The Book of Eli"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 37,
+          "from_focus": "name",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "reunite",
+          "from_anchor": "Ted",
+          "to_anchor": "The Land Before Time"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies with Tom Bosley, dance genre, and potentially a plot involving finding something. Based on these preferences, I recommend 'The Only Good Indian' as it stars Wes Studi who fits the Tom Bosley criteria, and has elements of dance and discovering the truth.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Us",
+        "director": "Albert Hughes",
+        "actor": "Tom Bosley"
+      },
+      "rec_titles": [
+        "The Only Good Indian",
+        "Moulin Rouge!",
+        "The Woodlanders",
+        "Taken 3"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tom Bosley",
+        "anchor_title": "The Land Before Time",
+        "constraints": {
+          "genre": "dance",
+          "director": "Albert Hughes",
+          "plot": "reunite",
+          "writer": "David Nicholls",
+          "actor": "Tom Bosley",
+          "name": "The Book of Eli"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movie recommendations with dance as a genre, Tom Bosley as an actor, Albert Hughes as a director, and keywords \"just\" and \"more\". Based on these preferences, I would recommend 'The Pink Panther 2' since it features Tom Bosley and has elements of dance. Plus, the plot involves \"just more\" than expected, making it a suitable recommendation.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Albert Hughes",
+        "actor": "Tom Bosley"
+      },
+      "rec_titles": [
+        "The Pink Panther 2",
+        "A Little Princess",
+        "The Secret of My Success",
+        "The Breakfast Club"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Panther? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tom Bosley",
+        "anchor_title": "The Land Before Time",
+        "constraints": {
+          "genre": "dance",
+          "director": "Albert Hughes",
+          "plot": "reunite",
+          "writer": "David Nicholls",
+          "actor": "Tom Bosley",
+          "name": "The Book of Eli"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movie recommendations based on genre: dance, and actor: Tom Bosley. From the list provided, 'Aladdin' (1992) aligns with the given genre as it features music and dance. Additionally, Tom Bosley has a role in this film. Therefore, I recommend 'Aladdin'.",
+      "constraints": {
+        "genre": "dance",
+        "plot": [
+          "what",
+          "panther"
+        ],
+        "name": "Her",
+        "director": "Albert Hughes",
+        "actor": "Tom Bosley"
+      },
+      "rec_titles": [
+        "Aladdin",
+        "The Taming of the Shrew",
+        "Rango",
+        "The Andromeda Strain"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Maya, Yucatán Language? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Aladdin.)",
+      "user_meta": {
+        "turn": 40,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "Maya, Yucatán Language",
+        "anchor_title": "Alice in Wonderland",
+        "constraints": {
+          "genre": "dance",
+          "director": "Albert Hughes",
+          "plot": "reunite",
+          "writer": "David Nicholls",
+          "actor": "Frank Welker",
+          "name": "The Book of Eli",
+          "language": "Maya, Yucatán Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 40,
+          "from_focus": "actor",
+          "to_focus": "language",
+          "bridge_field": "actor",
+          "bridge_value": "Frank Welker",
+          "from_anchor": "The Land Before Time",
+          "to_anchor": "Alice in Wonderland"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants something primarily in Maya, with Yucatán language elements and featuring Tom Bosley as an actor connection. Based on these preferences, I recommend 'Alex in Wonderland' from the list, as it has elements of a story influenced by movie idols and features Tom Bosley. The plot revolves around a director's fantastical movie scenarios.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "Aladdin",
+        "director": "Albert Hughes",
+        "actor": "Tom Bosley",
+        "language": "Maya"
+      },
+      "rec_titles": [
+        "The Adventures of Tom Sawyer",
+        "Afterlife",
+        "The Truth",
+        "Alex in Wonderland"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Maya, Yucatán Language",
+        "anchor_title": "Alice in Wonderland",
+        "constraints": {
+          "genre": "dance",
+          "director": "Albert Hughes",
+          "plot": "reunite",
+          "writer": "David Nicholls",
+          "actor": "Frank Welker",
+          "name": "The Book of Eli",
+          "language": "Maya, Yucatán Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movie recommendations based on genre (language), specific actors, and director (Albert Hughes). From the list provided, I recommend 'Annie Hall' since both Tom Bosley (actor) and Woody Allen (director) are involved in this classic comedy film.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Albert Hughes",
+        "actor": "Tom Bosley",
+        "language": "Maya"
+      },
+      "rec_titles": [
+        "In Time",
+        "The Wonderful Wizard of Oz",
+        "Date Night",
+        "Annie Hall"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Maya, Yucatán Language",
+        "anchor_title": "Alice in Wonderland",
+        "constraints": {
+          "genre": "dance",
+          "director": "Albert Hughes",
+          "plot": "reunite",
+          "writer": "David Nicholls",
+          "actor": "Frank Welker",
+          "name": "The Book of Eli",
+          "language": "Maya, Yucatán Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a movie with a story about what women want, possibly featuring an actor like Tom Bosley. Based on these preferences, I recommend 'What Women Want' (2000) starring Tom Bosley and featuring a plot where the protagonist gains the ability to hear women's thoughts.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "director": "Albert Hughes",
+        "actor": "Tom Bosley",
+        "language": "Maya"
+      },
+      "rec_titles": [
+        "What Women Want",
+        "The Secret",
+        "Wolfhound",
+        "Man on Fire"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Maya, Yucatán Language",
+        "anchor_title": "Alice in Wonderland",
+        "constraints": {
+          "genre": "dance",
+          "director": "Albert Hughes",
+          "plot": "reunite",
+          "writer": "David Nicholls",
+          "actor": "Frank Welker",
+          "name": "The Book of Eli",
+          "language": "Maya, Yucatán Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with a mood similar to Ted, possibly involving language and actors like Tom Bosley and Albert Hughes. Based on these preferences, I would recommend 'The Expendables 2' as it has elements of action and language (with characters like Randy Couture), fitting the mood suggested.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "Ted",
+        "director": "Albert Hughes",
+        "actor": "Tom Bosley",
+        "language": "Maya"
+      },
+      "rec_titles": [
+        "The Expendables 2",
+        "Chain Reaction",
+        "The Yearling",
+        "The Violent Kind"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Maya, Yucatán Language",
+        "anchor_title": "Alice in Wonderland",
+        "constraints": {
+          "genre": "dance",
+          "director": "Albert Hughes",
+          "plot": "reunite",
+          "writer": "David Nicholls",
+          "actor": "Frank Welker",
+          "name": "The Book of Eli",
+          "language": "Maya, Yucatán Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes movies with a likeable sound, involving actors Tom Bosley and featuring director Albert Hughes. I recommend \"Paycheck\" since it has an intriguing plot and features both actor Ryan Robbins and the director's presence.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us",
+        "director": "Albert Hughes",
+        "actor": "Tom Bosley",
+        "language": "Maya"
+      },
+      "rec_titles": [
+        "Paycheck",
+        "White Fang",
+        "Madame Bovary",
+        "Total Recall"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Bill Murray. Hmm, I didn’t expect that vibe. (I’m thinking of Paycheck.)",
+      "user_meta": {
+        "turn": 45,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Bill Murray",
+        "anchor_title": "Groundhog Day",
+        "constraints": {
+          "genre": "dance",
+          "director": "Albert Hughes",
+          "writer": "Dean Georgaris",
+          "actor": "Bill Murray",
+          "name": "The Book of Eli",
+          "language": "Maya, Yucatán Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 45,
+          "from_focus": "language",
+          "to_focus": "actor",
+          "bridge_field": "writer",
+          "bridge_value": "Dean Georgaris",
+          "from_anchor": "Alice in Wonderland",
+          "to_anchor": "Groundhog Day"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for movies that feature Bill Murray and have elements related to language, history, or intrigue. Based on your preferences, I would recommend 'National Treasure' as it combines historical intrigue with a star-studded cast including Bill Murray.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Paycheck",
+        "director": "Albert Hughes",
+        "actor": "Bill Murray",
+        "language": "Maya"
+      },
+      "rec_titles": [
+        "National Treasure",
+        "Madame Bovary",
+        "The Hateful Eight",
+        "The Shadows"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bill Murray",
+        "anchor_title": "Groundhog Day",
+        "constraints": {
+          "genre": "dance",
+          "director": "Albert Hughes",
+          "writer": "Dean Georgaris",
+          "actor": "Bill Murray",
+          "name": "The Book of Eli",
+          "language": "Maya, Yucatán Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants recommendations for movies similar to 'You', 'Mama', 'Braveheart', and 'Panic Room'. Based on these preferences, I would suggest watching 'Braveheart' (1995), featuring Mel Gibson as William Wallace, a Scottish warrior fighting against English rule. This movie shares historical context with some of the others listed.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Albert Hughes",
+        "actor": "Bill Murray",
+        "language": "Maya"
+      },
+      "rec_titles": [
+        "You",
+        "Mama",
+        "Braveheart",
+        "Panic Room"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Panic Room tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bill Murray",
+        "anchor_title": "Groundhog Day",
+        "constraints": {
+          "genre": "dance",
+          "director": "Albert Hughes",
+          "writer": "Dean Georgaris",
+          "actor": "Bill Murray",
+          "name": "The Book of Eli",
+          "language": "Maya, Yucatán Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in stories with a particular vibe, influenced by language, specific actors like Bill Murray, and directors such as Albert Hughes. I recommend 'Space Jam' for its iconic mix of humor, animation, and Murray's presence. It aligns well with the given vibes.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Panic Room",
+        "director": "Albert Hughes",
+        "actor": "Bill Murray",
+        "language": "Maya"
+      },
+      "rec_titles": [
+        "American Dreamz",
+        "Space Jam",
+        "Alex in Wonderland",
+        "Get Smart"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bill Murray",
+        "anchor_title": "Groundhog Day",
+        "constraints": {
+          "genre": "dance",
+          "director": "Albert Hughes",
+          "writer": "Dean Georgaris",
+          "actor": "Bill Murray",
+          "name": "The Book of Eli",
+          "language": "Maya, Yucatán Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're interested in films that match your preference cues. From the list ['We the Living', 'Taken', 'The Wrestler', 'The Book of Eli'], I recommend checking out 'The Book of Eli' starring Mila Kunis and Denzel Washington, as it aligns with your interest in a post-apocalyptic story protecting a sacred book.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Ted",
+        "director": "Albert Hughes",
+        "actor": "Bill Murray",
+        "language": "Maya"
+      },
+      "rec_titles": [
+        "We the Living",
+        "Taken",
+        "The Wrestler",
+        "The Book of Eli"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Book of Eli. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bill Murray",
+        "anchor_title": "Groundhog Day",
+        "constraints": {
+          "genre": "dance",
+          "director": "Albert Hughes",
+          "writer": "Dean Georgaris",
+          "actor": "Bill Murray",
+          "name": "The Book of Eli",
+          "language": "Maya, Yucatán Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences for a film with a likeable protagonist, strong language elements, and possibly Bill Murray, I recommend \"Get Smart\" (2008). It stars Dwayne Johnson as Max Smart, along with Bill Murray as his tech-savvy boss, Agent H. The movie combines humor with espionage elements, making it a fitting choice for the user's preferences.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Book of Eli",
+        "director": "Albert Hughes",
+        "actor": "Bill Murray",
+        "language": "Maya"
+      },
+      "rec_titles": [
+        "Smokin' Aces",
+        "Get Smart",
+        "The Book of Eli",
+        "Tender Is the Night"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Anne Enright? That feels deeper than I thought. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 50,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Anne Enright",
+        "anchor_title": "The Royal Tenenbaums",
+        "constraints": {
+          "genre": "dance",
+          "director": "Albert Hughes",
+          "writer": "Anne Enright",
+          "actor": "Bill Murray",
+          "name": "The Book of Eli",
+          "language": "Maya, Yucatán Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 50,
+          "from_focus": "actor",
+          "to_focus": "writer",
+          "bridge_field": "actor",
+          "bridge_value": "Bill Murray",
+          "from_anchor": "Groundhog Day",
+          "to_anchor": "The Royal Tenenbaums"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movie recommendations written by Anne Enright. Based on these preferences, I recommend 'Aloha' (2015), which features Bill Murray among its cast and is written under Enright's pen.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "written",
+          "anne"
+        ],
+        "name": "Deep",
+        "director": "Albert Hughes",
+        "actor": "Bill Murray",
+        "language": "Maya",
+        "writer": "Anne Enright"
+      },
+      "rec_titles": [
+        "Get Smart",
+        "Aloha",
+        "Groundhog Day",
+        "Apocalypto"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 6,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "night",
+      "from_anchor": "Step Up Revolution",
+      "to_anchor": "The Illustrated Man"
+    },
+    {
+      "turn": 11,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "runaway",
+      "from_anchor": "The Illustrated Man",
+      "to_anchor": "I Love You, Man"
+    },
+    {
+      "turn": 17,
+      "from_focus": "actor",
+      "to_focus": "name",
+      "bridge_field": "writer",
+      "bridge_value": "David Nicholls",
+      "from_anchor": "I Love You, Man",
+      "to_anchor": "X"
+    },
+    {
+      "turn": 21,
+      "from_focus": "name",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "pictorial",
+      "from_anchor": "X",
+      "to_anchor": "Step Up Revolution"
+    },
+    {
+      "turn": 26,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Mila Kunis",
+      "from_anchor": "Step Up Revolution",
+      "to_anchor": "Black Swan"
+    },
+    {
+      "turn": 31,
+      "from_focus": "director",
+      "to_focus": "name",
+      "bridge_field": "plot",
+      "bridge_value": "ravaged",
+      "from_anchor": "Black Swan",
+      "to_anchor": "Ted"
+    },
+    {
+      "turn": 37,
+      "from_focus": "name",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "reunite",
+      "from_anchor": "Ted",
+      "to_anchor": "The Land Before Time"
+    },
+    {
+      "turn": 40,
+      "from_focus": "actor",
+      "to_focus": "language",
+      "bridge_field": "actor",
+      "bridge_value": "Frank Welker",
+      "from_anchor": "The Land Before Time",
+      "to_anchor": "Alice in Wonderland"
+    },
+    {
+      "turn": 45,
+      "from_focus": "language",
+      "to_focus": "actor",
+      "bridge_field": "writer",
+      "bridge_value": "Dean Georgaris",
+      "from_anchor": "Alice in Wonderland",
+      "to_anchor": "Groundhog Day"
+    },
+    {
+      "turn": 50,
+      "from_focus": "actor",
+      "to_focus": "writer",
+      "bridge_field": "actor",
+      "bridge_value": "Bill Murray",
+      "from_anchor": "Groundhog Day",
+      "to_anchor": "The Royal Tenenbaums"
+    }
+  ]
+}

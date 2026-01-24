@@ -1,0 +1,2189 @@
+{
+  "session_id": "00091",
+  "model_name": "llama3:instruct",
+  "true_genre": "musical",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a musical movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "musical",
+        "anchor_title": "Tangled",
+        "constraints": {
+          "genre": "musical"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for a musical movie that will strike a chord and leave you humming a tune! Based on your request, I highly recommend \"A Mighty Wind\" (2003) - it's a hilarious mockumentary that brings together a talented cast of actors to recreate the reunion of 1960s folk trio The Folksmen. With its witty script, charming characters, and catchy musical numbers, this movie is sure to delight!",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "musical",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "A Mighty Wind",
+        "The Hound of the Baskervilles",
+        "The Last Unicorn",
+        "The Bodyguard"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of A Mighty Wind? That sounds intriguing.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "musical",
+        "anchor_title": "Tangled",
+        "constraints": {
+          "genre": "musical"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie that captures the essence of \"A Mighty Wind\", which sounds intriguing! Based on their interest in music and the presence of words like \"what\" and \"mighty\", I think they might enjoy \"That Thing You Do!\" (1996) - a fun, lighthearted film about a one-hit wonder band's rise to fame. With its catchy soundtrack and charming cast, including Tom Hanks and Ethan Embry, this movie is sure to strike a chord with music lovers!",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "mighty"
+        ],
+        "name": "A Mighty Wind"
+      },
+      "rec_titles": [
+        "Passion",
+        "That Thing You Do!",
+        "Man on Fire",
+        "I Heart Huckabees"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Pat O'Connor (Director)? That sounds intriguing. (I’m thinking of Wonder.)",
+      "user_meta": {
+        "turn": 3,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Pat O'Connor (Director)",
+        "anchor_title": "The Tommyknockers",
+        "constraints": {
+          "genre": "musical",
+          "director": "Pat O'Connor (Director)",
+          "plot": "based"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 3,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "based",
+          "from_anchor": "Tangled",
+          "to_anchor": "The Tommyknockers"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for something else by Pat O'Connor, inspired by Wonder! I think you might enjoy \"Crazy Heart\", a music-driven film that explores themes of redemption and self-discovery through the story of a faded country musician. With Jeff Bridges delivering a powerful performance, this movie is sure to resonate with fans of music and emotional stories.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Wonder",
+        "director": "Pat O'Connor"
+      },
+      "rec_titles": [
+        "The Wonderful Wizard of Oz",
+        "Armageddon",
+        "Crazy Heart",
+        "Spice World"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Pat O'Connor (Director)",
+        "anchor_title": "The Tommyknockers",
+        "constraints": {
+          "genre": "musical",
+          "director": "Pat O'Connor (Director)",
+          "plot": "based"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your interest in music and Pat O'Connor's direction, I see you're looking for more movies that touch on the themes of creativity and passion. Considering your taste, I'd recommend \"Be Cool\" (2005), a fun and lighthearted romp through the world of music, featuring a star-studded cast including Fergie, Seth Green, and Dwayne Johnson. If you're in the mood for something a bit more offbeat, \"Zack and Miri Make a Porno\" (2008) is another great option that explores the creative process while delving into themes of love and friendship.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Pat O'Connor"
+      },
+      "rec_titles": [
+        "Be Cool",
+        "Zack and Miri Make a Porno",
+        "Shutter",
+        "The Number 23"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Pamela Anderson. That feels deeper than I thought. (I’m thinking of Johns.)",
+      "user_meta": {
+        "turn": 5,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Pamela Anderson",
+        "anchor_title": "Chicago",
+        "constraints": {
+          "genre": "musical",
+          "director": "Pat O'Connor (Director)",
+          "plot": "prostitute",
+          "actor": "Pamela Anderson"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 5,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "prostitute",
+          "from_anchor": "The Tommyknockers",
+          "to_anchor": "Chicago"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie that features Pamela Anderson, possibly along with John's film (I'm assuming you meant Bo Derek or John Cusack). You're open to exploring other genres and themes as well.\n\nBased on your interest in music and the possibility of finding something deeper, I highly recommend \"The Red Violin\"! This 1998 film is a visually stunning and emotionally resonant tale that follows a mysterious violin across three centuries. With its focus on art, passion, and self-discovery, I think you'll find it quite engaging.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Johns",
+        "director": "Pat O'Connor",
+        "actor": "Pamela Anderson"
+      },
+      "rec_titles": [
+        "The Red Violin",
+        "The X Files",
+        "Maleficent",
+        "The Dark Crystal"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Pamela Anderson",
+        "anchor_title": "Chicago",
+        "constraints": {
+          "genre": "musical",
+          "director": "Pat O'Connor (Director)",
+          "plot": "prostitute",
+          "actor": "Pamela Anderson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you're looking for more recommendations that share some similarities with music, Pamela Anderson, Pat O'Connor, and just/more in their plots. Based on those cues, I think you might enjoy \"Velvet Goldmine\" (1998), a musical drama that explores the rise and fall of a 1970s glam rock star, inspired by real-life figures like David Bowie and Iggy Pop. The film features Christian Bale as one half of the iconic duo, and its exploration of music, artistry, and rebellion might strike a chord with you!",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Pat O'Connor",
+        "actor": "Pamela Anderson"
+      },
+      "rec_titles": [
+        "Uncommon Valor",
+        "Whiplash",
+        "Velvet Goldmine",
+        "The Jungle Book 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Velvet Goldmine tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Pamela Anderson",
+        "anchor_title": "Chicago",
+        "constraints": {
+          "genre": "musical",
+          "director": "Pat O'Connor (Director)",
+          "plot": "prostitute",
+          "actor": "Pamela Anderson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you're looking for a movie that tells an intriguing story about music, with no connection to Pamela Anderson or Pat O'Connor's directing style. Based on your preferences, I recommend \"Get Rich or Die Tryin'\" (2005), a biographical drama about 50 Cent's rise to fame as a rapper, which explores the highs and lows of his life in the music industry. If you'd like an alternative, \"The Bodyguard\" (1992) is another great option, starring Whitney Houston as a pop star with a secret identity, surrounded by action and romance!",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Velvet Goldmine",
+        "director": "Pat O'Connor",
+        "actor": "Pamela Anderson"
+      },
+      "rec_titles": [
+        "The Bodyguard",
+        "Get Rich or Die Tryin'",
+        "Chain Reaction",
+        "Her"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Pamela Anderson",
+        "anchor_title": "Chicago",
+        "constraints": {
+          "genre": "musical",
+          "director": "Pat O'Connor (Director)",
+          "plot": "prostitute",
+          "actor": "Pamela Anderson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for movies that don't have quite the expected vibe, and you seem to be in the mood for something related to music, perhaps with Pamela Anderson or directed by Pat O'Connor. I think \"Yesterday Was a Lie\" might surprise you pleasantly - it's a surreal mystery film with an intriguing plot and strong female lead, Chase Masterson.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "X",
+        "director": "Pat O'Connor",
+        "actor": "Pamela Anderson"
+      },
+      "rec_titles": [
+        "Eve's Bayou",
+        "The Trouble with Harry",
+        "It's a Wonderful Life",
+        "Yesterday Was a Lie"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Ted. I want to try something more music—still with Tom Skerritt if possible. I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "music",
+        "anchor_title": "Saving Mr. Banks",
+        "constraints": {
+          "genre": "music",
+          "director": "Pat O'Connor (Director)",
+          "plot": "prostitute",
+          "actor": "Tom Skerritt"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 9,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "Tom Skerritt",
+          "from_anchor": "Chicago",
+          "to_anchor": "Saving Mr. Banks"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie that's music-focused, stars Tom Skerritt, and doesn't scare you off! Based on your preferences, I highly recommend \"The Red Violin\" (1998). This visually stunning film tells the story of a mystical violin that passes through centuries, inspiring passion and creativity in its owners. With no horror elements to worry about, this movie is a great choice for those who want a unique musical experience with Tom Skerritt's involvement.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Ted",
+        "director": "Pat O'Connor",
+        "actor": "Tom Skerritt"
+      },
+      "rec_titles": [
+        "The Red Violin",
+        "The Jungle Book 2",
+        "Tears of the Sun",
+        "The Picture of Dorian Gray"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "music",
+        "anchor_title": "Saving Mr. Banks",
+        "constraints": {
+          "genre": "music",
+          "director": "Pat O'Connor (Director)",
+          "plot": "prostitute",
+          "actor": "Tom Skerritt"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you're looking for more movie recommendations like those featuring music, Tom Skerritt, Pat O'Connor, and themes of \"just\" and \"more\". Based on that, I think you might enjoy \"The Doors\" (1991), a biographical drama about the iconic rock band led by Jim Morrison, played by Val Kilmer. The film's nostalgic value and musical legacy are sure to resonate with fans of music-themed movies!",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Pat O'Connor",
+        "actor": "Tom Skerritt"
+      },
+      "rec_titles": [
+        "The Doors",
+        "The Bodyguard",
+        "The Lincoln Lawyer",
+        "The Rocker"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "music",
+        "anchor_title": "Saving Mr. Banks",
+        "constraints": {
+          "genre": "music",
+          "director": "Pat O'Connor (Director)",
+          "plot": "prostitute",
+          "actor": "Tom Skerritt"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie that's connected to music, has Tom Skerritt in it, and perhaps explores themes of certainty versus uncertainty. Based on these constraints, I think \"Amadeus\" might be an excellent fit! This Academy Award-winning film tells the fascinating story of Wolfgang Amadeus Mozart through the eyes of his rival Antonio Salieri, featuring a stunning soundtrack and outstanding performances from Tom Hulce and F. Murray Abraham.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "You",
+        "director": "Pat O'Connor",
+        "actor": "Tom Skerritt"
+      },
+      "rec_titles": [
+        "Ted",
+        "Aladdin",
+        "The Country Bears",
+        "Amadeus"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "music",
+        "anchor_title": "Saving Mr. Banks",
+        "constraints": {
+          "genre": "music",
+          "director": "Pat O'Connor (Director)",
+          "plot": "prostitute",
+          "actor": "Tom Skerritt"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie that's quite the opposite of what you initially thought, with music as the key genre and Tom Skerritt not being involved (although Pat O'Connor is still on our radar!). Given these cues, I'd recommend \"A Mighty Wind\", a mockumentary that celebrates folk music from the 1960s. With its witty humor and an all-star cast of comedic actors, it's sure to provide a delightfully different experience!",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "You",
+        "director": "Pat O'Connor",
+        "actor": "Tom Skerritt"
+      },
+      "rec_titles": [
+        "We Are Your Friends",
+        "A Mighty Wind",
+        "Get Him to the Greek",
+        "The Doors"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Matt Lauer. That feels deeper than I thought. (I’m thinking of A Mighty Wind.)",
+      "user_meta": {
+        "turn": 13,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Matt Lauer",
+        "anchor_title": "8 Mile",
+        "constraints": {
+          "genre": "music",
+          "plot": "trio",
+          "actor": "Matt Lauer"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 13,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "trio",
+          "from_anchor": "Saving Mr. Banks",
+          "to_anchor": "8 Mile"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie that features Matt Lauer, perhaps something with a deeper tone like A Mighty Wind. Given your interest in music and Matt Lauer, I think Titan A.E. could be a great fit! This animated sci-fi film stars Ron Perlman, John Leguizamo, and Matt Damon, and its plot about finding a hidden Earth ship to secure humanity's survival has some exciting action moments.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "A Mighty Wind",
+        "director": "Pat O'Connor",
+        "actor": "Matt Lauer"
+      },
+      "rec_titles": [
+        "Titan A.E.",
+        "Elysium",
+        "Do You Believe?",
+        "Anyone But You"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Matt Lauer",
+        "anchor_title": "8 Mile",
+        "constraints": {
+          "genre": "music",
+          "plot": "trio",
+          "actor": "Matt Lauer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you're looking for more recommendations like \"just\" something - and that something is related to music, starring Matt Lauer (not actually in any of these movies!), directed by Pat O'Connor (also not a match). Based on your hints, I think you might enjoy \"Step Up Revolution\", an energetic dance movie with a great soundtrack. It's about following your passion, just like the main characters do, and it has plenty of music and movement to keep you engaged!",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Pat O'Connor",
+        "actor": "Matt Lauer"
+      },
+      "rec_titles": [
+        "Green Card",
+        "Despicable Me 2",
+        "The Way Back Home",
+        "Step Up Revolution"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Matt Lauer",
+        "anchor_title": "8 Mile",
+        "constraints": {
+          "genre": "music",
+          "plot": "trio",
+          "actor": "Matt Lauer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you want a movie that's the opposite of what you initially thought - which means we're looking for something that doesn't quite fit your original criteria. Based on that, I recommend \"The Truman Show\" as a great option. This satirical sci-fi film explores themes of reality and perception, which fits perfectly with the \"actually\" and \"think\" plot keywords.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "You",
+        "director": "Pat O'Connor",
+        "actor": "Matt Lauer"
+      },
+      "rec_titles": [
+        "Spice World",
+        "Inside Llewyn Davis",
+        "The Truman Show",
+        "Forgetting Sarah Marshall"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Matt Lauer",
+        "anchor_title": "8 Mile",
+        "constraints": {
+          "genre": "music",
+          "plot": "trio",
+          "actor": "Matt Lauer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're unsure if \"X\" will be a good fit for you, and you're looking for something that captures the essence of music, with Matt Lauer's charisma on screen, and an engaging plot that explores what it means to decide between different paths. \n\nI'd recommend \"Soul Men\" (2008) - this comedy stars Bernie Mac and Isaac Hayes as two estranged soul-singing legends reuniting for a performance at the Apollo Theater. With its upbeat musical vibe, witty dialogue, and memorable performances from its cast, \"Soul Men\" is sure to strike the right note with you!",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "director": "Pat O'Connor",
+        "actor": "Matt Lauer"
+      },
+      "rec_titles": [
+        "The Yearling",
+        "Louie",
+        "Forgetting Sarah Marshall",
+        "Soul Men"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Soul Men. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Matt Lauer",
+        "anchor_title": "8 Mile",
+        "constraints": {
+          "genre": "music",
+          "plot": "trio",
+          "actor": "Matt Lauer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie that sounds like Soul Men, which means we're in the music genre! Given your interest in Matt Lauer and Pat O'Connor, I'm going to recommend \"That Thing You Do!\" (1996), a musical comedy-drama that features a fictional band's rise to fame. With its catchy soundtrack and nostalgic value, this film is sure to strike a chord with you!",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Soul Men",
+        "director": "Pat O'Connor",
+        "actor": "Matt Lauer"
+      },
+      "rec_titles": [
+        "That Thing You Do!",
+        "The Nanny",
+        "Amadeus",
+        "The Jungle Book 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Soul Men tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Matt Lauer",
+        "anchor_title": "8 Mile",
+        "constraints": {
+          "genre": "music",
+          "plot": "trio",
+          "actor": "Matt Lauer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie that tells a story about music, and specifically one that's deeper than you expected, given that Matt Lauer isn't even in any of these movies! Based on your interest in music, I think you might enjoy \"Beyond the Sea\", which is a biographical drama about singer Bobby Darin and his relationship with Sandra Dee. The film features a great performance from Kevin Spacey as Bobby Darin, and it's a fascinating look at the life of this iconic musician.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Soul Men",
+        "director": "Pat O'Connor",
+        "actor": "Matt Lauer"
+      },
+      "rec_titles": [
+        "The Jungle Book 2",
+        "Beyond the Sea",
+        "You",
+        "Lord Jim"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Matt Lauer",
+        "anchor_title": "8 Mile",
+        "constraints": {
+          "genre": "music",
+          "plot": "trio",
+          "actor": "Matt Lauer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for something on the opposite end of the spectrum, which means no music-filled adventures with Matt Lauer (since he's not an actor in any of these films). Instead, I'd recommend \"Blow Out\" or \"Six-String Samurai\", both of which offer a thrilling ride without the musical numbers. If you're in the mood for something more grounded and suspenseful, \"Blow Out\" is a classic thriller about a sound recordist who stumbles upon a murder plot, while if you'd like to explore a post-apocalyptic world with a rock 'n' roll twist, \"Six-String Samurai\" could be your jam.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Soul Men",
+        "director": "Pat O'Connor",
+        "actor": "Matt Lauer"
+      },
+      "rec_titles": [
+        "Aladdin",
+        "Connie and Carla",
+        "Blow Out",
+        "Six-String Samurai"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Us. I want to try something more auto racing—Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "auto racing",
+        "anchor_title": "Speed Racer",
+        "constraints": {
+          "genre": "auto racing",
+          "plot": "trio",
+          "actor": "Matt Lauer"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 20,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "reunite",
+          "from_anchor": "8 Mile",
+          "to_anchor": "Speed Racer"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for something more related to auto racing, and you didn't quite get that vibe from Us. Let me try again! Based on your interest in auto racing, I think you might enjoy \"Talladega Nights: The Ballad of Ricky Bobby\" (2006), a hilarious comedy starring Will Ferrell as NASCAR driver Ricky Bobby. It's a fun and lighthearted ride that explores the world of competitive racing with humor and wit!",
+      "constraints": {
+        "genre": "auto racing",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "X",
+        "director": "Pat O'Connor",
+        "actor": "Matt Lauer"
+      },
+      "rec_titles": [
+        "Scream 4",
+        "Talladega Nights: The Ballad of Ricky Bobby",
+        "X",
+        "Fast & Furious"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 21,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "auto racing",
+        "anchor_title": "Speed Racer",
+        "constraints": {
+          "genre": "auto racing",
+          "plot": "trio",
+          "actor": "Matt Lauer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more recommendations that have something in common with the auto racing theme, Matt Lauer (who isn't actually an actor in any of these movies), and Pat O'Connor (no director among these options). Given those constraints, I think \"Ocean's Twelve\" is a great fit - it's an action-packed heist movie with a star-studded cast that includes George Clooney, Brad Pitt, and Julia Roberts.",
+      "constraints": {
+        "genre": "auto racing",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Pat O'Connor",
+        "actor": "Matt Lauer"
+      },
+      "rec_titles": [
+        "Ocean's Twelve",
+        "The Secret Life of Walter Mitty",
+        "King Kong",
+        "In Time"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Larry Joe Campbell. Hmm, I didn’t expect that vibe. (I’m thinking of Heist.)",
+      "user_meta": {
+        "turn": 22,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Larry Joe Campbell",
+        "anchor_title": "Timecode",
+        "constraints": {
+          "genre": "auto racing",
+          "plot": "tense",
+          "actor": "Larry Joe Campbell"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 22,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "tense",
+          "from_anchor": "Speed Racer",
+          "to_anchor": "Timecode"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for movies that feature Larry Joe Campbell, and also have a heist vibe, perhaps similar to the one in Heist (2001). You'd like to find some new movies that fit this criteria.\n\nI think I can help with that! Based on your interest in Larry Joe Campbell, I'm going to recommend A Walk Among the Tombstones (2014) starring Liam Neeson. It's a gritty and suspenseful thriller about a private investigator who must track down the kidnappers of his wife. The movie has a similar tone and atmosphere to Heist, and it stars Liam Neeson in a strong leading role.\n\nAnother option could be Star Wars: Episode I - The Phantom Menace (1999), which features Liam Neeson as well! It's an epic space opera that sets the stage for the rest of the Star Wars saga.",
+      "constraints": {
+        "genre": "heist",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Heist",
+        "director": "Pat O'Connor",
+        "actor": "Larry Joe Campbell"
+      },
+      "rec_titles": [
+        "A Walk Among the Tombstones",
+        "Star Wars: Episode I - The Phantom Menace",
+        "Something Wild",
+        "The Woodlanders"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Larry Joe Campbell",
+        "anchor_title": "Timecode",
+        "constraints": {
+          "genre": "auto racing",
+          "plot": "tense",
+          "actor": "Larry Joe Campbell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for more recommendations like the ones we previously discussed, which featured a heist genre, Larry Joe Campbell as an actor, directed by Pat O'Connor, and keywords \"just\" and \"more\". I think you might enjoy \"Zookeeper\", a fun and lighthearted film about zoo animals helping their lovable zookeeper find love.",
+      "constraints": {
+        "genre": "heist",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Pat O'Connor",
+        "actor": "Larry Joe Campbell"
+      },
+      "rec_titles": [
+        "Harry Potter and the Half-Blood Prince",
+        "Zookeeper",
+        "Maid in Manhattan",
+        "Untraceable"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? That sounds intriguing.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Larry Joe Campbell",
+        "anchor_title": "Timecode",
+        "constraints": {
+          "genre": "auto racing",
+          "plot": "tense",
+          "actor": "Larry Joe Campbell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie with an intriguing plot, and since you mentioned \"You\" sounds intriguing, I'll assume you're in the mood for something mysterious! Based on your interest in heist movies and Larry Joe Campbell not being an actor in any of these films (he's actually known for his role in TV show \"According to Jim\"), I recommend skipping \"The Twilight Saga: New Moon\", which is a fantasy romance, and instead go for either \"Set It Off\" or \"Lady in the Water\". Both have elements of mystery and intrigue that might pique your interest!",
+      "constraints": {
+        "genre": "heist",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "You",
+        "director": "Pat O'Connor",
+        "actor": "Larry Joe Campbell"
+      },
+      "rec_titles": [
+        "The Twilight Saga: New Moon",
+        "Lady in the Water",
+        "Set It Off",
+        "Little Fockers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Twilight Saga: New Moon tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Larry Joe Campbell",
+        "anchor_title": "Timecode",
+        "constraints": {
+          "genre": "auto racing",
+          "plot": "tense",
+          "actor": "Larry Joe Campbell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for a movie that tells a story about what kind of things, right? You mentioned The Twilight Saga: New Moon, but I think we can find something better suited to your taste. Based on your love for heist movies and the fact that Larry Joe Campbell isn't in any of these films (sorry!), I recommend \"Fun with Dick and Jane\" (2005) - it's a fun, lighthearted comedy about an unlikely couple turning to a life of crime when they lose their fortune.",
+      "constraints": {
+        "genre": "heist",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Twilight",
+        "director": "Pat O'Connor",
+        "actor": "Larry Joe Campbell"
+      },
+      "rec_titles": [
+        "What Women Want",
+        "I Heart Huckabees",
+        "Fun with Dick and Jane",
+        "The Equalizer"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Larry Joe Campbell",
+        "anchor_title": "Timecode",
+        "constraints": {
+          "genre": "auto racing",
+          "plot": "tense",
+          "actor": "Larry Joe Campbell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on what I've gathered, you're looking for a movie that resonates with the themes of \"like\" and \"sound\", possibly with a heist twist, starring Larry Joe Campbell (not Tom Hulce or Kristen Stewart unfortunately!), and directed by Pat O'Connor (who didn't direct any of these movies). I'm going to take a chance and recommend two options: 'Jumper' has a unique sound to its plot, with teleportation abilities at the center of an ancient war. Alternatively, if you're open to something completely different, 'The Stuff' has a quirky premise that might tickle your funny bone!",
+      "constraints": {
+        "genre": "heist",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "You",
+        "director": "Pat O'Connor",
+        "actor": "Larry Joe Campbell"
+      },
+      "rec_titles": [
+        "Jumper",
+        "Providence",
+        "The Stuff",
+        "The Nanny"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Larry Joe Campbell",
+        "anchor_title": "Timecode",
+        "constraints": {
+          "genre": "auto racing",
+          "plot": "tense",
+          "actor": "Larry Joe Campbell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a heist movie that might have some humor and wit, with Larry Joe Campbell not being a specific requirement but perhaps adding to the charm? Given those constraints, I'd recommend \"Small Time Crooks\" (2000) - it's a light-hearted, comedic take on the heist genre, starring Woody Allen and Elaine Stritch. Alternatively, if you're open to something more intense and thrilling, \"Ocean's Eleven\" (2001) is a classic, stylish heist movie with an all-star cast, including George Clooney, Brad Pitt, and Matt Damon.",
+      "constraints": {
+        "genre": "heist",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "You",
+        "director": "Pat O'Connor",
+        "actor": "Larry Joe Campbell"
+      },
+      "rec_titles": [
+        "Small Time Crooks",
+        "Inside Man",
+        "The Thomas Crown Affair",
+        "Ocean's Eleven"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Andrew Dominik? Hmm, I didn’t expect that vibe. (I’m thinking of Small Time Crooks.)",
+      "user_meta": {
+        "turn": 28,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Andrew Dominik",
+        "anchor_title": "Wedding Crashers",
+        "constraints": {
+          "genre": "auto racing",
+          "plot": "botched",
+          "actor": "Larry Joe Campbell",
+          "director": "Andrew Dominik"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 28,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "botched",
+          "from_anchor": "Timecode",
+          "to_anchor": "Wedding Crashers"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for something new by Andrew Dominik, but you didn't expect the vibe of \"Small Time Crooks\" (I'm guessing that's a comedic tone?). Let me suggest two alternatives: \"Out of Sight\" (1998) is a stylish and action-packed crime thriller starring George Clooney and Jennifer Lopez; or if you're in the mood for something darker, \"Downfall\" (2004) is a gripping historical drama that explores the final days of Adolf Hitler's rule.",
+      "constraints": {
+        "genre": "heist",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Small Time Crooks",
+        "director": "Andrew Dominik",
+        "actor": "Larry Joe Campbell",
+        "writer": "Andrew Dominik"
+      },
+      "rec_titles": [
+        "Out of Sight",
+        "The Secret of My Success",
+        "Elysium",
+        "Downfall"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Andrew Dominik",
+        "anchor_title": "Wedding Crashers",
+        "constraints": {
+          "genre": "auto racing",
+          "plot": "botched",
+          "actor": "Larry Joe Campbell",
+          "director": "Andrew Dominik"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on our previous conversation, I understand you're looking for more recommendations like a heist movie with Larry Joe Campbell, Andrew Dominik, and specific plot keywords \"just\" and \"more\". Given those cues, I think you might enjoy \"The Spanish Prisoner\", which features dastardly intrigue and clever plotting reminiscent of a heist film.",
+      "constraints": {
+        "genre": "heist",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Andrew Dominik",
+        "actor": "Larry Joe Campbell",
+        "writer": "Andrew Dominik"
+      },
+      "rec_titles": [
+        "Turbo",
+        "Fight Club",
+        "Green Card",
+        "The Spanish Prisoner"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Heist. I want to try something more hindi language—still with English Language if possible. That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 30,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "hindi language",
+        "anchor_title": "What's the Worst That Could Happen?",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Larry Joe Campbell",
+          "director": "Andrew Dominik",
+          "language": "English Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 30,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "language",
+          "bridge_value": "English Language",
+          "from_anchor": "Wedding Crashers",
+          "to_anchor": "What's the Worst That Could Happen?"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a Hindi language film with English elements, inspired by the depth and complexity of \"Heist\". You'd like something with a strong storyline, memorable characters, and possibly connections to Larry Joe Campbell or other familiar actors from Andrew Dominik's work.\n\nBased on your preferences, I highly recommend \"Utsav\" (1984), a classic Indian film that explores themes of love, morality, and social hierarchy. Starring Anupam Kher and Rekha, this historical drama is set in ancient India and features stunning cinematography and intricate storytelling. While it may not have any direct connections to Larry Joe Campbell or Andrew Dominik, its rich cultural context and engaging plot should satisfy your craving for a deeper, more nuanced film experience.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Heist",
+        "director": "Andrew Dominik",
+        "actor": "Larry Joe Campbell",
+        "writer": "Andrew Dominik",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "Utsav",
+        "The Watcher",
+        "Wedding Crashers",
+        "Wanderlust"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "hindi language",
+        "anchor_title": "What's the Worst That Could Happen?",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Larry Joe Campbell",
+          "director": "Andrew Dominik",
+          "language": "English Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I've got a good understanding of what you're looking for! You want movies that are in the English language, have Larry Joe Campbell or Andrew Dominik involved (director or writer), and maybe even some Hindi elements. From this list, I think \"The Rocker\" might be a great fit - it's an entertaining comedy with a fun plot about a drummer trying to relive his glory days through his teenage nephew's band. If you're in the mood for something more dramatic, \"The Truth\" could be a good choice too, with its suspenseful home invasion storyline and intriguing characters.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Andrew Dominik",
+        "actor": "Larry Joe Campbell",
+        "writer": "Andrew Dominik",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "Maid in Manhattan",
+        "Island of the Blue Dolphins",
+        "The Rocker",
+        "The Truth"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Rock? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "hindi language",
+        "anchor_title": "What's the Worst That Could Happen?",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Larry Joe Campbell",
+          "director": "Andrew Dominik",
+          "language": "English Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a movie with a fascinating plot and are intrigued by the title \"The Rock\", possibly hinting at a film about rock music, adventure, or both! Based on your cues, I recommend \"Six-String Samurai\" (1998), an action-packed post-apocalyptic film featuring a rock 'n' roll samurai and a young orphan boy on a thrilling journey.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "what",
+          "rock"
+        ],
+        "name": "The Rock",
+        "director": "Andrew Dominik",
+        "actor": "Larry Joe Campbell",
+        "writer": "Andrew Dominik",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "The Odyssey",
+        "Six-String Samurai",
+        "Divergent",
+        "It's a Wonderful Life"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Chris Noth. That feels deeper than I thought. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 33,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Chris Noth",
+        "anchor_title": "Along Came Polly",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Chris Noth",
+          "director": "Andrew Dominik",
+          "language": "English Language",
+          "plot": "crazy"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 33,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "crazy",
+          "from_anchor": "What's the Worst That Could Happen?",
+          "to_anchor": "Along Came Polly"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for movies that feature Chris Noth, and you found Us to be a thought-provoking film. Based on that, I think you might enjoy \"The Negotiator\" (1989) starring Kevin Spacey and Chris Noth himself! The movie's themes of corruption, redemption, and finding the truth seem to align with your interests.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Deep",
+        "director": "Andrew Dominik",
+        "actor": "Chris Noth",
+        "writer": "Andrew Dominik",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "The Negotiator",
+        "The Spiderwick Chronicles",
+        "You Only Live Twice",
+        "True Blood"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 34,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Chris Noth",
+        "anchor_title": "Along Came Polly",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Chris Noth",
+          "director": "Andrew Dominik",
+          "language": "English Language",
+          "plot": "crazy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for more recommendations like \"The Assassination of Jesse James by the Coward Robert Ford\" (2010), which had Chris Noth, was directed and written by Andrew Dominik, and featured Hindi language plot keywords like \"just\". I'd suggest checking out \"RED\" (2010) from this list. This action-comedy stars Bruce Willis and Morgan Freeman, and has a similar tone to the western drama you enjoyed earlier.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Andrew Dominik",
+        "actor": "Chris Noth",
+        "writer": "Andrew Dominik",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "RED",
+        "My Girl 2",
+        "Zookeeper",
+        "The Lincoln Lawyer"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Chris Noth",
+        "anchor_title": "Along Came Polly",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Chris Noth",
+          "director": "Andrew Dominik",
+          "language": "English Language",
+          "plot": "crazy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a movie that's not quite what you thought, with elements of weirdness and unexpected twists. Based on your interest in Chris Noth, I think \"The Glass House\" could be an intriguing choice. This psychological thriller follows a teenager who discovers the dark secrets behind his seemingly perfect new family - it's definitely not what he expected!",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "You",
+        "director": "Andrew Dominik",
+        "actor": "Chris Noth",
+        "writer": "Andrew Dominik",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "The Ghost and the Darkness",
+        "Don 2",
+        "The Skulls",
+        "The Glass House"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Chris Noth",
+        "anchor_title": "Along Came Polly",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Chris Noth",
+          "director": "Andrew Dominik",
+          "language": "English Language",
+          "plot": "crazy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a movie with a similar mood to Us, and you have some specific preferences for genre (English language), actor (Chris Noth), director (Andrew Dominik), writer (Andrew Dominik), and plot keywords (what).\n\nBased on your constraints, I recommend \"The Equalizer\" (2014) starring Denzel Washington. This movie shares a similar gritty tone with Us, and Denzel Washington's strong performance adds depth to the story about justice and morality.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "X",
+        "director": "Andrew Dominik",
+        "actor": "Chris Noth",
+        "writer": "Andrew Dominik",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "Holes",
+        "The Equalizer",
+        "A Tale of Two Cities",
+        "A Christmas Carol"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Chris Noth",
+        "anchor_title": "Along Came Polly",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Chris Noth",
+          "director": "Andrew Dominik",
+          "language": "English Language",
+          "plot": "crazy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a story that piques your interest, and I've got just the thing! Based on your preferences for English language films with Chris Noth, Andrew Dominik's direction, and Hindi plot keywords like \"what\" and \"kind\", I highly recommend \"Cast Away\" (2000). This critically acclaimed film features Tom Hanks as a FedEx executive who becomes stranded on a deserted island, where he undergoes an incredible transformation.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "You",
+        "director": "Andrew Dominik",
+        "actor": "Chris Noth",
+        "writer": "Andrew Dominik",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "2012",
+        "Cast Away",
+        "Don 2",
+        "The Way Back Home"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of RED. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Chris Noth",
+        "anchor_title": "Along Came Polly",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Chris Noth",
+          "director": "Andrew Dominik",
+          "language": "English Language",
+          "plot": "crazy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you're looking for English-language films featuring Chris Noth, Andrew Dominik, and a Hindi-inspired sound. Based on that, I'd recommend \"It's a Wonderful Life\" (1946) - a timeless classic starring Donna Reed and James Stewart, with a beautiful Christmas tale that explores the meaning of life.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "director": "Andrew Dominik",
+        "actor": "Chris Noth",
+        "writer": "Andrew Dominik",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "It's a Wonderful Life",
+        "The Skull",
+        "Maid in Manhattan",
+        "Restless"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Nicholas Hytner? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 39,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Nicholas Hytner",
+        "anchor_title": "The Incredibles",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Chris Noth",
+          "director": "Nicholas Hytner",
+          "language": "English Language",
+          "plot": "prostitute"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 39,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "prostitute",
+          "from_anchor": "Along Came Polly",
+          "to_anchor": "The Incredibles"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for something else by Nicholas Hytner, but you're unsure if you'll enjoy or be scared by X (which is actually another movie). Since you mentioned Chris Noth and Andrew Dominik, I'm going to take a chance and recommend \"RED\" instead! This action-packed comedy stars Bruce Willis and Morgan Freeman as retired agents who get back into the game to solve a murder case. It's a fun ride with plenty of twists and turns, so I think you'll find it quite entertaining.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "RED",
+        "director": "Nicholas Hytner",
+        "actor": "Chris Noth",
+        "writer": "Andrew Dominik",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "Maleficent",
+        "RED",
+        "Island of the Blue Dolphins",
+        "Armageddon"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Nicholas Hytner",
+        "anchor_title": "The Incredibles",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Chris Noth",
+          "director": "Nicholas Hytner",
+          "language": "English Language",
+          "plot": "prostitute"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more movie recommendations that match a specific set of criteria: English language, starring Chris Noth, directed by Nicholas Hytner, written by Andrew Dominik, and possibly hinting at the plot keywords \"just\" and \"more\". Based on your preferences, I'd like to recommend two films from this list. First, \"Before I Fall\" (2010) is a thought-provoking drama that explores themes of mortality and self-discovery, with a strong performance by Zoey Deutch. Second, \"The Goodbye Girl\" (1977) is a quirky psychological thriller that shares some similarities in its mysterious and suspenseful tone, starring Christopher Noth alongside Raymond J. Barry and Nicol Williamson.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Nicholas Hytner",
+        "actor": "Chris Noth",
+        "writer": "Andrew Dominik",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "The Goodbye Girl",
+        "Annie Hall",
+        "Pride and Prejudice",
+        "Before I Fall"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Psycho? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Nicholas Hytner",
+        "anchor_title": "The Incredibles",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Chris Noth",
+          "director": "Nicholas Hytner",
+          "language": "English Language",
+          "plot": "prostitute"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you're looking for a movie with a similar mood to Psycho, which is intense and thought-provoking. Based on your preferences for English language movies with Chris Noth, Nicholas Hytner, Andrew Dominik, and Hindi plot keywords \"what\" and \"psycho\", I recommend \"Taxi Driver\" (1976) starring Robert De Niro, Jodie Foster, and Martin Scorsese. This classic film is known for its gritty portrayal of urban life and themes of loneliness, isolation, and the blurred lines between reality and fantasy - all elements that might remind you of Psycho's psychological tension.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "what",
+          "psycho"
+        ],
+        "name": "Psycho",
+        "director": "Nicholas Hytner",
+        "actor": "Chris Noth",
+        "writer": "Andrew Dominik",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "Taxi Driver",
+        "Paycheck",
+        "The History Boys",
+        "Divergent"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does RED tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Nicholas Hytner",
+        "anchor_title": "The Incredibles",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Chris Noth",
+          "director": "Nicholas Hytner",
+          "language": "English Language",
+          "plot": "prostitute"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a story that involves questions and exploration, with a hint of intrigue. I think I have just the thing! Have you considered \"Smilla's Sense of Snow\"? It's a gripping mystery that follows a half-Inuit woman as she uncovers secrets in Copenhagen and Greenland. With Julia Ormond starring alongside Vanessa Redgrave and Jim Broadbent, it's a thought-provoking film that will keep you guessing until the very end.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "director": "Nicholas Hytner",
+        "actor": "Chris Noth",
+        "writer": "Andrew Dominik",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "RED",
+        "Smilla's Sense of Snow",
+        "Eve's Bayou",
+        "Chain Reaction"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Nicholas Hytner",
+        "anchor_title": "The Incredibles",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Chris Noth",
+          "director": "Nicholas Hytner",
+          "language": "English Language",
+          "plot": "prostitute"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for a movie that's the opposite of what you initially had in mind, with genre constraints set to English language films featuring Chris Noth, directed by Nicholas Hytner or written by Andrew Dominik, and possibly with some plot elements related to \"actually\" and \"think\".",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "RED",
+        "director": "Nicholas Hytner",
+        "actor": "Chris Noth",
+        "writer": "Andrew Dominik",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "Next Day Air",
+        "A Tale of Two Cities",
+        "The Ghost and the Darkness",
+        "The Glass House"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Hope Davis. Hmm, I didn’t expect that vibe. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 44,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Hope Davis",
+        "anchor_title": "Real Steel",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Hope Davis",
+          "director": "Nicholas Hytner",
+          "plot": "your"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 44,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "your",
+          "from_anchor": "The Incredibles",
+          "to_anchor": "Real Steel"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on what you're looking for, I understand that you want movies with Hope Davis, possibly a darker or unexpected vibe (like in \"You\" perhaps), and are open to exploring different genres. With that in mind, I'd recommend checking out the psychological drama \"3\" (2010) starring Sebastian Schipper and Hope Davis herself - it's a thought-provoking film about uncovering secrets and truth.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "X",
+        "director": "Nicholas Hytner",
+        "actor": "Hope Davis",
+        "writer": "Andrew Dominik",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "3",
+        "Beastly",
+        "Island of the Blue Dolphins",
+        "Torn Curtain"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Hope Davis",
+        "anchor_title": "Real Steel",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Hope Davis",
+          "director": "Nicholas Hytner",
+          "plot": "your"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for more movie recommendations that fit their previous preferences, which included English language films featuring Hope Davis, Nicholas Hytner, Andrew Dominik, and a focus on the Hindi language with plot keywords like \"just\" and \"more\". Based on these cues, I recommend checking out \"Tusk\", a dark comedy-horror film starring Michael Parks and Johnny Depp, where a podcaster gets more than he bargained for when interviewing a mysterious recluse.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Nicholas Hytner",
+        "actor": "Hope Davis",
+        "writer": "Andrew Dominik",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "Bats",
+        "Tusk",
+        "Braveheart",
+        "Bobby"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Her? That sounds intriguing.",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Hope Davis",
+        "anchor_title": "Real Steel",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Hope Davis",
+          "director": "Nicholas Hytner",
+          "plot": "your"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie that matches the intriguing tone of \"Her\" and is an English-language film featuring Hope Davis, Nicholas Hytner, Andrew Dominik, or Hindi language elements. I'd recommend \"Anyone But You\" (1996), a romantic comedy starring [insert Hope Davis's name], which explores the complexities of relationships and features a witty script that's sure to keep you engaged.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Her",
+        "director": "Nicholas Hytner",
+        "actor": "Hope Davis",
+        "writer": "Andrew Dominik",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "Anyone But You",
+        "Heart of Darkness",
+        "The Equalizer",
+        "Island of the Blue Dolphins"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Her. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Hope Davis",
+        "anchor_title": "Real Steel",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Hope Davis",
+          "director": "Nicholas Hytner",
+          "plot": "your"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you're looking for a movie that explores deeper themes, similar to Her. From your preferences, I've taken note of your fondness for English-language films featuring Hope Davis, Nicholas Hytner's direction, Andrew Dominik's writing, and Hindi language plot keywords like \"sound\" and \"like\".\n\nBased on these constraints, I'd recommend \"Real Steel\" (2011) starring Hugh Jackman, Evangeline Lilly, and Hope Davis. This movie combines sci-fi elements with a deeper exploration of human emotions, much like Her. The film's focus on relationships and the quest for connection might resonate with you.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Her",
+        "director": "Nicholas Hytner",
+        "actor": "Hope Davis",
+        "writer": "Andrew Dominik",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "Restless",
+        "Real Steel",
+        "Emma",
+        "Vampyres"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Taken tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Hope Davis",
+        "anchor_title": "Real Steel",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Hope Davis",
+          "director": "Nicholas Hytner",
+          "plot": "your"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie that tells a story about what kind of thing, with a vibe similar to Taken. Based on your preferences, I think you might enjoy \"Paycheck\" (2003), an action-packed thriller starring Ben Affleck as an engineer trying to survive after his memories are erased and he's forced to fight against time to uncover the truth.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Taken",
+        "director": "Nicholas Hytner",
+        "actor": "Hope Davis",
+        "writer": "Andrew Dominik",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "Chain Reaction",
+        "Paycheck",
+        "Find Me Guilty",
+        "What If..."
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Ruben Fleischer? Hmm, I didn’t expect that vibe. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 49,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Ruben Fleischer",
+        "anchor_title": "Sholay",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Hope Davis",
+          "director": "Ruben Fleischer",
+          "plot": "your"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 49,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "your",
+          "from_anchor": "Real Steel",
+          "to_anchor": "Sholay"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for something else by Ruben Fleischer, but since \"I'm Thinking of You\" has a different vibe, let's explore other options that fit your genre preferences!",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Her",
+        "director": "Ruben Fleischer",
+        "actor": "Hope Davis",
+        "writer": "Andrew Dominik",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "The Assassination of Jesse James by the Coward Robert Ford",
+        "The Seduction of Joe Tynan",
+        "Shattered",
+        "Hitch"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 50,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ruben Fleischer",
+        "anchor_title": "Sholay",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Hope Davis",
+          "director": "Ruben Fleischer",
+          "plot": "your"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for more movies that share some similarities with what you've already enjoyed - perhaps something with a similar blend of thriller and horror elements, or maybe an action-packed adventure? Based on your preferences, I'd recommend \"The Cabin in the Woods\" (2012), a clever and suspenseful horror comedy that features Hope Davis alongside a talented cast. If you're in the mood for something more lighthearted, you might enjoy \"Tooth Fairy\" (2004), a family-friendly comedy starring Dwayne Johnson as a hockey player turned tooth collector!",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Ruben Fleischer",
+        "actor": "Hope Davis",
+        "writer": "Andrew Dominik",
+        "language": "Hindi Language"
+      },
+      "rec_titles": [
+        "The Cabin in the Woods",
+        "Mama",
+        "Terminator 2: Judgment Day",
+        "Tooth Fairy"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 3,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "based",
+      "from_anchor": "Tangled",
+      "to_anchor": "The Tommyknockers"
+    },
+    {
+      "turn": 5,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "prostitute",
+      "from_anchor": "The Tommyknockers",
+      "to_anchor": "Chicago"
+    },
+    {
+      "turn": 9,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "Tom Skerritt",
+      "from_anchor": "Chicago",
+      "to_anchor": "Saving Mr. Banks"
+    },
+    {
+      "turn": 13,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "trio",
+      "from_anchor": "Saving Mr. Banks",
+      "to_anchor": "8 Mile"
+    },
+    {
+      "turn": 20,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "reunite",
+      "from_anchor": "8 Mile",
+      "to_anchor": "Speed Racer"
+    },
+    {
+      "turn": 22,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "tense",
+      "from_anchor": "Speed Racer",
+      "to_anchor": "Timecode"
+    },
+    {
+      "turn": 28,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "botched",
+      "from_anchor": "Timecode",
+      "to_anchor": "Wedding Crashers"
+    },
+    {
+      "turn": 30,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "language",
+      "bridge_value": "English Language",
+      "from_anchor": "Wedding Crashers",
+      "to_anchor": "What's the Worst That Could Happen?"
+    },
+    {
+      "turn": 33,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "crazy",
+      "from_anchor": "What's the Worst That Could Happen?",
+      "to_anchor": "Along Came Polly"
+    },
+    {
+      "turn": 39,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "prostitute",
+      "from_anchor": "Along Came Polly",
+      "to_anchor": "The Incredibles"
+    },
+    {
+      "turn": 44,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "your",
+      "from_anchor": "The Incredibles",
+      "to_anchor": "Real Steel"
+    },
+    {
+      "turn": 49,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "your",
+      "from_anchor": "Real Steel",
+      "to_anchor": "Sholay"
+    }
+  ]
+}

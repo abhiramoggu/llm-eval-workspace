@@ -1,0 +1,2206 @@
+{
+  "session_id": "00091",
+  "model_name": "gemma:2b",
+  "true_genre": "musical",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a musical movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "musical",
+        "anchor_title": "Tangled",
+        "constraints": {
+          "genre": "musical"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here are two recommendations from the list you provided:\n\n- **A Mighty Wind** (2003) starring Larry Miller, Michael Hitchcock, Fred Willard, Parker Posey, Eugene Levy, Harry Shearer, Christopher Guest, Christopher Guest, Paul Dooley, Jennifer Coolidge, Michael McKean, Michael McKean, John Michael Higgins, Laura Harris, Bob Balaban, Catherine O'Hara, Jane Lynch is a mockumentary about a folk music reunion.\n\n- **The Bodyguard** (1992) starring Asin, DeVaughn Nixon, Bill Cobbs, Mike Starr is a thrilling and suspenseful film about a hapless bodyguard who is targeted by assassins.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "musical",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "A Mighty Wind",
+        "The Hound of the Baskervilles",
+        "The Last Unicorn",
+        "The Bodyguard"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Hitch? That sounds intriguing.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "musical",
+        "anchor_title": "Tangled",
+        "constraints": {
+          "genre": "musical"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation based on the user's preferences:\n\nSince they're interested in music and want a light and humorous movie, \"Get Him to the Greek\" might be the perfect choice. The movie follows a record company intern accompanying a rock star to a concert, which sounds like something the user might enjoy.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "what",
+          "hitch"
+        ],
+        "name": "Hitch"
+      },
+      "rec_titles": [
+        "Get Him to the Greek",
+        "Pitch Perfect",
+        "Man on Fire",
+        "Training Day"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Pat O'Connor (Director)? That sounds intriguing. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 3,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Pat O'Connor (Director)",
+        "anchor_title": "Chicago",
+        "constraints": {
+          "genre": "musical",
+          "director": "Pat O'Connor (Director)",
+          "plot": "childhood"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 3,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "childhood",
+          "from_anchor": "Tangled",
+          "to_anchor": "Chicago"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response:\n\n\"Since you're interested in something different, how about exploring Pat O'Connor's 'Crazy Heart' (2009)? This romantic drama features Colin Farrell's captivating performance and explores the complexities of love and relationships.\"",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Us",
+        "director": "Pat O'Connor"
+      },
+      "rec_titles": [
+        "The Wonderful Wizard of Oz",
+        "Armageddon",
+        "Crazy Heart",
+        "Spice World"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Pat O'Connor (Director)",
+        "anchor_title": "Chicago",
+        "constraints": {
+          "genre": "musical",
+          "director": "Pat O'Connor (Director)",
+          "plot": "childhood"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here are your recommendations:\n\n* **The Goodbye Girl** (N/A): The movie revolves around a young girl who seems to predict (or cause) a series of deaths while praying, raising questions about the supernatural and the intentions of those around her.\n* **Happy Feet** (2006): This heartwarming movie features a penguin who cannot sing but finds his soul mate through song, showcasing the power of music and the importance of finding belonging and purpose in life.\n* **Red** (2010): A thrilling crime thriller with multiple layers of deception and an enigmatic protagonist, Red, who is determined to solve a murder case within 48 hours.",
+      "constraints": {
+        "genre": "music",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Pat O'Connor"
+      },
+      "rec_titles": [
+        "The Goodbye Girl",
+        "Happy Feet",
+        "Be Cool",
+        "RED"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on RED. I want to try something more buddy—still with Morgan Freeman if possible. That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "buddy",
+        "anchor_title": "The Shawshank Redemption",
+        "constraints": {
+          "genre": "buddy",
+          "director": "Pat O'Connor (Director)",
+          "plot": "childhood",
+          "actor": "Morgan Freeman"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 5,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "Morgan Freeman",
+          "from_anchor": "Chicago",
+          "to_anchor": "The Shawshank Redemption"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommended movie:\n\n\"Based on the plot details you provided, 'Keeping the Faith' with Morgan Freeman might be what you're looking for. It's a story about two friends who fall in love with the same woman, but their religious positions deny them romance.\"",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "RED",
+        "director": "Pat O'Connor",
+        "actor": "Morgan Freeman",
+        "language": "fre"
+      },
+      "rec_titles": [
+        "Keeping the Faith",
+        "Can You Keep a Secret?",
+        "Unforgiven",
+        "The Bucket List"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "buddy",
+        "anchor_title": "The Shawshank Redemption",
+        "constraints": {
+          "genre": "buddy",
+          "director": "Pat O'Connor (Director)",
+          "plot": "childhood",
+          "actor": "Morgan Freeman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here is the recommended movie:\n\n**Mama (2013)**\n\nThe movie tells the story of a woman's journey to help others who have been victims of bullying and abuse. It stars Megan Charpentier, Isabelle Nélisse, and Javier Botet.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Pat O'Connor",
+        "actor": "Morgan Freeman",
+        "language": "fre"
+      },
+      "rec_titles": [
+        "Mama",
+        "My Own Private Idaho",
+        "The Skull",
+        "Thick as Thieves"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "buddy",
+        "anchor_title": "The Shawshank Redemption",
+        "constraints": {
+          "genre": "buddy",
+          "director": "Pat O'Connor (Director)",
+          "plot": "childhood",
+          "actor": "Morgan Freeman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response:\n\nIt sounds like you're looking for something with a darkly comedic tone and intriguing plot. If you're interested in movies about oddballs finding their place in the world, then 'Shrek 2' or 'Hot Fuzz' might be up your alley.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "You",
+        "director": "Pat O'Connor",
+        "actor": "Morgan Freeman",
+        "language": "fre"
+      },
+      "rec_titles": [
+        "Shrek 2",
+        "Hollywood Homicide",
+        "Hot Fuzz",
+        "RED"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Catherine Lambert. That feels deeper than I thought. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 8,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Catherine Lambert",
+        "anchor_title": "Wise Blood",
+        "constraints": {
+          "genre": "buddy",
+          "director": "Pat O'Connor (Director)",
+          "plot": "open",
+          "actor": "Catherine Lambert"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 8,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "open",
+          "from_anchor": "The Shawshank Redemption",
+          "to_anchor": "Wise Blood"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommended movie:\n\nBased on the user's preference for Catherine Lambert and Pat O'Connor movies, **Babel** would be a great choice. The film features Lambert in a starring role and explores themes of human connection and overcoming prejudice.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Her",
+        "director": "Pat O'Connor",
+        "actor": "Catherine Lambert",
+        "language": "fre"
+      },
+      "rec_titles": [
+        "Babel",
+        "Raiders of the Lost Ark",
+        "Torn Curtain",
+        "Elysium"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Catherine Lambert",
+        "anchor_title": "Wise Blood",
+        "constraints": {
+          "genre": "buddy",
+          "director": "Pat O'Connor (Director)",
+          "plot": "open",
+          "actor": "Catherine Lambert"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here are two movie recommendations that match the user's preferences:\n\n* **12 Angry Men (1957)** starring Jack Warden and John Fiedler. This classic crime film portrays a jury's struggle with a skeptical juror who challenges the other members' hasty decision.\n\n* **The Big Lebowski (1998)** starring Jeff \"The Dude\" Lebowski and John Goodman. This Coen brothers comedy features a witty and absurd story about a bowling enthusiast seeking compensation for a ruined rug.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Pat O'Connor",
+        "actor": "Catherine Lambert",
+        "language": "fre"
+      },
+      "rec_titles": [
+        "12 Angry Men",
+        "Braveheart",
+        "The Secret Life of Walter Mitty",
+        "The Big Lebowski"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Catherine Lambert",
+        "anchor_title": "Wise Blood",
+        "constraints": {
+          "genre": "buddy",
+          "director": "Pat O'Connor (Director)",
+          "plot": "open",
+          "actor": "Catherine Lambert"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation based on the user's preferences:\n\n\"It sounds like you might enjoy 'Mallrats' (1995). Two buddies seeking refuge in a mall amidst a strange situation could be your cup of tea.\"",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "You",
+        "director": "Pat O'Connor",
+        "actor": "Catherine Lambert",
+        "language": "fre"
+      },
+      "rec_titles": [
+        "Mallrats",
+        "Hot Fuzz",
+        "Batman Forever",
+        "I Love You, Man"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Her. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Catherine Lambert",
+        "anchor_title": "Wise Blood",
+        "constraints": {
+          "genre": "buddy",
+          "director": "Pat O'Connor (Director)",
+          "plot": "open",
+          "actor": "Catherine Lambert"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommendation you requested:\n\n**Recommendation:** \"Her\" sounds intriguing, so check out \"Clerks\" starring Brian O'Halloran and Jason Mewes. This buddy movie offers quirky characters and a hilarious premise.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Her",
+        "director": "Pat O'Connor",
+        "actor": "Catherine Lambert",
+        "language": "fre"
+      },
+      "rec_titles": [
+        "Clerks",
+        "Connie and Carla",
+        "The Stuff",
+        "It's a Wonderful Life"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Catherine Lambert",
+        "anchor_title": "Wise Blood",
+        "constraints": {
+          "genre": "buddy",
+          "director": "Pat O'Connor (Director)",
+          "plot": "open",
+          "actor": "Catherine Lambert"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation based on the user's preferences:\n\n\"For a movie that offers a deeper exploration of characters and themes, consider 'The Andromeda Strain' (1971). This film delves into the psychological and emotional aspects of a deadly contagion and the scientists' relentless pursuit of answers.\"",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "director": "Pat O'Connor",
+        "actor": "Catherine Lambert",
+        "language": "fre"
+      },
+      "rec_titles": [
+        "Men in Black",
+        "Wild Hogs",
+        "The Andromeda Strain",
+        "The Twilight Saga: New Moon"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Catherine Lambert",
+        "anchor_title": "Wise Blood",
+        "constraints": {
+          "genre": "buddy",
+          "director": "Pat O'Connor (Director)",
+          "plot": "open",
+          "actor": "Catherine Lambert"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response you requested:\n\nIt sounds like you may be looking for something with a quirky and unconventional vibe. \"Lost in Translation\" and \"Shrek 2\" both offer that unique blend of humor and heart, while \"Connie and Carla\" and \"Wild Hogs\" are more darkly comedic with a focus on friendship and self-discovery.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "Ted",
+        "director": "Pat O'Connor",
+        "actor": "Catherine Lambert",
+        "language": "fre"
+      },
+      "rec_titles": [
+        "Lost in Translation",
+        "Shrek 2",
+        "Connie and Carla",
+        "Wild Hogs"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Wild Hogs? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Catherine Lambert",
+        "anchor_title": "Wise Blood",
+        "constraints": {
+          "genre": "buddy",
+          "director": "Pat O'Connor (Director)",
+          "plot": "open",
+          "actor": "Catherine Lambert"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response you requested:\n\nBased on the user's preference, I would recommend either \"Wild Wild West\" or \"Alex in Wonderland.\" \"Wild Wild West\" offers a thrilling action adventure with exceptional performances by M. Emmet Walsh and Will Smith. \"Alex in Wonderland\" is a thought-provoking and visually striking film about an aspiring filmmaker navigating the complexities of Hollywood.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "what",
+          "wild"
+        ],
+        "name": "Wild",
+        "director": "Pat O'Connor",
+        "actor": "Catherine Lambert",
+        "language": "fre"
+      },
+      "rec_titles": [
+        "Wild Wild West",
+        "Dreamcatcher",
+        "The Yearling",
+        "Alex in Wonderland"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Paul Verhoeven? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 15,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Paul Verhoeven",
+        "anchor_title": "Mallrats",
+        "constraints": {
+          "genre": "buddy",
+          "director": "Paul Verhoeven",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 15,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Seth MacFarlane",
+          "from_anchor": "Wise Blood",
+          "to_anchor": "Mallrats"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response:\n\nSince you're looking for something with a similar vibe to Ted, I would suggest checking out \"Grown Ups\" or \"The Big Lebowski\". Both movies offer darkly comedic and heart-warming stories about close bonds and overcoming adversity.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Ted",
+        "director": "Paul Verhoeven",
+        "actor": "Paul Verhoeven",
+        "language": "fre"
+      },
+      "rec_titles": [
+        "Grown Ups",
+        "The Big Lebowski",
+        "Wild Hogs",
+        "White Night"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Paul Verhoeven",
+        "anchor_title": "Mallrats",
+        "constraints": {
+          "genre": "buddy",
+          "director": "Paul Verhoeven",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response:\n\nHey there! You've got a few interesting requests. If you're looking for something thrilling that deals with abuse of power and the right to bear arms, \"You\" might be your cup of tea. For something with a bit more comedic flair, check out \"Turbo.\" And if you're into underdog stories, \"Safe Men\" might be your jam.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Paul Verhoeven",
+        "actor": "Paul Verhoeven",
+        "language": "fre"
+      },
+      "rec_titles": [
+        "You",
+        "Safe Men",
+        "Turbo",
+        "Panic Room"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Her. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Paul Verhoeven",
+        "anchor_title": "Mallrats",
+        "constraints": {
+          "genre": "buddy",
+          "director": "Paul Verhoeven",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response you requested:\n\nThe user's preference for buddy movies with darker themes suggests a preference for films with a focus on personal journeys and relationships. Among the proposed titles, \"Annie Hall\" and \"Easy A\" come closest to matching the user's criteria. While \"Hollywood Homicide\" is a crime thriller, it also deals with darker themes and complex characters. \"Alex in Wonderland\" is a more abstract and philosophical movie that explores the relationship between ambition and artistic expression.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Her",
+        "director": "Paul Verhoeven",
+        "actor": "Paul Verhoeven",
+        "language": "fre"
+      },
+      "rec_titles": [
+        "Annie Hall",
+        "Easy A",
+        "Hollywood Homicide",
+        "Alex in Wonderland"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Paul Verhoeven",
+        "anchor_title": "Mallrats",
+        "constraints": {
+          "genre": "buddy",
+          "director": "Paul Verhoeven",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response you requested:\n\nYou were saying you might have been wrong earlier about your feelings for [actor name]. Based on the clues you provided, movies that might be relevant are either about drag queens or drug trafficking. Both of these themes seem to align with your earlier statement.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "Her",
+        "director": "Paul Verhoeven",
+        "actor": "Paul Verhoeven",
+        "language": "fre"
+      },
+      "rec_titles": [
+        "Connie and Carla",
+        "500 Days of Summer",
+        "Motives",
+        "Trainspotting"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Danny Nucci. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 19,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Danny Nucci",
+        "anchor_title": "Rocky",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Danny Nucci",
+          "plot": "killing"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 19,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "killing",
+          "from_anchor": "Mallrats",
+          "to_anchor": "Rocky"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a potential response:\n\nSounds intriguing! If you're looking for something with Danny Nucci, \"Theodore Rex\" might be your cup of tea. It's a dystopian film with a great performance from Daniel Craig. The plot involves a tough female police detective paired with a talking dinosaur on a quest to solve a murder.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "You",
+        "director": "Paul Verhoeven",
+        "actor": "Danny Nucci",
+        "language": "fre"
+      },
+      "rec_titles": [
+        "Trees Lounge",
+        "Burned",
+        "Holes",
+        "Theodore Rex"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Danny Nucci",
+        "anchor_title": "Rocky",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Danny Nucci",
+          "plot": "killing"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommended movie:\n\nBased on your preferences, I would recommend \"Maid in Manhattan\" or \"The Sting\". \"Maid in Manhattan\" is a romantic comedy with a stellar cast and a memorable plot, while \"The Sting\" is a thrilling heist film that will keep you on the edge of your seat.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Paul Verhoeven",
+        "actor": "Danny Nucci",
+        "language": "fre"
+      },
+      "rec_titles": [
+        "Maid in Manhattan",
+        "Uncommon Valor",
+        "The Sting",
+        "Total Recall"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 21,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Danny Nucci",
+        "anchor_title": "Rocky",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Danny Nucci",
+          "plot": "killing"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommended movie:\n\n\"Consider 'Men in Black' (1997) where the stooges embark on a dangerous mission that disrupts patients and staff at a hospital. This movie showcases the absurdity of human behavior and the lengths people go to for entertainment.\"",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "You",
+        "director": "Paul Verhoeven",
+        "actor": "Danny Nucci",
+        "language": "fre"
+      },
+      "rec_titles": [
+        "Men in Black",
+        "Connie and Carla",
+        "The Sting",
+        "Alex in Wonderland"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Danny Nucci",
+        "anchor_title": "Rocky",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Danny Nucci",
+          "plot": "killing"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommended movie based on the user's preferences:\n\nBased on the user's preference for buddy movies, the sound of Us would be a great choice. This film follows a group of pilots on a more unorthodox approach to space program development compared to the traditional, cautious engineers.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us",
+        "director": "Paul Verhoeven",
+        "actor": "Danny Nucci",
+        "language": "fre"
+      },
+      "rec_titles": [
+        "The Right Stuff",
+        "Safe Men",
+        "Looper",
+        "Wild Wild West"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Her tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Danny Nucci",
+        "anchor_title": "Rocky",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Danny Nucci",
+          "plot": "killing"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the suggested response:\n\nHer story definitely sounds fascinating, but it's a bit too complex for a simple movie recommendation. If you're looking for something with a more straightforward plot and a focus on action and friendship, 'Wolfhound' starring Oksana Akinshina might be a better choice.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her",
+        "director": "Paul Verhoeven",
+        "actor": "Danny Nucci",
+        "language": "fre"
+      },
+      "rec_titles": [
+        "Wolfhound",
+        "Hollow Man",
+        "Alex in Wonderland",
+        "Little Fockers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Wolf? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Danny Nucci",
+        "anchor_title": "Rocky",
+        "constraints": {
+          "genre": "buddy",
+          "actor": "Danny Nucci",
+          "plot": "killing"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a 1-3 sentence recommendation:\n\nIf you're looking for something with a dark and chilling atmosphere, then \"We the Living\" might be your cup of tea. This film explores the harsh realities faced by people caught in a totalitarian regime.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "what",
+          "wolf"
+        ],
+        "name": "Wolf",
+        "director": "Paul Verhoeven",
+        "actor": "Danny Nucci",
+        "language": "fre"
+      },
+      "rec_titles": [
+        "Mallrats",
+        "We the Living",
+        "Taken",
+        "The Trouble with Harry"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Angelina Jolie Pitt? Hmm, I didn’t expect that vibe. (I’m thinking of 3.)",
+      "user_meta": {
+        "turn": 25,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Angelina Jolie Pitt",
+        "anchor_title": "Hoosiers",
+        "constraints": {
+          "genre": "buddy",
+          "plot": "high",
+          "director": "Angelina Jolie Pitt"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 25,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "high",
+          "from_anchor": "Rocky",
+          "to_anchor": "Hoosiers"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation based on the user's constraints:\n\nThe Queen (2014) starring the phenomenal, powerful and captivating, Angelina Jolie Pitt, is a poignant and thrilling movie that explores the complexities of grief, resilience, and forgiveness. The movie is sure to leave you deeply moved and will make you think deeply about life and death.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "3",
+        "director": "Angelina Jolie",
+        "actor": "Angelina Jolie Pitt",
+        "language": "fre",
+        "writer": "Angelina Jolie"
+      },
+      "rec_titles": [
+        "The Queen",
+        "True Blood",
+        "The Bone Collector",
+        "Maleficent"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Angelina Jolie Pitt",
+        "anchor_title": "Hoosiers",
+        "constraints": {
+          "genre": "buddy",
+          "plot": "high",
+          "director": "Angelina Jolie Pitt"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommended movie:\n\n**Kung Fu Panda 2**\n\nThe user's preference for buddy, Angelina Jolie, and directing Angelina Jolie makes Kung Fu Panda 2 a natural choice. The film features a heartwarming story with humorous elements and stunning visuals.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Angelina Jolie",
+        "actor": "Angelina Jolie Pitt",
+        "language": "fre",
+        "writer": "Angelina Jolie"
+      },
+      "rec_titles": [
+        "Kung Fu Panda 2",
+        "Clerks",
+        "In the Mouth of Madness",
+        "The Bone Collector"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Angelina Jolie Pitt",
+        "anchor_title": "Hoosiers",
+        "constraints": {
+          "genre": "buddy",
+          "plot": "high",
+          "director": "Angelina Jolie Pitt"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user seems to be looking for something with an adult and provocative theme. If you're interested in exploring the complexities of love, trust, and human connection, then \"Men in Black II\" or \"Pushing Tin\" might be more suitable. If you're looking for something with a more lighthearted and humorous tone, then \"Why Did I Get Married?\" might be a better fit.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "director": "Angelina Jolie",
+        "actor": "Angelina Jolie Pitt",
+        "language": "fre",
+        "writer": "Angelina Jolie"
+      },
+      "rec_titles": [
+        "Men in Black II",
+        "Why Did I Get Married?",
+        "Dreamcatcher",
+        "Pushing Tin"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Why Did I Get Married? tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Angelina Jolie Pitt",
+        "anchor_title": "Hoosiers",
+        "constraints": {
+          "genre": "buddy",
+          "plot": "high",
+          "director": "Angelina Jolie Pitt"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a 1-3 sentence recommendation:\n\nWhy Did I Get Married? is a romantic comedy about a married couple facing challenges and discovering the meaning of love through a young mistress's arrival.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Why Did I Get Married?",
+        "director": "Angelina Jolie",
+        "actor": "Angelina Jolie Pitt",
+        "language": "fre",
+        "writer": "Angelina Jolie"
+      },
+      "rec_titles": [
+        "Why Did I Get Married?",
+        "Keeping the Faith",
+        "Hollywood Homicide",
+        "2010"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Mistress. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Angelina Jolie Pitt",
+        "anchor_title": "Hoosiers",
+        "constraints": {
+          "genre": "buddy",
+          "plot": "high",
+          "director": "Angelina Jolie Pitt"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's preference for buddy movies with engaging plotlines and intriguing characters suggests they might enjoy movies with strong female leads.\n\nConsidering their interest in a sound story, **Original Sin** starring Gregory Itzin and Angelina Jolie Pitt might be a perfect choice. The film explores a complex love triangle with suspense and humor.\n\nAnother option is **Wanted**, starring David O'Hara and Angelina Jolie Pitt. It's a thrilling action comedy with a witty plot and memorable characters.",
+      "constraints": {
+        "genre": "buddy",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Mistress",
+        "director": "Angelina Jolie",
+        "actor": "Angelina Jolie Pitt",
+        "language": "fre",
+        "writer": "Angelina Jolie"
+      },
+      "rec_titles": [
+        "Original Sin",
+        "Wanted",
+        "Easy A",
+        "The Big Lebowski"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Her. I want to try something more sci-fi—still with English if possible. I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 30,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "sci-fi",
+        "anchor_title": "Whatever Works",
+        "constraints": {
+          "genre": "sci-fi",
+          "plot": "high",
+          "director": "Angelina Jolie Pitt",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 30,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Hoosiers",
+          "to_anchor": "Whatever Works"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation based on the user's preferences:\n\nGiven the user's preference for sci-fi with English-language options, \"Pulp Fiction\" and \"One for the Money\" might be interesting. Pulp Fiction offers a visually stunning and thought-provoking exploration of violence, redemption, and morality. One for the Money is a darkly humorous and erotic sci-fi film with a unique visual style and unsettling atmosphere.",
+      "constraints": {
+        "genre": "sci-fi",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Her",
+        "director": "Angelina Jolie",
+        "actor": "Angelina Jolie Pitt",
+        "language": "English",
+        "writer": "Angelina Jolie"
+      },
+      "rec_titles": [
+        "Pulp Fiction",
+        "One for the Money",
+        "Yesterday Was a Lie",
+        "Milkweed"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "sci-fi",
+        "anchor_title": "Whatever Works",
+        "constraints": {
+          "genre": "sci-fi",
+          "plot": "high",
+          "director": "Angelina Jolie Pitt",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here is the recommended movie:\n\n\"Looking for something similar to The Vow? Check out The Dark Knight, a psychological thriller starring Christian Bale and Heath Ledger. It's a classic that perfectly captures the complexities of good and evil.\"",
+      "constraints": {
+        "genre": "sci-fi",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Angelina Jolie",
+        "actor": "Angelina Jolie Pitt",
+        "language": "English",
+        "writer": "Angelina Jolie"
+      },
+      "rec_titles": [
+        "The Vow",
+        "The Dark Knight",
+        "Se7en",
+        "Charlie and the Chocolate Factory"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "sci-fi",
+        "anchor_title": "Whatever Works",
+        "constraints": {
+          "genre": "sci-fi",
+          "plot": "high",
+          "director": "Angelina Jolie Pitt",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation:\n\nBased on your preference for sci-fi, \"The Lost World: Jurassic Park\" would be a perfect choice. It's a thrilling adventure about dinosaurs and humanity's struggle for survival.",
+      "constraints": {
+        "genre": "sci-fi",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "You",
+        "director": "Angelina Jolie",
+        "actor": "Angelina Jolie Pitt",
+        "language": "English",
+        "writer": "Angelina Jolie"
+      },
+      "rec_titles": [
+        "Batman Forever",
+        "The Lost World: Jurassic Park",
+        "127 Hours",
+        "Cloverfield"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Annabelle Wallis. That sounds intriguing. (I’m thinking of The Lost World: Jurassic Park.)",
+      "user_meta": {
+        "turn": 33,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Annabelle Wallis",
+        "anchor_title": "Compliance",
+        "constraints": {
+          "genre": "sci-fi",
+          "plot": "jurassic",
+          "director": "Angelina Jolie Pitt",
+          "language": "English",
+          "actor": "Annabelle Wallis"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 33,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "jurassic",
+          "from_anchor": "Whatever Works",
+          "to_anchor": "Compliance"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response:\n\nBased on your preferences, \"The Only Good Indian\" seems to be a good fit. The film tells a story about a Native American boy escaping an assimilation school and seeking revenge against the White authorities who failed to protect him.",
+      "constraints": {
+        "genre": "sci-fi",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Lost",
+        "director": "Angelina Jolie",
+        "actor": "Annabelle Wallis",
+        "language": "English",
+        "writer": "Angelina Jolie"
+      },
+      "rec_titles": [
+        "The Only Good Indian",
+        "Fallen",
+        "The Gunslinger",
+        "The Country Bears"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 34,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Annabelle Wallis",
+        "anchor_title": "Compliance",
+        "constraints": {
+          "genre": "sci-fi",
+          "plot": "jurassic",
+          "director": "Angelina Jolie Pitt",
+          "language": "English",
+          "actor": "Annabelle Wallis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommended movie based on the user's constraints:\n\n\"If you enjoyed 'Just Married' and 'Saving Mr. Banks', you might enjoy 'Be Kind Rewind' which also features Angelina Jolie in a similar role.\"",
+      "constraints": {
+        "genre": "sci-fi",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Angelina Jolie",
+        "actor": "Annabelle Wallis",
+        "language": "English",
+        "writer": "Angelina Jolie"
+      },
+      "rec_titles": [
+        "Just Married",
+        "Be Kind Rewind",
+        "Saving Mr. Banks",
+        "Marvin's Room"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Be Kind Rewind tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Annabelle Wallis",
+        "anchor_title": "Compliance",
+        "constraints": {
+          "genre": "sci-fi",
+          "plot": "jurassic",
+          "director": "Angelina Jolie Pitt",
+          "language": "English",
+          "actor": "Annabelle Wallis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response based on the user's constraints:\n\n\"Be Kind Rewind might be more than you thought. If you're looking for something with a deeper plot and interesting characters, then Soldier, Corpse Bride, and Spider-Man 3 might be worth checking out.\"",
+      "constraints": {
+        "genre": "sci-fi",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Be Kind Rewind",
+        "director": "Angelina Jolie",
+        "actor": "Annabelle Wallis",
+        "language": "English",
+        "writer": "Angelina Jolie"
+      },
+      "rec_titles": [
+        "Soldier",
+        "Corpse Bride",
+        "Random Hearts",
+        "Spider-Man 3"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? That sounds intriguing.",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Annabelle Wallis",
+        "anchor_title": "Compliance",
+        "constraints": {
+          "genre": "sci-fi",
+          "plot": "jurassic",
+          "director": "Angelina Jolie Pitt",
+          "language": "English",
+          "actor": "Annabelle Wallis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sounds intriguing! You're looking for something with a strong central theme and compelling cast. \"Seven Pounds\" or \"Happy Feet\" might be your cup of tea. Both offer a unique perspective on redemption and finding meaning in life.",
+      "constraints": {
+        "genre": "sci-fi",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "You",
+        "director": "Angelina Jolie",
+        "actor": "Annabelle Wallis",
+        "language": "English",
+        "writer": "Angelina Jolie"
+      },
+      "rec_titles": [
+        "Seven Pounds",
+        "The Last Dragon",
+        "Happy Feet",
+        "Undisputed"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Annabelle Wallis",
+        "anchor_title": "Compliance",
+        "constraints": {
+          "genre": "sci-fi",
+          "plot": "jurassic",
+          "director": "Angelina Jolie Pitt",
+          "language": "English",
+          "actor": "Annabelle Wallis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommendation:\n\nBased on your preferences, I would recommend \"Wild Target\" (2010) starring Rory Kinnear. This movie perfectly captures the essence of your request, featuring a hit-man grappling with a charming thief and a compelling plot.",
+      "constraints": {
+        "genre": "sci-fi",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "You",
+        "director": "Angelina Jolie",
+        "actor": "Annabelle Wallis",
+        "language": "English",
+        "writer": "Angelina Jolie"
+      },
+      "rec_titles": [
+        "Wild Target",
+        "Kung Pow: Enter the Fist",
+        "The Wonderful Wizard of Oz",
+        "Frostbite"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Wild. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Annabelle Wallis",
+        "anchor_title": "Compliance",
+        "constraints": {
+          "genre": "sci-fi",
+          "plot": "jurassic",
+          "director": "Angelina Jolie Pitt",
+          "language": "English",
+          "actor": "Annabelle Wallis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response you requested:\n\nThe user's interest in Wild is understandable, and several sci-fi movies fit that description. Among them, Dune (1965) and The Bad Seed (1954) immediately come to mind. While Home for the Holidays (1995) might have a more lighthearted tone, it also explores themes similar to the sci-fi genre.",
+      "constraints": {
+        "genre": "sci-fi",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Wild",
+        "director": "Angelina Jolie",
+        "actor": "Annabelle Wallis",
+        "language": "English",
+        "writer": "Angelina Jolie"
+      },
+      "rec_titles": [
+        "Home for the Holidays",
+        "Dune",
+        "No Country for Old Men",
+        "The Bad Seed"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Damien Chazelle? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 39,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Damien Chazelle",
+        "anchor_title": "The Astronaut's Wife",
+        "constraints": {
+          "genre": "sci-fi",
+          "plot": "jurassic",
+          "director": "Damien Chazelle",
+          "actor": "Annabelle Wallis",
+          "writer": "Caroline Kepnes"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 39,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "writer",
+          "bridge_value": "Caroline Kepnes",
+          "from_anchor": "Compliance",
+          "to_anchor": "The Astronaut's Wife"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the 1-3 sentence recommendation you requested:\n\n\"For a sci-fi film with similar themes to 'You', consider 'Mars Attacks!' (1996) with its satirical portrayal of Earth's vulnerability to invasion.\"",
+      "constraints": {
+        "genre": "sci-fi",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "You",
+        "director": "Damien Chazelle",
+        "actor": "Annabelle Wallis",
+        "language": "English",
+        "writer": "Angelina Jolie"
+      },
+      "rec_titles": [
+        "Mars Attacks!",
+        "A Walk in the Woods",
+        "Rise of the Planet of the Apes",
+        "The Ice Storm"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Damien Chazelle",
+        "anchor_title": "The Astronaut's Wife",
+        "constraints": {
+          "genre": "sci-fi",
+          "plot": "jurassic",
+          "director": "Damien Chazelle",
+          "actor": "Annabelle Wallis",
+          "writer": "Caroline Kepnes"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here are your recommendations:\n\n* **Your Highness** (2011) starring Noah Huntley and Brian Steele is a charming romantic comedy about a prince on a quest to rescue his kidnapped bride.\n* **The Royal Tenenbaums** (2001) starring Andrew Wilson, Danny Glover, and Luke Wilson is a quirky and witty family comedy about an eccentric family forced together for various reasons.\n* **Slumdog Millionaire** (2008) starring Freida Pinto and Anil Kapoor is a powerful and moving story about a teenager caught in the middle of a war.",
+      "constraints": {
+        "genre": "sci-fi",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Damien Chazelle",
+        "actor": "Annabelle Wallis",
+        "language": "English",
+        "writer": "Angelina Jolie"
+      },
+      "rec_titles": [
+        "Your Highness",
+        "The Royal Tenenbaums",
+        "Slumdog Millionaire",
+        "Lucky Number Slevin"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Damien Chazelle",
+        "anchor_title": "The Astronaut's Wife",
+        "constraints": {
+          "genre": "sci-fi",
+          "plot": "jurassic",
+          "director": "Damien Chazelle",
+          "actor": "Annabelle Wallis",
+          "writer": "Caroline Kepnes"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response:\n\n\"You're intrigued by movies about intense journeys and morally ambiguous characters. 'Vanish' and 'Lord of the Flies' immediately come to mind. 'Under the Skin' and 'War, Inc.' are excellent choices that explore complex themes through captivating narratives.\"",
+      "constraints": {
+        "genre": "sci-fi",
+        "plot": [
+          "what"
+        ],
+        "name": "You",
+        "director": "Damien Chazelle",
+        "actor": "Annabelle Wallis",
+        "language": "English",
+        "writer": "Angelina Jolie"
+      },
+      "rec_titles": [
+        "Vanish",
+        "Lord of the Flies",
+        "Under the Skin",
+        "War, Inc."
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Damien Chazelle",
+        "anchor_title": "The Astronaut's Wife",
+        "constraints": {
+          "genre": "sci-fi",
+          "plot": "jurassic",
+          "director": "Damien Chazelle",
+          "actor": "Annabelle Wallis",
+          "writer": "Caroline Kepnes"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation based on the user's preferences:\n\nThe movie that best matches the user's description is **Finding Neverland**. This heartwarming story features the iconic sound of music that helped inspire the beloved character of Peter Pan.",
+      "constraints": {
+        "genre": "sci-fi",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "director": "Damien Chazelle",
+        "actor": "Annabelle Wallis",
+        "language": "English",
+        "writer": "Angelina Jolie"
+      },
+      "rec_titles": [
+        "Finding Neverland",
+        "Caddyshack",
+        "Scream 4",
+        "We Are Water"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Her tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Damien Chazelle",
+        "anchor_title": "The Astronaut's Wife",
+        "constraints": {
+          "genre": "sci-fi",
+          "plot": "jurassic",
+          "director": "Damien Chazelle",
+          "actor": "Annabelle Wallis",
+          "writer": "Caroline Kepnes"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's preference for a sci-fi story with a strong focus on passion and sacrifice suggests either \"Red Eye\" (2005) or \"Fury\" (2014).",
+      "constraints": {
+        "genre": "sci-fi",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her",
+        "director": "Damien Chazelle",
+        "actor": "Annabelle Wallis",
+        "language": "English",
+        "writer": "Angelina Jolie"
+      },
+      "rec_titles": [
+        "Red Eye",
+        "Fury",
+        "King Kong",
+        "The Sisterhood of the Traveling Pants"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Jon Seda. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Fury.)",
+      "user_meta": {
+        "turn": 44,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Jon Seda",
+        "anchor_title": "Womb",
+        "constraints": {
+          "genre": "sci-fi",
+          "plot": "jurassic",
+          "director": "David Ayer",
+          "actor": "Jon Seda",
+          "writer": "Caroline Kepnes"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 44,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "director",
+          "bridge_value": "David Ayer",
+          "from_anchor": "The Astronaut's Wife",
+          "to_anchor": "Womb"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation based on the user's cues:\n\n\"Considering the sci-fi elements and potential for intense action, 'Pirates of the Caribbean: At World's End' might be a thrilling choice. However, if you're looking for something with a more grounded plot and character-driven drama, 'The 13th Warrior' or 'This Girl' might be more suitable.\"",
+      "constraints": {
+        "genre": "sci-fi",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Fury",
+        "director": "Damien Chazelle",
+        "actor": "Jon Seda",
+        "language": "English",
+        "writer": "Angelina Jolie"
+      },
+      "rec_titles": [
+        "Pirates of the Caribbean: At World's End",
+        "The 13th Warrior",
+        "Adventureland",
+        "This Girl"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jon Seda",
+        "anchor_title": "Womb",
+        "constraints": {
+          "genre": "sci-fi",
+          "plot": "jurassic",
+          "director": "David Ayer",
+          "actor": "Jon Seda",
+          "writer": "Caroline Kepnes"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation based on your constraints:\n\nLooking for something with a similar tone to \"Under the Dome\" but with a sci-fi element? Consider \"Prometheus.\" The film explores humanity's relationship with technology and the ethical questions surrounding the gift of fire.",
+      "constraints": {
+        "genre": "sci-fi",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Damien Chazelle",
+        "actor": "Jon Seda",
+        "language": "English",
+        "writer": "Angelina Jolie"
+      },
+      "rec_titles": [
+        "Under the Dome",
+        "Twilight",
+        "Hancock",
+        "Prometheus"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jon Seda",
+        "anchor_title": "Womb",
+        "constraints": {
+          "genre": "sci-fi",
+          "plot": "jurassic",
+          "director": "David Ayer",
+          "actor": "Jon Seda",
+          "writer": "Caroline Kepnes"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response you requested:\n\nThe user's preference suggests a focus on social issues, ambition, and complex characters. Among the options you provided, \"Snowpiercer\" and \"China Dolls\" seem to be the most relevant. Both movies explore the consequences of societal inequalities and the fight for survival, which aligns with the user's initial statement.",
+      "constraints": {
+        "genre": "sci-fi",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "You",
+        "director": "Damien Chazelle",
+        "actor": "Jon Seda",
+        "language": "English",
+        "writer": "Angelina Jolie"
+      },
+      "rec_titles": [
+        "Snowpiercer",
+        "China Dolls",
+        "Wimbledon",
+        "Roses Are Red"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of China Dolls. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jon Seda",
+        "anchor_title": "Womb",
+        "constraints": {
+          "genre": "sci-fi",
+          "plot": "jurassic",
+          "director": "David Ayer",
+          "actor": "Jon Seda",
+          "writer": "Caroline Kepnes"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommended movie based on the user's preference:\n\n\"Since they seem interested in the sound of China Dolls and dark fantasy, 'Paradise Lost' might be a good choice. This movie combines elements of horror and mystery with captivating visuals and a captivating soundtrack.\"",
+      "constraints": {
+        "genre": "china",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "director": "Damien Chazelle",
+        "actor": "Jon Seda",
+        "language": "English",
+        "writer": "Angelina Jolie"
+      },
+      "rec_titles": [
+        "Paradise Lost",
+        "Jack Reacher",
+        "Army of Darkness",
+        "Con Air"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Paradise Lost? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jon Seda",
+        "anchor_title": "Womb",
+        "constraints": {
+          "genre": "sci-fi",
+          "plot": "jurassic",
+          "director": "David Ayer",
+          "actor": "Jon Seda",
+          "writer": "Caroline Kepnes"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommendation:\n\nBased on the user's preferences, \"The Hound of the Baskervilles\" might be a good choice. The movie features a mysterious death and Sherlock Holmes, which are elements that match the user's interest in the genre.",
+      "constraints": {
+        "genre": "china",
+        "plot": [
+          "what",
+          "lost"
+        ],
+        "name": "Lost",
+        "director": "Damien Chazelle",
+        "actor": "Jon Seda",
+        "language": "English",
+        "writer": "Angelina Jolie"
+      },
+      "rec_titles": [
+        "The Thing",
+        "Groundhog Day",
+        "The Hound of the Baskervilles",
+        "Last Action Hero"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jon Seda",
+        "anchor_title": "Womb",
+        "constraints": {
+          "genre": "sci-fi",
+          "plot": "jurassic",
+          "director": "David Ayer",
+          "actor": "Jon Seda",
+          "writer": "Caroline Kepnes"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response you requested:\n\nSounds intriguing! If you're looking for a movie with high-octane action and daring escapes, \"Mission: Impossible - Ghost Protocol\" starring Michael Nyqvist might be your cup of tea.",
+      "constraints": {
+        "genre": "china",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "director": "Damien Chazelle",
+        "actor": "Jon Seda",
+        "language": "English",
+        "writer": "Angelina Jolie"
+      },
+      "rec_titles": [
+        "Mission: Impossible - Ghost Protocol",
+        "Speed",
+        "Undercover Brother",
+        "Bleak House"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Karey Kirkpatrick? Hmm, I didn’t expect that vibe. (I’m thinking of Mission: Impossible - Ghost Protocol.)",
+      "user_meta": {
+        "turn": 50,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Karey Kirkpatrick",
+        "anchor_title": "Dreamcatcher",
+        "constraints": {
+          "genre": "sci-fi",
+          "plot": "implicated",
+          "director": "Karey Kirkpatrick",
+          "actor": "Jon Seda",
+          "writer": "Caroline Kepnes"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 50,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "implicated",
+          "from_anchor": "Womb",
+          "to_anchor": "Dreamcatcher"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the reply:\n\n\"Since you're looking for something with a similar vibe to 'Mission: Impossible - Ghost Protocol', I suggest either 'The Mortal Instruments: City of Bones' or 'Elysium'. Both films feature strong female leads facing dangerous worlds with complex characters.\"",
+      "constraints": {
+        "genre": "china",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Mission: Impossible",
+        "director": "Karey Kirkpatrick",
+        "actor": "Jon Seda",
+        "language": "English",
+        "writer": "Karey Kirkpatrick"
+      },
+      "rec_titles": [
+        "The Mortal Instruments: City of Bones",
+        "Jane Got a Gun",
+        "Elysium",
+        "Below Zero"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 3,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "childhood",
+      "from_anchor": "Tangled",
+      "to_anchor": "Chicago"
+    },
+    {
+      "turn": 5,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "Morgan Freeman",
+      "from_anchor": "Chicago",
+      "to_anchor": "The Shawshank Redemption"
+    },
+    {
+      "turn": 8,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "open",
+      "from_anchor": "The Shawshank Redemption",
+      "to_anchor": "Wise Blood"
+    },
+    {
+      "turn": 15,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Seth MacFarlane",
+      "from_anchor": "Wise Blood",
+      "to_anchor": "Mallrats"
+    },
+    {
+      "turn": 19,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "killing",
+      "from_anchor": "Mallrats",
+      "to_anchor": "Rocky"
+    },
+    {
+      "turn": 25,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "high",
+      "from_anchor": "Rocky",
+      "to_anchor": "Hoosiers"
+    },
+    {
+      "turn": 30,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Hoosiers",
+      "to_anchor": "Whatever Works"
+    },
+    {
+      "turn": 33,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "jurassic",
+      "from_anchor": "Whatever Works",
+      "to_anchor": "Compliance"
+    },
+    {
+      "turn": 39,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "writer",
+      "bridge_value": "Caroline Kepnes",
+      "from_anchor": "Compliance",
+      "to_anchor": "The Astronaut's Wife"
+    },
+    {
+      "turn": 44,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "director",
+      "bridge_value": "David Ayer",
+      "from_anchor": "The Astronaut's Wife",
+      "to_anchor": "Womb"
+    },
+    {
+      "turn": 50,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "implicated",
+      "from_anchor": "Womb",
+      "to_anchor": "Dreamcatcher"
+    }
+  ]
+}

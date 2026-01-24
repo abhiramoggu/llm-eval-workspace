@@ -109,7 +109,6 @@ RD_COS = _col(df, "avg_recovery_delay_cosine", [])
 
 SEM = _col(df, "semantic_similarity_mean", [])
 DST_F1 = _col(df, "dst_f1_mean", [])
-SAT = _col(df, "recommendation_satisfaction_mean", [])
 
 # Judge metrics (1..5 typically)
 judge_cols = [c for c in df.columns if c.startswith("judge.rubric_")]
@@ -239,10 +238,24 @@ def _legend_outside():
     plt.legend(loc="center left", bbox_to_anchor=(1.02, 0.5), frameon=False)
 
 def _save(figpath: str):
-    plt.tight_layout()
+    fig = plt.gcf()
+    has_3d = any(getattr(ax, "name", "") == "3d" for ax in fig.axes)
+    if has_3d:
+        fig.subplots_adjust(left=0.08, right=0.9, top=0.92, bottom=0.12)
+    else:
+        fig.tight_layout()
     plt.savefig(figpath, dpi=220, bbox_inches="tight")
     plt.close()
     print(f"Saved plot: {figpath}")
+
+def _set_bar_ylim(values: np.ndarray, floor: float = 0.0, pad: float = 0.1, min_top: float = 0.05):
+    vals = np.asarray(values, dtype=float)
+    vals = vals[np.isfinite(vals)]
+    vmax = float(np.max(vals)) if vals.size else 0.0
+    if vmax <= 0.0:
+        vmax = min_top
+    top = max(min_top, vmax * (1.0 + pad))
+    plt.ylim(floor, top)
 
 def _kde_curve(values: np.ndarray, num: int = 200, bandwidth: Optional[float] = None) -> Tuple[Optional[np.ndarray], Optional[np.ndarray]]:
     vals = np.asarray(values, dtype=float)
@@ -267,12 +280,11 @@ def _pretty_metric_name(name: str) -> str:
 # -----------------------------
 # 1) Bar chart: TAS vs baselines
 # -----------------------------
-base_metrics = [TAS, SEM, DST_F1, SAT]
+base_metrics = [TAS, SEM, DST_F1]
 labels = {
     TAS: "TAS",
     SEM: "Semantic Similarity",
     DST_F1: "DST F1 (set overlap)",
-    SAT: "Rec. Satisfaction",
 }
 plot_df = df_summary[[MODEL_COL] + base_metrics].copy()
 
@@ -282,7 +294,7 @@ plt.figure(figsize=(16, 7))
 for j, mcol in enumerate(base_metrics):
     plt.bar(x + (j - 1.5) * width, plot_df[mcol].values, width, label=labels[mcol])
 plt.xticks(x, plot_df[MODEL_COL], rotation=30, ha="right")
-plt.ylim(0, 1.05)
+_set_bar_ylim(plot_df[base_metrics].to_numpy().flatten(), floor=0.0)
 plt.ylabel("Score (0–1)")
 plt.title("Proposed TAS vs Baselines (mean across conversations)")
 _legend_outside()
@@ -300,7 +312,7 @@ width = 0.22
 for j, mcol in enumerate(metrics2):
     plt.bar(x + (j - 1) * width, comp_df[mcol].values, width, label=mcol)
 plt.xticks(x, comp_df[MODEL_COL], rotation=30, ha="right")
-plt.ylim(0, 1.05)
+_set_bar_ylim(comp_df[metrics2].to_numpy().flatten(), floor=0.0)
 plt.ylabel("Component score (0–1)")
 plt.title("TAS Components by Model")
 _legend_outside()
@@ -335,7 +347,7 @@ plt.figure(figsize=(16, 6))
 plt.bar(x - width/2, df_recovery[RR].fillna(0).values, width, label="RR (Jaccard)")
 plt.bar(x + width/2, df_recovery[RR_COS].fillna(0).values, width, label="RR (Cosine)")
 plt.xticks(x, df_recovery[MODEL_COL], rotation=30, ha="right")
-plt.ylim(0, 1.05)
+_set_bar_ylim(df_recovery[[RR, RR_COS]].to_numpy().flatten(), floor=0.0)
 plt.ylabel("Recovery Rate")
 plt.title("Shift Recovery Rate")
 _legend_outside()
@@ -345,6 +357,7 @@ plt.figure(figsize=(16, 6))
 plt.bar(x - width/2, df_recovery[RD].fillna(0).values, width, label="RD (Jaccard)")
 plt.bar(x + width/2, df_recovery[RD_COS].fillna(0).values, width, label="RD (Cosine)")
 plt.xticks(x, df_recovery[MODEL_COL], rotation=30, ha="right")
+_set_bar_ylim(df_recovery[[RD, RD_COS]].fillna(0).to_numpy().flatten(), floor=0.0, min_top=0.5)
 plt.ylabel("Avg Recovery Delay (turns)")
 plt.title("Shift Recovery Delay")
 _legend_outside()
@@ -373,7 +386,7 @@ if judge_cols:
 # -----------------------------
 # 6) Distributions (TAS + baselines)
 # -----------------------------
-for mcol, name in [(TAS, "TAS"), (SEM, "Semantic Similarity"), (DST_F1, "DST F1"), (SAT, "Rec. Satisfaction")]:
+for mcol, name in [(TAS, "TAS"), (SEM, "Semantic Similarity"), (DST_F1, "DST F1")]:
     plt.figure(figsize=(12, 6))
     colors = plt.rcParams["axes.prop_cycle"].by_key().get("color", [])
     for idx, model in enumerate(df[MODEL_COL].unique()):
@@ -398,7 +411,7 @@ for mcol, name in [(TAS, "TAS"), (SEM, "Semantic Similarity"), (DST_F1, "DST F1"
 # -----------------------------
 # 7) Correlations (TAS vs baselines, TAS vs judge) + pairwise scatter
 # -----------------------------
-corr_cols = [TAS, SEM, DST_F1, SAT]
+corr_cols = [TAS, SEM, DST_F1]
 if judge_cols:
     corr_cols += judge_cols
 corr_df = df[corr_cols].copy()
@@ -424,6 +437,11 @@ for i in range(len(corr_cols)):
             color = colors[idx % len(colors)] if colors else None
             plt.scatter(x[mask], y[mask], alpha=0.55, s=40, color=color, label=model)
             plt.scatter([x[mask].mean()], [y[mask].mean()], marker="X", s=120, color=color, edgecolors="black", linewidths=0.5)
+            if mask.sum() >= 2 and np.unique(x[mask]).size >= 2:
+                coeffs = np.polyfit(x[mask], y[mask], 1)
+                xs = np.linspace(float(np.min(x[mask])), float(np.max(x[mask])), num=50)
+                ys = (coeffs[0] * xs) + coeffs[1]
+                plt.plot(xs, ys, color=color, linewidth=1.5, alpha=0.8)
         plt.xlabel(_pretty_metric_name(x_col))
         plt.ylabel(_pretty_metric_name(y_col))
         title = f"{_pretty_metric_name(x_col)} vs {_pretty_metric_name(y_col)}"
@@ -498,7 +516,7 @@ if vol_rows:
     plt.figure(figsize=(16, 6))
     models = vol_summary[MODEL_COL].tolist()
     data = [vol_df[vol_df[MODEL_COL] == m]["tas_volatility"].values for m in models]
-    plt.boxplot(data, labels=models, showmeans=True, meanline=True)
+    plt.boxplot(data, tick_labels=models, showmeans=True, meanline=True)
     plt.xticks(rotation=30, ha="right")
     plt.ylabel("Stddev(TAS per turn)")
     plt.title("Conversation Deviation (TAS volatility)")
@@ -513,7 +531,7 @@ try:
         tl = detail.get("turn_level") or []
         if not isinstance(tl, list) or not tl:
             return None
-        out = {"cc": [], "cr": [], "i": [], "tas": []}
+        out = {"cc": [], "cr": [], "i": [], "tas": [], "focus": []}
         for row in tl:
             if not isinstance(row, dict):
                 continue
@@ -524,10 +542,13 @@ try:
                 tas = float(row.get("tas"))
             except (TypeError, ValueError):
                 continue
+            meta = row.get("user_meta") or {}
+            focus = meta.get("focus_field") if isinstance(meta, dict) else None
             out["cc"].append(cc)
             out["cr"].append(cr)
             out["i"].append(i)
             out["tas"].append(tas)
+            out["focus"].append(str(focus) if focus else "")
         if not out["tas"]:
             return None
         return out
@@ -545,8 +566,8 @@ try:
         comps = _extract_turn_components(detail)
         if not comps:
             continue
-        series_by_model.setdefault(model, {"cc": [], "cr": [], "i": [], "tas": []})
-        for key in ["cc", "cr", "i", "tas"]:
+        series_by_model.setdefault(model, {"cc": [], "cr": [], "i": [], "tas": [], "focus": []})
+        for key in ["cc", "cr", "i", "tas", "focus"]:
             series_by_model[model][key].append(comps[key])
 
     for model, comp_series in series_by_model.items():
@@ -572,6 +593,116 @@ try:
         plt.tight_layout()
         plt.savefig(os.path.join(DIRS["three_d"], f"3d_tas_components_{model}.png"), dpi=220, bbox_inches="tight")
         plt.close()
+
+        def _plot_score_sheet(series_list: List[List[float]], focus_list: List[List[str]], label: str, filename: str):
+            if not series_list or not focus_list:
+                return
+            max_len = max(len(s) for s in series_list)
+            if max_len == 0:
+                return
+            fields = list(CONCEPT_FIELDS)
+            fields.append("other")
+            field_to_idx = {f: i for i, f in enumerate(fields)}
+            sum_mat = np.zeros((len(fields), max_len), dtype=float)
+            count_mat = np.zeros((len(fields), max_len), dtype=float)
+            for s_idx, s in enumerate(series_list):
+                f_series = focus_list[s_idx] if s_idx < len(focus_list) else []
+                for t_idx, score in enumerate(s):
+                    if t_idx >= max_len:
+                        continue
+                    focus = f_series[t_idx] if t_idx < len(f_series) else ""
+                    field = focus if focus in field_to_idx else "other"
+                    y_idx = field_to_idx[field]
+                    sum_mat[y_idx, t_idx] += float(score)
+                    count_mat[y_idx, t_idx] += 1.0
+            with np.errstate(invalid="ignore", divide="ignore"):
+                mat = np.divide(sum_mat, count_mat)
+                mat[count_mat == 0] = np.nan
+            turns = np.arange(1, max_len + 1)
+            field_idx = np.arange(len(fields))
+            X, Y = np.meshgrid(turns, field_idx)
+            Z = mat
+            fig = plt.figure(figsize=(12, 9))
+            ax = fig.add_subplot(111, projection="3d")
+            ax.plot_surface(X, Y, Z, cmap="viridis", alpha=0.85, linewidth=0, antialiased=True)
+            ax.set_xlabel("Turn")
+            ax.set_ylabel("Focus field")
+            ax.set_yticks(field_idx)
+            ax.set_yticklabels(fields)
+            ax.set_zlabel("Score")
+            ax.set_title(f"{label} sheet by focus field ({model})")
+            plt.tight_layout()
+            plt.savefig(os.path.join(DIRS["three_d"], filename), dpi=220, bbox_inches="tight")
+            plt.close()
+
+        _plot_score_sheet(comp_series["tas"], comp_series["focus"], "TAS", f"3d_tas_sheet_{model}.png")
+        _plot_score_sheet(comp_series["cc"], comp_series["focus"], "CO", f"3d_co_sheet_{model}.png")
+        _plot_score_sheet(comp_series["cr"], comp_series["focus"], "WCS", f"3d_wcs_sheet_{model}.png")
+
+    def _collect_field_count_series(detail: dict, key: str) -> List[List[int]]:
+        tl = detail.get("turn_level") or []
+        out: List[List[int]] = []
+        if not isinstance(tl, list):
+            return out
+        for row in tl:
+            if not isinstance(row, dict):
+                continue
+            mapping = row.get(key) or {}
+            if not isinstance(mapping, dict):
+                mapping = {}
+            out.append([len(mapping.get(f, [])) for f in CONCEPT_FIELDS])
+        return out
+
+    def _mean_field_surface(series_list: List[List[List[int]]], field_count: int) -> Tuple[Optional[np.ndarray], int]:
+        if not series_list:
+            return None, 0
+        max_len = max(len(s) for s in series_list)
+        if max_len == 0:
+            return None, 0
+        mat = np.full((len(series_list), field_count, max_len), np.nan, dtype=float)
+        for i, s in enumerate(series_list):
+            for t_idx, counts in enumerate(s):
+                if t_idx >= max_len or len(counts) != field_count:
+                    continue
+                mat[i, :, t_idx] = np.asarray(counts, dtype=float)
+        return np.nanmean(mat, axis=0), max_len
+
+    field_names = list(CONCEPT_FIELDS)
+    field_series_by_model: Dict[str, Dict[str, List[List[List[int]]]]] = {}
+    for _, row in df.iterrows():
+        detail = row["detail"]
+        model = row[MODEL_COL]
+        user_series = _collect_field_count_series(detail, "user_concepts_by_field")
+        sys_series = _collect_field_count_series(detail, "system_concepts_by_field")
+        if user_series:
+            field_series_by_model.setdefault(model, {"user": [], "system": []})
+            field_series_by_model[model]["user"].append(user_series)
+        if sys_series:
+            field_series_by_model.setdefault(model, {"user": [], "system": []})
+            field_series_by_model[model]["system"].append(sys_series)
+
+    for model, buckets in field_series_by_model.items():
+        for label, series_list in buckets.items():
+            surface, max_len = _mean_field_surface(series_list, len(field_names))
+            if surface is None or max_len == 0:
+                continue
+            turns = np.arange(1, max_len + 1)
+            fields_idx = np.arange(len(field_names))
+            X, Y = np.meshgrid(turns, fields_idx)
+            Z = surface
+
+            fig = plt.figure(figsize=(12, 9))
+            ax = fig.add_subplot(111, projection="3d")
+            ax.plot_surface(X, Y, Z, cmap="viridis", alpha=0.85, linewidth=0, antialiased=True)
+            ax.set_xlabel("Turn")
+            ax.set_ylabel("Field")
+            ax.set_yticks(fields_idx)
+            ax.set_yticklabels(field_names)
+            ax.set_zlabel("Concept count")
+            ax.set_title(f"Concept frequency sheet ({label.upper()}) - {model}")
+            plt.tight_layout()
+            plt.savefig(os.path.join(DIRS["three_d"], f"concept_field_sheet_{label}_{model}.png"), dpi=220, bbox_inches="tight")
+            plt.close()
 except Exception:
     pass
 

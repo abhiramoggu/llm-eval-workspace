@@ -1,0 +1,2077 @@
+{
+  "session_id": "00022",
+  "model_name": "qwen:7b",
+  "true_genre": "massachusetts",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a biographical movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "biographical",
+        "anchor_title": "Into the Wild",
+        "constraints": {
+          "genre": "biographical"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a biographical movie with a focus on revenge and criminal elements. 'Rob Roy' offers an intense tale of betrayal and outdoor survival, starring Liam Neeson. Another option is 'American Gangster' (2007), featuring Denzel Washington as the infamous drug lord Frank Lucas, providing a partly biographical glimpse into organized crime.",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "biographical",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "Rob Roy",
+        "The Seduction of Joe Tynan",
+        "True Blood",
+        "American Gangster"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "biographical",
+        "anchor_title": "Into the Wild",
+        "constraints": {
+          "genre": "biographical"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user enjoys biographical movies with plot keywords like \"like\" and a sound they find intriguing. Based on these preferences, I recommend 'Donnie Brasco', featuring Al Pacino and James Russo in a story about an FBI undercover agent infiltrating the Mafia. This movie combines elements of both genres and has a memorable soundtrack.",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "The Baader Meinhof Complex",
+        "Smokin' Aces",
+        "Donnie Brasco",
+        "Walking Tall"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "biographical",
+        "anchor_title": "Into the Wild",
+        "constraints": {
+          "genre": "biographical"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for biographical films with a focus on what was said. Based on your preferences, I recommend 'Holes' (1998), which follows a man named Danny as he unravels the mystery surrounding his son's murder. The cast includes stars like Shia LaBeouf and Dan Aykroyd.",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "Holes",
+        "Truman",
+        "The Twilight Saga: New Moon",
+        "The Queen"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "biographical",
+        "anchor_title": "Into the Wild",
+        "constraints": {
+          "genre": "biographical"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a biographical movie with a focus on what or didn't happen. Based on these preferences, I would recommend 'Moneyball' as it combines the biographical aspect with the themes of determination and analyzing success in sports. Starring Tom Cruise (although not in this role), 'Moneyball' offers an interesting watch for fans of both sports and biographies.",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "X"
+      },
+      "rec_titles": [
+        "Moneyball",
+        "Riding in Cars with Boys",
+        "End of Watch",
+        "W."
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "biographical",
+        "anchor_title": "Into the Wild",
+        "constraints": {
+          "genre": "biographical"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're interested in biographical stories with a focus on 'what kind of story does Us tell?' Based on your preferences, I recommend 'Louie,' a film that delves into the life of a Boston legend known for his unique riding style. It features interviews and explores both the public persona and personal aspects of the protagonist.",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us"
+      },
+      "rec_titles": [
+        "Louie",
+        "The Way Back Home",
+        "Witless Protection",
+        "Her"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Clayne Crawford. Hmm, I didn’t expect that vibe. (I’m thinking of Legend.)",
+      "user_meta": {
+        "turn": 6,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Clayne Crawford",
+        "anchor_title": "Legend",
+        "constraints": {
+          "genre": "biographical",
+          "actor": "Clayne Crawford",
+          "writer": "Marie Lu"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 6,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "writer",
+          "bridge_value": "Marie Lu",
+          "from_anchor": "Into the Wild",
+          "to_anchor": "Legend"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movie recommendations with Clayne Crawford, a biographical genre, and an emphasis on plot keywords like \"could find.\" Based on these preferences, I suggest 'Deep' (2015), starring actors like Mark Moses and Val Kilmer. This movie fits the criteria and offers an interesting plot involving medical students and an experiment gone wrong.",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Legend",
+        "actor": "Clayne Crawford"
+      },
+      "rec_titles": [
+        "White Night",
+        "The Doors",
+        "Deep",
+        "Men in Black II"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Clayne Crawford",
+        "anchor_title": "Legend",
+        "constraints": {
+          "genre": "biographical",
+          "actor": "Clayne Crawford",
+          "writer": "Marie Lu"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants biographical genre recommendations with actor Clayne Crawford. Based on the given list, I suggest watching 'Beyond the Sea' (2004), featuring Michael Byrne, Bob Hoskins, and Clayne Crawford himself in a supporting role. This movie delves into the life of Bobby Darin through his relationships.",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Clayne Crawford"
+      },
+      "rec_titles": [
+        "Beyond the Sea",
+        "The Lincoln Lawyer",
+        "This Is the End",
+        "Catch Me If You Can"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Beyond the Sea. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Clayne Crawford",
+        "anchor_title": "Legend",
+        "constraints": {
+          "genre": "biographical",
+          "actor": "Clayne Crawford",
+          "writer": "Marie Lu"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user enjoys biographical films and is drawn to Clayne Crawford's acting. Based on these preferences, I recommend 'Girl, Interrupted' (starring Angela Bettis) as it fits the genre and features Crawford's talent.",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Beyond the Sea",
+        "actor": "Clayne Crawford"
+      },
+      "rec_titles": [
+        "Total Recall",
+        "Girl, Interrupted",
+        "Saving Mr. Banks",
+        "Flubber"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Girl, Interrupted? That sounds intriguing.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Clayne Crawford",
+        "anchor_title": "Legend",
+        "constraints": {
+          "genre": "biographical",
+          "actor": "Clayne Crawford",
+          "writer": "Marie Lu"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie that fits your preferences for a biographical film with an actor like Clayne Crawford, and keywords like \"what\" and \"girl\". Based on those cues, I recommend 'Goodfellas' (1990), featuring Robert De Niro as Henry Hill, and it indeed explores themes of what life in the mafia is really like, and a character's journey with a 'girl' (in this context, Karen Hill).",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "what",
+          "girl"
+        ],
+        "name": "Ted",
+        "actor": "Clayne Crawford"
+      },
+      "rec_titles": [
+        "The Social Network",
+        "End of Watch",
+        "Training Day",
+        "Goodfellas"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Goodfellas tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Clayne Crawford",
+        "anchor_title": "Legend",
+        "constraints": {
+          "genre": "biographical",
+          "actor": "Clayne Crawford",
+          "writer": "Marie Lu"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a biographical story with Clayne Crawford as the lead actor. Based on these preferences, I would recommend 'Rob Roy' (1995) due to its biographical nature, featuring Clayne Crawford along with a plot centered around revenge and survival.",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Goodfellas",
+        "actor": "Clayne Crawford"
+      },
+      "rec_titles": [
+        "Rob Roy",
+        "The Last Unicorn",
+        "The Odyssey",
+        "Pollock"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Unknown? That sounds intriguing. (I’m thinking of RED.)",
+      "user_meta": {
+        "turn": 11,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Unknown",
+        "anchor_title": "Catch Me If You Can",
+        "constraints": {
+          "genre": "biographical",
+          "writer": "Unknown",
+          "plot": "hours"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 11,
+          "from_focus": "actor",
+          "to_focus": "writer",
+          "bridge_field": "plot",
+          "bridge_value": "hours",
+          "from_anchor": "Legend",
+          "to_anchor": "Catch Me If You Can"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in biographical movies with unknown writers, featuring Clayne Crawford. Recommendations could be 'The Fighter' (2010) with Dicky Eklund and Melissa McMeekin or 'A Dangerous Method' (2011), starring Keira Knightley as Sigmund Freud's partner.",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "written",
+          "unknown"
+        ],
+        "name": "RED",
+        "actor": "Clayne Crawford",
+        "writer": "Unknown"
+      },
+      "rec_titles": [
+        "The Fighter",
+        "Raging Bull",
+        "Beowulf (975)",
+        "A Dangerous Method"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Unknown",
+        "anchor_title": "Catch Me If You Can",
+        "constraints": {
+          "genre": "biographical",
+          "writer": "Unknown",
+          "plot": "hours"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's constraints include a preference for biographical genre, an actor named Clayne Crawford, and unknown writers. Based on these preferences, I recommend 'Velocity' (2005), which stars Josh Brolin in a biographical role about Lance King, a MotoGP racer. This film aligns with the user's interests.",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Clayne Crawford",
+        "writer": "Unknown"
+      },
+      "rec_titles": [
+        "Velocity",
+        "W.",
+        "Taking Woodstock",
+        "Compliance"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Unknown",
+        "anchor_title": "Catch Me If You Can",
+        "constraints": {
+          "genre": "biographical",
+          "writer": "Unknown",
+          "plot": "hours"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in biographical stories with actor Clayne Crawford. Based on these preferences, I recommend watching 'Super' (2010), featuring William Katt as the protagonist inspired by the imagination and spirit of Clayne Crawford.",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "actor": "Clayne Crawford",
+        "writer": "Unknown"
+      },
+      "rec_titles": [
+        "Super",
+        "The Pursuit of Happyness",
+        "Tombstone",
+        "JFK"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Super. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Unknown",
+        "anchor_title": "Catch Me If You Can",
+        "constraints": {
+          "genre": "biographical",
+          "writer": "Unknown",
+          "plot": "hours"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You mentioned a preference for biographical movies with specific actor cues. Clayne Crawford is one such actor who plays a role in 'Inside Llewyn Davis'. This film, known for its realistic portrayal of folk musicians, would be a fitting recommendation.",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Super",
+        "actor": "Clayne Crawford",
+        "writer": "Unknown"
+      },
+      "rec_titles": [
+        "Inside Llewyn Davis",
+        "The Sea Inside",
+        "Donnie Brasco",
+        "Fair Game"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Inside Llewyn Davis? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Unknown",
+        "anchor_title": "Catch Me If You Can",
+        "constraints": {
+          "genre": "biographical",
+          "writer": "Unknown",
+          "plot": "hours"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: biographical genre, actor Clayne Crawford, and unknown writer. Movie recommendations: 'The Andromeda Strain' with its scientific drama, or 'Utsav' featuring Rekha's performance in a cultural tale. Both offer engaging plots without the specific mention of Clayne Crawford.",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "what",
+          "inside"
+        ],
+        "name": "Inside Llewyn Davis",
+        "actor": "Clayne Crawford",
+        "writer": "Unknown"
+      },
+      "rec_titles": [
+        "The Andromeda Strain",
+        "Tarnation",
+        "Utsav",
+        "Man on Fire"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Utsav. I want to try something more romance novel—still with Unknown if possible. That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "romance novel",
+        "anchor_title": "Tuck Everlasting",
+        "constraints": {
+          "genre": "romance novel",
+          "writer": "Unknown"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 16,
+          "from_focus": "writer",
+          "to_focus": "genre",
+          "bridge_field": "writer",
+          "bridge_value": "Unknown",
+          "from_anchor": "Catch Me If You Can",
+          "to_anchor": "Tuck Everlasting"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants a romance movie with an unknown writer, like \"Thanks for all the detail\" suggests. From the list, 'Win a Date with Tad Hamilton!' might fit this criteria due to its romantic plot and potential unknown writer in the context of a movie script.",
+      "constraints": {
+        "genre": "romance",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Unknown",
+        "actor": "Clayne Crawford",
+        "writer": "Unknown"
+      },
+      "rec_titles": [
+        "Full Frontal",
+        "3",
+        "Win a Date with Tad Hamilton!",
+        "Multiplicity"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "romance novel",
+        "anchor_title": "Tuck Everlasting",
+        "constraints": {
+          "genre": "romance novel",
+          "writer": "Unknown"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants recommendations for romantic movies with Clayne Crawford in the cast. From the list, I suggest 'In the Land of Blood and Honey' since it fits the romance genre and features both Clayne Crawford and a plot centered on just overcoming obstacles together.",
+      "constraints": {
+        "genre": "romance",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Clayne Crawford",
+        "writer": "Unknown"
+      },
+      "rec_titles": [
+        "In the Land of Blood and Honey",
+        "In Her Shoes",
+        "Scott Pilgrim vs. the World",
+        "Larry Crowne"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does In the Land of Blood and Honey tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "romance novel",
+        "anchor_title": "Tuck Everlasting",
+        "constraints": {
+          "genre": "romance novel",
+          "writer": "Unknown"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a romance story with actor Clayne Crawford. I recommend 'Utsav' (with Rekha), which based on Bhasa's work and features a romantic storyline.",
+      "constraints": {
+        "genre": "romance",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "In the Land of Blood and Honey",
+        "actor": "Clayne Crawford",
+        "writer": "Unknown"
+      },
+      "rec_titles": [
+        "Cat on a Hot Tin Roof",
+        "Utsav",
+        "Gladiator",
+        "Wristcutters: A Love Story"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? That sounds intriguing.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "romance novel",
+        "anchor_title": "Tuck Everlasting",
+        "constraints": {
+          "genre": "romance novel",
+          "writer": "Unknown"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants a movie with romance and Clayne Crawford. Based on these preferences, 'Anyone But You' (1996) starring Nicole Ari Parker and Joy Bryant would be a suitable recommendation. The film's plot includes fiery attraction between characters, fitting the romantic theme. Additionally, Clayne Crawford is not in this specific movie, but his presence as an actor could still make it appealing to fans.",
+      "constraints": {
+        "genre": "romance",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Us",
+        "actor": "Clayne Crawford",
+        "writer": "Unknown"
+      },
+      "rec_titles": [
+        "Anyone But You",
+        "This Christmas",
+        "Welcome Home, Roscoe Jenkins",
+        "Chasing Amy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "romance novel",
+        "anchor_title": "Tuck Everlasting",
+        "constraints": {
+          "genre": "romance novel",
+          "writer": "Unknown"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes romantic movies and is interested in the works of Clayne Crawford. Based on these preferences, I recommend \"The King's Speech\" (2010), starring Guy Pearce as King George VI and Geoffrey Rush as his speech therapist, Lionel Logue. This film combines romance and a critical moment in the life of an important historical figure.",
+      "constraints": {
+        "genre": "romance",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us",
+        "actor": "Clayne Crawford",
+        "writer": "Unknown"
+      },
+      "rec_titles": [
+        "The King's Speech",
+        "Alex in Wonderland",
+        "The Trouble with Harry",
+        "Antwone Fisher"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Seth MacFarlane. Hmm, I didn’t expect that vibe. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 21,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Seth MacFarlane",
+        "anchor_title": "The Notebook",
+        "constraints": {
+          "genre": "romance novel",
+          "writer": "Unknown",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 21,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Seth MacFarlane",
+          "from_anchor": "Tuck Everlasting",
+          "to_anchor": "The Notebook"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies featuring Seth MacFarlane, preferably in genres like romance. Recommendations could be 'A Night at the Roxbury' (1998) with its mix of comedy and romance, starring both Seth MacFarlane and Catherine O'Hara. Another option might be 'Win a Date with Tad Hamilton!' (2004), which has Seth MacFarlane in a lead role as a romantic figure, along with Topher Grace.",
+      "constraints": {
+        "genre": "romance",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Ted",
+        "actor": "Seth MacFarlane",
+        "writer": "Unknown",
+        "director": "Seth MacFarlane"
+      },
+      "rec_titles": [
+        "A Night at the Roxbury",
+        "Win a Date with Tad Hamilton!",
+        "Home Fries",
+        "Antwone Fisher"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Seth MacFarlane",
+        "anchor_title": "The Notebook",
+        "constraints": {
+          "genre": "romance novel",
+          "writer": "Unknown",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in romance and has a preference for Seth MacFarlane involved in the movie. Based on these cues, I recommend 'Ocean's Twelve' (2004) since it combines romance and features Seth MacFarlane in a supporting role. The plot revolves around heists and relationships, making it an interesting recommendation.",
+      "constraints": {
+        "genre": "romance",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Seth MacFarlane",
+        "writer": "Unknown",
+        "director": "Seth MacFarlane"
+      },
+      "rec_titles": [
+        "Ocean's Twelve",
+        "The Perez Family",
+        "Bound",
+        "The King's Speech"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Twelve? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Seth MacFarlane",
+        "anchor_title": "The Notebook",
+        "constraints": {
+          "genre": "romance novel",
+          "writer": "Unknown",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for romance-themed movies with specific actors, such as Seth MacFarlane and Ryan Gosling. Based on these preferences, I would recommend 'Blue Valentine' due to its romantic focus and the inclusion of Michelle Williams, who has worked with Ryan Gosling in other projects.",
+      "constraints": {
+        "genre": "romance",
+        "plot": [
+          "what",
+          "twelve"
+        ],
+        "name": "Twelve",
+        "actor": "Seth MacFarlane",
+        "writer": "Unknown",
+        "director": "Seth MacFarlane"
+      },
+      "rec_titles": [
+        "Immortals",
+        "Blue Valentine",
+        "Jerry Maguire",
+        "Hollywood Ending"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Seth MacFarlane",
+        "anchor_title": "The Notebook",
+        "constraints": {
+          "genre": "romance novel",
+          "writer": "Unknown",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in romantic movies with Seth MacFarlane and a plot focusing on liking something or being scared by it. Based on these preferences, I recommend 'Conspiracy Theory' (1997) due to its romantic elements involving Seth MacFarlane, as well as the plot's exploration of fear and liking.",
+      "constraints": {
+        "genre": "romance",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "actor": "Seth MacFarlane",
+        "writer": "Unknown",
+        "director": "Seth MacFarlane"
+      },
+      "rec_titles": [
+        "Castle in the Sky",
+        "Conspiracy Theory",
+        "Deconstructing Harry",
+        "Proof of Life"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Conspiracy Theory tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Seth MacFarlane",
+        "anchor_title": "The Notebook",
+        "constraints": {
+          "genre": "romance novel",
+          "writer": "Unknown",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's constraints, they seem interested in a story that combines elements of piracy and is influenced by actor Seth MacFarlane. One movie recommendation that aligns with these preferences is 'Dear John' (2010). It features piracy as a plot element, with Seth MacFarlane appearing in a minor role.",
+      "constraints": {
+        "genre": "piracy",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Conspiracy Theory",
+        "actor": "Seth MacFarlane",
+        "writer": "Unknown",
+        "director": "Seth MacFarlane"
+      },
+      "rec_titles": [
+        "Dear John",
+        "Alex in Wonderland",
+        "The Trouble with Harry",
+        "Passion"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Gil Kenan? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 26,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Gil Kenan",
+        "anchor_title": "Marked",
+        "constraints": {
+          "genre": "romance novel",
+          "writer": "Unknown",
+          "director": "Gil Kenan",
+          "plot": "night"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 26,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "night",
+          "from_anchor": "The Notebook",
+          "to_anchor": "Marked"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're interested in switching to a movie recommendation not directly related to piracy, like 'Psychic Experiment'. This 2015 film features an intriguing relationship between a horror novelist and a young man he hits in his car. It's a different take on the genre. If you'd like to see more recommendations along these lines, feel free to ask!",
+      "constraints": {
+        "genre": "piracy",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Us",
+        "actor": "Seth MacFarlane",
+        "writer": "Unknown",
+        "director": "Gil Kenan"
+      },
+      "rec_titles": [
+        "Armageddon",
+        "Psychic Experiment",
+        "The Shadows",
+        "Cutthroat Island"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Gil Kenan",
+        "anchor_title": "Marked",
+        "constraints": {
+          "genre": "romance novel",
+          "writer": "Unknown",
+          "director": "Gil Kenan",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's constraints are based on genre: piracy, actor: Seth MacFarlane, director: Gil Kenan, writer: Unknown, and plot keywords: just, more. Recommendations from this list could be 'Insidious' due to its intriguing story of psychological manipulation, and 'You' as it explores the blurred lines between ownership and control in a unique and thought-provoking manner.",
+      "constraints": {
+        "genre": "piracy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Seth MacFarlane",
+        "writer": "Unknown",
+        "director": "Gil Kenan"
+      },
+      "rec_titles": [
+        "JFK",
+        "Insidious",
+        "The Goodbye Girl",
+        "You"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Gil Kenan",
+        "anchor_title": "Marked",
+        "constraints": {
+          "genre": "romance novel",
+          "writer": "Unknown",
+          "director": "Gil Kenan",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's constraints include preferences for piracy-related content, actor Seth MacFarlane, and director Gil Kenan. Based on these cues, I would recommend 'I Heart Huckabees' as it stars Seth MacFarlane and features a piracy-related plot.",
+      "constraints": {
+        "genre": "piracy",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Deep",
+        "actor": "Seth MacFarlane",
+        "writer": "Unknown",
+        "director": "Gil Kenan"
+      },
+      "rec_titles": [
+        "I Heart Huckabees",
+        "Monsters, Inc.",
+        "Real Steel",
+        "The Equalizer"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of I Heart Huckabees. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Gil Kenan",
+        "anchor_title": "Marked",
+        "constraints": {
+          "genre": "romance novel",
+          "writer": "Unknown",
+          "director": "Gil Kenan",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user enjoys movies with a piracy theme and likes actors like Seth MacFarlane. Based on these preferences, I recommend 'Providence', which stars Rachel Cartwright and Mitchell Little, both of whom play characters intertwined in small-town intrigue, similar to the piracy plot element.",
+      "constraints": {
+        "genre": "piracy",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "I Heart Huckabees",
+        "actor": "Seth MacFarlane",
+        "writer": "Unknown",
+        "director": "Gil Kenan"
+      },
+      "rec_titles": [
+        "The Amazing Spider-Man",
+        "Providence",
+        "Paycheck",
+        "Blow Out"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Gil Kenan",
+        "anchor_title": "Marked",
+        "constraints": {
+          "genre": "romance novel",
+          "writer": "Unknown",
+          "director": "Gil Kenan",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a story with elements of piracy, featuring actor Seth MacFarlane. Based on these preferences, I would recommend 'Ted 2' as it combines Seth MacFarlane's presence with a plot involving a court case related to Ted's personhood, which could evoke piracy themes.",
+      "constraints": {
+        "genre": "piracy",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "actor": "Seth MacFarlane",
+        "writer": "Unknown",
+        "director": "Gil Kenan"
+      },
+      "rec_titles": [
+        "Monster House",
+        "Ted 2",
+        "Flatliners",
+        "Witless Protection"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Rowan Atkinson. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 31,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Rowan Atkinson",
+        "anchor_title": "Crescendo",
+        "constraints": {
+          "genre": "romance novel",
+          "writer": "Unknown",
+          "director": "Gil Kenan",
+          "plot": "reunite",
+          "actor": "Rowan Atkinson"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 31,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "reunite",
+          "from_anchor": "Marked",
+          "to_anchor": "Crescendo"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movie recommendations featuring actor Rowan Atkinson. From the list provided, 'Psychic Experiment' and 'Bats' both have Atkinson in the cast. I recommend either of these movies for their potential combination of Rowan Atkinson's acting charm and the intrigue of the plot.",
+      "constraints": {
+        "genre": "piracy",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Us",
+        "actor": "Rowan Atkinson",
+        "writer": "Rowan Atkinson",
+        "director": "Gil Kenan"
+      },
+      "rec_titles": [
+        "Psychic Experiment",
+        "The End of the Affair",
+        "The Way We Were",
+        "Bats"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Rowan Atkinson",
+        "anchor_title": "Crescendo",
+        "constraints": {
+          "genre": "romance novel",
+          "writer": "Unknown",
+          "director": "Gil Kenan",
+          "plot": "reunite",
+          "actor": "Rowan Atkinson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants recommendations based on a preference for piracy-themed movies, starring Rowan Atkinson, and directed by Gil Kenan. Given these criteria, I would recommend 'Fight Club' (1996) which fits the piracy theme, stars Rowan Atkinson in a non-lead role, and is directed by Gil Kenan.",
+      "constraints": {
+        "genre": "piracy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Rowan Atkinson",
+        "writer": "Rowan Atkinson",
+        "director": "Gil Kenan"
+      },
+      "rec_titles": [
+        "Fight Club",
+        "Tell No One",
+        "The Deep End of the Ocean",
+        "Compliance"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Rowan Atkinson",
+        "anchor_title": "Crescendo",
+        "constraints": {
+          "genre": "romance novel",
+          "writer": "Unknown",
+          "director": "Gil Kenan",
+          "plot": "reunite",
+          "actor": "Rowan Atkinson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies with a piracy theme, featuring Rowan Atkinson, and directed by Gil Kenan. Recommendations could be \"Treasure Planet\" due to its piracy plot and Atkinson's presence as one of the voice actors, or \"The Andromeda Strain\" if the user appreciates a more science-based piracy narrative.\"",
+      "constraints": {
+        "genre": "piracy",
+        "plot": [
+          "what"
+        ],
+        "name": "Us",
+        "actor": "Rowan Atkinson",
+        "writer": "Rowan Atkinson",
+        "director": "Gil Kenan"
+      },
+      "rec_titles": [
+        "The Andromeda Strain",
+        "Anyone But You",
+        "Treasure Planet",
+        "Why Did I Get Married?"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 34,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Rowan Atkinson",
+        "anchor_title": "Crescendo",
+        "constraints": {
+          "genre": "romance novel",
+          "writer": "Unknown",
+          "director": "Gil Kenan",
+          "plot": "reunite",
+          "actor": "Rowan Atkinson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user prefers movies with a weird or thought-provoking element, such as \"Us\" with its unique premise. Based on these preferences, I recommend \"Us\" for an odd and captivating experience.",
+      "constraints": {
+        "genre": "piracy",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "Us",
+        "actor": "Rowan Atkinson",
+        "writer": "Rowan Atkinson",
+        "director": "Gil Kenan"
+      },
+      "rec_titles": [
+        "Us",
+        "Shrek 2",
+        "Love Actually",
+        "Connie and Carla"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Rowan Atkinson",
+        "anchor_title": "Crescendo",
+        "constraints": {
+          "genre": "romance novel",
+          "writer": "Unknown",
+          "director": "Gil Kenan",
+          "plot": "reunite",
+          "actor": "Rowan Atkinson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies that have a piracy theme, featuring actor Rowan Atkinson. Recommendations from the list include 'Tombstone' with its lawman turned piracy story and Atkinson's presence, as well as 'Louie,' which may not directly fit the piracy genre but still showcases Atkinson's unique character.",
+      "constraints": {
+        "genre": "piracy",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Deep",
+        "actor": "Rowan Atkinson",
+        "writer": "Rowan Atkinson",
+        "director": "Gil Kenan"
+      },
+      "rec_titles": [
+        "Tombstone",
+        "Monsters, Inc.",
+        "Flatliners",
+        "Louie"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Louie. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Rowan Atkinson",
+        "anchor_title": "Crescendo",
+        "constraints": {
+          "genre": "romance novel",
+          "writer": "Unknown",
+          "director": "Gil Kenan",
+          "plot": "reunite",
+          "actor": "Rowan Atkinson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user enjoys movies with piracy themes, featuring actor Rowan Atkinson. Based on these preferences, I recommend 'Blow Out' (1981), a Rowan Atkinson-starring film that involves sound surveillance and a mystery involving murder. It should cater to the user's interests.",
+      "constraints": {
+        "genre": "piracy",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Louie",
+        "actor": "Rowan Atkinson",
+        "writer": "Rowan Atkinson",
+        "director": "Gil Kenan"
+      },
+      "rec_titles": [
+        "Blow Out",
+        "X-Men: First Class",
+        "Looper",
+        "It's a Wonderful Life"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Rowan Atkinson",
+        "anchor_title": "Crescendo",
+        "constraints": {
+          "genre": "romance novel",
+          "writer": "Unknown",
+          "director": "Gil Kenan",
+          "plot": "reunite",
+          "actor": "Rowan Atkinson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's constraints, they seem to enjoy movies with a mix of comedy and adventure. 'Hot Tub Time Machine' and 'Mr. Bean''s Holiday fit this description well.\n\nI would recommend 'Hot Tub Time Machine' for its humorous and unexpected adventure. With Rowan Atkinson as Mr. Bean, the film combines physical comedy with a heartwarming twist.",
+      "constraints": {
+        "genre": "piracy",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "Louie",
+        "actor": "Rowan Atkinson",
+        "writer": "Rowan Atkinson",
+        "director": "Gil Kenan"
+      },
+      "rec_titles": [
+        "Hot Tub Time Machine",
+        "Monster House",
+        "The Goonies",
+        "Mr. Bean's Holiday"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Rowan Atkinson",
+        "anchor_title": "Crescendo",
+        "constraints": {
+          "genre": "romance novel",
+          "writer": "Unknown",
+          "director": "Gil Kenan",
+          "plot": "reunite",
+          "actor": "Rowan Atkinson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies with elements of piracy, featuring Rowan Atkinson, and possibly directed by Gil Kenan. Based on these preferences, I would recommend 'The 13th Warrior' as it combines piracy, Atkinson's performance, and a plot involving a mysterious threat.",
+      "constraints": {
+        "genre": "piracy",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "Louie",
+        "actor": "Rowan Atkinson",
+        "writer": "Rowan Atkinson",
+        "director": "Gil Kenan"
+      },
+      "rec_titles": [
+        "The 13th Warrior",
+        "Bleak House",
+        "Louie",
+        "Evil Dead II"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Steven Soderbergh? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 39,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Steven Soderbergh",
+        "anchor_title": "Tooth Fairy",
+        "constraints": {
+          "genre": "romance novel",
+          "director": "Steven Soderbergh",
+          "plot": "reunite",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 39,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Seth MacFarlane",
+          "from_anchor": "Crescendo",
+          "to_anchor": "Tooth Fairy"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies with a piracy theme, featuring Steven Soderbergh as director and actor, and possibly involving characters named Ted. Based on these preferences, I would recommend 'Psychic Experiment' and 'The Seduction of Joe Tynan'. Both films have elements that align with the given criteria.",
+      "constraints": {
+        "genre": "piracy",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Ted",
+        "actor": "Steven Soderbergh",
+        "writer": "Steven Soderbergh",
+        "director": "Steven Soderbergh"
+      },
+      "rec_titles": [
+        "Psychic Experiment",
+        "Downfall",
+        "The Goonies",
+        "The Seduction of Joe Tynan"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Steven Soderbergh",
+        "anchor_title": "Tooth Fairy",
+        "constraints": {
+          "genre": "romance novel",
+          "director": "Steven Soderbergh",
+          "plot": "reunite",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants more recommendations like the ones they provided, specifically focusing on genres such as piracy and featuring actor Steven Soderbergh and director Steven Soderbergh if available.\n\nBased on these preferences, I would recommend 'You Kill Me' since it was created by and stars Steven Soderbergh. This movie fits both the piracy genre and the actor's involvement.",
+      "constraints": {
+        "genre": "piracy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Steven Soderbergh",
+        "writer": "Steven Soderbergh",
+        "director": "Steven Soderbergh"
+      },
+      "rec_titles": [
+        "You Kill Me",
+        "The River",
+        "The Good German",
+        "Velocity"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Steven Soderbergh",
+        "anchor_title": "Tooth Fairy",
+        "constraints": {
+          "genre": "romance novel",
+          "director": "Steven Soderbergh",
+          "plot": "reunite",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's constraints include a genre preference for piracy, an actor involvement with Steven Soderbergh, and directorship from the same. Recommendations: 'Thick as Thieves' (Starring Bob Ferguson) and 'Ocean's Twelve' (Directed by George Clooney). Both movies fit the criteria and offer exciting plot elements.",
+      "constraints": {
+        "genre": "piracy",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "You",
+        "actor": "Steven Soderbergh",
+        "writer": "Steven Soderbergh",
+        "director": "Steven Soderbergh"
+      },
+      "rec_titles": [
+        "Thick as Thieves",
+        "Evil Dead II",
+        "Ocean's Twelve",
+        "Truly Madly Guilty"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Twelve? That sounds intriguing.",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Steven Soderbergh",
+        "anchor_title": "Tooth Fairy",
+        "constraints": {
+          "genre": "romance novel",
+          "director": "Steven Soderbergh",
+          "plot": "reunite",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with盗墓或海盗元素, as well as featuring Steven Soderbergh in a lead role or directing. I recommend 'The Goonies' since it fits the pirate theme and has Steven Soderbergh involved as an actor in this 1980 film.",
+      "constraints": {
+        "genre": "piracy",
+        "plot": [
+          "what",
+          "twelve"
+        ],
+        "name": "Twelve",
+        "actor": "Steven Soderbergh",
+        "writer": "Steven Soderbergh",
+        "director": "Steven Soderbergh"
+      },
+      "rec_titles": [
+        "The Way Back Home",
+        "The Goonies",
+        "The Taming of the Shrew",
+        "Sex, Lies, and Videotape"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Steven Soderbergh",
+        "anchor_title": "Tooth Fairy",
+        "constraints": {
+          "genre": "romance novel",
+          "director": "Steven Soderbergh",
+          "plot": "reunite",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a story with elements of piracy, featuring actor Steven Soderbergh and directed by him as well. The recommended movies from this list are \"Ocean''s Twelve\" and \"Smilla''s Sense of Snow\". Both offer intrigue and potentially fitting storylines for the user's interests.",
+      "constraints": {
+        "genre": "piracy",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "actor": "Steven Soderbergh",
+        "writer": "Steven Soderbergh",
+        "director": "Steven Soderbergh"
+      },
+      "rec_titles": [
+        "Ocean's Twelve",
+        "Alex in Wonderland",
+        "Smilla's Sense of Snow",
+        "Elizabeth"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Steven Soderbergh",
+        "anchor_title": "Tooth Fairy",
+        "constraints": {
+          "genre": "romance novel",
+          "director": "Steven Soderbergh",
+          "plot": "reunite",
+          "actor": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're interested in movies that feature piracy, actor collaborations, or creature-driven plots. Based on your constraints, I recommend watching 'The Other Guys' and 'Maid in Manhattan'. Both films showcase actor chemistry and have elements of comedy and intrigue related to the characters' actions rather than traditional pirate stories.",
+      "constraints": {
+        "genre": "piracy",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "actor": "Steven Soderbergh",
+        "writer": "Steven Soderbergh",
+        "director": "Steven Soderbergh"
+      },
+      "rec_titles": [
+        "The Other Guys",
+        "Maid in Manhattan",
+        "The Relic",
+        "Cutthroat Island"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Steve Bastoni. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 45,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Steve Bastoni",
+        "anchor_title": "Full Frontal",
+        "constraints": {
+          "genre": "romance novel",
+          "director": "Steven Soderbergh",
+          "plot": "dating",
+          "actor": "Steve Bastoni"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 45,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "dating",
+          "from_anchor": "Tooth Fairy",
+          "to_anchor": "Full Frontal"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's constraints, they seem interested in movies with a piracy theme and featuring actor Steve Bastoni. I would recommend 'The Missing', as it combines elements of film noir and science fiction, which could align well with those preferences. Plus, the plot involving Sam Baxter's investigation could be intriguing for fans of Steve Bastoni.",
+      "constraints": {
+        "genre": "piracy",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Her",
+        "actor": "Steve Bastoni",
+        "writer": "Steven Soderbergh",
+        "director": "Steven Soderbergh"
+      },
+      "rec_titles": [
+        "The Missing",
+        "Star Trek Into Darkness",
+        "Ocean's Twelve",
+        "Hell's Angels"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Steve Bastoni",
+        "anchor_title": "Full Frontal",
+        "constraints": {
+          "genre": "romance novel",
+          "director": "Steven Soderbergh",
+          "plot": "dating",
+          "actor": "Steve Bastoni"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movie recommendations, specifically those with piracy as a genre or actor like Steve Bastoni, and having directors such as Steven Soderbergh involved. From this list, I would recommend 'Out of Sight' starring Isaiah Washington, Keith Hudson, and directed by George Clooney, who also collaborated with Steven Soderbergh on the film. This recommendation combines elements of piracy, actor Steve Bastoni, director Steven Soderbergh, and offers an interesting movie experience.",
+      "constraints": {
+        "genre": "piracy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Steve Bastoni",
+        "writer": "Steven Soderbergh",
+        "director": "Steven Soderbergh"
+      },
+      "rec_titles": [
+        "The Taming of the Shrew",
+        "Untraceable",
+        "Out of Sight",
+        "The Cabin in the Woods"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Out of Sight. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Steve Bastoni",
+        "anchor_title": "Full Frontal",
+        "constraints": {
+          "genre": "romance novel",
+          "director": "Steven Soderbergh",
+          "plot": "dating",
+          "actor": "Steve Bastoni"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes movies with a piracy theme and featuring Steve Bastoni. Based on these preferences, I recommend 'Ocean's Twelve' (2004) starring Jared Harris, Eddie Jemison, and Steve Bastoni in a heist-based piracy film.",
+      "constraints": {
+        "genre": "piracy",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Out of Sight",
+        "actor": "Steve Bastoni",
+        "writer": "Steven Soderbergh",
+        "director": "Steven Soderbergh"
+      },
+      "rec_titles": [
+        "Ocean's Twelve",
+        "Easy A",
+        "The Life Before Her Eyes",
+        "Magic Mike"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Twelve? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Steve Bastoni",
+        "anchor_title": "Full Frontal",
+        "constraints": {
+          "genre": "romance novel",
+          "director": "Steven Soderbergh",
+          "plot": "dating",
+          "actor": "Steve Bastoni"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're interested in movies with a piracy theme, featuring actor Steve Bastoni, and possibly directed by Steven Soderbergh. From the list provided, I recommend checking out \"Ocean's Eleven\" (2001), which features an ensemble cast including Brad Pitt, George Clooney, and Channing Tatum, who fits your criteria as an actor. This heist-driven film has a great mix of action, humor, and top-notch acting.",
+      "constraints": {
+        "genre": "piracy",
+        "plot": [
+          "what",
+          "twelve"
+        ],
+        "name": "Twelve",
+        "actor": "Steve Bastoni",
+        "writer": "Steven Soderbergh",
+        "director": "Steven Soderbergh"
+      },
+      "rec_titles": [
+        "The Dirty Dozen",
+        "The Way Back Home",
+        "Dear John",
+        "Ocean's Eleven"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Steve Bastoni",
+        "anchor_title": "Full Frontal",
+        "constraints": {
+          "genre": "romance novel",
+          "director": "Steven Soderbergh",
+          "plot": "dating",
+          "actor": "Steve Bastoni"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's constraints include genre: piracy, actor: Steve Bastoni, and director: Steven Soderbergh. Based on these preferences, I would recommend 'Passion' since it aligns with the pirate genre and features both Steve Bastoni and Steven Soderbergh.",
+      "constraints": {
+        "genre": "piracy",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "Twelve",
+        "actor": "Steve Bastoni",
+        "writer": "Steven Soderbergh",
+        "director": "Steven Soderbergh"
+      },
+      "rec_titles": [
+        "Passion",
+        "The Taming of the Shrew",
+        "Ocean's Eleven",
+        "The Goonies"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 50,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Steve Bastoni",
+        "anchor_title": "Full Frontal",
+        "constraints": {
+          "genre": "romance novel",
+          "director": "Steven Soderbergh",
+          "plot": "dating",
+          "actor": "Steve Bastoni"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movies with elements of piracy, starring Steve Bastoni, and directed by Steven Soderbergh. From the list provided, I recommend \"Ocean's Thirteen\" as it fits all these criteria, featuring a heist involving piracy, with Steve Bastoni in an acting role, and directed by Steven Soderbergh himself.",
+      "constraints": {
+        "genre": "piracy",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Twelve",
+        "actor": "Steve Bastoni",
+        "writer": "Steven Soderbergh",
+        "director": "Steven Soderbergh"
+      },
+      "rec_titles": [
+        "Ocean's Thirteen",
+        "Blow Out",
+        "Out of Sight",
+        "The Reflecting Skin"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 6,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "writer",
+      "bridge_value": "Marie Lu",
+      "from_anchor": "Into the Wild",
+      "to_anchor": "Legend"
+    },
+    {
+      "turn": 11,
+      "from_focus": "actor",
+      "to_focus": "writer",
+      "bridge_field": "plot",
+      "bridge_value": "hours",
+      "from_anchor": "Legend",
+      "to_anchor": "Catch Me If You Can"
+    },
+    {
+      "turn": 16,
+      "from_focus": "writer",
+      "to_focus": "genre",
+      "bridge_field": "writer",
+      "bridge_value": "Unknown",
+      "from_anchor": "Catch Me If You Can",
+      "to_anchor": "Tuck Everlasting"
+    },
+    {
+      "turn": 21,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Seth MacFarlane",
+      "from_anchor": "Tuck Everlasting",
+      "to_anchor": "The Notebook"
+    },
+    {
+      "turn": 26,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "night",
+      "from_anchor": "The Notebook",
+      "to_anchor": "Marked"
+    },
+    {
+      "turn": 31,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "reunite",
+      "from_anchor": "Marked",
+      "to_anchor": "Crescendo"
+    },
+    {
+      "turn": 39,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Seth MacFarlane",
+      "from_anchor": "Crescendo",
+      "to_anchor": "Tooth Fairy"
+    },
+    {
+      "turn": 45,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "dating",
+      "from_anchor": "Tooth Fairy",
+      "to_anchor": "Full Frontal"
+    }
+  ]
+}

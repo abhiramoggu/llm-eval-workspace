@@ -1,0 +1,2252 @@
+{
+  "session_id": "00036",
+  "model_name": "llama2:latest",
+  "true_genre": "time travel",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a thriller movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "thriller",
+        "anchor_title": "The Thomas Crown Affair",
+        "constraints": {
+          "genre": "thriller"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! The user is looking for a thriller movie, and they've specified that they're in the mood for something with a fast-paced plot. Based on their preferences, I would recommend \"Face/Off\" or \"The Imitation Game\". Both of these movies have gripping plots and feature talented actors, making them perfect options for a thrilling movie night.",
+      "constraints": {
+        "genre": "thriller",
+        "plot": [
+          "thriller",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "The Imitation Game",
+        "Face/Off",
+        "Swimfan",
+        "The Invasion"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "thriller",
+        "anchor_title": "The Thomas Crown Affair",
+        "constraints": {
+          "genre": "thriller"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user is looking for a movie with a thriller genre and a plot that involves something weird happening.\n\nI would recommend \"Riddick\" and \"Unnatural\". Both of these movies have a thrilling plot that involve strange and unexpected events, making them perfect for the user's preferences. In \"Riddick\", Vin Diesel stars as the titular character who finds himself up against an alien race of predators on a sun-scorched planet. In \"Unnatural\", a morally ambiguous corporation experiments with genetic modification resulting in the creation of a man-hunting creature that wreaks havoc on a group of cabin dwellers.",
+      "constraints": {
+        "genre": "thriller",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "Riddick",
+        "The Invasion",
+        "Gangster Squad",
+        "Unnatural"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Harald Zwart? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Alien.)",
+      "user_meta": {
+        "turn": 3,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Harald Zwart",
+        "anchor_title": "Unleashed",
+        "constraints": {
+          "genre": "thriller",
+          "director": "Harald Zwart",
+          "actor": "Tom Skerritt"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 3,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Tom Skerritt",
+          "from_anchor": "The Thomas Crown Affair",
+          "to_anchor": "Unleashed"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - war, director - Harald Zwart, plot keywords - could, switch.\nBased on these constraints, I recommend \"Dances with Wolves\" and \"The Patriot\". Both movies are historical dramas that explore themes of conflict and switching sides, which seem to align with the user's preferences. \"Dances with Wolves\" is a classic film directed by Kevin Costner that follows a Union Army lieutenant who befriends a tribe of Native Americans, while \"The Patriot\" is an action-packed drama starring Mel Gibson as a farmer who leads a group of militiamen during the American Revolution.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "War",
+        "director": "Harald Zwart"
+      },
+      "rec_titles": [
+        "Dances with Wolves",
+        "War Horse",
+        "The Mortal Instruments: City of Bones",
+        "The Patriot"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Harald Zwart",
+        "anchor_title": "Unleashed",
+        "constraints": {
+          "genre": "thriller",
+          "director": "Harald Zwart",
+          "actor": "Tom Skerritt"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThe user is looking for more movies similar to \"Just checking—do you have more recommendations like that?\" which are related to war, directed by Harald Zwart, and contain keywords such as \"just\" and \"more\".\n\nRecommendation:\nBased on the user's preferences, I would recommend \"The Book Thief\" and \"Zulu\". Both of these movies share similar themes of war and investigation, while also featuring powerful performances from talented actors. \"The Book Thief\" tells a heart-wrenching story of a young girl finding solace in books during World War II, while \"Zulu\" explores the investigation of a brutal murder in South Africa that may be connected to the disappearance of black street children.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Harald Zwart"
+      },
+      "rec_titles": [
+        "A Little Princess",
+        "The Book Thief",
+        "The Goodbye Girl",
+        "Zulu"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Harald Zwart",
+        "anchor_title": "Unleashed",
+        "constraints": {
+          "genre": "thriller",
+          "director": "Harald Zwart",
+          "actor": "Tom Skerritt"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I recommend \"Red Cliff\" and \"Zero Effect\". Both movies are action-packed and full of suspense, which seem to align with the user's interests. In \"Red Cliff\", viewers can witness a thrilling battle in China's Three Kingdoms period, while \"Zero Effect\" offers a complex and mysterious case for the world's greatest detective Daryl Zero and his associate Steve Arlo to solve.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "director": "Harald Zwart"
+      },
+      "rec_titles": [
+        "Red Cliff",
+        "Paycheck",
+        "There Be Dragons",
+        "Zero Effect"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Mako. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Red Cliff.)",
+      "user_meta": {
+        "turn": 6,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Mako",
+        "anchor_title": "Final Destination 5",
+        "constraints": {
+          "genre": "thriller",
+          "director": "Harald Zwart",
+          "actor": "Mako",
+          "plot": "centered"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 6,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "centered",
+          "from_anchor": "Unleashed",
+          "to_anchor": "Final Destination 5"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\n\"I'm thinking of Red Cliff, but I'm not sure if I'd enjoy it or be scared by it. Maybe we could find more movies with Mako.\"\n\nBased on the user's preferences, I recommend checking out \"The Tigger Movie\" and \"Artemis Fowl\". Both of these movies feature Mako in lead roles, and they have exciting plots that might appeal to users looking for a fun and engaging watch.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Red Cliff",
+        "director": "Harald Zwart",
+        "actor": "Mako"
+      },
+      "rec_titles": [
+        "The Tigger Movie",
+        "Artemis Fowl",
+        "Pride and Prejudice",
+        "Babel"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Mako",
+        "anchor_title": "Final Destination 5",
+        "constraints": {
+          "genre": "thriller",
+          "director": "Harald Zwart",
+          "actor": "Mako",
+          "plot": "centered"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nGenre: war\nActor: Mako\nDirector: Harald Zwart\nPlot keywords: just, more\n\nRecommendation 1: Casablanca (1942) - This classic film follows a cynical cafe owner in French Morocco as he grapples with helping his former lover and her fugitive husband escape the Nazis. Starring Claude Rains and Humphrey Bogart, it's a timeless tale of love, loyalty, and sacrifice.\n\nRecommendation 2: The Fighter (2010) - Based on the true story of Micky Ward, this movie follows a fledgling boxer as he tries to escape his troubled older brother's shadow and get his own shot at greatness. Starring Mark Wahlberg and Christian Bale, it's an inspiring underdog tale with great performances.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Harald Zwart",
+        "actor": "Mako"
+      },
+      "rec_titles": [
+        "Casablanca",
+        "The End of the Affair",
+        "The Fighter",
+        "In the Mouth of Madness"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does War tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Mako",
+        "anchor_title": "Final Destination 5",
+        "constraints": {
+          "genre": "thriller",
+          "director": "Harald Zwart",
+          "actor": "Mako",
+          "plot": "centered"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - War, Actor - Mako, Director - Harald Zwart, Plot keywords - what, kind.\nBased on these constraints, I recommend \"Pearl Harbor\" and \"The Way Back Home\". Both movies offer a mix of war and personal growth stories that may resonate with the user's preferences. \"Pearl Harbor\" is a historical drama that explores the horrors of war through the eyes of two lifelong friends, while \"The Way Back Home\" is a more recent film that delves into themes of love, loss, and personal rediscovery in a beautifully shot setting.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "War",
+        "director": "Harald Zwart",
+        "actor": "Mako"
+      },
+      "rec_titles": [
+        "Pearl Harbor",
+        "The Siege",
+        "The Twilight Saga: New Moon",
+        "The Way Back Home"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of RED. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Mako",
+        "anchor_title": "Final Destination 5",
+        "constraints": {
+          "genre": "thriller",
+          "director": "Harald Zwart",
+          "actor": "Mako",
+          "plot": "centered"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, they seem to enjoy movies with intense battle scenes and a focus on warfare. One movie that comes to mind is \"Black Hawk Down\" (2001), which reconstructs the most devastating battles between marines and Somalis using US army broadcasts. The film features an all-star cast, including Josh Hartnett, Eric Bana, and Orlando Bloom. Another great choice would be \"300\" (1998), which depicts the ancient battle of Thermopylae between King Leonidas and his 300 Spartans against Xerxes' massive Persian army. The film stars Gerard Butler and Michael Fassbender in leading roles.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "director": "Harald Zwart",
+        "actor": "Mako"
+      },
+      "rec_titles": [
+        "Black Hawk Down",
+        "300",
+        "Starship Troopers",
+        "Patton"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Mako",
+        "anchor_title": "Final Destination 5",
+        "constraints": {
+          "genre": "thriller",
+          "director": "Harald Zwart",
+          "actor": "Mako",
+          "plot": "centered"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, it seems they are interested in watching a movie that is related to war and features actor Mako. Of the movies listed, \"Flags of Our Fathers\" (2000) stands out as a powerful and moving film that tells the story of the men who raised the flag at Iwo Jima during World War II. The film features an impressive cast, including Stark Sands, David Patrick Kelly, Jayma Mays, Barry Pepper, Robert Patrick, Ryan Phillippe, Neal McDonough, John Slattery, Jamie Bell, Thomas McCarthy, Chris Bauer, Benjamin Walker, and Paul Walker. Alternatively, \"Winter in Wartime\" (2008) is a gripping drama that follows a young boy's involvement in the Dutch resistance during World War II. The film features Yorick van Wageningen and Tygo Gernandt in leading roles. Both of these movies offer thought-provoking and emotionally impactful storylines that I think the user will enjoy.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "RED",
+        "director": "Harald Zwart",
+        "actor": "Mako"
+      },
+      "rec_titles": [
+        "Flags of Our Fathers",
+        "Winter in Wartime",
+        "Casablanca",
+        "The Monuments Men"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Flags of Our Fathers. I want to try something more docudrama—still with James Bradley if possible. That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "docudrama",
+        "anchor_title": "Extraordinary Measures",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Harald Zwart",
+          "actor": "Mako",
+          "plot": "centered",
+          "writer": "James Bradley"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 11,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "writer",
+          "bridge_value": "James Bradley",
+          "from_anchor": "Final Destination 5",
+          "to_anchor": "Extraordinary Measures"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, they are looking for a docudrama film similar to \"Flags of Our Fathers.\" The recommended movies are:\n\n* \"The Young Victoria\" (2009) - A historical drama that explores the early years of Queen Victoria's reign and her enduring romance with Prince Albert, starring Emily Blunt and Paul Bettany.\n* \"We Are Marshall\" (2006) - A true story of a football team's struggle to come together after a tragic plane crash, featuring Matthew McConaughey and Kimberly Williams-Paisley.",
+      "constraints": {
+        "genre": "docudrama",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Her",
+        "director": "Harald Zwart",
+        "actor": "Mako",
+        "writer": "James Bradley"
+      },
+      "rec_titles": [
+        "The Young Victoria",
+        "We Are Marshall",
+        "The Perfect Game",
+        "United 93"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "docudrama",
+        "anchor_title": "Extraordinary Measures",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Harald Zwart",
+          "actor": "Mako",
+          "plot": "centered",
+          "writer": "James Bradley"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for more movies similar to the ones you've already mentioned, and based on your previous preferences, I recommend \"The Pink Panther 2\" and \"Before I Fall\". Both of these films offer a mix of comedy and drama, with engaging plots and talented actors. In \"The Pink Panther 2\", Steve Martin and Andy Garcia star as bumbling detectives trying to stop a globe-trotting thief, while in \"Before I Fall\", Zoey Deutch plays a high school student reliving the same day over and over until she uncovers the truth behind her death.",
+      "constraints": {
+        "genre": "docudrama",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Harald Zwart",
+        "actor": "Mako",
+        "writer": "James Bradley"
+      },
+      "rec_titles": [
+        "The Pink Panther 2",
+        "Before I Fall",
+        "Syriana",
+        "King Kong"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "docudrama",
+        "anchor_title": "Extraordinary Measures",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Harald Zwart",
+          "actor": "Mako",
+          "plot": "centered",
+          "writer": "James Bradley"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has provided several cues that suggest they might enjoy movies with a mix of drama and suspense, and with a focus on character development. Based on these cues, I recommend checking out \"End of Watch\" and \"Alex in Wonderland.\" Both films offer a gripping storyline and strong performances from the cast, while also delving into themes of identity and creativity.",
+      "constraints": {
+        "genre": "docudrama",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "director": "Harald Zwart",
+        "actor": "Mako",
+        "writer": "James Bradley"
+      },
+      "rec_titles": [
+        "End of Watch",
+        "Alex in Wonderland",
+        "The Secret",
+        "Divergent"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Wonder? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "docudrama",
+        "anchor_title": "Extraordinary Measures",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Harald Zwart",
+          "actor": "Mako",
+          "plot": "centered",
+          "writer": "James Bradley"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - docudrama, Actor - Mako, Director - Harald Zwart, Writer - James Bradley, Plot keywords - what, wonder.\nBased on the user's preferences, I recommend \"American Dreamz\" and \"You\". Both movies deal with themes of self-discovery and the exploration of complex identities, which align with the user's interest in \"Wonder\". \"American Dreamz\" is a thought-provoking drama that delves into the human psyche, while \"You\" offers a gripping and timely commentary on the misuse of power and societal norms.",
+      "constraints": {
+        "genre": "docudrama",
+        "plot": [
+          "what",
+          "wonder"
+        ],
+        "name": "Wonder",
+        "director": "Harald Zwart",
+        "actor": "Mako",
+        "writer": "James Bradley"
+      },
+      "rec_titles": [
+        "American Dreamz",
+        "Holes",
+        "Find Me Guilty",
+        "You"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Andy Warhol. Hmm, I didn’t expect that vibe. (I’m thinking of Wonder.)",
+      "user_meta": {
+        "turn": 15,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Andy Warhol",
+        "anchor_title": "The Last Dragon",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Harald Zwart",
+          "actor": "Andy Warhol",
+          "plot": "york",
+          "writer": "James Bradley"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 15,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "york",
+          "from_anchor": "Extraordinary Measures",
+          "to_anchor": "The Last Dragon"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - war, actor - Andy Warhol, director - Harald Zwart, writer - James Bradley\nBased on the user's constraints, I recommend \"This Must Be the Place\" and \"Amen.\" Both movies feature Andy Warhol in a significant role and have a unique plot that aligns with the user's interest in finding more movies with this artist. \"This Must Be the Place\" is a quirky comedy-drama about a retired rock star searching for revenge, while \"Amen.\" is a historical drama about a SS officer trying to inform the Pope about the Holocaust. Both movies have received critical acclaim and offer an interesting watch for fans of Warhol and the war genre.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "War",
+        "director": "Harald Zwart",
+        "actor": "Andy Warhol",
+        "writer": "James Bradley"
+      },
+      "rec_titles": [
+        "This Must Be the Place",
+        "Amen.",
+        "We Are Your Friends",
+        "King Kong"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Andy Warhol",
+        "anchor_title": "The Last Dragon",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Harald Zwart",
+          "actor": "Andy Warhol",
+          "plot": "york",
+          "writer": "James Bradley"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - war; actor - Andy Warhol; director - Harald Zwart; writer - James Bradley; plot keywords - just, more.\n\nBased on the user's preferences, I recommend \"A Farewell to Arms\" (1929) and \"The Rocker\" (2008). Both movies offer a gripping and emotional experience, with powerful performances from the actors. \"A Farewell to Arms\" is a classic romance set during World War I, while \"The Rocker\" is a heartwarming tale of second chances and redemption.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Harald Zwart",
+        "actor": "Andy Warhol",
+        "writer": "James Bradley"
+      },
+      "rec_titles": [
+        "A Farewell to Arms",
+        "The Rocker",
+        "Windtalkers",
+        "The Siege"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of RED? That sounds intriguing.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Andy Warhol",
+        "anchor_title": "The Last Dragon",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Harald Zwart",
+          "actor": "Andy Warhol",
+          "plot": "york",
+          "writer": "James Bradley"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: War movie, actor Andy Warhol, director Harald Zwart, writer James Bradley.\nBased on these constraints, I recommend \"The Way Back Home\" and \"The Equalizer.\" Both movies offer thought-provoking stories that explore themes of love, loss, and justice, which seem to align with the user's preferences. \"The Way Back Home\" is a life-affirming spiritual drama set in Central Florida, while \"The Equalizer\" is a gritty thriller that delves into the moral ambiguity of the private investigation industry.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "RED",
+        "director": "Harald Zwart",
+        "actor": "Andy Warhol",
+        "writer": "James Bradley"
+      },
+      "rec_titles": [
+        "The Way Back Home",
+        "The Equalizer",
+        "A Farewell to Arms",
+        "The End of the Affair"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Andy Warhol",
+        "anchor_title": "The Last Dragon",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Harald Zwart",
+          "actor": "Andy Warhol",
+          "plot": "york",
+          "writer": "James Bradley"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure! Based on the user's preferences, I recommend \"The Breakfast Club\" and \"Amen.\" Both movies are set during WWII and feature strong performances from their casts, with \"The Breakfast Club\" focusing on five high school students discovering their shared experiences, and \"Amen.\" following a SS officer's mission to inform the Pope about the extermination camps. Both films offer thought-provoking and emotional stories that I think the user will enjoy.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "RED",
+        "director": "Harald Zwart",
+        "actor": "Andy Warhol",
+        "writer": "James Bradley"
+      },
+      "rec_titles": [
+        "The Breakfast Club",
+        "Patton",
+        "The Pianist",
+        "Amen."
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does RED tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Andy Warhol",
+        "anchor_title": "The Last Dragon",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Harald Zwart",
+          "actor": "Andy Warhol",
+          "plot": "york",
+          "writer": "James Bradley"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - war, actor - Andy Warhol, director - Harald Zwart, writer - James Bradley.\nBased on these constraints, I recommend watching \"The Imitation Game\" and \"Titanic\". Both movies have a strong historical context and feature powerful performances from the actors involved. \"The Imitation Game\" tells the story of Alan Turing's efforts to crack the German Enigma code during World War II, while \"Titanic\" is an epic romance set on the ill-fated ship during its doomed maiden voyage.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "director": "Harald Zwart",
+        "actor": "Andy Warhol",
+        "writer": "James Bradley"
+      },
+      "rec_titles": [
+        "The Imitation Game",
+        "Aladdin",
+        "The Wind That Shakes the Barley",
+        "Titanic"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Imitation Game. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Andy Warhol",
+        "anchor_title": "The Last Dragon",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Harald Zwart",
+          "actor": "Andy Warhol",
+          "plot": "york",
+          "writer": "James Bradley"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThe user likes the sound of The Imitation Game and is interested in movies with a war theme, starring Andy Warhol, and directed by Harald Zwart or James Bradley.\n\nRecommendation:\nBased on your preferences, I would recommend \"The Patriot\" (2000) and \"Easy A\" (2010). Both movies have a strong war theme, with \"The Patriot\" focusing on the American Revolutionary War and \"Easy A\" set in a high school context. The actors in these movies are also of interest to you, as they feature Mel Gibson, Heath Ledger, and Emma Stone.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Imitation Game",
+        "director": "Harald Zwart",
+        "actor": "Andy Warhol",
+        "writer": "James Bradley"
+      },
+      "rec_titles": [
+        "The Patriot",
+        "The Pianist",
+        "Castle in the Sky",
+        "Easy A"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Peter Webber? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Stone.)",
+      "user_meta": {
+        "turn": 21,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Peter Webber",
+        "anchor_title": "Mommie Dearest",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Peter Webber",
+          "actor": "Andy Warhol",
+          "plot": "manipulate",
+          "writer": "James Bradley"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 21,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "manipulate",
+          "from_anchor": "The Last Dragon",
+          "to_anchor": "Mommie Dearest"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, I understand that you're looking for a movie recommended by Peter Webber, and based on your previous input, I suggest checking out \"White Night\" (2007) and \"Elysium\" (2013). Both of these movies have a war theme, which fits within your preferred genre, and they also feature talented actors such as Matt Damon in \"Elysium.\" The plots of both movies are intriguing and full of suspense, making for an engaging watch.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Stone",
+        "director": "Peter Webber",
+        "actor": "Andy Warhol",
+        "writer": "James Bradley"
+      },
+      "rec_titles": [
+        "White Night",
+        "Pearl Harbor",
+        "We Were Soldiers",
+        "Elysium"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Peter Webber",
+        "anchor_title": "Mommie Dearest",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Peter Webber",
+          "actor": "Andy Warhol",
+          "plot": "manipulate",
+          "writer": "James Bradley"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User: Just checking—do you have more recommendations like that?\n\nSure, based on your preferences, I would recommend \"The Monuments Men\" and \"JFK\". Both movies are historical dramas with intriguing plots and talented actors. In \"The Monuments Men\", an unlikely platoon of art experts and soldiers work together to rescue priceless works of art from the Nazis during World War II, while in \"JFK\", a determined district attorney uncovers a conspiracy behind the assassination of President John F. Kennedy. Both movies are thought-provoking and engaging, with great performances from the cast.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Peter Webber",
+        "actor": "Andy Warhol",
+        "writer": "James Bradley"
+      },
+      "rec_titles": [
+        "The Pink Panther 2",
+        "The Monuments Men",
+        "JFK",
+        "Battleship"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Bert V. Royal? That sounds intriguing. (I’m thinking of The Monuments Men.)",
+      "user_meta": {
+        "turn": 23,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Bert V. Royal",
+        "anchor_title": "Shutter Island",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Peter Webber",
+          "actor": "Andy Warhol",
+          "plot": "manipulate",
+          "writer": "Bert V. Royal",
+          "language": "German Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 23,
+          "from_focus": "director",
+          "to_focus": "writer",
+          "bridge_field": "language",
+          "bridge_value": "German Language",
+          "from_anchor": "Mommie Dearest",
+          "to_anchor": "Shutter Island"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to recommend some movies based on your user's preferences! It sounds like they're interested in war-themed movies with a focus on actor Andy Warhol and director Peter Webber, as well as written content by Bert V. Royal. Based on these constraints, I would recommend \"War Horse\" and \"Downfall\". Both of these movies are set during wartime and feature strong performances from the actors involved. \"War Horse\" is a heartwarming tale of a horse who becomes separated from his owner during World War I, while \"Downfall\" explores the psychological toll of war on those involved.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "written",
+          "royal"
+        ],
+        "name": "The Monuments Men",
+        "director": "Peter Webber",
+        "actor": "Andy Warhol",
+        "writer": "Bert V. Royal"
+      },
+      "rec_titles": [
+        "War Horse",
+        "Dear John",
+        "Downfall",
+        "Tora! Tora! Tora!"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Bert V. Royal",
+        "anchor_title": "Shutter Island",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Peter Webber",
+          "actor": "Andy Warhol",
+          "plot": "manipulate",
+          "writer": "Bert V. Royal",
+          "language": "German Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User: Just checking—do you have more recommendations like that?\n\nYou: Of course! Based on your preferences, I think you might enjoy \"The Wonderful Wizard of Oz\" and \"Harry Potter and the Half-Blood Prince.\" Both are classic stories with captivating plots and talented actors, including Dorothy and Toto in \"The Wonderful Wizard of Oz\" and Harry Potter, Lord Voldemort, and their supporting cast in \"Harry Potter and the Half-Blood Prince.\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Peter Webber",
+        "actor": "Andy Warhol",
+        "writer": "Bert V. Royal"
+      },
+      "rec_titles": [
+        "The Wonderful Wizard of Oz",
+        "Harry Potter and the Half-Blood Prince",
+        "The Good German",
+        "Flags of Our Fathers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Harry Potter and the Half-Blood Prince? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Bert V. Royal",
+        "anchor_title": "Shutter Island",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Peter Webber",
+          "actor": "Andy Warhol",
+          "plot": "manipulate",
+          "writer": "Bert V. Royal",
+          "language": "German Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User Constraints: The user wants a movie with a similar mood and tone to Harry Potter and the Half-Blood Prince, but with a different genre, actors, director, and plot keywords. They are interested in movies that have a darker and more intense atmosphere, with a focus on action and suspense.\n\nRecommendation: Based on the user's constraints, I recommend \"Zero Dark Thirty\" (2012) and \"The Expendables 2\" (2012). Both movies have a gritty and intense atmosphere, with a focus on action and suspense. \"Zero Dark Thirty\" chronicles the decade-long hunt for Osama bin Laden after the September 11 attacks, while \"The Expendables 2\" follows a group of mercenaries on a dangerous mission to take down a powerful enemy.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "harry"
+        ],
+        "name": "X",
+        "director": "Peter Webber",
+        "actor": "Andy Warhol",
+        "writer": "Bert V. Royal"
+      },
+      "rec_titles": [
+        "Zero Dark Thirty",
+        "300: Rise of an Empire",
+        "The Expendables 2",
+        "The Siege"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Expendables. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Bert V. Royal",
+        "anchor_title": "Shutter Island",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Peter Webber",
+          "actor": "Andy Warhol",
+          "plot": "manipulate",
+          "writer": "Bert V. Royal",
+          "language": "German Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preference for a war movie with an interesting plot and talented actors, I recommend \"The Hurt Locker\" and \"Big Fish.\" Both of these movies feature intense plots and impressive performances from their casts. \"The Hurt Locker\" follows a bomb disposal unit during the Iraq War, while \"Big Fish\" tells the story of a man trying to separate fact from fiction in his dying father's life.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Expendables",
+        "director": "Peter Webber",
+        "actor": "Andy Warhol",
+        "writer": "Bert V. Royal"
+      },
+      "rec_titles": [
+        "The Relic",
+        "Big Fish",
+        "The Hurt Locker",
+        "The Book Thief"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Bert V. Royal",
+        "anchor_title": "Shutter Island",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Peter Webber",
+          "actor": "Andy Warhol",
+          "plot": "manipulate",
+          "writer": "Bert V. Royal",
+          "language": "German Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: The user is interested in movies with a war theme, featuring actor Andy Warhol, directed by Peter Webber, and with plot keywords \"what\" and \"kind\".\n\nRecommendation: Based on these constraints, I would recommend \"We Were Soldiers\" (2002) starring Mel Gibson and Jon Hamm. The movie tells the story of the first major battle of the American phase of the Vietnam War, and the soldiers on both sides who fought it while their wives wait nervously and anxiously at home. It's a powerful and emotional film that explores the sacrifices made during war.\n\nAlternatively, I would suggest \"Braveheart\" (1995) starring Mel Gibson and Angus Macfadyen. The movie follows the story of a Scottish tribe who is divided over how to handle a canning corporation violating their treaty. It's an epic and action-packed film that explores themes of bravery, loyalty, and the struggle for freedom.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "director": "Peter Webber",
+        "actor": "Andy Warhol",
+        "writer": "Bert V. Royal"
+      },
+      "rec_titles": [
+        "We Were Soldiers",
+        "Braveheart",
+        "Titanic",
+        "Paradise Lost"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Kevin Bray? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of We Were Soldiers.)",
+      "user_meta": {
+        "turn": 28,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Kevin Bray",
+        "anchor_title": "Syriana",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Kevin Bray",
+          "actor": "Andy Warhol",
+          "plot": "phase",
+          "writer": "Bert V. Royal",
+          "language": "German Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 28,
+          "from_focus": "writer",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "phase",
+          "from_anchor": "Shutter Island",
+          "to_anchor": "Syriana"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, here are two movie recommendations that might interest them:\n\nThe user has expressed a preference for war movies and actors Andy Warhol and Kevin Bray, so I recommend \"Hotel Rwanda\" (2004) starring Don Cheadle and Sophie Okonedo. This powerful drama tells the true story of a hotel manager who houses over a thousand Tutsi refugees during their struggle against the Hutu militia in Rwanda, Africa.\n\nAlternatively, \"Lincoln\" (1995) starring Joseph Gordon-Levitt and Bruce McGill might be of interest to the user. This historical drama follows U.S President Abraham Lincoln as he struggles with continuing carnage on the battlefield while fighting with many inside his own cabinet over his decision to emancipate the slaves during the Civil War.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Soldier",
+        "director": "Kevin Bray",
+        "actor": "Andy Warhol",
+        "writer": "Bert V. Royal"
+      },
+      "rec_titles": [
+        "Hotel Rwanda",
+        "Lincoln",
+        "Incendies",
+        "Doctor Zhivago"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Kevin Bray",
+        "anchor_title": "Syriana",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Kevin Bray",
+          "actor": "Andy Warhol",
+          "plot": "phase",
+          "writer": "Bert V. Royal",
+          "language": "German Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: War genre, Andy Warhol actor, Kevin Bray director, Bert V. Royal writer, and plot keywords \"just\" and \"more\".\nRecommendation: Based on the user's preferences, I would recommend \"Princess Mononoke\" (1997) for its epic fantasy setting and memorable characters, including Claire Danes and Gillian Anderson. The film also touches on themes of war and conflict, which align with the user's preferences. Alternatively, \"The Pianist\" (2002) is a powerful and emotional drama set during World War II, featuring Frank Finlay in a critically acclaimed performance.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Kevin Bray",
+        "actor": "Andy Warhol",
+        "writer": "Bert V. Royal"
+      },
+      "rec_titles": [
+        "Princess Mononoke",
+        "The River",
+        "The Stuff",
+        "The Pianist"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Kevin Bray",
+        "anchor_title": "Syriana",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Kevin Bray",
+          "actor": "Andy Warhol",
+          "plot": "phase",
+          "writer": "Bert V. Royal",
+          "language": "German Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, I recommend \"Zero Dark Thirty\" and \"Her.\" Both of these movies deal with themes of war and dating, which seem to align with the user's interests. \"Zero Dark Thirty\" is a gripping and thought-provoking film that chronicles the decade-long hunt for Osama bin Laden, while \"Her\" is an unique and thought-provoking movie that explores the differences of dating in modern society.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "director": "Kevin Bray",
+        "actor": "Andy Warhol",
+        "writer": "Bert V. Royal"
+      },
+      "rec_titles": [
+        "Tora! Tora! Tora!",
+        "Zero Dark Thirty",
+        "Her",
+        "This Is Spinal Tap"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Kevin Bray",
+        "anchor_title": "Syriana",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Kevin Bray",
+          "actor": "Andy Warhol",
+          "plot": "phase",
+          "writer": "Bert V. Royal",
+          "language": "German Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - war, actor - Andy Warhol, director - Kevin Bray, writer - Bert V. Royal.\nBased on these constraints, I recommend \"Gladiator\" and \"The Good German\". Both movies are historical dramas that explore the darker side of humanity during times of conflict, with powerful performances from their actors. \"Gladiator\" features Russell Crowe as a Roman general who seeks revenge against the corrupt emperor who killed his family, while \"The Good German\" is set in post-war Berlin and follows an American journalist's investigation into a murder that leads him down a dangerous path.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us",
+        "director": "Kevin Bray",
+        "actor": "Andy Warhol",
+        "writer": "Bert V. Royal"
+      },
+      "rec_titles": [
+        "Pearl Harbor",
+        "300: Rise of an Empire",
+        "Gladiator",
+        "The Good German"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Kevin Bray",
+        "anchor_title": "Syriana",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Kevin Bray",
+          "actor": "Andy Warhol",
+          "plot": "phase",
+          "writer": "Bert V. Royal",
+          "language": "German Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user wants a movie that's not too scary but still has a good storyline and acting. They're interested in movies with a war theme, starring Andy Warhol, or directed by Kevin Bray or Bert V. Royal.\n\nRecommendation: I would recommend \"Zulu\" (2013) starring Conrad Kemp and Tanya van Graan. The movie is a gripping crime drama that explores the dark side of South Africa's drug trade, with a strong cast and interesting plot twists. Alternatively, \"The Expendables 2\" (2012) starring Randy Couture, Novak Djokovic, Sylvester Stallone, and Jason Statham is an action-packed adventure that brings together a diverse group of mercenaries for a thrilling battle against a powerful enemy.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "director": "Kevin Bray",
+        "actor": "Andy Warhol",
+        "writer": "Bert V. Royal"
+      },
+      "rec_titles": [
+        "Zulu",
+        "The Twilight Saga: New Moon",
+        "The Expendables 2",
+        "300"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Adam Herz? That sounds intriguing. (I’m thinking of War.)",
+      "user_meta": {
+        "turn": 33,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Adam Herz",
+        "anchor_title": "The Baader Meinhof Complex",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Philip G. Atwell",
+          "actor": "Andy Warhol",
+          "plot": "phase",
+          "writer": "Adam Herz",
+          "language": "German Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 33,
+          "from_focus": "director",
+          "to_focus": "writer",
+          "bridge_field": "director",
+          "bridge_value": "Philip G. Atwell",
+          "from_anchor": "Syriana",
+          "to_anchor": "The Baader Meinhof Complex"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - War, Actor - Andy Warhol, Director - Kevin Bray, Writer - Adam Herz.\nBased on these constraints, I recommend \"The Messenger\" and \"Tootsie\". Both movies are thought-provoking and feature strong performances from talented actors. In \"The Messenger\", Brendan Sexton III and Ben Foster deliver powerful performances as two soldiers grappling with an ethical dilemma, while in \"Tootsie\", Dustin Hoffman's performance as a struggling actor who disguises himself as a woman is both hilarious and touching.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "written",
+          "intriguing"
+        ],
+        "name": "War",
+        "director": "Kevin Bray",
+        "actor": "Andy Warhol",
+        "writer": "Adam Herz"
+      },
+      "rec_titles": [
+        "The Messenger",
+        "To Have and Have Not",
+        "Tootsie",
+        "The Pianist"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 34,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Adam Herz",
+        "anchor_title": "The Baader Meinhof Complex",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Philip G. Atwell",
+          "actor": "Andy Warhol",
+          "plot": "phase",
+          "writer": "Adam Herz",
+          "language": "German Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: War genre, Andy Warhol actor, Kevin Bray director, Adam Herz writer, and plot keywords \"just\" and \"more\".\n\nBased on these constraints, I recommend \"The Wonderful Wizard of Oz\" (1900) and \"Fight Club\" (1996). Both movies offer a unique and captivating storyline that aligns with the user's preferences. \"The Wonderful Wizard of Oz\" is an American classic with a memorable cast of characters, while \"Fight Club\" features a gripping plot that explores themes of rebellion and self-discovery.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Kevin Bray",
+        "actor": "Andy Warhol",
+        "writer": "Adam Herz"
+      },
+      "rec_titles": [
+        "The Wonderful Wizard of Oz",
+        "Fight Club",
+        "Dances with Wolves",
+        "The Way Back Home"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of War? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Adam Herz",
+        "anchor_title": "The Baader Meinhof Complex",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Philip G. Atwell",
+          "actor": "Andy Warhol",
+          "plot": "phase",
+          "writer": "Adam Herz",
+          "language": "German Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: The user is looking for a movie that explores a deeper theme than they initially thought, with a focus on war and the actors Andy Warhol, Kevin Bray, Adam Herz, and Joy Bryant.\n\nBased on the user's preferences, I recommend \"The Andromeda Strain\" (1971) and \"Man on Wire\" (2008). Both of these movies delve into themes of danger, risk-taking, and pushing limits, which align with the user's interest in exploring deeper topics. \"The Andromeda Strain\" is a sci-fi thriller that follows a group of scientists working to uncover the cause of a deadly contagion, while \"Man on Wire\" tells the true story of Philippe Petit's high-wire walk between the Twin Towers in 1974. Both movies feature a mix of suspense and intellectual curiosity that should appeal to the user's interests.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "War",
+        "director": "Kevin Bray",
+        "actor": "Andy Warhol",
+        "writer": "Adam Herz"
+      },
+      "rec_titles": [
+        "The Andromeda Strain",
+        "The Hunting Party",
+        "Man on Wire",
+        "Lincoln"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Hal Holbrook. Hmm, I didn’t expect that vibe. (I’m thinking of The Andromeda Strain.)",
+      "user_meta": {
+        "turn": 36,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Hal Holbrook",
+        "anchor_title": "Die Hard",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Philip G. Atwell",
+          "actor": "Hal Holbrook",
+          "plot": "feverishly",
+          "writer": "Adam Herz",
+          "language": "German Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 36,
+          "from_focus": "writer",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "feverishly",
+          "from_anchor": "The Baader Meinhof Complex",
+          "to_anchor": "Die Hard"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: war; actor: Hal Holbrook; director: Kevin Bray; writer: Adam Herz; plot keywords: could, find. Based on these constraints, I recommend \"Black Hawk Down\" and \"The Hunted\". Both movies feature intense action scenes and a gripping plot that explore the themes of war and survival, respectively.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "The Andromeda Strain",
+        "director": "Kevin Bray",
+        "actor": "Hal Holbrook",
+        "writer": "Adam Herz"
+      },
+      "rec_titles": [
+        "Black Hawk Down",
+        "Welcome to Sarajevo",
+        "The Hunted",
+        "3"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Hal Holbrook",
+        "anchor_title": "Die Hard",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Philip G. Atwell",
+          "actor": "Hal Holbrook",
+          "plot": "feverishly",
+          "writer": "Adam Herz",
+          "language": "German Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: War genre, Hal Holbrook actor, Kevin Bray director, Adam Herz writer, and \"just\" and \"more\" plot keywords.\n\nBased on these constraints, I recommend \"The Patriot\" (2000) and \"American Sniper\" (2014). Both movies are set during war time and feature powerful performances from Hal Holbrook and Bradley Cooper respectively. \"The Patriot\" follows a peaceful farmer who is driven to lead the Colonial Militia during the American Revolution after his son is murdered by a sadistic British officer, while \"American Sniper\" tells the story of Navy S.E.A.L. sniper Chris Kyle's pinpoint accuracy on the battlefield and the struggles he faces when he returns home.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Kevin Bray",
+        "actor": "Hal Holbrook",
+        "writer": "Adam Herz"
+      },
+      "rec_titles": [
+        "The Patriot",
+        "The Lincoln Lawyer",
+        "American Sniper",
+        "The Taming of the Shrew"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of RED. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Hal Holbrook",
+        "anchor_title": "Die Hard",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Philip G. Atwell",
+          "actor": "Hal Holbrook",
+          "plot": "feverishly",
+          "writer": "Adam Herz",
+          "language": "German Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - war, actor - Hal Holbrook, director - Kevin Bray, writer - Adam Herz.\nBased on these constraints, I recommend \"The Book Thief\" and \"The Warlords\". Both movies have a strong war theme and feature actors who fit within the user's preferred range. \"The Book Thief\" is a powerful drama that explores the impact of war on civilians, while \"The Warlords\" is an action-packed historical epic with a compelling story and talented cast.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "director": "Kevin Bray",
+        "actor": "Hal Holbrook",
+        "writer": "Adam Herz"
+      },
+      "rec_titles": [
+        "The Book Thief",
+        "The Fog",
+        "Princess Mononoke",
+        "The Warlords"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Oliver Stone? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Tron.)",
+      "user_meta": {
+        "turn": 39,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Oliver Stone",
+        "anchor_title": "Brüno",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Oliver Stone",
+          "actor": "Bruce Boxleitner",
+          "plot": "feverishly",
+          "writer": "Adam Herz",
+          "language": "German Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 39,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Bruce Boxleitner",
+          "from_anchor": "Die Hard",
+          "to_anchor": "Brüno"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, here are two movie recommendations that fit their constraints:\n\n* \"American Gangster\" (2007) stars Josh Brolin and Russell Crowe as a pair of unlikely heroes in a gripping tale of drug trafficking and corruption. With its mix of crime drama and political intrigue, this movie should satisfy the user's desire for a war-themed film with strong acting performances.\n* \"Born on the Fourth of July\" (1989) is a powerful biographical drama that follows the story of Vietnam veteran Ron Kovic, played by Tom Cruise in an Oscar-winning performance. This movie explores themes of anti-war activism and personal redemption, making it a fitting choice for users looking for a thought-provoking film from Oliver Stone.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Stone",
+        "director": "Oliver Stone",
+        "actor": "Oliver Stone",
+        "writer": "Oliver Stone"
+      },
+      "rec_titles": [
+        "American Gangster",
+        "Born on the Fourth of July",
+        "The White Countess",
+        "300"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Oliver Stone",
+        "anchor_title": "Brüno",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Oliver Stone",
+          "actor": "Bruce Boxleitner",
+          "plot": "feverishly",
+          "writer": "Adam Herz",
+          "language": "German Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - war, actor - Oliver Stone, director - Oliver Stone, writer - Oliver Stone, plot keywords - just, more.\nRecommendation: If you enjoyed Oliver Stone's war films, you might enjoy \"A Bridge Too Far\" (1977) and \"Maid in Manhattan\" (2002). Both films deal with complex themes of power and control, set against the backdrop of historical events. \"A Bridge Too Far\" depicts the Allies' failed attempt to capture strategic bridges in the Netherlands during World War II, while \"Maid in Manhattan\" explores the complex dynamics of a wealthy family and their entanglements with their hired help. Both films feature strong performances from a talented cast, including Ralph Fiennes, Natasha Richardson, and Amy Sedaris.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Oliver Stone",
+        "actor": "Oliver Stone",
+        "writer": "Oliver Stone"
+      },
+      "rec_titles": [
+        "Maid in Manhattan",
+        "Amen.",
+        "A Bridge Too Far",
+        "The Breakfast Club"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Stone tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Oliver Stone",
+        "anchor_title": "Brüno",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Oliver Stone",
+          "actor": "Bruce Boxleitner",
+          "plot": "feverishly",
+          "writer": "Adam Herz",
+          "language": "German Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - war, actor - Oliver Stone, director - Oliver Stone, writer - Oliver Stone.\nBased on these constraints, I recommend \"Her\" (2013) and \"Kundun\" (1997). Both of these movies showcase Oliver Stone's unique storytelling style and explore complex themes related to war and humanity. \"Her\" is a thought-provoking docu-narrative that delves into the modern dating experiences of young women, while \"Kundun\" tells the story of the Dalai Lama's life and struggles with Chinese oppression.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Stone",
+        "director": "Oliver Stone",
+        "actor": "Oliver Stone",
+        "writer": "Oliver Stone"
+      },
+      "rec_titles": [
+        "Her",
+        "Catch-22",
+        "In the Land of Blood and Honey",
+        "Kundun"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Oliver Stone",
+        "anchor_title": "Brüno",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Oliver Stone",
+          "actor": "Bruce Boxleitner",
+          "plot": "feverishly",
+          "writer": "Adam Herz",
+          "language": "German Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThe user is looking for a movie with a deeper mood and themes than they initially thought. They prefer war, actor Oliver Stone, director Oliver Stone, and writer Oliver Stone.\n\nRecommendation:\nBased on the user's preferences, I would recommend \"Flatliners\" (1990) or \"The Yearling\" (1930). Both of these movies explore themes of mortality, near-death experiences, and the afterlife, which align with the user's interests. \"Flatliners\" features a talented cast, including William Baldwin and Julia Roberts, while \"The Yearling\" is a classic tale of a young boy's relationship with a wild deer that will tug at your heartstrings.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Ted",
+        "director": "Oliver Stone",
+        "actor": "Oliver Stone",
+        "writer": "Oliver Stone"
+      },
+      "rec_titles": [
+        "The Yearling",
+        "Avatar",
+        "Nell",
+        "Flatliners"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of War. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Oliver Stone",
+        "anchor_title": "Brüno",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Oliver Stone",
+          "actor": "Bruce Boxleitner",
+          "plot": "feverishly",
+          "writer": "Adam Herz",
+          "language": "German Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: The user likes the sound of War and is interested in movies with a deeper meaning.\n\nRecommendation: Based on the user's preference for deeper movies, I recommend \"District 9\" and \"Fury\". Both films offer a thought-provoking and emotionally charged experience, exploring themes of violence, humanity, and the effects of war on individuals and society.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "War",
+        "director": "Oliver Stone",
+        "actor": "Oliver Stone",
+        "writer": "Oliver Stone"
+      },
+      "rec_titles": [
+        "District 9",
+        "Fury",
+        "Flubber",
+        "A Farewell to Arms"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Shannen Doherty. Hmm, I didn’t expect that vibe. (I’m thinking of War.)",
+      "user_meta": {
+        "turn": 44,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Shannen Doherty",
+        "anchor_title": "The Life Aquatic with Steve Zissou",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Oliver Stone",
+          "actor": "Shannen Doherty",
+          "plot": "goes",
+          "writer": "Adam Herz",
+          "language": "German Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 44,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "goes",
+          "from_anchor": "Brüno",
+          "to_anchor": "The Life Aquatic with Steve Zissou"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movies with a war theme, featuring actor Shannen Doherty, and directed or written by Oliver Stone. Based on their preferences, I recommend \"Braveheart\" and \"300\". Both of these films are epic historical dramas that showcase the bravery and sacrifice of soldiers in battle, with strong performances from the cast, including Gerard McSorley, David O'Hara, and Michael Fassbender.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "War",
+        "director": "Oliver Stone",
+        "actor": "Shannen Doherty",
+        "writer": "Oliver Stone"
+      },
+      "rec_titles": [
+        "Braveheart",
+        "300",
+        "Casablanca",
+        "King Kong"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Shannen Doherty",
+        "anchor_title": "The Life Aquatic with Steve Zissou",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Oliver Stone",
+          "actor": "Shannen Doherty",
+          "plot": "goes",
+          "writer": "Adam Herz",
+          "language": "German Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for more movie recommendations based on your previous input. Based on your preferences, I would like to suggest \"How to Train Your Dragon\" and \"Pearl Harbor.\" Both of these movies offer a mix of action, drama, and romance that seem to align with your tastes. \"How to Train Your Dragon\" follows the unlikely friendship between a young Viking and a dragon, while \"Pearl Harbor\" tells a tale of war and romance set during a pivotal moment in history.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Oliver Stone",
+        "actor": "Shannen Doherty",
+        "writer": "Oliver Stone"
+      },
+      "rec_titles": [
+        "How to Train Your Dragon",
+        "Scarface",
+        "Pearl Harbor",
+        "True Crime"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of How to Train Your Dragon? That sounds intriguing.",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Shannen Doherty",
+        "anchor_title": "The Life Aquatic with Steve Zissou",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Oliver Stone",
+          "actor": "Shannen Doherty",
+          "plot": "goes",
+          "writer": "Adam Herz",
+          "language": "German Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, it seems they are interested in movies with a war theme, as well as actors Shannen Doherty and Nicolas Cage. Of the movies listed, I would recommend \"Inglourious Basterds\" for its unique blend of action, drama, and historical context, featuring an all-star cast including Brad Pitt, Christoph Waltz, and Samuel L. Jackson. Alternatively, \"Windtalkers\" is another war movie that explores the important role Navajo code talkers played in World War II, with a talented cast including Nicolas Cage, Roger Willie, and Noah Emmerich.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "train"
+        ],
+        "name": "How to Train Your Dragon",
+        "director": "Oliver Stone",
+        "actor": "Shannen Doherty",
+        "writer": "Oliver Stone"
+      },
+      "rec_titles": [
+        "Windtalkers",
+        "The Book Thief",
+        "Paycheck",
+        "Inglourious Basterds"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Tom Tykwer? That sounds intriguing. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 47,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Tom Tykwer",
+        "anchor_title": "American Wedding",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Tom Tykwer",
+          "actor": "Shannen Doherty",
+          "plot": "live",
+          "writer": "Adam Herz"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 47,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "live",
+          "from_anchor": "The Life Aquatic with Steve Zissou",
+          "to_anchor": "American Wedding"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure! The user is interested in watching a movie directed by Tom Tykwer and has specified that they are open to genres such as war, actor Shannen Doherty, and directors/writers Tom Tykwer. Based on these constraints, I would recommend \"Zulu\" (2013) and \"Afterlife\" (2011). Both of these movies showcase Tom Tykwer's unique directorial style and explore themes of conflict, personal growth, and the supernatural, which align with the user's interests.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Her",
+        "director": "Tom Tykwer",
+        "actor": "Shannen Doherty",
+        "writer": "Tom Tykwer"
+      },
+      "rec_titles": [
+        "Zulu",
+        "Amen.",
+        "Lincoln",
+        "Afterlife"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Tom Tykwer",
+        "anchor_title": "American Wedding",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Tom Tykwer",
+          "actor": "Shannen Doherty",
+          "plot": "live",
+          "writer": "Adam Herz"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I recommend \"There Be Dragons\" and \"In the Land of Blood and Honey.\" Both films explore complex themes of war, conflict, and human connection in unique and thought-provoking ways. \"There Be Dragons\" is a powerful drama set during the Spanish Civil War, while \"In the Land of Blood and Honey\" is a haunting love story amidst the Bosnian War. Both feature strong performances from their casts, including Lily Cole, Dougray Scott, and Jordi Mollà.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Tom Tykwer",
+        "actor": "Shannen Doherty",
+        "writer": "Tom Tykwer"
+      },
+      "rec_titles": [
+        "There Be Dragons",
+        "In the Land of Blood and Honey",
+        "King Kong",
+        "Casablanca"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Tom Tykwer",
+        "anchor_title": "American Wedding",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Tom Tykwer",
+          "actor": "Shannen Doherty",
+          "plot": "live",
+          "writer": "Adam Herz"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User Preference Cues:\nGenre: War\nActor: Shannen Doherty\nDirector: Tom Tykwer\nWriter: Tom Tykwer\nPlot Keywords: What, said\n\nBased on the user's cues, I recommend watching \"The Good German\" and \"Prometheus.\" Both films feature a strong plot and talented actors, including George Clooney and Noomi Rapace in \"The Good German,\" and Michael Fassbender and Charlize Theron in \"Prometheus.\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "You",
+        "director": "Tom Tykwer",
+        "actor": "Shannen Doherty",
+        "writer": "Tom Tykwer"
+      },
+      "rec_titles": [
+        "The Good German",
+        "Prometheus",
+        "The Secret",
+        "This Is Spinal Tap"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Good German. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 50,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Tom Tykwer",
+        "anchor_title": "American Wedding",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Tom Tykwer",
+          "actor": "Shannen Doherty",
+          "plot": "live",
+          "writer": "Adam Herz"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, it seems they are interested in movies with a war theme, starring Shannen Doherty, and directed by Tom Tykwer. Of the recommendations I have provided, \"Dances with Wolves\" (1990) and \"The English Patient\" (1992) are two great options that fit these criteria. Both of these movies are highly rated and feature powerful performances from their actors, with \"Dances with Wolves\" being a classic Western epic and \"The English Patient\" being a romantic drama set during World War II.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Good German",
+        "director": "Tom Tykwer",
+        "actor": "Shannen Doherty",
+        "writer": "Tom Tykwer",
+        "language": "German"
+      },
+      "rec_titles": [
+        "Dances with Wolves",
+        "The End of the Affair",
+        "Hart's War",
+        "The English Patient"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 3,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Tom Skerritt",
+      "from_anchor": "The Thomas Crown Affair",
+      "to_anchor": "Unleashed"
+    },
+    {
+      "turn": 6,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "centered",
+      "from_anchor": "Unleashed",
+      "to_anchor": "Final Destination 5"
+    },
+    {
+      "turn": 11,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "writer",
+      "bridge_value": "James Bradley",
+      "from_anchor": "Final Destination 5",
+      "to_anchor": "Extraordinary Measures"
+    },
+    {
+      "turn": 15,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "york",
+      "from_anchor": "Extraordinary Measures",
+      "to_anchor": "The Last Dragon"
+    },
+    {
+      "turn": 21,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "manipulate",
+      "from_anchor": "The Last Dragon",
+      "to_anchor": "Mommie Dearest"
+    },
+    {
+      "turn": 23,
+      "from_focus": "director",
+      "to_focus": "writer",
+      "bridge_field": "language",
+      "bridge_value": "German Language",
+      "from_anchor": "Mommie Dearest",
+      "to_anchor": "Shutter Island"
+    },
+    {
+      "turn": 28,
+      "from_focus": "writer",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "phase",
+      "from_anchor": "Shutter Island",
+      "to_anchor": "Syriana"
+    },
+    {
+      "turn": 33,
+      "from_focus": "director",
+      "to_focus": "writer",
+      "bridge_field": "director",
+      "bridge_value": "Philip G. Atwell",
+      "from_anchor": "Syriana",
+      "to_anchor": "The Baader Meinhof Complex"
+    },
+    {
+      "turn": 36,
+      "from_focus": "writer",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "feverishly",
+      "from_anchor": "The Baader Meinhof Complex",
+      "to_anchor": "Die Hard"
+    },
+    {
+      "turn": 39,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Bruce Boxleitner",
+      "from_anchor": "Die Hard",
+      "to_anchor": "Brüno"
+    },
+    {
+      "turn": 44,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "goes",
+      "from_anchor": "Brüno",
+      "to_anchor": "The Life Aquatic with Steve Zissou"
+    },
+    {
+      "turn": 47,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "live",
+      "from_anchor": "The Life Aquatic with Steve Zissou",
+      "to_anchor": "American Wedding"
+    }
+  ]
+}

@@ -4,7 +4,7 @@
 import os
 from rich.progress import Progress, BarColumn, TextColumn, TimeElapsedColumn, MofNCompleteColumn
 
-from config import LLM_SYSTEMS, LOG_DIR, RESULTS_FILE
+from config import LLM_SYSTEMS, LOG_DIR, RESULTS_FILE, N_SESSIONS
 from simulate import run_simulation
 
 
@@ -19,7 +19,7 @@ def _clear_previous_run_data():
         os.remove(RESULTS_FILE)
 
 
-def run_simulations(n_sessions=1000):
+def run_simulations(n_sessions=N_SESSIONS):
     _clear_previous_run_data()
     progress = Progress(
         TextColumn("[bold cyan]Simulating [bold white]→[/] {task.description}", justify="right"),
@@ -42,4 +42,4 @@ def run_simulations(n_sessions=1000):
 
 
 if __name__ == "__main__":
-    run_simulations(n_sessions=1000)
+    run_simulations()

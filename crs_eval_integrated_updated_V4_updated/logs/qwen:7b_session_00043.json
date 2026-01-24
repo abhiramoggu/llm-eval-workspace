@@ -1,0 +1,2229 @@
+{
+  "session_id": "00043",
+  "model_name": "qwen:7b",
+  "true_genre": "history",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a reference movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "reference",
+        "anchor_title": "The Adventures of Tom Sawyer",
+        "constraints": {
+          "genre": "reference"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a reference movie with a focus on could. Here are two recommendations based on those criteria:\n\n1. 'Maleficent' (2014) - This Disney fairy tale explores the power of could and the consequences of revenge. Starring Sharlto Copley, Sam Riley, and Angelina Jolie Pitt.\n\n2. 'The Whistler' (2016) - Although not a traditional reference movie, this thriller utilizes could as a key plot device. Starring Glenn Morshower among others.",
+      "constraints": {
+        "genre": "reference",
+        "plot": [
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "Maleficent",
+        "The Whistler",
+        "Psychic Experiment",
+        "The Great Gatsby"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Will Gluck? That sounds intriguing. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Will Gluck",
+        "anchor_title": "The Scarlet Letter",
+        "constraints": {
+          "genre": "reference",
+          "director": "Will Gluck"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "genre",
+          "bridge_value": "reference",
+          "from_anchor": "The Adventures of Tom Sawyer",
+          "to_anchor": "The Scarlet Letter"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a movie that switch to something else, written or directed by Will Gluck. Based on these constraints, I recommend 'Running with Scissors' (2002), which fits the plot description and has Will Gluck involved as director. The film stars Alan Arkin as the vulgar psychiatrist, and a talented ensemble cast including俄克拉荷马州的青少年 actors.",
+      "constraints": {
+        "genre": "reference",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "You",
+        "director": "Will Gluck",
+        "writer": "Will Gluck"
+      },
+      "rec_titles": [
+        "Shattered",
+        "The Adventures of Tom Sawyer",
+        "Downfall",
+        "Running with Scissors"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Will Gluck",
+        "anchor_title": "The Scarlet Letter",
+        "constraints": {
+          "genre": "reference",
+          "director": "Will Gluck"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movie recommendations with a reference to genre, director, writer, and plot keywords like \"just,\" \"more.\" Based on these preferences, I recommend 'Bats' (1999) since it fits the given criteria with its plot about a radiated bat and the characters navigating a deadly plague. The film stars Ned Bellamy, Leon, and Bob Gunton.",
+      "constraints": {
+        "genre": "reference",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Will Gluck",
+        "writer": "Will Gluck"
+      },
+      "rec_titles": [
+        "Bats",
+        "Donnie Brasco",
+        "Tell No One",
+        "Veronica Mars"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Tom Skerritt. Hmm, I didn’t expect that vibe. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 4,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Tom Skerritt",
+        "anchor_title": "Poltergeist III",
+        "constraints": {
+          "genre": "reference",
+          "director": "Will Gluck",
+          "actor": "Tom Skerritt"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 4,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Tom Skerritt",
+          "from_anchor": "The Scarlet Letter",
+          "to_anchor": "Poltergeist III"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movie recommendations featuring Tom Skerritt, with a focus on genre: reference and plot keywords like \"could find.\" Based on this preference, I recommend 'Hitch' as it stars Tom Skerritt and features the kind of plot where characters could potentially discover something together.",
+      "constraints": {
+        "genre": "reference",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Ted",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Tom Skerritt"
+      },
+      "rec_titles": [
+        "Hitch",
+        "Jingle All the Way",
+        "Heart of Darkness",
+        "Trees Lounge"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tom Skerritt",
+        "anchor_title": "Poltergeist III",
+        "constraints": {
+          "genre": "reference",
+          "director": "Will Gluck",
+          "actor": "Tom Skerritt"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in recommendations similar to those mentioning genre, actor Tom Skerritt, director Will Gluck, and writer Will Gluck. From the given list ['Compliance', 'Shutter', 'Running with Scissors', 'Tarnation'], I would recommend:\n\n1. \"Compliance\" (2012) - A tense drama about a fast food employee who gets caught up in an investigation of theft, all while maintaining composure against the pressure.\n\n2. \"Tarnation\" (2003) - This unique film is a raw and introspective examination of growing up with a schizophrenic mother, featuring the real-life experiences of the filmmakers themselves.",
+      "constraints": {
+        "genre": "reference",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Tom Skerritt"
+      },
+      "rec_titles": [
+        "Compliance",
+        "Shutter",
+        "Running with Scissors",
+        "Tarnation"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on X. I want to try something more melodrama—That sounds intriguing.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "melodrama",
+        "anchor_title": "Easy A",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Will Gluck"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 6,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "prostitute",
+          "from_anchor": "Poltergeist III",
+          "to_anchor": "Easy A"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants a melodrama recommendation, with preferences for actor Tom Skerritt and director Will Gluck. Based on these criteria, I suggest watching 'What Dreams May Come' (2008), which combines melodrama elements with Tom Skerritt's presence and Will Gluck's direction.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "X",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Tom Skerritt"
+      },
+      "rec_titles": [
+        "What Dreams May Come",
+        "Scream 4",
+        "Gran Torino",
+        "Being John Malkovich"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "melodrama",
+        "anchor_title": "Easy A",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Will Gluck"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in recommendations for movies with a drama genre, featuring Tom Skerritt as an actor, and directed by Will Gluck or written by him. \n\nBased on these preferences, I would recommend 'Under the Volcano' (1947) due to its drama genre, Tom Skerritt's involvement, and directorship from Will Gluck. This classic film also features notable actors like Katy Jurado and Albert Finney.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Tom Skerritt"
+      },
+      "rec_titles": [
+        "Under the Volcano",
+        "Rachel Getting Married",
+        "The Curious Case of Benjamin Button",
+        "Terms of Endearment"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Under the Volcano tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "melodrama",
+        "anchor_title": "Easy A",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Will Gluck"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in stories involving drama, specific actors like Tom Skerritt and Will Gluck, and potentially related themes or keywords like \"what kind.\"\n\nBased on these preferences, I recommend checking out 'Volcano' (1997) which has a dramatic storyline involving a volcanic eruption in Los Angeles. Tom Skerritt is present as a city official trying to stop the flow, while Don Cheadle also stars as a seismologist involved in the crisis.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Volcano",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Tom Skerritt"
+      },
+      "rec_titles": [
+        "The Sea Inside",
+        "Volcano",
+        "Good Will Hunting",
+        "Zulu"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "melodrama",
+        "anchor_title": "Easy A",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Will Gluck"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a drama movie with Tom Skerritt, and possibly a thriller from The Fifth Estate. I recommend 'Amadeus' for its dramatic portrayal of Mozart's life and 'The Fifth Estate' for the thrilling expose of power deception.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "what"
+        ],
+        "name": "Us",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Tom Skerritt"
+      },
+      "rec_titles": [
+        "Amadeus",
+        "The Fifth Estate",
+        "The Wackness",
+        "Stone"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Jon Lovitz. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 10,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Jon Lovitz",
+        "anchor_title": "Southland Tales",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Will Gluck",
+          "actor": "Jon Lovitz",
+          "plot": "wild"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 10,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "wild",
+          "from_anchor": "Easy A",
+          "to_anchor": "Southland Tales"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's constraints, they are interested in movies featuring Jon Lovitz and a drama genre. I recommend 'War Horse' and 'A Dangerous Method'. Both feature Jon Lovitz in notable roles, with 'War Horse' delving into historical drama while 'A Dangerous Method' explores psychology and psychoanalysis.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "RED",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Jon Lovitz"
+      },
+      "rec_titles": [
+        "War Horse",
+        "The Breakfast Club",
+        "A Dangerous Method",
+        "The Ice Storm"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jon Lovitz",
+        "anchor_title": "Southland Tales",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Will Gluck",
+          "actor": "Jon Lovitz",
+          "plot": "wild"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: Looking for recommendations in the drama genre with actor Jon Lovitz, and possibly from a film directed by Will Gluck. \n\n推荐电影： 'Gunless' (2010) fits this description as it features Jon Lovitz alongside Geoff Bell, directed by Will Gluck. The plot revolves around a gunslinger trying to retire, but his plans are disrupted by a beautiful thief.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Jon Lovitz"
+      },
+      "rec_titles": [
+        "The Lord of the Rings",
+        "Gunless",
+        "The Salon",
+        "Wild Target"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jon Lovitz",
+        "anchor_title": "Southland Tales",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Will Gluck",
+          "actor": "Jon Lovitz",
+          "plot": "wild"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences for a drama genre with actor Jon Lovitz and director Will Gluck, I would recommend 'The End of the Affair'. This film stars Ralph Fiennes and is known for its intricate romance plot.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "You",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Jon Lovitz"
+      },
+      "rec_titles": [
+        "Sense and Sensibility",
+        "Windtalkers",
+        "The End of the Affair",
+        "Hancock"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jon Lovitz",
+        "anchor_title": "Southland Tales",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Will Gluck",
+          "actor": "Jon Lovitz",
+          "plot": "wild"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You mentioned a preference for drama genre and actor Jon Lovitz. Based on those cues, I recommend 'Juno' as it fits both the drama genre and features Jon Lovitz in a notable role.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Jon Lovitz"
+      },
+      "rec_titles": [
+        "Juno",
+        "Clash of the Titans",
+        "Lolita",
+        "The Giver"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jon Lovitz",
+        "anchor_title": "Southland Tales",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Will Gluck",
+          "actor": "Jon Lovitz",
+          "plot": "wild"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movies that match their preference for drama, with a focus on actors like Jon Lovitz. Based on these cues, I recommend 'Children of Men' and 'Born on the Fourth of July', both starring Tom Berenger and featuring dramas related to anti-war activism and overcoming adversity.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "Us",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Jon Lovitz"
+      },
+      "rec_titles": [
+        "300: Rise of an Empire",
+        "White Fang",
+        "Children of Men",
+        "Born on the Fourth of July"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jon Lovitz",
+        "anchor_title": "Southland Tales",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Will Gluck",
+          "actor": "Jon Lovitz",
+          "plot": "wild"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user prefers drama genre with actor Jon Lovitz and director Will Gluck involved. Based on these cues, I would recommend 'Waiting to Exhale' as it fits the genre and features notable actors like Jon Lovitz, Lela Rochon, and Michael Beach.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "Us",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Jon Lovitz"
+      },
+      "rec_titles": [
+        "Waiting to Exhale",
+        "Reservoir Dogs",
+        "Stand by Me",
+        "This Christmas"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Waiting to Exhale? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jon Lovitz",
+        "anchor_title": "Southland Tales",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Will Gluck",
+          "actor": "Jon Lovitz",
+          "plot": "wild"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's constraints include seeking a drama film, with actor Jon Lovitz and director Will Gluck involved. Recommendations would be 'The Eclipse' due to its genre and featuring Iben Hjejle, or 'Stepmom' if the focus is on a星光熠熠 cast including Susan Sarandon and Julia Roberts.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "what",
+          "waiting"
+        ],
+        "name": "Waiting to Exhale",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Jon Lovitz"
+      },
+      "rec_titles": [
+        "The Eclipse",
+        "Stepmom",
+        "The Best Years of Our Lives",
+        "Night of the Living Dead"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jon Lovitz",
+        "anchor_title": "Southland Tales",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Will Gluck",
+          "actor": "Jon Lovitz",
+          "plot": "wild"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in drama movies with actor Jon Lovitz, and director Will Gluck. Based on these preferences, I recommend 'The World According to Garp' due to its drama genre, Jon Lovitz's presence, and the film directed by Will Gluck.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Deep",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Jon Lovitz"
+      },
+      "rec_titles": [
+        "The World According to Garp",
+        "Anyone But You",
+        "The Greatest",
+        "The Longest Ride"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Dan Aykroyd? That sounds intriguing. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 18,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Dan Aykroyd",
+        "anchor_title": "How to Train Your Dragon 2",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Seth MacFarlane",
+          "plot": "wild",
+          "writer": "Dan Aykroyd"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 18,
+          "from_focus": "actor",
+          "to_focus": "writer",
+          "bridge_field": "director",
+          "bridge_value": "Seth MacFarlane",
+          "from_anchor": "Southland Tales",
+          "to_anchor": "How to Train Your Dragon 2"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movie recommendations written by Dan Aykroyd, with genres like drama. Based on these preferences, I suggest checking out 'What Dreams May Come' (1998), a drama starring Robin Williams and Rosalind Chao. It's written by Dan Aykroyd and fits the desired criteria.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "written",
+          "intriguing"
+        ],
+        "name": "Ted",
+        "director": "Will Gluck",
+        "writer": "Dan Aykroyd",
+        "actor": "Dan Aykroyd"
+      },
+      "rec_titles": [
+        "Yours, Mine and Ours",
+        "Traffic",
+        "The Quick and the Dead",
+        "What Dreams May Come"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Dan Aykroyd",
+        "anchor_title": "How to Train Your Dragon 2",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Seth MacFarlane",
+          "plot": "wild",
+          "writer": "Dan Aykroyd"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for recommendations in the drama genre, with an actor focus on Dan Aykroyd. Based on these preferences, I would recommend 'Unleashed' due to its Drama genre, Dan Aykroyd's involvement, and the plot involving a man seeking freedom from his captors.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Will Gluck",
+        "writer": "Dan Aykroyd",
+        "actor": "Dan Aykroyd"
+      },
+      "rec_titles": [
+        "Unleashed",
+        "Run Lola Run",
+        "Moulin Rouge!",
+        "Love Ranch"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Dan Aykroyd",
+        "anchor_title": "How to Train Your Dragon 2",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Seth MacFarlane",
+          "plot": "wild",
+          "writer": "Dan Aykroyd"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies that have a weird or thought-provoking aspect, with specific preferences for drama genre and Dan Aykroyd as an actor.\n\nBased on these criteria, I recommend 'Deconstructing Harry' (1997). This film, written by Dan Aykroyd and starring him alongside other talented actors like Richard Benjamin and Eric Lloyd, explores the internal workings of a writer's mind through a quirky and thought-provoking story.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "You",
+        "director": "Will Gluck",
+        "writer": "Dan Aykroyd",
+        "actor": "Dan Aykroyd"
+      },
+      "rec_titles": [
+        "Deconstructing Harry",
+        "The Town",
+        "We Are Your Friends",
+        "Zulu"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Billy Ray Cyrus. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Deconstructing Harry.)",
+      "user_meta": {
+        "turn": 21,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Billy Ray Cyrus",
+        "anchor_title": "The Dark Half",
+        "constraints": {
+          "genre": "melodrama",
+          "plot": "writer",
+          "writer": "Dan Aykroyd",
+          "actor": "Billy Ray Cyrus"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 21,
+          "from_focus": "writer",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "writer",
+          "from_anchor": "How to Train Your Dragon 2",
+          "to_anchor": "The Dark Half"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movie recommendations featuring Billy Ray Cyrus in a drama context. Based on these preferences, I suggest checking out \"Fifty Shades of Grey\" (2015) with its star-studded cast including Billy Ray Cyrus as Christian Grey's father. Alternatively, \"Zero Effect\" (1998) is another film that fits the criteria and features both Cyrus and a dramatic plot surrounding his character.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Deconstructing Harry",
+        "director": "Will Gluck",
+        "writer": "Billy Ray",
+        "actor": "Billy Ray Cyrus"
+      },
+      "rec_titles": [
+        "Fifty Shades of Grey",
+        "Waking Life",
+        "Zero Effect",
+        "Max Payne"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Billy Ray Cyrus",
+        "anchor_title": "The Dark Half",
+        "constraints": {
+          "genre": "melodrama",
+          "plot": "writer",
+          "writer": "Dan Aykroyd",
+          "actor": "Billy Ray Cyrus"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants recommendations for drama films with Billy Ray Cyrus as an actor, and Will Gluck as a director. From the list provided, I would recommend 'The Truman Show' (2000), starring Natascha McElhone in the lead role, and directed by Will Gluck, who worked on this film.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Will Gluck",
+        "writer": "Billy Ray",
+        "actor": "Billy Ray Cyrus"
+      },
+      "rec_titles": [
+        "Revolutionary Road",
+        "Panic Room",
+        "The Truman Show",
+        "The Namesake"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Billy Ray Cyrus",
+        "anchor_title": "The Dark Half",
+        "constraints": {
+          "genre": "melodrama",
+          "plot": "writer",
+          "writer": "Dan Aykroyd",
+          "actor": "Billy Ray Cyrus"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's constraints include a preference for drama genre, with actor Billy Ray Cyrus and director Will Gluck involved. Based on these preferences, I would recommend 'Fight Club' and '8 Mile'. Both movies feature drama, with well-known actors like Edward Norton in 'Fight Club' and Eminem in '8 Mile'.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "You",
+        "director": "Will Gluck",
+        "writer": "Billy Ray",
+        "actor": "Billy Ray Cyrus"
+      },
+      "rec_titles": [
+        "Fight Club",
+        "8 Mile",
+        "Nowhere to Run",
+        "Scarface"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by James Mather? That feels deeper than I thought. (I’m thinking of War.)",
+      "user_meta": {
+        "turn": 24,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "James Mather",
+        "anchor_title": "Unstoppable",
+        "constraints": {
+          "genre": "melodrama",
+          "plot": "writer",
+          "writer": "Dan Aykroyd",
+          "director": "James Mather",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 24,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "The Dark Half",
+          "to_anchor": "Unstoppable"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with a war theme, possibly featuring an actor like Billy Ray Cyrus. Recommendations could be 'Tears of the Sun' (2003) starring Jimmy Jean-Louis and Johnny Messner, or 'The Siege' (1998) with Mark Valley and Bruce Willis.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "War",
+        "director": "James Mather",
+        "writer": "Billy Ray",
+        "actor": "Billy Ray Cyrus"
+      },
+      "rec_titles": [
+        "To Have and Have Not",
+        "Tears of the Sun",
+        "The Siege",
+        "Battleship"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "James Mather",
+        "anchor_title": "Unstoppable",
+        "constraints": {
+          "genre": "melodrama",
+          "plot": "writer",
+          "writer": "Dan Aykroyd",
+          "director": "James Mather",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's constraints include wanting recommendations for a war genre, with actor Billy Ray Cyrus involved, and possibly directed by James Mather or written by Billy Ray. Based on these preferences, I recommend 'New York Minute' (2004) which has elements of war and features Billy Ray Cyrus in the cast.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "James Mather",
+        "writer": "Billy Ray",
+        "actor": "Billy Ray Cyrus"
+      },
+      "rec_titles": [
+        "New York Minute",
+        "Big Fish",
+        "The Rocker",
+        "King Kong"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does New York Minute tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "James Mather",
+        "anchor_title": "Unstoppable",
+        "constraints": {
+          "genre": "melodrama",
+          "plot": "writer",
+          "writer": "Dan Aykroyd",
+          "director": "James Mather",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with a war theme, featuring actor Billy Ray Cyrus, and possibly directed by James Mather. Based on these preferences, I recommend 'We the Living' (1936), starring Ormond as Kira, with Leo and Andrei played by other notable actors like Tom Wilkinson. This movie not only fits the specified criteria but also offers a rich historical drama with political and personal struggles.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "director": "James Mather",
+        "writer": "Billy Ray",
+        "actor": "Billy Ray Cyrus"
+      },
+      "rec_titles": [
+        "Dances with Wolves",
+        "Tears of the Sun",
+        "Smilla's Sense of Snow",
+        "We the Living"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "James Mather",
+        "anchor_title": "Unstoppable",
+        "constraints": {
+          "genre": "melodrama",
+          "plot": "writer",
+          "writer": "Dan Aykroyd",
+          "director": "James Mather",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movies with genre war and featuring actor Billy Ray Cyrus. Based on these preferences, I recommend 'A Farewell to Arms' as it has elements of war and features Billy Ray Cyrus in a supporting role.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "RED",
+        "director": "James Mather",
+        "writer": "Billy Ray",
+        "actor": "Billy Ray Cyrus"
+      },
+      "rec_titles": [
+        "A Farewell to Arms",
+        "The Good German",
+        "Bloody Sunday",
+        "The Best Years of Our Lives"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of A Farewell to Arms? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "James Mather",
+        "anchor_title": "Unstoppable",
+        "constraints": {
+          "genre": "melodrama",
+          "plot": "writer",
+          "writer": "Dan Aykroyd",
+          "director": "James Mather",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies with a war theme, featuring actor Billy Ray Cyrus, and directed by James Mather. From the list, 'Kundun' (2004) fits these criteria well, as it explores themes of war and spiritual awakening, while starring Tenzin Thuthob Tsarong who has a connection to Billy Ray Cyrus.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "farewell"
+        ],
+        "name": "Deep",
+        "director": "James Mather",
+        "writer": "Billy Ray",
+        "actor": "Billy Ray Cyrus"
+      },
+      "rec_titles": [
+        "Kundun",
+        "Eve's Bayou",
+        "I Heart Huckabees",
+        "Lord of War"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of War. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "James Mather",
+        "anchor_title": "Unstoppable",
+        "constraints": {
+          "genre": "melodrama",
+          "plot": "writer",
+          "writer": "Dan Aykroyd",
+          "director": "James Mather",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes war-related stories and is interested in actors like Billy Ray Cyrus. I recommend 'The Hurt Locker' (2008), featuring Brian Geraghty as a soldier handling bombs during the Iraq War, with a focus on action and teamwork.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "War",
+        "director": "James Mather",
+        "writer": "Billy Ray",
+        "actor": "Billy Ray Cyrus"
+      },
+      "rec_titles": [
+        "The Hurt Locker",
+        "The Skull",
+        "Saving Private Ryan",
+        "The Siege"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Emily Ratajkowski. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of War.)",
+      "user_meta": {
+        "turn": 30,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Emily Ratajkowski",
+        "anchor_title": "The Tempest",
+        "constraints": {
+          "genre": "melodrama",
+          "plot": "writer",
+          "writer": "Dan Aykroyd",
+          "director": "James Mather",
+          "language": "English",
+          "actor": "Emily Ratajkowski"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 30,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "director",
+          "bridge_value": "James Mather",
+          "from_anchor": "Unstoppable",
+          "to_anchor": "The Tempest"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants movie recommendations featuring Emily Ratajkowski, with a focus on war-related themes. I suggest checking out 'Walking Tall' (2004) which stars Ryan Robbins and has elements of combat. It's a good choice that aligns with the desired theme.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "War",
+        "director": "James Mather",
+        "writer": "Billy Ray",
+        "actor": "Emily Ratajkowski"
+      },
+      "rec_titles": [
+        "Walking Tall",
+        "Zero Dark Thirty",
+        "Battleship",
+        "Incendies"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Emily Ratajkowski",
+        "anchor_title": "The Tempest",
+        "constraints": {
+          "genre": "melodrama",
+          "plot": "writer",
+          "writer": "Dan Aykroyd",
+          "director": "James Mather",
+          "language": "English",
+          "actor": "Emily Ratajkowski"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants recommendations for war-themed movies with an actor named Emily Ratajkowski. From the list, I suggest checking out 'Fury' (2014), where Emily Ratajkowski plays a role alongside Brad Pitt and Jim Parrack, all involved in intense war scenarios.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "James Mather",
+        "writer": "Billy Ray",
+        "actor": "Emily Ratajkowski"
+      },
+      "rec_titles": [
+        "Fury",
+        "The Siege",
+        "Amen.",
+        "The Goodbye Girl"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Fury tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Emily Ratajkowski",
+        "anchor_title": "The Tempest",
+        "constraints": {
+          "genre": "melodrama",
+          "plot": "writer",
+          "writer": "Dan Aykroyd",
+          "director": "James Mather",
+          "language": "English",
+          "actor": "Emily Ratajkowski"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a war-related story with an emphasis on Emily Ratajkowski's involvement. Based on these preferences, I would recommend \"The Wind That Shakes the Barley\" starring Orla Fitzgerald, which explores the Irish War of Independence and has a strong war element.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Fury",
+        "director": "James Mather",
+        "writer": "Billy Ray",
+        "actor": "Emily Ratajkowski"
+      },
+      "rec_titles": [
+        "Schindler's List",
+        "Incendies",
+        "The Wind That Shakes the Barley",
+        "The Book Thief"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Emily Ratajkowski",
+        "anchor_title": "The Tempest",
+        "constraints": {
+          "genre": "melodrama",
+          "plot": "writer",
+          "writer": "Dan Aykroyd",
+          "director": "James Mather",
+          "language": "English",
+          "actor": "Emily Ratajkowski"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with elements of war, featuring Emily Ratajkowski as an actor, and potentially directed by James Mather. Based on these preferences, I would recommend 'Paycheck' (2003) starring Ryan Robbins, which has the战争 element and features Emily Ratajkowski in a supporting role.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "X",
+        "director": "James Mather",
+        "writer": "Billy Ray",
+        "actor": "Emily Ratajkowski"
+      },
+      "rec_titles": [
+        "Paycheck",
+        "Incendies",
+        "Kundun",
+        "Schindler's List"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Paycheck. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 34,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Emily Ratajkowski",
+        "anchor_title": "The Tempest",
+        "constraints": {
+          "genre": "melodrama",
+          "plot": "writer",
+          "writer": "Dan Aykroyd",
+          "director": "James Mather",
+          "language": "English",
+          "actor": "Emily Ratajkowski"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes war-themed movies and is drawn to actor Emily Ratajkowski in the role.推荐电影《The Good German》(2006)，它有战争背景，由Robin Weigert和Tobey Maguire主演，其中Emily Ratajkowski的角色可能会引起共鸣。",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Paycheck",
+        "director": "James Mather",
+        "writer": "Billy Ray",
+        "actor": "Emily Ratajkowski"
+      },
+      "rec_titles": [
+        "The Good German",
+        "Rob Roy",
+        "The Other Guys",
+        "Looper"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Emily Ratajkowski",
+        "anchor_title": "The Tempest",
+        "constraints": {
+          "genre": "melodrama",
+          "plot": "writer",
+          "writer": "Dan Aykroyd",
+          "director": "James Mather",
+          "language": "English",
+          "actor": "Emily Ratajkowski"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You mentioned a preference for war-themed movies with specific actors, such as Emily Ratajkowski. Based on these cues, I recommend 'Braveheart' (1995), featuring Mel Gibson and a compelling tale of Scottish independence.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "Paycheck",
+        "director": "James Mather",
+        "writer": "Billy Ray",
+        "actor": "Emily Ratajkowski"
+      },
+      "rec_titles": [
+        "In the Land of Blood and Honey",
+        "Braveheart",
+        "The Hunting Party",
+        "Flyboys"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Seth MacFarlane? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 36,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Seth MacFarlane",
+        "anchor_title": "Ghostbusters II",
+        "constraints": {
+          "genre": "melodrama",
+          "plot": "bullets",
+          "writer": "Dan Aykroyd",
+          "director": "Seth MacFarlane",
+          "actor": "Emily Ratajkowski"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 36,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "bullets",
+          "from_anchor": "The Tempest",
+          "to_anchor": "Ghostbusters II"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in war-themed movies with an actor connection to Seth MacFarlane. I recommend \"Saving Private Ryan\" and \"American Sniper,\" both featuring Seth MacFarlane in smaller roles and centered around war experiences.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "You",
+        "director": "Seth MacFarlane",
+        "writer": "Billy Ray",
+        "actor": "Seth MacFarlane"
+      },
+      "rec_titles": [
+        "Saving Private Ryan",
+        "The Wind That Shakes the Barley",
+        "American Sniper",
+        "Hell's Angels"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Seth MacFarlane",
+        "anchor_title": "Ghostbusters II",
+        "constraints": {
+          "genre": "melodrama",
+          "plot": "bullets",
+          "writer": "Dan Aykroyd",
+          "director": "Seth MacFarlane",
+          "actor": "Emily Ratajkowski"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in recommendations with a war theme, featuring actor Seth MacFarlane, and possibly written by Billy Ray. Based on these preferences, I recommend \"True Crime\" as it fits the criteria with its plot involving an over-the-hill journalist investigating a death row inmate's innocence.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Seth MacFarlane",
+        "writer": "Billy Ray",
+        "actor": "Seth MacFarlane"
+      },
+      "rec_titles": [
+        "Fight Club",
+        "The Messenger",
+        "True Crime",
+        "Ocean's Twelve"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does True Crime tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Seth MacFarlane",
+        "anchor_title": "Ghostbusters II",
+        "constraints": {
+          "genre": "melodrama",
+          "plot": "bullets",
+          "writer": "Dan Aykroyd",
+          "director": "Seth MacFarlane",
+          "actor": "Emily Ratajkowski"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a story related to true crime, possibly featuring Seth MacFarlane as an actor. Based on these preferences, I recommend checking out 'What Women Want' (2000) starring Ana Gasteyer and Mark Feuerstein, which has elements of crime and manipulation, potentially with a touch of Seth MacFarlane's comic timing.",
+      "constraints": {
+        "genre": "true crime",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "True Crime",
+        "director": "Seth MacFarlane",
+        "writer": "Billy Ray",
+        "actor": "Seth MacFarlane"
+      },
+      "rec_titles": [
+        "What Women Want",
+        "Divergent",
+        "Taken",
+        "The Expendables 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Seth MacFarlane",
+        "anchor_title": "Ghostbusters II",
+        "constraints": {
+          "genre": "melodrama",
+          "plot": "bullets",
+          "writer": "Dan Aykroyd",
+          "director": "Seth MacFarlane",
+          "actor": "Emily Ratajkowski"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in movies with a true crime theme, featuring actor Seth MacFarlane, and potentially having an unusual plot like being weird or thought about. Based on these preferences, I recommend 'True Crime' from the list as it fits the criteria and has Seth MacFarlane involved. The plot revolves around uncovering evidence to prove innocence just before execution, making it a fitting true crime choice.",
+      "constraints": {
+        "genre": "true crime",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "True Crime",
+        "director": "Seth MacFarlane",
+        "writer": "Billy Ray",
+        "actor": "Seth MacFarlane"
+      },
+      "rec_titles": [
+        "Wolf Creek",
+        "Passion",
+        "True Crime",
+        "American Gangster"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of True Crime. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Seth MacFarlane",
+        "anchor_title": "Ghostbusters II",
+        "constraints": {
+          "genre": "melodrama",
+          "plot": "bullets",
+          "writer": "Dan Aykroyd",
+          "director": "Seth MacFarlane",
+          "actor": "Emily Ratajkowski"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes true crime stories with a focus on sound. Recommendations: 'True Crime' fans might enjoy 'Wolf Creek,' known for its intense sound and disturbing content. The film features Richard Cawthorne and John Jarratt, both known for their distinctive sounds in acting roles.",
+      "constraints": {
+        "genre": "true crime",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "True Crime",
+        "director": "Seth MacFarlane",
+        "writer": "Billy Ray",
+        "actor": "Seth MacFarlane"
+      },
+      "rec_titles": [
+        "Wolf Creek",
+        "Hart's War",
+        "Movie 43",
+        "American Gangster"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Thor? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Seth MacFarlane",
+        "anchor_title": "Ghostbusters II",
+        "constraints": {
+          "genre": "melodrama",
+          "plot": "bullets",
+          "writer": "Dan Aykroyd",
+          "director": "Seth MacFarlane",
+          "actor": "Emily Ratajkowski"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants a movie with true crime elements, featuring Seth MacFarlane either as actor or director. Based on these preferences, I recommend 'Prometheus' due to its contemporary quest story and involvement of Seth MacFarlane in the role of writer.",
+      "constraints": {
+        "genre": "true crime",
+        "plot": [
+          "what",
+          "thor"
+        ],
+        "name": "Thor",
+        "director": "Seth MacFarlane",
+        "writer": "Billy Ray",
+        "actor": "Seth MacFarlane"
+      },
+      "rec_titles": [
+        "Dear John",
+        "Prometheus",
+        "Wolfhound",
+        "The Wraith"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Eileen Brennan. That sounds intriguing. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 42,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Eileen Brennan",
+        "anchor_title": "Rain Man",
+        "constraints": {
+          "genre": "melodrama",
+          "plot": "bullets",
+          "writer": "Dan Aykroyd",
+          "director": "Seth MacFarlane",
+          "actor": "Eileen Brennan"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 42,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "director",
+          "bridge_value": "Seth MacFarlane",
+          "from_anchor": "Ghostbusters II",
+          "to_anchor": "Rain Man"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: In search of movies featuring Eileen Brennan and with elements of true crime, the user finds interest in \"The Spiderwick Chronicles\" (2008) due to its fantasy nature and Brennan's presence.\n\nMovie recommendation: I suggest \"The Spiderwick Chronicles\" (2008), which not only stars Eileen Brennan but also has a true crime element through its exploration of faeries and the fight against an evil force.",
+      "constraints": {
+        "genre": "true crime",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Us",
+        "director": "Seth MacFarlane",
+        "writer": "Billy Ray",
+        "actor": "Eileen Brennan"
+      },
+      "rec_titles": [
+        "The Spiderwick Chronicles",
+        "The Lorax",
+        "3",
+        "The River Why"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Eileen Brennan",
+        "anchor_title": "Rain Man",
+        "constraints": {
+          "genre": "melodrama",
+          "plot": "bullets",
+          "writer": "Dan Aykroyd",
+          "director": "Seth MacFarlane",
+          "actor": "Eileen Brennan"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in recommendations for a true crime genre, featuring actor Eileen Brennan. Based on these preferences, I would suggest 'How to Train Your Dragon' since although it's not a typical true crime film, it does have elements of adventure and friendship that could appeal given the curiosity mentioned.",
+      "constraints": {
+        "genre": "true crime",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Seth MacFarlane",
+        "writer": "Billy Ray",
+        "actor": "Eileen Brennan"
+      },
+      "rec_titles": [
+        "My Girl 2",
+        "How to Train Your Dragon",
+        "You",
+        "The Swindle"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Valeri Milev? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 44,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Valeri Milev",
+        "anchor_title": "The Last Samurai",
+        "constraints": {
+          "genre": "melodrama",
+          "plot": "bullets",
+          "writer": "Dan Aykroyd",
+          "director": "Valeri Milev",
+          "actor": "Eileen Brennan",
+          "language": "Japanese Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 44,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "language",
+          "bridge_value": "Japanese Language",
+          "from_anchor": "Rain Man",
+          "to_anchor": "The Last Samurai"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in true crime genre, with Eileen Brennan as an actor preference. From the list, I recommend 'American Gangster' due to its biographical nature and the presence of Josh Brolin, known for his roles in crime dramas.",
+      "constraints": {
+        "genre": "true crime",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "You",
+        "director": "Valeri Milev",
+        "writer": "Billy Ray",
+        "actor": "Eileen Brennan"
+      },
+      "rec_titles": [
+        "Afterlife",
+        "American Gangster",
+        "The Change-Up",
+        "Wolf Creek"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Valeri Milev",
+        "anchor_title": "The Last Samurai",
+        "constraints": {
+          "genre": "melodrama",
+          "plot": "bullets",
+          "writer": "Dan Aykroyd",
+          "director": "Valeri Milev",
+          "actor": "Eileen Brennan",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for movie recommendations in the true crime genre, with Eileen Brennan as an actor, and Valeri Milev as a director. From the list provided, I would recommend 'RED' since it fits all those criteria - featuring both Eileen Brennan and red herrings in a true crime context.",
+      "constraints": {
+        "genre": "true crime",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Valeri Milev",
+        "writer": "Billy Ray",
+        "actor": "Eileen Brennan"
+      },
+      "rec_titles": [
+        "RED",
+        "Zack and Miri Make a Porno",
+        "New York Minute",
+        "Date Night"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Valeri Milev",
+        "anchor_title": "The Last Samurai",
+        "constraints": {
+          "genre": "melodrama",
+          "plot": "bullets",
+          "writer": "Dan Aykroyd",
+          "director": "Valeri Milev",
+          "actor": "Eileen Brennan",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with a true crime vibe, featuring an actor like Eileen Brennan. Recommendations could be 'I Heart Huckabees' due to its unique comedic tone and Brennan's presence, or 'Paycheck' which has elements of a true crime story and features both Ryan Robbins and Joe Morton, who may appeal to the user's interest.",
+      "constraints": {
+        "genre": "true crime",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "director": "Valeri Milev",
+        "writer": "Billy Ray",
+        "actor": "Eileen Brennan"
+      },
+      "rec_titles": [
+        "I Heart Huckabees",
+        "The Violent Kind",
+        "2010",
+        "Paycheck"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of True Crime? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Valeri Milev",
+        "anchor_title": "The Last Samurai",
+        "constraints": {
+          "genre": "melodrama",
+          "plot": "bullets",
+          "writer": "Dan Aykroyd",
+          "director": "Valeri Milev",
+          "actor": "Eileen Brennan",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has specified a preference for true crime genre, with actor Eileen Brennan possibly in mind. Based on these cues, I would recommend 'We the Living' as it directly fits the true crime genre and features actress Eileen Brennan. This political drama offers an Ayn Rand-inspired story.",
+      "constraints": {
+        "genre": "true crime",
+        "plot": [
+          "what",
+          "true"
+        ],
+        "name": "True Crime",
+        "director": "Valeri Milev",
+        "writer": "Billy Ray",
+        "actor": "Eileen Brennan"
+      },
+      "rec_titles": [
+        "We the Living",
+        "2010",
+        "Wolf Creek",
+        "13 Going on 30"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of We the Living. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Valeri Milev",
+        "anchor_title": "The Last Samurai",
+        "constraints": {
+          "genre": "melodrama",
+          "plot": "bullets",
+          "writer": "Dan Aykroyd",
+          "director": "Valeri Milev",
+          "actor": "Eileen Brennan",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user likes true crime movies and expressed interest in the movie starring Eileen Brennan. Based on these preferences, I would recommend 'The Sting' since it combines elements of true crime (grifters) with a star-studded cast including Eileen Brennan.",
+      "constraints": {
+        "genre": "true crime",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "We the Living",
+        "director": "Valeri Milev",
+        "writer": "Billy Ray",
+        "actor": "Eileen Brennan"
+      },
+      "rec_titles": [
+        "Uptown Girls",
+        "The Sting",
+        "Psychic Experiment",
+        "The Mortal Instruments: City of Bones"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Valeri Milev",
+        "anchor_title": "The Last Samurai",
+        "constraints": {
+          "genre": "melodrama",
+          "plot": "bullets",
+          "writer": "Dan Aykroyd",
+          "director": "Valeri Milev",
+          "actor": "Eileen Brennan",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user wants a movie with true crime genre and featuring actor Eileen Brennan. From the list provided, 'Next Day Air' (2009) fits these criteria well as it features both Eileen Brennan and a true crime plot involving package delivery gone wrong.",
+      "constraints": {
+        "genre": "true crime",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "We the Living",
+        "director": "Valeri Milev",
+        "writer": "Billy Ray",
+        "actor": "Eileen Brennan"
+      },
+      "rec_titles": [
+        "Next Day Air",
+        "Heavenly Creatures",
+        "Monsters, Inc.",
+        "Hart's War"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, could we talk about Spectre specifically? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 50,
+        "stage": "waiting_system",
+        "focus_field": "name",
+        "focus_value": "Spectre",
+        "anchor_title": "Blade Runner",
+        "constraints": {
+          "genre": "melodrama",
+          "plot": "uncover",
+          "writer": "Dan Aykroyd",
+          "actor": "Eileen Brennan",
+          "language": "Japanese Language",
+          "name": "Spectre"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 50,
+          "from_focus": "director",
+          "to_focus": "name",
+          "bridge_field": "plot",
+          "bridge_value": "uncover",
+          "from_anchor": "The Last Samurai",
+          "to_anchor": "Blade Runner"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is interested in a true crime genre movie with Eileen Brennan as an actor. Recommendations could be 'Downfall' (with its thriller element and Brennan's performance), or if 'The Reflecting Skin' matches the criteria, that option too.",
+      "constraints": {
+        "genre": "true crime",
+        "plot": [
+          "actually",
+          "could"
+        ],
+        "name": "Spectre",
+        "director": "Valeri Milev",
+        "writer": "Billy Ray",
+        "actor": "Eileen Brennan"
+      },
+      "rec_titles": [
+        "Downfall",
+        "The Reflecting Skin",
+        "Afterlife",
+        "The Seduction of Joe Tynan"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "genre",
+      "bridge_value": "reference",
+      "from_anchor": "The Adventures of Tom Sawyer",
+      "to_anchor": "The Scarlet Letter"
+    },
+    {
+      "turn": 4,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Tom Skerritt",
+      "from_anchor": "The Scarlet Letter",
+      "to_anchor": "Poltergeist III"
+    },
+    {
+      "turn": 6,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "prostitute",
+      "from_anchor": "Poltergeist III",
+      "to_anchor": "Easy A"
+    },
+    {
+      "turn": 10,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "wild",
+      "from_anchor": "Easy A",
+      "to_anchor": "Southland Tales"
+    },
+    {
+      "turn": 18,
+      "from_focus": "actor",
+      "to_focus": "writer",
+      "bridge_field": "director",
+      "bridge_value": "Seth MacFarlane",
+      "from_anchor": "Southland Tales",
+      "to_anchor": "How to Train Your Dragon 2"
+    },
+    {
+      "turn": 21,
+      "from_focus": "writer",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "writer",
+      "from_anchor": "How to Train Your Dragon 2",
+      "to_anchor": "The Dark Half"
+    },
+    {
+      "turn": 24,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "The Dark Half",
+      "to_anchor": "Unstoppable"
+    },
+    {
+      "turn": 30,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "director",
+      "bridge_value": "James Mather",
+      "from_anchor": "Unstoppable",
+      "to_anchor": "The Tempest"
+    },
+    {
+      "turn": 36,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "bullets",
+      "from_anchor": "The Tempest",
+      "to_anchor": "Ghostbusters II"
+    },
+    {
+      "turn": 42,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "director",
+      "bridge_value": "Seth MacFarlane",
+      "from_anchor": "Ghostbusters II",
+      "to_anchor": "Rain Man"
+    },
+    {
+      "turn": 44,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "language",
+      "bridge_value": "Japanese Language",
+      "from_anchor": "Rain Man",
+      "to_anchor": "The Last Samurai"
+    },
+    {
+      "turn": 50,
+      "from_focus": "director",
+      "to_focus": "name",
+      "bridge_field": "plot",
+      "bridge_value": "uncover",
+      "from_anchor": "The Last Samurai",
+      "to_anchor": "Blade Runner"
+    }
+  ]
+}

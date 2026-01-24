@@ -1,0 +1,2189 @@
+{
+  "session_id": "00022",
+  "model_name": "gemma:2b",
+  "true_genre": "massachusetts",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a biographical movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "biographical",
+        "anchor_title": "Into the Wild",
+        "constraints": {
+          "genre": "biographical"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation based on the user's constraints:\n\nIf you're looking for a biographical movie about a Scottish outlaw seeking revenge, check out \"Rob Roy\". The plot features a compelling story of a man fighting for justice and facing difficult challenges along the way.",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "biographical",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "Rob Roy",
+        "The Seduction of Joe Tynan",
+        "True Blood",
+        "American Gangster"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "biographical",
+        "anchor_title": "Into the Wild",
+        "constraints": {
+          "genre": "biographical"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommendation:\n\nBased on your preference for biographical and plot keywords related to music, I recommend exploring \"The Baader Meinhof Complex\" (2008) starring Johanna Wokalek. This film delves into the story of a terrorist group's impact on Germany in the late 1960s and '70s.",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us"
+      },
+      "rec_titles": [
+        "The Baader Meinhof Complex",
+        "Smokin' Aces",
+        "Donnie Brasco",
+        "Freeheld"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "biographical",
+        "anchor_title": "Into the Wild",
+        "constraints": {
+          "genre": "biographical"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the suggested response:\n\n\"Looking for something with an FBI undercover agent in a mafia life? Check out 'Donnie Brasco' starring Bruno Kirby. It's a thrilling film that explores the complexities of identity and loyalty.\"",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "Us"
+      },
+      "rec_titles": [
+        "Donnie Brasco",
+        "Monsters, Inc.",
+        "Patton",
+        "The Andromeda Strain"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "biographical",
+        "anchor_title": "Into the Wild",
+        "constraints": {
+          "genre": "biographical"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sounds like you're looking for something deeper than a typical biographical movie. If you're interested in stories about individuals navigating life's challenges and chasing their dreams, then 'Elizabeth', 'Butch Cassidy and the Sundance Kid', 'The Doors', or 'The Fighter' might be your cup of tea. Each film offers a unique perspective on the human experience and explores the complexities of personal journeys.",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Ted"
+      },
+      "rec_titles": [
+        "Elizabeth",
+        "Butch Cassidy and the Sundance Kid",
+        "The Doors",
+        "The Fighter"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Elizabeth tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "biographical",
+        "anchor_title": "Into the Wild",
+        "constraints": {
+          "genre": "biographical"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sounds like you're looking for something heartwarming and inspirational! Based on your preference, I recommend 'This Is Spinal Tap' or 'The Way Back Home'. 'This Is Spinal Tap' is a hilarious and heartwarming film about a band's journey, while 'The Way Back Home' is a beautiful and poignant story about a man's journey back home after losing his wife.",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Elizabeth"
+      },
+      "rec_titles": [
+        "This Is Spinal Tap",
+        "Lady in the Water",
+        "The Way Back Home",
+        "Wolfhound"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Owen West? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of The Way Back Home.)",
+      "user_meta": {
+        "turn": 6,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Owen West",
+        "anchor_title": "The Baader Meinhof Complex",
+        "constraints": {
+          "genre": "biographical",
+          "writer": "Owen West",
+          "plot": "loss"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 6,
+          "from_focus": "genre",
+          "to_focus": "writer",
+          "bridge_field": "plot",
+          "bridge_value": "loss",
+          "from_anchor": "Into the Wild",
+          "to_anchor": "The Baader Meinhof Complex"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation based on the user's constraints:\n\nBased on your preference for biographical movies and Owen West's involvement, \"Beyond the Sea\" might be a captivating film to explore. The romantic narrative surrounding a singer and his wife could resonate with you.",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "written",
+          "west"
+        ],
+        "name": "The Way Back Home",
+        "writer": "Owen West"
+      },
+      "rec_titles": [
+        "Beyond the Sea",
+        "Invictus",
+        "The Queen",
+        "Torn Curtain"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Owen West",
+        "anchor_title": "The Baader Meinhof Complex",
+        "constraints": {
+          "genre": "biographical",
+          "writer": "Owen West",
+          "plot": "loss"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response you requested:\n\n\"Based on your preferences, I recommend 'Antwone Fisher' or 'A Beautiful Mind'. 'Antwone Fisher' is a story about a young man's journey of self-discovery, while 'A Beautiful Mind' tells the incredible story of a genius mathematician who overcame adversity to achieve greatness.\"",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "writer": "Owen West"
+      },
+      "rec_titles": [
+        "Antwone Fisher",
+        "A Beautiful Mind",
+        "The Iron Lady",
+        "Tusk"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Antwone Fisher? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Owen West",
+        "anchor_title": "The Baader Meinhof Complex",
+        "constraints": {
+          "genre": "biographical",
+          "writer": "Owen West",
+          "plot": "loss"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's preference for biographical and dramatic stories with compelling characters, combined with the specific keywords related to an individual named Antwone Fisher, suggests movies about his life or other impactful individuals.\n\nConsidering these factors, here are two recommendations:\n\n- **Moneyball (2011)** - This film chronicles the true story of the Oakland Athletics' journey to assemble a competitive baseball team with limited resources. It showcases Fisher's dedication and resilience, making it an inspiring and uplifting movie.\n\n- **Passion (2011)** - This biographical drama follows the life of Jack Passion, a man who defied social norms and became a champion in the competitive sport of competitive beard growing. It offers a unique perspective on self-acceptance and the power of determination.",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "what",
+          "antwone"
+        ],
+        "name": "Her",
+        "writer": "Owen West"
+      },
+      "rec_titles": [
+        "Moneyball",
+        "Passion",
+        "Elizabeth",
+        "Finding Neverland"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Passion. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Owen West",
+        "anchor_title": "The Baader Meinhof Complex",
+        "constraints": {
+          "genre": "biographical",
+          "writer": "Owen West",
+          "plot": "loss"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommended movie:\n\n\"Based on your preference for biographical and sound films, I would recommend 'Freeheld' starring Josh Charles and Steve Carell. This movie explores the battle between a police officer and her partner as she faces terminal cancer.\"",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "writer": "Owen West"
+      },
+      "rec_titles": [
+        "Freeheld",
+        "Heavenly Creatures",
+        "The Nanny",
+        "Restless"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Owen West",
+        "anchor_title": "The Baader Meinhof Complex",
+        "constraints": {
+          "genre": "biographical",
+          "writer": "Owen West",
+          "plot": "loss"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sounds like you're looking for something with a unique twist on historical figures. While the titles you mentioned are all biographical, they also offer fantastical elements or unexpected narratives.\n\nIf you're interested in a more whimsical and intriguing film, \"The Monuments Men\" with Hugh Bonneville might be up your alley. If you prefer something with a darker tone and a focus on the human condition, \"Pollock\" starring Amy Madigan might be more your style.",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "You",
+        "writer": "Owen West"
+      },
+      "rec_titles": [
+        "The Monuments Men",
+        "Pollock",
+        "Saving Mr. Banks",
+        "The Mask"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Megan Fox. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of The Monuments Men.)",
+      "user_meta": {
+        "turn": 11,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Megan Fox",
+        "anchor_title": "Ratatouille",
+        "constraints": {
+          "genre": "biographical",
+          "writer": "Owen West",
+          "plot": "loss",
+          "actor": "Megan Fox",
+          "language": "French"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 11,
+          "from_focus": "writer",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "French",
+          "from_anchor": "The Baader Meinhof Complex",
+          "to_anchor": "Ratatouille"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a possible reply:\n\n\"Megan Fox's presence is definitely a draw in \"The Monuments Men\" (2012), where she plays a strong and determined female warrior searching for hidden artifacts. The movie is full of action and suspense, but it also explores themes of friendship and redemption. If you're looking for something with a similar blend of action and drama, \"Hotel Rwanda\" (2004) might be your cup of tea.\"",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "The Monuments Men",
+        "writer": "Owen West",
+        "actor": "Megan Fox"
+      },
+      "rec_titles": [
+        "The Dark Crystal",
+        "Hotel Rwanda",
+        "The Tigger Movie",
+        "I Love You, Man"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Megan Fox",
+        "anchor_title": "Ratatouille",
+        "constraints": {
+          "genre": "biographical",
+          "writer": "Owen West",
+          "plot": "loss",
+          "actor": "Megan Fox",
+          "language": "French"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation based on the user's constraints:\n\n\"Based on the user's preference for biographical and MMA movies starring Megan Fox, I recommend either 'Mama' or 'The Young Victoria'. Both films offer compelling stories about strong women overcoming adversity.\"",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "writer": "Owen West",
+        "actor": "Megan Fox"
+      },
+      "rec_titles": [
+        "Mama",
+        "Neighbors 2: Sorority Rising",
+        "The Young Victoria",
+        "Walk the Line"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Megan Fox",
+        "anchor_title": "Ratatouille",
+        "constraints": {
+          "genre": "biographical",
+          "writer": "Owen West",
+          "plot": "loss",
+          "actor": "Megan Fox",
+          "language": "French"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's my recommendation:\n\nBased on the user's preference, I would recommend **Taxi Driver** (1976) with its intriguing plot about a cab driver who saves a young woman from molestation. The film's dark and gritty style would perfectly match the user's interest in an edgy and character-driven movie.",
+      "constraints": {
+        "genre": "biographical",
+        "plot": [
+          "what"
+        ],
+        "name": "X",
+        "writer": "Owen West",
+        "actor": "Megan Fox"
+      },
+      "rec_titles": [
+        "Taxi Driver",
+        "Kundun",
+        "Hotel Rwanda",
+        "Monsters, Inc."
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Taxi Driver. I want to try something more political thriller—That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "political thriller",
+        "anchor_title": "The Princess and the Frog",
+        "constraints": {
+          "genre": "political thriller",
+          "writer": "Owen West",
+          "plot": "loss",
+          "actor": "Megan Fox",
+          "language": "French"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 14,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "drinks",
+          "from_anchor": "Ratatouille",
+          "to_anchor": "The Princess and the Frog"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response:\n\nThanks for your preference for a political thriller. \"The Constant Gardener\" starring Pete Postlethwaite might be a good fit for you. The film offers a captivating journey through a widower's quest for answers about his wife's death.",
+      "constraints": {
+        "genre": "political thriller",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Taxi Driver",
+        "writer": "Owen West",
+        "actor": "Megan Fox"
+      },
+      "rec_titles": [
+        "The Constant Gardener",
+        "Friends with Kids",
+        "Valkyrie",
+        "Wanderlust"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "political thriller",
+        "anchor_title": "The Princess and the Frog",
+        "constraints": {
+          "genre": "political thriller",
+          "writer": "Owen West",
+          "plot": "loss",
+          "actor": "Megan Fox",
+          "language": "French"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation based on the user's preferences:\n\nBased on your preference for a political thriller with a focus on espionage and a strong female lead, I would recommend \"How to Train Your Dragon\". This movie showcases Megan Fox's captivating presence and captivating performance, while the plot tackles relevant themes of friendship, trust, and loyalty.",
+      "constraints": {
+        "genre": "political thriller",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "writer": "Owen West",
+        "actor": "Megan Fox"
+      },
+      "rec_titles": [
+        "How to Train Your Dragon",
+        "Tinker Tailor Soldier Spy",
+        "The Stuff",
+        "The Way of the Gun"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of How to Train Your Dragon? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "political thriller",
+        "anchor_title": "The Princess and the Frog",
+        "constraints": {
+          "genre": "political thriller",
+          "writer": "Owen West",
+          "plot": "loss",
+          "actor": "Megan Fox",
+          "language": "French"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a 1-3 sentence recommendation:\n\nIf you're looking for a political thriller with a strong emotional core, consider \"The Neon Bible\". This film explores the haunting nature of memory and the impact of a turbulent childhood.",
+      "constraints": {
+        "genre": "political thriller",
+        "plot": [
+          "what",
+          "train"
+        ],
+        "name": "How to Train Your Dragon",
+        "writer": "Owen West",
+        "actor": "Megan Fox"
+      },
+      "rec_titles": [
+        "The Neon Bible",
+        "The Wrestler",
+        "Wolfhound",
+        "The Girl on the Train"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Tron. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "political thriller",
+        "anchor_title": "The Princess and the Frog",
+        "constraints": {
+          "genre": "political thriller",
+          "writer": "Owen West",
+          "plot": "loss",
+          "actor": "Megan Fox",
+          "language": "French"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommendation:\n\nIf you're looking for something with a darker tone and intriguing plot, then \"The Stuff\" might be your cup of tea. This movie features a fantastic cast and a unique concept that will leave you intrigued and thinking long after you've finished it.",
+      "constraints": {
+        "genre": "political thriller",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Tron",
+        "writer": "Owen West",
+        "actor": "Megan Fox"
+      },
+      "rec_titles": [
+        "The Stuff",
+        "Tinker Tailor Soldier Spy",
+        "Maid in Manhattan",
+        "The Ghost Writer"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Stuff tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "political thriller",
+        "anchor_title": "The Princess and the Frog",
+        "constraints": {
+          "genre": "political thriller",
+          "writer": "Owen West",
+          "plot": "loss",
+          "actor": "Megan Fox",
+          "language": "French"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommended movie:\n\nBased on your preferences, \"Hitch\" would be a great choice. It's a political thriller starring Megan Fox and has a compelling plot about a mysterious encounter between Alfred Hitchcock and François Truffaut.",
+      "constraints": {
+        "genre": "political thriller",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The Stuff",
+        "writer": "Owen West",
+        "actor": "Megan Fox"
+      },
+      "rec_titles": [
+        "Hitch",
+        "The International",
+        "Waiting",
+        "Patriot Games"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "political thriller",
+        "anchor_title": "The Princess and the Frog",
+        "constraints": {
+          "genre": "political thriller",
+          "writer": "Owen West",
+          "plot": "loss",
+          "actor": "Megan Fox",
+          "language": "French"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation based on the user's constraints:\n\n\"Considering the political thriller genre and the involvement of Megan Fox and Owen West, 'Valkyrie' or 'The Mask' might be worth checking out.\"",
+      "constraints": {
+        "genre": "political thriller",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "The Stuff",
+        "writer": "Owen West",
+        "actor": "Megan Fox"
+      },
+      "rec_titles": [
+        "Valkyrie",
+        "Shooter",
+        "Jennifer's Body",
+        "The Mask"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Chuck Russell? That feels deeper than I thought. (I’m thinking of The Mask.)",
+      "user_meta": {
+        "turn": 20,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Chuck Russell",
+        "anchor_title": "Dancer in the Dark",
+        "constraints": {
+          "genre": "political thriller",
+          "writer": "Owen West",
+          "plot": "loss",
+          "actor": "Megan Fox",
+          "language": "French",
+          "director": "Chuck Russell"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 20,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "director",
+          "bridge_value": "Chuck Russell",
+          "from_anchor": "The Princess and the Frog",
+          "to_anchor": "Dancer in the Dark"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation based on the user's preferences:\n\n\"If you're looking for something with a similar tone to The Mask, but with a more nuanced and complex plot, consider 'Proof of Life' (2000). It's a thought-provoking political thriller that explores the dark underbelly of a seemingly idyllic community.\"",
+      "constraints": {
+        "genre": "political thriller",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "The Mask",
+        "writer": "Owen West",
+        "actor": "Megan Fox",
+        "director": "Chuck Russell"
+      },
+      "rec_titles": [
+        "Downfall",
+        "Restless",
+        "Proof of Life",
+        "Psychic Experiment"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 21,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Chuck Russell",
+        "anchor_title": "Dancer in the Dark",
+        "constraints": {
+          "genre": "political thriller",
+          "writer": "Owen West",
+          "plot": "loss",
+          "actor": "Megan Fox",
+          "language": "French",
+          "director": "Chuck Russell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here are the recommendations you requested:\n\n- **The Constant Gardener (2001)**: This movie tells the story of a widower's quest for answers about his wife's death. The film stars Pete Postlethwaite, Gerard McSorley, Ralph Fiennes, Rachel Weisz, Donald Sumpter, and Donald Sumpter.\n\n- **Turbo (2013)**: This film tells the story of a freak accident that might just help an everyday garden snail achieve his biggest dream: winning the Indy 500. The film stars Ben Schwartz, Ben Schwartz, Snoop Dogg, Snoop Dogg, Kurtwood Smith, Ryan Reynolds, Ryan Reynolds.\n\n- **Braveheart (1995)**: This film tells the story of Chief Standing Rock's tribe fighting to protect their fishing grounds from a canning corporation. The film stars Gerard McSorley, David O'Hara, Angus Macfadyen, Catherine McCormack, Michael Byrne, Brendan Gleeson, Mhairi Calvey, Patrick McGoohan, Patrick McGoohan, James Robinson, Mel Gibson, Alun Armstrong.",
+      "constraints": {
+        "genre": "political thriller",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "writer": "Owen West",
+        "actor": "Megan Fox",
+        "director": "Chuck Russell"
+      },
+      "rec_titles": [
+        "The Constant Gardener",
+        "Turbo",
+        "Braveheart",
+        "Desolation Angels"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Tron. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Chuck Russell",
+        "anchor_title": "Dancer in the Dark",
+        "constraints": {
+          "genre": "political thriller",
+          "writer": "Owen West",
+          "plot": "loss",
+          "actor": "Megan Fox",
+          "language": "French",
+          "director": "Chuck Russell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommendation you requested:\n\nGiven the user's preference for political thrillers with interesting characters, I would recommend \"Annie Hall\". The film explores a complex relationship between a divorced couple and their aspiring nightclub singer, featuring a stellar cast including Colleen Dewhurst and Tracey Walter.",
+      "constraints": {
+        "genre": "political thriller",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Tron",
+        "writer": "Owen West",
+        "actor": "Megan Fox",
+        "director": "Chuck Russell"
+      },
+      "rec_titles": [
+        "Uptown Girls",
+        "Annie Hall",
+        "Interview with the Assassin",
+        "The International"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Leonard Roberts. Hmm, I didn’t expect that vibe. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 23,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Leonard Roberts",
+        "anchor_title": "The Man in the Iron Mask",
+        "constraints": {
+          "genre": "political thriller",
+          "writer": "Owen West",
+          "plot": "loss",
+          "actor": "Leonard Roberts",
+          "language": "English",
+          "director": "Chuck Russell"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 23,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Dancer in the Dark",
+          "to_anchor": "The Man in the Iron Mask"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response:\n\nThe user's preference for Leonard Roberts's political thriller shines through in the suggestions. \"The X Files\" and \"I Am Legend\" perfectly capture the essence of his genre, with their conspiracies and enigmatic protagonists. \"The Missing\" offers a darker and more suspenseful experience, while \"Babel\" presents a unique blend of science fiction and fantasy.",
+      "constraints": {
+        "genre": "political thriller",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "X",
+        "writer": "Owen West",
+        "actor": "Leon",
+        "director": "Chuck Russell"
+      },
+      "rec_titles": [
+        "The X Files",
+        "The Missing",
+        "Babel",
+        "I Am Legend"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Leonard Roberts",
+        "anchor_title": "The Man in the Iron Mask",
+        "constraints": {
+          "genre": "political thriller",
+          "writer": "Owen West",
+          "plot": "loss",
+          "actor": "Leonard Roberts",
+          "language": "English",
+          "director": "Chuck Russell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a suggestion based on the user's preferences:\n\nBased on your interest in a political thriller starring Leon, Chuck Russell, and Owen West, consider checking out \"The Deep End of the Ocean\" (1996). This film explores the impact of a kidnapping on a family and the complex dynamics within the community.",
+      "constraints": {
+        "genre": "political thriller",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "writer": "Owen West",
+        "actor": "Leon",
+        "director": "Chuck Russell"
+      },
+      "rec_titles": [
+        "The Deep End of the Ocean",
+        "Donnie Brasco",
+        "The Stuff",
+        "The Constant Gardener"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Leonard Roberts",
+        "anchor_title": "The Man in the Iron Mask",
+        "constraints": {
+          "genre": "political thriller",
+          "writer": "Owen West",
+          "plot": "loss",
+          "actor": "Leonard Roberts",
+          "language": "English",
+          "director": "Chuck Russell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user's preference for political thrillers and action-packed films with intense plotlines suggests that either **'Passion'** or **'The Odyssey'** would be a good choice for them. Both films deliver high-octane action, compelling narratives, and thought-provoking themes.",
+      "constraints": {
+        "genre": "political thriller",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "writer": "Owen West",
+        "actor": "Leon",
+        "director": "Chuck Russell"
+      },
+      "rec_titles": [
+        "Passion",
+        "Waiting",
+        "RED",
+        "The Odyssey"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Her. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Leonard Roberts",
+        "anchor_title": "The Man in the Iron Mask",
+        "constraints": {
+          "genre": "political thriller",
+          "writer": "Owen West",
+          "plot": "loss",
+          "actor": "Leonard Roberts",
+          "language": "English",
+          "director": "Chuck Russell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a potential recommendation:\n\nThe Baader Meinhof Complex offers a gripping glimpse into the horrors of extremism and the fight against terrorism in a turbulent era. The film's complex narrative and thought-provoking themes will appeal to viewers who enjoy political thrillers.",
+      "constraints": {
+        "genre": "political thriller",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Her",
+        "writer": "Owen West",
+        "actor": "Leon",
+        "director": "Chuck Russell"
+      },
+      "rec_titles": [
+        "The Baader Meinhof Complex",
+        "V for Vendetta",
+        "Total Recall",
+        "Jumper"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Leonard Roberts",
+        "anchor_title": "The Man in the Iron Mask",
+        "constraints": {
+          "genre": "political thriller",
+          "writer": "Owen West",
+          "plot": "loss",
+          "actor": "Leonard Roberts",
+          "language": "English",
+          "director": "Chuck Russell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response you requested:\n\nBased on your preferences, you might enjoy movies like \"The Baader Meinhof Complex\" or \"The Ghost Writer\". \"The Baader Meinhof Complex\" offers a gripping look at a terrorist group's operations, while \"The Ghost Writer\" features a haunting tale of a ghost writer uncovering dark secrets.",
+      "constraints": {
+        "genre": "political thriller",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Her",
+        "writer": "Owen West",
+        "actor": "Leon",
+        "director": "Chuck Russell"
+      },
+      "rec_titles": [
+        "The Baader Meinhof Complex",
+        "The Ghost Writer",
+        "Bats",
+        "WarGames"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Leonard Roberts",
+        "anchor_title": "The Man in the Iron Mask",
+        "constraints": {
+          "genre": "political thriller",
+          "writer": "Owen West",
+          "plot": "loss",
+          "actor": "Leonard Roberts",
+          "language": "English",
+          "director": "Chuck Russell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here is the response:\n\nConsidering the user's preferences, \"Proof of Life\" and \"The World's End\" seem to be the most suitable recommendations. \"Proof of Life\" presents a gripping story of a husband held captive, while \"The World's End\" showcases a group of friends facing a dire situation.",
+      "constraints": {
+        "genre": "political thriller",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "Her",
+        "writer": "Owen West",
+        "actor": "Leon",
+        "director": "Chuck Russell"
+      },
+      "rec_titles": [
+        "Proof of Life",
+        "Blow Out",
+        "Truly Madly Guilty",
+        "The World's End"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Her? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Leonard Roberts",
+        "anchor_title": "The Man in the Iron Mask",
+        "constraints": {
+          "genre": "political thriller",
+          "writer": "Owen West",
+          "plot": "loss",
+          "actor": "Leonard Roberts",
+          "language": "English",
+          "director": "Chuck Russell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the suggested response:\n\nThe user's preference for a political thriller with Leon, Chuck Russell, and Owen West seems to lean towards \"Find Me Guilty\" or \"Prometheus\". Both movies offer thrilling plots about high-stakes legal battles and philosophical inquiries into ethics and humanity.",
+      "constraints": {
+        "genre": "political thriller",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "Her",
+        "writer": "Owen West",
+        "actor": "Leon",
+        "director": "Chuck Russell"
+      },
+      "rec_titles": [
+        "Find Me Guilty",
+        "Chain Reaction",
+        "Prometheus",
+        "Taken"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Her. I want to try something more western—I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 30,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "western",
+        "anchor_title": "The Piano Teacher",
+        "constraints": {
+          "genre": "western",
+          "writer": "Owen West",
+          "plot": "loss",
+          "actor": "Leonard Roberts",
+          "language": "English",
+          "director": "Chuck Russell"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 30,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "relationships",
+          "from_anchor": "The Man in the Iron Mask",
+          "to_anchor": "The Piano Teacher"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation based on the user's preferences:\n\nThanks for all the detail on Her. I want to try something more western—I can’t decide if I’d enjoy it or be scared by it. How about \"The Hateful Eight\" with Samuel L. Jackson? It's a classic spaghetti western that's full of action and suspense.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Her",
+        "writer": "Owen West",
+        "actor": "Leon",
+        "director": "Chuck Russell"
+      },
+      "rec_titles": [
+        "Old Yeller",
+        "Posse",
+        "The Hateful Eight",
+        "Escape from New York"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "western",
+        "anchor_title": "The Piano Teacher",
+        "constraints": {
+          "genre": "western",
+          "writer": "Owen West",
+          "plot": "loss",
+          "actor": "Leonard Roberts",
+          "language": "English",
+          "director": "Chuck Russell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response you requested:\n\nJust checking—do you have more recommendations like that? How about a gripping Western like \"True Crime\", a hilarious heist movie like \"The Swindle\", or a boxing drama like \"The Fighter\"? Each film offers a unique perspective on the Wild West and its characters.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "writer": "Owen West",
+        "actor": "Leon",
+        "director": "Chuck Russell"
+      },
+      "rec_titles": [
+        "True Crime",
+        "The Swindle",
+        "The Fighter",
+        "The Hateful Eight"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "western",
+        "anchor_title": "The Piano Teacher",
+        "constraints": {
+          "genre": "western",
+          "writer": "Owen West",
+          "plot": "loss",
+          "actor": "Leonard Roberts",
+          "language": "English",
+          "director": "Chuck Russell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response you requested:\n\nThe user's preference for a western movie featuring Leon, Chuck Russell, and Owen West suggests \"Old Yeller\" or \"Butch Cassidy and the Sundance Kid\". Both movies boast epic Western adventures with lovable characters and thrilling plots.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "You",
+        "writer": "Owen West",
+        "actor": "Leon",
+        "director": "Chuck Russell"
+      },
+      "rec_titles": [
+        "Old Yeller",
+        "The Homesman",
+        "Unforgiven",
+        "Butch Cassidy and the Sundance Kid"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "western",
+        "anchor_title": "The Piano Teacher",
+        "constraints": {
+          "genre": "western",
+          "writer": "Owen West",
+          "plot": "loss",
+          "actor": "Leonard Roberts",
+          "language": "English",
+          "director": "Chuck Russell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a suggestion:\n\nBased on the user's preference for western movies, the movie 'The Horse Whisperer' might pique their interest. It features a western setting, a troubled mother-daughter relationship, and a unique horse trainer who helps the daughter overcome her fears and find her inner strength.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "You",
+        "writer": "Owen West",
+        "actor": "Leon",
+        "director": "Chuck Russell"
+      },
+      "rec_titles": [
+        "500 Days of Summer",
+        "The Horse Whisperer",
+        "Bats",
+        "Bleak House"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Michael Cunningham. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 34,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Michael Cunningham",
+        "anchor_title": "Dinner for Schmucks",
+        "constraints": {
+          "genre": "western",
+          "writer": "Owen West",
+          "plot": "wild",
+          "actor": "Michael Cunningham",
+          "language": "English",
+          "director": "Chuck Russell"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 34,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "wild",
+          "from_anchor": "The Piano Teacher",
+          "to_anchor": "Dinner for Schmucks"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response:\n\nThe user's preference for a movie with Michael Cunningham suggests something with a darker tone or subject matter. 'The Future of Us' or 'Armageddon' might be more suitable choices.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "RED",
+        "writer": "Michael Cunningham",
+        "actor": "Michael Cunningham",
+        "director": "Chuck Russell"
+      },
+      "rec_titles": [
+        "The Future of Us",
+        "Armageddon",
+        "Wheelmen",
+        "Vampires"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michael Cunningham",
+        "anchor_title": "Dinner for Schmucks",
+        "constraints": {
+          "genre": "western",
+          "writer": "Owen West",
+          "plot": "wild",
+          "actor": "Michael Cunningham",
+          "language": "English",
+          "director": "Chuck Russell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a 1-3 sentence recommendation:\n\nIf you're looking for a thrilling western with historical significance, check out \"The Alamo\" starring Patrick Wayne and Jim Bowie.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "writer": "Michael Cunningham",
+        "actor": "Michael Cunningham",
+        "director": "Chuck Russell"
+      },
+      "rec_titles": [
+        "The Alamo",
+        "The Scorpion King",
+        "Unforgiven",
+        "Annie Hall"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michael Cunningham",
+        "anchor_title": "Dinner for Schmucks",
+        "constraints": {
+          "genre": "western",
+          "writer": "Owen West",
+          "plot": "wild",
+          "actor": "Michael Cunningham",
+          "language": "English",
+          "director": "Chuck Russell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here is the response you requested:\n\nThe user's preference indicates a strong interest in Western films. Among the options you suggested, \"The Man from Snowy River\" and \"The Quick and the Dead\" seem to be the best fits based on their plot elements and cast. Both movies offer thrilling narratives about cowboys and gunfighters facing dangerous situations and overcoming adversity.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "You",
+        "writer": "Michael Cunningham",
+        "actor": "Michael Cunningham",
+        "director": "Chuck Russell"
+      },
+      "rec_titles": [
+        "The Man from Snowy River",
+        "The Quick and the Dead",
+        "Wild Wild West",
+        "Motives"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Quick and the Dead? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michael Cunningham",
+        "anchor_title": "Dinner for Schmucks",
+        "constraints": {
+          "genre": "western",
+          "writer": "Owen West",
+          "plot": "wild",
+          "actor": "Michael Cunningham",
+          "language": "English",
+          "director": "Chuck Russell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's my recommendation:\n\nThe movie that best matches your preferences is \"The Secret\". It's a psychological thriller about a stranger's impact on a couple's life. The plot is intriguing and keeps you guessing until the very end.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "what",
+          "quick"
+        ],
+        "name": "The Quick and the Dead",
+        "writer": "Michael Cunningham",
+        "actor": "Michael Cunningham",
+        "director": "Chuck Russell"
+      },
+      "rec_titles": [
+        "The Newton Boys",
+        "I Heart Huckabees",
+        "Prometheus",
+        "The Secret"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Psycho tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michael Cunningham",
+        "anchor_title": "Dinner for Schmucks",
+        "constraints": {
+          "genre": "western",
+          "writer": "Owen West",
+          "plot": "wild",
+          "actor": "Michael Cunningham",
+          "language": "English",
+          "director": "Chuck Russell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Hmm, sounds like you're looking for something with darker undertones and suspenseful plot. Based on your preference, I would recommend either \"The Expendables 2\" or \"September Dawn\". \"The Expendables 2\" offers a gritty revenge story with epic action, while \"September Dawn\" is a poignant love story with a strong sense of desperation.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Psycho",
+        "writer": "Michael Cunningham",
+        "actor": "Michael Cunningham",
+        "director": "Chuck Russell"
+      },
+      "rec_titles": [
+        "The Expendables 2",
+        "September Dawn",
+        "Chain Reaction",
+        "The Taming of the Shrew"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Expendables. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michael Cunningham",
+        "anchor_title": "Dinner for Schmucks",
+        "constraints": {
+          "genre": "western",
+          "writer": "Owen West",
+          "plot": "wild",
+          "actor": "Michael Cunningham",
+          "language": "English",
+          "director": "Chuck Russell"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommended movie based on the user's preferences:\n\nBased on your preference for westerns with morally complex characters, I would recommend **Unleashed** (2005). The movie explores the struggle of a man trapped in a cycle of violence and the consequences of his choices.\n\nLet me know if you have any other questions!",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Expendables",
+        "writer": "Michael Cunningham",
+        "actor": "Michael Cunningham",
+        "director": "Chuck Russell"
+      },
+      "rec_titles": [
+        "Unleashed",
+        "District 9",
+        "The Assassination of Jesse James by the Coward Robert Ford",
+        "The Last Stand"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Zak Penn? That feels deeper than I thought. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 40,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Zak Penn",
+        "anchor_title": "The Invasion",
+        "constraints": {
+          "genre": "western",
+          "writer": "Owen West",
+          "plot": "night",
+          "actor": "Michael Cunningham",
+          "language": "English",
+          "director": "Zak Penn"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 40,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "night",
+          "from_anchor": "Dinner for Schmucks",
+          "to_anchor": "The Invasion"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here is the recommended movie based on the user's preferences:\n\n**Trees Lounge**\n\nTrees Lounge is a melancholic and contemplative film about a bar owner dealing with regret and loneliness. The movie's quiet pace and beautiful cinematography make it a perfect watch for those seeking a film that is both deeply moving and visually stunning.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Deep",
+        "writer": "Zak Penn",
+        "actor": "Zak Penn",
+        "director": "Zak Penn"
+      },
+      "rec_titles": [
+        "Trees Lounge",
+        "True Grit",
+        "The Queen",
+        "Once Upon a Time in Mexico"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Zak Penn",
+        "anchor_title": "The Invasion",
+        "constraints": {
+          "genre": "western",
+          "writer": "Owen West",
+          "plot": "night",
+          "actor": "Michael Cunningham",
+          "language": "English",
+          "director": "Zak Penn"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation based on the user's preferences:\n\nBased on your cues, I would recommend the western movie \"Tooth Fairy\". This movie features a young boy who gets more than he bargained for when he tries to wait up and catch the Tooth Fairy in the act.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "writer": "Zak Penn",
+        "actor": "Zak Penn",
+        "director": "Zak Penn"
+      },
+      "rec_titles": [
+        "Tooth Fairy",
+        "Southland Tales",
+        "Hesher",
+        "Dinner for Schmucks"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Tooth Fairy tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Zak Penn",
+        "anchor_title": "The Invasion",
+        "constraints": {
+          "genre": "western",
+          "writer": "Owen West",
+          "plot": "night",
+          "actor": "Michael Cunningham",
+          "language": "English",
+          "director": "Zak Penn"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommended movie:\n\nThe Twilight Saga: New Moon is an action movie about a young thief seeking revenge for his brother's death. It's suspenseful and thrilling, perfect for someone who enjoys a good mystery.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Tooth Fairy",
+        "writer": "Zak Penn",
+        "actor": "Zak Penn",
+        "director": "Zak Penn"
+      },
+      "rec_titles": [
+        "The Twilight Saga: New Moon",
+        "Last Action Hero",
+        "The Mask of Zorro",
+        "The Yearling"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Zak Penn",
+        "anchor_title": "The Invasion",
+        "constraints": {
+          "genre": "western",
+          "writer": "Owen West",
+          "plot": "night",
+          "actor": "Michael Cunningham",
+          "language": "English",
+          "director": "Zak Penn"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the response you requested:\n\nSince you're looking for movies with a western theme and sound, I recommend \"Jane Got a Gun\" (2016) with its intriguing plot about a woman seeking help to save her outlaw husband from a gang.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us",
+        "writer": "Zak Penn",
+        "actor": "Zak Penn",
+        "director": "Zak Penn"
+      },
+      "rec_titles": [
+        "Jane Got a Gun",
+        "Quigley Down Under",
+        "Last Action Hero",
+        "Vampyres"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Daryl Sabara. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 44,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Daryl Sabara",
+        "anchor_title": "Zoolander 2",
+        "constraints": {
+          "genre": "western",
+          "writer": "Owen West",
+          "plot": "whose",
+          "actor": "Daryl Sabara",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 44,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "whose",
+          "from_anchor": "The Invasion",
+          "to_anchor": "Zoolander 2"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a 1-3 sentence recommendation:\n\nIf you're looking for something with a more complex and enigmatic plot, \"White Night\" with its perplexing case and hauntingly good performances is worth checking out.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Ted",
+        "writer": "Zak Penn",
+        "actor": "Daryl Sabara",
+        "director": "Zak Penn"
+      },
+      "rec_titles": [
+        "White Night",
+        "Torn Curtain",
+        "Black Knight",
+        "Anyone But You"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Daryl Sabara",
+        "anchor_title": "Zoolander 2",
+        "constraints": {
+          "genre": "western",
+          "writer": "Owen West",
+          "plot": "whose",
+          "actor": "Daryl Sabara",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommended movie:\n\n**Annie Hall** is a poignant and melancholic romantic comedy about a man reflecting on his tumultuous past. The film's themes of divorce, regret, and redemption are relatable to the user's preferences.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "writer": "Zak Penn",
+        "actor": "Daryl Sabara",
+        "director": "Zak Penn"
+      },
+      "rec_titles": [
+        "Annie Hall",
+        "Jane Got a Gun",
+        "Shutter",
+        "Butch Cassidy and the Sundance Kid"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Daryl Sabara",
+        "anchor_title": "Zoolander 2",
+        "constraints": {
+          "genre": "western",
+          "writer": "Owen West",
+          "plot": "whose",
+          "actor": "Daryl Sabara",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sounds like you're looking for something with a western vibe. How about \"Tracker\" (2010) starring Jed Brophy and Ray Winstone? It's a gritty crime drama with a romantic subplot.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "writer": "Zak Penn",
+        "actor": "Daryl Sabara",
+        "director": "Zak Penn"
+      },
+      "rec_titles": [
+        "Tracker",
+        "The Assassination of Jesse James by the Coward Robert Ford",
+        "What If...",
+        "The Polar Express"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Daryl Sabara",
+        "anchor_title": "Zoolander 2",
+        "constraints": {
+          "genre": "western",
+          "writer": "Owen West",
+          "plot": "whose",
+          "actor": "Daryl Sabara",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a 1-3 sentence recommendation:\n\nIf you enjoyed the unusual storyline of \"3:10 to Yuma\" or the unpredictable characters in \"Us\", then you might appreciate \"Zack and Miri Make a Porno\".",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "Us",
+        "writer": "Zak Penn",
+        "actor": "Daryl Sabara",
+        "director": "Zak Penn"
+      },
+      "rec_titles": [
+        "3:10 to Yuma",
+        "Us",
+        "Zack and Miri Make a Porno",
+        "Gunless"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of RED. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Daryl Sabara",
+        "anchor_title": "Zoolander 2",
+        "constraints": {
+          "genre": "western",
+          "writer": "Owen West",
+          "plot": "whose",
+          "actor": "Daryl Sabara",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here is the response you requested:\n\nBased on your preferences, I would recommend \"The Mask of Zorro\" (1998) or \"It's a Wonderful Life\" (1946). Both movies feature the soundscape you described, with the former starring Daryl Sabara in a western film and the latter starring the iconic duo of Frank Faylen and Lionel Barrymore.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "writer": "Zak Penn",
+        "actor": "Daryl Sabara",
+        "director": "Zak Penn"
+      },
+      "rec_titles": [
+        "Smokin' Aces",
+        "The Mask of Zorro",
+        "The Bounty Hunter",
+        "It's a Wonderful Life"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of It's a Wonderful Life? That sounds intriguing.",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Daryl Sabara",
+        "anchor_title": "Zoolander 2",
+        "constraints": {
+          "genre": "western",
+          "writer": "Owen West",
+          "plot": "whose",
+          "actor": "Daryl Sabara",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommendation you requested:\n\n\"If you're looking for something with a similar western vibe with a focus on redemption and revenge, consider 'Rango' starring Russell Crowe. It's a visually stunning and emotionally resonant film that explores themes of love, friendship, and the complexities of violence.\"",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "what",
+          "wonderful"
+        ],
+        "name": "It's a Wonderful Life",
+        "writer": "Zak Penn",
+        "actor": "Daryl Sabara",
+        "director": "Zak Penn"
+      },
+      "rec_titles": [
+        "Rango",
+        "Taken",
+        "Posse",
+        "Django Unchained"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Frank Darabont? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Rango.)",
+      "user_meta": {
+        "turn": 50,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Frank Darabont",
+        "anchor_title": "The Deer Hunter",
+        "constraints": {
+          "genre": "western",
+          "writer": "Owen West",
+          "plot": "whose",
+          "actor": "Johnny Depp",
+          "language": "English",
+          "director": "Frank Darabont"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 50,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Johnny Depp",
+          "from_anchor": "Zoolander 2",
+          "to_anchor": "The Deer Hunter"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the reply:\n\nBased on the user's preference for westerns, the plot about the gambler-turned-priest in \"The Shawshank Redemption\" or the morally complex revenge story in \"Jane Got a Gun\" might resonate with them.",
+      "constraints": {
+        "genre": "western",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Rango",
+        "writer": "Frank Darabont",
+        "actor": "Daryl Sabara",
+        "director": "Frank Darabont"
+      },
+      "rec_titles": [
+        "The Shawshank Redemption",
+        "Jane Got a Gun",
+        "The Seduction of Joe Tynan",
+        "The Warrior's Way"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 6,
+      "from_focus": "genre",
+      "to_focus": "writer",
+      "bridge_field": "plot",
+      "bridge_value": "loss",
+      "from_anchor": "Into the Wild",
+      "to_anchor": "The Baader Meinhof Complex"
+    },
+    {
+      "turn": 11,
+      "from_focus": "writer",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "French",
+      "from_anchor": "The Baader Meinhof Complex",
+      "to_anchor": "Ratatouille"
+    },
+    {
+      "turn": 14,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "drinks",
+      "from_anchor": "Ratatouille",
+      "to_anchor": "The Princess and the Frog"
+    },
+    {
+      "turn": 20,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "director",
+      "bridge_value": "Chuck Russell",
+      "from_anchor": "The Princess and the Frog",
+      "to_anchor": "Dancer in the Dark"
+    },
+    {
+      "turn": 23,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Dancer in the Dark",
+      "to_anchor": "The Man in the Iron Mask"
+    },
+    {
+      "turn": 30,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "relationships",
+      "from_anchor": "The Man in the Iron Mask",
+      "to_anchor": "The Piano Teacher"
+    },
+    {
+      "turn": 34,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "wild",
+      "from_anchor": "The Piano Teacher",
+      "to_anchor": "Dinner for Schmucks"
+    },
+    {
+      "turn": 40,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "night",
+      "from_anchor": "Dinner for Schmucks",
+      "to_anchor": "The Invasion"
+    },
+    {
+      "turn": 44,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "whose",
+      "from_anchor": "The Invasion",
+      "to_anchor": "Zoolander 2"
+    },
+    {
+      "turn": 50,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Johnny Depp",
+      "from_anchor": "Zoolander 2",
+      "to_anchor": "The Deer Hunter"
+    }
+  ]
+}

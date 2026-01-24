@@ -11,7 +11,7 @@
         "stage": "details",
         "focus_field": "genre",
         "focus_value": "comedy-drama",
-        "anchor_title": "Attachments",
+        "anchor_title": "The Kid",
         "constraints": {
           "genre": "comedy-drama"
         },
@@ -21,9 +21,9 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "Of course! Based on your preference for a comedy-drama movie, I would recommend \"Real Women Have Curves\" and \"The World According to Garp\". Both of these movies offer a unique blend of humor and drama, with strong performances from the cast. In \"Real Women Have Curves\", you'll find a relatable and heartwarming story about self-discovery and family, while \"The World According to Garp\" is a quirky and thought-provoking comedy-drama that explores themes of identity, love, and tragedy.",
+      "text": "Sure, I'd be happy to help! Based on the user's preference for a comedy-drama movie, I recommend \"The Truman Show\" and \"Love Ranch\". Both of these movies offer a unique blend of humor and drama that are sure to satisfy the user's preferences. In \"The Truman Show\", Ed Harris plays a man who discovers his entire life is being broadcast on a reality TV show, while in \"Love Ranch\", Emily Rios and Melora Walters star as a married couple who open the first legal brothel in Nevada.",
       "constraints": {
-        "genre": "drama",
+        "genre": "comedy-drama",
         "plot": [
           "comedy",
           "drama"
@@ -31,57 +31,68 @@
         "name": "You"
       },
       "rec_titles": [
-        "Real Women Have Curves",
-        "Remember the Titans",
-        "The World According to Garp",
-        "21 Jump Street"
+        "The Perez Family",
+        "The Truman Show",
+        "The Merchant of Venice",
+        "Love Ranch"
       ]
     },
     {
       "speaker": "USER",
-      "text": "Actually, now that I think about it, I might want the opposite.",
+      "text": "Maybe we could find more movies with Scout Taylor-Compton. That sounds intriguing. (I’m thinking of Love Ranch.)",
       "user_meta": {
         "turn": 2,
-        "stage": "details",
-        "focus_field": "genre",
-        "focus_value": "comedy-drama",
-        "anchor_title": "Attachments",
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Scout Taylor-Compton",
+        "anchor_title": "The Station Agent",
         "constraints": {
-          "genre": "comedy-drama"
+          "genre": "comedy-drama",
+          "actor": "Scout Taylor-Compton"
         },
-        "shift_event": false,
-        "shift_event_obj": null
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Scout Taylor-Compton",
+          "from_anchor": "The Kid",
+          "to_anchor": "The Station Agent"
+        }
       }
     },
     {
       "speaker": "SYSTEM",
-      "text": "Of course! Based on your preference for a drama movie with plot keywords \"actually\" and \"think\", I recommend \"Take Shelter\" starring Michael Shannon and Jessica Chastain. This movie explores themes of apocalyptic visions and the struggle to protect one's family, which may resonate with your desire for a thought-provoking film. Alternatively, you might enjoy \"The Dead Zone\", starring David Ogden Stiers and Nicole de Boer, which follows a man who discovers he has psychic abilities to foresee future events and must use them to prevent a tragic event from occurring.",
+      "text": "User constraint: The user is interested in finding movies with Scout Taylor-Compton, specifically \"Love Ranch\". Based on their preference for love and actor Scout Taylor-Compton, I recommend \"Love Actually\" and \"Wedding Crashers\". Both of these movies feature Scout Taylor-Compton in prominent roles and offer a blend of romance and comedy that the user may enjoy.",
       "constraints": {
-        "genre": "drama",
+        "genre": "love",
         "plot": [
-          "actually",
-          "think"
+          "could",
+          "find"
         ],
-        "name": "You"
+        "name": "Love Ranch",
+        "actor": "Scout Taylor-Compton"
       },
       "rec_titles": [
-        "I Am Legend",
-        "Take Shelter",
-        "The Dead Zone",
-        "The Gunman"
+        "Love Actually",
+        "The Lorax",
+        "The Constant Gardener",
+        "Wedding Crashers"
       ]
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of The Dead Zone. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "text": "Just checking—do you have more recommendations like that?",
       "user_meta": {
         "turn": 3,
         "stage": "details",
-        "focus_field": "genre",
-        "focus_value": "comedy-drama",
-        "anchor_title": "Attachments",
+        "focus_field": "actor",
+        "focus_value": "Scout Taylor-Compton",
+        "anchor_title": "The Station Agent",
         "constraints": {
-          "genre": "comedy-drama"
+          "genre": "comedy-drama",
+          "actor": "Scout Taylor-Compton"
         },
         "shift_event": false,
         "shift_event_obj": null
@@ -89,33 +100,232 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "Of course, I'd be happy to recommend some movies based on your preferences! \"The Baader Meinhof Complex\" and \"Captain Phillips\" are both intense dramas with strong performances from the actors. If you enjoy political intrigue and historical events, \"The Baader Meinhof Complex\" is a gripping look at Germany's Red Army Faction in the 1970s. On the other hand, \"Captain Phillips\" is a thrilling true story of piracy on the high seas starring Tom Hanks. Which one interests you most?",
+      "text": "Of course! The user has expressed a preference for movies in the romance genre, starring Scout Taylor-Compton, and with plots that include the words \"just\" and \"more\". Based on these constraints, I recommend \"The Fighter\" and \"Hopeless\". Both of these movies feature powerful performances from the cast, including Scout Taylor-Compton, and explore themes of love, relationships, and personal growth.",
       "constraints": {
-        "genre": "drama",
+        "genre": "love",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Scout Taylor-Compton"
+      },
+      "rec_titles": [
+        "The Fighter",
+        "Hopeless",
+        "Hesher",
+        "The Princess Diaries"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Scout Taylor-Compton",
+        "anchor_title": "The Station Agent",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Scout Taylor-Compton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - love, actor - Scout Taylor-Compton, and plot keywords - what, said.\nBased on these cues, I recommend \"Love Actually\" (2003) and \"Eve's Bayou\" (1997). Both of these movies explore themes of love and relationships in a thoughtful and emotional way, which seems to align with the user's preferences. \"Love Actually\" follows multiple couples in the lead-up to Christmas, while \"Eve's Bayou\" delves into the secrets and lies within an affluent family.",
+      "constraints": {
+        "genre": "love",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "You",
+        "actor": "Scout Taylor-Compton"
+      },
+      "rec_titles": [
+        "What If...",
+        "Wolfhound",
+        "Love Actually",
+        "Eve's Bayou"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on X. I want to try something more animal—still with English if possible. I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "animal",
+        "anchor_title": "Woman in Gold",
+        "constraints": {
+          "genre": "animal",
+          "actor": "Scout Taylor-Compton",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 5,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "The Station Agent",
+          "to_anchor": "Woman in Gold"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - animal, actor - Scout Taylor-Compton, language - English.\nBased on these cues, I recommend the movie \"Over the Hedge\" (2006) starring Scout Taylor-Compton. The movie is an animated adventure that follows a group of forest creatures as they navigate their new surroundings in a suburban sprawl. With a star-studded voice cast and a heartwarming story, this film is sure to delight viewers of all ages. Alternatively, \"I Heart Huckabees\" (2004) also starring Scout Taylor-Compton is another great option. This movie is a quirky comedy that explores the existential crises of a happy duo of detectives as they help others find meaning in their lives.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "RED",
+        "actor": "Scout Taylor-Compton",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Over the Hedge",
+        "Babylon A.D.",
+        "I Heart Huckabees",
+        "The Rosie Project"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "animal",
+        "anchor_title": "Woman in Gold",
+        "constraints": {
+          "genre": "animal",
+          "actor": "Scout Taylor-Compton",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I recommend \"Get Shorty\" and \"Hot Fuzz.\" Both movies offer a mix of humor and action that seems to align with their tastes. In \"Get Shorty,\" Miguel Sandoval and Alex Rocco star in a comedy about a mobster who travels to Hollywood to collect a debt, only to discover that the movie business is not so different from his current job. Meanwhile, \"Hot Fuss\" is an action-comedy that follows a London police sergeant who's transferred to a small village, where he must navigate a series of grisly murders while also dealing with a team of overachieving officers. Both movies are worth checking out if you enjoyed the actor or genre mentioned!",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Scout Taylor-Compton",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Get Shorty",
+        "The Break-Up",
+        "Star Wars: Episode V - The Empire Strikes Back",
+        "Hot Fuzz"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of London? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "animal",
+        "anchor_title": "Woman in Gold",
+        "constraints": {
+          "genre": "animal",
+          "actor": "Scout Taylor-Compton",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThe user is looking for a movie with a mood of London, featuring an actor named Scout Taylor-Compton, and is available in English language.\n\nBased on the provided constraints, I recommend \"Shattered\" (1973) starring Scout Taylor-Compton. The movie is a crime drama that follows two detectives as they take on a powerful Russian crime boss lady in London. With a unique blend of action and suspense, this movie should satisfy the user's preferences. Alternatively, \"The Andromeda Strain\" (1971) also starring Scout Taylor-Compton is a sci-fi thriller that takes place in London and features a team of scientists working to stop a deadly contagion.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "what",
+          "london"
+        ],
+        "name": "London",
+        "actor": "Scout Taylor-Compton",
+        "language": "English"
+      },
+      "rec_titles": [
+        "The Andromeda Strain",
+        "The Huntsman: Winter's War",
+        "Gunless",
+        "Shattered"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "animal",
+        "anchor_title": "Woman in Gold",
+        "constraints": {
+          "genre": "animal",
+          "actor": "Scout Taylor-Compton",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has expressed a preference for movies that feature animals, are starring Scout Taylor-Compton, and are in English. Based on these constraints, I recommend \"Northern Lights\" (1995) and \"I, Robot\" (1950). Both of these movies offer unique and captivating plots, with \"Northern Lights\" following a young man's journey through Sweden and \"I, Robot\" exploring the intersection of humanity and technology in a futuristic world.",
+      "constraints": {
+        "genre": "animal",
         "plot": [
           "like",
           "sound"
         ],
-        "name": "The Dead Zone"
+        "name": "Deep",
+        "actor": "Scout Taylor-Compton",
+        "language": "English"
       },
       "rec_titles": [
-        "The Baader Meinhof Complex",
-        "Tombstone",
-        "Captain Phillips",
-        "Original Sin"
+        "Northern Lights",
+        "Cutting for Stone",
+        "Quantum of Solace",
+        "I, Robot"
       ]
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Her tell? That feels deeper than I thought.",
+      "text": "What kind of story does Us tell? That sounds intriguing.",
       "user_meta": {
-        "turn": 4,
+        "turn": 9,
         "stage": "details",
         "focus_field": "genre",
-        "focus_value": "comedy-drama",
-        "anchor_title": "Attachments",
+        "focus_value": "animal",
+        "anchor_title": "Woman in Gold",
         "constraints": {
-          "genre": "comedy-drama"
+          "genre": "animal",
+          "actor": "Scout Taylor-Compton",
+          "language": "English"
         },
         "shift_event": false,
         "shift_event_obj": null
@@ -123,30 +333,578 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "Of course! Based on your interest in \"Her,\" I think you might enjoy the film \"Eternal Sunshine of the Spotless Mind.\" It's a beautiful and thought-provoking drama that explores the complexities of human relationships through an innovative narrative structure. Starring Jim Carrey and Kate Winslet, it's a poignant and emotional journey that I think you'll find resonates with your interests.",
+      "text": "User preference cues: genre = animal, actor = Scout Taylor-Compton, language = English, plot keywords = what, kind.\nBased on these cues, I recommend the movie \"A Little Princess\" (1905) starring Shirley Temple. The movie is a heartwarming tale of a young girl who discovers she has a special talent and learns to believe in herself. With its mix of drama, fantasy, and adventure elements, it should appeal to fans of Scout Taylor-Compton's acting style and the user's interest in stories about believing in oneself.\nAlternatively, I suggest \"Stuart Little 2\" (2002) starring Marc John Jefferies and Hugh Laurie. This movie follows the adventures of a young boy and his best friend, a talking mouse named Stuart, as they go on a rescue mission across town. With its mix of comedy, drama, and adventure elements, it should be enjoyable for fans of Scout Taylor-Compton's acting style and the user's interest in stories about friendship and teamwork.",
       "constraints": {
-        "genre": "drama",
+        "genre": "animal",
         "plot": [
           "what",
           "kind"
         ],
-        "name": "Her"
+        "name": "Us",
+        "actor": "Scout Taylor-Compton",
+        "language": "English"
       },
       "rec_titles": [
-        "Her"
+        "A Little Princess",
+        "Harry Potter and the Goblet of Fire",
+        "Blood Work",
+        "Stuart Little 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Emmy Rossum. That sounds intriguing. (I’m thinking of Stuart Little.)",
+      "user_meta": {
+        "turn": 10,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Emmy Rossum",
+        "anchor_title": "Purple Violets",
+        "constraints": {
+          "genre": "animal",
+          "actor": "Emmy Rossum",
+          "language": "English",
+          "plot": "charming"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 10,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "charming",
+          "from_anchor": "Woman in Gold",
+          "to_anchor": "Purple Violets"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - animal, Actor - Emmy Rossum, Language - English.\nBased on these constraints, I recommend \"Player Piano\" and \"Rogues\". Both movies feature Emmy Rossum in leading roles, and have unique plots that may appeal to the user's preferences. In \"Player Piano\", Rarity must navigate a challenging situation with the help of her friends, while \"Rogues\" presents a thought-provoking story of a mind-control experiment gone wrong.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Stuart Little",
+        "actor": "Emmy Rossum",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Player Piano",
+        "1982",
+        "Collateral Damage",
+        "Rogues"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Emmy Rossum",
+        "anchor_title": "Purple Violets",
+        "constraints": {
+          "genre": "animal",
+          "actor": "Emmy Rossum",
+          "language": "English",
+          "plot": "charming"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I would recommend \"Kung Pow: Enter the Fist\" and \"The Amityville Horror.\" Both movies offer a unique blend of action, suspense, and horror elements that seem to align with the user's tastes. In \"Kung Pow,\" viewers can enjoy the hilarious performance of Jennifer Tung and Simon Rhee as they embark on a revenge-filled journey, while \"The Amityville Horror\" offers a chilling tale of supernatural forces that will keep users on the edge of their seats.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Emmy Rossum",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Kung Pow: Enter the Fist",
+        "The Sun Also Rises",
+        "The Amityville Horror",
+        "Oliver Twist"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Kung Pow: Enter the Fist tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Emmy Rossum",
+        "anchor_title": "Purple Violets",
+        "constraints": {
+          "genre": "animal",
+          "actor": "Emmy Rossum",
+          "language": "English",
+          "plot": "charming"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - animal, actor - Emmy Rossum, language - English.\nBased on these constraints, I recommend \"The Matrix\" and \"Revolutionary Road\". Both movies feature thought-provoking plots and talented actors, including Emmy Rossum in a supporting role. In \"The Matrix\", Neo (Keanu Reeves) discovers a shocking truth about the world he knows, while in \"Revolutionary Road\", a young couple struggles to come to terms with their personal problems in the 1950s. Both movies offer a unique and engaging viewing experience.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "actor": "Emmy Rossum",
+        "language": "English"
+      },
+      "rec_titles": [
+        "The Matrix",
+        "Predators",
+        "A Midsummer Night's Dream",
+        "Revolutionary Road"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Matrix. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Emmy Rossum",
+        "anchor_title": "Purple Violets",
+        "constraints": {
+          "genre": "animal",
+          "actor": "Emmy Rossum",
+          "language": "English",
+          "plot": "charming"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, it seems like they enjoy movies with a mix of action and humor. Of these options, I would recommend \"Raiders of the Lost Ark\" for its exciting adventure plot and memorable characters, particularly Harrison Ford's Indiana Jones. Alternatively, \"Up in the Air\" offers a more lighthearted take on the workplace comedy genre, with a talented cast led by George Clooney and Anna Kendrick. Both are entertaining choices that should satisfy the user's preferences!",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Matrix",
+        "actor": "Emmy Rossum",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Tremors",
+        "Raiders of the Lost Ark",
+        "Anyone But You",
+        "Up in the Air"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Emmy Rossum",
+        "anchor_title": "Purple Violets",
+        "constraints": {
+          "genre": "animal",
+          "actor": "Emmy Rossum",
+          "language": "English",
+          "plot": "charming"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, it seems they enjoy movies with a mix of humor and drama. Both \"Evan Almighty\" and \"Gran Torino\" offer a balance of comedy and emotional depth, with interesting plot twists and memorable actors. Would either of these recommendations be of interest to the user?",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "The Matrix",
+        "actor": "Emmy Rossum",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Evan Almighty",
+        "Memento",
+        "Gentlemen Broncos",
+        "Gran Torino"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of They? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Emmy Rossum",
+        "anchor_title": "Purple Violets",
+        "constraints": {
+          "genre": "animal",
+          "actor": "Emmy Rossum",
+          "language": "English",
+          "plot": "charming"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: The user is looking for a movie with an animal theme, starring Emmy Rossum, and in English language.\n\nRecommendation: Based on your preferences, I would recommend \"Waking Ned Devine\" and \"Incident at Loch Ness\". Both movies feature interesting animal-related plots and star Emmy Rossum in a leading role. \"Waking Ned Devine\" is a comedy-drama about a small town's attempt to claim a lottery prize, while \"Incident at Loch Ness\" is a documentary-style movie exploring the myth of the Loch Ness monster. Both movies are in English language and are sure to provide an entertaining watch.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "what"
+        ],
+        "name": "They",
+        "actor": "Emmy Rossum",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Waking Ned Devine",
+        "Incident at Loch Ness",
+        "Salt",
+        "The Twilight Saga: Breaking Dawn - Part 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Rob Marshall? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Incident at Loch Ness.)",
+      "user_meta": {
+        "turn": 16,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Rob Marshall",
+        "anchor_title": "White Fang",
+        "constraints": {
+          "genre": "animal",
+          "actor": "Emmy Rossum",
+          "plot": "exploring",
+          "director": "Rob Marshall"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 16,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "exploring",
+          "from_anchor": "Purple Violets",
+          "to_anchor": "White Fang"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Here's my recommendation:\n\nBased on your preferences, I think you might enjoy \"Happy Gilmore\" and \"S.W.A.T.\" Both of these movies feature sports-related plots and exciting action sequences, which seem to align with your interests. In \"Happy Gilmore,\" Adam Sandler plays a Hockey player turned golf pro who takes on the establishment to save his grandmother's house, while in \"S.W.A.T.,\" Colin Farrell and Jeremy Renner lead a team of police officers on a dangerous mission to protect their city from a corrupt influence.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "RED",
+        "actor": "Emmy Rossum",
+        "language": "English",
+        "director": "Rob Marshall"
+      },
+      "rec_titles": [
+        "The SpongeBob SquarePants Movie",
+        "Happy Gilmore",
+        "S.W.A.T.",
+        "The Island"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Rob Marshall",
+        "anchor_title": "White Fang",
+        "constraints": {
+          "genre": "animal",
+          "actor": "Emmy Rossum",
+          "plot": "exploring",
+          "director": "Rob Marshall"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I recommend \"The Score\" and \"Velvet Goldmine.\" Both movies feature a combination of genres that align with the user's interests, including crime, drama, and musical elements. \"The Score\" stars Edward Norton and Robert De Niro as aging thieves who are convinced to do one last heist, while \"Velvet Goldmine\" is a glam rock-inspired film about the rise and fall of a 1970s superstar. Both movies offer engaging plots and strong performances from talented actors.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Emmy Rossum",
+        "language": "English",
+        "director": "Rob Marshall"
+      },
+      "rec_titles": [
+        "The Score",
+        "The Wind That Shakes the Barley",
+        "Extraordinary Measures",
+        "Velvet Goldmine"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Heist tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Rob Marshall",
+        "anchor_title": "White Fang",
+        "constraints": {
+          "genre": "animal",
+          "actor": "Emmy Rossum",
+          "plot": "exploring",
+          "director": "Rob Marshall"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: Heist movie, Emmy Rossum, director Rob Marshall, English language, and plot keywords \"what kind of story\".\n\nBased on the user's preferences, I recommend \"Under the Tuscan Sun\" and \"I, Robot\". Both movies have a unique blend of drama and action that may appeal to the user's taste. \"Under the Tuscan Sun\" is a heartwarming story about change and self-discovery, while \"I, Robot\" is a thought-provoking sci-fi thriller that explores the consequences of advanced technology.",
+      "constraints": {
+        "genre": "heist",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Heist",
+        "actor": "Emmy Rossum",
+        "language": "English",
+        "director": "Rob Marshall"
+      },
+      "rec_titles": [
+        "Under the Tuscan Sun",
+        "Transformers",
+        "I, Robot",
+        "Catwoman"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of I, Robot? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Rob Marshall",
+        "anchor_title": "White Fang",
+        "constraints": {
+          "genre": "animal",
+          "actor": "Emmy Rossum",
+          "plot": "exploring",
+          "director": "Rob Marshall"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThe user is interested in a movie that might evoke a mix of emotions, with a focus on the robot genre, Emmy Rossum, and English language. They are undecided if they will enjoy or be scared by it.\n\nBased on these constraints, I recommend \"When a Stranger Calls\" (2006) and \"The Incredible Hulk\" (2008). Both movies feature suspenseful plots with unexpected twists and turns, which may appeal to the user's desire for a mix of emotions. \"When a Stranger Calls\" stars Colleen Dewhurst and Tessa Thompson in a thrilling tale of a babysitter being terrorized by a prank caller, while \"The Incredible Hulk\" features Edward Norton as a scientist struggling to control his monstrous alter ego.",
+      "constraints": {
+        "genre": "robot",
+        "plot": [
+          "what",
+          "robot"
+        ],
+        "name": "I, Robot",
+        "actor": "Emmy Rossum",
+        "language": "English",
+        "director": "Rob Marshall"
+      },
+      "rec_titles": [
+        "When a Stranger Calls",
+        "Public Enemies",
+        "The Incredible Hulk",
+        "Hopeless"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of War. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Rob Marshall",
+        "anchor_title": "White Fang",
+        "constraints": {
+          "genre": "animal",
+          "actor": "Emmy Rossum",
+          "plot": "exploring",
+          "director": "Rob Marshall"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, here are two movie recommendations that may interest them:\n\nThe user enjoys movies with a war theme and wants to explore deeper stories, which is why I suggest \"Oliver Twist\" (1838). This classic novel adaptation follows four friends who weave a tangled web of lust, betrayal, and blackmail. With a talented cast led by Charlie Chaplin, this movie is a thought-provoking and engaging watch.\n\nAnother recommendation is \"You\" (2014), a modern comedy-thriller that delves into the darker side of online dating. The movie features an intriguing plot that exposes our deepest desires, fears, and vulnerabilities through the characters' obsessions and betrayals. Starring Ellen Page and Jim Parsons, this film is sure to keep you on the edge of your seat.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "War",
+        "actor": "Emmy Rossum",
+        "language": "English",
+        "director": "Rob Marshall"
+      },
+      "rec_titles": [
+        "Oliver Twist",
+        "Inferno",
+        "Matched",
+        "You"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Richard Libertini. That sounds intriguing. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 21,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Richard Libertini",
+        "anchor_title": "Inside Out",
+        "constraints": {
+          "genre": "animal",
+          "actor": "Richard Libertini",
+          "plot": "exploring",
+          "director": "Rob Marshall",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 21,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "White Fang",
+          "to_anchor": "Inside Out"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, it seems they enjoy movies with a mix of genres, including war and time travel. Of the movies listed, I would recommend \"I Am Legend\" (1954) for its unique blend of science fiction and war themes, as well as its star-studded cast including Charlie Tahan, Dash Mihok, Alice Braga, and Emma Thompson. Alternatively, \"Happy Gilmore\" (1996) is a lighthearted comedy with a fun premise - a hockey player turned golfer who tries to win back his grandmother's house from the IRS - and features a talented cast including Adam Sandler, Kevin Nealon, and Julie Bowen.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Her",
+        "actor": "Richard Libertini",
+        "language": "English",
+        "director": "Rob Marshall"
+      },
+      "rec_titles": [
+        "I Am Legend",
+        "Somewhere in Time",
+        "Happy Gilmore",
+        "Seveneves"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Richard Libertini",
+        "anchor_title": "Inside Out",
+        "constraints": {
+          "genre": "animal",
+          "actor": "Richard Libertini",
+          "plot": "exploring",
+          "director": "Rob Marshall",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - war; actor - Richard Libertini; language - English; plot keywords - just, more.\nBased on these constraints, I recommend \"The Big Lebowski\" and \"Wrong Turn.\" Both movies offer a unique and entertaining experience with plenty of twists and turns to keep you engaged. In \"The Big Lebowski,\" Jeff Bridges stars as \"The Dude,\" a laid-back, weed-smoking, bowling-loving slacker who finds himself embroiled in a complex and hilarious kidnapping caper. In \"Wrong Turn,\" a group of friends on a road trip find themselves stranded in the middle of nowhere after a car accident, only to discover that they are not alone in the woods - and that they are in grave danger.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Richard Libertini",
+        "language": "English",
+        "director": "Rob Marshall"
+      },
+      "rec_titles": [
+        "The Black Stallion",
+        "Year One",
+        "The Big Lebowski",
+        "Wrong Turn"
       ]
     },
     {
       "speaker": "USER",
       "text": "What's the mood of X? That feels deeper than I thought.",
       "user_meta": {
-        "turn": 5,
+        "turn": 23,
         "stage": "details",
-        "focus_field": "genre",
-        "focus_value": "comedy-drama",
-        "anchor_title": "Attachments",
+        "focus_field": "actor",
+        "focus_value": "Richard Libertini",
+        "anchor_title": "Inside Out",
         "constraints": {
-          "genre": "comedy-drama"
+          "genre": "animal",
+          "actor": "Richard Libertini",
+          "plot": "exploring",
+          "director": "Rob Marshall",
+          "language": "English"
         },
         "shift_event": false,
         "shift_event_obj": null
@@ -154,81 +912,377 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "Of course! Based on your preference for dramas with deeper themes, I would recommend \"Seven Pounds\" and \"Man on the Moon.\" Both films delve into complex emotional journeys and feature powerful performances from their casts. \"Seven Pounds\" tells a moving story of redemption and sacrifice, while \"Man on the Moon\" offers a thought-provoking exploration of the life and career of Andy Kaufman.",
+      "text": "User constraints:\nGenre: War\nActor: Richard Libertini\nDirector: Rob Marshall\nLanguage: English\nPlot keywords: what, feels\n\nBased on these constraints, I recommend \"The Gunslinger\" and \"You, Me and Dupree\". Both movies have a unique plot that explores the theme of loss of identity and the impact it has on the main character. \"The Gunslinger\" stars Richard Libertini in a memorable role, while \"You, Me and Dupree\" features a hilarious performance by Billy Gardell.",
       "constraints": {
-        "genre": "drama",
+        "genre": "war",
         "plot": [
           "what",
           "feels"
         ],
-        "name": "Deep"
+        "name": "Deep",
+        "actor": "Richard Libertini",
+        "language": "English",
+        "director": "Rob Marshall"
       },
       "rec_titles": [
-        "Seven Pounds",
-        "Man on the Moon",
-        "Shallow Hal",
-        "The Karate Kid"
+        "The Gunslinger",
+        "You, Me and Dupree",
+        "Mission: Impossible",
+        "Things to Do in Denver When You're Dead"
       ]
     },
     {
       "speaker": "USER",
-      "text": "Maybe we could find more movies with Tom McCarthy. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Seven Pounds.)",
+      "text": "Thanks for all the detail on You, Me and Dupree. I want to try something more soundtrack (media genre)—still with Todd Stashwick if possible. That sounds intriguing.",
       "user_meta": {
-        "turn": 6,
+        "turn": 24,
         "stage": "waiting_system",
-        "focus_field": "actor",
-        "focus_value": "Tom McCarthy",
-        "anchor_title": "Snow Flower and the Secret Fan",
+        "focus_field": "genre",
+        "focus_value": "soundtrack (media genre)",
+        "anchor_title": "The Lincoln Lawyer",
         "constraints": {
-          "genre": "comedy-drama",
-          "actor": "Tom McCarthy",
-          "plot": "secret"
+          "genre": "soundtrack (media genre)",
+          "actor": "Todd Stashwick",
+          "plot": "exploring",
+          "language": "English"
         },
         "shift_event": true,
         "shift_event_obj": {
-          "turn": 6,
-          "from_focus": "genre",
-          "to_focus": "actor",
-          "bridge_field": "plot",
-          "bridge_value": "secret",
-          "from_anchor": "Attachments",
-          "to_anchor": "Snow Flower and the Secret Fan"
+          "turn": 24,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "Todd Stashwick",
+          "from_anchor": "Inside Out",
+          "to_anchor": "The Lincoln Lawyer"
         }
       }
     },
     {
       "speaker": "SYSTEM",
-      "text": "Of course! Based on your preferences, I would recommend \"The Shining\" and \"2012.\" Both movies have a similar atmosphere of suspense and horror, and they both star Tom McCarthy in prominent roles. In \"The Shining,\" he plays the role of Stuart Dudley, a psychic who tries to help his family escape the hotel's sinister presence, while in \"2012,\" he plays the role of Tom, a writer who struggles to keep his family alive during a series of global catastrophes. I hope you find these recommendations helpful and enjoyable!",
+      "text": "Of course! Based on the user's preferences, I would recommend \"Flatliners\" and \"127 Hours.\" Both of these movies offer a thrilling and suspenseful experience with talented actors and directors. In \"Flatliners,\" Patricia Belcher and Beth Grant star as medical students who embark on a dangerous experiment to gain insight into the afterlife, while in \"127 Hours,\" James Franco gives an incredible performance as a mountain climber who becomes trapped and must use all his wits to survive.",
       "constraints": {
-        "genre": "drama",
+        "genre": "soundtrack (media genre)",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "You, Me and Dupree",
+        "actor": "Todd Stashwick",
+        "language": "English",
+        "director": "Rob Marshall"
+      },
+      "rec_titles": [
+        "Flatliners",
+        "127 Hours",
+        "The Karate Kid",
+        "3:10 to Yuma"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "soundtrack (media genre)",
+        "anchor_title": "The Lincoln Lawyer",
+        "constraints": {
+          "genre": "soundtrack (media genre)",
+          "actor": "Todd Stashwick",
+          "plot": "exploring",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, here are two movie recommendations that match their interests:\n\nThe user has expressed a preference for movies with a strong soundtrack and featuring actor Todd Stashwick. One movie that fits these criteria is \"Aloha\" (2015), which features a memorable soundtrack and stars Bradley Cooper, Bill Murray, Emma Stone, and Todd Stashwick. The film follows the story of a half-caste island girl who falls in love with a white man and heir to an American fortune, while navigating cultural traditions and societal expectations.\n\nAlternatively, the user may enjoy \"The Devil Wears Prada\" (2003), which stars Tracie Thoms, Stephanie Szostak, Simon Baker, Gisele, Emily Blunt, Heidi Klum, Adrian Grenier, Anne Hathaway, and Meryl Streep. This movie follows the story of a smart but sensible new graduate who lands a job as an assistant to a demanding editor-in-chief of a high fashion magazine, while navigating the cutthroat world of fashion and dealing with her difficult boss.",
+      "constraints": {
+        "genre": "soundtrack (media genre)",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Todd Stashwick",
+        "language": "English",
+        "director": "Rob Marshall"
+      },
+      "rec_titles": [
+        "Aloha",
+        "The Devil Wears Prada",
+        "Looney Tunes: Back in Action",
+        "The Quick and the Dead"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "soundtrack (media genre)",
+        "anchor_title": "The Lincoln Lawyer",
+        "constraints": {
+          "genre": "soundtrack (media genre)",
+          "actor": "Todd Stashwick",
+          "plot": "exploring",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I would recommend \"Road to Perdition\" and \"Life of Pi.\" Both films feature a thought-provoking plot and impressive performances from talented actors, including Tom Hanks in \"Road to Perdition\" and Suraj Sharma in \"Life of Pi.\"",
+      "constraints": {
+        "genre": "soundtrack (media genre)",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "You",
+        "actor": "Todd Stashwick",
+        "language": "English",
+        "director": "Rob Marshall"
+      },
+      "rec_titles": [
+        "Road to Perdition",
+        "Siddhartha",
+        "Life of Pi",
+        "Fair Game"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Life of Pi? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "soundtrack (media genre)",
+        "anchor_title": "The Lincoln Lawyer",
+        "constraints": {
+          "genre": "soundtrack (media genre)",
+          "actor": "Todd Stashwick",
+          "plot": "exploring",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThe user is looking for a movie that has a similar mood and tone to Life of Pi, but with a different plot and characters. They are interested in movies with a strong soundtrack and are open to different genres and actors.\n\nRecommendation:\nBased on the user's preferences, I would recommend \"Forrest Gump\" and \"Kiss of the Dragon.\" Both of these movies have a similar feel-good atmosphere and feature powerful soundtracks. \"Forrest Gump\" is a classic drama with a memorable score and touching moments, while \"Kiss of the Dragon\" is an action-packed movie with a catchy soundtrack and impressive fight scenes. Both are worth checking out if you enjoyed Life of Pi's emotional depth and visually stunning sequences.",
+      "constraints": {
+        "genre": "soundtrack (media genre)",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "actor": "Todd Stashwick",
+        "language": "English",
+        "director": "Rob Marshall"
+      },
+      "rec_titles": [
+        "Forrest Gump",
+        "Trucker",
+        "Flags of Our Fathers",
+        "Kiss of the Dragon"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Her. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "soundtrack (media genre)",
+        "anchor_title": "The Lincoln Lawyer",
+        "constraints": {
+          "genre": "soundtrack (media genre)",
+          "actor": "Todd Stashwick",
+          "plot": "exploring",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, I understand that you're looking for a movie recommendation based on the soundtrack genre and the actors Todd Stashwick and Rob Marshall. Based on your preferences, I suggest checking out \"Women in Love\" (1920) and \"Fantastic Beasts and Where to Find Them\" (2001). Both films feature a captivating soundtrack and talented actors who are sure to impress.",
+      "constraints": {
+        "genre": "soundtrack (media genre)",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Her",
+        "actor": "Todd Stashwick",
+        "language": "English",
+        "director": "Rob Marshall"
+      },
+      "rec_titles": [
+        "Women in Love",
+        "Fantastic Beasts and Where to Find Them",
+        "Freakonomics",
+        "The Family Man"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "soundtrack (media genre)",
+        "anchor_title": "The Lincoln Lawyer",
+        "constraints": {
+          "genre": "soundtrack (media genre)",
+          "actor": "Todd Stashwick",
+          "plot": "exploring",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, you've provided some great cues for movie recommendations! Based on your preferences, I'd like to suggest \"The Lost Boys\" and \"8 Mile\" as potential choices. Both of these movies have engaging soundtracks and feature actors who you mentioned in your query, such as Todd Stashwick and Dianne Wiest. \"The Lost Boys\" is a classic '80s coming-of-age tale with a memorable soundtrack, while \"8 Mile\" is a gritty and powerful drama about a young rapper's rise to fame. I hope you find these recommendations helpful!",
+      "constraints": {
+        "genre": "soundtrack (media genre)",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "You",
+        "actor": "Todd Stashwick",
+        "language": "English",
+        "director": "Rob Marshall"
+      },
+      "rec_titles": [
+        "The Lost Boys",
+        "8 Mile",
+        "Harry Potter and the Prisoner of Azkaban",
+        "Larry Crowne"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "soundtrack (media genre)",
+        "anchor_title": "The Lincoln Lawyer",
+        "constraints": {
+          "genre": "soundtrack (media genre)",
+          "actor": "Todd Stashwick",
+          "plot": "exploring",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you want me to recommend movies based on specific cues, and I'm happy to help! Based on your previous input, you mentioned that you want me to recommend movies with a good soundtrack, featuring actor Todd Stashwick, and directed by Rob Marshall. From the list provided, I would recommend \"Welcome Home, Roscoe Jenkins\" and \"The Great Gatsby.\" Both of these movies have catchy soundtracks and feature Todd Stashwick in prominent roles. \"Welcome Home, Roscoe Jenkins\" is a heartwarming comedy-drama about a talk show host who reunites with his family in the Deep South, while \"The Great Gatsby\" is a visually stunning adaptation of F. Scott Fitzgerald's classic novel, exploring themes of love, greed, and obsession in the roaring twenties.",
+      "constraints": {
+        "genre": "soundtrack (media genre)",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "You",
+        "actor": "Todd Stashwick",
+        "language": "English",
+        "director": "Rob Marshall"
+      },
+      "rec_titles": [
+        "Welcome Home, Roscoe Jenkins",
+        "Ender's Game",
+        "Random Hearts",
+        "The Great Gatsby"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Michael Berryman. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 31,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Michael Berryman",
+        "anchor_title": "Adventureland",
+        "constraints": {
+          "genre": "soundtrack (media genre)",
+          "actor": "Michael Berryman",
+          "plot": "exploring",
+          "language": "English",
+          "writer": "Caroline Kepnes"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 31,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "writer",
+          "bridge_value": "Caroline Kepnes",
+          "from_anchor": "The Lincoln Lawyer",
+          "to_anchor": "Adventureland"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a movie with Michael Berryman, and they're considering films in the genre of soundtrack. Based on their preference cues, I recommend \"Dogma\" (1999) starring Brian O'Halloran, Jason Mewes, and Salma Hayek, or \"American Gangster\" (2007) starring Russell Crowe, Josh Brolin, and Cuba Gooding, Jr. Both films offer an engaging plot and a talented cast, including Michael Berryman in a notable role.",
+      "constraints": {
+        "genre": "soundtrack (media genre)",
         "plot": [
           "could",
           "find"
         ],
         "name": "RED",
-        "actor": "Tom McCarthy",
-        "director": "Tom McCarthy"
+        "actor": "Michael Berryman",
+        "language": "English",
+        "director": "Rob Marshall"
       },
       "rec_titles": [
-        "White Fang",
-        "Man of Steel",
-        "The Shining",
-        "2012"
+        "12 Angry Men",
+        "Dogma",
+        "Forgetting Sarah Marshall",
+        "American Gangster"
       ]
     },
     {
       "speaker": "USER",
       "text": "Just checking—do you have more recommendations like that?",
       "user_meta": {
-        "turn": 7,
+        "turn": 32,
         "stage": "details",
         "focus_field": "actor",
-        "focus_value": "Tom McCarthy",
-        "anchor_title": "Snow Flower and the Secret Fan",
+        "focus_value": "Michael Berryman",
+        "anchor_title": "Adventureland",
         "constraints": {
-          "genre": "comedy-drama",
-          "actor": "Tom McCarthy",
-          "plot": "secret"
+          "genre": "soundtrack (media genre)",
+          "actor": "Michael Berryman",
+          "plot": "exploring",
+          "language": "English",
+          "writer": "Caroline Kepnes"
         },
         "shift_event": false,
         "shift_event_obj": null
@@ -236,37 +1290,40 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "Of course! Based on your preferences, I would recommend \"The Hours\" and \"Inglourious Basterds.\" Both films are thought-provoking and feature strong performances from their casts. \"The Hours\" explores the interconnected lives of three women across different generations, while \"Inglourious Basterds\" is a thrilling and action-packed tale of vengeance during World War II. I hope you enjoy them!",
+      "text": "User constraints: genre - soundtrack, actor - Michael Berryman, director - Rob Marshall, language - English, plot keywords - just, more.\n\nBased on these constraints, I would recommend \"The Red Violin\" and \"One for the Money\". Both of these movies have a unique soundtrack that is sure to impress, as well as talented actors such as Johannes Silberschneider and Sherri Shepherd in \"The Red Violin\", and Fisher Stevens and Debbie Reynolds in \"One for the Money\".",
       "constraints": {
-        "genre": "drama",
+        "genre": "soundtrack (media genre)",
         "plot": [
           "just",
           "more"
         ],
         "name": "You",
-        "actor": "Tom McCarthy",
-        "director": "Tom McCarthy"
+        "actor": "Michael Berryman",
+        "language": "English",
+        "director": "Rob Marshall"
       },
       "rec_titles": [
-        "The Hours",
-        "Heist",
-        "Looper",
-        "Inglourious Basterds"
+        "Island",
+        "The Chocolate War",
+        "One for the Money",
+        "The Red Violin"
       ]
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of You? Maybe I’m overthinking it, but it sounds fascinating.",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
       "user_meta": {
-        "turn": 8,
+        "turn": 33,
         "stage": "details",
         "focus_field": "actor",
-        "focus_value": "Tom McCarthy",
-        "anchor_title": "Snow Flower and the Secret Fan",
+        "focus_value": "Michael Berryman",
+        "anchor_title": "Adventureland",
         "constraints": {
-          "genre": "comedy-drama",
-          "actor": "Tom McCarthy",
-          "plot": "secret"
+          "genre": "soundtrack (media genre)",
+          "actor": "Michael Berryman",
+          "plot": "exploring",
+          "language": "English",
+          "writer": "Caroline Kepnes"
         },
         "shift_event": false,
         "shift_event_obj": null
@@ -274,36 +1331,40 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "Of course! Based on your preferences, I would recommend \"Red Riding Hood\" and \"Wolfhound.\" Both of these movies have a strong focus on drama and storytelling, which aligns with your interests. \"Red Riding Hood\" is a unique retelling of the classic fairy tale, with a talented cast led by Julie Christie and Adrian Holmes. \"Wolfhound,\" on the other hand, is an intense and suspenseful movie that follows a warrior on a mission to avenge his tribe's destruction. I hope you enjoy them!",
+      "text": "User constraints: The user prefers movies with a good soundtrack, featuring actor Michael Berryman, and directed by Rob Marshall in English language.\n\nBased on these constraints, I recommend watching \"Cloudy with a Chance of Meatballs\" and \"Oz the Great and Powerful\". Both movies have catchy soundtracks and feature Michael Berryman in prominent roles. \"Cloudy with a Chance of Meatballs\" is an animated comedy with a fun and quirky soundtrack, while \"Oz the Great and Powerful\" is a fantasy adventure with a memorable score that complements its magical atmosphere.",
       "constraints": {
-        "genre": "drama",
+        "genre": "soundtrack (media genre)",
         "plot": [
-          "what"
+          "weird",
+          "thought"
         ],
         "name": "You",
-        "actor": "Tom McCarthy",
-        "director": "Tom McCarthy"
+        "actor": "Michael Berryman",
+        "language": "English",
+        "director": "Rob Marshall"
       },
       "rec_titles": [
-        "Red Riding Hood",
-        "Wolfhound",
-        "Trust",
-        "Cowboys & Aliens"
+        "Cloudy with a Chance of Meatballs",
+        "Oz the Great and Powerful",
+        "The Night Circus",
+        "House of 1000 Corpses"
       ]
     },
     {
       "speaker": "USER",
-      "text": "What kind of story does Her tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "text": "Forget what I said before — that might’ve been too specific.",
       "user_meta": {
-        "turn": 9,
+        "turn": 34,
         "stage": "details",
         "focus_field": "actor",
-        "focus_value": "Tom McCarthy",
-        "anchor_title": "Snow Flower and the Secret Fan",
+        "focus_value": "Michael Berryman",
+        "anchor_title": "Adventureland",
         "constraints": {
-          "genre": "comedy-drama",
-          "actor": "Tom McCarthy",
-          "plot": "secret"
+          "genre": "soundtrack (media genre)",
+          "actor": "Michael Berryman",
+          "plot": "exploring",
+          "language": "English",
+          "writer": "Caroline Kepnes"
         },
         "shift_event": false,
         "shift_event_obj": null
@@ -311,37 +1372,40 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "Of course! Based on your user preferences, I would recommend \"The Open Road\" and \"The Lucky Ones\". Both movies have a similar tone and theme of exploring the human experience after a life-changing event, which I think you might find interesting. In \"The Open Road\", Justin Timberlake and Mila Kunis play two escaped convicts on a road trip, while in \"The Lucky Ones\", three soldiers return from war and navigate their new lives together.",
+      "text": "User: Forget what I said before — that might’ve been too specific.\nYou: No problem! Based on your previous preferences, I recommend \"The Last Airbender\" and \"Arthur Christmas\". Both of these movies have great soundtracks and star talented actors like Dev Patel and James McAvoy. \"The Last Airbender\" is an exciting adventure film with a unique plot, while \"Arthur Christmas\" is a heartwarming comedy with a fun cast of characters.",
       "constraints": {
-        "genre": "drama",
+        "genre": "soundtrack (media genre)",
         "plot": [
           "what",
-          "kind"
+          "said"
         ],
-        "name": "Her",
-        "actor": "Tom McCarthy",
-        "director": "Tom McCarthy"
+        "name": "You",
+        "actor": "Michael Berryman",
+        "language": "English",
+        "director": "Rob Marshall"
       },
       "rec_titles": [
-        "The Open Road",
-        "The Kingdom",
-        "The Lucky Ones",
-        "Virgin Territory"
+        "The Last Airbender",
+        "Arthur Christmas",
+        "The Butterfly Effect",
+        "King Kong"
       ]
     },
     {
       "speaker": "USER",
-      "text": "Actually, now that I think about it, I might want the opposite.",
+      "text": "I like the sound of Ted. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
       "user_meta": {
-        "turn": 10,
+        "turn": 35,
         "stage": "details",
         "focus_field": "actor",
-        "focus_value": "Tom McCarthy",
-        "anchor_title": "Snow Flower and the Secret Fan",
+        "focus_value": "Michael Berryman",
+        "anchor_title": "Adventureland",
         "constraints": {
-          "genre": "comedy-drama",
-          "actor": "Tom McCarthy",
-          "plot": "secret"
+          "genre": "soundtrack (media genre)",
+          "actor": "Michael Berryman",
+          "plot": "exploring",
+          "language": "English",
+          "writer": "Caroline Kepnes"
         },
         "shift_event": false,
         "shift_event_obj": null
@@ -349,335 +1413,172 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "Of course! Based on your preferences, I think you might enjoy \"Bloody Sunday\" and \"Into the Wild.\" Both are powerful dramas that explore themes of identity, society, and the human condition. \"Bloody Sunday\" is a historical drama that recounts the 1972 massacre in Northern Ireland, while \"Into the Wild\" follows a young man's journey to live off the grid in Alaska. Both films feature strong performances from their actors and offer thought-provoking experiences.",
+      "text": "No problem! Based on the user's preferences, I recommend \"Wreck-It Ralph\" and \"The Prestige.\" Both movies feature a unique blend of humor and intrigue that seems to align with the user's tastes. In \"Wreck-It Ralph,\" the protagonist's dream to become a hero is both hilarious and heartwarming, while \"The Prestige\" unfolds an engrossing tale of magicians' rivalry with unexpected twists and turns.",
       "constraints": {
-        "genre": "drama",
-        "plot": [
-          "actually",
-          "think"
-        ],
-        "name": "Her",
-        "actor": "Tom McCarthy",
-        "director": "Tom McCarthy"
-      },
-      "rec_titles": [
-        "Bloody Sunday",
-        "Into the Wild",
-        "We Need to Talk About Kevin",
-        "Blue Valentine"
-      ]
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of X. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
-      "user_meta": {
-        "turn": 11,
-        "stage": "details",
-        "focus_field": "actor",
-        "focus_value": "Tom McCarthy",
-        "anchor_title": "Snow Flower and the Secret Fan",
-        "constraints": {
-          "genre": "comedy-drama",
-          "actor": "Tom McCarthy",
-          "plot": "secret"
-        },
-        "shift_event": false,
-        "shift_event_obj": null
-      }
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Of course! Based on your preferences, I would recommend \"The Horse Whisperer\" and \"Snowpiercer.\" Both of these movies offer thought-provoking stories with strong acting performances. In \"The Horse Whisperer,\" you'll find a powerful drama about the bond between humans and animals, while \"Snowpiercer\" is a gripping sci-fi thriller that explores themes of class struggle and societal inequality.",
-      "constraints": {
-        "genre": "drama",
+        "genre": "soundtrack (media genre)",
         "plot": [
           "like",
           "sound"
-        ],
-        "name": "X",
-        "actor": "Tom McCarthy",
-        "director": "Tom McCarthy"
-      },
-      "rec_titles": [
-        "The Horse Whisperer",
-        "Snowpiercer",
-        "There Be Dragons",
-        "The Apostle"
-      ]
-    },
-    {
-      "speaker": "USER",
-      "text": "How about something primarily in English? That feels deeper than I thought. (I’m thinking of X.)",
-      "user_meta": {
-        "turn": 12,
-        "stage": "waiting_system",
-        "focus_field": "language",
-        "focus_value": "English",
-        "anchor_title": "Lucy",
-        "constraints": {
-          "genre": "comedy-drama",
-          "actor": "Tom McCarthy",
-          "plot": "secret",
-          "language": "English"
-        },
-        "shift_event": true,
-        "shift_event_obj": {
-          "turn": 12,
-          "from_focus": "actor",
-          "to_focus": "language",
-          "bridge_field": "language",
-          "bridge_value": "English",
-          "from_anchor": "Snow Flower and the Secret Fan",
-          "to_anchor": "Lucy"
-        }
-      }
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Of course! Based on your preferences, I would recommend \"The Kingdom\" and \"Rush.\" Both films are tense, gripping dramas that explore themes of violence, power struggles, and the human condition. \"The Kingdom\" features a talented ensemble cast and a thought-provoking plot that delves into the aftermath of a terrorist attack, while \"Rush\" is an adrenaline-fueled thrill ride that pits two driven individuals against each other in a high-stakes race. I hope you enjoy them!",
-      "constraints": {
-        "genre": "drama",
-        "plot": [
-          "something",
-          "primarily"
-        ],
-        "name": "Deep",
-        "actor": "Tom McCarthy",
-        "director": "Tom McCarthy",
-        "language": "English"
-      },
-      "rec_titles": [
-        "The Kingdom",
-        "The Best Years of Our Lives",
-        "Rush",
-        "A Fistful of Dollars"
-      ]
-    },
-    {
-      "speaker": "USER",
-      "text": "Just checking—do you have more recommendations like that?",
-      "user_meta": {
-        "turn": 13,
-        "stage": "details",
-        "focus_field": "language",
-        "focus_value": "English",
-        "anchor_title": "Lucy",
-        "constraints": {
-          "genre": "comedy-drama",
-          "actor": "Tom McCarthy",
-          "plot": "secret",
-          "language": "English"
-        },
-        "shift_event": false,
-        "shift_event_obj": null
-      }
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Of course! Based on your preference for dramas with English language and a focus on the actor Tom McCarthy, I would recommend \"Waiting\" and \"Whatever Works.\" Both movies showcase Tom McCarthy's acting talent in unique and compelling ways. In \"Waiting,\" he plays a struggling artist navigating complex emotions as he prepares to give up his baby for adoption, while in \"Whatever Works,\" he stars as a misanthropic divorcee who finds unexpected joy in a relationship with a younger woman from the South. I hope you enjoy them!",
-      "constraints": {
-        "genre": "drama",
-        "plot": [
-          "just",
-          "more"
-        ],
-        "name": "You",
-        "actor": "Tom McCarthy",
-        "director": "Tom McCarthy",
-        "language": "English"
-      },
-      "rec_titles": [
-        "Waiting",
-        "Space Cowboys",
-        "A Farewell to Arms",
-        "Whatever Works"
-      ]
-    },
-    {
-      "speaker": "USER",
-      "text": "I like the sound of X. Who stars in it? That feels deeper than I thought.",
-      "user_meta": {
-        "turn": 14,
-        "stage": "details",
-        "focus_field": "language",
-        "focus_value": "English",
-        "anchor_title": "Lucy",
-        "constraints": {
-          "genre": "comedy-drama",
-          "actor": "Tom McCarthy",
-          "plot": "secret",
-          "language": "English"
-        },
-        "shift_event": false,
-        "shift_event_obj": null
-      }
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Of course! Based on your preference for dramas with deep plots and actor-centric stories, I would recommend \"Doctor Zhivago\" and \"The Cider House Rules.\" Both films feature powerful performances from their leads, along with engaging storylines that explore themes of love, identity, and social justice.",
-      "constraints": {
-        "genre": "drama",
-        "plot": [
-          "like",
-          "sound"
-        ],
-        "name": "Deep",
-        "actor": "Tom McCarthy",
-        "director": "Tom McCarthy",
-        "language": "English"
-      },
-      "rec_titles": [
-        "Doctor Zhivago",
-        "Miss Congeniality",
-        "The Cider House Rules",
-        "Hellboy"
-      ]
-    },
-    {
-      "speaker": "USER",
-      "text": "What's the mood of The Cider House Rules? I can’t decide if I’d enjoy it or be scared by it.",
-      "user_meta": {
-        "turn": 15,
-        "stage": "details",
-        "focus_field": "language",
-        "focus_value": "English",
-        "anchor_title": "Lucy",
-        "constraints": {
-          "genre": "comedy-drama",
-          "actor": "Tom McCarthy",
-          "plot": "secret",
-          "language": "English"
-        },
-        "shift_event": false,
-        "shift_event_obj": null
-      }
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Of course, I'd be happy to help! Based on your preferences, I think you might enjoy \"You Kill Me.\" It's a comedy-drama with great performances from the cast, including Aaron Hughes and Jayne Eastwood. The film follows an alcoholic hitman who befriends a tart-tongued woman, and I think their chemistry is really well done. Let me know if you're interested in giving it a try!",
-      "constraints": {
-        "genre": "drama",
-        "plot": [
-          "what",
-          "house"
-        ],
-        "name": "The Cider House Rules",
-        "actor": "Tom McCarthy",
-        "director": "Tom McCarthy",
-        "language": "English"
-      },
-      "rec_titles": [
-        "You Kill Me",
-        "Incident at Loch Ness",
-        "Happy Feet",
-        "The Three Musketeers"
-      ]
-    },
-    {
-      "speaker": "USER",
-      "text": "What kind of story does Ted tell? That sounds intriguing.",
-      "user_meta": {
-        "turn": 16,
-        "stage": "details",
-        "focus_field": "language",
-        "focus_value": "English",
-        "anchor_title": "Lucy",
-        "constraints": {
-          "genre": "comedy-drama",
-          "actor": "Tom McCarthy",
-          "plot": "secret",
-          "language": "English"
-        },
-        "shift_event": false,
-        "shift_event_obj": null
-      }
-    },
-    {
-      "speaker": "SYSTEM",
-      "text": "Of course! Based on your preferences, I would recommend \"Taken\" and \"V for Vendetta\". Both movies have a strong plot and great actors, with a unique twist that will keep you engaged from start to finish. In \"Taken\", you'll be on the edge of your seat as the friends try to dispose of the body and retrieve their kidnapped loved ones, while \"V for Vendetta\" is a thought-provoking dystopian tale of resistance and rebellion against an oppressive government.",
-      "constraints": {
-        "genre": "drama",
-        "plot": [
-          "what",
-          "kind"
         ],
         "name": "Ted",
-        "actor": "Tom McCarthy",
-        "director": "Tom McCarthy",
-        "language": "English"
+        "actor": "Michael Berryman",
+        "language": "English",
+        "director": "Rob Marshall"
       },
       "rec_titles": [
-        "Taken",
-        "V for Vendetta",
-        "Edge of Tomorrow",
-        "Pain & Gain"
+        "Wreck-It Ralph",
+        "The Prestige",
+        "Sexy Beast",
+        "Undercover Brother"
       ]
     },
     {
       "speaker": "USER",
-      "text": "Do you have recommendations written by Timur Bekmambetov? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Taken.)",
+      "text": "What kind of story does Us tell? Maybe I’m overthinking it, but it sounds fascinating.",
       "user_meta": {
-        "turn": 17,
-        "stage": "waiting_system",
-        "focus_field": "writer",
-        "focus_value": "Timur Bekmambetov",
-        "anchor_title": "Spun",
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michael Berryman",
+        "anchor_title": "Adventureland",
         "constraints": {
-          "genre": "comedy-drama",
-          "actor": "Tom McCarthy",
-          "plot": "secret",
-          "language": "Arabic Language",
-          "writer": "Timur Bekmambetov"
+          "genre": "soundtrack (media genre)",
+          "actor": "Michael Berryman",
+          "plot": "exploring",
+          "language": "English",
+          "writer": "Caroline Kepnes"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint:\nYou've mentioned that you're interested in a movie with a fascinating storyline, and you've provided some preference cues such as a strong soundtrack, Michael Berryman, Rob Marshall, and an English language film.\n\nRecommendation:\nBased on your constraints, I would recommend \"The Lovely Bones\" (2002) starring Saoirse Ronan, which centers on a young girl who has been murdered and watches over her family from purgatory. The movie explores themes of grief, healing, and vengeance in a unique and captivating way. Alternatively, \"Stars Above\" (2016) is another great option, following three women of different generations who inhabit the same house through the years. Both movies have an excellent soundtrack and strong acting performances.",
+      "constraints": {
+        "genre": "soundtrack (media genre)",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "actor": "Michael Berryman",
+        "language": "English",
+        "director": "Rob Marshall"
+      },
+      "rec_titles": [
+        "The Lovely Bones",
+        "Stars Above",
+        "Hudson Hawk",
+        "The Call of the Wild"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michael Berryman",
+        "anchor_title": "Adventureland",
+        "constraints": {
+          "genre": "soundtrack (media genre)",
+          "actor": "Michael Berryman",
+          "plot": "exploring",
+          "language": "English",
+          "writer": "Caroline Kepnes"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preference cues, they seem to enjoy movies with a strong soundtrack and are open to different genres. Here are two recommendations that fit their constraints:\n\n* \"Chasing Amy\" (1997) is a classic indie comedy with a memorable soundtrack and talented actors like Brian O'Halloran, Jason Mewes, and Joey Lauren Adams. The film follows the misadventures of two comic book artists who fall in love, but things get complicated when one of them discovers the other is a lesbian.\n* \"Good Deeds\" (2012) stars Tyler Perry as a successful businessman who meets a single mother and office cleaning crew worker (Gabrielle Union) and must navigate his feelings for her while also dealing with his own personal demons. The movie has a strong soundtrack and features an impressive cast, including Thandie Newton and Phylicia Rashad.",
+      "constraints": {
+        "genre": "soundtrack (media genre)",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "Us",
+        "actor": "Michael Berryman",
+        "language": "English",
+        "director": "Rob Marshall"
+      },
+      "rec_titles": [
+        "Chasing Amy",
+        "This Means War",
+        "The Cable Guy",
+        "Good Deeds"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by John Lasseter? Hmm, I didn’t expect that vibe. (I’m thinking of Tron.)",
+      "user_meta": {
+        "turn": 38,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "John Lasseter",
+        "anchor_title": "Toy Story 2",
+        "constraints": {
+          "genre": "soundtrack (media genre)",
+          "actor": "Michael Berryman",
+          "plot": "forced",
+          "writer": "Caroline Kepnes",
+          "director": "John Lasseter"
         },
         "shift_event": true,
         "shift_event_obj": {
-          "turn": 17,
-          "from_focus": "language",
-          "to_focus": "writer",
-          "bridge_field": "language",
-          "bridge_value": "Arabic Language",
-          "from_anchor": "Lucy",
-          "to_anchor": "Spun"
+          "turn": 38,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "forced",
+          "from_anchor": "Adventureland",
+          "to_anchor": "Toy Story 2"
         }
       }
     },
     {
       "speaker": "SYSTEM",
-      "text": "Of course, I'd be happy to recommend some movies based on your preferences! \"The Weight of Water\" (1997) is a thought-provoking drama that explores themes of identity, history, and the power of storytelling. The film features an impressive cast, including Elizabeth Peña and Michael Keaton, and was written and directed by Timur Bekmambetov. Alternatively, \"Philadelphia\" (1993) is a powerful drama that tackles issues of discrimination and social justice, featuring a standout performance from Denzel Washington. Both of these movies are worth checking out if you're interested in thought-provoking dramas with strong performances!",
+      "text": "User constraints: Genre - soundtrack, actor - John Lasseter, director - John Lasseter, writer - John Lasseter, language - English, plot keywords - could, switch.\nBased on these constraints, I recommend watching \"Misery\" and \"Terminator Salvation.\" Both movies have an intense and suspenseful plot, with strong performances from the actors involved. \"Misery\" is a classic psychological thriller starring James Cromwell and Kathy Bates, while \"Terminator Salvation\" is a sci-fi action film starring Sam Worthington and Christian Bale.",
       "constraints": {
-        "genre": "drama",
+        "genre": "soundtrack (media genre)",
         "plot": [
-          "written",
-          "decide"
+          "could",
+          "switch"
         ],
-        "name": "Taken",
-        "actor": "Tom McCarthy",
-        "director": "Timur Bekmambetov",
+        "name": "Tron",
+        "actor": "John Lasseter",
         "language": "English",
-        "writer": "Timur Bekmambetov"
+        "director": "John Lasseter",
+        "writer": "John Lasseter"
       },
       "rec_titles": [
-        "The Weight of Water",
-        "Philadelphia",
-        "Jane Eyre",
-        "Pride and Prejudice"
+        "Misery",
+        "The Crazies",
+        "Terminator Salvation",
+        "Stars Above"
       ]
     },
     {
       "speaker": "USER",
       "text": "Just checking—do you have more recommendations like that?",
       "user_meta": {
-        "turn": 18,
+        "turn": 39,
         "stage": "details",
-        "focus_field": "writer",
-        "focus_value": "Timur Bekmambetov",
-        "anchor_title": "Spun",
+        "focus_field": "director",
+        "focus_value": "John Lasseter",
+        "anchor_title": "Toy Story 2",
         "constraints": {
-          "genre": "comedy-drama",
-          "actor": "Tom McCarthy",
-          "plot": "secret",
-          "language": "Arabic Language",
-          "writer": "Timur Bekmambetov"
+          "genre": "soundtrack (media genre)",
+          "actor": "Michael Berryman",
+          "plot": "forced",
+          "writer": "Caroline Kepnes",
+          "director": "John Lasseter"
         },
         "shift_event": false,
         "shift_event_obj": null
@@ -685,41 +1586,41 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "Of course! Based on your preferences, I would recommend \"The Astronaut's Wife\" and \"Mission: Impossible - Ghost Protocol.\" Both movies feature strong acting performances, intriguing plots, and are in the drama genre. In \"The Astronaut's Wife,\" you'll see Samantha Eggar and Tom Noonan play a couple whose relationship is altered after a mysterious accident in space, while \"Mission: Impossible - Ghost Protocol\" follows Ethan Hunt (Tom Cruise) and his team as they go rogue to clear their organization's name after being implicated in a bombing.",
+      "text": "User preference cues: genre - soundtrack; actor - John Lasseter; director - John Lasseter; language - English; plot keywords - just, more.\nBased on these cues, I recommend the movie \"Where We Belong\" and \"Neighbors 2: Sorority Rising\". Both movies have a strong soundtrack and feature actors like John Lasseter in leading roles. \"Where We Belong\" is a powerful drama about a young man's journey to overcome his difficult past and achieve his dreams, while \"Neighbors 2\" is a fun and action-packed comedy about a group of sorority girls who cause chaos in their new neighborhood.",
       "constraints": {
-        "genre": "drama",
+        "genre": "soundtrack (media genre)",
         "plot": [
           "just",
           "more"
         ],
         "name": "You",
-        "actor": "Tom McCarthy",
-        "director": "Timur Bekmambetov",
+        "actor": "John Lasseter",
         "language": "English",
-        "writer": "Timur Bekmambetov"
+        "director": "John Lasseter",
+        "writer": "John Lasseter"
       },
       "rec_titles": [
-        "The Astronaut's Wife",
-        "Mission: Impossible - Ghost Protocol",
-        "Passing",
-        "The Deep End of the Ocean"
+        "Where We Belong",
+        "Retribution",
+        "Neighbors 2: Sorority Rising",
+        "The Fast and the Furious"
       ]
     },
     {
       "speaker": "USER",
-      "text": "I like the sound of Mission: Impossible. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
       "user_meta": {
-        "turn": 19,
+        "turn": 40,
         "stage": "details",
-        "focus_field": "writer",
-        "focus_value": "Timur Bekmambetov",
-        "anchor_title": "Spun",
+        "focus_field": "director",
+        "focus_value": "John Lasseter",
+        "anchor_title": "Toy Story 2",
         "constraints": {
-          "genre": "comedy-drama",
-          "actor": "Tom McCarthy",
-          "plot": "secret",
-          "language": "Arabic Language",
-          "writer": "Timur Bekmambetov"
+          "genre": "soundtrack (media genre)",
+          "actor": "Michael Berryman",
+          "plot": "forced",
+          "writer": "Caroline Kepnes",
+          "director": "John Lasseter"
         },
         "shift_event": false,
         "shift_event_obj": null
@@ -727,41 +1628,41 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "Of course! Based on your preferences, I think you might enjoy \"Cadillac Records\" and \"THX 1138.\" Both of these films have a strong focus on drama and feature talented actors in their casts. \"Cadillac Records\" tells the story of the rise of Chess Records and its recording artists, while \"THX 1138\" explores a rigidly controlled society in the 25th century. Both movies are thought-provoking and well-crafted, and I think you'll find them engaging and enjoyable.",
+      "text": "User: I'm not sure anymore, perhaps I changed my mind.\n\nYou: No worries! Based on your previous preferences, I recommend checking out \"Happy Gilmore\" and \"The Doors\". Both movies have great soundtracks and interesting plots, with actors like Adam Sandler, Kevin Nealon, and Val Kilmer.",
       "constraints": {
-        "genre": "drama",
+        "genre": "soundtrack (media genre)",
         "plot": [
-          "like",
-          "sound"
+          "sure",
+          "perhaps"
         ],
-        "name": "Mission: Impossible",
-        "actor": "Tom McCarthy",
-        "director": "Timur Bekmambetov",
+        "name": "You",
+        "actor": "John Lasseter",
         "language": "English",
-        "writer": "Timur Bekmambetov"
+        "director": "John Lasseter",
+        "writer": "John Lasseter"
       },
       "rec_titles": [
-        "Cadillac Records",
-        "THX 1138",
-        "The Dark Half",
-        "Jack the Giant Slayer"
+        "Happy Gilmore",
+        "The Green Hornet",
+        "Fifty Shades Freed",
+        "The Doors"
       ]
     },
     {
       "speaker": "USER",
-      "text": "What's the mood of Tron? I can’t decide if I’d enjoy it or be scared by it.",
+      "text": "What's the mood of You? I can’t decide if I’d enjoy it or be scared by it.",
       "user_meta": {
-        "turn": 20,
+        "turn": 41,
         "stage": "details",
-        "focus_field": "writer",
-        "focus_value": "Timur Bekmambetov",
-        "anchor_title": "Spun",
+        "focus_field": "director",
+        "focus_value": "John Lasseter",
+        "anchor_title": "Toy Story 2",
         "constraints": {
-          "genre": "comedy-drama",
-          "actor": "Tom McCarthy",
-          "plot": "secret",
-          "language": "Arabic Language",
-          "writer": "Timur Bekmambetov"
+          "genre": "soundtrack (media genre)",
+          "actor": "Michael Berryman",
+          "plot": "forced",
+          "writer": "Caroline Kepnes",
+          "director": "John Lasseter"
         },
         "shift_event": false,
         "shift_event_obj": null
@@ -769,54 +1670,509 @@
     },
     {
       "speaker": "SYSTEM",
-      "text": "Of course, I'd be happy to recommend some movies based on your preferences! \"X-Men: First Class\" and \"Pirates of the Caribbean: At World's End\" are both action-packed adventures with talented actors like Michael Fassbender and Johnny Depp. If you're interested in a more philosophical and thought-provoking film, \"Siddhartha\" is a classic adaptation of Hermann Hesse's novel that explores themes of existence and self-discovery.",
+      "text": "User, I understand that you're looking for a movie that fits your current mood and preferences. Based on your constraints, I recommend \"Annie Hall\" and \"Tootsie.\" Both movies have a lighthearted tone and feature memorable performances from their leads, Diane Keaton and Dustin Hoffman in \"Annie Hall,\" and Geena Davis and Bill Murray in \"Tootsie.\"",
       "constraints": {
-        "genre": "drama",
+        "genre": "soundtrack (media genre)",
         "plot": [
           "what",
           "decide"
         ],
-        "name": "Tron",
-        "actor": "Tom McCarthy",
-        "director": "Timur Bekmambetov",
+        "name": "RED",
+        "actor": "John Lasseter",
         "language": "English",
-        "writer": "Timur Bekmambetov"
+        "director": "John Lasseter",
+        "writer": "John Lasseter"
       },
       "rec_titles": [
-        "X-Men: First Class",
-        "Siddhartha",
-        "Pirates of the Caribbean: At World's End",
-        "The Wizard of Oz"
+        "Annie Hall",
+        "The Red Tent",
+        "Tootsie",
+        "Under Siege 2: Dark Territory"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Annie Hall. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "John Lasseter",
+        "anchor_title": "Toy Story 2",
+        "constraints": {
+          "genre": "soundtrack (media genre)",
+          "actor": "Michael Berryman",
+          "plot": "forced",
+          "writer": "Caroline Kepnes",
+          "director": "John Lasseter"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThe user likes the sound of Annie Hall and is open to watching similar movies with a focus on the soundtrack genre, actor John Lasseter, director John Lasseter, and language English.\n\nRecommendation:\nBased on your preferences, I would recommend \"The Darkest Hour\" and \"Hesher.\" Both movies have an interesting plot and great actors, including Joseph Gordon-Levitt in \"Hesher.\"",
+      "constraints": {
+        "genre": "soundtrack (media genre)",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Annie Hall",
+        "actor": "John Lasseter",
+        "language": "English",
+        "director": "John Lasseter",
+        "writer": "John Lasseter"
+      },
+      "rec_titles": [
+        "The Darkest Hour",
+        "The Kid",
+        "I Can Do Bad All by Myself",
+        "Hesher"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Her tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "John Lasseter",
+        "anchor_title": "Toy Story 2",
+        "constraints": {
+          "genre": "soundtrack (media genre)",
+          "actor": "Michael Berryman",
+          "plot": "forced",
+          "writer": "Caroline Kepnes",
+          "director": "John Lasseter"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - soundtrack, actor - John Lasseter, director - John Lasseter, language - English, and plot keywords - what, kind.\nBased on these constraints, I recommend \"Creepshow 2\" and \"Blade Runner.\" Both of these movies feature a unique soundtrack that is sure to please fans of the genre, and they also star John Lasseter in some capacity (as a director or producer). Additionally, both movies have intriguing plots that involve themes of justice and what it means to be human, which align with the user's interest in those topics.",
+      "constraints": {
+        "genre": "soundtrack (media genre)",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her",
+        "actor": "John Lasseter",
+        "language": "English",
+        "director": "John Lasseter",
+        "writer": "John Lasseter"
+      },
+      "rec_titles": [
+        "Creepshow 2",
+        "Law Abiding Citizen",
+        "Blade Runner",
+        "The Marriage Plot"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Creepshow. I want to try something more erotica—still with John Lasseter if possible. I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 44,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "erotica",
+        "anchor_title": "The Piano Teacher",
+        "constraints": {
+          "genre": "erotica",
+          "actor": "Michael Berryman",
+          "plot": "forced",
+          "writer": "Caroline Kepnes",
+          "director": "John Lasseter"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 44,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "director",
+          "bridge_value": "John Lasseter",
+          "from_anchor": "Toy Story 2",
+          "to_anchor": "The Piano Teacher"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Thanks for your interest in movies! Based on your preference for erotica with John Lasseter, I recommend checking out \"Session 9\" and \"The Green Mile\". Both films offer a unique blend of suspense and romance, with talented actors such as Brendan Sexton III and David Morse in \"Session 9\", and Tom Hanks and Bonnie Hunt in \"The Green Mile\".",
+      "constraints": {
+        "genre": "erotica",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "W.",
+        "actor": "John Lasseter",
+        "language": "English",
+        "director": "John Lasseter",
+        "writer": "John Lasseter"
+      },
+      "rec_titles": [
+        "Session 9",
+        "How to Lose a Guy in 10 Days",
+        "Something Borrowed",
+        "The Green Mile"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "erotica",
+        "anchor_title": "The Piano Teacher",
+        "constraints": {
+          "genre": "erotica",
+          "actor": "Michael Berryman",
+          "plot": "forced",
+          "writer": "Caroline Kepnes",
+          "director": "John Lasseter"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"Keeping the Faith\" and \"Jason Bourne.\" Both movies offer a unique blend of romance, drama, and action that align with your interests. In \"Keeping the Faith,\" you'll find a heartwarming tale of friendship and love between two religious figures, while \"Jason Bourne\" promises high-octane action and intriguing plot twists.",
+      "constraints": {
+        "genre": "erotica",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "John Lasseter",
+        "language": "English",
+        "director": "John Lasseter",
+        "writer": "John Lasseter"
+      },
+      "rec_titles": [
+        "Keeping the Faith",
+        "The Last Battle",
+        "Jason Bourne",
+        "Stars Above"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Keeping the Faith. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "erotica",
+        "anchor_title": "The Piano Teacher",
+        "constraints": {
+          "genre": "erotica",
+          "actor": "Michael Berryman",
+          "plot": "forced",
+          "writer": "Caroline Kepnes",
+          "director": "John Lasseter"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your user's preferences, here are two movie recommendations that may align with their tastes:\n\nUser preference cues → genre: comedy; actor: John Lasseter; director: John Lasseter; writer: John Lasseter; language: English; plot keywords: like, sound.\n\nYou might enjoy \"Get Smart\" (2008) starring Dwayne Johnson, Bill Murray, and Anne Hathaway. This comedy follows a bumbling spy trying to prevent a terrorist attack from rival agency KAOS. The lighthearted plot and comedic talents of the lead actors may appeal to your user's sense of humor and enjoyment of the sound.\n\nAlternatively, \"Stars Above\" (2016) might be another good fit. This movie tells a story of three women from different generations who inhabit a house over the years. With a focus on character development and emotional depth, it may appeal to your user's interest in character-driven stories with meaningful plots.",
+      "constraints": {
+        "genre": "erotica",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "actor": "John Lasseter",
+        "language": "English",
+        "director": "John Lasseter",
+        "writer": "John Lasseter"
+      },
+      "rec_titles": [
+        "Get Smart",
+        "You Can Count on Me",
+        "Stars Above",
+        "The Wraith"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Stars Above? That sounds intriguing.",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "erotica",
+        "anchor_title": "The Piano Teacher",
+        "constraints": {
+          "genre": "erotica",
+          "actor": "Michael Berryman",
+          "plot": "forced",
+          "writer": "Caroline Kepnes",
+          "director": "John Lasseter"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nGenre: Erotica\nActor: John Lasseter\nDirector: John Lasseter\nWriter: John Lasseter\nLanguage: English\nPlot keywords: what, stars\n\nBased on the user's preferences, I recommend watching \"The Puffy Chair\" and \"Spectre\". Both movies have a unique plot that explores themes of adventure, mystery, and intrigue. In \"The Puffy Chair\", Josh Sagers embarks on a cross-country journey to deliver his father's birthday gift, while in \"Spectre\", James Bond uncovers the existence of a sinister organization named SPECTRE. Both movies have an interesting cast of characters and offer an engaging viewing experience.",
+      "constraints": {
+        "genre": "erotica",
+        "plot": [
+          "what",
+          "stars"
+        ],
+        "name": "Stars Above",
+        "actor": "John Lasseter",
+        "language": "English",
+        "director": "John Lasseter",
+        "writer": "John Lasseter"
+      },
+      "rec_titles": [
+        "The Puffy Chair",
+        "Harry Potter and the Half-Blood Prince",
+        "Spectre",
+        "Truman"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Her tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "erotica",
+        "anchor_title": "The Piano Teacher",
+        "constraints": {
+          "genre": "erotica",
+          "actor": "Michael Berryman",
+          "plot": "forced",
+          "writer": "Caroline Kepnes",
+          "director": "John Lasseter"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - erotica, Actor - John Lasseter, Director - John Lasseter, Language - English, Plot keywords - what, kind.\n\nBased on the user's preferences, I recommend \"Jackie Brown\" and \"What Happens in Vegas.\" Both movies have a unique plot and an interesting cast of characters, which should appeal to the user's tastes. In \"Jackie Brown,\" Samuel L. Jackson and Pam Grier deliver outstanding performances in a crime drama with a distinct blend of humor and style. Meanwhile, \"What Happens in Vegas\" offers a lighthearted and entertaining take on a relationship-based comedy with a talented cast, including Cameron Diaz and Ashton Kutcher.",
+      "constraints": {
+        "genre": "erotica",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her",
+        "actor": "John Lasseter",
+        "language": "English",
+        "director": "John Lasseter",
+        "writer": "John Lasseter"
+      },
+      "rec_titles": [
+        "Jackie Brown",
+        "Under Siege 2: Dark Territory",
+        "Sinbad: Legend of the Seven Seas",
+        "What Happens in Vegas"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Matt Keeslar. Hmm, I didn’t expect that vibe. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 49,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Matt Keeslar",
+        "anchor_title": "Art School Confidential",
+        "constraints": {
+          "genre": "erotica",
+          "actor": "Matt Keeslar",
+          "plot": "wish",
+          "writer": "Caroline Kepnes"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 49,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "wish",
+          "from_anchor": "The Piano Teacher",
+          "to_anchor": "Art School Confidential"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - erotica, actor - Matt Keeslar, director - John Lasseter, writer - John Lasseter, language - English, plot keywords - could, find.\nBased on the user's preferences, I recommend 'The Goldfinch' (2013) and 'Harry Potter and the Order of the Phoenix' (2003). Both movies have a unique and captivating plot, with a talented cast that includes Matt Keeslar. 'The Goldfinch' is a thought-provoking drama that explores themes of grief, trauma, and the power of art, while 'Harry Potter and the Order of the Phoenix' is an exciting adventure filled with magic, mystery, and action.",
+      "constraints": {
+        "genre": "erotica",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Ted",
+        "actor": "Matt Keeslar",
+        "language": "English",
+        "director": "John Lasseter",
+        "writer": "John Lasseter"
+      },
+      "rec_titles": [
+        "Harry Potter and the Order of the Phoenix",
+        "The BFG",
+        "The Exorcist",
+        "The Goldfinch"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 50,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Matt Keeslar",
+        "anchor_title": "Art School Confidential",
+        "constraints": {
+          "genre": "erotica",
+          "actor": "Matt Keeslar",
+          "plot": "wish",
+          "writer": "Caroline Kepnes"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, here are two movie recommendations that they might enjoy:\n\n* \"Tinker Tailor Soldier Spy\" (2011) is a gripping espionage thriller starring Benedict Cumberbatch and featuring a complex plot full of twists and turns. With its Cold War setting and talented cast, this movie is sure to keep viewers on the edge of their seats.\n* \"Dogma\" (1999) is a unique blend of comedy and fantasy that explores themes of religion, free will, and the power of belief. With a star-studded cast including Ben Affleck, Matt Damon, and Kevin Smith, this movie is a must-see for fans of quirky, offbeat humor.",
+      "constraints": {
+        "genre": "erotica",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Matt Keeslar",
+        "language": "English",
+        "director": "John Lasseter",
+        "writer": "John Lasseter"
+      },
+      "rec_titles": [
+        "Tinker Tailor Soldier Spy",
+        "Dogma",
+        "Under the Volcano",
+        "The Pledge"
       ]
     }
   ],
   "shift_events": [
     {
-      "turn": 6,
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Scout Taylor-Compton",
+      "from_anchor": "The Kid",
+      "to_anchor": "The Station Agent"
+    },
+    {
+      "turn": 5,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "The Station Agent",
+      "to_anchor": "Woman in Gold"
+    },
+    {
+      "turn": 10,
       "from_focus": "genre",
       "to_focus": "actor",
       "bridge_field": "plot",
-      "bridge_value": "secret",
-      "from_anchor": "Attachments",
-      "to_anchor": "Snow Flower and the Secret Fan"
+      "bridge_value": "charming",
+      "from_anchor": "Woman in Gold",
+      "to_anchor": "Purple Violets"
     },
     {
-      "turn": 12,
+      "turn": 16,
       "from_focus": "actor",
-      "to_focus": "language",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "exploring",
+      "from_anchor": "Purple Violets",
+      "to_anchor": "White Fang"
+    },
+    {
+      "turn": 21,
+      "from_focus": "director",
+      "to_focus": "actor",
       "bridge_field": "language",
       "bridge_value": "English",
-      "from_anchor": "Snow Flower and the Secret Fan",
-      "to_anchor": "Lucy"
+      "from_anchor": "White Fang",
+      "to_anchor": "Inside Out"
     },
     {
-      "turn": 17,
-      "from_focus": "language",
-      "to_focus": "writer",
-      "bridge_field": "language",
-      "bridge_value": "Arabic Language",
-      "from_anchor": "Lucy",
-      "to_anchor": "Spun"
+      "turn": 24,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "Todd Stashwick",
+      "from_anchor": "Inside Out",
+      "to_anchor": "The Lincoln Lawyer"
+    },
+    {
+      "turn": 31,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "writer",
+      "bridge_value": "Caroline Kepnes",
+      "from_anchor": "The Lincoln Lawyer",
+      "to_anchor": "Adventureland"
+    },
+    {
+      "turn": 38,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "forced",
+      "from_anchor": "Adventureland",
+      "to_anchor": "Toy Story 2"
+    },
+    {
+      "turn": 44,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "director",
+      "bridge_value": "John Lasseter",
+      "from_anchor": "Toy Story 2",
+      "to_anchor": "The Piano Teacher"
+    },
+    {
+      "turn": 49,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "wish",
+      "from_anchor": "The Piano Teacher",
+      "to_anchor": "Art School Confidential"
     }
   ]
 }

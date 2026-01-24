@@ -1,0 +1,2282 @@
+{
+  "session_id": "00043",
+  "model_name": "mistral:7b",
+  "true_genre": "history",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a reference movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "reference",
+        "anchor_title": "The Adventures of Tom Sawyer",
+        "constraints": {
+          "genre": "reference"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It sounds like you're in the mood for a movie that falls into the reference genre, particularly those with plot keywords such as \"could\". Based on the list provided, I recommend 'Maleficent' (2014), a captivating film starring Angelina Jolie Pitt about a vengeful fairy who discovers that a child could be the key to restoring peace in their troubled land. Another option is 'The Whistler' (2016), featuring a gentle giant defending his one true love against a band of thugs, adding an element of mystery and suspense to the plot. Enjoy your movie time!",
+      "constraints": {
+        "genre": "reference",
+        "plot": [
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "Maleficent",
+        "The Whistler",
+        "Psychic Experiment",
+        "The Great Gatsby"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Will Gluck? That sounds intriguing. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Will Gluck",
+        "anchor_title": "The Scarlet Letter",
+        "constraints": {
+          "genre": "reference",
+          "director": "Will Gluck"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "genre",
+          "bridge_value": "reference",
+          "from_anchor": "The Adventures of Tom Sawyer",
+          "to_anchor": "The Scarlet Letter"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your interest in a movie by Will Gluck, I recommend checking out \"Shattered\". This film features a gripping narrative about detectives taking down a Russian crime boss with the help of a computer hacker, and stars actors like Gerard Butler and Bob Hoskins. Alternatively, if you're open to exploring classic literature adaptations, you might enjoy \"The Adventures of Tom Sawyer\".",
+      "constraints": {
+        "genre": "reference",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "You",
+        "director": "Will Gluck",
+        "writer": "Will Gluck"
+      },
+      "rec_titles": [
+        "Shattered",
+        "The Adventures of Tom Sawyer",
+        "Downfall",
+        "Running with Scissors"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Will Gluck",
+        "anchor_title": "The Scarlet Letter",
+        "constraints": {
+          "genre": "reference",
+          "director": "Will Gluck"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for movies by Will Gluck and plots with a twist, you might enjoy \"Bats\" - a suspenseful horror film about a radiated bat that threatens a family's survival, starring Ned Bellamy and Leon. Another intriguing option is \"Veronica Mars\", a mystery drama featuring the return of a private investigator to her hometown for a high school reunion, starring Kristin Scott Thomas and Jason Dohring.",
+      "constraints": {
+        "genre": "reference",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Will Gluck",
+        "writer": "Will Gluck"
+      },
+      "rec_titles": [
+        "Bats",
+        "Donnie Brasco",
+        "Tell No One",
+        "Veronica Mars"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Tom Skerritt. Hmm, I didn’t expect that vibe. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 4,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Tom Skerritt",
+        "anchor_title": "Poltergeist III",
+        "constraints": {
+          "genre": "reference",
+          "director": "Will Gluck",
+          "actor": "Tom Skerritt"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 4,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Tom Skerritt",
+          "from_anchor": "The Scarlet Letter",
+          "to_anchor": "Poltergeist III"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems you're interested in finding more movies featuring Tom Skerritt, and we've narrowed down some options for you. One film that might pique your interest is 'Hitch', a comedy where Tom Skerritt stars alongside Will Smith. Another option could be 'Jingle All the Way', a heartwarming Christmas tale with Jim Belushi and Jake Lloyd. Both films offer unique perspectives, so I hope one of these recommendations sparks your interest!",
+      "constraints": {
+        "genre": "reference",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Ted",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Tom Skerritt"
+      },
+      "rec_titles": [
+        "Hitch",
+        "Jingle All the Way",
+        "Heart of Darkness",
+        "Trees Lounge"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tom Skerritt",
+        "anchor_title": "Poltergeist III",
+        "constraints": {
+          "genre": "reference",
+          "director": "Will Gluck",
+          "actor": "Tom Skerritt"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for movies directed by Will Gluck, starring Tom Skerritt, and featuring plot keywords such as 'just' and 'more', I would recommend you watch 'Compliance'. This film is about a fast food restaurant where a normal day gets disrupted by an officer claiming theft, but things take a darker turn. Or, if you're up for something more quirky, 'Running with Scissors' might be of interest - it's a coming-of-age story set in the 70's about a boy living with an eccentric psychiatrist and his family. Enjoy your movie time!",
+      "constraints": {
+        "genre": "reference",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Tom Skerritt"
+      },
+      "rec_titles": [
+        "Compliance",
+        "Shutter",
+        "Running with Scissors",
+        "Tarnation"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on You. I want to try something more melodrama—That sounds intriguing.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "melodrama",
+        "anchor_title": "Easy A",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Will Gluck"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 6,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "killing",
+          "from_anchor": "Poltergeist III",
+          "to_anchor": "Easy A"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for a melodramatic film, I'd like to recommend 'What Dreams May Come'. This movie tells a poignant story about a man's journey through the afterlife to reunite with his lost love, starring Robin Williams and Annabella Sciorra. Another intriguing option might be 'Being John Malkovich', a unique and thought-provoking film where a puppeteer discovers a portal into the actor's mind, featuring stars like Brad Pitt and Cameron Diaz. Enjoy your movie time!",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "You",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Tom Skerritt"
+      },
+      "rec_titles": [
+        "What Dreams May Come",
+        "Scream 4",
+        "The Passion of the Christ",
+        "Being John Malkovich"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "melodrama",
+        "anchor_title": "Easy A",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Will Gluck"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for drama genre, movies featuring Tom Skerritt, directed by Will Gluck or written by him, and plots with keywords like 'just', the movies '127 Hours' starring James Franco and 'The Imitation Game' with Benedict Cumberbatch could be of interest to you. Both films offer captivating stories centered around real-life challenges.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Will Gluck",
+        "writer": "Will Gluck",
+        "actor": "Tom Skerritt"
+      },
+      "rec_titles": [
+        "127 Hours",
+        "Jane Got a Gun",
+        "The Imitation Game",
+        "Smokin' Aces"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Larry Kramer? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of The Imitation Game.)",
+      "user_meta": {
+        "turn": 8,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Larry Kramer",
+        "anchor_title": "White Oleander",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Will Gluck",
+          "writer": "Larry Kramer"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 8,
+          "from_focus": "genre",
+          "to_focus": "writer",
+          "bridge_field": "genre",
+          "bridge_value": "melodrama",
+          "from_anchor": "Easy A",
+          "to_anchor": "White Oleander"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences for drama genre, writer Larry Kramer, and potential interest in movies starring Tom Skerritt, I'd like to suggest you consider watching \"The Truman Show\" (1998). This thought-provoking film features Jim Carrey as an insurance salesman who discovers his life is a reality TV show. Another interesting option is \"Ex Machina\" (2015), which revolves around a young programmer evaluating the human qualities of a highly advanced A.I., starring Oscar Isaac and Alicia Vikander. Both movies have compelling narratives and strong performances that might appeal to you.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "written",
+          "larry"
+        ],
+        "name": "The Imitation Game",
+        "director": "Will Gluck",
+        "writer": "Larry Kramer",
+        "actor": "Tom Skerritt"
+      },
+      "rec_titles": [
+        "Yesterday Was a Lie",
+        "The Truman Show",
+        "Ex Machina",
+        "Zulu"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Larry Kramer",
+        "anchor_title": "White Oleander",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Will Gluck",
+          "writer": "Larry Kramer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for drama films with Tom Skerritt, I'd highly recommend \"Hesher\" and \"The Hateful Eight.\" In \"Hesher,\" Tom plays alongside Joseph Gordon-Levitt in a story about a troubled boy who meets an unconventional character that brings chaos into his life. On the other hand, \"The Hateful Eight\" features a star-studded cast, including Tom, and unfolds as a tense thriller set in Wyoming during the dead of winter. Enjoy the captivating narratives!",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Will Gluck",
+        "writer": "Larry Kramer",
+        "actor": "Tom Skerritt"
+      },
+      "rec_titles": [
+        "Hesher",
+        "The Hateful Eight",
+        "Zero Dark Thirty",
+        "Street Kings"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Larry Kramer",
+        "anchor_title": "White Oleander",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Will Gluck",
+          "writer": "Larry Kramer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for drama genre, actor Tom Skerritt, and director/writer not specified in this case, let me suggest two movies that might interest you:\n\n1. 'Elizabeth' (1998) - This historical drama portrays the early years of Elizabeth I's reign and her journey to becoming a formidable monarch, starring Tom Skerritt alongside other notable actors such as Fanny Ardant and Eric Cantona.\n2. 'Into the Wild' (2005) - Although directed by Sean Penn instead of Will Gluck, this film features Tom Skerritt in a supporting role and tells an intriguing story about a young man who abandons his possessions to live off the grid in Alaska. Keanu Reeves also stars in this movie.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "You",
+        "director": "Will Gluck",
+        "writer": "Larry Kramer",
+        "actor": "Tom Skerritt"
+      },
+      "rec_titles": [
+        "Elizabeth",
+        "The Town",
+        "Into the Wild",
+        "Thumbsucker"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Into the Wild tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Larry Kramer",
+        "anchor_title": "White Oleander",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Will Gluck",
+          "writer": "Larry Kramer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your interest in drama genre, and since we don't have movies directed by Will Gluck, written by Larry Kramer, or starring Tom Skerritt in our provided list, I'd recommend 'Something Borrowed'. This film offers an intriguing plot about friendships, secrets, and unexpected romances.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Wild",
+        "director": "Will Gluck",
+        "writer": "Larry Kramer",
+        "actor": "Tom Skerritt"
+      },
+      "rec_titles": [
+        "Something Borrowed",
+        "Hard Candy",
+        "The Majestic",
+        "The Sun Also Rises"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? That sounds intriguing.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Larry Kramer",
+        "anchor_title": "White Oleander",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Will Gluck",
+          "writer": "Larry Kramer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for a drama genre, actor Tom Skerritt, and a plot that is intriguing, I'd recommend you watch 'Valkyrie'. This film is a thrilling dramatization of the July 20, 1944 assassination attempt on Adolf Hitler during World War II, starring Tom Cruise and featuring Tom Skerritt in the cast. Another option could be 'Minority Report', a sci-fi drama that explores the concept of preventing crimes before they occur with a compelling plot and an ensemble cast including Tom Cruise.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Ted",
+        "director": "Will Gluck",
+        "writer": "Larry Kramer",
+        "actor": "Tom Skerritt"
+      },
+      "rec_titles": [
+        "Wild Things",
+        "Minority Report",
+        "Valkyrie",
+        "The Proposal"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Minority Report. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Larry Kramer",
+        "anchor_title": "White Oleander",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Will Gluck",
+          "writer": "Larry Kramer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems you enjoy drama films and are intrigued by stories with an unexpected vibe, as demonstrated in Minority Report. Based on your preferences, I'd recommend exploring 'The Right Stuff'. This film takes viewers through the U.S. space program's development, showcasing a gripping plot and featuring notable stars like Dennis Quaid and Ed Harris.\nAnother option for you could be 'Doubt', a thought-provoking drama that delves into moral complexities within a Catholic school setting, with Meryl Streep delivering an exceptional performance.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Minority Report",
+        "director": "Will Gluck",
+        "writer": "Larry Kramer",
+        "actor": "Tom Skerritt"
+      },
+      "rec_titles": [
+        "Requiem for a Dream",
+        "Paper Towns",
+        "The Right Stuff",
+        "Doubt"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Kodi Smit-McPhee. Hmm, I didn’t expect that vibe. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 14,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Kodi Smit-McPhee",
+        "anchor_title": "Rain Man",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Will Gluck",
+          "writer": "Larry Kramer",
+          "actor": "Kodi Smit-McPhee",
+          "plot": "prostitute"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 14,
+          "from_focus": "writer",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "prostitute",
+          "from_anchor": "White Oleander",
+          "to_anchor": "Rain Man"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for drama films featuring Kodi Smit-McPhee, I'd recommend \"The Others\" and \"The Town\". In \"The Others\", Kodi plays a young boy living in a haunted house with his mother (Nicole Kidman), while in \"The Town\", he portrays the assistant manager taken hostage by a group of bank robbers. Both films deliver gripping drama with compelling narratives.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "X",
+        "director": "Will Gluck",
+        "writer": "Larry Kramer",
+        "actor": "Kodi Smit-McPhee"
+      },
+      "rec_titles": [
+        "The Others",
+        "The Hunted",
+        "The Mechanic",
+        "The Town"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Kodi Smit-McPhee",
+        "anchor_title": "Rain Man",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Will Gluck",
+          "writer": "Larry Kramer",
+          "actor": "Kodi Smit-McPhee",
+          "plot": "prostitute"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for drama films, featuring actor Kodi Smit-McPhee and directed by Will Gluck, I'd like to recommend '10 Things I Hate About You'. This romantic comedy-drama stars Heath Ledger and Julia Stiles, and tells the story of two teenage sisters, with a mysterious boy charming the anti-social older one. It's a heartwarming and engaging watch! Another option could be 'The Color of Money', directed by Martin Scorsese, starring Paul Newman and Tom Cruise, where an aging pool hustler teaches his protégé the ropes in this captivating drama.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Will Gluck",
+        "writer": "Larry Kramer",
+        "actor": "Kodi Smit-McPhee"
+      },
+      "rec_titles": [
+        "10 Things I Hate About You",
+        "Tell No One",
+        "The Color of Money",
+        "Mulholland Drive"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Kodi Smit-McPhee",
+        "anchor_title": "Rain Man",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Will Gluck",
+          "writer": "Larry Kramer",
+          "actor": "Kodi Smit-McPhee",
+          "plot": "prostitute"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you enjoy dramas, are interested in movies starring Kodi Smit-McPhee and directed by Will Gluck or Larry Kramer, and plots with keywords like 'like' and 'sound', I would recommend 'You Will Meet a Tall Dark Stranger'. This film is a drama featuring an ensemble cast including Naomi Watts, Anthony Hopkins, and Ewen Bremner. The plot revolves around the complexities of love and relationships in modern society. Another potential match could be 'The Hateful Eight', a drama with intense characters and suspenseful storytelling starring Samuel L. Jackson and Jennifer Jason Leigh.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "You",
+        "director": "Will Gluck",
+        "writer": "Larry Kramer",
+        "actor": "Kodi Smit-McPhee"
+      },
+      "rec_titles": [
+        "You Will Meet a Tall Dark Stranger",
+        "The Hateful Eight",
+        "Drive",
+        "I Think I Love My Wife"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Steven Brill? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 17,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Steven Brill",
+        "anchor_title": "Mama",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Steven Brill",
+          "writer": "Larry Kramer",
+          "plot": "children"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 17,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "children",
+          "from_anchor": "Rain Man",
+          "to_anchor": "Mama"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for a drama film by Steven Brill, written by Larry Kramer and with a possible plot twist, I'd like to suggest 'Casablanca' (1942). This classic drama, directed by Michael Curtiz, features Humphrey Bogart and Claude Rains in compelling performances. Alternatively, if you're open to movies from contemporary times, 'World's Greatest Dad' (2009) directed by Bobcat Goldthwait, may also appeal to you due to its unique narrative and starring Robin Williams.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "You",
+        "director": "Steven Brill",
+        "writer": "Larry Kramer",
+        "actor": "Steven Brill"
+      },
+      "rec_titles": [
+        "Casablanca",
+        "World's Greatest Dad",
+        "The Eclipse",
+        "Much Ado About Nothing"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Steven Brill",
+        "anchor_title": "Mama",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Steven Brill",
+          "writer": "Larry Kramer",
+          "plot": "children"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for a drama genre, movies directed by Steven Brill, written by Larry Kramer, and featuring actor Steven Brill, here are two recommendations:\n\n1. Born on the Fourth of July - A compelling biographical drama that tells the story of Ron Kovic, a Vietnam War veteran who becomes an anti-war activist after feeling betrayed by his country.\n2. Edward Scissorhands - An intriguing tale about an artificial man with scissors for hands, who is taken in by a suburban family, and the unexpected events that unfold. Starring Johnny Depp and Dianne Wiest.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Steven Brill",
+        "writer": "Larry Kramer",
+        "actor": "Steven Brill"
+      },
+      "rec_titles": [
+        "Born on the Fourth of July",
+        "A Few Good Men",
+        "Edward Scissorhands",
+        "Big Fish"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Jason Statham. That sounds intriguing. (I’m thinking of War.)",
+      "user_meta": {
+        "turn": 19,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Jason Statham",
+        "anchor_title": "Extraordinary Measures",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Steven Brill",
+          "writer": "Larry Kramer",
+          "plot": "children",
+          "actor": "Jason Statham"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 19,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Jason Statham",
+          "from_anchor": "Mama",
+          "to_anchor": "Extraordinary Measures"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for war-themed movies featuring Jason Statham, I'd like to suggest two films that might interest you:\n\n1. Man of Steel (2013) - This film revolves around a group of workers opposing the forces of capitalism, transitioning into a wilderness adventure, and culminating in a story about a number of teens experimenting with booze and drugs before finding religion. Harry Lennix and Russell Crowe are among the notable stars in this movie.\n\n2. The Recruit (N/A) - This thriller follows a brilliant young CIA trainee who helps find a mole within the Agency, starring Colin Farrell and Al Pacino. While Jason Statham is not directly involved, the suspenseful plot could still appeal to you.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "War",
+        "director": "Steven Brill",
+        "writer": "Larry Kramer",
+        "actor": "Jason Statham"
+      },
+      "rec_titles": [
+        "Man of Steel",
+        "The Recruit",
+        "Without a Paddle",
+        "Bloody Sunday"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jason Statham",
+        "anchor_title": "Extraordinary Measures",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Steven Brill",
+          "writer": "Larry Kramer",
+          "plot": "children",
+          "actor": "Jason Statham"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for war genre movies featuring Jason Statham, I'd recommend \"Lock, Stock and Two Smoking Barrels\". This action-packed British film showcases Statham in a high-stakes poker game against a local mobster. Another intriguing option is the classic epic \"Gone with the Wind\", starring Vivien Leigh and Clark Gable, which delves into a turbulent romance amidst the backdrop of the American Civil War.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Steven Brill",
+        "writer": "Larry Kramer",
+        "actor": "Jason Statham"
+      },
+      "rec_titles": [
+        "Lock, Stock and Two Smoking Barrels",
+        "Gone with the Wind",
+        "New York Minute",
+        "Jack and Jill"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Gone with the Wind tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 21,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jason Statham",
+        "anchor_title": "Extraordinary Measures",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Steven Brill",
+          "writer": "Larry Kramer",
+          "plot": "children",
+          "actor": "Jason Statham"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preferences for a war genre movie and interest in stories with intriguing plots, I'd recommend you consider \"Utsav\". This film is based on an ancient Indian play and follows the complex relationship between a courtesan, a penniless man, and the king's brother-in-law. Another option could be \"Zulu\" which features a murder mystery intertwined with the availability of a new illegal drug and the disappearance of black street children.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Gone with the Wind",
+        "director": "Steven Brill",
+        "writer": "Larry Kramer",
+        "actor": "Jason Statham"
+      },
+      "rec_titles": [
+        "Utsav",
+        "Zulu",
+        "The Messenger",
+        "War Horse"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Zulu. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jason Statham",
+        "anchor_title": "Extraordinary Measures",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Steven Brill",
+          "writer": "Larry Kramer",
+          "plot": "children",
+          "actor": "Jason Statham"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems you're interested in war films, particularly ones with a unique setting like Zulu and featuring notable actors. Based on this, I'd recommend you consider \"Doctor Zhivago\" starring Julie Christie, Hugh Bonneville, Keira Knightley, and Geraldine Chaplin, which offers a captivating tale set during World War I and the October Revolution in Russia. Another compelling option is \"Proof of Life\" starring Russell Crowe, a thriller about an engineer's kidnapping in South America and the efforts to secure his release.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Zulu",
+        "director": "Steven Brill",
+        "writer": "Larry Kramer",
+        "actor": "Jason Statham",
+        "language": "Zulu"
+      },
+      "rec_titles": [
+        "Doctor Zhivago",
+        "Lord of War",
+        "Proof of Life",
+        "Red Cliff"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Zulu? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jason Statham",
+        "anchor_title": "Extraordinary Measures",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Steven Brill",
+          "writer": "Larry Kramer",
+          "plot": "children",
+          "actor": "Jason Statham"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for war genre films, starring Jason Statham, and set in Zulu, I'd highly recommend \"Zulu\" (2013). This film features a gripping plot about investigating a brutal murder connected to illegal drugs and the disappearance of black street children. Alternatively, if you fancy something more lighthearted, you might enjoy WALL·E (2008), an animated sci-fi adventure about a small waste-collecting robot on a space journey that decides the fate of mankind.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "Zulu",
+        "director": "Steven Brill",
+        "writer": "Larry Kramer",
+        "actor": "Jason Statham",
+        "language": "Zulu"
+      },
+      "rec_titles": [
+        "Zulu",
+        "WALL·E",
+        "Flags of Our Fathers",
+        "The Odyssey"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jason Statham",
+        "anchor_title": "Extraordinary Measures",
+        "constraints": {
+          "genre": "melodrama",
+          "director": "Steven Brill",
+          "writer": "Larry Kramer",
+          "plot": "children",
+          "actor": "Jason Statham"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for a war genre movie, starring Jason Statham, directed by Steven Brill or another director, written by Larry Kramer, in Zulu language, and containing keywords related to 'what was said', I would recommend 'Fury' (2014). This action-packed war film features Brad Pitt alongside Jason Statham, immersing you in the grueling battles of World War II.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "Zulu",
+        "director": "Steven Brill",
+        "writer": "Larry Kramer",
+        "actor": "Jason Statham",
+        "language": "Zulu"
+      },
+      "rec_titles": [
+        "Alex in Wonderland",
+        "The Wrestler",
+        "Fury",
+        "Find Me Guilty"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on War. I want to try something more epic—Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 25,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "epic",
+        "anchor_title": "Mad City",
+        "constraints": {
+          "genre": "epic",
+          "director": "Steven Brill",
+          "plot": "children",
+          "actor": "Jason Statham"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 25,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "indian",
+          "from_anchor": "Extraordinary Measures",
+          "to_anchor": "Mad City"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you're seeking an epic movie with a different vibe, I'd recommend \"Lock, Stock and Two Smoking Barrels\" for its engaging plot involving high-stakes poker games against a powerful mobster, starring Jason Statham among others. If you fancy something more unique, consider \"Tsotsi\", which offers an intense look at six days in the life of a South African gang leader.",
+      "constraints": {
+        "genre": "epic",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "War",
+        "director": "Steven Brill",
+        "writer": "Larry Kramer",
+        "actor": "Jason Statham",
+        "language": "Zulu"
+      },
+      "rec_titles": [
+        "London",
+        "The Passion of the Christ",
+        "Tsotsi",
+        "Lock, Stock and Two Smoking Barrels"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "epic",
+        "anchor_title": "Mad City",
+        "constraints": {
+          "genre": "epic",
+          "director": "Steven Brill",
+          "plot": "children",
+          "actor": "Jason Statham"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for epic films, featuring Jason Statham, Steven Brill, Larry Kramer, and Zulu language, I'd recommend \"The Swindle\" - a comedy that showcases Michel Serrault, François Cluzet, and Isabelle Huppert in a story about scammers pulling pranks. Another film to consider is \"Brokeback Mountain,\" a heart-wrenching drama starring Heath Ledger and Jake Gyllenhaal, set against the breathtaking landscapes of Wyoming.",
+      "constraints": {
+        "genre": "epic",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Steven Brill",
+        "writer": "Larry Kramer",
+        "actor": "Jason Statham",
+        "language": "Zulu"
+      },
+      "rec_titles": [
+        "The Swindle",
+        "Panic Room",
+        "The Cabin in the Woods",
+        "Brokeback Mountain"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Zulu tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "epic",
+        "anchor_title": "Mad City",
+        "constraints": {
+          "genre": "epic",
+          "director": "Steven Brill",
+          "plot": "children",
+          "actor": "Jason Statham"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for epic stories, enjoyment of films with Jason Statham, and interest in movies with a Zulu language element, I'd recommend you consider \"The Italian Job\" starring Jason Statham. This film is an entertaining caper movie involving a gold heist in Turin, Italy. Alternatively, if you're interested in science fiction, you might enjoy \"2010\", a sequel to 2001: A Space Odyssey, set in the end of the millennium with a star-studded cast.",
+      "constraints": {
+        "genre": "epic",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Zulu",
+        "director": "Steven Brill",
+        "writer": "Larry Kramer",
+        "actor": "Jason Statham",
+        "language": "Zulu"
+      },
+      "rec_titles": [
+        "American Dreamz",
+        "The Italian Job",
+        "2010",
+        "Prometheus"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of 2010? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "epic",
+        "anchor_title": "Mad City",
+        "constraints": {
+          "genre": "epic",
+          "director": "Steven Brill",
+          "plot": "children",
+          "actor": "Jason Statham"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for an epic movie from 2010, with a focus on Jason Statham, and considering we couldn't find a match based on the provided cues, I'd suggest you watch 'Robin Hood', which features archery action and adventure set in medieval England. Alternatively, if you're open to a slightly different genre, the gripping survival drama '127 Hours' with James Franco might also interest you.",
+      "constraints": {
+        "genre": "epic",
+        "plot": [
+          "what"
+        ],
+        "name": "2010",
+        "director": "Steven Brill",
+        "writer": "Larry Kramer",
+        "actor": "Jason Statham",
+        "language": "Zulu",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Elizabeth",
+        "Easy A",
+        "Robin Hood",
+        "127 Hours"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by David Nicholls? That sounds intriguing. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 29,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "David Nicholls",
+        "anchor_title": "The Alamo",
+        "constraints": {
+          "genre": "epic",
+          "director": "Steven Brill",
+          "actor": "Jason Statham",
+          "writer": "David Nicholls"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 29,
+          "from_focus": "genre",
+          "to_focus": "writer",
+          "bridge_field": "writer",
+          "bridge_value": "David Nicholls",
+          "from_anchor": "Mad City",
+          "to_anchor": "The Alamo"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for movies written by David Nicholls, here are two recommendations:\n\n1. Due Date (2010) - A humorous road trip adventure starring Danny McBride and Robert Downey Jr.\n2. The Passion of the Christ (2004) - An epic portrayal of Jesus' final twelve hours, directed by Mel Gibson. This movie is not in Zulu, as per your language preference cue.",
+      "constraints": {
+        "genre": "epic",
+        "plot": [
+          "written",
+          "david"
+        ],
+        "name": "You",
+        "director": "Steven Brill",
+        "writer": "David Nicholls",
+        "actor": "Jason Statham",
+        "language": "Zulu",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Due Date",
+        "Yogi Bear",
+        "Freakonomics",
+        "The Passion of the Christ"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "David Nicholls",
+        "anchor_title": "The Alamo",
+        "constraints": {
+          "genre": "epic",
+          "director": "Steven Brill",
+          "actor": "Jason Statham",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for epic movies from 2010 featuring Jason Statham, and considering our options are 'Unstoppable', 'Neighbors 2: Sorority Rising', \"Schindler's List\", and 'Wild Hogs', I'd recommend you watch 'Unstoppable'. This action-packed thriller also stars Denzel Washington and follows the story of a runaway train.",
+      "constraints": {
+        "genre": "epic",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Steven Brill",
+        "writer": "David Nicholls",
+        "actor": "Jason Statham",
+        "language": "Zulu",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Unstoppable",
+        "Neighbors 2: Sorority Rising",
+        "Schindler's List",
+        "Wild Hogs"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Kyle Gass. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Wild Hogs.)",
+      "user_meta": {
+        "turn": 31,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Kyle Gass",
+        "anchor_title": "Schindler's List",
+        "constraints": {
+          "genre": "epic",
+          "actor": "Kyle Gass",
+          "writer": "David Nicholls"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 31,
+          "from_focus": "writer",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Kyle Gass",
+          "from_anchor": "The Alamo",
+          "to_anchor": "Schindler's List"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences for a movie featuring Kyle Gass, from the year 2010 onwards, with an epic genre, and possibly written by David Nicholls or directed by Steven Brill, I'd recommend you consider 'Frozen' (2013). This animated film features a journey to find a lost princess, with an ensemble voice cast including Josh Gad, who also worked with Kyle Gass in 'Wild Hogs'. Alternatively, you might enjoy 'The Santa Clause 2' (2002), where Scott Calvin embarks on a quest to find a Mrs. Claus. This movie stars Judge Reinhold, who was also in 'Wild Hogs'.",
+      "constraints": {
+        "genre": "epic",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Wild",
+        "director": "Steven Brill",
+        "writer": "David Nicholls",
+        "actor": "Kyle Gass",
+        "language": "Zulu",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Frozen",
+        "The Santa Clause 2",
+        "Princess Mononoke",
+        "Divergent"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Kyle Gass",
+        "anchor_title": "Schindler's List",
+        "constraints": {
+          "genre": "epic",
+          "actor": "Kyle Gass",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for epic films from 2010, starring Kyle Gass and featuring a Zulu language, I'd recommend \"Southland Tales\". This film is an intricate narrative set during a heatwave, with a diverse cast that includes the likes of Seann William Scott and Sarah Michelle Gellar. Another intriguing choice is \"Wanted\", where you might find resonance in the story of a Korean actor who finds himself caught up in police and gangster drama due to his resemblance to a wanted criminal.",
+      "constraints": {
+        "genre": "epic",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Steven Brill",
+        "writer": "David Nicholls",
+        "actor": "Kyle Gass",
+        "language": "Zulu",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Southland Tales",
+        "The Stuff",
+        "Lakeview Terrace",
+        "Wanted"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Kyle Gass",
+        "anchor_title": "Schindler's List",
+        "constraints": {
+          "genre": "epic",
+          "actor": "Kyle Gass",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you enjoy epic films from 2010, featuring Kyle Gass and are open to movies in Zulu language or plots involving a likable sound, I'd recommend 'Salt'. Angelina Jolie stars in this action-packed spy thriller where a CIA agent is accused of being a Russian spy. Another option could be 'Dances with Wolves', a powerful tale about a Civil War soldier who forms a bond with a Sioux tribe, which might resonate with your preference for epic films.",
+      "constraints": {
+        "genre": "epic",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "director": "Steven Brill",
+        "writer": "David Nicholls",
+        "actor": "Kyle Gass",
+        "language": "Zulu",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Salt",
+        "Dances with Wolves",
+        "The Best Years of Our Lives",
+        "From Paris with Love"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 34,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Kyle Gass",
+        "anchor_title": "Schindler's List",
+        "constraints": {
+          "genre": "epic",
+          "actor": "Kyle Gass",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences for a lighter mood, epic genre (if applicable), released in 2010, featuring actor Kyle Gass, and given that you're looking for something not predominantly scary, I would recommend \"Zookeeper\". This film offers a comical take on animals helping their zookeeper find love, starring Kyle Goss along with Leslie Bibb and Rosario Dawson. Another option could be \"The Warrior's Way\", an action-packed movie featuring Dong-gun Jang in the role of a warrior-assassin hiding in the American Badlands.",
+      "constraints": {
+        "genre": "epic",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "director": "Steven Brill",
+        "writer": "David Nicholls",
+        "actor": "Kyle Gass",
+        "language": "Zulu",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Zookeeper",
+        "End of Watch",
+        "The Warrior's Way",
+        "Zero Effect"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Zoo tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Kyle Gass",
+        "anchor_title": "Schindler's List",
+        "constraints": {
+          "genre": "epic",
+          "actor": "Kyle Gass",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preferences for an epic story from 2010, featuring Kyle Gass and a Zulu language movie, I'd recommend checking out \"3\". This film is a mystery centered around a high school sweetheart trying to unravel the truth behind her husband's suicide. Although it doesn't feature Kyle Gass or Zulu language, another intriguing option could be \"TRON: Legacy\", a visually stunning epic about a man venturing into his father's digital world and encountering both danger and allies within.",
+      "constraints": {
+        "genre": "epic",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Zoo",
+        "director": "Steven Brill",
+        "writer": "David Nicholls",
+        "actor": "Kyle Gass",
+        "language": "Zulu",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Matched",
+        "Insidious",
+        "3",
+        "TRON: Legacy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Polish? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 36,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "Polish",
+        "anchor_title": "Track of the Cat",
+        "constraints": {
+          "genre": "epic",
+          "actor": "Kyle Gass",
+          "language": "Polish",
+          "plot": "killing"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 36,
+          "from_focus": "actor",
+          "to_focus": "language",
+          "bridge_field": "plot",
+          "bridge_value": "killing",
+          "from_anchor": "Schindler's List",
+          "to_anchor": "Track of the Cat"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preferences for a primarily Polish movie, an epic genre film from 2010, and a touch of uncertainty about whether it might be scary, I'd recommend you give 'David i Goliat' (2011) a try. This epic movie filmed in North Africa and London follows young shepherd David as he takes on the mighty warrior Goliath against all odds. Although it doesn't exactly match your actor or director preferences, its engaging plotline might appeal to you. If you're still intrigued by the idea of a light-hearted movie, 'Furry Vengeance' could also be an interesting choice. In this film, a real-estate developer faces unique protests from local woodland creatures over his housing subdivision plans.",
+      "constraints": {
+        "genre": "epic",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "RED",
+        "director": "Steven Brill",
+        "writer": "David Nicholls",
+        "actor": "Kyle Gass",
+        "language": "Polish",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Furry Vengeance",
+        "Love Ranch",
+        "David and Goliath",
+        "The Expendables"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Polish",
+        "anchor_title": "Track of the Cat",
+        "constraints": {
+          "genre": "epic",
+          "actor": "Kyle Gass",
+          "language": "Polish",
+          "plot": "killing"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for epic films from 2010, starring Kyle Gass and featuring a plot related to \"just\", I recommend checking out 'Apocalypto'. This film is an action-packed adventure set in the Mayan civilization with a strong narrative focusing on survival against all odds. Another movie you might enjoy is 'Little Fockers', a comedy about family dynamics that will surely bring a smile to your face, featuring Kyle Gass along with other notable actors like Ben Stiller and Robert De Niro.",
+      "constraints": {
+        "genre": "epic",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Steven Brill",
+        "writer": "David Nicholls",
+        "actor": "Kyle Gass",
+        "language": "Polish",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Apocalypto",
+        "House at the End of the Street",
+        "Little Fockers",
+        "127 Hours"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Little Fockers. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Polish",
+        "anchor_title": "Track of the Cat",
+        "constraints": {
+          "genre": "epic",
+          "actor": "Kyle Gass",
+          "language": "Polish",
+          "plot": "killing"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preferences for a movie released in 2010, featuring an actor named Kyle Gass, and containing elements that seem deeper than you might have expected, I recommend checking out 'The Social Network'. This film delves into the creation of Facebook and features a star-studded cast, including Jesse Eisenberg, Justin Timberlake, and Armie Hammer. Alternatively, if you're interested in epic storytelling with a historical backdrop, you might enjoy 'Fair Game', which centers around a cop and a civil law attorney embroiled in a dangerous mission to protect each other from a KGB team.",
+      "constraints": {
+        "genre": "epic",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Little Fockers",
+        "director": "Steven Brill",
+        "writer": "David Nicholls",
+        "actor": "Kyle Gass",
+        "language": "Polish",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Fair Game",
+        "The Return of the King",
+        "The Expendables",
+        "The Social Network"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Fair Game? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 39,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Polish",
+        "anchor_title": "Track of the Cat",
+        "constraints": {
+          "genre": "epic",
+          "actor": "Kyle Gass",
+          "language": "Polish",
+          "plot": "killing"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you're looking for a movie from 2010, with an epic mood and perhaps no horror elements, I'd recommend considering Iron Man 2, featuring the star-studded cast of Robert Downey Jr., Don Cheadle, and Scarlett Johansson. This film is an action-packed epic within the Marvel Cinematic Universe that might appeal to your preferences. Another option could be Yogi Bear, a family-friendly comedy with Josh Robert Thompson and Tom Cavanagh in the lead roles.",
+      "constraints": {
+        "genre": "epic",
+        "plot": [
+          "what",
+          "fair"
+        ],
+        "name": "Fair Game",
+        "director": "Steven Brill",
+        "writer": "David Nicholls",
+        "actor": "Kyle Gass",
+        "language": "Polish",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Iron Man 2",
+        "Yogi Bear",
+        "Furry Vengeance",
+        "Naked"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Iron Man 2 tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Polish",
+        "anchor_title": "Track of the Cat",
+        "constraints": {
+          "genre": "epic",
+          "actor": "Kyle Gass",
+          "language": "Polish",
+          "plot": "killing"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preferences for an epic movie released in 2010, starring Kyle Gass, and focusing on a deeper story, I'd recommend watching 'How to Train Your Dragon'. This animated film offers an engaging plot about friendship between a young Viking and a dragon, featuring voice talent from stars like Gerard Butler and Kristen Wiig. If you're open to exploring films outside the 2010 timeframe, you might also enjoy 'Taxi Driver' with Robert De Niro, a gritty and powerful drama set in the world of New York City taxis.",
+      "constraints": {
+        "genre": "epic",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Iron Man",
+        "director": "Steven Brill",
+        "writer": "David Nicholls",
+        "actor": "Kyle Gass",
+        "language": "Polish",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "How to Train Your Dragon",
+        "Training Day",
+        "The Wrestler",
+        "Taxi Driver"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Powers Boothe. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of 2010.)",
+      "user_meta": {
+        "turn": 41,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Powers Boothe",
+        "anchor_title": "White Night",
+        "constraints": {
+          "genre": "epic",
+          "actor": "Powers Boothe",
+          "language": "Polish",
+          "plot": "killing"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 41,
+          "from_focus": "language",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "Polish",
+          "from_anchor": "Track of the Cat",
+          "to_anchor": "White Night"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for epic movies from 2010 featuring Powers Boothe, I'd recommend you watch \"Kites\". This film is about a man searching for his sweetheart in the Mexican desert while evading various pursuers. Although it was released in 2010, \"The Shadows\" might also interest you due to its plot twist involving dangerous friends and a sinister side, starring Powers Boothe as well.",
+      "constraints": {
+        "genre": "epic",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "2010",
+        "director": "Steven Brill",
+        "writer": "David Nicholls",
+        "actor": "Powers Boothe",
+        "language": "Polish",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Kites",
+        "I Love You, Man",
+        "Despicable Me",
+        "The Shadows"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Powers Boothe",
+        "anchor_title": "White Night",
+        "constraints": {
+          "genre": "epic",
+          "actor": "Powers Boothe",
+          "language": "Polish",
+          "plot": "killing"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for epic movies released in 2010 featuring actor Powers Boothe and written by David Nicholls, you might enjoy 'MacGruber' as it also stars Powers Boothe and is an action-comedy with a unique plot. Another option could be 'Green Card', a romantic comedy with a star-studded cast that also released in 2010.",
+      "constraints": {
+        "genre": "epic",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Steven Brill",
+        "writer": "David Nicholls",
+        "actor": "Powers Boothe",
+        "language": "Polish",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Green Card",
+        "MacGruber",
+        "Wild Hogs",
+        "The Other Guys"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Powers Boothe",
+        "anchor_title": "White Night",
+        "constraints": {
+          "genre": "epic",
+          "actor": "Powers Boothe",
+          "language": "Polish",
+          "plot": "killing"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preferences for an epic movie from 2010 featuring Powers Boothe, you might enjoy 'Shutter Island' or 'The Avengers'. 'Shutter Island' is a psychological thriller starring Leonardo DiCaprio and features Powers Boothe in a compelling role, while 'The Avengers' is a superhero epic that brings together some of Marvel's most iconic characters, including Powers Boothe as the villainous Gideon Malick. Both films offer exciting plots and memorable performances.",
+      "constraints": {
+        "genre": "epic",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "You",
+        "director": "Steven Brill",
+        "writer": "David Nicholls",
+        "actor": "Powers Boothe",
+        "language": "Polish",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Shutter Island",
+        "You Again",
+        "The Twilight Saga: Eclipse",
+        "The Avengers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of 2010? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Powers Boothe",
+        "anchor_title": "White Night",
+        "constraints": {
+          "genre": "epic",
+          "actor": "Powers Boothe",
+          "language": "Polish",
+          "plot": "killing"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preferences for an epic movie from 2010, starring Powers Boothe, with a Polish language and a potential plot keyword being 'what', I'd recommend you consider watching \"Despicable Me\". This animated film features Steve Carell in a lead role and offers an entertaining story about a criminal mastermind who finds unexpected fatherhood. Another option could be \"Red Cliff\" if you are open to movies from 2008 that fit your genre preference.",
+      "constraints": {
+        "genre": "epic",
+        "plot": [
+          "what"
+        ],
+        "name": "2010",
+        "director": "Steven Brill",
+        "writer": "David Nicholls",
+        "actor": "Powers Boothe",
+        "language": "Polish",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Red Cliff",
+        "Despicable Me",
+        "Pride and Prejudice",
+        "The Twilight Saga: New Moon"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Ted. I want to try something more india—still with English if possible. I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 45,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "india",
+        "anchor_title": "The Break-Up",
+        "constraints": {
+          "genre": "india",
+          "actor": "Powers Boothe",
+          "language": "English",
+          "plot": "killing"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 45,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "White Night",
+          "to_anchor": "The Break-Up"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for movies from India, English language, and a mix of drama and comedy, I'd suggest you consider watching \"The Last Castle\". This film features a power struggle between a court-martialed General and a corrupt warden in a prison setting. Another movie that might interest you is \"Jerry Maguire\", a sports drama with a compelling storyline about an agent trying to make it on his own after expressing moral principles.",
+      "constraints": {
+        "genre": "india",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Ted",
+        "director": "Steven Brill",
+        "writer": "David Nicholls",
+        "actor": "Powers Boothe",
+        "language": "English",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "The Last Castle",
+        "Jerry Maguire",
+        "The Scarlet Letter",
+        "Witless Protection"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "india",
+        "anchor_title": "The Break-Up",
+        "constraints": {
+          "genre": "india",
+          "actor": "Powers Boothe",
+          "language": "English",
+          "plot": "killing"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for Indian films from 2010, I'm afraid none of the provided movies meet that criteria. However, let me suggest two English language films outside the year range that you might enjoy due to their strong cast and compelling plots:\n\n1. Multiplicity (1996) - This sci-fi comedy stars Michael Keaton as a man who clones himself for more time in his busy life.\n2. Hard Candy (2005) - A thrilling drama featuring Patrick Wilson and Odessa Rae, this movie tells the story of a dangerous online encounter between an adult photographer and a teenage girl.",
+      "constraints": {
+        "genre": "india",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Steven Brill",
+        "writer": "David Nicholls",
+        "actor": "Powers Boothe",
+        "language": "English",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Multiplicity",
+        "True Crime",
+        "What Just Happened",
+        "Hard Candy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does 2010 tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "india",
+        "anchor_title": "The Break-Up",
+        "constraints": {
+          "genre": "india",
+          "actor": "Powers Boothe",
+          "language": "English",
+          "plot": "killing"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for Indian movies, year (2010), English language, and the keyword 'what', I recommend \"What's the Worst That Could Happen?\" as a fitting choice. This film involves a rich man and a thief, creating an intriguing dynamic similar to what you were interested in. Another option, albeit not from 2010, is \"Mr. Bean's Holiday\", which offers light-hearted comedy with a journey through France, much like your preference for international settings.",
+      "constraints": {
+        "genre": "india",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "2010",
+        "director": "Steven Brill",
+        "writer": "David Nicholls",
+        "actor": "Powers Boothe",
+        "language": "English",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Interstellar",
+        "Mr. Bean's Holiday",
+        "The Last Stand",
+        "What's the Worst That Could Happen?"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Martin Campbell? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of What's the Worst That Could Happen?.)",
+      "user_meta": {
+        "turn": 48,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Martin Campbell",
+        "anchor_title": "Water for Elephants",
+        "constraints": {
+          "genre": "india",
+          "actor": "Powers Boothe",
+          "language": "English",
+          "plot": "killing",
+          "director": "Martin Campbell",
+          "writer": "The Brothers Chaps (Music Composer)"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 48,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "writer",
+          "bridge_value": "The Brothers Chaps (Music Composer)",
+          "from_anchor": "The Break-Up",
+          "to_anchor": "Water for Elephants"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preferences for a movie directed by Martin Campbell, set in English language and released around 2010, I'd recommend \"Moneyball\" as it fits well with your criteria. This film features Brad Pitt and Philip Seymour Hoffman, and the plot revolves around building a successful baseball team using statistical analysis. Another intriguing option could be \"The Messenger\", starring Woody Harrelson and Ben Foster, which explores an ethical dilemma faced by an American soldier.",
+      "constraints": {
+        "genre": "india",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "RED",
+        "director": "Martin Campbell",
+        "writer": "David Nicholls",
+        "actor": "Martin Campbell",
+        "language": "English",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Moneyball",
+        "The Scarlet Letter",
+        "Immortals",
+        "The Messenger"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Martin Campbell",
+        "anchor_title": "Water for Elephants",
+        "constraints": {
+          "genre": "india",
+          "actor": "Powers Boothe",
+          "language": "English",
+          "plot": "killing",
+          "director": "Martin Campbell",
+          "writer": "The Brothers Chaps (Music Composer)"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for Indian films released in 2010 or later, English language, and written by David Nicholls, I'm sorry to inform you that none of the recommended movies match all of your preferences. However, if we relax the constraints on actor, director, and year, I suggest watching 'Sex, Lies, and Videotape' (1989) or 'Taxi Driver' (1976), both intriguing films with engaging plots and notable performances.",
+      "constraints": {
+        "genre": "india",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Martin Campbell",
+        "writer": "David Nicholls",
+        "actor": "Martin Campbell",
+        "language": "English",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Misery",
+        "Oliver Twist",
+        "Taxi Driver",
+        "Sex, Lies, and Videotape"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of 2010. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 50,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Martin Campbell",
+        "anchor_title": "Water for Elephants",
+        "constraints": {
+          "genre": "india",
+          "actor": "Powers Boothe",
+          "language": "English",
+          "plot": "killing",
+          "director": "Martin Campbell",
+          "writer": "The Brothers Chaps (Music Composer)"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems you're interested in English language films from 2010, set in India, and possibly featuring Martin Campbell as director or actor, though I didn't find any matches for those specific cues in the provided list. However, let me suggest two intriguing movies from the list that might pique your interest:\n\n1. 'The Greatest': A captivating biographical film starring Muhammad Ali as himself, which recounts the events that brought him to fame.\n2. 'Z for Zachariah': A post-apocalyptic drama about a love triangle between the last three known survivors.\n\nEnjoy your movie time!",
+      "constraints": {
+        "genre": "india",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "2010",
+        "director": "Martin Campbell",
+        "writer": "David Nicholls",
+        "actor": "Martin Campbell",
+        "language": "English",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "The Greatest",
+        "Beloved",
+        "Z for Zachariah",
+        "Straw Dogs"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "genre",
+      "bridge_value": "reference",
+      "from_anchor": "The Adventures of Tom Sawyer",
+      "to_anchor": "The Scarlet Letter"
+    },
+    {
+      "turn": 4,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Tom Skerritt",
+      "from_anchor": "The Scarlet Letter",
+      "to_anchor": "Poltergeist III"
+    },
+    {
+      "turn": 6,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "killing",
+      "from_anchor": "Poltergeist III",
+      "to_anchor": "Easy A"
+    },
+    {
+      "turn": 8,
+      "from_focus": "genre",
+      "to_focus": "writer",
+      "bridge_field": "genre",
+      "bridge_value": "melodrama",
+      "from_anchor": "Easy A",
+      "to_anchor": "White Oleander"
+    },
+    {
+      "turn": 14,
+      "from_focus": "writer",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "prostitute",
+      "from_anchor": "White Oleander",
+      "to_anchor": "Rain Man"
+    },
+    {
+      "turn": 17,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "children",
+      "from_anchor": "Rain Man",
+      "to_anchor": "Mama"
+    },
+    {
+      "turn": 19,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Jason Statham",
+      "from_anchor": "Mama",
+      "to_anchor": "Extraordinary Measures"
+    },
+    {
+      "turn": 25,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "indian",
+      "from_anchor": "Extraordinary Measures",
+      "to_anchor": "Mad City"
+    },
+    {
+      "turn": 29,
+      "from_focus": "genre",
+      "to_focus": "writer",
+      "bridge_field": "writer",
+      "bridge_value": "David Nicholls",
+      "from_anchor": "Mad City",
+      "to_anchor": "The Alamo"
+    },
+    {
+      "turn": 31,
+      "from_focus": "writer",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Kyle Gass",
+      "from_anchor": "The Alamo",
+      "to_anchor": "Schindler's List"
+    },
+    {
+      "turn": 36,
+      "from_focus": "actor",
+      "to_focus": "language",
+      "bridge_field": "plot",
+      "bridge_value": "killing",
+      "from_anchor": "Schindler's List",
+      "to_anchor": "Track of the Cat"
+    },
+    {
+      "turn": 41,
+      "from_focus": "language",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "Polish",
+      "from_anchor": "Track of the Cat",
+      "to_anchor": "White Night"
+    },
+    {
+      "turn": 45,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "White Night",
+      "to_anchor": "The Break-Up"
+    },
+    {
+      "turn": 48,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "writer",
+      "bridge_value": "The Brothers Chaps (Music Composer)",
+      "from_anchor": "The Break-Up",
+      "to_anchor": "Water for Elephants"
+    }
+  ]
+}

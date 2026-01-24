@@ -1,0 +1,2276 @@
+{
+  "session_id": "00042",
+  "model_name": "llama2:latest",
+  "true_genre": "fairy tale",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a england movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "england",
+        "anchor_title": "The Curious Incident of the Dog in the Night-Time",
+        "constraints": {
+          "genre": "england"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues:\nThe user is in the mood for a movie set in England.\nGenre: England\nPlot keywords: England, could.\n\nBased on these cues, I recommend \"Elizabeth\" (1998) and \"A Tale of Two Cities\" (1859). Both of these movies are historical dramas set in England, with strong performances from the actors and engaging plots that explore the country's rich history.",
+      "constraints": {
+        "genre": "england",
+        "plot": [
+          "england",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "Elizabeth",
+        "Wuthering Heights",
+        "A Tale of Two Cities",
+        "Hitch"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "england",
+        "anchor_title": "The Curious Incident of the Dog in the Night-Time",
+        "constraints": {
+          "genre": "england"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - England, plot keywords - what, kind. Based on these cues, I recommend \"What If...\", a romantic drama that explores the idea of fate and the consequences of choice. The film follows a young man who meets the love of his life under the Athens night sky, and delves into themes of love, destiny, and the power of chance encounters. Additionally, I suggest \"Smilla's Sense of Snow\", a psychological thriller that unravels the mystery behind an Inuit boy's death on a snowy roof in Copenhagen. The film features a talented cast, including Julia Ormond and Vanessa Redgrave, and explores themes of acrophobia, conspiracy, and the power of human connection.",
+      "constraints": {
+        "genre": "england",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X"
+      },
+      "rec_titles": [
+        "What If...",
+        "Smilla's Sense of Snow",
+        "The Secret Garden",
+        "Mansfield Park"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Smilla's Sense of Snow. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "england",
+        "anchor_title": "The Curious Incident of the Dog in the Night-Time",
+        "constraints": {
+          "genre": "england"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User Preference Cues:\nGenre: England\nPlot Keywords: like, sound\n\nBased on the user's preferences, I recommend the movie \"Psychic Experiment\" starring Adrienne King and Glenn Morshower. This movie has an intriguing plot that centers around a small, self-sufficient community with a dark past and an even darker secret. As individuals converge on the enclave, strange things begin to happen that test the very fabric of reality.\n\nAlternatively, \"Unleashed\" (2005) starring Jet Li and Morgan Freeman is another great choice. This movie follows a man who escapes his captors and tries to start a new life, but finds himself in a world where he is forced to confront his past and fight for survival.",
+      "constraints": {
+        "genre": "england",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "W."
+      },
+      "rec_titles": [
+        "Psychic Experiment",
+        "Unleashed",
+        "The Scarlet Letter",
+        "The Prince and the Pauper"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Robert Duvall? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 4,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Robert Duvall",
+        "anchor_title": "Little Lord Fauntleroy",
+        "constraints": {
+          "genre": "england",
+          "writer": "Robert Duvall",
+          "plot": "prostitute"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 4,
+          "from_focus": "genre",
+          "to_focus": "writer",
+          "bridge_field": "plot",
+          "bridge_value": "prostitute",
+          "from_anchor": "The Curious Incident of the Dog in the Night-Time",
+          "to_anchor": "Little Lord Fauntleroy"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure! Based on the user's preference cues, I recommend checking out \"Days of Thunder\" and \"Lucky You.\" Both movies star Robert Duvall, who the user is interested in, and offer an exciting plot with engaging actors. In \"Days of Thunder,\" Nick Searcy and Randy Quaid join Tom Cruise on a high-stakes stock car racing adventure, while in \"Lucky You,\" Ken Davitian and Jean Smart star alongside Robert Downey Jr. in a gripping tale of poker ambition.",
+      "constraints": {
+        "genre": "england",
+        "plot": [
+          "written",
+          "robert"
+        ],
+        "name": "X",
+        "actor": "Robert Duvall",
+        "director": "Robert Duvall",
+        "writer": "Robert Duvall"
+      },
+      "rec_titles": [
+        "Days of Thunder",
+        "Pride and Prejudice",
+        "Lucky You",
+        "A Walk in the Woods"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Robert Duvall",
+        "anchor_title": "Little Lord Fauntleroy",
+        "constraints": {
+          "genre": "england",
+          "writer": "Robert Duvall",
+          "plot": "prostitute"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on your user preferences, I recommend \"The Breakfast Club\" and \"Apocalypse Now\". Both of these movies have a strong cast, including Robert Duvall, and offer thought-provoking plots that explore themes of identity and power.",
+      "constraints": {
+        "genre": "england",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Robert Duvall",
+        "director": "Robert Duvall",
+        "writer": "Robert Duvall"
+      },
+      "rec_titles": [
+        "The Breakfast Club",
+        "Ocean's Twelve",
+        "Apocalypse Now",
+        "The Truth"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Tron tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Robert Duvall",
+        "anchor_title": "Little Lord Fauntleroy",
+        "constraints": {
+          "genre": "england",
+          "writer": "Robert Duvall",
+          "plot": "prostitute"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - England, Actor - Robert Duvall, Director - Robert Duvall, Writer - Robert Duvall, Plot keywords - what, kind.\n\nBased on these constraints, I recommend the movie \"Harry Potter and the Order of the Phoenix\" (2003) starring Daniel Radcliffe, Emma Watson, and Robert Pattinson. This movie is a fantasy adventure that explores themes of authoritarianism and the importance of standing up for what is right, which aligns with the user's preference for stories with deeper meanings. The movie follows Harry Potter and his friends as they navigate the challenges of adolescence while also dealing with the growing power of the dark lord Voldemort.",
+      "constraints": {
+        "genre": "england",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Tron",
+        "actor": "Robert Duvall",
+        "director": "Robert Duvall",
+        "writer": "Robert Duvall"
+      },
+      "rec_titles": [
+        "Harry Potter and the Order of the Phoenix",
+        "What Women Want",
+        "The Old Curiosity Shop",
+        "Aladdin"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Deep. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Robert Duvall",
+        "anchor_title": "Little Lord Fauntleroy",
+        "constraints": {
+          "genre": "england",
+          "writer": "Robert Duvall",
+          "plot": "prostitute"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User Constraints:\nThe user prefers movies that are set in England, star Robert Duvall, and have a plot that sounds intriguing.\n\nRecommendation:\nBased on the user's preferences, I recommend watching \"Easy A\" and \"Nicholas Nickleby\". Both movies are set in England and feature Robert Duvall in prominent roles. \"Easy A\" is a modern retelling of Jane Austen's \"Lady Susan\", with a unique twist on the classic romantic comedy genre, while \"Nicholas Nickleby\" is a classic Dickens adaptation that showcases Duvall's talent for portraying complex characters. Both movies are sure to provide an engaging and entertaining viewing experience.",
+      "constraints": {
+        "genre": "england",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "actor": "Robert Duvall",
+        "director": "Robert Duvall",
+        "writer": "Robert Duvall"
+      },
+      "rec_titles": [
+        "Easy A",
+        "Nicholas Nickleby",
+        "The Other Guys",
+        "A Tale of Two Cities"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Nicholas Nickleby? That sounds intriguing.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Robert Duvall",
+        "anchor_title": "Little Lord Fauntleroy",
+        "constraints": {
+          "genre": "england",
+          "writer": "Robert Duvall",
+          "plot": "prostitute"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre: England; actor: Robert Duvall; director: Robert Duvall; writer: Robert Duvall; plot keywords: what, intriguing.\nBased on the user's preferences, I recommend watching \"Nicholas Nickleby\" and \"The Apostle\". Both movies feature Robert Duvall in lead roles and offer intriguing plots that are sure to keep you engaged. In \"Nicholas Nickleby\", a young man struggles to save his family and friends from an abusive uncle, while in \"The Apostle\", a preacher from Texas starts preaching on the radio after his life spins out of control. Both movies are classics that have received critical acclaim and are sure to provide a thought-provoking and entertaining viewing experience.",
+      "constraints": {
+        "genre": "england",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Nicholas Nickleby",
+        "actor": "Robert Duvall",
+        "director": "Robert Duvall",
+        "writer": "Robert Duvall"
+      },
+      "rec_titles": [
+        "The Expendables 2",
+        "Nicholas Nickleby",
+        "The Apostle",
+        "Witless Protection"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Alejandro Agresti? That feels deeper than I thought. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 9,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Alejandro Agresti",
+        "anchor_title": "Seven Pounds",
+        "constraints": {
+          "genre": "england",
+          "writer": "Robert Duvall",
+          "plot": "prostitute",
+          "director": "Alejandro Agresti",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 9,
+          "from_focus": "writer",
+          "to_focus": "director",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Little Lord Fauntleroy",
+          "to_anchor": "Seven Pounds"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - England, actor - Robert Duvall, director - Alejandro Agresti, writer - Robert Duvall, plot keywords - could, switch.\nRecommendation: Based on the user's preferences, I would recommend \"Gone in 60 Seconds\" and \"Hitch\". Both movies feature Robert Duvall as an actor, and they have a thrilling plot that could keep the user engaged.",
+      "constraints": {
+        "genre": "england",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Deep",
+        "actor": "Robert Duvall",
+        "director": "Alejandro Agresti",
+        "writer": "Robert Duvall"
+      },
+      "rec_titles": [
+        "Gone in 60 Seconds",
+        "Hitch",
+        "Jane Eyre",
+        "The Prince and the Pauper"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Alejandro Agresti",
+        "anchor_title": "Seven Pounds",
+        "constraints": {
+          "genre": "england",
+          "writer": "Robert Duvall",
+          "plot": "prostitute",
+          "director": "Alejandro Agresti",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, here are two movie recommendations that match their constraints:\n\n* \"The Swindle\" (1997) - This comedy features a unique blend of mullets and silicone, as well as a hilarious plot involving a marriage scam. Starring Richard Basehart, Michel Serrault, François Cluzet, and Isabelle Huppert.\n* \"Gone in 60 Seconds\" (N/A) - This action-packed movie follows a retired master car thief who must steal fifty cars with his crew in one night to save his brother's life. Starring William Lee Scott, Brad William Henke, Master P, James Duval, and Robert Duvall.",
+      "constraints": {
+        "genre": "england",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Robert Duvall",
+        "director": "Alejandro Agresti",
+        "writer": "Robert Duvall"
+      },
+      "rec_titles": [
+        "The Swindle",
+        "Green Card",
+        "Gone in 60 Seconds",
+        "The Godfather Part II"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Brad William Henke. Hmm, I didn’t expect that vibe. (I’m thinking of Gone in 60 Seconds.)",
+      "user_meta": {
+        "turn": 11,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Brad William Henke",
+        "anchor_title": "The Good Dinosaur",
+        "constraints": {
+          "genre": "england",
+          "writer": "Robert Duvall",
+          "plot": "prostitute",
+          "director": "Alejandro Agresti",
+          "language": "English",
+          "actor": "Brad William Henke"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 11,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Brad William Henke",
+          "from_anchor": "Seven Pounds",
+          "to_anchor": "The Good Dinosaur"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: The user wants to find movies with Brad William Henke, set in England, and directed by Alejandro Agresti or written by Robert Duvall.\n\nBased on the user's preferences, I recommend watching \"Zoolander 2\" (2016) starring Christine Taylor, Ben Stiller, Milla Jovovich, Will Ferrell, and Justin Theroux. This movie is a comedy-action film that features Brad William Henke in a supporting role. The plot follows Derek and Hansel, two models who are lured back into the industry in Rome, where they find themselves in the middle of a sinister conspiracy.\n\nAlternatively, you could watch \"You Only Live Twice\" (1967) starring Sean Connery, Karin Dor, Burt Kwouk, and Donald Pleasence. This James Bond film is set in England and features Brad William Henke in a small role as a Japanese agent. The movie follows Bond and the Japanese Secret Service as they try to stop a series of space hijackings before war breaks out between Russia and the United States.",
+      "constraints": {
+        "genre": "england",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Gone in 60 Seconds",
+        "actor": "Brad William Henke",
+        "director": "Alejandro Agresti",
+        "writer": "Robert Duvall"
+      },
+      "rec_titles": [
+        "Ariel",
+        "Zoolander 2",
+        "You Only Live Twice",
+        "Great Expectations"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Brad William Henke",
+        "anchor_title": "The Good Dinosaur",
+        "constraints": {
+          "genre": "england",
+          "writer": "Robert Duvall",
+          "plot": "prostitute",
+          "director": "Alejandro Agresti",
+          "language": "English",
+          "actor": "Brad William Henke"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your user's preferences, here are two movie recommendations that might interest them:\n\n* \"A Little Princess\" (1905) is a heartwarming drama about a young girl who finds courage and resilience in the face of adversity. Starring Shirley Temple, this classic film is sure to delight viewers of all ages.\n* \"The Way Back Home\" (N/A) is a thought-provoking and visually stunning movie that explores themes of love, loss, and self-discovery. With a talented cast led by Danny Nucci and Ruby Dee, this film is sure to leave a lasting impression on audiences.",
+      "constraints": {
+        "genre": "england",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Brad William Henke",
+        "director": "Alejandro Agresti",
+        "writer": "Robert Duvall"
+      },
+      "rec_titles": [
+        "A Little Princess",
+        "Neighbors 2: Sorority Rising",
+        "Panic Room",
+        "The Way Back Home"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Brad William Henke",
+        "anchor_title": "The Good Dinosaur",
+        "constraints": {
+          "genre": "england",
+          "writer": "Robert Duvall",
+          "plot": "prostitute",
+          "director": "Alejandro Agresti",
+          "language": "English",
+          "actor": "Brad William Henke"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: England, actor Brad William Henke, director Alejandro Agresti, writer Robert Duvall, plot keywords \"like\" and \"sound\".\n\nBased on the user's preferences, I recommend watching \"Oliver Twist\" (1838) and \"Unleashed\" (2005). Both movies feature a gritty and realistic tone, much like \"Us\", with complex characters and intricate plotlines. \"Oliver Twist\" is a classic tale of poverty and crime in 19th century England, while \"Unleashed\" tells the story of a man who escapes his captors and tries to start a new life. Both movies have strong acting performances, with Bob Hoskins and Morgan Freeman standing out in particular.",
+      "constraints": {
+        "genre": "england",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "actor": "Brad William Henke",
+        "director": "Alejandro Agresti",
+        "writer": "Robert Duvall"
+      },
+      "rec_titles": [
+        "Oliver Twist",
+        "In the Woods",
+        "Unleashed",
+        "The Adventures of Sherlock Holmes"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Brad William Henke",
+        "anchor_title": "The Good Dinosaur",
+        "constraints": {
+          "genre": "england",
+          "writer": "Robert Duvall",
+          "plot": "prostitute",
+          "director": "Alejandro Agresti",
+          "language": "English",
+          "actor": "Brad William Henke"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - England, actor - Brad William Henke, director - Alejandro Agresti, writer - Robert Duvall, plot keywords - sure, perhaps.\nBased on the user's preferences, I recommend \"Harry Potter and the Order of the Phoenix\" and \"Great Expectations.\" Both movies offer a mix of magic and intrigue that seem to align with the user's interests, and they feature talented actors such as Daniel Radcliffe and Johnny Depp.",
+      "constraints": {
+        "genre": "england",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "X",
+        "actor": "Brad William Henke",
+        "director": "Alejandro Agresti",
+        "writer": "Robert Duvall"
+      },
+      "rec_titles": [
+        "Harry Potter and the Order of the Phoenix",
+        "Great Expectations",
+        "The Adventures of Sherlock Holmes",
+        "World Without End"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Great Expectations tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Brad William Henke",
+        "anchor_title": "The Good Dinosaur",
+        "constraints": {
+          "genre": "england",
+          "writer": "Robert Duvall",
+          "plot": "prostitute",
+          "director": "Alejandro Agresti",
+          "language": "English",
+          "actor": "Brad William Henke"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\n\"Hmm, I didn’t expect that vibe.\"\n\nBased on the user's preferences, I recommend \"Monsters, Inc.\" and \"The Skulls\". Both movies have a unique and unexpected plot twist that may appeal to the user's taste. In \"Monsters, Inc.\", the monsters are not what they seem, while in \"The Skulls\", the secret society comes at a price that challenges the main character's values.",
+      "constraints": {
+        "genre": "england",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "actor": "Brad William Henke",
+        "director": "Alejandro Agresti",
+        "writer": "Robert Duvall"
+      },
+      "rec_titles": [
+        "Monsters, Inc.",
+        "Anyone But You",
+        "Harry Potter and the Prisoner of Azkaban",
+        "The Skulls"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Brad William Henke",
+        "anchor_title": "The Good Dinosaur",
+        "constraints": {
+          "genre": "england",
+          "writer": "Robert Duvall",
+          "plot": "prostitute",
+          "director": "Alejandro Agresti",
+          "language": "English",
+          "actor": "Brad William Henke"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: England, Brad William Henke, Alejandro Agresti, Robert Duvall, and \"what feels deeper than I thought\".\n\nBased on these cues, I recommend checking out \"The Equalizer\" (2014) starring Denzel Washington. The movie delves into the moral ambiguity of Jan Tucker's profession as a private detective and his fight against injustice, which aligns with the user's interest in deeper themes. Additionally, \"Real Steel\" (2011) features Hugh Jackman as a struggling ex-boxer who finds a champion in a discarded robot, offering an exciting and thought-provoking sci-fi adventure.",
+      "constraints": {
+        "genre": "england",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Deep",
+        "actor": "Brad William Henke",
+        "director": "Alejandro Agresti",
+        "writer": "Robert Duvall"
+      },
+      "rec_titles": [
+        "The Equalizer",
+        "Dear John",
+        "Real Steel",
+        "Prometheus"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Julie Taymor? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 17,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Julie Taymor",
+        "anchor_title": "The American",
+        "constraints": {
+          "genre": "england",
+          "writer": "Robert Duvall",
+          "plot": "prostitute",
+          "director": "Julie Taymor",
+          "language": "English",
+          "actor": "Brad William Henke"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 17,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "The Good Dinosaur",
+          "to_anchor": "The American"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! The user has expressed interest in movies directed by Julie Taymor, so I will recommend two films from her oeuvre. \"Wuthering Heights\" is a classic adaptation of the Emily Bronte novel, with a unique visual style and a star-studded cast, including Tom Hardy and Charlotte Riley. For something more contemporary, \"Restless\" is a haunting drama that explores themes of love, death, and the supernatural, starring Mia Wasikowska and Rufus Sewell.",
+      "constraints": {
+        "genre": "england",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "RED",
+        "actor": "Brad William Henke",
+        "director": "Julie Taymor",
+        "writer": "Julie Taymor"
+      },
+      "rec_titles": [
+        "Wuthering Heights",
+        "True Blood",
+        "Harry Potter and the Prisoner of Azkaban",
+        "Restless"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Julie Taymor",
+        "anchor_title": "The American",
+        "constraints": {
+          "genre": "england",
+          "writer": "Robert Duvall",
+          "plot": "prostitute",
+          "director": "Julie Taymor",
+          "language": "English",
+          "actor": "Brad William Henke"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre England; actor Brad William Henke; director Julie Taymor; writer Julie Taymor; plot keywords just, more. Based on these cues, I recommend the psychological thriller \"We Need to Talk About Kevin\" starring Tilda Swinton and John C. Reilly. The film follows a mother's struggle to love her strange child as he grows up and commits increasingly dangerous acts, with a shocking final act. Alternatively, you might enjoy the creepy and unsettling \"The Goodbye Girl,\" which features Raymond J. Barry and Nicol Williamson in a story about a six-year-old girl who seems to predict deaths while praying. Both of these movies offer a thought-provoking and suspenseful viewing experience.",
+      "constraints": {
+        "genre": "england",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Brad William Henke",
+        "director": "Julie Taymor",
+        "writer": "Julie Taymor"
+      },
+      "rec_titles": [
+        "We Need to Talk About Kevin",
+        "The Goodbye Girl",
+        "Untraceable",
+        "Space Jam"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does RED tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Julie Taymor",
+        "anchor_title": "The American",
+        "constraints": {
+          "genre": "england",
+          "writer": "Robert Duvall",
+          "plot": "prostitute",
+          "director": "Julie Taymor",
+          "language": "English",
+          "actor": "Brad William Henke"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User Constraints:\nThe user is interested in a story that takes place in England, features Brad William Henke, and was directed by Julie Taymor. They are unsure if they will enjoy or be scared by the movie.\n\nRecommendation:\nBased on the user's constraints, I recommend \"A Tale of Two Cities\" (1859) starring Brad William Henke. This classic novel adaptation follows the story of Sydney Carton, an alcoholic lawyer who travels to Paris during the Reign of Terror to rescue a French aristocrat and his wife. With its historical setting and dramatic plot, this movie may appeal to the user's interest in England and Brad William Henke's acting.",
+      "constraints": {
+        "genre": "england",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "actor": "Brad William Henke",
+        "director": "Julie Taymor",
+        "writer": "Julie Taymor"
+      },
+      "rec_titles": [
+        "A Tale of Two Cities",
+        "Lady in the Water",
+        "RED",
+        "You"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of They? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Julie Taymor",
+        "anchor_title": "The American",
+        "constraints": {
+          "genre": "england",
+          "writer": "Robert Duvall",
+          "plot": "prostitute",
+          "director": "Julie Taymor",
+          "language": "English",
+          "actor": "Brad William Henke"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - England, Actor - Brad William Henke, Director - Julie Taymor, Writer - Julie Taymor.\nBased on these constraints, I recommend \"The Way Back Home\" and \"Lady in the Water\". Both films are life-affirming spiritual dramas that explore themes of love, loss, and self-discovery, which seem to align with the user's preferences. \"The Way Back Home\" features a heartwarming story of a man returning home to care for his grandmother, while \"Lady in the Water\" tells the tale of a superintendent who rescues a mysterious woman from his apartment building pool and works with his tenants to protect her from creatures that seek to keep her in our world.",
+      "constraints": {
+        "genre": "england",
+        "plot": [
+          "what"
+        ],
+        "name": "They",
+        "actor": "Brad William Henke",
+        "director": "Julie Taymor",
+        "writer": "Julie Taymor"
+      },
+      "rec_titles": [
+        "The Way Back Home",
+        "The Secret",
+        "Lady in the Water",
+        "World Without End"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Water. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 21,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Julie Taymor",
+        "anchor_title": "The American",
+        "constraints": {
+          "genre": "england",
+          "writer": "Robert Duvall",
+          "plot": "prostitute",
+          "director": "Julie Taymor",
+          "language": "English",
+          "actor": "Brad William Henke"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nYou mentioned you like the sound of Water, and I understand you're looking for movies set in England, starring Brad William Henke, directed by Julie Taymor, or written by Julie Taymor. Based on those cues, here are two movie recommendations that fit your preferences:\n\n1. Castle in the Sky (N/A) - This movie follows two people who embark on a quest to build a castle that will last centuries, showcasing their determination to make life meaningful through artistic ventures. Starring Christina Hendricks and Tom Wu.\n2. The Life Before Her Eyes (2007) - A woman's survivor's guilt from a traumatic event in her past causes her idyllic present-day life to fall apart, featuring Lynn Cohen and Brett Cullen in lead roles.",
+      "constraints": {
+        "genre": "england",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Water",
+        "actor": "Brad William Henke",
+        "director": "Julie Taymor",
+        "writer": "Julie Taymor"
+      },
+      "rec_titles": [
+        "Castle in the Sky",
+        "Great Expectations",
+        "Little Lord Fauntleroy",
+        "The Life Before Her Eyes"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on You. I want to try something more bollywood—still with English if possible. Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 22,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "bollywood",
+        "anchor_title": "The Namesake",
+        "constraints": {
+          "genre": "bollywood",
+          "writer": "Robert Duvall",
+          "plot": "prostitute",
+          "director": "Julie Taymor",
+          "language": "English",
+          "actor": "Brad William Henke"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 22,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "The American",
+          "to_anchor": "The Namesake"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "No problem! Based on the user's preferences, I recommend \"The Smurfs 2\" and \"Juno\". Both movies have a fun and lighthearted tone, while also featuring talented actors and unique plots. In \"The Smurfs 2\", the Smurfs team up with their human friends to rescue Smurfette, who has been abducted by Gargamel, in a thrilling adventure full of action and humor. Meanwhile, \"Juno\" is a heartwarming comedy-drama that follows an offbeat young woman as she navigates an unplanned pregnancy with unexpected consequences.",
+      "constraints": {
+        "genre": "bollywood",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "You",
+        "actor": "Brad William Henke",
+        "director": "Julie Taymor",
+        "writer": "Julie Taymor",
+        "language": "English"
+      },
+      "rec_titles": [
+        "The Smurfs 2",
+        "Night Pleasures",
+        "Live Free or Die Hard",
+        "Juno"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "bollywood",
+        "anchor_title": "The Namesake",
+        "constraints": {
+          "genre": "bollywood",
+          "writer": "Robert Duvall",
+          "plot": "prostitute",
+          "director": "Julie Taymor",
+          "language": "English",
+          "actor": "Brad William Henke"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints:\ngenre - Bollywood; actor - Brad William Henke; director - Julie Taymor; language - English; plot keywords - just, more.\n\nBased on the user's preferences, I recommend \"Escape from New York\" (1981) and \"Megamind\" (2010). Both movies feature strong performances by Brad Pitt and Will Ferrell, respectively, and offer a unique blend of action and humor.",
+      "constraints": {
+        "genre": "bollywood",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Brad William Henke",
+        "director": "Julie Taymor",
+        "writer": "Julie Taymor",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Escape from New York",
+        "Megamind",
+        "Mommie Dearest",
+        "The Other Boleyn Girl"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of MegaMind? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "bollywood",
+        "anchor_title": "The Namesake",
+        "constraints": {
+          "genre": "bollywood",
+          "writer": "Robert Duvall",
+          "plot": "prostitute",
+          "director": "Julie Taymor",
+          "language": "English",
+          "actor": "Brad William Henke"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - Bollywood; actor - Brad William Henke; director - Julie Taymor; writer - Julie Taymor; language - English; plot keywords - what, megamind.\nBased on the user's preferences, I recommend \"Inception\" and \"Changing Lanes\". Both movies feature complex plots with a mix of action, drama, and suspense, which seem to align with the user's interests. \"Inception\" is a thought-provoking sci-fi thriller with a talented cast, including Cillian Murphy, Marion Cotillard, and Leonardo DiCaprio. On the other hand, \"Changing Lanes\" is a tense drama that explores the consequences of road rage and features an impressive ensemble cast, including Ben Affleck, Dylan Baker, and William Hurt.",
+      "constraints": {
+        "genre": "bollywood",
+        "plot": [
+          "what",
+          "megamind"
+        ],
+        "name": "MegaMind",
+        "actor": "Brad William Henke",
+        "director": "Julie Taymor",
+        "writer": "Julie Taymor",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Inception",
+        "A Farewell to Arms",
+        "The Best Years of Our Lives",
+        "Changing Lanes"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "bollywood",
+        "anchor_title": "The Namesake",
+        "constraints": {
+          "genre": "bollywood",
+          "writer": "Robert Duvall",
+          "plot": "prostitute",
+          "director": "Julie Taymor",
+          "language": "English",
+          "actor": "Brad William Henke"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - Bollywood, Actor - Brad William Henke, Director - Julie Taymor, Language - English, Plot keywords - what, kind.\n\nBased on the user's preferences, I recommend \"Prometheus\" and \"White Oleander\". Both movies have intriguing plots that explore themes of humanity's relationship with technology and morality, respectively. \"Prometheus\" features a talented cast, including Michael Fassbender and Charlize Theron, while \"White Oleander\" is an emotionally charged drama with standout performances from Alison Lohman and Robin Wright.",
+      "constraints": {
+        "genre": "bollywood",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "actor": "Brad William Henke",
+        "director": "Julie Taymor",
+        "writer": "Julie Taymor",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Prometheus",
+        "White Oleander",
+        "Utsav",
+        "Starsky & Hutch"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "bollywood",
+        "anchor_title": "The Namesake",
+        "constraints": {
+          "genre": "bollywood",
+          "writer": "Robert Duvall",
+          "plot": "prostitute",
+          "director": "Julie Taymor",
+          "language": "English",
+          "actor": "Brad William Henke"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user is interested in watching a movie that is similar to their previous choices, with the genre of Bollywood, actor Brad William Henke, director Julie Taymor, and language English.\n\nRecommendation: Based on your preferences, I would recommend \"The Relic\" (1997) starring Brad William Henke. The movie is an action-packed thriller that follows a homicide detective and anthropologist as they try to destroy a South American lizard-like god who is on a people-eating rampage in a Chicago museum. Or, if you're in the mood for something more lighthearted, \"Forgetting Sarah Marshall\" (2008) starring Jason Segel and Kristen Bell is a hilarious comedy about a man who goes on a Hawaiian vacation to deal with a recent break-up, only to find out his ex is there with her new boyfriend.",
+      "constraints": {
+        "genre": "bollywood",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "Us",
+        "actor": "Brad William Henke",
+        "director": "Julie Taymor",
+        "writer": "Julie Taymor",
+        "language": "English"
+      },
+      "rec_titles": [
+        "The Relic",
+        "Forgetting Sarah Marshall",
+        "Due Date",
+        "Monsters vs. Aliens"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Her. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "bollywood",
+        "anchor_title": "The Namesake",
+        "constraints": {
+          "genre": "bollywood",
+          "writer": "Robert Duvall",
+          "plot": "prostitute",
+          "director": "Julie Taymor",
+          "language": "English",
+          "actor": "Brad William Henke"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThe user likes the sound of \"Her,\" but is unsure if they would enjoy it or be scared by it. They prefer Bollywood movies, actor Brad William Henke, director Julie Taymor, and language English.\n\nBased on these constraints, I recommend the movie \"Rush\" (2013) starring Olivia Wilde, Chris Hemsworth, and Alexandra Maria Lara. The plot follows a survivor roaming a post-nuclear holocaust world, fighting bandits and an evil warlord. This movie combines elements of action, adventure, and science fiction, which may appeal to fans of \"Her\" who are looking for something similar but with a different twist. Alternatively, I recommend \"Deadpool\" (2016) starring Stefan Kapicic, Ed Skrein, and Ryan Reynolds. This movie is known for its witty dialogue, action-packed plot, and irreverent humor, which may appeal to fans of \"Her\" who are looking for something lighthearted and entertaining.",
+      "constraints": {
+        "genre": "bollywood",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Her",
+        "actor": "Brad William Henke",
+        "director": "Julie Taymor",
+        "writer": "Julie Taymor",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Rush",
+        "Avatar",
+        "The Importance of Being Earnest",
+        "Deadpool"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "bollywood",
+        "anchor_title": "The Namesake",
+        "constraints": {
+          "genre": "bollywood",
+          "writer": "Robert Duvall",
+          "plot": "prostitute",
+          "director": "Julie Taymor",
+          "language": "English",
+          "actor": "Brad William Henke"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: The user wants a movie with a weird plot and thought-provoking themes, preferably starring Brad William Henke.\nRecommendation: Drive (2011) is a great choice for the user, as it has a unique and thought-provoking plot that explores themes of time loops and personal redemption. The film stars Ryan Gosling and Carey Mulligan in a critically acclaimed performance.\nAlternatively, Before I Fall (2010) is another great option, starring Christina Hendricks and Oscar Isaac in a story that explores the consequences of one's actions and the cyclical nature of time. The film has received praise for its originality and emotional impact.",
+      "constraints": {
+        "genre": "bollywood",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "Her",
+        "actor": "Brad William Henke",
+        "director": "Julie Taymor",
+        "writer": "Julie Taymor",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Drive",
+        "Before I Fall",
+        "The Royal Tenenbaums",
+        "Track of the Cat"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Terry Gilliam? Hmm, I didn’t expect that vibe. (I’m thinking of Drive.)",
+      "user_meta": {
+        "turn": 29,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Terry Gilliam",
+        "anchor_title": "Where'd You Go, Bernadette",
+        "constraints": {
+          "genre": "bollywood",
+          "writer": "Robert Duvall",
+          "plot": "prostitute",
+          "director": "Terry Gilliam",
+          "language": "English",
+          "actor": "Carey Mulligan"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 29,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Carey Mulligan",
+          "from_anchor": "The Namesake",
+          "to_anchor": "Where'd You Go, Bernadette"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - Bollywood; actor - Terry; director - Terry Gilliam; language - English; plot keywords - could, switch.\nBased on these cues, I recommend the movie \"The Croods\" (2013) starring Nicolas Cage and Emma Stone. The film is an animated adventure about a caveman family who must trek through a fantastical world after their cave is destroyed. It has a similar tone and visual style to Terry Gilliam's work, with a focus on imaginative and absurd situations.\nAlternatively, I also recommend \"Immortals\" (2011) starring Henry Cavill and Mickey Rourke. The movie is an epic fantasy about Theseus, a mortal man chosen by Zeus to lead the fight against a ruthless king who seeks a weapon that can destroy humanity. It has a similar dark and mythological tone to Terry Gilliam's work, with impressive visual effects and a star-studded cast.",
+      "constraints": {
+        "genre": "bollywood",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Drive",
+        "actor": "Terry",
+        "director": "Terry Gilliam",
+        "writer": "Terry Gilliam",
+        "language": "English"
+      },
+      "rec_titles": [
+        "The Croods",
+        "A Guy Thing",
+        "On the Road",
+        "Immortals"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Terry Gilliam",
+        "anchor_title": "Where'd You Go, Bernadette",
+        "constraints": {
+          "genre": "bollywood",
+          "writer": "Robert Duvall",
+          "plot": "prostitute",
+          "director": "Terry Gilliam",
+          "language": "English",
+          "actor": "Carey Mulligan"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre: bollywood; actor: Terry; director: Terry Gilliam; language: English; plot keywords: just, more.\nBased on the user's preferences, I recommend two movies from this list:\n\n* \"Utsav\" (1984) - A beautiful and faithful adaptation of a 2nd century BCE Sanskrit play, following the story of a courtesan who falls in love with a married man while hiding in his house. With an all-star cast including Anupam Kher and Rekha, this movie is sure to captivate audiences with its unique blend of history and romance.\n* \"The Shining\" (1977) - A classic horror movie about a family that moves into a haunted hotel for the winter, where the father's sanity slowly unravels due to a sinister presence. With an unforgettable performance by Jack Nicholson and a cult following, this movie is a must-see for any fan of the genre.",
+      "constraints": {
+        "genre": "bollywood",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Terry",
+        "director": "Terry Gilliam",
+        "writer": "Terry Gilliam",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Utsav",
+        "The Shining",
+        "Veronica Mars",
+        "The Curse of the Jade Scorpion"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Terry Gilliam",
+        "anchor_title": "Where'd You Go, Bernadette",
+        "constraints": {
+          "genre": "bollywood",
+          "writer": "Robert Duvall",
+          "plot": "prostitute",
+          "director": "Terry Gilliam",
+          "language": "English",
+          "actor": "Carey Mulligan"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - Bollywood; actor - Terry; director - Terry Gilliam; language - English; plot keywords - what, don't.\nBased on the user's preferences, I recommend \"10 Things I Hate About You\" and \"Spice World\". Both movies have a light-hearted and entertaining tone, which seems to align with the user's preference for a movie that is not too serious or heavy. \"10 Things I Hate About You\" is a romantic comedy with a fun premise of two high school students trying to manipulate each other's love lives, while \"Spice World\" is a musical comedy that follows the adventures of the Spice Girls on their tour bus. Both movies have a great cast and are sure to provide an enjoyable viewing experience.",
+      "constraints": {
+        "genre": "bollywood",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "X",
+        "actor": "Terry",
+        "director": "Terry Gilliam",
+        "writer": "Terry Gilliam",
+        "language": "English"
+      },
+      "rec_titles": [
+        "10 Things I Hate About You",
+        "A Time to Kill",
+        "The Nightingale",
+        "Spice World"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of 10 Things I Hate About You. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Terry Gilliam",
+        "anchor_title": "Where'd You Go, Bernadette",
+        "constraints": {
+          "genre": "bollywood",
+          "writer": "Robert Duvall",
+          "plot": "prostitute",
+          "director": "Terry Gilliam",
+          "language": "English",
+          "actor": "Carey Mulligan"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Bollywood, actor Terry, director Terry Gilliam, language English, plot keywords \"like\" and \"sound\".\n\nBased on the user's preferences, I recommend watching \"Super 8\" (2011) and \"Made\" (2001). Both movies have a similar nostalgic and coming-of-age tone to \"10 Things I Hate About You\", with a focus on relationships and personal growth. \"Super 8\" follows a group of teenagers who witness a train crash and investigate supernatural events in their town, while \"Made\" tells the story of a rock star's relationship with a young single mother. Both movies have engaging plots and talented actors, including Elle Fanning and Joel Courtney in \"Super 8\", and Jonathan Silverman and Faizon Love in \"Made\".",
+      "constraints": {
+        "genre": "bollywood",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "actor": "Terry",
+        "director": "Terry Gilliam",
+        "writer": "Terry Gilliam",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Super 8",
+        "Made",
+        "American Wedding",
+        "Tripwire"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Mark Wingett. That feels deeper than I thought. (I’m thinking of 10 Things I Hate About You.)",
+      "user_meta": {
+        "turn": 33,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Mark Wingett",
+        "anchor_title": "Beautiful Creatures",
+        "constraints": {
+          "genre": "bollywood",
+          "writer": "Robert Duvall",
+          "plot": "high",
+          "director": "Terry Gilliam",
+          "language": "English",
+          "actor": "Mark Wingett"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 33,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "high",
+          "from_anchor": "Where'd You Go, Bernadette",
+          "to_anchor": "Beautiful Creatures"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nMark Wingett, Bollywood, Terry Gilliam, English language, and plot keywords \"could\" and \"find\".\n\nBased on these constraints, I recommend \"The Life Before Her Eyes\" (2007) and \"Tarnation\" (2003). Both films explore themes of survivor's guilt and disruption in lives, which align with the user's preferences. \"The Life Before Her Eyes\" follows a woman's life unraveling 15 years after a traumatic event, while \"Tarnation\" is a documentary about the filmmaker's own life growing up with his schizophrenic mother.",
+      "constraints": {
+        "genre": "bollywood",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "10 Things I Hate About You",
+        "actor": "Mark Wingett",
+        "director": "Terry Gilliam",
+        "writer": "Terry Gilliam",
+        "language": "English"
+      },
+      "rec_titles": [
+        "The Life Before Her Eyes",
+        "The Skulls",
+        "Tarnation",
+        "The Deer Hunter"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 34,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Mark Wingett",
+        "anchor_title": "Beautiful Creatures",
+        "constraints": {
+          "genre": "bollywood",
+          "writer": "Robert Duvall",
+          "plot": "high",
+          "director": "Terry Gilliam",
+          "language": "English",
+          "actor": "Mark Wingett"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! The user has expressed interest in movies similar to those recommended earlier, specifically within the genre of Bollywood and starring Mark Wingett. Based on their preferences, I would recommend \"Requiem for a Dream\" and \"Marvin's Room.\" Both films feature powerful performances from talented actors and tackle thought-provoking themes that are sure to engage and captivate the viewer.",
+      "constraints": {
+        "genre": "bollywood",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Mark Wingett",
+        "director": "Terry Gilliam",
+        "writer": "Terry Gilliam",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Requiem for a Dream",
+        "Marvin's Room",
+        "Captain America: Civil War",
+        "Lockout"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Mark Wingett",
+        "anchor_title": "Beautiful Creatures",
+        "constraints": {
+          "genre": "bollywood",
+          "writer": "Robert Duvall",
+          "plot": "high",
+          "director": "Terry Gilliam",
+          "language": "English",
+          "actor": "Mark Wingett"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - Bollywood, actor - Mark Wingett, director - Terry Gilliam, language - English, plot keywords - what.\n\nBased on the provided cues, I recommend \"The Tuxedo\" (2002) and \"Project X\" (2012). Both movies have a light-hearted and comedic tone, which seems to align with your preferences. \"The Tuxedo\" features Mark Wingett in a unique role as a chauffeur who must take the place of a comatose secret agent using his special gadget-laden tuxedo. Meanwhile, \"Project X\" follows three high school seniors who throw a wild party that quickly gets out of control as word spreads. Both movies have an exciting and unpredictable plot that should keep you entertained!",
+      "constraints": {
+        "genre": "bollywood",
+        "plot": [
+          "what"
+        ],
+        "name": "X",
+        "actor": "Mark Wingett",
+        "director": "Terry Gilliam",
+        "writer": "Terry Gilliam",
+        "language": "English"
+      },
+      "rec_titles": [
+        "The Tuxedo",
+        "The Wolf of Wall Street",
+        "The Rookie",
+        "Project X"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Mark Wingett",
+        "anchor_title": "Beautiful Creatures",
+        "constraints": {
+          "genre": "bollywood",
+          "writer": "Robert Duvall",
+          "plot": "high",
+          "director": "Terry Gilliam",
+          "language": "English",
+          "actor": "Mark Wingett"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has specified that they enjoy movies from the Bollywood genre, with a focus on actor Mark Wingett and director Terry Gilliam. Based on these preferences, I recommend \"Funny Games\" and \"Smilla's Sense of Snow.\" Both films feature complex plots and strong performances, which align with the user's tastes. \"Funny Games\" is a psychological thriller that explores themes of violence and manipulation, while \"Smilla's Sense of Snow\" is a mystery drama that delves into the mysterious death of an Inuit boy.",
+      "constraints": {
+        "genre": "bollywood",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "X",
+        "actor": "Mark Wingett",
+        "director": "Terry Gilliam",
+        "writer": "Terry Gilliam",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Funny Games",
+        "The Hurt Locker",
+        "Smilla's Sense of Snow",
+        "The Croods"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Funny Games. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Mark Wingett",
+        "anchor_title": "Beautiful Creatures",
+        "constraints": {
+          "genre": "bollywood",
+          "writer": "Robert Duvall",
+          "plot": "high",
+          "director": "Terry Gilliam",
+          "language": "English",
+          "actor": "Mark Wingett"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure! Based on the user's preferences, I recommend \"Last Vegas\" and \"Shiver\". Both movies have a similar tone and vibe to \"Funny Games\", with a mix of dark humor and tense situations. \"Last Vegas\" follows four friends reuniting in Las Vegas for a bachelor party, while \"Shiver\" tells the story of a young woman fighting back against a savage killer who is terrorizing her city. Both movies feature talented actors, including Robert De Niro and Michael Douglas in \"Last Vegas\", and  Shirley Henderson and John Henshaw in \"Shiver\".",
+      "constraints": {
+        "genre": "bollywood",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Funny Games",
+        "actor": "Mark Wingett",
+        "director": "Terry Gilliam",
+        "writer": "Terry Gilliam",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Last Vegas",
+        "The Homesman",
+        "Just Married",
+        "Shiver"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Last Vegas tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Mark Wingett",
+        "anchor_title": "Beautiful Creatures",
+        "constraints": {
+          "genre": "bollywood",
+          "writer": "Robert Duvall",
+          "plot": "high",
+          "director": "Terry Gilliam",
+          "language": "English",
+          "actor": "Mark Wingett"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - Bollywood, Actor - Mark Wingett, Director - Terry Gilliam, Writer - Terry Gilliam, Language - English, Plot keywords - what, kind.\nBased on the provided constraints, I would recommend \"Stargirl\" and \"The Invasion\" as they align with the user's preferences. \"Stargirl\" is a heartwarming and unconventional coming-of-age story that explores themes of individuality and self-discovery, while \"The Invasion\" is a tense and thought-provoking sci-fi thriller that delves into the idea of an alien invasion. Both movies feature strong performances from their casts and are sure to provide an engaging viewing experience for the user.",
+      "constraints": {
+        "genre": "bollywood",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "actor": "Mark Wingett",
+        "director": "Terry Gilliam",
+        "writer": "Terry Gilliam",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Stargirl",
+        "The Rise of Theodore Roosevelt",
+        "Under Siege 2: Dark Territory",
+        "The Invasion"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Mark Romanek? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Alien.)",
+      "user_meta": {
+        "turn": 39,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Mark Romanek",
+        "anchor_title": "Ocean's Thirteen",
+        "constraints": {
+          "genre": "bollywood",
+          "writer": "Robert Duvall",
+          "plot": "spacecraft",
+          "director": "Mark Romanek",
+          "language": "English",
+          "actor": "Mark Wingett"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 39,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "spacecraft",
+          "from_anchor": "Beautiful Creatures",
+          "to_anchor": "Ocean's Thirteen"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I would recommend \"Anyone But You\" and \"The Next Three Days.\" Both movies offer a tense and suspenseful atmosphere, with complex characters and engaging plots that should appeal to fans of Mark Romanek's work. In \"Anyone But You,\" two people pretend to be in a relationship at a wedding, leading to unexpected and hilarious consequences. In \"The Next Three Days,\" a married couple's life is turned upside down when the wife is accused of murder, creating a thrilling and emotional ride for the viewer.",
+      "constraints": {
+        "genre": "bollywood",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "RED",
+        "actor": "Mark Wingett",
+        "director": "Mark Romanek",
+        "writer": "Terry Gilliam",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Anyone But You",
+        "Riding in Cars with Boys",
+        "The Next Three Days",
+        "Interview with the Vampire: The Vampire Chronicles"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mark Romanek",
+        "anchor_title": "Ocean's Thirteen",
+        "constraints": {
+          "genre": "bollywood",
+          "writer": "Robert Duvall",
+          "plot": "spacecraft",
+          "director": "Mark Romanek",
+          "language": "English",
+          "actor": "Mark Wingett"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, here are two movie recommendations that fit their constraints:\n\nThe first film I recommend is \"Stone\" (2010) starring Frances Conroy, Milla Jovovich, and Robert De Niro. The plot follows a convicted arsonist who manipulates his parole officer into a plan to secure his parole by placing his beautiful wife in the lawman's path. This psychological thriller is sure to keep you on the edge of your seat with its twists and turns.\n\nAnother movie that fits the user's preferences is \"Before I Go to Sleep\" (2011) starring Nicole Kidman. When a woman wakes up every day with no memory of her past, she must navigate a terrifying new truth about her identity. This thought-provoking drama will keep you guessing until the very end.",
+      "constraints": {
+        "genre": "bollywood",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Mark Wingett",
+        "director": "Mark Romanek",
+        "writer": "Terry Gilliam",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Stone",
+        "Chain Letter",
+        "Awakened",
+        "Before I Go to Sleep"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mark Romanek",
+        "anchor_title": "Ocean's Thirteen",
+        "constraints": {
+          "genre": "bollywood",
+          "writer": "Robert Duvall",
+          "plot": "spacecraft",
+          "director": "Mark Romanek",
+          "language": "English",
+          "actor": "Mark Wingett"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User Constraints:\nThe user is interested in movies that sound fascinating, have a Bollywood influence, star Mark Wingett, are directed by Mark Romanek, and have an English language plot.\n\nRecommendation:\nBased on the user's preferences, I highly recommend \"The Royal Tenenbaums\" (2001) and \"Apocalypse Now\" (1979). Both movies offer a unique blend of eccentricity, drama, and intricate plotting that are sure to captivate the viewer.",
+      "constraints": {
+        "genre": "bollywood",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us",
+        "actor": "Mark Wingett",
+        "director": "Mark Romanek",
+        "writer": "Terry Gilliam",
+        "language": "English"
+      },
+      "rec_titles": [
+        "The Royal Tenenbaums",
+        "Apocalypse Now",
+        "Extremely Loud & Incredibly Close",
+        "The Dead Zone"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mark Romanek",
+        "anchor_title": "Ocean's Thirteen",
+        "constraints": {
+          "genre": "bollywood",
+          "writer": "Robert Duvall",
+          "plot": "spacecraft",
+          "director": "Mark Romanek",
+          "language": "English",
+          "actor": "Mark Wingett"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nGenre: Bollywood, actor: Mark Wingett, director: Mark Romanek, language: English, and plot keywords: what, kind.\n\nBased on the user's preferences, I recommend \"Captain America: The First Avenger\" and \"The Royal Tenenbaums.\" Both movies feature interesting plots and talented actors that align with the user's constraints. \"Captain America\" is an action-packed superhero movie starring Chris Evans and Hayley Atwell, while \"The Royal Tenenbaums\" is a quirky and heartwarming comedy-drama featuring an all-star cast including Luke Wilson, Owen Wilson, and Gene Hackman.",
+      "constraints": {
+        "genre": "bollywood",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "actor": "Mark Wingett",
+        "director": "Mark Romanek",
+        "writer": "Terry Gilliam",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Captain America: The First Avenger",
+        "WarGames",
+        "The Royal Tenenbaums",
+        "The Last Unicorn"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mark Romanek",
+        "anchor_title": "Ocean's Thirteen",
+        "constraints": {
+          "genre": "bollywood",
+          "writer": "Robert Duvall",
+          "plot": "spacecraft",
+          "director": "Mark Romanek",
+          "language": "English",
+          "actor": "Mark Wingett"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, here are two movie recommendations that might interest them:\n\n* \"Bee Season\" (2000) stars Max Minghella in a heartwarming and emotional tale about a family's struggles with mental health. The film follows the wife and mother Miriam as she spirals downward, while her daughter becomes a spelling-bee champion.\n* \"Cast Away\" (2000) is an inspiring survival story starring Tom Hanks as a FedEx executive who finds himself stranded on a deserted island after a plane crash. The film showcases Hanks' incredible physical transformation and his emotional journey as he tries to find a way back home.",
+      "constraints": {
+        "genre": "bollywood",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "Us",
+        "actor": "Mark Wingett",
+        "director": "Mark Romanek",
+        "writer": "Terry Gilliam",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Bee Season",
+        "The Yearling",
+        "Cast Away",
+        "Bedazzled"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mark Romanek",
+        "anchor_title": "Ocean's Thirteen",
+        "constraints": {
+          "genre": "bollywood",
+          "writer": "Robert Duvall",
+          "plot": "spacecraft",
+          "director": "Mark Romanek",
+          "language": "English",
+          "actor": "Mark Wingett"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has provided several cues to help me recommend movies that fit their preferences. They are interested in Bollywood movies, actor Mark Wingett, director Mark Romanek, and language English. Based on these constraints, I recommend \"Moneyball\" and \"Wimbledon\". Both of these movies feature actors who have worked with director Mark Romanek, and they have a mix of sports and personal drama that might appeal to the user's preferences.",
+      "constraints": {
+        "genre": "bollywood",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "Us",
+        "actor": "Mark Wingett",
+        "director": "Mark Romanek",
+        "writer": "Terry Gilliam",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Moneyball",
+        "Lucky You",
+        "Wimbledon",
+        "Silence"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Wimbledon? That sounds intriguing.",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mark Romanek",
+        "anchor_title": "Ocean's Thirteen",
+        "constraints": {
+          "genre": "bollywood",
+          "writer": "Robert Duvall",
+          "plot": "spacecraft",
+          "director": "Mark Romanek",
+          "language": "English",
+          "actor": "Mark Wingett"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - Bollywood, Actor - Mark Wingett, Director - Mark Romanek, Language - English, Plot keywords - what, Wimbledon.\n\nBased on the user's preferences, I would recommend \"Pineapple Express\" and \"The Italian Job\". Both movies are action-packed and feature a great cast, including Seth Rogen, James Franco, and Jason Statham. \"Pineapple Express\" is a hilarious stoner comedy with a fun plot, while \"The Italian Job\" is a high-octane heist movie with a great cast and exciting action scenes.",
+      "constraints": {
+        "genre": "bollywood",
+        "plot": [
+          "what",
+          "wimbledon"
+        ],
+        "name": "Wimbledon",
+        "actor": "Mark Wingett",
+        "director": "Mark Romanek",
+        "writer": "Terry Gilliam",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Pineapple Express",
+        "The Virgin Suicides",
+        "Live Free or Die Hard",
+        "The Italian Job"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Pineapple Express. I want to try something more cult—still with Seth Rogen if possible. That sounds intriguing.",
+      "user_meta": {
+        "turn": 46,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "cult",
+        "anchor_title": "The Sitter",
+        "constraints": {
+          "genre": "cult",
+          "writer": "Robert Duvall",
+          "plot": "spacecraft",
+          "language": "English",
+          "actor": "Seth Rogen"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 46,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "Seth Rogen",
+          "from_anchor": "Ocean's Thirteen",
+          "to_anchor": "The Sitter"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: cult movie, Seth Rogen, English language, and intriguing plot.\nBased on these constraints, I recommend \"Night Watch\" and \"Blade Runner\" from the list provided. Both movies offer a unique blend of genres, including fantasy, horror, and sci-fi, which should appeal to fans of cult cinema. \"Night Watch\" features an intriguing plot with supernatural elements set in present-day Moscow, while \"Blade Runner\" is a classic sci-fi masterpiece with a thought-provoking story and memorable characters.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Pineapple Express",
+        "actor": "Seth Rogen",
+        "director": "Seth Rogen",
+        "writer": "Seth Rogen",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Night Watch",
+        "Blade Runner",
+        "Pirates of the Caribbean: Dead Man's Chest",
+        "Once Upon a Time in the West"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "cult",
+        "anchor_title": "The Sitter",
+        "constraints": {
+          "genre": "cult",
+          "writer": "Robert Duvall",
+          "plot": "spacecraft",
+          "language": "English",
+          "actor": "Seth Rogen"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I would recommend \"We Bought a Zoo\" and \"Suicide Squad\". Both movies feature an actor (Seth Rogen) who wrote or directed them, and they have a similar tone and humor that the user seems to enjoy. \"We Bought a Zoo\" is a heartwarming comedy-drama about a family renovating a struggling zoo, while \"Suicide Squad\" is an action-packed superhero movie with a talented cast, including Will Smith and Margot Robbie.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Seth Rogen",
+        "director": "Seth Rogen",
+        "writer": "Seth Rogen",
+        "language": "English"
+      },
+      "rec_titles": [
+        "We Bought a Zoo",
+        "Suicide Squad",
+        "From Dusk Till Dawn",
+        "Elysium"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Steven Millhauser? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of War.)",
+      "user_meta": {
+        "turn": 48,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Steven Millhauser",
+        "anchor_title": "The Wedding Date",
+        "constraints": {
+          "genre": "cult",
+          "writer": "Steven Millhauser",
+          "plot": "goes",
+          "language": "English",
+          "actor": "Seth Rogen"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 48,
+          "from_focus": "genre",
+          "to_focus": "writer",
+          "bridge_field": "plot",
+          "bridge_value": "goes",
+          "from_anchor": "The Sitter",
+          "to_anchor": "The Wedding Date"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, here are two movie recommendations that might interest them:\n\nThe user has expressed a preference for movies related to war and starring Eve, so I would recommend \"Dancer in the Dark\" (2000) starring Björk as an Eastern European immigrant struggling with the gradual loss of her vision. The movie is a powerful drama that explores themes of illness, identity, and the human condition, all set against the backdrop of a war-torn landscape.\n\nAlternatively, if the user is looking for a more lighthearted movie starring Eve, they might enjoy \"Snow Dogs\" (2002) which follows a group of sled dogs and St. Bernards in training in snowy New Hampshire and Idaho. The movie features a talented cast including Nichelle Nichols, Christopher Judge, and Jim Belushi, and is sure to provide an entertaining and heartwarming viewing experience.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "written",
+          "decide"
+        ],
+        "name": "War",
+        "actor": "Eve",
+        "director": "Seth Rogen",
+        "writer": "Steven Millhauser",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Dancer in the Dark",
+        "Graduation Day",
+        "Snow Dogs",
+        "The Losers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Steven Millhauser",
+        "anchor_title": "The Wedding Date",
+        "constraints": {
+          "genre": "cult",
+          "writer": "Steven Millhauser",
+          "plot": "goes",
+          "language": "English",
+          "actor": "Seth Rogen"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: war; actor: Eve; director: Seth Rogen; writer: Steven Millhauser; language: English; plot keywords: just, more. Based on these cues, I recommend \"The Beastmaster\" (1982) and \"Why Did I Get Married Too?\" (2010). Both movies feature Eve in prominent roles and were directed or written by individuals with similar tastes to the user. \"The Beastmaster\" is a sword-and-sorcery fantasy with supernatural powers and animal allies, while \"Why Did I Get Married Too?\" is a romantic drama that follows four couples struggling to save their marriages.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Eve",
+        "director": "Seth Rogen",
+        "writer": "Steven Millhauser",
+        "language": "English"
+      },
+      "rec_titles": [
+        "The Beastmaster",
+        "Evermore",
+        "Why Did I Get Married Too?",
+        "Wolf"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe explore stories about Jason Statham? Hmm, I didn’t expect that vibe. Maybe something that connects to War.",
+      "user_meta": {
+        "turn": 50,
+        "stage": "waiting_system",
+        "focus_field": "plot",
+        "focus_value": "Jason Statham",
+        "anchor_title": "Lock, Stock and Two Smoking Barrels",
+        "constraints": {
+          "genre": "cult",
+          "writer": "Steven Millhauser",
+          "plot": "Jason Statham",
+          "actor": "Jason Statham"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 50,
+          "from_focus": "writer",
+          "to_focus": "plot",
+          "bridge_field": "actor",
+          "bridge_value": "Jason Statham",
+          "from_anchor": "The Wedding Date",
+          "to_anchor": "Lock, Stock and Two Smoking Barrels"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Here are some movie recommendations based on the user's preferences:\n\nThe user has expressed interest in stories about Jason Statham, war themes, and English-language films. Based on these constraints, I recommend \"Knocked Up\" (2007) and \"The World's End\" (2013). Both movies feature Jason Statham in lead roles and have a mix of comedy and action elements, with a hint of war themes.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "jason",
+          "didn"
+        ],
+        "name": "War",
+        "actor": "Jason Statham",
+        "director": "Seth Rogen",
+        "writer": "Steven Millhauser",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Knocked Up",
+        "The World's End",
+        "Great Expectations",
+        "Me Before You"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 4,
+      "from_focus": "genre",
+      "to_focus": "writer",
+      "bridge_field": "plot",
+      "bridge_value": "prostitute",
+      "from_anchor": "The Curious Incident of the Dog in the Night-Time",
+      "to_anchor": "Little Lord Fauntleroy"
+    },
+    {
+      "turn": 9,
+      "from_focus": "writer",
+      "to_focus": "director",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Little Lord Fauntleroy",
+      "to_anchor": "Seven Pounds"
+    },
+    {
+      "turn": 11,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Brad William Henke",
+      "from_anchor": "Seven Pounds",
+      "to_anchor": "The Good Dinosaur"
+    },
+    {
+      "turn": 17,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "The Good Dinosaur",
+      "to_anchor": "The American"
+    },
+    {
+      "turn": 22,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "The American",
+      "to_anchor": "The Namesake"
+    },
+    {
+      "turn": 29,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Carey Mulligan",
+      "from_anchor": "The Namesake",
+      "to_anchor": "Where'd You Go, Bernadette"
+    },
+    {
+      "turn": 33,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "high",
+      "from_anchor": "Where'd You Go, Bernadette",
+      "to_anchor": "Beautiful Creatures"
+    },
+    {
+      "turn": 39,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "spacecraft",
+      "from_anchor": "Beautiful Creatures",
+      "to_anchor": "Ocean's Thirteen"
+    },
+    {
+      "turn": 46,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "Seth Rogen",
+      "from_anchor": "Ocean's Thirteen",
+      "to_anchor": "The Sitter"
+    },
+    {
+      "turn": 48,
+      "from_focus": "genre",
+      "to_focus": "writer",
+      "bridge_field": "plot",
+      "bridge_value": "goes",
+      "from_anchor": "The Sitter",
+      "to_anchor": "The Wedding Date"
+    },
+    {
+      "turn": 50,
+      "from_focus": "writer",
+      "to_focus": "plot",
+      "bridge_field": "actor",
+      "bridge_value": "Jason Statham",
+      "from_anchor": "The Wedding Date",
+      "to_anchor": "Lock, Stock and Two Smoking Barrels"
+    }
+  ]
+}

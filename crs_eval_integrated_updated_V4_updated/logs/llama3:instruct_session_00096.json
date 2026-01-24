@@ -1,0 +1,2212 @@
+{
+  "session_id": "00096",
+  "model_name": "llama3:instruct",
+  "true_genre": "tragicomedy",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a tragicomedy movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "tragicomedy",
+        "anchor_title": "Volver",
+        "constraints": {
+          "genre": "tragicomedy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're in the mood for a tragicomedy movie that has comedic elements and a touch of sadness. Based on your preferences, I'd like to recommend \"War, Inc.\" (2008), which is a satirical comedy that follows a professional assassin who must organize a wedding while trying to take out his target. With its witty dialogue and over-the-top humor, this movie is sure to bring some laughs, but also has a deeper message about the absurdity of war.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "War, Inc.",
+        "Twixt",
+        "The Dangerous Lives of Altar Boys",
+        "Love Ranch"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Quentin Tarantino? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Quentin Tarantino",
+        "anchor_title": "The World According to Garp",
+        "constraints": {
+          "genre": "tragicomedy",
+          "director": "Quentin Tarantino"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "genre",
+          "bridge_value": "tragicomedy",
+          "from_anchor": "Volver",
+          "to_anchor": "The World According to Garp"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you'd like to switch gears and explore something else by Quentin Tarantino, maybe thinking of Jordan Peele's Us. No worries, let me recommend some Tarantino-free comedies that might tickle your fancy! Have you considered \"Forgetting Sarah Marshall\"? It's a hilarious rom-com with a great cast, including Jason Segel and Kristen Bell.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Us",
+        "actor": "Quentin Tarantino",
+        "director": "Quentin Tarantino",
+        "writer": "Quentin Tarantino"
+      },
+      "rec_titles": [
+        "The Crocodile Hunter: Collision Course",
+        "The Wackness",
+        "Stepmom",
+        "Forgetting Sarah Marshall"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Quentin Tarantino",
+        "anchor_title": "The World According to Garp",
+        "constraints": {
+          "genre": "tragicomedy",
+          "director": "Quentin Tarantino"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more movies like Quentin Tarantino's films, with a dash of comedy and adventure thrown in? Based on that, I'd recommend \"The Crocodile Hunter: Collision Course\" - it's an action-packed romp starring Steve Irwin as the charismatic crocodile wrangler, with plenty of laughs and excitement to go around!",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Quentin Tarantino",
+        "director": "Quentin Tarantino",
+        "writer": "Quentin Tarantino"
+      },
+      "rec_titles": [
+        "The Crocodile Hunter: Collision Course",
+        "The Glass House",
+        "The Land Before Time",
+        "Lady in the Water"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Quentin Tarantino",
+        "anchor_title": "The World According to Garp",
+        "constraints": {
+          "genre": "tragicomedy",
+          "director": "Quentin Tarantino"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your earlier hint that you might have been wrong, I'm assuming you're looking for a comedy that's anything but wrong! Given your fondness for Quentin Tarantino, I think you'd enjoy the raunchy humor and over-the-top antics in \"Project X\" (2012). This party-fueled film follows three high school seniors as their birthday bash spirals out of control, with plenty of laughs along the way.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "You",
+        "actor": "Quentin Tarantino",
+        "director": "Quentin Tarantino",
+        "writer": "Quentin Tarantino"
+      },
+      "rec_titles": [
+        "American Psycho",
+        "Project X",
+        "The Terminal",
+        "Chasing Amy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Quentin Tarantino",
+        "anchor_title": "The World According to Garp",
+        "constraints": {
+          "genre": "tragicomedy",
+          "director": "Quentin Tarantino"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie that's the opposite of what \"You\" is - a film that's lighthearted and fun, rather than intense or scary. Based on your cues, I think you might enjoy \"Toy Story 2\", a beloved animated classic that's full of humor and adventure.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "actor": "Quentin Tarantino",
+        "director": "Quentin Tarantino",
+        "writer": "Quentin Tarantino"
+      },
+      "rec_titles": [
+        "The Tigger Movie",
+        "School Daze",
+        "I Can Do Bad All by Myself",
+        "Toy Story 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Spanish? That sounds intriguing. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 6,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "Spanish",
+        "anchor_title": "Lolita",
+        "constraints": {
+          "genre": "tragicomedy",
+          "director": "Quentin Tarantino",
+          "language": "Spanish",
+          "plot": "john"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 6,
+          "from_focus": "director",
+          "to_focus": "language",
+          "bridge_field": "plot",
+          "bridge_value": "john",
+          "from_anchor": "The World According to Garp",
+          "to_anchor": "Lolita"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I got it! The user is looking for a comedy movie primarily in Spanish, with Quentin Tarantino as an actor/director/writer (which isn't possible, but I'll play along!). They're open to something quirky and fun.\n\nBased on this, I'd recommend \"Witless Protection\" (2008), a comedy starring Larry the Cable Guy, which has some hilarious moments and a wacky plot.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "Ted",
+        "actor": "Quentin Tarantino",
+        "director": "Quentin Tarantino",
+        "writer": "Quentin Tarantino",
+        "language": "spa"
+      },
+      "rec_titles": [
+        "Witless Protection",
+        "17 Again",
+        "Wreck-It Ralph",
+        "13 Going on 30"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Spanish",
+        "anchor_title": "Lolita",
+        "constraints": {
+          "genre": "tragicomedy",
+          "director": "Quentin Tarantino",
+          "language": "Spanish",
+          "plot": "john"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more movies that bring a dash of Quentin Tarantino's style, humor, and irreverence, with a comedic twist and a language that's not English - in this case, Spanish! Based on your preferences, I think you might enjoy \"The Return of the Living Dead\" (1985), a campy comedy classic that features over-the-top zombie mayhem and a great cast.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Quentin Tarantino",
+        "director": "Quentin Tarantino",
+        "writer": "Quentin Tarantino",
+        "language": "spa"
+      },
+      "rec_titles": [
+        "The Return of the Living Dead",
+        "Stuck on You",
+        "The Spirit",
+        "Catch-22"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Spanish",
+        "anchor_title": "Lolita",
+        "constraints": {
+          "genre": "tragicomedy",
+          "director": "Quentin Tarantino",
+          "language": "Spanish",
+          "plot": "john"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a comedy with a Quentin Tarantino twist! From what I've gathered, you want a story that's deeper than expected, and since you mentioned \"what kind\" of story, I'm going to take a chance on something with a touch of humor and a dash of unexpectedness. With that in mind, I highly recommend \"Kill Bill: Vol. 1\" - it's a quirky, action-packed comedy starring David Carradine as the enigmatic Bill, and with Tarantino at the helm, you can expect plenty of clever dialogue and memorable characters!",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Deep",
+        "actor": "Quentin Tarantino",
+        "director": "Quentin Tarantino",
+        "writer": "Quentin Tarantino",
+        "language": "spa"
+      },
+      "rec_titles": [
+        "Monsters vs. Aliens",
+        "Kill Bill: Vol. 1",
+        "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+        "Definitely, Maybe"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Kill Bill: Vol. 1. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Spanish",
+        "anchor_title": "Lolita",
+        "constraints": {
+          "genre": "tragicomedy",
+          "director": "Quentin Tarantino",
+          "language": "Spanish",
+          "plot": "john"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you're looking for a movie that stars, is directed by, and has writing credits from Quentin Tarantino, with a comedic tone. Given these constraints, I think \"Moulin Rouge!\" would be an excellent choice for you. This musical comedy features Ewan McGregor and Nicole Kidman in a whimsical tale of love and music set in 1890s Paris - it's a visually stunning film that showcases Tarantino's unique style and wit.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Kill Bill: Vol. 1",
+        "actor": "Quentin Tarantino",
+        "director": "Quentin Tarantino",
+        "writer": "Quentin Tarantino",
+        "language": "spa"
+      },
+      "rec_titles": [
+        "Moulin Rouge!",
+        "Catch-22",
+        "The Wolf of Wall Street",
+        "Waking Ned Devine"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Moulin Rouge!? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Spanish",
+        "anchor_title": "Lolita",
+        "constraints": {
+          "genre": "tragicomedy",
+          "director": "Quentin Tarantino",
+          "language": "Spanish",
+          "plot": "john"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I sense you're looking for a movie that captures the same lighthearted and playful essence as Moulin Rouge!, but with a comedic twist, right? Given your affinity for Quentin Tarantino's films, I think you might enjoy \"Not Another Teen Movie\", which spoofs popular teen movies with humor and wit. It's got a great cast, including Chris Evans and Samm Levine, and promises plenty of laughs!",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Moulin Rouge!",
+        "actor": "Quentin Tarantino",
+        "director": "Quentin Tarantino",
+        "writer": "Quentin Tarantino",
+        "language": "spa"
+      },
+      "rec_titles": [
+        "Vampire in Brooklyn",
+        "The Puffy Chair",
+        "Not Another Teen Movie",
+        "Ocean's Eleven"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Terrence Howard. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 11,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Terrence Howard",
+        "anchor_title": "Kill Bill: Vol. 2",
+        "constraints": {
+          "genre": "tragicomedy",
+          "director": "Quentin Tarantino",
+          "language": "Spanish",
+          "plot": "whose",
+          "actor": "Terrence Howard"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 11,
+          "from_focus": "language",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "whose",
+          "from_anchor": "Lolita",
+          "to_anchor": "Kill Bill: Vol. 2"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie featuring Terrence Howard, possibly with a war theme, and you're open to a Quentin Tarantino film, which is great! Based on your preferences, I'd like to recommend \"The Siege\" (1998), a tense drama that brings together Denzel Washington, Bruce Willis, and Terrence Howard in a gripping story about a police negotiator who must navigate a hostage crisis during a war.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "War",
+        "actor": "Terrence Howard",
+        "director": "Quentin Tarantino",
+        "writer": "Quentin Tarantino",
+        "language": "spa"
+      },
+      "rec_titles": [
+        "Big Fish",
+        "Afterlife",
+        "The Siege",
+        "The Buried Giant"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Terrence Howard",
+        "anchor_title": "Kill Bill: Vol. 2",
+        "constraints": {
+          "genre": "tragicomedy",
+          "director": "Quentin Tarantino",
+          "language": "Spanish",
+          "plot": "whose",
+          "actor": "Terrence Howard"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more war-themed movies, perhaps with some exciting action and memorable performances from Terrence Howard or Quentin Tarantino himself? Based on your preferences, I'd like to recommend \"Uncommon Valor\" - a historic documentary-style film that showcases the epic battle of Iwo Jima during World War II.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Terrence Howard",
+        "director": "Quentin Tarantino",
+        "writer": "Quentin Tarantino",
+        "language": "spa"
+      },
+      "rec_titles": [
+        "Uncommon Valor",
+        "Without a Clue",
+        "Dear John",
+        "Battleship"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Uncommon Valor tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Terrence Howard",
+        "anchor_title": "Kill Bill: Vol. 2",
+        "constraints": {
+          "genre": "tragicomedy",
+          "director": "Quentin Tarantino",
+          "language": "Spanish",
+          "plot": "whose",
+          "actor": "Terrence Howard"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a war-themed movie, starring Common and possibly directed by Quentin Tarantino, with a fascinating story. Based on these constraints, I recommend \"Terminator Salvation\" (2009), which features an action-packed plot with John Connor, played by Christian Bale, fighting against the machines. The film also stars Common, who fits the user's request.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Uncommon Valor",
+        "actor": "Common",
+        "director": "Quentin Tarantino",
+        "writer": "Quentin Tarantino",
+        "language": "spa"
+      },
+      "rec_titles": [
+        "Titanic",
+        "Death Proof",
+        "Terminator Salvation",
+        "Princess Mononoke"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Terminator Salvation? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Terrence Howard",
+        "anchor_title": "Kill Bill: Vol. 2",
+        "constraints": {
+          "genre": "tragicomedy",
+          "director": "Quentin Tarantino",
+          "language": "Spanish",
+          "plot": "whose",
+          "actor": "Terrence Howard"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your interest in Terminator Salvation, I understand that you're looking for a movie with a war theme, starring Common, and possibly having a Quentin Tarantino connection (as he is involved as director, writer, or both). You're also drawn to the plot keywords \"what\" and \"salvation\", suggesting a story with themes of purpose and redemption.\n\nWith these cues in mind, I'd like to recommend 'Now You See Me' for its action-packed and thrilling storyline. The movie features Common alongside Morgan Freeman, and while it doesn't strictly fit your original genre request (war), it does have some war-like elements in its crime-solving and high-stakes heists.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "salvation"
+        ],
+        "name": "Terminator Salvation",
+        "actor": "Common",
+        "director": "Quentin Tarantino",
+        "writer": "Quentin Tarantino",
+        "language": "spa"
+      },
+      "rec_titles": [
+        "Anyone But You",
+        "Smilla's Sense of Snow",
+        "Kill Bill: Vol. 2",
+        "Now You See Me"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Heist. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Terrence Howard",
+        "anchor_title": "Kill Bill: Vol. 2",
+        "constraints": {
+          "genre": "tragicomedy",
+          "director": "Quentin Tarantino",
+          "language": "Spanish",
+          "plot": "whose",
+          "actor": "Terrence Howard"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a heist movie that stars Common, directed by Quentin Tarantino, and is in Spanish. While none of these movies exactly match those criteria, I'd recommend \"Ocean's Eleven\" (2001) as a great alternative. This iconic film follows Danny Ocean and his team as they pull off an elaborate heist in Las Vegas, featuring a star-studded cast including George Clooney, Brad Pitt, and Matt Damon.",
+      "constraints": {
+        "genre": "heist",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Heist",
+        "actor": "Common",
+        "director": "Quentin Tarantino",
+        "writer": "Quentin Tarantino",
+        "language": "spa"
+      },
+      "rec_titles": [
+        "Alex in Wonderland",
+        "Ocean's Eleven",
+        "Safe Men",
+        "Paycheck"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Michael Polish? That sounds intriguing. (I’m thinking of Ocean's Eleven.)",
+      "user_meta": {
+        "turn": 16,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Michael Polish",
+        "anchor_title": "The Pacifier",
+        "constraints": {
+          "genre": "tragicomedy",
+          "director": "Michael Polish",
+          "language": "Spanish",
+          "plot": "whose",
+          "actor": "Steven Soderbergh"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 16,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Steven Soderbergh",
+          "from_anchor": "Kill Bill: Vol. 2",
+          "to_anchor": "The Pacifier"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for something new by Michael Polish, but with a hint of heist and Eve's presence in mind. Considering Quentin Tarantino is also on your radar, I think you might enjoy \"Django Unchained\" (2012), which features Christoph Waltz and Jamie Foxx in a thrilling adventure that blends action, drama, and dark humor. The film's unique tone and memorable characters will likely appeal to fans of heist movies like Ocean's Eleven.",
+      "constraints": {
+        "genre": "heist",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Ocean's Eleven",
+        "actor": "Eve",
+        "director": "Michael Polish",
+        "writer": "Quentin Tarantino",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "Django Unchained",
+        "The Border",
+        "The Whistler",
+        "Point Break"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Michael Polish",
+        "anchor_title": "The Pacifier",
+        "constraints": {
+          "genre": "tragicomedy",
+          "director": "Michael Polish",
+          "language": "Spanish",
+          "plot": "whose",
+          "actor": "Steven Soderbergh"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for more heist-themed movies with a hint of intrigue, having enjoyed films by Michael Polish and Quentin Tarantino. Given their preferences, I'd recommend \"Panic Room\" (2002), a tense thriller starring Jodie Foster as a mother who must use her wits to survive a home invasion. The movie's clever plot twists and intense action scenes are sure to keep you on the edge of your seat!",
+      "constraints": {
+        "genre": "heist",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Eve",
+        "director": "Michael Polish",
+        "writer": "Quentin Tarantino",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "You",
+        "Panic Room",
+        "Set It Off",
+        "Twin Falls Idaho"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Michael Polish",
+        "anchor_title": "The Pacifier",
+        "constraints": {
+          "genre": "tragicomedy",
+          "director": "Michael Polish",
+          "language": "Spanish",
+          "plot": "whose",
+          "actor": "Steven Soderbergh"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie that's the opposite of what you initially thought you'd like, and considering a heist genre with Eve as the lead actor, Michael Polish as the director, Quentin Tarantino as the writer, and Polish language. Interestingly, none of these movies match your original criteria! However, I recommend \"Takers\" (2010), an action-packed heist movie starring Paul Walker, Hayden Christensen, and Matt Dillon.",
+      "constraints": {
+        "genre": "heist",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "You",
+        "actor": "Eve",
+        "director": "Michael Polish",
+        "writer": "Quentin Tarantino",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "Haunted",
+        "The Buried Giant",
+        "Takers",
+        "Monsters, Inc."
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Michael Polish",
+        "anchor_title": "The Pacifier",
+        "constraints": {
+          "genre": "tragicomedy",
+          "director": "Michael Polish",
+          "language": "Spanish",
+          "plot": "whose",
+          "actor": "Steven Soderbergh"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on what you like, I understand that you're looking for a movie with a heist theme, starring Eve (which doesn't seem to be a match in this list), directed by Michael Polish (again, not a direct match), written by Quentin Tarantino (no matches here either), and possibly featuring some elements related to \"like\" or \"sound\". Since these constraints don't have an exact match on the list, I'll recommend two movies that fit your heist theme: \"Snatch\" (2000) for its witty humor and crime capers, and \"Ocean's Twelve\" (2004) for its clever heists and charismatic cast.",
+      "constraints": {
+        "genre": "heist",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "You",
+        "actor": "Eve",
+        "director": "Michael Polish",
+        "writer": "Quentin Tarantino",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "The Right Stuff",
+        "Vampyres",
+        "Snatch",
+        "Ocean's Twelve"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Twelve. I want to try something more docudrama—still with Charlie Saxton if possible. That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "docudrama",
+        "anchor_title": "12 Angry Men",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Michael Polish",
+          "plot": "whose",
+          "actor": "Charlie Saxton"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 20,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "Charlie Saxton",
+          "from_anchor": "The Pacifier",
+          "to_anchor": "12 Angry Men"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a docudrama that features Charlie Saxton, possibly with a deeper storyline than what you experienced in Twelve. Given these constraints, I think you might enjoy \"Death Proof\" (2007) directed by Quentin Tarantino. This film tells the story of two sets of women who are stalked and terrorized by a stuntman with a vendetta, featuring a mix of thriller and drama elements that should provide a more intense viewing experience than what you found in Twelve.",
+      "constraints": {
+        "genre": "docudrama",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Twelve",
+        "actor": "Charlie Saxton",
+        "director": "Michael Polish",
+        "writer": "Quentin Tarantino",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "Pulp Fiction",
+        "Mommie Dearest",
+        "Scream 4",
+        "Death Proof"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 21,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "docudrama",
+        "anchor_title": "12 Angry Men",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Michael Polish",
+          "plot": "whose",
+          "actor": "Charlie Saxton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more recommendations that fit a docudrama genre, feature Charlie Saxton, and have connections to Michael Polish, Quentin Tarantino, and Polish language, with plot keywords like \"just\" and \"more\". Based on these constraints, I think \"Hesher\" (2010) would be an excellent choice. This offbeat comedy-drama stars Joseph Gordon-Levitt and Rainn Wilson, following the story of a young boy who meets Hesher, a chaotic and unpredictable character who shakes up his life.",
+      "constraints": {
+        "genre": "docudrama",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Charlie Saxton",
+        "director": "Michael Polish",
+        "writer": "Quentin Tarantino",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "Hesher",
+        "We Are Marshall",
+        "Bobby",
+        "Mama"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "docudrama",
+        "anchor_title": "12 Angry Men",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Michael Polish",
+          "plot": "whose",
+          "actor": "Charlie Saxton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a story that's a mix of documentary-style and drama, with some intriguing elements that might keep you on the edge or make you laugh - perhaps something that explores what makes life meaningful? Based on your cues, I'd recommend \"This Is Spinal Tap\" (1984), which combines a mockumentary style with a fictional story, following a quirky British rock band on their chaotic tour. The film's humor and satire are likely to appeal to your taste in docudrama and comedy.",
+      "constraints": {
+        "genre": "docudrama",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "actor": "Charlie Saxton",
+        "director": "Michael Polish",
+        "writer": "Quentin Tarantino",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "This Is Spinal Tap",
+        "Flatliners",
+        "Witless Protection",
+        "Inglourious Basterds"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "docudrama",
+        "anchor_title": "12 Angry Men",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Michael Polish",
+          "plot": "whose",
+          "actor": "Charlie Saxton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand that you're looking for a movie that sounds fascinating, with Charlie Saxton's star power being a major draw. Given your interest in docudramas and Quentin Tarantino's involvement as a writer, I think you might enjoy \"United 93\" (2006), a gripping real-time account of the events on United Flight 93 on September 11th, 2001. The film features strong performances from its cast, including Cheyenne Jackson and Corey Johnson.",
+      "constraints": {
+        "genre": "docudrama",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "actor": "Charlie Saxton",
+        "director": "Michael Polish",
+        "writer": "Quentin Tarantino",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "The Relic",
+        "The Life Before Her Eyes",
+        "United 93",
+        "District 9"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? That sounds intriguing.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "docudrama",
+        "anchor_title": "12 Angry Men",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Michael Polish",
+          "plot": "whose",
+          "actor": "Charlie Saxton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie with an intriguing mood, and you mentioned being interested in \"Ted\" which suggests a touch of unpredictability. Based on that, I think you might enjoy \"The Wrestler\" (2008) starring Mickey Rourke as Frank Bass, a gritty and intense docudrama that explores the struggles of a professional wrestler trying to make a comeback.",
+      "constraints": {
+        "genre": "docudrama",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Ted",
+        "actor": "Charlie Saxton",
+        "director": "Michael Polish",
+        "writer": "Quentin Tarantino",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "What If...",
+        "The Wrestler",
+        "End of Watch",
+        "Little Fockers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Mike Johnson (Animator)? Hmm, I didn’t expect that vibe. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 25,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Mike Johnson (Animator)",
+        "anchor_title": "On Beauty",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Mike Johnson (Animator)",
+          "plot": "whose",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 25,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "12 Angry Men",
+          "to_anchor": "On Beauty"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for something else by Mike Johnson (Animator), but you didn't expect that vibe, and you're thinking of X.\n\nI think I can help! Based on your preferences for a docudrama with Charlie Saxton, Quentin Tarantino's style, and no Polish language, I'd recommend \"True Romance\" (1993). It's an iconic film with a non-linear plot, memorable characters, and plenty of action. Plus, it has a great cast, including Christian Slater, Patricia Arquette, and Dennis Hopper.",
+      "constraints": {
+        "genre": "docudrama",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Johns",
+        "actor": "Charlie Saxton",
+        "director": "Mike Johnson (Animator)",
+        "writer": "Quentin Tarantino",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "Johns",
+        "Mommie Dearest",
+        "True Romance",
+        "The Right Stuff"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mike Johnson (Animator)",
+        "anchor_title": "On Beauty",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Mike Johnson (Animator)",
+          "plot": "whose",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for more movie recommendations that fit a docudrama genre, feature Charlie Saxton, and have some connection to Mike Johnson (Animator), Quentin Tarantino, or Polish language. Based on these constraints, I think you might enjoy \"Death Proof\" - it's a crime thriller with a Tarantino twist, featuring Kurt Russell as a stuntman-turned-killer. The film's plot is full of surprises, and the cast is impressive, with Rosario Dawson, Vanessa Ferlito, and Mary Elizabeth Winstead standing out.",
+      "constraints": {
+        "genre": "docudrama",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Charlie Saxton",
+        "director": "Mike Johnson (Animator)",
+        "writer": "Quentin Tarantino",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "Shutter",
+        "The Lincoln Lawyer",
+        "Death Proof",
+        "Neighbors 2: Sorority Rising"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 27,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mike Johnson (Animator)",
+        "anchor_title": "On Beauty",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Mike Johnson (Animator)",
+          "plot": "whose",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for something that's actually the opposite of what you initially wanted, and it seems like you're interested in a docudrama with Charlie Saxton, but since none of those options fit perfectly, I'll suggest two movies from the list that might still be appealing.\n\nConsidering your interest in docudramas and Charlie Saxton, I recommend \"Twelve\" - it's a heartwarming film about a young boy chasing his dreams, which is quite different from the other genres on the list.",
+      "constraints": {
+        "genre": "docudrama",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "You",
+        "actor": "Charlie Saxton",
+        "director": "Mike Johnson (Animator)",
+        "writer": "Quentin Tarantino",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "The Right Stuff",
+        "Pulp Fiction",
+        "Natural Born Killers",
+        "Twelve"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mike Johnson (Animator)",
+        "anchor_title": "On Beauty",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Mike Johnson (Animator)",
+          "plot": "whose",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've got it! You're looking for a movie that explores themes of regret and going wrong, perhaps with a dash of action and drama. Based on your cues, I recommend \"In Bruges\" (2008), where hitman Ray's life goes awry in the picturesque Belgian city. The film features Colin Farrell and Ralph Fiennes in a darkly comedic caper that explores the consequences of past mistakes.",
+      "constraints": {
+        "genre": "docudrama",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "You",
+        "actor": "Charlie Saxton",
+        "director": "Mike Johnson (Animator)",
+        "writer": "Quentin Tarantino",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "In Bruges",
+        "Truly Madly Guilty",
+        "500 Days of Summer",
+        "Butch Cassidy and the Sundance Kid"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mike Johnson (Animator)",
+        "anchor_title": "On Beauty",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Mike Johnson (Animator)",
+          "plot": "whose",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user is looking for a story that feels deeper than they thought, and based on their cues, I'm guessing they enjoy docudramas, maybe with some fantastical elements. Here are my top two recommendations: \n\nI think 'Alex in Wonderland' would be an excellent fit - it's a semi-autobiographical comedy-drama about a filmmaker grappling with the pressures of commercial success versus artistic control. Charlie Saxton isn't involved, but the film's themes of creative struggle and personal growth might resonate with the user.",
+      "constraints": {
+        "genre": "docudrama",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Deep",
+        "actor": "Charlie Saxton",
+        "director": "Mike Johnson (Animator)",
+        "writer": "Quentin Tarantino",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "2010",
+        "Lady in the Water",
+        "Corpse Bride",
+        "Alex in Wonderland"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Deep? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mike Johnson (Animator)",
+        "anchor_title": "On Beauty",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Mike Johnson (Animator)",
+          "plot": "whose",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on what you didn't expect, I'm going to assume you're looking for something a bit different from the vibe of \"Deep\". You mentioned genre: docudrama, actor: Charlie Saxton (who isn't in any of these films), director: Mike Johnson (Animator), writer: Quentin Tarantino, and language: Polish. Since none of those criteria match exactly, I'll recommend two movies that might scratch that itch.\n\nFirstly, if you're open to a gripping thriller with complex moral themes, \"The Equalizer\" (2014) starring Denzel Washington might be up your alley. Secondly, for a more suspenseful and dark ride, \"Wrong Turn\" (2003) could provide the right mix of woods-based terror and surprises.",
+      "constraints": {
+        "genre": "docudrama",
+        "plot": [
+          "what",
+          "deep"
+        ],
+        "name": "Deep",
+        "actor": "Charlie Saxton",
+        "director": "Mike Johnson (Animator)",
+        "writer": "Quentin Tarantino",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "The Equalizer",
+        "The Girl on the Train",
+        "Django Unchained",
+        "Wrong Turn"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mike Johnson (Animator)",
+        "anchor_title": "On Beauty",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Mike Johnson (Animator)",
+          "plot": "whose",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you'd like a movie that's a docudrama, stars Charlie Saxton, is directed by Mike Johnson (an animator), written by Quentin Tarantino, and features Polish as one of the languages. Given those unique constraints, I recommend \"Passion\" (2011), a documentary-style film about competitive beard growing, which might surprise you with its quirky charm. Alternatively, if you're open to something more dramatic, \"The Trouble with Harry\" (1955) is a classic mystery film that explores themes of responsibility and the human condition.",
+      "constraints": {
+        "genre": "docudrama",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "Deep",
+        "actor": "Charlie Saxton",
+        "director": "Mike Johnson (Animator)",
+        "writer": "Quentin Tarantino",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "2010",
+        "Passion",
+        "The Trouble with Harry",
+        "Lady in the Water"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Johns. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mike Johnson (Animator)",
+        "anchor_title": "On Beauty",
+        "constraints": {
+          "genre": "docudrama",
+          "director": "Mike Johnson (Animator)",
+          "plot": "whose",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie that stars Charlie Saxton, has a docudrama genre, and was written by Quentin Tarantino, among other constraints. Unfortunately, none of the movies on this list meet all of those criteria. However, I think you might enjoy \"Planet Terror\" (2007) - it's a cult classic written by Robert Rodriguez and starring Rose McGowan, who is not Charlie Saxton, but I thought it was worth mentioning since it shares a connection with Tarantino!",
+      "constraints": {
+        "genre": "docudrama",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Johns",
+        "actor": "Charlie Saxton",
+        "director": "Mike Johnson (Animator)",
+        "writer": "Quentin Tarantino",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "Total Recall",
+        "Uptown Girls",
+        "Planet Terror",
+        "The Bad Seed"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on X. I want to try something more young-adult—I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 33,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "young-adult",
+        "anchor_title": "Stargirl",
+        "constraints": {
+          "genre": "young-adult",
+          "plot": "whose",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 33,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "girl",
+          "from_anchor": "On Beauty",
+          "to_anchor": "Stargirl"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It sounds like you're looking for a young-adult film that's not too scary, and you have some specific preferences, such as Charlie Saxton being involved (although he isn't in any of these movies). You also seem to enjoy Quentin Tarantino's work.\n\nI'd recommend \"Wanderlust\" (2012) - it's an adventure film with a great cast, including Paul Rudd and Jennifer Aniston. The plot follows a young adult who sets out on a journey of self-discovery after his life is turned upside down. It's a heartwarming story about reconnecting with one's childhood dreams and finding freedom in the process.",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "RED",
+        "actor": "Charlie Saxton",
+        "director": "Mike Johnson (Animator)",
+        "writer": "Quentin Tarantino",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "Grindhouse",
+        "Wanderlust",
+        "Burned",
+        "The Maze Runner"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 34,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "young-adult",
+        "anchor_title": "Stargirl",
+        "constraints": {
+          "genre": "young-adult",
+          "plot": "whose",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more recommendations like \"just checking—do you have more recommendations like that?\" with a focus on young-adult movies, featuring Charlie Saxton, directed by Mike Johnson (Animator), written by Quentin Tarantino, and in Polish? That's quite a unique combination! I think I can suggest two titles from the list that might interest you. Have you considered \"The Maze Runner\" which is a popular young-adult movie about a group of teenagers trapped in a mysterious maze, or \"This Is the End\" which is an apocalyptic comedy with a star-studded cast?",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Charlie Saxton",
+        "director": "Mike Johnson (Animator)",
+        "writer": "Quentin Tarantino",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "The Skull",
+        "This Is the End",
+        "Donnie Brasco",
+        "The Maze Runner"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "young-adult",
+        "anchor_title": "Stargirl",
+        "constraints": {
+          "genre": "young-adult",
+          "plot": "whose",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I understand what you're looking for! You mentioned that you thought you liked something, but maybe not, and you're interested in movies with a young-adult vibe, starring Charlie Saxton (although he's not in any of these movies), directed by Mike Johnson (an animator), written by Quentin Tarantino (who is involved in two of the movies on this list), and the plot includes weird thoughts.",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "You",
+        "actor": "Charlie Saxton",
+        "director": "Mike Johnson (Animator)",
+        "writer": "Quentin Tarantino",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "Journey 2: The Mysterious Island",
+        "Jackie Brown",
+        "Django Unchained",
+        "Milkweed"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Johns? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "young-adult",
+        "anchor_title": "Stargirl",
+        "constraints": {
+          "genre": "young-adult",
+          "plot": "whose",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on what you said, I understand that you're looking for a movie with a vibe that's unexpected, and you have some specific preferences - it should be a young-adult film, starring Charlie Saxton, directed by Mike Johnson (an animator), written by Quentin Tarantino, and featuring Polish as the primary language. Given these constraints, I'd like to recommend \"Pulp Fiction\" - it may not fit all of your criteria, but it's a cult classic that explores themes of violence, redemption, and interconnected stories, starring John Travolta, Samuel L. Jackson, and Uma Thurman.",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "Johns",
+        "actor": "Charlie Saxton",
+        "director": "Mike Johnson (Animator)",
+        "writer": "Quentin Tarantino",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "Grindhouse",
+        "Matched",
+        "Wolfhound",
+        "Pulp Fiction"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "young-adult",
+        "anchor_title": "Stargirl",
+        "constraints": {
+          "genre": "young-adult",
+          "plot": "whose",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie that's not too scary, but still has an exciting story. Given your interest in young-adult stories and the presence of Charlie Saxton (although he's not in any of these specific movies), I think \"If I Stay\" could be a great fit! It's a heartwarming and thought-provoking film that explores themes of life, love, and identity, all set to a beautiful soundtrack.",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "actor": "Charlie Saxton",
+        "director": "Mike Johnson (Animator)",
+        "writer": "Quentin Tarantino",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "Paycheck",
+        "Tomorrow, When the War Began",
+        "Why Did I Get Married?",
+        "If I Stay"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "young-adult",
+        "anchor_title": "Stargirl",
+        "constraints": {
+          "genre": "young-adult",
+          "plot": "whose",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your interest in \"You\" and your preferences for young-adult themes, Charlie Saxton's involvement, and a Quentin Tarantino connection (through writing), I'm recommending \"The Happening\" as a great fit! You'll enjoy the intriguing storyline of a mysterious epidemic, paired with Charlie Saxton's appearance alongside other talented actors like Zooey Deschanel.",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "actor": "Charlie Saxton",
+        "director": "Mike Johnson (Animator)",
+        "writer": "Quentin Tarantino",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "The Maze Runner",
+        "Reservoir Dogs",
+        "Loser",
+        "The Happening"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Spencer Breslin. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of The Happening.)",
+      "user_meta": {
+        "turn": 39,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Spencer Breslin",
+        "anchor_title": "Something Borrowed",
+        "constraints": {
+          "genre": "young-adult",
+          "plot": "whose",
+          "language": "English",
+          "actor": "Spencer Breslin"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 39,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Spencer Breslin",
+          "from_anchor": "Stargirl",
+          "to_anchor": "Something Borrowed"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So, you're looking for a movie with Spencer Breslin that's not too scary, maybe even has a young adult theme? You're thinking of The Happening, which doesn't exactly scream \"fun\"! \n\nI'd recommend Loser (2002) starring Spencer Breslin as Jame Dean Ray - it's a coming-of-age story about self-discovery and rebellion, with a great cast. It's not too intense or frightening, so you might find it just right!",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "The Happening",
+        "actor": "Spencer Breslin",
+        "director": "Mike Johnson (Animator)",
+        "writer": "Quentin Tarantino",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "Loser",
+        "Good Will Hunting",
+        "Harry Potter and the Half-Blood Prince",
+        "The Whistler"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Spencer Breslin",
+        "anchor_title": "Something Borrowed",
+        "constraints": {
+          "genre": "young-adult",
+          "plot": "whose",
+          "language": "English",
+          "actor": "Spencer Breslin"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I understand you're looking for more recommendations similar to what you've seen so far, which means you'd like something with a young-adult vibe and possibly some action-packed thrills! Based on that, I think \"Uglies\" (2005) would be an excellent fit - it's a visually stunning film set in a world where physical imperfections are erased, exploring themes of identity and conformity. The movie also stars Spencer Breslin, which fits your request for actors you've enjoyed before!",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Spencer Breslin",
+        "director": "Mike Johnson (Animator)",
+        "writer": "Quentin Tarantino",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "12 Angry Men",
+        "Three Kings",
+        "The Outsiders",
+        "Uglies"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Her tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Spencer Breslin",
+        "anchor_title": "Something Borrowed",
+        "constraints": {
+          "genre": "young-adult",
+          "plot": "whose",
+          "language": "English",
+          "actor": "Spencer Breslin"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on what you're looking for, I understand that you're interested in a story that explores themes of humanity, technology, and freedom, with a dash of adventure and action. None of the movies from my list quite fit this bill, but I think \"Prometheus\" could be an interesting choice, as it delves into questions about what it means to be human and our relationship with technology. Alternatively, if you're in the mood for something more thought-provoking and intellectually stimulating, \"We the Living\" might be a great option, exploring the consequences of communist ideology on individual freedom and humanity.",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her",
+        "actor": "Spencer Breslin",
+        "director": "Mike Johnson (Animator)",
+        "writer": "Quentin Tarantino",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "Prometheus",
+        "We the Living",
+        "The Chocolate War",
+        "Paycheck"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Spencer Breslin",
+        "anchor_title": "Something Borrowed",
+        "constraints": {
+          "genre": "young-adult",
+          "plot": "whose",
+          "language": "English",
+          "actor": "Spencer Breslin"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie that captures the deep and complex mood of \"Us\", with a hint of young-adult flair, perhaps some Quentin Tarantino magic, and a dash of Polish language influence (although none of these movies quite fit that last criterion!). I'd recommend checking out \"Death Proof\" - it's a cult classic with a unique blend of grindhouse-style thrills and Tarantino's signature style, starring Kurt Russell as the charismatic but deadly stuntman.",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Deep",
+        "actor": "Spencer Breslin",
+        "director": "Mike Johnson (Animator)",
+        "writer": "Quentin Tarantino",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "Grindhouse",
+        "Django Unchained",
+        "The Wrestler",
+        "Death Proof"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Audrey Wells? That feels deeper than I thought. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 43,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Audrey Wells",
+        "anchor_title": "Tomorrow, When the War Began",
+        "constraints": {
+          "genre": "young-adult",
+          "language": "Japanese Language",
+          "actor": "Spencer Breslin",
+          "director": "Audrey Wells"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 43,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "language",
+          "bridge_value": "Japanese Language",
+          "from_anchor": "Something Borrowed",
+          "to_anchor": "Tomorrow, When the War Began"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for something else by Audrey Wells that feels deeper than \"Imagine That\" (I think you meant \"You\", haha!). You seem to be in the mood for a thought-provoking film, possibly with a strong narrative or character-driven plot.\n\nBased on your interest in Audrey Wells' work and young-adult themes, I'd recommend \"Deep\" (2015). This psychological thriller follows four med students who get entangled in a neuroscience experiment that takes an unexpected turn. The film explores complex themes like morality, responsibility, and the blurred lines between human and animal behavior - all set against a tense and suspenseful backdrop.",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Deep",
+        "actor": "Spencer Breslin",
+        "director": "Audrey Wells",
+        "writer": "Audrey Wells",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "Lord of the Flies",
+        "Crescendo",
+        "Deep",
+        "Trees Lounge"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 44,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Audrey Wells",
+        "anchor_title": "Tomorrow, When the War Began",
+        "constraints": {
+          "genre": "young-adult",
+          "language": "Japanese Language",
+          "actor": "Spencer Breslin",
+          "director": "Audrey Wells"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for more recommendations like the ones featuring Spencer Breslin, with a focus on young-adult themes and possibly some adventure or excitement. Considering that, I think \"The Happening\" could be a good fit - it's an action-packed thriller starring Spencer Breslin himself, alongside Zooey Deschanel and M. Night Shyamalan. Alternatively, if you're in the mood for something a bit more light-hearted, \"Wild Hogs\" might be up your alley, with its cast of lovable misfits going on a wild road trip adventure!",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Spencer Breslin",
+        "director": "Audrey Wells",
+        "writer": "Audrey Wells",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "Wild Hogs",
+        "Fight Club",
+        "The Happening",
+        "Alex in Wonderland"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Audrey Wells",
+        "anchor_title": "Tomorrow, When the War Began",
+        "constraints": {
+          "genre": "young-adult",
+          "language": "Japanese Language",
+          "actor": "Spencer Breslin",
+          "director": "Audrey Wells"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your request, I understand that you're looking for a movie with a young-adult vibe, starring Spencer Breslin, and directed by Audrey Wells. You also mentioned that the mood of \"You\" didn't quite fit what you expected.\n\nConsidering these constraints, I think you might enjoy \"The Shaggy Dog\" (2006) starring Spencer Breslin alongside Robert Downey Jr.! The movie's lighthearted tone and comedic take on a man turning into a sheepdog might provide the young-adult flavor you're looking for.",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "X",
+        "actor": "Spencer Breslin",
+        "director": "Audrey Wells",
+        "writer": "Audrey Wells",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "Matched",
+        "The Shaggy Dog",
+        "Lord of the Flies",
+        "Alex in Wonderland"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Audrey Wells",
+        "anchor_title": "Tomorrow, When the War Began",
+        "constraints": {
+          "genre": "young-adult",
+          "language": "Japanese Language",
+          "actor": "Spencer Breslin",
+          "director": "Audrey Wells"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on what you're looking for, I understand that you like the sound of \"You\" and are interested in a young-adult movie with Spencer Breslin, directed by Audrey Wells, and written by her as well. \n\nGiven these constraints, I recommend checking out \"Treasure Planet\" (2002), an animated adventure film about Jim Hawkins' quest for treasure in space! With its blend of science fiction and coming-of-age themes, it should appeal to your young-adult taste buds.",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "You",
+        "actor": "Spencer Breslin",
+        "director": "Audrey Wells",
+        "writer": "Audrey Wells",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "Treasure Planet",
+        "Blow Out",
+        "The Mortal Instruments: City of Bones",
+        "Beautiful Creatures"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Audrey Wells",
+        "anchor_title": "Tomorrow, When the War Began",
+        "constraints": {
+          "genre": "young-adult",
+          "language": "Japanese Language",
+          "actor": "Spencer Breslin",
+          "director": "Audrey Wells"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I understand what you're looking for! You're looking for a story that's perfect for young adults, with Spencer Breslin as an actor and Audrey Wells as the director and writer. Given those constraints, I'd recommend \"The Santa Clause 2\" (2002) - it's a fun, light-hearted film with Spencer Breslin in the cast, and it has a great balance of humor and heart.",
+      "constraints": {
+        "genre": "young-adult",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "actor": "Spencer Breslin",
+        "director": "Audrey Wells",
+        "writer": "Audrey Wells",
+        "language": "Polish"
+      },
+      "rec_titles": [
+        "The Santa Clause 2",
+        "Chain Reaction",
+        "Paradise Lost",
+        "This Is Spinal Tap"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in English? That sounds intriguing. (I’m thinking of Young Adult.)",
+      "user_meta": {
+        "turn": 48,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "English",
+        "anchor_title": "White House Down",
+        "constraints": {
+          "genre": "young-adult",
+          "language": "English",
+          "actor": "Spencer Breslin",
+          "director": "Audrey Wells"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 48,
+          "from_focus": "director",
+          "to_focus": "language",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Tomorrow, When the War Began",
+          "to_anchor": "White House Down"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "So you're looking for a movie that's primarily in English, with elements of young adult themes and possibly some action-packed excitement! Based on those cues, I think \"Fast Five\" (2011) might be up your alley - it's an adrenaline-fueled heist film with a star-studded cast, including Vin Diesel, Dwayne Johnson, and Paul Walker.",
+      "constraints": {
+        "genre": "young adult",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "Young Adult",
+        "actor": "Spencer Breslin",
+        "director": "Audrey Wells",
+        "writer": "Audrey Wells",
+        "language": "English"
+      },
+      "rec_titles": [
+        "A Good Day to Die Hard",
+        "The Ice Storm",
+        "Fast Five",
+        "The Last Samurai"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "English",
+        "anchor_title": "White House Down",
+        "constraints": {
+          "genre": "young-adult",
+          "language": "English",
+          "actor": "Spencer Breslin",
+          "director": "Audrey Wells"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems you're looking for more movies like \"Racing Stripes\" (2005) - we have a few options that match your preferences! You liked Spencer Breslin, Audrey Wells, and young adult themes, so I'll recommend two movies from the list: \"Anchorman: The Legend of Ron Burgundy\" (2004), which has a similar comedic tone and stars Will Ferrell; and \"Harry Potter and the Half-Blood Prince\" (2009), an adventure film with a rich storyline that explores teenage struggles, much like your original movie.",
+      "constraints": {
+        "genre": "young adult",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Spencer Breslin",
+        "director": "Audrey Wells",
+        "writer": "Audrey Wells",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Anchorman: The Legend of Ron Burgundy",
+        "Harry Potter and the Half-Blood Prince",
+        "Water for Elephants",
+        "The Amityville Horror"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Legend? That sounds intriguing.",
+      "user_meta": {
+        "turn": 50,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "English",
+        "anchor_title": "White House Down",
+        "constraints": {
+          "genre": "young-adult",
+          "language": "English",
+          "actor": "Spencer Breslin",
+          "director": "Audrey Wells"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for a movie with a similar vibe to \"Legend\", which seems to be an intriguing choice! Based on your preferences, I think you might enjoy \"Yoga Hosers\" - it's a quirky, young adult-focused film that features Spencer Breslin, one of the actors from your original list. This 2016 comedy-horror film follows two teenage yoga enthusiasts as they battle supernatural forces in their small town. Give it a try!",
+      "constraints": {
+        "genre": "young adult",
+        "plot": [
+          "what",
+          "legend"
+        ],
+        "name": "Legend",
+        "actor": "Spencer Breslin",
+        "director": "Audrey Wells",
+        "writer": "Audrey Wells",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Yoga Hosers",
+        "Cadillac Records",
+        "Lord of the Flies",
+        "Stuart Little"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "genre",
+      "bridge_value": "tragicomedy",
+      "from_anchor": "Volver",
+      "to_anchor": "The World According to Garp"
+    },
+    {
+      "turn": 6,
+      "from_focus": "director",
+      "to_focus": "language",
+      "bridge_field": "plot",
+      "bridge_value": "john",
+      "from_anchor": "The World According to Garp",
+      "to_anchor": "Lolita"
+    },
+    {
+      "turn": 11,
+      "from_focus": "language",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "whose",
+      "from_anchor": "Lolita",
+      "to_anchor": "Kill Bill: Vol. 2"
+    },
+    {
+      "turn": 16,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Steven Soderbergh",
+      "from_anchor": "Kill Bill: Vol. 2",
+      "to_anchor": "The Pacifier"
+    },
+    {
+      "turn": 20,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "Charlie Saxton",
+      "from_anchor": "The Pacifier",
+      "to_anchor": "12 Angry Men"
+    },
+    {
+      "turn": 25,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "12 Angry Men",
+      "to_anchor": "On Beauty"
+    },
+    {
+      "turn": 33,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "girl",
+      "from_anchor": "On Beauty",
+      "to_anchor": "Stargirl"
+    },
+    {
+      "turn": 39,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Spencer Breslin",
+      "from_anchor": "Stargirl",
+      "to_anchor": "Something Borrowed"
+    },
+    {
+      "turn": 43,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "language",
+      "bridge_value": "Japanese Language",
+      "from_anchor": "Something Borrowed",
+      "to_anchor": "Tomorrow, When the War Began"
+    },
+    {
+      "turn": 48,
+      "from_focus": "director",
+      "to_focus": "language",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Tomorrow, When the War Began",
+      "to_anchor": "White House Down"
+    }
+  ]
+}

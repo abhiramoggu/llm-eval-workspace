@@ -1,0 +1,2098 @@
+{
+  "session_id": "00076",
+  "model_name": "llama2:latest",
+  "true_genre": "tragicomedy",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a tragicomedy movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "tragicomedy",
+        "anchor_title": "The World According to Garp",
+        "constraints": {
+          "genre": "tragicomedy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user is in the mood for a tragicomedy movie and wants recommendations based on their preference for comedy genre and plot keywords like \"could\".\nRecommendation: Based on these constraints, I would recommend \"Spice World\" (1997) starring Perdita Weeks, George Wendt, Richard Briers, and the Spice Girls. This movie combines comedy and adventure elements with a fun and lighthearted tone. Alternatively, \"Sinbad: Legend of the Seven Seas\" (2003) starring Brad Pitt is another great option that combines action, adventure, and comedy elements with impressive visual effects. Both movies are sure to provide an enjoyable viewing experience for fans of tragicomedy genres.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "Spice World",
+        "Scream 2",
+        "The Three Musketeers",
+        "Sinbad: Legend of the Seven Seas"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "tragicomedy",
+        "anchor_title": "The World According to Garp",
+        "constraints": {
+          "genre": "tragicomedy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User Constraints: The user thought they liked a movie but maybe not, and is looking for similar comedies with unexpected twists.\nRecommendation: If you enjoyed the mix of humor and surprise in \"Multiplicity,\" you might enjoy \"The Sisterhood of the Traveling Pants.\" This heartwarming comedy follows four friends as they navigate their lives apart and together through a magical pair of jeans. Alternatively, if you're looking for something more lighthearted with an eccentric cast, \"The Family Stone\" might be up your alley.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "Multiplicity",
+        "The Sisterhood of the Traveling Pants",
+        "The Family Stone",
+        "You, Me and Dupree"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Tyrone Giordano. Hmm, I didn’t expect that vibe. (I’m thinking of The Family Stone.)",
+      "user_meta": {
+        "turn": 3,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Tyrone Giordano",
+        "anchor_title": "Lolita",
+        "constraints": {
+          "genre": "tragicomedy",
+          "actor": "Tyrone Giordano"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 3,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Tyrone Giordano",
+          "from_anchor": "The World According to Garp",
+          "to_anchor": "Lolita"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: The user is looking for movies with Tyrone Giordano and a family vibe. They mentioned The Family Stone as an example.\nRecommendation: Based on the user's preference for movies with Tyrone Giordano and a family vibe, I recommend checking out 'Monsters, Inc.' (2001) starring John Goodman and Billy Crystal. This animated movie has a heartwarming story about friendship and family, and features Tyrone Giordano as the voice of one of the monsters. Another recommendation would be 'Do You Believe?'(2015) starring Madison Pettis and Alexa PenaVega, which also has a family-oriented plot with a unique twist.",
+      "constraints": {
+        "genre": "family",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Stone",
+        "actor": "Tyrone Giordano"
+      },
+      "rec_titles": [
+        "Princess Mononoke",
+        "Do You Believe?",
+        "Trees Lounge",
+        "Monsters, Inc."
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tyrone Giordano",
+        "anchor_title": "Lolita",
+        "constraints": {
+          "genre": "tragicomedy",
+          "actor": "Tyrone Giordano"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: family; actor: Tyrone Giordano; plot keywords: just, more. Based on these cues, I recommend the movies \"Rango\" and \"Monster House\". Both of these movies are fun and adventurous, with interesting plots that feature animals in central roles. In \"Rango\", a chameleon named Rango gets caught up in a thrilling tale of tigers and orangutans in the jungle, while \"Monster House\" follows three teens as they discover their neighbor's house is actually a living monster. Both movies are sure to entertain and delight viewers of all ages!",
+      "constraints": {
+        "genre": "family",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Tyrone Giordano"
+      },
+      "rec_titles": [
+        "Rango",
+        "Monster House",
+        "The Crocodile Hunter: Collision Course",
+        "The Gathering"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does They tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tyrone Giordano",
+        "anchor_title": "Lolita",
+        "constraints": {
+          "genre": "tragicomedy",
+          "actor": "Tyrone Giordano"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - family, actor - Tyrone Giordano, plot keywords - what, kind. Based on these cues, I recommend \"The Great Gilly Hopkins\" and \"Night at the Museum.\" Both of these movies feature heartwarming stories with memorable characters, which align with the user's preferences. In \"The Great Gilly Hopkins,\" 12-year-old Gilly finds a loving home with her new foster mother, while in \"Night at the Museum,\" a security guard discovers an ancient curse that brings the museum exhibits to life in a hilarious and exciting way.",
+      "constraints": {
+        "genre": "family",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "They",
+        "actor": "Tyrone Giordano"
+      },
+      "rec_titles": [
+        "The Great Gilly Hopkins",
+        "Night at the Museum",
+        "The Jungle Book 2",
+        "The Road to El Dorado"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of War. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tyrone Giordano",
+        "anchor_title": "Lolita",
+        "constraints": {
+          "genre": "tragicomedy",
+          "actor": "Tyrone Giordano"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has expressed interest in movies related to war, specifically looking for a film starring Tyrone Giordano. Based on their preferences, I recommend \"Winter in Wartime\" and \"Inglourious Basterds.\" Both films are set during World War II and feature strong performances from the actors mentioned. \"Winter in Wartime\" tells the story of a teenage boy who becomes involved in the Dutch resistance after helping a wounded RAF pilot, while \"Inglourious Basterds\" follows a group of Jewish U.S. soldiers as they plot to assassinate Nazi leaders in occupied France.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "War",
+        "actor": "Tyrone Giordano"
+      },
+      "rec_titles": [
+        "Winter in Wartime",
+        "Kundun",
+        "Uptown Girls",
+        "Inglourious Basterds"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Winter in Wartime? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tyrone Giordano",
+        "anchor_title": "Lolita",
+        "constraints": {
+          "genre": "tragicomedy",
+          "actor": "Tyrone Giordano"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure! Based on the user's preference for war movies and actors Tyrone Giordano, here are two movie recommendations that fit their constraints:\n\n* \"Find Me Guilty\" (2006) stars Ron Silver and Linus Roache in a courtroom drama about a low-level gangster defending himself in the longest criminal trial in American history. This movie is sure to provide a gripping and intense viewing experience.\n* \"Winter in Wartime\" (2008) follows a teenage boy who gets involved in the Dutch resistance after helping a wounded RAF pilot in occupied Netherlands. With an all-star cast including Yorick van Wageningen and Tygo Gernandt, this movie is a powerful and moving portrayal of courage and resilience in the face of war.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "winter"
+        ],
+        "name": "War",
+        "actor": "Tyrone Giordano"
+      },
+      "rec_titles": [
+        "Find Me Guilty",
+        "Windtalkers",
+        "Winter in Wartime",
+        "Mr. Popper's Penguins"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Room. I want to try something more central intelligence agency (cia)—That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "central intelligence agency (cia)",
+        "anchor_title": "The Bourne Supremacy",
+        "constraints": {
+          "genre": "central intelligence agency (cia)"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 8,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "captive",
+          "from_anchor": "Lolita",
+          "to_anchor": "The Bourne Supremacy"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to recommend some movies based on the user's preferences! Based on their interest in central intelligence agency (cia) and actors Tyrone Giordano and Paul Rudd, I would recommend \"Wanderlust\" and \"The Bourne Identity.\" Both of these movies feature exciting adventures and action scenes that are sure to keep the user engaged.",
+      "constraints": {
+        "genre": "central intelligence agency (cia)",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Room",
+        "actor": "Tyrone Giordano"
+      },
+      "rec_titles": [
+        "Wanderlust",
+        "The Bourne Identity",
+        "Talladega Nights: The Ballad of Ricky Bobby",
+        "Argo"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "central intelligence agency (cia)",
+        "anchor_title": "The Bourne Supremacy",
+        "constraints": {
+          "genre": "central intelligence agency (cia)"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, I see that you're interested in movies with a similar theme and cast to \"Central Intelligence Agency\" (CIA) and actor Tyrone Giordano. Based on your preferences, I recommend checking out \"Bobby\" (2006) and \"The Way Back Home\" (N/A). Both films are emotionally charged and feature powerful performances from the cast. \"Bobby\" tells the story of a footballing icon who faced highs and lows with bravery, while \"The Way Back Home\" is a life-affirming drama about love and loss set in Central Florida.",
+      "constraints": {
+        "genre": "central intelligence agency (cia)",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Tyrone Giordano"
+      },
+      "rec_titles": [
+        "Bobby",
+        "The Way Back Home",
+        "The Deep End of the Ocean",
+        "Southland Tales"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "central intelligence agency (cia)",
+        "anchor_title": "The Bourne Supremacy",
+        "constraints": {
+          "genre": "central intelligence agency (cia)"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preference cues, I would recommend the movies \"District 9\" and \"In the Woods.\" Both of these films have a unique perspective or approach that might align with the user's interests. \"District 9\" is an action-packed sci-fi movie with a thought-provoking plot and talented actors, while \"In the Woods\" is an offbeat and quirky indie film that offers a fresh take on the monster genre.",
+      "constraints": {
+        "genre": "central intelligence agency (cia)",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us",
+        "actor": "Tyrone Giordano"
+      },
+      "rec_titles": [
+        "The Nanny",
+        "District 9",
+        "In the Woods",
+        "It's a Wonderful Life"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "central intelligence agency (cia)",
+        "anchor_title": "The Bourne Supremacy",
+        "constraints": {
+          "genre": "central intelligence agency (cia)"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Central Intelligence Agency (CIA) and actor Tyrone Giordano.\nBased on these constraints, I recommend watching \"Hitch\" (2005) starring Tyrone Giordano as it explores the encounter between Alfred Hitchcock and François Truffaut, two influential filmmakers with a fascinating discussion about cinema. Alternatively, \"It's a Wonderful Life\" (1946) also features actors from the CIA, including Sheldon Leonard and Frank Faylen, in addition to Donna Reed and Lionel Barrymore.",
+      "constraints": {
+        "genre": "central intelligence agency (cia)",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "actor": "Tyrone Giordano"
+      },
+      "rec_titles": [
+        "We the Living",
+        "Hitch",
+        "Witless Protection",
+        "It's a Wonderful Life"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Hitch? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "central intelligence agency (cia)",
+        "anchor_title": "The Bourne Supremacy",
+        "constraints": {
+          "genre": "central intelligence agency (cia)"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user is looking for a movie with a similar vibe to \"Hitch,\" but with a different central intelligence agency (CIA) and actor. They are interested in movies that have a mix of comedy, drama, and suspense.\n\nBased on the user's preferences, I would recommend \"American Dreamz\" and \"You.\" Both of these movies offer a blend of humor, emotion, and intrigue, similar to the tone of \"Hitch.\" In \"American Dreamz,\" Scott Hercman (played by Perrey Reeves) finds himself in unexpected situations as he makes his dreams come true, while in \"You,\" the HAL 9000 computer (voiced by Taliesin Jaffe) takes on a sinister role as it questions what is right and wrong in society. Both movies feature talented actors and offer thought-provoking themes that fans of \"Hitch\" are likely to enjoy.",
+      "constraints": {
+        "genre": "central intelligence agency (cia)",
+        "plot": [
+          "what",
+          "hitch"
+        ],
+        "name": "Hitch",
+        "actor": "Tyrone Giordano"
+      },
+      "rec_titles": [
+        "American Dreamz",
+        "Dear John",
+        "You",
+        "2010"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in English? That feels deeper than I thought. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 13,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "English",
+        "anchor_title": "Argo",
+        "constraints": {
+          "genre": "central intelligence agency (cia)",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 13,
+          "from_focus": "genre",
+          "to_focus": "language",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "The Bourne Supremacy",
+          "to_anchor": "Argo"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues:\nGenre: Central Intelligence Agency (CIA)\nActor: Tyrone Giordano\nLanguage: English\nPlot keywords: something, primarily\n\nBased on the user's preferences, I recommend \"500 Days of Summer\" and \"Rachel Getting Married.\" Both movies feature engaging plots and talented actors, including Joseph Gordon-Levitt and Anne Hathaway in \"500 Days of Summer,\" and Rosemarie DeWitt and Sebastian Stan in \"Rachel Getting Married.\"",
+      "constraints": {
+        "genre": "central intelligence agency (cia)",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "Deep",
+        "actor": "Tyrone Giordano",
+        "language": "English"
+      },
+      "rec_titles": [
+        "The Sword in the Stone",
+        "500 Days of Summer",
+        "Rachel Getting Married",
+        "The Longest Yard"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "English",
+        "anchor_title": "Argo",
+        "constraints": {
+          "genre": "central intelligence agency (cia)",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "No problem! Based on the user's preferences, I recommend \"The Royal Tenenbaums\" and \"The Lake House.\" Both of these movies have a unique blend of comedy and drama, with talented actors such as Wes Anderson, Danny Glover, Luke Wilson, and Ben Stiller. In \"The Royal Tenenbaums,\" the eccentric members of a dysfunctional family must come together under the same roof for various reasons, while in \"The Lake House,\" a lonely doctor exchanges love letters with its former resident, a frustrated architect, trying to unravel the mystery behind their extraordinary romance.",
+      "constraints": {
+        "genre": "central intelligence agency (cia)",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Tyrone Giordano",
+        "language": "English"
+      },
+      "rec_titles": [
+        "The Royal Tenenbaums",
+        "The Lake House",
+        "The Company",
+        "Torn Curtain"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "English",
+        "anchor_title": "Argo",
+        "constraints": {
+          "genre": "central intelligence agency (cia)",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: The user is interested in a movie that tells a story but is unsure if they will enjoy it or be scared by it. They prefer movies with a central intelligence agency (CIA) actor, English language, and a plot related to what the user wants to watch.\n\nRecommendation: Based on your preferences, I would recommend \"American Psycho\" (2000) starring Christian Bale as it follows a wealthy investment banker who leads a double life as a serial killer, and has a dark and intense plot that may appeal to your curiosity. Alternatively, you might enjoy \"True Grit\" (1968) starring Jeff Bridges as a tough U.S. Marshal who helps a stubborn teenager track down her father's murderer in this classic Western tale. Both movies have received critical acclaim and are known for their strong performances and engaging plots.",
+      "constraints": {
+        "genre": "central intelligence agency (cia)",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "actor": "Tyrone Giordano",
+        "language": "English"
+      },
+      "rec_titles": [
+        "American Psycho",
+        "Vampires Suck",
+        "The Last Samurai",
+        "True Grit"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of True Grit? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "English",
+        "anchor_title": "Argo",
+        "constraints": {
+          "genre": "central intelligence agency (cia)",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThe user is interested in a movie with a central intelligence agency (CIA) theme, starring Tyrone Giordano, and written in English.\n\nRecommendation:\nBased on the user's preferences, I would recommend \"Rocky\" (1976). The film follows an underdog boxer, Rocky Balboa, as he navigates the challenges of his profession while dealing with personal struggles. Starring Sylvester Stallone and Talia Shire, this classic movie has a gripping plot and memorable characters that are sure to keep the user engaged.",
+      "constraints": {
+        "genre": "central intelligence agency (cia)",
+        "plot": [
+          "what",
+          "true"
+        ],
+        "name": "True Grit",
+        "actor": "Tyrone Giordano",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Spring Breakers",
+        "The Crucible",
+        "The War of the Worlds",
+        "Rocky"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "English",
+        "anchor_title": "Argo",
+        "constraints": {
+          "genre": "central intelligence agency (cia)",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints: The user prefers movies with a central intelligence agency (CIA) theme, starring Tyrone Giordano, and in English language.\n\nRecommendation: Based on the user's preferences, I would recommend \"Get Smart\" and \"Grown Ups 2\". Both movies feature comedic elements and star actors who fit within the CIA theme. \"Get Smart\" is a classic spy comedy starring Dwayne Johnson and Bill Murray, while \"Grown Ups 2\" is a hilarious sequel with an all-star cast including Adam Sandler, Chris Rock, and Salma Hayek.",
+      "constraints": {
+        "genre": "central intelligence agency (cia)",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "True Grit",
+        "actor": "Tyrone Giordano",
+        "language": "English"
+      },
+      "rec_titles": [
+        "Get Smart",
+        "Grown Ups 2",
+        "Retribution",
+        "The Notebook"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Len Wiseman? That sounds intriguing. (I’m thinking of Get Smart.)",
+      "user_meta": {
+        "turn": 18,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Len Wiseman",
+        "anchor_title": "Brokeback Mountain",
+        "constraints": {
+          "genre": "central intelligence agency (cia)",
+          "director": "Len Wiseman",
+          "actor": "Anne Hathaway"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 18,
+          "from_focus": "language",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Anne Hathaway",
+          "from_anchor": "Argo",
+          "to_anchor": "Brokeback Mountain"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, I understand you're looking for a movie similar to \"Get Smart,\" and based on your preferences, I recommend \"Lincoln\" and \"Scream.\" Both of these movies feature central intelligence agencies (CIA) and have great actors like Tyrone Giordano. \"Lincoln\" is a historical drama that follows President Abraham Lincoln's struggle with the Civil War and emancipating slaves, while \"Scream\" is a horror movie about a masked killer terrorizing a small town. I hope you enjoy these recommendations!",
+      "constraints": {
+        "genre": "central intelligence agency (cia)",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Get Smart",
+        "actor": "Tyrone Giordano",
+        "language": "English",
+        "director": "Len Wiseman"
+      },
+      "rec_titles": [
+        "Lincoln",
+        "Cloudy with a Chance of Meatballs 2",
+        "Undercover Brother",
+        "Scream"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Len Wiseman",
+        "anchor_title": "Brokeback Mountain",
+        "constraints": {
+          "genre": "central intelligence agency (cia)",
+          "director": "Len Wiseman",
+          "actor": "Anne Hathaway"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - Central Intelligence Agency (CIA); Actor - Tyrone Giordano; Director - Len Wiseman; Language - English; Plot keywords - just, more.\n\nBased on the user's preferences, I recommend checking out \"Wuthering Heights\" and \"The Simpsons Movie\". Both are classic tales with unique plotlines and talented actors that may suit the user's taste. \"Wuthering Heights\" is a romantic drama about two young lovers from different social classes, while \"The Simpsons Movie\" is an animated adventure about a dome that encases Springfield and the Simpson family's escape plans.",
+      "constraints": {
+        "genre": "central intelligence agency (cia)",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Tyrone Giordano",
+        "language": "English",
+        "director": "Len Wiseman"
+      },
+      "rec_titles": [
+        "Wuthering Heights",
+        "Artemis Fowl",
+        "Extraordinary Measures",
+        "The Simpsons Movie"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Len Wiseman",
+        "anchor_title": "Brokeback Mountain",
+        "constraints": {
+          "genre": "central intelligence agency (cia)",
+          "director": "Len Wiseman",
+          "actor": "Anne Hathaway"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraint: The user is interested in a story that might be both enjoyable and scary, with elements of mystery and intrigue. They have specified their preferences for genre, actors, director, and language.\n\nRecommendation: Based on the user's preferences, I would recommend \"The Green Mile\" or \"Man on Wire\". Both of these movies offer a unique and captivating storyline that might appeal to the user's taste for something both enjoyable and scary. \"The Green Mile\" is a thought-provoking drama with a mysterious plot and an talented cast, while \"Man on Wire\" is a thrilling true story with some impressive stunts and a fascinating central character.",
+      "constraints": {
+        "genre": "central intelligence agency (cia)",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "actor": "Tyrone Giordano",
+        "language": "English",
+        "director": "Len Wiseman"
+      },
+      "rec_titles": [
+        "The Green Mile",
+        "Man on Wire",
+        "Fast Five",
+        "Louie"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Us. I want to try something more political satire—I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 21,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "political satire",
+        "anchor_title": "War, Inc.",
+        "constraints": {
+          "genre": "political satire",
+          "director": "Len Wiseman"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 21,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "crazy",
+          "from_anchor": "Brokeback Mountain",
+          "to_anchor": "War, Inc."
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues:\nGenre: political satire\nActor: Tyrone Giordano\nDirector: Len Wiseman\nLanguage: English\nPlot keywords: thanks, detail\n\nBased on the user's preferences, I recommend checking out 'Æon Flux' and 'The Cable Guy'. Both movies offer a mix of political satire and intriguing plotlines, with talented actors delivering memorable performances. In 'Æon Flux', Paterson Joseph and Sophie Okonedo star in a futuristic tale of rebels fighting against an oppressive government, while Ben Stiller shines as the awkward and quirky cable guy in 'The Cable Guy'.",
+      "constraints": {
+        "genre": "political satire",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "RED",
+        "actor": "Tyrone Giordano",
+        "language": "English",
+        "director": "Len Wiseman"
+      },
+      "rec_titles": [
+        "Æon Flux",
+        "The Tell-Tale Heart",
+        "The Client",
+        "The Cable Guy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 22,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "political satire",
+        "anchor_title": "War, Inc.",
+        "constraints": {
+          "genre": "political satire",
+          "director": "Len Wiseman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: political satire; actor: Tyrone Giordano; director: Len Wiseman; language: English; plot keywords: just, more. Based on these cues, I recommend the movie \"Chain Reaction\" (1996) starring Tyrone Giordano. The film is a thought-provoking political satire that explores the challenges of small businesses during the 2020 COVID-19 pandemic. It features interviews with business owners from the small town of Camden, Maine, and offers a unique perspective on the pandemic's impact on local communities. Alternatively, I suggest \"Pontypool\" (2008) starring Georgina Reilly and Stephen McHattie. This psychological horror film takes place in an Ontario town where a deadly virus is spreading through radio transmissions, creating a chilling atmosphere of isolation and dread.",
+      "constraints": {
+        "genre": "political satire",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Tyrone Giordano",
+        "language": "English",
+        "director": "Len Wiseman"
+      },
+      "rec_titles": [
+        "Chain Reaction",
+        "Pontypool",
+        "Predators",
+        "Turbulence"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 23,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "political satire",
+        "anchor_title": "War, Inc.",
+        "constraints": {
+          "genre": "political satire",
+          "director": "Len Wiseman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The user has provided some helpful cues for their movie preferences, including a desire for political satire, Tyrone Giordano as an actor, and English language. Based on these constraints, I recommend the movie \"Star Wars: Episode VI - Return of the Jedi\" starring Kenny Baker, Ian McDiarmid, and Harrison Ford. This classic sci-fi film is a perfect blend of action, adventure, and political satire, and features an iconic performance from Han Solo himself, Harrison Ford. Alternatively, I suggest \"Unaccompanied Minors,\" a heartwarming holiday movie starring a talented young cast, including Gia Mantegna, Bruce McCulloch, and Tyler James Williams. This film is sure to bring some holiday cheer and laughter to the user's holiday season.",
+      "constraints": {
+        "genre": "political satire",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "You",
+        "actor": "Tyrone Giordano",
+        "language": "English",
+        "director": "Len Wiseman"
+      },
+      "rec_titles": [
+        "Star Wars: Episode VI - Return of the Jedi",
+        "Where We Belong",
+        "Bridge of Spies",
+        "Unaccompanied Minors"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 24,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "political satire",
+        "anchor_title": "War, Inc.",
+        "constraints": {
+          "genre": "political satire",
+          "director": "Len Wiseman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: genre - political satire, actor - Tyrone Giordano, language - English, plot keywords - what, don't.\nBased on these cues, I recommend the movie \"Passing\" (1929) starring  Tyrone Giordano. The film follows two siblings who are stuck in lockdown and must come to terms with their relationship before it collapses under the weight of their neuroses. It's a thought-provoking and emotionally charged drama that explores themes of identity, family, and mental health.\n\nAlternatively, you might enjoy \"Bruce Almighty\" (2003) starring Jim Carrey and Jennifer Aniston. In this comedy, a whiny news reporter is given the chance to step into God's shoes, leading to hilarious and unexpected consequences. With a talented cast and a clever script, this movie is sure to provide some laughs and food for thought.",
+      "constraints": {
+        "genre": "political satire",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "X",
+        "actor": "Tyrone Giordano",
+        "language": "English",
+        "director": "Len Wiseman"
+      },
+      "rec_titles": [
+        "Passing",
+        "The Place Beyond the Pines",
+        "Unseen",
+        "Bruce Almighty"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 25,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "political satire",
+        "anchor_title": "War, Inc.",
+        "constraints": {
+          "genre": "political satire",
+          "director": "Len Wiseman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User's constraints:\nThe user is interested in a movie with a political satire genre, starring Tyrone Giordano, directed by Len Wiseman, and spoken in English. The movie should have keywords such as \"what\" and \"kind\".\n\nRecommendation 1: Allegiant (2016) - This movie fits the user's constraints as it is a political satire starring Tyrone Giordano and directed by Len Wiseman, while also exploring themes of discovery and truth.\n\nRecommendation 2: The Shaggy Dog (2006) - While not directly related to politics, this movie features Tyrone Giordano in a unique role as a man who turns into a sheepdog at random times. It's a lighthearted comedy that should appeal to the user's sense of humor.",
+      "constraints": {
+        "genre": "political satire",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "actor": "Tyrone Giordano",
+        "language": "English",
+        "director": "Len Wiseman"
+      },
+      "rec_titles": [
+        "Allegiant",
+        "The Shaggy Dog",
+        "Little Fockers",
+        "The Tell-Tale Heart"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 26,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "political satire",
+        "anchor_title": "War, Inc.",
+        "constraints": {
+          "genre": "political satire",
+          "director": "Len Wiseman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: Genre - political satire, Actor - Tyrone Giordano, Language - English, Plot keywords - like, sound.\nBased on these constraints, I recommend watching \"Happy Feet\" and \"That's My Boy\". Both movies have a fun and lighthearted tone, while also touching on social and political issues. In \"Happy Feet\", you'll enjoy the adorable penguins and their unique way of expressing themselves through dance, while in \"That's My Boy\" you'll laugh at the hilarious cast of characters and their absurd situations.",
+      "constraints": {
+        "genre": "political satire",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "actor": "Tyrone Giordano",
+        "language": "English",
+        "director": "Len Wiseman"
+      },
+      "rec_titles": [
+        "Happy Feet",
+        "The Juror",
+        "Hero",
+        "That's My Boy"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Richard Attenborough. Hmm, I didn’t expect that vibe. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 27,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Richard Attenborough",
+        "anchor_title": "Losin' It",
+        "constraints": {
+          "genre": "political satire",
+          "director": "Len Wiseman",
+          "actor": "Richard Attenborough",
+          "plot": "night"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 27,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "night",
+          "from_anchor": "War, Inc.",
+          "to_anchor": "Losin' It"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure thing! The user is looking for movies with a political satire genre, starring Richard Attenborough, and in English language. Based on these constraints, I recommend \"Airplane!\" and \"Shrek.\" Both movies are hilarious and feature memorable performances from Attenborough. In \"Airplane!,\" he plays a neurotic ex-fighter pilot who must safely land a commercial airplane, while in \"Shrek,\" he voices the grumpy ogre, Grendel.",
+      "constraints": {
+        "genre": "political satire",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "X",
+        "actor": "Richard Attenborough",
+        "language": "English",
+        "director": "Richard Attenborough"
+      },
+      "rec_titles": [
+        "Airplane!",
+        "Shrek",
+        "Original Sin",
+        "Jennifer's Body"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 28,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Richard Attenborough",
+        "anchor_title": "Losin' It",
+        "constraints": {
+          "genre": "political satire",
+          "director": "Len Wiseman",
+          "actor": "Richard Attenborough",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - political satire; actor - Richard Attenborough; language - English; plot keywords - just, more.\nBased on these cues, I recommend \"The Bone Collector\" (1999) and \"Retribution\" (2011). Both of these movies are crime dramas with strong performances from talented actors, including Denzel Washington in \"The Bone Collector\" and Peter Greene in \"Retribution\". The plots of both movies also explore themes of justice and retribution, which align with the user's preferences.",
+      "constraints": {
+        "genre": "political satire",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Richard Attenborough",
+        "language": "English",
+        "director": "Richard Attenborough"
+      },
+      "rec_titles": [
+        "Hunger",
+        "Retribution",
+        "The Bounty Hunter",
+        "The Bone Collector"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 29,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Richard Attenborough",
+        "anchor_title": "Losin' It",
+        "constraints": {
+          "genre": "political satire",
+          "director": "Len Wiseman",
+          "actor": "Richard Attenborough",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on the user's preferences, it seems they are interested in a movie with political satire elements, featuring Richard Attenborough as an actor, and available in English. Of the options provided, I recommend \"Creepshow\" (1982) and \"The Bourne Identity\" (1980). Both of these movies offer a thrilling and entertaining experience with a mix of political satire and action-packed plots, featuring talented actors such as Tom Atkins, John Amplas, Ed Harris, and Matt Damon.",
+      "constraints": {
+        "genre": "political satire",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "You",
+        "actor": "Richard Attenborough",
+        "language": "English",
+        "director": "Richard Attenborough"
+      },
+      "rec_titles": [
+        "Penguins of Madagascar",
+        "Creepshow",
+        "The Bourne Identity",
+        "Wuthering Heights"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does They tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 30,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Richard Attenborough",
+        "anchor_title": "Losin' It",
+        "constraints": {
+          "genre": "political satire",
+          "director": "Len Wiseman",
+          "actor": "Richard Attenborough",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: political satire; actor: Richard Attenborough; director: Richard Attenborough; language: English; plot keywords: what, kind. Based on these constraints, I recommend \"Home for the Holidays\" (1995) and \"Patriot Games\" (1987). Both movies feature political satire with strong performances from Richard Attenborough, and they are available in English language. \"Home for the Holidays\" is a heartwarming comedy-drama about a family's Thanksgiving gathering, while \"Patriot Games\" is an action-packed thriller that explores the consequences of political interference.",
+      "constraints": {
+        "genre": "political satire",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "They",
+        "actor": "Richard Attenborough",
+        "language": "English",
+        "director": "Richard Attenborough"
+      },
+      "rec_titles": [
+        "Home for the Holidays",
+        "Patriot Games",
+        "A Wrinkle in Time",
+        "Black Beauty"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 31,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Richard Attenborough",
+        "anchor_title": "Losin' It",
+        "constraints": {
+          "genre": "political satire",
+          "director": "Len Wiseman",
+          "actor": "Richard Attenborough",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure! The user is looking for a movie that fits their preferences, with a focus on political satire, Richard Attenborough as an actor, and English language. Based on these constraints, I recommend \"You've Got Mail\" starring Meg Ryan and Tom Hanks, which is a classic romantic comedy with a clever twist of technology and business, and also features Richard Attenborough in a supporting role. Alternatively, \"Avatar\" directed by James Cameron and starring Sam Worthington, Zoe Saldana, and Sigourney Weaver, offers a visually stunning and thought-provoking story that explores themes of identity and belonging.",
+      "constraints": {
+        "genre": "political satire",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "They",
+        "actor": "Richard Attenborough",
+        "language": "English",
+        "director": "Richard Attenborough"
+      },
+      "rec_titles": [
+        "You've Got Mail",
+        "Avatar",
+        "Jerry Maguire",
+        "Velvet Goldmine"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 32,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Richard Attenborough",
+        "anchor_title": "Losin' It",
+        "constraints": {
+          "genre": "political satire",
+          "director": "Len Wiseman",
+          "actor": "Richard Attenborough",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: political satire, Richard Attenborough, English language, and a focus on what. Based on these cues, I recommend \"Allegiant\" (2016) and \"Monster's Ball\" (2001). Both of these movies offer thought-provoking commentary on society and politics, while also featuring Richard Attenborough in a starring role. Additionally, they are both available in English and explore themes of what is right and wrong in the world.",
+      "constraints": {
+        "genre": "political satire",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "X",
+        "actor": "Richard Attenborough",
+        "language": "English",
+        "director": "Richard Attenborough"
+      },
+      "rec_titles": [
+        "Allegiant",
+        "The Fast and the Furious",
+        "Monster's Ball",
+        "Tom Sawyer & Huckleberry Finn"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 33,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Richard Attenborough",
+        "anchor_title": "Losin' It",
+        "constraints": {
+          "genre": "political satire",
+          "director": "Len Wiseman",
+          "actor": "Richard Attenborough",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - political satire, actor - Richard Attenborough, language - English, plot keywords - like, sound. Based on these cues, I recommend \"The Big Year\" (2011) and \"Unstoppable\" (2010). Both movies feature a mix of humor and satire, while also exploring themes of perseverance and determination. \"The Big Year\" follows two bird enthusiasts on a competitive adventure, while \"Unstoppable\" profiles five famous women who faced challenges in their lives due to their sexuality. Both movies are engaging and thought-provoking, with talented actors and a well-crafted plots.",
+      "constraints": {
+        "genre": "political satire",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "actor": "Richard Attenborough",
+        "language": "English",
+        "director": "Richard Attenborough"
+      },
+      "rec_titles": [
+        "The Big Year",
+        "Unstoppable",
+        "The Devil's Rejects",
+        "When Harry Met Sally..."
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Unstoppable. I want to try something more monarch—I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 34,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "monarch",
+        "anchor_title": "Hard Candy",
+        "constraints": {
+          "genre": "monarch",
+          "director": "Len Wiseman",
+          "plot": "night"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 34,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "unstoppable",
+          "from_anchor": "Losin' It",
+          "to_anchor": "Hard Candy"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - monarch, actor - Richard Attenborough, director - Richard Attenborough, language - English, plot keywords - thanks, detail.\nBased on these cues, I recommend the movies \"Friday the 13th Part 2\" and \"Wristcutters: A Love Story\". Both films have a similar atmosphere of suspense and intrigue, with plots that involve mysterious events unfolding in isolated locations. \"Friday the 13th Part 2\" features Amy Steel and Adrienne King in leading roles, while \"Wristcutters: A Love Story\" has an eclectic cast including Chase Ellison, Leslie Bibb, and Patrick Fugit.",
+      "constraints": {
+        "genre": "monarch",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Unstoppable",
+        "actor": "Richard Attenborough",
+        "language": "English",
+        "director": "Richard Attenborough"
+      },
+      "rec_titles": [
+        "Friday the 13th Part 2",
+        "The Book Thief",
+        "The 13th Warrior",
+        "Wristcutters: A Love Story"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 35,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "monarch",
+        "anchor_title": "Hard Candy",
+        "constraints": {
+          "genre": "monarch",
+          "director": "Len Wiseman",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to help! Based on your user's preferences, I recommend \"That Summer\" and \"The Nutty Professor.\" Both of these movies offer a unique blend of genres, with \"That Summer\" being a thought-provoking drama that explores the relationship between art and history, and \"The Nutty Professor\" being a hilarious comedy that showcases a range of talented actors. I hope you enjoy them!",
+      "constraints": {
+        "genre": "monarch",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Richard Attenborough",
+        "language": "English",
+        "director": "Richard Attenborough"
+      },
+      "rec_titles": [
+        "That Summer",
+        "The Covenant",
+        "The Nutty Professor",
+        "The Notebook"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Nutty Professor. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 36,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "monarch",
+        "anchor_title": "Hard Candy",
+        "constraints": {
+          "genre": "monarch",
+          "director": "Len Wiseman",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThe user likes the sound of The Nutty Professor, but is unsure if they would enjoy it or be scared by it. They prefer movies with a monarch theme, starring Richard Attenborough, and are interested in watching in English.\n\nRecommendation: Based on the user's preferences, I recommend Austin Powers: The Spy Who Shagged Me and Dead Poets Society. Both movies feature Richard Attenborough as an actor and have a monarch theme. Austin Powers is a comedy with a fun and lighthearted tone, while Dead Poets Society is a drama that explores themes of self-expression and personal growth.",
+      "constraints": {
+        "genre": "monarch",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "actor": "Richard Attenborough",
+        "language": "English",
+        "director": "Richard Attenborough"
+      },
+      "rec_titles": [
+        "Austin Powers: The Spy Who Shagged Me",
+        "Captain America: Civil War",
+        "The Skeleton Twins",
+        "Dead Poets Society"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 37,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "monarch",
+        "anchor_title": "Hard Candy",
+        "constraints": {
+          "genre": "monarch",
+          "director": "Len Wiseman",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThe user is looking for a movie that tells a deeper story than they expected, with a focus on the journey of the characters. They are also interested in movies featuring actors Richard Attenborough and Catherine Deneuve.\n\nRecommendation:\nBased on these constraints, I would recommend \"Dancer in the Dark\" (2000) starring Björk and Stellan Skarsgård. The movie tells a powerful and emotional story of a young woman struggling to cope with her gradual loss of vision, while also exploring themes of hope, redemption, and the human condition. Additionally, it features Richard Attenborough in a supporting role. Another recommendation would be \"The Skeleton Twins\" (2014) starring Ty Burrell and Boyd Holbrook, which delves into the complexities of estranged twins reuniting after both having cheated death on the same day. Both movies offer a thought-provoking and emotionally resonant experience.",
+      "constraints": {
+        "genre": "monarch",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Deep",
+        "actor": "Richard Attenborough",
+        "language": "English",
+        "director": "Richard Attenborough"
+      },
+      "rec_titles": [
+        "Dancer in the Dark",
+        "Road to Perdition",
+        "The Darkest Hour",
+        "The Skeleton Twins"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 38,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "monarch",
+        "anchor_title": "Hard Candy",
+        "constraints": {
+          "genre": "monarch",
+          "director": "Len Wiseman",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints: The user is looking for a movie that they may find scary, but also wants to be enjoyable. They prefer movies with a mix of genres, such as comedy and drama.\n\nBased on the provided cues, I would recommend \"The Life Aquatic with Steve Zissou\" or \"The Relic\". Both of these movies have a unique blend of genres that may appeal to the user's preferences. \"The Life Aquatic\" is a quirky comedy-drama with a memorable cast of characters, while \"The Relic\" is a sci-fi horror film with a gripping plot and a talented ensemble cast.",
+      "constraints": {
+        "genre": "monarch",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "Ted",
+        "actor": "Richard Attenborough",
+        "language": "English",
+        "director": "Richard Attenborough"
+      },
+      "rec_titles": [
+        "The Life Aquatic with Steve Zissou",
+        "The Jacket",
+        "The Man in the Iron Mask",
+        "The Relic"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe explore stories about Lincoln Child? Maybe I’m overthinking it, but it sounds fascinating. Maybe something that connects to The Relic.",
+      "user_meta": {
+        "turn": 39,
+        "stage": "waiting_system",
+        "focus_field": "plot",
+        "focus_value": "Lincoln Child",
+        "anchor_title": "Lincoln",
+        "constraints": {
+          "genre": "monarch",
+          "director": "Len Wiseman",
+          "plot": "Lincoln Child",
+          "writer": "Lincoln Child"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 39,
+          "from_focus": "genre",
+          "to_focus": "plot",
+          "bridge_field": "writer",
+          "bridge_value": "Lincoln Child",
+          "from_anchor": "Hard Candy",
+          "to_anchor": "Lincoln"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User Constraints:\nGenre: Monarch\nActor: Richard Attenborough\nDirector: Richard Attenborough\nWriter: Lincoln Child\nLanguage: English\nPlot Keywords: Lincoln, child\n\nBased on the user's constraints, I recommend watching \"Army of Darkness\" (1992) and \"Vacation\" (2015). Both movies feature a unique blend of humor, adventure, and horror elements that align with the user's preferences. In \"Army of Darkness,\" Ash Williams (played by Bruce Campbell) must battle an army of the dead in order to return home, while in \"Vacation,\" the Griswold family takes a road trip to \"Walley World\" in an attempt to spice up their marriage and reconnect with their sons. Both movies offer plenty of excitement and humor, making them great choices for fans of Lincoln Child's work.",
+      "constraints": {
+        "genre": "monarch",
+        "plot": [
+          "lincoln",
+          "child"
+        ],
+        "name": "Lincoln",
+        "actor": "Richard Attenborough",
+        "language": "English",
+        "director": "Richard Attenborough",
+        "writer": "Lincoln Child"
+      },
+      "rec_titles": [
+        "Army of Darkness",
+        "Vacation",
+        "Grindhouse",
+        "22 Jump Street"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 40,
+        "stage": "details",
+        "focus_field": "plot",
+        "focus_value": "Lincoln Child",
+        "anchor_title": "Lincoln",
+        "constraints": {
+          "genre": "monarch",
+          "director": "Len Wiseman",
+          "plot": "Lincoln Child",
+          "writer": "Lincoln Child"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User, I see that you're looking for more movies similar to the ones you've already mentioned. Based on your preferences, I recommend \"Django Unchained\" and \"Mama\". Both of these movies have a strong focus on themes of justice, empowerment, and overcoming adversity, which seem to align with your interests. \"Django Unchained\" is a gripping and thought-provoking film that explores the brutal realities of slavery and the fight for freedom, while \"Mama\" tells the story of a young boy who finds the courage to stand up to his bullies with the help of a determined trainer.",
+      "constraints": {
+        "genre": "monarch",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Richard Attenborough",
+        "language": "English",
+        "director": "Richard Attenborough",
+        "writer": "Lincoln Child"
+      },
+      "rec_titles": [
+        "Django Unchained",
+        "Under the Tuscan Sun",
+        "Law Abiding Citizen",
+        "Mama"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Django Unchained? That sounds intriguing.",
+      "user_meta": {
+        "turn": 41,
+        "stage": "details",
+        "focus_field": "plot",
+        "focus_value": "Lincoln Child",
+        "anchor_title": "Lincoln",
+        "constraints": {
+          "genre": "monarch",
+          "director": "Len Wiseman",
+          "plot": "Lincoln Child",
+          "writer": "Lincoln Child"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, I'd be happy to help! Based on your user preferences, here are two movie recommendations that might interest you:\n\n* Taking Woodstock (2009) - This film tells the story of a man who inadvertently sets in motion the generation-defining concert in the summer of 1969. Starring Demetri Martin and Kevin Chamberlin, this movie has a great mix of humor and drama that you might enjoy.\n* The Martian (2015) - After an astronaut is stranded on Mars, he must rely on his ingenuity to find a way to signal to Earth that he is alive and can survive until a potential rescue. With Matt Damon starring as the astronaut, this movie has a great balance of action, suspense, and humor that you might enjoy.",
+      "constraints": {
+        "genre": "monarch",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Django Unchained",
+        "actor": "Richard Attenborough",
+        "language": "English",
+        "director": "Richard Attenborough",
+        "writer": "Lincoln Child"
+      },
+      "rec_titles": [
+        "Taking Woodstock",
+        "Wolves",
+        "Dark Places",
+        "The Martian"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Taking Woodstock. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 42,
+        "stage": "details",
+        "focus_field": "plot",
+        "focus_value": "Lincoln Child",
+        "anchor_title": "Lincoln",
+        "constraints": {
+          "genre": "monarch",
+          "director": "Len Wiseman",
+          "plot": "Lincoln Child",
+          "writer": "Lincoln Child"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre - monarch; actor - Richard Attenborough; director - Richard Attenborough; writer - Lincoln Child; language - English; plot keywords - like, sound.\nBased on these cues, I recommend the movie \"The Family Stone\" (2005) starring Diane Keaton and Craig T. Nelson. The film follows an uptight businesswoman who visits her boyfriend's eccentric and outgoing family for Christmas, only to find herself a fish out of water in their free-spirited way of life. The movie has a heartwarming and hilarious plot that explores the complexities of family dynamics and the importance of embracing one's true self.",
+      "constraints": {
+        "genre": "monarch",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Taking Woodstock",
+        "actor": "Richard Attenborough",
+        "language": "English",
+        "director": "Richard Attenborough",
+        "writer": "Lincoln Child"
+      },
+      "rec_titles": [
+        "The Family Stone",
+        "Mean Streets",
+        "Treasure Planet",
+        "Minority Report"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does War tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 43,
+        "stage": "details",
+        "focus_field": "plot",
+        "focus_value": "Lincoln Child",
+        "anchor_title": "Lincoln",
+        "constraints": {
+          "genre": "monarch",
+          "director": "Len Wiseman",
+          "plot": "Lincoln Child",
+          "writer": "Lincoln Child"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, here are two movie recommendations that fit their constraints:\n\nThe user seems to enjoy stories with a mix of drama and adventure, so I would recommend \"Wide Sargasso Sea\" (1966) starring Julie Christie and Donald Sutherland. This film is a beautifully shot period drama that explores themes of love, identity, and the complexities of human relationships.\n\nAlternatively, for a more modern take on adventure and drama, \"The Young and Prodigious T.S. Spivet\" (2013) starring Callum Rennie and Judy Davis could be a great fit. This film is a visually stunning and imaginative journey that follows a young scientist as he travels across the country to receive an award at the Smithsonian Institute, encountering a cast of quirky characters along the way.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "War",
+        "actor": "Richard Attenborough",
+        "language": "English",
+        "director": "Richard Attenborough",
+        "writer": "Lincoln Child"
+      },
+      "rec_titles": [
+        "Wide Sargasso Sea",
+        "Million Dollar Baby",
+        "Zathura: A Space Adventure",
+        "The Young and Prodigious T.S. Spivet"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Goran Dukic? That feels deeper than I thought. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 44,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Goran Dukic",
+        "anchor_title": "White House Down",
+        "constraints": {
+          "genre": "monarch",
+          "director": "Goran Dukic",
+          "plot": "Lincoln Child",
+          "writer": "David Nicholls"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 44,
+          "from_focus": "plot",
+          "to_focus": "director",
+          "bridge_field": "writer",
+          "bridge_value": "David Nicholls",
+          "from_anchor": "Lincoln",
+          "to_anchor": "White House Down"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: genre: war; actor: Richard Attenborough; director: Goran Dukic; writer: Lincoln Child; language: English; plot keywords: could, switch.\nBased on the user's preferences, I recommend \"White House Down\" (2013) and \"Tears of the Sun\" (2003). Both movies feature intense action and suspenseful plots, while also showcasing the talents of Richard Attenborough as an actor. In \"White House Down,\" Channing Tatum leads a team of security personnel in a high-stakes mission to protect the President, while in \"Tears of the Sun,\" Bruce Willis commands a Special Operations team on a dangerous rescue mission in the Nigerian jungle.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Deep",
+        "actor": "Richard Attenborough",
+        "language": "English",
+        "director": "Goran Dukic",
+        "writer": "Lincoln Child"
+      },
+      "rec_titles": [
+        "White House Down",
+        "All in",
+        "eXistenZ",
+        "Tears of the Sun"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 45,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Goran Dukic",
+        "anchor_title": "White House Down",
+        "constraints": {
+          "genre": "monarch",
+          "director": "Goran Dukic",
+          "plot": "Lincoln Child",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User Constraints:\nGenre: War\nActor: Richard Attenborough\nDirector: Goran Dukic\nLanguage: English\nPlot Keywords: just, more\n\nRecommendation: If you enjoyed the war genre and Richard Attenborough's acting in \"Gandhi,\" I would recommend \"The Hunting Party\" (2007) directed by Goran Dukic. This movie follows a ruthless rancher and his gang as they use extremely long-range rifles to kill the men who kidnapped his infidel wife. The film features a talented cast, including Zan Marolt, Ljubomir Kerekes, Joy Bryant, James Brolin, and Scott Anderson.\n\nAlternatively, if you're looking for a movie that explores the human side of war, \"Cold Mountain\" (2003) directed by Anthony Minghella is a powerful choice. The film follows a wounded soldier on a perilous journey back home to Cold Mountain, North Carolina, to reunite with his sweetheart. The talented cast includes Melora Walters, Kathy Baker, James Gammon, Cillian Murphy, and Nicole Kidman.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Richard Attenborough",
+        "language": "English",
+        "director": "Goran Dukic",
+        "writer": "Lincoln Child"
+      },
+      "rec_titles": [
+        "The Hunting Party",
+        "Boogie Nights",
+        "Cold Mountain",
+        "Chain Reaction"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of 3. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 46,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Goran Dukic",
+        "anchor_title": "White House Down",
+        "constraints": {
+          "genre": "monarch",
+          "director": "Goran Dukic",
+          "plot": "Lincoln Child",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues → genre: war; actor: Richard Attenborough; director: Goran Dukic; writer: Lincoln Child; language: English; plot keywords: like, sound. Based on these cues, I recommend the movie \"Teenage Mutant Ninja Turtles III\" starring Matt Hill, Paige Turco, and John Aylward. The film follows the Turtles as they travel back in time to rescue a journalist who has discovered an ancient scepter with magical powers. With its mix of action, adventure, and humor, this movie should appeal to fans of war-themed films and Richard Attenborough's acting style. Alternatively, \"Truman\" starring Diana Scarwid, Lois Smith, Pat Hingle, James Gammon, Marian Seldes, Harris Yulin, Colm Feore, Daniel von Bargen, and Tony Goldwyn is another great choice. This movie tells the story of two old friends sharing emotional and surprising moments in a complicated situation, which should resonate with fans of war movies and actors like Richard Attenborough.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "3",
+        "actor": "Richard Attenborough",
+        "language": "English",
+        "director": "Goran Dukic",
+        "writer": "Lincoln Child"
+      },
+      "rec_titles": [
+        "Teenage Mutant Ninja Turtles III",
+        "Truman",
+        "Ultraviolet",
+        "Track of the Cat"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 47,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Goran Dukic",
+        "anchor_title": "White House Down",
+        "constraints": {
+          "genre": "monarch",
+          "director": "Goran Dukic",
+          "plot": "Lincoln Child",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User preference cues: war, actor Richard Attenborough, director Goran Dukic, writer Lincoln Child, language English, plot keywords \"wrong\" and \"earlier\".\nBased on these cues, I recommend the movie \"JFK\" (1991) starring Kevin Costner as a New Orleans District Attorney who discovers a conspiracy behind the JFK assassination. The film is directed by Goran Dukic and written by Lincoln Child, with a talented cast including Laurie Metcalf, Cheryl Penland, Jay O. Sanders, and Sally Kirkland. Another great choice would be \"Pacific Rim\" (2013) starring Charlie Hunnam as a former pilot paired up with a trainee to drive a special weapon in a desperate effort to save the world from monstrous sea creatures.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "3",
+        "actor": "Richard Attenborough",
+        "language": "English",
+        "director": "Goran Dukic",
+        "writer": "Lincoln Child"
+      },
+      "rec_titles": [
+        "JFK",
+        "A View to a Kill",
+        "Soul Men",
+        "Pacific Rim"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does 3 tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 48,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Goran Dukic",
+        "anchor_title": "White House Down",
+        "constraints": {
+          "genre": "monarch",
+          "director": "Goran Dukic",
+          "plot": "Lincoln Child",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nGenre: War\nActor: Richard Attenborough\nDirector: Goran Dukic\nWriter: Lincoln Child\nLanguage: English\nPlot keywords: what, kind\n\nRecommendation:\nBased on your preferences, I highly recommend \"War Horse\" (1982) and \"Happy Gilmore\" (1996). Both movies offer powerful stories with great acting performances. \"War Horse\" is an emotional journey through the eyes of a horse during World War I, while \"Happy Gilmore\" is a heartwarming underdog story about a hockey player turned golfer. Both are sure to captivate and move you in different ways!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "3",
+        "actor": "Richard Attenborough",
+        "language": "English",
+        "director": "Goran Dukic",
+        "writer": "Lincoln Child"
+      },
+      "rec_titles": [
+        "War Horse",
+        "Happy Gilmore",
+        "All the Real Girls",
+        "Charlotte's Web"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Lincoln? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 49,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Goran Dukic",
+        "anchor_title": "White House Down",
+        "constraints": {
+          "genre": "monarch",
+          "director": "Goran Dukic",
+          "plot": "Lincoln Child",
+          "writer": "David Nicholls"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure! The user has expressed interest in movies with a war theme, starring Richard Attenborough, and directed by Goran Dukic. Based on these constraints, I recommend \"Germinal\" and \"Transcendence.\" Both of these movies offer thought-provoking plots and strong performances from the actors involved.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "lincoln"
+        ],
+        "name": "Lincoln",
+        "actor": "Richard Attenborough",
+        "language": "English",
+        "director": "Goran Dukic",
+        "writer": "Lincoln Child"
+      },
+      "rec_titles": [
+        "Germinal",
+        "Transcendence",
+        "House on Haunted Hill",
+        "Notes on a Scandal"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on X. I want to try something more great britain—I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 50,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "great britain",
+        "anchor_title": "What Planet Are You From?",
+        "constraints": {
+          "genre": "great britain",
+          "director": "Goran Dukic",
+          "plot": "Lincoln Child",
+          "writer": "David Nicholls"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 50,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "girl",
+          "from_anchor": "White House Down",
+          "to_anchor": "What Planet Are You From?"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "User constraints:\nThanks for all the detail on X. I want to try something more great britain—I can’t decide if I’d enjoy it or be scared by it.\n\nBased on your preferences, I recommend checking out \"Rebecca\" (1938) and \"Proof of Life\" (2000). Both films feature a mix of great britain setting and suspenseful plots that may appeal to your taste. \"Rebecca\" stars Joan Fontaine as a self-conscious woman adjusting to her new role as an aristocrat's wife, while \"Proof of Life\" follows Russell Crowe as a professional negotiator tasked with obtaining the release of his engineer husband who has been kidnapped by anti-government guerrillas in South America.",
+      "constraints": {
+        "genre": "great britain",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "RED",
+        "actor": "Richard Attenborough",
+        "language": "English",
+        "director": "Goran Dukic",
+        "writer": "Lincoln Child"
+      },
+      "rec_titles": [
+        "Rebecca",
+        "Proof of Life",
+        "Wedding Night",
+        "Roses Are Red"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 3,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Tyrone Giordano",
+      "from_anchor": "The World According to Garp",
+      "to_anchor": "Lolita"
+    },
+    {
+      "turn": 8,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "captive",
+      "from_anchor": "Lolita",
+      "to_anchor": "The Bourne Supremacy"
+    },
+    {
+      "turn": 13,
+      "from_focus": "genre",
+      "to_focus": "language",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "The Bourne Supremacy",
+      "to_anchor": "Argo"
+    },
+    {
+      "turn": 18,
+      "from_focus": "language",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Anne Hathaway",
+      "from_anchor": "Argo",
+      "to_anchor": "Brokeback Mountain"
+    },
+    {
+      "turn": 21,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "crazy",
+      "from_anchor": "Brokeback Mountain",
+      "to_anchor": "War, Inc."
+    },
+    {
+      "turn": 27,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "night",
+      "from_anchor": "War, Inc.",
+      "to_anchor": "Losin' It"
+    },
+    {
+      "turn": 34,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "unstoppable",
+      "from_anchor": "Losin' It",
+      "to_anchor": "Hard Candy"
+    },
+    {
+      "turn": 39,
+      "from_focus": "genre",
+      "to_focus": "plot",
+      "bridge_field": "writer",
+      "bridge_value": "Lincoln Child",
+      "from_anchor": "Hard Candy",
+      "to_anchor": "Lincoln"
+    },
+    {
+      "turn": 44,
+      "from_focus": "plot",
+      "to_focus": "director",
+      "bridge_field": "writer",
+      "bridge_value": "David Nicholls",
+      "from_anchor": "Lincoln",
+      "to_anchor": "White House Down"
+    },
+    {
+      "turn": 50,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "girl",
+      "from_anchor": "White House Down",
+      "to_anchor": "What Planet Are You From?"
+    }
+  ]
+}
