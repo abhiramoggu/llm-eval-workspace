@@ -1,0 +1,836 @@
+{
+  "session_id": "00004",
+  "model_name": "gemma:2b",
+  "true_genre": "cult",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a cult movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "cult",
+        "anchor_title": "The Stepfather",
+        "constraints": {
+          "genre": "cult"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a cult movie, I recommend \"Final Destination\" (2000) starring Kristen Cloke and Roger Guenveur Smith. The film is a thrilling and suspenseful supernatural thriller about a plane crash gone wrong.\n\nAnother great choice is \"Hitch\" (2005) starring Vincent De Paul, Robinne Lee, Matt Malloy, and Adam LeFevre. The film is a witty and clever comedy-thriller about a man trapped in a strange situation and the people around him.\n\nFor a more serious and thought-provoking film, I would recommend \"Downfall\" (2004) starring Juliane Köhler, Bruno Ganz, and Thomas Kretschmann. The film explores the consequences of a life of addiction and the struggle to overcome it.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "cult",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "Final Destination",
+        "Hitch",
+        "Downfall",
+        "The Queen"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Lolita Davidovich. That feels deeper than I thought. (I’m thinking of Super.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Lolita Davidovich",
+        "anchor_title": "Army of Darkness",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "director": "James Gunn"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "director",
+          "bridge_value": "James Gunn",
+          "from_anchor": "The Stepfather",
+          "to_anchor": "Army of Darkness"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for a cult film with an intriguing plot, 'Tower Heist' (2011) starring Nina Arianda is a great choice. If you're interested in a psychological thriller with a unique premise, 'Wolves' (2014) starring Jason Momoa is highly recommended.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Super",
+        "actor": "Lolita Davidovich"
+      },
+      "rec_titles": [
+        "Tower Heist",
+        "Wolves",
+        "The Martian",
+        "Babel"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Lolita Davidovich",
+        "anchor_title": "Army of Darkness",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "director": "James Gunn"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference, I recommend \"Green Card\" and \"Braveheart\". \"Green Card\" features a captivating story about a man seeking more in a marriage than just the convenience it initially offered. \"Braveheart\" is another powerful film about a tribe fighting for their rights against a ruthless corporation.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Lolita Davidovich"
+      },
+      "rec_titles": [
+        "Green Card",
+        "Braveheart",
+        "King Kong",
+        "Six-String Samurai"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Her. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Lolita Davidovich",
+        "anchor_title": "Army of Darkness",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "director": "James Gunn"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It's a Wonderful Life is a heartwarming and uplifting film about a man rediscovering the meaning of life after a crisis. The sound and visuals are beautiful, making it a visually stunning and emotional experience. \n\nThe Nanny is a psychological thriller about a wealthy couple who hires a young Finnish girl to care for their newborn. This film is suspenseful and explores themes of love, loyalty, and deception.\n\nVampires is a dark and thrilling vampire film about a family caught up in a dangerous and twisted world. The film is graphic and unsettling, but it is also a thought-provoking exploration of love, religion, and family.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Her",
+        "actor": "Lolita Davidovich"
+      },
+      "rec_titles": [
+        "It's a Wonderful Life",
+        "The Nanny",
+        "Vampires",
+        "Donnie Darko"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Wonder? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Lolita Davidovich",
+        "anchor_title": "Army of Darkness",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "director": "James Gunn"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I would recommend **End of Watch** or **The Amityville Horror**. \n\nBoth films offer thrilling plots about individuals facing immense challenges and fighting against powerful forces.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "wonder"
+        ],
+        "name": "Wonder",
+        "actor": "Lolita Davidovich"
+      },
+      "rec_titles": [
+        "End of Watch",
+        "The Amityville Horror",
+        "Paradise Lost",
+        "The Andromeda Strain"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Lolita Davidovich",
+        "anchor_title": "Army of Darkness",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "director": "James Gunn"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Since you're looking for something with an edgy and thought-provoking plot, I would recommend either **Dogma** or **Passion**. \n\n**Dogma** features a powerful performance by Brian O'Halloran and explores the morality of abortion in a dystopian world.\n\n**Passion** showcases the transformative power of self-acceptance and the lengths people go to for love and acceptance.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "actor": "Lolita Davidovich"
+      },
+      "rec_titles": [
+        "Dogma",
+        "Passion",
+        "September Dawn",
+        "Final Destination"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Ed Harris? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Passion.)",
+      "user_meta": {
+        "turn": 7,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Ed Harris",
+        "anchor_title": "Night of the Living Dead",
+        "constraints": {
+          "genre": "cult",
+          "director": "Ed Harris",
+          "plot": "convention"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 7,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "convention",
+          "from_anchor": "Army of Darkness",
+          "to_anchor": "Night of the Living Dead"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for something that's both thought-provoking and terrifying, \"The Evil Dead\" might be the film for you. The horror and suspense will keep you on the edge of your seat, while the eerie atmosphere will leave you with lingering questions long after the credits roll.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "RED",
+        "actor": "Ed Harris",
+        "director": "Ed Harris"
+      },
+      "rec_titles": [
+        "A Beautiful Mind",
+        "The Evil Dead",
+        "Eye for an Eye",
+        "RED"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ed Harris",
+        "anchor_title": "Night of the Living Dead",
+        "constraints": {
+          "genre": "cult",
+          "director": "Ed Harris",
+          "plot": "convention"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference for cult, dark comedies, and Ed Harris, I would recommend \"Uncommon Valor\" and \"Creepshow 2\".",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Ed Harris",
+        "director": "Ed Harris"
+      },
+      "rec_titles": [
+        "Uncommon Valor",
+        "Creepshow 2",
+        "Green Card",
+        "Ocean's Twelve"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Creepshow 2? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ed Harris",
+        "anchor_title": "Night of the Living Dead",
+        "constraints": {
+          "genre": "cult",
+          "director": "Ed Harris",
+          "plot": "convention"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for something with a more whimsical and lighthearted tone, 'Louie' or 'Witless Protection' might be more your style. If you're more interested in something with a darker and more intense plot, 'Utsav' might be the way to go. And if you're looking for a film with a more darkly comedic approach, 'Training Day' could be worth checking out.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "Creepshow 2",
+        "actor": "Ed Harris",
+        "director": "Ed Harris"
+      },
+      "rec_titles": [
+        "Louie",
+        "Witless Protection",
+        "Utsav",
+        "Training Day"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Training Day. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ed Harris",
+        "anchor_title": "Night of the Living Dead",
+        "constraints": {
+          "genre": "cult",
+          "director": "Ed Harris",
+          "plot": "convention"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Since you're looking for a movie with a violent and intense plot, I would recommend **The Right Stuff**. This film offers a thrilling and thought-provoking exploration of the US space program and the sacrifices people are willing to make for greatness.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Training Day",
+        "actor": "Ed Harris",
+        "director": "Ed Harris"
+      },
+      "rec_titles": [
+        "District 9",
+        "The Right Stuff",
+        "Eraserhead",
+        "The Mortal Instruments: City of Bones"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ed Harris",
+        "anchor_title": "Night of the Living Dead",
+        "constraints": {
+          "genre": "cult",
+          "director": "Ed Harris",
+          "plot": "convention"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Since the user has expressed a preference for a movie with a dark atmosphere and demonic elements, I would recommend **The Evil Dead** (1981). This film perfectly matches the user's description, with flesh-possessing demons and a cabin in the woods setting.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Training Day",
+        "actor": "Ed Harris",
+        "director": "Ed Harris"
+      },
+      "rec_titles": [
+        "Lady in the Water",
+        "The Evil Dead",
+        "Cinder",
+        "Pain & Gain"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ed Harris",
+        "anchor_title": "Night of the Living Dead",
+        "constraints": {
+          "genre": "cult",
+          "director": "Ed Harris",
+          "plot": "convention"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a cult film recommendation, consider \"Louie\". It explores a complex character's journey through the enigmatic world of trike riders.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "actor": "Ed Harris",
+        "director": "Ed Harris"
+      },
+      "rec_titles": [
+        "Louie",
+        "2010",
+        "Man on Fire",
+        "End of Watch"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ed Harris",
+        "anchor_title": "Night of the Living Dead",
+        "constraints": {
+          "genre": "cult",
+          "director": "Ed Harris",
+          "plot": "convention"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Since the user is considering the opposite of the suggested movies, I would recommend **The Evil Dead** or **Masked and Anonymous**. Both movies explore the darker side of human nature and the potential for evil to manifest even in seemingly ordinary people.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "X",
+        "actor": "Ed Harris",
+        "director": "Ed Harris"
+      },
+      "rec_titles": [
+        "The Evil Dead",
+        "The Right Stuff",
+        "Masked and Anonymous",
+        "50 First Dates"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on The Evil Dead. I want to try something more cannabis (abused substance)—still with English Language if possible. That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "cannabis (abused substance)",
+        "anchor_title": "Wag the Dog",
+        "constraints": {
+          "genre": "cannabis (abused substance)",
+          "plot": "convention",
+          "language": "English Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 14,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "language",
+          "bridge_value": "English Language",
+          "from_anchor": "Night of the Living Dead",
+          "to_anchor": "Wag the Dog"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Back to the Future is a classic time travel movie about a teenager sent back in time to save his parents. It's a great film for fans of science fiction and adventure.\n\nWedding Crashers is a romantic comedy about two women who sneak into weddings to take advantage of the romantic atmosphere. The film is full of laughs and heart.\n\nStoker is a psychological thriller about a young boy who is lost and abandoned. The film is a slow-burn but suspenseful movie that will keep you guessing until the end.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "The Evil Dead",
+        "actor": "Ed Harris",
+        "director": "Ed Harris",
+        "language": "English Language"
+      },
+      "rec_titles": [
+        "Back to the Future",
+        "Wedding Crashers",
+        "Stoker",
+        "Hesher"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "cannabis (abused substance)",
+        "anchor_title": "Wag the Dog",
+        "constraints": {
+          "genre": "cannabis (abused substance)",
+          "plot": "convention",
+          "language": "English Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences, I would recommend either \"Back to the Future\" or \"The Stepfather\". \"Back to the Future\" is a classic time travel film with lovable characters and quotable lines, while \"The Stepfather\" is a chilling thriller about a murderous man's obsession with revenge.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Ed Harris",
+        "director": "Ed Harris",
+        "language": "English Language"
+      },
+      "rec_titles": [
+        "Back to the Future",
+        "The Adjustment Bureau",
+        "Capote",
+        "The Stepfather"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "cannabis (abused substance)",
+        "anchor_title": "Wag the Dog",
+        "constraints": {
+          "genre": "cannabis (abused substance)",
+          "plot": "convention",
+          "language": "English Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Since the user is looking for a movie with a focus on Nigerian culture and military efforts, \"The Island\" would be a strong recommendation. It showcases the best of Nigerian culture through its cinematography and storytelling, while also highlighting the sacrifices and struggles faced by the Nigerian military force.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "You",
+        "actor": "Ed Harris",
+        "director": "Ed Harris",
+        "language": "English Language"
+      },
+      "rec_titles": [
+        "The Island",
+        "8 Mile",
+        "Whiteout",
+        "The Hangover Part II"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "cannabis (abused substance)",
+        "anchor_title": "Wag the Dog",
+        "constraints": {
+          "genre": "cannabis (abused substance)",
+          "plot": "convention",
+          "language": "English Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for a thought-provoking story about suicide and its impact on a family, I would recommend \"The Hours\". If you're interested in a classic underdog story with unexpected twists, \"Rocky\" is a great choice. If you're looking for a heartwarming story about a group of unlikely heroes fighting for a small town basketball team to achieve their dreams, \"Hoosiers\" is the way to go.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Deep",
+        "actor": "Ed Harris",
+        "director": "Ed Harris",
+        "language": "English Language"
+      },
+      "rec_titles": [
+        "The Hours",
+        "Rocky",
+        "John Carter",
+        "Hoosiers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Rocky. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "cannabis (abused substance)",
+        "anchor_title": "Wag the Dog",
+        "constraints": {
+          "genre": "cannabis (abused substance)",
+          "plot": "convention",
+          "language": "English Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference, \"The Kid\" and \"The Bone Collector\" would be strong contenders. \"The Kid\" offers a heartwarming story about a father's love and a compassionate stranger's compassion. \"The Bone Collector\" is a gripping thriller about a detective's relentless pursuit of a serial killer.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Rocky",
+        "actor": "Ed Harris",
+        "director": "Ed Harris",
+        "language": "English Language"
+      },
+      "rec_titles": [
+        "The Kid",
+        "The Bone Collector",
+        "Eraserhead",
+        "The Rum Diary"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Bone Collector? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "cannabis (abused substance)",
+        "anchor_title": "Wag the Dog",
+        "constraints": {
+          "genre": "cannabis (abused substance)",
+          "plot": "convention",
+          "language": "English Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I Heart Huckabees sounds like a movie that aligns with the user's preference for a deeper and more existential theme. The plot's focus on solving existential issues through a happy and wholesome approach could appeal to the user.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "what",
+          "bone"
+        ],
+        "name": "The Bone Collector",
+        "actor": "Ed Harris",
+        "director": "Ed Harris",
+        "language": "English Language"
+      },
+      "rec_titles": [
+        "I Heart Huckabees",
+        "Shark Tale",
+        "Taken",
+        "Donnie Brasco"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Avery Brooks. Hmm, I didn’t expect that vibe. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 20,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Avery Brooks",
+        "anchor_title": "Eve's Bayou",
+        "constraints": {
+          "genre": "cannabis (abused substance)",
+          "plot": "runaway",
+          "language": "English Language",
+          "actor": "Avery Brooks"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 20,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "runaway",
+          "from_anchor": "Wag the Dog",
+          "to_anchor": "Eve's Bayou"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference, I would recommend 'White Squall' and 'The French Connection'. These movies feature Avery Brooks in starring roles and offer similar themes and vibes.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "X",
+        "actor": "Avery Brooks",
+        "director": "Ed Harris",
+        "language": "English Language"
+      },
+      "rec_titles": [
+        "White Squall",
+        "The Company",
+        "The French Connection",
+        "Tin Cup"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "director",
+      "bridge_value": "James Gunn",
+      "from_anchor": "The Stepfather",
+      "to_anchor": "Army of Darkness"
+    },
+    {
+      "turn": 7,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "convention",
+      "from_anchor": "Army of Darkness",
+      "to_anchor": "Night of the Living Dead"
+    },
+    {
+      "turn": 14,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "language",
+      "bridge_value": "English Language",
+      "from_anchor": "Night of the Living Dead",
+      "to_anchor": "Wag the Dog"
+    },
+    {
+      "turn": 20,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "runaway",
+      "from_anchor": "Wag the Dog",
+      "to_anchor": "Eve's Bayou"
+    }
+  ]
+}

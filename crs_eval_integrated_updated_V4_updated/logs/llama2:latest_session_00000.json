@@ -1,0 +1,913 @@
+{
+  "session_id": "00000",
+  "model_name": "llama2:latest",
+  "true_genre": "animal",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a animal movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "animal",
+        "anchor_title": "Island of the Blue Dolphins",
+        "constraints": {
+          "genre": "animal"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preference for animal movies, I would recommend \"The Shadows\" and \"Where the Red Fern Grows\". Both of these movies have intriguing plots that revolve around animals in unique ways. \"The Shadows\" follows a young man who is trapped in a dangerous plot with a sinister side that could be a storyline from one of his own novels, while \"Where the Red Fern Grows\" tells the heartwarming tale of a young boy and his quest for his own red-bone hound hunting dogs.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "animal",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "The Shadows",
+        "Trees Lounge",
+        "The Call of the Wild",
+        "Where the Red Fern Grows"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Maya? That feels deeper than I thought. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "Maya",
+        "anchor_title": "Where the Red Fern Grows",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "language",
+          "bridge_field": "genre",
+          "bridge_value": "animal",
+          "from_anchor": "Island of the Blue Dolphins",
+          "to_anchor": "Where the Red Fern Grows"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"Happy Feet\" and \"Afterlife.\" Both of these movies have a unique blend of humor and heartwarming moments that I think you'll enjoy. In \"Happy Feet,\" you'll be delighted by the adorable penguins and their fun tap dancing, while in \"Afterlife,\" you'll find a touching story of father-son bonding and understanding.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "Deep",
+        "language": "Maya"
+      },
+      "rec_titles": [
+        "Delirium",
+        "The Truth",
+        "Happy Feet",
+        "Afterlife"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Maya",
+        "anchor_title": "Where the Red Fern Grows",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your user preferences, I would recommend \"You\" and \"Thick as Thieves.\" Both movies have intriguing plots and interesting actors that may appeal to your tastes. In \"You,\" the psychological thriller explores the darker side of human nature, while \"Thick as Thieves\" is an action-packed movie with a unique premise and talented cast.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "Maya"
+      },
+      "rec_titles": [
+        "You",
+        "Jack and Jill",
+        "Wolf Girl",
+        "Thick as Thieves"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Maya",
+        "anchor_title": "Where the Red Fern Grows",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preference for animal movies and the language Maya, I would recommend \"Monsters, Inc.\" It's a heartwarming story about friendship and acceptance, with a unique twist on the traditional monster movie genre. Starring the voice talents of John Goodman, Billy Crystal, and James Coburn, it's sure to delight. Alternatively, if you're in the mood for something a bit darker, \"The Violent Kind\" might be more up your alley. It's a suspenseful and intense horror film that explores themes of possession and the supernatural, with a talented cast including Taylor Cole and Anupam Kher.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "language": "Maya"
+      },
+      "rec_titles": [
+        "Monsters, Inc.",
+        "Utsav",
+        "The Violent Kind",
+        "Divergent"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Chan-wook Park? Hmm, I didn’t expect that vibe. (I’m thinking of War.)",
+      "user_meta": {
+        "turn": 5,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Chan-wook Park",
+        "anchor_title": "How to Train Your Dragon",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 5,
+          "from_focus": "language",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "hunt",
+          "from_anchor": "Where the Red Fern Grows",
+          "to_anchor": "How to Train Your Dragon"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"Born on the Fourth of July\" and \"The Book Thief\". \"Born on the Fourth of July\" is a powerful and thought-provoking film that explores the experiences of a Vietnam War veteran turned anti-war activist, while \"The Book Thief\" is a beautifully crafted story about the power of words and the human spirit during a time of war and turmoil. Both films feature strong performances from talented actors and offer a unique perspective on their respective historical contexts.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "War",
+        "language": "Maya",
+        "director": "Chan-wook Park"
+      },
+      "rec_titles": [
+        "Red Dawn",
+        "The Book Thief",
+        "Psychic Experiment",
+        "Born on the Fourth of July"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Chan-wook Park",
+        "anchor_title": "How to Train Your Dragon",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preference for war movies and the director Chan-wook Park, I would recommend \"Stoker\" and \"There Be Dragons\". Both films offer a unique and thought-provoking take on their respective genres, with standout performances from the cast. \"Stoker\" is a psychological thriller that explores the darker side of human nature, while \"There Be Dragons\" delves into the complexities of the human experience during times of conflict. I hope you find these recommendations helpful and enjoyable!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "Maya",
+        "director": "Chan-wook Park"
+      },
+      "rec_titles": [
+        "Stoker",
+        "There Be Dragons",
+        "Flags of Our Fathers",
+        "Hesher"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with John Gavin. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Psycho.)",
+      "user_meta": {
+        "turn": 7,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "John Gavin",
+        "anchor_title": "Se7en",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt",
+          "actor": "John Gavin"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 7,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "John Gavin",
+          "from_anchor": "How to Train Your Dragon",
+          "to_anchor": "Se7en"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"American Gangster\" and \"Pan's Labyrinth.\" Both movies are thought-provoking and feature strong performances from their actors. In \"American Gangster,\" Josh Brolin gives a captivating portrayal of an outcast New York City cop tasked with bringing down a powerful drug lord, while \"Pan's Labyrinth\" is a visually stunning and haunting tale of escape and fantasy in a dark historical setting. I hope you enjoy them!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Psycho",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "John Gavin"
+      },
+      "rec_titles": [
+        "American Gangster",
+        "Valkyrie",
+        "Pan's Labyrinth",
+        "Mission: Impossible II"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "John Gavin",
+        "anchor_title": "Se7en",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt",
+          "actor": "John Gavin"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"This Is the End\" and \"The Pianist.\" Both are critically acclaimed films that explore unique themes and feature talented actors. \"This Is the End\" is a hilarious and entertaining take on the apocalypse, while \"The Pianist\" is a powerful and moving portrayal of a musician's struggles during World War II.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "John Gavin"
+      },
+      "rec_titles": [
+        "Jack and Jill",
+        "The Pianist",
+        "The Way of the Gun",
+        "This Is the End"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does War tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "John Gavin",
+        "anchor_title": "Se7en",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt",
+          "actor": "John Gavin"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I would recommend \"The Alamo\" and \"Psycho.\" Both movies have a strong historical and psychological element that might interest the user. In \"The Alamo,\" the user can see how a group of brave men fought for their freedom and independence in a historic battle, while in \"Psycho,\" they can experience a classic thriller with unexpected twists and turns.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "War",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "John Gavin"
+      },
+      "rec_titles": [
+        "The Alamo",
+        "Psycho",
+        "You",
+        "The Taming of the Shrew"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "John Gavin",
+        "anchor_title": "Se7en",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt",
+          "actor": "John Gavin"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"Castle in the Sky\" and \"Casablanca.\" Both movies are classics with intriguing plots and talented actors. \"Castle in the Sky\" is a unique and visually stunning film about two individuals pursuing their creative passions despite societal norms, while \"Casablanca\" is a timeless romance and drama that explores themes of love, loyalty, and sacrifice.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "John Gavin"
+      },
+      "rec_titles": [
+        "Castle in the Sky",
+        "Casablanca",
+        "Three Kings",
+        "The Relic"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "John Gavin",
+        "anchor_title": "Se7en",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt",
+          "actor": "John Gavin"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"Oldboy\" and \"Smilla's Sense of Snow.\" Both films are psychological thrillers that explore themes of captivity, obsession, and the pursuit of truth. \"Oldboy\" is a particularly intense and thought-provoking film, while \"Smilla's Sense of Snow\" offers a unique blend of mystery and suspense. I hope you enjoy them!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "Ted",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "John Gavin"
+      },
+      "rec_titles": [
+        "The Hunting Party",
+        "Oldboy",
+        "Smilla's Sense of Snow",
+        "Psycho"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "John Gavin",
+        "anchor_title": "Se7en",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt",
+          "actor": "John Gavin"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to recommend some movies based on your preferences! \"Valkyrie\" (2008) is a gripping historical drama starring Tom Cruise as a renegade German officer who plots against Adolf Hitler during World War II. If you're interested in a lighter, more comedic take on the war genre, \"The Monuments Men\" (2014) stars George Clooney and Matt Damon as a group of art lovers and thieves who try to rescue priceless works of art from the Nazis. Both of these movies are worth checking out if you're in the mood for something thought-provoking and engaging!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "Ted",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "John Gavin"
+      },
+      "rec_titles": [
+        "Valkyrie",
+        "The Monuments Men",
+        "Hell's Angels",
+        "No Country for Old Men"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Paul Verhoeven? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Valkyrie.)",
+      "user_meta": {
+        "turn": 13,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Paul Verhoeven",
+        "anchor_title": "The Way of the Gun",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Paul Verhoeven",
+          "plot": "hunt",
+          "actor": "John Gavin",
+          "writer": "Christopher McQuarrie"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 13,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "writer",
+          "bridge_value": "Christopher McQuarrie",
+          "from_anchor": "Se7en",
+          "to_anchor": "The Way of the Gun"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I think you might enjoy \"Fury\" and \"Maleficent.\" Both films feature strong performances from talented actors, and they explore themes of war and vengeance that may resonate with your interests. In \"Fury,\" Brad Pitt leads a grizzled tank crew through the final days of World War II, while Angelina Jolie Pitt brings her signature intensity to the titular role in \"Maleficent.\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Valkyrie",
+        "language": "Maya",
+        "director": "Paul Verhoeven",
+        "actor": "Paul Verhoeven"
+      },
+      "rec_titles": [
+        "Fury",
+        "Maleficent",
+        "Red Cliff",
+        "The Seduction of Joe Tynan"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Paul Verhoeven",
+        "anchor_title": "The Way of the Gun",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Paul Verhoeven",
+          "plot": "hunt",
+          "actor": "John Gavin",
+          "writer": "Christopher McQuarrie"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your user preferences, I would recommend \"Valkyrie\" and \"Hotel Rwanda\". Both movies are historical dramas with strong acting performances, and they align with your interest in war and political coups. \"Valkyrie\" stars Tom Cruise as a group of German officers who plot against Adolf Hitler during World War II, while \"Hotel Rwanda\" tells the true story of a hotel manager who houses over a thousand Tutsi refugees during the Rwandan genocide. I hope you enjoy them!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "Maya",
+        "director": "Paul Verhoeven",
+        "actor": "Paul Verhoeven"
+      },
+      "rec_titles": [
+        "Wolf Girl",
+        "Valkyrie",
+        "Velocity",
+        "Hotel Rwanda"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Valkyrie? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Paul Verhoeven",
+        "anchor_title": "The Way of the Gun",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Paul Verhoeven",
+          "plot": "hunt",
+          "actor": "John Gavin",
+          "writer": "Christopher McQuarrie"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"Taxi Driver\" and \"Kundun.\" Both of these movies have a deeper tone than what you initially thought, and they both explore themes of rebellion and personal growth that may resonate with you. In \"Taxi Driver,\" Robert De Niro gives an iconic performance as a troubled taxi driver who becomes obsessed with saving a young woman from exploitation, while in \"Kundun,\" Tenzin Thuthob Tsarong plays the titular role of the Dalai Lama, navigating the challenges of political oppression and personal spiritual growth.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Valkyrie",
+        "language": "Maya",
+        "director": "Paul Verhoeven",
+        "actor": "Paul Verhoeven"
+      },
+      "rec_titles": [
+        "Kundun",
+        "The Patriot",
+        "The Yearling",
+        "Taxi Driver"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Taxi Driver. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Paul Verhoeven",
+        "anchor_title": "The Way of the Gun",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Paul Verhoeven",
+          "plot": "hunt",
+          "actor": "John Gavin",
+          "writer": "Christopher McQuarrie"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to recommend some movies based on your preferences! \"The Relic\" and \"Kundun\" both sound intriguing with their unique plots and talented casts. If you're in the mood for a suspenseful thriller, \"Paycheck\" might be up your alley with its fast-paced action and talented actors like Ben Affleck and Colm Feore. Which one would you like to hear more about?",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Taxi Driver",
+        "language": "Maya",
+        "director": "Paul Verhoeven",
+        "actor": "Paul Verhoeven"
+      },
+      "rec_titles": [
+        "The Relic",
+        "Kundun",
+        "The Nanny",
+        "Paycheck"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Paul Verhoeven",
+        "anchor_title": "The Way of the Gun",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Paul Verhoeven",
+          "plot": "hunt",
+          "actor": "John Gavin",
+          "writer": "Christopher McQuarrie"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"Three Kings\" and \"Lincoln.\" Both movies have strong casts and engaging plots that align with your interests. In \"Three Kings,\" you'll enjoy the inspiring story of a paraplegic athlete training for a triathlon, while in \"Lincoln,\" you'll be captivated by the historical drama surrounding President Abraham Lincoln's decision to emancipate slaves during the Civil War.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Deep",
+        "language": "Maya",
+        "director": "Paul Verhoeven",
+        "actor": "Paul Verhoeven"
+      },
+      "rec_titles": [
+        "Three Kings",
+        "This Is Spinal Tap",
+        "Little Fockers",
+        "Lincoln"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Mila Kunis. That sounds intriguing. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 18,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Mila Kunis",
+        "anchor_title": "Island of the Blue Dolphins",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Paul Verhoeven",
+          "plot": "hunt",
+          "actor": "Mila Kunis",
+          "writer": "Christopher McQuarrie"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 18,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Mila Kunis",
+          "from_anchor": "The Way of the Gun",
+          "to_anchor": "Island of the Blue Dolphins"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to recommend some movies based on the user's preferences! \"Beastly\" is a great choice if you enjoyed \"Ted,\" as it's also a modern retelling of a classic tale with a fun twist. The movie features a talented young cast and some great comedic performances. Alternatively, \"Jackie Brown\" is another great option, starring Pam Grier in the lead role and featuring a diverse cast of characters in a thrilling crime drama. Both movies are definitely worth checking out!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Ted",
+        "language": "Maya",
+        "director": "Paul Verhoeven",
+        "actor": "Mila Kunis"
+      },
+      "rec_titles": [
+        "Beastly",
+        "Jackie Brown",
+        "Extraordinary Measures",
+        "Where We Belong"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Mila Kunis",
+        "anchor_title": "Island of the Blue Dolphins",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Paul Verhoeven",
+          "plot": "hunt",
+          "actor": "Mila Kunis",
+          "writer": "Christopher McQuarrie"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I would recommend \"American Gangster\" and \"Starship Troopers.\" Both of these movies offer a gripping and intense experience with strong performances from their actors. \"American Gangster\" is a partly biographical crime drama that explores the story of a real-life drug lord in Harlem, while \"Starship Troopers\" is a classic sci-fi film that depicts a fascinating war between humans and giant alien bugs. I hope you enjoy watching these movies!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "Maya",
+        "director": "Paul Verhoeven",
+        "actor": "Mila Kunis"
+      },
+      "rec_titles": [
+        "American Gangster",
+        "The Skull",
+        "Patriot Games",
+        "Starship Troopers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Damien Chazelle? Hmm, I didn’t expect that vibe. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 20,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Damien Chazelle",
+        "anchor_title": "The Trumpet of the Swan",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Damien Chazelle",
+          "plot": "wild",
+          "actor": "Mila Kunis",
+          "writer": "Christopher McQuarrie"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 20,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "wild",
+          "from_anchor": "Island of the Blue Dolphins",
+          "to_anchor": "The Trumpet of the Swan"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I would recommend \"Zero Dark Thirty\" and \"Downfall.\" Both of these movies have a strong war theme and feature talented actors such as Jessica Chastain and Bruno Ganz. \"Zero Dark Thirty\" is a gripping chronicle of the hunt for Osama bin Laden, while \"Downfall\" explores the downward spiral of a man struggling with his past demons. I hope you find these recommendations helpful!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "X",
+        "language": "Maya",
+        "director": "Damien Chazelle",
+        "actor": "Mila Kunis"
+      },
+      "rec_titles": [
+        "Zero Dark Thirty",
+        "Catch-22",
+        "X",
+        "Downfall"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "language",
+      "bridge_field": "genre",
+      "bridge_value": "animal",
+      "from_anchor": "Island of the Blue Dolphins",
+      "to_anchor": "Where the Red Fern Grows"
+    },
+    {
+      "turn": 5,
+      "from_focus": "language",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "hunt",
+      "from_anchor": "Where the Red Fern Grows",
+      "to_anchor": "How to Train Your Dragon"
+    },
+    {
+      "turn": 7,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "John Gavin",
+      "from_anchor": "How to Train Your Dragon",
+      "to_anchor": "Se7en"
+    },
+    {
+      "turn": 13,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "writer",
+      "bridge_value": "Christopher McQuarrie",
+      "from_anchor": "Se7en",
+      "to_anchor": "The Way of the Gun"
+    },
+    {
+      "turn": 18,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Mila Kunis",
+      "from_anchor": "The Way of the Gun",
+      "to_anchor": "Island of the Blue Dolphins"
+    },
+    {
+      "turn": 20,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "wild",
+      "from_anchor": "Island of the Blue Dolphins",
+      "to_anchor": "The Trumpet of the Swan"
+    }
+  ]
+}

@@ -1,0 +1,799 @@
+{
+  "session_id": "00001",
+  "model_name": "qwen:7b",
+  "true_genre": "comedy-drama",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a comedy-drama movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy-drama",
+        "anchor_title": "Attachments",
+        "constraints": {
+          "genre": "comedy-drama"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend 'Remember the Titans' for a heart-warming comedy-drama. It features excellent performances by Hayden Panettiere, Nicole Ari Parker, and a strong cast.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "comedy",
+          "drama"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "Real Women Have Curves",
+        "Remember the Titans",
+        "The World According to Garp",
+        "21 Jump Street"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy-drama",
+        "anchor_title": "Attachments",
+        "constraints": {
+          "genre": "comedy-drama"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're in the mood for a drama with psychological themes, I would recommend 'Take Shelter'. The film stars Robert Longstreet as the husband and father with his psychic visions. It explores the conflict between protecting loved ones and facing one's own inner turmoil.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "I Am Legend",
+        "Take Shelter",
+        "The Dead Zone",
+        "The Gunman"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Her. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy-drama",
+        "anchor_title": "Attachments",
+        "constraints": {
+          "genre": "comedy-drama"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences, I recommend watching 'Captain Phillips' (2013). The film follows the real-life hijacking of a US cargo ship by Somali pirates, with Tom Hanks delivering a captivating performance as the captain.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Her"
+      },
+      "rec_titles": [
+        "The Baader Meinhof Complex",
+        "Tombstone",
+        "Captain Phillips",
+        "Original Sin"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Argo tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy-drama",
+        "anchor_title": "Attachments",
+        "constraints": {
+          "genre": "comedy-drama"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're interested in a drama with elements of what's happening in \"Argo,\" I recommend \"By the Sea\" starring Angelina Jolie Pitt. The movie delves into relationships and survival amidst uncertainty.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Argo"
+      },
+      "rec_titles": [
+        "Apocalypto",
+        "By the Sea",
+        "Sweet Home Alabama",
+        "Virgin Territory"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Argo? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy-drama",
+        "anchor_title": "Attachments",
+        "constraints": {
+          "genre": "comedy-drama"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for a drama with a touch of intrigue, 'I Am Number Four' starring Beau Mirchoff and featuring an initiation into a dangerous world, might be a good choice.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "Argo"
+      },
+      "rec_titles": [
+        "I Am Number Four",
+        "Promised Land",
+        "Crazy Heart",
+        "The Right Stuff"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Angus T. Jones. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of I Am Number Four.)",
+      "user_meta": {
+        "turn": 6,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Angus T. Jones",
+        "anchor_title": "Young Adult",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Angus T. Jones",
+          "plot": "guardians"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 6,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "guardians",
+          "from_anchor": "Attachments",
+          "to_anchor": "Young Adult"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend \"My Own Private Idaho\" for its unique coming-of-age story, featuring strong performances by River Phoenix and Jonathan Brandis. The film's artistic style adds to its charm.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "I Am Number Four",
+        "actor": "Angus T. Jones"
+      },
+      "rec_titles": [
+        "Paper Towns",
+        "Collateral",
+        "My Own Private Idaho",
+        "Outside Providence"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Angus T. Jones",
+        "anchor_title": "Young Adult",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Angus T. Jones",
+          "plot": "guardians"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend watching 'Syriana' (2005). This politically charged epic explores the oil industry's impact on individuals and society. Robert Foxworth, Jamey Sheridan, and David Clennon star in this thought-provoking film.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Angus T. Jones"
+      },
+      "rec_titles": [
+        "Syriana",
+        "The Messenger",
+        "Shutter",
+        "Being John Malkovich"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Angus T. Jones",
+        "anchor_title": "Young Adult",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Angus T. Jones",
+          "plot": "guardians"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a drama-themed recommendation, I suggest 'The Great Dictator' (1940). Starring Charlie Chaplin as Adenoid Hynkel, this classic film combines comedy and social commentary into an engaging drama.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "You",
+        "actor": "Angus T. Jones"
+      },
+      "rec_titles": [
+        "The Great Dictator",
+        "Attachments",
+        "I Heart Huckabees",
+        "Tootsie"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Great Dictator? That sounds intriguing.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Angus T. Jones",
+        "anchor_title": "Young Adult",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Angus T. Jones",
+          "plot": "guardians"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're in the mood for a drama with strong performances, I recommend 'Doctor Zhivago' (1965). It features Klaus Kinski and Julie Christie among others, and tells the story of a Russian physician's life during war and revolution.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "what",
+          "great"
+        ],
+        "name": "The Great Dictator",
+        "actor": "Angus T. Jones"
+      },
+      "rec_titles": [
+        "Wolf",
+        "The Book Thief",
+        "Doctor Zhivago",
+        "The Hurt Locker"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Her tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Angus T. Jones",
+        "anchor_title": "Young Adult",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Angus T. Jones",
+          "plot": "guardians"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For someone who enjoys drama and is intrigued by a historical event, I would recommend 'Tora! Tora! Tora!' (1970). The movie tells the story of the Pearl Harbor attack with a focus on the series of missteps by American forces prior to the attack. Starring notable actors like James Whitmore, Richard Anderson, and Joseph Cotten, the film offers a compelling historical drama experience.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her",
+        "actor": "Angus T. Jones"
+      },
+      "rec_titles": [
+        "Tora! Tora! Tora!",
+        "The Others",
+        "Pearl Harbor",
+        "Shallow Hal"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Jerry Zaks? That feels deeper than I thought. (I’m thinking of Pearl Harbor.)",
+      "user_meta": {
+        "turn": 11,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Jerry Zaks",
+        "anchor_title": "This Christmas",
+        "constraints": {
+          "genre": "comedy-drama",
+          "plot": "lifelong",
+          "director": "Jerry Zaks"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 11,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "lifelong",
+          "from_anchor": "Young Adult",
+          "to_anchor": "This Christmas"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences for a drama with an actor from the cast, I recommend 'Saving Face'. This movie features Jessica Hecht as the lead, and explores themes of love, family, and cultural identity through a dramatic lens.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Pearl Harbor",
+        "actor": "Angus T. Jones",
+        "director": "Jerry Zaks"
+      },
+      "rec_titles": [
+        "Saving Face",
+        "The Prince of Tides",
+        "The Next Three Days",
+        "The Hunting Party"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jerry Zaks",
+        "anchor_title": "This Christmas",
+        "constraints": {
+          "genre": "comedy-drama",
+          "plot": "lifelong",
+          "director": "Jerry Zaks"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend \"The Hudsucker Proxy\" (1994) for its clever humor and notable cast featuring Tim Robbins and Steve Buscemi. The film follows a naive business graduate caught in a stock scam.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Angus T. Jones",
+        "director": "Jerry Zaks"
+      },
+      "rec_titles": [
+        "Training Day",
+        "Snow White and the Huntsman",
+        "The Hudsucker Proxy",
+        "Remember Me, My Love"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Hudsucker Proxy tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jerry Zaks",
+        "anchor_title": "This Christmas",
+        "constraints": {
+          "genre": "comedy-drama",
+          "plot": "lifelong",
+          "director": "Jerry Zaks"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I recommend 'The Bodyguard' (1992). This movie features a star-studded cast, including Asin and DeVaughn Nixon, with a thrilling plot involving bodyguards and an endangered client.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The Hudsucker Proxy",
+        "actor": "Angus T. Jones",
+        "director": "Jerry Zaks"
+      },
+      "rec_titles": [
+        "Van Helsing",
+        "Water",
+        "The Bodyguard",
+        "The Siege"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Bodyguard. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jerry Zaks",
+        "anchor_title": "This Christmas",
+        "constraints": {
+          "genre": "comedy-drama",
+          "plot": "lifelong",
+          "director": "Jerry Zaks"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I would recommend 'The Family Man' (2000). It's a fun and thought-provoking movie about an investment broker who discovers his double life when his sports car and girlfriend become a typical family. Starring Nicolas Cage, the film offers a clever blend of comedy and drama.",
+      "constraints": {
+        "genre": "drama",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Bodyguard",
+        "actor": "Angus T. Jones",
+        "director": "Jerry Zaks"
+      },
+      "rec_titles": [
+        "Uptown Girls",
+        "The Family Man",
+        "Lord of War",
+        "Arbitrage"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Family Man? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jerry Zaks",
+        "anchor_title": "This Christmas",
+        "constraints": {
+          "genre": "comedy-drama",
+          "plot": "lifelong",
+          "director": "Jerry Zaks"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend \"The Golden Compass\" for its imaginative parallel universe and stellar cast featuring Claire Higgins, Magda Szubanski, and Simon McBurney.",
+      "constraints": {
+        "genre": "family",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "The Family Man",
+        "actor": "Angus T. Jones",
+        "director": "Jerry Zaks"
+      },
+      "rec_titles": [
+        "The Golden Compass",
+        "Little Women",
+        "Losin' It",
+        "Looney Tunes: Back in Action"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jerry Zaks",
+        "anchor_title": "This Christmas",
+        "constraints": {
+          "genre": "comedy-drama",
+          "plot": "lifelong",
+          "director": "Jerry Zaks"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For someone who enjoyed a weird, thought-provoking experience, I would recommend 'WALL·E' (2008). It's a heartwarming and dystopian story about an AI robot and his journey of loneliness and ultimately finding meaning in the world. Starring Jeff Garlin, Fred Willard, John Ratzenberger.",
+      "constraints": {
+        "genre": "family",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "The Family Man",
+        "actor": "Angus T. Jones",
+        "director": "Jerry Zaks"
+      },
+      "rec_titles": [
+        "The Family Man",
+        "WALL·E",
+        "Big Hero 6",
+        "The Kid"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jerry Zaks",
+        "anchor_title": "This Christmas",
+        "constraints": {
+          "genre": "comedy-drama",
+          "plot": "lifelong",
+          "director": "Jerry Zaks"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a quirky and family-friendly movie, I recommend 'The Smurfs 2'. It follows the adventures of the Smurfs as they team up to save their friend Smurfette. Starring Vanessa Matsui, Nancy O'Dell, and the beloved cast from the original film, this movie is perfect for those who enjoyed the unique world of the Smurfs.",
+      "constraints": {
+        "genre": "family",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "The Family Man",
+        "actor": "Angus T. Jones",
+        "director": "Jerry Zaks"
+      },
+      "rec_titles": [
+        "The Smurfs 2",
+        "Where the Wild Things Are",
+        "Coraline",
+        "Spice World"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jerry Zaks",
+        "anchor_title": "This Christmas",
+        "constraints": {
+          "genre": "comedy-drama",
+          "plot": "lifelong",
+          "director": "Jerry Zaks"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a family-friendly recommendation, I suggest watching 'Wreck-It Ralph' (2012). This animated film follows the adventures of a lovable villain, who wants to be a hero, and explores themes of friendship and self-acceptance. Starring Angus T. Jones, you'll find humor and heartwarming moments in this movie.",
+      "constraints": {
+        "genre": "family",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "The Family Man",
+        "actor": "Angus T. Jones",
+        "director": "Jerry Zaks"
+      },
+      "rec_titles": [
+        "Wreck-It Ralph",
+        "Spice World",
+        "The Book of Life",
+        "Holes"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Dan Harris (Screenwriter)? That feels deeper than I thought. (I’m thinking of Wreck-It Ralph.)",
+      "user_meta": {
+        "turn": 19,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Dan Harris (Screenwriter)",
+        "anchor_title": "Little Miss Sunshine",
+        "constraints": {
+          "genre": "comedy-drama",
+          "plot": "wants",
+          "director": "Jerry Zaks",
+          "writer": "Dan Harris (Screenwriter)"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 19,
+          "from_focus": "director",
+          "to_focus": "writer",
+          "bridge_field": "plot",
+          "bridge_value": "wants",
+          "from_anchor": "This Christmas",
+          "to_anchor": "Little Miss Sunshine"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend \"Straw Dogs\" for its intense character dynamics between David Sumner (played by Rhys Coiro) and the locals. The movie also stars Laura Dern, who brings a captivating presence to the role.",
+      "constraints": {
+        "genre": "family",
+        "plot": [
+          "written",
+          "screenwriter"
+        ],
+        "name": "Wreck-It Ralph",
+        "actor": "Angus T. Jones",
+        "director": "Jerry Zaks",
+        "writer": "Dan Harris (Screenwriter)"
+      },
+      "rec_titles": [
+        "The Crocodile Hunter: Collision Course",
+        "Straw Dogs",
+        "Harry Potter and the Chamber of Secrets",
+        "Frozen"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Dan Harris (Screenwriter)",
+        "anchor_title": "Little Miss Sunshine",
+        "constraints": {
+          "genre": "comedy-drama",
+          "plot": "wants",
+          "director": "Jerry Zaks",
+          "writer": "Dan Harris (Screenwriter)"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd recommend 'Stuart Little' for its charming story with actor Tate Donovan playing Stuart, and the delightful presence of Mary Kay Place as Stuart's adoptive parents.",
+      "constraints": {
+        "genre": "family",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Angus T. Jones",
+        "director": "Jerry Zaks",
+        "writer": "Dan Harris (Screenwriter)"
+      },
+      "rec_titles": [
+        "Alex in Wonderland",
+        "The Pacifier",
+        "Stuart Little",
+        "City of Ember"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 6,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "guardians",
+      "from_anchor": "Attachments",
+      "to_anchor": "Young Adult"
+    },
+    {
+      "turn": 11,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "lifelong",
+      "from_anchor": "Young Adult",
+      "to_anchor": "This Christmas"
+    },
+    {
+      "turn": 19,
+      "from_focus": "director",
+      "to_focus": "writer",
+      "bridge_field": "plot",
+      "bridge_value": "wants",
+      "from_anchor": "This Christmas",
+      "to_anchor": "Little Miss Sunshine"
+    }
+  ]
+}

@@ -1,0 +1,722 @@
+{
+  "session_id": "00001",
+  "model_name": "mistral:7b",
+  "true_genre": "comedy-drama",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a comedy-drama movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy-drama",
+        "anchor_title": "Forgetting Sarah Marshall",
+        "constraints": {
+          "genre": "comedy-drama"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend \"I Can Do Bad All by Myself\" for a heartwarming comedy-drama starring the multi-talented Tyler Perry and Mary J. Blige. It's a tale of unexpected friendships and growth that will surely put a smile on your face! If you're in the mood for some star power, \"The Break-Up\" with Jennifer Aniston and Vince Vaughn is another great choice - it's a funny and poignant exploration of relationships gone awry. Enjoy!",
+      "constraints": {
+        "genre": "comedy-drama",
+        "plot": [
+          "comedy",
+          "drama"
+        ],
+        "name": "You"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Andie MacDowell. That sounds intriguing. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Andie MacDowell",
+        "anchor_title": "Dear John",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Forgetting Sarah Marshall",
+          "to_anchor": "Dear John"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend \"The Dangerous Lives of Altar Boys\" for you! This comedy-drama follows a group of Catholic school friends who plan an ambitious prank, creating some memorable moments. Andie MacDowell stars alongside notable actors like Kieran Culkin and Jodie Foster.\n\nAnother great option is \"Taking Woodstock,\" which tells the story of the man inadvertently organizing the iconic 1969 Woodstock festival. With an impressive cast including Demetri Martin, Dan Fogler, Imelda Staunton, and Andie MacDowell, this film beautifully captures the spirit of a generation-defining event. Enjoy!",
+      "constraints": {
+        "genre": "comedy-drama",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Her",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Andie MacDowell",
+        "anchor_title": "Dear John",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend \"Insidious\" for you! It's a gripping comedy-drama with an ensemble of New York City acting talent, and its storyline of desperation and betrayal might resonate with your preference for just, more emotional narratives. If you're looking for another option, \"The Truman Show\" is a thought-provoking film starring Jim Carrey about a man discovering his entire life is a reality TV show. Both are excellent choices! Enjoy the movies!",
+      "constraints": {
+        "genre": "comedy-drama",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on X. I want to try something more monster (character species)—Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "monster (character species)",
+        "anchor_title": "The Mummy Returns",
+        "constraints": {
+          "genre": "monster (character species)",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 4,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "witness",
+          "from_anchor": "Dear John",
+          "to_anchor": "The Mummy Returns"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "\"You might enjoy 'Cloverfield' for its intense monster action in a cityscape, with a group of friends banding together during a terrifying attack. Or perhaps 'The Mummy' (1989) could be intriguing, as an ancient Egyptian princess is awakened and unleashes malevolence on the modern world. Both movies offer engaging narratives and memorable monster encounters.\"",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "X",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "monster (character species)",
+        "anchor_title": "The Mummy Returns",
+        "constraints": {
+          "genre": "monster (character species)",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend watching \"Despicable Me 2\" if you enjoy animated films with a mix of humor, action, and heartwarming moments. It features voice talents like Steve Carell, Russell Brand, and Miranda Cosgrove. If you're looking for something more dramatic, \"Terminator 2: Judgment Day\" is an action-packed classic starring Arnold Schwarzenegger, with a plot that revolves around time travel and artificial intelligence. Enjoy!",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Terminator 2: Judgment Day? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "monster (character species)",
+        "anchor_title": "The Mummy Returns",
+        "constraints": {
+          "genre": "monster (character species)",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for a movie with a different vibe than 'Terminator 2: Judgment Day' and your interest in the actor Andie MacDowell, I'd recommend \"We the Living\" as it features her and offers a compelling story set during the Russian Revolution. If you're interested in something more lighthearted, \"Louie\" might be intriguing too – it tells the story of a man known for riding around Boston on a tricycle, creating a unique local legend. Enjoy!",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "Terminator 2: Judgment Day",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Terminator 2: Judgment Day. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "monster (character species)",
+        "anchor_title": "The Mummy Returns",
+        "constraints": {
+          "genre": "monster (character species)",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for movies involving monsters and sounding intriguing, I'd recommend you give \"The Stuff\" a try! This film features a mysterious goo that turns people into zombie-like snackers, and it stars Danny Aiello, Garrett Morris, and Paul Sorvino.\n\nIf you're interested in an animated adventure with a unique twist on the classic treasure hunt story, you might also enjoy \"Treasure Planet\" with voices by Martin Short, Joseph Gordon-Levitt, and Emma Thompson. Enjoy your movie time!",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Terminator 2: Judgment Day",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "monster (character species)",
+        "anchor_title": "The Mummy Returns",
+        "constraints": {
+          "genre": "monster (character species)",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend watching \"The Wrestler\" if you're interested in a character study with deep themes. Mickey Rourke delivers a powerful performance as an aging wrestler trying to hold onto his past glory while navigating the corrupt side of the industry.\n\nAnother film that might appeal to you is \"Super\", which explores the imaginative world of a man who dreams of becoming a superhero, played by Rainn Wilson and Ellen Page. This film offers an intriguing blend of comedy and drama with a unique twist on the superhero genre.",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Deep",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Kylie Scott? Hmm, I didn’t expect that vibe. (I’m thinking of Deep.)",
+      "user_meta": {
+        "turn": 9,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Kylie Scott",
+        "anchor_title": "The Pompatus of Love",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Kylie Scott",
+          "plot": "four"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 9,
+          "from_focus": "genre",
+          "to_focus": "writer",
+          "bridge_field": "plot",
+          "bridge_value": "four",
+          "from_anchor": "The Mummy Returns",
+          "to_anchor": "The Pompatus of Love"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems like you're into quirky comedies with a touch of drama! Given that, I'd recommend \"American Dreamz\" for its hilarious take on reality TV and politics, starring Dennis Quaid and Mandy Moore. Another one worth checking out is \"Peep World\", a compelling story about four siblings dealing with the fallout of a book written about them, featuring Rainn Wilson and Judy Greer. Enjoy the movies!",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "written",
+          "scott"
+        ],
+        "name": "Deep",
+        "actor": "Andie MacDowell",
+        "writer": "Kylie Scott"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Kylie Scott",
+        "anchor_title": "The Pompatus of Love",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Kylie Scott",
+          "plot": "four"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend \"The Breakfast Club\" if you enjoyed a mix of drama and comedy with an outstanding cast, including Andie MacDowell. This film is about five high school students who discover their shared experiences during a Saturday detention.\n\nAnother great choice that features Andie MacDowell is \"Groundhog Day\". In this film, Bill Murray plays a weather forecaster trapped in a time loop on Groundhog Day, offering a unique blend of comedy and philosophy. Enjoy the movies!",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Andie MacDowell",
+        "writer": "Kylie Scott"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Her tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Kylie Scott",
+        "anchor_title": "The Pompatus of Love",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Kylie Scott",
+          "plot": "four"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Both \"Witless Protection\" and \"The Wraith\" might interest you!\n\n\"Witless Protection\" is a comedy featuring Larry the Cable Guy, while \"The Wraith\" offers a thrilling story about a mysterious man who targets a local violent road racing gang. Enjoy the ride with these unique films!",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her",
+        "actor": "Andie MacDowell",
+        "writer": "Kylie Scott"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Witless Protection? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Kylie Scott",
+        "anchor_title": "The Pompatus of Love",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Kylie Scott",
+          "plot": "four"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend checking out \"The Violent Kind.\" It's a thrilling horror movie with a unique twist, featuring a group of bikers and their girlfriends who are tormented by a gang from the 1950s. Taylor Cole delivers a captivating performance in this film.\n\nIf you're in the mood for a light-hearted comedy, \"Little Fockers\" might be just what you need. This movie features an all-star cast including Ben Stiller, Robert De Niro, and Barbra Streisand, and follows the trials and tribulations of Greg Focker trying to impress his father-in-law.",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "what",
+          "protection"
+        ],
+        "name": "Witless Protection",
+        "actor": "Andie MacDowell",
+        "writer": "Kylie Scott"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Little Fockers. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Kylie Scott",
+        "anchor_title": "The Pompatus of Love",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Kylie Scott",
+          "plot": "four"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for comedies and actors like Andie MacDowell, I'd highly recommend \"Easy A\". It's a delightful comedy about a high school student who lies about losing her virginity, causing a wildfire of rumors at school. Also, it stars Emma Stone, who delivers an exceptional performance in the film. If you fancy something a bit different but still entertaining, you might enjoy \"Restless\", a drama that revolves around the last summer of freedom for a group of friends, starring Mia Wasikowska and Hayley Atwell. Enjoy your movie time!",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Little Fockers",
+        "actor": "Andie MacDowell",
+        "writer": "Kylie Scott"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Michiel Huisman. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Wild.)",
+      "user_meta": {
+        "turn": 14,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Michiel Huisman",
+        "anchor_title": "Deep",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Kylie Scott",
+          "actor": "Michiel Huisman"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 14,
+          "from_focus": "writer",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Michiel Huisman",
+          "from_anchor": "The Pompatus of Love",
+          "to_anchor": "Deep"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend watching \"Star Trek Into Darkness.\" This film features an exciting adventure in space, with Michiel Huisman playing a significant role alongside a stellar cast like Benedict Cumberbatch and Zachary Quinto. The movie combines action, drama, and science fiction elements that should appeal to a wide range of audiences! If you're also interested in post-apocalyptic settings, \"The Aftermath\" might be worth checking out as well. It stars Hugh Bonneville and Sophie Okonedo, set in a world devastated by nuclear war, with an astronaut battling against mutant cannibals. Enjoy the movie exploration!",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Wild",
+        "actor": "Michiel Huisman",
+        "writer": "Kylie Scott"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michiel Huisman",
+        "anchor_title": "Deep",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Kylie Scott",
+          "actor": "Michiel Huisman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Out of the given options, I'd highly recommend \"Deep\" for you. It's a thrilling movie with Michiel Huisman, and it revolves around four med school students who find themselves in a mind-bending experiment gone awry. If you're up for some laughs, \"The Pink Panther 2\" featuring Steve Martin is another fun choice, where an international squad of bumbling detectives must stop a globe-trotting artifact thief. Enjoy!",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Michiel Huisman",
+        "writer": "Kylie Scott"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Panther. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michiel Huisman",
+        "anchor_title": "Deep",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Kylie Scott",
+          "actor": "Michiel Huisman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your interest in monster films and actors like Michiel Huisman, I'd recommend you watch \"Jaws\" (1975). This classic thriller features an unstoppable shark terrorizing a beach community, with a talented ensemble cast including Roy Scheider.\n\nIf you're looking for something more supernatural, \"The Mummy\" (1989) might intrigue you too. With an ancient Egyptian princess causing chaos and terrors beyond comprehension, it seems to align well with your preference for deeper, monster-focused plots. Enjoy the movies!",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Her",
+        "actor": "Michiel Huisman",
+        "writer": "Kylie Scott"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? That sounds intriguing.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michiel Huisman",
+        "anchor_title": "Deep",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Kylie Scott",
+          "actor": "Michiel Huisman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend \"The Equalizer\" for you! This action-thriller stars Denzel Washington as a retired CIA agent who uses his formidable skills to help those in need, grappling with the moral complexities of vigilantism. Alternatively, if you're looking for something more offbeat and philosophical, \"I Heart Huckabees\" is an intriguing film that explores existential issues with a quirky sense of humor, featuring a star-studded cast including Dustin Hoffman and Lily Tomlin. Enjoy!",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Ted",
+        "actor": "Michiel Huisman",
+        "writer": "Kylie Scott"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Michiel Huisman",
+        "anchor_title": "Deep",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Kylie Scott",
+          "actor": "Michiel Huisman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "\"Both 'The Yearling' and 'It's a Wonderful Life' are wonderful choices! 'The Yearling' is a heartwarming tale about a boy and his bond with a young deer, while 'It's a Wonderful Life' offers a poignant exploration of the impact one life can have on others. I think you might really enjoy either of these films!\"",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "You",
+        "actor": "Michiel Huisman",
+        "writer": "Kylie Scott"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Damien Dante Wayans? That feels deeper than I thought. (I’m thinking of It's a Wonderful Life.)",
+      "user_meta": {
+        "turn": 19,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Damien Dante Wayans",
+        "anchor_title": "Dance Flick",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Kylie Scott",
+          "director": "Damien Dante Wayans",
+          "plot": "angel"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 19,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "angel",
+          "from_anchor": "Deep",
+          "to_anchor": "Dance Flick"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you're looking for something deeper and possibly featuring Damien Dante Wayans, I'd recommend \"The Shadows\" for its intriguing plot about a successful horror novelist getting entangled in a dangerous relationship. However, if you're open to a film directed by Damien Dante Wayans, albeit not starring him, \"The Mummy\" (1989) is an action-packed adventure with a captivating plot and great performances from the cast. Enjoy your movie time!",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "It's a Wonderful Life",
+        "actor": "Damien Dante Wayans",
+        "writer": "Damien Dante Wayans",
+        "director": "Damien Dante Wayans"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Damien Dante Wayans",
+        "anchor_title": "Dance Flick",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Kylie Scott",
+          "director": "Damien Dante Wayans",
+          "plot": "angel"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're in the mood for a classic with a twist, I'd recommend giving \"Malibu's Most Wanted\" a watch. This comedy features Damien Dante Wayans as one of the main stars and delivers plenty of laughs! Alternatively, if you're interested in a more contemporary film with an intriguing plotline, check out \"Hesher\". Starring Joseph Gordon-Levitt, it tells a unique story about loss, chaos, and unexpected friendships. Enjoy the movies!",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Damien Dante Wayans",
+        "writer": "Damien Dante Wayans",
+        "director": "Damien Dante Wayans"
+      }
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Forgetting Sarah Marshall",
+      "to_anchor": "Dear John"
+    },
+    {
+      "turn": 4,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "witness",
+      "from_anchor": "Dear John",
+      "to_anchor": "The Mummy Returns"
+    },
+    {
+      "turn": 9,
+      "from_focus": "genre",
+      "to_focus": "writer",
+      "bridge_field": "plot",
+      "bridge_value": "four",
+      "from_anchor": "The Mummy Returns",
+      "to_anchor": "The Pompatus of Love"
+    },
+    {
+      "turn": 14,
+      "from_focus": "writer",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Michiel Huisman",
+      "from_anchor": "The Pompatus of Love",
+      "to_anchor": "Deep"
+    },
+    {
+      "turn": 19,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "angel",
+      "from_anchor": "Deep",
+      "to_anchor": "Dance Flick"
+    }
+  ]
+}

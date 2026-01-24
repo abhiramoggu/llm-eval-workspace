@@ -1,0 +1,753 @@
+{
+  "session_id": "00002",
+  "model_name": "gemma:2b",
+  "true_genre": "autobiography",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a autobiography movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "autobiography",
+        "anchor_title": "The Rise of Theodore Roosevelt",
+        "constraints": {
+          "genre": "autobiography"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The Queen (2014) is a compelling story about the challenges faced by Queen Elizabeth II during the aftermath of her husband's death. The movie portrays her emotional journey and the immense pressure she faced during that difficult time.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "could"
+        ],
+        "name": "You"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Saul Dibb? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of The Aftermath.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "Thunderpants",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "plot": "astronaut"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "astronaut",
+          "from_anchor": "The Rise of Theodore Roosevelt",
+          "to_anchor": "Thunderpants"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference for autobiographical stories with a focus on personal growth and transformation, I would recommend 'The Change-Up' or 'The Return of the King'. 'The Change-Up' highlights a man's journey of self-discovery through a body swap, while 'The Return of the King' depicts a young farmer's transformation through a mysterious visit from strangers.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "The Aftermath",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "Thunderpants",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "plot": "astronaut"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given the user's preferences, I would recommend either \"Zookeeper\" or \"The Rocker\". \n\n\"Zookeeper\" is a heartwarming story about a group of animals finding the courage to break the code of silence and help their beloved zookeeper find love.\n\n\"The Rocker\" is an inspiring tale about a drummer who gets a second chance at stardom after decades away from the spotlight.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of War. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "Thunderpants",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "plot": "astronaut"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a war movie recommendation, 'A Bridge Too Far' (1977) starring Hardy Kruger and Edward Fox is highly recommended. It captures the essence of the war with its historical context and emotional storytelling.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "War",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "Thunderpants",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "plot": "astronaut"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the keywords you provided, I would recommend \"2010\" or \"Schindler's List\". These films explore themes of war, humanity, and the complexities of human relationships, which could resonate with the user's interest in the topic.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? That sounds intriguing.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "Thunderpants",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "plot": "astronaut"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The mood of 'Lady in the Water' is heartwarming and whimsical, while 'There Be Dragons' is dark and suspenseful. If you're looking for something lighter, 'The Messenger' is a heartwarming story about a soldier trying to make amends for his past actions. 'Paradise Lost' is a gripping and suspenseful thriller about a group of reality show contestants trapped on a deserted island.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "X",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Noel Gugliemi. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Paradise Lost.)",
+      "user_meta": {
+        "turn": 7,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Noel Gugliemi",
+        "anchor_title": "Bruce Almighty",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "plot": "astronaut",
+          "actor": "Noel Gugliemi",
+          "writer": "John Milton"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 7,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "writer",
+          "bridge_value": "John Milton",
+          "from_anchor": "Thunderpants",
+          "to_anchor": "Bruce Almighty"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for something with a captivating narrative and emotional depth, then \"Princess Mononoke\" or \"Z for Zachariah\" might be more suitable for you. Both films explore complex themes of love, loss, and redemption.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Lost",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb",
+        "actor": "Noel Gugliemi"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Noel Gugliemi",
+        "anchor_title": "Bruce Almighty",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "plot": "astronaut",
+          "actor": "Noel Gugliemi",
+          "writer": "John Milton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference, I recommend \"The Breakfast Club\" and \"We Need to Talk About Kevin\". \"The Breakfast Club\" features a diverse cast and tackles complex themes, while \"We Need to Talk About Kevin\" is a poignant story about a challenging parent-child relationship.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb",
+        "actor": "Noel Gugliemi"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Noel Gugliemi",
+        "anchor_title": "Bruce Almighty",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "plot": "astronaut",
+          "actor": "Noel Gugliemi",
+          "writer": "John Milton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The Duchess is a compelling historical drama about a courageous duchess who defied social norms and maintained her dignity throughout her life. It's a perfect choice for those seeking a visually stunning and thought-provoking film.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "You",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb",
+        "actor": "Noel Gugliemi"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Her? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Noel Gugliemi",
+        "anchor_title": "Bruce Almighty",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "plot": "astronaut",
+          "actor": "Noel Gugliemi",
+          "writer": "John Milton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference for war, thematic themes, and biographical elements, 'Inglourious Basterds' would be a strong recommendation. It features a Jewish protagonist facing discrimination and resistance, mirroring the struggles faced by Jews during WWII. The film's wartime setting and the complex relationship between the protagonist and the military personnel provide a thought-provoking and emotionally charged experience.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what"
+        ],
+        "name": "Her",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb",
+        "actor": "Noel Gugliemi"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Noel Gugliemi",
+        "anchor_title": "Bruce Almighty",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "plot": "astronaut",
+          "actor": "Noel Gugliemi",
+          "writer": "John Milton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a deeper experience, I would recommend **American Gangster** (2007) starring Josh Brolin and Russell Crowe. This biopic chronicles the real-life story of Frank Lucas, a Harlem drug lord who inspired the film.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb",
+        "actor": "Noel Gugliemi"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does RED tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Noel Gugliemi",
+        "anchor_title": "Bruce Almighty",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "plot": "astronaut",
+          "actor": "Noel Gugliemi",
+          "writer": "John Milton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, 'Taxi Driver' and 'A Farewell to Arms' would be strong contenders. 'Taxi Driver' delivers the action and emotional depth the user sought, while 'A Farewell to Arms' focuses on love and resilience in a historical setting.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb",
+        "actor": "Noel Gugliemi"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Rob Reiner? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Taxi Driver.)",
+      "user_meta": {
+        "turn": 13,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Rob Reiner",
+        "anchor_title": "Old School",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Rob Reiner",
+          "plot": "taxi",
+          "actor": "Noel Gugliemi",
+          "writer": "John Milton"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 13,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "taxi",
+          "from_anchor": "Bruce Almighty",
+          "to_anchor": "Old School"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a movie with a similar tone to Taxi Driver, consider \"The Hurt Locker\" (2008). It's a gritty war film that explores the psychological impact of war on soldiers.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Taxi Driver",
+        "director": "Rob Reiner",
+        "writer": "Rob Reiner",
+        "actor": "Rob Reiner"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Rob Reiner",
+        "anchor_title": "Old School",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Rob Reiner",
+          "plot": "taxi",
+          "actor": "Noel Gugliemi",
+          "writer": "John Milton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for a war film featuring Rob Reiner, check out \"Windtalkers\" (2002). If you're interested in a family-friendly comedy with a similar vibe to \"Despicable Me 2,\" try \"The Secret of My Success\". If you're seeking a more obscure but intriguing film, \"The Stuff\" (N/A) might be your cup of tea.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Rob Reiner",
+        "writer": "Rob Reiner",
+        "actor": "Rob Reiner"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Secret. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Rob Reiner",
+        "anchor_title": "Old School",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Rob Reiner",
+          "plot": "taxi",
+          "actor": "Noel Gugliemi",
+          "writer": "John Milton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference, I would recommend 'The Book Thief' or 'The Last Samurai'. 'The Book Thief' features a compelling story about a young girl finding solace and hope through books, while 'The Last Samurai' delivers a powerful and dramatic portrayal of loyalty and revenge.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Secret",
+        "director": "Rob Reiner",
+        "writer": "Rob Reiner",
+        "actor": "Rob Reiner"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Book Thief? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Rob Reiner",
+        "anchor_title": "Old School",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Rob Reiner",
+          "plot": "taxi",
+          "actor": "Noel Gugliemi",
+          "writer": "John Milton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for a film with a similar war-themed vibe, I would recommend \"The Wraith\" (1986) starring Randy Quaid. It's a gripping and intense film about a man targeted by a ruthless road-racing gang.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "book"
+        ],
+        "name": "X",
+        "director": "Rob Reiner",
+        "writer": "Rob Reiner",
+        "actor": "Rob Reiner"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Rob Reiner",
+        "anchor_title": "Old School",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Rob Reiner",
+          "plot": "taxi",
+          "actor": "Noel Gugliemi",
+          "writer": "John Milton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for something with a strong emotional core and compelling characters, 'Taxi Driver' is a great choice. The film explores themes of love, loss, and redemption with complex characters that are both relatable and unforgettable.\n\nAlternatively, 'A Bridge Too Far' is a historical war film about the desperate efforts to capture vital bridges during World War II. The film is visually stunning and features some iconic performances from a diverse cast.\n\nFor something with a more lighthearted and humorous tone, 'Patriot Games' is a compelling action comedy about a spy trying to prevent a terrorist attack. The film features a talented cast and a fast-paced plot that is sure to keep you entertained.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "You",
+        "director": "Rob Reiner",
+        "writer": "Rob Reiner",
+        "actor": "Rob Reiner"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Jim Brown. That feels deeper than I thought. (I’m thinking of Drive.)",
+      "user_meta": {
+        "turn": 18,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Jim Brown",
+        "anchor_title": "Rendition",
+        "constraints": {
+          "genre": "autobiography",
+          "plot": "taxi",
+          "actor": "Jim Brown",
+          "writer": "John Milton",
+          "language": "English Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 18,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "English Language",
+          "from_anchor": "Old School",
+          "to_anchor": "Rendition"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference for Jim Brown and war-themed movies, I would recommend \"Hell's Angels\" and \"The Constant Gardener\".",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Drive",
+        "director": "Rob Reiner",
+        "writer": "Rob Reiner",
+        "actor": "Jim Brown"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jim Brown",
+        "anchor_title": "Rendition",
+        "constraints": {
+          "genre": "autobiography",
+          "plot": "taxi",
+          "actor": "Jim Brown",
+          "writer": "John Milton",
+          "language": "English Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences, \"The Best Years of Our Lives\" and \"Valkyrie\" would be strong recommendations. They both feature characters dealing with loss, trauma, and the search for truth amidst a larger narrative about war and its aftermath.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Rob Reiner",
+        "writer": "Rob Reiner",
+        "actor": "Jim Brown"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Tron. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jim Brown",
+        "anchor_title": "Rendition",
+        "constraints": {
+          "genre": "autobiography",
+          "plot": "taxi",
+          "actor": "Jim Brown",
+          "writer": "John Milton",
+          "language": "English Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, \"The Other Guys\" and \"Easy A\" would be strong recommendations. Both movies feature exciting twists on war themes, engaging narratives, and strong performances.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Tron",
+        "director": "Rob Reiner",
+        "writer": "Rob Reiner",
+        "actor": "Jim Brown"
+      }
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "astronaut",
+      "from_anchor": "The Rise of Theodore Roosevelt",
+      "to_anchor": "Thunderpants"
+    },
+    {
+      "turn": 7,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "writer",
+      "bridge_value": "John Milton",
+      "from_anchor": "Thunderpants",
+      "to_anchor": "Bruce Almighty"
+    },
+    {
+      "turn": 13,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "taxi",
+      "from_anchor": "Bruce Almighty",
+      "to_anchor": "Old School"
+    },
+    {
+      "turn": 18,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "English Language",
+      "from_anchor": "Old School",
+      "to_anchor": "Rendition"
+    }
+  ]
+}

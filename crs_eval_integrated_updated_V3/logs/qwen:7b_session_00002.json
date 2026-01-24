@@ -1,0 +1,747 @@
+{
+  "session_id": "00002",
+  "model_name": "qwen:7b",
+  "true_genre": "autobiography",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a autobiography movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "autobiography",
+        "anchor_title": "The Rise of Theodore Roosevelt",
+        "constraints": {
+          "genre": "autobiography"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend watching 'The Queen' (2014), featuring James Cromwell and Michael Sheen, as it offers a gripping tale of post-Diana royal drama.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "could"
+        ],
+        "name": "You"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Saul Dibb? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of The Queen.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "The Queen",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Alex Jennings"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Alex Jennings",
+          "from_anchor": "The Rise of Theodore Roosevelt",
+          "to_anchor": "The Queen"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference for an autobiography and a film directed, written, and starring by Saul Dibb, I recommend \"The Rise of Theodore Roosevelt\" (2019). This biographical film explores the formative years of Theodore Roosevelt, capturing his transformation from a New York politician to one of America's most influential presidents.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "The Queen",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "The Queen",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Alex Jennings"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend \"Panic Room\" for its intense thriller aspect with Jodie Foster as the lead character. The movie also features strong performances from Dwight Yoakam and Nicole Kidman.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Panic Room? That sounds intriguing.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "The Queen",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Alex Jennings"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a thrilling and educational experience, I recommend 'Man on Wire'. This film follows Philippe Petit's daring tightrope walk between New York City's World Trade Center towers in 1974. Starring Jean-Louis Blondeau and directed by Saul Dibb, 'Man on Wire' is a captivating and thought-provoking film.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "what",
+          "panic"
+        ],
+        "name": "Panic Room",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does World Trade Center tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "The Queen",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Alex Jennings"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend 'Flatliners' for a unique and thought-provoking story about near-death experiences. Bill Irwin, Jared Harris, and Sarita Choudhury star in this sci-fi thriller.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "World Trade Center",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of RED. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "The Queen",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Alex Jennings"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're interested in an autobiography with a strong focus on personal transformation, \"The Rise of Theodore Roosevelt\" by David M. Rubenstein would be a great choice. It features the life story of President Roosevelt during his formative years.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Jennifer Weiner? Hmm, I didn’t expect that vibe. (I’m thinking of The Rise of Theodore Roosevelt.)",
+      "user_meta": {
+        "turn": 7,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Jennifer Weiner",
+        "anchor_title": "Babel",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Alex Jennings",
+          "writer": "Jennifer Weiner",
+          "plot": "formative"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 7,
+          "from_focus": "director",
+          "to_focus": "writer",
+          "bridge_field": "plot",
+          "bridge_value": "formative",
+          "from_anchor": "The Queen",
+          "to_anchor": "Babel"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Considering your interest in autobiographies written by Jennifer Weiner, I recommend checking out 'The Bell Jar' (1963), which follows the mental breakdown of a young woman during the 1950s. Starring hope Wilson as the protagonist, it offers a raw and thought-provoking exploration of female identity.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "written",
+          "jennifer"
+        ],
+        "name": "X",
+        "director": "Saul Dibb",
+        "writer": "Jennifer Weiner",
+        "actor": "Jennifer Weiner"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Jennifer Weiner",
+        "anchor_title": "Babel",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Alex Jennings",
+          "writer": "Jennifer Weiner",
+          "plot": "formative"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I would recommend 'The Fighter' since it's based on a true story and features an excellent cast, including Mark Wahlberg as Micky Ward.\"",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Saul Dibb",
+        "writer": "Jennifer Weiner",
+        "actor": "Jennifer Weiner"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of War? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Jennifer Weiner",
+        "anchor_title": "Babel",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Alex Jennings",
+          "writer": "Jennifer Weiner",
+          "plot": "formative"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For someone looking for a war-themed movie with strong performances, I would recommend 'The Deer Hunter' (1978). It features Christopher Walken and Robert De Niro in powerful roles, exploring the psychological impact of war on individuals.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "War",
+        "director": "Saul Dibb",
+        "writer": "Jennifer Weiner",
+        "actor": "Jennifer Weiner"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of War. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Jennifer Weiner",
+        "anchor_title": "Babel",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Alex Jennings",
+          "writer": "Jennifer Weiner",
+          "plot": "formative"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for a movie that combines historical war themes with compelling characters, I recommend 'The Right Stuff' (1983). It stars Tom Cruise among others and follows the development of America's first astronauts.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "War",
+        "director": "Saul Dibb",
+        "writer": "Jennifer Weiner",
+        "actor": "Jennifer Weiner"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Jennifer Weiner",
+        "anchor_title": "Babel",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Alex Jennings",
+          "writer": "Jennifer Weiner",
+          "plot": "formative"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a war-themed story, I recommend 'Lord of War' (2005). The movie follows an arms dealer's moral dilemmas during an attempted kidnapping. It features strong performances by Liya Kebede and Tony Kgoroge.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "director": "Saul Dibb",
+        "writer": "Jennifer Weiner",
+        "actor": "Jennifer Weiner"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Mervyn LeRoy? Hmm, I didn’t expect that vibe. (I’m thinking of Emma.)",
+      "user_meta": {
+        "turn": 12,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Mervyn LeRoy",
+        "anchor_title": "Emma",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Mervyn LeRoy",
+          "writer": "Jennifer Weiner",
+          "plot": "decades"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 12,
+          "from_focus": "writer",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "decades",
+          "from_anchor": "Babel",
+          "to_anchor": "Emma"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a战争-related film with strong acting, I recommend 'The Best Years of Our Lives' starring Myrna Loy and Dana Andrews. It captures the emotional aftermath of World War II.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "X",
+        "director": "Mervyn LeRoy",
+        "writer": "Jennifer Weiner",
+        "actor": "Jennifer Weiner"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mervyn LeRoy",
+        "anchor_title": "Emma",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Mervyn LeRoy",
+          "writer": "Jennifer Weiner",
+          "plot": "decades"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend 'The Hurt Locker' (2008) for its intense and thought-provoking portrayal of an army bomb squad during the Iraq War. Starring Brian Geraghty, Christian Camargo, and Evangeline Lilly, the movie offers a unique glimpse into the conflict's psychological aspects.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Mervyn LeRoy",
+        "writer": "Jennifer Weiner",
+        "actor": "Jennifer Weiner"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mervyn LeRoy",
+        "anchor_title": "Emma",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Mervyn LeRoy",
+          "writer": "Jennifer Weiner",
+          "plot": "decades"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "推荐《The White Countess》。这部2005年的电影由娜薇恩·雷德格瑞芙主演，讲述了一个在1930年代上海的俄国难民，与一个美国盲人外交家之间的复杂关系。",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "You",
+        "director": "Mervyn LeRoy",
+        "writer": "Jennifer Weiner",
+        "actor": "Jennifer Weiner"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The White Countess. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mervyn LeRoy",
+        "anchor_title": "Emma",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Mervyn LeRoy",
+          "writer": "Jennifer Weiner",
+          "plot": "decades"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for a war-related movie with an actor involved, I recommend 'A Farewell to Arms'. It stars Audrey Hepburn as an English nurse and Frank Sinatra as the American ambulance driver on the Italian front during World War 1. Their love story amidst the harsh realities of war makes it both interesting and emotionally resonant.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The White Countess",
+        "director": "Mervyn LeRoy",
+        "writer": "Jennifer Weiner",
+        "actor": "Jennifer Weiner"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mervyn LeRoy",
+        "anchor_title": "Emma",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Mervyn LeRoy",
+          "writer": "Jennifer Weiner",
+          "plot": "decades"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend 'Doctor Zhivago' (1965) for its epic World War I setting and the memorable performances by Klaus Kinski, Julie Christie, and Hugh Bonneville.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "The White Countess",
+        "director": "Mervyn LeRoy",
+        "writer": "Jennifer Weiner",
+        "actor": "Jennifer Weiner"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does War tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mervyn LeRoy",
+        "anchor_title": "Emma",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Mervyn LeRoy",
+          "writer": "Jennifer Weiner",
+          "plot": "decades"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your interest in stories that revolve around a specific event, 'Redacted' might be a good choice. It tells the harrowing story of an Iraqi girl's rape and murder by American soldiers during the Iraq War. The film features actors such as Ohad Knoller and Don McKellar.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "War",
+        "director": "Mervyn LeRoy",
+        "writer": "Jennifer Weiner",
+        "actor": "Jennifer Weiner"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of War? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mervyn LeRoy",
+        "anchor_title": "Emma",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Mervyn LeRoy",
+          "writer": "Jennifer Weiner",
+          "plot": "decades"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a movie recommendation, I suggest 'The Patriot'. It's a historical drama about a peaceful farmer leading the Colonial Militia during the American Revolution. Starring Mel Gibson and a talented cast, it offers an intriguing blend of plot and strong performances.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "War",
+        "director": "Mervyn LeRoy",
+        "writer": "Jennifer Weiner",
+        "actor": "Jennifer Weiner"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mervyn LeRoy",
+        "anchor_title": "Emma",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Mervyn LeRoy",
+          "writer": "Jennifer Weiner",
+          "plot": "decades"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I would recommend 'The Last Samurai' for its epic battle storyline, featuring stars like Togo Igawa and Tom Cruise.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "War",
+        "director": "Mervyn LeRoy",
+        "writer": "Jennifer Weiner",
+        "actor": "Jennifer Weiner"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Sean Connery. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of The Last Samurai.)",
+      "user_meta": {
+        "turn": 20,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Sean Connery",
+        "anchor_title": "The Wrestler",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Mervyn LeRoy",
+          "writer": "Jennifer Weiner",
+          "plot": "decades",
+          "actor": "Sean Connery",
+          "language": "English Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 20,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "English Language",
+          "from_anchor": "Emma",
+          "to_anchor": "The Wrestler"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For fans of Sean Connery, 'Braveheart' (1995) would be a great recommendation. The film features Connery as William Wallace, a Scottish warrior who leads an uprising against English rule. This historical drama not only showcases Connery's acting prowess but also delves into themes of courage and national identity.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "The Last Samurai",
+        "director": "Mervyn LeRoy",
+        "writer": "Jennifer Weiner",
+        "actor": "Sean Connery"
+      }
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Alex Jennings",
+      "from_anchor": "The Rise of Theodore Roosevelt",
+      "to_anchor": "The Queen"
+    },
+    {
+      "turn": 7,
+      "from_focus": "director",
+      "to_focus": "writer",
+      "bridge_field": "plot",
+      "bridge_value": "formative",
+      "from_anchor": "The Queen",
+      "to_anchor": "Babel"
+    },
+    {
+      "turn": 12,
+      "from_focus": "writer",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "decades",
+      "from_anchor": "Babel",
+      "to_anchor": "Emma"
+    },
+    {
+      "turn": 20,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "English Language",
+      "from_anchor": "Emma",
+      "to_anchor": "The Wrestler"
+    }
+  ]
+}

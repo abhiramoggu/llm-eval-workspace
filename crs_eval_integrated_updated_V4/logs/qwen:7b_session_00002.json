@@ -1,0 +1,739 @@
+{
+  "session_id": "00002",
+  "model_name": "qwen:7b",
+  "true_genre": "autobiography",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a autobiography movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "autobiography",
+        "anchor_title": "The Return of the King",
+        "constraints": {
+          "genre": "autobiography"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend 'The Hiding Place' due to its heartwarming story about Corrie Ten Boom and her family sheltering Jewish refugees, starring Julie Anne Köhler and featuring Bruno Ganz.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "could"
+        ],
+        "name": "You"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Saul Dibb? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of War.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "Running with Scissors",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Jet Li"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Jet Li",
+          "from_anchor": "The Return of the King",
+          "to_anchor": "Running with Scissors"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences for a war-themed film by Saul Dibb, I recommend watching \"Patriot Games\" (1987). With its plot involving espionage and an IRA revenge, the movie delivers action and intrigue, all under Dibb's direction.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "War",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "Running with Scissors",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Jet Li"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're in the mood for a thrilling drama with strong performances, I recommend checking out 'Proof of Life' starring Russell Crowe and Michael Kitchen. The film's high-stakes scenario will keep you engaged.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? That sounds intriguing.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "Running with Scissors",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Jet Li"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're interested in a movie that combines imaginative adventure with family dynamics, I would recommend 'Super' (2010). It stars William Katt as Ryan, and features his friends embarking on imaginative superhero adventures together.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Us",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "Running with Scissors",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Jet Li"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a unique and thought-provoking experience, I recommend 'Catch-22' (1970). Starring PeterSelective, you'll delve into a darkly humorous exploration of mental health during war.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "Us",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Catch-22 tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "Running with Scissors",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Jet Li"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're interested in a story set against the backdrop of World War II, 'The Deer Hunter' (1978) starring Christopher Walken and Robert De Niro would be a great choice. Its intense portrayal of the war's impact on individuals is emotionally captivating.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Deep",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Deer Hunter. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "Running with Scissors",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Jet Li"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a film with an engaging storyline and strong acting, I recommend 'Big Fish' (2003). Starring Jessica Lange as the dying narrator, the film explores the intricate relationship between truth and imagination through its fantastical narrative.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Deer Hunter",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Big Fish. I want to try something more spy—still with English if possible. That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "spy",
+        "anchor_title": "Mr. Bean's Holiday",
+        "constraints": {
+          "genre": "spy",
+          "actor": "Jet Li",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 8,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Running with Scissors",
+          "to_anchor": "Mr. Bean's Holiday"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For someone interested in a spy-themed movie with English language and thanks as a plot element, I would recommend 'Star Trek: Nemesis' starring LeVar Burton, Jonathan Frakes, and Tom Hardy. It combines elements of espionage, space exploration, and character development.",
+      "constraints": {
+        "genre": "spy",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Big Fish",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb",
+        "language": "English"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "spy",
+        "anchor_title": "Mr. Bean's Holiday",
+        "constraints": {
+          "genre": "spy",
+          "actor": "Jet Li",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I would recommend 'The Truman Show' (1998) since it features a captivating story about a man discovering his life is a reality TV show. Starring Natascha McElhone, the film explores themes of identity and control.",
+      "constraints": {
+        "genre": "spy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb",
+        "language": "English"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Truman. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "spy",
+        "anchor_title": "Mr. Bean's Holiday",
+        "constraints": {
+          "genre": "spy",
+          "actor": "Jet Li",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences for a spy genre with strong characters, I recommend \"To Have and Have Not\" (1944). It stars Humphrey Bogart as Harry Morgan, a resourceful American expatriate who helps transport a French Resistance leader and his wife. The film combines elements of espionage, romance, and adventure.",
+      "constraints": {
+        "genre": "spy",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Truman",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb",
+        "language": "English"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Tron? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "spy",
+        "anchor_title": "Mr. Bean's Holiday",
+        "constraints": {
+          "genre": "spy",
+          "actor": "Jet Li",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a spy-thriller mood, I recommend 'Source Code'. It follows a soldier using an experimental government program to find the bomber of a train. Starring Jeffrey Wright and Scott Bakula makes for an engaging experience.",
+      "constraints": {
+        "genre": "spy",
+        "plot": [
+          "what"
+        ],
+        "name": "Tron",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb",
+        "language": "English"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Source Code tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "spy",
+        "anchor_title": "Mr. Bean's Holiday",
+        "constraints": {
+          "genre": "spy",
+          "actor": "Jet Li",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences, I recommend watching 'The Thirteenth Floor' (1999). It's a thrilling sci-fi film where a computer scientist becomes the prime suspect after his colleague is murdered in a virtual reality simulation. Starring Shiri Appleby and Brad William Henke, it combines elements of technology, mystery, and suspense.",
+      "constraints": {
+        "genre": "spy",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Source Code",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb",
+        "language": "English"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Jared Hess? Hmm, I didn’t expect that vibe. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 13,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Jared Hess",
+        "anchor_title": "Groundhog Day",
+        "constraints": {
+          "genre": "spy",
+          "actor": "Jet Li",
+          "language": "English",
+          "director": "Jared Hess",
+          "plot": "open"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 13,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "open",
+          "from_anchor": "Mr. Bean's Holiday",
+          "to_anchor": "Groundhog Day"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference for a spy-themed movie directed by Jared Hess, I recommend 'Get Him to the Greek' (2010). This comedy film stars Joyful Drake and features a light-hearted plot with spy elements.",
+      "constraints": {
+        "genre": "spy",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Her",
+        "director": "Jared Hess",
+        "writer": "Jared Hess",
+        "language": "English"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jared Hess",
+        "anchor_title": "Groundhog Day",
+        "constraints": {
+          "genre": "spy",
+          "actor": "Jet Li",
+          "language": "English",
+          "director": "Jared Hess",
+          "plot": "open"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a thriller with political elements, I recommend 'Broken Silence'. It features Lucía discovering the reality of political repression through her relationship with Manuel. Starringactress Kari Wuhrer and writer Eric Stoltz also add to the intrigue.",
+      "constraints": {
+        "genre": "spy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Jared Hess",
+        "writer": "Jared Hess",
+        "language": "English"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Her? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jared Hess",
+        "anchor_title": "Groundhog Day",
+        "constraints": {
+          "genre": "spy",
+          "actor": "Jet Li",
+          "language": "English",
+          "director": "Jared Hess",
+          "plot": "open"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a mood similar to \"Her,\" I recommend \"Z for Zachariah\" (1974). The post-apocalyptic love triangle, with the emotional charged relationship between two adults and a young girl, aligns well with the themes in \"Her.\"",
+      "constraints": {
+        "genre": "spy",
+        "plot": [
+          "what"
+        ],
+        "name": "Her",
+        "director": "Jared Hess",
+        "writer": "Jared Hess",
+        "language": "English"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Z for Zachariah tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jared Hess",
+        "anchor_title": "Groundhog Day",
+        "constraints": {
+          "genre": "spy",
+          "actor": "Jet Li",
+          "language": "English",
+          "director": "Jared Hess",
+          "plot": "open"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For those who enjoy spy thrillers, I recommend 'A View to a Kill'. It stars Patrick Bauchau and Tanya Roberts as James Bond and his adversary, making for an exciting adventure.",
+      "constraints": {
+        "genre": "spy",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "director": "Jared Hess",
+        "writer": "Jared Hess",
+        "language": "English"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jared Hess",
+        "anchor_title": "Groundhog Day",
+        "constraints": {
+          "genre": "spy",
+          "actor": "Jet Li",
+          "language": "English",
+          "director": "Jared Hess",
+          "plot": "open"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I would recommend \"Heavenly Creatures\" for its unique bond between teenage girls, portrayed by Liz Mullane and Jed Brophy. The film also features notable actors like Kate Winslet and Peter Jackson.",
+      "constraints": {
+        "genre": "spy",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "director": "Jared Hess",
+        "writer": "Jared Hess",
+        "language": "English"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Mark Osborne. That sounds intriguing. (I’m thinking of Heavenly Creatures.)",
+      "user_meta": {
+        "turn": 18,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Mark Osborne",
+        "anchor_title": "The Painted Veil",
+        "constraints": {
+          "genre": "spy",
+          "actor": "Mark Osborne",
+          "language": "French",
+          "director": "Jared Hess"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 18,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "French",
+          "from_anchor": "Groundhog Day",
+          "to_anchor": "The Painted Veil"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for movies featuring Mark Osborne, I would recommend 'Revolutionary Road'. This classic film, starring Kate Winslet and Leonardo DiCaprio, delves into themes of personal growth and relationships withOsborne's presence. Enjoy the movie!",
+      "constraints": {
+        "genre": "spy",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Heavenly Creatures",
+        "director": "Mark Osborne",
+        "writer": "Mark Osborne",
+        "language": "English",
+        "actor": "Mark Osborne"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Mark Osborne",
+        "anchor_title": "The Painted Veil",
+        "constraints": {
+          "genre": "spy",
+          "actor": "Mark Osborne",
+          "language": "French",
+          "director": "Jared Hess"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend \"The Revenant\" (2015), starring Tom Hardy as a frontiersman seeking survival after a brutal bear attack. The intense and raw story is sure to captivate.",
+      "constraints": {
+        "genre": "spy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Mark Osborne",
+        "writer": "Mark Osborne",
+        "language": "English",
+        "actor": "Mark Osborne"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Revenant. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Mark Osborne",
+        "anchor_title": "The Painted Veil",
+        "constraints": {
+          "genre": "spy",
+          "actor": "Mark Osborne",
+          "language": "French",
+          "director": "Jared Hess"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For someone who enjoys adventure and survival, 'Life of Pi' (2011) would be a captivating choice. The movie stars Irrfan Khan as the young man,Pi, who forms an extraordinary connection with a fearsome tiger during his shipwreck survival.",
+      "constraints": {
+        "genre": "spy",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Revenant",
+        "director": "Mark Osborne",
+        "writer": "Mark Osborne",
+        "language": "English",
+        "actor": "Eve"
+      }
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Jet Li",
+      "from_anchor": "The Return of the King",
+      "to_anchor": "Running with Scissors"
+    },
+    {
+      "turn": 8,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Running with Scissors",
+      "to_anchor": "Mr. Bean's Holiday"
+    },
+    {
+      "turn": 13,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "open",
+      "from_anchor": "Mr. Bean's Holiday",
+      "to_anchor": "Groundhog Day"
+    },
+    {
+      "turn": 18,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "French",
+      "from_anchor": "Groundhog Day",
+      "to_anchor": "The Painted Veil"
+    }
+  ]
+}

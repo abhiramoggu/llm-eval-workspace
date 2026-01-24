@@ -1,0 +1,871 @@
+{
+  "session_id": "00004",
+  "model_name": "mistral:7b",
+  "true_genre": "cult",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a cult movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "cult",
+        "anchor_title": "The Stepfather",
+        "constraints": {
+          "genre": "cult"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend \"Final Destination\" for you! This cult movie is about a group of students who cheat death on a plane, only to find that death has other plans for them. It stars familiar faces like Seann William Scott, Ali Larter, and the late, great Tony Todd. On the other hand, if you're intrigued by Hollywood history, \"Hitch\" is a fascinating movie about the famous meeting between Alfred Hitchcock and François Truffaut. Enjoy your cinematic adventure!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "cult",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "Final Destination",
+        "Hitch",
+        "Downfall",
+        "The Queen"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Lolita Davidovich. That feels deeper than I thought. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Lolita Davidovich",
+        "anchor_title": "Pretty in Pink",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "plot": "dating"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "dating",
+          "from_anchor": "The Stepfather",
+          "to_anchor": "Pretty in Pink"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend \"The Negotiator\" starring Kevin Spacey and Lolita Davidovich, as it's a gripping cult movie about a negotiator who takes hostages in a government office to prove his innocence when accused of corruption and murder. Another great one is \"Babel,\" an intriguing film featuring Brad Pitt and Elle Fanning, which tells the story of strange creatures called Babels searching for a lost map with mystical powers. Enjoy!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Her",
+        "actor": "Lolita Davidovich"
+      },
+      "rec_titles": [
+        "The Negotiator",
+        "Wolves",
+        "The Martian",
+        "Babel"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Lolita Davidovich",
+        "anchor_title": "Pretty in Pink",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "plot": "dating"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'm delighted to help! If you enjoyed 'Lolita Davidovich' and are looking for more films, both 'Green Card' and 'Braveheart' have captivating plots that might appeal to you. In Green Card, a man enters into a marriage of convenience which turns into something unexpected, while Braveheart tells the story of a Native American tribe fighting against corporate forces encroaching on their land. Enjoy your movie time!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Lolita Davidovich"
+      },
+      "rec_titles": [
+        "Green Card",
+        "Braveheart",
+        "King Kong",
+        "Six-String Samurai"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Lolita Davidovich",
+        "anchor_title": "Pretty in Pink",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "plot": "dating"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "\"You might enjoy 'Fight Club' - a thought-provoking film about an underground fight club that evolves into something unexpected, starring Brad Pitt and Edward Norton. Or, if you're in the mood for something eerie, 'The Evil Dead' offers a suspenseful adventure involving a group of friends in a cabin who unleash flesh-possessing demons.\"",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "actor": "Lolita Davidovich"
+      },
+      "rec_titles": [
+        "The Relic",
+        "Fight Club",
+        "The Evil Dead",
+        "Donnie Darko"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Lolita Davidovich",
+        "anchor_title": "Pretty in Pink",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "plot": "dating"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "\"Both 'Monsters, Inc.' and 'What Women Want' might be intriguing choices for you! 'Monsters, Inc.' offers a unique twist on monsters and their world, while 'What Women Want' features the humor of Mel Gibson as he discovers the thoughts of women. Enjoy the captivating stories!\"",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what"
+        ],
+        "name": "Us",
+        "actor": "Lolita Davidovich"
+      },
+      "rec_titles": [
+        "Monsters, Inc.",
+        "Vampires",
+        "What Women Want",
+        "Why Did I Get Married?"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Women tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Lolita Davidovich",
+        "anchor_title": "Pretty in Pink",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "plot": "dating"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend you watch \"Holes\" and \"Bram Stoker's Dracula\". In Holes, a complex journey unfolds as a father seeks justice for his son's murder, while Bram Stoker's Dracula offers a captivating portrayal of the centuries-old vampire Count Dracula set in England. Both films feature intriguing plots and boast talented actors like Winona Ryder and Anthony Hopkins. Enjoy the watch!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Women",
+        "actor": "Lolita Davidovich"
+      },
+      "rec_titles": [
+        "Holes",
+        "Bram Stoker's Dracula",
+        "The Wraith",
+        "Final Destination"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Ed Harris? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 7,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Ed Harris",
+        "anchor_title": "Army of Darkness",
+        "constraints": {
+          "genre": "cult",
+          "plot": "crazy",
+          "director": "Ed Harris"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 7,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "crazy",
+          "from_anchor": "Pretty in Pink",
+          "to_anchor": "Army of Darkness"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd recommend you consider \"The Seduction of Joe Tynan\" starring Meryl Streep and Melvyn Douglas. It's a gripping tale about a respected senator who takes on a challenging case, potentially compromising his family life but offering a significant career boost. If you're open to something more lighthearted, there's also the intriguing film \"Hitch\" featuring Will Smith, which is based on one of the most famous encounters in cinema history between Alfred Hitchcock and François Truffaut. Enjoy the movies!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "RED",
+        "actor": "Ed Harris",
+        "director": "Ed Harris"
+      },
+      "rec_titles": [
+        "The Seduction of Joe Tynan",
+        "Hitch",
+        "The Evil Dead",
+        "The Devil's Rejects"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ed Harris",
+        "anchor_title": "Army of Darkness",
+        "constraints": {
+          "genre": "cult",
+          "plot": "crazy",
+          "director": "Ed Harris"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend \"A Beautiful Mind\" if you enjoyed Ed Harris' performance. It's a powerful biographical drama about a Nobel laureate battling with schizophrenia, and Harris delivers an outstanding portrayal of one of the protagonist's colleagues.\n\nIf you're interested in horror or dark comedy, you might also enjoy \"Creepshow 2\", which features Ed Harris in three chilling tales based on a boy's favorite comic book.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Ed Harris",
+        "director": "Ed Harris"
+      },
+      "rec_titles": [
+        "Uncommon Valor",
+        "Creepshow 2",
+        "Annie Hall",
+        "A Beautiful Mind"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Ed Harris",
+        "anchor_title": "Army of Darkness",
+        "constraints": {
+          "genre": "cult",
+          "plot": "crazy",
+          "director": "Ed Harris"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you're interested in a cult film with Ed Harris, I'd highly recommend \"Masked and Anonymous\" (2003). Ed Harris stars alongside Bob Dylan in this intriguing movie about a troubled singer making a comeback for a benefit concert. If you're open to something slightly different and classic, \"Vampires\" (1998) is another great choice, featuring an interesting twist on the vampire mythology with Ed Harris as the director and one of the stars. Enjoy your movie time!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "actor": "Ed Harris",
+        "director": "Ed Harris"
+      },
+      "rec_titles": [
+        "Vampires",
+        "Masked and Anonymous",
+        "Army of Darkness",
+        "Night of the Living Dead"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Sebastian Schipper. That feels deeper than I thought. (I’m thinking of 3.)",
+      "user_meta": {
+        "turn": 10,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Sebastian Schipper",
+        "anchor_title": "Grown Ups 2",
+        "constraints": {
+          "genre": "cult",
+          "plot": "crazy",
+          "actor": "Sebastian Schipper"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 10,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Sebastian Schipper",
+          "from_anchor": "Army of Darkness",
+          "to_anchor": "Grown Ups 2"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for cult movies and Sebastian Schipper, I'd like to recommend \"In the Company of Men\" (1997). This thought-provoking film features a powerful performance by Sebastian Schipper's co-star Matt Malloy, and it delves deeper into the human condition than you might initially expect.\n\nAnother movie that I believe you may find intriguing is \"2001: A Space Odyssey\" (1968), directed by Ed Harris himself. This classic film offers a unique blend of science fiction, philosophy, and some stunning visual effects, making it an essential watch for any movie enthusiast.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "3",
+        "actor": "Sebastian Schipper",
+        "director": "Ed Harris"
+      },
+      "rec_titles": [
+        "In the Company of Men",
+        "2001: A Space Odyssey",
+        "Mission: Impossible II",
+        "The Incredible Hulk"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Sebastian Schipper",
+        "anchor_title": "Grown Ups 2",
+        "constraints": {
+          "genre": "cult",
+          "plot": "crazy",
+          "actor": "Sebastian Schipper"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend watching \"The Breakfast Club\" if you enjoy engaging teen dramas with an ensemble cast, including Emilio Estevez and Molly Ringwald. Another intriguing pick is \"Bobby\", a biographical drama that tells the story of Bobby Moore, featuring notable stars like Anthony Hopkins and Demi Moore. Both movies offer unique plots and powerful performances!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Sebastian Schipper",
+        "director": "Ed Harris"
+      },
+      "rec_titles": [
+        "Green Card",
+        "The Breakfast Club",
+        "Bobby",
+        "Despicable Me 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Neil Burger? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Bobby.)",
+      "user_meta": {
+        "turn": 12,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Neil Burger",
+        "anchor_title": "The Way of the Gun",
+        "constraints": {
+          "genre": "cult",
+          "plot": "marks",
+          "actor": "Sebastian Schipper",
+          "director": "Neil Burger"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 12,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "marks",
+          "from_anchor": "Grown Ups 2",
+          "to_anchor": "The Way of the Gun"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems like you're in for a treat! If you're looking for something with a unique blend of comedy and mystery, I'd highly recommend \"The Big Lebowski\". Jeff Bridges delivers an iconic performance as the laidback Jeff 'The Dude' Lebowski. On the other hand, if you prefer a gripping thriller, \"Wolf Creek\" might be right up your alley. John Jarratt portrays a chilling antagonist in this Australian outback horror story. Enjoy your movie time!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Bobby",
+        "actor": "Sebastian Schipper",
+        "director": "Neil Burger",
+        "language": "ger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "The Big Lebowski",
+        "Wolf Creek",
+        "The Amityville Horror",
+        "The Last Dragon"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Neil Burger",
+        "anchor_title": "The Way of the Gun",
+        "constraints": {
+          "genre": "cult",
+          "plot": "marks",
+          "actor": "Sebastian Schipper",
+          "director": "Neil Burger"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you enjoyed \"Neil Burger's unique storytelling\" and are in the mood for a comedy, I'd recommend giving \"Zack and Miri Make a Porno\" a watch. This film stars Seth Rogen and Elizabeth Banks and is filled with humor and heartfelt moments.\n\nOn the other hand, if you prefer suspense and thrillers, you might enjoy Neil Burger's \"Insidious.\" Patrick Wilson delivers a captivating performance in this haunting tale of a family dealing with supernatural forces. Enjoy your movie time!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Sebastian Schipper",
+        "director": "Neil Burger",
+        "language": "ger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Zack and Miri Make a Porno",
+        "Insidious",
+        "The Pink Panther 2",
+        "Annie Hall"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Insidious tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Neil Burger",
+        "anchor_title": "The Way of the Gun",
+        "constraints": {
+          "genre": "cult",
+          "plot": "marks",
+          "actor": "Sebastian Schipper",
+          "director": "Neil Burger"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "\"Why Did I Get Married? might be a great choice for you as it's a thought-provoking drama about marriage and relationships, starring Malik Yoba, Denise Boutte, and even Janet Jackson. If you're interested in horror, Evil Dead II could also appeal to you, with its tale of Ash Williams fighting flesh-possessing spirits, featuring the iconic Bruce Campbell.\"",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Insidious",
+        "actor": "Sebastian Schipper",
+        "director": "Neil Burger",
+        "language": "ger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Why Did I Get Married?",
+        "Creepshow 2",
+        "Evil Dead II",
+        "Flatliners"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Evil Dead II? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Neil Burger",
+        "anchor_title": "The Way of the Gun",
+        "constraints": {
+          "genre": "cult",
+          "plot": "marks",
+          "actor": "Sebastian Schipper",
+          "director": "Neil Burger"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "\"Based on your preference for cult movies and considering the unexpected vibe you mentioned, I'd highly recommend 'Hot Tub Time Machine'! This comedy features a time-traveling adventure with a hilarious ensemble cast including John Cusack and Crispin Glover. Another intriguing option could be 'Dogma', a film from Kevin Smith that combines humor with a unique plot about renegade angels trying to reenter Heaven.\"",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "evil"
+        ],
+        "name": "Evil Dead II",
+        "actor": "Sebastian Schipper",
+        "director": "Neil Burger",
+        "language": "ger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Hot Tub Time Machine",
+        "The Adventurer: The Curse of the Midas Box",
+        "Saw V",
+        "Dogma"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Hot Tub Time Machine. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Neil Burger",
+        "anchor_title": "The Way of the Gun",
+        "constraints": {
+          "genre": "cult",
+          "plot": "marks",
+          "actor": "Sebastian Schipper",
+          "director": "Neil Burger"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend \"3\" as a gripping thriller starring Sebastian Schipper that follows the story of a woman trying to uncover the truth behind her husband's suicide. If you prefer something with a different vibe, \"Mama\" might be more up your alley. It's a supernatural horror movie about a strong-willed MMA trainer helping a young boy deal with bullies, both at school and in an otherworldly sense. Enjoy the films!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Hot Tub Time Machine",
+        "actor": "Sebastian Schipper",
+        "director": "Neil Burger",
+        "language": "ger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "3",
+        "Mama",
+        "Annie Hall",
+        "The Return of the Living Dead"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on The Truth. I want to try something more speculative—That sounds intriguing.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "speculative",
+        "anchor_title": "Run Lola Run",
+        "constraints": {
+          "genre": "speculative",
+          "plot": "marks",
+          "actor": "Sebastian Schipper",
+          "director": "Neil Burger"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 17,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "glamorous",
+          "from_anchor": "The Way of the Gun",
+          "to_anchor": "Run Lola Run"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for speculative films and our previous conversation about 'The Truth', I'd like to recommend \"Wonder Boys\" as it offers a unique blend of humor and introspection, with Alan Tudyk, Katie Holmes, Tobey Maguire, Frances McDormand, and Robert Downey Jr. among the star-studded cast. If you're up for a post-apocalyptic adventure, \"The Last Battle\" might also appeal to you with its intriguing plot set in a world where no one is able to speak. Enjoy the movies!",
+      "constraints": {
+        "genre": "speculative",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "The Truth",
+        "actor": "Sebastian Schipper",
+        "director": "Neil Burger",
+        "language": "ger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "Wonder Boys",
+        "The Last Battle",
+        "Talladega Nights: The Ballad of Ricky Bobby",
+        "In Watermelon Sugar"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "speculative",
+        "anchor_title": "Run Lola Run",
+        "constraints": {
+          "genre": "speculative",
+          "plot": "marks",
+          "actor": "Sebastian Schipper",
+          "director": "Neil Burger"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your interest in speculative films and the work of Neil Burger, I'd highly recommend \"The Puppet Masters\". This film revolves around an alien invasion with stingray-shaped creatures taking control of human minds. As for a more recent release, you might enjoy \"Tusk\" starring Johnny Depp and Michael Parks, where a podcaster gets trapped in a strange situation involving a mysterious recluse and walruses. Enjoy the cinematic journey!",
+      "constraints": {
+        "genre": "speculative",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Sebastian Schipper",
+        "director": "Neil Burger",
+        "language": "ger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "The Puppet Masters",
+        "Tusk",
+        "Thick as Thieves",
+        "Southland Tales"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Alien? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "speculative",
+        "anchor_title": "Run Lola Run",
+        "constraints": {
+          "genre": "speculative",
+          "plot": "marks",
+          "actor": "Sebastian Schipper",
+          "director": "Neil Burger"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you're interested in speculative films, I'd recommend 'The Historian'. This film delves into a history professor's personal struggle and evolving worldview, much like the intriguing journey taken by the crew in 'Alien'. Another interesting choice could be 'Louie', which explores the mysterious life of a compassionate and misunderstood character through interviews with locals - it might surprise you just as 'Alien' did!",
+      "constraints": {
+        "genre": "speculative",
+        "plot": [
+          "what",
+          "alien"
+        ],
+        "name": "Alien",
+        "actor": "Sebastian Schipper",
+        "director": "Neil Burger",
+        "language": "ger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "The Historian",
+        "Pride and Prejudice",
+        "Louie",
+        "The Trouble with Harry"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Alien. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "speculative",
+        "anchor_title": "Run Lola Run",
+        "constraints": {
+          "genre": "speculative",
+          "plot": "marks",
+          "actor": "Sebastian Schipper",
+          "director": "Neil Burger"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems like you're into speculative films with a bit of action! Given your interest in 'Alien', I'd recommend checking out 'The Hunger Games'. It's an exciting series about a dystopian society where children fight to the death as part of a televised competition. If you're keen on fantasy, 'Harry Potter and the Chamber of Secrets' might also appeal to you, with its magical school setting and intriguing plot twists. Enjoy the watch!",
+      "constraints": {
+        "genre": "speculative",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Alien",
+        "actor": "Sebastian Schipper",
+        "director": "Neil Burger",
+        "language": "ger",
+        "writer": "Neil Burger"
+      },
+      "rec_titles": [
+        "The Hunger Games",
+        "Harry Potter and the Chamber of Secrets",
+        "A Christmas Carol",
+        "Winter's Tale"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "dating",
+      "from_anchor": "The Stepfather",
+      "to_anchor": "Pretty in Pink"
+    },
+    {
+      "turn": 7,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "crazy",
+      "from_anchor": "Pretty in Pink",
+      "to_anchor": "Army of Darkness"
+    },
+    {
+      "turn": 10,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Sebastian Schipper",
+      "from_anchor": "Army of Darkness",
+      "to_anchor": "Grown Ups 2"
+    },
+    {
+      "turn": 12,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "marks",
+      "from_anchor": "Grown Ups 2",
+      "to_anchor": "The Way of the Gun"
+    },
+    {
+      "turn": 17,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "glamorous",
+      "from_anchor": "The Way of the Gun",
+      "to_anchor": "Run Lola Run"
+    }
+  ]
+}

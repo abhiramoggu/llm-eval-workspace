@@ -1,0 +1,741 @@
+{
+  "session_id": "00004",
+  "model_name": "llama3:instruct",
+  "true_genre": "cult",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a cult movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "cult",
+        "anchor_title": "Blade Runner",
+        "constraints": {
+          "genre": "cult"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "What a great selection of cult classics! I think you'd really enjoy \"The Big Lebowski\" - it's a quirky, offbeat comedy with some amazing characters and quotes. Jeff Bridges' laid-back performance as \"The Dude\" is just fantastic, and the film has become a modern classic among fans of independent cinema.\n\nIf you're in the mood for something a bit darker and edgier, \"Fight Club\" would be an excellent choice. It's a thought-provoking, adrenaline-fueled exploration of toxic masculinity, with some incredible performances from Edward Norton and Brad Pitt.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "cult",
+          "could"
+        ],
+        "name": "You"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Lolita Davidovich. That feels deeper than I thought. (I’m thinking of War.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Lolita Davidovich",
+        "anchor_title": "Night of the Living Dead",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "plot": "khalid"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "khalid",
+          "from_anchor": "Blade Runner",
+          "to_anchor": "Night of the Living Dead"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've got just the thing for you! Considering your interest in Lolita Davidovich's work, particularly in War, I'd recommend \"Braveheart\" (1995). This epic historical drama stars Mel Gibson as William Wallace, a Scottish warrior who fights against English occupation, and features stunning battle scenes. You might enjoy the film's action-packed plot, memorable characters, and emotional depth.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "War",
+        "actor": "Lolita Davidovich"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Lolita Davidovich",
+        "anchor_title": "Night of the Living Dead",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "plot": "khalid"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"The Princess Diaries\"! It's a light-hearted and fun movie that's all about self-discovery and navigating new situations, which I think aligns with the \"just\" and \"more\" themes you mentioned earlier. Plus, who can resist Anne Hathaway's adorable performance as Mia Thermopolis?",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Lolita Davidovich"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Lolita Davidovich",
+        "anchor_title": "Night of the Living Dead",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "plot": "khalid"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right fit for you! Based on your interest in war stories, I highly recommend \"The Best Years of Our Lives\" (1946). This classic film explores the struggles of three World War II veterans as they return home and try to readjust to civilian life. With its powerful performances from Myrna Loy and Dana Andrews, this movie is sure to resonate with you.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "actor": "Lolita Davidovich"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Lolita Davidovich",
+        "anchor_title": "Night of the Living Dead",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "plot": "khalid"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right movie for you! Have you considered \"The Best Years of Our Lives\"? It's a classic war film that explores the struggles of three veterans returning home after World War II, and it stars some iconic actors like Myrna Loy and Dana Andrews. The film's themes of adjustment to post-war life might really resonate with you, given your interest in \"You\".",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "You",
+        "actor": "Lolita Davidovich"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Drake Doremus? That feels deeper than I thought. (I’m thinking of War.)",
+      "user_meta": {
+        "turn": 6,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Drake Doremus",
+        "anchor_title": "Torn Curtain",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "plot": "mission",
+          "director": "Drake Doremus"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 6,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "mission",
+          "from_anchor": "Night of the Living Dead",
+          "to_anchor": "Torn Curtain"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing! Since you enjoyed War, I'd like to recommend September Dawn (2007). This film also stars Lolita Davidovich, which I know caught your eye earlier. The movie is a powerful love story set against the backdrop of a tense and historical encounter between settlers and a renegade Mormon group - it's a great combination of drama and action!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "War",
+        "actor": "Lolita Davidovich",
+        "director": "Drake Doremus",
+        "writer": "Drake Doremus"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Drake Doremus",
+        "anchor_title": "Torn Curtain",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "plot": "mission",
+          "director": "Drake Doremus"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the movie for you! Have you considered \"Cold Mountain\"? It's a powerful war drama that follows a wounded soldier on his journey back home to reunite with his sweetheart, set against the backdrop of the American Civil War. With an all-star cast including Renée Zellweger and Jude Law, it's a must-see for fans of historical epics!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Lolita Davidovich",
+        "director": "Drake Doremus",
+        "writer": "Drake Doremus"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Drake Doremus",
+        "anchor_title": "Torn Curtain",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "plot": "mission",
+          "director": "Drake Doremus"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the movie for you! If you're looking for a thrilling and action-packed film that explores the early days of fighter pilots, I highly recommend \"Flyboys\" (2006). The film takes you on a thrilling ride as it recreates the adventures of the Lafayette Escadrille, featuring an impressive cast including James Franco.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "actor": "Lolita Davidovich",
+        "director": "Drake Doremus",
+        "writer": "Drake Doremus"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Drake Doremus",
+        "anchor_title": "Torn Curtain",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "plot": "mission",
+          "director": "Drake Doremus"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the movie for you! Have you considered \"The Deer Hunter\"? It's a powerful and intense film that explores the impact of war on those who serve, and features incredible performances from Christopher Walken and Robert De Niro. Its thought-provoking themes and emotional depth might resonate with your interest in war movies.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "RED",
+        "actor": "Lolita Davidovich",
+        "director": "Drake Doremus",
+        "writer": "Drake Doremus"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on X. I want to try something more chinese food—Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "chinese food",
+        "anchor_title": "September Dawn",
+        "constraints": {
+          "genre": "chinese food",
+          "actor": "Lolita Davidovich",
+          "plot": "mission"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 10,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "girl",
+          "from_anchor": "Torn Curtain",
+          "to_anchor": "September Dawn"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Since you're looking for something with a Chinese food theme, I'd recommend \"The Joy Luck Club\". It's a heartwarming film that explores the relationships between four Asian mothers and their American-born daughters, and it has some beautiful moments of cultural exchange. Plus, it stars a talented cast of actors who bring these complex characters to life!",
+      "constraints": {
+        "genre": "chinese food",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "X",
+        "actor": "Lolita Davidovich",
+        "director": "Drake Doremus",
+        "writer": "Drake Doremus"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "chinese food",
+        "anchor_title": "September Dawn",
+        "constraints": {
+          "genre": "chinese food",
+          "actor": "Lolita Davidovich",
+          "plot": "mission"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right recommendation for you! Have you considered \"The Fighter\"? It's an inspiring true story about perseverance and finding one's own way, starring Christian Bale and Mark Wahlberg. The movie has a great balance of drama, humor, and heart, and I think you'll really enjoy it!",
+      "constraints": {
+        "genre": "chinese food",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Lolita Davidovich",
+        "director": "Drake Doremus",
+        "writer": "Drake Doremus"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "chinese food",
+        "anchor_title": "September Dawn",
+        "constraints": {
+          "genre": "chinese food",
+          "actor": "Lolita Davidovich",
+          "plot": "mission"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I can help you out! Based on your interest in Chinese food and Lolita Davidovich, I'm going to take a guess that you might enjoy something a bit more light-hearted and quirky. Have you considered \"Super\" (2010)? It's a fun, offbeat comedy with a great cast, including Ellen Page and Rainn Wilson - and it's not about Chinese food, but it does have a playful spirit!",
+      "constraints": {
+        "genre": "chinese food",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "actor": "Lolita Davidovich",
+        "director": "Drake Doremus",
+        "writer": "Drake Doremus"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Nathan Greno. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Super.)",
+      "user_meta": {
+        "turn": 13,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Nathan Greno",
+        "anchor_title": "The Prince and the Pauper",
+        "constraints": {
+          "genre": "chinese food",
+          "actor": "Nathan Greno"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 13,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "genre",
+          "bridge_value": "chinese food",
+          "from_anchor": "September Dawn",
+          "to_anchor": "The Prince and the Pauper"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've found a movie that might be up your alley! Have you considered \"Cinder\" (2012)? It's a unique, post-modern retelling of the classic Cinderella story with a strong female lead and a touch of darkness - sounds like it could be right up your street if you enjoyed \"Super\"!\n\nIf you're not feeling that one, I'd also recommend \"The Whistler\" (2016) for its blend of drama and action.",
+      "constraints": {
+        "genre": "chinese food",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Super",
+        "actor": "Nathan Greno",
+        "director": "Nathan Greno",
+        "writer": "Drake Doremus"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Nathan Greno",
+        "anchor_title": "The Prince and the Pauper",
+        "constraints": {
+          "genre": "chinese food",
+          "actor": "Nathan Greno"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the movie for you! Have you considered \"The Cabin in the Woods\"? It's a clever and suspenseful film that starts off with a familiar premise - five friends going on a camping trip - but takes a dark and unexpected turn. Plus, it features an all-star cast, including Kristen Connolly and Chris Hemsworth.\n\nIf you're looking for something a bit more intense and thought-provoking, \"Fight Club\" might be the way to go. This cult classic explores themes of toxic masculinity and rebellion through its gritty and unapologetic portrayal of two men who form an underground fight club.",
+      "constraints": {
+        "genre": "chinese food",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Nathan Greno",
+        "director": "Nathan Greno",
+        "writer": "Drake Doremus"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does In the Woods tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Nathan Greno",
+        "anchor_title": "The Prince and the Pauper",
+        "constraints": {
+          "genre": "chinese food",
+          "actor": "Nathan Greno"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've found a great match for you! Have you considered \"Dear John\" (2010)? It's a romantic drama with a unique twist, starring Channing Tatum and Amanda Seyfried. The plot follows a soldier who falls in love with a girl while on leave, only to have their relationship put to the test when he returns to duty.\n\nAlternatively, if you're in the mood for something a bit more thought-provoking, \"The Andromeda Strain\" (1971) is a classic sci-fi thriller that explores what happens when a mysterious disease breaks out in a small town. It's a gripping tale of scientific inquiry and discovery, starring David Wayne and Paula Kelly.\n\nLet me know if either of these piques your interest!",
+      "constraints": {
+        "genre": "chinese food",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "In the Woods",
+        "actor": "Nathan Greno",
+        "director": "Nathan Greno",
+        "writer": "Drake Doremus"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Nathan Greno",
+        "anchor_title": "The Prince and the Pauper",
+        "constraints": {
+          "genre": "chinese food",
+          "actor": "Nathan Greno"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the films for you! Since you mentioned Chinese food as a genre preference cue (which isn't actually present in any of these titles), I'll focus on other aspects. Have you considered \"It's a Wonderful Life\"? The classic film features Donna Reed and James Stewart, and its exploration of what could've been is thought-provoking. Alternatively, if you're in the mood for something more whimsical, \"Monsters, Inc.\" is a beloved animated film that's sure to delight!",
+      "constraints": {
+        "genre": "chinese food",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "In the Woods",
+        "actor": "Nathan Greno",
+        "director": "Nathan Greno",
+        "writer": "Drake Doremus"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Julia Baird? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of War.)",
+      "user_meta": {
+        "turn": 17,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Julia Baird",
+        "anchor_title": "Salt",
+        "constraints": {
+          "genre": "chinese food",
+          "writer": "Julia Baird",
+          "plot": "goes"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 17,
+          "from_focus": "actor",
+          "to_focus": "writer",
+          "bridge_field": "plot",
+          "bridge_value": "goes",
+          "from_anchor": "The Prince and the Pauper",
+          "to_anchor": "Salt"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've got just the thing for you! If you're looking for a thought-provoking and emotional war film, I highly recommend \"The Best Years of Our Lives\". This classic movie tells the powerful story of three veterans returning home from World War II, grappling with their physical and emotional scars. With outstanding performances from Dana Andrews and Myrna Loy, this film is a must-see for anyone looking to experience the human side of war.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "written",
+          "julia"
+        ],
+        "name": "War",
+        "actor": "Nathan Greno",
+        "director": "Nathan Greno",
+        "writer": "Julia Baird"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Julia Baird",
+        "anchor_title": "Salt",
+        "constraints": {
+          "genre": "chinese food",
+          "writer": "Julia Baird",
+          "plot": "goes"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Have you considered checking out \"VERONICA MARS\"? It's a great neo-noir mystery that shares some similarities with your preferred war genre, and features Nathan Greno, the same director and writer behind your original recommendation. Plus, it has a fantastic cast including Enrico Colantoni and Jason Dohring!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Nathan Greno",
+        "director": "Nathan Greno",
+        "writer": "Julia Baird"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of War. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Julia Baird",
+        "anchor_title": "Salt",
+        "constraints": {
+          "genre": "chinese food",
+          "writer": "Julia Baird",
+          "plot": "goes"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might really appreciate \"Schindler's List\" - it's a powerful and emotional film that explores the human side of war, just like \"War\" seems to. The story is based on real events and features incredible performances from Liam Neeson and Ralph Fiennes.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "War",
+        "actor": "Nathan Greno",
+        "director": "Nathan Greno",
+        "writer": "Julia Baird"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Julia Baird",
+        "anchor_title": "Salt",
+        "constraints": {
+          "genre": "chinese food",
+          "writer": "Julia Baird",
+          "plot": "goes"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the opposite movie for you!\n\nHave you considered \"Tora! Tora! Tora!\"? This classic film tells a gripping and intense story of the events leading up to the infamous Pearl Harbor attack, with impressive reenactments and strong performances from its all-star cast.\n\nAlternatively, if you're in the mood for something more modern and suspenseful, I'd recommend \"The Hurt Locker\"! This gritty war thriller follows an elite bomb disposal team as they navigate the treacherous streets of Iraq, featuring a standout performance by Jeremy Renner.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "War",
+        "actor": "Nathan Greno",
+        "director": "Nathan Greno",
+        "writer": "Julia Baird"
+      }
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "khalid",
+      "from_anchor": "Blade Runner",
+      "to_anchor": "Night of the Living Dead"
+    },
+    {
+      "turn": 6,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "mission",
+      "from_anchor": "Night of the Living Dead",
+      "to_anchor": "Torn Curtain"
+    },
+    {
+      "turn": 10,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "girl",
+      "from_anchor": "Torn Curtain",
+      "to_anchor": "September Dawn"
+    },
+    {
+      "turn": 13,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "genre",
+      "bridge_value": "chinese food",
+      "from_anchor": "September Dawn",
+      "to_anchor": "The Prince and the Pauper"
+    },
+    {
+      "turn": 17,
+      "from_focus": "actor",
+      "to_focus": "writer",
+      "bridge_field": "plot",
+      "bridge_value": "goes",
+      "from_anchor": "The Prince and the Pauper",
+      "to_anchor": "Salt"
+    }
+  ]
+}

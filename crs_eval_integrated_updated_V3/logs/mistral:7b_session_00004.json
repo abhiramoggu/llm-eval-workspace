@@ -1,0 +1,745 @@
+{
+  "session_id": "00004",
+  "model_name": "mistral:7b",
+  "true_genre": "cult",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a cult movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "cult",
+        "anchor_title": "Dogma",
+        "constraints": {
+          "genre": "cult"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "\"I'd highly recommend 'A Clockwork Orange.' This cult classic is a thought-provoking film about a violent youth who volunteers for a radical treatment to rid him of his sadistic tendencies, but things don't go as planned! It stars the legendary Malcolm McDowell and features a memorable soundtrack by Wendy Carlos.\"\n\n\"Also worth mentioning is 'The Cable Guy,' a dark comedy starring Jim Carrey and Matthew Broderick. In this film, a cable guy becomes dangerously obsessed with a customer, leading to some unexpected twists and turns.\" Enjoy the movies!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "cult",
+          "could"
+        ],
+        "name": "You"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Lolita Davidovich. That feels deeper than I thought. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Lolita Davidovich",
+        "anchor_title": "The Way of the Gun",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "plot": "whose"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "whose",
+          "from_anchor": "Dogma",
+          "to_anchor": "The Way of the Gun"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend \"Monty Python and the Holy Grail\" for you! This comedy film features the iconic Monty Python troupe as they parody the legend of King Arthur in a humorous and absurd quest for the Holy Grail. If you prefer something more recent, there's also \"Zoolander 2\", a fashion-focused comedy starring Ben Stiller, Milla Jovovich, and Will Ferrell. Enjoy the movies!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Ted",
+        "actor": "Lolita Davidovich"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Lolita Davidovich",
+        "anchor_title": "The Way of the Gun",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "plot": "whose"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'm delighted to recommend \"You Kill Me\" and \"Untraceable\" for you! \"You Kill Me\" is a comedy-drama about an alcoholic hitman who befriends a sharp-tongued woman while drying out on the West Coast, and \"Untraceable\" is a thrilling film where an FBI agent chases an elusive serial killer who broadcasts his crimes online. Both movies star intriguing actors and offer engaging plots within your preferred genre! Enjoy!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Lolita Davidovich"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Lolita Davidovich",
+        "anchor_title": "The Way of the Gun",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "plot": "whose"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend \"500 Days of Summer\" for you! It's a charming and thoughtful film about love, relationships, and figuring out where things go wrong. Joseph Gordon-Levitt delivers an outstanding performance in this film that explores the complexities of modern romance. Another intriguing option could be \"The Cable Guy\", which features a unique comedy plot centered around an unconventional friendship between a cable installer and his client, played by Jim Carrey. Both films are sure to keep you entertained and engaged!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "You",
+        "actor": "Lolita Davidovich"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Her tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Lolita Davidovich",
+        "anchor_title": "The Way of the Gun",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "plot": "whose"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "\"I'd highly recommend 'End of Watch' for you! It's a gripping drama about two LA police officers who encounter challenges beyond their expectations, with Jake Gyllenhaal delivering an outstanding performance. Another unique film might be 'Shaun of the Dead', a comedy-horror that follows the misadventures of a group in a zombie apocalypse - it's quite entertaining!\"",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her",
+        "actor": "Lolita Davidovich"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Shaun of the Dead? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Lolita Davidovich",
+        "anchor_title": "The Way of the Gun",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "plot": "whose"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend watching \"The Devil's Rejects.\" This gritty and intense film follows the notorious Firefly family as they go on a bloody rampage, evading capture from a vengeful sheriff. If you're looking for something with a slightly different tone, \"September Dawn\" is another intriguing option set during a tense encounter between settlers and a Mormon group featuring actress Lolita Davidovich in the cast. Enjoy your movie time!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "dead"
+        ],
+        "name": "Shaun of the Dead",
+        "actor": "Lolita Davidovich"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Her. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Lolita Davidovich",
+        "anchor_title": "The Way of the Gun",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "plot": "whose"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for cult films and your mention of liking the sound of \"Her,\" I'd highly recommend watching \"Her\" again, as it matches your preferred genre and plot keywords. If you're interested in a film with a unique take on relationships, \"Restless\" might also be a fascinating watch, starring Mia Wasikowska and Hayley Atwell. Enjoy the movies!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Her",
+        "actor": "Lolita Davidovich"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Tate Taylor? That sounds intriguing. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 8,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Tate Taylor",
+        "anchor_title": "Vampires",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "plot": "online",
+          "director": "Tate Taylor"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 8,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "online",
+          "from_anchor": "The Way of the Gun",
+          "to_anchor": "Vampires"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend \"The Seduction of Joe Tynan.\" This thought-provoking political drama stars Meryl Streep and Alan Alda, and it explores a respected Senator's struggle between personal life, principles, and career advancement. It could be a fascinating watch given your interest in cult films directed by Tate Taylor!\n\nIf you're up for something slightly different but still intriguing, \"Armageddon\" is another great choice. This action-packed adventure film boasts an impressive cast led by Bruce Willis and Ben Affleck, and it revolves around a team of deep core drillers sent to prevent an asteroid from destroying Earth. Enjoy the ride!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Her",
+        "actor": "Tate Taylor",
+        "director": "Tate Taylor",
+        "writer": "Tate Taylor"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Tate Taylor",
+        "anchor_title": "Vampires",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "plot": "online",
+          "director": "Tate Taylor"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'm glad you're enjoying our recommendations! If you're looking for more films by Tate Taylor, I'd highly recommend \"Donnie Brasco\" starring Al Pacino and Johnny Depp. It's a gripping tale about an undercover FBI agent infiltrating the mob. For something a bit different but equally captivating, you might also enjoy \"Mama\", a supernatural horror film with impressive performances by Isabelle Nélisse and Megan Charpentier. Enjoy your movie time!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Tate Taylor",
+        "director": "Tate Taylor",
+        "writer": "Tate Taylor"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Tate Taylor",
+        "anchor_title": "Vampires",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "plot": "online",
+          "director": "Tate Taylor"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend \"Night of the Living Dead\" (1968). This cult classic tells a suspenseful story about a group of survivors fighting off hordes of zombies, creating an eerie and intense atmosphere. Another movie you might enjoy is \"Creepshow 2\" (1987), which offers three terrifying tales that are sure to give you chills! Both films are directed by George A. Romero, who is known for his significant contributions to the horror genre.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Deep",
+        "actor": "Tate Taylor",
+        "director": "Tate Taylor",
+        "writer": "Tate Taylor"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Creepshow. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Tate Taylor",
+        "anchor_title": "Vampires",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "plot": "online",
+          "director": "Tate Taylor"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems like you're interested in cult films with intriguing plots! If you enjoy a blend of comedy and horror, \"Dogma\" might be right up your alley. This film features an ensemble cast including Ben Affleck, Matt Damon, and Alan Rickman, and the plot revolves around renegade angels trying to reenter Heaven.\n\nOn the other hand, if you're into movies with a touch of science fiction, \"The Stuff\" is another fascinating choice. This film stars Danny Aiello, Garrett Morris, and Paul Sorvino, and it tells the story of a mysterious goo that turns out to be more than just a dessert sensation. Enjoy the watch!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "W.",
+        "actor": "Tate Taylor",
+        "director": "Tate Taylor",
+        "writer": "Tate Taylor"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Tate Taylor",
+        "anchor_title": "Vampires",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "plot": "online",
+          "director": "Tate Taylor"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you mentioned a theme of being wrong in an earlier conversation, I'd recommend \"Bram Stoker's Dracula\" for its intriguing plot twist and the captivating performances of Keanu Reeves, Gary Oldman, and Anthony Hopkins. If you're up for something more modern with comedy elements, \"The World's End\" could also be an enjoyable watch featuring Simon Pegg and Nick Frost. Enjoy the movies!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "W.",
+        "actor": "Tate Taylor",
+        "director": "Tate Taylor",
+        "writer": "Tate Taylor"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Bram Stoker's Dracula tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Tate Taylor",
+        "anchor_title": "Vampires",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "plot": "online",
+          "director": "Tate Taylor"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for cult films, I'd highly recommend \"The Cable Guy\" starring Jim Carrey and Matthew Broderick. This dark comedy explores the unusual friendship between a cable installer and his customer that takes a series of unexpected turns. Another film worth mentioning is \"Spaceballs,\" a parody of the Star Wars saga featuring comedic legends like Mel Brooks, John Candy, and Bill Pullman. It's a hilarious intergalactic adventure you might enjoy!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Bram Stoker's Dracula",
+        "actor": "Tate Taylor",
+        "director": "Tate Taylor",
+        "writer": "Bram Stoker"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Ted. I want to try something more germany—still with Seth MacFarlane if possible. Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "germany",
+        "anchor_title": "Movie 43",
+        "constraints": {
+          "genre": "germany",
+          "actor": "Seth MacFarlane",
+          "plot": "online",
+          "director": "Tate Taylor"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 14,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "Seth MacFarlane",
+          "from_anchor": "Vampires",
+          "to_anchor": "Movie 43"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'm delighted to recommend two movies that might suit your preferences. For a gripping exploration of Germany's political history, you might enjoy \"The Baader Meinhof Complex.\" This film offers an in-depth look at the Red Army Faction and stars notable actors like Moritz Bleibtreu and Bruno Ganz.\n\nIf you're looking for something more heartwarming, \"The Book Thief\" is a captivating story set during World War II Germany. Featuring an ensemble cast including Sophie Nélisse and Geoffrey Rush, it tells the tale of a young girl who finds solace and hope through her love of books. Enjoy the movies!",
+      "constraints": {
+        "genre": "germany",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Ted",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "writer": "Bram Stoker",
+        "language": "German"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "germany",
+        "anchor_title": "Movie 43",
+        "constraints": {
+          "genre": "germany",
+          "actor": "Seth MacFarlane",
+          "plot": "online",
+          "director": "Tate Taylor"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preferences for German movies, writers like Bram Stoker, and the actor Seth MacFarlane, I'd highly recommend watching \"The Number 23\" (2007). This film, written by Fernley Phillips, shares a thrilling plot about a man who becomes obsessed with a novel that he believes was written about him. Additionally, if you're a fan of Seth MacFarlane's humor, you might also enjoy \"Ted\" (2012), where he stars as the voice of a talking teddy bear. Enjoy your movie time!",
+      "constraints": {
+        "genre": "germany",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "writer": "Bram Stoker",
+        "language": "German"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Walt Disney Company? That feels deeper than I thought. (I’m thinking of 3.)",
+      "user_meta": {
+        "turn": 16,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Walt Disney Company",
+        "anchor_title": "Triumph of the Will",
+        "constraints": {
+          "genre": "germany",
+          "actor": "Seth MacFarlane",
+          "plot": "online",
+          "director": "Tate Taylor",
+          "writer": "Walt Disney Company"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 16,
+          "from_focus": "genre",
+          "to_focus": "writer",
+          "bridge_field": "genre",
+          "bridge_value": "germany",
+          "from_anchor": "Movie 43",
+          "to_anchor": "Triumph of the Will"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend \"The NeverEnding Story\" for you! This enchanting film tells a captivating story about a boy who dives into a wondrous fantasy world through a mysterious book, featuring the voice of Barret Oliver and Alan Oppenheimer in the leading roles. It's a magical adventure that perfectly encapsulates the imaginative spirit of Walt Disney.\n\nAlternatively, if you're looking for something more humorous with a touch of animation, \"Ted\" could be an entertaining choice. This film stars Seth MacFarlane as John Bennett, a man whose childhood wish brought his teddy bear to life, leading to some outrageous and hilarious situations. Enjoy!",
+      "constraints": {
+        "genre": "germany",
+        "plot": [
+          "written",
+          "walt"
+        ],
+        "name": "3",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "writer": "Walt Disney",
+        "language": "German"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Walt Disney Company",
+        "anchor_title": "Triumph of the Will",
+        "constraints": {
+          "genre": "germany",
+          "actor": "Seth MacFarlane",
+          "plot": "online",
+          "director": "Tate Taylor",
+          "writer": "Walt Disney Company"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd be happy to help! If you're looking for more movies like these, I'd recommend \"Shutter\" which is a psychological thriller that delves deep into the mind of a disturbed young woman, or \"The Taming of the Shrew\", a classic comedy featuring a headstrong Katherine and her unconventional marriage to Petruchio. Both offer engaging plots and compelling performances! Enjoy your viewing!",
+      "constraints": {
+        "genre": "germany",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "writer": "Walt Disney",
+        "language": "German"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Deep? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Walt Disney Company",
+        "anchor_title": "Triumph of the Will",
+        "constraints": {
+          "genre": "germany",
+          "actor": "Seth MacFarlane",
+          "plot": "online",
+          "director": "Tate Taylor",
+          "writer": "Walt Disney Company"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for a German movie directed by Seth MacFarlane, I'd recommend \"The Odyssey\". This epic film consists of 24 continuous shorts by 24 groups of filmmakers, including some notable actors like Irene Papas and Geraldine Chaplin. It tells the story of Odysseus's journey home after the Trojan War, which might intrigue you with its exploration of travel, war, and return.\n\nIf you fancy a different genre, 'The Secret' (1992) is an intriguing mystery starring James Nesbitt that could pique your curiosity about a stranger's claim to hold a secret pursued by certain authorities. Enjoy the movie exploration!",
+      "constraints": {
+        "genre": "germany",
+        "plot": [
+          "what",
+          "deep"
+        ],
+        "name": "Deep",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "writer": "Walt Disney",
+        "language": "German"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Walt Disney Company",
+        "anchor_title": "Triumph of the Will",
+        "constraints": {
+          "genre": "germany",
+          "actor": "Seth MacFarlane",
+          "plot": "online",
+          "director": "Tate Taylor",
+          "writer": "Walt Disney Company"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you're interested in movies with a German connection, Seth MacFarlane as an actor or director, and intriguing plots, I'd recommend \"Tooth Fairy\" for its unique twist on the classic children's tale, starring Seth MacFarlane alongside Dwayne Johnson. If you prefer more action-packed films, \"The Equalizer\" might be a great choice with Denzel Washington in the lead role, delivering an intricate story about justice and moral ambiguity. Enjoy your movie time!",
+      "constraints": {
+        "genre": "germany",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "writer": "Walt Disney",
+        "language": "German"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Walt Disney Company",
+        "anchor_title": "Triumph of the Will",
+        "constraints": {
+          "genre": "germany",
+          "actor": "Seth MacFarlane",
+          "plot": "online",
+          "director": "Tate Taylor",
+          "writer": "Walt Disney Company"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you're interested in German films, \"The Stuff\" might not be the best fit for your preferences as it doesn't have any German elements. However, I'd like to recommend \"The Relic\" for its intriguing plot revolving around a lizard-like god wreaking havoc in a Chicago museum, starring Penelope Ann Miller and Tom Sizemore.\n\nFor something a bit more lighthearted and featuring an American actor (Seth MacFarlane isn't the main actor in any of these movies), you might enjoy \"The Other Guys\" with Mark Wahlberg and Will Ferrell, which tells the story of two mismatched New York detectives on a unique adventure.",
+      "constraints": {
+        "genre": "germany",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "You",
+        "actor": "Seth MacFarlane",
+        "director": "Seth MacFarlane",
+        "writer": "Walt Disney",
+        "language": "German"
+      }
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "whose",
+      "from_anchor": "Dogma",
+      "to_anchor": "The Way of the Gun"
+    },
+    {
+      "turn": 8,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "online",
+      "from_anchor": "The Way of the Gun",
+      "to_anchor": "Vampires"
+    },
+    {
+      "turn": 14,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "Seth MacFarlane",
+      "from_anchor": "Vampires",
+      "to_anchor": "Movie 43"
+    },
+    {
+      "turn": 16,
+      "from_focus": "genre",
+      "to_focus": "writer",
+      "bridge_field": "genre",
+      "bridge_value": "germany",
+      "from_anchor": "Movie 43",
+      "to_anchor": "Triumph of the Will"
+    }
+  ]
+}

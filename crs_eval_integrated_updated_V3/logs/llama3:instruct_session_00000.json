@@ -1,0 +1,778 @@
+{
+  "session_id": "00000",
+  "model_name": "llama3:instruct",
+  "true_genre": "animal",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a animal movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "animal",
+        "anchor_title": "The Call of the Wild",
+        "constraints": {
+          "genre": "animal"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've got just the right animal movie for you! Have you considered \"The Beastmaster\"? It's a classic sword-and-sorcery fantasy with some amazing animal allies and plenty of action. Marc Singer stars as our hero, Dar, who wields supernatural powers to fight against marauding forces.\n\nIf you're looking for something a bit more family-friendly, \"Black Beauty\" could be the way to go! This 1877 novel has been adapted into a delightful film about an ordinary young horse named Black Beauty and his epic quest to defeat the evil Alta.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "animal",
+          "could"
+        ],
+        "name": "You"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Tom Guiry. That feels deeper than I thought. (I’m thinking of Hero.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Tom Guiry",
+        "anchor_title": "Tigerland",
+        "constraints": {
+          "genre": "animal",
+          "actor": "Tom Guiry"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "genre",
+          "bridge_value": "animal",
+          "from_anchor": "The Call of the Wild",
+          "to_anchor": "Tigerland"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've found a great match for you! Considering your love for Tom Guiry and movies with a deeper tone, I highly recommend \"Tigerland\" (2000). It's a powerful drama that explores the struggles of young soldiers during the Vietnam War era, featuring Tom Guiry in a memorable role.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Her",
+        "actor": "Tom Guiry"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tom Guiry",
+        "anchor_title": "Tigerland",
+        "constraints": {
+          "genre": "animal",
+          "actor": "Tom Guiry"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right movie for you! Have you considered \"Green Card\"? It's a charming romantic comedy starring Tom Guiry, and its theme of unexpected love is sure to resonate with you. The witty banter and lovable characters make it a delightful watch.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Tom Guiry"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Daniel Barber? Hmm, I didn’t expect that vibe. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 4,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Daniel Barber",
+        "anchor_title": "The Trumpet of the Swan",
+        "constraints": {
+          "genre": "animal",
+          "actor": "Tom Guiry",
+          "director": "Daniel Barber",
+          "plot": "bullets"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 4,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "bullets",
+          "from_anchor": "Tigerland",
+          "to_anchor": "The Trumpet of the Swan"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right fit for you! Have you considered \"Tigerland\" (1999)? It's an intense and gripping film that explores the lives of young recruits in Advanced Infantry Training at Fort Polk, Louisiana, starring Tom Guiry, along with a talented ensemble cast. The themes of camaraderie and self-discovery will surely resonate with you!",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "X",
+        "actor": "Tom Guiry",
+        "director": "Daniel Barber"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Daniel Barber",
+        "anchor_title": "The Trumpet of the Swan",
+        "constraints": {
+          "genre": "animal",
+          "actor": "Tom Guiry",
+          "director": "Daniel Barber",
+          "plot": "bullets"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Since you enjoyed a movie with Tom Guiry, I'm going to recommend \"Wild Hogs\" (2007). This buddy comedy stars Tim Allen and Martin Lawrence as two middle-aged friends who hit the open road on their motorcycles, getting into all sorts of hilarious misadventures along the way. With its light-hearted tone and comedic cast, I think you'll find it a fun ride!",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Tom Guiry",
+        "director": "Daniel Barber"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Open Road tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Daniel Barber",
+        "anchor_title": "The Trumpet of the Swan",
+        "constraints": {
+          "genre": "animal",
+          "actor": "Tom Guiry",
+          "director": "Daniel Barber",
+          "plot": "bullets"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"The Odyssey\"! It's a unique and epic tale that explores themes of journey and homecoming, much like the story on which the movie is based. With an all-star cast featuring Vanessa L. Williams, Eric Roberts, and Bernadette Peters, it's a great choice if you're looking for a film with a strong narrative.\n\nIf you'd prefer something a bit more grounded in reality, \"Wolf Creek\" might be up your alley! This tense thriller features Tom Guiry, one of the actors from the movie that piqued your interest.",
+      "constraints": {
+        "genre": "road",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "actor": "Tom Guiry",
+        "director": "Daniel Barber"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Tron? That sounds intriguing.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Daniel Barber",
+        "anchor_title": "The Trumpet of the Swan",
+        "constraints": {
+          "genre": "animal",
+          "actor": "Tom Guiry",
+          "director": "Daniel Barber",
+          "plot": "bullets"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've got just the movie for you! Based on your interest in Tron and Tom Guiry, I'd recommend \"Black Hawk Down\". This intense drama features Tom Guiry alongside an all-star cast, and its gripping storyline and realistic portrayal of war will likely keep you on the edge of your seat.",
+      "constraints": {
+        "genre": "road",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Tron",
+        "actor": "Tom Guiry",
+        "director": "Daniel Barber"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Daniel Barber",
+        "anchor_title": "The Trumpet of the Swan",
+        "constraints": {
+          "genre": "animal",
+          "actor": "Tom Guiry",
+          "director": "Daniel Barber",
+          "plot": "bullets"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right movie for you! Have you considered \"The Way Back Home\"? It's a beautiful, life-affirming drama that explores themes of love and loss, set against the stunning backdrop of Central Florida. With Danny Nucci and Ruby Dee starring in it, I think you'll really enjoy this emotional journey.",
+      "constraints": {
+        "genre": "road",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "Tron",
+        "actor": "Tom Guiry",
+        "director": "Daniel Barber"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Daniel Barber",
+        "anchor_title": "The Trumpet of the Swan",
+        "constraints": {
+          "genre": "animal",
+          "actor": "Tom Guiry",
+          "director": "Daniel Barber",
+          "plot": "bullets"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right movie for you! Have you considered \"The Mortal Instruments: City of Bones\"? It's a fantastic road movie with a great cast, including Kevin Zegers and Aidan Turner. The story has a similar feel-good vibe to \"You\" too - it's about self-discovery and finding one's place in the world.\n\nIf that doesn't catch your eye, I'd also recommend \"Mr. Bean's Holiday\". It's a hilarious and lighthearted road trip adventure with the lovable Mr. Bean, and features some beautiful French landscapes along the way.",
+      "constraints": {
+        "genre": "road",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "actor": "Tom Guiry",
+        "director": "Daniel Barber"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on RED. I want to try something more absurdism—still with English Language if possible. Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "absurdism",
+        "anchor_title": "The Tempest",
+        "constraints": {
+          "genre": "absurdism",
+          "actor": "Tom Guiry",
+          "director": "Daniel Barber",
+          "plot": "bullets",
+          "language": "English Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 10,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "language",
+          "bridge_value": "English Language",
+          "from_anchor": "The Trumpet of the Swan",
+          "to_anchor": "The Tempest"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"House at the End of the Street\"! It's a thriller that shares some similar themes with RED, and Jennifer Lawrence is fantastic in it. The twisty plot will keep you guessing until the very end.\n\nAlternatively, if you're in the mood for something more lighthearted, \"Pretty Woman\" is a classic rom-com that's sure to bring a smile to your face. Julia Roberts shines as Vivian Ward, a charming and feisty prostitute who captures the heart of wealthy businessman Edward Lewis (Richard Gere).",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "RED",
+        "actor": "Tom Guiry",
+        "director": "Daniel Barber",
+        "language": "English Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "absurdism",
+        "anchor_title": "The Tempest",
+        "constraints": {
+          "genre": "absurdism",
+          "actor": "Tom Guiry",
+          "director": "Daniel Barber",
+          "plot": "bullets",
+          "language": "English Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"Sweet Home Alabama\"! It's a fun, lighthearted rom-com that explores themes of identity and coming home, with great performances from Matthew McConaughey and Reese Witherspoon (who stars alongside Tom Guiry in one of his early films).",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Tom Guiry",
+        "director": "Daniel Barber",
+        "language": "English Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Sweet Home Alabama tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "absurdism",
+        "anchor_title": "The Tempest",
+        "constraints": {
+          "genre": "absurdism",
+          "actor": "Tom Guiry",
+          "director": "Daniel Barber",
+          "plot": "bullets",
+          "language": "English Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "What a great mix of movies! Based on your curiosity about the vibe of Sweet Home Alabama, I think you might enjoy \"Butch Cassidy and the Sundance Kid\" (1969). This classic western stars Robert Redford and Paul Newman as two outlaws on the run, with plenty of action, humor, and heart. The chemistry between the leads is undeniable, just like in Sweet Home Alabama!",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Sweet Home Alabama",
+        "actor": "Tom Guiry",
+        "director": "Daniel Barber",
+        "language": "English Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Andy Tennant? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Sweet Home Alabama.)",
+      "user_meta": {
+        "turn": 13,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Andy Tennant",
+        "anchor_title": "Frankenweenie",
+        "constraints": {
+          "genre": "absurdism",
+          "actor": "Tom Guiry",
+          "director": "Andy Tennant",
+          "plot": "bullets",
+          "language": "English Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 13,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "director",
+          "bridge_value": "Andy Tennant",
+          "from_anchor": "The Tempest",
+          "to_anchor": "Frankenweenie"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right fit for you! Since you enjoyed Sweet Home Alabama, I'm going to suggest \"Win a Date with Tad Hamilton!\" (2004). This romantic comedy also stars Tom Guiry, and its lighthearted tone is sure to bring a smile to your face. Plus, who can resist Paris Hilton's charming presence on screen?",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "RED",
+        "actor": "Tom Guiry",
+        "director": "Andy Tennant",
+        "language": "English Language",
+        "writer": "Andy Tennant"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Andy Tennant",
+        "anchor_title": "Frankenweenie",
+        "constraints": {
+          "genre": "absurdism",
+          "actor": "Tom Guiry",
+          "director": "Andy Tennant",
+          "plot": "bullets",
+          "language": "English Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You enjoyed a movie with Tom Guiry, Andy Tennant, and Andy Tennant (yes, that's two Andy Tennants!). Given those connections, I think you might enjoy \"Hitch\" from this list - it's a fun romantic comedy with Will Smith and Eva Mendes that explores the world of dating coaches. Alternatively, if you're in the mood for something a bit more action-packed, \"Face/Off\" is an intense thrill ride with John Travolta and Nicolas Cage that's sure to keep you on the edge of your seat!",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Tom Guiry",
+        "director": "Andy Tennant",
+        "language": "English Language",
+        "writer": "Andy Tennant"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Andy Tennant",
+        "anchor_title": "Frankenweenie",
+        "constraints": {
+          "genre": "absurdism",
+          "actor": "Tom Guiry",
+          "director": "Andy Tennant",
+          "plot": "bullets",
+          "language": "English Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Have you considered \"Veronica Mars\"? It's a fun and intriguing mystery that follows a smart and sassy private eye as she navigates her hometown's dark underbelly. With Tom Guiry, an actor from your original preference list, making a guest appearance, it seemed like a great fit!",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "actor": "Tom Guiry",
+        "director": "Andy Tennant",
+        "language": "English Language",
+        "writer": "Andy Tennant"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Eric Heisserer? That sounds intriguing. (I’m thinking of The Thing.)",
+      "user_meta": {
+        "turn": 16,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Eric Heisserer",
+        "anchor_title": "The Omega Code",
+        "constraints": {
+          "genre": "absurdism",
+          "actor": "Tom Guiry",
+          "director": "Andy Tennant",
+          "plot": "bullets",
+          "language": "English Language",
+          "writer": "Eric Heisserer"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 16,
+          "from_focus": "director",
+          "to_focus": "writer",
+          "bridge_field": "writer",
+          "bridge_value": "Eric Heisserer",
+          "from_anchor": "Frankenweenie",
+          "to_anchor": "The Omega Code"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"Little Miss Sunshine\"! It's a quirky and heartwarming film that follows an unconventional family on a road trip, with a talented cast including Greg Kinnear and Steve Carell. Eric Heisserer is known for his work on this offbeat comedy, which has won critical acclaim and several awards.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "written",
+          "eric"
+        ],
+        "name": "The Thing",
+        "actor": "Tom Guiry",
+        "director": "Andy Tennant",
+        "language": "English Language",
+        "writer": "Eric Heisserer"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Eric Heisserer",
+        "anchor_title": "The Omega Code",
+        "constraints": {
+          "genre": "absurdism",
+          "actor": "Tom Guiry",
+          "director": "Andy Tennant",
+          "plot": "bullets",
+          "language": "English Language",
+          "writer": "Eric Heisserer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"Whale Rider\"! It's a beautifully shot film with a powerful story about a young girl fighting to fulfill her destiny, and Keisha Castle-Hughes' performance is stunning.\n\nIf you're in the mood for something a bit more fast-paced, I'd recommend \"2 Fast 2 Furious\". Paul Walker brings his signature charm to this high-octane action movie, and it's a fun ride from start to finish.",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Tom Guiry",
+        "director": "Andy Tennant",
+        "language": "English Language",
+        "writer": "Eric Heisserer"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of 2 Fast 2 Furious. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Eric Heisserer",
+        "anchor_title": "The Omega Code",
+        "constraints": {
+          "genre": "absurdism",
+          "actor": "Tom Guiry",
+          "director": "Andy Tennant",
+          "plot": "bullets",
+          "language": "English Language",
+          "writer": "Eric Heisserer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"Hugo\"! It's a beautiful and imaginative film that explores the power of storytelling, with a unique blend of adventure, mystery, and nostalgia. Plus, who can resist the charm of Sacha Baron Cohen and Asa Butterfield on screen?",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "2 Fast 2 Furious",
+        "actor": "Tom Guiry",
+        "director": "Andy Tennant",
+        "language": "English Language",
+        "writer": "Eric Heisserer"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Hugo tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Eric Heisserer",
+        "anchor_title": "The Omega Code",
+        "constraints": {
+          "genre": "absurdism",
+          "actor": "Tom Guiry",
+          "director": "Andy Tennant",
+          "plot": "bullets",
+          "language": "English Language",
+          "writer": "Eric Heisserer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Have you considered \"The Way of the Gun\"? It's a gritty and intense thriller with a gripping storyline and some great performances from Nicky Katt and Kristin Lehman. Plus, it's got that classic indie vibe that's hard to resist!",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Hugo",
+        "actor": "Tom Guiry",
+        "director": "Andy Tennant",
+        "language": "English Language",
+        "writer": "Eric Heisserer"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Way of the Gun? That sounds intriguing.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Eric Heisserer",
+        "anchor_title": "The Omega Code",
+        "constraints": {
+          "genre": "absurdism",
+          "actor": "Tom Guiry",
+          "director": "Andy Tennant",
+          "plot": "bullets",
+          "language": "English Language",
+          "writer": "Eric Heisserer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"National Treasure\"! It's an action-packed adventure with a dash of history and treasure hunting, starring Nicolas Cage as Ben Gates - a historian on a quest to clear his family's name and find the legendary Templar Treasure. With its blend of humor, excitement, and intrigue, I think it matches the vibe you're looking for in \"The Way of the Gun\".",
+      "constraints": {
+        "genre": "english language",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "The Way of the Gun",
+        "actor": "Tom Guiry",
+        "director": "Andy Tennant",
+        "language": "English Language",
+        "writer": "Eric Heisserer"
+      }
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "genre",
+      "bridge_value": "animal",
+      "from_anchor": "The Call of the Wild",
+      "to_anchor": "Tigerland"
+    },
+    {
+      "turn": 4,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "bullets",
+      "from_anchor": "Tigerland",
+      "to_anchor": "The Trumpet of the Swan"
+    },
+    {
+      "turn": 10,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "language",
+      "bridge_value": "English Language",
+      "from_anchor": "The Trumpet of the Swan",
+      "to_anchor": "The Tempest"
+    },
+    {
+      "turn": 13,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "director",
+      "bridge_value": "Andy Tennant",
+      "from_anchor": "The Tempest",
+      "to_anchor": "Frankenweenie"
+    },
+    {
+      "turn": 16,
+      "from_focus": "director",
+      "to_focus": "writer",
+      "bridge_field": "writer",
+      "bridge_value": "Eric Heisserer",
+      "from_anchor": "Frankenweenie",
+      "to_anchor": "The Omega Code"
+    }
+  ]
+}

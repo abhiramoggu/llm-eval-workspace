@@ -1,0 +1,741 @@
+{
+  "session_id": "00003",
+  "model_name": "llama2:latest",
+  "true_genre": "cult",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a cult movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "cult",
+        "anchor_title": "The Ring Two",
+        "constraints": {
+          "genre": "cult"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preference for cult movies, I would recommend \"True Blood\" and \"Donnie Darko\". Both films have a unique and intriguing plot, with a mix of drama, suspense, and humor that should appeal to your tastes. In \"True Blood\", you'll find a gritty and intense storyline centered around a street gang in the '80s, while \"Donnie Darko\" is a cult classic with an otherworldly twist that explores themes of time travel, free will, and the supernatural.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "cult",
+          "could"
+        ],
+        "name": "You"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? That sounds intriguing.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "cult",
+        "anchor_title": "The Ring Two",
+        "constraints": {
+          "genre": "cult"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"Fight Club\" and \"Training Day\". Both movies are thought-provoking and feature intriguing plots with memorable performances from the actors. \"Fight Club\" is a cult classic that explores themes of rebellion and toxic masculinity, while \"Training Day\" is a gripping crime thriller that delves into the darker corners of Los Angeles' criminal underworld. I hope you enjoy watching them!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "You"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by David Yates? That feels deeper than I thought. (I’m thinking of Underworld.)",
+      "user_meta": {
+        "turn": 3,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "David Yates",
+        "anchor_title": "The Evil Dead",
+        "constraints": {
+          "genre": "cult",
+          "director": "David Yates",
+          "writer": "Don DeLillo"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 3,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "writer",
+          "bridge_value": "Don DeLillo",
+          "from_anchor": "The Ring Two",
+          "to_anchor": "The Evil Dead"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preference for a deeper movie than \"Underworld,\" I recommend \"Creepshow\" and \"Monty Python and the Holy Grail.\" Both are cult classics with unique plots and talented casts. \"Creepshow\" features five gruesome tales of terror, each with its own distinct style and tone, while \"Monty Python and the Holy Grail\" is a hilarious and absurd parody of the King Arthur legend. I hope you enjoy them!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Underworld",
+        "director": "David Yates"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "David Yates",
+        "anchor_title": "The Evil Dead",
+        "constraints": {
+          "genre": "cult",
+          "director": "David Yates",
+          "writer": "Don DeLillo"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preference for cult movies and David Yates' direction, I would recommend \"Tell No One\" and \"The Cabin in the Woods.\" Both films offer a unique blend of mystery, suspense, and humor that are sure to keep you engaged. In \"Tell No One,\" a man discovers a dark secret from his past after finding a mysterious letter, while in \"The Cabin in the Woods,\" five college friends find themselves in a life-or-death situation when they stumble upon a sinister plot. Both movies feature talented actors and are sure to keep you on the edge of your seat!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "David Yates"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "David Yates",
+        "anchor_title": "The Evil Dead",
+        "constraints": {
+          "genre": "cult",
+          "director": "David Yates",
+          "writer": "Don DeLillo"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to recommend some movies based on your preferences! If you're in the mood for a quirky and hilarious comedy, I highly recommend \"The Big Lebowski.\" The film features an all-star cast, including Jeff Bridges, John Goodman, and Steve Buscemi, who deliver witty and memorable performances. Alternatively, if you're looking for something a bit spookier, \"Bram Stoker's Dracula\" is a classic horror tale that features an unforgettable performance by Anthony Hopkins as the iconic vampire. Both of these movies are sure to provide hours of entertainment!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "You",
+        "director": "David Yates"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Dracula tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "David Yates",
+        "anchor_title": "The Evil Dead",
+        "constraints": {
+          "genre": "cult",
+          "director": "David Yates",
+          "writer": "Don DeLillo"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to recommend some movies based on your preferences! If you're in the mood for a cult classic with a twist of humor and horror, I highly recommend \"Shaun of the Dead\" - it's a hilarious take on the zombie apocalypse with great performances from Simon Pegg and Peter Serafinowicz. Alternatively, if you're looking for a more lighthearted and spiritually uplifting film, \"The Way Back Home\" is a beautiful drama that explores themes of love, loss, and self-discovery in the picturesque setting of Central Florida.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Dracula",
+        "director": "David Yates"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Malese Jow. That feels deeper than I thought. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 7,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Malese Jow",
+        "anchor_title": "Night of the Living Dead",
+        "constraints": {
+          "genre": "cult",
+          "director": "David Yates",
+          "writer": "Don DeLillo",
+          "actor": "Malese Jow",
+          "plot": "reunite"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 7,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "reunite",
+          "from_anchor": "The Evil Dead",
+          "to_anchor": "Night of the Living Dead"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to recommend some movies based on the cues you provided! \"Source Code\" is a thought-provoking and visually stunning film that explores the concept of time travel and alternate realities. Starring Jake Gyllenhaal and Vera Farmiga, it's a must-see for fans of sci-fi and mystery. Alternatively, if you're in the mood for something a bit more spooky, \"The Amityville Horror\" is a classic horror film that has been terrifying audiences for decades. With a talented cast including Rod Steiger and Margot Kidder, it's sure to send chills down your spine!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "W.",
+        "director": "David Yates",
+        "actor": "Malese Jow"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Malese Jow",
+        "anchor_title": "Night of the Living Dead",
+        "constraints": {
+          "genre": "cult",
+          "director": "David Yates",
+          "writer": "Don DeLillo",
+          "actor": "Malese Jow",
+          "plot": "reunite"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preference for cult movies and the actors Malese Jow and David Yates, I would recommend \"Insidious\" and \"Dogma\". Both films offer a unique blend of horror, suspense, and dark humor that are sure to keep you entertained. In \"Insidious\", Patrick Wilson and Rose Byrne deliver standout performances as a couple whose lives are turned upside down by a supernatural force, while \"Dogma\" features an all-star cast, including Brian O'Halloran, Jason Mewes, and Linda Fiorentino, in a hilarious and irreverent take on religious mythology.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "David Yates",
+        "actor": "Malese Jow"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Super? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Malese Jow",
+        "anchor_title": "Night of the Living Dead",
+        "constraints": {
+          "genre": "cult",
+          "director": "David Yates",
+          "writer": "Don DeLillo",
+          "actor": "Malese Jow",
+          "plot": "reunite"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"The Cable Guy\" and \"Monsters, Inc.\" Both are cult classics with a unique tone and style that you might enjoy. \"The Cable Guy\" features an hilarious performance by Ben Stiller as a socially awkward cable installer, while \"Monsters, Inc.\" is a visually stunning and heartwarming tale of friendship between two monsters.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "super"
+        ],
+        "name": "Super",
+        "director": "David Yates",
+        "actor": "Malese Jow"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does War tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Malese Jow",
+        "anchor_title": "Night of the Living Dead",
+        "constraints": {
+          "genre": "cult",
+          "director": "David Yates",
+          "writer": "Don DeLillo",
+          "actor": "Malese Jow",
+          "plot": "reunite"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your user preferences, I would recommend \"Apocalypse Now\" and \"Kingdom of Heaven.\" Both movies are thought-provoking and visually stunning, with strong performances from the actors involved. \"Apocalypse Now\" is a classic war film that explores the psychological toll of war on soldiers, while \"Kingdom of Heaven\" delves into the political intrigue and violence of the Crusades. I hope you enjoy them!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "War",
+        "director": "David Yates",
+        "actor": "Malese Jow"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Kingdom of Heaven. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Malese Jow",
+        "anchor_title": "Night of the Living Dead",
+        "constraints": {
+          "genre": "cult",
+          "director": "David Yates",
+          "writer": "Don DeLillo",
+          "actor": "Malese Jow",
+          "plot": "reunite"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your interest in \"Kingdom of Heaven,\" I recommend checking out \"Looper\" and \"Gladiator.\" Both movies feature epic battles and complex characters, much like \"Kingdom of Heaven.\" \"Looper\" is a thought-provoking sci-fi thriller with a great cast, including Joseph Gordon-Levitt and Bruce Willis. Meanwhile, \"Gladiator\" is an action-packed historical drama with an all-star cast led by Russell Crowe. I hope you enjoy them!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Kingdom of Heaven",
+        "director": "David Yates",
+        "actor": "Malese Jow"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Pat O'Connor? That feels deeper than I thought. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 12,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Pat O'Connor",
+        "anchor_title": "Shaun of the Dead",
+        "constraints": {
+          "genre": "cult",
+          "director": "Pat O'Connor",
+          "writer": "Sue Grafton",
+          "plot": "reunite"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 12,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "writer",
+          "bridge_value": "Sue Grafton",
+          "from_anchor": "Night of the Living Dead",
+          "to_anchor": "Shaun of the Dead"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preference for war movies and actors Malese Jow and Tom Cruise, I recommend \"Valkyrie\" and \"A Bridge Too Far.\" Both are historical dramas that explore the complexities of war and its impact on individuals and societies. \"Valkyrie\" tells the story of a group of German officers who plot against Adolf Hitler during World War II, while \"A Bridge Too Far\" depicts the Allies' failed attempt to capture several strategic bridges in the Netherlands during Operation Market Garden. I hope you find these recommendations helpful and enjoyable!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Deep",
+        "director": "Pat O'Connor",
+        "actor": "Malese Jow"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Pat O'Connor",
+        "anchor_title": "Shaun of the Dead",
+        "constraints": {
+          "genre": "cult",
+          "director": "Pat O'Connor",
+          "writer": "Sue Grafton",
+          "plot": "reunite"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"The Monuments Men\" and \"Tusk.\" Both movies offer unique and intriguing plots, with a great cast of actors. In \"The Monuments Men,\" you'll enjoy the blend of humor and history as George Clooney and his team of art experts race against time to save priceless works of art during World War II. Meanwhile, in \"Tusk,\" Michael Parks delivers an unforgettable performance as a reclusive walrus enthusiast who will leave you both entertained and disturbed.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Pat O'Connor",
+        "actor": "Malese Jow"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Pat O'Connor",
+        "anchor_title": "Shaun of the Dead",
+        "constraints": {
+          "genre": "cult",
+          "director": "Pat O'Connor",
+          "writer": "Sue Grafton",
+          "plot": "reunite"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your cues, I would recommend \"Sweet November\" and \"Paycheck.\" Both movies offer thought-provoking plots with a mix of drama and intrigue, and they both feature talented actors like Charlize Theron and Ben Affleck. In \"Sweet November,\" Malese Jow plays a complex character who helps emotionally crippled men repair their lives, while in \"Paycheck,\" Ryan Robbins and Krista Allen star as two people trying to uncover the truth behind a mysterious mission. I hope you find these recommendations helpful!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what"
+        ],
+        "name": "You",
+        "director": "Pat O'Connor",
+        "actor": "Malese Jow"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Nicole de Boer. That feels deeper than I thought. (I’m thinking of They.)",
+      "user_meta": {
+        "turn": 15,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Nicole de Boer",
+        "anchor_title": "Fight Club",
+        "constraints": {
+          "genre": "cult",
+          "writer": "Sue Grafton",
+          "plot": "raises",
+          "actor": "Nicole de Boer"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 15,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "raises",
+          "from_anchor": "Shaun of the Dead",
+          "to_anchor": "Fight Club"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to recommend some movies based on your preferences! \"Walking Tall\" (2004) is an action-packed movie starring Dwayne Johnson as a former soldier who cleans up his hometown from crime and corruption. If you're interested in a sci-fi adventure, \"Interstellar\" (2014) features a team of researchers led by Matthew McConaughey on a mission to find a new habitable planet for humanity.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "They",
+        "director": "Pat O'Connor",
+        "actor": "Nicole de Boer"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Nicole de Boer",
+        "anchor_title": "Fight Club",
+        "constraints": {
+          "genre": "cult",
+          "writer": "Sue Grafton",
+          "plot": "raises",
+          "actor": "Nicole de Boer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preference for war movies and the acting talents of Nicole de Boer, I would recommend \"Flyboys\" and \"Princess Mononoke.\" Both films offer exciting action sequences and a strong cast, including James Franco and Claire Danes in \"Princess Mononoke,\" and a talented ensemble in \"Flyboys.\" I hope you find these recommendations helpful!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Pat O'Connor",
+        "actor": "Nicole de Boer"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Flyboys? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Nicole de Boer",
+        "anchor_title": "Fight Club",
+        "constraints": {
+          "genre": "cult",
+          "writer": "Sue Grafton",
+          "plot": "raises",
+          "actor": "Nicole de Boer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your user preference cues, I would recommend \"Black Hawk Down\" and \"The Book Thief.\" Both of these movies delve into deeper themes and have a strong focus on character development, which it seems you're looking for. \"Black Hawk Down\" is an intense and thought-provoking war drama that explores the complexities of military intervention, while \"The Book Thief\" is a powerful and emotional tale of survival and resilience set against the backdrop of World War II Germany.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Flyboys",
+        "director": "Pat O'Connor",
+        "actor": "Nicole de Boer"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Deep. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Nicole de Boer",
+        "anchor_title": "Fight Club",
+        "constraints": {
+          "genre": "cult",
+          "writer": "Sue Grafton",
+          "plot": "raises",
+          "actor": "Nicole de Boer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to recommend some movies based on your preferences! \"Bloody Sunday\" (2002) is a powerful and thought-provoking drama that explores the Irish civil rights movement and its bloody consequences. The film features a talented cast, including Tim Pigott-Smith and Nicholas Farrell, and is directed by Pat O'Connor. If you enjoy historical dramas with strong performances, this might be the perfect choice for you.\n\nAlternatively, if you're in the mood for something a bit more supernatural and suspenseful, \"Vampyres\" (N/A) could be just what you need! This cult classic stars Bessie Love and Michael Byrne as two seductive vampires who prey on unsuspecting travelers in the English countryside. With its eerie atmosphere and intriguing plot, this film is sure to keep you on the edge of your seat.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "director": "Pat O'Connor",
+        "actor": "Nicole de Boer"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Super tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Nicole de Boer",
+        "anchor_title": "Fight Club",
+        "constraints": {
+          "genre": "cult",
+          "writer": "Sue Grafton",
+          "plot": "raises",
+          "actor": "Nicole de Boer"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your user preferences, I would recommend \"Super\" and \"Dances with Wolves.\" Both movies have a strong narrative focus and feature actors who are known for their talent in the war genre. \"Super\" is an imaginative and adventurous film that explores the power of imagination and spirit, while \"Dances with Wolves\" is a critically acclaimed epic drama that delves into the complexities of human relationships and cultural clashes during a time of war.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Super",
+        "director": "Pat O'Connor",
+        "actor": "Nicole de Boer"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Todd Phillips? That sounds intriguing. (I’m thinking of Tron.)",
+      "user_meta": {
+        "turn": 20,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Todd Phillips",
+        "anchor_title": "The Hangover Part II",
+        "constraints": {
+          "genre": "cult",
+          "writer": "Sue Grafton",
+          "plot": "digital",
+          "director": "Todd Phillips"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 20,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "digital",
+          "from_anchor": "Fight Club",
+          "to_anchor": "The Hangover Part II"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preference for war movies and the director Todd Phillips, I recommend \"Inglourious Basterds\" and \"Kingdom of Heaven.\" Both are thought-provoking and visually stunning films that showcase Phillips' unique filmmaking style. \"Inglourious Basterds\" is a tense and thrilling tale of Nazi assassination, while \"Kingdom of Heaven\" is an epic and emotional journey through the Crusades. I hope you enjoy them!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Tron",
+        "director": "Todd Phillips",
+        "actor": "Todd Phillips",
+        "writer": "Todd Phillips"
+      }
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 3,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "writer",
+      "bridge_value": "Don DeLillo",
+      "from_anchor": "The Ring Two",
+      "to_anchor": "The Evil Dead"
+    },
+    {
+      "turn": 7,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "reunite",
+      "from_anchor": "The Evil Dead",
+      "to_anchor": "Night of the Living Dead"
+    },
+    {
+      "turn": 12,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "writer",
+      "bridge_value": "Sue Grafton",
+      "from_anchor": "Night of the Living Dead",
+      "to_anchor": "Shaun of the Dead"
+    },
+    {
+      "turn": 15,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "raises",
+      "from_anchor": "Shaun of the Dead",
+      "to_anchor": "Fight Club"
+    },
+    {
+      "turn": 20,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "digital",
+      "from_anchor": "Fight Club",
+      "to_anchor": "The Hangover Part II"
+    }
+  ]
+}

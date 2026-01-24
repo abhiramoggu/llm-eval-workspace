@@ -1,0 +1,706 @@
+{
+  "session_id": "00001",
+  "model_name": "gemma:2b",
+  "true_genre": "comedy-drama",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a comedy-drama movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy-drama",
+        "anchor_title": "Forgetting Sarah Marshall",
+        "constraints": {
+          "genre": "comedy-drama"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I would recommend \"I Can Do Bad All by Myself\" and \"The Great Debaters\".\n\n\"I Can Do Bad All by Myself\" is a hilarious and heartwarming comedy-drama about a woman taking matters into her own hands when she is robbed.\n\n\"The Great Debaters\" is a powerful and inspiring story about a college professor who inspires his students to form a debate team that challenges Harvard.",
+      "constraints": {
+        "genre": "comedy-drama",
+        "plot": [
+          "comedy",
+          "drama"
+        ],
+        "name": "You"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Andie MacDowell. That sounds intriguing. (I’m thinking of The Great Debaters.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Andie MacDowell",
+        "anchor_title": "Dear John",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Forgetting Sarah Marshall",
+          "to_anchor": "Dear John"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, 'The X Files' or 'The Dangerous Lives of Altar Boys' would be highly recommended. 'The X Files' is a thrilling and thought-provoking drama about conspiracy and government secrets, while 'The Dangerous Lives of Altar Boys' is a hilarious and heartwarming comedy about Catholic school friends.",
+      "constraints": {
+        "genre": "comedy-drama",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "The Great Debaters",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Andie MacDowell",
+        "anchor_title": "Dear John",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a comedy-drama recommendation, \"The Truman Show\" might be your cup of tea. It's a heartwarming story about an insurance salesman who discovers his life is a reality TV show. The plot combines humor and drama to create a unique and engaging experience.",
+      "constraints": {
+        "genre": "comedy-drama",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Truman. I want to try something more monster (character species)—Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "monster (character species)",
+        "anchor_title": "The Mummy Returns",
+        "constraints": {
+          "genre": "monster (character species)",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 4,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "receives",
+          "from_anchor": "Dear John",
+          "to_anchor": "The Mummy Returns"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences, \"Truman\" appears to be the most fitting recommendation from the list. It's a movie about an eccentric and complex character facing emotional and psychological challenges, perfectly capturing your desire for a more monster (character species) vibe.",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Truman",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "monster (character species)",
+        "anchor_title": "The Mummy Returns",
+        "constraints": {
+          "genre": "monster (character species)",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for something similar to 'Despicable Me 2', you might enjoy 'The Right Stuff'. If you're interested in something with a more serious tone and powerful performance from an iconic actor, then 'Terminator 2: Judgment Day' might be for you. For something more biographical, 'Bobby' would be a great choice.",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Despicable Me 2? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "monster (character species)",
+        "anchor_title": "The Mummy Returns",
+        "constraints": {
+          "genre": "monster (character species)",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Since the user was looking for a movie with a mysterious and atmospheric tone, I would recommend **The Mummy Returns**. The movie features a vengeful and twisted mummy who returns to terrorize London, while also exploring themes of obsession and death.",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "Despicable Me",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "monster (character species)",
+        "anchor_title": "The Mummy Returns",
+        "constraints": {
+          "genre": "monster (character species)",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference, \"The Stuff\" might be a good fit. It features a delicious goo that turns into a deadly menace when consumed by zombies. The intriguing plot and the legendary Danny Aiello make it a captivating movie.",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Legend tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "monster (character species)",
+        "anchor_title": "The Mummy Returns",
+        "constraints": {
+          "genre": "monster (character species)",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Since the user prefers monster and an adventurous theme, 'The Wrestler' or 'Super' would be good choices. 'The Wrestler' features a compelling performance by Jake Gyllenhaal and a surprisingly deep story about redemption and morality. 'Super' showcases the imaginative world of a young superhero and his adventures, while still being a light-hearted movie.",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Legend",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Kylie Scott? Hmm, I didn’t expect that vibe. (I’m thinking of Hero.)",
+      "user_meta": {
+        "turn": 9,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Kylie Scott",
+        "anchor_title": "Jaws",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Kylie Scott",
+          "actor": "Jet Li"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 9,
+          "from_focus": "genre",
+          "to_focus": "writer",
+          "bridge_field": "actor",
+          "bridge_value": "Jet Li",
+          "from_anchor": "The Mummy Returns",
+          "to_anchor": "Jaws"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The Santa Clause 2 (2002) seems like a good fit based on the character description. It's a heartwarming story about a Santa Claus navigating a world without magic.",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "written",
+          "scott"
+        ],
+        "name": "Her",
+        "actor": "Andie MacDowell",
+        "writer": "Kylie Scott"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Kylie Scott",
+        "anchor_title": "Jaws",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Kylie Scott",
+          "actor": "Jet Li"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference, I would recommend 'The River' or 'The Number 23'. 'The River' explores the devastating impact of flooding and erosion on the Mississippi River, while 'The Number 23' focuses on a man's obsessive pursuit of a fictionalized version of himself.",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Andie MacDowell",
+        "writer": "Kylie Scott"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The River tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Kylie Scott",
+        "anchor_title": "Jaws",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Kylie Scott",
+          "actor": "Jet Li"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for a monster movie with a chilling atmosphere and a strong female protagonist, then \"Smilla's Sense of Snow\" is a great choice. If you prefer a film with a dark sense of humor and a clever plot, then \"Witless Protection\" is an excellent option. If you're interested in a visually stunning and thought-provoking film about a daring tightrope walker, then \"Man on Wire\" is a perfect recommendation.",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The River",
+        "actor": "Andie MacDowell",
+        "writer": "Kylie Scott"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Kylie Scott",
+        "anchor_title": "Jaws",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Kylie Scott",
+          "actor": "Jet Li"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference, I would recommend \"Hot Tub Time Machine\" or \"The River\". \"Hot Tub Time Machine\" is a humorous and heartwarming monster movie starring Andie MacDowell, and \"The River\" is a poignant and thought-provoking documentary about the devastating impact of floods and erosion on the Mississippi River system.",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "The River",
+        "actor": "Andie MacDowell",
+        "writer": "Kylie Scott"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The River? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Kylie Scott",
+        "anchor_title": "Jaws",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Kylie Scott",
+          "actor": "Jet Li"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference for monster movies, I would recommend **An Early Frost** or **Deep**. Both films explore the darker and more unsettling aspects of human nature and the complexities of love and war.",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "what",
+          "river"
+        ],
+        "name": "The River",
+        "actor": "Andie MacDowell",
+        "writer": "Kylie Scott"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of An Early Frost. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Kylie Scott",
+        "anchor_title": "Jaws",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Kylie Scott",
+          "actor": "Jet Li"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for something with a thrilling plot that explores the power of sound and its impact on perception, then \"District 9\" might be your cup of tea. Or, if you're more drawn to a creature with a fascinating backstory, \"The Skull\" might be more your style.",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "An Early Frost",
+        "actor": "Andie MacDowell",
+        "writer": "Kylie Scott"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Kylie Scott",
+        "anchor_title": "Jaws",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Kylie Scott",
+          "actor": "Jet Li"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The Wolfman or In Bruges would be great choices. Both movies deal with monsters in unique and interesting ways.",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "An Early Frost",
+        "actor": "Andie MacDowell",
+        "writer": "Kylie Scott"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Jake Sandvig. That sounds intriguing. (I’m thinking of The Wolfman.)",
+      "user_meta": {
+        "turn": 16,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Jake Sandvig",
+        "anchor_title": "The Pacifier",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Kylie Scott",
+          "actor": "Jake Sandvig",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 16,
+          "from_focus": "writer",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Jaws",
+          "to_anchor": "The Pacifier"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for something with Jake Sandvig, \"Happy Feet\" might be a good fit. It's a delightful musical about penguins with soulmates who can tap dance.",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Wolf",
+        "actor": "Jake Sandvig",
+        "writer": "Kylie Scott"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jake Sandvig",
+        "anchor_title": "The Pacifier",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Kylie Scott",
+          "actor": "Jake Sandvig",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here are the recommendations you requested:\n\n- Velocity (2005) starring Lance King and Anna Zykov is a thrilling and visually stunning film about a team's fight for survival in the MotoGP Championship racing series.\n\n- Maid in Manhattan (2002) starring Brooke Fields and Jack Nicholson is a romantic comedy about a woman's escape from a controlling family.\n\n- True Crime (N/A) starring Diane Venora, Isaiah Washington, and Mary McCormack is a suspenseful and thought-provoking film about a journalist's relentless pursuit of the truth.",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Jake Sandvig",
+        "writer": "Kylie Scott"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of True Crime. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jake Sandvig",
+        "anchor_title": "The Pacifier",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Kylie Scott",
+          "actor": "Jake Sandvig",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I recommend either \"District 9\" or \"The Other Guys\". Both movies offer intriguing plot elements within the true crime genre, and both feature interesting and well-known actors.",
+      "constraints": {
+        "genre": "true crime",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "True Crime",
+        "actor": "Jake Sandvig",
+        "writer": "Kylie Scott"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jake Sandvig",
+        "anchor_title": "The Pacifier",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Kylie Scott",
+          "actor": "Jake Sandvig",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You or Avatar would be excellent choices. Both movies deal with the complexities of human relationships and the consequences of violence and prejudice.",
+      "constraints": {
+        "genre": "true crime",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Deep",
+        "actor": "Jake Sandvig",
+        "writer": "Kylie Scott"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jake Sandvig",
+        "anchor_title": "The Pacifier",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Kylie Scott",
+          "actor": "Jake Sandvig",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for something with epic scope and intricate storytelling, consider \"The Odyssey\". If you're drawn to a film about a vengeful ex-wife seeking revenge on her ex-husband, \"Man on Fire\" might be more your style. If you're interested in a contemporary satire about love and relationships, \"Why Did I Get Married?\" is a great choice.",
+      "constraints": {
+        "genre": "true crime",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "actor": "Jake Sandvig",
+        "writer": "Kylie Scott"
+      }
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Forgetting Sarah Marshall",
+      "to_anchor": "Dear John"
+    },
+    {
+      "turn": 4,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "receives",
+      "from_anchor": "Dear John",
+      "to_anchor": "The Mummy Returns"
+    },
+    {
+      "turn": 9,
+      "from_focus": "genre",
+      "to_focus": "writer",
+      "bridge_field": "actor",
+      "bridge_value": "Jet Li",
+      "from_anchor": "The Mummy Returns",
+      "to_anchor": "Jaws"
+    },
+    {
+      "turn": 16,
+      "from_focus": "writer",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Jaws",
+      "to_anchor": "The Pacifier"
+    }
+  ]
+}

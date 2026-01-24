@@ -1,0 +1,748 @@
+{
+  "session_id": "00001",
+  "model_name": "llama3:instruct",
+  "true_genre": "comedy-drama",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a comedy-drama movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy-drama",
+        "anchor_title": "Forgetting Sarah Marshall",
+        "constraints": {
+          "genre": "comedy-drama"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your request for a comedy-drama, I think you might really enjoy \"I Can Do Bad All by Myself\" (2009). The movie has a great balance of humor and heart, with Tyler Perry delivering his signature wit and wisdom as Madea. Plus, the all-star cast, including Mary J. Blige, adds to the film's entertainment value.\n\nIf you're interested in something a bit more offbeat, \"What Just Happened\" (2008) is another great option. The movie has a unique blend of humor and drama, with a talented ensemble cast that includes Robert De Niro, Bruce Willis, and Kristen Stewart.",
+      "constraints": {
+        "genre": "comedy-drama",
+        "plot": [
+          "comedy",
+          "drama"
+        ],
+        "name": "You"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Andie MacDowell. That sounds intriguing. (I’m thinking of I Can Do Bad All by Myself.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Andie MacDowell",
+        "anchor_title": "Dear John",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Forgetting Sarah Marshall",
+          "to_anchor": "Dear John"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think Andie MacDowell might be a bit busy in these movies, but don't worry, I've got you covered! If you enjoyed \"I Can Do Bad All By Myself\", I'd recommend checking out \"The End of the Affair\" (1999). It's a beautiful comedy-drama that explores the complexities of relationships and features Andie MacDowell in a different light.",
+      "constraints": {
+        "genre": "comedy-drama",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "I Can Do Bad All by Myself",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Andie MacDowell",
+        "anchor_title": "Dear John",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right recommendation for you! Have you considered \"The Truman Show\"? It's a thought-provoking comedy-drama that explores themes of reality and identity, starring Jim Carrey as the unwitting star of a TV show. And, fun fact: Andie MacDowell isn't in this one, but I think you'll find it's right up your alley!",
+      "constraints": {
+        "genre": "comedy-drama",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? That sounds intriguing.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Andie MacDowell",
+        "anchor_title": "Dear John",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "What a great choice! I think you might enjoy \"Love Actually\" - it's a classic romantic comedy-drama that explores what love means in different ways, with a talented ensemble cast including Hugh Grant, Liam Neeson, and Colin Firth. Plus, who can resist the charm of Andie MacDowell's absence from this film (just kidding, she's not in it, but I know you were looking for her!)",
+      "constraints": {
+        "genre": "comedy-drama",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Us",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Love Actually tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Andie MacDowell",
+        "anchor_title": "Dear John",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Have you considered \"Hitch\" (2005)? It's a delightful romantic comedy starring Will Smith, and its witty script and charming cast will surely bring a smile to your face. Plus, it explores the theme of love in all its forms, which aligns perfectly with your preference for love stories.",
+      "constraints": {
+        "genre": "love",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Love Actually",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of RED. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Andie MacDowell",
+        "anchor_title": "Dear John",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might really enjoy \"Groundhog Day\"! It's a classic romantic comedy starring Andie MacDowell, and while it may not be about building a castle, it does have a lovestruck tone that I think you'll appreciate. The movie's unique premise - where the main character relives the same day over and over again - is also a lot of fun to watch unfold!",
+      "constraints": {
+        "genre": "love",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Brian Moore (Novelist)? That feels deeper than I thought. (I’m thinking of Groundhog Day.)",
+      "user_meta": {
+        "turn": 7,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Brian Moore (Novelist)",
+        "anchor_title": "There's Something About Mary",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Willie Garson",
+          "writer": "Brian Moore (Novelist)"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 7,
+          "from_focus": "actor",
+          "to_focus": "writer",
+          "bridge_field": "actor",
+          "bridge_value": "Willie Garson",
+          "from_anchor": "Dear John",
+          "to_anchor": "There's Something About Mary"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right recommendation for you! Since you mentioned enjoying Groundhog Day, I'd like to suggest another film that explores complex themes and features Andie MacDowell - A Separate Peace. This poignant drama is based on a classic novel by John Knowles, and it delves into the complexities of human relationships and the struggles of adolescence. Give it a try!",
+      "constraints": {
+        "genre": "novel",
+        "plot": [
+          "written",
+          "brian"
+        ],
+        "name": "Groundhog Day",
+        "actor": "Andie MacDowell",
+        "writer": "Brian Moore (Novelist)"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Brian Moore (Novelist)",
+        "anchor_title": "There's Something About Mary",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Willie Garson",
+          "writer": "Brian Moore (Novelist)"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've got just the thing for you! If you enjoyed Andie MacDowell's charm in a romantic comedy, I'd highly recommend \"Green Card\". It's a classic tale of love and convenience, with great chemistry between Andie and her co-star. Plus, it's a light-hearted and feel-good film that's sure to put a smile on your face!",
+      "constraints": {
+        "genre": "novel",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Andie MacDowell",
+        "writer": "Brian Moore (Novelist)"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Ed Skrein. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Ted.)",
+      "user_meta": {
+        "turn": 9,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Ed Skrein",
+        "anchor_title": "She's All That",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Ed Skrein",
+          "director": "Seth MacFarlane"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 9,
+          "from_focus": "writer",
+          "to_focus": "actor",
+          "bridge_field": "director",
+          "bridge_value": "Seth MacFarlane",
+          "from_anchor": "There's Something About Mary",
+          "to_anchor": "She's All That"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing! Have you considered \"The Great Gatsby\" (2013)? It's a fascinating novel-turned-movie that explores themes of wealth, class, and the human condition, all set against the backdrop of the Roaring Twenties. With Ed Skrein starring alongside Tobey Maguire and Carey Mulligan, it's a visually stunning and engaging film that I think you'll really enjoy!",
+      "constraints": {
+        "genre": "novel",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Ted",
+        "actor": "Ed Skrein",
+        "writer": "Brian Moore (Novelist)"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Ed Skrein",
+        "anchor_title": "She's All That",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Ed Skrein",
+          "director": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! If you enjoyed the themes of complicated relationships and moral dilemmas in [insert previous movie], I'd recommend \"Hopeless\" (2012) - it's a great exploration of those feelings through Ben's inner turmoil as he navigates his feelings for Maryann. Or, if you're in the mood for something a bit more classic and thought-provoking, \"Wise Blood\" (1952) is a fascinating adaptation of Brian Moore's novel that explores themes of morality and redemption.",
+      "constraints": {
+        "genre": "novel",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Ed Skrein",
+        "writer": "Brian Moore (Novelist)"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Ed Skrein",
+        "anchor_title": "She's All That",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Ed Skrein",
+          "director": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Have you considered \"The Last Unicorn\"? It's a beautifully animated film with a stunning soundtrack, and it explores themes of identity and what makes us special - which seems to resonate with what you're looking for. Plus, Ed Skrein isn't in this one (he's more known for his live-action work), but I think the whimsical storytelling might scratch that novel-loving itch!",
+      "constraints": {
+        "genre": "novel",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Deep",
+        "actor": "Ed Skrein",
+        "writer": "Brian Moore (Novelist)"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Last Unicorn. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Ed Skrein",
+        "anchor_title": "She's All That",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Ed Skrein",
+          "director": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right movie for you! Have you considered \"Blow Out\"? It's a thrilling film that combines great sound design with a gripping mystery, and it stars John Travolta alongside Nancy Allen and Dennis Franz. The plot is full of twists and turns, just like the story of The Last Unicorn, which you mentioned liking the sound of!",
+      "constraints": {
+        "genre": "novel",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Last Unicorn",
+        "actor": "Ed Skrein",
+        "writer": "Brian Moore (Novelist)"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of RED? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Ed Skrein",
+        "anchor_title": "She's All That",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Ed Skrein",
+          "director": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Based on your interest in Ed Skrein and the themes of decision-making, I highly recommend \"I Heart Huckabees\". This quirky film stars Dustin Hoffman and Naomi Watts as a husband-and-wife detective duo helping others navigate life's existential crises. It's a thought-provoking and offbeat choice that might just resonate with you!",
+      "constraints": {
+        "genre": "novel",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "actor": "Ed Skrein",
+        "writer": "Brian Moore (Novelist)"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Ed Skrein",
+        "anchor_title": "She's All That",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Ed Skrein",
+          "director": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Have you considered \"Before I Go to Sleep\"? It's a thought-provoking thriller that explores themes of identity and trust, much like the uncertainty in your original preferences. With Ed Skrein starring alongside Nicole Kidman, it's a gripping film that will keep you on the edge of your seat.",
+      "constraints": {
+        "genre": "novel",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "RED",
+        "actor": "Ed Skrein",
+        "writer": "Brian Moore (Novelist)"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Trust. I want to try something more golf—That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "golf",
+        "anchor_title": "Deadpool",
+        "constraints": {
+          "genre": "golf",
+          "actor": "Ed Skrein",
+          "director": "Seth MacFarlane"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 15,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "predator",
+          "from_anchor": "She's All That",
+          "to_anchor": "Deadpool"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your interest in golf and Ed Skrein (although he's not in this list), I think you might enjoy \"Tin Cup\"! It's a fun, lighthearted film that combines golf with romance and humor, starring Kevin Costner as a washed-up pro trying to qualify for the U.S. Open.",
+      "constraints": {
+        "genre": "golf",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Trust",
+        "actor": "Ed Skrein",
+        "writer": "Brian Moore (Novelist)"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "golf",
+        "anchor_title": "Deadpool",
+        "constraints": {
+          "genre": "golf",
+          "actor": "Ed Skrein",
+          "director": "Seth MacFarlane"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"Tusk\" - it's a unique and quirky film that shares some similarities with Ed Skrein's work in terms of its offbeat humor and memorable characters. Plus, who wouldn't want to see Johnny Depp in a cameo role as Guy Lapointe?",
+      "constraints": {
+        "genre": "golf",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Ed Skrein",
+        "writer": "Brian Moore (Novelist)"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Niecy Nash. That feels deeper than I thought. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 17,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Niecy Nash",
+        "anchor_title": "Wanderlust",
+        "constraints": {
+          "genre": "golf",
+          "actor": "Niecy Nash",
+          "plot": "crazy"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 17,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "crazy",
+          "from_anchor": "Deadpool",
+          "to_anchor": "Wanderlust"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've found a great match for you! How about \"Zoolander 2\"? It's got a similar tone to \"Us\" and features Niecy Nash in a role that's just as quirky and fun. Plus, the movie has a lot of humor and over-the-top moments that are sure to keep you entertained.",
+      "constraints": {
+        "genre": "golf",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Deep",
+        "actor": "Niecy Nash",
+        "writer": "Brian Moore (Novelist)"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Niecy Nash",
+        "anchor_title": "Wanderlust",
+        "constraints": {
+          "genre": "golf",
+          "actor": "Niecy Nash",
+          "plot": "crazy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"Malibu's Most Wanted\"! It's a fun and lighthearted movie that features Niecy Nash, an actress you mentioned liking. The plot is all about cultural identity and finding one's true self, which I think would be really relatable to golf fans out there.",
+      "constraints": {
+        "genre": "golf",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Niecy Nash",
+        "writer": "Brian Moore (Novelist)"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Mark Tonderai? That feels deeper than I thought. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 19,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Mark Tonderai",
+        "anchor_title": "Cars",
+        "constraints": {
+          "genre": "golf",
+          "actor": "Niecy Nash",
+          "plot": "crazy",
+          "director": "Mark Tonderai",
+          "language": "Japanese Language"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 19,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "language",
+          "bridge_value": "Japanese Language",
+          "from_anchor": "Wanderlust",
+          "to_anchor": "Cars"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've got just the thing for you! Since you mentioned Mark Tonderai and liked \"I'm Thinking of You\", I'd recommend either \"Afterlife\" (2011) which explores a unique dynamic between a son and his father's ghost, or \"The Shadows\" (2015), a tense thriller that delves into the darker side of human nature. Both films showcase Mark Tonderai's skill in crafting thought-provoking stories with complex characters.",
+      "constraints": {
+        "genre": "golf",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Deep",
+        "actor": "Niecy Nash",
+        "writer": "Brian Moore (Novelist)",
+        "director": "Mark Tonderai"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mark Tonderai",
+        "anchor_title": "Cars",
+        "constraints": {
+          "genre": "golf",
+          "actor": "Niecy Nash",
+          "plot": "crazy",
+          "director": "Mark Tonderai",
+          "language": "Japanese Language"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"Green Card\"! It's a light-hearted romantic comedy that doesn't involve golf, but does feature Niecy Nash, which was a key cue for you. The movie follows a man who enters into a marriage of convenience, but it turns into something more, and I think it's a great fit based on your preferences.",
+      "constraints": {
+        "genre": "golf",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Niecy Nash",
+        "writer": "Brian Moore (Novelist)",
+        "director": "Mark Tonderai"
+      }
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Forgetting Sarah Marshall",
+      "to_anchor": "Dear John"
+    },
+    {
+      "turn": 7,
+      "from_focus": "actor",
+      "to_focus": "writer",
+      "bridge_field": "actor",
+      "bridge_value": "Willie Garson",
+      "from_anchor": "Dear John",
+      "to_anchor": "There's Something About Mary"
+    },
+    {
+      "turn": 9,
+      "from_focus": "writer",
+      "to_focus": "actor",
+      "bridge_field": "director",
+      "bridge_value": "Seth MacFarlane",
+      "from_anchor": "There's Something About Mary",
+      "to_anchor": "She's All That"
+    },
+    {
+      "turn": 15,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "predator",
+      "from_anchor": "She's All That",
+      "to_anchor": "Deadpool"
+    },
+    {
+      "turn": 17,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "crazy",
+      "from_anchor": "Deadpool",
+      "to_anchor": "Wanderlust"
+    },
+    {
+      "turn": 19,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "language",
+      "bridge_value": "Japanese Language",
+      "from_anchor": "Wanderlust",
+      "to_anchor": "Cars"
+    }
+  ]
+}

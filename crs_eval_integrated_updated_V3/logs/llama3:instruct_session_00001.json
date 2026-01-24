@@ -1,0 +1,744 @@
+{
+  "session_id": "00001",
+  "model_name": "llama3:instruct",
+  "true_genre": "comedy-drama",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a comedy-drama movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy-drama",
+        "anchor_title": "Soul Men",
+        "constraints": {
+          "genre": "comedy-drama"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"Madagascar\"! It's a fun and quirky animated film that combines comedy with adventure, following a group of zoo animals on their wild journey to Madagascar. And who wouldn't love the charming voice talents of Cedric the Entertainer and Andy Richter?\n\nIf you're in the mood for something a bit more offbeat, \"The Wendell Baker Story\" is also a great choice! Luke Wilson shines as a lovable ex-con trying to make a fresh start at a retirement hotel, with plenty of humor and heart along the way.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "comedy",
+          "drama"
+        ],
+        "name": "You"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Zoo. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy-drama",
+        "anchor_title": "Soul Men",
+        "constraints": {
+          "genre": "comedy-drama"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Based on your interest in \"Zoo\" feeling deeper than expected, I'm going to recommend \"Monty Python and the Holy Grail\". This classic comedy is full of absurd humor and has a unique style that will likely appeal to fans of quirky stories. The all-star cast, including Eric Idle, Graham Chapman, John Cleese, and Michael Palin, brings this tale of King Arthur's quest for the Holy Grail to life in a hilarious way.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Monty Python and the Holy Grail tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy-drama",
+        "anchor_title": "Soul Men",
+        "constraints": {
+          "genre": "comedy-drama"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"To Rome with Love\"! It's a delightful comedy that explores the romantic misadventures of some charming characters in Rome, with Woody Allen making an appearance. If you're looking for something even more offbeat and hilarious, I'd also recommend \"Top Five\" - it's a clever comedy that pokes fun at celebrity culture and features a great cast, including Chris Rock!",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Monty Python and the Holy Grail"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? That sounds intriguing.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy-drama",
+        "anchor_title": "Soul Men",
+        "constraints": {
+          "genre": "comedy-drama"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right movie for you! \"Army of Darkness\" is a hilarious comedy that combines action and adventure, with Bruce Campbell's iconic performance as Ash Williams. The film's blend of witty one-liners, memorable characters, and over-the-top humor will definitely keep you entertained.\n\nIf you're in the mood for something more light-hearted and family-oriented, I'd recommend \"Welcome Home, Roscoe Jenkins\". With a talented cast including Cedric the Entertainer, Martin Lawrence, and Louis C.K., this comedy is full of heartwarming moments and laugh-out-loud humor.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "X"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Bridget Fonda. That feels deeper than I thought. (I’m thinking of Army of Darkness.)",
+      "user_meta": {
+        "turn": 5,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Bridget Fonda",
+        "anchor_title": "Find Me Guilty",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Bridget Fonda"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 5,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Bridget Fonda",
+          "from_anchor": "Soul Men",
+          "to_anchor": "Find Me Guilty"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've found a great match for you! \"Back to the Future\" is an iconic comedy classic that's sure to delight, with a time-traveling DeLorean and Marty McFly's (played by Michael J. Fox) hilarious misadventures in the past. Or, if you're looking for something a bit more modern and zany, I'd recommend \"Date Night\", which stars Tina Fey and Steve Carell as an ordinary couple who find themselves in a series of absurd situations on their night out.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Army of Darkness",
+        "actor": "Bridget Fonda"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bridget Fonda",
+        "anchor_title": "Find Me Guilty",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Bridget Fonda"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"American Pie\"! It's a classic comedy that's all about just trying to have a good time, and it features some really talented young actors at the time, including Jason Biggs and Sean William Scott. If you're in the mood for something a little more lighthearted, I'd definitely recommend giving it a try.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Bridget Fonda"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bridget Fonda",
+        "anchor_title": "Find Me Guilty",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Bridget Fonda"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I loved \"Us\"! It's great that you didn't expect that vibe, and I think you might enjoy a comedy that's a bit unexpected in its own way. Have you seen \"22 Jump Street\"? It's an hilarious buddy cop movie with Channing Tatum and Jonah Hill, and it has a similar irreverent humor to what Jordan Peele does in \"Us\".",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "actor": "Bridget Fonda"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Yue Chinese? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 8,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "Yue Chinese",
+        "anchor_title": "The Break-Up",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Bridget Fonda",
+          "language": "Yue Chinese",
+          "plot": "night"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 8,
+          "from_focus": "actor",
+          "to_focus": "language",
+          "bridge_field": "plot",
+          "bridge_value": "night",
+          "from_anchor": "Find Me Guilty",
+          "to_anchor": "The Break-Up"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Have you considered \"ZMD: Zombies of Mass Destruction\"? It's a hilarious take on the zombie apocalypse genre, with a great cast and some truly laugh-out-loud moments. Plus, it features Russell Hodgkinson, who does an amazing job as the leader of a group trying to survive the undead hordes.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "Us",
+        "actor": "Bridget Fonda",
+        "language": "Yue Chinese"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Yue Chinese",
+        "anchor_title": "The Break-Up",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Bridget Fonda",
+          "language": "Yue Chinese",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You're looking for more laughs, right? I think you'd really enjoy \"I Love You, Man\" - it's a hilarious buddy comedy that explores the importance of having close friends in your life, just like the movie's tagline says: \"Friendship is the answer.\"",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Bridget Fonda",
+        "language": "Yue Chinese"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Yue Chinese",
+        "anchor_title": "The Break-Up",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Bridget Fonda",
+          "language": "Yue Chinese",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I see a comedy connection! Based on your cues, I'm going to recommend \"The Dangerous Lives of Altar Boys\" (2002). This quirky film features a mischievous group of teenagers getting into all sorts of trouble, and with Bridget Fonda nowhere in sight, I think you'll enjoy the fresh take on coming-of-age hijinks. Give it a try!",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "You",
+        "actor": "Bridget Fonda",
+        "language": "Yue Chinese"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Dangerous Lives of Altar Boys tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Yue Chinese",
+        "anchor_title": "The Break-Up",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Bridget Fonda",
+          "language": "Yue Chinese",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I see you're looking for something a bit lighter after that intense vibe from The Dangerous Lives of Altar Boys! I think you might enjoy \"The Sisterhood of the Traveling Pants\" - it's a heartwarming and humorous film about friendship, with a great cast of young actresses, including Bridget Fonda. Alternatively, if you're in the mood for something more action-packed and witty, \"Ocean's Thirteen\" is a fun heist movie with an all-star cast, including George Clooney and Brad Pitt!",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The Dangerous Lives of Altar Boys",
+        "actor": "Bridget Fonda",
+        "language": "ger"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Philip Kaufman? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of The Sisterhood of the Traveling Pants.)",
+      "user_meta": {
+        "turn": 12,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Philip Kaufman",
+        "anchor_title": "In Her Shoes",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Bridget Fonda",
+          "language": "Yue Chinese",
+          "plot": "night",
+          "director": "Philip Kaufman",
+          "writer": "Ann Brashares"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 12,
+          "from_focus": "language",
+          "to_focus": "director",
+          "bridge_field": "writer",
+          "bridge_value": "Ann Brashares",
+          "from_anchor": "The Break-Up",
+          "to_anchor": "In Her Shoes"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Have you considered \"The Cable Guy\"? It's a hilarious comedy starring Ben Stiller as a quirky cable installer who gets under a designer's skin (played by Jim Carrey). I think Bridget Fonda would appreciate the witty banter and absurd humor in this film.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "The Sisterhood of the Traveling Pants",
+        "actor": "Bridget Fonda",
+        "language": "ger",
+        "director": "Philip Kaufman",
+        "writer": "Philip Kaufman"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Philip Kaufman",
+        "anchor_title": "In Her Shoes",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Bridget Fonda",
+          "language": "Yue Chinese",
+          "plot": "night",
+          "director": "Philip Kaufman",
+          "writer": "Ann Brashares"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right \"more\" for you! Have you considered \"Safe Men\"? It's a hilarious comedy about two bumbling singers who are mistaken for master safe-crackers, and it stars Harvey Fierstein, who is absolutely delightful in his dual role as a gangster boss. With its wacky plot and great comedic timing, I think you'll find it a real treat!",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Bridget Fonda",
+        "language": "ger",
+        "director": "Philip Kaufman",
+        "writer": "Philip Kaufman"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Safe Men. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Philip Kaufman",
+        "anchor_title": "In Her Shoes",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Bridget Fonda",
+          "language": "Yue Chinese",
+          "plot": "night",
+          "director": "Philip Kaufman",
+          "writer": "Ann Brashares"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the ticket for you! Have you considered \"Old School\"? It's a hilarious comedy that's all about recapturing your glory days, just like in \"Safe Men\"! With an all-star cast, including Vince Vaughn and Will Ferrell, this one's sure to bring the laughs.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Safe Men",
+        "actor": "Bridget Fonda",
+        "language": "ger",
+        "director": "Philip Kaufman",
+        "writer": "Philip Kaufman"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Safe Men? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Philip Kaufman",
+        "anchor_title": "In Her Shoes",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Bridget Fonda",
+          "language": "Yue Chinese",
+          "plot": "night",
+          "director": "Philip Kaufman",
+          "writer": "Ann Brashares"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right fit for you! Have you considered \"50/50\"? It's a great comedy that deals with a really tough topic - cancer diagnosis - but manages to balance humor and heartwarming moments beautifully, thanks in part to Joseph Gordon-Levitt's wonderful performance.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "what",
+          "safe"
+        ],
+        "name": "Safe Men",
+        "actor": "Bridget Fonda",
+        "language": "ger",
+        "director": "Philip Kaufman",
+        "writer": "Philip Kaufman"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Philip Kaufman",
+        "anchor_title": "In Her Shoes",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Bridget Fonda",
+          "language": "Yue Chinese",
+          "plot": "night",
+          "director": "Philip Kaufman",
+          "writer": "Ann Brashares"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"When Harry Met Sally...\"! It's a classic romantic comedy that explores what makes relationships tick, with a dash of witty dialogue and lovable characters played by Billy Crystal and Meg Ryan (no Bridget Fonda in this one, I'm afraid!). If you're looking for something else, \"Music and Lyrics\" is also a fun choice - it's a sweet romance with Hugh Grant as a charming rock star trying to write his way back into the spotlight.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "actor": "Bridget Fonda",
+        "language": "ger",
+        "director": "Philip Kaufman",
+        "writer": "Philip Kaufman"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Philip Kaufman",
+        "anchor_title": "In Her Shoes",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Bridget Fonda",
+          "language": "Yue Chinese",
+          "plot": "night",
+          "director": "Philip Kaufman",
+          "writer": "Ann Brashares"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I might have found a great match for you! Have you considered \"Hoodwinked!\"? It's a fun and lighthearted animated comedy that pokes fun at classic fairy tales, featuring a talented voice cast including Anne Hathaway and Jim Belushi. The movie's playful take on storytelling and clever twists on familiar characters might be just what you're looking for!",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "Us",
+        "actor": "Bridget Fonda",
+        "language": "ger",
+        "director": "Philip Kaufman",
+        "writer": "Philip Kaufman"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Us. I want to try something more vietnam war—I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "vietnam war",
+        "anchor_title": "Holes",
+        "constraints": {
+          "genre": "vietnam war",
+          "actor": "Bridget Fonda",
+          "language": "Yue Chinese",
+          "plot": "night",
+          "director": "Philip Kaufman",
+          "writer": "Ann Brashares"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 18,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "friends",
+          "from_anchor": "In Her Shoes",
+          "to_anchor": "Holes"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've got just the thing for you! Have you considered \"Jackie Brown\"? It's a classic film set during the Vietnam War era, with an amazing cast including Pam Grier and Samuel L. Jackson. Plus, it features Bridget Fonda in a memorable role - I think you'll really enjoy it!",
+      "constraints": {
+        "genre": "vietnam war",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "War",
+        "actor": "Bridget Fonda",
+        "language": "ger",
+        "director": "Philip Kaufman",
+        "writer": "Philip Kaufman"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "vietnam war",
+        "anchor_title": "Holes",
+        "constraints": {
+          "genre": "vietnam war",
+          "actor": "Bridget Fonda",
+          "language": "Yue Chinese",
+          "plot": "night",
+          "director": "Philip Kaufman",
+          "writer": "Ann Brashares"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right recommendations for you!\n\nIf you enjoyed the Vietnam War genre, I'd recommend \"Kiss of the Dragon\" (2001). Although it's an action-packed thriller with a different tone, Jet Li's impressive martial arts skills and Bridget Fonda's strong presence will surely keep you engaged.",
+      "constraints": {
+        "genre": "vietnam war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Bridget Fonda",
+        "language": "ger",
+        "director": "Philip Kaufman",
+        "writer": "Philip Kaufman"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Kiss of the Dragon. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "vietnam war",
+        "anchor_title": "Holes",
+        "constraints": {
+          "genre": "vietnam war",
+          "actor": "Bridget Fonda",
+          "language": "Yue Chinese",
+          "plot": "night",
+          "director": "Philip Kaufman",
+          "writer": "Ann Brashares"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right recommendation for you! Based on your interest in \"Kiss of the Dragon\" and its deeper themes, I'd like to suggest \"Full Metal Jacket\". This classic film by Stanley Kubrick is a powerful portrayal of the Vietnam War's impact on the human psyche. With its strong performances and thought-provoking storyline, it's sure to resonate with you.",
+      "constraints": {
+        "genre": "vietnam war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Kiss of the Dragon",
+        "actor": "Bridget Fonda",
+        "language": "ger",
+        "director": "Philip Kaufman",
+        "writer": "Philip Kaufman"
+      }
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 5,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Bridget Fonda",
+      "from_anchor": "Soul Men",
+      "to_anchor": "Find Me Guilty"
+    },
+    {
+      "turn": 8,
+      "from_focus": "actor",
+      "to_focus": "language",
+      "bridge_field": "plot",
+      "bridge_value": "night",
+      "from_anchor": "Find Me Guilty",
+      "to_anchor": "The Break-Up"
+    },
+    {
+      "turn": 12,
+      "from_focus": "language",
+      "to_focus": "director",
+      "bridge_field": "writer",
+      "bridge_value": "Ann Brashares",
+      "from_anchor": "The Break-Up",
+      "to_anchor": "In Her Shoes"
+    },
+    {
+      "turn": 18,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "friends",
+      "from_anchor": "In Her Shoes",
+      "to_anchor": "Holes"
+    }
+  ]
+}

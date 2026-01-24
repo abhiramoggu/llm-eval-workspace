@@ -1,0 +1,788 @@
+{
+  "session_id": "00000",
+  "model_name": "gemma:2b",
+  "true_genre": "animal",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a animal movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "animal",
+        "anchor_title": "The Call of the Wild",
+        "constraints": {
+          "genre": "animal"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation for you:\n\nIf you're looking for an animal movie with a focus on revenge and family dynamics, then \"True Blood\" might be your cup of tea. It's a captivating story about a man seeking answers and justice for his brother's death.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "animal",
+          "could"
+        ],
+        "name": "You"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Maya? That feels deeper than I thought. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "Maya",
+        "anchor_title": "Stuart Little",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "language",
+          "bridge_field": "genre",
+          "bridge_value": "animal",
+          "from_anchor": "The Call of the Wild",
+          "to_anchor": "Stuart Little"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a movie primarily focusing on Maya and with a deeper plot, I would recommend \"The Underneath\". It's a suspenseful and thought-provoking film about a newlywed couple trapped in an underground network.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "Deep",
+        "language": "Maya"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Maya",
+        "anchor_title": "Stuart Little",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a movie with a similar tone to 'The Cabin in the Woods', with a focus on friendship and unexpected danger, recommend 'The River'.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "Maya"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Maya",
+        "anchor_title": "Stuart Little",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference for animal stories, the movie 'Passion' (2011) starring Jack Passion would be a good choice. It's a heartwarming story about a man defying social norms and embracing his passions.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "language": "Maya"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Chan-wook Park? Hmm, I didn’t expect that vibe. (I’m thinking of War.)",
+      "user_meta": {
+        "turn": 5,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Chan-wook Park",
+        "anchor_title": "The Call of the Wild",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 5,
+          "from_focus": "language",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "hunt",
+          "from_anchor": "Stuart Little",
+          "to_anchor": "The Call of the Wild"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I would recommend either \"Apocalypto\" or \"Princess Mononoke\". \"Apocalypto\" is a thrilling post-apocalyptic film about a young man's perilous journey to a world ruled by fear and oppression. \"Princess Mononoke\" is a visually stunning and emotionally charged film about a young woman's quest to find the cure for a curse.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "War",
+        "language": "Maya",
+        "director": "Chan-wook Park"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Chan-wook Park",
+        "anchor_title": "The Call of the Wild",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference, I would recommend \"Pan's Labyrinth\" and \"Fight Club\". Both movies explore themes of war, violence and redemption.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "Maya",
+        "director": "Chan-wook Park"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Eion Bailey. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Fight Club.)",
+      "user_meta": {
+        "turn": 7,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Eion Bailey",
+        "anchor_title": "Stoker",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt",
+          "actor": "Eion Bailey"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 7,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Eion Bailey",
+          "from_anchor": "The Call of the Wild",
+          "to_anchor": "Stoker"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Since the user's preference is for movies with Eion Bailey, and they are drawn to war and psychological themes, I would recommend 'Nine' or 'Shattered'. 'Nine' features a strong central performance by Elio Germano and a chilling atmosphere that will stay with you long after you watch it. 'Shattered' is another excellent choice with an unforgettable performance by Corbin Bernsen and the great Michael Caine.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Fight Club",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "Eion Bailey"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Eion Bailey",
+        "anchor_title": "Stoker",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt",
+          "actor": "Eion Bailey"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's the recommendation you requested:\n\nIf you're looking for a gripping and thought-provoking war movie, \"Insidious\" and \"The Truth\" are excellent choices. Both films explore the complexities of war and its impact on individuals and relationships.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "Eion Bailey"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Truth tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Eion Bailey",
+        "anchor_title": "Stoker",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt",
+          "actor": "Eion Bailey"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I would recommend \"End of Watch\" or \"I Heart Huckabees\". \n\n\"End of Watch\" is a documentary about the daily lives of police officers, highlighting the emotional and psychological toll of their work. \n\n\"I Heart Huckabees\" is a heartwarming story about a couple who solve mysteries and help others find meaning in their lives.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The Truth",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "Eion Bailey"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Eion Bailey",
+        "anchor_title": "Stoker",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt",
+          "actor": "Eion Bailey"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a war-themed movie recommendation, consider \"The Best Years of Our Lives\" with its poignant exploration of trauma and its impact on individuals and families.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "The Truth",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "Eion Bailey"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on The Best Years of Our Lives. I want to try something more library—still with MacKinlay Kantor if possible. Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "library",
+        "anchor_title": "Zero Dark Thirty",
+        "constraints": {
+          "genre": "library",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt",
+          "actor": "Eion Bailey",
+          "writer": "MacKinlay Kantor"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 11,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "writer",
+          "bridge_value": "MacKinlay Kantor",
+          "from_anchor": "Stoker",
+          "to_anchor": "Zero Dark Thirty"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The Best Years of Our Lives is a captivating story about a man seeking revenge for his wrongful imprisonment. If you're looking for something similar with a similar thematic element, consider watching Oldboy (2003) or Scream 4 (2011).",
+      "constraints": {
+        "genre": "library",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "The Best Years of Our Lives",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "Eion Bailey",
+        "writer": "MacKinlay Kantor"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "library",
+        "anchor_title": "Zero Dark Thirty",
+        "constraints": {
+          "genre": "library",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt",
+          "actor": "Eion Bailey",
+          "writer": "MacKinlay Kantor"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for something action-packed and thrilling, then \"Terminator 2: Judgment Day\" (1991) starring S. Epatha Merkerson and Joseph Morton is a great choice. \n\nIf you're seeking a coming-of-age film about teenagers discovering their own identities, then \"The Breakfast Club\" (N/A) starring Paul Gleason and John Kapelos would be a perfect fit. \n\nIf you're looking for a humorous and thought-provoking film about a rising executive's quest to meet a certain guest for a dinner, then \"Dinner for Schmucks\" (2010) starring Randall Park and Andrea Savage would be a great pick.",
+      "constraints": {
+        "genre": "library",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "Eion Bailey",
+        "writer": "MacKinlay Kantor"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Dinner for Schmucks? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "library",
+        "anchor_title": "Zero Dark Thirty",
+        "constraints": {
+          "genre": "library",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt",
+          "actor": "Eion Bailey",
+          "writer": "MacKinlay Kantor"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The mood of Dinner for Schmucks is dark and satirical, exploring themes of oppression, survival, and the human condition. If you enjoy movies that delve into complex characters facing adversity, 'We the Living' or 'Oldboy' might be a good fit. If you're looking for something lighter with humorous elements, 'Aladdin' or 'Maid in Manhattan' would be a good choice.",
+      "constraints": {
+        "genre": "library",
+        "plot": [
+          "what",
+          "dinner"
+        ],
+        "name": "Dinner for Schmucks",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "Eion Bailey",
+        "writer": "MacKinlay Kantor"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "library",
+        "anchor_title": "Zero Dark Thirty",
+        "constraints": {
+          "genre": "library",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt",
+          "actor": "Eion Bailey",
+          "writer": "MacKinlay Kantor"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Since the user is looking for a movie with a dark and psychological plot, I would recommend **Oldboy** (2003) starring the talented Ji-tae Yu. The movie explores themes of revenge and trauma, and its suspenseful storyline will keep you on the edge of your seat.",
+      "constraints": {
+        "genre": "library",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "Dinner for Schmucks",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "Eion Bailey",
+        "writer": "MacKinlay Kantor"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "library",
+        "anchor_title": "Zero Dark Thirty",
+        "constraints": {
+          "genre": "library",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt",
+          "actor": "Eion Bailey",
+          "writer": "MacKinlay Kantor"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Apocalypto seems like a great choice based on the keywords. It's a dystopian film with a compelling plot and strong performances.",
+      "constraints": {
+        "genre": "library",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "Dinner for Schmucks",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "Eion Bailey",
+        "writer": "MacKinlay Kantor"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "library",
+        "anchor_title": "Zero Dark Thirty",
+        "constraints": {
+          "genre": "library",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt",
+          "actor": "Eion Bailey",
+          "writer": "MacKinlay Kantor"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference for library-style movies with complex characters and thought-provoking themes, I would recommend either **Apocalypto** (2006) or **This Girl** (2013). Both movies explore themes of societal decline, the power of friendship, and the struggle for survival.",
+      "constraints": {
+        "genre": "library",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Dinner for Schmucks",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "Eion Bailey",
+        "writer": "MacKinlay Kantor"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "library",
+        "anchor_title": "Zero Dark Thirty",
+        "constraints": {
+          "genre": "library",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt",
+          "actor": "Eion Bailey",
+          "writer": "MacKinlay Kantor"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I would recommend \"The Time Machine\" and \"Fight Club\". These movies perfectly match the criteria outlined by the user:\n\n* **The Time Machine**: A dystopian vision of a future society with a totalitarian government.\n* **Fight Club**: A gritty and violent film about an underground fight club that evolves into something much more sinister.",
+      "constraints": {
+        "genre": "library",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Dinner for Schmucks",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "Eion Bailey",
+        "writer": "MacKinlay Kantor"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Fight Club tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "library",
+        "anchor_title": "Zero Dark Thirty",
+        "constraints": {
+          "genre": "library",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt",
+          "actor": "Eion Bailey",
+          "writer": "MacKinlay Kantor"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences, I would recommend \"I Heart Huckabees\" or \"What Women Want\". Both movies are thought-provoking and explore existential themes in a humorous and engaging way.",
+      "constraints": {
+        "genre": "library",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Fight Club",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "Eion Bailey",
+        "writer": "MacKinlay Kantor"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "library",
+        "anchor_title": "Zero Dark Thirty",
+        "constraints": {
+          "genre": "library",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt",
+          "actor": "Eion Bailey",
+          "writer": "MacKinlay Kantor"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Since the user is interested in a library theme and prefers a library-themed movie, \"White Fang\" would be a good recommendation. It's a classic film about a loyal dog who is traded away for gold and subsequently tormented to transform him into a fighting dog.",
+      "constraints": {
+        "genre": "library",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "Eion Bailey",
+        "writer": "MacKinlay Kantor"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Eva Birthistle. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 20,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Eva Birthistle",
+        "anchor_title": "Anchorman: The Legend of Ron Burgundy",
+        "constraints": {
+          "genre": "library",
+          "language": "English",
+          "director": "Chan-wook Park",
+          "plot": "hunt",
+          "actor": "Eva Birthistle",
+          "writer": "MacKinlay Kantor"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 20,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Zero Dark Thirty",
+          "to_anchor": "Anchorman: The Legend of Ron Burgundy"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference, 'Princess Mononoke' and 'American Pie' seem like good recommendations. Both movies offer unique and captivating narratives with interesting characters and intriguing plot elements.",
+      "constraints": {
+        "genre": "library",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Us",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "Eva Birthistle",
+        "writer": "MacKinlay Kantor"
+      }
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "language",
+      "bridge_field": "genre",
+      "bridge_value": "animal",
+      "from_anchor": "The Call of the Wild",
+      "to_anchor": "Stuart Little"
+    },
+    {
+      "turn": 5,
+      "from_focus": "language",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "hunt",
+      "from_anchor": "Stuart Little",
+      "to_anchor": "The Call of the Wild"
+    },
+    {
+      "turn": 7,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Eion Bailey",
+      "from_anchor": "The Call of the Wild",
+      "to_anchor": "Stoker"
+    },
+    {
+      "turn": 11,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "writer",
+      "bridge_value": "MacKinlay Kantor",
+      "from_anchor": "Stoker",
+      "to_anchor": "Zero Dark Thirty"
+    },
+    {
+      "turn": 20,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Zero Dark Thirty",
+      "to_anchor": "Anchorman: The Legend of Ron Burgundy"
+    }
+  ]
+}

@@ -1,0 +1,904 @@
+{
+  "session_id": "00004",
+  "model_name": "llama3:instruct",
+  "true_genre": "cult",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a cult movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "cult",
+        "anchor_title": "The Stepfather",
+        "constraints": {
+          "genre": "cult"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the cult movie for you! Have you considered \"Final Destination\" (2000)? It's a thrilling ride that combines clever plotting with some really great performances, including Kristen Cloke and Brendan Fehr. And who can forget those iconic death scenes?",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "cult",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "Final Destination",
+        "Hitch",
+        "Downfall",
+        "The Queen"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Lolita Davidovich. That feels deeper than I thought. (I’m thinking of Final Destination.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Lolita Davidovich",
+        "anchor_title": "Blade Runner",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "writer": "Glen Morgan"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "writer",
+          "bridge_value": "Glen Morgan",
+          "from_anchor": "The Stepfather",
+          "to_anchor": "Blade Runner"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've found some great matches for you! If you're looking for a cult classic that's as action-packed as Final Destination, I'd recommend \"Predator\" (1987). This sci-fi thriller stars Carl Weathers and features an iconic performance by the alien predator itself - it's a must-see for any fan of campy humor and over-the-top action.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Final Destination",
+        "actor": "Lolita Davidovich"
+      },
+      "rec_titles": [
+        "Predator",
+        "The Missing",
+        "Cutthroat Island",
+        "Creepshow 2"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Lolita Davidovich",
+        "anchor_title": "Blade Runner",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Lolita Davidovich",
+          "writer": "Glen Morgan"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Have you considered \"Six-String Samurai\"? It's a cult classic that combines post-apocalyptic adventure with rock 'n' roll spirit, starring Kim De Angelo and Stephane Gauger. The movie has a really fun, quirky vibe that I think you'll enjoy!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Lolita Davidovich"
+      },
+      "rec_titles": [
+        "Six-String Samurai",
+        "The Swindle",
+        "The Truth",
+        "Braveheart"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Francis Barrett? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 4,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Francis Barrett",
+        "anchor_title": "Creepshow 2",
+        "constraints": {
+          "genre": "cult",
+          "writer": "Francis Barrett",
+          "plot": "mine"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 4,
+          "from_focus": "actor",
+          "to_focus": "writer",
+          "bridge_field": "plot",
+          "bridge_value": "mine",
+          "from_anchor": "Blade Runner",
+          "to_anchor": "Creepshow 2"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! If you're looking for a cult classic that will keep you on the edge of your seat, I'd highly recommend \"Final Destination\". The premonition plot twist is genius, and the deathly consequences that follow are both thrilling and unsettling. Plus, it stars Lolita Davidovich's co-star from \"You Were Never Really Here\", Seann William Scott!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "written",
+          "francis"
+        ],
+        "name": "RED",
+        "actor": "Lolita Davidovich",
+        "writer": "Francis Barrett"
+      },
+      "rec_titles": [
+        "Final Destination",
+        "The Husband's Secret",
+        "Saw V",
+        "Night of the Living Dead"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Francis Barrett",
+        "anchor_title": "Creepshow 2",
+        "constraints": {
+          "genre": "cult",
+          "writer": "Francis Barrett",
+          "plot": "mine"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've got just the thing for you! Have you considered \"The Swindle\"? It's a cult classic with a fun premise and some fantastic performances from Michel Serrault and Isabelle Huppert. Plus, it's got that extra layer of humor and wit that makes it really stand out.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Lolita Davidovich",
+        "writer": "Francis Barrett"
+      },
+      "rec_titles": [
+        "Jason Bourne",
+        "The Swindle",
+        "Creepshow 2",
+        "How to Train Your Dragon"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Thing? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Francis Barrett",
+        "anchor_title": "Creepshow 2",
+        "constraints": {
+          "genre": "cult",
+          "writer": "Francis Barrett",
+          "plot": "mine"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"The Trouble with Harry\"! It's a classic mystery film with a unique and quirky tone, much like \"The Thing\". The story follows a group of people trying to figure out what happened to Harry's body, which is found in the woods, and it's a great example of how a mysterious plot can be entertaining without being scary.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "thing"
+        ],
+        "name": "The Thing",
+        "actor": "Lolita Davidovich",
+        "writer": "Francis Barrett"
+      },
+      "rec_titles": [
+        "Utsav",
+        "Find Me Guilty",
+        "The Trouble with Harry",
+        "Bram Stoker's Dracula"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Trouble with Harry tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Francis Barrett",
+        "anchor_title": "Creepshow 2",
+        "constraints": {
+          "genre": "cult",
+          "writer": "Francis Barrett",
+          "plot": "mine"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've found a great match for you! Based on your interest in \"The Trouble with Harry\", I'm going to recommend \"The Big Lebowski\". This cult classic shares a similar offbeat humor and quirky characters, and who knows, you might even find yourself pondering what kind of trouble would ensue if Jeff Bridges' The Dude got mixed up with the EDL!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The Trouble with Harry",
+        "actor": "Lolita Davidovich",
+        "writer": "Francis Barrett"
+      },
+      "rec_titles": [
+        "Pride and Prejudice",
+        "Divergent",
+        "Passion",
+        "The Big Lebowski"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Francis Barrett",
+        "anchor_title": "Creepshow 2",
+        "constraints": {
+          "genre": "cult",
+          "writer": "Francis Barrett",
+          "plot": "mine"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"Creepshow 2\" - it's a cult classic with a similar tone and style to what you're looking for. The movie features three separate stories, each with its own unique blend of horror and dark humor, and has a great cast including Dorothy Lamour and Stephen King himself!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "actor": "Lolita Davidovich",
+        "writer": "Francis Barrett"
+      },
+      "rec_titles": [
+        "Mama",
+        "Creepshow 2",
+        "Dogma",
+        "The Way of the Gun"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Milos Forman. Hmm, I didn’t expect that vibe. (I’m thinking of Creepshow 2.)",
+      "user_meta": {
+        "turn": 9,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Milos Forman",
+        "anchor_title": "The Return of the Living Dead",
+        "constraints": {
+          "genre": "cult",
+          "writer": "George A. Romero",
+          "plot": "mine",
+          "actor": "Milos Forman"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 9,
+          "from_focus": "writer",
+          "to_focus": "actor",
+          "bridge_field": "writer",
+          "bridge_value": "George A. Romero",
+          "from_anchor": "Creepshow 2",
+          "to_anchor": "The Return of the Living Dead"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've found a perfect match for you! Have you considered \"Keeping the Faith\"? It's a charming comedy that features Milos Forman, and its blend of romance, humor, and faith is sure to delight. With a talented cast including Jenna Elfman, Ben Stiller, and Edward Norton, this film is a great way to spend an evening.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Creepshow 2",
+        "actor": "Milos Forman",
+        "writer": "Francis Barrett",
+        "director": "Milos Forman"
+      },
+      "rec_titles": [
+        "The Rosie Project",
+        "The Good, the Bad and the Ugly",
+        "Disaster Movie",
+        "Keeping the Faith"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Milos Forman",
+        "anchor_title": "The Return of the Living Dead",
+        "constraints": {
+          "genre": "cult",
+          "writer": "George A. Romero",
+          "plot": "mine",
+          "actor": "Milos Forman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Have you considered \"The Stuff\"? It's a cult classic with a delightfully quirky premise and some great performances from Danny Aiello, Garrett Morris, and Paul Sorvino. Plus, it's a fun commentary on consumer culture and societal obsession.\n\nIf that doesn't strike your fancy, I'd also recommend \"Blade Runner\" - it's a sci-fi masterpiece with stunning visuals and a thought-provoking exploration of humanity.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Milos Forman",
+        "writer": "Francis Barrett",
+        "director": "Milos Forman"
+      },
+      "rec_titles": [
+        "The Stuff",
+        "Blade Runner",
+        "Hopeless",
+        "The Cabin in the Woods"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Blade Runner? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Milos Forman",
+        "anchor_title": "The Return of the Living Dead",
+        "constraints": {
+          "genre": "cult",
+          "writer": "George A. Romero",
+          "plot": "mine",
+          "actor": "Milos Forman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might really enjoy \"The Trouble with Harry\"! It's a classic whodunit with a quirky tone and some great character interactions, not unlike something Milos Forman might have done. Plus, the setting and themes of small-town secrets and mysterious deaths seem like they could be right up your alley.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "blade"
+        ],
+        "name": "Blade Runner",
+        "actor": "Milos Forman",
+        "writer": "Francis Barrett",
+        "director": "Milos Forman"
+      },
+      "rec_titles": [
+        "Wolf Creek",
+        "The Trouble with Harry",
+        "Lady in the Water",
+        "Zero Effect"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on The Trouble with Harry. I want to try something more germany—Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "germany",
+        "anchor_title": "Keeping the Faith",
+        "constraints": {
+          "genre": "germany",
+          "writer": "George A. Romero",
+          "plot": "mine",
+          "actor": "Milos Forman"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 12,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "minds",
+          "from_anchor": "The Return of the Living Dead",
+          "to_anchor": "Keeping the Faith"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"Wanderlust\" (2012), a film that combines elements of adventure, self-discovery, and spiritual questing. With its stunning Icelandic landscapes and themes of letting go of the past, it's a great match for someone looking for a thought-provoking German-language movie.",
+      "constraints": {
+        "genre": "germany",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "The Trouble with Harry",
+        "actor": "Milos Forman",
+        "writer": "Francis Barrett",
+        "director": "Milos Forman",
+        "language": "German"
+      },
+      "rec_titles": [
+        "Wanderlust",
+        "3",
+        "The NeverEnding Story",
+        "Man on the Moon"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "germany",
+        "anchor_title": "Keeping the Faith",
+        "constraints": {
+          "genre": "germany",
+          "writer": "George A. Romero",
+          "plot": "mine",
+          "actor": "Milos Forman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right recommendations for you! Based on your interest in German culture and Milos Forman, I'd like to suggest \"You\" (2014) - a thought-provoking film that explores themes of justice and morality, which seems to resonate with your previous preferences. The movie also features a gripping plot and strong performances.",
+      "constraints": {
+        "genre": "germany",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Milos Forman",
+        "writer": "Francis Barrett",
+        "director": "Milos Forman",
+        "language": "German"
+      },
+      "rec_titles": [
+        "You",
+        "True Crime",
+        "The Cabin in the Woods",
+        "Tusk"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "germany",
+        "anchor_title": "Keeping the Faith",
+        "constraints": {
+          "genre": "germany",
+          "writer": "George A. Romero",
+          "plot": "mine",
+          "actor": "Milos Forman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "What a fascinating combination of preferences! I think you'd really enjoy \"Amadeus\" (1979) - Milos Forman, the director and writer Francis Barrett are both associated with this iconic film about Wolfgang Amadeus Mozart's life, as told by his rival Antonio Salieri. Tom Hulce's portrayal of Mozart is particularly noteworthy, bringing to life one of history's most fascinating figures!",
+      "constraints": {
+        "genre": "germany",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "actor": "Milos Forman",
+        "writer": "Francis Barrett",
+        "director": "Milos Forman",
+        "language": "German"
+      },
+      "rec_titles": [
+        "Amadeus",
+        "Pride and Prejudice",
+        "The Yearling",
+        "Witless Protection"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Mike Nichols? Hmm, I didn’t expect that vibe. (I’m thinking of Wolf.)",
+      "user_meta": {
+        "turn": 15,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Mike Nichols",
+        "anchor_title": "You",
+        "constraints": {
+          "genre": "germany",
+          "writer": "George A. Romero",
+          "plot": "mine",
+          "actor": "Milos Forman",
+          "director": "Mike Nichols"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 15,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "genre",
+          "bridge_value": "germany",
+          "from_anchor": "Keeping the Faith",
+          "to_anchor": "You"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "You've had a taste of Mike Nichols' work, and now you're looking for something else that might scratch that same itch! I think you'd really enjoy \"The Lives of Others\" - it's a powerful drama set in East Berlin, with incredible performances from Ulrich Mühe and Sebastian Koch. Plus, the themes of surveillance and human connection might resonate with you after experiencing the complex characters in Wolf.",
+      "constraints": {
+        "genre": "germany",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Wolf",
+        "actor": "Milos Forman",
+        "writer": "Francis Barrett",
+        "director": "Mike Nichols",
+        "language": "German"
+      },
+      "rec_titles": [
+        "Keeping the Faith",
+        "Trees Lounge",
+        "3",
+        "The Lives of Others"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mike Nichols",
+        "anchor_title": "You",
+        "constraints": {
+          "genre": "germany",
+          "writer": "George A. Romero",
+          "plot": "mine",
+          "actor": "Milos Forman",
+          "director": "Mike Nichols"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Have you considered \"What Planet Are You From?\"? It's a unique blend of sci-fi and romance, with a great cast that includes Linda Fiorentino and Janeane Garofalo. Plus, the premise is just so intriguing - who wouldn't want to fall in love on another planet?",
+      "constraints": {
+        "genre": "germany",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Milos Forman",
+        "writer": "Francis Barrett",
+        "director": "Mike Nichols",
+        "language": "German"
+      },
+      "rec_titles": [
+        "Shutter",
+        "What Planet Are You From?",
+        "My Girl 2",
+        "The Skull"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of RED. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mike Nichols",
+        "anchor_title": "You",
+        "constraints": {
+          "genre": "germany",
+          "writer": "George A. Romero",
+          "plot": "mine",
+          "actor": "Milos Forman",
+          "director": "Mike Nichols"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've got just the thing for you! Have you considered \"The Stuff\"? It's a cult classic that shares some of the same quirky, offbeat energy as RED. Plus, with Danny Aiello and Garrett Morris starring, you're in for a treat - it's a wild ride filled with humor and suspense!",
+      "constraints": {
+        "genre": "germany",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "actor": "Milos Forman",
+        "writer": "Francis Barrett",
+        "director": "Mike Nichols",
+        "language": "German"
+      },
+      "rec_titles": [
+        "The Stuff",
+        "The Magus",
+        "The Nanny",
+        "The Relic"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mike Nichols",
+        "anchor_title": "You",
+        "constraints": {
+          "genre": "germany",
+          "writer": "George A. Romero",
+          "plot": "mine",
+          "actor": "Milos Forman",
+          "director": "Mike Nichols"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right fit for you! Have you considered \"The Lives of Others\"? It's a critically acclaimed film that explores the complexities of human connection in a fascinating way, much like \"Us\". You'll be transported to East Berlin in the 1980s and get caught up in the lives of a writer and his lover through the eyes of an observant agent.",
+      "constraints": {
+        "genre": "germany",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Deep",
+        "actor": "Milos Forman",
+        "writer": "Francis Barrett",
+        "director": "Mike Nichols",
+        "language": "German"
+      },
+      "rec_titles": [
+        "Little Fockers",
+        "The Lives of Others",
+        "Downfall",
+        "3"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Ted. I want to try something more vietnam war—That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "vietnam war",
+        "anchor_title": "Full Metal Jacket",
+        "constraints": {
+          "genre": "vietnam war",
+          "writer": "George A. Romero",
+          "plot": "mine",
+          "actor": "Milos Forman",
+          "director": "Mike Nichols"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 19,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "wish",
+          "from_anchor": "You",
+          "to_anchor": "Full Metal Jacket"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've got just the film for you! Have you considered \"The Wind That Shakes the Barley\"? It's a powerful and poignant portrayal of the Irish War of Independence, with incredible performances from Orla Fitzgerald and Padraic Delaney. The cinematography is stunning, and the story really gets under your skin.\n\nIf that doesn't strike your fancy, I think you might enjoy \"Braveheart\" instead. Who can resist a good epic battle scene? Mel Gibson's performance as William Wallace is legendary, and the film's themes of freedom and sacrifice are sure to resonate.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "War",
+        "actor": "Milos Forman",
+        "writer": "Francis Barrett",
+        "director": "Mike Nichols",
+        "language": "German"
+      },
+      "rec_titles": [
+        "The Wind That Shakes the Barley",
+        "Princess Mononoke",
+        "The Siege",
+        "Braveheart"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "vietnam war",
+        "anchor_title": "Full Metal Jacket",
+        "constraints": {
+          "genre": "vietnam war",
+          "writer": "George A. Romero",
+          "plot": "mine",
+          "actor": "Milos Forman",
+          "director": "Mike Nichols"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Have you considered \"Schindler's List\"? It's a powerful and emotional film that tells an important true story, and Liam Neeson gives a remarkable performance as Oskar Schindler. Plus, it's a great opportunity to learn more about an often-overlooked aspect of World War II history.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Milos Forman",
+        "writer": "Francis Barrett",
+        "director": "Mike Nichols",
+        "language": "German"
+      },
+      "rec_titles": [
+        "Catch-22",
+        "Saving Private Ryan",
+        "Schindler's List",
+        "The White Countess"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "writer",
+      "bridge_value": "Glen Morgan",
+      "from_anchor": "The Stepfather",
+      "to_anchor": "Blade Runner"
+    },
+    {
+      "turn": 4,
+      "from_focus": "actor",
+      "to_focus": "writer",
+      "bridge_field": "plot",
+      "bridge_value": "mine",
+      "from_anchor": "Blade Runner",
+      "to_anchor": "Creepshow 2"
+    },
+    {
+      "turn": 9,
+      "from_focus": "writer",
+      "to_focus": "actor",
+      "bridge_field": "writer",
+      "bridge_value": "George A. Romero",
+      "from_anchor": "Creepshow 2",
+      "to_anchor": "The Return of the Living Dead"
+    },
+    {
+      "turn": 12,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "minds",
+      "from_anchor": "The Return of the Living Dead",
+      "to_anchor": "Keeping the Faith"
+    },
+    {
+      "turn": 15,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "genre",
+      "bridge_value": "germany",
+      "from_anchor": "Keeping the Faith",
+      "to_anchor": "You"
+    },
+    {
+      "turn": 19,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "wish",
+      "from_anchor": "You",
+      "to_anchor": "Full Metal Jacket"
+    }
+  ]
+}

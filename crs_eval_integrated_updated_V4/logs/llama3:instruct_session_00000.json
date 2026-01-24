@@ -1,0 +1,770 @@
+{
+  "session_id": "00000",
+  "model_name": "llama3:instruct",
+  "true_genre": "animal",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a animal movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "animal",
+        "anchor_title": "The Velveteen Rabbit",
+        "constraints": {
+          "genre": "animal"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd be happy to recommend some animal-themed movies for you! Based on your interest, I think \"Frankenweenie\" (2012) would be a great choice. It's a stop-motion animated film about a boy who brings his beloved dog back to life through science, and it features an all-star voice cast including Martin Short and Winona Ryder. If you're looking for something a bit more lighthearted, \"Cloudy with a Chance of Meatballs 2\" (2013) is another fun option that combines animals and food in a unique way!",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "animal",
+          "could"
+        ],
+        "name": "You"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Maya? That feels deeper than I thought. (I’m thinking of 3.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "Maya",
+        "anchor_title": "The Goldfinch",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "plot": "eventually"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "language",
+          "bridge_field": "plot",
+          "bridge_value": "eventually",
+          "from_anchor": "The Velveteen Rabbit",
+          "to_anchor": "The Goldfinch"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "What a fascinating set of options!\n\nIf you're looking for something primarily in Maya, I'd highly recommend \"Apocalypto\" (2006). This visually stunning film is set in the midst of the Mayan civilization's decline and follows a young man's perilous journey to uncover the truth. With its rich cultural context and powerful storytelling, it's an immersive experience that will transport you to a bygone era.\n\nAlternatively, if you're open to exploring different genres, \"Alex in Wonderland\" could be an intriguing choice. It's a semi-autobiographical comedy-drama that delves into the creative process of a filmmaker, featuring cameos from iconic figures like Federico Fellini and Jeanne Moreau.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "3",
+        "language": "Maya"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Maya",
+        "anchor_title": "The Goldfinch",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "plot": "eventually"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Since you're looking for more animal-related movies, I'd recommend \"Stuart Little\" - it's a heartwarming tale about a mouse who brings joy to his new family. The animation is adorable, and the story is full of humor and charm.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "Maya"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Maya",
+        "anchor_title": "The Goldfinch",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "plot": "eventually"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right fit for you! Based on your interest in the sound and like of the movie \"You\", I'd recommend \"The Velveteen Rabbit\". This charming animated film tells a heartwarming story of a lonely boy who befriends a brave velveteen rabbit, which I think you'll find quite endearing. Plus, it's a classic that has stood the test of time!",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "You",
+        "language": "Maya"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Edgar Wright? That sounds intriguing. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 5,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Edgar Wright",
+        "anchor_title": "Hot Fuzz",
+        "constraints": {
+          "genre": "animal",
+          "plot": "killing",
+          "director": "Edgar Wright"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 5,
+          "from_focus": "language",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "killing",
+          "from_anchor": "The Goldfinch",
+          "to_anchor": "Hot Fuzz"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Since you enjoyed Edgar Wright's Shaun of the Dead, I'd recommend checking out Downfall (2004). It's a intense drama that explores themes of redemption and personal struggle, starring Bruno Ganz in a critically-acclaimed performance.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "You",
+        "language": "Maya",
+        "actor": "Edgar Wright",
+        "director": "Edgar Wright",
+        "writer": "Edgar Wright"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Edgar Wright",
+        "anchor_title": "Hot Fuzz",
+        "constraints": {
+          "genre": "animal",
+          "plot": "killing",
+          "director": "Edgar Wright"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"Mama\"! It's a unique blend of drama and action, with two talented young actresses, Megan Charpentier and Isabelle Nélisse, playing pivotal roles. The film also explores themes of empowerment and self-defense, which I think aligns well with your interest in animal-related content.\n\nIf you're looking for something else, \"Insidious\" is another great option that might appeal to you. It's a horror movie with some impressive visuals and a strong cast, including Patrick Wilson and Rose Byrne.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "Maya",
+        "actor": "Edgar Wright",
+        "director": "Edgar Wright",
+        "writer": "Edgar Wright"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Edgar Wright",
+        "anchor_title": "Hot Fuzz",
+        "constraints": {
+          "genre": "animal",
+          "plot": "killing",
+          "director": "Edgar Wright"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've got just the thing for you! Have you considered \"The Trouble with Harry\"? It's a classic film that explores themes of responsibility and community, all wrapped up in a clever mystery. And who better to guide you through it than the Master of Suspense himself, Alfred Hitchcock?",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "You",
+        "language": "Maya",
+        "actor": "Edgar Wright",
+        "director": "Edgar Wright",
+        "writer": "Edgar Wright"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Thing? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Edgar Wright",
+        "anchor_title": "Hot Fuzz",
+        "constraints": {
+          "genre": "animal",
+          "plot": "killing",
+          "director": "Edgar Wright"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've found a great match for you! Have you considered \"The Call of the Wild\"? It's an oldie but a goodie, and its themes of adventure and transformation might resonate with the animal-inspired vibe you were looking for in \"The Thing\". Plus, it's a classic tale that explores what it means to be wild and free.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "what",
+          "thing"
+        ],
+        "name": "The Thing",
+        "language": "Maya",
+        "actor": "Edgar Wright",
+        "director": "Edgar Wright",
+        "writer": "Edgar Wright"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Edgar Wright",
+        "anchor_title": "Hot Fuzz",
+        "constraints": {
+          "genre": "animal",
+          "plot": "killing",
+          "director": "Edgar Wright"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Considering your interest in animals and Edgar Wright's work, I'd like to recommend \"Hot Fuzz\" (2007). This movie has a hilarious cast of characters, including Simon Pegg and Nick Frost, who are both great at comedy. Plus, it's an action-packed romp that will keep you entertained from start to finish!",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "The Thing",
+        "language": "Maya",
+        "actor": "Edgar Wright",
+        "director": "Edgar Wright",
+        "writer": "Edgar Wright"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Thing tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Edgar Wright",
+        "anchor_title": "Hot Fuzz",
+        "constraints": {
+          "genre": "animal",
+          "plot": "killing",
+          "director": "Edgar Wright"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've got just the thing for you! If you're looking for a story that's a bit deeper and character-driven, I'd recommend \"The Trouble with Harry\". It's a clever and quirky film by Alfred Hitchcock that explores themes of community and responsibility, all set against a picturesque New England backdrop. Plus, it has a great cast, including Jerry Mathers and John Forsythe!",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The Thing",
+        "language": "Maya",
+        "actor": "Edgar Wright",
+        "director": "Edgar Wright",
+        "writer": "Edgar Wright"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Her. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Edgar Wright",
+        "anchor_title": "Hot Fuzz",
+        "constraints": {
+          "genre": "animal",
+          "plot": "killing",
+          "director": "Edgar Wright"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"District 9\"! It's a thought-provoking sci-fi film that explores themes of identity and acceptance, much like \"Her\". The movie tells the story of an alien who is stranded on Earth and forms an unlikely bond with a government agent, played by Sharlto Copley.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Her",
+        "language": "Maya",
+        "actor": "Edgar Wright",
+        "director": "Edgar Wright",
+        "writer": "Edgar Wright"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Bolaji Badejo. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Alien.)",
+      "user_meta": {
+        "turn": 12,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Bolaji Badejo",
+        "anchor_title": "A Nightmare on Elm Street",
+        "constraints": {
+          "genre": "animal",
+          "plot": "killing",
+          "director": "Edgar Wright",
+          "actor": "Bolaji Badejo"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 12,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Bolaji Badejo",
+          "from_anchor": "Hot Fuzz",
+          "to_anchor": "A Nightmare on Elm Street"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right movie for you! Since you mentioned Bolaji Badejo and are unsure if you'd enjoy or be scared by a film, I'm going to recommend \"The Hunted\" (2003). This suspenseful thriller stars Tommy Lee Jones as an eccentric police officer, and it's got all the makings of a thrilling adventure with a hint of the unknown.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "RED",
+        "language": "Maya",
+        "actor": "Bolaji Badejo",
+        "director": "Edgar Wright",
+        "writer": "Edgar Wright"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bolaji Badejo",
+        "anchor_title": "A Nightmare on Elm Street",
+        "constraints": {
+          "genre": "animal",
+          "plot": "killing",
+          "director": "Edgar Wright",
+          "actor": "Bolaji Badejo"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Since you loved a movie with Bolaji Badejo, I'm going to recommend \"Zack and Miri Make a Porno\" - not only does it feature an amazing actor like Seth Rogen and James Gunn (as they're more known), but it's also a hilarious romantic comedy that explores the ups and downs of relationships. Plus, who wouldn't want to see two platonic friends try their hand at making adult films?",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "Maya",
+        "actor": "Bolaji Badejo",
+        "director": "Edgar Wright",
+        "writer": "Edgar Wright"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Zack and Miri Make a Porno? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Bolaji Badejo",
+        "anchor_title": "A Nightmare on Elm Street",
+        "constraints": {
+          "genre": "animal",
+          "plot": "killing",
+          "director": "Edgar Wright",
+          "actor": "Bolaji Badejo"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right movie for you! Have you considered \"Apocalypto\"? It's an epic adventure set in ancient Mayan civilization, with stunning visuals and a gripping storyline. You might enjoy its action-packed pace and the immersive experience it offers.\n\nOr, if you're in the mood for something more light-hearted, \"Monsters, Inc.\" is a fun and clever animated film that explores what happens when monsters and humans interact. It's a heartwarming story with lovable characters, and I think you might enjoy its unique blend of humor and whimsy.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "what",
+          "zack"
+        ],
+        "name": "Zack and Miri Make a Porno",
+        "language": "Maya",
+        "actor": "Bolaji Badejo",
+        "director": "Edgar Wright",
+        "writer": "Edgar Wright"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Peter Cattaneo? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of RED.)",
+      "user_meta": {
+        "turn": 15,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Peter Cattaneo",
+        "anchor_title": "Island of the Blue Dolphins",
+        "constraints": {
+          "genre": "animal",
+          "director": "Peter Cattaneo",
+          "actor": "Jaqueline Fleming"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 15,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Jaqueline Fleming",
+          "from_anchor": "A Nightmare on Elm Street",
+          "to_anchor": "Island of the Blue Dolphins"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Since you enjoyed Peter Cattaneo's RED and are looking for something with a similar tone, I'd highly recommend \"The World's End\" (2013). This hilarious movie, also directed by Peter Cattaneo, follows a group of friends on a wild pub crawl that turns into an epic adventure. With its blend of humor and heart, you'll be in good company!",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "RED",
+        "language": "Maya",
+        "actor": "Bolaji Badejo",
+        "director": "Peter Cattaneo",
+        "writer": "Edgar Wright"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Peter Cattaneo",
+        "anchor_title": "Island of the Blue Dolphins",
+        "constraints": {
+          "genre": "animal",
+          "director": "Peter Cattaneo",
+          "actor": "Jaqueline Fleming"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right fit for you! Have you considered \"Green Card\"? It's a sweet and charming film about a marriage of convenience that turns into something more, starring Greta Gerwig and Andie MacDowell. The plot is light-hearted and fun, with a strong focus on relationships.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "Maya",
+        "actor": "Bolaji Badejo",
+        "director": "Peter Cattaneo",
+        "writer": "Edgar Wright"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Spanish? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 17,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "Spanish",
+        "anchor_title": "The Legend of Zorro",
+        "constraints": {
+          "genre": "animal",
+          "director": "Peter Cattaneo",
+          "actor": "Jaqueline Fleming",
+          "language": "Spanish",
+          "plot": "crazy"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 17,
+          "from_focus": "director",
+          "to_focus": "language",
+          "bridge_field": "plot",
+          "bridge_value": "crazy",
+          "from_anchor": "Island of the Blue Dolphins",
+          "to_anchor": "The Legend of Zorro"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Since you're looking for something primarily in Spanish, I'm going to recommend \"Shaun of the Dead\" (2004) over the other options. While it's not entirely in Spanish, it does have a great mix of humor and zombies that might scratch that Us. itch for you. And who knows, maybe you'll even enjoy some British charm on top!",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "Us",
+        "language": "spa",
+        "actor": "Bolaji Badejo",
+        "director": "Peter Cattaneo",
+        "writer": "Edgar Wright"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Spanish",
+        "anchor_title": "The Legend of Zorro",
+        "constraints": {
+          "genre": "animal",
+          "director": "Peter Cattaneo",
+          "actor": "Jaqueline Fleming",
+          "language": "Spanish",
+          "plot": "crazy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Have you considered \"Turbo\"? It's a fun and quirky animated film about a garden snail who dreams of racing in the Indy 500 - it's all about chasing your dreams, no matter how impossible they may seem. Plus, it stars Ben Schwartz and Snoop Dogg, which adds to its charm!",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "spa",
+        "actor": "Bolaji Badejo",
+        "director": "Peter Cattaneo",
+        "writer": "Edgar Wright"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? That sounds intriguing.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Spanish",
+        "anchor_title": "The Legend of Zorro",
+        "constraints": {
+          "genre": "animal",
+          "director": "Peter Cattaneo",
+          "actor": "Jaqueline Fleming",
+          "language": "Spanish",
+          "plot": "crazy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've got just the right movie for you! Have you considered \"Lady in the Water\"? It's a unique and intriguing story about a character from a bedtime story trying to get back home, and it features some great performances from Jared Harris and Bryce Dallas Howard. Plus, M. Night Shyamalan's direction adds an extra layer of suspense and wonder.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Ted",
+        "language": "spa",
+        "actor": "Bolaji Badejo",
+        "director": "Peter Cattaneo",
+        "writer": "Edgar Wright"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Water tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Spanish",
+        "anchor_title": "The Legend of Zorro",
+        "constraints": {
+          "genre": "animal",
+          "director": "Peter Cattaneo",
+          "actor": "Jaqueline Fleming",
+          "language": "Spanish",
+          "plot": "crazy"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"Jurassic Park\"! As someone who appreciated the depth in \"Water\", I think you'll appreciate the blend of adventure and thought-provoking themes in this classic film, especially with its impressive dinosaur effects and memorable cast, including Jeff Goldblum and Laura Dern.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Water",
+        "language": "spa",
+        "actor": "Bolaji Badejo",
+        "director": "Peter Cattaneo",
+        "writer": "Edgar Wright"
+      }
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "language",
+      "bridge_field": "plot",
+      "bridge_value": "eventually",
+      "from_anchor": "The Velveteen Rabbit",
+      "to_anchor": "The Goldfinch"
+    },
+    {
+      "turn": 5,
+      "from_focus": "language",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "killing",
+      "from_anchor": "The Goldfinch",
+      "to_anchor": "Hot Fuzz"
+    },
+    {
+      "turn": 12,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Bolaji Badejo",
+      "from_anchor": "Hot Fuzz",
+      "to_anchor": "A Nightmare on Elm Street"
+    },
+    {
+      "turn": 15,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Jaqueline Fleming",
+      "from_anchor": "A Nightmare on Elm Street",
+      "to_anchor": "Island of the Blue Dolphins"
+    },
+    {
+      "turn": 17,
+      "from_focus": "director",
+      "to_focus": "language",
+      "bridge_field": "plot",
+      "bridge_value": "crazy",
+      "from_anchor": "Island of the Blue Dolphins",
+      "to_anchor": "The Legend of Zorro"
+    }
+  ]
+}

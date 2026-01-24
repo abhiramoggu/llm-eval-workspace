@@ -1,0 +1,683 @@
+{
+  "session_id": "00001",
+  "model_name": "llama2:latest",
+  "true_genre": "comedy-drama",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a comedy-drama movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy-drama",
+        "anchor_title": "Soul Men",
+        "constraints": {
+          "genre": "comedy-drama"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preference for a comedy-drama movie, I would recommend \"Madagascar\" and \"Evan Almighty.\" Both of these movies offer a fun and entertaining blend of comedy and drama, with a talented cast of actors. In \"Madagascar,\" you'll love the hilarious antics of a group of animals as they adjust to living in the wild, while \"Evan Almighty\" will have you laughing at the absurdity of Congressman Evan Baxter building an ark in preparation for a flood.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "comedy",
+          "drama"
+        ],
+        "name": "You"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of They. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy-drama",
+        "anchor_title": "Soul Men",
+        "constraints": {
+          "genre": "comedy-drama"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preference for a comedy movie, I would recommend \"Four Christmases\" or \"Fun with Dick and Jane.\" Both of these movies offer lighthearted and entertaining plots that are sure to put a smile on your face. In \"Four Christmases,\" a couple struggles to visit all four of their divorced parents on Christmas, while in \"Fun with Dick and Jane,\" an affluent couple turns to a life of crime to make ends meet after losing all their money.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Four Christmases tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy-drama",
+        "anchor_title": "Soul Men",
+        "constraints": {
+          "genre": "comedy-drama"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"Home Alone\" and \"Edward Scissorhands.\" Both are Christmas-themed movies with unique plots and talented actors. \"Home Alone\" follows a young boy who must defend his home against burglars, while \"Edward Scissorhands\" tells the story of an artificial man with scissors for hands who finds a new family with a suburban couple. I hope you enjoy watching them!",
+      "constraints": {
+        "genre": "christmas",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Four Christmases"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy-drama",
+        "anchor_title": "Soul Men",
+        "constraints": {
+          "genre": "comedy-drama"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preference for Christmas-themed movies with elements of \"weird\" and \"thought,\" I recommend \"Downfall\" and \"The Lego Movie.\" Both films offer unique and thought-provoking stories, with \"Downfall\" delving into the psychological aspects of drug addiction and \"The Lego Movie\" taking a fresh and humorous approach to an epic adventure.",
+      "constraints": {
+        "genre": "christmas",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "Four Christmases"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Psycho? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy-drama",
+        "anchor_title": "Soul Men",
+        "constraints": {
+          "genre": "comedy-drama"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preference for a deeper movie with a Christmas theme, I would recommend \"Passion\" and \"Prometheus.\" Both of these movies delve into themes of ambition, obsession, and the human condition, all set against a winter backdrop. \"Passion\" is a unique blend of documentary and narrative that explores the world of competitive beard growing, while \"Prometheus\" is a thought-provoking sci-fi adventure that questions the nature of creation and destruction.",
+      "constraints": {
+        "genre": "christmas",
+        "plot": [
+          "what",
+          "psycho"
+        ],
+        "name": "Psycho"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Eartha Kitt. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Passion.)",
+      "user_meta": {
+        "turn": 6,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Eartha Kitt",
+        "anchor_title": "The Cable Guy",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Eartha Kitt"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 6,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "genre",
+          "bridge_value": "comedy-drama",
+          "from_anchor": "Soul Men",
+          "to_anchor": "The Cable Guy"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"Peggy Sue Got Married\" and \"The Family Stone.\" Both movies have a similar tone and atmosphere to \"Passion,\" with a focus on character-driven comedy and drama. \"Peggy Sue Got Married\" features an excellent cast led by Kathleen Turner and Nicolas Cage, while \"The Family Stone\" has a talented ensemble including Diane Keaton and Craig T. Nelson. I hope you enjoy these recommendations!",
+      "constraints": {
+        "genre": "christmas",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "RED",
+        "actor": "Eartha Kitt"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Eartha Kitt",
+        "anchor_title": "The Cable Guy",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Eartha Kitt"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"Insidious\" and \"My Girl 2\". Both of these movies have a strong focus on character development and emotional depth, which seem to align with your interests. \"Insidious\" is a psychological thriller with a talented ensemble cast, while \"My Girl 2\" is a heartwarming sequel that explores Vada's journey as she learns more about her mother's life and legacy.",
+      "constraints": {
+        "genre": "christmas",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Eartha Kitt"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Eartha Kitt",
+        "anchor_title": "The Cable Guy",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Eartha Kitt"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to recommend some movies based on the user's preferences! \"Batman Returns\" is a great choice if you enjoy superhero movies with a dark twist. The film features an all-star cast, including Michael Keaton and Michelle Pfeiffer, and explores themes of identity and revenge. Alternatively, \"Reservoir Dogs\" is a tense and suspenseful crime drama that has become a cult classic. With a talented ensemble cast led by Harvey Keitel and Quentin Tarantino, this movie will keep you on the edge of your seat from start to finish.",
+      "constraints": {
+        "genre": "christmas",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "You",
+        "actor": "Eartha Kitt"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Batman. I want to try something more hindi language—That sounds intriguing.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "hindi language",
+        "anchor_title": "Utsav",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Eartha Kitt"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 9,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "comic",
+          "from_anchor": "The Cable Guy",
+          "to_anchor": "Utsav"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"Scream 4\" and \"Don 2.\" Both movies have a great mix of suspense and intrigue, with talented actors delivering impressive performances. In \"Scream 4,\" the Ghostface killer returns after a decade, causing chaos and terror in Woodsboro. Meanwhile, in \"Don 2,\" Don (played by Shah Rukh Khan) embarks on a thrilling heist in Berlin, surrounded by a talented cast of actors. I hope you enjoy these movies!",
+      "constraints": {
+        "genre": "hindi language",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Batman",
+        "actor": "Eartha Kitt",
+        "language": "Hindi Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "hindi language",
+        "anchor_title": "Utsav",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Eartha Kitt"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to recommend some movies based on your preferences! 🙂 From the list provided, I would recommend \"Slumdog Millionaire\" and \"Don 2\". Both of these movies have an interesting plot and great actors, which I think you might enjoy. \"Slumdog Millionaire\" is a heartwarming and thought-provoking movie that explores themes of love, friendship, and perseverance, while \"Don 2\" is an action-packed thriller with a talented cast, including Shah Rukh Khan and Lara Dutta. Let me know if you'd like to hear more about either of these movies!",
+      "constraints": {
+        "genre": "hindi language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Eartha Kitt",
+        "language": "Hindi Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? That sounds intriguing.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "hindi language",
+        "anchor_title": "Utsav",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Eartha Kitt"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"Louie\" and \"It's a Wonderful Life.\" Both movies have intriguing plots and feature talented actors, such as Eartha Kitt in \" Louie\" and Sheldon Leonard, Frank Faylen, Gloria Grahame, Lionel Barrymore, Donna Reed, and Thomas Mitchell in \"It's a Wonderful Life.\" I hope you enjoy them!",
+      "constraints": {
+        "genre": "hindi language",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Ted",
+        "actor": "Eartha Kitt",
+        "language": "Hindi Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "hindi language",
+        "anchor_title": "Utsav",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Eartha Kitt"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to help! Based on your preferences, I recommend \"The Trouble with Harry\" and \"What Women Want.\" Both movies are thought-provoking and feature intriguing plots and talented actors. \"The Trouble with Harry\" is a classic whodunit mystery with a unique twist, while \"What Women Want\" offers a hilarious and insightful look into the inner workings of the female mind. I hope you enjoy them!",
+      "constraints": {
+        "genre": "hindi language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "actor": "Eartha Kitt",
+        "language": "Hindi Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Women. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "hindi language",
+        "anchor_title": "Utsav",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Eartha Kitt"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on the user's preferences, I would recommend \"The Amazing Spider-Man\" and \"Alex in Wonderland.\" Both movies feature intriguing plots and talented actors that may align with the user's tastes. In \"The Amazing Spider-Man,\" the user can enjoy the action-packed plot and the talents of Andrew Garfield and Emma Stone, while \"Alex in Wonderland\" offers a unique and imaginative storyline with a talented cast including Angelo Rossitto, Jeanne Moreau, and Ellen Burstyn.",
+      "constraints": {
+        "genre": "hindi language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "actor": "Eartha Kitt",
+        "language": "Hindi Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "hindi language",
+        "anchor_title": "Utsav",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Eartha Kitt"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"Bend It Like Beckham\" and \"Can You Keep a Secret?\" Both movies have an interesting plot and great actors, including Parminder Nagra and Keira Knightley in \"Bend It Like Beckham,\" and Lara Dutta and Florian Lukas in \"Can You Keep a Secret?\". I hope you enjoy watching them!",
+      "constraints": {
+        "genre": "hindi language",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "RED",
+        "actor": "Eartha Kitt",
+        "language": "Hindi Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "hindi language",
+        "anchor_title": "Utsav",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Eartha Kitt"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your user preferences, I would recommend \"Reservoir Dogs\" and \"2012\". Both movies have exciting plots and a talented cast, including Eartha Kitt in \"Reservoir Dogs\" and Ryan McDonald in \"2012\". The former is a tense and suspenseful heist film with a unique twist, while the latter is a thrilling and thought-provoking apocalyptic drama. I hope you enjoy them!",
+      "constraints": {
+        "genre": "hindi language",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "RED",
+        "actor": "Eartha Kitt",
+        "language": "Hindi Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "hindi language",
+        "anchor_title": "Utsav",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Eartha Kitt"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"Sholay\" and \"Why Did I Get Married?\". Both movies are highly rated and have a strong cast, with Eartha Kitt starring in the latter. \"Sholay\" is an action-packed drama with Hema Malini and Amitabh Bachchan in the lead roles, while \"Why Did I Get Married?\" is a romantic comedy-drama that explores the ups and downs of marriage.",
+      "constraints": {
+        "genre": "hindi language",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "RED",
+        "actor": "Eartha Kitt",
+        "language": "Hindi Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Ella Joyce. Hmm, I didn’t expect that vibe. (I’m thinking of Why Did I Get Married?.)",
+      "user_meta": {
+        "turn": 17,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Ella Joyce",
+        "anchor_title": "Walk the Line",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Ella Joyce",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 17,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Utsav",
+          "to_anchor": "Walk the Line"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to recommend some movies based on the user's preferences! \"Predator\" and \"Set It Off\" are both great choices that feature Ella Joyce in leading roles. In \"Predator,\" she stars alongside Carl Weathers and Bill Duke as part of a team of commandos on a dangerous mission, while in \"Set It Off,\" she plays one of four women who turn to bank robbery in desperation. Both movies are action-packed and offer a great balance of drama and suspense. Which one would you like to watch?",
+      "constraints": {
+        "genre": "hindi language",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Why Did I Get Married?",
+        "actor": "Ella Joyce",
+        "language": "Hindi Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Ella Joyce",
+        "anchor_title": "Walk the Line",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Ella Joyce",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"White Night\" and \"Wolf Girl\". Both of these movies have intriguing plots and feature talented actors. \"White Night\" is a thought-provoking mystery film that explores the themes of guilt and responsibility, while \"Wolf Girl\" is a unique and quirky tale of self-discovery and love. I hope you find these recommendations helpful!",
+      "constraints": {
+        "genre": "hindi language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Ella Joyce",
+        "language": "Hindi Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Ella Joyce",
+        "anchor_title": "Walk the Line",
+        "constraints": {
+          "genre": "hindi language",
+          "actor": "Ella Joyce",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"I Heart Huckabees\" and \"The Taming of the Shrew.\" Both movies offer unique and intriguing plots, with talented actors delivering memorable performances. In \"I Heart Huckabees,\" you'll find a quirky and thought-provoking tale of existential mystery, while \"The Taming of the Shrew\" presents a witty and entertaining exploration of love and identity.",
+      "constraints": {
+        "genre": "hindi language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "actor": "Ella Joyce",
+        "language": "Hindi Language"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on X. I want to try something more history—still with English if possible. Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "history",
+        "anchor_title": "The Nightingale",
+        "constraints": {
+          "genre": "history",
+          "actor": "Ella Joyce",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 20,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Walk the Line",
+          "to_anchor": "The Nightingale"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to recommend some movies based on your preferences! \"Shadowland\" (2009) stars Ella Joyce and has a gripping plot that might interest you, as it follows a group of people seeking refuge in rural Scotland with dangerous consequences. Alternatively, \"American History X\" (1998) is a thought-provoking film starring Edward Norton and Ethan Suplee that explores themes of violence and redemption, which may appeal to your taste.",
+      "constraints": {
+        "genre": "history",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "X",
+        "actor": "Ella Joyce",
+        "language": "English"
+      }
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 6,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "genre",
+      "bridge_value": "comedy-drama",
+      "from_anchor": "Soul Men",
+      "to_anchor": "The Cable Guy"
+    },
+    {
+      "turn": 9,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "comic",
+      "from_anchor": "The Cable Guy",
+      "to_anchor": "Utsav"
+    },
+    {
+      "turn": 17,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Utsav",
+      "to_anchor": "Walk the Line"
+    },
+    {
+      "turn": 20,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Walk the Line",
+      "to_anchor": "The Nightingale"
+    }
+  ]
+}

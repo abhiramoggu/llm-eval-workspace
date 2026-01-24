@@ -1,0 +1,727 @@
+{
+  "session_id": "00001",
+  "model_name": "llama2:latest",
+  "true_genre": "comedy-drama",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a comedy-drama movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy-drama",
+        "anchor_title": "Forgetting Sarah Marshall",
+        "constraints": {
+          "genre": "comedy-drama"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to recommend some comedy-drama movies based on your preferences! \"I Can Do Bad All by Myself\" starring Tyler Perry and Mary J. Blige is a hilarious and heartwarming movie about a feisty grandmother who takes matters into her own hands when she catches her grandkids looting her home. Alternatively, \"What Just Happened\" features a star-studded cast, including Robert De Niro, Robin Wright, and Sean Penn, in a wild and entertaining road trip adventure through Nigeria. Which one sounds more interesting to you?",
+      "constraints": {
+        "genre": "comedy-drama",
+        "plot": [
+          "comedy",
+          "drama"
+        ],
+        "name": "You"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Andie MacDowell. That sounds intriguing. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Andie MacDowell",
+        "anchor_title": "Dear John",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Forgetting Sarah Marshall",
+          "to_anchor": "Dear John"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"Her\" and \"The Dangerous Lives of Altar Boys.\" Both movies have a strong focus on relationships and feature Andie MacDowell as an actor. \"Her\" is a thought-provoking drama that explores the consequences of technology's impact on human connection, while \"The Dangerous Lives of Altar Boys\" is a quirky comedy-drama that delves into the misadventures of a group of Catholic school friends.",
+      "constraints": {
+        "genre": "comedy-drama",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Her",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Andie MacDowell",
+        "anchor_title": "Dear John",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preference for comedy-drama movies with talented actors, I would recommend \"The Truman Show\" and \"Donnie Brasco.\" Both films feature an impressive cast and engaging storylines that explore themes of identity, loyalty, and the blurred lines between good and evil. \"The Truman Show,\" starring Jim Carrey, is a thought-provoking drama about a man discovering his entire life is a TV show, while \"Donnie Brasco,\" featuring Al Pacino and Johnny Depp, tells the story of an FBI agent who finds himself torn between his loyalty to the mob and his duty as a law enforcement officer.",
+      "constraints": {
+        "genre": "comedy-drama",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? That sounds intriguing.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Andie MacDowell",
+        "anchor_title": "Dear John",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I recommend \"You\" and \"Home for the Holidays\". Both movies have intriguing plots and great casts, with \"You\" being a thought-provoking drama that raises questions about societal norms and values, and \"Home for the Holidays\" being a heartwarming comedy-drama that explores family dynamics and relationships.",
+      "constraints": {
+        "genre": "comedy-drama",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "You",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Andie MacDowell",
+        "anchor_title": "Dear John",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your user preference cues, I recommend \"In Good Company\" and \"The Truman Show.\" Both movies offer a unique blend of comedy and drama that are sure to keep you entertained. In \"In Good Company,\" Andie MacDowell stars as a successful businesswoman who finds herself caught in a complicated love triangle with her boss and daughter, while in \"The Truman Show,\" Jim Carrey plays a man who discovers his entire life is being broadcasted on a reality TV show without his knowledge or consent.",
+      "constraints": {
+        "genre": "comedy-drama",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Truman. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Andie MacDowell",
+        "anchor_title": "Dear John",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to recommend some movies based on your preferences! \"Truman\" sounds like a thought-provoking and emotional film, and I think you might enjoy the other movies on this list for similar reasons. Have you seen any of these before? \"The Perez Family\" is a heartwarming drama about a Cuban refugee family in Miami, starring Vincent Gallo and Chazz Palminteri. Or if you're looking for something a bit lighter, \"I Love You Phillip Morris\" is a quirky comedy-drama with great performances from Jim Parsons and Steve Coogan. Both of these films have a similar feel to \"Truman,\" so I think you might enjoy them!",
+      "constraints": {
+        "genre": "comedy-drama",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Truman",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Carlos Saldanha? That sounds intriguing. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 7,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Carlos Saldanha",
+        "anchor_title": "Revolutionary Road",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "language": "English",
+          "director": "Carlos Saldanha"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 7,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Dear John",
+          "to_anchor": "Revolutionary Road"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"The Station Agent\" and \"The World According to Garp.\" Both movies have a mix of comedy and drama that you might enjoy, with unique plots and talented actors. \"The Station Agent\" follows a man with dwarfism as he navigates a new life in rural New Jersey, while \"The World According to Garp\" tells the story of a young writer struggling with his unfaithful wife and radical mother. I hope you find these recommendations helpful and enjoyable!",
+      "constraints": {
+        "genre": "comedy-drama",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "You",
+        "actor": "Andie MacDowell",
+        "director": "Carlos Saldanha"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Carlos Saldanha",
+        "anchor_title": "Revolutionary Road",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "language": "English",
+          "director": "Carlos Saldanha"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to recommend some movies based on your preferences! If you enjoyed comedies with strong performances, I would recommend \"The Truth\" starring Andie MacDowell. The film is a thought-provoking and entertaining drama that explores the complexities of human relationships. Alternatively, if you're in the mood for something more lighthearted and visually stunning, \"The Secret Life of Walter Mitty\" is definitely worth checking out, with its breathtaking landscapes and talented cast led by Joey Slotnick and Adam Scott.",
+      "constraints": {
+        "genre": "comedy-drama",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Andie MacDowell",
+        "director": "Carlos Saldanha"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Carlos Saldanha",
+        "anchor_title": "Revolutionary Road",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "language": "English",
+          "director": "Carlos Saldanha"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"Young Adult\" and \"Real Women Have Curves\". Both movies feature strong female leads and tackle themes of identity, family, and relationships, which seem to align with your tastes. \"Young Adult\" is a dark comedy-drama that follows a writer who returns to her small town after a divorce and finds herself in a complicated romance, while \"Real Women Have Curves\" is a heartwarming drama about a young woman navigating the pressures of her mother's expectations and her own dreams.",
+      "constraints": {
+        "genre": "comedy-drama",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "You",
+        "actor": "Andie MacDowell",
+        "director": "Carlos Saldanha"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Carlos Saldanha",
+        "anchor_title": "Revolutionary Road",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "language": "English",
+          "director": "Carlos Saldanha"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your user preferences, I would recommend \"Wolfhound\" and \"Bend It Like Beckham\". Both movies have a similar comedy-drama tone and feature strong female leads. \"Wolfhound\" is an action-packed film with a unique plot centered around a warrior's mission for revenge, while \"Bend It Like Beckham\" follows the journey of two girls pursuing their dreams in professional football despite their parents' disapproval. Both movies have great casts and are sure to keep you entertained!",
+      "constraints": {
+        "genre": "comedy-drama",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "X",
+        "actor": "Andie MacDowell",
+        "director": "Carlos Saldanha"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Tron tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Carlos Saldanha",
+        "anchor_title": "Revolutionary Road",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "language": "English",
+          "director": "Carlos Saldanha"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to recommend some movies based on your preferences! \"Aladdin\" and \"Zero Effect\" are both great choices that share similar themes of adventure, comedy, and memorable characters. \"Aladdin\" is a classic Disney movie with catchy music and a heartwarming story of self-discovery, while \"Zero Effect\" is a quirky and offbeat detective thriller with a talented cast led by Ben Stiller. Which one would you like to learn more about or watch?",
+      "constraints": {
+        "genre": "comedy-drama",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Tron",
+        "actor": "Andie MacDowell",
+        "director": "Carlos Saldanha"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Aladdin. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Carlos Saldanha",
+        "anchor_title": "Revolutionary Road",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "language": "English",
+          "director": "Carlos Saldanha"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preference for a comedy-drama movie with a talented cast, I would recommend \"Chasing Amy\" and \"Thumbsucker.\" Both movies have received critical acclaim and offer a unique blend of humor and depth. In \"Chasing Amy,\" you'll find a hilarious and heartwarming story about friendship and self-discovery, while \"Thumbsucker\" is an quirky and offbeat comedy that explores themes of addiction and personal growth.",
+      "constraints": {
+        "genre": "comedy-drama",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Aladdin",
+        "actor": "Andie MacDowell",
+        "director": "Carlos Saldanha"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Us. I want to try something more french—still with Carlos Saldanha if possible. Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "french",
+        "anchor_title": "The Imaginarium of Doctor Parnassus",
+        "constraints": {
+          "genre": "french",
+          "actor": "Andie MacDowell",
+          "language": "English",
+          "director": "Carlos Saldanha"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 13,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "director",
+          "bridge_value": "Carlos Saldanha",
+          "from_anchor": "Revolutionary Road",
+          "to_anchor": "The Imaginarium of Doctor Parnassus"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"Under the Tuscan Sun\" and \"Spider-Man 3.\" \"Under the Tuscan Sun\" is a heartwarming drama about a woman who buys a house in Tuscany to start a new life, and it features a talented cast including Diane Lane and Lindsay Duncan. \"Spider-Man 3\" is an action-packed superhero movie with a great mix of humor, villains, and personal struggles for the titular character, played by Tobey Maguire. Both movies offer something different and enjoyable, so I hope you'll give them a try!",
+      "constraints": {
+        "genre": "french",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "X",
+        "actor": "Andie MacDowell",
+        "director": "Carlos Saldanha",
+        "language": "French"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "french",
+        "anchor_title": "The Imaginarium of Doctor Parnassus",
+        "constraints": {
+          "genre": "french",
+          "actor": "Andie MacDowell",
+          "language": "English",
+          "director": "Carlos Saldanha"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"The Cabin in the Woods\" and \"Pulp Fiction.\" Both are highly acclaimed films that feature a mix of suspense, intrigue, and memorable performances. \"The Cabin in the Woods\" is a clever and unexpected take on the horror genre, with a talented cast led by Fran Kranz and Kristen Connolly. Meanwhile, \"Pulp Fiction\" is a cult classic that interweaves four unique stories of violence and redemption, featuring an all-star cast including John Travolta, Samuel L. Jackson, and Uma Thurman.",
+      "constraints": {
+        "genre": "french",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Andie MacDowell",
+        "director": "Carlos Saldanha",
+        "language": "French"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of In the Woods. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "french",
+        "anchor_title": "The Imaginarium of Doctor Parnassus",
+        "constraints": {
+          "genre": "french",
+          "actor": "Andie MacDowell",
+          "language": "English",
+          "director": "Carlos Saldanha"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I think you might enjoy \"Hotel Rwanda.\" It's a powerful and emotional film that tells a true story of courage and resilience during a difficult time in history. The cast, including Sophie Okonedo and Jean Reno, deliver outstanding performances. Alternatively, if you're in the mood for something a bit lighter, \"Easy A\" is a funny and entertaining movie with a great cast, including Emma Stone and Patricia Clarkson.",
+      "constraints": {
+        "genre": "french",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "actor": "Andie MacDowell",
+        "director": "Carlos Saldanha",
+        "language": "French"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Easy? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "french",
+        "anchor_title": "The Imaginarium of Doctor Parnassus",
+        "constraints": {
+          "genre": "french",
+          "actor": "Andie MacDowell",
+          "language": "English",
+          "director": "Carlos Saldanha"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preference for French movies and actors Andie MacDowell and Carlos Saldanha, I recommend \"Midnight in Paris\" and \"Just Visiting.\" Both films offer a unique blend of humor, drama, and time travel that I think you'll enjoy. In \"Midnight in Paris,\" you'll follow a group of high schoolers in Flint, Michigan as they prepare for prom, while \"Just Visiting\" tells the story of a French count who travels back in time to 2000 Chicago with the help of a wizard and a descendant.",
+      "constraints": {
+        "genre": "french",
+        "plot": [
+          "what",
+          "easy"
+        ],
+        "name": "Deep",
+        "actor": "Andie MacDowell",
+        "director": "Carlos Saldanha",
+        "language": "French"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "french",
+        "anchor_title": "The Imaginarium of Doctor Parnassus",
+        "constraints": {
+          "genre": "french",
+          "actor": "Andie MacDowell",
+          "language": "English",
+          "director": "Carlos Saldanha"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your user preferences, I would recommend \"Meet the Parents\" and \"In Bruges.\" Both movies are hilarious and feature talented actors, with \"Meet the Parents\" starring Ben Stiller and Robert De Niro, and \"In Bruges\" starring Colin Farrell and Ralph Fiennes. The plots of both movies are engaging and full of unexpected twists and turns, making for a enjoyable viewing experience.",
+      "constraints": {
+        "genre": "french",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "You",
+        "actor": "Andie MacDowell",
+        "director": "Carlos Saldanha",
+        "language": "French"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Matt Smith. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of In Bruges.)",
+      "user_meta": {
+        "turn": 18,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Matt Smith",
+        "anchor_title": "This Means War",
+        "constraints": {
+          "genre": "french",
+          "actor": "Matt Smith",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 18,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Matt Smith",
+          "from_anchor": "The Imaginarium of Doctor Parnassus",
+          "to_anchor": "This Means War"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to recommend some movies based on your preferences! I think you might enjoy \"Elysium\" starring Matt Damon, which is a thought-provoking sci-fi film that explores themes of inequality and social justice. The movie also features impressive special effects and an engaging plot. Alternatively, if you're in the mood for something a bit more offbeat, I recommend \"The Cable Guy\" starring Ben Stiller and Matthew Broderick. It's a quirky comedy with plenty of funny moments and a great cast of characters.",
+      "constraints": {
+        "genre": "french",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "In Bruges",
+        "actor": "Matt Smith",
+        "director": "Carlos Saldanha",
+        "language": "French"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Matt Smith",
+        "anchor_title": "This Means War",
+        "constraints": {
+          "genre": "french",
+          "actor": "Matt Smith",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"Tarnation\" and \"Frida.\" Both movies are unique and feature strong performances from their casts. \"Tarnation\" is a documentary that explores the filmmaker's relationship with his schizophrenic mother, while \"Frida\" tells the story of Mexican artist Frida Kahlo's life through a powerful cast of actors. I hope you enjoy them!",
+      "constraints": {
+        "genre": "french",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Matt Smith",
+        "director": "Carlos Saldanha",
+        "language": "French"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Frida? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Matt Smith",
+        "anchor_title": "This Means War",
+        "constraints": {
+          "genre": "french",
+          "actor": "Matt Smith",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to recommend some movies based on your preferences! \"The Secret\" looks intriguing with its mystery and psychological thriller elements, and the cast is great with Genevieve O'Reilly and James Nesbitt. Alternatively, if you're in the mood for something more lighthearted and entertaining, \"Ocean's Twelve\" is a fun and enjoyable heist movie with an all-star cast including George Clooney, Brad Pitt, and Matt Damon. Which one would you like to learn more about or watch?",
+      "constraints": {
+        "genre": "french",
+        "plot": [
+          "what",
+          "frida"
+        ],
+        "name": "Frida",
+        "actor": "Matt Smith",
+        "director": "Carlos Saldanha",
+        "language": "French"
+      }
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Forgetting Sarah Marshall",
+      "to_anchor": "Dear John"
+    },
+    {
+      "turn": 7,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Dear John",
+      "to_anchor": "Revolutionary Road"
+    },
+    {
+      "turn": 13,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "director",
+      "bridge_value": "Carlos Saldanha",
+      "from_anchor": "Revolutionary Road",
+      "to_anchor": "The Imaginarium of Doctor Parnassus"
+    },
+    {
+      "turn": 18,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Matt Smith",
+      "from_anchor": "The Imaginarium of Doctor Parnassus",
+      "to_anchor": "This Means War"
+    }
+  ]
+}

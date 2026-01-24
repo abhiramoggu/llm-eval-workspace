@@ -1,0 +1,704 @@
+{
+  "session_id": "00001",
+  "model_name": "qwen:7b",
+  "true_genre": "comedy-drama",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a comedy-drama movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy-drama",
+        "anchor_title": "Forgetting Sarah Marshall",
+        "constraints": {
+          "genre": "comedy-drama"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend 'The Great Debaters' (2007). It's a drama based on true events, featuring Denzel Washington and Jurnee Smollett-Bell. The film follows a debate team inspired by their professor, challenging Harvard in the national championship.",
+      "constraints": {
+        "genre": "comedy-drama",
+        "plot": [
+          "comedy",
+          "drama"
+        ],
+        "name": "You"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Andie MacDowell. That sounds intriguing. (I’m thinking of RED.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Andie MacDowell",
+        "anchor_title": "Big Fish",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "writer": "Warren Ellis"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "writer",
+          "bridge_value": "Warren Ellis",
+          "from_anchor": "Forgetting Sarah Marshall",
+          "to_anchor": "Big Fish"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a comedy-drama fix with Andie MacDowell, I recommend watching 'The Hunted' (2003). The film follows three hikers遭遇未知病毒， while they encounter an eccentric police officer. With MacDowell's presence and the mix of drama and comedy, it's sure to be entertaining.",
+      "constraints": {
+        "genre": "comedy-drama",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "RED",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Andie MacDowell",
+        "anchor_title": "Big Fish",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "writer": "Warren Ellis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend 'The Right Stuff' (1983) for its thrilling account of the U.S. space program's development. Starring Bill Fagerbakke, Rick Aviles, and iconic characters like Mark Wahlberg as Bob Bold, it offers a captivating blend of history and drama.",
+      "constraints": {
+        "genre": "comedy-drama",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of 3. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Andie MacDowell",
+        "anchor_title": "Big Fish",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "writer": "Warren Ellis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for a comedy-drama with Andie MacDowell and involving likes and sound, I would recommend \"Forgetting Sarah Marshall\" (2008). It stars MacDowell along with Paul Rudd, who plays the lead character Dev, dealing with heartbreak while trying to maintain a positive outlook. The film's plot features plenty of moments that resonate with themes of liking and the sound of change.",
+      "constraints": {
+        "genre": "comedy-drama",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "3",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Andie MacDowell",
+        "anchor_title": "Big Fish",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "writer": "Warren Ellis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend \"Big Fish\" (2003) directed by Steven Spielberg. The film tells a magical, storytelling journey through the life of the narrator's dying father. Starring Jessica Lange and Ewan McGregor, it explores themes of truth, imagination, and family.",
+      "constraints": {
+        "genre": "comedy-drama",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "You",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Her. I want to try something more utopian and dystopian—still with Matt Letscher if possible. Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "utopian and dystopian",
+        "anchor_title": "Messenger",
+        "constraints": {
+          "genre": "utopian and dystopian",
+          "actor": "Matt Letscher",
+          "writer": "Warren Ellis"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 6,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "actor",
+          "bridge_value": "Matt Letscher",
+          "from_anchor": "Big Fish",
+          "to_anchor": "Messenger"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for utopian and dystopian themes, with Matt Letscher involved, I would recommend watching 'The Watcher' (2000). It features Chris Ellis, Joseph Sikora, and Keanu Reeves in a thrilling crime story with meticulous details.",
+      "constraints": {
+        "genre": "utopian and dystopian",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Her",
+        "actor": "Matt Letscher"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "utopian and dystopian",
+        "anchor_title": "Messenger",
+        "constraints": {
+          "genre": "utopian and dystopian",
+          "actor": "Matt Letscher",
+          "writer": "Warren Ellis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I would recommend 'Despicable Me 2' for its beloved characters like Mona Marshall and Debi Derryberry, as well as its fun and heartwarming plot.",
+      "constraints": {
+        "genre": "utopian and dystopian",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Matt Letscher"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Beloved tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "utopian and dystopian",
+        "anchor_title": "Messenger",
+        "constraints": {
+          "genre": "utopian and dystopian",
+          "actor": "Matt Letscher",
+          "writer": "Warren Ellis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend 'Man on Wire' (2008) for its captivating story of Philippe Petit's high-wire walk between World Trade Center towers in 1974. The film stars Jean-Louis Blondeau and features the real footage that makes it a unique cinematic experience.",
+      "constraints": {
+        "genre": "love",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "actor": "Matt Letscher"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Man on Wire. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "utopian and dystopian",
+        "anchor_title": "Messenger",
+        "constraints": {
+          "genre": "utopian and dystopian",
+          "actor": "Matt Letscher",
+          "writer": "Warren Ellis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences, I recommend watching 'Maid in Manhattan' (2002). The film features Matt Letscher as the lead character, and it offers a romantic comedy with elements of espionage.",
+      "constraints": {
+        "genre": "love",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Man on Wire",
+        "actor": "Matt Letscher"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Her? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "utopian and dystopian",
+        "anchor_title": "Messenger",
+        "constraints": {
+          "genre": "utopian and dystopian",
+          "actor": "Matt Letscher",
+          "writer": "Warren Ellis"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for a love story with Matt Letcher and involving decision-making, I recommend watching 'Germinal'. With its themes of class struggle and employee rights, it delivers a thought-provoking experience.",
+      "constraints": {
+        "genre": "love",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "Her",
+        "actor": "Matt Letscher"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Jack Elam. Hmm, I didn’t expect that vibe. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 11,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Jack Elam",
+        "anchor_title": "Divergent",
+        "constraints": {
+          "genre": "utopian and dystopian",
+          "actor": "Jack Elam",
+          "writer": "Warren Ellis",
+          "plot": "your"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 11,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "your",
+          "from_anchor": "Messenger",
+          "to_anchor": "Divergent"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're in the mood for a science-fiction adventure with Jack Elam, 'Armageddon' might be a great choice. It features both action and character development, with Jack Elam playing a significant role.",
+      "constraints": {
+        "genre": "love",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "X",
+        "actor": "Jack Elam"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jack Elam",
+        "anchor_title": "Divergent",
+        "constraints": {
+          "genre": "utopian and dystopian",
+          "actor": "Jack Elam",
+          "writer": "Warren Ellis",
+          "plot": "your"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For those interested in a romantic drama with a touch of mystery, I would recommend 'Veronica Mars'. Starring Francis Capra and Enrico Colantoni, the show follows Veronica Mars as she uses her detective skills to solve cases while navigating her high school reunion.",
+      "constraints": {
+        "genre": "love",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Jack Elam"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jack Elam",
+        "anchor_title": "Divergent",
+        "constraints": {
+          "genre": "utopian and dystopian",
+          "actor": "Jack Elam",
+          "writer": "Warren Ellis",
+          "plot": "your"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I would recommend 'Blow Out' for its gripping plot about a sound recordist uncovering a murder cover-up. Starring John McMartin and Dennis Franz, the film offers a thrilling investigative thriller experience.",
+      "constraints": {
+        "genre": "love",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "actor": "Jack Elam"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Blow Out? That sounds intriguing.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jack Elam",
+        "anchor_title": "Divergent",
+        "constraints": {
+          "genre": "utopian and dystopian",
+          "actor": "Jack Elam",
+          "writer": "Warren Ellis",
+          "plot": "your"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For those who enjoy love stories and romantic performances, 'The Twilight Saga: New Moon' with Robert Pattinson and Taylor Lautner is a fitting choice. It features elements of romance and drama.",
+      "constraints": {
+        "genre": "love",
+        "plot": [
+          "what",
+          "blow"
+        ],
+        "name": "Blow Out",
+        "actor": "Jack Elam"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Twilight Saga: New Moon tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jack Elam",
+        "anchor_title": "Divergent",
+        "constraints": {
+          "genre": "utopian and dystopian",
+          "actor": "Jack Elam",
+          "writer": "Warren Ellis",
+          "plot": "your"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a love story with a unique twist, I recommend 'Lady in the Water' featuring Jared Harris and Sarita Choudhury. The story combines elements of fantasy and relationships, making it an intriguing watch.",
+      "constraints": {
+        "genre": "love",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Twilight",
+        "actor": "Jack Elam"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Jack Elam",
+        "anchor_title": "Divergent",
+        "constraints": {
+          "genre": "utopian and dystopian",
+          "actor": "Jack Elam",
+          "writer": "Warren Ellis",
+          "plot": "your"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For someone who enjoys a unique love story with unexpected twists, I would recommend 'This Girl'. With its focus on a boy's infatuation and his desperate attempts to impress the unattainable girl, this movie offers a charming and relatable tale.",
+      "constraints": {
+        "genre": "love",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Twilight",
+        "actor": "Jack Elam"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on This Girl. I want to try something more first contact—Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "first contact",
+        "anchor_title": "E.T. the Extra-Terrestrial",
+        "constraints": {
+          "genre": "first contact",
+          "actor": "Jack Elam",
+          "writer": "Warren Ellis",
+          "plot": "your"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 17,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "time",
+          "from_anchor": "Divergent",
+          "to_anchor": "E.T. the Extra-Terrestrial"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for something with a first contact vibe, I recommend 'E. T. the Extra-Terrestrial'. Starring Henry Thomas as E.T., the film follows his encounter with an Earthling family.",
+      "constraints": {
+        "genre": "first contact",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "X",
+        "actor": "Jack Elam"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "first contact",
+        "anchor_title": "E.T. the Extra-Terrestrial",
+        "constraints": {
+          "genre": "first contact",
+          "actor": "Jack Elam",
+          "writer": "Warren Ellis",
+          "plot": "your"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend watching 'E.T. the Extra-Terrestrial' (1982). Starring Debra Winger and Henry Thomas, it's a heartwarming tale about friendship and overcoming adversity.",
+      "constraints": {
+        "genre": "first contact",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Jack Elam"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "first contact",
+        "anchor_title": "E.T. the Extra-Terrestrial",
+        "constraints": {
+          "genre": "first contact",
+          "actor": "Jack Elam",
+          "writer": "Warren Ellis",
+          "plot": "your"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend 'The Violent Kind' for its intense plot and starring Taylor Cole. If you're looking for a more atmospheric film, '2010' with its探讨科技与灾难的元素 might be of interest.",
+      "constraints": {
+        "genre": "first contact",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "X",
+        "actor": "Jack Elam"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Her tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "first contact",
+        "anchor_title": "E.T. the Extra-Terrestrial",
+        "constraints": {
+          "genre": "first contact",
+          "actor": "Jack Elam",
+          "writer": "Warren Ellis",
+          "plot": "your"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a deeper story with complex characters, I would recommend 'Taxi Driver' (1976) starring Jodie Foster and Peter Boyle. The film delves into themes of loneliness, violence, and the search for identity.",
+      "constraints": {
+        "genre": "first contact",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her",
+        "actor": "Jack Elam"
+      }
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "writer",
+      "bridge_value": "Warren Ellis",
+      "from_anchor": "Forgetting Sarah Marshall",
+      "to_anchor": "Big Fish"
+    },
+    {
+      "turn": 6,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "actor",
+      "bridge_value": "Matt Letscher",
+      "from_anchor": "Big Fish",
+      "to_anchor": "Messenger"
+    },
+    {
+      "turn": 11,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "your",
+      "from_anchor": "Messenger",
+      "to_anchor": "Divergent"
+    },
+    {
+      "turn": 17,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "time",
+      "from_anchor": "Divergent",
+      "to_anchor": "E.T. the Extra-Terrestrial"
+    }
+  ]
+}

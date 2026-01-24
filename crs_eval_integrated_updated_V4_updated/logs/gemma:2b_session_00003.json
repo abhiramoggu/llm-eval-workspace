@@ -1,0 +1,844 @@
+{
+  "session_id": "00003",
+  "model_name": "gemma:2b",
+  "true_genre": "cult",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a cult movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "cult",
+        "anchor_title": "Evil Dead II",
+        "constraints": {
+          "genre": "cult"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation for you:\n\nIf you're in the mood for a cult movie about a dysfunctional family on the road to escape a vengeful sheriff, check out \"The Devil's Rejects.\"",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "cult",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "Fight Club",
+        "Wolf Creek",
+        "True Blood",
+        "The Devil's Rejects"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of On the Road? That sounds intriguing.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "cult",
+        "anchor_title": "Evil Dead II",
+        "constraints": {
+          "genre": "cult"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Since the user expressed interest in road movies, I would recommend either \"End of Watch\" or \"Paradise Lost\". \"End of Watch\" offers a thrilling and darkly comedic look at life on the road, while \"Paradise Lost\" has an eerie and suspenseful atmosphere.",
+      "constraints": {
+        "genre": "road",
+        "plot": [
+          "what",
+          "road"
+        ],
+        "name": "On the Road"
+      },
+      "rec_titles": [
+        "End of Watch",
+        "Paradise Lost",
+        "The Devil's Rejects",
+        "The Equalizer"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by David Yates? That feels deeper than I thought. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 3,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "David Yates",
+        "anchor_title": "The Legend of Tarzan",
+        "constraints": {
+          "genre": "cult",
+          "director": "David Yates",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 3,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "writer",
+          "bridge_value": "Sue Grafton",
+          "from_anchor": "Evil Dead II",
+          "to_anchor": "The Legend of Tarzan"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "The Seduction of Joe Tynan is a compelling story about an unlikely bond between a liberal Senator and a southern researcher. The plot is thought-provoking and will leave you with a deep appreciation for the complexities of human relationships.\n\nMr. Bean's Holiday is a delightful coming-of-age story about a mischievous character rediscovering the joy of life. The film features heartwarming moments and beautiful cinematography.\n\nThe Psychic Experiment is a mind-bending mystery that will leave you questioning the boundaries between reality and illusion. The film features a stellar cast and a unique visual style that will stay with you long after you finish watching.",
+      "constraints": {
+        "genre": "road",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Deep",
+        "director": "David Yates"
+      },
+      "rec_titles": [
+        "The Seduction of Joe Tynan",
+        "Mr. Bean's Holiday",
+        "Psychic Experiment",
+        "Maleficent"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "David Yates",
+        "anchor_title": "The Legend of Tarzan",
+        "constraints": {
+          "genre": "cult",
+          "director": "David Yates",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference, I recommend either \"A Little Princess\" or \"Zookeeper\". \"A Little Princess\" is a classic story about a young girl's resilience in facing adversity, while \"Zookeeper\" showcases a group of animals breaking free from their code of silence to help their beloved zookeeper find love.",
+      "constraints": {
+        "genre": "road",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "David Yates"
+      },
+      "rec_titles": [
+        "A Little Princess",
+        "Constantine",
+        "Zookeeper",
+        "Southland Tales"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "David Yates",
+        "anchor_title": "The Legend of Tarzan",
+        "constraints": {
+          "genre": "cult",
+          "director": "David Yates",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for a light and humorous movie about finding your way and falling in love, \"Mr. Bean's Holiday\" might be the perfect fit. If you prefer something with a bit more suspense and action, then \"Total Recall\" might be more your speed. If you're interested in a more poignant story about love and loss, then \"Runaway Bride\" is a great choice.",
+      "constraints": {
+        "genre": "road",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "You",
+        "director": "David Yates"
+      },
+      "rec_titles": [
+        "Mr. Bean's Holiday",
+        "Total Recall",
+        "Runaway Bride",
+        "500 Days of Summer"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "David Yates",
+        "anchor_title": "The Legend of Tarzan",
+        "constraints": {
+          "genre": "cult",
+          "director": "David Yates",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for a historical romance, \"The Taming of the Shrew\" starring Antonio Banderas and Katharine Hepburn is a great choice. If you're interested in a documentary about police work, \"End of Watch\" starring David Harbour and Frank Grillo is a powerful and moving film. If you're looking for a film with a unique premise and stunning visuals, \"Smilla's Sense of Snow\" starring Julia Ormond is a perfect pick. And if you're looking for a feel-good film about childhood friendships, \"Ted\" starring Mila Kunis is a delightful and heartwarming movie.",
+      "constraints": {
+        "genre": "road",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "director": "David Yates"
+      },
+      "rec_titles": [
+        "The Taming of the Shrew",
+        "End of Watch",
+        "Smilla's Sense of Snow",
+        "Ted"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Burn? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "David Yates",
+        "anchor_title": "The Legend of Tarzan",
+        "constraints": {
+          "genre": "cult",
+          "director": "David Yates",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a road movie recommendation, \"The Skulls\" (2000) starring Kevin Allen is a compelling choice. It offers a dark and intriguing tale about a college student caught in the sinister world of secret societies.",
+      "constraints": {
+        "genre": "road",
+        "plot": [
+          "what"
+        ],
+        "name": "Burn",
+        "director": "David Yates"
+      },
+      "rec_titles": [
+        "The Skulls",
+        "This Is Spinal Tap",
+        "My Own Private Idaho",
+        "We the Living"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "David Yates",
+        "anchor_title": "The Legend of Tarzan",
+        "constraints": {
+          "genre": "cult",
+          "director": "David Yates",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here is a recommendation for you:\n\nIf you're looking for a thought-provoking and entertaining road movie, then \"American Dreamz\" (2006) starring Perrey Reeves would be an excellent choice.",
+      "constraints": {
+        "genre": "road",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "Burn",
+        "director": "David Yates"
+      },
+      "rec_titles": [
+        "American Dreamz",
+        "Find Me Guilty",
+        "I Heart Huckabees",
+        "What Women Want"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Her. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "David Yates",
+        "anchor_title": "The Legend of Tarzan",
+        "constraints": {
+          "genre": "cult",
+          "director": "David Yates",
+          "writer": "Sue Grafton"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Considering the user's interest in road movies and David Yates, \"Jumper\" and \"Castle in the Sky\" seem like strong contenders. Both films showcase Yates's signature style and explore themes of existentialism and human connection.",
+      "constraints": {
+        "genre": "road",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Her",
+        "director": "David Yates"
+      },
+      "rec_titles": [
+        "Jumper",
+        "The Right Stuff",
+        "Castle in the Sky",
+        "Mr. Bean's Holiday"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Miles Millar? That sounds intriguing. (I’m thinking of Tron.)",
+      "user_meta": {
+        "turn": 10,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Miles Millar",
+        "anchor_title": "The Devil's Rejects",
+        "constraints": {
+          "genre": "cult",
+          "director": "David Yates",
+          "writer": "Miles Millar",
+          "plot": "digital"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 10,
+          "from_focus": "director",
+          "to_focus": "writer",
+          "bridge_field": "plot",
+          "bridge_value": "digital",
+          "from_anchor": "The Legend of Tarzan",
+          "to_anchor": "The Devil's Rejects"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference for road movies, the movie with the most striking similarity is **Six-String Samurai**. The film features a rock 'n' roll samurai and an orphaned boy on his journey to Lost Vegas, creating a unique blend of action and musical storytelling.",
+      "constraints": {
+        "genre": "road",
+        "plot": [
+          "written",
+          "miles"
+        ],
+        "name": "Tron",
+        "director": "David Yates",
+        "writer": "Miles Millar"
+      },
+      "rec_titles": [
+        "Six-String Samurai",
+        "Soul Men",
+        "Music and Lyrics",
+        "Rain Man"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Miles Millar",
+        "anchor_title": "The Devil's Rejects",
+        "constraints": {
+          "genre": "cult",
+          "director": "David Yates",
+          "writer": "Miles Millar",
+          "plot": "digital"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for a road movie with a touch of psychological mystery, then \"Tarnation\" (2003) starring Renee Leblanc might be right up your alley. It's a mix of documentary and traditional storytelling that will keep you guessing until the very end.",
+      "constraints": {
+        "genre": "road",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "David Yates",
+        "writer": "Miles Millar"
+      },
+      "rec_titles": [
+        "Tarnation",
+        "Serving Sara",
+        "The Number 23",
+        "Zack and Miri Make a Porno"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Tarnation? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Miles Millar",
+        "anchor_title": "The Devil's Rejects",
+        "constraints": {
+          "genre": "cult",
+          "director": "David Yates",
+          "writer": "Miles Millar",
+          "plot": "digital"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, \"End of Watch\" or \"Little Fockers\" would be the more interesting choices. \"End of Watch\" has a unique documentary style and plot that explores existential themes and social commentary, while \"Little Fockers\" features a unique family dynamic and patriarch figure with a strong sense of loyalty and integrity.",
+      "constraints": {
+        "genre": "road",
+        "plot": [
+          "what"
+        ],
+        "name": "Tarnation",
+        "director": "David Yates",
+        "writer": "Miles Millar"
+      },
+      "rec_titles": [
+        "End of Watch",
+        "Little Fockers",
+        "I Heart Huckabees",
+        "Passion"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Dustin Hoffman. Hmm, I didn’t expect that vibe. (I’m thinking of Little Fockers.)",
+      "user_meta": {
+        "turn": 13,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Dustin Hoffman",
+        "anchor_title": "Monty Python and the Holy Grail",
+        "constraints": {
+          "genre": "cult",
+          "director": "David Yates",
+          "writer": "Miles Millar",
+          "plot": "digital",
+          "actor": "Dustin Hoffman"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 13,
+          "from_focus": "writer",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Dustin Hoffman",
+          "from_anchor": "The Devil's Rejects",
+          "to_anchor": "Monty Python and the Holy Grail"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference for road movies with Dustin Hoffman, I would recommend \"Heart of Darkness\" (1910) or \"Raiders of the Lost Ark\" (1981). Both movies feature Hoffman in leading roles and offer immersive and captivating road trip narratives with a touch of mystery.",
+      "constraints": {
+        "genre": "road",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Little Fockers",
+        "director": "David Yates",
+        "writer": "Miles Millar",
+        "actor": "Dustin Hoffman"
+      },
+      "rec_titles": [
+        "Heart of Darkness",
+        "Ariel",
+        "Raiders of the Lost Ark",
+        "Afterlife"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Dustin Hoffman",
+        "anchor_title": "Monty Python and the Holy Grail",
+        "constraints": {
+          "genre": "cult",
+          "director": "David Yates",
+          "writer": "Miles Millar",
+          "plot": "digital",
+          "actor": "Dustin Hoffman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation based on the user's preferences:\n\nBased on your interest in road movies with a focus on revenge and redemption, I recommend \"The Lincoln Lawyer\" (2011) starring Dustin Hoffman.",
+      "constraints": {
+        "genre": "road",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "David Yates",
+        "writer": "Miles Millar",
+        "actor": "Dustin Hoffman"
+      },
+      "rec_titles": [
+        "The Lincoln Lawyer",
+        "Serving Sara",
+        "New York Minute",
+        "You Kill Me"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Dustin Hoffman",
+        "anchor_title": "Monty Python and the Holy Grail",
+        "constraints": {
+          "genre": "cult",
+          "director": "David Yates",
+          "writer": "Miles Millar",
+          "plot": "digital",
+          "actor": "Dustin Hoffman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a road movie with similar vibes, \"This Is Spinal Tap\" starring Bruno Kirby is a classic. If you're looking for something more lighthearted, \"Tootsie\" starring Jessica Lange is a heartwarming comedy. If you're interested in a psychological thriller with a focus on torture, \"The Trouble with Harry\" starring Jerry Mathers is a must-watch.",
+      "constraints": {
+        "genre": "road",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "X",
+        "director": "David Yates",
+        "writer": "Miles Millar",
+        "actor": "Dustin Hoffman"
+      },
+      "rec_titles": [
+        "This Is Spinal Tap",
+        "Tootsie",
+        "The Trouble with Harry",
+        "Wolf Creek"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Dustin Hoffman",
+        "anchor_title": "Monty Python and the Holy Grail",
+        "constraints": {
+          "genre": "cult",
+          "director": "David Yates",
+          "writer": "Miles Millar",
+          "plot": "digital",
+          "actor": "Dustin Hoffman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a thrilling road movie with a charismatic cast, recommend \"My Own Private Idaho\". It's a captivating story about two friends navigating the streets of Portland.\n\nIf you're looking for a magical adventure with a strong female lead, \"The Last Unicorn\" is an excellent choice. It's a visually stunning film about a woman searching for her destiny.\n\nFor a thought-provoking exploration of human desire and ethics, \"Prometheus\" is a thought-provoking film that will leave you pondering the power of choice.",
+      "constraints": {
+        "genre": "road",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "director": "David Yates",
+        "writer": "Miles Millar",
+        "actor": "Dustin Hoffman"
+      },
+      "rec_titles": [
+        "My Own Private Idaho",
+        "The Last Unicorn",
+        "Prometheus",
+        "What Women Want"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Dustin Hoffman",
+        "anchor_title": "Monty Python and the Holy Grail",
+        "constraints": {
+          "genre": "cult",
+          "director": "David Yates",
+          "writer": "Miles Millar",
+          "plot": "digital",
+          "actor": "Dustin Hoffman"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference, \"Unleashed\" and \"Paycheck\" seem like good recommendations. \"Unleashed\" has a compelling story about a man's escape from slavery, and \"Paycheck\" offers a suspenseful and gritty thriller about a man running from his pursuer.",
+      "constraints": {
+        "genre": "road",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "director": "David Yates",
+        "writer": "Miles Millar",
+        "actor": "Dustin Hoffman"
+      },
+      "rec_titles": [
+        "Unleashed",
+        "Paycheck",
+        "The Bad Seed",
+        "Alex in Wonderland"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by George Clooney? That feels deeper than I thought. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 18,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "George Clooney",
+        "anchor_title": "A Clockwork Orange",
+        "constraints": {
+          "genre": "cult",
+          "director": "George Clooney",
+          "writer": "David Nicholls",
+          "plot": "digital"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 18,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "writer",
+          "bridge_value": "David Nicholls",
+          "from_anchor": "Monty Python and the Holy Grail",
+          "to_anchor": "A Clockwork Orange"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Out of Sight is a great choice if you're looking for a funny and adventurous road movie with a talented cast.",
+      "constraints": {
+        "genre": "road",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Deep",
+        "director": "George Clooney",
+        "writer": "George Clooney",
+        "actor": "George Clooney"
+      },
+      "rec_titles": [
+        "Armageddon",
+        "Out of Sight",
+        "Soul Men",
+        "Elysium"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "George Clooney",
+        "anchor_title": "A Clockwork Orange",
+        "constraints": {
+          "genre": "cult",
+          "director": "George Clooney",
+          "writer": "David Nicholls",
+          "plot": "digital"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Sure, here's a recommendation:\n\nIf you enjoyed \"The Pink Panther\", you might enjoy \"The Cabin in the Woods\" with its suspenseful plot and ensemble cast.",
+      "constraints": {
+        "genre": "road",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "George Clooney",
+        "writer": "George Clooney",
+        "actor": "George Clooney"
+      },
+      "rec_titles": [
+        "The Pink Panther 2",
+        "The Cabin in the Woods",
+        "This Is the End",
+        "Turbo"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "George Clooney",
+        "anchor_title": "A Clockwork Orange",
+        "constraints": {
+          "genre": "cult",
+          "director": "George Clooney",
+          "writer": "David Nicholls",
+          "plot": "digital"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for something about perseverance and overcoming adversity, \"Three Kings\" might be the movie for you. It's about a paraplegic triathlete who trains himself to achieve his dream of competing in the World Triathlon Championships.\n\nIf you're interested in heist movies featuring George Clooney, \"Ocean's Thirteen\" might be a fun choice. It's about a group of bank robbers who round up a group of boys for a third heist.\n\nIf you're looking for a more lighthearted and heartwarming movie, \"The Monuments Men\" is a great option. It's about a group of convicts searching for hidden treasure while a relentless lawman is hot on their trail.",
+      "constraints": {
+        "genre": "road",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "You",
+        "director": "George Clooney",
+        "writer": "George Clooney",
+        "actor": "George Clooney"
+      },
+      "rec_titles": [
+        "Three Kings",
+        "Ocean's Thirteen",
+        "The Monuments Men",
+        "O Brother, Where Art Thou?"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 3,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "writer",
+      "bridge_value": "Sue Grafton",
+      "from_anchor": "Evil Dead II",
+      "to_anchor": "The Legend of Tarzan"
+    },
+    {
+      "turn": 10,
+      "from_focus": "director",
+      "to_focus": "writer",
+      "bridge_field": "plot",
+      "bridge_value": "digital",
+      "from_anchor": "The Legend of Tarzan",
+      "to_anchor": "The Devil's Rejects"
+    },
+    {
+      "turn": 13,
+      "from_focus": "writer",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Dustin Hoffman",
+      "from_anchor": "The Devil's Rejects",
+      "to_anchor": "Monty Python and the Holy Grail"
+    },
+    {
+      "turn": 18,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "writer",
+      "bridge_value": "David Nicholls",
+      "from_anchor": "Monty Python and the Holy Grail",
+      "to_anchor": "A Clockwork Orange"
+    }
+  ]
+}

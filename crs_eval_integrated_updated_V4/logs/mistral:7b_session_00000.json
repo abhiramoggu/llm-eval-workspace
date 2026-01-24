@@ -1,0 +1,768 @@
+{
+  "session_id": "00000",
+  "model_name": "mistral:7b",
+  "true_genre": "animal",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a animal movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "animal",
+        "anchor_title": "The Velveteen Rabbit",
+        "constraints": {
+          "genre": "animal"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend \"Frankenweenie\" for you! This stop-motion animated film tells the heartwarming story of a boy and his beloved dog, with a twist that combines humor, drama, and a dash of suspense. The voice cast includes Martin Landau and Catherine O'Hara, who deliver excellent performances. Alternatively, if you're looking for something a bit more mysterious, \"Cloudy with a Chance of Meatballs 2\" offers an entertaining adventure filled with food-animal hybrids that are both hilarious and fantastical, starring Will Forte and Melissa Sturm. Enjoy the movies!",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "animal",
+          "could"
+        ],
+        "name": "You"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Maya? That feels deeper than I thought. (I’m thinking of Cloudy with a Chance of Meatballs 2.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "Maya",
+        "anchor_title": "The Trumpet of the Swan",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "plot": "corp"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "language",
+          "bridge_field": "plot",
+          "bridge_value": "corp",
+          "from_anchor": "The Velveteen Rabbit",
+          "to_anchor": "The Trumpet of the Swan"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend watching \"The Trumpet of the Swan\". It's an enchanting animated film where a mute trumpeter swan named Louie learns to communicate and find his voice with the help of a unique gift. Another one that might interest you is \"White Fang\", a classic tale about a wolf-dog's journey through adversity and redemption. Both films offer touching stories and beautiful Maya animations. Enjoy your movie time!",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "Cloudy with a Chance of Meatballs",
+        "language": "Maya"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Maya",
+        "anchor_title": "The Trumpet of the Swan",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "plot": "corp"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'm delighted to recommend two films that might suit your preference for animal-themed movies, particularly those in Maya language and containing the keyword \"just\".\n\nFirstly, \"The Wonderful Wizard of Oz\" (1900) is a classic American tale about Dorothy and her pet Toto who embark on an adventure across the land of Oz. Along the way, they meet and help the Scarecrow, the Tin Woodman, and the Cowardly Lion to find what they've been missing - brains, heart, and courage!\n\nSecondly, \"The Call of the Wild\" (1903) offers a fascinating journey as a house dog is abducted and brought to the north, where he transforms into a sled dog. This movie might be a great fit for those who enjoy stories centered around animals. Enjoy your viewing experience!",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "Maya"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Maya",
+        "anchor_title": "The Trumpet of the Swan",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "plot": "corp"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd recommend watching \"The Secret\" if you enjoy mysteries with a touch of suspense. It's a thought-provoking movie starring James Nesbitt that keeps you guessing until the very end!\n\nIf you prefer something more adventurous and humorous, you might like \"Super,\" a superhero comedy featuring Ellen Page, Rainn Wilson, and Kevin Bacon. It's an entertaining take on the superhero genre with a unique twist!",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "language": "Maya"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Chan-wook Park? Hmm, I didn’t expect that vibe. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 5,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Chan-wook Park",
+        "anchor_title": "Oldboy",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "plot": "diverse",
+          "director": "Chan-wook Park"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 5,
+          "from_focus": "language",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "diverse",
+          "from_anchor": "The Trumpet of the Swan",
+          "to_anchor": "Oldboy"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your interest in a different vibe and preference for films by Chan-wook Park, I'd recommend delving into \"White Night\" (2007). This intriguing mystery film showcases Park's signature style with its captivating narrative and suspenseful atmosphere.\n\nIf you're looking for something a bit more futuristic, \"Elysium\" (2013) featuring Matt Damon and Sharlto Copley could be an engaging watch as well! Both movies offer compelling stories that I believe you might enjoy.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Her",
+        "language": "Maya",
+        "director": "Chan-wook Park"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Chan-wook Park",
+        "anchor_title": "Oldboy",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "plot": "diverse",
+          "director": "Chan-wook Park"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Out of the provided options, I'd recommend watching \"Terminator 2: Judgment Day\". It's a thrilling sci-fi film where a cyborg protector battles advanced technology to save a young boy, and features star actors like Jenette Goldstein, S. Epatha Merkerson, and Joe Morton. Another great choice is \"Wolf Girl\", a unique drama with Tim Curry, Grace Jones, and Jordan Prentice, about a girl who struggles with a rare genetic condition but dreams of living a normal life. Enjoy the movies!",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "Maya",
+        "director": "Chan-wook Park"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Wolf. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Chan-wook Park",
+        "anchor_title": "Oldboy",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "plot": "diverse",
+          "director": "Chan-wook Park"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you mentioned liking a film with an animal theme and were surprised by the vibe, I'd recommend giving \"The Velveteen Rabbit\" a try. This heartwarming animation tells a story about a velveteen rabbit who dreams of becoming real. If you prefer more action, you might also enjoy \"Smokin' Aces\", a crime-thriller with an all-star cast that keeps the suspense high. Enjoy your movie time!",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Wolf",
+        "language": "Maya",
+        "director": "Chan-wook Park"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Chan-wook Park",
+        "anchor_title": "Oldboy",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "plot": "diverse",
+          "director": "Chan-wook Park"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your interest in suspenseful movies and the director Chan-wook Park, I'd recommend you check out \"Man on Fire\" starring Denzel Washington. It's a gripping story about a former assassin who forms a bond with his employer's daughter. If you enjoy that, you might also like \"The Hunger Games: Mockingjay - Part 2\", which follows Katniss Everdeen in the final battle for Panem's freedom, starring Jennifer Lawrence and Philip Seymour Hoffman. Both films are sure to keep you on the edge of your seat!",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "language": "Maya",
+        "director": "Chan-wook Park"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Hunger Games tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Chan-wook Park",
+        "anchor_title": "Oldboy",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "plot": "diverse",
+          "director": "Chan-wook Park"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd be happy to help! Based on your interest in dystopian societies, you might find 'Divergent' intriguing. It's set in a world divided by factions and follows a young woman who discovers she doesn't fit into the society's rigid norms. If you're looking for something a bit lighter, 'Anyone But You' is a charming romantic comedy about two adults pretending to be a couple at a wedding. Hope this helps!",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Hunger",
+        "language": "ger",
+        "director": "Chan-wook Park"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Chan-wook Park",
+        "anchor_title": "Oldboy",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "plot": "diverse",
+          "director": "Chan-wook Park"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you mentioned a preference for the genre of animals and films directed by Chan-wook Park, I'm afraid none of these recommendations quite fit that criteria. However, if we focus on movies with a 'weird' or unusual plot, I'd recommend \"Where the Red Fern Grows\" - an endearing tale about a boy and his hound dogs that promises adventure and warmth, or \"Passion\", a unique documentary about a two-time world beard champion who shares his inspirational story and guides us through his world in a 6-minute narrative doc. Enjoy!",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "Hunger",
+        "language": "ger",
+        "director": "Chan-wook Park"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Scarlett Johansson. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 11,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Scarlett Johansson",
+        "anchor_title": "Lucy",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "plot": "diverse",
+          "director": "Chan-wook Park",
+          "actor": "Scarlett Johansson"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 11,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Scarlett Johansson",
+          "from_anchor": "Oldboy",
+          "to_anchor": "Lucy"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It sounds like you're in for a treat! If you enjoy comedies with a touch of satire, I'd recommend giving \"Zoolander 2\" a watch. This film stars Scarlett Johansson alongside Ben Stiller and Will Ferrell, offering plenty of laughs.\n\nOn the other hand, if you're interested in science fiction with a strong female lead, \"Lucy\" is an intriguing choice. Scarlett Johansson plays the protagonist in this thought-provoking film about human evolution. Enjoy the movies!",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Her",
+        "language": "ger",
+        "director": "Chan-wook Park",
+        "actor": "Scarlett Johansson"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Scarlett Johansson",
+        "anchor_title": "Lucy",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "plot": "diverse",
+          "director": "Chan-wook Park",
+          "actor": "Scarlett Johansson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for a movie directed by Chan-wook Park featuring Scarlett Johansson, I'd highly recommend \"Vicky Cristina Barcelona\" (2008). This film showcases an intriguing plot with a tempestuous relationship and the star power of Penélope Cruz. If you're looking for something different, \"Thick as Thieves\" might appeal to you with its action-packed plot and an ensemble cast including Antonio Banderas and Tom Hardy. Enjoy the movies!",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "ger",
+        "director": "Chan-wook Park",
+        "actor": "Scarlett Johansson"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Scarlett Johansson",
+        "anchor_title": "Lucy",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "plot": "diverse",
+          "director": "Chan-wook Park",
+          "actor": "Scarlett Johansson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend \"Hitch\" for you! This film is a fascinating exploration of one of the most intriguing encounters in cinema history between Alfred Hitchcock and François Truffaut, played by Vincent De Paul and Michael Rapaport respectively. It's a unique blend of drama and behind-the-scenes insight into the world of movie making.\n\nIf you're looking for something with Scarlett Johansson, I suggest checking out \"Man on Fire\" starring Denzel Washington. In this film, Johansson plays the young daughter of a businessman, and Washington portrays a former CIA operative who becomes her protector amidst danger.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "You",
+        "language": "ger",
+        "director": "Chan-wook Park",
+        "actor": "Scarlett Johansson"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Scarlett Johansson",
+        "anchor_title": "Lucy",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "plot": "diverse",
+          "director": "Chan-wook Park",
+          "actor": "Scarlett Johansson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd be happy to help! If you're looking for a movie with Scarlett Johansson and a thrilling plot, I'd recommend \"RED\". It's an action-packed film starring Johansson alongside Bruce Willis and Morgan Freeman. On the other hand, if you're interested in a classic romantic drama set in 16th century Italy, you might enjoy \"The Taming of the Shrew\". It's a witty and engaging tale directed by Chan-wook Park, though it's important to note that this play is written by William Shakespeare.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "language": "ger",
+        "director": "Chan-wook Park",
+        "actor": "Scarlett Johansson"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Taming of the Shrew. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Scarlett Johansson",
+        "anchor_title": "Lucy",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "plot": "diverse",
+          "director": "Chan-wook Park",
+          "actor": "Scarlett Johansson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your interest in movies that sound fascinating and have a strong female presence, I'd like to recommend \"Mama\" and \"Alex in Wonderland\". In \"Mama\", Megan Charpentier delivers an inspiring performance as a young girl learning self-defense and standing up against bullies. On the other hand, \"Alex in Wonderland\" features Jeanne Moreau and showcases the journey of a filmmaker navigating the complex world of art and commerce, with Angelo Rossitto appearing as one of his idols. Both movies offer compelling stories and strong performances that you might enjoy.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "W.",
+        "language": "ger",
+        "director": "Chan-wook Park",
+        "actor": "Scarlett Johansson"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Mark Levin (Screenwriter)? Hmm, I didn’t expect that vibe. (I’m thinking of Wonder.)",
+      "user_meta": {
+        "turn": 16,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Mark Levin (Screenwriter)",
+        "anchor_title": "The Velveteen Rabbit",
+        "constraints": {
+          "genre": "animal",
+          "plot": "bestseller",
+          "director": "Chan-wook Park",
+          "actor": "Scarlett Johansson",
+          "writer": "Mark Levin (Screenwriter)"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 16,
+          "from_focus": "actor",
+          "to_focus": "writer",
+          "bridge_field": "plot",
+          "bridge_value": "bestseller",
+          "from_anchor": "Lucy",
+          "to_anchor": "The Velveteen Rabbit"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for a movie written by Mark Levin, I'd highly recommend you watch \"Oldboy\" (2003). It's a gripping thriller directed by Chan-wook Park about a man seeking revenge after being imprisoned for fifteen years. Also, if you're a fan of Scarlett Johansson, you might enjoy \"In Good Company\" (2004) where she shares the screen with Dennis Quaid and plays a significant role in the plot. Enjoy your movie time!",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "written",
+          "mark"
+        ],
+        "name": "Wonder",
+        "language": "ger",
+        "director": "Chan-wook Park",
+        "actor": "Scarlett Johansson",
+        "writer": "Mark Levin (Screenwriter)"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Mark Levin (Screenwriter)",
+        "anchor_title": "The Velveteen Rabbit",
+        "constraints": {
+          "genre": "animal",
+          "plot": "bestseller",
+          "director": "Chan-wook Park",
+          "actor": "Scarlett Johansson",
+          "writer": "Mark Levin (Screenwriter)"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems like you might enjoy \"Stoker\" directed by Chan-wook Park and starring Mia Wasikowska and Scarlett Johansson. This psychological thriller unfolds an intriguing mystery that I think you'll find engaging. Another film worth checking out is \"12 Angry Men,\" a classic courtroom drama starring Lee J. Cobb, which showcases a jury's deliberation over a murder case with unexpected twists and turns. Enjoy your movie time!",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "ger",
+        "director": "Chan-wook Park",
+        "actor": "Scarlett Johansson",
+        "writer": "Mark Levin (Screenwriter)"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Mark Levin (Screenwriter)",
+        "anchor_title": "The Velveteen Rabbit",
+        "constraints": {
+          "genre": "animal",
+          "plot": "bestseller",
+          "director": "Chan-wook Park",
+          "actor": "Scarlett Johansson",
+          "writer": "Mark Levin (Screenwriter)"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for animal-themed films, I'd highly recommend watching \"The Velveteen Rabbit\". This heartwarming film tells a beautiful story of a boy and his beloved velveteen rabbit. If you're in the mood for a bit of comedy, \"What Women Want\" starring Mel Gibson might also appeal to you. In this movie, Gibson plays an ad exec who gains the ability to hear women's thoughts, leading to some unexpected and humorous situations. Enjoy!",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "language": "ger",
+        "director": "Chan-wook Park",
+        "actor": "Scarlett Johansson",
+        "writer": "Mark Levin (Screenwriter)"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does What Women Want tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Mark Levin (Screenwriter)",
+        "anchor_title": "The Velveteen Rabbit",
+        "constraints": {
+          "genre": "animal",
+          "plot": "bestseller",
+          "director": "Chan-wook Park",
+          "actor": "Scarlett Johansson",
+          "writer": "Mark Levin (Screenwriter)"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend \"The Prestige\" for you. It's a thrilling tale about two stage magicians in 1890s London, played by talented actors including Christian Bale and Hugh Jackman. The intricate plot involves a battle of wits and illusions that might pique your interest!\n\nIf you prefer something more recent and unique, \"Passion\" is also worth checking out. It tells the inspiring story of an ambassador for competitive beard growing, featuring Scarlett Johansson in a supporting role. This 6-minute narrative doc will take you on a journey through passion, loss, and self-discovery. Enjoy!",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "language": "ger",
+        "director": "Chan-wook Park",
+        "actor": "Scarlett Johansson",
+        "writer": "Mark Levin (Screenwriter)"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by King Vidor? That feels deeper than I thought. (I’m thinking of Passion.)",
+      "user_meta": {
+        "turn": 20,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "King Vidor",
+        "anchor_title": "The Trumpet of the Swan",
+        "constraints": {
+          "genre": "animal",
+          "plot": "convention",
+          "director": "King Vidor",
+          "actor": "Scarlett Johansson",
+          "writer": "Mark Levin (Screenwriter)"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 20,
+          "from_focus": "writer",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "convention",
+          "from_anchor": "The Velveteen Rabbit",
+          "to_anchor": "The Trumpet of the Swan"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Considering your preference for King Vidor, I'd highly recommend \"A Love Song for Bobby Long.\" It's a poignant drama starring Scarlett Johansson, set in New Orleans after the death of her character's mother. If you're interested in a classic tale with animals, \"The Call of the Wild\" might also appeal to you, especially as it was one of Vidor's early works.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Deep",
+        "language": "ger",
+        "director": "King Vidor",
+        "actor": "Scarlett Johansson",
+        "writer": "Mark Levin (Screenwriter)"
+      }
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "language",
+      "bridge_field": "plot",
+      "bridge_value": "corp",
+      "from_anchor": "The Velveteen Rabbit",
+      "to_anchor": "The Trumpet of the Swan"
+    },
+    {
+      "turn": 5,
+      "from_focus": "language",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "diverse",
+      "from_anchor": "The Trumpet of the Swan",
+      "to_anchor": "Oldboy"
+    },
+    {
+      "turn": 11,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Scarlett Johansson",
+      "from_anchor": "Oldboy",
+      "to_anchor": "Lucy"
+    },
+    {
+      "turn": 16,
+      "from_focus": "actor",
+      "to_focus": "writer",
+      "bridge_field": "plot",
+      "bridge_value": "bestseller",
+      "from_anchor": "Lucy",
+      "to_anchor": "The Velveteen Rabbit"
+    },
+    {
+      "turn": 20,
+      "from_focus": "writer",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "convention",
+      "from_anchor": "The Velveteen Rabbit",
+      "to_anchor": "The Trumpet of the Swan"
+    }
+  ]
+}

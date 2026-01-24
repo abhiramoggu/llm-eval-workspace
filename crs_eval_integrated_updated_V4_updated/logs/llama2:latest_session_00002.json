@@ -1,0 +1,847 @@
+{
+  "session_id": "00002",
+  "model_name": "llama2:latest",
+  "true_genre": "autobiography",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a autobiography movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "autobiography",
+        "anchor_title": "The Hiding Place",
+        "constraints": {
+          "genre": "autobiography"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preference for autobiography movies, I would recommend \"Elysium\" and \"Trees Lounge\". \"Elysium\" is a thought-provoking sci-fi movie that explores the themes of inequality and social justice, with Matt Damon delivering a powerful performance. On the other hand, \"Trees Lounge\" is a quirky and entertaining comedy-drama that follows the life of a man struggling with addiction and self-discovery, featuring an impressive cast including Steve Buscemi and Carol Kane.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "Armageddon",
+        "Elysium",
+        "Trees Lounge",
+        "Psychic Experiment"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Saul Dibb? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Trees Lounge.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "Running with Scissors",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Brooke Smith"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Brooke Smith",
+          "from_anchor": "The Hiding Place",
+          "to_anchor": "Running with Scissors"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"The Whistler\" and \"Afterlife.\" Both films have intriguing plots and strong performances from their casts. In \"The Whistler,\" a gentle giant stands up against a group of thugs who threaten the peaceful life of a small town, while in \"Afterlife,\" a troubled young man discovers that his father's ghost is trying to communicate with him in order to finally understand each other. I hope you find these recommendations helpful and enjoyable!",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Trees Lounge",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb"
+      },
+      "rec_titles": [
+        "The Whistler",
+        "The Hiding Place",
+        "Afterlife",
+        "The Shadows"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "Running with Scissors",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Brooke Smith"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"RED\" and \"In Time.\" Both movies have exciting plots and a talented cast, including Bruce Willis and Justin Timberlake. In \"RED,\" Jaqueline Fleming and Morgan Freeman star in a thrilling murder mystery where the clock is ticking, while \"In Time\" takes place in a dystopian future where immortality is bought and sold. I hope you enjoy them!",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb"
+      },
+      "rec_titles": [
+        "RED",
+        "Jack and Jill",
+        "Shutter",
+        "In Time"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "Running with Scissors",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Brooke Smith"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your user preferences, I would recommend \"Running with Scissors\" and \"Connie and Carla.\" Both movies have a quirky and eccentric tone that aligns with your interest in autobiographical films, and they both feature talented actors such as Brian Cox and Nia Vardalos. \"Running with Scissors\" is a dark comedy-drama that explores the dysfunctional family dynamics of a teenage boy sent to live with a psychiatrist and his eccentric family, while \"Connie and Carla\" is a heartwarming and hilarious tale of two drag queens who pose as dinner theater performers in Los Angeles.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "You",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb"
+      },
+      "rec_titles": [
+        "Running with Scissors",
+        "The Rise of Theodore Roosevelt",
+        "Can You Keep a Secret?",
+        "Connie and Carla"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of They? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "Running with Scissors",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Brooke Smith"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preference for autobiographical movies and the mystery surrounding the death of a young boy in \"Smilla's Sense of Snow,\" I would recommend \"Eve's Bayou.\" This movie also explores themes of secrets, lies, and mystical forces, and features an impressive cast including Lynn Whitfield and Jurnee Smollett-Bell. Additionally, the film's setting in a small town with a complex web of relationships reminded me of \"Smilla's Sense of Snow,\" which is why I would also suggest \"Hitch\" as another great option.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "They",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb"
+      },
+      "rec_titles": [
+        "Paradise Lost",
+        "Smilla's Sense of Snow",
+        "Hitch",
+        "Eve's Bayou"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Her. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "Running with Scissors",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Brooke Smith"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I recommend \"Her\" and \"Restless.\" \"Her\" is a thought-provoking film that explores the relationship between a man and an operating system, played by Scarlett Johansson, and \"Restless\" is a coming-of-age story about a group of friends navigating their last summer of freedom. Both films feature strong performances and unique plots that I think you'll enjoy!",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Her",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb"
+      },
+      "rec_titles": [
+        "Her",
+        "The Life Before Her Eyes",
+        "Vampyres",
+        "Restless"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "Running with Scissors",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Brooke Smith"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to recommend some movies based on your preferences! \"Man on Fire\" (2004) is a gripping drama starring Denzel Washington as a former CIA operative who takes on a dangerous mission to protect a young girl from a wealthy businessman who will stop at nothing to see her harm. If you're in the mood for something more lighthearted, \"This Is Spinal Tap\" (N/A) is a hilarious mockumentary that follows the misadventures of a fictional English rock band and their bumbling antics.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Deep",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb"
+      },
+      "rec_titles": [
+        "Man on Fire",
+        "The Return of the King",
+        "This Is Spinal Tap",
+        "The Violent Kind"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Georgina Chapman. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 8,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Georgina Chapman",
+        "anchor_title": "Bleak House",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Georgina Chapman",
+          "plot": "killing"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 8,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "killing",
+          "from_anchor": "Running with Scissors",
+          "to_anchor": "Bleak House"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"The End of the Affair\" and \"Cinder\". Both movies are thought-provoking and emotionally resonant, with complex plots and intriguing characters. In \"The End of the Affair\", Ralph Fiennes gives a powerful performance as a man struggling to come to terms with his past, while \"Cinder\" is a haunting and atmospheric tale of love and survival in a dark post-modern world.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "You",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb",
+        "actor": "Georgina Chapman"
+      },
+      "rec_titles": [
+        "SpaceCamp",
+        "The End of the Affair",
+        "Cinder",
+        "White Night"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Georgina Chapman",
+        "anchor_title": "Bleak House",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Georgina Chapman",
+          "plot": "killing"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to recommend some movies based on your preferences! If you're interested in a thought-provoking and emotionally charged film, I highly recommend \"Tarnation\" - it's a unique and powerful documentary that explores the complexities of growing up with a schizophrenic mother. Alternatively, if you're in the mood for a lighthearted and entertaining heist movie, \"Ocean's Twelve\" is a great choice, featuring an all-star cast and plenty of laughs.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb",
+        "actor": "Georgina Chapman"
+      },
+      "rec_titles": [
+        "Tarnation",
+        "Ocean's Twelve",
+        "The Duchess",
+        "Wolf Girl"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Mike Barker? Hmm, I didn’t expect that vibe. (I’m thinking of Heist.)",
+      "user_meta": {
+        "turn": 10,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Mike Barker",
+        "anchor_title": "The Bell Jar",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Mike Barker",
+          "actor": "Danny DeVito"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 10,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Danny DeVito",
+          "from_anchor": "Bleak House",
+          "to_anchor": "The Bell Jar"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"Shanghai Knights\" and \"Inside Man\". Both of these movies have a thrilling heist plot and an exciting cast, including Anna-Louise Plowman and Georgina Chapman in \"Shanghai Knights\", and Denzel Washington and Clive Owen in \"Inside Man\". I hope you enjoy them!",
+      "constraints": {
+        "genre": "heist",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Heist",
+        "director": "Mike Barker",
+        "writer": "Saul Dibb",
+        "actor": "Georgina Chapman"
+      },
+      "rec_titles": [
+        "Shanghai Knights",
+        "Inside Man",
+        "Afterlife",
+        "Restless"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mike Barker",
+        "anchor_title": "The Bell Jar",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Mike Barker",
+          "actor": "Danny DeVito"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your user preferences, I would recommend \"Veronica Mars\" and \"Fight Club.\" Both movies offer a unique blend of genres that may appeal to your taste in crime and drama. \"Veronica Mars\" is a nostalgic '90s neo-noir with a strong female lead and intriguing mystery, while \"Fight Club\" is a thought-provoking and visceral exploration of masculinity and rebellion.",
+      "constraints": {
+        "genre": "heist",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Mike Barker",
+        "writer": "Saul Dibb",
+        "actor": "Georgina Chapman"
+      },
+      "rec_titles": [
+        "Veronica Mars",
+        "Fight Club",
+        "In the Mouth of Madness",
+        "The Duchess"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mike Barker",
+        "anchor_title": "The Bell Jar",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Mike Barker",
+          "actor": "Danny DeVito"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to help! Based on your preferences, I would recommend \"Ocean's Thirteen\" and \"Snatch.\" Both of these movies are action-packed and feature talented actors, including George Clooney, Brad Pitt, and Jason Statham. In \"Ocean's Thirteen,\" the gang pulls off a daring heist against a casino owner who double-crosses one of their own, while in \"Snatch,\" a group of misfits get caught up in a dangerous game of cat and mouse over a priceless diamond. I hope you enjoy them!",
+      "constraints": {
+        "genre": "heist",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "You",
+        "director": "Mike Barker",
+        "writer": "Saul Dibb",
+        "actor": "Georgina Chapman"
+      },
+      "rec_titles": [
+        "Snatch",
+        "Ocean's Thirteen",
+        "Heist",
+        "Set It Off"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mike Barker",
+        "anchor_title": "The Bell Jar",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Mike Barker",
+          "actor": "Danny DeVito"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your cues, I would recommend \"Holes\" and \"You\". Both of these movies have a complex and intriguing plot, with unexpected twists and turns that will keep you engaged. In \"Holes\", the protagonist's journey to uncover the truth about his son's murder is both emotionally powerful and thought-provoking, while in \"You\", the exploration of societal norms and the blurring of lines between right and wrong make for a compelling and unsettling viewing experience.",
+      "constraints": {
+        "genre": "heist",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "director": "Mike Barker",
+        "writer": "Saul Dibb",
+        "actor": "Georgina Chapman"
+      },
+      "rec_titles": [
+        "Holes",
+        "The Expendables 2",
+        "You",
+        "Dear John"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mike Barker",
+        "anchor_title": "The Bell Jar",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Mike Barker",
+          "actor": "Danny DeVito"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to recommend some movies based on your preferences! If you're in the mood for a stylish and sophisticated heist movie with great acting performances, then \"The Thomas Crown Affair\" is definitely worth checking out. The film features Ben Gazzara and Rene Russo as two charismatic leads who engage in a cat-and-mouse game of wit and deception. Alternatively, if you're looking for something a bit more lighthearted and comedic, then \"The Secret of My Success\" might be up your alley. Starring Michael J. Fox as a naive but ambitious young man who rises to fame through the help of three influential women, this movie is sure to bring a smile to your face.",
+      "constraints": {
+        "genre": "heist",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "RED",
+        "director": "Mike Barker",
+        "writer": "Saul Dibb",
+        "actor": "Georgina Chapman"
+      },
+      "rec_titles": [
+        "The Thomas Crown Affair",
+        "The Secret of My Success",
+        "Takers",
+        "Ocean's Thirteen"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mike Barker",
+        "anchor_title": "The Bell Jar",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Mike Barker",
+          "actor": "Danny DeVito"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to recommend some movies based on your preferences! You might enjoy \"Treasure Planet\" for its space adventure and memorable characters, featuring a talented voice cast including Laurie Metcalf, Mona Marshall, and Tony Jay. Alternatively, if you're in the mood for a classic feel-good film, \"It's a Wonderful Life\" is a heartwarming tale of redemption and the power of kindness, with a standout performance from Donna Reed.",
+      "constraints": {
+        "genre": "heist",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "director": "Mike Barker",
+        "writer": "Saul Dibb",
+        "actor": "Georgina Chapman"
+      },
+      "rec_titles": [
+        "Treasure Planet",
+        "It's a Wonderful Life",
+        "The Bad Seed",
+        "Heist"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Mike Barker",
+        "anchor_title": "The Bell Jar",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Mike Barker",
+          "actor": "Danny DeVito"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your user preferences, I would recommend \"You\" (2014) and \"Ted\" (2012). Both movies have a unique and intriguing plot, with \"You\" exploring the darker side of gun culture and \"Ted\" offering a hilarious and heartwarming tale of a man and his talking teddy bear. I hope you enjoy them!",
+      "constraints": {
+        "genre": "heist",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "director": "Mike Barker",
+        "writer": "Saul Dibb",
+        "actor": "Georgina Chapman"
+      },
+      "rec_titles": [
+        "You",
+        "Ted",
+        "The Trouble with Harry",
+        "Monsters, Inc."
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Tasha Smith. That feels deeper than I thought. (I’m thinking of War.)",
+      "user_meta": {
+        "turn": 17,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Tasha Smith",
+        "anchor_title": "War",
+        "constraints": {
+          "genre": "autobiography",
+          "actor": "Tasha Smith",
+          "plot": "khalid"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 17,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "khalid",
+          "from_anchor": "The Bell Jar",
+          "to_anchor": "War"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your user preference cues, I would recommend \"The Texas Chainsaw Massacre\" and \"The Hateful Eight\". Both movies are dark and intense, with strong acting performances. \"The Texas Chainsaw Massacre\" is a classic horror movie that will keep you on the edge of your seat, while \"The Hateful Eight\" is a Quentin Tarantino film that masterfully blends genres to create a unique and thrilling experience.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "War",
+        "director": "Mike Barker",
+        "writer": "Saul Dibb",
+        "actor": "Tasha Smith"
+      },
+      "rec_titles": [
+        "The Texas Chainsaw Massacre",
+        "The Woodlanders",
+        "The Hateful Eight",
+        "There Be Dragons"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tasha Smith",
+        "anchor_title": "War",
+        "constraints": {
+          "genre": "autobiography",
+          "actor": "Tasha Smith",
+          "plot": "khalid"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your preferences, I would recommend \"Fury\" and \"How to Train Your Dragon.\" Both movies offer intense and gripping storylines that are sure to keep you engaged. In \"Fury,\" Brad Pitt leads a tank crew through the final days of World War II in Germany, while \"How to Train Your Dragon\" tells the heartwarming tale of a young Viking who befriends a dragon and learns there's more to these creatures than he originally thought.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Mike Barker",
+        "writer": "Saul Dibb",
+        "actor": "Tasha Smith"
+      },
+      "rec_titles": [
+        "Fury",
+        "Compliance",
+        "Black Hawk Down",
+        "How to Train Your Dragon"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tasha Smith",
+        "anchor_title": "War",
+        "constraints": {
+          "genre": "autobiography",
+          "actor": "Tasha Smith",
+          "plot": "khalid"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course, I'd be happy to recommend some movies based on your preferences! \"Casablanca\" (1942) is a classic film that features Humphrey Bogart and Claude Rains in a tale of love, betrayal, and the struggle against oppressive forces. If you're interested in a more recent movie with a similar tone, I highly recommend \"You\" (2014), which explores the complexities of moral ambiguity during times of conflict.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "You",
+        "director": "Mike Barker",
+        "writer": "Saul Dibb",
+        "actor": "Tasha Smith"
+      },
+      "rec_titles": [
+        "Casablanca",
+        "You",
+        "In the Land of Blood and Honey",
+        "The Warlords"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Casablanca? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tasha Smith",
+        "anchor_title": "War",
+        "constraints": {
+          "genre": "autobiography",
+          "actor": "Tasha Smith",
+          "plot": "khalid"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Of course! Based on your cues, I think you might enjoy \"The Best Years of Our Lives\" and \"Super.\" Both films deal with themes of identity, trauma, and the challenges of returning home after a significant event. \"The Best Years of Our Lives\" is a classic film that explores the experiences of World War II veterans adjusting to civilian life, while \"Super\" is a quirky and imaginative movie about a young man's journey to become a superhero. I hope you find something that interests you in these recommendations!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "Casablanca",
+        "director": "Mike Barker",
+        "writer": "Saul Dibb",
+        "actor": "Tasha Smith"
+      },
+      "rec_titles": [
+        "The Best Years of Our Lives",
+        "The Good German",
+        "Super",
+        "Into the Storm"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Brooke Smith",
+      "from_anchor": "The Hiding Place",
+      "to_anchor": "Running with Scissors"
+    },
+    {
+      "turn": 8,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "killing",
+      "from_anchor": "Running with Scissors",
+      "to_anchor": "Bleak House"
+    },
+    {
+      "turn": 10,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Danny DeVito",
+      "from_anchor": "Bleak House",
+      "to_anchor": "The Bell Jar"
+    },
+    {
+      "turn": 17,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "khalid",
+      "from_anchor": "The Bell Jar",
+      "to_anchor": "War"
+    }
+  ]
+}

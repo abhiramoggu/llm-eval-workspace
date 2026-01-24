@@ -1,0 +1,904 @@
+{
+  "session_id": "00000",
+  "model_name": "mistral:7b",
+  "true_genre": "animal",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a animal movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "animal",
+        "anchor_title": "Island of the Blue Dolphins",
+        "constraints": {
+          "genre": "animal"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd be happy to help! If you're in the mood for an animal movie, I'd highly recommend \"Where the Red Fern Grows\". This heartwarming film tells a captivating tale of a young boy and his quest for hunting dogs. Another great choice is \"The Call of the Wild\" which follows a house dog's journey as he becomes a sled dog in the north. Both movies offer unique perspectives on the bond between humans and animals, making them perfect for your animal movie preference! Enjoy the films!",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "animal",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "The Shadows",
+        "Trees Lounge",
+        "The Call of the Wild",
+        "Where the Red Fern Grows"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Maya? That feels deeper than I thought. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "Maya",
+        "anchor_title": "Where the Red Fern Grows",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "language",
+          "bridge_field": "genre",
+          "bridge_value": "animal",
+          "from_anchor": "Island of the Blue Dolphins",
+          "to_anchor": "Where the Red Fern Grows"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend \"Delirium\" for its intriguing storyline and suspenseful atmosphere, with Emily Blunt delivering a captivating performance as the protagonist. Another great choice could be \"Afterlife\", a heartwarming film about understanding and connection between father and son, featuring some poignant performances that will touch your heart. Enjoy the movies!",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "Deep",
+        "language": "Maya"
+      },
+      "rec_titles": [
+        "Delirium",
+        "The Truth",
+        "Happy Feet",
+        "Afterlife"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Maya",
+        "anchor_title": "Where the Red Fern Grows",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd be happy to help! If you're in the mood for a thought-provoking film with a touch of action, I'd recommend \"You\" starring Adam Sandler and Al Pacino. On the other hand, if you're looking for a more lighthearted comedy, \"Jack and Jill\" featuring Eugenio Derbez and Caitlyn Jenner might be just what you need! Enjoy your movie time!",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "Maya"
+      },
+      "rec_titles": [
+        "You",
+        "Jack and Jill",
+        "Wolf Girl",
+        "Thick as Thieves"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does You tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Maya",
+        "anchor_title": "Where the Red Fern Grows",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend \"Monsters, Inc.\" for you! It's a heartwarming animated film about two monsters who work in a factory that harnesses children's screams as a source of energy. The movie is filled with humor and unexpected twists, making it enjoyable for both kids and adults. You might also appreciate \"Utsav\", a captivating Indian drama based on an ancient Sanskrit play, featuring renowned actors Anupam Kher and Rekha. It's a complex tale of love, betrayal, and sacrifice set in a royal court.",
+      "constraints": {
+        "genre": "animal",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "language": "Maya"
+      },
+      "rec_titles": [
+        "Monsters, Inc.",
+        "Utsav",
+        "The Violent Kind",
+        "Divergent"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Chan-wook Park? Hmm, I didn’t expect that vibe. (I’m thinking of War.)",
+      "user_meta": {
+        "turn": 5,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Chan-wook Park",
+        "anchor_title": "How to Train Your Dragon",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 5,
+          "from_focus": "language",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "hunt",
+          "from_anchor": "Where the Red Fern Grows",
+          "to_anchor": "How to Train Your Dragon"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your interest in war films directed by Chan-wook Park and the shift from the War genre, I'd like to recommend \"The Book Thief\" for its poignant portrayal of World War II Germany through the eyes of a young girl, or \"Born on the Fourth of July\", which delves into the life story of Ron Kovic, a Vietnam war veteran turned anti-war activist. Both films offer captivating narratives and powerful performances that might resonate with you.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "War",
+        "language": "Maya",
+        "director": "Chan-wook Park"
+      },
+      "rec_titles": [
+        "Red Dawn",
+        "The Book Thief",
+        "Psychic Experiment",
+        "Born on the Fourth of July"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Chan-wook Park",
+        "anchor_title": "How to Train Your Dragon",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Out of the recommendations, I'd suggest you watch \"Stoker.\" It's a captivating film directed by Chan-wook Park, known for his unique storytelling style. Mia Wasikowska delivers an intriguing performance in this psychological thriller, where she finds herself drawn to her mysterious uncle. Enjoy the suspense!\n\nIf you're interested in a war drama with a historical context, \"Flags of Our Fathers\" might be another engaging choice for you. The movie focuses on six soldiers who raised the flag at Iwo Jima during World War II and is led by a talented cast including Ryan Phillippe and Paul Walker.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "Maya",
+        "director": "Chan-wook Park"
+      },
+      "rec_titles": [
+        "Stoker",
+        "There Be Dragons",
+        "Flags of Our Fathers",
+        "Hesher"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Mia Wasikowska. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Stoker.)",
+      "user_meta": {
+        "turn": 7,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Mia Wasikowska",
+        "anchor_title": "Mission: Impossible II",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt",
+          "actor": "Mia Wasikowska"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 7,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "actor",
+          "bridge_value": "Mia Wasikowska",
+          "from_anchor": "How to Train Your Dragon",
+          "to_anchor": "Mission: Impossible II"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your interest in Mia Wasikowska and a hint of uncertainty about whether you'd enjoy something scary, I'd recommend \"Big Fish\" as it's a heartwarming film with a captivating storyline. If you're intrigued by historical dramas or biographies, \"Kundun\" is another excellent choice that chronicles the life of Tibet's 14th Dalai Lama. Enjoy the movies!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Stoker",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "Mia Wasikowska"
+      },
+      "rec_titles": [
+        "The People I've Slept With",
+        "Kundun",
+        "Platoon",
+        "Big Fish"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Mia Wasikowska",
+        "anchor_title": "Mission: Impossible II",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt",
+          "actor": "Mia Wasikowska"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems there's a great mix here! If you enjoyed Chan-wook Park's style and Mia Wasikowska's acting, you might appreciate 'Braveheart', where Gerard Butler delivers an intense performance as a warrior fighting for his people's rights in medieval Scotland. Another interesting film is 'American Sniper', starring Bradley Cooper, which provides a gripping portrayal of a U.S. Navy SEAL and his struggles to transition back to civilian life after multiple tours of duty. Enjoy your movie time!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "Mia Wasikowska"
+      },
+      "rec_titles": [
+        "How to Train Your Dragon",
+        "Before I Fall",
+        "Braveheart",
+        "American Sniper"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of War? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Mia Wasikowska",
+        "anchor_title": "Mission: Impossible II",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt",
+          "actor": "Mia Wasikowska"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your interest in war films, I'd highly recommend \"Saving Private Ryan\" for its intense portrayal of combat during World War II, featuring stars like Tom Hanks and Matt Damon. If you're also keen on exploring different genres, \"Her\" might intrigue you as well. It delves into modern dating experiences, with an interesting blend of documentary and narrative styles, starring Scarlett Johansson and others. Enjoy the watch!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "War",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "Mia Wasikowska"
+      },
+      "rec_titles": [
+        "Her",
+        "Saving Private Ryan",
+        "Bloody Sunday",
+        "The Deer Hunter"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of War. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Mia Wasikowska",
+        "anchor_title": "Mission: Impossible II",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt",
+          "actor": "Mia Wasikowska"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend watching \"The English Patient\" if you're looking for a thought-provoking war film. It stars renowned actors such as Ralph Fiennes, Juliette Binoche, and Kristin Scott Thomas, and its plot revolves around love, sacrifice, and the aftermath of World War II.\n\nAnother interesting option is \"Casablanca,\" a classic tale set in French Morocco during World War II, featuring Humphrey Bogart and Ingrid Bergman as they navigate the complexities of love and loyalty amidst war's turmoil. Enjoy your movie time!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "War",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "Mia Wasikowska"
+      },
+      "rec_titles": [
+        "The English Patient",
+        "Casablanca",
+        "The Lucky Ones",
+        "Platoon"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does They tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Mia Wasikowska",
+        "anchor_title": "Mission: Impossible II",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt",
+          "actor": "Mia Wasikowska"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for war genre and actor Mia Wasikowska, I'd recommend \"Amen.\" This film is a thought-provoking drama set during WWII, featuring powerful performances that explore the moral dilemmas of the time. For something a bit more lighthearted with Mia Wasikowska, you might enjoy \"American Dreamz,\" a satirical comedy involving a fictional TV talent show and politics.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "Mia Wasikowska"
+      },
+      "rec_titles": [
+        "I Heart Huckabees",
+        "American Dreamz",
+        "Amen.",
+        "Starship Troopers"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Mia Wasikowska",
+        "anchor_title": "Mission: Impossible II",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "hunt",
+          "actor": "Mia Wasikowska"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for a war genre film with a touch of the unusual, I'd recommend \"Downfall\" (2004). This gripping movie stars Bruno Ganz as Adolf Hitler during the final days of World War II and offers an intriguing mix of historical drama and personal struggle.\n\nAlternatively, if you're looking for something lighter but still with a peculiar twist, \"The Lego Movie\" (2014) might be up your alley. This animated film features an all-star cast including Will Ferrell, Morgan Freeman, and Alison Brie in a story about an ordinary LEGO figure chosen to save the world from a tyrant. Enjoy the mix of humor, action, and creativity!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "RED",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "Mia Wasikowska"
+      },
+      "rec_titles": [
+        "The Lego Movie",
+        "To Have and Have Not",
+        "Downfall",
+        "Fury"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Marjorie Kinnan Rawlings? That feels deeper than I thought. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 13,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Marjorie Kinnan Rawlings",
+        "anchor_title": "Apocalypto",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "veteran",
+          "actor": "Mia Wasikowska",
+          "writer": "Marjorie Kinnan Rawlings"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 13,
+          "from_focus": "actor",
+          "to_focus": "writer",
+          "bridge_field": "plot",
+          "bridge_value": "veteran",
+          "from_anchor": "Mission: Impossible II",
+          "to_anchor": "Apocalypto"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Out of the suggested films, \"In the Land of Blood and Honey\" directed by Chan-wook Park might resonate with Marjorie Kinnan Rawlings' writing style as it explores complex human relationships amidst war. Another one that could intrigue you is \"The Hurt Locker,\" starring Jeremy Renner, which delves deeper into the psychological impact of war on individuals. Enjoy your viewing!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "written",
+          "feels"
+        ],
+        "name": "Deep",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "Mia Wasikowska",
+        "writer": "Marjorie Kinnan Rawlings"
+      },
+      "rec_titles": [
+        "Battleship",
+        "In the Land of Blood and Honey",
+        "The Hurt Locker",
+        "Cold Mountain"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Marjorie Kinnan Rawlings",
+        "anchor_title": "Apocalypto",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "veteran",
+          "actor": "Mia Wasikowska",
+          "writer": "Marjorie Kinnan Rawlings"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend you watch \"Hotel Rwanda\" if you're looking for a powerful and moving film about war. Don Cheadle delivers an outstanding performance as Paul Rusesabagina, a hotel manager who saves over a thousand refugees during the Rwandan genocide. It's a gripping tale that truly showcases the resilience of the human spirit in the face of adversity.\n\nAlternatively, \"RED\" is another great option if you're interested in action-packed movies. This film features an all-star cast led by Bruce Willis and Morgan Freeman, as retired CIA agents who come out of retirement to take on a dangerous mission together. It's filled with humor, action, and suspense, making it a fantastic choice for those seeking entertainment with a bit of excitement!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "Mia Wasikowska",
+        "writer": "Marjorie Kinnan Rawlings"
+      },
+      "rec_titles": [
+        "RED",
+        "Date Night",
+        "Hotel Rwanda",
+        "Hesher"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Marjorie Kinnan Rawlings",
+        "anchor_title": "Apocalypto",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "veteran",
+          "actor": "Mia Wasikowska",
+          "writer": "Marjorie Kinnan Rawlings"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "\"You might enjoy 'The End of the Affair' starring Ralph Fiennes, a film about a man trying to uncover why his lover left him in the past. Another option could be 'The Deer Hunter', which delves into the impact of the Vietnam War on the lives of several friends, featuring a powerful performance by Robert De Niro.\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "You",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "Mia Wasikowska",
+        "writer": "Marjorie Kinnan Rawlings"
+      },
+      "rec_titles": [
+        "The End of the Affair",
+        "The Patriot",
+        "Winter in Wartime",
+        "The Deer Hunter"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Her tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Marjorie Kinnan Rawlings",
+        "anchor_title": "Apocalypto",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "veteran",
+          "actor": "Mia Wasikowska",
+          "writer": "Marjorie Kinnan Rawlings"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you're interested in a deeper story and the genre is war, I'd recommend watching \"Valkyrie\". It's a riveting dramatization of a real event during World War II where a group of German officers attempted to assassinate Adolf Hitler. Tom Cruise plays a key role in this engaging film. If you're open to exploring a different culture, the Indian period drama \"Utsav\" is also worth considering, featuring renowned actors Anupam Kher and Rekha. Enjoy your movie time!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Her",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "Mia Wasikowska",
+        "writer": "Marjorie Kinnan Rawlings"
+      },
+      "rec_titles": [
+        "Witless Protection",
+        "Utsav",
+        "Lincoln",
+        "Valkyrie"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Tempted? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Marjorie Kinnan Rawlings",
+        "anchor_title": "Apocalypto",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "veteran",
+          "actor": "Mia Wasikowska",
+          "writer": "Marjorie Kinnan Rawlings"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It seems like you're interested in films that delve into relationships and have a bit of intrigue. I'd recommend \"The End of the Affair\" starring Ralph Fiennes, as it revolves around a man trying to uncover the secrets behind his former lover's departure. Another film that might interest you is \"Utsav\", an Indian classic featuring Rekha and Anupam Kher, based on a centuries-old play about love, betrayal, and deceit in the royal court. Both films could provide fascinating insights into complex human emotions.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "tempted"
+        ],
+        "name": "Ted",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "Mia Wasikowska",
+        "writer": "Marjorie Kinnan Rawlings"
+      },
+      "rec_titles": [
+        "The End of the Affair",
+        "Why Did I Get Married?",
+        "The Hunting Party",
+        "Utsav"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Marjorie Kinnan Rawlings",
+        "anchor_title": "Apocalypto",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "veteran",
+          "actor": "Mia Wasikowska",
+          "writer": "Marjorie Kinnan Rawlings"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for war genre films and the fact that Mia Wasikowska stars in one of them, I'd highly recommend \"Alice in Wonderland\" (2010). This film offers a modern twist on the classic Alice story, with Mia playing the lead role alongside notable actors like Johnny Depp and Helena Bonham Carter.\n\nIf you're looking for something more centered around war, Chan-wook Park hasn't directed any films that fit your exact criteria, but I'd suggest \"Platoon\" (1986) as a powerful war film by Oliver Stone, starring Charlie Sheen and Tom Berenger. It provides an intense exploration of the brutality of war and the complexities of human nature in conflict.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "Ted",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "Mia Wasikowska",
+        "writer": "Marjorie Kinnan Rawlings"
+      },
+      "rec_titles": [
+        "A Bridge Too Far",
+        "Alice in Wonderland",
+        "Ted",
+        "Platoon"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of RED. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Marjorie Kinnan Rawlings",
+        "anchor_title": "Apocalypto",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Chan-wook Park",
+          "plot": "veteran",
+          "actor": "Mia Wasikowska",
+          "writer": "Marjorie Kinnan Rawlings"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd recommend \"The Book Thief\" for its heartwarming and thought-provoking story set against the backdrop of World War II, starring Emily Watson, Geoffrey Rush, and Sophie Nélisse. If you prefer a mix of action and fantasy, \"The Mortal Instruments: City of Bones\" might be an intriguing choice with its supernatural plot featuring Aidan Turner and Kevin Zegers. Enjoy your movie time!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "Mia Wasikowska",
+        "writer": "Marjorie Kinnan Rawlings"
+      },
+      "rec_titles": [
+        "Battleship",
+        "The Mortal Instruments: City of Bones",
+        "Maid in Manhattan",
+        "The Book Thief"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Wallace Shawn. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of War.)",
+      "user_meta": {
+        "turn": 20,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Wallace Shawn",
+        "anchor_title": "Toy Story 3",
+        "constraints": {
+          "genre": "animal",
+          "language": "Maya",
+          "director": "Philip G. Atwell",
+          "plot": "veteran",
+          "actor": "Wallace Shawn",
+          "writer": "Marjorie Kinnan Rawlings"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 20,
+          "from_focus": "writer",
+          "to_focus": "actor",
+          "bridge_field": "director",
+          "bridge_value": "Philip G. Atwell",
+          "from_anchor": "Apocalypto",
+          "to_anchor": "Toy Story 3"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "\"If you're interested in a captivating film about Tibet's Dalai Lama, I would highly recommend 'Kundun'. It showcases Tenzin Thuthob Tsarong's impressive performance as the young leader dealing with Chinese oppression. On the other hand, if you're up for an iconic tale of outlaw adventures, 'Butch Cassidy and the Sundance Kid' starring Paul Newman and Robert Redford might be right up your alley!\"",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "War",
+        "language": "Maya",
+        "director": "Chan-wook Park",
+        "actor": "Wallace Shawn",
+        "writer": "Marjorie Kinnan Rawlings"
+      },
+      "rec_titles": [
+        "Kundun",
+        "Butch Cassidy and the Sundance Kid",
+        "A Wrinkle in Time",
+        "American Sniper"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "language",
+      "bridge_field": "genre",
+      "bridge_value": "animal",
+      "from_anchor": "Island of the Blue Dolphins",
+      "to_anchor": "Where the Red Fern Grows"
+    },
+    {
+      "turn": 5,
+      "from_focus": "language",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "hunt",
+      "from_anchor": "Where the Red Fern Grows",
+      "to_anchor": "How to Train Your Dragon"
+    },
+    {
+      "turn": 7,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "actor",
+      "bridge_value": "Mia Wasikowska",
+      "from_anchor": "How to Train Your Dragon",
+      "to_anchor": "Mission: Impossible II"
+    },
+    {
+      "turn": 13,
+      "from_focus": "actor",
+      "to_focus": "writer",
+      "bridge_field": "plot",
+      "bridge_value": "veteran",
+      "from_anchor": "Mission: Impossible II",
+      "to_anchor": "Apocalypto"
+    },
+    {
+      "turn": 20,
+      "from_focus": "writer",
+      "to_focus": "actor",
+      "bridge_field": "director",
+      "bridge_value": "Philip G. Atwell",
+      "from_anchor": "Apocalypto",
+      "to_anchor": "Toy Story 3"
+    }
+  ]
+}

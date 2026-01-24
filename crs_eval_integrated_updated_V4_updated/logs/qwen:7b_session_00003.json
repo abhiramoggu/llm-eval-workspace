@@ -1,0 +1,790 @@
+{
+  "session_id": "00003",
+  "model_name": "qwen:7b",
+  "true_genre": "cult",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a cult movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "cult",
+        "anchor_title": "Evil Dead II",
+        "constraints": {
+          "genre": "cult"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend 'Fight Club' for its cult status and unique plot, featuring actors like Edward Norton and Brad Pitt.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "cult",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "Fight Club",
+        "Wolf Creek",
+        "True Blood",
+        "The Devil's Rejects"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Fight Club? That sounds intriguing.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "cult",
+        "anchor_title": "Evil Dead II",
+        "constraints": {
+          "genre": "cult"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd like to recommend \"Fight Club\" (1996) from your list. The movie, starring Zach Grenier and Eion Bailey, follows an office worker and a soap maker who form an underground fight club that becomes much more than just fights.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "fight"
+        ],
+        "name": "Fight Club"
+      },
+      "rec_titles": [
+        "Fight Club"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Xander Berkeley. That sounds intriguing. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 3,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Xander Berkeley",
+        "anchor_title": "Timecode",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Xander Berkeley",
+          "plot": "wild"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 3,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "wild",
+          "from_anchor": "Evil Dead II",
+          "to_anchor": "Timecode"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a thrilling take on a classic tale, I recommend 'Beastly'. With Erik Knudsen leading as the transformed teen, you'll find an enchanting modern interpretation of \"Beauty and the Beast\".",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "X",
+        "actor": "Xander Berkeley"
+      },
+      "rec_titles": [
+        "Shattered",
+        "Beastly",
+        "Black Knight",
+        "Year One"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Xander Berkeley",
+        "anchor_title": "Timecode",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Xander Berkeley",
+          "plot": "wild"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend watching \"The Princess Diaries\" (2001). It's a heartwarming film about a teenage princess trying to balance her royal responsibilities with her own personal life. Starring Anne Hathaway, the movie combines comedy and drama.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Xander Berkeley"
+      },
+      "rec_titles": [
+        "12 Angry Men",
+        "Green Card",
+        "The Return of the Living Dead",
+        "The Princess Diaries"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Her? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Xander Berkeley",
+        "anchor_title": "Timecode",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Xander Berkeley",
+          "plot": "wild"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're in the mood for a heartwarming story with classic actors, 'It's a Wonderful Life' starring James Stewart and Donna Reed would be a great choice.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "Her",
+        "actor": "Xander Berkeley"
+      },
+      "rec_titles": [
+        "It's a Wonderful Life",
+        "Divergent",
+        "Monsters, Inc.",
+        "Year One"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does War tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Xander Berkeley",
+        "anchor_title": "Timecode",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Xander Berkeley",
+          "plot": "wild"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For someone who enjoys historical romance and strong character performances, 'Pride and Prejudice' starring Anupam Kher and Rekha would be a great choice. The classic story and iconic casting make for an engaging film.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "War",
+        "actor": "Xander Berkeley"
+      },
+      "rec_titles": [
+        "Repo Chick",
+        "Man on Fire",
+        "Pride and Prejudice",
+        "Utsav"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Xander Berkeley",
+        "anchor_title": "Timecode",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Xander Berkeley",
+          "plot": "wild"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences for a war-related movie with Xander Berkeley and involving a journey, I recommend watching 'Incendies'. It's a thought-provoking film about a family's search for meaning after a tragic event.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "War",
+        "actor": "Xander Berkeley"
+      },
+      "rec_titles": [
+        "Incendies",
+        "Flags of Our Fathers",
+        "Smilla's Sense of Snow",
+        "The Hunting Party"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Xander Berkeley",
+        "anchor_title": "Timecode",
+        "constraints": {
+          "genre": "cult",
+          "actor": "Xander Berkeley",
+          "plot": "wild"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're interested in a movie that combines action and intrigue, 'Total Recall' (1990) starring Arnold Schwarzenegger is a great choice. The film follows a factory worker who starts怀疑 his memory implanted by the company Rekall. This plot offers thrilling action sequences mixed with an element of personal discovery.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "You",
+        "actor": "Xander Berkeley"
+      },
+      "rec_titles": [
+        "Alex in Wonderland",
+        "Total Recall",
+        "Black Hawk Down",
+        "The Pianist"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Total Recall. I want to try something more short story—That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "short story",
+        "anchor_title": "Cowboys & Aliens",
+        "constraints": {
+          "genre": "short story",
+          "actor": "Xander Berkeley",
+          "plot": "wild"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 9,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "factory",
+          "from_anchor": "Timecode",
+          "to_anchor": "Cowboys & Aliens"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend 'Taken' (2008) as a short story-like film with Liam Neeson's intense performance. It offers a gripping tale of kidnapping and survival.",
+      "constraints": {
+        "genre": "short story",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Total Recall",
+        "actor": "Xander Berkeley"
+      },
+      "rec_titles": [
+        "The Tell-Tale Heart",
+        "Taken",
+        "Repo Chick",
+        "Talladega Nights: The Ballad of Ricky Bobby"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "short story",
+        "anchor_title": "Cowboys & Aliens",
+        "constraints": {
+          "genre": "short story",
+          "actor": "Xander Berkeley",
+          "plot": "wild"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're interested in a classic with a twist, I would recommend 'Desolation Angels'. It tells the story of revenge and the complex emotions involved. Starring Jared Harris, the film offers an intriguing cinematic experience.",
+      "constraints": {
+        "genre": "short story",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Xander Berkeley"
+      },
+      "rec_titles": [
+        "The Wonderful Wizard of Oz",
+        "Desolation Angels",
+        "Ocean's Twelve",
+        "The Swindle"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of RED? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "short story",
+        "anchor_title": "Cowboys & Aliens",
+        "constraints": {
+          "genre": "short story",
+          "actor": "Xander Berkeley",
+          "plot": "wild"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences, I recommend 'Training Day'. This thrilling crime drama starring Tom Berenger as a rogue detective and Frank Langella's character as a rookie cop, explores themes of power dynamics and morality.",
+      "constraints": {
+        "genre": "short story",
+        "plot": [
+          "what"
+        ],
+        "name": "RED",
+        "actor": "Xander Berkeley"
+      },
+      "rec_titles": [
+        "Training Day",
+        "What If...",
+        "Lady in the Water",
+        "The Tell-Tale Heart"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "short story",
+        "anchor_title": "Cowboys & Aliens",
+        "constraints": {
+          "genre": "short story",
+          "actor": "Xander Berkeley",
+          "plot": "wild"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend 'The Mortal Instruments: City of Bones' for its action-packed adventure with CCH Pounder's presence adding excitement.",
+      "constraints": {
+        "genre": "short story",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "actor": "Xander Berkeley"
+      },
+      "rec_titles": [
+        "Timecode",
+        "The Mortal Instruments: City of Bones",
+        "Maid in Manhattan",
+        "American Dreamz"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Mortal Instruments: City of Bones tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "short story",
+        "anchor_title": "Cowboys & Aliens",
+        "constraints": {
+          "genre": "short story",
+          "actor": "Xander Berkeley",
+          "plot": "wild"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend 'The Expendables 2' for action-packed thrills with a cast of iconic actors like Sylvester Stallone and Jason Statham. The plot involves revenge and high-stakes missions.",
+      "constraints": {
+        "genre": "short story",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "actor": "Xander Berkeley"
+      },
+      "rec_titles": [
+        "Repo Chick",
+        "Gattaca",
+        "The Expendables 2",
+        "Mommie Dearest"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Tika Sumpter. I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 14,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Tika Sumpter",
+        "anchor_title": "Watchers",
+        "constraints": {
+          "genre": "short story",
+          "actor": "Tika Sumpter",
+          "plot": "runaway"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 14,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "runaway",
+          "from_anchor": "Cowboys & Aliens",
+          "to_anchor": "Watchers"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a mix of action and storytelling, I recommend 'Butch Cassidy and the Sundance Kid'. This classic film features Tika Sumpter along with an exciting adventure filled with humor and danger. Enjoy!",
+      "constraints": {
+        "genre": "short story",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "RED",
+        "actor": "Tika Sumpter"
+      },
+      "rec_titles": [
+        "Butch Cassidy and the Sundance Kid",
+        "Divergent",
+        "Downfall",
+        "National Treasure"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tika Sumpter",
+        "anchor_title": "Watchers",
+        "constraints": {
+          "genre": "short story",
+          "actor": "Tika Sumpter",
+          "plot": "runaway"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for short story genre, Tika Sumpter as an actor, and plots involving just and more, I recommend watching 'White Night'. It combines these elements with a suspenseful short story plot.",
+      "constraints": {
+        "genre": "short story",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Tika Sumpter"
+      },
+      "rec_titles": [
+        "White Night",
+        "Southland Tales",
+        "Turbo",
+        "Labyrinths"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tika Sumpter",
+        "anchor_title": "Watchers",
+        "constraints": {
+          "genre": "short story",
+          "actor": "Tika Sumpter",
+          "plot": "runaway"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a short and engaging recommendation, I suggest checking out 'Monsters, Inc.' This beloved film, featuring the voices of Bill Farmer and Mona Marshall, follows monsters trying to scare children for energy while facing the unexpected consequences.\"",
+      "constraints": {
+        "genre": "short story",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "You",
+        "actor": "Tika Sumpter"
+      },
+      "rec_titles": [
+        "Dear John",
+        "This Is Spinal Tap",
+        "Monsters, Inc.",
+        "The Skulls"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tika Sumpter",
+        "anchor_title": "Watchers",
+        "constraints": {
+          "genre": "short story",
+          "actor": "Tika Sumpter",
+          "plot": "runaway"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a recommendation that combines elements of intrigue and strong performances, I would suggest 'Taken'. With Liam Neeson in the lead role, the film follows his character as he tries to rescue his kidnapped friends. The intense suspense and captivating acting make this a thrilling choice.",
+      "constraints": {
+        "genre": "short story",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "Ted",
+        "actor": "Tika Sumpter"
+      },
+      "rec_titles": [
+        "Utsav",
+        "Taken",
+        "Teddy Scares",
+        "Dear John"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Taken. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tika Sumpter",
+        "anchor_title": "Watchers",
+        "constraints": {
+          "genre": "short story",
+          "actor": "Tika Sumpter",
+          "plot": "runaway"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences, I recommend 'Easy A' (2010). The movie follows Olive, a high school student who lies about losing her virginity. The cast includes talented performers like Patricia Clarkson and Aly Michalka.",
+      "constraints": {
+        "genre": "short story",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Taken",
+        "actor": "Tika Sumpter"
+      },
+      "rec_titles": [
+        "American Dreamz",
+        "Smokin' Aces",
+        "Easy A",
+        "The Adventures of Sherlock Holmes"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Easy tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tika Sumpter",
+        "anchor_title": "Watchers",
+        "constraints": {
+          "genre": "short story",
+          "actor": "Tika Sumpter",
+          "plot": "runaway"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your interest in stories and characters, I recommend watching 'Training Day'. It features Tom Berenger as a rookie cop and Al Pacino as a rogue detective, delivering an intense and character-driven story.",
+      "constraints": {
+        "genre": "short story",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Easy",
+        "actor": "Tika Sumpter"
+      },
+      "rec_titles": [
+        "Titanic",
+        "Monsters, Inc.",
+        "Training Day",
+        "The Trouble with Harry"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Tika Sumpter",
+        "anchor_title": "Watchers",
+        "constraints": {
+          "genre": "short story",
+          "actor": "Tika Sumpter",
+          "plot": "runaway"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're interested in a short story themed film, 'The Odyssey' with its continuous shorts by different filmmakers might be a great choice. And for a modern action-comedy with Tika Sumpter, 'Ride Along' could be entertaining.",
+      "constraints": {
+        "genre": "short story",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "Easy",
+        "actor": "Tika Sumpter"
+      },
+      "rec_titles": [
+        "The Odyssey",
+        "Ride Along",
+        "Prometheus",
+        "The Illustrated Man"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 3,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "wild",
+      "from_anchor": "Evil Dead II",
+      "to_anchor": "Timecode"
+    },
+    {
+      "turn": 9,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "factory",
+      "from_anchor": "Timecode",
+      "to_anchor": "Cowboys & Aliens"
+    },
+    {
+      "turn": 14,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "runaway",
+      "from_anchor": "Cowboys & Aliens",
+      "to_anchor": "Watchers"
+    }
+  ]
+}

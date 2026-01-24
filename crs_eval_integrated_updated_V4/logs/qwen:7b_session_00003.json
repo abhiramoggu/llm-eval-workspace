@@ -1,0 +1,756 @@
+{
+  "session_id": "00003",
+  "model_name": "qwen:7b",
+  "true_genre": "cult",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a cult movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "cult",
+        "anchor_title": "Evil Dead II",
+        "constraints": {
+          "genre": "cult"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend 'The Last Dragon' for its iconic casting, including Vanity as the dragon, and the story of a young martial artist searching for the final level of mastery.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "cult",
+          "could"
+        ],
+        "name": "You"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? That sounds intriguing.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "cult",
+        "anchor_title": "Evil Dead II",
+        "constraints": {
+          "genre": "cult"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Considering your preference for cult-themed movies, I would recommend 'Creepshow'. This classic 1982 film features five eerie tales told through comic book format. Stars Tom Atkins and John Amplas add to the macabre charm.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "You"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by David Yates? That feels deeper than I thought. (I’m thinking of 1982.)",
+      "user_meta": {
+        "turn": 3,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "David Yates",
+        "anchor_title": "Vampires",
+        "constraints": {
+          "genre": "cult",
+          "director": "David Yates",
+          "actor": "Quinton Aaron"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 3,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Quinton Aaron",
+          "from_anchor": "Evil Dead II",
+          "to_anchor": "Vampires"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I would recommend 'The Big Lebowski' for its irreverent humor and memorable cast, including Jeff Bridges as \"The Dude.\" The film's distinctive plot and style make it a cult classic.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "1982",
+        "year": "1982",
+        "director": "David Yates"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "David Yates",
+        "anchor_title": "Vampires",
+        "constraints": {
+          "genre": "cult",
+          "director": "David Yates",
+          "actor": "Quinton Aaron"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a fan of cult classics, I would recommend 'The Return of the Living Dead' (1985) starring Thom Mathews and Beverly Randolph. The movie combines zombie horror with campy humor.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "year": "1982",
+        "director": "David Yates"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Return of the Living Dead tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "David Yates",
+        "anchor_title": "Vampires",
+        "constraints": {
+          "genre": "cult",
+          "director": "David Yates",
+          "actor": "Quinton Aaron"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a deeper story with cultural influence, I recommend 'This Is Spinal Tap'. Starring笑星如Howard Hesseman and Christopher Guest, the mockumentary follows the band's experiences, humorously exploring the music industry.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The Return of the Living Dead",
+        "year": "1982",
+        "director": "David Yates"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Christa B. Allen. Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 6,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Christa B. Allen",
+        "anchor_title": "Blade Runner",
+        "constraints": {
+          "genre": "cult",
+          "director": "David Yates",
+          "actor": "Christa B. Allen",
+          "plot": "relationships"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 6,
+          "from_focus": "director",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "relationships",
+          "from_anchor": "Vampires",
+          "to_anchor": "Blade Runner"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend 'The Phantom Tollbooth' for its imaginative adventure and memorable cast, including Don Bluth voicing Tolkie.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Her",
+        "year": "1982",
+        "director": "David Yates",
+        "actor": "Christa B. Allen"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Christa B. Allen",
+        "anchor_title": "Blade Runner",
+        "constraints": {
+          "genre": "cult",
+          "director": "David Yates",
+          "actor": "Christa B. Allen",
+          "plot": "relationships"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for cult films and a release year of 1982, I recommend watching 'The Evil Dead'. This classic horror film stars Bruce Campbell as the protagonist, and it follows the unleash of flesh-possessing demons in a cabin. It's a thrilling and cult favorite.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "year": "1982",
+        "director": "David Yates",
+        "actor": "Christa B. Allen"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Tom McCarthy? That sounds intriguing. (I’m thinking of 1982.)",
+      "user_meta": {
+        "turn": 8,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Tom McCarthy",
+        "anchor_title": "Bram Stoker's Dracula",
+        "constraints": {
+          "genre": "cult",
+          "director": "Tom McCarthy",
+          "actor": "Christa B. Allen",
+          "plot": "relationships"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 8,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Christa B. Allen",
+          "from_anchor": "Blade Runner",
+          "to_anchor": "Bram Stoker's Dracula"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I would recommend 'Six-String Samurai' for its unique post-apocalyptic rock 'n' roll world. The film stars Kim De Angelo and Stephane Gauger, who bring a captivating energy to the screen.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "1982",
+        "year": "1982",
+        "director": "Tom McCarthy",
+        "actor": "Tom McCarthy"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Tom McCarthy",
+        "anchor_title": "Bram Stoker's Dracula",
+        "constraints": {
+          "genre": "cult",
+          "director": "Tom McCarthy",
+          "actor": "Christa B. Allen",
+          "plot": "relationships"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend \"The Shawshank Redemption\" (1982) for its powerful storytelling and stellar cast, featuring Morgan Freeman and Tim Robbins in unforgettable roles.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "year": "1982",
+        "director": "Tom McCarthy",
+        "actor": "Tom McCarthy"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Tom McCarthy",
+        "anchor_title": "Bram Stoker's Dracula",
+        "constraints": {
+          "genre": "cult",
+          "director": "Tom McCarthy",
+          "actor": "Christa B. Allen",
+          "plot": "relationships"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a unique movie experience, I recommend 'Eraserhead' (1977) directed by Jack Nance. The film follows Henry Spencer trying to survive his industrial environment with surreal and haunting imagery.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "You",
+        "year": "1982",
+        "director": "Tom McCarthy",
+        "actor": "Tom McCarthy"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Tom McCarthy",
+        "anchor_title": "Bram Stoker's Dracula",
+        "constraints": {
+          "genre": "cult",
+          "director": "Tom McCarthy",
+          "actor": "Christa B. Allen",
+          "plot": "relationships"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for cult movies from 1982, I would recommend 'Friday the 13th Part 2'. With its connection to the iconic 'Friday the 13th' series and the focus on a summer camp by Crystal Lake, this film offers a thrilling experience.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "year": "1982",
+        "director": "Tom McCarthy",
+        "actor": "Tom McCarthy"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of 1982? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Tom McCarthy",
+        "anchor_title": "Bram Stoker's Dracula",
+        "constraints": {
+          "genre": "cult",
+          "director": "Tom McCarthy",
+          "actor": "Christa B. Allen",
+          "plot": "relationships"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a deeper exploration into the mood of 1982, I recommend 'Tootsie'. This comedy film from 1982 stars Dustin Hoffman as Michael Dorsey, who disguises himself as a woman to get a role. It captures the feel of that time with its blend of humor and social commentary.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "1982",
+        "year": "1982",
+        "director": "Tom McCarthy",
+        "actor": "Tom McCarthy"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Tom McCarthy",
+        "anchor_title": "Bram Stoker's Dracula",
+        "constraints": {
+          "genre": "cult",
+          "director": "Tom McCarthy",
+          "actor": "Christa B. Allen",
+          "plot": "relationships"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend watching \"The Shawshank Redemption\" (1982). This movie, known for its powerful storytelling and stellar performances by Tim Robbins and Morgan Freeman, explores themes of friendship, hope, and redemption in a监狱 setting.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "year": "1982",
+        "director": "Tom McCarthy",
+        "actor": "Tom McCarthy"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on 1982. I want to try something more vietnam war—I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "vietnam war",
+        "anchor_title": "American Gangster",
+        "constraints": {
+          "genre": "vietnam war",
+          "actor": "Christa B. Allen",
+          "plot": "relationships"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 14,
+          "from_focus": "director",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "tries",
+          "from_anchor": "Bram Stoker's Dracula",
+          "to_anchor": "American Gangster"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for a adventure-packed movie with supernatural powers, 'The Beastmaster' starring Marc Singer and featuring animal allies, might be perfect for you.",
+      "constraints": {
+        "genre": "vietnam war",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "War",
+        "year": "1982",
+        "director": "Tom McCarthy",
+        "actor": "Tom McCarthy"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "vietnam war",
+        "anchor_title": "American Gangster",
+        "constraints": {
+          "genre": "vietnam war",
+          "actor": "Christa B. Allen",
+          "plot": "relationships"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "推荐《Velocity》这部电影，它是一部关于 MotoGP 摩托车赛车的首部剧情长片。主演包括 Tom McCarthy 和 Morgan Freeman 等知名演员，讲述了一段充满挑战和情感纠葛的旅程。",
+      "constraints": {
+        "genre": "vietnam war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "year": "1982",
+        "director": "Tom McCarthy",
+        "actor": "Tom McCarthy"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Velocity. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "vietnam war",
+        "anchor_title": "American Gangster",
+        "constraints": {
+          "genre": "vietnam war",
+          "actor": "Christa B. Allen",
+          "plot": "relationships"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for a heartwarming film with classic actors, 'It's a Wonderful Life' starring James Stewart and Donna Reed would be a great choice.",
+      "constraints": {
+        "genre": "vietnam war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "year": "1982",
+        "director": "Tom McCarthy",
+        "actor": "Tom McCarthy"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Jonathan Liebesman? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Wonder.)",
+      "user_meta": {
+        "turn": 17,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Jonathan Liebesman",
+        "anchor_title": "Definitely, Maybe",
+        "constraints": {
+          "genre": "vietnam war",
+          "actor": "Christa B. Allen",
+          "plot": "relationships",
+          "director": "Jonathan Liebesman",
+          "writer": "R.J. Palacio"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 17,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "writer",
+          "bridge_value": "R.J. Palacio",
+          "from_anchor": "American Gangster",
+          "to_anchor": "Definitely, Maybe"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend 'The Thing' (1982) for its thrilling Vietnam War backdrop and suspenseful encounter with an alien entity. Starring David Clennon, Richard Masur, and Tom McCarthy, the movie offers a unique blend of science fiction and horror.",
+      "constraints": {
+        "genre": "vietnam war",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "RED",
+        "year": "1982",
+        "director": "Jonathan Liebesman",
+        "actor": "Tom McCarthy"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jonathan Liebesman",
+        "anchor_title": "Definitely, Maybe",
+        "constraints": {
+          "genre": "vietnam war",
+          "actor": "Christa B. Allen",
+          "plot": "relationships",
+          "director": "Jonathan Liebesman",
+          "writer": "R.J. Palacio"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "One highly recommended movie from your list is 'The Deep End of the Ocean' (2006). This heart-wrenching drama follows a family's emotional journey after their youngest son is kidnapped and found alive years later. Starring Brenda Strong, John Kapelos, and featuring Alexa PenaVega among others, it explores themes of love, loss, and redemption.",
+      "constraints": {
+        "genre": "vietnam war",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "year": "1982",
+        "director": "Jonathan Liebesman",
+        "actor": "Tom McCarthy"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jonathan Liebesman",
+        "anchor_title": "Definitely, Maybe",
+        "constraints": {
+          "genre": "vietnam war",
+          "actor": "Christa B. Allen",
+          "plot": "relationships",
+          "director": "Jonathan Liebesman",
+          "writer": "R.J. Palacio"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend watching \"Tootsie\" (1982), where Jessica Lange transforms into a woman to get a role, showcasing her talent and humor.",
+      "constraints": {
+        "genre": "vietnam war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "year": "1982",
+        "director": "Jonathan Liebesman",
+        "actor": "Tom McCarthy"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Her? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jonathan Liebesman",
+        "anchor_title": "Definitely, Maybe",
+        "constraints": {
+          "genre": "vietnam war",
+          "actor": "Christa B. Allen",
+          "plot": "relationships",
+          "director": "Jonathan Liebesman",
+          "writer": "R.J. Palacio"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For those interested in a unique blend of horror and character development, 'Creepshow' might be a great choice. With its anthology format and stories featuring iconic actors like Adrienne Barbeau, this movie offers a chilling yet entertaining experience.",
+      "constraints": {
+        "genre": "vietnam war",
+        "plot": [
+          "what"
+        ],
+        "name": "Her",
+        "year": "1982",
+        "director": "Jonathan Liebesman",
+        "actor": "Tom McCarthy"
+      }
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 3,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Quinton Aaron",
+      "from_anchor": "Evil Dead II",
+      "to_anchor": "Vampires"
+    },
+    {
+      "turn": 6,
+      "from_focus": "director",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "relationships",
+      "from_anchor": "Vampires",
+      "to_anchor": "Blade Runner"
+    },
+    {
+      "turn": 8,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Christa B. Allen",
+      "from_anchor": "Blade Runner",
+      "to_anchor": "Bram Stoker's Dracula"
+    },
+    {
+      "turn": 14,
+      "from_focus": "director",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "tries",
+      "from_anchor": "Bram Stoker's Dracula",
+      "to_anchor": "American Gangster"
+    },
+    {
+      "turn": 17,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "writer",
+      "bridge_value": "R.J. Palacio",
+      "from_anchor": "American Gangster",
+      "to_anchor": "Definitely, Maybe"
+    }
+  ]
+}

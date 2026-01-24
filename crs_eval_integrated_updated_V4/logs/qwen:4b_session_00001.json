@@ -1,0 +1,725 @@
+{
+  "session_id": "00001",
+  "model_name": "qwen:4b",
+  "true_genre": "comedy-drama",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a comedy-drama movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy-drama",
+        "anchor_title": "Forgetting Sarah Marshall",
+        "constraints": {
+          "genre": "comedy-drama"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Here are some recommendations based on the user's preferences:\n\n- \"I Can Do Bad All by Myself\" - This movie is about a professor who takes matters into her own hands when she catches sixteen-year-old Jennifer and her two younger brothers looting her home.\n\n- \"What Just Happened\" - This movie is about a man who gets arrested and lost after getting robbed, arrested and lost.\n\n- \"The Break-Up\" - This movie is about a couple' s break- up proceeds to get uglier",
+      "constraints": {
+        "genre": "comedy-drama",
+        "plot": [
+          "comedy",
+          "drama"
+        ],
+        "name": "You"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Andie MacDowell. That sounds intriguing. (I’m thinking of I Can Do Bad All by Myself.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Andie MacDowell",
+        "anchor_title": "Dear John",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "actor",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Forgetting Sarah Marshall",
+          "to_anchor": "Dear John"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Here are some recommendations based on user preferences:\n1. Star Wars: Episode I  - The Phantom Menace (1999) | Plot Keywords: Jedi, Sith, Force. | Starring: Ian McDiarmid, Liam Neeson, Natalie Portman.\n2. The End of the Affair (1999) | Plot Keywords: affair, love, marriage. | Starring: Ralph Fiennes, Ian Hart, Ian Hart, Stephen Rea, Stephen Rea, James Bolam, James Bolam.",
+      "constraints": {
+        "genre": "comedy-drama",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "I Can Do Bad All by Myself",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Andie MacDowell",
+        "anchor_title": "Dear John",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Andie MacDowell",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the provided list of movies and their genres, I would recommend the movie \"Insidious\" from this list. The reason for my recommendation is that the genre of \"Insidious\" is comedy-drama which closely matches the genre of the other movie in the list \"The Truman Show\". Additionally, the actors involved in both movies are also quite similar as they all feature prominent roles played by actors such as Natascha McElhone, S. Epatha Merkerson, Joe Morton and others. Therefore, based on the provided genres and actors, I would recommend the movie \"Insidious\" from this list.",
+      "constraints": {
+        "genre": "comedy-drama",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Insidious. I want to try something more monster (character species)—Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "monster (character species)",
+        "anchor_title": "The Mummy Returns",
+        "constraints": {
+          "genre": "monster (character species)",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 4,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "tough",
+          "from_anchor": "Dear John",
+          "to_anchor": "The Mummy Returns"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference cues, here are some potential recommendations:\n\n- Cloverfield (2008)): This science fiction movie follows a group of friends who embark on a rescue mission during a rampaging monster attack.\n\n- The Mummy (1989)): This action horror movie follows an ancient Egyptian princess who is awakened from her crypt beneath the desert, bringing with her malevolence grown over millennia and terrors that defy human comprehension.\n\n- Scream 4 (2011)): This supernatural horror movie follows a group of friends who embark on a rescue mission during a rampaging monster attack.",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Insidious",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "monster (character species)",
+        "anchor_title": "The Mummy Returns",
+        "constraints": {
+          "genre": "monster (character species)",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I would recommend \"Despicable Me 2\" as a fun and entertaining movie with great animation, humor, and characters. It also has a good storyline, engaging plot twists, and unexpected turns that keep the audience interested and entertained. Overall, \"Despicable Me 2\" is a fantastic and entertaining movie that I highly recommend to anyone who enjoys watching movies and having fun.",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Despicable Me 2? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "monster (character species)",
+        "anchor_title": "The Mummy Returns",
+        "constraints": {
+          "genre": "monster (character species)",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the preference cues provided, I would recommend \"The Mummy Returns\" to you.\nThis movie follows the adventures of the mummy, Imhotep, who was ship to London in 1920 to be displayed at the Victoria and Albert Museum.\nImhotep is awakened by a thief who steals his remains for later display at a museum.\nThroughout the movie, we see how Imhotep's remains were stolen from him, and then displayed at a museum.",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "Despicable Me",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Mummy Returns. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "monster (character species)",
+        "anchor_title": "The Mummy Returns",
+        "constraints": {
+          "genre": "monster (character species)",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Here are a few movie recommendations based on the user's preference cues:\n\n- Title: The Stuff | Plot: A delicious, mysterious goo that oozes from the earth is marketed as the newest dessert sensation, but the tasty treat rots more than teeth when zombie- like snackers who only want to consume more of the strange substance at any cost begin infesting the world. | Starring: Danny Aiello, Garrett Morris, Paul Sorvino\n- Title: Treasure Planet | Plot: Jim Hawkins is a teenager who finds the map of a great treasure hidden by a space pirate. Together with some friends, he sets off in a large spaceship, shaped like a caravel, on his quest.  | Starring: Laurie Metcalf, Mona Marshall, Tony Jay, Rodger Bumpass, Roscoe Lee Browne, David Hyde Pierce, Michael Wincott, Michael Wincott, Martin Short, Martin Short, Patrick McGoohan, Joseph Gordon-Levitt, Joseph Gordon-Levitt, Emma Thompson",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "The Mummy Returns",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Stuff tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "monster (character species)",
+        "anchor_title": "The Mummy Returns",
+        "constraints": {
+          "genre": "monster (character species)",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I would recommend \"The Wrestler\" as a heartwarming and inspiring story about perseverance, determination, and the power of love. The film stars Mickey Rourke in his most challenging role yet, and Marisa Tomei in one of her most memorable performances. The film has received widespread critical acclaim for its powerful themes of perseverance, determination, and the power of love, as well as its outstanding performances by Mickey Rourke and Marisa Tomei. Overall, \"The Wrestler\" is a truly remarkable and inspiring film about perseverance, determination, and the power of love.",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The Stuff",
+        "actor": "Andie MacDowell"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Kylie Scott? Hmm, I didn’t expect that vibe. (I’m thinking of The Wrestler.)",
+      "user_meta": {
+        "turn": 9,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Kylie Scott",
+        "anchor_title": "Deep",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Kylie Scott",
+          "actor": "Marisa Tomei"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 9,
+          "from_focus": "genre",
+          "to_focus": "writer",
+          "bridge_field": "actor",
+          "bridge_value": "Marisa Tomei",
+          "from_anchor": "The Mummy Returns",
+          "to_anchor": "Deep"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Here are two potential recommendations based on your preference cues:\n\n1. \"The Santa Clause 2\" (1992) - This sequel follows up the story of Scott Calvin, a down-on-his-luck local weatherman who is often mistaken for Santa Claus during Christmas Eve. In this sequel, Calvin finds himself in the same predicament as before on Christmas Eve, and he must once again go through all sorts of awkward situations with people who don't know him from one another. However, despite his best efforts, Calvin manages to accidentally bump into a local business owner named Janie van der Lee during his awkward interactions with people who don't know him from one another. Janie is initially very surprised and confused about why this local weatherman seems to be bumping into her quite frequently even though they don't know each other from one another. Janie eventually manages to figure out why this local weatherman keeps bumping into her quite frequently even though they don't know each other from one another, which turns out to be because he accidentally bumped into her earlier in the evening during his awkward interactions with people who don't know him from one another.",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "written",
+          "scott"
+        ],
+        "name": "The Wrestler",
+        "actor": "Andie MacDowell",
+        "writer": "Kylie Scott"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Kylie Scott",
+        "anchor_title": "Deep",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Kylie Scott",
+          "actor": "Marisa Tomei"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Here are some recommendations based on your preferences:\n- Title: The Secret of My Success  (N/ A)  | Plot: Fast climbing Arthur Tate rose to his fame, wealth and respectability quickly from a beginning as a naive constable His rise was also due to 3 women: dressmaker Violet Lawson, Lily, the Baroness von Lukenberg, and movie producer Marigold Marado, His rise was also due to Mrs. Tate, who always seemed to have an extra bit of information which would make her suggest to the people that her son Arthur be provided a position where he could do more good. Perhaps Mrs. Tate had a grander plan for herself.  | Starring: Bill Fagerbakke, Rick Aviles, Michael J. Fox",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Andie MacDowell",
+        "writer": "Kylie Scott"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Her? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Kylie Scott",
+        "anchor_title": "Deep",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Kylie Scott",
+          "actor": "Marisa Tomei"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference cues and genre information provided, here are a few recommendations:\n\n1. \"The Andromeda Strain\" (1971) - This classic sci-fi film follows a group of scientists as they work tirelessly in a secret state-of-the-art laboratory to discover what killed the citizens of a small town and how the deadly contagion can be stopped.\n\n2. \"Groundhog Day\" (1993) - This beloved holiday movie follows the story of weatherman Phil Connors, who finds himself trapped in a time loop on Groundhog Day.\n\nBased on these recommendations, the user might find these movies interesting and enjoyable.",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "what",
+          "feels"
+        ],
+        "name": "Her",
+        "actor": "Andie MacDowell",
+        "writer": "Kylie Scott"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Trapped tell? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Kylie Scott",
+        "anchor_title": "Deep",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Kylie Scott",
+          "actor": "Marisa Tomei"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference cues, I recommend 'The Twilight Saga: New Moon' as it follows two young police officers in LA who are partners and friends and what happens when they meet criminal forces greater than themselves.",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Trapped",
+        "actor": "Andie MacDowell",
+        "writer": "Kylie Scott"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of They. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Kylie Scott",
+        "anchor_title": "Deep",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Kylie Scott",
+          "actor": "Marisa Tomei"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference cues, here are some potential recommendations:\n- Title: The Amazing Spider-Man (2012) | Plot: After Peter Parker is bitten by a genetically altered spider, he gains newfound, spider-like powers and ventures out to save the city from the machinations of a mysterious reptilian foe. | Starring: Rhys Ifans, Jill Flint, Michael Papajohn, Chris Zylka, Chris Zylka, Campbell Scott, Irrfan Khan, Stan Lee, Martin Sheen, Embeth Davidtz, Denis Leary, Andrew Garfield, Andrew Garfield",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "They",
+        "actor": "Andie MacDowell",
+        "writer": "Kylie Scott"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Vince Vieluf. Hmm, I didn’t expect that vibe. (I’m thinking of 2012.)",
+      "user_meta": {
+        "turn": 14,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Vince Vieluf",
+        "anchor_title": "The Wolfman",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Roland Emmerich",
+          "actor": "Vince Vieluf"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 14,
+          "from_focus": "writer",
+          "to_focus": "actor",
+          "bridge_field": "writer",
+          "bridge_value": "Roland Emmerich",
+          "from_anchor": "Deep",
+          "to_anchor": "The Wolfman"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference cues, here are some potential recommendations:\n\n1. \"Frankenweenie\" - A British journalist working in Norway during WWII finds himself hunted by the Germans when he's tasked with a secret combat mission, while the daughter of a Norwegian sea captain helps the Brits combat the Nazi menace.\n\n2. \"The Avengers\" - When the evil spirit Pitch launches an assault on Earth, the Immortal Guardians team up to protect the innocence of children all around the world.\n\n3. \"Rise of the Guardians\" - When the evil spirit Pitch launches an assault on Earth, the Immortal Guardians team up to protect the innocence of children all around the world.\n\n4. \"Walking Tall\" - A former U. S. soldier returns to his hometown to find it overrun by crime and corruption, which prompts him to clean house.",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "2012",
+        "actor": "Vince Vieluf",
+        "writer": "Kylie Scott",
+        "year": "2012"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Vince Vieluf",
+        "anchor_title": "The Wolfman",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Roland Emmerich",
+          "actor": "Vince Vieluf"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference cues, here are some potential recommendations:\n- Title: Tarnation (2003) | Plot: Filmmaker Jonathan Caouette's documentary on growing up with his schizophrenic mother - a mixture of snapshots, Super-8 film, answering machine messages, video diaries, early short films, and more  - culled from nineteen years of his life. | Starring: Renee Leblanc, Greg Ayres, Jonathan Caouette, Jonathan Caouette",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Vince Vieluf",
+        "writer": "Kylie Scott",
+        "year": "2012"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of 3. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Vince Vieluf",
+        "anchor_title": "The Wolfman",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Roland Emmerich",
+          "actor": "Vince Vieluf"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preferences, I would recommend \"Frankenweenie\". This classic animated film tells the story of a young boy who brings his beloved pet dog back to life through a powerful science experiment. The film is known for its memorable characters, humorous dialogue, and heartwarming ending. It's definitely worth checking out!",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "3",
+        "actor": "Vince Vieluf",
+        "writer": "Kylie Scott",
+        "year": "2012"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Vince Vieluf",
+        "anchor_title": "The Wolfman",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Roland Emmerich",
+          "actor": "Vince Vieluf"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the preferences and interests listed, I would recommend two different movies: \"Wanderlust\" (2012) directed by Jonestown Massacre (JMM) producer and member of the band JMM known for his role in the film \"This Is Spinal Tap\" (ITSS), has a story similar to the one you've listed. In the movie \"Wanderlust\", the story revolves around two people, Beca (played by Elizabeth Banks) and Daniel (played by Ben Platt)), who are both college students attending different universities. The two people have never met each other before and they are both very curious about the other person. When the two people happen to be in the same city at the same time, they decide to meet up each other.",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "3",
+        "actor": "Vince Vieluf",
+        "writer": "Kylie Scott",
+        "year": "2012"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Wanderlust? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Vince Vieluf",
+        "anchor_title": "The Wolfman",
+        "constraints": {
+          "genre": "monster (character species)",
+          "writer": "Roland Emmerich",
+          "actor": "Vince Vieluf"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preferences, I would recommend two movies from this list:\n\n  1. \"Alex in Wonderland\" (N//A) - This movie follows the story of a disillusioned and depressed advertising executive who discovers that he has the ability to hear what women are thinking. The movie explores themes of depression, disillusionment, creativity, and self-discovery.\n  2. \"What Women Want\" (2000) - This movie tells the story of a cocky, chauvinistic advertising executive who magically acquires the ability to hear what women are thinking. The movie explores themes of male arrogance, female empowerment, creative expression, and self-discovery.",
+      "constraints": {
+        "genre": "monster (character species)",
+        "plot": [
+          "what",
+          "wanderlust"
+        ],
+        "name": "Wanderlust",
+        "actor": "Vince Vieluf",
+        "writer": "Kylie Scott",
+        "year": "2012"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on Wonder. I want to try something more prison escape—That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "prison escape",
+        "anchor_title": "The Day After Tomorrow",
+        "constraints": {
+          "genre": "prison escape",
+          "writer": "Roland Emmerich",
+          "actor": "Vince Vieluf"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 19,
+          "from_focus": "actor",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "bestseller",
+          "from_anchor": "The Wolfman",
+          "to_anchor": "The Day After Tomorrow"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference cues, I would recommend \"This Is 40\" and \"Where We Belong\". These movies are similar in genre to the user's preference, which is prison and year is 2012. The main actors of these two movies are Tim Bagley and Dan Bakkedahl. The plot keywords of these two movies are thanks and detail.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "Prison",
+        "actor": "Vince Vieluf",
+        "writer": "Kylie Scott",
+        "year": "2012"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "prison escape",
+        "anchor_title": "The Day After Tomorrow",
+        "constraints": {
+          "genre": "prison escape",
+          "writer": "Roland Emmerich",
+          "actor": "Vince Vieluf"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference cues and the list of recommended movies, I would recommend \"The Twilight Saga: Breaking Dawn Part 2\" to the user as it is a movie that shares similar genre and year with the movies in the list, which makes it more likely to be liked by the user.",
+      "constraints": {
+        "genre": "prison",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "actor": "Vince Vieluf",
+        "writer": "Kylie Scott",
+        "year": "2012"
+      }
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "actor",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Forgetting Sarah Marshall",
+      "to_anchor": "Dear John"
+    },
+    {
+      "turn": 4,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "tough",
+      "from_anchor": "Dear John",
+      "to_anchor": "The Mummy Returns"
+    },
+    {
+      "turn": 9,
+      "from_focus": "genre",
+      "to_focus": "writer",
+      "bridge_field": "actor",
+      "bridge_value": "Marisa Tomei",
+      "from_anchor": "The Mummy Returns",
+      "to_anchor": "Deep"
+    },
+    {
+      "turn": 14,
+      "from_focus": "writer",
+      "to_focus": "actor",
+      "bridge_field": "writer",
+      "bridge_value": "Roland Emmerich",
+      "from_anchor": "Deep",
+      "to_anchor": "The Wolfman"
+    },
+    {
+      "turn": 19,
+      "from_focus": "actor",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "bestseller",
+      "from_anchor": "The Wolfman",
+      "to_anchor": "The Day After Tomorrow"
+    }
+  ]
+}

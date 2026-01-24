@@ -1,0 +1,844 @@
+{
+  "session_id": "00003",
+  "model_name": "mistral:7b",
+  "true_genre": "cult",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a cult movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "cult",
+        "anchor_title": "Evil Dead II",
+        "constraints": {
+          "genre": "cult"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Hey there! If you're in the mood for a cult classic, I'd highly recommend giving 'Fight Club' a watch. This film, starring Edward Norton and Brad Pitt, tells the story of an underground fight club that evolves into something much more. It's definitely one with a unique plot and memorable characters.\n\nAnother intriguing choice could be 'The Devil's Rejects'. This horror film follows the Firefly family as they take to the road to escape a vengeful sheriff, featuring a star-studded cast including Sid Haig and Ken Foree. It's a chilling tale that's sure to leave an impact! Enjoy your movie time!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "cult",
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "Fight Club",
+        "Wolf Creek",
+        "True Blood",
+        "The Devil's Rejects"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Devil's Rejects? That sounds intriguing.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "cult",
+        "anchor_title": "Evil Dead II",
+        "constraints": {
+          "genre": "cult"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "\"If you enjoyed the dark and intriguing aspects of 'The Devil's Rejects,' I think you might appreciate 'The Stepfather.' It's a suspenseful thriller about a man who murders his family, starts anew with a widow and her teenage daughter, and is ready to do it all over again. Or perhaps you'd enjoy 'Find Me Guilty,' a compelling courtroom drama starring Vin Diesel as a low-level gangster defending himself in the longest criminal trial in American history.\"",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "devil"
+        ],
+        "name": "The Devil's Rejects"
+      },
+      "rec_titles": [
+        "The Yearling",
+        "Aladdin",
+        "The Stepfather",
+        "Find Me Guilty"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "cult",
+        "anchor_title": "Evil Dead II",
+        "constraints": {
+          "genre": "cult"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "\"If you enjoyed a touch of supernatural elements and a captivating love triangle, you might appreciate 'The Twilight Saga: New Moon'. Robert Pattinson, Kristen Stewart, and Taylor Lautner bring this romantic vampire saga to life. On the other hand, if you're interested in a thought-provoking drama about marriage and relationships, 'Why Did I Get Married?' could be an engaging choice for you.\"",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "X"
+      },
+      "rec_titles": [
+        "The Twilight Saga: New Moon",
+        "Why Did I Get Married?",
+        "The Violent Kind",
+        "Man on Fire"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Super. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "cult",
+        "anchor_title": "Evil Dead II",
+        "constraints": {
+          "genre": "cult"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for cult films and intriguing plots, I'd highly recommend watching \"The Amazing Spider-Man\". This film is about a teenager with extraordinary spider-like powers who uses them to save his city from danger. It stars Andrew Garfield and Emma Stone in the lead roles.\n\nIf you're up for something more suspenseful, \"The Stepfather\" might also be of interest. This movie revolves around a man who murders his entire family and starts over with a new one, but this time it seems they've got a clue about his true nature. Skyler Samuels and Paige Turco star in this chilling thriller. Enjoy the movies!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Super"
+      },
+      "rec_titles": [
+        "The Amazing Spider-Man",
+        "The Stepfather",
+        "In the Woods",
+        "The Nanny"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Peter Cattaneo? That feels deeper than I thought. (I’m thinking of The Amazing Spider-Man.)",
+      "user_meta": {
+        "turn": 5,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Peter Cattaneo",
+        "anchor_title": "Creepshow 2",
+        "constraints": {
+          "genre": "cult",
+          "director": "Peter Cattaneo",
+          "actor": "Jill Flint"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 5,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Jill Flint",
+          "from_anchor": "Evil Dead II",
+          "to_anchor": "Creepshow 2"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your interest in a deeper and cult film by Peter Cattaneo, I'd recommend you watch \"The Amityville Horror\" (1977). This chilling supernatural thriller stars James Brolin and Margot Kidder, and it revolves around a family terrorized by demonic forces after moving into a haunted house.\n\nAnother compelling option could be \"White Night\" (2007), a suspenseful mystery with an intricate plot that might appeal to your taste for something thought-provoking. This film follows a persistent inspector's re-investigation of a long-forgotten murder case, ultimately uncovering hidden relationships and more crimes in the process.",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "The Amazing Spider-Man",
+        "director": "Peter Cattaneo"
+      },
+      "rec_titles": [
+        "The Amityville Horror",
+        "Evil Dead II",
+        "White Night",
+        "Maleficent"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Peter Cattaneo",
+        "anchor_title": "Creepshow 2",
+        "constraints": {
+          "genre": "cult",
+          "director": "Peter Cattaneo",
+          "actor": "Jill Flint"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend \"White Night\" for you, as it shares the cult genre and has an intriguing mystery plot that might appeal to fans of Peter Cattaneo's style. If you're looking for something a bit lighter with some comedic elements, \"Zookeeper\" could also be worth checking out, featuring a star-studded cast like Leslie Bibb and Rosario Dawson!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Peter Cattaneo"
+      },
+      "rec_titles": [
+        "White Night",
+        "Zookeeper",
+        "Without a Clue",
+        "Eraserhead"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Zookeeper. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Peter Cattaneo",
+        "anchor_title": "Creepshow 2",
+        "constraints": {
+          "genre": "cult",
+          "director": "Peter Cattaneo",
+          "actor": "Jill Flint"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'm delighted to hear you enjoyed \"Zookeeper\"! If you're in the mood for a comedy with an eccentric cast, you might find \"Spaceballs\" entertaining. It's a parody of Star Wars with hilarious performances by Mel Brooks, John Candy, and Rick Moranis. Another recommendation is \"Monty Python and the Holy Grail,\" a classic British comedy featuring the hilarious Monty Python troupe on their quest for the Holy Grail. Enjoy the silliness!",
+      "constraints": {
+        "genre": "cult",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Zookeeper",
+        "director": "Peter Cattaneo"
+      },
+      "rec_titles": [
+        "Spaceballs",
+        "Lucky Break",
+        "Monty Python and the Holy Grail",
+        "Shaun of the Dead"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "How about something primarily in Mende Language? Hmm, I didn’t expect that vibe. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 8,
+        "stage": "waiting_system",
+        "focus_field": "language",
+        "focus_value": "Mende Language",
+        "anchor_title": "The Call",
+        "constraints": {
+          "genre": "cult",
+          "director": "Peter Cattaneo",
+          "actor": "Jill Flint",
+          "language": "Mende Language",
+          "plot": "night"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 8,
+          "from_focus": "director",
+          "to_focus": "language",
+          "bridge_field": "plot",
+          "bridge_value": "night",
+          "from_anchor": "Creepshow 2",
+          "to_anchor": "The Call"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'm delighted to help! If you're keen on watching something primarily in Mende Language, I recommend checking out \"Lucky Break\" directed by Peter Cattaneo. This film is a unique blend of comedy and drama with an engaging plot about British inmates staging a musical escape. The star-studded cast featuring James Nesbitt and Olivia Williams adds to its appeal. Enjoy the show!",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "something",
+          "primarily"
+        ],
+        "name": "X",
+        "director": "Peter Cattaneo",
+        "language": "Mende Language"
+      },
+      "rec_titles": [
+        "Pride and Prejudice",
+        "Emma",
+        "Delirium",
+        "Lucky Break"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Mende Language",
+        "anchor_title": "The Call",
+        "constraints": {
+          "genre": "cult",
+          "director": "Peter Cattaneo",
+          "actor": "Jill Flint",
+          "language": "Mende Language",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd be happy to help! If you enjoyed Peter Cattaneo's film and are looking for something similar, I'd recommend \"Untraceable\" starring Diane Lane and Billy Burke. It's a thrilling tale of an FBI agent hunting down a serial killer who broadcasts his crimes online. Or, if you're interested in exploring different genres, there's the visually stunning adaptation of F. Scott Fitzgerald's \"The Great Gatsby\" with Leonardo DiCaprio and Carey Mulligan. Enjoy your movie night!",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Peter Cattaneo",
+        "language": "Mende Language"
+      },
+      "rec_titles": [
+        "Untraceable",
+        "The Great Gatsby",
+        "The Number 23",
+        "Thick as Thieves"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of X. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Mende Language",
+        "anchor_title": "The Call",
+        "constraints": {
+          "genre": "cult",
+          "director": "Peter Cattaneo",
+          "actor": "Jill Flint",
+          "language": "Mende Language",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It sounds like you're drawn to films with unique plots and intriguing characters! In that case, I would highly recommend \"The Right Stuff\" (1983). This film delves into the early days of the U.S. space program and features a stellar cast including Ed Harris, Dennis Quaid, and Sam Shepard. Alternatively, if you're interested in international cinema, you might enjoy \"Castle in the Sky\" (N/A), an animated film from Japan that tells a story of two determined characters building a castle to last centuries. This movie is known for its beautiful animation and deep themes about creativity and the human spirit. Enjoy the journey through these captivating films!",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "director": "Peter Cattaneo",
+        "language": "Mende Language"
+      },
+      "rec_titles": [
+        "The Nanny",
+        "The Right Stuff",
+        "Castle in the Sky",
+        "Rockshow"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? That sounds intriguing.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Mende Language",
+        "anchor_title": "The Call",
+        "constraints": {
+          "genre": "cult",
+          "director": "Peter Cattaneo",
+          "actor": "Jill Flint",
+          "language": "Mende Language",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend watching \"Ted\" if you enjoyed the intriguing aspect from the movie Ted. This comedy features Seth MacFarlane as a man whose childhood wish brought his teddy bear to life, and now he must balance his relationship with the bear, Ted, and his girlfriend, Mila Kunis.\n\nAnother interesting option could be \"This Is Spinal Tap,\" a mockumentary about an English rock band, known for their loud music and comedic antics. It stars Christopher Guest, Harry Shearer, and Michael McKean among others, delivering a humorous and intriguing portrayal of the music industry.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "Ted",
+        "director": "Peter Cattaneo",
+        "language": "Mende Language"
+      },
+      "rec_titles": [
+        "Paycheck",
+        "Ted",
+        "This Is Spinal Tap",
+        "The Wrestler"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Us tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Mende Language",
+        "anchor_title": "The Call",
+        "constraints": {
+          "genre": "cult",
+          "director": "Peter Cattaneo",
+          "actor": "Jill Flint",
+          "language": "Mende Language",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "\"Based on your interest in intriguing stories, I'd recommend watching 'Pride and Prejudice'. It's a captivating tale about love, misunderstandings, and social class set in the 19th century England. If you're looking for something more action-packed, 'The Wraith' might be up your alley, featuring Randy Quaid as a mysterious avenger targeting a violent street racing gang.\"",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Us",
+        "director": "Peter Cattaneo",
+        "language": "Mende Language"
+      },
+      "rec_titles": [
+        "Pride and Prejudice",
+        "The Wraith",
+        "Little Fockers",
+        "Paycheck"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "It’s weird — I thought I liked that, but maybe not.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "language",
+        "focus_value": "Mende Language",
+        "anchor_title": "The Call",
+        "constraints": {
+          "genre": "cult",
+          "director": "Peter Cattaneo",
+          "actor": "Jill Flint",
+          "language": "Mende Language",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend \"Connie and Carla\" for its unique premise where two chanteuses find themselves posing as drag queens on the dinner theater/cabaret circuit, adding a fun twist to their lives. If you're in the mood for something more lighthearted and humorous, \"The Rocker\" might be just what you need - it features Howard Hesseman as a drummer who gets his second chance at stardom with his nephew's high school rock band! Both films are sure to provide some enjoyable entertainment.",
+      "constraints": {
+        "genre": "language",
+        "plot": [
+          "weird",
+          "thought"
+        ],
+        "name": "Us",
+        "director": "Peter Cattaneo",
+        "language": "Mende Language"
+      },
+      "rec_titles": [
+        "Lucky Break",
+        "The Rocker",
+        "Connie and Carla",
+        "Can You Keep a Secret?"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Thanks for all the detail on You. I want to try something more social criticism—Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "waiting_system",
+        "focus_field": "genre",
+        "focus_value": "social criticism",
+        "anchor_title": "Maid in Manhattan",
+        "constraints": {
+          "genre": "social criticism",
+          "director": "Peter Cattaneo",
+          "actor": "Jill Flint",
+          "language": "Mende Language",
+          "plot": "night"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 14,
+          "from_focus": "language",
+          "to_focus": "genre",
+          "bridge_field": "plot",
+          "bridge_value": "yours",
+          "from_anchor": "The Call",
+          "to_anchor": "Maid in Manhattan"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd be delighted to help! Based on your preference for social criticism, you might enjoy \"Nicholas Nickleby\" which tells a story of a young man struggling against the cruelty of his uncle, or \"Bleak House\", a suspenseful drama about a lady and a blackmailing lawyer. Both films are rich in social commentary and offer thought-provoking themes. Enjoy the watch!",
+      "constraints": {
+        "genre": "social criticism",
+        "plot": [
+          "thanks",
+          "detail"
+        ],
+        "name": "X",
+        "director": "Peter Cattaneo",
+        "language": "Mende Language"
+      },
+      "rec_titles": [
+        "Nicholas Nickleby",
+        "Bleak House",
+        "Lucky Break",
+        "Scream 4"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "social criticism",
+        "anchor_title": "Maid in Manhattan",
+        "constraints": {
+          "genre": "social criticism",
+          "director": "Peter Cattaneo",
+          "actor": "Jill Flint",
+          "language": "Mende Language",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend watching \"The Deep End of the Ocean\" if you enjoy social criticism and intriguing family dramas. This movie, starring Treat Williams and Jonathan Jackson, tells a gripping story about a family dealing with the return of their kidnapped son after nine years. Another great choice would be \"Fight Club\", a thought-provoking film that explores themes like societal expectations and identity, featuring an impressive cast including Brad Pitt and Edward Norton.",
+      "constraints": {
+        "genre": "social criticism",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Peter Cattaneo",
+        "language": "Mende Language"
+      },
+      "rec_titles": [
+        "The Deep End of the Ocean",
+        "RED",
+        "Maid in Manhattan",
+        "Fight Club"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "social criticism",
+        "anchor_title": "Maid in Manhattan",
+        "constraints": {
+          "genre": "social criticism",
+          "director": "Peter Cattaneo",
+          "actor": "Jill Flint",
+          "language": "Mende Language",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend \"Prometheus\" for you. This thought-provoking film delves into the consequences of humanity's advancements, much like the social criticism genre you mentioned. The stellar cast led by Noomi Rapace and Michael Fassbender brings a captivating layer to this exploration of our modern world. Alternatively, if you're up for something more gritty and visually stunning, \"Sin City\" might be just the right fit, as it offers a noir-style narrative that explores morality in a dark, stylized cityscape. Enjoy your movie time!",
+      "constraints": {
+        "genre": "social criticism",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "director": "Peter Cattaneo",
+        "language": "Mende Language"
+      },
+      "rec_titles": [
+        "Prometheus",
+        "Sin City",
+        "Bleak House",
+        "Teddy Scares"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Sin City tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "social criticism",
+        "anchor_title": "Maid in Manhattan",
+        "constraints": {
+          "genre": "social criticism",
+          "director": "Peter Cattaneo",
+          "actor": "Jill Flint",
+          "language": "Mende Language",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your interest in social criticism, I'd highly recommend \"Taken\" (2008). This film tackles themes of human trafficking and corruption within law enforcement, all while delivering an edge-of-your-seat action thriller experience with Liam Neeson in the lead role.\n\nAlternatively, if you're open to exploring a unique take on modern dating experiences through a blend of documentary and narrative storytelling, I suggest checking out \"Her\" (2013). Scarlett Johansson lends her voice to an intelligent operating system that forms a deep emotional connection with its creator, offering thought-provoking insights into our relationship with technology.",
+      "constraints": {
+        "genre": "social criticism",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Sin City",
+        "director": "Peter Cattaneo",
+        "language": "Mende Language"
+      },
+      "rec_titles": [
+        "The Violent Kind",
+        "Taken",
+        "The Skulls",
+        "Her"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "social criticism",
+        "anchor_title": "Maid in Manhattan",
+        "constraints": {
+          "genre": "social criticism",
+          "director": "Peter Cattaneo",
+          "actor": "Jill Flint",
+          "language": "Mende Language",
+          "plot": "night"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for social criticism and the director Peter Cattaneo, I'd highly recommend \"X-Men: First Class\" as it explores themes of identity, prejudice, and power dynamics among a unique group of individuals. The film also stars Michael Fassbender, who delivers a compelling performance. If you're looking for something lighter, 'Easy A' might be up your alley too. This film tackles social issues in a humorous way, with Emma Stone giving a standout performance. Enjoy the movies!",
+      "constraints": {
+        "genre": "social criticism",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "X",
+        "director": "Peter Cattaneo",
+        "language": "Mende Language"
+      },
+      "rec_titles": [
+        "X-Men: First Class",
+        "Uptown Girls",
+        "Easy A",
+        "The Skull"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Jesse Peretz? I can’t decide if I’d enjoy it or be scared by it. (I’m thinking of Emma.)",
+      "user_meta": {
+        "turn": 19,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Jesse Peretz",
+        "anchor_title": "Jane Eyre",
+        "constraints": {
+          "genre": "social criticism",
+          "director": "Jesse Peretz",
+          "language": "Mende Language",
+          "plot": "housekeeper"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 19,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "housekeeper",
+          "from_anchor": "Maid in Manhattan",
+          "to_anchor": "Jane Eyre"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you're looking for a movie by Jesse Peretz and are interested in social criticism, I'd recommend \"True Blood\" as it revolves around themes of revenge, corruption, and justice in an urban setting. If you're open to exploring different genres, Maleficent might also intrigue you with its unique blend of fantasy, action, and a strong female protagonist played by Angelina Jolie Pitt.",
+      "constraints": {
+        "genre": "social criticism",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "RED",
+        "director": "Jesse Peretz",
+        "language": "Mende Language",
+        "writer": "Jesse Peretz"
+      },
+      "rec_titles": [
+        "True Blood",
+        "The Secret of My Success",
+        "The Whistler",
+        "Maleficent"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Jesse Peretz",
+        "anchor_title": "Jane Eyre",
+        "constraints": {
+          "genre": "social criticism",
+          "director": "Jesse Peretz",
+          "language": "Mende Language",
+          "plot": "housekeeper"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend \"White Night\" for its intriguing and complex storyline that explores themes of guilt, responsibility, and the persistence of justice. If you're looking for a different yet equally engaging watch, \"The Rocker\" might be up your alley with its entertaining tale about a drummer getting his second chance at stardom with a high school rock band. Enjoy the movies!",
+      "constraints": {
+        "genre": "social criticism",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Jesse Peretz",
+        "language": "Mende Language",
+        "writer": "Jesse Peretz"
+      },
+      "rec_titles": [
+        "White Night",
+        "Maid in Manhattan",
+        "The Cabin in the Woods",
+        "The Rocker"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 5,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Jill Flint",
+      "from_anchor": "Evil Dead II",
+      "to_anchor": "Creepshow 2"
+    },
+    {
+      "turn": 8,
+      "from_focus": "director",
+      "to_focus": "language",
+      "bridge_field": "plot",
+      "bridge_value": "night",
+      "from_anchor": "Creepshow 2",
+      "to_anchor": "The Call"
+    },
+    {
+      "turn": 14,
+      "from_focus": "language",
+      "to_focus": "genre",
+      "bridge_field": "plot",
+      "bridge_value": "yours",
+      "from_anchor": "The Call",
+      "to_anchor": "Maid in Manhattan"
+    },
+    {
+      "turn": 19,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "housekeeper",
+      "from_anchor": "Maid in Manhattan",
+      "to_anchor": "Jane Eyre"
+    }
+  ]
+}

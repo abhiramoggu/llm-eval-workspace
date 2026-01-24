@@ -1,0 +1,886 @@
+{
+  "session_id": "00002",
+  "model_name": "llama3:instruct",
+  "true_genre": "autobiography",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a autobiography movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "autobiography",
+        "anchor_title": "The Hiding Place",
+        "constraints": {
+          "genre": "autobiography"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've got just the thing for you! If you're in the mood for a movie that's all about exploring what could be, I'd highly recommend \"Trees Lounge\" (1996). This film features Steve Buscemi, who is fantastic as Tommy, a struggling mechanic trying to find his way. The story is relatable and has a great nostalgic feel to it!",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "could"
+        ],
+        "name": "You"
+      },
+      "rec_titles": [
+        "Armageddon",
+        "Elysium",
+        "Trees Lounge",
+        "Psychic Experiment"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Saul Dibb? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Trees Lounge.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "Running with Scissors",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Brooke Smith"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Brooke Smith",
+          "from_anchor": "The Hiding Place",
+          "to_anchor": "Running with Scissors"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing! Have you considered \"The Hiding Place\"? It's a powerful drama based on a true story, and it explores themes of courage, faith, and resilience in the face of adversity. With its strong historical context and emotional depth, it might be right up your alley if you enjoyed \"Trees Lounge\" for its authenticity and storytelling.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Trees Lounge",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb"
+      },
+      "rec_titles": [
+        "The Whistler",
+        "The Hiding Place",
+        "Afterlife",
+        "The Shadows"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "Running with Scissors",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Brooke Smith"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right fit for you! Based on Saul Dibb's style, I'd recommend \"RED\" (2010) - an action-packed thriller with a great cast, including Bruce Willis and Morgan Freeman. The plot is fast-paced and exciting, with plenty of twists and turns to keep you engaged.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb"
+      },
+      "rec_titles": [
+        "RED",
+        "Jack and Jill",
+        "Shutter",
+        "In Time"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of 2010? That sounds intriguing.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "Running with Scissors",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Brooke Smith"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right movie for you! Based on your interest in the mood of 2010, I highly recommend \"Stone\" (2010) starring Robert De Niro, Milla Jovovich, and Edward Norton. This psychological thriller explores complex characters and moral dilemmas, with a gripping storyline that will keep you engaged.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "2010",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Naked",
+        "Stone",
+        "Taken",
+        "The Twilight Saga: New Moon"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Psycho. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "Running with Scissors",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Brooke Smith"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"It's a Wonderful Life\"! The film has a similar sense of intrigue and depth, with a storyline that explores what life would be like if the main character had never existed. Plus, it stars Donna Reed, who is wonderful in her role as Mary Bailey. Would you like to give it a try?",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Psycho",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "It's a Wonderful Life",
+        "Dead or Alive",
+        "Jumper",
+        "Black Swan"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Ted tell? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "Running with Scissors",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Brooke Smith"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've got just the thing for you! Since you mentioned \"autobiography\" and seemed surprised by the vibe, I'm going to recommend \"Gunless\". It's a quirky film that explores themes of identity and culture shock, which might resonate with your interest in autobiography. Plus, it features some great actors like Paul Gross - give it a try and see what you think!",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Ted",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Gunless",
+        "Stone",
+        "3",
+        "The Return of the King"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Jeff Pidgeon? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 7,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Jeff Pidgeon",
+        "anchor_title": "You",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Brooke Smith",
+          "writer": "Jeff Pidgeon",
+          "plot": "your"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 7,
+          "from_focus": "director",
+          "to_focus": "writer",
+          "bridge_field": "plot",
+          "bridge_value": "your",
+          "from_anchor": "Running with Scissors",
+          "to_anchor": "You"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might really enjoy \"Hesher\"! It's a unique and quirky film that explores themes of grief, family, and finding one's place in the world - all with a healthy dose of chaos and humor, thanks to Joseph Gordon-Levitt's memorable performance as the titular character.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "written",
+          "jeff"
+        ],
+        "name": "You",
+        "director": "Saul Dibb",
+        "writer": "Jeff Pidgeon",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Gunless",
+        "Hesher",
+        "Iron Man 2",
+        "Extraordinary Measures"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Jeff Pidgeon",
+        "anchor_title": "You",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Brooke Smith",
+          "writer": "Jeff Pidgeon",
+          "plot": "your"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"Easy A\"! It's a fun and witty movie with a great performance from Emma Stone, who plays Olive, a high school student trying to navigate her reputation after a little white lie gets out of hand. The film has a great balance of humor and heart, and it's a really enjoyable watch.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Saul Dibb",
+        "writer": "Jeff Pidgeon",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Love Ranch",
+        "Southland Tales",
+        "Providence",
+        "Easy A"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Jeff Pidgeon",
+        "anchor_title": "You",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Brooke Smith",
+          "writer": "Jeff Pidgeon",
+          "plot": "your"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might really enjoy \"The Expendables\"! With an all-star cast including Arnold Schwarzenegger, Sylvester Stallone, and Bruce Willis, this action-packed movie is sure to deliver on thrills and excitement. Plus, the plot of mercenaries taking down a dictator has that same sense of camaraderie and determination that you picked up on in \"You\".",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "director": "Saul Dibb",
+        "writer": "Jeff Pidgeon",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "The Losers",
+        "Mama",
+        "The Expendables",
+        "The Sorcerer's Apprentice"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of X? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Jeff Pidgeon",
+        "anchor_title": "You",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Brooke Smith",
+          "writer": "Jeff Pidgeon",
+          "plot": "your"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Based on your interest in the mood of X, I'd recommend checking out \"Incendies\" (2010). This powerful drama follows twins as they uncover their family's complex history and fulfill their mother's wishes, which explores a similar theme of identity and discovery. The performances by Lubna Azabal and Mélissa Désormeaux-Poulin are also outstanding!",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "X",
+        "director": "Saul Dibb",
+        "writer": "Jeff Pidgeon",
+        "year": "2010"
+      },
+      "rec_titles": [
+        "Incendies",
+        "Hesher",
+        "The Social Network",
+        "Wild Target"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Atticus Shaffer. Hmm, I didn’t expect that vibe. (I’m thinking of They.)",
+      "user_meta": {
+        "turn": 11,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Atticus Shaffer",
+        "anchor_title": "Everything Put Together",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Atticus Shaffer",
+          "writer": "Jeff Pidgeon",
+          "plot": "child"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 11,
+          "from_focus": "writer",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "child",
+          "from_anchor": "You",
+          "to_anchor": "Everything Put Together"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've found a great match for you! Have you considered \"Shutter Island\" (2010)? It's a psychological thriller that explores the blurring of reality and fantasy, with an all-star cast including Leonardo DiCaprio and Mark Ruffalo. With its mind-bending plot twists and eerie atmosphere, I think you'll find it's a great fit!",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "They",
+        "director": "Saul Dibb",
+        "writer": "Jeff Pidgeon",
+        "year": "2010",
+        "actor": "Atticus Shaffer"
+      },
+      "rec_titles": [
+        "Taken 3",
+        "Shutter Island",
+        "The Missing",
+        "Hot Tub Time Machine"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Atticus Shaffer",
+        "anchor_title": "Everything Put Together",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Atticus Shaffer",
+          "writer": "Jeff Pidgeon",
+          "plot": "child"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"The Kids Are All Right\" (2010) - it's a heartwarming and hilarious film that explores non-traditional family dynamics, featuring a talented cast including Annette Bening and Mark Ruffalo. With its relatable themes and witty humor, I think you'll find it a delightful watch!",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Saul Dibb",
+        "writer": "Jeff Pidgeon",
+        "year": "2010",
+        "actor": "Atticus Shaffer"
+      },
+      "rec_titles": [
+        "Constantine",
+        "The Pink Panther 2",
+        "Tell No One",
+        "The Kids Are All Right"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Ted. Who stars in it? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Atticus Shaffer",
+        "anchor_title": "Everything Put Together",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Atticus Shaffer",
+          "writer": "Jeff Pidgeon",
+          "plot": "child"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"Dear John\"! It's a romantic drama that explores themes of love and sacrifice, with Channing Tatum and Amanda Seyfried delivering strong performances. The movie also features some great music and a compelling storyline that will keep you invested.\n\nIf you're in the mood for something a bit more intense, I'd recommend \"Incendies\". This powerful and emotional film tells the story of two siblings on a journey to uncover their family's dark past, featuring stunning performances from the entire cast.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Ted",
+        "director": "Saul Dibb",
+        "writer": "Jeff Pidgeon",
+        "year": "2010",
+        "actor": "Atticus Shaffer"
+      },
+      "rec_titles": [
+        "Dear John",
+        "Incendies",
+        "The Darkest Hour",
+        "Grown Ups"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Us? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Atticus Shaffer",
+        "anchor_title": "Everything Put Together",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Atticus Shaffer",
+          "writer": "Jeff Pidgeon",
+          "plot": "child"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the movie for you! Based on your interest in the mood of Us, I'd recommend \"The Wraith\" (1986). It's a supernatural thriller that explores themes of redemption and justice, with a mysterious protagonist seeking revenge against a group of reckless teenagers. The film has a haunting atmosphere that might appeal to your curiosity about what Us is like. Would you like to give it a try?",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "director": "Saul Dibb",
+        "writer": "Jeff Pidgeon",
+        "year": "2010",
+        "actor": "Atticus Shaffer"
+      },
+      "rec_titles": [
+        "Kick-Ass",
+        "The Wraith",
+        "The Next Three Days",
+        "Hancock"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Andrey Zvyagintsev? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of RED.)",
+      "user_meta": {
+        "turn": 15,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Andrey Zvyagintsev",
+        "anchor_title": "Miles to Go",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Andrey Zvyagintsev",
+          "actor": "Morgan Freeman",
+          "writer": "Jeff Pidgeon",
+          "plot": "child"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 15,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Morgan Freeman",
+          "from_anchor": "Everything Put Together",
+          "to_anchor": "Miles to Go"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've found a perfect match for you! Have you considered \"Inception\" (2010)? It's a mind-bending sci-fi thriller that explores the concept of shared dreaming, with an all-star cast including Leonardo DiCaprio, Joseph Gordon-Levitt, and Tom Hardy. The film is a thrilling ride that will keep you on the edge of your seat!",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "RED",
+        "director": "Andrey Zvyagintsev",
+        "writer": "Jeff Pidgeon",
+        "year": "2010",
+        "actor": "Atticus Shaffer"
+      },
+      "rec_titles": [
+        "The Darkest Hour",
+        "Predators",
+        "Inception",
+        "Alice in Wonderland"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Andrey Zvyagintsev",
+        "anchor_title": "Miles to Go",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Andrey Zvyagintsev",
+          "actor": "Morgan Freeman",
+          "writer": "Jeff Pidgeon",
+          "plot": "child"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the right movie for you! Have you considered \"Just Wright\" (2010)? It's a charming romantic comedy starring Dwyane Wade and Queen Latifah, where a physical therapist falls for her patient - basketball star Scott McKnight. The chemistry between the leads is undeniable, and it's a delightful, feel-good film.\n\nIf you'd like something a bit more action-packed, I'd recommend \"The Expendables\" (2010). With an all-star cast including Sylvester Stallone, Jason Statham, Arnold Schwarzenegger, and Bruce Willis, this explosive action flick is non-stop fun.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Andrey Zvyagintsev",
+        "writer": "Jeff Pidgeon",
+        "year": "2010",
+        "actor": "Atticus Shaffer"
+      },
+      "rec_titles": [
+        "Just Wright",
+        "Robin Hood",
+        "The Expendables",
+        "We Need to Talk About Kevin"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does War tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Andrey Zvyagintsev",
+        "anchor_title": "Miles to Go",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Andrey Zvyagintsev",
+          "actor": "Morgan Freeman",
+          "writer": "Jeff Pidgeon",
+          "plot": "child"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've found a great match for you! Since you're interested in war stories and Atticus Shaffer is involved (although he's not in any of these movies), let me recommend \"Hitch\" (2005). It's a romantic comedy that takes place in the 1960s, with Alfred Hitchcock as one of the main characters. Who knows, it might just be the perfect blend of wit and charm to get you out of your war story funk!",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "War",
+        "director": "Andrey Zvyagintsev",
+        "writer": "Jeff Pidgeon",
+        "year": "2010",
+        "actor": "Atticus Shaffer"
+      },
+      "rec_titles": [
+        "Hitch",
+        "Little Fockers",
+        "This Is Spinal Tap",
+        "Divergent"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Ted? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Andrey Zvyagintsev",
+        "anchor_title": "Miles to Go",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Andrey Zvyagintsev",
+          "actor": "Morgan Freeman",
+          "writer": "Jeff Pidgeon",
+          "plot": "child"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think you might enjoy \"Winter in Wartime\" (2008), a gripping war drama that explores themes of courage and resilience during difficult times. The film features a strong young cast, including Martijn Lakemeier, who brings a sense of authenticity to his portrayal of a teenage boy caught up in the Dutch resistance.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "what"
+        ],
+        "name": "Ted",
+        "director": "Andrey Zvyagintsev",
+        "writer": "Jeff Pidgeon",
+        "year": "2010",
+        "actor": "Atticus Shaffer"
+      },
+      "rec_titles": [
+        "Taxi Driver",
+        "Winter in Wartime",
+        "The Equalizer",
+        "The Lucky Ones"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "Actually, now that I think about it, I might want the opposite.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Andrey Zvyagintsev",
+        "anchor_title": "Miles to Go",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Andrey Zvyagintsev",
+          "actor": "Morgan Freeman",
+          "writer": "Jeff Pidgeon",
+          "plot": "child"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I've got just the opposite for you! If you're looking for a war movie from 2010, none of these options quite fit the bill. However, if you're open to something entirely different, I'd recommend \"50 First Dates\" - it's a romantic comedy starring Adam Sandler and Drew Barrymore, with a unique plot that explores themes of love, memory, and commitment. Or, if you're in the mood for something a bit more classic, \"Ted\" is an animated comedy that offers a fun take on friendship and growing up.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "actually",
+          "think"
+        ],
+        "name": "Ted",
+        "director": "Andrey Zvyagintsev",
+        "writer": "Jeff Pidgeon",
+        "year": "2010",
+        "actor": "Atticus Shaffer"
+      },
+      "rec_titles": [
+        "Ted",
+        "Hell's Angels",
+        "The Sorcerer's Apprentice",
+        "50 First Dates"
+      ]
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of 50 First Dates. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 20,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Andrey Zvyagintsev",
+        "anchor_title": "Miles to Go",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Andrey Zvyagintsev",
+          "actor": "Morgan Freeman",
+          "writer": "Jeff Pidgeon",
+          "plot": "child"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I think I have just the thing for you! Have you considered \"Year One\"? It's a fun and quirky comedy starring Atticus Shaffer, who caught your attention with his role in \"50 First Dates\". The movie follows two hunter-gatherers on a wild adventure through ancient civilizations, and it's got a similar lighthearted tone to the Adam Sandler film.",
+      "constraints": {
+        "genre": "war",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "50 First Dates",
+        "director": "Andrey Zvyagintsev",
+        "writer": "Jeff Pidgeon",
+        "year": "2010",
+        "actor": "Atticus Shaffer"
+      },
+      "rec_titles": [
+        "The Other Guys",
+        "Alex in Wonderland",
+        "District 9",
+        "Year One"
+      ]
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Brooke Smith",
+      "from_anchor": "The Hiding Place",
+      "to_anchor": "Running with Scissors"
+    },
+    {
+      "turn": 7,
+      "from_focus": "director",
+      "to_focus": "writer",
+      "bridge_field": "plot",
+      "bridge_value": "your",
+      "from_anchor": "Running with Scissors",
+      "to_anchor": "You"
+    },
+    {
+      "turn": 11,
+      "from_focus": "writer",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "child",
+      "from_anchor": "You",
+      "to_anchor": "Everything Put Together"
+    },
+    {
+      "turn": 15,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Morgan Freeman",
+      "from_anchor": "Everything Put Together",
+      "to_anchor": "Miles to Go"
+    }
+  ]
+}

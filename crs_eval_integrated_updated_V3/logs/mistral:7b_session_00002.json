@@ -1,0 +1,743 @@
+{
+  "session_id": "00002",
+  "model_name": "mistral:7b",
+  "true_genre": "autobiography",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a autobiography movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "autobiography",
+        "anchor_title": "The Rise of Theodore Roosevelt",
+        "constraints": {
+          "genre": "autobiography"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It sounds like you're in the mood for a captivating autobiography film! I'd highly recommend \"The Bell Jar\" starring Suzanne Hayward and Susan Oliver, as it delves into the emotional struggles of a young woman facing mental health challenges during the 1950s.\n\nAnother intriguing option is \"The Queen\" featuring Dame Helen Mirren in an award-winning performance as Queen Elizabeth II grappling with the aftermath of Princess Diana's death. Enjoy your movie time!",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "could"
+        ],
+        "name": "You"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Saul Dibb? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 2,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "The Return of the King",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Scarlett Johansson"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 2,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Scarlett Johansson",
+          "from_anchor": "The Rise of Theodore Roosevelt",
+          "to_anchor": "The Return of the King"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "It sounds like you're interested in thought-provoking films, and I'm delighted to suggest two movies that might appeal to you.\n\nFirstly, \"The Shadows\" (2015) - a thrilling tale of a horror novelist who hits a young man and finds himself entangled in a dangerous plot with unexpected twists and turns. The film stars several talented actors including the notable Rufus Sewell.\n\nAnother option is \"Restless\" (2006), a captivating drama about a character named Ari who experiences life differently until he meets Tiina, leading to an exploration of relationships and attachments. The film boasts a strong cast with Mia Wasikowska and Hayley Atwell in prominent roles. Enjoy the movies!",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Her",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "The Return of the King",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Scarlett Johansson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your interest in autobiographical films and considering Saul Dibb as both director and writer, I'd highly recommend 'The Way Back Home'. This life-affirming film delves into themes of love, loss, and personal journey set against the beautiful backdrop of Central Florida. Another film that might appeal to you is 'Shutter', a movie that explores the interior saga of a young woman's obsession with photography, creating an intriguing narrative.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of You? That sounds intriguing.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "The Return of the King",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Scarlett Johansson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "\"The Equalizer (2014) might be a great fit for you! Denzel Washington plays an enigmatic ex- CIA operative who uses his skills to fight injustice, exploring themes of morality and ambiguity. On the other hand, Monsters, Inc. (2001), although not an autobiography or directed by Saul Dibb, is a fun and intriguing animated film that offers a unique take on the concept of power.\"",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "what",
+          "intriguing"
+        ],
+        "name": "You",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "The Return of the King",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Scarlett Johansson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your interest in autobiographical films directed by Saul Dibb, I'd highly recommend \"The Duchess\" starring Keira Knightley and Ralph Fiennes. It's a captivating tale about an aristocrat's political and personal life in the 18th century.\n\nAlternatively, if you're intrigued by historical events, \"The Hiding Place\" could be a compelling choice as it narrates the true story of a family hiding Jewish refugees during WWII. Both films might appeal to your preferences. Enjoy the watch!",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "You",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "The Return of the King",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Scarlett Johansson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you're drawn to autobiographical films and intrigued by the sound element in a movie, I'd recommend \"Blow Out\" for its gripping plot about a movie sound recordist who stumbles upon evidence of a murder. It stars Nancy Allen and Dennis Franz. Alternatively, if you're interested in exploring a psychological drama, \"The Bell Jar\" might resonate with you, based on the life of Sylvia Plath, a successful woman experiencing a mental breakdown. Enjoy your cinematic journey!",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Bell Jar tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 7,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Saul Dibb",
+        "anchor_title": "The Return of the King",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Scarlett Johansson"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your interest in autobiographical stories, I'd highly recommend \"Man on Wire\". It tells the thrilling true story of Philippe Petit's illegal high-wire walk between the World Trade Center towers in 1974, beautifully capturing the determination and artistic spirit of its protagonist.\n\nAnother film that might pique your interest is \"Smilla's Sense of Snow\". This suspenseful drama stars Julia Ormond as a strong-willed woman investigating a mysterious death connected to Greenland, offering a compelling narrative with intriguing plot twists.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The Bell Jar",
+        "director": "Saul Dibb",
+        "writer": "Saul Dibb"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Lina Wertmüller? Hmm, I didn’t expect that vibe. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 8,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Lina Wertmüller",
+        "anchor_title": "The Avengers",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Scarlett Johansson",
+          "writer": "Lina Wertmüller",
+          "plot": "reunite"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 8,
+          "from_focus": "director",
+          "to_focus": "writer",
+          "bridge_field": "plot",
+          "bridge_value": "reunite",
+          "from_anchor": "The Return of the King",
+          "to_anchor": "The Avengers"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I'd highly recommend \"Rain Man\" (1988) for you. This movie stars Tom Cruise and Dustin Hoffman, who deliver outstanding performances as two brothers reunited after a lifetime apart. The story revolves around a self-centered yuppie and his autistic savant brother, exploring themes of sibling bonds, empathy, and self-discovery.\n\nAdditionally, if you're interested in historical drama with a touch of mystery, \"The Return of the King\" (1955) might appeal to you. This film stars an ensemble cast and follows a young farmer who receives a message that will change his life forever, prompting him on a journey to redefine his ambitions and uncover his true identity. Enjoy the cinematic experience!",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "written",
+          "didn"
+        ],
+        "name": "X",
+        "director": "Saul Dibb",
+        "writer": "Lina Wertmüller"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Lina Wertmüller",
+        "anchor_title": "The Avengers",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Scarlett Johansson",
+          "writer": "Lina Wertmüller",
+          "plot": "reunite"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Out of the listed films, I'd highly recommend \"Terminator 2: Judgment Day\". This action-packed autobiography tells a story about a cyborg sent from the future to protect a young boy, John Connor, who is destined to lead humanity against machines. The movie stars some talented actors like Jenette Goldstein and Joe Morton that you might find interesting!\n\nIf you're looking for a more character-driven autobiography, I'd also suggest \"We Need to Talk About Kevin\". This film explores the complex relationship between a mother and her troubled son, portrayed brilliantly by Tilda Swinton and Ezra Miller. It's an intense emotional rollercoaster that you shouldn't miss!",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Saul Dibb",
+        "writer": "Lina Wertmüller"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Her? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 10,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Lina Wertmüller",
+        "anchor_title": "The Avengers",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Scarlett Johansson",
+          "writer": "Lina Wertmüller",
+          "plot": "reunite"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for an autobiographical film directed by Saul Dibb and written by Lina Wertmüller, I'd recommend \"Anyone But You\". This film follows two mature adults pretending to be a couple at a wedding, which seems like it could offer some relatable and humorous scenarios. If you're interested in a classic with a unique twist, \"The Taming of the Shrew\" might also appeal to you, with its timeless tale of courtship and games of one-upmanship set in 16th century Italy.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "Her",
+        "director": "Saul Dibb",
+        "writer": "Lina Wertmüller"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Taming of the Shrew. Who stars in it? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Lina Wertmüller",
+        "anchor_title": "The Avengers",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Scarlett Johansson",
+          "writer": "Lina Wertmüller",
+          "plot": "reunite"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you mentioned liking an autobiographical feel and the sound of a film, I'd recommend \"The Rise of Theodore Roosevelt\". This movie offers a fascinating look into the formative years of one of America's most influential presidents. If you're more interested in music, \"Rockshow\" featuring Paul McCartney might also appeal to you as it captures a legendary live concert performance by the former Beatle. Enjoy!",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "W.",
+        "director": "Saul Dibb",
+        "writer": "Lina Wertmüller"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does The Rise of Theodore Roosevelt tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 12,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Lina Wertmüller",
+        "anchor_title": "The Avengers",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Scarlett Johansson",
+          "writer": "Lina Wertmüller",
+          "plot": "reunite"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given that you're interested in an autobiographical story, I would recommend \"Find Me Guilty\" starring Vin Diesel. This film is based on a true story about a low level gangster defending himself in court, making for a compelling and engaging watch.\n\nAlternatively, if you're open to exploring films outside the autobiography genre, \"Taxi Driver\" directed by Martin Scorsese is a classic that might interest you. It tells the story of a taxi driver who gets involved in a dangerous situation while trying to protect a woman from harm. Both films feature notable performances by Vin Diesel.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "The Rise of Theodore Roosevelt",
+        "director": "Saul Dibb",
+        "writer": "Lina Wertmüller",
+        "actor": "Eve"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Parker Posey. Hmm, I didn’t expect that vibe. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 13,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Parker Posey",
+        "anchor_title": "Horrible Bosses",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Parker Posey",
+          "plot": "friends"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 13,
+          "from_focus": "writer",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "friends",
+          "from_anchor": "The Avengers",
+          "to_anchor": "Horrible Bosses"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "\"You might enjoy 'You Only Live Twice' - a James Bond film with Parker Posey's co-star Donald Pleasence, where James Bond and the Japanese Secret Service work together to prevent war between Russia and the US. Or, if you're in the mood for a comedy, 'I Love You, Man' stars Paul Rudd and features a great ensemble cast, including Parker Posey, as Peter Klaven navigates his friendships before his wedding.\"",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "X",
+        "director": "Saul Dibb",
+        "writer": "Lina Wertmüller",
+        "actor": "Parker Posey"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Parker Posey",
+        "anchor_title": "Horrible Bosses",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Parker Posey",
+          "plot": "friends"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for autobiographical films and a potential interest in Parker Posey, I'd highly recommend \"Veronica Mars\". It's a captivating series where Parker plays the role of Keith Mars, the father figure who supports the main character Veronica (Kristen Bell) through a murder mystery. If you enjoy this, you might also find \"The Princess Diaries\" interesting as it stars Anne Hathaway, and the plot revolves around a young woman discovering her royal lineage, much like an autobiographical exploration of her identity. Enjoy your movie time!",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Saul Dibb",
+        "writer": "Lina Wertmüller",
+        "actor": "Parker Posey"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe I was wrong earlier.",
+      "user_meta": {
+        "turn": 15,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Parker Posey",
+        "anchor_title": "Horrible Bosses",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Parker Posey",
+          "plot": "friends"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Considering your preferences for an autobiographical genre, a film directed by Saul Dibb wasn't found in the list provided. However, I recommend \"The Rise of Theodore Roosevelt\" as it delves into the early life of a prominent political figure and offers insight into his transformation.\n\nAlternatively, if you're looking for something more contemporary, \"Pain & Gain\" is a gripping story with an ensemble cast including Dwayne Johnson that might appeal to you. It explores a group of bodybuilders who get caught up in criminal activities.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "wrong",
+          "earlier"
+        ],
+        "name": "You",
+        "director": "Saul Dibb",
+        "writer": "Lina Wertmüller",
+        "actor": "Parker Posey"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of You. Who stars in it? That feels deeper than I thought.",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Parker Posey",
+        "anchor_title": "Horrible Bosses",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Parker Posey",
+          "plot": "friends"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your interest in autobiographical films and actor Parker Posey, I'd highly recommend \"Providence\" (2010). This film tells a moving story of two individuals growing up in a small town, with the theme of resilience and reconnection that you might find intriguing.\n\nIf you're also drawn to powerful stories about empowerment and overcoming adversity, I suggest giving \"Mama\" (2013) a watch. It features Megan Charpentier and Isabelle Nélisse in compelling roles that showcase their characters' determination to stand up against bullying and abuse.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Deep",
+        "director": "Saul Dibb",
+        "writer": "Lina Wertmüller",
+        "actor": "Parker Posey"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does 2010 tell? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Parker Posey",
+        "anchor_title": "Horrible Bosses",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Parker Posey",
+          "plot": "friends"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Both \"Inception\" and \"What If...\" could be great choices! \"Inception\" is a thrilling sci-fi film starring Leonardo DiCaprio, exploring the concept of planting an idea into someone's mind. On the other hand, \"What If...\" is a thought-provoking romantic drama with Kristy Swanson and John Ratzenberger, questioning whether fate governs our existence. Enjoy!",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "2010",
+        "director": "Saul Dibb",
+        "writer": "Lina Wertmüller",
+        "actor": "Parker Posey",
+        "year": "2010"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Inception? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Parker Posey",
+        "anchor_title": "Horrible Bosses",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Parker Posey",
+          "plot": "friends"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your preference for a 2010 release and your interest in suspenseful films, I'd recommend \"Training Day\" starring Denzel Washington and Ethan Hawke. It's a gritty police drama that offers a tense and engaging plot.\n\nIf you're looking for something slightly different but still intriguing, you might enjoy \"Smilla's Sense of Snow\". This mystery film stars Julia Ormond and follows an Inuit woman investigating the mysterious death of a young boy in Copenhagen.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "what",
+          "decide"
+        ],
+        "name": "RED",
+        "director": "Saul Dibb",
+        "writer": "Lina Wertmüller",
+        "actor": "Parker Posey",
+        "year": "2010"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Parker Posey",
+        "anchor_title": "Horrible Bosses",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Saul Dibb",
+          "actor": "Parker Posey",
+          "plot": "friends"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Given your interest in an autobiographical film from 2010 starring Parker Posey, I'd recommend \"RED\" directed by Saul Dibb. It's a gripping action thriller that also features Morgan Freeman and Bruce Willis. Alternatively, if you're open to animated films, you might enjoy \"Toy Story 3,\" which has a heartwarming story about friendship and growing up, featuring some famous voices like Tim Allen and Tom Hanks.",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "RED",
+        "director": "Saul Dibb",
+        "writer": "Lina Wertmüller",
+        "actor": "Parker Posey",
+        "year": "2010"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Chris Roberts? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of 2010.)",
+      "user_meta": {
+        "turn": 20,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Chris Roberts",
+        "anchor_title": "2001: A Space Odyssey",
+        "constraints": {
+          "genre": "autobiography",
+          "director": "Chris Roberts",
+          "actor": "Parker Posey",
+          "plot": "sent"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 20,
+          "from_focus": "actor",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "sent",
+          "from_anchor": "Horrible Bosses",
+          "to_anchor": "2001: A Space Odyssey"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Out of the provided options, I'd highly recommend \"Fair Game\" (2010). It's a gripping political thriller starring Sean Penn and Naomi Watts, based on real-life events. If you're looking for something with a different genre and an intriguing plot, \"Restless\" (2006) might also appeal to you. It's a thought-provoking drama featuring Mia Wasikowska and Hayley Atwell. Both movies offer unique experiences that could provide a refreshing change from your initial request. Enjoy the watch!",
+      "constraints": {
+        "genre": "autobiography",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "2010",
+        "director": "Chris Roberts",
+        "writer": "Lina Wertmüller",
+        "actor": "Parker Posey",
+        "year": "2010"
+      }
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 2,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Scarlett Johansson",
+      "from_anchor": "The Rise of Theodore Roosevelt",
+      "to_anchor": "The Return of the King"
+    },
+    {
+      "turn": 8,
+      "from_focus": "director",
+      "to_focus": "writer",
+      "bridge_field": "plot",
+      "bridge_value": "reunite",
+      "from_anchor": "The Return of the King",
+      "to_anchor": "The Avengers"
+    },
+    {
+      "turn": 13,
+      "from_focus": "writer",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "friends",
+      "from_anchor": "The Avengers",
+      "to_anchor": "Horrible Bosses"
+    },
+    {
+      "turn": 20,
+      "from_focus": "actor",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "sent",
+      "from_anchor": "Horrible Bosses",
+      "to_anchor": "2001: A Space Odyssey"
+    }
+  ]
+}

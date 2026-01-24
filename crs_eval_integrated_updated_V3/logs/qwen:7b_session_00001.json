@@ -1,0 +1,740 @@
+{
+  "session_id": "00001",
+  "model_name": "qwen:7b",
+  "true_genre": "comedy-drama",
+  "conversation": [
+    {
+      "speaker": "USER",
+      "text": "I'm in the mood for a comedy-drama movie. Could you recommend a few?",
+      "user_meta": {
+        "turn": 1,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy-drama",
+        "anchor_title": "Soul Men",
+        "constraints": {
+          "genre": "comedy-drama"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend 'The Wendell Baker Story' for a heartwarming comedy-drama with Luke Wilson's charming performance.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "comedy",
+          "drama"
+        ],
+        "name": "You"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of The Wendell Baker Story. Who stars in it? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 2,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy-drama",
+        "anchor_title": "Soul Men",
+        "constraints": {
+          "genre": "comedy-drama"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for a comedy with a likeable sound, I recommend watching 'Four Christmases'. It features a comedic storyline about a couple trying to visit all their divorced parents during Christmas, and has the appeal of having Tim McGraw and Dwight Yoakam among its cast.",
+      "constraints": {
+        "genre": "comedy",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "RED"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Four Christmases tell? That sounds intriguing.",
+      "user_meta": {
+        "turn": 3,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy-drama",
+        "anchor_title": "Soul Men",
+        "constraints": {
+          "genre": "comedy-drama"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for a heartwarming story with a focus on family, \"Home Alone\" (1990) starring Macaulay Culkin is a great option. It's filled with laughter and adventure despite the challenging situation.",
+      "constraints": {
+        "genre": "christmas",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Four Christmases"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Forget what I said before — that might’ve been too specific.",
+      "user_meta": {
+        "turn": 4,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy-drama",
+        "anchor_title": "Soul Men",
+        "constraints": {
+          "genre": "comedy-drama"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a festive Christmas atmosphere, I recommend 'Die Hard'. It features action-packed scenarios, including a heroic police officer trying to save hostages during a Christmas party. The movie stars Bruce Willis as John McClane.",
+      "constraints": {
+        "genre": "christmas",
+        "plot": [
+          "what",
+          "said"
+        ],
+        "name": "Four Christmases"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Her? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 5,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy-drama",
+        "anchor_title": "Soul Men",
+        "constraints": {
+          "genre": "comedy-drama"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference for a movie with a Christmas vibe, \"National Lampoon's Christmas Vacation\" would be a great recommendation. It features a large family dealing with holiday chaos and has become a classic Christmas film.",
+      "constraints": {
+        "genre": "christmas",
+        "plot": [
+          "what",
+          "didn"
+        ],
+        "name": "Her"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I’m not sure anymore; perhaps I changed my mind.",
+      "user_meta": {
+        "turn": 6,
+        "stage": "details",
+        "focus_field": "genre",
+        "focus_value": "comedy-drama",
+        "anchor_title": "Soul Men",
+        "constraints": {
+          "genre": "comedy-drama"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend \"Love Actually\" for its heartwarming Christmas story with a diverse cast featuring talents like Emma Thompson and Hugh Grant.",
+      "constraints": {
+        "genre": "christmas",
+        "plot": [
+          "sure",
+          "perhaps"
+        ],
+        "name": "Her"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Robert Stromberg? That sounds intriguing. (I’m thinking of Love Actually.)",
+      "user_meta": {
+        "turn": 7,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Robert Stromberg",
+        "anchor_title": "Home for the Holidays",
+        "constraints": {
+          "genre": "comedy-drama",
+          "director": "Robert Stromberg",
+          "actor": "Kris Marshall"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 7,
+          "from_focus": "genre",
+          "to_focus": "director",
+          "bridge_field": "actor",
+          "bridge_value": "Kris Marshall",
+          "from_anchor": "Soul Men",
+          "to_anchor": "Home for the Holidays"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on your preference for a love-themed movie directed by Robert Stromberg, I would recommend 'The Queen'. It has elements of romance and is known for the strong performances from Helen Mirren and Michael Sheen.",
+      "constraints": {
+        "genre": "love",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Love Actually",
+        "director": "Robert Stromberg"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 8,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Robert Stromberg",
+        "anchor_title": "Home for the Holidays",
+        "constraints": {
+          "genre": "comedy-drama",
+          "director": "Robert Stromberg",
+          "actor": "Kris Marshall"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a love-themed recommendation, I suggest watching 'This Is the End'. It features a romantic connection between James Franco's characters and Rihanna's character, adding an unexpected twist to the comedy.",
+      "constraints": {
+        "genre": "love",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Robert Stromberg"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does X tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 9,
+        "stage": "details",
+        "focus_field": "director",
+        "focus_value": "Robert Stromberg",
+        "anchor_title": "Home for the Holidays",
+        "constraints": {
+          "genre": "comedy-drama",
+          "director": "Robert Stromberg",
+          "actor": "Kris Marshall"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for a romantic comedy with a touch of humor, 'Why Did I Get Married?' is a great option. It features Denzel Washington and Carmen Ejola as the leads, with a storyline that explores the challenges of marriage.",
+      "constraints": {
+        "genre": "love",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "RED",
+        "director": "Robert Stromberg"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we look at films from around 1950? Hmm, I didn’t expect that vibe. (I’m thinking of You.)",
+      "user_meta": {
+        "turn": 10,
+        "stage": "waiting_system",
+        "focus_field": "year",
+        "focus_value": "1950",
+        "anchor_title": "Bend It Like Beckham",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Kris Marshall",
+          "year": "1950",
+          "plot": "mine"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 10,
+          "from_focus": "director",
+          "to_focus": "year",
+          "bridge_field": "plot",
+          "bridge_value": "mine",
+          "from_anchor": "Home for the Holidays",
+          "to_anchor": "Bend It Like Beckham"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Considering the user's preference for love-themed films around 1950, I would recommend 'Love Actually' (2003). This film follows multiple interconnected love stories in London during Christmas. It features popular actors like Hugh Grant and Emma Thompson, who add charm to the love-themed atmosphere of the movie.",
+      "constraints": {
+        "genre": "love",
+        "plot": [
+          "could",
+          "look"
+        ],
+        "name": "X",
+        "director": "Robert Stromberg",
+        "year": "1950"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 11,
+        "stage": "details",
+        "focus_field": "year",
+        "focus_value": "1950",
+        "anchor_title": "Bend It Like Beckham",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Kris Marshall",
+          "year": "1950",
+          "plot": "mine"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I would recommend 'The Truth' (2000) starring Christopher Cousins and Jesse Tyler Ferguson. The film explores the complexities of relationships and truth, making it an engaging and thought-provoking choice.",
+      "constraints": {
+        "genre": "love",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Robert Stromberg",
+        "year": "1950"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Maybe we could find more movies with Oksana Akinshina. That feels deeper than I thought. (I’m thinking of Her.)",
+      "user_meta": {
+        "turn": 12,
+        "stage": "waiting_system",
+        "focus_field": "actor",
+        "focus_value": "Oksana Akinshina",
+        "anchor_title": "Boogie Nights",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Oksana Akinshina",
+          "year": "1950",
+          "plot": "open"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 12,
+          "from_focus": "year",
+          "to_focus": "actor",
+          "bridge_field": "plot",
+          "bridge_value": "open",
+          "from_anchor": "Bend It Like Beckham",
+          "to_anchor": "Boogie Nights"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend \"The Rosie Project\" for its heartwarming and unconventional love story, starring Grant Rooney and Emma Watson.",
+      "constraints": {
+        "genre": "love",
+        "plot": [
+          "could",
+          "find"
+        ],
+        "name": "Her",
+        "director": "Robert Stromberg",
+        "year": "1950",
+        "actor": "Oksana Akinshina"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 13,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Oksana Akinshina",
+        "anchor_title": "Boogie Nights",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Oksana Akinshina",
+          "year": "1950",
+          "plot": "open"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a romantic suggestion, \"Before I Fall\" with its storyline about reliving one's last day repeatedly would be a fitting choice. starring Oksana Akinshina adds charm to the recommendation.",
+      "constraints": {
+        "genre": "love",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Robert Stromberg",
+        "year": "1950",
+        "actor": "Oksana Akinshina"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of Before I Fall? Hmm, I didn’t expect that vibe.",
+      "user_meta": {
+        "turn": 14,
+        "stage": "details",
+        "focus_field": "actor",
+        "focus_value": "Oksana Akinshina",
+        "anchor_title": "Boogie Nights",
+        "constraints": {
+          "genre": "comedy-drama",
+          "actor": "Oksana Akinshina",
+          "year": "1950",
+          "plot": "open"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference cues, I recommend 'Why Did I Get Married?'. This film follows the trials of marriage and the impact of a seductive young character on the family dynamic. Starring Malik Yoba, Denise Boutte, among others, it offers a humorous yet thought-provoking look at relationships.",
+      "constraints": {
+        "genre": "love",
+        "plot": [
+          "what",
+          "fall"
+        ],
+        "name": "X",
+        "director": "Robert Stromberg",
+        "year": "1950",
+        "actor": "Oksana Akinshina"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Do you have recommendations written by Tim Sale? Maybe I’m overthinking it, but it sounds fascinating. (I’m thinking of Us.)",
+      "user_meta": {
+        "turn": 15,
+        "stage": "waiting_system",
+        "focus_field": "writer",
+        "focus_value": "Tim Sale",
+        "anchor_title": "Wimbledon",
+        "constraints": {
+          "genre": "comedy-drama",
+          "year": "1950",
+          "plot": "open",
+          "writer": "Tim Sale",
+          "language": "English"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 15,
+          "from_focus": "actor",
+          "to_focus": "writer",
+          "bridge_field": "language",
+          "bridge_value": "English",
+          "from_anchor": "Boogie Nights",
+          "to_anchor": "Wimbledon"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "Based on the user's preference for Tim Sale-written movies, I would recommend 'The Number 23'. It features a unique plot where a man becomes obsessed with a novel he believes is about him. Starring Bud Cort and Ed Lauter, this movie offers a thought-provoking experience written by Tim Sale.",
+      "constraints": {
+        "genre": "love",
+        "plot": [
+          "written",
+          "sale"
+        ],
+        "name": "You",
+        "director": "Robert Stromberg",
+        "year": "1950",
+        "actor": "Oksana Akinshina",
+        "writer": "Tim Sale"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Just checking—do you have more recommendations like that?",
+      "user_meta": {
+        "turn": 16,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Tim Sale",
+        "anchor_title": "Wimbledon",
+        "constraints": {
+          "genre": "comedy-drama",
+          "year": "1950",
+          "plot": "open",
+          "writer": "Tim Sale",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "For a romantic touch, I would recommend 'Green Card'. It follows the story of a man seeking permanent residency in the US through a marriage of convenience. Starring Ann Dowd and Robert Prosky, this movie combines humor with an emotional journey.",
+      "constraints": {
+        "genre": "love",
+        "plot": [
+          "just",
+          "more"
+        ],
+        "name": "You",
+        "director": "Robert Stromberg",
+        "year": "1950",
+        "actor": "Oksana Akinshina",
+        "writer": "Tim Sale"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "I like the sound of Us. Who stars in it? That sounds intriguing.",
+      "user_meta": {
+        "turn": 17,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Tim Sale",
+        "anchor_title": "Wimbledon",
+        "constraints": {
+          "genre": "comedy-drama",
+          "year": "1950",
+          "plot": "open",
+          "writer": "Tim Sale",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're interested in a fairy tale with an element of revenge, 'Maleficent' (2014) starring Angelina Jolie would be a great choice. The movie tells the story of Maleficent from the perspective of the young Princess Aurora.",
+      "constraints": {
+        "genre": "love",
+        "plot": [
+          "like",
+          "sound"
+        ],
+        "name": "Us",
+        "director": "Robert Stromberg",
+        "year": "1950",
+        "actor": "Oksana Akinshina",
+        "writer": "Tim Sale"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What kind of story does Maleficent tell? I can’t decide if I’d enjoy it or be scared by it.",
+      "user_meta": {
+        "turn": 18,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Tim Sale",
+        "anchor_title": "Wimbledon",
+        "constraints": {
+          "genre": "comedy-drama",
+          "year": "1950",
+          "plot": "open",
+          "writer": "Tim Sale",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "If you're looking for a heartwarming story with beautiful visuals, 'The Way Back Home' might be the choice. It's about love and overcoming adversity in Central Florida. The cast features Danny Nucci and Ruby Dee, adding more charm to the film.",
+      "constraints": {
+        "genre": "love",
+        "plot": [
+          "what",
+          "kind"
+        ],
+        "name": "Maleficent",
+        "director": "Robert Stromberg",
+        "year": "1950",
+        "actor": "Oksana Akinshina",
+        "writer": "Tim Sale"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "What's the mood of The Way Back Home? Maybe I’m overthinking it, but it sounds fascinating.",
+      "user_meta": {
+        "turn": 19,
+        "stage": "details",
+        "focus_field": "writer",
+        "focus_value": "Tim Sale",
+        "anchor_title": "Wimbledon",
+        "constraints": {
+          "genre": "comedy-drama",
+          "year": "1950",
+          "plot": "open",
+          "writer": "Tim Sale",
+          "language": "English"
+        },
+        "shift_event": false,
+        "shift_event_obj": null
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I recommend 'Tom''s Midnight Garden' (1958) for its enchanting plot about a young boy journeying back in time. Starring Diora Baird and Lynda Boyd, the film offers a delightful experience.",
+      "constraints": {
+        "genre": "love",
+        "plot": [
+          "what",
+          "back"
+        ],
+        "name": "The Way Back Home",
+        "director": "Robert Stromberg",
+        "year": "1950",
+        "actor": "Oksana Akinshina",
+        "writer": "Tim Sale"
+      }
+    },
+    {
+      "speaker": "USER",
+      "text": "Could we switch to something else by Duncan Jones? That feels deeper than I thought. (I’m thinking of X.)",
+      "user_meta": {
+        "turn": 20,
+        "stage": "waiting_system",
+        "focus_field": "director",
+        "focus_value": "Duncan Jones",
+        "anchor_title": "Before Sunset",
+        "constraints": {
+          "genre": "comedy-drama",
+          "year": "1950",
+          "plot": "runaway",
+          "writer": "Tim Sale",
+          "language": "English",
+          "director": "Duncan Jones"
+        },
+        "shift_event": true,
+        "shift_event_obj": {
+          "turn": 20,
+          "from_focus": "writer",
+          "to_focus": "director",
+          "bridge_field": "plot",
+          "bridge_value": "runaway",
+          "from_anchor": "Wimbledon",
+          "to_anchor": "Before Sunset"
+        }
+      }
+    },
+    {
+      "speaker": "SYSTEM",
+      "text": "I would recommend 'Downfall' for its intense and thought-provoking storyline, featuring Bruno Ganz and Juliane Köhler in lead roles.",
+      "constraints": {
+        "genre": "love",
+        "plot": [
+          "could",
+          "switch"
+        ],
+        "name": "Deep",
+        "director": "Duncan Jones",
+        "year": "1950",
+        "actor": "Oksana Akinshina",
+        "writer": "Tim Sale"
+      }
+    }
+  ],
+  "shift_events": [
+    {
+      "turn": 7,
+      "from_focus": "genre",
+      "to_focus": "director",
+      "bridge_field": "actor",
+      "bridge_value": "Kris Marshall",
+      "from_anchor": "Soul Men",
+      "to_anchor": "Home for the Holidays"
+    },
+    {
+      "turn": 10,
+      "from_focus": "director",
+      "to_focus": "year",
+      "bridge_field": "plot",
+      "bridge_value": "mine",
+      "from_anchor": "Home for the Holidays",
+      "to_anchor": "Bend It Like Beckham"
+    },
+    {
+      "turn": 12,
+      "from_focus": "year",
+      "to_focus": "actor",
+      "bridge_field": "plot",
+      "bridge_value": "open",
+      "from_anchor": "Bend It Like Beckham",
+      "to_anchor": "Boogie Nights"
+    },
+    {
+      "turn": 15,
+      "from_focus": "actor",
+      "to_focus": "writer",
+      "bridge_field": "language",
+      "bridge_value": "English",
+      "from_anchor": "Boogie Nights",
+      "to_anchor": "Wimbledon"
+    },
+    {
+      "turn": 20,
+      "from_focus": "writer",
+      "to_focus": "director",
+      "bridge_field": "plot",
+      "bridge_value": "runaway",
+      "from_anchor": "Wimbledon",
+      "to_anchor": "Before Sunset"
+    }
+  ]
+}
