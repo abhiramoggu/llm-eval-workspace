@@ -70,8 +70,6 @@ def _normalize_unit(z: np.ndarray) -> np.ndarray:
     if z_max <= z_min:
         return np.zeros_like(z)
     return (z - z_min) / (z_max - z_min)
-
-
 def _plot_bars(model: str, turns: int, fields: List[str], z: np.ndarray, label: str, out_path: str):
     if z.size == 0:
         return
@@ -114,34 +112,42 @@ def _plot_bars(model: str, turns: int, fields: List[str], z: np.ndarray, label: 
     ax.set_ylim(-0.5, float(n_fields - 0.5))
     ax.set_zlim(0.0, 1.0)
     ax.set_zticks([0.0, 1.0])
+    ax.set_zticklabels(["0", "1"], fontsize=16, fontweight="bold")
     try:
         ax.set_box_aspect((1.0, 1.0, 0.35))
     except Exception:
         pass
 
-    ax.set_xlabel("Turn", labelpad=24)
-    ax.set_ylabel("Focus field", labelpad=24)
-    ax.set_zlabel("Score (scaled 0-1)", labelpad=24)
-    ax.set_title(f"{label} bars (single conversation) - {model}", pad=20)
+    ax.set_xlabel("", labelpad=0)
+    ax.set_ylabel("", labelpad=0)
+    ax.set_zlabel("", labelpad=0)
 
     tick_count = min(6, max(3, turns // 5))
     xticks = np.linspace(1, max(2, turns), tick_count, dtype=int)
     ax.set_xticks(xticks)
-    ax.set_xticklabels([str(t) for t in xticks])
+    ax.set_xticklabels([str(t) for t in xticks], fontsize=16, fontweight="bold")
 
     field_idx = np.arange(n_fields)
     ax.set_yticks(field_idx)
-    ax.set_yticklabels(fields, fontsize=12)
+    ylabels = [f.upper() for f in fields]
+    ax.set_yticklabels(ylabels)
     for tick_label, idx in zip(ax.get_yticklabels(), field_idx):
         tick_label.set_color(cmap(norm(idx)))
+        tick_label.set_fontsize(16)
+        tick_label.set_fontweight("bold")
 
-    ax.tick_params(axis="x", pad=12)
-    ax.tick_params(axis="y", pad=14)
-    ax.tick_params(axis="z", pad=12)
+    ax.tick_params(axis="x", pad=12, labelsize=16)
+    ax.tick_params(axis="y", pad=14, labelsize=16)
+    ax.tick_params(axis="z", pad=12, labelsize=16)
 
     # Legend removed per request; focus field colors shown on tick labels.
 
-    plt.tight_layout()
+    # Reduce surrounding margins so the axes occupy more of the figure
+    try:
+        ax.dist = 7  # bring the camera a bit closer for a more 'zoomed' look
+    except Exception:
+        pass
+    fig.subplots_adjust(top=0.98, bottom=0.04, left=0.06, right=0.98)
     plt.savefig(out_path, dpi=220, bbox_inches="tight")
     plt.close()
     print(f"Saved: {out_path}")
