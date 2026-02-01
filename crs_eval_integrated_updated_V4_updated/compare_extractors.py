@@ -365,9 +365,17 @@ def main():
         if not lda_vocab:
             print("Warning: LDA produced no topics; LDA method will be empty.")
 
-    total_pairs = 0
+    # Group logs by model so we can sample up to N logs per model
+    model_to_logs: Dict[str, List[Dict[str, object]]] = {}
     for log in logs:
-        total_pairs += len(_iter_pairs(log.get("conversation", [])))
+        model_name = _log_model_name(log)
+        model_to_logs.setdefault(model_name, []).append(log)
+
+    total_pairs = 0
+    for model_logs in model_to_logs.values():
+        for log in model_logs[:10]:  # up to 10 logs per model
+            pairs_in_log = len(_iter_pairs(log.get("conversation", [])))
+            total_pairs += min(pairs_in_log, 100)  # Cap at 100 pairs per log
     if total_pairs == 0:
         raise SystemExit("No USER/SYSTEM pairs found in logs.")
 
@@ -395,100 +403,71 @@ def main():
         done = 0
         last_pct = -5
         print(f"--- Running extractor: {method} ---")
-        for log in logs:
-            model = _log_model_name(log)
-            conversation = log.get("conversation", [])
-            pairs = _iter_pairs(conversation)
-            if not pairs:
-                continue
-            co_list = []
-            wcs_list = []
-            cp_list = []
-            tas_list = []
-            for u_text, s_text in pairs:
-                u_tokens = get_tokens(method, u_text)
-                s_tokens = get_tokens(method, s_text)
-                co = jaccard_similarity(u_tokens, s_tokens)
-                if method == "lda":
-                    vec_u = _vectorize_tokens(u_tokens, lda_vocab, np.ones(len(lda_vocab), dtype=float))
-                    vec_s = _vectorize_tokens(s_tokens, lda_vocab, np.ones(len(lda_vocab), dtype=float))
-                else:
-                    vec_u = _vectorize_tokens(u_tokens, vocab, idf)
-                    vec_s = _vectorize_tokens(s_tokens, vocab, idf)
-                wcs = cosine_similarity(vec_u, vec_s)
-                cp = copying_ratio(s_text, u_text)
-                tas = (alpha * co) + (beta * wcs) - (gamma * cp)
-                co_list.append(co)
-                wcs_list.append(wcs)
-                cp_list.append(cp)
-                tas_list.append(tas)
-                done += 1
-                last_pct = _progress(method, done, total_pairs, last_pct)
+        # Iterate up to 10 logs per model so all models are represented
+        for model_name, model_logs in model_to_logs.items():
+            for log in model_logs[:10]:
+                model = _log_model_name(log)
+                conversation = log.get("conversation", [])
+                pairs = _iter_pairs(conversation)
+                if not pairs:
+                    continue
+                co_list = []
+                wcs_list = []
+                cp_list = []
+                tas_list = []
+                pair_count = 0
+                for u_text, s_text in pairs:
+                    if pair_count >= 100:  # Limit to 100 pairs per log
+                        break
+                    u_tokens = get_tokens(method, u_text)
+                    s_tokens = get_tokens(method, s_text)
+                    co = jaccard_similarity(u_tokens, s_tokens)
+                    if method == "lda":
+                        vec_u = _vectorize_tokens(u_tokens, lda_vocab, np.ones(len(lda_vocab), dtype=float))
+                        vec_s = _vectorize_tokens(s_tokens, lda_vocab, np.ones(len(lda_vocab), dtype=float))
+                    else:
+                        vec_u = _vectorize_tokens(u_tokens, vocab, idf)
+                        vec_s = _vectorize_tokens(s_tokens, vocab, idf)
+                    wcs = cosine_similarity(vec_u, vec_s)
+                    cp = copying_ratio(s_text, u_text)
+                    tas = (alpha * co) + (beta * wcs) - (gamma * cp)
+                    co_list.append(co)
+                    wcs_list.append(wcs)
+                    cp_list.append(cp)
+                    tas_list.append(tas)
+                    pair_count += 1
+                    done += 1
+                    last_pct = _progress(method, done, total_pairs, last_pct)
 
-            rr, rd = _compute_recovery(_shift_points_from_log(log, conversation), co_list, wcs_list)
-            co_mean = float(np.mean(co_list)) if co_list else np.nan
-            wcs_mean = float(np.mean(wcs_list)) if wcs_list else np.nan
-            cp_mean = float(np.mean(cp_list)) if cp_list else np.nan
-            tas_mean = float(np.mean(tas_list)) if tas_list else np.nan
-            rr_val = float(rr) if rr is not None else np.nan
-            rd_val = float(rd) if rd is not None else np.nan
-            for key in (model, "__all__"):
-                stats.setdefault(key, _bucket())
-                stats[key]["co"].append(co_mean)
-                stats[key]["wcs"].append(wcs_mean)
-                stats[key]["cp"].append(cp_mean)
-                stats[key]["tas"].append(tas_mean)
-                stats[key]["rr"].append(rr)
-                stats[key]["rd"].append(rd)
-                per_log.setdefault(method, {}).setdefault(key, _per_log_bucket())
-                per_log[method][key]["CO"].append(co_mean)
-                per_log[method][key]["WCS"].append(wcs_mean)
-                per_log[method][key]["CP"].append(cp_mean)
-                per_log[method][key]["TAS"].append(tas_mean)
-                per_log[method][key]["RR"].append(rr_val)
-                per_log[method][key]["RD"].append(rd_val)
+                rr, rd = _compute_recovery(_shift_points_from_log(log, conversation), co_list, wcs_list)
+                co_mean = float(np.mean(co_list)) if co_list else np.nan
+                wcs_mean = float(np.mean(wcs_list)) if wcs_list else np.nan
+                cp_mean = float(np.mean(cp_list)) if cp_list else np.nan
+                tas_mean = float(np.mean(tas_list)) if tas_list else np.nan
+                rr_val = float(rr) if rr is not None else np.nan
+                rd_val = float(rd) if rd is not None else np.nan
+                for key in (model, "__all__"):
+                    stats.setdefault(key, _bucket())
+                    stats[key]["co"].append(co_mean)
+                    stats[key]["wcs"].append(wcs_mean)
+                    stats[key]["cp"].append(cp_mean)
+                    stats[key]["tas"].append(tas_mean)
+                    stats[key]["rr"].append(rr)
+                    stats[key]["rd"].append(rd)
+                    per_log.setdefault(method, {}).setdefault(key, _per_log_bucket())
+                    per_log[method][key]["CO"].append(co_mean)
+                    per_log[method][key]["WCS"].append(wcs_mean)
+                    per_log[method][key]["CP"].append(cp_mean)
+                    per_log[method][key]["TAS"].append(tas_mean)
+                    per_log[method][key]["RR"].append(rr_val)
+                    per_log[method][key]["RD"].append(rd_val)
 
         for model, bucket in stats.items():
             rows.append({
                 "method": method,
                 "model": model,
-                "metric": "CO",
-                "value": _mean(bucket["co"]),
-                "llm_model": llm_model_name if method == "llm" else "",
-            })
-            rows.append({
-                "method": method,
-                "model": model,
-                "metric": "WCS",
-                "value": _mean(bucket["wcs"]),
-                "llm_model": llm_model_name if method == "llm" else "",
-            })
-            rows.append({
-                "method": method,
-                "model": model,
-                "metric": "CP",
-                "value": _mean(bucket["cp"]),
-                "llm_model": llm_model_name if method == "llm" else "",
-            })
-            rows.append({
-                "method": method,
-                "model": model,
                 "metric": "TAS",
                 "value": _mean(bucket["tas"]),
-                "llm_model": llm_model_name if method == "llm" else "",
-            })
-            rows.append({
-                "method": method,
-                "model": model,
-                "metric": "RR",
-                "value": _mean(bucket["rr"]),
-                "llm_model": llm_model_name if method == "llm" else "",
-            })
-            rows.append({
-                "method": method,
-                "model": model,
-                "metric": "RD",
-                "value": _mean(bucket["rd"]),
                 "llm_model": llm_model_name if method == "llm" else "",
             })
 
